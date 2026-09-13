@@ -39,10 +39,10 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "push-gaming-red-hot-multipliers": { source: "https://www.pushgaming.com/games/red-hot-multipliers.html", verifiedAt },
   "push-gaming-regal-knights": { source: "https://www.pushgaming.com/games/regal-knights.html", verifiedAt },
   "push-gaming-retro-sweets": { field: "6×9", source: "https://www.pushgaming.com/games/retro-sweets.html", verifiedAt },
-  "push-gaming-retro-tapes": { field: "6×9", source: "https://www.pushgaming.com/games/retro-tapes.html", verifiedAt },
   "push-gaming-retroverse": { field: "6×9", source: "https://www.pushgaming.com/games/retroverse.html", verifiedAt },
   "push-gaming-samurais-katana": { field: "5×4 · 20 линий", source: "https://www.pushgaming.com/games/samurais-katana.html", verifiedAt },
   "push-gaming-santa-hopper": { source: "https://www.pushgaming.com/games/santa-hopper.html", verifiedAt },
+  "push-gaming-santas-vault": { source: "https://www.pushgaming.com/games/santas-vault.html", verifiedAt },
 };
 
 export function getCatalogVerifiedDetailsPushWave1(slug: string) {
