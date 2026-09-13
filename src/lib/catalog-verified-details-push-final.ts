@@ -32,6 +32,35 @@ const details: Record<string, CatalogVerifiedDetails> = {
     source: "https://www.pushgaming.com/games/tricky-treats.html",
     verifiedAt,
   },
+  "push-gaming-triple-rampage": {
+    source: "https://www.pushgaming.com/games/triple-rampage.html",
+    verifiedAt,
+  },
+  "push-gaming-vegas-vault": {
+    source: "https://www.pushgaming.com/games/vegas-vault.html",
+    verifiedAt,
+  },
+  "push-gaming-viva-lock-vegas": {
+    source: "https://www.pushgaming.com/games/viva-lock-vegas.html",
+    verifiedAt,
+  },
+  "push-gaming-wild-swarm": {
+    field: "5×4 · 20 линий",
+    source: "https://www.pushgaming.com/games/wild-swarm.html",
+    verifiedAt,
+  },
+  "push-gaming-wild-swarm-2": {
+    source: "https://www.pushgaming.com/games/wild-swarm-2.html",
+    verifiedAt,
+  },
+  "push-gaming-wild-swarm-3-chocolate-eggs": {
+    source: "https://www.pushgaming.com/games/wild-swarm-3-chocolate-eggs.html",
+    verifiedAt,
+  },
+  "push-gaming-wild-swarm-triple-hive": {
+    source: "https://www.pushgaming.com/games/wild-swarm-triple-hive.html",
+    verifiedAt,
+  },
 };
 
 export function getCatalogVerifiedDetailsPushFinal(slug: string) {
