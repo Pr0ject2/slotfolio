@@ -1,5 +1,6 @@
 import type { CatalogResearch } from "./catalog-research";
 import { getCatalogResearchHacksawQualityPass6 } from "./catalog-research-hacksaw-quality-pass-6";
+import { getCatalogResearchHacksawQualityPass8 } from "./catalog-research-hacksaw-quality-pass-8";
 
 const verifiedAt = "2026-09-13";
 
@@ -25,5 +26,5 @@ const research: Record<string, CatalogResearch> = {
 };
 
 export function getCatalogResearchHacksawFinal(slug: string) {
-  return getCatalogResearchHacksawQualityPass6(slug) ?? research[slug];
+  return getCatalogResearchHacksawQualityPass8(slug) ?? getCatalogResearchHacksawQualityPass6(slug) ?? research[slug];
 }
