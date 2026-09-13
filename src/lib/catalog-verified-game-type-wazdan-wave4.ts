@@ -1,4 +1,5 @@
 import type { CatalogVerifiedGameType } from "./catalog-verified-game-type";
+import { getVerifiedCatalogGameTypeWazdanQualityPass4 } from "./catalog-verified-game-type-wazdan-quality-pass-4";
 
 const verifiedAt = "2026-09-12";
 
@@ -27,5 +28,5 @@ const gameTypes = Object.fromEntries(
 ) as Record<string, CatalogVerifiedGameType>;
 
 export function getVerifiedCatalogGameTypeWazdanWave4(slug: string) {
-  return gameTypes[slug];
+  return getVerifiedCatalogGameTypeWazdanQualityPass4(slug) ?? gameTypes[slug];
 }

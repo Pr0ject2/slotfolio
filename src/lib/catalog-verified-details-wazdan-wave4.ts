@@ -1,4 +1,5 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
+import { getCatalogVerifiedDetailsQualityPass4 } from "./catalog-verified-details-quality-pass-4";
 
 const verifiedAt = "2026-09-12";
 
@@ -24,5 +25,5 @@ const details: Record<string, CatalogVerifiedDetails> = {
 };
 
 export function getCatalogVerifiedDetailsWazdanWave4(slug: string) {
-  return details[slug];
+  return getCatalogVerifiedDetailsQualityPass4(slug) ?? details[slug];
 }
