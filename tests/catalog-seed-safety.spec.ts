@@ -5,6 +5,7 @@ import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 const verifiedNonSlotSlugs = [
   "hacksaw-gaming-blocks",
   "playn-go-3-hand-casino-holdem",
+  "playn-go-bugs-party",
   "playn-go-casino-holdem",
   "playn-go-deuces-wild-mh",
   "playn-go-flying-pigs",
@@ -14,6 +15,7 @@ const verifiedNonSlotSlugs = [
   "playn-go-super-wheel",
   "wazdan-black-jack",
   "wazdan-sic-bo-dragons",
+  "wazdan-three-cards",
 ];
 
 test("catalog seed selection excludes provider entries verified as non-slots", () => {
@@ -24,6 +26,7 @@ test("catalog seed selection excludes provider entries verified as non-slots", (
 
 test("confirmed non-slot products are not exposed as verified slot research", () => {
   expect(getVerifiedCatalogResearch("hacksaw-gaming-blocks")).toBeUndefined();
+  expect(getVerifiedCatalogResearch("playn-go-bugs-party")).toBeUndefined();
 });
 
 test("catalog seed selection repairs verified provider-title parser artifacts", () => {
