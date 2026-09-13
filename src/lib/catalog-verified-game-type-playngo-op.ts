@@ -1,4 +1,5 @@
 import type { CatalogVerifiedGameType } from "./catalog-verified-game-type";
+import { getVerifiedCatalogGameTypePlayngoGapWave1 } from "./catalog-verified-game-type-playngo-gap-wave1";
 
 const verifiedAt = "2026-09-11";
 
@@ -44,5 +45,5 @@ gameTypes["playn-go-odin-protector-of-realms"] = {
 };
 
 export function getVerifiedCatalogGameTypePlayngoOP(slug: string) {
-  return gameTypes[slug];
+  return gameTypes[slug] ?? getVerifiedCatalogGameTypePlayngoGapWave1(slug);
 }
