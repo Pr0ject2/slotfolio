@@ -4,8 +4,9 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
-test.only("rank thinnest runtime catalog-only records after quality pass 2", () => {
-  const ranked = catalogSeeds
+test.only("list thin Push Gaming runtime records for quality pass 3", () => {
+  const rows = catalogSeeds
+    .filter((seed) => seed.provider === "Push Gaming")
     .map((seed) => {
       const details = getVerifiedCatalogDetails(seed.slug);
       const type = getVerifiedCatalogGameType(seed.slug);
@@ -18,7 +19,6 @@ test.only("rank thinnest runtime catalog-only records after quality pass 2", () 
         score,
         slug: seed.slug,
         name: seed.name,
-        provider: seed.provider,
         source: seed.source,
         facts: {
           field: details?.field ?? null,
@@ -31,16 +31,9 @@ test.only("rank thinnest runtime catalog-only records after quality pass 2", () 
         },
       };
     })
-    .sort((a, b) => a.score - b.score || a.provider.localeCompare(b.provider, "en") || a.name.localeCompare(b.name, "en"));
+    .filter((row) => row.score <= 1)
+    .sort((a, b) => a.score - b.score || a.name.localeCompare(b.name, "en"));
 
-  const scoreDistribution = Object.fromEntries(
-    Object.entries(ranked.reduce<Record<string, number>>((acc, row) => {
-      acc[String(row.score)] = (acc[String(row.score)] || 0) + 1;
-      return acc;
-    }, {})).sort((a, b) => Number(a[0]) - Number(b[0])),
-  );
-
-  console.log("CATALOG_QUALITY_DISTRIBUTION_PASS3", JSON.stringify(scoreDistribution));
-  console.log("CATALOG_QUALITY_BOTTOM_PASS3", JSON.stringify(ranked.slice(0, 100)));
-  expect(ranked[0]?.score ?? 99).toBeGreaterThanOrEqual(99);
+  console.log("PUSH_QUALITY_THIN_PASS3", JSON.stringify(rows));
+  expect(rows.length).toBe(0);
 });
