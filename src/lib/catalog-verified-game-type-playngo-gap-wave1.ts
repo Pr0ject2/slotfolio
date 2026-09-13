@@ -40,6 +40,7 @@ const videoSlotSources: Record<string, string> = {
   "playn-go-cat-wilde-and-the-lost-chapter": "https://www.playngo.com/games/cat-wilde-and-the-lost-chapter",
   "playn-go-cat-wilde-and-the-pyramids-of-dead": "https://www.playngo.com/games/cat-wilde-and-the-pyramids-of-dead",
   "playn-go-cat-wilde-in-the-eclipse-of-the-sun-god": "https://www.playngo.com/games/cat-wilde-in-the-eclipse-of-the-sun-god",
+  "playn-go-rainforest-magic": "https://www.playngo.com/games/rainforest-magic",
 };
 
 const gameTypes: Record<string, CatalogVerifiedGameType> = Object.fromEntries(
