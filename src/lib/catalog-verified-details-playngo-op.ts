@@ -1,5 +1,6 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 import { getCatalogVerifiedDetailsPlayngoGapWave1 } from "./catalog-verified-details-playngo-gap-wave1";
+import { getCatalogVerifiedDetailsPlayngoGapFinal } from "./catalog-verified-details-playngo-gap-final";
 
 const verifiedAt = "2026-09-11";
 
@@ -36,5 +37,5 @@ const details: Record<string, CatalogVerifiedDetails> = {
 };
 
 export function getCatalogVerifiedDetailsPlayngoOP(slug: string) {
-  return details[slug] ?? getCatalogVerifiedDetailsPlayngoGapWave1(slug);
+  return details[slug] ?? getCatalogVerifiedDetailsPlayngoGapWave1(slug) ?? getCatalogVerifiedDetailsPlayngoGapFinal(slug);
 }
