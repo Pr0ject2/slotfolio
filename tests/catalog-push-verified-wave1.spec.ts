@@ -42,10 +42,10 @@ const pushWave1Slugs = [
   "push-gaming-red-hot-multipliers",
   "push-gaming-regal-knights",
   "push-gaming-retro-sweets",
-  "push-gaming-retro-tapes",
   "push-gaming-retroverse",
   "push-gaming-samurais-katana",
   "push-gaming-santa-hopper",
+  "push-gaming-santas-vault",
 ];
 
 test("Push Gaming verified wave 1 records stay selected and keep exact official sources", () => {
@@ -59,4 +59,6 @@ test("Push Gaming verified wave 1 records stay selected and keep exact official 
     expect(getVerifiedCatalogResearch(slug)?.source, slug).toBe(seed!.source);
     expect(getVerifiedCatalogGameType(slug), slug).toBeUndefined();
   }
+
+  expect(getVerifiedCatalogDetails("push-gaming-retro-tapes")).toBeUndefined();
 });
