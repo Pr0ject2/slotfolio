@@ -1,52 +1,68 @@
 import { test, expect } from "@playwright/test";
 import { catalogSeeds } from "../src/lib/catalog-seeds";
+import { slots } from "../src/lib/data";
 import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
-import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
-test("rank thinnest runtime catalog-only records for quality pass", () => {
-  const ranked = catalogSeeds
-    .map((seed) => {
-      const details = getVerifiedCatalogDetails(seed.slug);
-      const type = getVerifiedCatalogGameType(seed.slug);
-      const research = getVerifiedCatalogResearch(seed.slug);
-      const detailFacts = details
-        ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length
-        : 0;
-      const typeFacts = type ? 1 : 0;
-      const mechanicsFacts = research?.mechanics.length ?? 0;
-      const score = detailFacts + typeFacts + mechanicsFacts;
+const expectedFields: Record<string, string> = {
+  "3-oaks-gaming-3-aztec-temples": "5×3 · 25 линий",
+  "3-oaks-gaming-3-china-pots": "5×3 · 25 линий",
+  "3-oaks-gaming-3-clover-pots": "5×3 · 25 линий",
+  "3-oaks-gaming-3-clover-pots-extra": "5×4 · 30 линий",
+  "3-oaks-gaming-3-coins": "3×3 · 5 линий",
+  "3-oaks-gaming-3-egypt-chests": "5×3 · 10 линий",
+  "3-oaks-gaming-3-hot-teapots": "5×3 · 25 линий",
+  "3-oaks-gaming-3-lucky-sparks": "5×3 · 25 линий",
+  "3-oaks-gaming-3-olymp-fortunes": "5×3 · 25 линий",
+  "3-oaks-gaming-3-pots-of-egypt": "5×3 · 25 линий",
+  "3-oaks-gaming-3-super-hot-chillies": "5×3 · 25 линий",
+  "3-oaks-gaming-4-african-drums": "5×3 · 25 линий",
+  "3-oaks-gaming-4-clover-pots": "5×3 · 25 линий",
+  "3-oaks-gaming-4-fairy-flowers": "5×3 · 25 линий",
+  "3-oaks-gaming-4-pots-of-egypt": "5×3 · 20 линий",
+  "3-oaks-gaming-4-wolf-drums": "5×3 · 25 линий",
+  "3-oaks-gaming-777-fruity-coins": "3×3 · 5 линий",
+  "3-oaks-gaming-777-gems-respin": "3×3 · 5 линий",
+  "3-oaks-gaming-amazonia-wins": "5×3 · 25 линий",
+  "3-oaks-gaming-aztec-fire": "5×4 · 20 линий",
+  "3-oaks-gaming-aztec-fire-2": "5×4 · 20 линий",
+  "3-oaks-gaming-aztec-sun": "5×3 · 25 линий",
+  "3-oaks-gaming-big-heist": "5×3 · 10 линий",
+  "3-oaks-gaming-black-wolf": "5×4 · 25 линий",
+  "3-oaks-gaming-black-wolf-2": "5×4 · 25 линий",
+  "3-oaks-gaming-book-of-sun-multichance": "5×3 · 10 линий",
+  "3-oaks-gaming-chili-coins": "3×3 · 5 линий",
+  "3-oaks-gaming-coin-express": "5×3 · 5 линий",
+  "3-oaks-gaming-dancing-joker": "5×3 · 40 линий",
+  "3-oaks-gaming-egypt-fire-2": "5×4 · 20 линий",
+  "3-oaks-gaming-fishin-bear": "5×3 · 25 линий",
+  "3-oaks-gaming-fortune-globe": "5×4 · 20 линий",
+  "3-oaks-gaming-gold-express": "5×4 · 20 линий",
+  "3-oaks-gaming-golden-teapot": "5×4 · 25 линий",
+  "3-oaks-gaming-grab-more-gold": "5×4 · 20 линий",
+  "3-oaks-gaming-grab-the-gold": "5×3 · 20 линий",
+  "3-oaks-gaming-grand": "5×3 · 5 линий",
+  "3-oaks-gaming-green-chilli": "5×3 · 20 линий",
+  "3-oaks-gaming-green-chilli-2": "5×3 · 20 линий",
+  "3-oaks-gaming-hit-more-gold": "5×4 · 25 линий",
+};
 
-      return {
-        score,
-        slug: seed.slug,
-        name: seed.name,
-        provider: seed.provider,
-        source: seed.source,
-        facts: {
-          field: details?.field ?? null,
-          rtp: details?.rtp ?? null,
-          maxWin: details?.maxWin ?? null,
-          volatility: details?.volatility ?? null,
-          releaseDate: details?.releaseDate ?? null,
-          gameType: type?.gameType ?? null,
-          mechanics: research?.mechanics ?? [],
-        },
-      };
-    })
-    .sort((a, b) => a.score - b.score || a.provider.localeCompare(b.provider, "en") || a.name.localeCompare(b.name, "en"));
+test("quality pass 1 promotes already verified 3 Oaks layouts into visible details", () => {
+  const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
-  const scoreDistribution = Object.fromEntries(
-    Object.entries(
-      ranked.reduce<Record<string, number>>((acc, row) => {
-        acc[String(row.score)] = (acc[String(row.score)] || 0) + 1;
-        return acc;
-      }, {}),
-    ).sort((a, b) => Number(a[0]) - Number(b[0])),
-  );
+  for (const [slug, field] of Object.entries(expectedFields)) {
+    const seed = selected.get(slug);
+    expect(seed, slug).toBeTruthy();
+    expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
 
-  console.log("CATALOG_QUALITY_DISTRIBUTION", JSON.stringify(scoreDistribution));
-  console.log("CATALOG_QUALITY_BOTTOM", JSON.stringify(ranked.slice(0, 80)));
+    const details = getVerifiedCatalogDetails(slug);
+    expect(details?.source, slug).toBe(seed!.source);
+    expect(details?.field, slug).toBe(field);
 
-  expect(ranked[0]?.score ?? 99).toBeGreaterThanOrEqual(99);
+    const research = getVerifiedCatalogResearch(slug);
+    expect(research?.source, slug).toBe(seed!.source);
+    expect(research?.mechanics, slug).toContain("Линии");
+  }
+
+  expect(Object.keys(expectedFields)).toHaveLength(40);
 });
