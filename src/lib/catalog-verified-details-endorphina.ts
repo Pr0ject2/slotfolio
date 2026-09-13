@@ -1,8 +1,17 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 
 const verifiedAt = "2026-09-11";
+const verifiedAtFinal = "2026-09-13";
 
 const details: Record<string, CatalogVerifiedDetails> = {
+  "endorphina-3-golden-chests": {
+    field: "4×3 · 12 ячеек",
+    rtp: "96,04%",
+    maxWin: "1 400x",
+    volatility: "Высокая",
+    source: "https://endorphina.com/games/3-golden-chests/play",
+    verifiedAt: verifiedAtFinal,
+  },
   "endorphina-burning-coins-100": {
     field: "5×4 · 100 фиксированных линий",
     rtp: "96,05%",
