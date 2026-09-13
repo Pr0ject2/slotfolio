@@ -13,6 +13,13 @@ const pushFinalSlugs = [
   "push-gaming-the-great-banker",
   "push-gaming-tiki-tumble",
   "push-gaming-tricky-treats",
+  "push-gaming-triple-rampage",
+  "push-gaming-vegas-vault",
+  "push-gaming-viva-lock-vegas",
+  "push-gaming-wild-swarm",
+  "push-gaming-wild-swarm-2",
+  "push-gaming-wild-swarm-3-chocolate-eggs",
+  "push-gaming-wild-swarm-triple-hive",
 ];
 
 test("Push Gaming final records stay selected and complete current runtime enrichment", () => {
