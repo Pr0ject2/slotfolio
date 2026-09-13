@@ -3,6 +3,7 @@ import { catalogSeeds } from "../src/lib/catalog-seeds";
 import { slots } from "../src/lib/data";
 import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
+import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const finalSlugs = [
   "playn-go-chambers-of-ancients",
@@ -43,6 +44,18 @@ const gridSlots = new Set([
   "playn-go-lordi-reel-monsters",
 ]);
 const unknownGameType = new Set(["playn-go-coin-club", "playn-go-ras-reckoning"]);
+const researchedSlugs = new Set([
+  "playn-go-chambers-of-ancients",
+  "playn-go-charlie-chance",
+  "playn-go-charlie-chance-and-the-curse-of-cleopatra",
+  "playn-go-colt-lightning-firestorm",
+  "playn-go-leprechaun-goes-egypt",
+  "playn-go-leprechaun-goes-wild",
+  "playn-go-lion-saga-odyssey",
+  "playn-go-luchamigos",
+  "playn-go-ras-reckoning",
+  "playn-go-raging-rex-3",
+]);
 
 test("final Play’n GO gap records stay selected and preserve exact official sources", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
@@ -59,6 +72,10 @@ test("final Play’n GO gap records stay selected and preserve exact official so
     } else {
       expect(type?.source, slug).toBe(seed!.source);
       expect(type?.gameType, slug).toBe(gridSlots.has(slug) ? "Grid Slot" : "Video Slot");
+    }
+
+    if (researchedSlugs.has(slug)) {
+      expect(getVerifiedCatalogResearch(slug)?.source, slug).toBe(seed!.source);
     }
   }
 });
