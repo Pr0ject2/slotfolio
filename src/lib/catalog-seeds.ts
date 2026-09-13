@@ -53,6 +53,7 @@ const rejectedSeedSlugs = new Set([
   "playn-go-super-wheel",
   "wazdan-black-jack",
   "wazdan-sic-bo-dragons",
+  "wazdan-three-cards",
 ]);
 
 // Some provider pages leak a badge/CTA into the harvested title. Correct only entries

@@ -1,8 +1,15 @@
 import type { CatalogResearch } from "./catalog-research";
 
 const verifiedAt = "2026-09-11";
+const verifiedAtFinal = "2026-09-13";
 
 export const catalogResearchEndorphina: Record<string, CatalogResearch> = {
+  "endorphina-3-golden-chests": {
+    mechanics: ["Сбор символов"],
+    source: "https://endorphina.com/games/3-golden-chests/play",
+    verifiedAt: verifiedAtFinal,
+    evidence: "Official game page describes a 4x3 slot with 12 cells and a Collect symbol that accumulates all visible Bonus prizes in the Hold and Win game.",
+  },
   "endorphina-burning-coins-100": {
     mechanics: ["Линии"],
     source: "https://endorphina.com/games/burning-coins-100/play",
