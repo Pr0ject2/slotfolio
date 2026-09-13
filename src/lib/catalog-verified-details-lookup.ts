@@ -10,6 +10,7 @@ import { getCatalogVerifiedDetailsEndorphina } from "./catalog-verified-details-
 import { getCatalogVerifiedDetailsPush } from "./catalog-verified-details-push";
 import { getCatalogVerifiedDetailsPushMore } from "./catalog-verified-details-push-more";
 import { getCatalogVerifiedDetailsPushWave1 } from "./catalog-verified-details-push-wave1";
+import { getCatalogVerifiedDetailsPushFinal } from "./catalog-verified-details-push-final";
 import { getCatalogVerifiedDetailsPlayngo } from "./catalog-verified-details-playngo";
 import { getCatalogVerifiedDetailsPlayngoMore } from "./catalog-verified-details-playngo-more";
 import { getCatalogVerifiedDetailsPlayngoWave11 } from "./catalog-verified-details-playngo-wave11";
@@ -50,6 +51,7 @@ export function getVerifiedCatalogDetails(slug: string) {
     getCatalogVerifiedDetailsPush(slug) ??
     getCatalogVerifiedDetailsPushMore(slug) ??
     getCatalogVerifiedDetailsPushWave1(slug) ??
+    getCatalogVerifiedDetailsPushFinal(slug) ??
     getCatalogVerifiedDetailsPlayngo(slug) ??
     getCatalogVerifiedDetailsPlayngoMore(slug) ??
     getCatalogVerifiedDetailsPlayngoWave11(slug) ??
