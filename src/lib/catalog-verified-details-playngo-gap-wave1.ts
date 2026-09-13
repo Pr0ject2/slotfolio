@@ -42,6 +42,7 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "playn-go-cat-wilde-and-the-lost-chapter": { releaseDate: "2022-02-10", source: "https://www.playngo.com/games/cat-wilde-and-the-lost-chapter", verifiedAt },
   "playn-go-cat-wilde-and-the-pyramids-of-dead": { releaseDate: "2022-06-23", source: "https://www.playngo.com/games/cat-wilde-and-the-pyramids-of-dead", verifiedAt },
   "playn-go-cat-wilde-in-the-eclipse-of-the-sun-god": { releaseDate: "2021-02-04", source: "https://www.playngo.com/games/cat-wilde-in-the-eclipse-of-the-sun-god", verifiedAt },
+  "playn-go-rainforest-magic": { field: "5 барабанов · 25 линий", releaseDate: "2019-10-10", source: "https://www.playngo.com/games/rainforest-magic", verifiedAt },
 };
 
 export function getCatalogVerifiedDetailsPlayngoGapWave1(slug: string) {
