@@ -44,6 +44,7 @@ const wave1Slugs = [
   "playn-go-cat-wilde-and-the-lost-chapter",
   "playn-go-cat-wilde-and-the-pyramids-of-dead",
   "playn-go-cat-wilde-in-the-eclipse-of-the-sun-god",
+  "playn-go-rainforest-magic",
 ];
 
 const gridSlots = new Set(["playn-go-animal-madness", "playn-go-cash-of-command"]);
