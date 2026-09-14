@@ -24,19 +24,6 @@ function frequency(values: string[]) {
   );
 }
 
-function exactRtpValue(value?: string) {
-  const match = value?.trim().match(/^(\d+(?:[.,]\d+)?)%$/);
-  if (!match) return null;
-  const parsed = Number.parseFloat(match[1].replace(",", "."));
-  return Number.isFinite(parsed) ? parsed : null;
-}
-
-function releaseYear(value?: string) {
-  if (!value || !/^\d{4}/.test(value)) return null;
-  const year = Number(value.slice(0, 4));
-  return Number.isFinite(year) ? year : null;
-}
-
 export function createCatalogModel(): CatalogModel {
   const dossierItems: CatalogItem[] = slots.map((slot) => {
     const mechanicNames = slotMechanics(slot);
@@ -62,6 +49,8 @@ export function createCatalogModel(): CatalogModel {
       gameType: "",
       maxWin: verified?.maxWin ?? "",
       releaseDate,
+      verifiedRtp: slot.rtp,
+      verifiedVolatility: slot.volatility,
       verifiedFacts: [
         mechanicNames.length ? "mechanics" : "",
         slot.field,
@@ -93,14 +82,15 @@ export function createCatalogModel(): CatalogModel {
     const gameType = getVerifiedCatalogGameType(seed.slug);
     const mechanicNames = research?.mechanics ?? [];
     const releaseDate = details?.releaseDate ?? "";
-    const year = releaseYear(releaseDate);
+    const verifiedRtp = details?.rtp ?? "";
+    const verifiedVolatility = details?.volatility ?? "";
     const verifiedFacts = [
       mechanicNames.length ? "mechanics" : "",
       gameType?.gameType ?? "",
       details?.field ?? "",
-      details?.rtp ?? "",
+      verifiedRtp,
       details?.maxWin ?? "",
-      details?.volatility ?? "",
+      verifiedVolatility,
       releaseDate,
     ].filter(Boolean).length;
     const description = verifiedFacts
@@ -111,13 +101,13 @@ export function createCatalogModel(): CatalogModel {
       name: seed.name,
       provider: seed.provider,
       providerSlug: providerSlug(seed.provider),
-      year,
+      year: null,
       mechanics: mechanicNames,
       tags: [],
       field: details?.field ?? "",
-      rtp: details?.rtp ?? "",
-      rtpValue: exactRtpValue(details?.rtp),
-      volatility: details?.volatility ?? "",
+      rtp: "",
+      rtpValue: null,
+      volatility: "",
       image: "/images/unavailable.svg",
       description,
       coverage: "catalog",
@@ -125,15 +115,16 @@ export function createCatalogModel(): CatalogModel {
       gameType: gameType?.gameType ?? "",
       maxWin: details?.maxWin ?? "",
       releaseDate,
+      verifiedRtp,
+      verifiedVolatility,
       verifiedFacts,
       searchText: buildCatalogSearchText({
         name: seed.name,
         provider: seed.provider,
-        year,
         mechanics: mechanicNames,
         field: details?.field,
-        rtp: details?.rtp,
-        volatility: details?.volatility,
+        rtp: verifiedRtp,
+        volatility: verifiedVolatility,
         gameType: gameType?.gameType,
         maxWin: details?.maxWin,
         releaseDate,
