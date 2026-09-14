@@ -5,23 +5,26 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
-const expectedFields = {
-  "playn-go-gold-of-fortune-god": {
-    field: "5×3",
-    releaseDate: "2024-06-06",
-    source: "https://www.playngo.com/games/gold-of-fortune-god",
-    fieldSource: "https://www.playngo.com/posts/gold-of-fortune-god",
+const expected = {
+  "playn-go-infernal-trinity-go-guaranteed": {
+    releaseDate: "2026-09-03",
+    source: "https://www.playngo.com/games/infernal-trinity-go-guaranteed",
+    mechanics: ["Сбор символов"],
   },
-  "playn-go-hot-dog-heist": {
-    field: "5×3 · 40 линий",
-    releaseDate: "2024-12-13",
-    source: "https://www.playngo.com/games/hot-dog-heist",
-    fieldSource: "https://www.playngo.com/post/hot-dog-heist",
+  "playn-go-jolly-roger": {
+    releaseDate: "2012-01-01",
+    source: "https://www.playngo.com/games/jolly-roger",
+    mechanics: ["Линии"],
+  },
+  "playn-go-jolly-roger-wild-kraken": {
+    releaseDate: "2024-12-19",
+    source: "https://www.playngo.com/games/jolly-roger-wild-kraken",
+    evidenceSource: "https://www.playngo.com/post/jolly-roger-wild-kraken",
+    mechanics: ["Каскады"],
   },
 } as const;
 
-const grannySlug = "playn-go-grannys-wild";
-const targetSlugs = new Set([...Object.keys(expectedFields), grannySlug]);
+const targetSlugs = new Set(Object.keys(expected));
 
 function scoreFor(slug: string) {
   const details = getVerifiedCatalogDetails(slug);
@@ -33,7 +36,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 19 adds one exact official fact to three score-2 Play’n GO records", () => {
+test("quality pass 22 adds one exact official mechanic to three score-2 Play’n GO records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(3);
@@ -41,7 +44,7 @@ test("quality pass 19 adds one exact official fact to three score-2 Play’n GO 
   expect(slots).toHaveLength(100);
   expect(catalogSeeds.length + slots.length).toBe(1000);
 
-  for (const [slug, values] of Object.entries(expectedFields)) {
+  for (const [slug, values] of Object.entries(expected)) {
     const seed = selected.get(slug);
     expect(seed, slug).toBeTruthy();
     expect(seed!.provider, slug).toBe("Play’n GO");
@@ -51,42 +54,29 @@ test("quality pass 19 adds one exact official fact to three score-2 Play’n GO 
     const details = getVerifiedCatalogDetails(slug);
     expect(details, slug).toBeTruthy();
     expect(details?.source, slug).toBe(values.source);
-    expect(details?.field, slug).toBe(values.field);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
+    expect(details?.field, `${slug} must not invent a field`).toBeUndefined();
     expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
     expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
     expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
-    expect(details && "fieldSource" in details, `${slug} must retain the separate official field source`).toBe(true);
-    if (details && "fieldSource" in details) {
-      expect(details.fieldSource, slug).toBe(values.fieldSource);
+
+    const research = getVerifiedCatalogResearch(slug);
+    expect(research?.source, slug).toBe(values.source);
+    expect(research?.mechanics, slug).toEqual(values.mechanics);
+    expect(research?.evidence, slug).toBeTruthy();
+
+    if ("evidenceSource" in values) {
+      expect(research && "evidenceSource" in research, `${slug} must retain the separate official evidence source`).toBe(true);
+      if (research && "evidenceSource" in research) {
+        expect(research.evidenceSource, slug).toBe(values.evidenceSource);
+      }
+    } else {
+      expect(research && "evidenceSource" in research, `${slug} must not invent a second source`).toBe(false);
     }
 
-    expect(getVerifiedCatalogResearch(slug), `${slug} must not invent a mechanic`).toBeUndefined();
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Video Slot");
     expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
   }
-
-  const granny = selected.get(grannySlug);
-  expect(granny, grannySlug).toBeTruthy();
-  expect(granny!.provider, grannySlug).toBe("Play’n GO");
-  expect(granny!.source, grannySlug).toBe("https://www.playngo.com/games/granny's-wild");
-  expect(slots.some((slot) => slot.provider === granny!.provider && slot.name === granny!.name), grannySlug).toBe(false);
-
-  const grannyDetails = getVerifiedCatalogDetails(grannySlug);
-  expect(grannyDetails, grannySlug).toBeTruthy();
-  expect(grannyDetails?.source, grannySlug).toBe(granny!.source);
-  expect(grannyDetails?.releaseDate, grannySlug).toBe("2026-05-26");
-  expect(grannyDetails?.field, `${grannySlug} must not invent a field`).toBeUndefined();
-  expect(grannyDetails?.rtp, `${grannySlug} must not invent RTP`).toBeUndefined();
-  expect(grannyDetails?.maxWin, `${grannySlug} must not invent max win`).toBeUndefined();
-  expect(grannyDetails?.volatility, `${grannySlug} must not invent volatility`).toBeUndefined();
-
-  const grannyResearch = getVerifiedCatalogResearch(grannySlug);
-  expect(grannyResearch?.source, grannySlug).toBe(granny!.source);
-  expect(grannyResearch?.mechanics, grannySlug).toEqual(["Сбор символов"]);
-  expect(grannyResearch?.evidence, grannySlug).toMatch(/collect/i);
-  expect(getVerifiedCatalogGameType(grannySlug)?.gameType, grannySlug).toBe("Video Slot");
-  expect(scoreFor(grannySlug), `${grannySlug} must move from score 2 to score 3`).toBe(3);
 
   const ranked = catalogSeeds.map((seed) => ({
     slug: seed.slug,
