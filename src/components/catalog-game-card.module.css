@@ -21,18 +21,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 18px;
   padding: 16px;
   background: var(--olive);
   border: 1px solid #d3d4ca;
   color: var(--ink);
 }
 
-.artFallback strong {
+.artTitle {
+  display: block;
+  max-width: 92%;
   font-family: var(--serif);
-  font-size: clamp(30px, 4vw, 54px);
-  line-height: 1;
+  font-size: clamp(24px, 3.2vw, 42px);
+  line-height: 0.95;
   font-weight: 500;
-  letter-spacing: -2px;
+  letter-spacing: -1.4px;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
 }
 
 .artProvider,
@@ -78,6 +83,11 @@
   background: var(--paper);
 }
 
+.pendingChip {
+  color: var(--muted);
+  border-style: dashed !important;
+}
+
 .facts {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -89,8 +99,13 @@
 
 .fact {
   min-width: 0;
+  min-height: 54px;
   padding: 8px 9px;
   background: #faf9f5;
+}
+
+.factPending dd {
+  color: var(--muted);
 }
 
 .fact dt {
@@ -184,11 +199,14 @@
 
   .artFallback {
     aspect-ratio: 1.12;
+    gap: 12px;
     padding: 11px;
   }
 
-  .artFallback strong {
-    font-size: 31px;
+  .artTitle {
+    max-width: 100%;
+    font-size: 25px;
+    letter-spacing: -0.8px;
   }
 
   .artProvider,
@@ -224,6 +242,7 @@
   }
 
   .fact {
+    min-height: 47px;
     padding: 6px;
   }
 
@@ -244,8 +263,8 @@
     padding: 9px;
   }
 
-  :global(.covers) .artFallback strong {
-    font-size: 26px;
+  :global(.covers) .artTitle {
+    font-size: 21px;
   }
 
   :global(.covers) .facts {
