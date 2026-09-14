@@ -3,8 +3,7 @@
 import Link from "next/link";
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { CompareButton } from "./compare-button";
-import { GameImage } from "./editorial-client";
+import { CatalogGameCard } from "./catalog-game-card";
 import {
   filterCatalogItems,
   sortCatalogItems,
@@ -266,8 +265,8 @@ export function Catalog({
             </div>
           </div>
           <p className="catalog-coverage-note">
-            {dossierCount} с подробным досье · {results.length - dossierCount} базовых записей.
-            {results.length > dossierCount && " Фильтры по характеристикам учитывают только записи, где соответствующие данные подтверждены."}
+            {dossierCount} с полным досье · {results.length - dossierCount} карточек каталога.
+            {results.length > dossierCount && " Подтверждённые характеристики показываются прямо в карточках; неизвестные значения не подставляются."}
           </p>
 
           {hasFilters && (
@@ -293,49 +292,7 @@ export function Catalog({
           ) : (
             <>
               <div className={"catalog-results " + view}>
-                {visibleResults.map((item) => {
-                  const href = item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
-                  return (
-                    <article key={item.slug} className={`catalog-game ${item.coverage === "catalog" ? "catalog-only" : ""}`}>
-                      <Link className="catalog-game-art" href={href}>
-                        {item.coverage === "dossier" ? <GameImage slot={item} /> : <span className="catalog-art-pending">Обложка не проверена</span>}
-                      </Link>
-                      <div className="catalog-game-copy">
-                        <span className="eyebrow">
-                          {item.provider}{item.year ? ` / ${item.year}` : ""}
-                        </span>
-                        <h2><Link href={href}>{item.name}</Link></h2>
-                        <span className="catalog-coverage">
-                          {item.coverage === "dossier"
-                            ? "Досье · механика и характеристики"
-                            : `Базовая запись · название и провайдер${item.mechanics.length ? " · механика проверена" : ""}`}
-                        </span>
-                        {item.coverage === "dossier" && <>
-                          <p>{item.description}</p>
-                          <div className="catalog-game-tags" aria-label="Особенности игры">
-                            {item.tags.slice(0, 3).map((tag) => <span key={tag}>{tag}</span>)}
-                          </div>
-                        </>}
-                        <div className="catalog-game-data">
-                          {item.coverage === "dossier" ? (
-                            <>
-                              <span>{item.mechanics.join(" · ")}</span>
-                              <span>{item.volatility}</span>
-                              <span>RTP* {item.rtp}</span>
-                              <CompareButton slug={item.slug} name={item.name} />
-                            </>
-                          ) : (
-                            <>
-                              {item.mechanics.length ? <span>{item.mechanics.join(" · ")}</span> : null}
-                              <Link href={href}>Открыть запись ↗</Link>
-                            </>
-                          )}
-                        </div>
-                      </div>
-                      <Link className="catalog-open" href={href} aria-label={`Открыть ${item.name}`}>↗</Link>
-                    </article>
-                  );
-                })}
+                {visibleResults.map((item) => <CatalogGameCard item={item} key={item.slug} />)}
               </div>
 
               {pageCount > 1 && (
@@ -356,7 +313,7 @@ export function Catalog({
           )}
 
           <p className="data-note">
-            * RTP показывается только там, где у Slotfolio уже есть проверенное досье. Значение у конкретного оператора может отличаться.{" "}
+            * RTP показывается только там, где значение подтверждено источником. У конкретного оператора конфигурация RTP может отличаться.{" "}
             <Link href="/journal/understanding-rtp">Как читать RTP ↗</Link>
           </p>
           <div className="catalog-end">
