@@ -15,6 +15,12 @@ export type CatalogItem = {
   searchText: string;
   coverage: "dossier" | "catalog";
   source?: string;
+  gameType: string;
+  maxWin: string;
+  releaseDate: string;
+  verifiedRtp: string;
+  verifiedVolatility: string;
+  verifiedFacts: number;
 };
 
 export type CatalogFacet = { name: string; count: number };
@@ -83,16 +89,22 @@ export function buildCatalogSearchText(input: {
   tags?: string[];
   description: string;
   feature?: string;
+  gameType?: string;
+  maxWin?: string;
+  releaseDate?: string;
 }) {
   return normalizeCatalogSearch(
     [
       input.name,
       input.provider,
-      "rtp ртп волатильность механика особенность",
+      "rtp ртп волатильность механика особенность макс выигрыш релиз тип игры",
       input.year ?? "",
       input.field || "",
       input.rtp || "",
       input.volatility || "",
+      input.gameType || "",
+      input.maxWin || "",
+      input.releaseDate || "",
       ...(input.mechanics || []),
       ...(input.tags || []),
       input.description,
@@ -129,10 +141,16 @@ export function filterCatalogItems(items: CatalogItem[], filters: CatalogFilters
   );
 }
 
+function releaseSortKey(item: CatalogItem) {
+  return item.releaseDate || (item.year ? String(item.year) : "");
+}
+
 export function sortCatalogItems(items: CatalogItem[], sort: string) {
   if (sort === "name") return [...items].sort((a, b) => a.name.localeCompare(b.name, "ru"));
   if (sort === "new")
-    return [...items].sort((a, b) => (b.year ?? Number.NEGATIVE_INFINITY) - (a.year ?? Number.NEGATIVE_INFINITY));
+    return [...items].sort(
+      (a, b) => releaseSortKey(b).localeCompare(releaseSortKey(a)) || a.name.localeCompare(b.name, "ru"),
+    );
   if (sort === "rtp")
     return [...items].sort((a, b) => (b.rtpValue ?? -1) - (a.rtpValue ?? -1));
   return items;

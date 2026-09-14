@@ -7,6 +7,8 @@ import {
 } from "./data-v128";
 import { catalogSeeds } from "./catalog-seeds";
 import { getVerifiedCatalogResearch } from "./catalog-research-lookup";
+import { getVerifiedCatalogDetails } from "./catalog-verified-details-lookup";
+import { getVerifiedCatalogGameType } from "./catalog-verified-game-type";
 import { getVerifiedSlotMetrics } from "./dossier";
 import {
   buildCatalogSearchText,
@@ -26,6 +28,8 @@ export function createCatalogModel(): CatalogModel {
   const dossierItems: CatalogItem[] = slots.map((slot) => {
     const mechanicNames = slotMechanics(slot);
     const value = slotRtpValue(slot);
+    const verified = getVerifiedSlotMetrics(slot.slug);
+    const releaseDate = String(slot.year);
     return {
       slug: slot.slug,
       name: slot.name,
@@ -42,6 +46,19 @@ export function createCatalogModel(): CatalogModel {
       description: slot.description,
       coverage: "dossier",
       source: slot.source,
+      gameType: "",
+      maxWin: verified?.maxWin ?? "",
+      releaseDate,
+      verifiedRtp: slot.rtp,
+      verifiedVolatility: slot.volatility,
+      verifiedFacts: [
+        mechanicNames.length ? "mechanics" : "",
+        slot.field,
+        slot.rtp,
+        slot.volatility,
+        releaseDate,
+        verified?.maxWin ?? "",
+      ].filter(Boolean).length,
       searchText: buildCatalogSearchText({
         name: slot.name,
         provider: slot.provider,
@@ -53,14 +70,32 @@ export function createCatalogModel(): CatalogModel {
         tags: slot.tags,
         description: slot.description,
         feature: slot.feature,
+        maxWin: verified?.maxWin,
+        releaseDate,
       }),
     };
   });
 
   const catalogItems: CatalogItem[] = catalogSeeds.map((seed) => {
     const research = getVerifiedCatalogResearch(seed.slug);
+    const details = getVerifiedCatalogDetails(seed.slug);
+    const gameType = getVerifiedCatalogGameType(seed.slug);
     const mechanicNames = research?.mechanics ?? [];
-    const description = `${seed.name} от ${seed.provider}. Название подтверждено в официальном каталоге провайдера; подробные характеристики проходят редакционную проверку.`;
+    const releaseDate = details?.releaseDate ?? "";
+    const verifiedRtp = details?.rtp ?? "";
+    const verifiedVolatility = details?.volatility ?? "";
+    const verifiedFacts = [
+      mechanicNames.length ? "mechanics" : "",
+      gameType?.gameType ?? "",
+      details?.field ?? "",
+      verifiedRtp,
+      details?.maxWin ?? "",
+      verifiedVolatility,
+      releaseDate,
+    ].filter(Boolean).length;
+    const description = verifiedFacts
+      ? `${seed.name} от ${seed.provider}. В карточке уже подтверждено технических параметров: ${verifiedFacts}; неизвестные характеристики остаются пустыми до проверки.`
+      : `${seed.name} от ${seed.provider}. Название подтверждено в официальном каталоге провайдера; подробные характеристики проходят редакционную проверку.`;
     return {
       slug: seed.slug,
       name: seed.name,
@@ -69,7 +104,7 @@ export function createCatalogModel(): CatalogModel {
       year: null,
       mechanics: mechanicNames,
       tags: [],
-      field: "",
+      field: details?.field ?? "",
       rtp: "",
       rtpValue: null,
       volatility: "",
@@ -77,10 +112,22 @@ export function createCatalogModel(): CatalogModel {
       description,
       coverage: "catalog",
       source: seed.source,
+      gameType: gameType?.gameType ?? "",
+      maxWin: details?.maxWin ?? "",
+      releaseDate,
+      verifiedRtp,
+      verifiedVolatility,
+      verifiedFacts,
       searchText: buildCatalogSearchText({
         name: seed.name,
         provider: seed.provider,
         mechanics: mechanicNames,
+        field: details?.field,
+        rtp: verifiedRtp,
+        volatility: verifiedVolatility,
+        gameType: gameType?.gameType,
+        maxWin: details?.maxWin,
+        releaseDate,
         description,
       }),
     };
