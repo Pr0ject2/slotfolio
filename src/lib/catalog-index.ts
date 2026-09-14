@@ -7,6 +7,8 @@ import {
 } from "./data-v128";
 import { catalogSeeds } from "./catalog-seeds";
 import { getVerifiedCatalogResearch } from "./catalog-research-lookup";
+import { getVerifiedCatalogDetails } from "./catalog-verified-details-lookup";
+import { getVerifiedCatalogGameType } from "./catalog-verified-game-type";
 import { getVerifiedSlotMetrics } from "./dossier";
 import {
   buildCatalogSearchText,
@@ -22,10 +24,25 @@ function frequency(values: string[]) {
   );
 }
 
+function exactRtpValue(value?: string) {
+  const match = value?.trim().match(/^(\d+(?:[.,]\d+)?)%$/);
+  if (!match) return null;
+  const parsed = Number.parseFloat(match[1].replace(",", "."));
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function releaseYear(value?: string) {
+  if (!value || !/^\d{4}/.test(value)) return null;
+  const year = Number(value.slice(0, 4));
+  return Number.isFinite(year) ? year : null;
+}
+
 export function createCatalogModel(): CatalogModel {
   const dossierItems: CatalogItem[] = slots.map((slot) => {
     const mechanicNames = slotMechanics(slot);
     const value = slotRtpValue(slot);
+    const verified = getVerifiedSlotMetrics(slot.slug);
+    const releaseDate = String(slot.year);
     return {
       slug: slot.slug,
       name: slot.name,
@@ -42,6 +59,17 @@ export function createCatalogModel(): CatalogModel {
       description: slot.description,
       coverage: "dossier",
       source: slot.source,
+      gameType: "",
+      maxWin: verified?.maxWin ?? "",
+      releaseDate,
+      verifiedFacts: [
+        mechanicNames.length ? "mechanics" : "",
+        slot.field,
+        slot.rtp,
+        slot.volatility,
+        releaseDate,
+        verified?.maxWin ?? "",
+      ].filter(Boolean).length,
       searchText: buildCatalogSearchText({
         name: slot.name,
         provider: slot.provider,
@@ -53,34 +81,62 @@ export function createCatalogModel(): CatalogModel {
         tags: slot.tags,
         description: slot.description,
         feature: slot.feature,
+        maxWin: verified?.maxWin,
+        releaseDate,
       }),
     };
   });
 
   const catalogItems: CatalogItem[] = catalogSeeds.map((seed) => {
     const research = getVerifiedCatalogResearch(seed.slug);
+    const details = getVerifiedCatalogDetails(seed.slug);
+    const gameType = getVerifiedCatalogGameType(seed.slug);
     const mechanicNames = research?.mechanics ?? [];
-    const description = `${seed.name} от ${seed.provider}. Название подтверждено в официальном каталоге провайдера; подробные характеристики проходят редакционную проверку.`;
+    const releaseDate = details?.releaseDate ?? "";
+    const year = releaseYear(releaseDate);
+    const verifiedFacts = [
+      mechanicNames.length ? "mechanics" : "",
+      gameType?.gameType ?? "",
+      details?.field ?? "",
+      details?.rtp ?? "",
+      details?.maxWin ?? "",
+      details?.volatility ?? "",
+      releaseDate,
+    ].filter(Boolean).length;
+    const description = verifiedFacts
+      ? `${seed.name} от ${seed.provider}. В карточке уже подтверждено технических параметров: ${verifiedFacts}; неизвестные характеристики остаются пустыми до проверки.`
+      : `${seed.name} от ${seed.provider}. Название подтверждено в официальном каталоге провайдера; подробные характеристики проходят редакционную проверку.`;
     return {
       slug: seed.slug,
       name: seed.name,
       provider: seed.provider,
       providerSlug: providerSlug(seed.provider),
-      year: null,
+      year,
       mechanics: mechanicNames,
       tags: [],
-      field: "",
-      rtp: "",
-      rtpValue: null,
-      volatility: "",
+      field: details?.field ?? "",
+      rtp: details?.rtp ?? "",
+      rtpValue: exactRtpValue(details?.rtp),
+      volatility: details?.volatility ?? "",
       image: "/images/unavailable.svg",
       description,
       coverage: "catalog",
       source: seed.source,
+      gameType: gameType?.gameType ?? "",
+      maxWin: details?.maxWin ?? "",
+      releaseDate,
+      verifiedFacts,
       searchText: buildCatalogSearchText({
         name: seed.name,
         provider: seed.provider,
+        year,
         mechanics: mechanicNames,
+        field: details?.field,
+        rtp: details?.rtp,
+        volatility: details?.volatility,
+        gameType: gameType?.gameType,
+        maxWin: details?.maxWin,
+        releaseDate,
         description,
       }),
     };
