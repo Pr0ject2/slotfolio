@@ -10,13 +10,12 @@ const expected = {
     field: "3 барабана",
     releaseDate: "2025-06",
     detailSource: "https://3oaks.com/game/3_jewel_crowns",
-    researchSource: "https://3oaks.com/game/3_jewel_crowns",
   },
   "3-oaks-gaming-sky-pearls": {
     field: "4×4",
     releaseDate: "2024-03",
     detailSource: "https://3oaks.com/game/sky_pearls",
-    researchSource: "https://3oaks.com/news/new-release-sky-pearls",
+    evidenceSource: "https://3oaks.com/news/new-release-sky-pearls",
   },
 } as const;
 
@@ -57,9 +56,19 @@ test("quality pass 18 confirms collection mechanics for two more score-2 3 Oaks 
     expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
 
     const research = getVerifiedCatalogResearch(slug);
-    expect(research?.source, slug).toBe(values.researchSource);
+    expect(research?.source, slug).toBe(values.detailSource);
     expect(research?.mechanics, `${slug} must use only the verified collect mechanic`).toEqual(["Сбор символов"]);
     expect(research?.evidence, slug).toMatch(/fill|accumulat|collect/i);
+
+    if ("evidenceSource" in values) {
+      expect(research && "evidenceSource" in research, `${slug} must retain the separate evidence source`).toBe(true);
+      if (research && "evidenceSource" in research) {
+        expect(research.evidenceSource, slug).toBe(values.evidenceSource);
+      }
+    } else {
+      expect(research && "evidenceSource" in research, `${slug} must not invent a second source`).toBe(false);
+    }
+
     expect(getVerifiedCatalogGameType(slug), `${slug} must not invent Game Type`).toBeUndefined();
     expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
   }
