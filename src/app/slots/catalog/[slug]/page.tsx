@@ -108,6 +108,14 @@ export default async function CatalogSlotPage({
   const knownMechanics = research?.mechanics ?? [];
   const verifiedAt = displayDate(details?.verifiedAt ?? gameType?.verifiedAt ?? research?.verifiedAt);
   const releaseDate = displayDate(details?.releaseDate);
+  const primarySource = details?.source ?? gameType?.source ?? slot.source;
+  const releaseDateSource =
+    details && "releaseDateSource" in details && typeof details.releaseDateSource === "string"
+      ? details.releaseDateSource
+      : null;
+  const hasSeparateReleaseDateSource = Boolean(
+    details?.releaseDate && releaseDateSource && releaseDateSource !== primarySource,
+  );
   const hasVerifiedTechnicalData = Boolean(gameType || details?.rtp || details?.volatility || details?.field || details?.maxWin || details?.releaseDate);
 
   const confirmed = [
@@ -201,7 +209,16 @@ export default async function CatalogSlotPage({
               {details?.volatility ? <div><dt>Волатильность</dt><dd>{details.volatility}</dd></div> : null}
               {releaseDate ? <div><dt>Дата релиза</dt><dd>{releaseDate}</dd></div> : null}
               {verifiedAt ? <div><dt>Проверено</dt><dd>{verifiedAt}</dd></div> : null}
-              <div><dt>Источник</dt><dd><a href={details?.source ?? gameType?.source ?? slot.source} rel="noreferrer">Официальный каталог ↗</a></dd></div>
+              <div>
+                <dt>{hasSeparateReleaseDateSource ? "Источник параметров" : "Источник"}</dt>
+                <dd><a href={primarySource} rel="noreferrer">Официальная страница ↗</a></dd>
+              </div>
+              {hasSeparateReleaseDateSource ? (
+                <div>
+                  <dt>Источник даты релиза</dt>
+                  <dd><a href={releaseDateSource!} rel="noreferrer">Официальная публикация ↗</a></dd>
+                </div>
+              ) : null}
             </dl>
           </section>
 
