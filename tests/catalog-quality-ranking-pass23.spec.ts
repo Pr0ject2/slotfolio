@@ -82,8 +82,8 @@ test("quality pass 23 adds exact official layouts to three score-2 Play’n GO r
   }));
 
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(22);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(187);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(407);
+  expect(ranked.filter((row) => row.score === 2)).toHaveLength(170);
+  expect(ranked.filter((row) => row.score === 3)).toHaveLength(419);
   expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(17);
   expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
