@@ -2,7 +2,11 @@ import type { CatalogResearch } from "./catalog-research";
 
 const verifiedAt = "2026-09-14";
 
-const research: Record<string, CatalogResearch> = {
+type SourcedCatalogResearch = CatalogResearch & {
+  evidenceSource?: string;
+};
+
+const research: Record<string, SourcedCatalogResearch> = {
   "3-oaks-gaming-3-jewel-crowns": {
     mechanics: ["Сбор символов"],
     source: "https://3oaks.com/game/3_jewel_crowns",
@@ -11,7 +15,8 @@ const research: Record<string, CatalogResearch> = {
   },
   "3-oaks-gaming-sky-pearls": {
     mechanics: ["Сбор символов"],
-    source: "https://3oaks.com/news/new-release-sky-pearls",
+    source: "https://3oaks.com/game/sky_pearls",
+    evidenceSource: "https://3oaks.com/news/new-release-sky-pearls",
     verifiedAt,
     evidence: "Official release states that the Pearl of Wisdom accumulates Pearl Symbols, while the bonus round collects sticky Pearls and rewards collecting all 16 Bonus Symbols.",
   },
