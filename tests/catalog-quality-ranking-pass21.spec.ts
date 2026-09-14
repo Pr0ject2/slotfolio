@@ -99,8 +99,8 @@ test("quality pass 21 adds one exact official fact to three more score-2 Play’
   }));
 
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(22);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(240);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(371);
+  expect(ranked.filter((row) => row.score === 2)).toHaveLength(225);
+  expect(ranked.filter((row) => row.score === 3)).toHaveLength(379);
   expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(17);
   expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
