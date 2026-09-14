@@ -28,6 +28,12 @@ const research: Record<string, SourcedCatalogResearch> = {
     evidence: "Official review states that wins form from matching clusters on the 5x5 grid and that winning symbols disappear before new symbols cascade from above.",
     evidenceSource: "https://www.playngo.com/post/review-animal-madness-play-n-go-grid-slot",
   },
+  "playn-go-blinged": {
+    mechanics: ["Линии"],
+    source: "https://www.playngo.com/games/blinged",
+    verifiedAt,
+    evidence: "Official game page states that winning combinations are formed across the game's ten paylines.",
+  },
   "playn-go-buildin-bucks": {
     mechanics: ["Способы"],
     source: "https://www.playngo.com/games/buildin'-bucks",
@@ -41,6 +47,12 @@ const research: Record<string, SourcedCatalogResearch> = {
     verifiedAt,
     evidence: "Official release describes Buildin' More Bucks as a 5-reel, 243-ways slot.",
     evidenceSource: "https://www.playngo.com/posts/buildin-more-bucks",
+  },
+  "playn-go-canine-carnage": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/canine-carnage",
+    verifiedAt,
+    evidence: "Official game page describes Cash Collection abilities and a Collector Symbol that awards and resets the Cash Pot.",
   },
   "playn-go-captain-glum-pirate-hunter": {
     mechanics: ["Линии"],
@@ -56,12 +68,45 @@ const research: Record<string, SourcedCatalogResearch> = {
     evidence: "Official release says commanders appear after symbols are collected through winning clusters and describes Cash of Command as a grid slot with cascading symbols.",
     evidenceSource: "https://www.playngo.com/post/cash-of-command",
   },
+  "playn-go-cat-wilde-in-the-eclipse-of-the-sun-god": {
+    mechanics: ["Линии", "Каскады"],
+    source: "https://www.playngo.com/games/cat-wilde-in-the-eclipse-of-the-sun-god",
+    verifiedAt,
+    evidence: "Official Play'n GO editorial describes the game as a 5x3 cascading slot with twenty dynamic paylines where winning symbols are removed and replaced until no further wins form.",
+    evidenceSource: "https://www.playngo.com/post/top-summer-sun-slots-2024",
+  },
+  "playn-go-champions-of-mithrune": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/champions-of-mithrune",
+    verifiedAt,
+    evidence: "Official release states that players collect three orbs to trigger the mini-game, then collect character tokens and potions to power up Free Spins.",
+    evidenceSource: "https://www.playngo.com/posts/champions-of-mithrune",
+  },
   "playn-go-crabbys-gold": {
     mechanics: ["Способы", "Сбор символов"],
     source: "https://www.playngo.com/games/crabby's-gold",
     verifiedAt,
     evidence: "Official release states that Crabby's Gold has 4,096 ways and a Coin Collect mechanic where landed multiplier coins can be collected.",
     evidenceSource: "https://www.playngo.com/post/crabby-s-gold",
+  },
+  "playn-go-cursed-moon-power-collection": {
+    mechanics: ["Способы", "Сбор символов"],
+    source: "https://www.playngo.com/games/cursed-moon-power-collection",
+    verifiedAt,
+    evidence: "Official release states that way wins form from adjacent matching symbols and that Coin symbols are collected by Slay Collector symbols.",
+    evidenceSource: "https://www.playngo.com/posts/cursed-moon-power-collection",
+  },
+  "playn-go-dragon-maiden": {
+    mechanics: ["Способы"],
+    source: "https://www.playngo.com/games/dragon-maiden",
+    verifiedAt,
+    evidence: "Official game page states that Golden Free Spins use a maximised 5x6 reel with 7,776 payways.",
+  },
+  "playn-go-eye-of-atum": {
+    mechanics: ["Линии"],
+    source: "https://www.playngo.com/games/eye-of-atum",
+    verifiedAt,
+    evidence: "Official game page states that the five-by-three slot uses ten paylines.",
   },
   "playn-go-fire-joker-blitz": {
     mechanics: ["Сбор символов"],
@@ -84,6 +129,12 @@ const research: Record<string, SourcedCatalogResearch> = {
     evidence: "Official release states that the game begins with one payline on a 3x1 reel and progresses to ten paylines on a 5x3 reel.",
     evidenceSource: "https://www.playngo.com/post/gerards-gambit",
   },
+  "playn-go-gnawn-gold": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/gnaw'n-gold",
+    verifiedAt,
+    evidence: "Official game page describes a Persistent Trail that unlocks Collectors and advances whenever a Collector lands on the reels.",
+  },
   "playn-go-hope-unleashed-fortune-rises": {
     mechanics: ["Сбор символов"],
     source: "https://www.playngo.com/games/hope-unleashed-fortune-rises",
@@ -104,6 +155,13 @@ const research: Record<string, SourcedCatalogResearch> = {
     evidence: "Official Play'n GO release states that added Wilds on the middle reels can create a multitude of payways.",
     evidenceSource: "https://www.playngo.com/post/legacy-of-inca",
   },
+  "playn-go-legion-gold-victory": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/legion-gold-victory!",
+    verifiedAt,
+    evidence: "Official game page describes Gold Re-Spins where Coins are collected and Gold Bags collect Instant Prize Coin values.",
+    evidenceSource: "https://www.playngo.com/post/legion-gold-victory",
+  },
   "playn-go-manta-mayhem": {
     mechanics: ["Сбор символов"],
     source: "https://www.playngo.com/games/manta-mayhem",
@@ -122,6 +180,13 @@ const research: Record<string, SourcedCatalogResearch> = {
     verifiedAt,
     evidence: "Official Play'n GO review states that three or more adjacent symbols on any payline award wins.",
     evidenceSource: "https://www.playngo.com/post/merry-xmas-review",
+  },
+  "playn-go-monkey-battle-for-the-scrolls": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/monkey%3A-battle-for-the-scrolls",
+    verifiedAt,
+    evidence: "Official release states that collecting three or more Closed Scripture Scatter symbols triggers Free Spins.",
+    evidenceSource: "https://www.playngo.com/posts/monkey-battle-for-the-scrolls",
   },
   "playn-go-mystery-egg-surprise": {
     mechanics: ["Линии"],
