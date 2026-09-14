@@ -33,7 +33,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 19 adds one exact official fact to three score-2 Play'n GO records", () => {
+test("quality pass 19 adds one exact official fact to three score-2 Play’n GO records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(3);
@@ -44,7 +44,7 @@ test("quality pass 19 adds one exact official fact to three score-2 Play'n GO re
   for (const [slug, values] of Object.entries(expectedFields)) {
     const seed = selected.get(slug);
     expect(seed, slug).toBeTruthy();
-    expect(seed!.provider, slug).toBe("Play'n GO");
+    expect(seed!.provider, slug).toBe("Play’n GO");
     expect(seed!.source, slug).toBe(values.source);
     expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
 
@@ -68,7 +68,7 @@ test("quality pass 19 adds one exact official fact to three score-2 Play'n GO re
 
   const granny = selected.get(grannySlug);
   expect(granny, grannySlug).toBeTruthy();
-  expect(granny!.provider, grannySlug).toBe("Play'n GO");
+  expect(granny!.provider, grannySlug).toBe("Play’n GO");
   expect(granny!.source, grannySlug).toBe("https://www.playngo.com/games/granny's-wild");
   expect(slots.some((slot) => slot.provider === granny!.provider && slot.name === granny!.name), grannySlug).toBe(false);
 
