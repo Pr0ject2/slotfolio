@@ -7,6 +7,7 @@ import { getCatalogResearch3OaksQualityPass5 } from "./catalog-research-3oaks-qu
 import { getCatalogResearch3OaksQualityPass13 } from "./catalog-research-3oaks-quality-pass-13";
 import { getCatalogResearch3OaksQualityPass14 } from "./catalog-research-3oaks-quality-pass-14";
 import { getCatalogResearch3OaksQualityPass16 } from "./catalog-research-3oaks-quality-pass-16";
+import { getCatalogResearch3OaksQualityPass17 } from "./catalog-research-3oaks-quality-pass-17";
 import { getCatalogResearchEndorphina } from "./catalog-research-endorphina";
 import { getCatalogResearchHacksaw } from "./catalog-research-hacksaw";
 import { getCatalogResearchHacksawMore } from "./catalog-research-hacksaw-more";
@@ -51,6 +52,7 @@ import { getCatalogResearchNolimit } from "./catalog-research-nolimit";
 
 export function getVerifiedCatalogResearch(slug: string) {
   return (
+    getCatalogResearch3OaksQualityPass17(slug) ??
     getCatalogResearch3OaksQualityPass16(slug) ??
     getCatalogResearch3OaksQualityPass14(slug) ??
     getCatalogResearch3OaksQualityPass13(slug) ??
