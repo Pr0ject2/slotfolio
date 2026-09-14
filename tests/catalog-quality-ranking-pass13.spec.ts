@@ -6,20 +6,16 @@ import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-typ
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const expected = {
-  "3-oaks-gaming-dancing-joker": { field: "5×3 · 40 линий", releaseDate: "2025-05" },
-  "3-oaks-gaming-egypt-fire-2": { field: "5×4 · 20 линий", releaseDate: "2025-10" },
-  "3-oaks-gaming-fishin-bear": { field: "5×3 · 25 линий", releaseDate: "2024-05" },
-  "3-oaks-gaming-fortune-globe": { field: "5×4 · 20 линий", releaseDate: "2024-10" },
-  "3-oaks-gaming-gold-express": { field: "5×4 · 20 линий", releaseDate: "2021-11" },
-  "3-oaks-gaming-golden-teapot": { field: "5×4 · 25 линий", releaseDate: "2024-07" },
-  "3-oaks-gaming-grab-more-gold": { field: "5×4 · 20 линий", releaseDate: "2023-11" },
-  "3-oaks-gaming-grab-the-gold": { field: "5×3 · 20 линий", releaseDate: "2023-06" },
-  "3-oaks-gaming-grand": { field: "5×3 · 5 линий", releaseDate: "2026-07" },
-  "3-oaks-gaming-green-chilli": { field: "5×3 · 20 линий", releaseDate: "2022-10" },
-  "3-oaks-gaming-green-chilli-2": { field: "5×3 · 20 линий", releaseDate: "2023-09" },
-  "3-oaks-gaming-hit-more-gold": { field: "5×4 · 25 линий", releaseDate: "2022-12" },
-  "3-oaks-gaming-hit-the-gold": { field: "5×3 · 25 линий", releaseDate: "2021-06" },
-  "3-oaks-gaming-hot-fire-fruits": { field: "3×3 · 5 линий", releaseDate: "2024-10" },
+  "3-oaks-gaming-magic-apple-2": {
+    field: "5×4 · 20 линий",
+    releaseDate: "2022-06",
+    source: "https://3oaks.com/game/magic_apple_2",
+  },
+  "3-oaks-gaming-sunlight-princess": {
+    field: "5×3 · 30 линий",
+    releaseDate: "2023-02",
+    source: "https://3oaks.com/game/sunlight_princess",
+  },
 } as const;
 
 const targetSlugs = new Set(Object.keys(expected));
@@ -34,10 +30,10 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 11 adds exact official release months to fourteen score-2 3 Oaks records", () => {
+test("quality pass 13 confirms line mechanics for two score-2 3 Oaks records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
-  expect(targetSlugs.size).toBe(14);
+  expect(targetSlugs.size).toBe(2);
   expect(catalogSeeds).toHaveLength(900);
   expect(slots).toHaveLength(100);
   expect(catalogSeeds.length + slots.length).toBe(1000);
@@ -46,11 +42,12 @@ test("quality pass 11 adds exact official release months to fourteen score-2 3 O
     const seed = selected.get(slug);
     expect(seed, slug).toBeTruthy();
     expect(seed!.provider, slug).toBe("3 Oaks Gaming");
+    expect(seed!.source, slug).toBe(values.source);
     expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
 
     const details = getVerifiedCatalogDetails(slug);
     expect(details, slug).toBeTruthy();
-    expect(details?.source, slug).toBe(seed!.source);
+    expect(details?.source, slug).toBe(values.source);
     expect(details?.field, slug).toBe(values.field);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
     expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
@@ -58,8 +55,9 @@ test("quality pass 11 adds exact official release months to fourteen score-2 3 O
     expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
 
     const research = getVerifiedCatalogResearch(slug);
-    expect(research?.source, slug).toBe(seed!.source);
-    expect(research?.mechanics, `${slug} must preserve its existing mechanics`).toEqual(["Линии"]);
+    expect(research?.source, slug).toBe(values.source);
+    expect(research?.mechanics, `${slug} must use only the verified line mechanic`).toEqual(["Линии"]);
+    expect(research?.evidence, slug).toMatch(/line/);
     expect(getVerifiedCatalogGameType(slug), `${slug} must not invent Game Type`).toBeUndefined();
     expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
   }
