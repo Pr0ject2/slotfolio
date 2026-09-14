@@ -71,8 +71,8 @@ test("quality pass 11 adds exact official release months to fourteen score-2 3 O
   }));
 
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(22);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(249);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(362);
+  expect(ranked.filter((row) => row.score === 2)).toHaveLength(246);
+  expect(ranked.filter((row) => row.score === 3)).toHaveLength(365);
   expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(17);
   expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
