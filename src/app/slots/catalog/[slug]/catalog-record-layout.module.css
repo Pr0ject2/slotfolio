@@ -1,0 +1,193 @@
+.route {
+  min-width: 0;
+}
+
+.route :global(.catalog-record-page) {
+  min-width: 0;
+}
+
+.route :global(.catalog-record-heading) {
+  max-width: 980px;
+  padding-bottom: 30px;
+}
+
+.route :global(.catalog-record-heading h1) {
+  font-family: var(--serif);
+  font-size: clamp(46px, 5.4vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -2.2px;
+  margin: 12px 0 0;
+  overflow-wrap: anywhere;
+}
+
+.route :global(.catalog-record-deck) {
+  max-width: 760px;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.route :global(.catalog-record-body) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+  gap: 34px;
+  align-items: start;
+  border-top: 2px solid var(--ink);
+  padding-top: 24px;
+  margin-bottom: 38px;
+}
+
+.route :global(.catalog-record-body > section) {
+  min-width: 0;
+}
+
+.route :global(.catalog-record-body > section > h2),
+.route :global(.catalog-record-status h2) {
+  font-family: var(--serif);
+  font-size: 28px;
+  line-height: 1.15;
+  font-weight: 500;
+  margin: 0 0 17px;
+}
+
+.route :global(.catalog-record-facts) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  padding: 1px;
+  background: var(--line);
+}
+
+.route :global(.catalog-record-facts > div) {
+  min-width: 0;
+  padding: 13px 14px;
+  background: #faf9f5;
+}
+
+.route :global(.catalog-record-facts dt) {
+  font-size: 9px;
+  line-height: 1.25;
+  letter-spacing: 0.65px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.route :global(.catalog-record-facts dd) {
+  margin: 5px 0 0;
+  font-size: 12px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.route :global(.catalog-record-facts a) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.route :global(.catalog-record-status) {
+  min-width: 0;
+  padding: 23px 24px;
+  border: 1px solid #d4d5cb;
+  background: var(--olive);
+}
+
+.route :global(.catalog-record-status .eyebrow) {
+  margin-bottom: 13px;
+}
+
+.route :global(.catalog-record-status p) {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.route :global(.catalog-record-status p + p) {
+  margin-top: 13px;
+}
+
+.route :global(.catalog-record-status strong) {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.route :global(.catalog-record-next) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
+  margin-bottom: 44px;
+}
+
+.route :global(.catalog-record-next .text-link) {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.route :global(.catalog-record-page .section-title) {
+  margin-top: 44px;
+}
+
+@media (max-width: 900px) {
+  .route :global(.catalog-record-body) {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.72fr);
+    gap: 24px;
+  }
+
+  .route :global(.catalog-record-facts) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .route :global(.catalog-record-heading) {
+    padding-bottom: 23px;
+  }
+
+  .route :global(.catalog-record-heading h1) {
+    font-size: 44px;
+    letter-spacing: -1.5px;
+  }
+
+  .route :global(.catalog-record-deck) {
+    font-size: 14px;
+    margin-top: 18px;
+  }
+
+  .route :global(.catalog-record-body) {
+    display: block;
+    padding-top: 18px;
+    margin-bottom: 28px;
+  }
+
+  .route :global(.catalog-record-status) {
+    margin-top: 22px;
+    padding: 20px;
+  }
+
+  .route :global(.catalog-record-facts) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .route :global(.catalog-record-next) {
+    margin-bottom: 34px;
+  }
+}
+
+@media (max-width: 420px) {
+  .route :global(.catalog-record-heading h1) {
+    font-size: 39px;
+  }
+
+  .route :global(.catalog-record-facts) {
+    grid-template-columns: 1fr;
+  }
+
+  .route :global(.catalog-record-status) {
+    padding: 18px;
+  }
+}
