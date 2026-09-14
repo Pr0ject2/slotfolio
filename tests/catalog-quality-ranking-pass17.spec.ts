@@ -74,8 +74,8 @@ test("quality pass 17 confirms collect mechanics for three more score-2 3 Oaks r
   }));
 
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(22);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(255);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(356);
+  expect(ranked.filter((row) => row.score === 2)).toHaveLength(252);
+  expect(ranked.filter((row) => row.score === 3)).toHaveLength(359);
   expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(17);
   expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
