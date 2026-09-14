@@ -61,8 +61,8 @@ test("quality pass 9 adds exact official release months to ten score-2 3 Oaks re
   }));
 
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(22);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(263);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(348);
+  expect(ranked.filter((row) => row.score === 2)).toHaveLength(260);
+  expect(ranked.filter((row) => row.score === 3)).toHaveLength(351);
   expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(17);
   expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
