@@ -18,6 +18,8 @@ export type CatalogItem = {
   gameType: string;
   maxWin: string;
   releaseDate: string;
+  verifiedRtp: string;
+  verifiedVolatility: string;
   verifiedFacts: number;
 };
 
