@@ -6,15 +6,21 @@ import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-typ
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const expected = {
-  "3-oaks-gaming-magic-apple-2": {
-    field: "5×4 · 20 линий",
-    releaseDate: "2022-06",
-    source: "https://3oaks.com/game/magic_apple_2",
+  "push-gaming-razor-shark-jackpots": {
+    maxWin: "11007.70x",
+    volatility: "Средняя",
+    releaseDate: "2026-06-03",
+    source: "https://www.pushgaming.com/games/razor-shark-jackpots.html",
+    releaseDateSource:
+      "https://www.pushgaming.com/blog/push-gaming-redefines-staple-slot-series-release-razor-shark-jackpots.html",
   },
-  "3-oaks-gaming-sunlight-princess": {
-    field: "5×3 · 30 линий",
-    releaseDate: "2023-02",
-    source: "https://3oaks.com/game/sunlight_princess",
+  "push-gaming-red-hot-multipliers": {
+    maxWin: "2500x",
+    volatility: "Низкая",
+    releaseDate: "2026-02",
+    source: "https://www.pushgaming.com/games/red-hot-multipliers.html",
+    releaseDateSource:
+      "https://www.pushgaming.com/blog/reel-hot-games-continues-2026-momentum-release-diamonds-4-win.html",
   },
 } as const;
 
@@ -30,7 +36,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 13 confirms line mechanics for two score-2 3 Oaks records", () => {
+test("quality pass 15 adds separately sourced Push release dates to two score-2 records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(2);
@@ -41,23 +47,27 @@ test("quality pass 13 confirms line mechanics for two score-2 3 Oaks records", (
   for (const [slug, values] of Object.entries(expected)) {
     const seed = selected.get(slug);
     expect(seed, slug).toBeTruthy();
-    expect(seed!.provider, slug).toBe("3 Oaks Gaming");
+    expect(seed!.provider, slug).toBe("Push Gaming");
     expect(seed!.source, slug).toBe(values.source);
     expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
 
     const details = getVerifiedCatalogDetails(slug);
     expect(details, slug).toBeTruthy();
     expect(details?.source, slug).toBe(values.source);
-    expect(details?.field, slug).toBe(values.field);
+    expect(details?.maxWin, slug).toBe(values.maxWin);
+    expect(details?.volatility, slug).toBe(values.volatility);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
-    expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
-    expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
-    expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
+    expect(details?.field, `${slug} must not invent a field`).toBeUndefined();
+    expect(details?.rtp, `${slug} must not collapse multiple RTP configurations`).toBeUndefined();
+    expect("releaseDateSource" in details!, `${slug} must retain a separate release source`).toBe(true);
+    if ("releaseDateSource" in details!) {
+      expect(details.releaseDateSource, slug).toBe(values.releaseDateSource);
+      expect(details.releaseDateSource, slug).toMatch(/^https:\/\/www\.pushgaming\.com\/blog\//);
+    }
 
     const research = getVerifiedCatalogResearch(slug);
     expect(research?.source, slug).toBe(values.source);
-    expect(research?.mechanics, `${slug} must use only the verified line mechanic`).toEqual(["Линии"]);
-    expect(research?.evidence, slug).toMatch(/line/);
+    expect(research?.mechanics, `${slug} must not invent a taxonomy mechanic`).toEqual([]);
     expect(getVerifiedCatalogGameType(slug), `${slug} must not invent Game Type`).toBeUndefined();
     expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
   }
