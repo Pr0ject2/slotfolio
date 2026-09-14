@@ -6,21 +6,16 @@ import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-typ
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const expected = {
-  "push-gaming-razor-shark-jackpots": {
-    maxWin: "11007.70x",
-    volatility: "Средняя",
-    releaseDate: "2026-06-03",
-    source: "https://www.pushgaming.com/games/razor-shark-jackpots.html",
-    releaseDateSource:
-      "https://www.pushgaming.com/blog/push-gaming-redefines-staple-slot-series-release-razor-shark-jackpots.html",
+  "3-oaks-gaming-3-jewel-crowns": {
+    field: "3 барабана",
+    releaseDate: "2025-06",
+    detailSource: "https://3oaks.com/game/3_jewel_crowns",
   },
-  "push-gaming-red-hot-multipliers": {
-    maxWin: "2500x",
-    volatility: "Низкая",
-    releaseDate: "2026-02",
-    source: "https://www.pushgaming.com/games/red-hot-multipliers.html",
-    releaseDateSource:
-      "https://www.pushgaming.com/blog/reel-hot-games-continues-2026-momentum-release-diamonds-4-win.html",
+  "3-oaks-gaming-sky-pearls": {
+    field: "4×4",
+    releaseDate: "2024-03",
+    detailSource: "https://3oaks.com/game/sky_pearls",
+    evidenceSource: "https://3oaks.com/news/new-release-sky-pearls",
   },
 } as const;
 
@@ -36,7 +31,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 15 adds separately sourced Push release dates to two score-2 records", () => {
+test("quality pass 18 confirms collection mechanics for two more score-2 3 Oaks records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(2);
@@ -47,27 +42,33 @@ test("quality pass 15 adds separately sourced Push release dates to two score-2 
   for (const [slug, values] of Object.entries(expected)) {
     const seed = selected.get(slug);
     expect(seed, slug).toBeTruthy();
-    expect(seed!.provider, slug).toBe("Push Gaming");
-    expect(seed!.source, slug).toBe(values.source);
+    expect(seed!.provider, slug).toBe("3 Oaks Gaming");
+    expect(seed!.source, slug).toBe(values.detailSource);
     expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
 
     const details = getVerifiedCatalogDetails(slug);
     expect(details, slug).toBeTruthy();
-    expect(details?.source, slug).toBe(values.source);
-    expect(details?.maxWin, slug).toBe(values.maxWin);
-    expect(details?.volatility, slug).toBe(values.volatility);
+    expect(details?.source, slug).toBe(values.detailSource);
+    expect(details?.field, slug).toBe(values.field);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
-    expect(details?.field, `${slug} must not invent a field`).toBeUndefined();
-    expect(details?.rtp, `${slug} must not collapse multiple RTP configurations`).toBeUndefined();
-    expect("releaseDateSource" in details!, `${slug} must retain a separate release source`).toBe(true);
-    if ("releaseDateSource" in details!) {
-      expect(details.releaseDateSource, slug).toBe(values.releaseDateSource);
-      expect(details.releaseDateSource, slug).toMatch(/^https:\/\/www\.pushgaming\.com\/blog\//);
-    }
+    expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
+    expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
+    expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
 
     const research = getVerifiedCatalogResearch(slug);
-    expect(research?.source, slug).toBe(values.source);
-    expect(research?.mechanics, `${slug} must not invent a taxonomy mechanic`).toEqual([]);
+    expect(research?.source, slug).toBe(values.detailSource);
+    expect(research?.mechanics, `${slug} must use only the verified collect mechanic`).toEqual(["Сбор символов"]);
+    expect(research?.evidence, slug).toMatch(/fill|accumulat|collect/i);
+
+    if ("evidenceSource" in values) {
+      expect(research && "evidenceSource" in research, `${slug} must retain the separate evidence source`).toBe(true);
+      if (research && "evidenceSource" in research) {
+        expect(research.evidenceSource, slug).toBe(values.evidenceSource);
+      }
+    } else {
+      expect(research && "evidenceSource" in research, `${slug} must not invent a second source`).toBe(false);
+    }
+
     expect(getVerifiedCatalogGameType(slug), `${slug} must not invent Game Type`).toBeUndefined();
     expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
   }
