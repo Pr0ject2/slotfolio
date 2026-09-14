@@ -12,6 +12,11 @@ function displayRelease(value: string) {
   return `${parts[2]}.${parts[1]}.${parts[0]}`;
 }
 
+function displayYear(item: CatalogItem) {
+  if (item.year) return String(item.year);
+  return /^\d{4}/.test(item.releaseDate) ? item.releaseDate.slice(0, 4) : "";
+}
+
 function providerMark(provider: string) {
   const words = provider
     .replace(/[^a-zа-я0-9 ]/gi, " ")
@@ -37,12 +42,13 @@ function coverageText(item: CatalogItem) {
 
 export function CatalogGameCard({ item }: { item: CatalogItem }) {
   const href = item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
+  const year = displayYear(item);
   const facts = [
     item.gameType ? { label: "Тип", value: item.gameType } : null,
     item.field ? { label: "Поле", value: item.field } : null,
-    item.rtp ? { label: "RTP", value: item.rtp } : null,
+    item.verifiedRtp ? { label: "RTP", value: item.verifiedRtp } : null,
     item.maxWin ? { label: "Макс.", value: item.maxWin } : null,
-    item.volatility ? { label: "Волат.", value: item.volatility } : null,
+    item.verifiedVolatility ? { label: "Волат.", value: item.verifiedVolatility } : null,
     item.releaseDate ? { label: "Релиз", value: displayRelease(item.releaseDate) } : null,
   ].filter((fact): fact is { label: string; value: string } => Boolean(fact));
 
@@ -67,7 +73,7 @@ export function CatalogGameCard({ item }: { item: CatalogItem }) {
       <div className="catalog-game-copy">
         <div className={styles.metaRow}>
           <span className="eyebrow">
-            {item.provider}{item.year ? ` / ${item.year}` : ""}
+            {item.provider}{year ? ` / ${year}` : ""}
           </span>
           <span className={styles.coverage}>{coverageText(item)}</span>
         </div>
@@ -105,7 +111,7 @@ export function CatalogGameCard({ item }: { item: CatalogItem }) {
           {item.coverage === "dossier" ? (
             <CompareButton slug={item.slug} name={item.name} />
           ) : (
-            <Link className={styles.openRecord} href={href}>Открыть карточку ↗</Link>
+            <Link className={styles.openRecord} href={href}>Открыть запись ↗</Link>
           )}
         </div>
       </div>
