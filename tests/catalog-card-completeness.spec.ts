@@ -5,7 +5,7 @@ test.use({ baseURL: process.env.AUDIT_BASE_URL || "http://localhost:3000" });
 
 const model = createCatalogModel();
 
-test("catalog model exposes verified technical data to cards", () => {
+test("catalog model exposes verified technical data to cards without promoting filter fields", () => {
   expect(model.items).toHaveLength(1000);
   expect(model.items.filter((item) => item.coverage === "dossier")).toHaveLength(100);
   expect(model.items.filter((item) => item.coverage === "catalog")).toHaveLength(900);
@@ -14,12 +14,14 @@ test("catalog model exposes verified technical data to cards", () => {
   expect(wazdan).toBeTruthy();
   expect(wazdan?.coverage).toBe("catalog");
   expect(wazdan?.field).toBe("5 барабанов · 40 линий");
-  expect(wazdan?.rtp).toBe("96,29%");
-  expect(wazdan?.rtpValue).toBe(96.29);
+  expect(wazdan?.verifiedRtp).toBe("96,29%");
+  expect(wazdan?.verifiedVolatility).toBe("Низкая–средняя");
   expect(wazdan?.maxWin).toBe("850x");
-  expect(wazdan?.volatility).toBe("Низкая–средняя");
   expect(wazdan?.releaseDate).toBe("2018-09-03");
-  expect(wazdan?.year).toBe(2018);
+  expect(wazdan?.year).toBeNull();
+  expect(wazdan?.rtp).toBe("");
+  expect(wazdan?.rtpValue).toBeNull();
+  expect(wazdan?.volatility).toBe("");
   expect(wazdan?.verifiedFacts).toBeGreaterThanOrEqual(5);
 
   const threeOaks = model.items.find((item) => item.slug === "3-oaks-gaming-dancing-joker");
@@ -33,9 +35,9 @@ test("catalog model exposes verified technical data to cards", () => {
   expect(thin).toBeTruthy();
   expect(thin?.verifiedFacts).toBe(0);
   expect(thin?.field).toBe("");
-  expect(thin?.rtp).toBe("");
+  expect(thin?.verifiedRtp).toBe("");
   expect(thin?.maxWin).toBe("");
-  expect(thin?.volatility).toBe("");
+  expect(thin?.verifiedVolatility).toBe("");
   expect(thin?.releaseDate).toBe("");
 });
 
