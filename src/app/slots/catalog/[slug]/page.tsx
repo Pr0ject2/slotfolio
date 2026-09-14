@@ -211,7 +211,7 @@ export default async function CatalogSlotPage({
               {verifiedAt ? <div><dt>Проверено</dt><dd>{verifiedAt}</dd></div> : null}
               <div>
                 <dt>{hasSeparateReleaseDateSource ? "Источник параметров" : "Источник"}</dt>
-                <dd><a href={primarySource} rel="noreferrer">Официальная страница ↗</a></dd>
+                <dd><a href={primarySource} rel="noreferrer">Официальный каталог ↗</a></dd>
               </div>
               {hasSeparateReleaseDateSource ? (
                 <div>
