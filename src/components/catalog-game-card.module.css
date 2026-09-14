@@ -1,3 +1,7 @@
+:global(html:has(.catalog)) {
+  scroll-behavior: auto;
+}
+
 .card {
   margin-top: 14px;
   padding: 18px;
