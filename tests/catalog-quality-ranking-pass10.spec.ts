@@ -6,16 +6,26 @@ import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-typ
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const expected = {
-  "3-oaks-gaming-15-dragon-pearls": { field: "5×3 · 25 линий", releaseDate: "2020-08" },
-  "3-oaks-gaming-3-african-drums": { field: "5×3 · 25 линий", releaseDate: "2025-01" },
-  "3-oaks-gaming-3-aztec-temples": { field: "5×3 · 25 линий", releaseDate: "2025-04" },
-  "3-oaks-gaming-3-china-pots": { field: "5×3 · 25 линий", releaseDate: "2024-04" },
-  "3-oaks-gaming-3-clover-pots": { field: "5×3 · 25 линий", releaseDate: "2024-03" },
-  "3-oaks-gaming-3-clover-pots-extra": { field: "5×4 · 30 линий", releaseDate: "2025-03" },
-  "3-oaks-gaming-3-coins": { field: "3×3 · 5 линий", releaseDate: "2021-01" },
-  "3-oaks-gaming-3-egypt-chests": { field: "5×3 · 10 линий", releaseDate: "2024-02" },
-  "3-oaks-gaming-3-hot-teapots": { field: "5×3 · 25 линий", releaseDate: "2025-04" },
-  "3-oaks-gaming-3-lucky-sparks": { field: "5×3 · 25 линий", releaseDate: "2026-06" },
+  "3-oaks-gaming-3-olymp-fortunes": { field: "5×3 · 25 линий", releaseDate: "2026-04" },
+  "3-oaks-gaming-3-pots-of-egypt": { field: "5×3 · 25 линий", releaseDate: "2024-10" },
+  "3-oaks-gaming-3-super-hot-chillies": { field: "5×3 · 25 линий", releaseDate: "2025-05" },
+  "3-oaks-gaming-4-african-drums": { field: "5×3 · 25 линий", releaseDate: "2025-11" },
+  "3-oaks-gaming-4-clover-pots": { field: "5×3 · 25 линий", releaseDate: "2026-06" },
+  "3-oaks-gaming-4-fairy-flowers": { field: "5×3 · 25 линий", releaseDate: "2026-03" },
+  "3-oaks-gaming-4-pots-of-egypt": { field: "5×3 · 20 линий", releaseDate: "2025-12" },
+  "3-oaks-gaming-4-wolf-drums": { field: "5×3 · 25 линий", releaseDate: "2026-02" },
+  "3-oaks-gaming-777-fruity-coins": { field: "3×3 · 5 линий", releaseDate: "2025-07" },
+  "3-oaks-gaming-777-gems-respin": { field: "3×3 · 5 линий", releaseDate: "2019-12" },
+  "3-oaks-gaming-amazonia-wins": { field: "5×3 · 25 линий", releaseDate: "2025-07" },
+  "3-oaks-gaming-aztec-fire": { field: "5×4 · 20 линий", releaseDate: "2022-08" },
+  "3-oaks-gaming-aztec-fire-2": { field: "5×4 · 20 линий", releaseDate: "2023-12" },
+  "3-oaks-gaming-aztec-sun": { field: "5×3 · 25 линий", releaseDate: "2020-06" },
+  "3-oaks-gaming-big-heist": { field: "5×3 · 10 линий", releaseDate: "2022-09" },
+  "3-oaks-gaming-black-wolf": { field: "5×4 · 25 линий", releaseDate: "2021-12" },
+  "3-oaks-gaming-black-wolf-2": { field: "5×4 · 25 линий", releaseDate: "2023-09" },
+  "3-oaks-gaming-book-of-sun-multichance": { field: "5×3 · 10 линий", releaseDate: "2019-05" },
+  "3-oaks-gaming-chili-coins": { field: "3×3 · 5 линий", releaseDate: "2026-01" },
+  "3-oaks-gaming-coin-express": { field: "5×3 · 5 линий", releaseDate: "2025-04" },
 } as const;
 
 const targetSlugs = new Set(Object.keys(expected));
@@ -30,10 +40,10 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 9 adds exact official release months to ten score-2 3 Oaks records", () => {
+test("quality pass 10 adds exact official release months to twenty score-2 3 Oaks records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
-  expect(targetSlugs.size).toBe(10);
+  expect(targetSlugs.size).toBe(20);
   expect(catalogSeeds).toHaveLength(900);
   expect(slots).toHaveLength(100);
 
