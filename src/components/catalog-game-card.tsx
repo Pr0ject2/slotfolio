@@ -17,15 +17,6 @@ function displayYear(item: CatalogItem) {
   return /^\d{4}/.test(item.releaseDate) ? item.releaseDate.slice(0, 4) : "";
 }
 
-function providerMark(provider: string) {
-  const words = provider
-    .replace(/[^a-zа-я0-9 ]/gi, " ")
-    .split(/\s+/)
-    .filter(Boolean);
-  const mark = words.map((word) => word[0]).join("").slice(0, 3);
-  return (mark || provider.slice(0, 2)).toUpperCase();
-}
-
 function factWord(count: number) {
   const mod10 = count % 10;
   const mod100 = count % 100;
@@ -40,17 +31,30 @@ function coverageText(item: CatalogItem) {
   return "Базовые данные проверены";
 }
 
+type DisplayFact = {
+  label: string;
+  value: string;
+  pending?: boolean;
+};
+
+function displayFacts(item: CatalogItem): DisplayFact[] {
+  const facts: DisplayFact[] = [
+    { label: "Тип", value: item.gameType },
+    { label: "Поле", value: item.field },
+    { label: "RTP", value: item.verifiedRtp },
+    { label: "Макс.", value: item.maxWin },
+    { label: "Волат.", value: item.verifiedVolatility },
+    { label: "Релиз", value: item.releaseDate ? displayRelease(item.releaseDate) : "" },
+  ];
+
+  if (item.coverage === "dossier") return facts.filter((fact) => Boolean(fact.value));
+  return facts.map((fact) => ({ ...fact, value: fact.value || "—", pending: !fact.value }));
+}
+
 export function CatalogGameCard({ item }: { item: CatalogItem }) {
   const href = item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
   const year = displayYear(item);
-  const facts = [
-    item.gameType ? { label: "Тип", value: item.gameType } : null,
-    item.field ? { label: "Поле", value: item.field } : null,
-    item.verifiedRtp ? { label: "RTP", value: item.verifiedRtp } : null,
-    item.maxWin ? { label: "Макс.", value: item.maxWin } : null,
-    item.verifiedVolatility ? { label: "Волат.", value: item.verifiedVolatility } : null,
-    item.releaseDate ? { label: "Релиз", value: displayRelease(item.releaseDate) } : null,
-  ].filter((fact): fact is { label: string; value: string } => Boolean(fact));
+  const facts = displayFacts(item);
 
   return (
     <article
@@ -64,8 +68,8 @@ export function CatalogGameCard({ item }: { item: CatalogItem }) {
         ) : (
           <span className={styles.artFallback} aria-hidden="true">
             <span className={styles.artProvider}>{item.provider}</span>
-            <strong>{providerMark(item.provider)}</strong>
-            <span className={styles.artNote}>обложка на проверке</span>
+            <strong className={styles.artTitle}>{item.name}</strong>
+            <span className={styles.artNote}>{year ? `релиз ${year}` : "официальная запись"}</span>
           </span>
         )}
       </Link>
@@ -86,20 +90,20 @@ export function CatalogGameCard({ item }: { item: CatalogItem }) {
           <div className={styles.mechanics} aria-label="Подтверждённые механики">
             {item.mechanics.map((mechanic) => <span key={mechanic}>{mechanic}</span>)}
           </div>
+        ) : item.coverage === "catalog" ? (
+          <div className={styles.mechanics} aria-label="Механика уточняется">
+            <span className={styles.pendingChip}>Механика уточняется</span>
+          </div>
         ) : null}
 
-        {facts.length ? (
-          <dl className={styles.facts} aria-label="Подтверждённые характеристики">
-            {facts.map((fact) => (
-              <div className={styles.fact} key={`${fact.label}-${fact.value}`}>
-                <dt>{fact.label}</dt>
-                <dd>{fact.value}</dd>
-              </div>
-            ))}
-          </dl>
-        ) : (
-          <p className={styles.pending}>Технические характеристики ещё проходят проверку.</p>
-        )}
+        <dl className={styles.facts} aria-label="Подтверждённые характеристики">
+          {facts.map((fact) => (
+            <div className={`${styles.fact} ${fact.pending ? styles.factPending : ""}`} key={fact.label}>
+              <dt>{fact.label}</dt>
+              <dd>{fact.value}</dd>
+            </div>
+          ))}
+        </dl>
 
         {item.coverage === "dossier" && item.tags.length ? (
           <div className={`catalog-game-tags ${styles.tags}`} aria-label="Особенности игры">

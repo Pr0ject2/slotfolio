@@ -41,7 +41,7 @@ test("catalog model exposes verified technical data to cards without promoting f
   expect(thin?.releaseDate).toBe("");
 });
 
-test("verified catalog card renders all known facts without fake unknown values", async ({ page }) => {
+test("verified catalog card keeps a complete six-field passport", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/slots?q=Mayan%20Ritual");
   await page.waitForLoadState("networkidle");
@@ -49,12 +49,32 @@ test("verified catalog card renders all known facts without fake unknown values"
   const card = page.locator('.catalog-game[data-coverage="catalog"]').filter({ hasText: "Mayan Ritual" });
   await expect(card).toHaveCount(1);
   await expect(card).toContainText("Проверено");
+  await expect(card).toContainText("Mayan Ritual");
+  await expect(card).toContainText("релиз 2018");
   await expect(card).toContainText("5 барабанов · 40 линий");
   await expect(card).toContainText("96,29%");
   await expect(card).toContainText("850x");
   await expect(card).toContainText("Низкая–средняя");
   await expect(card).toContainText("03.09.2018");
-  await expect(card).toContainText("обложка на проверке");
+  await expect(card.locator("dl[aria-label='Подтверждённые характеристики'] > div")).toHaveCount(6);
+  await expect(card).not.toContainText("обложка на проверке");
+  await expect(card).not.toContainText("undefined");
+  await expect(card).not.toContainText("null");
+});
+
+test("empty catalog record still looks like a finished card without invented facts", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/slots?q=Coin%20Club");
+  await page.waitForLoadState("networkidle");
+
+  const card = page.locator('.catalog-game[data-coverage="catalog"]').filter({ hasText: "Coin Club" });
+  await expect(card).toHaveCount(1);
+  await expect(card).toContainText("Coin Club");
+  await expect(card).toContainText("официальная запись");
+  await expect(card).toContainText("Механика уточняется");
+  await expect(card.locator("dl[aria-label='Подтверждённые характеристики'] > div")).toHaveCount(6);
+  await expect(card.locator("dl[aria-label='Подтверждённые характеристики'] dd")).toHaveText(["—", "—", "—", "—", "—", "—"]);
+  await expect(card.getByText("Открыть запись ↗", { exact: true })).toHaveCount(1);
   await expect(card).not.toContainText("undefined");
   await expect(card).not.toContainText("null");
 });

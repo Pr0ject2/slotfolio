@@ -6,16 +6,22 @@ import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-typ
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const expected = {
-  "3-oaks-gaming-3-jewel-crowns": {
-    field: "3 барабана",
-    releaseDate: "2025-06",
-    detailSource: "https://3oaks.com/game/3_jewel_crowns",
+  "playn-go-legacy-of-egypt": {
+    field: "5 барабанов · 30 линий",
+    releaseDate: "2018-04-24",
+    source: "https://www.playngo.com/games/legacy-of-egypt",
+    fieldSource: "https://www.playngo.com/posts/play-n-go-unearths-new-legacy-of-egypt-slot",
   },
-  "3-oaks-gaming-sky-pearls": {
-    field: "4×4",
-    releaseDate: "2024-03",
-    detailSource: "https://3oaks.com/game/sky_pearls",
-    evidenceSource: "https://3oaks.com/news/new-release-sky-pearls",
+  "playn-go-legion-gold-unleashed": {
+    field: "5×3 · 25 линий",
+    releaseDate: "2024-02-29",
+    source: "https://www.playngo.com/games/legion-gold-unleashed",
+    fieldSource: "https://www.playngo.com/posts/legion-gold-unleashed-online-slot-review",
+  },
+  "playn-go-legion-gold-and-the-sphinx-of-dead": {
+    field: "5×3",
+    releaseDate: "2024-10-31",
+    source: "https://www.playngo.com/games/legion-gold-and-the-sphinx-of-dead",
   },
 } as const;
 
@@ -31,10 +37,10 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 18 confirms collection mechanics for two more score-2 3 Oaks records", () => {
+test("quality pass 23 adds exact official layouts to three score-2 Play’n GO records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
-  expect(targetSlugs.size).toBe(2);
+  expect(targetSlugs.size).toBe(3);
   expect(catalogSeeds).toHaveLength(900);
   expect(slots).toHaveLength(100);
   expect(catalogSeeds.length + slots.length).toBe(1000);
@@ -42,34 +48,30 @@ test("quality pass 18 confirms collection mechanics for two more score-2 3 Oaks 
   for (const [slug, values] of Object.entries(expected)) {
     const seed = selected.get(slug);
     expect(seed, slug).toBeTruthy();
-    expect(seed!.provider, slug).toBe("3 Oaks Gaming");
-    expect(seed!.source, slug).toBe(values.detailSource);
+    expect(seed!.provider, slug).toBe("Play’n GO");
+    expect(seed!.source, slug).toBe(values.source);
     expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
 
     const details = getVerifiedCatalogDetails(slug);
     expect(details, slug).toBeTruthy();
-    expect(details?.source, slug).toBe(values.detailSource);
+    expect(details?.source, slug).toBe(values.source);
     expect(details?.field, slug).toBe(values.field);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
     expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
     expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
     expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
 
-    const research = getVerifiedCatalogResearch(slug);
-    expect(research?.source, slug).toBe(values.detailSource);
-    expect(research?.mechanics, `${slug} must use only the verified collect mechanic`).toEqual(["Сбор символов"]);
-    expect(research?.evidence, slug).toMatch(/fill|accumulat|collect/i);
-
-    if ("evidenceSource" in values) {
-      expect(research && "evidenceSource" in research, `${slug} must retain the separate evidence source`).toBe(true);
-      if (research && "evidenceSource" in research) {
-        expect(research.evidenceSource, slug).toBe(values.evidenceSource);
+    if ("fieldSource" in values) {
+      expect(details && "fieldSource" in details, `${slug} must retain the separate official field source`).toBe(true);
+      if (details && "fieldSource" in details) {
+        expect(details.fieldSource, slug).toBe(values.fieldSource);
       }
     } else {
-      expect(research && "evidenceSource" in research, `${slug} must not invent a second source`).toBe(false);
+      expect(details && "fieldSource" in details, `${slug} must not invent a second field source`).toBe(false);
     }
 
-    expect(getVerifiedCatalogGameType(slug), `${slug} must not invent Game Type`).toBeUndefined();
+    expect(getVerifiedCatalogResearch(slug), `${slug} must not invent a mechanic`).toBeUndefined();
+    expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Video Slot");
     expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
   }
 
