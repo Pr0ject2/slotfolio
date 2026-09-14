@@ -92,10 +92,10 @@ test("quality pass 7 improves five thin cross-provider runtime records from offi
     })
     .filter((row) => row.score <= 1);
 
-  expect(remainingThin).toHaveLength(34);
+  expect(remainingThin).toHaveLength(22);
   expect(remainingThin.some((row) => targetSlugs.has(row.slug))).toBe(false);
   expect(remainingThin.filter((row) => row.provider === "BGaming")).toHaveLength(0);
   expect(remainingThin.filter((row) => row.provider === "Endorphina")).toHaveLength(0);
-  expect(remainingThin.filter((row) => row.provider === "Hacksaw Gaming")).toHaveLength(29);
+  expect(remainingThin.filter((row) => row.provider === "Hacksaw Gaming")).toHaveLength(17);
   expect(remainingThin.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
 });
