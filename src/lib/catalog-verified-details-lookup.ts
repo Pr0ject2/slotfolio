@@ -9,6 +9,7 @@ import { getCatalogVerifiedDetailsQualityPass11 } from "./catalog-verified-detai
 import { getCatalogVerifiedDetailsQualityPass12 } from "./catalog-verified-details-quality-pass-12";
 import { getCatalogVerifiedDetailsQualityPass15 } from "./catalog-verified-details-quality-pass-15";
 import { getCatalogVerifiedDetailsQualityPass19 } from "./catalog-verified-details-quality-pass-19";
+import { getCatalogVerifiedDetailsQualityPass20 } from "./catalog-verified-details-quality-pass-20";
 import { getCatalogVerifiedDetails3Oaks } from "./catalog-verified-details-3oaks";
 import { getCatalogVerifiedDetails3OaksWave1 } from "./catalog-verified-details-3oaks-wave1";
 import { getCatalogVerifiedDetails3OaksFinal } from "./catalog-verified-details-3oaks-final";
@@ -49,6 +50,7 @@ import { getCatalogVerifiedDetailsWazdanWave4 } from "./catalog-verified-details
 
 export function getVerifiedCatalogDetails(slug: string) {
   return (
+    getCatalogVerifiedDetailsQualityPass20(slug) ??
     getCatalogVerifiedDetailsQualityPass19(slug) ??
     getCatalogVerifiedDetailsQualityPass15(slug) ??
     getCatalogVerifiedDetailsQualityPass12(slug) ??
