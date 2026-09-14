@@ -26,7 +26,7 @@ test("catalog records expose separate official evidence when release timing has 
     await expect(facts).toContainText("Источник даты релиза");
     await expect(facts.locator(`a[href="${item.primary}"]`)).toHaveCount(1);
     await expect(facts.locator(`a[href="${item.release}"]`)).toHaveCount(1);
-    await expect(facts.locator(`a[href="${item.primary}"]`)).toHaveText("Официальная страница ↗");
+    await expect(facts.locator(`a[href="${item.primary}"]`)).toHaveText("Официальный каталог ↗");
     await expect(facts.locator(`a[href="${item.release}"]`)).toHaveText("Официальная публикация ↗");
   }
 });
