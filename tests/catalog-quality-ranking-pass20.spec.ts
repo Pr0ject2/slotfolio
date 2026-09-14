@@ -62,7 +62,9 @@ test("quality pass 20 adds exact official layout facts to three score-2 Play’n
 
     if ("fieldSource" in values) {
       expect(details && "fieldSource" in details, `${slug} must retain the separate official field source`).toBe(true);
-      if (details && "fieldSource" in details) expect(details.fieldSource, slug).toBe(values.fieldSource);
+      if (details && "fieldSource" in details) {
+        expect(details.fieldSource, slug).toBe(values.fieldSource);
+      }
     } else {
       expect(details && "fieldSource" in details, `${slug} must not invent a second field source`).toBe(false);
     }
@@ -72,7 +74,12 @@ test("quality pass 20 adds exact official layout facts to three score-2 Play’n
     expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
   }
 
-  const ranked = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
+  const ranked = catalogSeeds.map((seed) => ({
+    slug: seed.slug,
+    provider: seed.provider,
+    score: scoreFor(seed.slug),
+  }));
+
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(22);
   expect(ranked.filter((row) => row.score === 2)).toHaveLength(240);
   expect(ranked.filter((row) => row.score === 3)).toHaveLength(371);
