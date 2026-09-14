@@ -108,8 +108,8 @@ test("provider-wide Play’n GO pass enriches fifteen weak cards from official e
 
   const ranked = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(22);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(203);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(399);
+  expect(ranked.filter((row) => row.score === 2)).toHaveLength(187);
+  expect(ranked.filter((row) => row.score === 3)).toHaveLength(407);
   expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(17);
   expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
