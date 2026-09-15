@@ -12,6 +12,7 @@ import { getCatalogVerifiedDetailsQualityPass19 } from "./catalog-verified-detai
 import { getCatalogVerifiedDetailsQualityPass20 } from "./catalog-verified-details-quality-pass-20";
 import { getCatalogVerifiedDetailsQualityPass21 } from "./catalog-verified-details-quality-pass-21";
 import { getCatalogVerifiedDetailsQualityPass23 } from "./catalog-verified-details-quality-pass-23";
+import { getCatalogVerifiedDetailsPlayngoProviderWide8 } from "./catalog-verified-details-playngo-provider-wide-8";
 import { getCatalogVerifiedDetailsPlayngoProviderWide7 } from "./catalog-verified-details-playngo-provider-wide-7";
 import { getCatalogVerifiedDetailsPlayngoProviderWide } from "./catalog-verified-details-playngo-provider-wide";
 import { getCatalogVerifiedDetails3Oaks } from "./catalog-verified-details-3oaks";
@@ -54,6 +55,7 @@ import { getCatalogVerifiedDetailsWazdanWave4 } from "./catalog-verified-details
 
 export function getVerifiedCatalogDetails(slug: string) {
   return (
+    getCatalogVerifiedDetailsPlayngoProviderWide8(slug) ??
     getCatalogVerifiedDetailsPlayngoProviderWide7(slug) ??
     getCatalogVerifiedDetailsPlayngoProviderWide(slug) ??
     getCatalogVerifiedDetailsQualityPass23(slug) ??
