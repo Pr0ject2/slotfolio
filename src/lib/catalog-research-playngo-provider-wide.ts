@@ -28,6 +28,12 @@ const research: Record<string, SourcedCatalogResearch> = {
     evidence: "Official review states that wins form from matching clusters on the 5x5 grid and that winning symbols disappear before new symbols cascade from above.",
     evidenceSource: "https://www.playngo.com/post/review-animal-madness-play-n-go-grid-slot",
   },
+  "playn-go-banana-rock": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/banana-rock",
+    verifiedAt,
+    evidence: "Official game page states that individual band-member symbols are collected during Free Spins and each collection powers up that member's meter.",
+  },
   "playn-go-blinged": {
     mechanics: ["Линии"],
     source: "https://www.playngo.com/games/blinged",
@@ -47,6 +53,12 @@ const research: Record<string, SourcedCatalogResearch> = {
     verifiedAt,
     evidence: "Official release describes Buildin' More Bucks as a 5-reel, 243-ways slot.",
     evidenceSource: "https://www.playngo.com/posts/buildin-more-bucks",
+  },
+  "playn-go-bullion-xpress": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/bullion-xpress",
+    verifiedAt,
+    evidence: "Official game page describes the M-Counter collecting landed multiplier values and Fortune Frenzy collecting values from four train carriages.",
   },
   "playn-go-canine-carnage": {
     mechanics: ["Сбор символов"],
@@ -96,6 +108,12 @@ const research: Record<string, SourcedCatalogResearch> = {
     evidence: "Official release states that way wins form from adjacent matching symbols and that Coin symbols are collected by Slay Collector symbols.",
     evidenceSource: "https://www.playngo.com/posts/cursed-moon-power-collection",
   },
+  "playn-go-doom-of-egypt": {
+    mechanics: ["Линии"],
+    source: "https://www.playngo.com/games/doom-of-egypt",
+    verifiedAt,
+    evidence: "Official game page states that Special Expanding symbols award payline wins even when the matching symbols are not adjacent.",
+  },
   "playn-go-dragon-maiden": {
     mechanics: ["Способы"],
     source: "https://www.playngo.com/games/dragon-maiden",
@@ -108,12 +126,25 @@ const research: Record<string, SourcedCatalogResearch> = {
     verifiedAt,
     evidence: "Official game page states that the five-by-three slot uses ten paylines.",
   },
+  "playn-go-fates-fortune": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/fate's-fortune",
+    verifiedAt,
+    evidence: "Official game page states that every collected Ulysses symbol feeds the shield counter and that non-triggering Scatters can also be collected by Poseidon.",
+  },
   "playn-go-fire-joker-blitz": {
     mechanics: ["Сбор символов"],
     source: "https://www.playngo.com/games/fire-joker-blitz",
     verifiedAt,
     evidence: "Official game page describes the Coin Collect feature: special multiplier coins land and are collected when paired with the collector symbol.",
     evidenceSource: "https://www.playngo.com/games/fire-joker-blitz",
+  },
+  "playn-go-game-of-gladiators-uprising": {
+    mechanics: ["Линии"],
+    source: "https://www.playngo.com/games/game-of-gladiators%3A-uprising",
+    verifiedAt,
+    evidence: "Official release states that the paylines adapt to the play style of the landed Spartacus, Bellica or Emperor Scatter.",
+    evidenceSource: "https://www.playngo.com/post/game-of-gladiators-uprising",
   },
   "playn-go-gargantoonz": {
     mechanics: ["Кластеры", "Каскады"],
@@ -135,6 +166,12 @@ const research: Record<string, SourcedCatalogResearch> = {
     verifiedAt,
     evidence: "Official game page describes a Persistent Trail that unlocks Collectors and advances whenever a Collector lands on the reels.",
   },
+  "playn-go-golden-legend": {
+    mechanics: ["Линии"],
+    source: "https://www.playngo.com/games/golden-legend",
+    verifiedAt,
+    evidence: "Official game page settings explicitly let players choose the number of active lines and the number of coins wagered per active line.",
+  },
   "playn-go-hope-unleashed-fortune-rises": {
     mechanics: ["Сбор символов"],
     source: "https://www.playngo.com/games/hope-unleashed-fortune-rises",
@@ -155,12 +192,44 @@ const research: Record<string, SourcedCatalogResearch> = {
     evidence: "Official Play'n GO release states that added Wilds on the middle reels can create a multitude of payways.",
     evidenceSource: "https://www.playngo.com/post/legacy-of-inca",
   },
+  "playn-go-legion-gold": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/legion-gold",
+    verifiedAt,
+    evidence: "Official Legion Gold series article states that players collect Gold Coins to trigger Gold Re-Spins.",
+    evidenceSource: "https://www.playngo.com/post/top-games-the-legion-gold-series",
+  },
+  "playn-go-legion-gold-and-the-throne-of-dead": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/legion-gold-and-the-throne-of-dead",
+    verifiedAt,
+    evidence: "Official game page states that Gold Coins which do not trigger Gold Re-Spins or Golden Scales are collected in the Coin Chest.",
+  },
+  "playn-go-legion-gold-reckoning": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/legion-gold-reckoning",
+    verifiedAt,
+    evidence: "Official game page states that Gold Coins landing outside Gold Re-Spins are collected into the Coin Chest.",
+  },
   "playn-go-legion-gold-victory": {
     mechanics: ["Сбор символов"],
     source: "https://www.playngo.com/games/legion-gold-victory!",
     verifiedAt,
     evidence: "Official game page describes Gold Re-Spins where Coins are collected and Gold Bags collect Instant Prize Coin values.",
     evidenceSource: "https://www.playngo.com/post/legion-gold-victory",
+  },
+  "playn-go-lord-merlin-and-the-lady-of-the-lake": {
+    mechanics: ["Линии"],
+    source: "https://www.playngo.com/games/lord-merlin-and-the-lady-of-the-lake",
+    verifiedAt,
+    evidence: "Official Play'n GO Merlin-series article describes the game as a 5x3 setup with ten paylines.",
+    evidenceSource: "https://www.playngo.com/post/the-tales-of-merlin-slots-at-playngo",
+  },
+  "playn-go-love-joker": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/love-joker",
+    verifiedAt,
+    evidence: "Official game page states that Hearts and Golden Hearts are collected at the top of the reels, with five Hearts increasing the multiplier.",
   },
   "playn-go-manta-mayhem": {
     mechanics: ["Сбор символов"],
@@ -188,6 +257,13 @@ const research: Record<string, SourcedCatalogResearch> = {
     evidence: "Official release states that collecting three or more Closed Scripture Scatter symbols triggers Free Spins.",
     evidenceSource: "https://www.playngo.com/posts/monkey-battle-for-the-scrolls",
   },
+  "playn-go-mount-m": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/mount-m",
+    verifiedAt,
+    evidence: "Official release states that collecting all five orbs during Free Spins expands the reels upward and starts the process again.",
+    evidenceSource: "https://www.playngo.com/post/mount-m",
+  },
   "playn-go-mystery-egg-surprise": {
     mechanics: ["Линии"],
     source: "https://www.playngo.com/games/mystery-egg-surprise",
@@ -195,12 +271,42 @@ const research: Record<string, SourcedCatalogResearch> = {
     evidence: "Official release describes Mystery Egg Surprise as a 3-reel slot with 5 fixed paylines.",
     evidenceSource: "https://www.playngo.com/post/mystery-egg-surprise",
   },
+  "playn-go-mystery-joker-6000": {
+    mechanics: ["Линии"],
+    source: "https://www.playngo.com/games/mystery-joker-6000",
+    verifiedAt,
+    evidence: "Official game page states that three matching symbols form a win and that a Free Re-Spin can complete the payline.",
+  },
+  "playn-go-nugget-n-nonsense": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/nugget-n%E2%80%99-nonsense",
+    verifiedAt,
+    evidence: "Official game page states that Hold & Spin awards the total value of all collected Coins when the feature ends.",
+  },
+  "playn-go-pearls-of-india": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/pearls-of-india",
+    verifiedAt,
+    evidence: "Official game page explicitly states that Temple symbols are collected toward the bonus and Pearl symbols are collected during Free Spins.",
+  },
   "playn-go-piggy-blitz": {
     mechanics: ["Способы"],
     source: "https://www.playngo.com/games/piggy-blitz",
     verifiedAt,
     evidence: "Official release states that Piggy Blitz has 4,096 payways.",
     evidenceSource: "https://www.playngo.com/post/piggy-blitz",
+  },
+  "playn-go-prissy-princess": {
+    mechanics: ["Каскады"],
+    source: "https://www.playngo.com/games/prissy-princess",
+    verifiedAt,
+    evidence: "Official game page states that towers collapse after winning combinations and new symbols cascade into place.",
+  },
+  "playn-go-rage-to-riches": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.playngo.com/games/rage-to-riches",
+    verifiedAt,
+    evidence: "Official game page states that ordered scatter wins collect bonus stars and that collecting five stars triggers the bonus game.",
   },
 };
 
