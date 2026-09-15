@@ -82,8 +82,8 @@ test("sixth provider-wide Play’n GO batch enriches seventeen remaining score-2
 
   const ranked = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(22);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(153);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(436);
+  expect(ranked.filter((row) => row.score === 2)).toHaveLength(146);
+  expect(ranked.filter((row) => row.score === 3)).toHaveLength(442);
   expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(17);
   expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
