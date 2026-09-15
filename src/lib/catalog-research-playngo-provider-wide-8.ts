@@ -35,7 +35,7 @@ const research: Record<string, SourcedCatalogResearch> = {
   },
   "playn-go-lab-of-madness-its-a-wild": {
     mechanics: ["Сбор символов"],
-    source: "https://www.playngo.com/games/lab-of-madness-it%27s-a-wild%21",
+    source: "https://www.playngo.com/games/lab-of-madness-it's-a-wild!",
     verifiedAt,
     evidence: "Official game page describes glowing orbs progressively charging matching bulbs from uncharged to fully lit; additional orbs further power up the feature.",
   },
