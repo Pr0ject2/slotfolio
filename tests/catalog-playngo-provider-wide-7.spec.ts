@@ -5,39 +5,19 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
-const targets = {
-  "playn-go-banana-rock": { mechanics: ["Сбор символов"] },
-  "playn-go-bullion-xpress": { mechanics: ["Сбор символов"] },
-  "playn-go-doom-of-egypt": { mechanics: ["Линии"] },
-  "playn-go-fates-fortune": { mechanics: ["Сбор символов"] },
-  "playn-go-game-of-gladiators-uprising": {
-    mechanics: ["Линии"],
-    evidenceSource: "https://www.playngo.com/post/game-of-gladiators-uprising",
+const researchTargets = {
+  "playn-go-diamonds-of-the-realm": {
+    evidenceSource: "https://www.playngo.com/posts/playngo-impress-with-their-latest-quest-to-camelot",
   },
-  "playn-go-golden-legend": { mechanics: ["Линии"] },
-  "playn-go-legion-gold": {
-    mechanics: ["Сбор символов"],
-    evidenceSource: "https://www.playngo.com/post/top-games-the-legion-gold-series",
-  },
-  "playn-go-legion-gold-and-the-throne-of-dead": { mechanics: ["Сбор символов"] },
-  "playn-go-legion-gold-reckoning": { mechanics: ["Сбор символов"] },
-  "playn-go-lord-merlin-and-the-lady-of-the-lake": {
-    mechanics: ["Линии"],
-    evidenceSource: "https://www.playngo.com/post/the-tales-of-merlin-slots-at-playngo",
-  },
-  "playn-go-love-joker": { mechanics: ["Сбор символов"] },
-  "playn-go-mount-m": {
-    mechanics: ["Сбор символов"],
-    evidenceSource: "https://www.playngo.com/post/mount-m",
-  },
-  "playn-go-mystery-joker-6000": { mechanics: ["Линии"] },
-  "playn-go-nugget-n-nonsense": { mechanics: ["Сбор символов"] },
-  "playn-go-pearls-of-india": { mechanics: ["Сбор символов"] },
-  "playn-go-prissy-princess": { mechanics: ["Каскады"] },
-  "playn-go-rage-to-riches": { mechanics: ["Сбор символов"] },
+  "playn-go-divina-commedia-i-nove-cerchi": {},
+  "playn-go-leprechauns-diamond-dig": {},
+  "playn-go-midnight-gold": {},
+  "playn-go-playn-go-mole-digger": {},
+  "playn-go-playn-go-wrappin-gold": {},
 } as const;
 
-const targetSlugs = new Set(Object.keys(targets));
+const coltSlug = "playn-go-colt-lightning";
+const targetSlugs = new Set([...Object.keys(researchTargets), coltSlug]);
 
 function scoreFor(slug: string) {
   const details = getVerifiedCatalogDetails(slug);
@@ -49,15 +29,15 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("sixth provider-wide Play’n GO batch enriches seventeen remaining score-2 cards", () => {
+test("seventh provider-wide Play’n GO batch enriches seven remaining score-2 cards", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
-  expect(targetSlugs.size).toBe(17);
+  expect(targetSlugs.size).toBe(7);
   expect(catalogSeeds).toHaveLength(900);
   expect(slots).toHaveLength(100);
   expect(catalogSeeds.length + slots.length).toBe(1000);
 
-  for (const [slug, values] of Object.entries(targets)) {
+  for (const [slug, values] of Object.entries(researchTargets)) {
     const seed = selected.get(slug);
     expect(seed, slug).toBeTruthy();
     expect(seed!.provider, slug).toBe("Play’n GO");
@@ -66,8 +46,9 @@ test("sixth provider-wide Play’n GO batch enriches seventeen remaining score-2
     const research = getVerifiedCatalogResearch(slug);
     expect(research, slug).toBeTruthy();
     expect(research?.source, `${slug} must preserve the official catalog game page as primary provenance`).toBe(seed!.source);
-    expect(research?.mechanics, slug).toEqual(values.mechanics);
+    expect(research?.mechanics, slug).toEqual(["Сбор символов"]);
     expect(research?.evidence, slug).toBeTruthy();
+    expect(research?.verifiedAt, slug).toBe("2026-09-15");
 
     if ("evidenceSource" in values) {
       expect(research && "evidenceSource" in research, `${slug} must retain separate official mechanic provenance`).toBe(true);
@@ -77,8 +58,31 @@ test("sixth provider-wide Play’n GO batch enriches seventeen remaining score-2
     }
 
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Video Slot");
-    expect(scoreFor(slug), `${slug} must move from score 2 to score 3 with one exact mechanic`).toBe(3);
+    expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
   }
+
+  const coltSeed = selected.get(coltSlug);
+  expect(coltSeed, coltSlug).toBeTruthy();
+  expect(coltSeed!.provider, coltSlug).toBe("Play’n GO");
+  expect(coltSeed!.source, coltSlug).toBe("https://www.playngo.com/games/colt-lightning");
+  expect(slots.some((slot) => slot.provider === coltSeed!.provider && slot.name === coltSeed!.name), coltSlug).toBe(false);
+
+  const colt = getVerifiedCatalogDetails(coltSlug);
+  expect(colt, coltSlug).toBeTruthy();
+  expect(colt?.source, coltSlug).toBe(coltSeed!.source);
+  expect(colt?.releaseDate, coltSlug).toBe("2023-02-16");
+  expect(colt?.field, coltSlug).toBe("5 барабанов · ряды 3-4-4-4-3");
+  expect(colt?.maxWin, coltSlug).toBe("25000x");
+  expect(colt?.rtp, `${coltSlug} must not invent RTP`).toBeUndefined();
+  expect(colt?.volatility, `${coltSlug} must not invent volatility`).toBeUndefined();
+  expect(colt?.verifiedAt, coltSlug).toBe("2026-09-15");
+  expect(colt && "fieldSource" in colt, `${coltSlug} must retain separate official field provenance`).toBe(true);
+  expect(colt && "maxWinSource" in colt, `${coltSlug} must retain separate official max-win provenance`).toBe(true);
+  if (colt && "fieldSource" in colt) expect(colt.fieldSource, coltSlug).toBe("https://www.playngo.com/post/popular-slot-games-2023");
+  if (colt && "maxWinSource" in colt) expect(colt.maxWinSource, coltSlug).toBe("https://www.playngo.com/post/popular-slot-games-2023");
+  expect(getVerifiedCatalogResearch(coltSlug), `${coltSlug} must not invent a taxonomy mechanic`).toBeUndefined();
+  expect(getVerifiedCatalogGameType(coltSlug)?.gameType, coltSlug).toBe("Video Slot");
+  expect(scoreFor(coltSlug), `${coltSlug} must move from score 2 to score 4 with two exact official facts`).toBe(4);
 
   const ranked = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(22);
