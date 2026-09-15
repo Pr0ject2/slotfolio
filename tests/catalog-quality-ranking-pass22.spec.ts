@@ -85,8 +85,8 @@ test("quality pass 22 adds one exact official mechanic to three score-2 Play’n
   }));
 
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(22);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(146);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(442);
+  expect(ranked.filter((row) => row.score === 2)).toHaveLength(140);
+  expect(ranked.filter((row) => row.score === 3)).toHaveLength(446);
   expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(17);
   expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
