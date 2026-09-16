@@ -14,29 +14,35 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("probe next provider-wide score-2 batch", () => {
-  const ranked = catalogSeeds.map((seed) => ({
-    slug: seed.slug,
-    name: seed.name,
-    provider: seed.provider,
-    source: seed.source,
-    score: scoreFor(seed.slug),
-  }));
+test("probe detailed Hacksaw score-2 cards for next provider-wide batch", () => {
+  const hacksawScore2 = catalogSeeds
+    .filter((seed) => seed.provider === "Hacksaw Gaming")
+    .map((seed) => {
+      const details = getVerifiedCatalogDetails(seed.slug);
+      const type = getVerifiedCatalogGameType(seed.slug);
+      const research = getVerifiedCatalogResearch(seed.slug);
+      return {
+        slug: seed.slug,
+        name: seed.name,
+        source: seed.source,
+        score: scoreFor(seed.slug),
+        field: details?.field ?? null,
+        rtp: details?.rtp ?? null,
+        maxWin: details?.maxWin ?? null,
+        volatility: details?.volatility ?? null,
+        releaseDate: details?.releaseDate ?? null,
+        gameType: type?.gameType ?? null,
+        mechanics: research?.mechanics ?? [],
+      };
+    })
+    .filter((row) => row.score === 2);
 
-  const score2 = ranked.filter((row) => row.score === 2);
-  const byProvider = [...score2.reduce((map, row) => {
-    const current = map.get(row.provider) ?? [];
-    current.push({ slug: row.slug, name: row.name, source: row.source });
-    map.set(row.provider, current);
-    return map;
-  }, new Map<string, Array<{ slug: string; name: string; source: string }>>()).entries()]
-    .map(([provider, records]) => ({ provider, count: records.length, records }))
-    .sort((a, b) => b.count - a.count || a.provider.localeCompare(b.provider));
+  const thin = catalogSeeds
+    .map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }))
+    .filter((row) => row.score <= 1);
 
-  const thin = ranked.filter((row) => row.score <= 1);
-
-  console.log("SCORE2_PROVIDER_RANKING=" + JSON.stringify(byProvider));
+  console.log("HACKSAW_SCORE2_DETAIL=" + JSON.stringify(hacksawScore2));
   console.log("REMAINING_THIN=" + JSON.stringify(thin));
-  expect(score2).toHaveLength(147);
+  expect(hacksawScore2).toHaveLength(92);
   expect(thin).toHaveLength(5);
 });
