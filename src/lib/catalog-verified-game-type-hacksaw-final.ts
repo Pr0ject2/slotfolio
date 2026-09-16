@@ -1,4 +1,5 @@
 import type { CatalogVerifiedGameType } from "./catalog-verified-game-type";
+import { getVerifiedCatalogGameTypeHacksawProviderWide2 } from "./catalog-verified-game-type-hacksaw-provider-wide-2";
 import { getVerifiedCatalogGameTypeHacksawQualityPass6 } from "./catalog-verified-game-type-hacksaw-quality-pass-6";
 
 const verifiedAt = "2026-09-13";
@@ -25,5 +26,5 @@ const gameTypes = Object.fromEntries(
 ) as Record<string, CatalogVerifiedGameType>;
 
 export function getVerifiedCatalogGameTypeHacksawFinal(slug: string) {
-  return getVerifiedCatalogGameTypeHacksawQualityPass6(slug) ?? gameTypes[slug];
+  return getVerifiedCatalogGameTypeHacksawProviderWide2(slug) ?? getVerifiedCatalogGameTypeHacksawQualityPass6(slug) ?? gameTypes[slug];
 }
