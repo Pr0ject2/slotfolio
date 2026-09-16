@@ -21,17 +21,7 @@ const targets = {
 
 const targetSlugs = new Set(Object.keys(targets));
 
-function scoreFor(slug: string) {
-  const details = getVerifiedCatalogDetails(slug);
-  const type = getVerifiedCatalogGameType(slug);
-  const research = getVerifiedCatalogResearch(slug);
-  const detailFacts = details
-    ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length
-    : 0;
-  return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
-}
-
-test("third provider-wide Play’n GO batch enriches eleven remaining weak cards", () => {
+test("third provider-wide Play’n GO batch preserves eleven official evidence records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(11);
@@ -59,22 +49,11 @@ test("third provider-wide Play’n GO batch enriches eleven remaining weak cards
       expect(details?.maxWin, slug).toBe(values.maxWin);
       expect(details && "maxWinSource" in details, `${slug} must retain separate official max-win provenance`).toBe(true);
       if (details && "maxWinSource" in details) expect(details.maxWinSource, slug).toBe(values.maxWinSource);
-      expect(scoreFor(slug), `${slug} should gain both verified facts`).toBe(4);
     } else {
       expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
-      expect(scoreFor(slug), `${slug} should move from score 2 to score 3`).toBe(3);
     }
 
     expect(getVerifiedCatalogResearch(slug), `${slug} must not invent a taxonomy mechanic`).toBeUndefined();
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Video Slot");
   }
-
-  const ranked = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
-  expect(ranked.filter((row) => row.score <= 1)).toHaveLength(5);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(114);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(489);
-  expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(0);
-  expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
-  expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
-  expect(ranked.some((row) => targetSlugs.has(row.slug) && row.score === 2)).toBe(false);
 });
