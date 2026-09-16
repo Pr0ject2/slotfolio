@@ -39,18 +39,23 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("Hacksaw provider-wide pass 3 adds official release dates to twenty-two score-2 cards", () => {
+test("Hacksaw provider-wide pass 3 adds separately sourced official release dates to twenty-two score-2 cards", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(Object.keys(expected)).toHaveLength(22);
 
-  for (const [slug, [releaseDate, source]] of Object.entries(expected)) {
+  for (const [slug, [releaseDate, releaseDateSource]] of Object.entries(expected)) {
     const seed = selected.get(slug);
     expect(seed, slug).toBeTruthy();
     expect(seed!.provider, slug).toBe("Hacksaw Gaming");
 
     const details = getVerifiedCatalogDetails(slug);
-    expect(details, slug).toEqual({ releaseDate, source, verifiedAt: "2026-09-16" });
+    expect(details, slug).toEqual({
+      releaseDate,
+      releaseDateSource,
+      source: seed!.source,
+      verifiedAt: "2026-09-16",
+    });
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Slots");
     expect(getVerifiedCatalogResearch(slug)?.mechanics.length, slug).toBe(1);
     expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
