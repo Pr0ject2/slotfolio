@@ -1,6 +1,7 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 import { getCatalogVerifiedDetailsQualityPass6 } from "./catalog-verified-details-quality-pass-6";
 import { getCatalogVerifiedDetailsQualityPass8 } from "./catalog-verified-details-quality-pass-8";
+import { getCatalogVerifiedDetailsHacksawProviderWide3 } from "./catalog-verified-details-hacksaw-provider-wide-3";
 
 const verifiedAt = "2026-09-13";
 
@@ -13,5 +14,10 @@ const details: Record<string, CatalogVerifiedDetails> = {
 };
 
 export function getCatalogVerifiedDetailsHacksawFinal(slug: string) {
-  return getCatalogVerifiedDetailsQualityPass8(slug) ?? getCatalogVerifiedDetailsQualityPass6(slug) ?? details[slug];
+  return (
+    getCatalogVerifiedDetailsHacksawProviderWide3(slug) ??
+    getCatalogVerifiedDetailsQualityPass8(slug) ??
+    getCatalogVerifiedDetailsQualityPass6(slug) ??
+    details[slug]
+  );
 }
