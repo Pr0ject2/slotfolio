@@ -24,6 +24,7 @@ import { getCatalogVerifiedDetailsBgamingMore } from "./catalog-verified-details
 import { getCatalogVerifiedDetailsBgamingThird } from "./catalog-verified-details-bgaming-third";
 import { getCatalogVerifiedDetailsBgamingFourth } from "./catalog-verified-details-bgaming-fourth";
 import { getCatalogVerifiedDetailsEndorphina } from "./catalog-verified-details-endorphina";
+import { getCatalogVerifiedDetailsPushProviderWide } from "./catalog-verified-details-push-provider-wide";
 import { getCatalogVerifiedDetailsPush } from "./catalog-verified-details-push";
 import { getCatalogVerifiedDetailsPushMore } from "./catalog-verified-details-push-more";
 import { getCatalogVerifiedDetailsPushWave1 } from "./catalog-verified-details-push-wave1";
@@ -57,6 +58,7 @@ import { getCatalogVerifiedDetailsWazdanWave4 } from "./catalog-verified-details
 
 export function getVerifiedCatalogDetails(slug: string) {
   return (
+    getCatalogVerifiedDetailsPushProviderWide(slug) ??
     getCatalogVerifiedDetailsWazdanProviderWide(slug) ??
     getCatalogVerifiedDetailsPlayngoProviderWide9(slug) ??
     getCatalogVerifiedDetailsPlayngoProviderWide8(slug) ??
