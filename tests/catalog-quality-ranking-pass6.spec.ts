@@ -122,6 +122,6 @@ test("quality pass 6 improves thirty thin Hacksaw runtime records from official 
     })
     .filter((row) => row.score <= 1);
 
-  expect(remainingThinHacksaw).toHaveLength(17);
+  expect(remainingThinHacksaw).toHaveLength(0);
   expect(remainingThinHacksaw.some((row) => targetSlugs.has(row.slug))).toBe(false);
 });
