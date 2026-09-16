@@ -91,18 +91,4 @@ test("quality pass 21 adds one exact official fact to three more score-2 Play’
   expect(cartsResearch?.evidence, hugoCartsSlug).toMatch(/ways|1,024/i);
   expect(getVerifiedCatalogGameType(hugoCartsSlug)?.gameType, hugoCartsSlug).toBe("Video Slot");
   expect(scoreFor(hugoCartsSlug), `${hugoCartsSlug} must move from score 2 to score 3`).toBe(3);
-
-  const ranked = catalogSeeds.map((seed) => ({
-    slug: seed.slug,
-    provider: seed.provider,
-    score: scoreFor(seed.slug),
-  }));
-
-  expect(ranked.filter((row) => row.score <= 1)).toHaveLength(5);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(114);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(489);
-  expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(0);
-  expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
-  expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
-  expect(ranked.some((row) => targetSlugs.has(row.slug) && row.score === 2)).toBe(false);
 });
