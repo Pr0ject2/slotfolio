@@ -34,7 +34,6 @@ function coverageText(item: CatalogItem) {
 type DisplayFact = {
   label: string;
   value: string;
-  pending?: boolean;
 };
 
 function displayFacts(item: CatalogItem): DisplayFact[] {
@@ -47,8 +46,7 @@ function displayFacts(item: CatalogItem): DisplayFact[] {
     { label: "Релиз", value: item.releaseDate ? displayRelease(item.releaseDate) : "" },
   ];
 
-  if (item.coverage === "dossier") return facts.filter((fact) => Boolean(fact.value));
-  return facts.map((fact) => ({ ...fact, value: fact.value || "—", pending: !fact.value }));
+  return facts.filter((fact) => Boolean(fact.value));
 }
 
 export function CatalogGameCard({ item }: { item: CatalogItem }) {
@@ -90,20 +88,25 @@ export function CatalogGameCard({ item }: { item: CatalogItem }) {
           <div className={styles.mechanics} aria-label="Подтверждённые механики">
             {item.mechanics.map((mechanic) => <span key={mechanic}>{mechanic}</span>)}
           </div>
-        ) : item.coverage === "catalog" ? (
-          <div className={styles.mechanics} aria-label="Механика уточняется">
-            <span className={styles.pendingChip}>Механика уточняется</span>
-          </div>
         ) : null}
 
-        <dl className={styles.facts} aria-label="Подтверждённые характеристики">
+        {facts.length > 0 && <dl className={styles.facts} aria-label="Подтверждённые характеристики">
           {facts.map((fact) => (
-            <div className={`${styles.fact} ${fact.pending ? styles.factPending : ""}`} key={fact.label}>
+            <div className={styles.fact} key={fact.label}>
               <dt>{fact.label}</dt>
               <dd>{fact.value}</dd>
             </div>
           ))}
-        </dl>
+        </dl>}
+
+        {item.coverage === "catalog" && facts.length < 6 && (
+          <p className={styles.pending}>
+            {facts.length
+              ? "Остальные характеристики не подтверждены."
+              : "Технические характеристики пока не подтверждены."}
+            {!item.mechanics.length && " Механика уточняется."}
+          </p>
+        )}
 
         {item.coverage === "dossier" && item.tags.length ? (
           <div className={`catalog-game-tags ${styles.tags}`} aria-label="Особенности игры">

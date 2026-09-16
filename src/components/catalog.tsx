@@ -241,11 +241,14 @@ export function Catalog({
 
         <div className="results" ref={resultsRef}>
           <div className="results-toolbar">
-            <span role="status" aria-live="polite">
+            <div className="results-summary">
+            <span className="results-count" role="status" aria-live="polite">
               {results.length === model.facets.total
                 ? `${model.facets.total} игр`
                 : `Найдено ${results.length} из ${model.facets.total}`}
             </span>
+            <span className="results-composition">Досье — {dossierCount} <span aria-hidden="true"> / </span> Карточки каталога — {results.length - dossierCount}</span>
+            </div>
             <label>
               <span className="sr-only">Сортировка</span>
               <select aria-label="Сортировка" value={sort} onChange={(e) => setSort(e.target.value)}>
@@ -264,10 +267,10 @@ export function Catalog({
               </button>
             </div>
           </div>
-          <p className="catalog-coverage-note">
-            {dossierCount} с полным досье · {results.length - dossierCount} карточек каталога.
-            {results.length > dossierCount && " Подтверждённые характеристики показываются прямо в карточках; неизвестные значения не подставляются."}
-          </p>
+          <details className="catalog-coverage-note">
+            <summary>Как читать карточки</summary>
+            <p>Досье содержат подробный разбор игры. Карточки каталога — краткие записи с проверенными данными. Показываем только подтверждённые характеристики; неизвестные значения не подставляем.</p>
+          </details>
 
           {hasFilters && (
             <div className="active-filters" aria-label="Активные фильтры">
