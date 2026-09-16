@@ -73,10 +73,10 @@ test("quality pass 16 confirms collect mechanics for three score-2 3 Oaks record
     score: scoreFor(seed.slug),
   }));
 
-  expect(ranked.filter((row) => row.score <= 1)).toHaveLength(22);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(130);
+  expect(ranked.filter((row) => row.score <= 1)).toHaveLength(5);
+  expect(ranked.filter((row) => row.score === 2)).toHaveLength(147);
   expect(ranked.filter((row) => row.score === 3)).toHaveLength(456);
-  expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(17);
+  expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(0);
   expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
   expect(ranked.some((row) => targetSlugs.has(row.slug) && row.score === 2)).toBe(false);

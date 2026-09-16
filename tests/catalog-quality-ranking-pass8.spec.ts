@@ -78,9 +78,9 @@ test("quality pass 8 improves twelve thin Hacksaw runtime records from exact off
     .map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }))
     .filter((row) => row.score <= 1);
 
-  expect(remainingThin).toHaveLength(22);
+  expect(remainingThin).toHaveLength(5);
   expect(remainingThin.some((row) => targetSlugs.has(row.slug))).toBe(false);
-  expect(remainingThin.filter((row) => row.provider === "Hacksaw Gaming")).toHaveLength(17);
+  expect(remainingThin.filter((row) => row.provider === "Hacksaw Gaming")).toHaveLength(0);
   expect(remainingThin.filter((row) => row.provider === "Nolimit City")).toHaveLength(4);
   expect(remainingThin.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
 });
