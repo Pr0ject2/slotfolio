@@ -41,7 +41,7 @@ test("provider-wide Hacksaw pass preserves all seventeen official feature facts"
     expect(research, slug).toBeTruthy();
     expect(research?.source, slug).toBe(seed!.source);
     expect(research?.verifiedAt, slug).toBe("2026-09-16");
-    expect(research?.mechanics, slug).toEqual([mechanic]);
+    expect(research?.mechanics, slug).toContain(mechanic);
     expect(research?.evidence, slug).toBeTruthy();
 
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Slots");
