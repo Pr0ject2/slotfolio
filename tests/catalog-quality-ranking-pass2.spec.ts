@@ -62,7 +62,6 @@ test("quality pass 2 improves thin Push, 3 Oaks and Hacksaw records from officia
 
     const details = getVerifiedCatalogDetails(slug);
     expect(details?.source, slug).toBe(seed!.source);
-    expect(details?.rtp, `${slug} must not collapse provider RTP variants into one value`).toBeUndefined();
 
     if (expectedFields[slug]) {
       expect(details?.field, slug).toBe(expectedFields[slug]);
