@@ -16,6 +16,7 @@ import { getCatalogResearchPlayngoProviderWide8 } from "./catalog-research-playn
 import { getCatalogResearchPlayngoProviderWide7 } from "./catalog-research-playngo-provider-wide-7";
 import { getCatalogResearchPlayngoProviderWide } from "./catalog-research-playngo-provider-wide";
 import { getCatalogResearchEndorphina } from "./catalog-research-endorphina";
+import { getCatalogResearchHacksawProviderTail } from "./catalog-research-hacksaw-provider-tail";
 import { getCatalogResearchHacksawProviderWide } from "./catalog-research-hacksaw-provider-wide";
 import { getCatalogResearchHacksaw } from "./catalog-research-hacksaw";
 import { getCatalogResearchHacksawMore } from "./catalog-research-hacksaw-more";
@@ -78,6 +79,7 @@ export function getVerifiedCatalogResearch(slug: string) {
     getCatalogResearch3OaksVerifiedWave1(slug) ??
     getCatalogResearch3OaksFinal(slug) ??
     getCatalogResearchEndorphina(slug) ??
+    getCatalogResearchHacksawProviderTail(slug) ??
     getCatalogResearchHacksawProviderWide(slug) ??
     getCatalogResearchHacksaw(slug) ??
     getCatalogResearchHacksawMore(slug) ??
