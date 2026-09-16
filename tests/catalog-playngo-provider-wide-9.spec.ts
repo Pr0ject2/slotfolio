@@ -6,21 +6,16 @@ import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-typ
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const expected = {
-  "3-oaks-gaming-coin-up-hot-fire": {
-    field: "3×3",
-    releaseDate: "2024-02",
-    source: "https://3oaks.com/game/coin_up",
-  },
-  "3-oaks-gaming-coin-volcano": {
-    field: "3×3",
-    releaseDate: "2023-08",
-    source: "https://3oaks.com/game/coin_volcano",
-  },
-  "3-oaks-gaming-gold-nuggets": {
-    field: "3×3",
-    releaseDate: "2023-12",
-    source: "https://3oaks.com/game/gold_nuggets",
-  },
+  "playn-go-aztec-idols": { field: "≥5 барабанов", releaseDate: "2012-08-11" },
+  "playn-go-crazy-cows": { field: "≥5 барабанов", releaseDate: "2014-11-05" },
+  "playn-go-dragon-ship": { field: "≥5 барабанов", releaseDate: "2012-10-07" },
+  "playn-go-enchanted-crystals": { field: "≥5 барабанов", releaseDate: "2014-05-26" },
+  "playn-go-golden-caravan": { field: "≥5 барабанов", releaseDate: "2016-04-20" },
+  "playn-go-golden-colts": { field: "≥5 барабанов", releaseDate: "2019-02-26" },
+  "playn-go-grim-muerto": { field: "≥5 барабанов", releaseDate: "2016-07-11" },
+  "playn-go-holiday-season": { field: "3 позиции на барабане", releaseDate: "2016-11-14" },
+  "playn-go-motley-crue": { field: "≥5 барабанов", releaseDate: "2022-12-22" },
+  "playn-go-ninja-fruits": { field: "≥5 барабанов", releaseDate: "2013-06-19" },
 } as const;
 
 const targetSlugs = new Set(Object.keys(expected));
@@ -35,10 +30,10 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 16 confirms collect mechanics for three score-2 3 Oaks records", () => {
+test("ninth provider-wide Play’n GO batch adds conservative official reel evidence to ten score-2 cards", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
-  expect(targetSlugs.size).toBe(3);
+  expect(targetSlugs.size).toBe(10);
   expect(catalogSeeds).toHaveLength(900);
   expect(slots).toHaveLength(100);
   expect(catalogSeeds.length + slots.length).toBe(1000);
@@ -46,33 +41,31 @@ test("quality pass 16 confirms collect mechanics for three score-2 3 Oaks record
   for (const [slug, values] of Object.entries(expected)) {
     const seed = selected.get(slug);
     expect(seed, slug).toBeTruthy();
-    expect(seed!.provider, slug).toBe("3 Oaks Gaming");
-    expect(seed!.source, slug).toBe(values.source);
+    expect(seed!.provider, slug).toBe("Play’n GO");
     expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
 
     const details = getVerifiedCatalogDetails(slug);
     expect(details, slug).toBeTruthy();
-    expect(details?.source, slug).toBe(values.source);
+    expect(details?.source, `${slug} must preserve the official catalog page as primary provenance`).toBe(seed!.source);
     expect(details?.field, slug).toBe(values.field);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
     expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
     expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
     expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
+    expect(details?.verifiedAt, slug).toBe("2026-09-16");
+    expect(details && "fieldSource" in details, `${slug} must retain field provenance`).toBe(true);
+    if (details && "fieldSource" in details) {
+      expect(details.fieldSource, slug).toMatch(/^https:\/\/www\.playngo\.com\//);
+    }
 
-    const research = getVerifiedCatalogResearch(slug);
-    expect(research?.source, slug).toBe(values.source);
-    expect(research?.mechanics, `${slug} must use only the verified collect mechanic`).toEqual(["Сбор символов"]);
-    expect(research?.evidence, slug).toMatch(/COLLECT SYMBOL|gathers/i);
-    expect(getVerifiedCatalogGameType(slug), `${slug} must not invent Game Type`).toBeUndefined();
+    expect(getVerifiedCatalogGameType(slug), `${slug} keeps the already verified game type`).toMatchObject({
+      gameType: "Video Slot",
+    });
+    expect(getVerifiedCatalogResearch(slug)?.mechanics ?? [], `${slug} must not invent a mechanic`).toEqual([]);
     expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
   }
 
-  const ranked = catalogSeeds.map((seed) => ({
-    slug: seed.slug,
-    provider: seed.provider,
-    score: scoreFor(seed.slug),
-  }));
-
+  const ranked = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(22);
   expect(ranked.filter((row) => row.score === 2)).toHaveLength(130);
   expect(ranked.filter((row) => row.score === 3)).toHaveLength(456);
