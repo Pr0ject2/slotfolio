@@ -14,29 +14,19 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("probe thin Hacksaw catalog-only cards", () => {
-  const rows = catalogSeeds
-    .filter((seed) => seed.provider === "Hacksaw Gaming")
-    .map((seed) => {
-      const details = getVerifiedCatalogDetails(seed.slug);
-      const type = getVerifiedCatalogGameType(seed.slug);
-      const research = getVerifiedCatalogResearch(seed.slug);
-      return {
-        slug: seed.slug,
-        name: seed.name,
-        source: seed.source,
-        score: scoreFor(seed.slug),
-        field: details?.field ?? null,
-        rtp: details?.rtp ?? null,
-        maxWin: details?.maxWin ?? null,
-        volatility: details?.volatility ?? null,
-        releaseDate: details?.releaseDate ?? null,
-        gameType: type?.gameType ?? null,
-        mechanics: research?.mechanics ?? [],
-      };
-    })
-    .filter((row) => row.score <= 1);
+test("probe totals after Hacksaw provider-wide enrichment", () => {
+  const ranked = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
+  const hacksawThin = ranked.filter((row) => row.provider === "Hacksaw Gaming" && row.score <= 1);
+  const totals = {
+    le1: ranked.filter((row) => row.score <= 1).length,
+    score2: ranked.filter((row) => row.score === 2).length,
+    score3: ranked.filter((row) => row.score === 3).length,
+    hacksawThin: hacksawThin.length,
+    nolimitThin: ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1).length,
+    coinClubScore: ranked.find((row) => row.slug === "playn-go-coin-club")?.score ?? null,
+  };
 
-  console.log("HACKSAW_THIN_PROBE=" + JSON.stringify(rows));
-  expect(rows).toHaveLength(17);
+  console.log("HACKSAW_PROVIDER_WIDE_TOTALS=" + JSON.stringify(totals));
+  console.log("HACKSAW_REMAINING_THIN=" + JSON.stringify(hacksawThin));
+  expect(hacksawThin).toHaveLength(0);
 });
