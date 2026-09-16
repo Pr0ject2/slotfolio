@@ -14,35 +14,20 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("probe detailed Hacksaw score-2 cards for next provider-wide batch", () => {
-  const hacksawScore2 = catalogSeeds
-    .filter((seed) => seed.provider === "Hacksaw Gaming")
-    .map((seed) => {
-      const details = getVerifiedCatalogDetails(seed.slug);
-      const type = getVerifiedCatalogGameType(seed.slug);
-      const research = getVerifiedCatalogResearch(seed.slug);
-      return {
-        slug: seed.slug,
-        name: seed.name,
-        source: seed.source,
-        score: scoreFor(seed.slug),
-        field: details?.field ?? null,
-        rtp: details?.rtp ?? null,
-        maxWin: details?.maxWin ?? null,
-        volatility: details?.volatility ?? null,
-        releaseDate: details?.releaseDate ?? null,
-        gameType: type?.gameType ?? null,
-        mechanics: research?.mechanics ?? [],
-      };
-    })
-    .filter((row) => row.score === 2);
+test("probe totals after second Hacksaw provider-wide batch", () => {
+  const ranked = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
+  const hacksawScore2 = ranked.filter((row) => row.provider === "Hacksaw Gaming" && row.score === 2);
+  const thin = ranked.filter((row) => row.score <= 1);
+  const totals = {
+    le1: thin.length,
+    score2: ranked.filter((row) => row.score === 2).length,
+    score3: ranked.filter((row) => row.score === 3).length,
+    hacksawScore2: hacksawScore2.length,
+    hacksawThin: thin.filter((row) => row.provider === "Hacksaw Gaming").length,
+  };
 
-  const thin = catalogSeeds
-    .map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }))
-    .filter((row) => row.score <= 1);
+  console.log("HACKSAW_PROVIDER_WIDE_2_TOTALS=" + JSON.stringify(totals));
+  console.log("HACKSAW_SCORE2_REMAINING=" + JSON.stringify(hacksawScore2));
 
-  console.log("HACKSAW_SCORE2_DETAIL=" + JSON.stringify(hacksawScore2));
-  console.log("REMAINING_THIN=" + JSON.stringify(thin));
-  expect(hacksawScore2).toHaveLength(92);
-  expect(thin).toHaveLength(5);
+  expect(totals).toEqual({ le1: 5, score2: 114, score3: 489, hacksawScore2: 59, hacksawThin: 0 });
 });
