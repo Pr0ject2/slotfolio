@@ -41,7 +41,7 @@ test("catalog model exposes verified technical data to cards without promoting f
   expect(thin?.releaseDate).toBe("");
 });
 
-test("verified catalog card keeps a complete six-field passport", async ({ page }) => {
+test("verified catalog card presents every confirmed passport value", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/slots?q=Mayan%20Ritual");
   await page.waitForLoadState("networkidle");
@@ -56,7 +56,7 @@ test("verified catalog card keeps a complete six-field passport", async ({ page 
   await expect(card).toContainText("850x");
   await expect(card).toContainText("Низкая–средняя");
   await expect(card).toContainText("03.09.2018");
-  await expect(card.locator("dl[aria-label='Подтверждённые характеристики'] > div")).toHaveCount(6);
+  await expect(card.locator("dd").filter({ hasText: /^—$/ })).toHaveCount(0);
   await expect(card).not.toContainText("обложка на проверке");
   await expect(card).not.toContainText("undefined");
   await expect(card).not.toContainText("null");
@@ -72,8 +72,10 @@ test("empty catalog record still looks like a finished card without invented fac
   await expect(card).toContainText("Coin Club");
   await expect(card).toContainText("официальная запись");
   await expect(card).toContainText("Механика уточняется");
-  await expect(card.locator("dl[aria-label='Подтверждённые характеристики'] > div")).toHaveCount(6);
-  await expect(card.locator("dl[aria-label='Подтверждённые характеристики'] dd")).toHaveText(["—", "—", "—", "—", "—", "—"]);
+  await expect(card.locator("dd").filter({ hasText: /^—$/ })).toHaveCount(0);
+  await expect(card.locator("dl")).toHaveCount(0);
+  await expect(card.getByText("Технические характеристики пока не подтверждены.", { exact: false })).toBeVisible();
+  await expect(card.getByRole("button", { name: /сравнен/ })).toHaveCount(0);
   await expect(card.getByText("Открыть запись ↗", { exact: true })).toHaveCount(1);
   await expect(card).not.toContainText("undefined");
   await expect(card).not.toContainText("null");
@@ -94,3 +96,21 @@ test("cover view keeps two slot cards per row on 390px without horizontal overfl
   expect((second?.x ?? 0)).toBeGreaterThan((first?.x ?? 0));
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
+
+for (const width of [320, 390, 1440]) {
+  test(`partial catalog passport shows only sourced facts at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.goto('/slots?q=Dancing%20Joker');
+    const card = page.locator('.catalog-game[data-coverage="catalog"]');
+    await expect(card).toHaveCount(1);
+    await expect(card.locator('dl')).toContainText('5×3 · 40 линий');
+    await expect(card.locator('dl')).toContainText('05.2025');
+    for (const label of ['RTP', 'Макс.', 'Волат.']) {
+      await expect(card.locator('dt').filter({ hasText: new RegExp(`^${label.replace('.', '\\.')}$`) })).toHaveCount(0);
+    }
+    await expect(card.locator('dd').filter({ hasText: /^—$/ })).toHaveCount(0);
+    await expect(card.getByText('Остальные характеристики не подтверждены.')).toBeVisible();
+    await expect(card.getByRole('button', { name: /сравнен/ })).toHaveCount(0);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  });
+}

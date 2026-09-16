@@ -4578,7 +4578,13 @@ summary {
 
 /* Visual QA: readable catalog controls and deliberate basic-record layouts. */
 .catalog .results { scroll-margin-top: 20px; }
-.catalog-coverage-note { font-size: 12px; line-height: 1.65; color: var(--muted); margin: 14px 0 18px; max-width: 66ch; }
+.results-summary { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 5px; padding: 5px 0; }
+.results-count { font-family: var(--serif); font-size: 22px; line-height: 1.2; }
+.results-composition { color: var(--muted); font-size: 11px; line-height: 1.6; }
+.results-composition > span { margin: 0 7px; color: var(--line); }
+.catalog-coverage-note { font-size: 11px; line-height: 1.6; color: var(--muted); margin: 10px 0 16px; max-width: 65ch; }
+.catalog-coverage-note summary { cursor: pointer; width: fit-content; }
+.catalog-coverage-note p { margin: 8px 0 0; }
 .catalog-coverage { display: block; font-size: 11px; line-height: 1.6; color: var(--muted); margin: 0 0 10px; }
 .catalog-game-art img, .slot-figure .game-image { object-fit: contain; background: var(--olive); }
 .list .catalog-only { grid-template-columns: minmax(0, 1fr) 22px; padding: 22px 0; }
@@ -4620,7 +4626,7 @@ summary {
   .view-controls button { min-width: 38px; }
   .results-toolbar { flex-wrap: wrap; gap: 8px; font-size: 12px; }
   .results-toolbar select { font-size: 12px; min-height: 44px; }
-  .results-toolbar > span { flex: 1 0 100%; }
+  .results-toolbar > span, .results-toolbar > .results-summary { flex: 1 0 100%; }
   .results-toolbar > label { flex: 1; }
   .catalog-game .eyebrow { font-size: 10px; letter-spacing: .035em; line-height: 1.6; }
   .catalog-game-data, .catalog-game-data .compare-button { font-size: 11px; line-height: 1.65; }
