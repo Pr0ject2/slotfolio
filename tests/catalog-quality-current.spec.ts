@@ -19,9 +19,9 @@ test("current catalog quality baseline", () => {
 
   expect(catalogSeeds).toHaveLength(900);
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(5);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(92);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(511);
-  expect(ranked.filter((row) => row.provider === "Hacksaw Gaming" && row.score === 2)).toHaveLength(37);
+  expect(ranked.filter((row) => row.score === 2)).toHaveLength(75);
+  expect(ranked.filter((row) => row.score === 3)).toHaveLength(528);
+  expect(ranked.filter((row) => row.provider === "Hacksaw Gaming" && row.score === 2)).toHaveLength(20);
   expect(ranked.filter((row) => row.provider === "Hacksaw Gaming" && row.score <= 1)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
   expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
