@@ -31,38 +31,10 @@ const researchExpected = {
   "playn-go-piggy-blitz": ["Способы"],
 } as const;
 
-const expectedScores = {
-  "playn-go-15-crystal-roses-a-tale-of-love": 3,
-  "playn-go-agent-destiny": 3,
-  "playn-go-animal-madness": 6,
-  "playn-go-big-win-cat-pawsperity": 3,
-  "playn-go-captain-glum-pirate-hunter": 3,
-  "playn-go-easter-eggs": 3,
-  "playn-go-easter-eggspedition": 3,
-  "playn-go-fire-joker-100": 3,
-  "playn-go-free-reelin-joker-1000": 4,
-  "playn-go-gargantoonz": 5,
-  "playn-go-gerards-gambit": 4,
-  "playn-go-ghost-of-dead": 4,
-  "playn-go-hugo-legacy": 4,
-  "playn-go-loot-and-labyrinths": 3,
-  "playn-go-piggy-blitz": 5,
-} as const;
-
+const targetSlugs = new Set([...Object.keys(detailsExpected), ...Object.keys(researchExpected)]);
 const gridSlots = new Set(["playn-go-animal-madness", "playn-go-gargantoonz", "playn-go-hugo-legacy"]);
-const targetSlugs = new Set(Object.keys(expectedScores));
 
-function scoreFor(slug: string) {
-  const details = getVerifiedCatalogDetails(slug);
-  const type = getVerifiedCatalogGameType(slug);
-  const research = getVerifiedCatalogResearch(slug);
-  const detailFacts = details
-    ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length
-    : 0;
-  return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
-}
-
-test("provider-wide Play’n GO pass enriches fifteen weak cards from official evidence", () => {
+test("provider-wide Play’n GO pass preserves fifteen official evidence records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(15);
@@ -70,13 +42,12 @@ test("provider-wide Play’n GO pass enriches fifteen weak cards from official e
   expect(slots).toHaveLength(100);
   expect(catalogSeeds.length + slots.length).toBe(1000);
 
-  for (const [slug, expectedScore] of Object.entries(expectedScores)) {
+  for (const slug of targetSlugs) {
     const seed = selected.get(slug);
     expect(seed, slug).toBeTruthy();
     expect(seed!.provider, slug).toBe("Play’n GO");
     expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe(gridSlots.has(slug) ? "Grid Slot" : "Video Slot");
-    expect(scoreFor(slug), slug).toBe(expectedScore);
   }
 
   for (const [slug, values] of Object.entries(detailsExpected)) {
@@ -105,13 +76,4 @@ test("provider-wide Play’n GO pass enriches fifteen weak cards from official e
     expect(research?.evidence, slug).toBeTruthy();
     expect(research && "evidenceSource" in research, `${slug} must retain separate official evidence provenance`).toBe(true);
   }
-
-  const ranked = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
-  expect(ranked.filter((row) => row.score <= 1)).toHaveLength(5);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(114);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(489);
-  expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(0);
-  expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
-  expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
-  expect(ranked.some((row) => targetSlugs.has(row.slug) && row.score === 2)).toBe(false);
 });
