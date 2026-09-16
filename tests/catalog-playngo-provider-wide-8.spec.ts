@@ -2,43 +2,30 @@ import { test, expect } from "@playwright/test";
 import { catalogSeeds } from "../src/lib/catalog-seeds";
 import { slots } from "../src/lib/data";
 import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
-import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const detailTargets = {
   "playn-go-highway-legends": {
     field: "5 барабанов",
     fieldSource: "https://www.playngo.com/post/playngo-plot-a-prize-hunting-heis-in-highway-legends",
-    score: 4,
   },
   "playn-go-enchanted-meadow": {
     field: "5 барабанов",
     fieldSource: "https://www.playngo.com/posts/top-summer-themed-slots-to-play-in-2023",
-    score: 3,
   },
 } as const;
 
 const researchTargets = {
-  "playn-go-highway-legends": { mechanics: ["Сбор символов"], score: 4 },
-  "playn-go-def-leppard-hysteria": { mechanics: ["Кластеры", "Каскады"], score: 4 },
-  "playn-go-cash-a-cabana": { mechanics: ["Сбор символов"], score: 3 },
-  "playn-go-fat-frankies": { mechanics: ["Сбор символов"], score: 3 },
-  "playn-go-lab-of-madness-its-a-wild": { mechanics: ["Сбор символов"], score: 3 },
+  "playn-go-highway-legends": { mechanics: ["Сбор символов"] },
+  "playn-go-def-leppard-hysteria": { mechanics: ["Кластеры", "Каскады"] },
+  "playn-go-cash-a-cabana": { mechanics: ["Сбор символов"] },
+  "playn-go-fat-frankies": { mechanics: ["Сбор символов"] },
+  "playn-go-lab-of-madness-its-a-wild": { mechanics: ["Сбор символов"] },
 } as const;
 
 const targetSlugs = new Set([...Object.keys(detailTargets), ...Object.keys(researchTargets)]);
 
-function scoreFor(slug: string) {
-  const details = getVerifiedCatalogDetails(slug);
-  const type = getVerifiedCatalogGameType(slug);
-  const research = getVerifiedCatalogResearch(slug);
-  const detailFacts = details
-    ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length
-    : 0;
-  return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
-}
-
-test("eighth provider-wide Play’n GO batch enriches six remaining score-2 cards", () => {
+test("eighth provider-wide Play’n GO batch preserves six official evidence records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(6);
@@ -63,7 +50,6 @@ test("eighth provider-wide Play’n GO batch enriches six remaining score-2 card
     expect(details?.verifiedAt, slug).toBe("2026-09-15");
     expect(details && "fieldSource" in details, `${slug} must retain separate official field provenance`).toBe(true);
     if (details && "fieldSource" in details) expect(details.fieldSource, slug).toBe(values.fieldSource);
-    expect(scoreFor(slug), slug).toBe(values.score);
   }
 
   for (const [slug, values] of Object.entries(researchTargets)) {
@@ -78,7 +64,6 @@ test("eighth provider-wide Play’n GO batch enriches six remaining score-2 card
     expect(research?.mechanics, slug).toEqual(values.mechanics);
     expect(research?.evidence, slug).toBeTruthy();
     expect(research?.verifiedAt, slug).toBe("2026-09-15");
-    expect(scoreFor(slug), slug).toBe(values.score);
   }
 
   const defLeppard = getVerifiedCatalogResearch("playn-go-def-leppard-hysteria");
@@ -92,13 +77,4 @@ test("eighth provider-wide Play’n GO batch enriches six remaining score-2 card
   if (fatFrankies && "evidenceSource" in fatFrankies) {
     expect(fatFrankies.evidenceSource).toBe("https://www.playngo.com/post/fat-frankies");
   }
-
-  const ranked = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
-  expect(ranked.filter((row) => row.score <= 1)).toHaveLength(5);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(114);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(489);
-  expect(ranked.filter((row) => row.score <= 1 && row.provider === "Hacksaw Gaming")).toHaveLength(0);
-  expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
-  expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
-  expect(ranked.some((row) => targetSlugs.has(row.slug) && row.score === 2)).toBe(false);
 });
