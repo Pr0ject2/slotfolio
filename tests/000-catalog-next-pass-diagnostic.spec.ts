@@ -27,13 +27,23 @@ function plainText(html: string) {
     .trim();
 }
 
-function storySegment(text: string) {
-  const startMatch = /HERE.?S THE STORY/i.exec(text);
-  if (!startMatch) return "";
-  const start = startMatch.index + startMatch[0].length;
-  const tail = text.slice(start);
-  const endMatch = /\bFEATURES\b/i.exec(tail);
-  return (endMatch ? tail.slice(0, endMatch.index) : tail.slice(0, 1800)).trim();
+function normalizeMaxWin(raw: string) {
+  const digits = raw.replace(/[^0-9]/g, "");
+  if (!digits) return "";
+  return `${digits.replace(/\B(?=(\d{3})+(?!\d))/g, " ")}x`;
+}
+
+function extractMaxWin(text: string) {
+  const patterns = [
+    /max(?:imum)? win(?: of| is| up to| of up to)?\s*(?:an?\s*)?([0-9][0-9.,\s]*)\s*(?:x|times(?: your| the)? bet)/i,
+    /([0-9][0-9.,\s]*)\s*x\s+max(?:imum)? win/i,
+    /max(?:imum)? win[^.!?]{0,80}?([0-9][0-9.,\s]*)\s*x\b/i,
+  ];
+  for (const pattern of patterns) {
+    const match = pattern.exec(text);
+    if (match) return normalizeMaxWin(match[1]);
+  }
+  return "";
 }
 
 async function probe(seed: (typeof catalogSeeds)[number]) {
@@ -43,34 +53,36 @@ async function probe(seed: (typeof catalogSeeds)[number]) {
       signal: AbortSignal.timeout(20_000),
     });
     if (!response.ok) {
-      return { slug: seed.slug, source: seed.source, status: response.status, slot: false, story: "" };
+      return { slug: seed.slug, source: seed.source, status: response.status, maxWin: "", sample: "" };
     }
-    const story = storySegment(plainText(await response.text()));
+    const text = plainText(await response.text());
+    const maxWin = extractMaxWin(text);
+    const maxIndex = text.toLowerCase().indexOf("max win");
     return {
       slug: seed.slug,
       source: seed.source,
       status: response.status,
-      slot: /\bslots?\b/i.test(story),
-      story: story.slice(0, 420),
+      maxWin,
+      sample: maxIndex >= 0 ? text.slice(Math.max(0, maxIndex - 100), maxIndex + 260) : text.slice(0, 220),
     };
   } catch (error) {
     return {
       slug: seed.slug,
       source: seed.source,
       status: 0,
-      slot: false,
-      story: error instanceof Error ? error.message : String(error),
+      maxWin: "",
+      sample: error instanceof Error ? error.message : String(error),
     };
   }
 }
 
-test.only("probe 3 Oaks score-3 game pages for explicit slot wording", async () => {
+test.only("probe Hacksaw score-3 game pages for explicit max win", async () => {
   test.setTimeout(180_000);
   const targets = catalogSeeds.filter(
     (seed) =>
-      seed.provider === "3 Oaks Gaming" &&
+      seed.provider === "Hacksaw" &&
       qualityScore(seed.slug) === 3 &&
-      !getVerifiedCatalogGameType(seed.slug),
+      !getVerifiedCatalogDetails(seed.slug)?.maxWin,
   );
 
   const results: Awaited<ReturnType<typeof probe>>[] = [];
@@ -79,12 +91,16 @@ test.only("probe 3 Oaks score-3 game pages for explicit slot wording", async () 
   }
 
   console.log(
-    "THREE_OAKS_SLOT_PROBE",
+    "HACKSAW_MAXWIN_PROBE",
     JSON.stringify({
       total: targets.length,
-      explicitSlot: results.filter((result) => result.slot).length,
-      verified: results.filter((result) => result.slot).map((result) => result.slug),
-      unresolved: results.filter((result) => !result.slot),
+      explicitMaxWin: results.filter((result) => result.maxWin).length,
+      verified: results.filter((result) => result.maxWin).map((result) => ({
+        slug: result.slug,
+        source: result.source,
+        maxWin: result.maxWin,
+      })),
+      unresolved: results.filter((result) => !result.maxWin),
     }),
   );
 
