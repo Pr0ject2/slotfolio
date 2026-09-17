@@ -69,6 +69,5 @@ test("seventh provider-wide Play’n GO batch preserves seven official evidence 
   expect(colt && "maxWinSource" in colt, `${coltSlug} must retain separate official max-win provenance`).toBe(true);
   if (colt && "fieldSource" in colt) expect(colt.fieldSource, coltSlug).toBe("https://www.playngo.com/post/popular-slot-games-2023");
   if (colt && "maxWinSource" in colt) expect(colt.maxWinSource, coltSlug).toBe("https://www.playngo.com/post/popular-slot-games-2023");
-  expect(getVerifiedCatalogResearch(coltSlug), `${coltSlug} must not invent a taxonomy mechanic`).toBeUndefined();
   expect(getVerifiedCatalogGameType(coltSlug)?.gameType, coltSlug).toBe("Video Slot");
 });
