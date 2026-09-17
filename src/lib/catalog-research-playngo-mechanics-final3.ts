@@ -5,7 +5,7 @@ const verifiedAt = "2026-09-17";
 const records: Record<string, CatalogResearch> = {
   "playn-go-nsync-pop": {
     mechanics: ["Расширяющиеся барабаны"],
-    source: "https://www.playngo.com/games/%2Ansync-pop",
+    source: "https://www.playngo.com/games/*nsync-pop",
     verifiedAt,
     evidence: "Official Play’n GO page says the Free Spins objective is expanding the reels, completed through the Encore Spin feature.",
   },
