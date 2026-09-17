@@ -18,12 +18,6 @@ function itemHref(item: CatalogItem) {
   return item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
 }
 
-function coverageLabel(item: CatalogItem) {
-  if (item.coverage === "dossier") return "Полное досье";
-  if (item.mechanics.length) return "Механика проверена";
-  return "Базовая запись";
-}
-
 function sortUsefulFirst(a: CatalogItem, b: CatalogItem) {
   if (a.coverage !== b.coverage) return a.coverage === "dossier" ? -1 : 1;
   if (a.mechanics.length !== b.mechanics.length) return b.mechanics.length - a.mechanics.length;
@@ -37,7 +31,6 @@ function RelatedGames({ items }: { items: CatalogItem[] }) {
         <Link className="game-row" href={itemHref(item)} key={item.slug}>
           <span className="row-index">{String(index + 1).padStart(2, "0")}</span>
           <div className="row-main">
-            <span className="eyebrow">{coverageLabel(item)}</span>
             <h3>{item.name}</h3>
             <p>
               {item.provider}
@@ -79,7 +72,7 @@ export async function generateMetadata({
   const details = getVerifiedCatalogDetails(slot.slug);
   const gameType = getVerifiedCatalogGameType(slot.slug);
   const mechanicsText = research?.mechanics.length
-    ? ` Подтверждённые механики: ${research.mechanics.join(", ")}.`
+    ? ` Механики: ${research.mechanics.join(", ")}.`
     : "";
   const gameTypeText = gameType ? ` Тип игры: ${gameType.gameType}.` : "";
   const technicalText = details
@@ -88,7 +81,7 @@ export async function generateMetadata({
 
   return pageMetadata({
     title: `${slot.name} от ${slot.provider}`,
-    description: `${slot.name} подтверждён в официальном каталоге ${slot.provider}.${mechanicsText}${gameTypeText}${technicalText} Неисследованные характеристики не заполняются без источника.`,
+    description: `${slot.name} от ${slot.provider}.${mechanicsText}${gameTypeText}${technicalText}`,
     path: `/slots/catalog/${slot.slug}`,
     image: "/images/unavailable.svg",
     noIndex: true,
@@ -106,38 +99,12 @@ export default async function CatalogSlotPage({
   const details = getVerifiedCatalogDetails(slot.slug);
   const gameType = getVerifiedCatalogGameType(slot.slug);
   const knownMechanics = research?.mechanics ?? [];
-  const verifiedAt = displayDate(details?.verifiedAt ?? gameType?.verifiedAt ?? research?.verifiedAt);
   const releaseDate = displayDate(details?.releaseDate);
   const primarySource = details?.source ?? gameType?.source ?? slot.source;
-  const releaseDateSource =
-    details && "releaseDateSource" in details && typeof details.releaseDateSource === "string"
-      ? details.releaseDateSource
-      : null;
+  const releaseDateSource = details?.releaseDateSource ?? null;
   const hasSeparateReleaseDateSource = Boolean(
     details?.releaseDate && releaseDateSource && releaseDateSource !== primarySource,
   );
-  const hasVerifiedTechnicalData = Boolean(gameType || details?.rtp || details?.volatility || details?.field || details?.maxWin || details?.releaseDate);
-
-  const confirmed = [
-    "название",
-    "провайдер",
-    gameType ? "тип игры" : null,
-    knownMechanics.length ? "механика" : null,
-    details?.field ? "формат поля" : null,
-    details?.rtp ? "RTP" : null,
-    details?.maxWin ? "макс. выигрыш" : null,
-    details?.volatility ? "волатильность" : null,
-    details?.releaseDate ? "дата релиза" : null,
-  ].filter(Boolean) as string[];
-  const pending = [
-    knownMechanics.length ? null : "механика",
-    details?.field ? null : "формат поля",
-    details?.rtp ? null : "RTP",
-    details?.maxWin ? null : "макс. выигрыш",
-    details?.volatility ? null : "волатильность",
-    details?.releaseDate ? null : "дата релиза",
-    "обложка",
-  ].filter(Boolean) as string[];
 
   const providerItems = catalogModel.items
     .filter((item) => item.slug !== slot.slug && item.provider === slot.provider)
@@ -170,25 +137,16 @@ export default async function CatalogSlotPage({
       />
       <article className="catalog-record-page">
         <header className="catalog-record-heading">
-          <span className="eyebrow accent">Базовая запись</span>
           <h1>{slot.name}</h1>
           <Link className="provider-link" href={`/slots?provider=${providerSlug(slot.provider)}`}>{slot.provider} ↗</Link>
-          <p className="catalog-record-deck">
-            {hasVerifiedTechnicalData
-              ? `Игра подтверждена в официальном каталоге ${slot.provider}. Основные технические параметры ниже уже сверены с источником; неподтверждённые поля остаются пустыми.`
-              : knownMechanics.length
-                ? `Игра подтверждена в официальном каталоге ${slot.provider}. Механика уже проверена по источнику; остальные характеристики добавляются только после отдельной верификации.`
-                : `Игра подтверждена в официальном каталоге ${slot.provider}. Страница остаётся в каталоге, пока технические характеристики проходят отдельную проверку.`}
-          </p>
         </header>
 
         <div className="catalog-record-body">
           <section aria-labelledby="record-facts">
-            <h2 id="record-facts">Что подтверждено</h2>
+            <h2 id="record-facts">Характеристики</h2>
             <dl className="catalog-record-facts">
               <div><dt>Название</dt><dd>{slot.name}</dd></div>
               <div><dt>Провайдер</dt><dd><Link href={`/slots?provider=${providerSlug(slot.provider)}`}>{slot.provider}</Link></dd></div>
-              <div><dt>Статус</dt><dd>{hasVerifiedTechnicalData ? "Технические данные проверены" : knownMechanics.length ? "Механика проверена" : "Проверены название и провайдер"}</dd></div>
               {gameType ? <div><dt>Тип игры</dt><dd>{gameType.gameType}</dd></div> : null}
               {knownMechanics.length ? (
                 <div>
@@ -208,7 +166,6 @@ export default async function CatalogSlotPage({
               {details?.maxWin ? <div><dt>Макс. выигрыш</dt><dd>{details.maxWin}</dd></div> : null}
               {details?.volatility ? <div><dt>Волатильность</dt><dd>{details.volatility}</dd></div> : null}
               {releaseDate ? <div><dt>Дата релиза</dt><dd>{releaseDate}</dd></div> : null}
-              {verifiedAt ? <div><dt>Проверено</dt><dd>{verifiedAt}</dd></div> : null}
               <div>
                 <dt>{hasSeparateReleaseDateSource ? "Источник параметров" : "Источник"}</dt>
                 <dd><a href={primarySource} rel="noreferrer">Официальный каталог ↗</a></dd>
@@ -221,14 +178,6 @@ export default async function CatalogSlotPage({
               ) : null}
             </dl>
           </section>
-
-          <aside className="catalog-record-status">
-            <span className="eyebrow">Покрытие данных</span>
-            <h2>{hasVerifiedTechnicalData ? "Техническая карточка уже заполнена" : knownMechanics.length ? "Основа уже проверена" : "Запись в очереди на исследование"}</h2>
-            <p><strong>Подтверждено:</strong> {confirmed.join(", ")}.</p>
-            <p><strong>Ещё не подтверждено:</strong> {pending.join(", ")}. Эти поля намеренно не заполняются догадками.</p>
-            <p>Наличие игры у разработчика не считается доказательством её доступности у конкретного оператора. Полное сравнение включается только после отдельного досье.</p>
-          </aside>
         </div>
 
         <nav className="catalog-record-next" aria-label="Продолжить изучение">
