@@ -67,6 +67,7 @@ const explicitCollectGames: Record<string, string> = {
   "beauty-fruity": "Official page says the bonus goal is to collect as many locked girl symbols as possible.",
   "burning-stars-3": "Official page says Bonus symbols stay locked and the goal is to collect as many as possible.",
   "butterfly-lovers": "Official page says the slot is based on collecting token sets that unlock its bonus features.",
+  "kick-off": "Official page describes collecting gold balls horizontally or vertically to trigger bonus features.",
   "larry-the-leprechaun": "Official page describes collecting coin and sack symbols in bonus-matrix counters to trigger features.",
   "mighty-fish-blue-marlin": "Official page lists Collect to Infinity as a core feature.",
   "valentines-coins": "Official page says collected symbols remain locked during the respin-based Love the Jackpot bonus.",
