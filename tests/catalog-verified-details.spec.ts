@@ -559,8 +559,9 @@ test("verified catalog details render without promoting records to dossiers", as
 
     await page.goto(`/slots/catalog/${seed!.slug}`);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
-    await expect(page.locator(".catalog-record-heading").getByText("Базовая запись", { exact: true })).toBeVisible();
-    await expect(page.getByText("Технические данные проверены", { exact: true })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Характеристики" })).toBeVisible();
+    await expect(page.locator(".catalog-record-heading").getByText("Базовая запись", { exact: true })).toHaveCount(0);
+    await expect(page.getByText("Технические данные проверены", { exact: true })).toHaveCount(0);
     if (gameType) await expect(page.locator(".catalog-record-facts").getByText(gameType.gameType, { exact: true })).toBeVisible();
     if (details.field) await expect(page.getByText(details.field, { exact: true })).toBeVisible();
     if (details.rtp) await expect(page.getByText(details.rtp, { exact: true })).toBeVisible();
