@@ -1,4 +1,5 @@
 import type { CatalogResearch } from "./catalog-research";
+import { getCatalogResearchPushMechanicsTail } from "./catalog-research-push-mechanics-tail";
 
 const verifiedAt = "2026-09-11";
 
@@ -114,5 +115,5 @@ export const catalogResearchPush: Record<string, CatalogResearch> = {
 };
 
 export function getCatalogResearchPush(slug: string) {
-  return catalogResearchPush[slug];
+  return catalogResearchPush[slug] ?? getCatalogResearchPushMechanicsTail(slug);
 }
