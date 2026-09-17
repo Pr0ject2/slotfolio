@@ -46,6 +46,7 @@ const rejectedSeedSlugs = new Set([
   "playn-go-3-hand-casino-holdem",
   "playn-go-bugs-party",
   "playn-go-casino-holdem",
+  "playn-go-coin-club",
   "playn-go-deuces-wild-mh",
   "playn-go-flying-pigs",
   "playn-go-go-craps",

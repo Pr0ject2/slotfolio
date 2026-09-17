@@ -31,14 +31,15 @@ test("catalog model exposes verified technical data to cards without promoting f
   expect(threeOaks?.mechanics).toEqual(["Линии"]);
   expect(threeOaks?.verifiedFacts).toBe(3);
 
-  const thin = model.items.find((item) => item.slug === "playn-go-coin-club");
-  expect(thin).toBeTruthy();
-  expect(thin?.verifiedFacts).toBe(0);
-  expect(thin?.field).toBe("");
-  expect(thin?.verifiedRtp).toBe("");
-  expect(thin?.maxWin).toBe("");
-  expect(thin?.verifiedVolatility).toBe("");
-  expect(thin?.releaseDate).toBe("");
+  const minimal = model.items.find((item) => item.slug === "playn-go-rally-4-riches");
+  expect(minimal).toBeTruthy();
+  expect(minimal?.verifiedFacts).toBe(1);
+  expect(minimal?.gameType).toBe("Video Slot");
+  expect(minimal?.field).toBe("");
+  expect(minimal?.verifiedRtp).toBe("");
+  expect(minimal?.maxWin).toBe("");
+  expect(minimal?.verifiedVolatility).toBe("");
+  expect(minimal?.releaseDate).toBe("");
 });
 
 test("verified catalog card presents every confirmed passport value", async ({ page }) => {
@@ -62,19 +63,17 @@ test("verified catalog card presents every confirmed passport value", async ({ p
   await expect(card).not.toContainText("null");
 });
 
-test("empty catalog record still looks like a finished card without invented facts", async ({ page }) => {
+test("minimal catalog record still looks finished without invented facts", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.goto("/slots?q=Coin%20Club");
+  await page.goto("/slots?q=Rally%204%20Riches");
   await page.waitForLoadState("networkidle");
 
-  const card = page.locator('.catalog-game[data-coverage="catalog"]').filter({ hasText: "Coin Club" });
+  const card = page.locator('.catalog-game[data-coverage="catalog"]').filter({ hasText: "Rally 4 Riches" });
   await expect(card).toHaveCount(1);
-  await expect(card).toContainText("Coin Club");
-  await expect(card).toContainText("официальная запись");
-  await expect(card).toContainText("Механика уточняется");
+  await expect(card).toContainText("Rally 4 Riches");
+  await expect(card).toContainText("Video Slot");
   await expect(card.locator("dd").filter({ hasText: /^—$/ })).toHaveCount(0);
-  await expect(card.locator("dl")).toHaveCount(0);
-  await expect(card.getByText("Технические характеристики пока не подтверждены.", { exact: false })).toBeVisible();
+  await expect(card.getByText("Остальные характеристики не подтверждены.", { exact: false })).toBeVisible();
   await expect(card.getByRole("button", { name: /сравнен/ })).toHaveCount(0);
   await expect(card.getByText("Открыть запись ↗", { exact: true })).toHaveCount(1);
   await expect(card).not.toContainText("undefined");

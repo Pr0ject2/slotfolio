@@ -12,7 +12,6 @@ const finalSlugs = [
   "playn-go-charlie-chance-and-the-curse-of-cleopatra",
   "playn-go-charlie-chance-in-hell-to-pay",
   "playn-go-clash-of-camelot",
-  "playn-go-coin-club",
   "playn-go-colt-lightning",
   "playn-go-colt-lightning-firestorm",
   "playn-go-crazy-cows",
@@ -43,7 +42,7 @@ const gridSlots = new Set([
   "playn-go-charlie-chance-and-the-curse-of-cleopatra",
   "playn-go-lordi-reel-monsters",
 ]);
-const unknownGameType = new Set(["playn-go-coin-club", "playn-go-ras-reckoning"]);
+const unknownGameType = new Set(["playn-go-ras-reckoning"]);
 const researchedSlugs = new Set([
   "playn-go-chambers-of-ancients",
   "playn-go-charlie-chance",
