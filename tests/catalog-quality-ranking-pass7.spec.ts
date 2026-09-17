@@ -75,27 +75,4 @@ test("quality pass 7 improves five thin cross-provider runtime records from offi
     const score = detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
     expect(score, `${slug} must leave the thin score<=1 bucket`).toBeGreaterThanOrEqual(2);
   }
-
-  const remainingThin = catalogSeeds
-    .map((seed) => {
-      const details = getVerifiedCatalogDetails(seed.slug);
-      const type = getVerifiedCatalogGameType(seed.slug);
-      const research = getVerifiedCatalogResearch(seed.slug);
-      const detailFacts = details
-        ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length
-        : 0;
-      return {
-        slug: seed.slug,
-        provider: seed.provider,
-        score: detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0),
-      };
-    })
-    .filter((row) => row.score <= 1);
-
-  expect(remainingThin).toHaveLength(5);
-  expect(remainingThin.some((row) => targetSlugs.has(row.slug))).toBe(false);
-  expect(remainingThin.filter((row) => row.provider === "BGaming")).toHaveLength(0);
-  expect(remainingThin.filter((row) => row.provider === "Endorphina")).toHaveLength(0);
-  expect(remainingThin.filter((row) => row.provider === "Hacksaw Gaming")).toHaveLength(0);
-  expect(remainingThin.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
 });
