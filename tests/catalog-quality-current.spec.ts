@@ -29,5 +29,5 @@ test("current catalog quality baseline", () => {
   expect(ranked.filter((row) => row.provider === "3 Oaks Gaming" && row.score === 2)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score === 2)).toHaveLength(3);
-  expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
+  expect(ranked.some((row) => row.slug === "playn-go-rally-4-riches" && row.score === 0)).toBe(true);
 });
