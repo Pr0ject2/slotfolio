@@ -80,6 +80,9 @@ const gameTypes: Record<string, CatalogVerifiedGameType> = {
   "playn-go-moon-princess-origins": { gameType: "Grid Slot", source: "https://www.playngo.com/games/moon-princess-origins", verifiedAt },
   "playn-go-moon-princess-trinity": { gameType: "Grid Slot", source: "https://www.playngo.com/games/moon-princess-trinity", verifiedAt },
   "playn-go-wizard-of-gems": { gameType: "Video Slot", source: "https://www.playngo.com/games/wizard-of-gems", verifiedAt },
+  "3-oaks-gaming-coin-lamp": { gameType: "Slots", source: "https://3oaks.com/game/coin_lamp", verifiedAt: "2026-09-17" },
+  "3-oaks-gaming-coin-up-volcano": { gameType: "Slots", source: "https://3oaks.com/game/coinup_volcano", verifiedAt: "2026-09-17" },
+  "3-oaks-gaming-sun-of-egypt-5": { gameType: "Slots", source: "https://3oaks.com/game/sun_of_egypt_5", verifiedAt: "2026-09-17" },
 };
 
 export function getVerifiedCatalogGameType(slug: string) {
