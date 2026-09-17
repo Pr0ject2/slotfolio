@@ -184,6 +184,79 @@ const details: Record<string, PushFillOverlay> = {
     maxWin: "10 000x",
     verifiedAt,
   },
+  "push-gaming-santa-hopper": {
+    rtp: "96,35% / 94,35%",
+    maxWin: "10 000x",
+    volatility: "Средняя–высокая",
+    verifiedAt,
+  },
+  "push-gaming-santas-vault": {
+    rtp: "96,37% / 94,38%",
+    maxWin: "8118x",
+    volatility: "Низкая",
+    verifiedAt,
+  },
+  "push-gaming-shamrock-saints": {
+    rtp: "96,30% / 94,46%",
+    maxWin: "10 000x",
+    volatility: "Средняя–высокая",
+    verifiedAt,
+  },
+  "push-gaming-the-grand-show": {
+    rtp: "96,28% / 94,35%",
+    maxWin: "10 000x",
+    volatility: "Средняя",
+    verifiedAt,
+  },
+  "push-gaming-the-great-banker": {
+    rtp: "96,31% / 94,21%",
+    maxWin: "10317.6x",
+    volatility: "Средняя",
+    verifiedAt,
+  },
+  "push-gaming-tiki-tumble": {
+    field: "5×4 · 20 линий",
+    rtp: "96,49% / 94,36%",
+    volatility: "Высокая",
+    verifiedAt,
+  },
+  "push-gaming-triple-rampage": {
+    rtp: "96,23% / 94,25%",
+    maxWin: "5400x",
+    volatility: "Низкая–средняя",
+    verifiedAt,
+  },
+  "push-gaming-viva-lock-vegas": {
+    rtp: "96,35% / 94,32%",
+    maxWin: "13154x",
+    volatility: "Низкая–средняя",
+    verifiedAt,
+  },
+  "push-gaming-wild-swarm": {
+    field: "5×4 · 20 линий",
+    rtp: "97,03% / 94,67%",
+    maxWin: "3069x",
+    volatility: "Средняя–высокая",
+    verifiedAt,
+  },
+  "push-gaming-wild-swarm-2": {
+    rtp: "96,67% / 94,67%",
+    maxWin: "10 000x",
+    volatility: "Высокая",
+    verifiedAt,
+  },
+  "push-gaming-wild-swarm-3-chocolate-eggs": {
+    rtp: "96,48% / 94,33%",
+    maxWin: "23902.8x",
+    volatility: "Низкая–средняя",
+    verifiedAt,
+  },
+  "push-gaming-wild-swarm-triple-hive": {
+    rtp: "96,48% / 94,33%",
+    maxWin: "23902.8x",
+    volatility: "Средняя",
+    verifiedAt,
+  },
 };
 
 export function getCatalogVerifiedDetailsPushFill(slug: string) {
