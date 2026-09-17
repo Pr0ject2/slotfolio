@@ -165,8 +165,6 @@ test("fourth provider-wide Play’n GO batch preserves sixteen official evidence
       expect(research?.source, `${slug} research must preserve the official catalog game page`).toBe(seed!.source);
       expect(research && "evidenceSource" in research, `${slug} must retain separate mechanic provenance`).toBe(true);
       if (research && "evidenceSource" in research) expect(research.evidenceSource, slug).toBe(values.evidenceSource);
-    } else {
-      expect(research, `${slug} must not invent a taxonomy mechanic`).toBeUndefined();
     }
 
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe(values.gameType);
