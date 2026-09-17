@@ -1,0 +1,26 @@
+name: Coin Club replacement diagnostic
+
+on:
+  push:
+    branches:
+      - fix/playngo-coin-club-seed-20260917
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Capture replacement
+        run: npx playwright test tests/coin-club-replacement-diagnostic.spec.ts --reporter=list > coin-club-diagnostic.txt 2>&1 || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coin-club-diagnostic
+          path: coin-club-diagnostic.txt
