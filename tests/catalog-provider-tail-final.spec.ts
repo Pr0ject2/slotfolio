@@ -7,8 +7,8 @@ import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const finalTailSlugs = [
   "endorphina-3-golden-chests",
-  "nolimit-city-bowel-of-beelzebub24th-november-20261st-december-2026",
-  "nolimit-city-fire-in-the-hole-410th-november-202617th-november-2026",
+  "nolimit-city-bowel-of-beelzebub",
+  "nolimit-city-fire-in-the-hole-4",
 ];
 
 const completedProviders = new Set([
