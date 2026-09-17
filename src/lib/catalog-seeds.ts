@@ -60,6 +60,7 @@ const rejectedSeedSlugs = new Set([
 // Some provider pages leak a badge/CTA into the harvested title. Correct only entries
 // whose canonical title was checked on the same official provider page.
 const seedNameOverrides: Record<string, string> = {
+  "nolimit-city-duck-hunters-23rd-september-202610th-september-2026": "Duck Hunters 2",
   "wazdan-throne-of-elements-platinum": "Throne of Elements: Platinum",
 };
 
