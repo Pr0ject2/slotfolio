@@ -5,7 +5,7 @@ const verifiedAt = "2026-09-17";
 const records: Record<string, CatalogResearch> = {
   "3-oaks-gaming-coin-up-volcano": {
     mechanics: ["Сбор символов"],
-    source: "https://3oaks.com/game/coin_volcano",
+    source: "https://3oaks.com/game/coinup_volcano",
     verifiedAt,
     evidence: "Official 3 Oaks page says Bonus Symbols are collected during respins and the Collect Symbol gathers all current coin values.",
   },
