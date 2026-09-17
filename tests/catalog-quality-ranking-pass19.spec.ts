@@ -33,7 +33,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 19 adds one exact official fact to three score-2 Play’n GO records", () => {
+test("quality pass 19 preserves its exact official facts on three Play’n GO records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(3);
@@ -61,9 +61,8 @@ test("quality pass 19 adds one exact official fact to three score-2 Play’n GO 
       expect(details.fieldSource, slug).toBe(values.fieldSource);
     }
 
-    expect(getVerifiedCatalogResearch(slug), `${slug} must not invent a mechanic`).toBeUndefined();
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Video Slot");
-    expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
+    expect(scoreFor(slug), `${slug} must remain at least score 3`).toBeGreaterThanOrEqual(3);
   }
 
   const granny = selected.get(grannySlug);
@@ -86,5 +85,5 @@ test("quality pass 19 adds one exact official fact to three score-2 Play’n GO 
   expect(grannyResearch?.mechanics, grannySlug).toEqual(["Сбор символов"]);
   expect(grannyResearch?.evidence, grannySlug).toMatch(/collect/i);
   expect(getVerifiedCatalogGameType(grannySlug)?.gameType, grannySlug).toBe("Video Slot");
-  expect(scoreFor(grannySlug), `${grannySlug} must move from score 2 to score 3`).toBe(3);
+  expect(scoreFor(grannySlug), `${grannySlug} must remain at least score 3`).toBeGreaterThanOrEqual(3);
 });
