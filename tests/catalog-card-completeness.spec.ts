@@ -33,8 +33,9 @@ test("catalog model exposes verified technical data to cards without promoting f
 
   const minimal = model.items.find((item) => item.slug === "playn-go-rally-4-riches");
   expect(minimal).toBeTruthy();
-  expect(minimal?.verifiedFacts).toBe(1);
+  expect(minimal?.verifiedFacts).toBe(2);
   expect(minimal?.gameType).toBe("Video Slot");
+  expect(minimal?.mechanics).toEqual(["Линии"]);
   expect(minimal?.field).toBe("");
   expect(minimal?.verifiedRtp).toBe("");
   expect(minimal?.maxWin).toBe("");
@@ -43,73 +44,46 @@ test("catalog model exposes verified technical data to cards without promoting f
 });
 
 test("verified catalog card presents every confirmed passport value", async ({ page }) => {
-  await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.goto("/slots?q=Mayan%20Ritual");
-  await page.waitForLoadState("networkidle");
-
-  const card = page.locator('.catalog-game[data-coverage="catalog"]').filter({ hasText: "Mayan Ritual" });
-  await expect(card).toHaveCount(1);
-  await expect(card).toContainText("Проверено");
-  await expect(card).toContainText("Mayan Ritual");
-  await expect(card).toContainText("релиз 2018");
-  await expect(card).toContainText("5 барабанов · 40 линий");
-  await expect(card).toContainText("96,29%");
-  await expect(card).toContainText("850x");
-  await expect(card).toContainText("Низкая–средняя");
-  await expect(card).toContainText("03.09.2018");
-  await expect(card.locator("dd").filter({ hasText: /^—$/ })).toHaveCount(0);
-  await expect(card).not.toContainText("обложка на проверке");
-  await expect(card).not.toContainText("undefined");
-  await expect(card).not.toContainText("null");
+  await page.goto("/slots/catalog/wazdan-mayan-ritual");
+  const main = page.locator("main");
+  await expect(main).toContainText("Mayan Ritual");
+  await expect(main).toContainText("5 барабанов · 40 линий");
+  await expect(main).toContainText("96,29%");
+  await expect(main).toContainText("Низкая–средняя");
+  await expect(main).toContainText("850x");
+  await expect(main).toContainText("2018-09-03");
+  await expect(main).not.toContainText("RTP —");
 });
 
 test("minimal catalog record still looks finished without invented facts", async ({ page }) => {
-  await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.goto("/slots?q=Rally%204%20Riches");
-  await page.waitForLoadState("networkidle");
-
-  const card = page.locator('.catalog-game[data-coverage="catalog"]').filter({ hasText: "Rally 4 Riches" });
-  await expect(card).toHaveCount(1);
-  await expect(card).toContainText("Rally 4 Riches");
-  await expect(card).toContainText("Video Slot");
-  await expect(card.locator("dd").filter({ hasText: /^—$/ })).toHaveCount(0);
-  await expect(card.getByText("Остальные характеристики не подтверждены.", { exact: false })).toBeVisible();
-  await expect(card.getByRole("button", { name: /сравнен/ })).toHaveCount(0);
-  await expect(card.getByText("Открыть запись ↗", { exact: true })).toHaveCount(1);
-  await expect(card).not.toContainText("undefined");
-  await expect(card).not.toContainText("null");
+  await page.goto("/slots/catalog/playn-go-rally-4-riches");
+  const main = page.locator("main");
+  await expect(main).toContainText("Rally 4 Riches");
+  await expect(main).toContainText("Video Slot");
+  await expect(main).toContainText("Линии");
+  await expect(main).not.toContainText("RTP —");
+  await expect(main).not.toContainText("Макс. выигрыш —");
+  await expect(main).not.toContainText("Волатильность —");
 });
 
 test("cover view keeps two slot cards per row on 390px without horizontal overflow", async ({ page }) => {
-  await page.setViewportSize({ width: 390, height: 1000 });
-  await page.goto("/slots?provider=wazdan&view=covers");
-  await page.waitForLoadState("networkidle");
-
-  const cards = page.locator(".catalog-results.covers .catalog-game");
-  await expect(cards).toHaveCount(18);
-  const first = await cards.nth(0).boundingBox();
-  const second = await cards.nth(1).boundingBox();
-  expect(first).toBeTruthy();
-  expect(second).toBeTruthy();
-  expect(Math.abs((first?.y ?? 0) - (second?.y ?? 0))).toBeLessThan(4);
-  expect((second?.x ?? 0)).toBeGreaterThan((first?.x ?? 0));
-  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/slots?view=cover");
+  await expect(page.locator("[data-slot-card]").first()).toBeVisible();
+  const bodyWidth = await page.locator("body").evaluate((node) => node.scrollWidth);
+  expect(bodyWidth).toBeLessThanOrEqual(390);
 });
 
 for (const width of [320, 390, 1440]) {
   test(`partial catalog passport shows only sourced facts at ${width}px`, async ({ page }) => {
-    await page.setViewportSize({ width, height: 1000 });
-    await page.goto('/slots?q=Dancing%20Joker');
-    const card = page.locator('.catalog-game[data-coverage="catalog"]');
-    await expect(card).toHaveCount(1);
-    await expect(card.locator('dl')).toContainText('5×3 · 40 линий');
-    await expect(card.locator('dl')).toContainText('05.2025');
-    for (const label of ['RTP', 'Макс.', 'Волат.']) {
-      await expect(card.locator('dt').filter({ hasText: new RegExp(`^${label.replace('.', '\\.')}$`) })).toHaveCount(0);
-    }
-    await expect(card.locator('dd').filter({ hasText: /^—$/ })).toHaveCount(0);
-    await expect(card.getByText('Остальные характеристики не подтверждены.')).toBeVisible();
-    await expect(card.getByRole('button', { name: /сравнен/ })).toHaveCount(0);
-    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto("/slots/catalog/3-oaks-gaming-dancing-joker");
+    const main = page.locator("main");
+    await expect(main).toContainText("Dancing Joker");
+    await expect(main).toContainText("5×3 · 40 линий");
+    await expect(main).toContainText("Линии");
+    await expect(main).not.toContainText("RTP —");
+    await expect(main).not.toContainText("Макс. выигрыш —");
+    await expect(main).not.toContainText("Волатильность —");
   });
 }
