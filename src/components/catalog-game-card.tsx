@@ -17,20 +17,6 @@ function displayYear(item: CatalogItem) {
   return /^\d{4}/.test(item.releaseDate) ? item.releaseDate.slice(0, 4) : "";
 }
 
-function factWord(count: number) {
-  const mod10 = count % 10;
-  const mod100 = count % 100;
-  if (mod10 === 1 && mod100 !== 11) return "параметр";
-  if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return "параметра";
-  return "параметров";
-}
-
-function coverageText(item: CatalogItem) {
-  if (item.coverage === "dossier") return "Полное досье";
-  if (item.verifiedFacts > 0) return `Проверено ${item.verifiedFacts} ${factWord(item.verifiedFacts)}`;
-  return "Базовые данные проверены";
-}
-
 type DisplayFact = {
   label: string;
   value: string;
@@ -77,7 +63,6 @@ export function CatalogGameCard({ item }: { item: CatalogItem }) {
           <span className="eyebrow">
             {item.provider}{year ? ` / ${year}` : ""}
           </span>
-          <span className={styles.coverage}>{coverageText(item)}</span>
         </div>
 
         <h2><Link href={href}>{item.name}</Link></h2>
@@ -85,12 +70,12 @@ export function CatalogGameCard({ item }: { item: CatalogItem }) {
         {item.coverage === "dossier" ? <p>{item.description}</p> : null}
 
         {item.mechanics.length ? (
-          <div className={styles.mechanics} aria-label="Подтверждённые механики">
+          <div className={styles.mechanics} aria-label="Механики">
             {item.mechanics.map((mechanic) => <span key={mechanic}>{mechanic}</span>)}
           </div>
         ) : null}
 
-        {facts.length > 0 && <dl className={styles.facts} aria-label="Подтверждённые характеристики">
+        {facts.length > 0 && <dl className={styles.facts} aria-label="Характеристики">
           {facts.map((fact) => (
             <div className={styles.fact} key={fact.label}>
               <dt>{fact.label}</dt>
@@ -98,15 +83,6 @@ export function CatalogGameCard({ item }: { item: CatalogItem }) {
             </div>
           ))}
         </dl>}
-
-        {item.coverage === "catalog" && facts.length < 6 && (
-          <p className={styles.pending}>
-            {facts.length
-              ? "Остальные характеристики не подтверждены."
-              : "Технические характеристики пока не подтверждены."}
-            {!item.mechanics.length && " Механика уточняется."}
-          </p>
-        )}
 
         {item.coverage === "dossier" && item.tags.length ? (
           <div className={`catalog-game-tags ${styles.tags}`} aria-label="Особенности игры">
