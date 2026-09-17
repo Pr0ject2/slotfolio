@@ -63,6 +63,18 @@ const seedNameOverrides: Record<string, string> = {
   "wazdan-throne-of-elements-platinum": "Throne of Elements: Platinum",
 };
 
+// Nolimit's roadmap markup leaked release-date text into a handful of harvested slugs.
+// Keep the raw harvest untouched and repair only entries whose canonical game slug is
+// confirmed by the same official provider page.
+const seedSlugOverrides: Record<string, string> = {
+  "nolimit-city-bowel-of-beelzebub24th-november-20261st-december-2026": "nolimit-city-bowel-of-beelzebub",
+  "nolimit-city-ding-dong-death15th-september-202622nd-september-2026": "nolimit-city-ding-dong-death",
+  "nolimit-city-duck-hunters-23rd-september-202610th-september-2026": "nolimit-city-duck-hunters-2",
+  "nolimit-city-fire-in-the-hole-410th-november-202617th-november-2026": "nolimit-city-fire-in-the-hole-4",
+  "nolimit-city-gator-hunters-229th-september-20266th-october-2026": "nolimit-city-gator-hunters-2",
+  "nolimit-city-six-feet-under13th-october-202620th-october-2026": "nolimit-city-six-feet-under",
+};
+
 function normalizedKey(provider: string, name: string) {
   return `${provider}\u0000${name}`
     .normalize("NFKC")
@@ -97,13 +109,14 @@ function trustedSource(provider: string, source: string) {
 function sanitizeSeed(value: unknown): CatalogSeed | null {
   if (!value || typeof value !== "object") return null;
   const item = value as Record<string, unknown>;
-  const slug = typeof item.slug === "string" ? item.slug.trim() : "";
+  const rawSlug = typeof item.slug === "string" ? item.slug.trim() : "";
   const rawName = typeof item.name === "string" ? item.name.trim() : "";
   const provider = typeof item.provider === "string" ? item.provider.trim() : "";
   const source = typeof item.source === "string" ? item.source.trim() : "";
-  if (!slug || !rawName || !provider || !trustedSource(provider, source)) return null;
-  if (rejectedSeedNames.has(normalizedName(rawName)) || rejectedSeedSlugs.has(slug)) return null;
-  const name = seedNameOverrides[slug] ?? rawName;
+  if (!rawSlug || !rawName || !provider || !trustedSource(provider, source)) return null;
+  const slug = seedSlugOverrides[rawSlug] ?? rawSlug;
+  if (rejectedSeedNames.has(normalizedName(rawName)) || rejectedSeedSlugs.has(rawSlug) || rejectedSeedSlugs.has(slug)) return null;
+  const name = seedNameOverrides[rawSlug] ?? seedNameOverrides[slug] ?? rawName;
   return { slug, name, provider, source, verifiedBy: "official-provider-catalog" };
 }
 
