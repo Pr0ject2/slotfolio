@@ -1,4 +1,4 @@
-import { getCatalogVerifiedDetails } from "./catalog-verified-details";
+import { getCatalogVerifiedDetails, type CatalogVerifiedDetails } from "./catalog-verified-details";
 import { getCatalogVerifiedDetailsQualityPass1 } from "./catalog-verified-details-quality-pass-1";
 import { getCatalogVerifiedDetailsQualityPass2 } from "./catalog-verified-details-quality-pass-2";
 import { getCatalogVerifiedDetailsQualityPass3 } from "./catalog-verified-details-quality-pass-3";
@@ -57,7 +57,11 @@ import { getCatalogVerifiedDetailsWazdanWave2 } from "./catalog-verified-details
 import { getCatalogVerifiedDetailsWazdanWave3 } from "./catalog-verified-details-wazdan-wave3";
 import { getCatalogVerifiedDetailsWazdanWave4 } from "./catalog-verified-details-wazdan-wave4";
 
-export function getVerifiedCatalogDetails(slug: string) {
+type VerifiedCatalogDetails = CatalogVerifiedDetails & {
+  releaseDateSource?: string;
+};
+
+export function getVerifiedCatalogDetails(slug: string): VerifiedCatalogDetails | undefined {
   const base =
     getCatalogVerifiedDetailsPushProviderWide(slug) ??
     getCatalogVerifiedDetailsWazdanProviderWide(slug) ??
