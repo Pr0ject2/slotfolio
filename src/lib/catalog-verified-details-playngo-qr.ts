@@ -9,6 +9,7 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "playn-go-rage-to-riches": { releaseDate: "2013-10-30", source: "https://www.playngo.com/games/rage-to-riches", verifiedAt },
   "playn-go-raging-rex": { field: "6×4 · 4096 способов", releaseDate: "2019-01-10", source: "https://www.playngo.com/games/raging-rex", verifiedAt },
   "playn-go-raging-rex-2": { field: "4096 способов", releaseDate: "2022-03-17", source: "https://www.playngo.com/games/raging-rex-2", verifiedAt },
+  "playn-go-rally-4-riches": { field: "3 барабана", releaseDate: "2020-06-11", source: "https://www.playngo.com/games/rally-4-riches", verifiedAt: "2026-09-17" },
 };
 
 export function getCatalogVerifiedDetailsPlayngoQR(slug: string) {

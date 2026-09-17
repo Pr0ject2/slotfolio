@@ -12,7 +12,6 @@ const finalSlugs = [
   "playn-go-charlie-chance-and-the-curse-of-cleopatra",
   "playn-go-charlie-chance-in-hell-to-pay",
   "playn-go-clash-of-camelot",
-  "playn-go-coin-club",
   "playn-go-colt-lightning",
   "playn-go-colt-lightning-firestorm",
   "playn-go-crazy-cows",
@@ -37,13 +36,14 @@ const finalSlugs = [
   "playn-go-nugget-n-nonsense",
   "playn-go-ras-reckoning",
   "playn-go-raging-rex-3",
+  "playn-go-rally-4-riches",
 ];
 
 const gridSlots = new Set([
   "playn-go-charlie-chance-and-the-curse-of-cleopatra",
   "playn-go-lordi-reel-monsters",
 ]);
-const unknownGameType = new Set(["playn-go-coin-club", "playn-go-ras-reckoning"]);
+const unknownGameType = new Set(["playn-go-ras-reckoning"]);
 const researchedSlugs = new Set([
   "playn-go-chambers-of-ancients",
   "playn-go-charlie-chance",
@@ -78,4 +78,10 @@ test("final Play’n GO gap records stay selected and preserve exact official so
       expect(getVerifiedCatalogResearch(slug)?.source, slug).toBe(seed!.source);
     }
   }
+
+  const rally = getVerifiedCatalogDetails("playn-go-rally-4-riches");
+  expect(rally?.field).toBe("3 барабана");
+  expect(rally?.releaseDate).toBe("2020-06-11");
+  expect(getVerifiedCatalogGameType("playn-go-rally-4-riches")?.gameType).toBe("Video Slot");
+  expect(selected.has("playn-go-coin-club")).toBe(false);
 });
