@@ -1,4 +1,5 @@
 import type { CatalogResearch } from "./catalog-research";
+import { getCatalogResearchPlayngoMechanicsTail } from "./catalog-research-playngo-mechanics-tail";
 
 const verifiedAt = "2026-09-11";
 
@@ -114,5 +115,5 @@ export const catalogResearchPlayngo: Record<string, CatalogResearch> = {
 };
 
 export function getCatalogResearchPlayngo(slug: string) {
-  return catalogResearchPlayngo[slug];
+  return catalogResearchPlayngo[slug] ?? getCatalogResearchPlayngoMechanicsTail(slug);
 }
