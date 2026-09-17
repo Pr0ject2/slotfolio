@@ -59,6 +59,7 @@ import { getCatalogResearchPush } from "./catalog-research-push";
 import { getCatalogResearchPushWave1 } from "./catalog-research-push-wave1";
 import { getCatalogResearchPushFinal } from "./catalog-research-push-final";
 import { getCatalogResearchNolimit } from "./catalog-research-nolimit";
+import { getCatalogResearchFromVerifiedField } from "./catalog-research-from-details";
 
 export function getVerifiedCatalogResearch(slug: string) {
   return (
@@ -122,6 +123,7 @@ export function getVerifiedCatalogResearch(slug: string) {
     getCatalogResearchPushWave1(slug) ??
     getCatalogResearchPushFinal(slug) ??
     getCatalogResearchPush(slug) ??
-    getCatalogResearchNolimit(slug)
+    getCatalogResearchNolimit(slug) ??
+    getCatalogResearchFromVerifiedField(slug)
   );
 }
