@@ -5,6 +5,7 @@ const verifiedAt = "2026-09-17";
 type Entry = {
   mechanics: CatalogResearch["mechanics"];
   evidence: string;
+  source?: string;
 };
 
 const entries: Record<string, Entry> = {
@@ -46,6 +47,7 @@ const entries: Record<string, Entry> = {
   },
   "cats-of-olympuss": {
     mechanics: ["Сбор символов"],
+    source: "https://www.pushgaming.com/games/cats-olympuss.html",
     evidence: "Official page says collecting five special Coin Symbols during Free Spins opens the next reel array and retriggers the Card Pick Feature.",
   },
   "dj-cat": {
@@ -79,7 +81,7 @@ const records = Object.fromEntries(
     `push-gaming-${game}`,
     {
       ...entry,
-      source: `https://www.pushgaming.com/games/${game}.html`,
+      source: entry.source ?? `https://www.pushgaming.com/games/${game}.html`,
       verifiedAt,
     } satisfies CatalogResearch,
   ]),
