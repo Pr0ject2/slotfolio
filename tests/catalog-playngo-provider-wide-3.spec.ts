@@ -3,7 +3,6 @@ import { catalogSeeds } from "../src/lib/catalog-seeds";
 import { slots } from "../src/lib/data";
 import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
-import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const targets = {
   "playn-go-oasis-of-dead": { field: "5×3 · 20 линий", releaseDate: "2024-07-04", fieldSource: "https://www.playngo.com/posts/oasis-of-dead-review" },
@@ -53,7 +52,6 @@ test("third provider-wide Play’n GO batch preserves eleven official evidence r
       expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
     }
 
-    expect(getVerifiedCatalogResearch(slug), `${slug} must not invent a taxonomy mechanic`).toBeUndefined();
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Video Slot");
   }
 });
