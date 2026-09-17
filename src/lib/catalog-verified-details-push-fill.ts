@@ -21,7 +21,7 @@ const details: Record<string, PushFillOverlay> = {
   "push-gaming-boss-bear": {
     field: "5×6 · 50 линий",
     rtp: "96,47% / 94,35%",
-    maxWin: "25 000x",
+    maxWin: "25000x",
     volatility: "Высокая",
     verifiedAt,
   },
@@ -60,6 +60,7 @@ const details: Record<string, PushFillOverlay> = {
     verifiedAt,
   },
   "push-gaming-dinopolis": {
+    rtp: "96,40% / 93,95%",
     maxWin: "50 000x",
     volatility: "Высокая",
     verifiedAt,
