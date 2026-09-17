@@ -1,4 +1,4 @@
-import { getCatalogResearch } from "./catalog-research";
+import { getCatalogResearch, type CatalogResearch } from "./catalog-research";
 import { getCatalogResearchMore } from "./catalog-research-more";
 import { getCatalogResearch3OaksWave3 } from "./catalog-research-3oaks-wave3";
 import { getCatalogResearch3OaksVerifiedWave1 } from "./catalog-research-3oaks-verified-wave1";
@@ -65,7 +65,11 @@ import { getCatalogResearchNolimit } from "./catalog-research-nolimit";
 import { getCatalogResearchFromVerifiedField } from "./catalog-research-from-details";
 import { getCatalogResearchMechanicsFinalTail } from "./catalog-research-mechanics-final-tail";
 
-export function getVerifiedCatalogResearch(slug: string) {
+type VerifiedCatalogResearch = CatalogResearch & {
+  evidenceSource?: string;
+};
+
+export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearch | undefined {
   const freshMechanics =
     getCatalogResearchMechanicsFinalTail(slug) ??
     getCatalogResearchPlayngoMechanicsTail(slug) ??
