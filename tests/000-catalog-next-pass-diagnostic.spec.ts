@@ -35,9 +35,11 @@ function normalizeMaxWin(raw: string) {
 
 function extractMaxWin(text: string) {
   const patterns = [
+    /maximum win(?: in this game)? is\s*([0-9][0-9.,\s]*)\s*times(?: your| the)? bet/i,
+    /max win potential of\s*([0-9][0-9.,\s]*)\s*times(?: your| the)? bet/i,
+    /max win\s*:\s*([0-9][0-9.,\s]*)\s*x\b/i,
     /max(?:imum)? win(?: of| is| up to| of up to)?\s*(?:an?\s*)?([0-9][0-9.,\s]*)\s*(?:x|times(?: your| the)? bet)/i,
     /([0-9][0-9.,\s]*)\s*x\s+max(?:imum)? win/i,
-    /max(?:imum)? win[^.!?]{0,80}?([0-9][0-9.,\s]*)\s*x\b/i,
   ];
   for (const pattern of patterns) {
     const match = pattern.exec(text);
