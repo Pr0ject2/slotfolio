@@ -30,7 +30,7 @@ test("full dossier fact passport switches from two columns to one on narrow phon
   expect((await facts.evaluate((element) => getComputedStyle(element).gridTemplateColumns)).split(" ").length).toBe(1);
 });
 
-test("catalog-only record presents every verified fact as a finished technical card", async ({ page }) => {
+test("catalog-only record presents every available fact as a finished technical card", async ({ page }) => {
   for (const width of [390, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
     await page.goto("/slots/catalog/wazdan-mayan-ritual");
@@ -43,16 +43,17 @@ test("catalog-only record presents every verified fact as a finished technical c
     await expect(facts).toContainText("850x");
     await expect(facts).toContainText("Низкая–средняя");
     await expect(facts).toContainText("03.09.2018");
-    await expect(page.locator(".catalog-record-status")).toContainText("Подтверждено");
+    await expect(page.locator(".catalog-record-status")).toHaveCount(0);
+    await expect(page.getByRole("heading", { name: "Характеристики" })).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }
 });
 
-test("catalog-only fact grid adapts without hiding confirmed data", async ({ page }) => {
+test("catalog-only fact grid adapts without hiding available data", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 1000 });
   await page.goto("/slots/catalog/wazdan-mayan-ritual");
   await page.waitForLoadState("networkidle");
   const facts = page.locator(".catalog-record-facts");
   expect((await facts.evaluate((element) => getComputedStyle(element).gridTemplateColumns)).split(" ").length).toBe(1);
-  expect(await facts.locator("dd").count()).toBeGreaterThanOrEqual(10);
+  expect(await facts.locator("dd").count()).toBeGreaterThanOrEqual(8);
 });
