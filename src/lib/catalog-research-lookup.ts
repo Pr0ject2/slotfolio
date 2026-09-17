@@ -47,6 +47,7 @@ import { getCatalogResearchPlayngoMN } from "./catalog-research-playngo-mn";
 import { getCatalogResearchPlayngoOP } from "./catalog-research-playngo-op";
 import { getCatalogResearchPlayngoGapFinal } from "./catalog-research-playngo-gap-final";
 import { getCatalogResearchPlayngoQR } from "./catalog-research-playngo-qr";
+import { getCatalogResearchPlayngoMechanicsTail } from "./catalog-research-playngo-mechanics-tail";
 import { getCatalogResearchWazdan } from "./catalog-research-wazdan";
 import { getCatalogResearchWazdanWave4 } from "./catalog-research-wazdan-wave4";
 import { getCatalogResearchWazdanWave5 } from "./catalog-research-wazdan-wave5";
@@ -59,11 +60,21 @@ import { getCatalogResearchWazdanMechanicsTail } from "./catalog-research-wazdan
 import { getCatalogResearchPush } from "./catalog-research-push";
 import { getCatalogResearchPushWave1 } from "./catalog-research-push-wave1";
 import { getCatalogResearchPushFinal } from "./catalog-research-push-final";
+import { getCatalogResearchPushMechanicsTail } from "./catalog-research-push-mechanics-tail";
 import { getCatalogResearchNolimit } from "./catalog-research-nolimit";
 import { getCatalogResearchFromVerifiedField } from "./catalog-research-from-details";
+import { getCatalogResearchMechanicsFinalTail } from "./catalog-research-mechanics-final-tail";
 
 export function getVerifiedCatalogResearch(slug: string) {
-  return (
+  const freshMechanics =
+    getCatalogResearchMechanicsFinalTail(slug) ??
+    getCatalogResearchPlayngoMechanicsTail(slug) ??
+    getCatalogResearchPushMechanicsTail(slug) ??
+    getCatalogResearchWazdanMechanicsTail(slug);
+
+  if (freshMechanics?.mechanics.length) return freshMechanics;
+
+  const existing =
     getCatalogResearchPlayngoProviderTail(slug) ??
     getCatalogResearchPlayngoProviderWide8(slug) ??
     getCatalogResearchPlayngoProviderWide7(slug) ??
@@ -121,11 +132,12 @@ export function getVerifiedCatalogResearch(slug: string) {
     getCatalogResearchWazdanWave6c(slug) ??
     getCatalogResearchWazdanWave6d(slug) ??
     getCatalogResearchWazdanWave6e(slug) ??
-    getCatalogResearchWazdanMechanicsTail(slug) ??
     getCatalogResearchPushWave1(slug) ??
     getCatalogResearchPushFinal(slug) ??
     getCatalogResearchPush(slug) ??
-    getCatalogResearchNolimit(slug) ??
-    getCatalogResearchFromVerifiedField(slug)
-  );
+    getCatalogResearchNolimit(slug);
+
+  if (existing?.mechanics.length) return existing;
+
+  return getCatalogResearchFromVerifiedField(slug) ?? existing;
 }
