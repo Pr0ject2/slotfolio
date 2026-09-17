@@ -286,12 +286,14 @@ test("comparison remains limited to researched dossiers", async ({ page }) => {
   await expect(page.locator(".comparison-selection article img")).toHaveCount(2);
 });
 
-test("catalog-only pages disclose limited coverage and stay noindex", async ({ page }) => {
+test("catalog-only pages show game data without editorial coverage copy and stay noindex", async ({ page }) => {
   const samples = [catalogSeeds[0], catalogSeeds[Math.floor(catalogSeeds.length / 2)], catalogSeeds.at(-1)!];
   for (const seed of samples) {
     await page.goto(`/slots/catalog/${seed.slug}`);
     await expect(page.locator("h1")).toHaveText(seed.name);
-    await expect(page.getByText("Базовая запись", { exact: true })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Характеристики" })).toBeVisible();
+    await expect(page.getByText("Базовая запись", { exact: true })).toHaveCount(0);
+    await expect(page.getByText("Покрытие данных", { exact: true })).toHaveCount(0);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
     await expect(page.getByRole("link", { name: /Официальный каталог/ })).toHaveAttribute("href", seed.source);
   }
@@ -411,6 +413,7 @@ test("catalog page and view survive reload, detail navigation and history", asyn
   await expect(page).not.toHaveURL(/page=/);
   await expect(page.locator(".catalog-game")).not.toHaveCount(0);
 });
+
 test("pagination visits all 1000 games once without accumulating DOM rows", async ({ page }) => {
   test.setTimeout(120000);
   await page.goto("/slots");
