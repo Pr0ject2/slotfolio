@@ -3,7 +3,7 @@ import type { CatalogResearch } from "./catalog-research";
 const verifiedAt = "2026-09-11";
 
 export const catalogResearchNolimit: Record<string, CatalogResearch> = {
-  "nolimit-city-duck-hunters-23rd-september-202610th-september-2026": {
+  "nolimit-city-duck-hunters-2": {
     mechanics: ["Способы"],
     source: "https://nolimitcity.com/games/duck-hunters-2",
     verifiedAt,

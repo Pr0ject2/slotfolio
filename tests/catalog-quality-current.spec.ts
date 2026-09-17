@@ -18,8 +18,8 @@ test("current catalog quality baseline", () => {
   const ranked = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
 
   expect(catalogSeeds).toHaveLength(900);
-  expect(ranked.filter((row) => row.score <= 1)).toHaveLength(5);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(0);
+  expect(ranked.filter((row) => row.score <= 1)).toHaveLength(1);
+  expect(ranked.filter((row) => row.score === 2)).toHaveLength(3);
   expect(ranked.filter((row) => row.score === 3)).toHaveLength(603);
   expect(ranked.filter((row) => row.provider === "Hacksaw Gaming" && row.score === 2)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Hacksaw Gaming" && row.score <= 1)).toHaveLength(0);
@@ -27,6 +27,7 @@ test("current catalog quality baseline", () => {
   expect(ranked.filter((row) => row.provider === "Push Gaming" && row.score === 2)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Play’n GO" && row.score === 2)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "3 Oaks Gaming" && row.score === 2)).toHaveLength(0);
-  expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(4);
+  expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(0);
+  expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score === 2)).toHaveLength(3);
   expect(ranked.some((row) => row.slug === "playn-go-coin-club" && row.score === 0)).toBe(true);
 });
