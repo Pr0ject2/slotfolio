@@ -17,12 +17,16 @@ function rowFor(slug: string, provider: string) {
     gameType: Boolean(type),
     mechanics: Boolean(research?.mechanics.length),
   };
-  const score = Object.values(facts).filter(Boolean).length;
+  const detailFacts = details
+    ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length
+    : 0;
+  const score = detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
   return {
     slug,
     provider,
     score,
     missing: Object.entries(facts).filter(([, present]) => !present).map(([key]) => key),
+    mechanicsCount: research?.mechanics.length ?? 0,
   };
 }
 
@@ -34,7 +38,7 @@ test.only("diagnose next provider-wide catalog enrichment pass", () => {
       const providerRows = score3.filter((row) => row.provider === provider);
       const signatures = Object.entries(
         providerRows.reduce<Record<string, number>>((acc, row) => {
-          const key = row.missing.join(",");
+          const key = `${row.missing.join(",")}|mechanics=${row.mechanicsCount}`;
           acc[key] = (acc[key] ?? 0) + 1;
           return acc;
         }, {}),
@@ -43,13 +47,22 @@ test.only("diagnose next provider-wide catalog enrichment pass", () => {
         provider,
         count: providerRows.length,
         signatures,
-        sample: providerRows.slice(0, 30).map((row) => ({ slug: row.slug, missing: row.missing })),
+        sample: providerRows.slice(0, 30).map((row) => ({
+          slug: row.slug,
+          missing: row.missing,
+          mechanicsCount: row.mechanicsCount,
+        })),
       };
     })
     .sort((a, b) => b.count - a.count);
 
   console.log("NEXT_PASS_PROFILE", JSON.stringify({
-    score2: rows.filter((row) => row.score === 2).map((row) => ({ slug: row.slug, provider: row.provider, missing: row.missing })),
+    score2: rows.filter((row) => row.score === 2).map((row) => ({
+      slug: row.slug,
+      provider: row.provider,
+      missing: row.missing,
+      mechanicsCount: row.mechanicsCount,
+    })),
     score3Total: score3.length,
     providers,
   }));
