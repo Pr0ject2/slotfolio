@@ -1,4 +1,4 @@
-import { getCatalogVerifiedDetails } from "./catalog-verified-details";
+import { getCatalogVerifiedDetails, type CatalogVerifiedDetails } from "./catalog-verified-details";
 import { getCatalogVerifiedDetailsQualityPass1 } from "./catalog-verified-details-quality-pass-1";
 import { getCatalogVerifiedDetailsQualityPass2 } from "./catalog-verified-details-quality-pass-2";
 import { getCatalogVerifiedDetailsQualityPass3 } from "./catalog-verified-details-quality-pass-3";
@@ -49,6 +49,7 @@ import { getCatalogVerifiedDetailsPlayngoQR } from "./catalog-verified-details-p
 import { getCatalogVerifiedDetailsHacksaw } from "./catalog-verified-details-hacksaw";
 import { getCatalogVerifiedDetailsHacksawWave1 } from "./catalog-verified-details-hacksaw-wave1";
 import { getCatalogVerifiedDetailsHacksawFinal } from "./catalog-verified-details-hacksaw-final";
+import { getCatalogVerifiedDetailsHacksawMaxWinProviderWide } from "./catalog-verified-details-hacksaw-maxwin-provider-wide";
 import { getCatalogVerifiedDetailsNolimit } from "./catalog-verified-details-nolimit";
 import { getCatalogVerifiedDetailsWazdanProviderWide } from "./catalog-verified-details-wazdan-provider-wide";
 import { getCatalogVerifiedDetailsWazdanWave1 } from "./catalog-verified-details-wazdan-wave1";
@@ -56,8 +57,12 @@ import { getCatalogVerifiedDetailsWazdanWave2 } from "./catalog-verified-details
 import { getCatalogVerifiedDetailsWazdanWave3 } from "./catalog-verified-details-wazdan-wave3";
 import { getCatalogVerifiedDetailsWazdanWave4 } from "./catalog-verified-details-wazdan-wave4";
 
-export function getVerifiedCatalogDetails(slug: string) {
-  return (
+type VerifiedCatalogDetails = CatalogVerifiedDetails & {
+  releaseDateSource?: string;
+};
+
+export function getVerifiedCatalogDetails(slug: string): VerifiedCatalogDetails | undefined {
+  const base =
     getCatalogVerifiedDetailsPushProviderWide(slug) ??
     getCatalogVerifiedDetailsWazdanProviderWide(slug) ??
     getCatalogVerifiedDetailsPlayngoProviderWide9(slug) ??
@@ -114,6 +119,10 @@ export function getVerifiedCatalogDetails(slug: string) {
     getCatalogVerifiedDetailsWazdanWave1(slug) ??
     getCatalogVerifiedDetailsWazdanWave2(slug) ??
     getCatalogVerifiedDetailsWazdanWave3(slug) ??
-    getCatalogVerifiedDetailsWazdanWave4(slug)
-  );
+    getCatalogVerifiedDetailsWazdanWave4(slug);
+
+  const overlay = getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug);
+  if (!overlay) return base;
+  if (!base) return overlay;
+  return { ...base, ...overlay };
 }

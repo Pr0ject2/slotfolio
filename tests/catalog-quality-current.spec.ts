@@ -20,8 +20,8 @@ test("current catalog quality baseline", () => {
   expect(catalogSeeds).toHaveLength(900);
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(0);
   expect(ranked.filter((row) => row.score === 2)).toHaveLength(4);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(341);
-  expect(ranked.filter((row) => row.score === 4)).toHaveLength(370);
+  expect(ranked.filter((row) => row.score === 3)).toHaveLength(303);
+  expect(ranked.filter((row) => row.score === 4)).toHaveLength(408);
   expect(ranked.filter((row) => row.score === 5)).toHaveLength(59);
   expect(ranked.filter((row) => row.score === 6)).toHaveLength(88);
   expect(ranked.filter((row) => row.score === 7)).toHaveLength(38);
