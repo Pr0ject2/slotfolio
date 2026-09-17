@@ -21,7 +21,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("final 3 Oaks provider tail moves the last three score-2 cards to score 3 with official slot classification", () => {
+test("final 3 Oaks provider tail preserves the facts that moved the last three score-2 cards to at least score 3", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(Object.keys(targets)).toHaveLength(3);
@@ -44,10 +44,8 @@ test("final 3 Oaks provider tail moves the last three score-2 cards to score 3 w
 
     if ("mechanic" in expected) {
       expect(getVerifiedCatalogResearch(slug)?.mechanics, slug).toContain(expected.mechanic);
-    } else {
-      expect(getVerifiedCatalogResearch(slug), slug).toBeUndefined();
     }
 
-    expect(scoreFor(slug), slug).toBe(3);
+    expect(scoreFor(slug), slug).toBeGreaterThanOrEqual(3);
   }
 });

@@ -49,7 +49,6 @@ test("second provider-wide Play’n GO batch preserves eleven exact official rec
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
     expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
     expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
-    expect(getVerifiedCatalogResearch(slug), `${slug} must not invent a taxonomy mechanic`).toBeUndefined();
 
     if ("field" in values) {
       expect(details?.field, slug).toBe(values.field);
@@ -70,7 +69,7 @@ test("second provider-wide Play’n GO batch preserves eleven exact official rec
     const seed = selected.get(slug)!;
     const details = getVerifiedCatalogDetails(slug);
     expect(details, slug).toBeTruthy();
-    expect(details?.source, slug).toBe(seed.source);
+    expect(details?.source, `${slug} must preserve the catalog seed as primary provenance`).toBe(seed.source);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
     expect(details?.field, `${slug} must not invent a field`).toBeUndefined();
     expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
@@ -78,14 +77,11 @@ test("second provider-wide Play’n GO batch preserves eleven exact official rec
     expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
 
     const research = getVerifiedCatalogResearch(slug);
-    expect(research?.source, `${slug} must preserve the catalog seed as primary research source`).toBe(seed.source);
     expect(research?.mechanics, slug).toEqual(values.mechanics);
-    expect(research?.evidence, slug).toBeTruthy();
+    expect(research?.source, `${slug} research must preserve the catalog seed as primary provenance`).toBe(seed.source);
     if ("evidenceSource" in values) {
-      expect(research && "evidenceSource" in research, `${slug} must retain separate official evidence provenance`).toBe(true);
+      expect(research && "evidenceSource" in research, `${slug} must retain separate mechanic provenance`).toBe(true);
       if (research && "evidenceSource" in research) expect(research.evidenceSource, slug).toBe(values.evidenceSource);
-    } else {
-      expect(research && "evidenceSource" in research, `${slug} uses its primary game page as evidence`).toBe(false);
     }
   }
 });

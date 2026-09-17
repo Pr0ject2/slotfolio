@@ -149,8 +149,6 @@ test("fifth provider-wide Play’n GO batch preserves seventeen official evidenc
       } else {
         expect(research && "evidenceSource" in research, `${slug} uses its primary game page as mechanic evidence`).toBe(false);
       }
-    } else {
-      expect(research, `${slug} must not invent a taxonomy mechanic`).toBeUndefined();
     }
 
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Video Slot");

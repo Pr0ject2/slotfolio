@@ -1,4 +1,5 @@
-import { getCatalogResearch } from "./catalog-research";
+import { catalogSeeds } from "./catalog-seeds";
+import { getCatalogResearch, type CatalogResearch } from "./catalog-research";
 import { getCatalogResearchMore } from "./catalog-research-more";
 import { getCatalogResearch3OaksWave3 } from "./catalog-research-3oaks-wave3";
 import { getCatalogResearch3OaksVerifiedWave1 } from "./catalog-research-3oaks-verified-wave1";
@@ -47,6 +48,9 @@ import { getCatalogResearchPlayngoMN } from "./catalog-research-playngo-mn";
 import { getCatalogResearchPlayngoOP } from "./catalog-research-playngo-op";
 import { getCatalogResearchPlayngoGapFinal } from "./catalog-research-playngo-gap-final";
 import { getCatalogResearchPlayngoQR } from "./catalog-research-playngo-qr";
+import { getCatalogResearchPlayngoMechanicsTail } from "./catalog-research-playngo-mechanics-tail";
+import { getCatalogResearchPlayngoMechanicsFinal2 } from "./catalog-research-playngo-mechanics-final2";
+import { getCatalogResearchPlayngoMechanicsFinal3 } from "./catalog-research-playngo-mechanics-final3";
 import { getCatalogResearchWazdan } from "./catalog-research-wazdan";
 import { getCatalogResearchWazdanWave4 } from "./catalog-research-wazdan-wave4";
 import { getCatalogResearchWazdanWave5 } from "./catalog-research-wazdan-wave5";
@@ -55,13 +59,64 @@ import { getCatalogResearchWazdanWave6b } from "./catalog-research-wazdan-wave6b
 import { getCatalogResearchWazdanWave6c } from "./catalog-research-wazdan-wave6c";
 import { getCatalogResearchWazdanWave6d } from "./catalog-research-wazdan-wave6d";
 import { getCatalogResearchWazdanWave6e } from "./catalog-research-wazdan-wave6e";
+import { getCatalogResearchWazdanMechanicsTail } from "./catalog-research-wazdan-mechanics-tail";
 import { getCatalogResearchPush } from "./catalog-research-push";
 import { getCatalogResearchPushWave1 } from "./catalog-research-push-wave1";
 import { getCatalogResearchPushFinal } from "./catalog-research-push-final";
+import { getCatalogResearchPushMechanicsTail } from "./catalog-research-push-mechanics-tail";
 import { getCatalogResearchNolimit } from "./catalog-research-nolimit";
+import { getCatalogResearchFromVerifiedField } from "./catalog-research-from-details";
+import { getCatalogResearchMechanicsFinalTail } from "./catalog-research-mechanics-final-tail";
 
-export function getVerifiedCatalogResearch(slug: string) {
-  return (
+type VerifiedCatalogResearch = CatalogResearch & {
+  evidenceSource?: string;
+};
+
+const canonicalSourceBySlug = new Map(catalogSeeds.map((seed) => [seed.slug, seed.source]));
+
+function decodedUrl(url: string) {
+  try {
+    return decodeURIComponent(url);
+  } catch {
+    return url;
+  }
+}
+
+function canonicalizeResearchSource(
+  slug: string,
+  research: VerifiedCatalogResearch | undefined,
+): VerifiedCatalogResearch | undefined {
+  if (!research) return undefined;
+
+  const canonicalSource = canonicalSourceBySlug.get(slug);
+  if (!canonicalSource || research.source === canonicalSource) return research;
+
+  const sameDecodedUrl = decodedUrl(research.source) === decodedUrl(canonicalSource);
+  if (sameDecodedUrl || research.evidenceSource) {
+    return { ...research, source: canonicalSource };
+  }
+
+  return {
+    ...research,
+    source: canonicalSource,
+    evidenceSource: research.source,
+  };
+}
+
+export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearch | undefined {
+  const freshMechanics =
+    getCatalogResearchMechanicsFinalTail(slug) ??
+    getCatalogResearchPlayngoMechanicsFinal3(slug) ??
+    getCatalogResearchPlayngoMechanicsFinal2(slug) ??
+    getCatalogResearchPlayngoMechanicsTail(slug) ??
+    getCatalogResearchPushMechanicsTail(slug) ??
+    getCatalogResearchWazdanMechanicsTail(slug);
+
+  if (freshMechanics?.mechanics.length) {
+    return canonicalizeResearchSource(slug, freshMechanics);
+  }
+
+  const existing =
     getCatalogResearchPlayngoProviderTail(slug) ??
     getCatalogResearchPlayngoProviderWide8(slug) ??
     getCatalogResearchPlayngoProviderWide7(slug) ??
@@ -122,6 +177,12 @@ export function getVerifiedCatalogResearch(slug: string) {
     getCatalogResearchPushWave1(slug) ??
     getCatalogResearchPushFinal(slug) ??
     getCatalogResearchPush(slug) ??
-    getCatalogResearchNolimit(slug)
-  );
+    getCatalogResearchNolimit(slug);
+
+  if (existing?.mechanics.length) {
+    return canonicalizeResearchSource(slug, existing);
+  }
+
+  const selected = getCatalogResearchFromVerifiedField(slug) ?? existing;
+  return canonicalizeResearchSource(slug, selected);
 }

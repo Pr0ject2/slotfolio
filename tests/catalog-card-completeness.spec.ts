@@ -33,8 +33,9 @@ test("catalog model exposes verified technical data to cards without promoting f
 
   const minimal = model.items.find((item) => item.slug === "playn-go-rally-4-riches");
   expect(minimal).toBeTruthy();
-  expect(minimal?.verifiedFacts).toBe(1);
+  expect(minimal?.verifiedFacts).toBe(2);
   expect(minimal?.gameType).toBe("Video Slot");
+  expect(minimal?.mechanics).toEqual(["Линии"]);
   expect(minimal?.field).toBe("");
   expect(minimal?.verifiedRtp).toBe("");
   expect(minimal?.maxWin).toBe("");
@@ -72,6 +73,7 @@ test("minimal catalog record still looks finished without invented facts", async
   await expect(card).toHaveCount(1);
   await expect(card).toContainText("Rally 4 Riches");
   await expect(card).toContainText("Video Slot");
+  await expect(card).toContainText("Линии");
   await expect(card.locator("dd").filter({ hasText: /^—$/ })).toHaveCount(0);
   await expect(card.getByText("Остальные характеристики не подтверждены.", { exact: false })).toBeVisible();
   await expect(card.getByRole("button", { name: /сравнен/ })).toHaveCount(0);

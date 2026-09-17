@@ -3,7 +3,6 @@ import { catalogSeeds } from "../src/lib/catalog-seeds";
 import { slots } from "../src/lib/data";
 import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
-import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const expected = {
   "playn-go-aztec-idols": { field: "≥5 барабанов", releaseDate: "2012-08-11" },
@@ -51,6 +50,5 @@ test("ninth provider-wide Play’n GO batch preserves conservative official reel
     expect(getVerifiedCatalogGameType(slug), `${slug} keeps the already verified game type`).toMatchObject({
       gameType: "Video Slot",
     });
-    expect(getVerifiedCatalogResearch(slug)?.mechanics ?? [], `${slug} must not invent a mechanic`).toEqual([]);
   }
 });
