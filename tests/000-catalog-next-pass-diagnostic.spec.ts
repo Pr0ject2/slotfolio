@@ -4,68 +4,89 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
-function rowFor(slug: string, provider: string) {
+function qualityScore(slug: string) {
   const details = getVerifiedCatalogDetails(slug);
   const type = getVerifiedCatalogGameType(slug);
   const research = getVerifiedCatalogResearch(slug);
-  const facts = {
-    field: Boolean(details?.field),
-    rtp: Boolean(details?.rtp),
-    maxWin: Boolean(details?.maxWin),
-    volatility: Boolean(details?.volatility),
-    releaseDate: Boolean(details?.releaseDate),
-    gameType: Boolean(type),
-    mechanics: Boolean(research?.mechanics.length),
-  };
   const detailFacts = details
     ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length
     : 0;
-  const score = detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
-  return {
-    slug,
-    provider,
-    score,
-    missing: Object.entries(facts).filter(([, present]) => !present).map(([key]) => key),
-    mechanicsCount: research?.mechanics.length ?? 0,
-  };
+  return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test.only("diagnose next provider-wide catalog enrichment pass", () => {
-  const rows = catalogSeeds.map((seed) => rowFor(seed.slug, seed.provider));
-  const score3 = rows.filter((row) => row.score === 3);
-  const providers = [...new Set(score3.map((row) => row.provider))]
-    .map((provider) => {
-      const providerRows = score3.filter((row) => row.provider === provider);
-      const signatures = Object.entries(
-        providerRows.reduce<Record<string, number>>((acc, row) => {
-          const key = `${row.missing.join(",")}|mechanics=${row.mechanicsCount}`;
-          acc[key] = (acc[key] ?? 0) + 1;
-          return acc;
-        }, {}),
-      ).sort((a, b) => b[1] - a[1]);
-      return {
-        provider,
-        count: providerRows.length,
-        signatures,
-        sample: providerRows.slice(0, 30).map((row) => ({
-          slug: row.slug,
-          missing: row.missing,
-          mechanicsCount: row.mechanicsCount,
-        })),
-      };
-    })
-    .sort((a, b) => b.count - a.count);
+function plainText(html: string) {
+  return html
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&#(?:39|x27);/gi, "'")
+    .replace(/&quot;/gi, '"')
+    .replace(/\s+/g, " ")
+    .trim();
+}
 
-  console.log("NEXT_PASS_PROFILE", JSON.stringify({
-    score2: rows.filter((row) => row.score === 2).map((row) => ({
-      slug: row.slug,
-      provider: row.provider,
-      missing: row.missing,
-      mechanicsCount: row.mechanicsCount,
-    })),
-    score3Total: score3.length,
-    providers,
-  }));
+function storySegment(text: string) {
+  const startMatch = /HERE.?S THE STORY/i.exec(text);
+  if (!startMatch) return "";
+  const start = startMatch.index + startMatch[0].length;
+  const tail = text.slice(start);
+  const endMatch = /\bFEATURES\b/i.exec(tail);
+  return (endMatch ? tail.slice(0, endMatch.index) : tail.slice(0, 1800)).trim();
+}
+
+async function probe(seed: (typeof catalogSeeds)[number]) {
+  try {
+    const response = await fetch(seed.source, {
+      headers: { "user-agent": "Slotfolio verification probe/1.0" },
+      signal: AbortSignal.timeout(20_000),
+    });
+    if (!response.ok) {
+      return { slug: seed.slug, source: seed.source, status: response.status, slot: false, story: "" };
+    }
+    const story = storySegment(plainText(await response.text()));
+    return {
+      slug: seed.slug,
+      source: seed.source,
+      status: response.status,
+      slot: /\bslots?\b/i.test(story),
+      story: story.slice(0, 420),
+    };
+  } catch (error) {
+    return {
+      slug: seed.slug,
+      source: seed.source,
+      status: 0,
+      slot: false,
+      story: error instanceof Error ? error.message : String(error),
+    };
+  }
+}
+
+test.only("probe 3 Oaks score-3 game pages for explicit slot wording", async () => {
+  test.setTimeout(180_000);
+  const targets = catalogSeeds.filter(
+    (seed) =>
+      seed.provider === "3 Oaks Gaming" &&
+      qualityScore(seed.slug) === 3 &&
+      !getVerifiedCatalogGameType(seed.slug),
+  );
+
+  const results: Awaited<ReturnType<typeof probe>>[] = [];
+  for (let i = 0; i < targets.length; i += 8) {
+    results.push(...(await Promise.all(targets.slice(i, i + 8).map(probe))));
+  }
+
+  console.log(
+    "THREE_OAKS_SLOT_PROBE",
+    JSON.stringify({
+      total: targets.length,
+      explicitSlot: results.filter((result) => result.slot).length,
+      verified: results.filter((result) => result.slot).map((result) => result.slug),
+      unresolved: results.filter((result) => !result.slot),
+    }),
+  );
 
   throw new Error("diagnostic only");
 });
