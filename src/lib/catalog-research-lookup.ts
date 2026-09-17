@@ -48,6 +48,7 @@ import { getCatalogResearchPlayngoOP } from "./catalog-research-playngo-op";
 import { getCatalogResearchPlayngoGapFinal } from "./catalog-research-playngo-gap-final";
 import { getCatalogResearchPlayngoQR } from "./catalog-research-playngo-qr";
 import { getCatalogResearchPlayngoMechanicsTail } from "./catalog-research-playngo-mechanics-tail";
+import { getCatalogResearchPlayngoMechanicsFinal2 } from "./catalog-research-playngo-mechanics-final2";
 import { getCatalogResearchWazdan } from "./catalog-research-wazdan";
 import { getCatalogResearchWazdanWave4 } from "./catalog-research-wazdan-wave4";
 import { getCatalogResearchWazdanWave5 } from "./catalog-research-wazdan-wave5";
@@ -72,6 +73,7 @@ type VerifiedCatalogResearch = CatalogResearch & {
 export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearch | undefined {
   const freshMechanics =
     getCatalogResearchMechanicsFinalTail(slug) ??
+    getCatalogResearchPlayngoMechanicsFinal2(slug) ??
     getCatalogResearchPlayngoMechanicsTail(slug) ??
     getCatalogResearchPushMechanicsTail(slug) ??
     getCatalogResearchWazdanMechanicsTail(slug);
