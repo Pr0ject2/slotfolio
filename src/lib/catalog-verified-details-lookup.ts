@@ -25,6 +25,7 @@ import { getCatalogVerifiedDetailsBgamingThird } from "./catalog-verified-detail
 import { getCatalogVerifiedDetailsBgamingFourth } from "./catalog-verified-details-bgaming-fourth";
 import { getCatalogVerifiedDetailsEndorphina } from "./catalog-verified-details-endorphina";
 import { getCatalogVerifiedDetailsPushProviderWide } from "./catalog-verified-details-push-provider-wide";
+import { getCatalogVerifiedDetailsPushFill } from "./catalog-verified-details-push-fill";
 import { getCatalogVerifiedDetailsPush } from "./catalog-verified-details-push";
 import { getCatalogVerifiedDetailsPushMore } from "./catalog-verified-details-push-more";
 import { getCatalogVerifiedDetailsPushWave1 } from "./catalog-verified-details-push-wave1";
@@ -121,8 +122,11 @@ export function getVerifiedCatalogDetails(slug: string): VerifiedCatalogDetails 
     getCatalogVerifiedDetailsWazdanWave3(slug) ??
     getCatalogVerifiedDetailsWazdanWave4(slug);
 
-  const overlay = getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug);
-  if (!overlay) return base;
-  if (!base) return overlay;
-  return { ...base, ...overlay };
+  const pushFillOverlay = getCatalogVerifiedDetailsPushFill(slug);
+  const withPushFill = pushFillOverlay && base ? { ...base, ...pushFillOverlay } : base;
+
+  const hacksawOverlay = getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug);
+  if (!hacksawOverlay) return withPushFill;
+  if (!withPushFill) return hacksawOverlay;
+  return { ...withPushFill, ...hacksawOverlay };
 }
