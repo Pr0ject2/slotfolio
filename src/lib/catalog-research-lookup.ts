@@ -55,6 +55,7 @@ import { getCatalogResearchWazdanWave6b } from "./catalog-research-wazdan-wave6b
 import { getCatalogResearchWazdanWave6c } from "./catalog-research-wazdan-wave6c";
 import { getCatalogResearchWazdanWave6d } from "./catalog-research-wazdan-wave6d";
 import { getCatalogResearchWazdanWave6e } from "./catalog-research-wazdan-wave6e";
+import { getCatalogResearchWazdanMechanicsTail } from "./catalog-research-wazdan-mechanics-tail";
 import { getCatalogResearchPush } from "./catalog-research-push";
 import { getCatalogResearchPushWave1 } from "./catalog-research-push-wave1";
 import { getCatalogResearchPushFinal } from "./catalog-research-push-final";
@@ -120,6 +121,7 @@ export function getVerifiedCatalogResearch(slug: string) {
     getCatalogResearchWazdanWave6c(slug) ??
     getCatalogResearchWazdanWave6d(slug) ??
     getCatalogResearchWazdanWave6e(slug) ??
+    getCatalogResearchWazdanMechanicsTail(slug) ??
     getCatalogResearchPushWave1(slug) ??
     getCatalogResearchPushFinal(slug) ??
     getCatalogResearchPush(slug) ??
