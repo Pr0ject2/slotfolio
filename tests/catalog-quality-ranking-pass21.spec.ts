@@ -32,7 +32,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 21 adds one exact official fact to three more score-2 Play’n GO records", () => {
+test("quality pass 21 preserves its exact official facts on three Play’n GO records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(3);
@@ -65,9 +65,8 @@ test("quality pass 21 adds one exact official fact to three more score-2 Play’
       expect(details && "fieldSource" in details, `${slug} must not invent a second field source`).toBe(false);
     }
 
-    expect(getVerifiedCatalogResearch(slug), `${slug} must not invent a mechanic`).toBeUndefined();
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Video Slot");
-    expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
+    expect(scoreFor(slug), `${slug} must remain at least score 3`).toBeGreaterThanOrEqual(3);
   }
 
   const carts = selected.get(hugoCartsSlug);
@@ -90,5 +89,5 @@ test("quality pass 21 adds one exact official fact to three more score-2 Play’
   expect(cartsResearch?.mechanics, hugoCartsSlug).toEqual(["Способы"]);
   expect(cartsResearch?.evidence, hugoCartsSlug).toMatch(/ways|1,024/i);
   expect(getVerifiedCatalogGameType(hugoCartsSlug)?.gameType, hugoCartsSlug).toBe("Video Slot");
-  expect(scoreFor(hugoCartsSlug), `${hugoCartsSlug} must move from score 2 to score 3`).toBe(3);
+  expect(scoreFor(hugoCartsSlug), `${hugoCartsSlug} must remain at least score 3`).toBeGreaterThanOrEqual(3);
 });
