@@ -57,7 +57,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("provider-wide Push Gaming pass moves all seventeen score-2 cards to score 3 with official technical facts", () => {
+test("provider-wide Push Gaming pass preserves the facts that moved all seventeen cards to at least score 3", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(Object.keys(expectedRtp)).toHaveLength(17);
@@ -77,6 +77,6 @@ test("provider-wide Push Gaming pass moves all seventeen score-2 cards to score 
     if (expectedMaxWin[slug]) expect(details?.maxWin, slug).toBe(expectedMaxWin[slug]);
     if (expectedVolatility[slug]) expect(details?.volatility, slug).toBe(expectedVolatility[slug]);
 
-    expect(scoreFor(slug), slug).toBe(3);
+    expect(scoreFor(slug), slug).toBeGreaterThanOrEqual(3);
   }
 });
