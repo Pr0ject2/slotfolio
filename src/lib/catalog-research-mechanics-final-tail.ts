@@ -21,6 +21,12 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Wazdan page identifies Collector gameplay where Gainer symbols gather Cash and Jackpot values.",
   },
+  "wazdan-football-mania": {
+    mechanics: ["Блокировка символов"],
+    source: "https://wazdan.com/games/football-mania",
+    verifiedAt,
+    evidence: "Official Wazdan page explicitly lists Block Symbols Mode as a game feature.",
+  },
   "wazdan-football-mania-deluxe": {
     mechanics: ["Сбор символов"],
     source: "https://wazdan.com/games/football-mania-deluxe",
@@ -57,11 +63,35 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Push Gaming page lists Collector Symbols in Golden Bamboo and describes symbol collection in the Free Spins feature.",
   },
+  "push-gaming-bison-battle": {
+    mechanics: ["Множители"],
+    source: "https://www.pushgaming.com/games/bison-battle.html",
+    verifiedAt,
+    evidence: "Official Push Gaming page describes Red Bison multiplier symbols that multiply instant-prize values and sticky multipliers during bonus features.",
+  },
+  "push-gaming-deadly-5": {
+    mechanics: ["Расширяющиеся символы"],
+    source: "https://www.pushgaming.com/games/deadly-5.html",
+    verifiedAt,
+    evidence: "Official Push Gaming page explicitly says matching an outlaw to its Wanted Poster triggers the Expanding Symbols Feature.",
+  },
   "push-gaming-iron-phoenix": {
     mechanics: ["Способы"],
     source: "https://www.pushgaming.com/games/iron-phoenix.html",
     verifiedAt,
     evidence: "Official Push Gaming page says three or more matching symbols win anywhere on adjacent reels starting from the leftmost reel, without fixed paylines.",
+  },
+  "push-gaming-razor-shark-jackpots": {
+    mechanics: ["Mystery Symbols"],
+    source: "https://www.pushgaming.com/games/razor-shark-jackpots.html",
+    verifiedAt,
+    evidence: "Official Push Gaming page says the Nudge & Reveal Feature opens Mystery Symbols to reveal paying or Golden Mystery Symbols.",
+  },
+  "push-gaming-red-hot-multipliers": {
+    mechanics: ["Множители"],
+    source: "https://www.pushgaming.com/games/red-hot-multipliers.html",
+    verifiedAt,
+    evidence: "Official Push Gaming page explicitly describes Hot Multipliers of x2, x3, x5, x10 or x20 applied to winning symbols.",
   },
   "nolimit-city-ding-dong-death": {
     mechanics: ["Каскады"],
