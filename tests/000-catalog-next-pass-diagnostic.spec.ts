@@ -80,7 +80,7 @@ test.only("probe Hacksaw score-3 game pages for explicit max win", async () => {
   test.setTimeout(180_000);
   const targets = catalogSeeds.filter(
     (seed) =>
-      seed.provider === "Hacksaw" &&
+      seed.provider === "Hacksaw Gaming" &&
       qualityScore(seed.slug) === 3 &&
       !getVerifiedCatalogDetails(seed.slug)?.maxWin,
   );
