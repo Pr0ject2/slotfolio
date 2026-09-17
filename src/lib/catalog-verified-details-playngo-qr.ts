@@ -1,6 +1,7 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 
 const verifiedAt = "2026-09-12";
+const verifiedAtLatest = "2026-09-17";
 
 const details: Record<string, CatalogVerifiedDetails> = {
   "playn-go-queens-day-tilt": { field: "3×3", releaseDate: "2019-02-14", source: "https://www.playngo.com/games/queen's-day-tilt", verifiedAt },
@@ -9,6 +10,7 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "playn-go-rage-to-riches": { releaseDate: "2013-10-30", source: "https://www.playngo.com/games/rage-to-riches", verifiedAt },
   "playn-go-raging-rex": { field: "6×4 · 4096 способов", releaseDate: "2019-01-10", source: "https://www.playngo.com/games/raging-rex", verifiedAt },
   "playn-go-raging-rex-2": { field: "4096 способов", releaseDate: "2022-03-17", source: "https://www.playngo.com/games/raging-rex-2", verifiedAt },
+  "playn-go-rally-4-riches": { releaseDate: "2020-06-11", source: "https://www.playngo.com/games/rally-4-riches", verifiedAt: verifiedAtLatest },
 };
 
 export function getCatalogVerifiedDetailsPlayngoQR(slug: string) {
