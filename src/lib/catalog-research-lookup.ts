@@ -1,3 +1,4 @@
+import { catalogSeeds } from "./catalog-seeds";
 import { getCatalogResearch, type CatalogResearch } from "./catalog-research";
 import { getCatalogResearchMore } from "./catalog-research-more";
 import { getCatalogResearch3OaksWave3 } from "./catalog-research-3oaks-wave3";
@@ -71,6 +72,37 @@ type VerifiedCatalogResearch = CatalogResearch & {
   evidenceSource?: string;
 };
 
+const canonicalSourceBySlug = new Map(catalogSeeds.map((seed) => [seed.slug, seed.source]));
+
+function decodedUrl(url: string) {
+  try {
+    return decodeURIComponent(url);
+  } catch {
+    return url;
+  }
+}
+
+function canonicalizeResearchSource(
+  slug: string,
+  research: VerifiedCatalogResearch | undefined,
+): VerifiedCatalogResearch | undefined {
+  if (!research) return undefined;
+
+  const canonicalSource = canonicalSourceBySlug.get(slug);
+  if (!canonicalSource || research.source === canonicalSource) return research;
+
+  const sameDecodedUrl = decodedUrl(research.source) === decodedUrl(canonicalSource);
+  if (sameDecodedUrl || research.evidenceSource) {
+    return { ...research, source: canonicalSource };
+  }
+
+  return {
+    ...research,
+    source: canonicalSource,
+    evidenceSource: research.source,
+  };
+}
+
 export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearch | undefined {
   const freshMechanics =
     getCatalogResearchMechanicsFinalTail(slug) ??
@@ -80,7 +112,9 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearchPushMechanicsTail(slug) ??
     getCatalogResearchWazdanMechanicsTail(slug);
 
-  if (freshMechanics?.mechanics.length) return freshMechanics;
+  if (freshMechanics?.mechanics.length) {
+    return canonicalizeResearchSource(slug, freshMechanics);
+  }
 
   const existing =
     getCatalogResearchPlayngoProviderTail(slug) ??
@@ -145,7 +179,10 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearchPush(slug) ??
     getCatalogResearchNolimit(slug);
 
-  if (existing?.mechanics.length) return existing;
+  if (existing?.mechanics.length) {
+    return canonicalizeResearchSource(slug, existing);
+  }
 
-  return getCatalogResearchFromVerifiedField(slug) ?? existing;
+  const selected = getCatalogResearchFromVerifiedField(slug) ?? existing;
+  return canonicalizeResearchSource(slug, selected);
 }
