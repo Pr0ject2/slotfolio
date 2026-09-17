@@ -101,7 +101,7 @@ const records: Record<string, CatalogResearch> = {
   },
   "playn-go-bakers-treat": {
     mechanics: ["Сбор символов"],
-    source: "https://www.playngo.com/games/baker%27s-treat",
+    source: "https://www.playngo.com/games/baker's-treat",
     verifiedAt,
     evidence: "Official Play’n GO page says a special treat token is collected for each qualifying dessert stack and token trios trigger Flour Power features.",
   },
