@@ -23,7 +23,7 @@ test("diagnose current low-score catalog cards", () => {
       {
         score2: low.filter((row) => row.provider === provider && row.score === 2).length,
         score3: low.filter((row) => row.provider === provider && row.score === 3).length,
-        first: low.filter((row) => row.provider === provider).slice(0, 30),
+        records: low.filter((row) => row.provider === provider),
       },
     ]),
   );
