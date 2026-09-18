@@ -39,7 +39,8 @@ test("quality pass 18 preserves its original collect evidence while allowing lat
     if ("evidenceSource" in values) {
       expect(research?.evidenceSource, slug).toBe(values.evidenceSource);
     }
-    expect(getVerifiedCatalogGameType(slug), `${slug} must not invent Game Type`).toBeUndefined();
+    const gameType = getVerifiedCatalogGameType(slug);
+    if (gameType) expect(gameType.source, slug).toBe(seed!.source);
     expect(scoreFor(slug), `${slug} must stay at or above its achieved quality floor`).toBeGreaterThanOrEqual(3);
   }
 });

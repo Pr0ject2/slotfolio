@@ -6,6 +6,7 @@ type ProviderWideDetails = CatalogVerifiedDetails & {
 
 const verifiedAt = "2026-09-16";
 const verifiedAtLatest = "2026-09-17";
+const verifiedAtScore4 = "2026-09-18";
 
 const details: Record<string, ProviderWideDetails> = {
   "push-gaming-big-bamboo": {
@@ -55,8 +56,10 @@ const details: Record<string, ProviderWideDetails> = {
     rtp: "96,33% / 94,37%",
     maxWin: "10 000x",
     volatility: "Средняя",
+    releaseDate: "2025-06-18",
+    releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-sinks-its-teeth-mystery-fang-city.html",
     source: "https://www.pushgaming.com/games/fang-city.html",
-    verifiedAt,
+    verifiedAt: verifiedAtScore4,
   },
   "push-gaming-fire-pig-push-ways": {
     field: "6 барабанов",

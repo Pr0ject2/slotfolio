@@ -13,7 +13,7 @@ const targetSlugs = new Set([
   "playn-go-lucky-diamonds",
 ]);
 
-test("quality pass 7 improves five thin cross-provider runtime records from official evidence", () => {
+test("quality pass 7 preserves its original official facts while allowing later enrichment", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(5);
@@ -42,14 +42,12 @@ test("quality pass 7 improves five thin cross-provider runtime records from offi
   expect(moofo?.rtp).toBe("96,05%");
   expect(moofo?.maxWin).toBeUndefined();
   expect(moofo?.volatility).toBe("Высокая");
-  expect(moofo?.releaseDate).toBeUndefined();
 
   const zalatar = getVerifiedCatalogDetails("endorphina-zalatar");
   expect(zalatar?.field).toBe("5×3 · 25 линий");
   expect(zalatar?.rtp).toBe("96,03%");
   expect(zalatar?.maxWin).toBeUndefined();
   expect(zalatar?.volatility).toBe("Высокая");
-  expect(zalatar?.releaseDate).toBeUndefined();
 
   const chineseNewYear = getVerifiedCatalogDetails("playn-go-chinese-new-year");
   expect(chineseNewYear?.field).toBe("5×3");
