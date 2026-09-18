@@ -116,11 +116,11 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearch3OaksFill5(slug) ??
     getCatalogResearch3OaksFill4(slug) ??
     getCatalogResearch3OaksFill3(slug);
+  const playngoScore3Fill = getCatalogResearchPlayngoScore3Fill(slug);
   const freshMechanics =
     getCatalogResearchHacksawNormalizedFill3(slug) ??
     getCatalogResearchHacksawNormalizedFill2(slug) ??
     getCatalogResearchHacksawNormalizedFill(slug) ??
-    getCatalogResearchPlayngoScore3Fill(slug) ??
     getCatalogResearchPlayngoFillMechanicsAll(slug) ??
     getCatalogResearchMechanicsFinalTail(slug) ??
     getCatalogResearchPlayngoMechanicsFinal3(slug) ??
@@ -129,7 +129,7 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearchPushMechanicsTail(slug) ??
     getCatalogResearchWazdanMechanicsTail(slug);
 
-  if (!threeOaksFill && freshMechanics?.mechanics.length) {
+  if (!threeOaksFill && !playngoScore3Fill && freshMechanics?.mechanics.length) {
     return canonicalizeResearchSource(slug, freshMechanics);
   }
 
@@ -201,6 +201,13 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     : existing?.mechanics.length
       ? existing
       : getCatalogResearchFromVerifiedField(slug) ?? existing;
+
+  if (playngoScore3Fill?.mechanics.length) {
+    return canonicalizeResearchSource(slug, {
+      ...playngoScore3Fill,
+      mechanics: [...new Set([...(legacy?.mechanics ?? []), ...playngoScore3Fill.mechanics])],
+    });
+  }
 
   if (threeOaksFill?.mechanics.length) {
     return canonicalizeResearchSource(slug, {
