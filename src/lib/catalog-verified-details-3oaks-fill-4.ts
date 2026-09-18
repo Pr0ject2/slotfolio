@@ -26,6 +26,46 @@ const details: Record<string, ThreeOaksFill4Overlay> = {
     releaseDateSource: "https://3oaks.com/news/new-release-purple-diamond",
     verifiedAt: "2026-09-18",
   },
+  "3-oaks-gaming-rush-for-gold": {
+    releaseDate: "2025-12-05",
+    releaseDateSource: "https://3oaks.com/news/new-release-rush-for-gold",
+    verifiedAt: "2026-09-18",
+  },
+  "3-oaks-gaming-sky-pearls": {
+    releaseDate: "2024-03-07",
+    releaseDateSource: "https://3oaks.com/news/new-release-sky-pearls",
+    verifiedAt: "2026-09-18",
+  },
+  "3-oaks-gaming-space-coins": {
+    releaseDate: "2025-05-22",
+    releaseDateSource: "https://3oaks.com/news/new-release-space-coins",
+    verifiedAt: "2026-09-18",
+  },
+  "3-oaks-gaming-sun-of-egypt-4": {
+    releaseDate: "2024-01-04",
+    releaseDateSource: "https://3oaks.com/news/new-release-sun-of-egypt-4",
+    verifiedAt: "2026-09-18",
+  },
+  "3-oaks-gaming-sun-of-egypt-5": {
+    releaseDate: "2025-09-25",
+    releaseDateSource: "https://3oaks.com/news/new-release-sun-of-egypt-5",
+    verifiedAt: "2026-09-18",
+  },
+  "3-oaks-gaming-super-china-pots": {
+    releaseDate: "2025-06-05",
+    releaseDateSource: "https://3oaks.com/news/new-release-super-china-pots",
+    verifiedAt: "2026-09-18",
+  },
+  "3-oaks-gaming-super-sticky-piggy": {
+    releaseDate: "2024-06-06",
+    releaseDateSource: "https://3oaks.com/news/new-release-super-sticky-piggy",
+    verifiedAt: "2026-09-18",
+  },
+  "3-oaks-gaming-supreme-diamond-xxl": {
+    releaseDate: "2026-05-28",
+    releaseDateSource: "https://3oaks.com/news/new-release-supreme-diamond-xxl",
+    verifiedAt: "2026-09-18",
+  },
 };
 
 export function getCatalogVerifiedDetails3OaksFill4(slug: string) {
