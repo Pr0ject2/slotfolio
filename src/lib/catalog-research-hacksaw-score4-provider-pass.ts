@@ -165,17 +165,53 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official page names Golden Squares and Position Multipliers; Wild positions become persistent x2 multipliers that can double on later wins.",
   },
+  "hacksaw-gaming-le-viking": {
+    mechanics: ["Sticky Symbols"],
+    source: "https://www.hacksawgaming.com/games/le-viking",
+    verifiedAt,
+    evidence: "Official Raid Spins keep all Coins, Diamonds, and Clover symbols sticky until the respin mode ends while landed qualifying symbols refill the lives counter.",
+  },
   "hacksaw-gaming-magic-piggy-og": {
     mechanics: ["Трансформация символов", "Множители"],
     source: "https://www.hacksawgaming.com/games/magic-piggy-og",
     verifiedAt,
     evidence: "Official Magic Hat rules transform Magic Piggy symbols into Wilds or Bill Stacks and can reveal Multiplier Coins that multiply stack values.",
   },
+  "hacksaw-gaming-marlin-masters": {
+    mechanics: ["LootLines"],
+    source: "https://www.hacksawgaming.com/games/marlin-masters",
+    verifiedAt,
+    evidence: "Official page says Marlin cash prizes can be collected through winning LootLines made from three or more Marlin symbols as well as by Fisherman symbols.",
+  },
   "hacksaw-gaming-marlin-masters-the-big-haul": {
     mechanics: ["LootLines", "Сбор символов", "Множители"],
     source: "https://www.hacksawgaming.com/games/marlin-masters-the-big-haul",
     verifiedAt,
     evidence: "Official rules define LootLines from Marlin symbols with bet-multiplier cash values, Golden Marlin value spreading and Fisherman collection.",
+  },
+  "hacksaw-gaming-phoenix-duelreels": {
+    mechanics: ["Множители"],
+    source: "https://www.hacksawgaming.com/games/phoenix-duelreels",
+    verifiedAt,
+    evidence: "Official DuelReels carry duelist multipliers across the full Wild reel; multiple DuelReel multipliers are added before being applied to a win.",
+  },
+  "hacksaw-gaming-rainbow-princess": {
+    mechanics: ["Position Multipliers"],
+    source: "https://www.hacksawgaming.com/games/rainbow-princess",
+    verifiedAt,
+    evidence: "Official Magic Frame Multipliers are attached to grid positions, activate when their position joins a winning cluster, and combine before multiplying that cluster win.",
+  },
+  "hacksaw-gaming-reign-of-rome": {
+    mechanics: ["LootLines"],
+    source: "https://www.hacksawgaming.com/games/reign-of-rome",
+    verifiedAt,
+    evidence: "Official Tribute rules define LootLines as winning paylines of Tribute symbols whose multiplier values combine into a cash prize times the bet.",
+  },
+  "hacksaw-gaming-rise-of-fortuna": {
+    mechanics: ["Множители", "Jackpots"],
+    source: "https://www.hacksawgaming.com/games/rise-of-fortuna",
+    verifiedAt,
+    evidence: "Official Fortuna Wheels reveal additive or multiplicative multipliers and Jackpot prizes that are collected into the Cash Prize Bar.",
   },
   "hacksaw-gaming-rise-of-ymir": {
     mechanics: ["Респины", "Множители", "Megamultiplier™"],
@@ -188,6 +224,12 @@ const records: Record<string, CatalogResearch> = {
     source: "https://www.hacksawgaming.com/games/rusty-and-curly",
     verifiedAt,
     evidence: "Official Wild Posters remain on the grid and award respins while Hearts remain, and can carry multiplier values.",
+  },
+  "hacksaw-gaming-shaolin-master": {
+    mechanics: ["Persistent Wilds"],
+    source: "https://www.hacksawgaming.com/games/shaolin-master",
+    verifiedAt,
+    evidence: "Official Chi Orb rules say Blue and Red Chi Orb Wild multiplier symbols are not removed with winning clusters during cascades and persist until the end of the round.",
   },
   "hacksaw-gaming-snow-slingers": {
     mechanics: ["Snowball mechanic", "Sticky Wilds", "Множители"],
