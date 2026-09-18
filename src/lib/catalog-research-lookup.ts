@@ -52,6 +52,7 @@ import { getCatalogResearchPlayngoMechanicsTail } from "./catalog-research-playn
 import { getCatalogResearchPlayngoMechanicsFinal2 } from "./catalog-research-playngo-mechanics-final2";
 import { getCatalogResearchPlayngoMechanicsFinal3 } from "./catalog-research-playngo-mechanics-final3";
 import { getCatalogResearchPlayngoFillMechanics } from "./catalog-research-playngo-fill-mechanics";
+import { getCatalogResearchPlayngoFillMechanics2 } from "./catalog-research-playngo-fill-mechanics-2";
 import { getCatalogResearchWazdan } from "./catalog-research-wazdan";
 import { getCatalogResearchWazdanWave4 } from "./catalog-research-wazdan-wave4";
 import { getCatalogResearchWazdanWave5 } from "./catalog-research-wazdan-wave5";
@@ -106,6 +107,7 @@ function canonicalizeResearchSource(
 
 export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearch | undefined {
   const freshMechanics =
+    getCatalogResearchPlayngoFillMechanics2(slug) ??
     getCatalogResearchPlayngoFillMechanics(slug) ??
     getCatalogResearchMechanicsFinalTail(slug) ??
     getCatalogResearchPlayngoMechanicsFinal3(slug) ??
