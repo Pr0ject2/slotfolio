@@ -36,6 +36,7 @@ import { getCatalogResearchHacksawFinal } from "./catalog-research-hacksaw-final
 import { getCatalogResearchHacksawNormalizedFill } from "./catalog-research-hacksaw-normalized-fill";
 import { getCatalogResearchHacksawNormalizedFill2 } from "./catalog-research-hacksaw-normalized-fill-2";
 import { getCatalogResearchHacksawNormalizedFill3 } from "./catalog-research-hacksaw-normalized-fill-3";
+import { getCatalogResearchHacksawScore4ProviderPass } from "./catalog-research-hacksaw-score4-provider-pass";
 import { getCatalogResearchPlayngo } from "./catalog-research-playngo";
 import { getCatalogResearchPlayngoMore } from "./catalog-research-playngo-more";
 import { getCatalogResearchPlayngoThird } from "./catalog-research-playngo-third";
@@ -119,6 +120,7 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearch3OaksFill4(slug) ??
     getCatalogResearch3OaksFill3(slug);
   const playngoScore3Fill = getCatalogResearchPlayngoScore3Fill(slug);
+  const hacksawScore4Pass = getCatalogResearchHacksawScore4ProviderPass(slug);
   const freshMechanics =
     getCatalogResearchHacksawNormalizedFill3(slug) ??
     getCatalogResearchHacksawNormalizedFill2(slug) ??
@@ -131,7 +133,7 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearchPushMechanicsTail(slug) ??
     getCatalogResearchWazdanMechanicsTail(slug);
 
-  if (!threeOaksFill && !playngoScore3Fill && freshMechanics?.mechanics.length) {
+  if (!threeOaksFill && !playngoScore3Fill && !hacksawScore4Pass && freshMechanics?.mechanics.length) {
     return canonicalizeResearchSource(slug, freshMechanics);
   }
 
@@ -203,6 +205,13 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     : existing?.mechanics.length
       ? existing
       : getCatalogResearchFromVerifiedField(slug) ?? existing;
+
+  if (hacksawScore4Pass?.mechanics.length) {
+    return canonicalizeResearchSource(slug, {
+      ...hacksawScore4Pass,
+      mechanics: [...new Set([...(legacy?.mechanics ?? []), ...hacksawScore4Pass.mechanics])],
+    });
+  }
 
   if (playngoScore3Fill?.mechanics.length) {
     return canonicalizeResearchSource(slug, {
