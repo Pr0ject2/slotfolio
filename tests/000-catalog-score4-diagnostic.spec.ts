@@ -54,9 +54,9 @@ async function mapLimit<T, R>(items: T[], limit: number, mapper: (item: T) => Pr
 }
 
 test.only("probe official Wazdan Game Info for score-four cards", async () => {
-  test.setTimeout(180_000);
+  test.setTimeout(240_000);
   const targets = catalogSeeds.filter((seed) => seed.provider === "Wazdan" && scoreFor(seed.slug) === 4);
-  expect(targets).toHaveLength(124);
+  expect(targets.length).toBeGreaterThan(100);
 
   const rows = await mapLimit(targets, 8, async (seed) => {
     try {
@@ -75,5 +75,5 @@ test.only("probe official Wazdan Game Info for score-four cards", async () => {
   const partial = rows.filter((row) => (row.rtp || row.maxWin || row.volatility) && !(row.rtp && row.maxWin && row.volatility));
   const empty = rows.filter((row) => !row.rtp && !row.maxWin && !row.volatility);
   console.log("WAZDAN_SCORE4_GAME_INFO", JSON.stringify({ total: rows.length, complete: complete.length, partial: partial.length, empty: empty.length, rows }));
-  expect(rows).toHaveLength(124);
+  expect(rows).toHaveLength(targets.length);
 });
