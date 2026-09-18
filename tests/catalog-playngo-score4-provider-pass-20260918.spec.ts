@@ -85,7 +85,8 @@ test("Play’n GO provider pass preserves corrected and variant technical facts"
   );
 
   const genie = getVerifiedCatalogDetails("playn-go-1001-mystery-genie-fortunes");
-  expect(genie?.field).toBe("5×4 · 20 линий");
+  expect(genie?.field).toContain("5×3");
+  expect(genie?.field).toContain("5×4 · 20 линий");
   expect(genie?.maxWin).toBe("1001x");
 
   expect(getVerifiedCatalogDetails("playn-go-cat-wilde-and-the-pyramids-of-dead")?.maxWin).toBe(
