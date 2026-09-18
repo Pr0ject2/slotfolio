@@ -9,11 +9,23 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official rules name the Revolver mechanic; ShootIN' Wild keeps multiplier Wilds sticky for the duration of the feature.",
   },
+  "hacksaw-gaming-bash-bros": {
+    mechanics: ["Расширяющиеся символы", "Множители"],
+    source: "https://www.hacksawgaming.com/games/bash-bros",
+    verifiedAt,
+    evidence: "Official Cash Stacks expand upward and reveal bet multipliers; Oskar and Fred can add or compress stacks and increase their multiplier values.",
+  },
   "hacksaw-gaming-benny-the-beer": {
     mechanics: ["Stackways™", "Book of Stackways™"],
     source: "https://www.hacksawgaming.com/games/benny-the-beer",
     verifiedAt,
     evidence: "Official page explicitly describes Stackways symbols and the Book of Stackways bonus mechanic.",
+  },
+  "hacksaw-gaming-booze-bash": {
+    mechanics: ["Трансформация символов"],
+    source: "https://www.hacksawgaming.com/games/booze-bash",
+    verifiedAt,
+    evidence: "Official Bash Bar feature can reveal a paying symbol and convert matching positions on the connected reel into that same symbol to create winning pairs.",
   },
   "hacksaw-gaming-bouncy-bombs": {
     mechanics: ["Bomb Multipliers"],
@@ -21,11 +33,35 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official page names the Bomb Multiplier mechanic and explains how bomb values combine before multiplying the Total Win Bar.",
   },
+  "hacksaw-gaming-cash-crew": {
+    mechanics: ["Сбор символов", "Зональные множители"],
+    source: "https://www.hacksawgaming.com/games/cash-crew",
+    verifiedAt,
+    evidence: "Official rules collect Cash values through Grab 'em and apply adjacent Multiplier symbols to Cash in a 3x3 area, with multiple adjacent multipliers multiplying the Cash value.",
+  },
+  "hacksaw-gaming-circle-of-life": {
+    mechanics: ["Sticky Wilds", "Расширяющиеся символы", "Множители"],
+    source: "https://www.hacksawgaming.com/games/circle-of-life",
+    verifiedAt,
+    evidence: "Official Tree of Life rules keep winning Tree symbols sticky during respins, expand them upward by one row and apply additive or multiplicative multiplier upgrades.",
+  },
+  "hacksaw-gaming-dandy-diamonds": {
+    mechanics: ["Sticky Wilds", "Множители"],
+    source: "https://www.hacksawgaming.com/games/dandy-diamonds",
+    verifiedAt,
+    evidence: "Official Dandy Respin rules keep Diamond Wilds sticky with additive multipliers; later bonus modes keep Diamonds sticky and make multiplier values progressive.",
+  },
   "hacksaw-gaming-dawn-of-kings": {
     mechanics: ["Book"],
     source: "https://www.hacksawgaming.com/games/dawn-of-kings",
     verifiedAt,
     evidence: "Official page explicitly describes Dawn of Kings as using the classic Book mechanic and explains the Book symbol bonus triggers.",
+  },
+  "hacksaw-gaming-donny-and-danny": {
+    mechanics: ["LootLines", "Расширяющиеся барабаны"],
+    source: "https://www.hacksawgaming.com/games/donny-and-danny",
+    verifiedAt,
+    evidence: "Official rules define LootLines built from Donny/Danny symbols; Danny expands upward into Dollar-Reels that reveal multiplier values on covered positions.",
   },
   "hacksaw-gaming-dragons-domain": {
     mechanics: ["Charred Land", "Множители"],
