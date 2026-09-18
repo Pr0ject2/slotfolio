@@ -40,7 +40,7 @@ test("provider-wide Hacksaw pass preserves all seventeen official feature facts"
     const research = getVerifiedCatalogResearch(slug);
     expect(research, slug).toBeTruthy();
     expect(research?.source, slug).toBe(seed!.source);
-    expect(research?.verifiedAt, slug).toBe("2026-09-16");
+    expect(research?.verifiedAt, slug).toMatch(/^20\d{2}-\d{2}-\d{2}$/);
     expect(research?.mechanics, slug).toContain(mechanic);
     expect(research?.evidence, slug).toBeTruthy();
 

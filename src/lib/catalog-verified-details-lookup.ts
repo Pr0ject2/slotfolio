@@ -52,6 +52,7 @@ import { getCatalogVerifiedDetailsHacksaw } from "./catalog-verified-details-hac
 import { getCatalogVerifiedDetailsHacksawWave1 } from "./catalog-verified-details-hacksaw-wave1";
 import { getCatalogVerifiedDetailsHacksawFinal } from "./catalog-verified-details-hacksaw-final";
 import { getCatalogVerifiedDetailsHacksawMaxWinProviderWide } from "./catalog-verified-details-hacksaw-maxwin-provider-wide";
+import { getCatalogVerifiedDetailsHacksawFill2 } from "./catalog-verified-details-hacksaw-fill-2";
 import { getCatalogVerifiedDetailsNolimit } from "./catalog-verified-details-nolimit";
 import { getCatalogVerifiedDetailsWazdanProviderWide } from "./catalog-verified-details-wazdan-provider-wide";
 import { getCatalogVerifiedDetailsWazdanWave1 } from "./catalog-verified-details-wazdan-wave1";
@@ -131,7 +132,14 @@ export function getVerifiedCatalogDetails(slug: string): VerifiedCatalogDetails 
     playngoFillOverlay && withPushFill ? { ...playngoFillOverlay, ...withPushFill } : withPushFill;
 
   const hacksawOverlay = getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug);
-  if (!hacksawOverlay) return withPlayngoFill;
-  if (!withPlayngoFill) return hacksawOverlay;
-  return { ...withPlayngoFill, ...hacksawOverlay };
+  const withHacksawOverlay = !hacksawOverlay
+    ? withPlayngoFill
+    : !withPlayngoFill
+      ? hacksawOverlay
+      : { ...withPlayngoFill, ...hacksawOverlay };
+
+  const hacksawFill2Overlay = getCatalogVerifiedDetailsHacksawFill2(slug);
+  if (!hacksawFill2Overlay) return withHacksawOverlay;
+  if (!withHacksawOverlay) return undefined;
+  return { ...withHacksawOverlay, ...hacksawFill2Overlay };
 }
