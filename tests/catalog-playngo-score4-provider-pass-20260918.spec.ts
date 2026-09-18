@@ -18,6 +18,7 @@ const enrichedMechanics = [
   "playn-go-13th-trial-hercules-abyssways",
   "playn-go-agent-of-hearts",
   "playn-go-ankh-of-anubis-awakening",
+  "playn-go-athena-ascending",
   "playn-go-banana-rush",
   "playn-go-banquet-of-dead",
   "playn-go-bao-shi",
@@ -30,9 +31,11 @@ const enrichedMechanics = [
   "playn-go-bubblin-riches",
   "playn-go-buildin-even-more-bucks",
   "playn-go-buildin-more-bucks",
+  "playn-go-canine-carnage",
   "playn-go-captain-glum-pirate-hunter",
   "playn-go-cashin-joker",
   "playn-go-city-of-sound",
+  "playn-go-clash-of-camelot",
   "playn-go-count-jokula",
   "playn-go-crabbys-gold-ii",
   "playn-go-crystal-hall",
@@ -41,11 +44,18 @@ const enrichedMechanics = [
   "playn-go-fire-joker-100",
   "playn-go-fire-joker-blitz",
   "playn-go-game-of-gladiators-uprising",
+  "playn-go-gnawn-gold",
   "playn-go-golden-legend",
+  "playn-go-hooligan-hustle",
+  "playn-go-idol-of-fortune",
   "playn-go-imperial-opera",
+  "playn-go-jewel-box",
+  "playn-go-joker-flip",
+  "playn-go-jolly-roger-2",
   "playn-go-lady-of-fortune",
   "playn-go-lady-of-fortune-destiny-spins",
   "playn-go-lawn-n-disorder",
+  "playn-go-legacy-of-inca",
   "playn-go-loot-and-labyrinths",
   "playn-go-medusas-madness",
   "playn-go-mega-don-triple-threat",
@@ -114,5 +124,11 @@ test("Play’n GO mechanics pass corrects Cashin’ Joker and keeps richer offic
   );
   expect(getVerifiedCatalogResearch("playn-go-boat-bonanza-croconile")?.mechanics).toEqual(
     expect.arrayContaining(["Линии", "Сбор символов", "Респины", "Lock’n Spin", "Множители", "Instant Prizes"]),
+  );
+  expect(getVerifiedCatalogResearch("playn-go-hooligan-hustle")?.mechanics).toEqual(
+    expect.arrayContaining(["Способы", "Множители", "Wild Reels", "Split Symbols"]),
+  );
+  expect(getVerifiedCatalogResearch("playn-go-jolly-roger-2")?.mechanics).toEqual(
+    expect.arrayContaining(["Сбор символов", "Множители", "Pick-and-click", "Instant Prizes", "Stacked Wilds", "Трансформация символов", "Synchronized Reels"]),
   );
 });
