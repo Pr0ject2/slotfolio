@@ -27,9 +27,14 @@ function rowFor(slug: string, provider: string) {
   };
 }
 
-test.only("profile exact remaining score-three catalog cards", () => {
+test.only("profile exact remaining score-three catalog cards and histogram", () => {
   const rows = catalogSeeds.map((seed) => rowFor(seed.slug, seed.provider));
   const score3 = rows.filter((row) => row.score === 3);
+  const counts = Object.fromEntries(
+    Array.from({ length: 10 }, (_, score) => [score, rows.filter((row) => row.score === score).length]),
+  );
   console.log("SCORE3_PROFILE", JSON.stringify(score3));
+  console.log("QUALITY_HISTOGRAM", JSON.stringify(counts));
   expect(score3).toHaveLength(10);
+  expect(rows).toHaveLength(900);
 });
