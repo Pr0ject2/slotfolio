@@ -56,6 +56,7 @@ import { getCatalogVerifiedDetailsHacksawFinal } from "./catalog-verified-detail
 import { getCatalogVerifiedDetailsHacksawMaxWinProviderWide } from "./catalog-verified-details-hacksaw-maxwin-provider-wide";
 import { getCatalogVerifiedDetailsHacksawFill2 } from "./catalog-verified-details-hacksaw-fill-2";
 import { getCatalogVerifiedDetailsHacksawFill3 } from "./catalog-verified-details-hacksaw-fill-3";
+import { getCatalogVerifiedDetailsHacksawScore4Fill } from "./catalog-verified-details-hacksaw-score4-fill";
 import { getCatalogVerifiedDetailsNolimit } from "./catalog-verified-details-nolimit";
 import { getCatalogVerifiedDetailsWazdanProviderWide } from "./catalog-verified-details-wazdan-provider-wide";
 import { getCatalogVerifiedDetailsWazdanWave1 } from "./catalog-verified-details-wazdan-wave1";
@@ -170,8 +171,15 @@ export function getVerifiedCatalogDetails(slug: string): VerifiedCatalogDetails 
       ? undefined
       : { ...withHacksawFill2, ...hacksawFill3Overlay };
 
+  const hacksawScore4Overlay = getCatalogVerifiedDetailsHacksawScore4Fill(slug);
+  const withHacksawScore4 = !hacksawScore4Overlay
+    ? withHacksawFill3
+    : !withHacksawFill3
+      ? undefined
+      : { ...withHacksawFill3, ...hacksawScore4Overlay };
+
   const wazdanScore4Overlay = getCatalogVerifiedDetailsWazdanScore4Fill(slug);
-  if (!wazdanScore4Overlay) return withHacksawFill3;
-  if (!withHacksawFill3) return undefined;
-  return { ...withHacksawFill3, ...wazdanScore4Overlay };
+  if (!wazdanScore4Overlay) return withHacksawScore4;
+  if (!withHacksawScore4) return undefined;
+  return { ...withHacksawScore4, ...wazdanScore4Overlay };
 }
