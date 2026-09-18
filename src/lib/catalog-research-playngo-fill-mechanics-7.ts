@@ -51,6 +51,12 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official release describes multiple payways and the Wheel of the Gods, which determines the number of Free Spins and can return during Temple Spins.",
   },
+  "playn-go-leprechauns-diamond-dig": {
+    mechanics: ["Сбор символов", "Множители"],
+    source: "https://www.playngo.com/games/leprechaun's-diamond-dig",
+    verifiedAt,
+    evidence: "Official game page says Lucky Minecarts collect Diamond symbols and collected Lucky Clovers raise the Mega Blast multiplier through x2, x5, x10 and x25 levels.",
+  },
   "playn-go-muerto-en-mictlan": {
     mechanics: ["Расширяющиеся символы"],
     source: "https://www.playngo.com/games/muerto-en-mictl%C3%A1n",
