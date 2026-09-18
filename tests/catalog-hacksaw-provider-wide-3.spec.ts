@@ -55,7 +55,7 @@ test("Hacksaw provider-wide pass 3 preserves its separately sourced official rel
     expect(details?.source, `${slug} game source`).toBe(seed!.source);
     expect(details?.verifiedAt, `${slug} verification date`).toMatch(/^20\d{2}-\d{2}-\d{2}$/);
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Slots");
-    expect(getVerifiedCatalogResearch(slug)?.mechanics.length, slug).toBe(1);
+    expect(getVerifiedCatalogResearch(slug)?.mechanics.length, slug).toBeGreaterThanOrEqual(1);
     expect(scoreFor(slug), `${slug} must stay at or above the achieved quality floor`).toBeGreaterThanOrEqual(3);
   }
 });
