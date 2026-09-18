@@ -30,6 +30,14 @@ const sources: Record<string, string> = {
   "3-oaks-gaming-green-chilli": "https://3oaks.com/game/green_chilli",
   "3-oaks-gaming-hot-fire-fruits": "https://3oaks.com/game/hot_fire_fruits",
   "3-oaks-gaming-lady-fortune": "https://3oaks.com/game/lady_fortune",
+  "3-oaks-gaming-3-jewel-crowns": "https://3oaks.com/game/3_jewel_crowns",
+  "3-oaks-gaming-coin-princess-x1000": "https://3oaks.com/game/coin_princess_x1000",
+  "3-oaks-gaming-joker-glitz-x1000": "https://www.3oaks.com/",
+  "3-oaks-gaming-lucky-apple-x1000": "https://3oaks.com/news/new-release-lucky-apple-x1000",
+  "3-oaks-gaming-lucky-penny": "https://3oaks.com/game/lucky_penny",
+  "3-oaks-gaming-lucky-penny-2": "https://3oaks.com/news/new-partnership-eurobet",
+  "3-oaks-gaming-lucky-penny-power-scatter": "https://3oaks.com/news/new-release-lucky-penny-power-scatter",
+  "3-oaks-gaming-super-china-pots": "https://3oaks.com/news/new-release-super-china-pots",
 };
 
 const gameTypes = Object.fromEntries(
