@@ -4,16 +4,28 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
-function scoreFor(slug: string) {
+function rowFor(slug: string, provider: string) {
   const details = getVerifiedCatalogDetails(slug);
-  const type = getVerifiedCatalogGameType(slug);
+  const gameType = getVerifiedCatalogGameType(slug);
   const research = getVerifiedCatalogResearch(slug);
   const detailFacts = details ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length : 0;
-  return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
+  const score = detailFacts + (gameType ? 1 : 0) + (research?.mechanics.length ?? 0);
+  return {
+    slug,
+    provider,
+    score,
+    field: details?.field ?? null,
+    rtp: details?.rtp ?? null,
+    maxWin: details?.maxWin ?? null,
+    volatility: details?.volatility ?? null,
+    releaseDate: details?.releaseDate ?? null,
+    gameType: gameType ?? null,
+    mechanics: research?.mechanics ?? [],
+  };
 }
 
 test.only("diagnose remaining low-score cards after fill 4", () => {
-  const rows = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
+  const rows = catalogSeeds.map((seed) => rowFor(seed.slug, seed.provider));
   const counts = Object.fromEntries(Array.from({ length: 11 }, (_, score) => [score, rows.filter((row) => row.score === score).length]));
   const low = rows.filter((row) => row.score <= 3);
   console.log("CATALOG_FILL_4", JSON.stringify({ counts, low, total: rows.length }));
