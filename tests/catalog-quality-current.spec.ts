@@ -21,10 +21,10 @@ test("current catalog quality baseline", () => {
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(0);
   expect(ranked.filter((row) => row.score === 2)).toHaveLength(3);
   expect(ranked.filter((row) => row.score === 3)).toHaveLength(10);
-  expect(ranked.filter((row) => row.score === 4)).toHaveLength(396);
-  expect(ranked.filter((row) => row.score === 5)).toHaveLength(136);
-  expect(ranked.filter((row) => row.score === 6)).toHaveLength(167);
-  expect(ranked.filter((row) => row.score === 7)).toHaveLength(184);
+  expect(ranked.filter((row) => row.score === 4)).toHaveLength(350);
+  expect(ranked.filter((row) => row.score === 5)).toHaveLength(162);
+  expect(ranked.filter((row) => row.score === 6)).toHaveLength(186);
+  expect(ranked.filter((row) => row.score === 7)).toHaveLength(185);
   expect(ranked.filter((row) => row.score === 8)).toHaveLength(3);
   expect(ranked.filter((row) => row.score === 9)).toHaveLength(1);
 
