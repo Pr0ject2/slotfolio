@@ -8,44 +8,23 @@ function scoreFor(slug: string) {
   const details = getVerifiedCatalogDetails(slug);
   const type = getVerifiedCatalogGameType(slug);
   const research = getVerifiedCatalogResearch(slug);
-  const detailFacts = details
-    ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length
-    : 0;
+  const detailFacts = details ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length : 0;
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test.only("diagnose current low-score catalog cards", () => {
+test.only("diagnose final catalog-fill distribution", () => {
   const rows = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
+  const histogram = Object.fromEntries(
+    Array.from(new Set(rows.map((row) => row.score))).sort((a, b) => a - b).map((score) => [score, rows.filter((row) => row.score === score).length]),
+  );
   const low = rows.filter((row) => row.score <= 3);
   const counts = Object.fromEntries(
-    Array.from(new Set(low.map((row) => row.provider))).sort().map((provider) => [
-      provider,
-      {
-        score2: low.filter((row) => row.provider === provider && row.score === 2).length,
-        score3: low.filter((row) => row.provider === provider && row.score === 3).length,
-      },
-    ]),
+    Array.from(new Set(low.map((row) => row.provider))).sort().map((provider) => [provider, {
+      score2: low.filter((row) => row.provider === provider && row.score === 2).length,
+      score3: low.filter((row) => row.provider === provider && row.score === 3).length,
+    }]),
   );
-  console.log("CATALOG_FILL_COUNTS", JSON.stringify({ total: rows.length, low: low.length, counts }));
-
-  const playngo = catalogSeeds
-    .filter((seed) => seed.provider === "Play’n GO" && scoreFor(seed.slug) === 3)
-    .map((seed) => {
-      const details = getVerifiedCatalogDetails(seed.slug);
-      const type = getVerifiedCatalogGameType(seed.slug);
-      const research = getVerifiedCatalogResearch(seed.slug);
-      return {
-        slug: seed.slug,
-        source: seed.source,
-        field: details?.field ?? null,
-        rtp: details?.rtp ?? null,
-        maxWin: details?.maxWin ?? null,
-        volatility: details?.volatility ?? null,
-        releaseDate: details?.releaseDate ?? null,
-        gameType: type?.gameType ?? null,
-        mechanics: research?.mechanics ?? [],
-      };
-    });
-  console.log("PLAYNGO_SCORE3_EXACT", JSON.stringify(playngo));
+  console.log("CATALOG_FILL_FINAL", JSON.stringify({ total: rows.length, histogram, low: low.length, counts }));
+  console.log("PLAYNGO_SCORE3_FINAL", JSON.stringify(rows.filter((row) => row.provider === "Play’n GO" && row.score === 3).map((row) => row.slug)));
   expect(rows).toHaveLength(900);
 });
