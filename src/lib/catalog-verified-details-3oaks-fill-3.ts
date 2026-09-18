@@ -20,6 +20,11 @@ const details: Record<string, ThreeOaksFill3Overlay> = {
   "3-oaks-gaming-dancing-joker": { releaseDate: "2025-05-01", releaseDateSource: "https://3oaks.com/news/new-release-dancing-joker", verifiedAt: "2026-09-18" },
   "3-oaks-gaming-lava-coins": { releaseDate: "2024-12-12", releaseDateSource: "https://3oaks.com/news/new-release-lava-coins", verifiedAt: "2026-09-18" },
   "3-oaks-gaming-lava-coins-2": { releaseDate: "2025-11-06", releaseDateSource: "https://3oaks.com/news/new-release-lava-coins-2", verifiedAt: "2026-09-18" },
+  "3-oaks-gaming-lucky-penny": { releaseDate: "2024-08-29", releaseDateSource: "https://3oaks.com/news/new-release-lucky-penny", verifiedAt: "2026-09-18" },
+  "3-oaks-gaming-lucky-penny-2": { releaseDate: "2025-08-28", releaseDateSource: "https://3oaks.com/news/new-release-lucky-penny-2", verifiedAt: "2026-09-18" },
+  "3-oaks-gaming-lucky-penny-power-scatter": { releaseDate: "2026-05-21", releaseDateSource: "https://3oaks.com/news/new-release-lucky-penny-power-scatter", verifiedAt: "2026-09-18" },
+  "3-oaks-gaming-lucky-apple-x1000": { releaseDate: "2026-04-30", releaseDateSource: "https://3oaks.com/news/new-release-lucky-apple-x1000", verifiedAt: "2026-09-18" },
+  "3-oaks-gaming-lord-of-thunder": { releaseDate: "2026-02-05", releaseDateSource: "https://3oaks.com/news/new-release-lord-of-thunder", verifiedAt: "2026-09-18" },
 };
 
 export function getCatalogVerifiedDetails3OaksFill3(slug: string) {
