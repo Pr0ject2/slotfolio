@@ -28,14 +28,33 @@ function decodeText(html: string) {
     .trim();
 }
 
+function normalizeVolatility(value: string | null) {
+  if (!value) return null;
+  const key = value.toLowerCase().replace(/\s+/g, " ").trim();
+  const map: Record<string, string> = {
+    low: "Низкая",
+    "low-medium": "Низкая–средняя",
+    medium: "Средняя",
+    standard: "Стандартная",
+    "medium-high": "Средняя–высокая",
+    high: "Высокая",
+    "very high": "Очень высокая",
+    extreme: "Экстремальная",
+  };
+  return map[key] ?? value;
+}
+
 function parseGameInfo(html: string) {
   const text = decodeText(html);
   const start = text.indexOf("Game Info");
   const end = text.indexOf("Features", start + 1);
   const info = start >= 0 ? text.slice(start, end > start ? end : start + 1500) : "";
-  const rtp = info.match(/RTP:\s*([0-9]+(?:[.,][0-9]+)?%)/i)?.[1] ?? null;
-  const maxWin = info.match(/Max Win:\s*([0-9][0-9., ]*x(?:\s*bet)?)/i)?.[1]?.trim() ?? null;
-  const volatility = info.match(/Volatility:\s*([A-Za-z]+(?:[\s–-]+[A-Za-z]+)*?)(?=\s+(?:Series:|Theme:|Release date:|Features|Availability|$))/i)?.[1]?.trim() ?? null;
+  const rawRtp = info.match(/RTP:\s*([0-9]+(?:[.,][0-9]+)?\s*%)/i)?.[1] ?? null;
+  const rawMaxWin = info.match(/Max Win:\s*([0-9][0-9., ]*x(?:\s*bet)?)/i)?.[1]?.trim() ?? null;
+  const rawVolatility = info.match(/Volatility:\s*([A-Za-z]+(?:[\s–-]+[A-Za-z]+)*?)(?=\s+(?:Series:|Theme:|Release date:|Features|Availability|$))/i)?.[1]?.trim() ?? null;
+  const rtp = rawRtp?.replace(/\s+/g, "").replace(".", ",") ?? null;
+  const maxWin = rawMaxWin?.replace(/\s*bet$/i, "").replace(/[ ,]/g, "") ?? null;
+  const volatility = normalizeVolatility(rawVolatility);
   return { rtp, maxWin, volatility, hasGameInfo: start >= 0 };
 }
 
@@ -74,6 +93,7 @@ test.only("probe official Wazdan Game Info for score-four cards", async () => {
   const complete = rows.filter((row) => row.rtp && row.maxWin && row.volatility);
   const partial = rows.filter((row) => (row.rtp || row.maxWin || row.volatility) && !(row.rtp && row.maxWin && row.volatility));
   const empty = rows.filter((row) => !row.rtp && !row.maxWin && !row.volatility);
-  console.log("WAZDAN_SCORE4_GAME_INFO", JSON.stringify({ total: rows.length, complete: complete.length, partial: partial.length, empty: empty.length, rows }));
+  const importRows = rows.map(({ slug, source, rtp, maxWin, volatility }) => ({ slug, source, rtp, maxWin, volatility }));
+  console.log("WAZDAN_SCORE4_GAME_INFO", JSON.stringify({ total: rows.length, complete: complete.length, partial: partial.length, empty: empty.length, rows: importRows }));
   expect(rows).toHaveLength(targets.length);
 });
