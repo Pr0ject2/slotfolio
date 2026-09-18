@@ -20,11 +20,11 @@ test("current catalog quality baseline", () => {
   expect(catalogSeeds).toHaveLength(900);
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(0);
   expect(ranked.filter((row) => row.score === 2)).toHaveLength(3);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(113);
-  expect(ranked.filter((row) => row.score === 4)).toHaveLength(525);
-  expect(ranked.filter((row) => row.score === 5)).toHaveLength(98);
+  expect(ranked.filter((row) => row.score === 3)).toHaveLength(107);
+  expect(ranked.filter((row) => row.score === 4)).toHaveLength(527);
+  expect(ranked.filter((row) => row.score === 5)).toHaveLength(99);
   expect(ranked.filter((row) => row.score === 6)).toHaveLength(112);
-  expect(ranked.filter((row) => row.score === 7)).toHaveLength(49);
+  expect(ranked.filter((row) => row.score === 7)).toHaveLength(52);
 
   expect(ranked.filter((row) => row.provider === "Hacksaw Gaming" && row.score <= 2)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Wazdan" && row.score <= 2)).toHaveLength(0);
