@@ -88,6 +88,14 @@ const details: Record<string, ProviderWideDetails> = {
     source: "https://www.pushgaming.com/games/mystery-mission-moon.html",
     verifiedAt: verifiedAtScore4,
   },
+  "push-gaming-neon-cash-city": {
+    field: "8×8",
+    rtp: "96,35% / 94,37%",
+    maxWin: "9395.5x",
+    volatility: "Средняя–высокая",
+    source: "https://www.pushgaming.com/games/neon-cash-city.html",
+    verifiedAt: verifiedAtScore4,
+  },
   "push-gaming-power-paws": {
     rtp: "96,25% / 94,32%",
     maxWin: "6 500x",
