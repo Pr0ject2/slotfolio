@@ -25,6 +25,8 @@ const details: Record<string, ThreeOaksFill3Overlay> = {
   "3-oaks-gaming-lucky-penny-power-scatter": { releaseDate: "2026-05-21", releaseDateSource: "https://3oaks.com/news/new-release-lucky-penny-power-scatter", verifiedAt: "2026-09-18" },
   "3-oaks-gaming-lucky-apple-x1000": { releaseDate: "2026-04-30", releaseDateSource: "https://3oaks.com/news/new-release-lucky-apple-x1000", verifiedAt: "2026-09-18" },
   "3-oaks-gaming-lord-of-thunder": { releaseDate: "2026-02-05", releaseDateSource: "https://3oaks.com/news/new-release-lord-of-thunder", verifiedAt: "2026-09-18" },
+  "3-oaks-gaming-golden-teapot": { releaseDate: "2024-07-04", releaseDateSource: "https://3oaks.com/news/new-release-golden-teapot", verifiedAt: "2026-09-18" },
+  "3-oaks-gaming-coin-volcano-2": { releaseDate: "2025-08-07", releaseDateSource: "https://3oaks.com/news/new-release-coin-volcano-2", verifiedAt: "2026-09-18" },
 };
 
 export function getCatalogVerifiedDetails3OaksFill3(slug: string) {
