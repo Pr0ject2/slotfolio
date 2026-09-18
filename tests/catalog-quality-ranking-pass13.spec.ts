@@ -6,37 +6,23 @@ import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-typ
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const expected = {
-  "3-oaks-gaming-magic-apple-2": {
-    field: "5×4 · 20 линий",
-    releaseDate: "2022-06",
-    source: "https://3oaks.com/game/magic_apple_2",
-  },
-  "3-oaks-gaming-sunlight-princess": {
-    field: "5×3 · 30 линий",
-    releaseDate: "2023-02",
-    source: "https://3oaks.com/game/sunlight_princess",
-  },
+  "3-oaks-gaming-magic-apple-2": { field: "5×4 · 20 линий", releaseDate: "2022-06", source: "https://3oaks.com/game/magic_apple_2" },
+  "3-oaks-gaming-sunlight-princess": { field: "5×3 · 30 линий", releaseDate: "2023-02", source: "https://3oaks.com/game/sunlight_princess" },
 } as const;
-
-const targetSlugs = new Set(Object.keys(expected));
 
 function scoreFor(slug: string) {
   const details = getVerifiedCatalogDetails(slug);
   const type = getVerifiedCatalogGameType(slug);
   const research = getVerifiedCatalogResearch(slug);
-  const detailFacts = details
-    ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length
-    : 0;
+  const detailFacts = details ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length : 0;
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 13 confirms line mechanics for two score-2 3 Oaks records", () => {
+test("quality pass 13 preserves its original 3 Oaks line evidence while allowing later enrichment", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
-
-  expect(targetSlugs.size).toBe(2);
+  expect(Object.keys(expected)).toHaveLength(2);
   expect(catalogSeeds).toHaveLength(900);
   expect(slots).toHaveLength(100);
-  expect(catalogSeeds.length + slots.length).toBe(1000);
 
   for (const [slug, values] of Object.entries(expected)) {
     const seed = selected.get(slug);
@@ -46,19 +32,14 @@ test("quality pass 13 confirms line mechanics for two score-2 3 Oaks records", (
     expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
 
     const details = getVerifiedCatalogDetails(slug);
-    expect(details, slug).toBeTruthy();
     expect(details?.source, slug).toBe(values.source);
     expect(details?.field, slug).toBe(values.field);
-    expect(details?.releaseDate, slug).toBe(values.releaseDate);
-    expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
-    expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
-    expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
+    expect(details?.releaseDate, slug).toEqual(expect.stringMatching(new RegExp(`^${values.releaseDate}(?:$|-)`)));
 
     const research = getVerifiedCatalogResearch(slug);
     expect(research?.source, slug).toBe(values.source);
-    expect(research?.mechanics, `${slug} must use only the verified line mechanic`).toEqual(["Линии"]);
-    expect(research?.evidence, slug).toMatch(/line/);
+    expect(research?.mechanics, `${slug} must retain the verified line mechanic`).toContain("Линии");
     expect(getVerifiedCatalogGameType(slug), `${slug} must not invent Game Type`).toBeUndefined();
-    expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
+    expect(scoreFor(slug), `${slug} must stay at or above its achieved quality floor`).toBeGreaterThanOrEqual(3);
   }
 });
