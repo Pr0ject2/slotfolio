@@ -20,6 +20,7 @@ import { getCatalogVerifiedDetailsPlayngoFill } from "./catalog-verified-details
 import { getCatalogVerifiedDetails3Oaks } from "./catalog-verified-details-3oaks";
 import { getCatalogVerifiedDetails3OaksWave1 } from "./catalog-verified-details-3oaks-wave1";
 import { getCatalogVerifiedDetails3OaksFinal } from "./catalog-verified-details-3oaks-final";
+import { getCatalogVerifiedDetails3OaksFill3 } from "./catalog-verified-details-3oaks-fill-3";
 import { getCatalogVerifiedDetailsBgaming } from "./catalog-verified-details-bgaming";
 import { getCatalogVerifiedDetailsBgamingMore } from "./catalog-verified-details-bgaming-more";
 import { getCatalogVerifiedDetailsBgamingThird } from "./catalog-verified-details-bgaming-third";
@@ -132,12 +133,19 @@ export function getVerifiedCatalogDetails(slug: string): VerifiedCatalogDetails 
   const withPlayngoFill =
     playngoFillOverlay && withPushFill ? { ...playngoFillOverlay, ...withPushFill } : withPushFill;
 
-  const hacksawOverlay = getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug);
-  const withHacksawOverlay = !hacksawOverlay
+  const threeOaksFillOverlay = getCatalogVerifiedDetails3OaksFill3(slug);
+  const withThreeOaksFill = !threeOaksFillOverlay
     ? withPlayngoFill
     : !withPlayngoFill
+      ? undefined
+      : { ...withPlayngoFill, ...threeOaksFillOverlay };
+
+  const hacksawOverlay = getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug);
+  const withHacksawOverlay = !hacksawOverlay
+    ? withThreeOaksFill
+    : !withThreeOaksFill
       ? hacksawOverlay
-      : { ...withPlayngoFill, ...hacksawOverlay };
+      : { ...withThreeOaksFill, ...hacksawOverlay };
 
   const hacksawFill2Overlay = getCatalogVerifiedDetailsHacksawFill2(slug);
   const withHacksawFill2 = !hacksawFill2Overlay
