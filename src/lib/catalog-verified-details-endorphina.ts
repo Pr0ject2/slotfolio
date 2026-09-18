@@ -1,4 +1,5 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
+import { getCatalogVerifiedDetailsEndorphinaScore4Fill } from "./catalog-verified-details-endorphina-score4-fill";
 
 const verifiedAt = "2026-09-11";
 const verifiedAtFinal = "2026-09-13";
@@ -78,5 +79,9 @@ const details: Record<string, CatalogVerifiedDetails> = {
 };
 
 export function getCatalogVerifiedDetailsEndorphina(slug: string) {
-  return details[slug];
+  const base = details[slug];
+  const overlay = getCatalogVerifiedDetailsEndorphinaScore4Fill(slug);
+  if (!overlay) return base;
+  if (!base) return undefined;
+  return { ...base, ...overlay };
 }
