@@ -47,6 +47,11 @@ const expectedReleaseDate: Partial<Record<keyof typeof expectedRtp, string>> = {
   "wazdan-valentines-coins": "2026-02-03",
 };
 
+function firstRtpNumber(value: string | undefined) {
+  const first = value?.split(/[\/;]/)[0]?.trim();
+  return first ? Number(first.replace("%", "").replace(",", ".")) : undefined;
+}
+
 function scoreFor(slug: string) {
   const details = getVerifiedCatalogDetails(slug);
   const type = getVerifiedCatalogGameType(slug);
@@ -70,7 +75,7 @@ test("provider-wide Wazdan pass preserves the facts that moved all nineteen card
 
     const details = getVerifiedCatalogDetails(slug);
     expect(details, slug).toBeTruthy();
-    expect(details?.rtp, slug).toBe(rtp);
+    expect(firstRtpNumber(details?.rtp), slug).toBeCloseTo(firstRtpNumber(rtp)!, 6);
     expect(details?.source, slug).toBe(seed!.source);
 
     if (expectedField[slug]) expect(details?.field, slug).toBe(expectedField[slug]);

@@ -56,12 +56,14 @@ import { getCatalogVerifiedDetailsHacksawFinal } from "./catalog-verified-detail
 import { getCatalogVerifiedDetailsHacksawMaxWinProviderWide } from "./catalog-verified-details-hacksaw-maxwin-provider-wide";
 import { getCatalogVerifiedDetailsHacksawFill2 } from "./catalog-verified-details-hacksaw-fill-2";
 import { getCatalogVerifiedDetailsHacksawFill3 } from "./catalog-verified-details-hacksaw-fill-3";
+import { getCatalogVerifiedDetailsHacksawScore4Fill } from "./catalog-verified-details-hacksaw-score4-fill";
 import { getCatalogVerifiedDetailsNolimit } from "./catalog-verified-details-nolimit";
 import { getCatalogVerifiedDetailsWazdanProviderWide } from "./catalog-verified-details-wazdan-provider-wide";
 import { getCatalogVerifiedDetailsWazdanWave1 } from "./catalog-verified-details-wazdan-wave1";
 import { getCatalogVerifiedDetailsWazdanWave2 } from "./catalog-verified-details-wazdan-wave2";
 import { getCatalogVerifiedDetailsWazdanWave3 } from "./catalog-verified-details-wazdan-wave3";
 import { getCatalogVerifiedDetailsWazdanWave4 } from "./catalog-verified-details-wazdan-wave4";
+import { getCatalogVerifiedDetailsWazdanScore4Fill } from "./catalog-verified-details-wazdan-score4-fill";
 
 type VerifiedCatalogDetails = CatalogVerifiedDetails & {
   releaseDateSource?: string;
@@ -163,7 +165,21 @@ export function getVerifiedCatalogDetails(slug: string): VerifiedCatalogDetails 
       : { ...withHacksawOverlay, ...hacksawFill2Overlay };
 
   const hacksawFill3Overlay = getCatalogVerifiedDetailsHacksawFill3(slug);
-  if (!hacksawFill3Overlay) return withHacksawFill2;
-  if (!withHacksawFill2) return undefined;
-  return { ...withHacksawFill2, ...hacksawFill3Overlay };
+  const withHacksawFill3 = !hacksawFill3Overlay
+    ? withHacksawFill2
+    : !withHacksawFill2
+      ? undefined
+      : { ...withHacksawFill2, ...hacksawFill3Overlay };
+
+  const hacksawScore4Overlay = getCatalogVerifiedDetailsHacksawScore4Fill(slug);
+  const withHacksawScore4 = !hacksawScore4Overlay
+    ? withHacksawFill3
+    : !withHacksawFill3
+      ? undefined
+      : { ...withHacksawFill3, ...hacksawScore4Overlay };
+
+  const wazdanScore4Overlay = getCatalogVerifiedDetailsWazdanScore4Fill(slug);
+  if (!wazdanScore4Overlay) return withHacksawScore4;
+  if (!withHacksawScore4) return undefined;
+  return { ...withHacksawScore4, ...wazdanScore4Overlay };
 }
