@@ -70,10 +70,10 @@ const records: Record<string, CatalogResearch> = {
     evidence: "Official game page lists x2/x5/x10/x100 Win Multipliers and requires collecting Diamonds to raise the multiplier during Free Spins.",
   },
   "playn-go-moon-princess-christmas-kingdom": {
-    mechanics: ["Каскады", "Множители"],
-    source: "https://www.playngo.com/post/top-winter-themed-slots",
+    mechanics: ["Каскады", "Множители", "Трансформация символов"],
+    source: "https://www.playngo.com/post/copy-of-grow-your-blog-community",
     verifiedAt,
-    evidence: "Official winter-games editorial describes Moon Princess: Christmas Kingdom as a cascading grid slot with multipliers.",
+    evidence: "Official release describes a cascading 5x5 grid, Clear Grid multiplier rewards and Love transforming all matching symbols into another symbol type.",
   },
   "playn-go-banana-rock": {
     mechanics: ["Респины", "Сбор символов", "Множители"],
@@ -158,6 +158,36 @@ const records: Record<string, CatalogResearch> = {
     source: "https://www.playngo.com/games/hammerfall",
     verifiedAt,
     evidence: "Official game page explicitly describes cascading reels, cluster wins, Lightning Wild win multipliers, and multiple features that transform matching symbols.",
+  },
+  "playn-go-divina-commedia-i-nove-cerchi": {
+    mechanics: ["Сбор символов", "Множители", "Респины"],
+    source: "https://www.playngo.com/games/divina-commedia-i-nove-cerchi",
+    verifiedAt,
+    evidence: "Official game page describes collecting Lanterns to upgrade modifiers, a Win Multiplier modifier, and Lucifer's Hold & Win with three re-spins that reset when a Soul lands.",
+  },
+  "playn-go-derby-wheel": {
+    mechanics: ["Бонусное колесо", "Множители", "Pick-and-click"],
+    source: "https://www.playngo.com/games/derby-wheel",
+    verifiedAt,
+    evidence: "Official game page describes a Bonus Wheel with multipliers and a Horse Racing feature where the player chooses among race-bet options and horses.",
+  },
+  "playn-go-hope-unleashed-fortune-rises": {
+    mechanics: ["Mystery Symbols", "Множители", "Расширяющиеся символы", "Респины", "Сбор символов"],
+    source: "https://www.playngo.com/games/hope-unleashed-fortune-rises",
+    verifiedAt,
+    evidence: "Official game page describes Mystery Symbols, Multiplier Wilds, an Expanding Wild that triggers Re-Spins, and Souls collected for Pandora's Box bonus chances.",
+  },
+  "playn-go-pandoras-box-of-evil": {
+    mechanics: ["Mystery Symbols", "Множители", "Респины"],
+    source: "https://www.playngo.com/games/pandora%27s-box-of-evil",
+    verifiedAt,
+    evidence: "Official game page describes Mystery Symbols, x2-x5 Mystery Wild multipliers, Re-Spin of Hope, and a locked-symbol re-spin sequence.",
+  },
+  "playn-go-merry-xmas": {
+    mechanics: ["Множители", "Pick-and-click"],
+    source: "https://www.playngo.com/post/top-christmas-slots-2023",
+    verifiedAt,
+    evidence: "Official Christmas editorial says the middle-reel Wild can multiply prizes up to x5 and three Christmas gifts let the player select and unwrap a Bonus present.",
   },
 };
 
