@@ -99,6 +99,18 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official page states 15 lines and a Hold & Win respin feature in which Collect symbols remain locked and repeatedly collect visible Bonus values.",
   },
+  "3-oaks-gaming-sky-pearls": {
+    mechanics: ["Сбор символов", "Респины", "Блокировка символов", "Mystery Symbols"],
+    source: "https://3oaks.com/news/new-release-sky-pearls",
+    verifiedAt,
+    evidence: "Official release states that six Bonus Pearls trigger Hold and Win, the round starts with three resetting respins, collected Pearls remain sticky and the Golden Pearl is explicitly a Mystery Symbol.",
+  },
+  "3-oaks-gaming-super-china-pots": {
+    mechanics: ["Линии", "Множители"],
+    source: "https://3oaks.com/news/new-release-super-china-pots",
+    verifiedAt,
+    evidence: "Official release describes the 25-line slot's Multi and Boost pots, with Boost increasing random Bonus Symbol values by up to 10x.",
+  },
 };
 
 export function getCatalogResearch3OaksFill5(slug: string) {
