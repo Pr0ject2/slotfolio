@@ -6,6 +6,7 @@ import { getVerifiedCatalogGameTypePlayngoMN } from "./catalog-verified-game-typ
 import { getVerifiedCatalogGameTypePlayngoOP } from "./catalog-verified-game-type-playngo-op";
 import { getVerifiedCatalogGameTypePlayngoQR } from "./catalog-verified-game-type-playngo-qr";
 import { getVerifiedCatalogGameTypePlayngoFill } from "./catalog-verified-game-type-playngo-fill";
+import { getVerifiedCatalogGameType3OaksFill } from "./catalog-verified-game-type-3oaks-fill";
 import { getVerifiedCatalogGameTypeWazdanWave1 } from "./catalog-verified-game-type-wazdan-wave1";
 import { getVerifiedCatalogGameTypeWazdanWave2 } from "./catalog-verified-game-type-wazdan-wave2";
 import { getVerifiedCatalogGameTypeWazdanWave3 } from "./catalog-verified-game-type-wazdan-wave3";
@@ -88,5 +89,5 @@ const gameTypes: Record<string, CatalogVerifiedGameType> = {
 };
 
 export function getVerifiedCatalogGameType(slug: string) {
-  return gameTypes[slug] ?? getVerifiedCatalogGameTypePlayngoFill(slug) ?? getVerifiedCatalogGameTypePlayngoWave15To18(slug) ?? getVerifiedCatalogGameTypePlayngoGoldH(slug) ?? getVerifiedCatalogGameTypePlayngoIJ(slug) ?? getVerifiedCatalogGameTypePlayngoKL(slug) ?? getVerifiedCatalogGameTypePlayngoMN(slug) ?? getVerifiedCatalogGameTypePlayngoOP(slug) ?? getVerifiedCatalogGameTypePlayngoQR(slug) ?? getVerifiedCatalogGameTypeWazdanWave1(slug) ?? getVerifiedCatalogGameTypeWazdanWave2(slug) ?? getVerifiedCatalogGameTypeWazdanWave3(slug) ?? getVerifiedCatalogGameTypeWazdanWave4(slug) ?? getVerifiedCatalogGameTypeHacksawWave1(slug) ?? getVerifiedCatalogGameTypeHacksawFinal(slug) ?? getVerifiedCatalogGameTypeNolimit(slug);
+  return gameTypes[slug] ?? getVerifiedCatalogGameType3OaksFill(slug) ?? getVerifiedCatalogGameTypePlayngoFill(slug) ?? getVerifiedCatalogGameTypePlayngoWave15To18(slug) ?? getVerifiedCatalogGameTypePlayngoGoldH(slug) ?? getVerifiedCatalogGameTypePlayngoIJ(slug) ?? getVerifiedCatalogGameTypePlayngoKL(slug) ?? getVerifiedCatalogGameTypePlayngoMN(slug) ?? getVerifiedCatalogGameTypePlayngoOP(slug) ?? getVerifiedCatalogGameTypePlayngoQR(slug) ?? getVerifiedCatalogGameTypeWazdanWave1(slug) ?? getVerifiedCatalogGameTypeWazdanWave2(slug) ?? getVerifiedCatalogGameTypeWazdanWave3(slug) ?? getVerifiedCatalogGameTypeWazdanWave4(slug) ?? getVerifiedCatalogGameTypeHacksawWave1(slug) ?? getVerifiedCatalogGameTypeHacksawFinal(slug) ?? getVerifiedCatalogGameTypeNolimit(slug);
 }
