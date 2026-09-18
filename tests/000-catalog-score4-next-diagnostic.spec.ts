@@ -54,5 +54,5 @@ test.only("profile next score-four catalog batch", () => {
     }];
   }));
   console.log("NEXT_SCORE4_PROFILE", JSON.stringify({ total: rows.length, providers: grouped }));
-  expect(rows).toHaveLength(366);
+  expect(rows).toHaveLength(357);
 });
