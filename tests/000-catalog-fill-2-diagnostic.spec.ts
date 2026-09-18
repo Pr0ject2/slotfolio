@@ -54,5 +54,5 @@ test.only("diagnose remaining score-three catalog tail", () => {
   );
 
   console.log("CATALOG_FILL_2_DIAGNOSTIC", JSON.stringify({ total: rows.length, score3: score3.length, scoreCounts, byProvider }));
-  expect(score3).toHaveLength(113);
+  expect(score3).toHaveLength(107);
 });
