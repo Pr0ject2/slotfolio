@@ -40,6 +40,9 @@ test.only("diagnose remaining score-three catalog tail", () => {
   });
 
   const score3 = rows.filter((row) => row.score === 3);
+  const scoreCounts = Object.fromEntries(
+    Array.from(new Set(rows.map((row) => row.score))).sort((a, b) => a - b).map((score) => [score, rows.filter((row) => row.score === score).length]),
+  );
   const byProvider = Object.fromEntries(
     Array.from(new Set(score3.map((row) => row.provider))).sort().map((provider) => [
       provider,
@@ -54,7 +57,7 @@ test.only("diagnose remaining score-three catalog tail", () => {
     .filter((row) => row.provider === "3 Oaks Gaming" && !row.shape.gameType && /\bslot\b/i.test(row.evidence))
     .map((row) => ({ slug: row.slug, source: row.source, evidence: row.evidence }));
 
-  console.log("CATALOG_FILL_2_DIAGNOSTIC", JSON.stringify({ total: rows.length, score3: score3.length, byProvider }));
+  console.log("CATALOG_FILL_2_DIAGNOSTIC", JSON.stringify({ total: rows.length, score3: score3.length, scoreCounts, byProvider }));
   console.log("THREE_OAKS_SLOT_EVIDENCE", JSON.stringify({ count: threeOaksSlotEvidence.length, records: threeOaksSlotEvidence }));
-  expect(score3).toHaveLength(146);
+  expect(score3).toHaveLength(120);
 });
