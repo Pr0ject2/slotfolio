@@ -72,6 +72,16 @@ const details: Record<string, PlayngoFillOverlay> = {
     fieldSource: "https://www.playngo.com/valentines-slots",
     verifiedAt,
   },
+  "playn-go-legend-of-the-ice-dragon": {
+    field: "7×7",
+    fieldSource: "https://www.playngo.com/post/top-winter-themed-slots",
+    verifiedAt,
+  },
+  "playn-go-merlin-and-the-ice-queen-morgana": {
+    field: "5×3",
+    fieldSource: "https://www.playngo.com/post/top-winter-themed-slots",
+    verifiedAt,
+  },
 };
 
 export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
