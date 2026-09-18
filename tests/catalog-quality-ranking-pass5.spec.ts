@@ -11,7 +11,12 @@ const expectedDetails = {
   "3-oaks-gaming-coin-up-lightning": { field: "3×3", releaseDate: "2024-07" },
   "3-oaks-gaming-coin-volcano": { field: "3×3", releaseDate: "2023-08" },
   "3-oaks-gaming-dj-tiger-x1000": { field: "6×5", releaseDate: "2026-03" },
-  "3-oaks-gaming-egypt-power-x1000": { field: "6×5", releaseDate: "2025-11", maxWin: "40000x" },
+  "3-oaks-gaming-egypt-power-x1000": {
+    field: "6×5",
+    releaseDate: "2025-11",
+    maxWin: "40000x",
+    volatility: "Высокая",
+  },
   "3-oaks-gaming-joker-glitz-x1000": { field: "6×5", releaseDate: "2026-06" },
   "3-oaks-gaming-magic-apple-2": { field: "5×4 · 20 линий", releaseDate: "2022-06" },
   "3-oaks-gaming-sunlight-princess": { field: "5×3 · 30 линий", releaseDate: "2023-02" },
@@ -24,7 +29,7 @@ const collectionSlugs = new Set([
 
 const targetSlugs = new Set([...Object.keys(expectedDetails), ...collectionSlugs]);
 
-test("quality pass 5 improves the remaining thin 3 Oaks runtime records", () => {
+test("quality pass 5 preserves its original 3 Oaks facts while allowing later enrichment", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(11);
@@ -40,7 +45,9 @@ test("quality pass 5 improves the remaining thin 3 Oaks runtime records", () => 
     const details = getVerifiedCatalogDetails(slug);
     expect(details?.source, slug).toBe(seed!.source);
     expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
-    expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
+    if (slug !== "3-oaks-gaming-egypt-power-x1000") {
+      expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
+    }
   }
 
   for (const [slug, expected] of Object.entries(expectedDetails)) {
@@ -51,6 +58,9 @@ test("quality pass 5 improves the remaining thin 3 Oaks runtime records", () => 
       expect(details?.maxWin, slug).toBe(expected.maxWin);
     } else {
       expect(details?.maxWin, `${slug} must not turn a jackpot label into max win`).toBeUndefined();
+    }
+    if ("volatility" in expected) {
+      expect(details?.volatility, slug).toBe(expected.volatility);
     }
   }
 
