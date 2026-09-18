@@ -4,49 +4,76 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
-function rowFor(slug: string, provider: string) {
+function scoreFor(slug: string) {
   const details = getVerifiedCatalogDetails(slug);
   const gameType = getVerifiedCatalogGameType(slug);
   const research = getVerifiedCatalogResearch(slug);
-  const flags = {
-    field: Boolean(details?.field),
-    rtp: Boolean(details?.rtp),
-    maxWin: Boolean(details?.maxWin),
-    volatility: Boolean(details?.volatility),
-    releaseDate: Boolean(details?.releaseDate),
-    gameType: Boolean(gameType),
-  };
-  const mechanics = research?.mechanics.length ?? 0;
-  const detailFacts = Object.values(flags).filter(Boolean).length;
-  const score = detailFacts + mechanics;
-  const signature = [
-    flags.field ? "F" : "-",
-    flags.rtp ? "R" : "-",
-    flags.maxWin ? "W" : "-",
-    flags.volatility ? "V" : "-",
-    flags.releaseDate ? "D" : "-",
-    flags.gameType ? "T" : "-",
-    `M${mechanics}`,
-  ].join("");
-  return { slug, provider, score, signature, flags, mechanics };
+  const detailFacts = details
+    ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length
+    : 0;
+  return detailFacts + (gameType ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test.only("profile score-four catalog cards by provider and fact shape", () => {
-  const rows = catalogSeeds.map((seed) => rowFor(seed.slug, seed.provider));
-  const score4 = rows.filter((row) => row.score === 4);
-  const providers = [...new Set(score4.map((row) => row.provider))].sort();
-  const profile = Object.fromEntries(
-    providers.map((provider) => {
-      const providerRows = score4.filter((row) => row.provider === provider);
-      const signatures = [...new Set(providerRows.map((row) => row.signature))]
-        .map((signature) => {
-          const matches = providerRows.filter((row) => row.signature === signature);
-          return { signature, count: matches.length, sample: matches.slice(0, 15).map((row) => row.slug) };
-        })
-        .sort((a, b) => b.count - a.count || a.signature.localeCompare(b.signature));
-      return [provider, { count: providerRows.length, signatures }];
-    }),
-  );
-  console.log("CATALOG_SCORE4_PROFILE", JSON.stringify({ total: score4.length, profile }));
-  expect(score4).toHaveLength(551);
+function decodeText(html: string) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;|&#160;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&times;/gi, "×")
+    .replace(/&#x27;|&#39;/gi, "'")
+    .replace(/&quot;/gi, '"')
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function parseGameInfo(html: string) {
+  const text = decodeText(html);
+  const start = text.indexOf("Game Info");
+  const end = text.indexOf("Features", start + 1);
+  const info = start >= 0 ? text.slice(start, end > start ? end : start + 1500) : "";
+  const rtp = info.match(/RTP:\s*([0-9]+(?:[.,][0-9]+)?%)/i)?.[1] ?? null;
+  const maxWin = info.match(/Max Win:\s*([0-9][0-9., ]*x(?:\s*bet)?)/i)?.[1]?.trim() ?? null;
+  const volatility = info.match(/Volatility:\s*([A-Za-z]+(?:[\s–-]+[A-Za-z]+)*?)(?=\s+(?:Series:|Theme:|Release date:|Features|Availability|$))/i)?.[1]?.trim() ?? null;
+  return { rtp, maxWin, volatility, hasGameInfo: start >= 0 };
+}
+
+async function mapLimit<T, R>(items: T[], limit: number, mapper: (item: T) => Promise<R>) {
+  const results = new Array<R>(items.length);
+  let next = 0;
+  async function worker() {
+    while (true) {
+      const index = next++;
+      if (index >= items.length) return;
+      results[index] = await mapper(items[index]);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, () => worker()));
+  return results;
+}
+
+test.only("probe official Wazdan Game Info for score-four cards", async () => {
+  test.setTimeout(180_000);
+  const targets = catalogSeeds.filter((seed) => seed.provider === "Wazdan" && scoreFor(seed.slug) === 4);
+  expect(targets).toHaveLength(124);
+
+  const rows = await mapLimit(targets, 8, async (seed) => {
+    try {
+      const response = await fetch(seed.source, {
+        headers: { "user-agent": "Mozilla/5.0 Slotfolio catalog verification" },
+        signal: AbortSignal.timeout(20_000),
+      });
+      const html = await response.text();
+      return { slug: seed.slug, source: seed.source, status: response.status, ...parseGameInfo(html) };
+    } catch (error) {
+      return { slug: seed.slug, source: seed.source, status: 0, rtp: null, maxWin: null, volatility: null, hasGameInfo: false, error: String(error) };
+    }
+  });
+
+  const complete = rows.filter((row) => row.rtp && row.maxWin && row.volatility);
+  const partial = rows.filter((row) => (row.rtp || row.maxWin || row.volatility) && !(row.rtp && row.maxWin && row.volatility));
+  const empty = rows.filter((row) => !row.rtp && !row.maxWin && !row.volatility);
+  console.log("WAZDAN_SCORE4_GAME_INFO", JSON.stringify({ total: rows.length, complete: complete.length, partial: partial.length, empty: empty.length, rows }));
+  expect(rows).toHaveLength(124);
 });
