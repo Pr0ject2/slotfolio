@@ -31,6 +31,12 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt: "2026-09-18",
     evidence: "Official page states that Wild wins are doubled and Free Spin winning combinations are tripled, with Wild wins reaching six times the normal prize.",
   },
+  "playn-go-pearl-lagoon": {
+    mechanics: ["Множители"],
+    source: "https://www.playngo.com/games/pearl-lagoon",
+    verifiedAt: "2026-09-18",
+    evidence: "Official page states that Wild wins pay double, Free Spin wins are tripled and winning combinations containing a Wild pay six times the normal prize.",
+  },
 };
 
 export function getCatalogResearchPlayngoScore3Fill(slug: string) {
