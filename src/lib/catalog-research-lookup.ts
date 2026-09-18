@@ -110,8 +110,8 @@ function canonicalizeResearchSource(
 }
 
 export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearch | undefined {
+  const threeOaksFill = getCatalogResearch3OaksFill3(slug);
   const freshMechanics =
-    getCatalogResearch3OaksFill3(slug) ??
     getCatalogResearchHacksawNormalizedFill3(slug) ??
     getCatalogResearchHacksawNormalizedFill2(slug) ??
     getCatalogResearchHacksawNormalizedFill(slug) ??
@@ -124,7 +124,7 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearchPushMechanicsTail(slug) ??
     getCatalogResearchWazdanMechanicsTail(slug);
 
-  if (freshMechanics?.mechanics.length) {
+  if (!threeOaksFill && freshMechanics?.mechanics.length) {
     return canonicalizeResearchSource(slug, freshMechanics);
   }
 
@@ -191,10 +191,18 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearchPush(slug) ??
     getCatalogResearchNolimit(slug);
 
-  if (existing?.mechanics.length) {
-    return canonicalizeResearchSource(slug, existing);
+  const legacy = freshMechanics?.mechanics.length
+    ? freshMechanics
+    : existing?.mechanics.length
+      ? existing
+      : getCatalogResearchFromVerifiedField(slug) ?? existing;
+
+  if (threeOaksFill?.mechanics.length) {
+    return canonicalizeResearchSource(slug, {
+      ...threeOaksFill,
+      mechanics: [...new Set([...(legacy?.mechanics ?? []), ...threeOaksFill.mechanics])],
+    });
   }
 
-  const selected = getCatalogResearchFromVerifiedField(slug) ?? existing;
-  return canonicalizeResearchSource(slug, selected);
+  return canonicalizeResearchSource(slug, legacy);
 }
