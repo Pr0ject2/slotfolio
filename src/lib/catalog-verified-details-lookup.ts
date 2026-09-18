@@ -124,21 +124,11 @@ export function getVerifiedCatalogDetails(slug: string): VerifiedCatalogDetails 
     getCatalogVerifiedDetailsWazdanWave4(slug);
 
   const pushFillOverlay = getCatalogVerifiedDetailsPushFill(slug);
-  const withPushFill =
-    pushFillOverlay && base
-      ? { ...base, ...pushFillOverlay, source: base.source, verifiedAt: base.verifiedAt }
-      : base;
+  const withPushFill = pushFillOverlay && base ? { ...pushFillOverlay, ...base } : base;
 
   const playngoFillOverlay = getCatalogVerifiedDetailsPlayngoFill(slug);
   const withPlayngoFill =
-    playngoFillOverlay && withPushFill
-      ? {
-          ...withPushFill,
-          ...playngoFillOverlay,
-          source: withPushFill.source,
-          verifiedAt: withPushFill.verifiedAt,
-        }
-      : withPushFill;
+    playngoFillOverlay && withPushFill ? { ...playngoFillOverlay, ...withPushFill } : withPushFill;
 
   const hacksawOverlay = getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug);
   if (!hacksawOverlay) return withPlayngoFill;
