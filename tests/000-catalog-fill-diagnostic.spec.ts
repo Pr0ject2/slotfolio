@@ -14,7 +14,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("diagnose current low-score catalog cards", () => {
+test.only("diagnose current low-score catalog cards", () => {
   const rows = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, score: scoreFor(seed.slug) }));
   const low = rows.filter((row) => row.score <= 3);
   const counts = Object.fromEntries(
@@ -36,15 +36,16 @@ test("diagnose current low-score catalog cards", () => {
       const research = getVerifiedCatalogResearch(seed.slug);
       return {
         slug: seed.slug,
-        field: Boolean(details?.field),
-        rtp: Boolean(details?.rtp),
-        maxWin: Boolean(details?.maxWin),
-        volatility: Boolean(details?.volatility),
-        releaseDate: Boolean(details?.releaseDate),
-        gameType: Boolean(type),
-        mechanics: research?.mechanics.length ?? 0,
+        source: seed.source,
+        field: details?.field ?? null,
+        rtp: details?.rtp ?? null,
+        maxWin: details?.maxWin ?? null,
+        volatility: details?.volatility ?? null,
+        releaseDate: details?.releaseDate ?? null,
+        gameType: type?.gameType ?? null,
+        mechanics: research?.mechanics ?? [],
       };
     });
-  console.log("PLAYNGO_SCORE3_SHAPES", JSON.stringify(playngo));
+  console.log("PLAYNGO_SCORE3_EXACT", JSON.stringify(playngo));
   expect(rows).toHaveLength(900);
 });
