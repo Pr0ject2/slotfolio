@@ -16,6 +16,7 @@ import { getCatalogVerifiedDetailsPlayngoProviderWide9 } from "./catalog-verifie
 import { getCatalogVerifiedDetailsPlayngoProviderWide8 } from "./catalog-verified-details-playngo-provider-wide-8";
 import { getCatalogVerifiedDetailsPlayngoProviderWide7 } from "./catalog-verified-details-playngo-provider-wide-7";
 import { getCatalogVerifiedDetailsPlayngoProviderWide } from "./catalog-verified-details-playngo-provider-wide";
+import { getCatalogVerifiedDetailsPlayngoFill } from "./catalog-verified-details-playngo-fill";
 import { getCatalogVerifiedDetails3Oaks } from "./catalog-verified-details-3oaks";
 import { getCatalogVerifiedDetails3OaksWave1 } from "./catalog-verified-details-3oaks-wave1";
 import { getCatalogVerifiedDetails3OaksFinal } from "./catalog-verified-details-3oaks-final";
@@ -123,10 +124,24 @@ export function getVerifiedCatalogDetails(slug: string): VerifiedCatalogDetails 
     getCatalogVerifiedDetailsWazdanWave4(slug);
 
   const pushFillOverlay = getCatalogVerifiedDetailsPushFill(slug);
-  const withPushFill = pushFillOverlay && base ? { ...base, ...pushFillOverlay } : base;
+  const withPushFill =
+    pushFillOverlay && base
+      ? { ...base, ...pushFillOverlay, source: base.source, verifiedAt: base.verifiedAt }
+      : base;
+
+  const playngoFillOverlay = getCatalogVerifiedDetailsPlayngoFill(slug);
+  const withPlayngoFill =
+    playngoFillOverlay && withPushFill
+      ? {
+          ...withPushFill,
+          ...playngoFillOverlay,
+          source: withPushFill.source,
+          verifiedAt: withPushFill.verifiedAt,
+        }
+      : withPushFill;
 
   const hacksawOverlay = getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug);
-  if (!hacksawOverlay) return withPushFill;
-  if (!withPushFill) return hacksawOverlay;
-  return { ...withPushFill, ...hacksawOverlay };
+  if (!hacksawOverlay) return withPlayngoFill;
+  if (!withPlayngoFill) return hacksawOverlay;
+  return { ...withPlayngoFill, ...hacksawOverlay };
 }
