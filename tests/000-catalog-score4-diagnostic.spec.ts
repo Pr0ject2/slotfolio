@@ -24,37 +24,56 @@ function score(slug: string) {
   return Number(f.field) + Number(f.rtp) + Number(f.maxWin) + Number(f.volatility) + Number(f.releaseDate) + Number(f.gameType) + f.mechanics;
 }
 
-function signature(slug: string) {
-  const f = facts(slug);
-  return [
-    !f.field && "field",
-    !f.rtp && "rtp",
-    !f.maxWin && "maxWin",
-    !f.volatility && "volatility",
-    !f.releaseDate && "releaseDate",
-    !f.gameType && "gameType",
-    `mechanics:${f.mechanics}`,
-  ].filter(Boolean).join("|");
+function plainText(html: string) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&#x27;|&#39;/gi, "'")
+    .replace(/&quot;/gi, '"')
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
-test.only("profile remaining score-four catalog records", () => {
-  const scoreFour = catalogSeeds
-    .filter((seed) => score(seed.slug) === 4)
-    .map((seed) => ({ slug: seed.slug, provider: seed.provider, source: seed.source, signature: signature(seed.slug) }));
+function snippets(text: string, marker: string) {
+  const lower = text.toLowerCase();
+  const needle = marker.toLowerCase();
+  const results: string[] = [];
+  let start = 0;
+  while (results.length < 4) {
+    const index = lower.indexOf(needle, start);
+    if (index < 0) break;
+    results.push(text.slice(Math.max(0, index - 100), Math.min(text.length, index + 240)));
+    start = index + needle.length;
+  }
+  return results;
+}
 
-  const providers = Array.from(new Set(scoreFour.map((row) => row.provider))).sort();
-  const result = Object.fromEntries(providers.map((provider) => {
-    const rows = scoreFour.filter((row) => row.provider === provider);
-    const signatures = Array.from(new Set(rows.map((row) => row.signature))).sort();
-    return [provider, {
-      count: rows.length,
-      grouped: Object.fromEntries(signatures.map((sig) => [sig, {
-        count: rows.filter((row) => row.signature === sig).length,
-        slugs: rows.filter((row) => row.signature === sig).map((row) => row.slug),
-      }])),
-    }];
-  }));
+test.only("probe official Hacksaw game data for score-four cards", async () => {
+  const targets = catalogSeeds.filter((seed) => {
+    if (seed.provider !== "Hacksaw Gaming" || score(seed.slug) !== 4) return false;
+    const f = facts(seed.slug);
+    return f.field && !f.rtp && f.maxWin && !f.volatility && !f.releaseDate && f.gameType && f.mechanics === 1;
+  });
 
-  console.log("SCORE4_PROFILE", JSON.stringify({ total: scoreFour.length, providers: result }));
-  expect(scoreFour).toHaveLength(411);
+  const rows = [];
+  for (const seed of targets) {
+    const response = await fetch(seed.source, {
+      headers: { "user-agent": "Mozilla/5.0 Slotfolio catalog verification" },
+    });
+    const text = plainText(await response.text());
+    rows.push({
+      slug: seed.slug,
+      source: seed.source,
+      status: response.status,
+      rtp: snippets(text, "RTP"),
+      volatility: snippets(text, "Volatility"),
+      gameData: snippets(text, "GAME DATA"),
+    });
+  }
+
+  console.log("HACKSAW_SCORE4_GAME_DATA", JSON.stringify(rows));
+  expect(targets).toHaveLength(28);
 });
