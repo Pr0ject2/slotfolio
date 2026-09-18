@@ -107,6 +107,13 @@ const details: Record<string, SourcedCatalogVerifiedDetails> = {
     fieldSource: "https://www.playngo.com/games/golden-colts",
     verifiedAt,
   },
+  "playn-go-golden-legend": {
+    field: "≥5 барабанов",
+    releaseDate: "2015-04-20",
+    source: "https://www.playngo.com/games/golden-legend",
+    fieldSource: "https://www.playngo.com/games/golden-legend",
+    verifiedAt,
+  },
   "playn-go-grim-muerto": {
     field: "≥5 барабанов",
     releaseDate: "2016-07-11",
@@ -119,6 +126,13 @@ const details: Record<string, SourcedCatalogVerifiedDetails> = {
     releaseDate: "2016-11-14",
     source: "https://www.playngo.com/games/holiday-season",
     fieldSource: "https://www.playngo.com/games/holiday-season",
+    verifiedAt,
+  },
+  "playn-go-imperial-opera": {
+    field: "5 барабанов · 20 линий",
+    releaseDate: "2018-03-06",
+    source: "https://www.playngo.com/games/imperial-opera",
+    fieldSource: "https://www.playngo.com/post/hit-the-high-notes-with-play-n-go-s-imperial-opera",
     verifiedAt,
   },
   "playn-go-lady-of-fortune": {
