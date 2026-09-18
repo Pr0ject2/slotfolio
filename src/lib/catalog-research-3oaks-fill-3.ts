@@ -57,6 +57,36 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official features include COLLECT, MULTI multipliers, MYSTERY, respin refills and a Magic Bonus with two extra grid rows.",
   },
+  "3-oaks-gaming-4-pots-of-egypt": {
+    mechanics: ["Линии", "Респины", "Mystery Symbols", "Сбор символов", "Множители"],
+    source: "https://3oaks.com/game/4_pots_of_egypt",
+    verifiedAt,
+    evidence: "Official Hold & Win rules collect Coin Bonus values during respins; POT features include COLLECT and MULTI, while Mystery Symbols transform into bonus features during respins.",
+  },
+  "3-oaks-gaming-777-fruity-coins": {
+    mechanics: ["Линии", "Сбор символов", "Респины"],
+    source: "https://3oaks.com/game/777_fruity_coins",
+    verifiedAt,
+    evidence: "Official Collect Symbol gathers all visible Coin values and the Bonus Game starts with three respins that reset whenever a new symbol lands.",
+  },
+  "3-oaks-gaming-4-wolf-drums": {
+    mechanics: ["Линии", "Сбор символов", "Множители", "Расширяющиеся барабаны", "Респины"],
+    source: "https://3oaks.com/game/4_wolf_drums",
+    verifiedAt,
+    evidence: "Official features include COLLECT, MULTI multipliers, MIRROR expanding the grid by two rows and the Master Drum resetting respins.",
+  },
+  "3-oaks-gaming-aztec-fire-2": {
+    mechanics: ["Линии", "Респины", "Сбор символов", "Расширяющиеся барабаны", "Множители"],
+    source: "https://3oaks.com/game/aztec_fire_2",
+    verifiedAt,
+    evidence: "Official Hold & Win starts with three respins; collected Bonus Symbols unlock rows five through eight and extra rows carry multipliers up to x10.",
+  },
+  "3-oaks-gaming-amazonia-wins": {
+    mechanics: ["Линии", "Сбор символов", "Mystery Symbols", "Множители"],
+    source: "https://3oaks.com/game/amazonia_wins",
+    verifiedAt,
+    evidence: "Official Extra Board can reveal Mystery Symbols; Collect Symbols award its prizes, the Golden Idol collects Bonus symbols and Bonus-game Win Symbols can carry multipliers.",
+  },
 };
 
 export function getCatalogResearch3OaksFill3(slug: string) {
