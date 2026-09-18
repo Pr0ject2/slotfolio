@@ -31,6 +31,13 @@ const expectedAdditions: Record<string, string[]> = {
   "hacksaw-gaming-sun-princess": ["Трансформация символов", "Множители"],
   "hacksaw-gaming-the-count": ["Расширяющиеся символы", "Множители"],
   "hacksaw-gaming-wings-of-horus": ["Трансформация символов"],
+  "hacksaw-gaming-chaos-crew-3": ["Множители", "Трансформация символов"],
+  "hacksaw-gaming-duel-at-dawn": ["Расширяющиеся барабаны"],
+  "hacksaw-gaming-epic-bullets-and-bounty": ["Расширяющиеся барабаны"],
+  "hacksaw-gaming-marlin-masters": ["Множители"],
+  "hacksaw-gaming-pray-for-three": ["Бонусное колесо"],
+  "hacksaw-gaming-rise-of-fortuna": ["Бонусное колесо"],
+  "hacksaw-gaming-stormborn": ["Множители"],
 };
 
 function scoreFor(slug: string) {
@@ -45,7 +52,7 @@ function scoreFor(slug: string) {
 }
 
 test("Hacksaw fill exposes normalized mechanics already explicit in official evidence", () => {
-  expect(Object.keys(expectedAdditions)).toHaveLength(26);
+  expect(Object.keys(expectedAdditions)).toHaveLength(33);
 
   for (const [slug, additions] of Object.entries(expectedAdditions)) {
     const seed = catalogSeeds.find((item) => item.slug === slug);
