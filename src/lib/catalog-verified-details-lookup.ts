@@ -27,6 +27,7 @@ import { getCatalogVerifiedDetailsBgamingMore } from "./catalog-verified-details
 import { getCatalogVerifiedDetailsBgamingThird } from "./catalog-verified-details-bgaming-third";
 import { getCatalogVerifiedDetailsBgamingFourth } from "./catalog-verified-details-bgaming-fourth";
 import { getCatalogVerifiedDetailsEndorphina } from "./catalog-verified-details-endorphina";
+import { getCatalogVerifiedDetailsEndorphinaScore4Fill } from "./catalog-verified-details-endorphina-score4-fill";
 import { getCatalogVerifiedDetailsPushProviderWide } from "./catalog-verified-details-push-provider-wide";
 import { getCatalogVerifiedDetailsPushFill } from "./catalog-verified-details-push-fill";
 import { getCatalogVerifiedDetailsPush } from "./catalog-verified-details-push";
@@ -179,7 +180,14 @@ export function getVerifiedCatalogDetails(slug: string): VerifiedCatalogDetails 
       : { ...withHacksawFill3, ...hacksawScore4Overlay };
 
   const wazdanScore4Overlay = getCatalogVerifiedDetailsWazdanScore4Fill(slug);
-  if (!wazdanScore4Overlay) return withHacksawScore4;
-  if (!withHacksawScore4) return undefined;
-  return { ...withHacksawScore4, ...wazdanScore4Overlay };
+  const withWazdanScore4 = !wazdanScore4Overlay
+    ? withHacksawScore4
+    : !withHacksawScore4
+      ? undefined
+      : { ...withHacksawScore4, ...wazdanScore4Overlay };
+
+  const endorphinaScore4Overlay = getCatalogVerifiedDetailsEndorphinaScore4Fill(slug);
+  if (!endorphinaScore4Overlay) return withWazdanScore4;
+  if (!withWazdanScore4) return endorphinaScore4Overlay;
+  return { ...withWazdanScore4, ...endorphinaScore4Overlay };
 }
