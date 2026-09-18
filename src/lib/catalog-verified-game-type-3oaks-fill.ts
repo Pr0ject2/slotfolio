@@ -31,6 +31,7 @@ const sources: Record<string, string> = {
   "3-oaks-gaming-hot-fire-fruits": "https://3oaks.com/game/hot_fire_fruits",
   "3-oaks-gaming-lady-fortune": "https://3oaks.com/game/lady_fortune",
   "3-oaks-gaming-3-jewel-crowns": "https://3oaks.com/game/3_jewel_crowns",
+  "3-oaks-gaming-buddha-megaways": "https://3oaks.com/game/buddha_megaways",
   "3-oaks-gaming-coin-princess-x1000": "https://3oaks.com/game/coin_princess_x1000",
   "3-oaks-gaming-joker-glitz-x1000": "https://www.3oaks.com/",
   "3-oaks-gaming-lucky-apple-x1000": "https://3oaks.com/news/new-release-lucky-apple-x1000",
