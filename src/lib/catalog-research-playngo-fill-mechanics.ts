@@ -69,6 +69,12 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official game page lists x2/x5/x10/x100 Win Multipliers and requires collecting Diamonds to raise the multiplier during Free Spins.",
   },
+  "playn-go-moon-princess-christmas-kingdom": {
+    mechanics: ["Каскады", "Множители"],
+    source: "https://www.playngo.com/post/top-winter-themed-slots",
+    verifiedAt,
+    evidence: "Official winter-games editorial describes Moon Princess: Christmas Kingdom as a cascading grid slot with multipliers.",
+  },
 };
 
 export function getCatalogResearchPlayngoFillMechanics(slug: string) {
