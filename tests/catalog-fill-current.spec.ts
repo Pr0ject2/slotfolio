@@ -27,7 +27,7 @@ test("current provider-wide fill preserves the newest official card facts", () =
 
   const dinopolis = getVerifiedCatalogDetails("push-gaming-dinopolis");
   expect(dinopolis?.rtp).toBe("96,40% / 93,95%");
-  expect(dinopolis?.maxWin).toBe("50 000x");
+  expect(dinopolis?.maxWin).toBe("50000x");
   expect(dinopolis?.volatility).toBe("Высокая");
   expect(dinopolis?.source).toBe(seeds.get("push-gaming-dinopolis")?.source);
 });
