@@ -38,8 +38,9 @@ function signature(slug: string) {
 }
 
 test.only("profile next score-four catalog batch", () => {
-  const rows = catalogSeeds
-    .filter((seed) => score(seed.slug) === 4)
+  const scored = catalogSeeds.map((seed) => ({ ...seed, score: score(seed.slug) }));
+  const rows = scored
+    .filter((seed) => seed.score === 4)
     .map((seed) => ({ slug: seed.slug, provider: seed.provider, source: seed.source, signature: signature(seed.slug) }));
   const providers = Array.from(new Set(rows.map((row) => row.provider))).sort();
   const grouped = Object.fromEntries(providers.map((provider) => {
@@ -53,6 +54,12 @@ test.only("profile next score-four catalog batch", () => {
       }])),
     }];
   }));
-  console.log("NEXT_SCORE4_PROFILE", JSON.stringify({ total: rows.length, providers: grouped }));
-  expect(rows).toHaveLength(357);
+  const scoreCounts = Object.fromEntries(
+    Array.from(new Set(scored.map((row) => row.score))).sort((a, b) => a - b).map((value) => [
+      value,
+      scored.filter((row) => row.score === value).length,
+    ]),
+  );
+  console.log("NEXT_SCORE4_PROFILE", JSON.stringify({ total: rows.length, scoreCounts, providers: grouped }));
+  expect(rows).toHaveLength(350);
 });
