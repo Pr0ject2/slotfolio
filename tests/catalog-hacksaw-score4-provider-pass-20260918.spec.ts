@@ -15,9 +15,15 @@ function scoreFor(slug: string) {
 
 const mechanicsTargets = [
   "hacksaw-gaming-2-wild-2-die",
+  "hacksaw-gaming-bash-bros",
   "hacksaw-gaming-benny-the-beer",
+  "hacksaw-gaming-booze-bash",
   "hacksaw-gaming-bouncy-bombs",
+  "hacksaw-gaming-cash-crew",
+  "hacksaw-gaming-circle-of-life",
+  "hacksaw-gaming-dandy-diamonds",
   "hacksaw-gaming-dawn-of-kings",
+  "hacksaw-gaming-donny-and-danny",
   "hacksaw-gaming-dragons-domain",
   "hacksaw-gaming-evil-eyes",
   "hacksaw-gaming-eye-of-medusa",
@@ -70,4 +76,10 @@ test("Hacksaw mechanics overlay preserves prior mechanics while adding official 
 
   const fist = getVerifiedCatalogResearch("hacksaw-gaming-fist-of-destruction")?.mechanics ?? [];
   expect(fist).toEqual(expect.arrayContaining(["Линии", "Fist Wild Reels", "Расширяющиеся барабаны", "Множители"]));
+
+  const circle = getVerifiedCatalogResearch("hacksaw-gaming-circle-of-life")?.mechanics ?? [];
+  expect(circle).toEqual(expect.arrayContaining(["Респины", "Sticky Wilds", "Расширяющиеся символы", "Множители"]));
+
+  const cashCrew = getVerifiedCatalogResearch("hacksaw-gaming-cash-crew")?.mechanics ?? [];
+  expect(cashCrew).toEqual(expect.arrayContaining(["Линии", "Множители", "Сбор символов", "Зональные множители"]));
 });
