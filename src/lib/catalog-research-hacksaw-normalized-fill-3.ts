@@ -129,6 +129,54 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Wonder Reveal rules trigger sticky respins from revealed wins and use Clovers to multiply Coin and Diamond values before Pots collect them.",
   },
+  "hacksaw-gaming-le-bunny": {
+    mechanics: ["Каскады", "Golden Squares"],
+    source: "https://www.hacksawgaming.com/games/le-bunny",
+    verifiedAt,
+    evidence: "Official page separately labels Golden Squares and Super Cascades: wins create Golden Squares which a Rainbow activates to reveal special symbols.",
+  },
+  "hacksaw-gaming-le-digger": {
+    mechanics: ["Сбор символов", "Layers and Dynamite"],
+    source: "https://www.hacksawgaming.com/games/le-digger",
+    verifiedAt,
+    evidence: "Official Layers and Dynamite feature removes reel layers after wins and uses Dynamite to remove additional symbols and layers before Golden Reveals.",
+  },
+  "hacksaw-gaming-le-fisherman": {
+    mechanics: ["Сбор символов", "Golden Squares"],
+    source: "https://www.hacksawgaming.com/games/le-fisherman",
+    verifiedAt,
+    evidence: "Official Golden Squares feature turns winning positions into reveal positions activated by Rainbows, revealing Coins, Clovers, Buckets and Global Buckets.",
+  },
+  "hacksaw-gaming-le-king": {
+    mechanics: ["Сбор символов", "Golden Squares"],
+    source: "https://www.hacksawgaming.com/games/le-king",
+    verifiedAt,
+    evidence: "Official Golden Squares feature turns winning positions into repeatable reveals for Coins, Clovers, Treasure Pots and Jackpot Markers.",
+  },
+  "hacksaw-gaming-le-santa": {
+    mechanics: ["Сбор символов", "Golden Squares"],
+    source: "https://www.hacksawgaming.com/games/le-santa",
+    verifiedAt,
+    evidence: "Official Golden Squares feature turns winning positions into repeatable reveals for Coins, Clovers, Santa Sacks and Jackpot Boxes.",
+  },
+  "hacksaw-gaming-marlin-masters-atlantis": {
+    mechanics: ["Сбор символов", "Множители"],
+    source: "https://www.hacksawgaming.com/games/marlin-masters-atlantis",
+    verifiedAt,
+    evidence: "Official Fisherman rules say collected Marlin cash values can be multiplied by a Fisherman multiplier of up to x20.",
+  },
+  "hacksaw-gaming-octo-attack": {
+    mechanics: ["Каскады", "Tenta-Grab", "Множители", "Трансформация символов"],
+    source: "https://www.hacksawgaming.com/games/octo-attack",
+    verifiedAt,
+    evidence: "Official rules give Wilds multiplier values and define Tenta-Grab replacing all Ink Stained positions with a grabbed symbol, with grabbed Wilds able to become Wild Multipliers.",
+  },
+  "hacksaw-gaming-orb-of-destiny": {
+    mechanics: ["Линии", "Расширяющиеся барабаны", "Множители", "Респины"],
+    source: "https://www.hacksawgaming.com/games/orb-of-destiny",
+    verifiedAt,
+    evidence: "Official Lady Fortune rules define an expanded Wild multiplier reel and award respins while any Lady Fortune reel still has multipliers remaining.",
+  },
 };
 
 export function getCatalogResearchHacksawNormalizedFill3(slug: string) {
