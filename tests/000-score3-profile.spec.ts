@@ -1,0 +1,35 @@
+import { test, expect } from "@playwright/test";
+import { catalogSeeds } from "../src/lib/catalog-seeds";
+import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
+import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
+import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
+
+function rowFor(slug: string, provider: string) {
+  const details = getVerifiedCatalogDetails(slug);
+  const gameType = getVerifiedCatalogGameType(slug);
+  const research = getVerifiedCatalogResearch(slug);
+  const detailFacts = details
+    ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length
+    : 0;
+  return {
+    slug,
+    provider,
+    score: detailFacts + (gameType ? 1 : 0) + (research?.mechanics.length ?? 0),
+    field: details?.field ?? null,
+    rtp: details?.rtp ?? null,
+    maxWin: details?.maxWin ?? null,
+    volatility: details?.volatility ?? null,
+    releaseDate: details?.releaseDate ?? null,
+    gameType: gameType?.gameType ?? null,
+    mechanics: research?.mechanics ?? [],
+    source: details?.source ?? null,
+    evidenceSource: research?.evidenceSource ?? null,
+  };
+}
+
+test.only("profile exact remaining score-three catalog cards", () => {
+  const rows = catalogSeeds.map((seed) => rowFor(seed.slug, seed.provider));
+  const score3 = rows.filter((row) => row.score === 3);
+  console.log("SCORE3_PROFILE", JSON.stringify(score3));
+  expect(score3).toHaveLength(10);
+});
