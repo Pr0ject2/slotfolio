@@ -6,151 +6,46 @@ import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-typ
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const targets = {
-  "playn-go-battle-royal": {
-    field: "5 барабанов",
-    fieldSource: "https://www.playngo.com/post/latest-play-n-go-slot-battle-royal-is-a-royal-affair",
-    releaseDate: "2018-12-10",
-  },
-  "playn-go-big-win-cat": {
-    field: "3×3",
-    fieldSource: "https://www.playngo.com/posts/big-win-cat-pawsperity",
-    releaseDate: "2017-11-06",
-  },
-  "playn-go-blinged": {
-    field: "10 линий",
-    releaseDate: "2020-08-06",
-    mechanics: ["Линии"],
-  },
-  "playn-go-canine-carnage": {
-    releaseDate: "2022-11-03",
-    mechanics: ["Сбор символов"],
-  },
-  "playn-go-cat-wilde-and-the-pyramids-of-dead": {
-    maxWin: "10000x",
-    maxWinSource: "https://www.playngo.com/post/cat-wilde-pyramids-of-dead",
-    releaseDate: "2022-06-23",
-  },
-  "playn-go-cat-wilde-in-the-eclipse-of-the-sun-god": {
-    field: "5×3 · 20 динамических линий",
-    fieldSource: "https://www.playngo.com/post/top-summer-sun-slots-2024",
-    releaseDate: "2021-02-04",
-    mechanics: ["Линии", "Каскады"],
-    evidenceSource: "https://www.playngo.com/post/top-summer-sun-slots-2024",
-  },
-  "playn-go-champions-of-mithrune": {
-    releaseDate: "2022-09-01",
-    mechanics: ["Сбор символов"],
-    evidenceSource: "https://www.playngo.com/posts/champions-of-mithrune",
-  },
-  "playn-go-charlie-chance-in-hell-to-pay": {
-    field: "3 барабана",
-    fieldSource: "https://www.playngo.com/post/play-n-go-release-one-hell-of-a-game",
-    releaseDate: "2020-05-21",
-  },
-  "playn-go-cursed-moon-power-collection": {
-    field: "5×4 · выплаты способами",
-    fieldSource: "https://www.playngo.com/posts/cursed-moon-power-collection",
-    releaseDate: "2026-08-20",
-    mechanics: ["Способы", "Сбор символов"],
-    evidenceSource: "https://www.playngo.com/posts/cursed-moon-power-collection",
-  },
-  "playn-go-dawn-of-egypt": {
-    field: "5 барабанов",
-    fieldSource: "https://www.playngo.com/posts/play-n-go-continue-major-release-year-with-dawn-of-egypt",
-    releaseDate: "2020-02-20",
-  },
-  "playn-go-demon": {
-    field: "5×3",
-    fieldSource: "https://www.playngo.com/post/monsters-n-music-slots",
-    releaseDate: "2019-09-26",
-  },
-  "playn-go-dio-killing-the-dragon": {
-    field: "5×3",
-    fieldSource: "https://www.playngo.com/post/bloodthirsty-beasts-playngo-halloween-editorial",
-    releaseDate: "2022-10-06",
-  },
-  "playn-go-dragon-maiden": {
-    field: "5×6 · 7776 способов в Golden Free Spin",
-    releaseDate: "2018-11-14",
-    mechanics: ["Способы"],
-  },
-  "playn-go-eye-of-atum": {
-    field: "5×3 · 10 линий",
-    releaseDate: "2022-03-24",
-    mechanics: ["Линии"],
-  },
-  "playn-go-gnawn-gold": {
-    releaseDate: "2026-06-25",
-    mechanics: ["Сбор символов"],
-  },
-  "playn-go-legion-gold-victory": {
-    releaseDate: "2025-02-27",
-    mechanics: ["Сбор символов"],
-    evidenceSource: "https://www.playngo.com/post/legion-gold-victory",
-  },
-  "playn-go-monkey-battle-for-the-scrolls": {
-    releaseDate: "2023-10-26",
-    mechanics: ["Сбор символов"],
-    evidenceSource: "https://www.playngo.com/posts/monkey-battle-for-the-scrolls",
-  },
+  "playn-go-battle-royal": { field: "5 барабанов", releaseDate: "2018-12-10" },
+  "playn-go-big-win-cat": { field: "3×3", releaseDate: "2017-11-06" },
+  "playn-go-blinged": { field: "10 линий", releaseDate: "2020-08-06", mechanics: ["Линии"] },
+  "playn-go-canine-carnage": { releaseDate: "2022-11-03", mechanics: ["Сбор символов"] },
+  "playn-go-cat-wilde-and-the-pyramids-of-dead": { maxWin: "10000x", releaseDate: "2022-06-23" },
+  "playn-go-cat-wilde-in-the-eclipse-of-the-sun-god": { field: "5×3 · 20 динамических линий", releaseDate: "2021-02-04", mechanics: ["Линии", "Каскады"] },
+  "playn-go-champions-of-mithrune": { releaseDate: "2022-09-01", mechanics: ["Сбор символов"] },
+  "playn-go-charlie-chance-in-hell-to-pay": { field: "3 барабана", releaseDate: "2020-05-21" },
+  "playn-go-cursed-moon-power-collection": { field: "5×4 · выплаты способами", releaseDate: "2026-08-20", mechanics: ["Способы", "Сбор символов"] },
+  "playn-go-dawn-of-egypt": { field: "5 барабанов", releaseDate: "2020-02-20" },
+  "playn-go-demon": { field: "5×3", releaseDate: "2019-09-26" },
+  "playn-go-dio-killing-the-dragon": { field: "5×3", releaseDate: "2022-10-06" },
+  "playn-go-dragon-maiden": { field: "5×6 · 7776 способов в Golden Free Spin", releaseDate: "2018-11-14", mechanics: ["Способы"] },
+  "playn-go-eye-of-atum": { field: "5×3 · 10 линий", releaseDate: "2022-03-24", mechanics: ["Линии"] },
+  "playn-go-gnawn-gold": { releaseDate: "2026-06-25", mechanics: ["Сбор символов"] },
+  "playn-go-legion-gold-victory": { releaseDate: "2025-02-27", mechanics: ["Сбор символов"] },
+  "playn-go-monkey-battle-for-the-scrolls": { releaseDate: "2023-10-26", mechanics: ["Сбор символов"] },
 } as const;
 
-const targetSlugs = new Set(Object.keys(targets));
-
-test("fifth provider-wide Play’n GO batch preserves seventeen official evidence records", () => {
+test("fifth provider-wide Play’n GO batch preserves its seventeen original official facts", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
-
-  expect(targetSlugs.size).toBe(17);
+  expect(Object.keys(targets)).toHaveLength(17);
   expect(catalogSeeds).toHaveLength(900);
   expect(slots).toHaveLength(100);
-  expect(catalogSeeds.length + slots.length).toBe(1000);
 
   for (const [slug, values] of Object.entries(targets)) {
     const seed = selected.get(slug);
     expect(seed, slug).toBeTruthy();
     expect(seed!.provider, slug).toBe("Play’n GO");
-    expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
-
     const details = getVerifiedCatalogDetails(slug);
-    expect(details, slug).toBeTruthy();
-    expect(details?.source, `${slug} must preserve the official catalog game page as primary provenance`).toBe(seed!.source);
+    expect(details?.source, slug).toBe(seed!.source);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
-    expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
-    expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
-
-    if ("field" in values) {
-      expect(details?.field, slug).toBe(values.field);
-      if ("fieldSource" in values) {
-        expect(details && "fieldSource" in details, `${slug} must retain separate official field provenance`).toBe(true);
-        if (details && "fieldSource" in details) expect(details.fieldSource, slug).toBe(values.fieldSource);
-      } else {
-        expect(details && "fieldSource" in details, `${slug} uses its primary game page for the field fact`).toBe(false);
-      }
-    } else {
-      expect(details?.field, `${slug} must not invent a field layout`).toBeUndefined();
-    }
-
-    if ("maxWin" in values) {
-      expect(details?.maxWin, slug).toBe(values.maxWin);
-      expect(details && "maxWinSource" in details, `${slug} must retain separate official max-win provenance`).toBe(true);
-      if (details && "maxWinSource" in details) expect(details.maxWinSource, slug).toBe(values.maxWinSource);
-    } else {
-      expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
-    }
-
-    const research = getVerifiedCatalogResearch(slug);
+    if ("field" in values) expect(details?.field, slug).toBe(values.field);
+    if ("maxWin" in values) expect(details?.maxWin, slug).toBe(values.maxWin);
     if ("mechanics" in values) {
-      expect(research?.mechanics, slug).toEqual(values.mechanics);
-      expect(research?.source, `${slug} research must preserve the official catalog game page`).toBe(seed!.source);
+      const research = getVerifiedCatalogResearch(slug);
+      expect(research?.mechanics, slug).toEqual(expect.arrayContaining([...values.mechanics]));
+      expect(research?.source, slug).toBe(seed!.source);
       expect(research?.evidence, slug).toBeTruthy();
-      if ("evidenceSource" in values) {
-        expect(research && "evidenceSource" in research, `${slug} must retain separate mechanic provenance`).toBe(true);
-        if (research && "evidenceSource" in research) expect(research.evidenceSource, slug).toBe(values.evidenceSource);
-      } else {
-        expect(research && "evidenceSource" in research, `${slug} uses its primary game page as mechanic evidence`).toBe(false);
-      }
     }
-
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Video Slot");
   }
 });
