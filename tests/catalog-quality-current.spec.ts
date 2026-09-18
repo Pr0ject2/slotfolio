@@ -21,15 +21,15 @@ test("current catalog quality baseline", () => {
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(0);
   expect(ranked.filter((row) => row.score === 2)).toHaveLength(3);
   expect(ranked.filter((row) => row.score === 3)).toHaveLength(10);
-  expect(ranked.filter((row) => row.score === 4)).toHaveLength(551);
-  expect(ranked.filter((row) => row.score === 5)).toHaveLength(126);
-  expect(ranked.filter((row) => row.score === 6)).toHaveLength(144);
-  expect(ranked.filter((row) => row.score === 7)).toHaveLength(62);
+  expect(ranked.filter((row) => row.score === 4)).toHaveLength(411);
+  expect(ranked.filter((row) => row.score === 5)).toHaveLength(128);
+  expect(ranked.filter((row) => row.score === 6)).toHaveLength(161);
+  expect(ranked.filter((row) => row.score === 7)).toHaveLength(183);
   expect(ranked.filter((row) => row.score === 8)).toHaveLength(3);
   expect(ranked.filter((row) => row.score === 9)).toHaveLength(1);
 
   expect(ranked.filter((row) => row.provider === "Hacksaw Gaming" && row.score <= 3)).toHaveLength(0);
-  expect(ranked.filter((row) => row.provider === "Wazdan" && row.score <= 2)).toHaveLength(0);
+  expect(ranked.filter((row) => row.provider === "Wazdan" && row.score <= 4)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Push Gaming" && row.score <= 2)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "3 Oaks Gaming" && row.score <= 2)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Play’n GO" && row.score <= 2)).toHaveLength(0);
