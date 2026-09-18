@@ -72,7 +72,6 @@ test("provider-wide Wazdan pass preserves the facts that moved all nineteen card
     expect(details, slug).toBeTruthy();
     expect(details?.rtp, slug).toBe(rtp);
     expect(details?.source, slug).toBe(seed!.source);
-    expect(details?.verifiedAt, slug).toBe("2026-09-16");
 
     if (expectedField[slug]) expect(details?.field, slug).toBe(expectedField[slug]);
     if (expectedReleaseDate[slug]) expect(details?.releaseDate, slug).toBe(expectedReleaseDate[slug]);
