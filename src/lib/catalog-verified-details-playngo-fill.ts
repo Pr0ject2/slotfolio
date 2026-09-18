@@ -82,6 +82,31 @@ const details: Record<string, PlayngoFillOverlay> = {
     fieldSource: "https://www.playngo.com/post/top-winter-themed-slots",
     verifiedAt,
   },
+  "playn-go-black-mamba": {
+    field: "5×5",
+    fieldSource: "https://it.playngo.com/series/grid-slots",
+    verifiedAt,
+  },
+  "playn-go-gigantoonz": {
+    field: "8×8",
+    fieldSource: "https://www.playngo.com/post/gigantoonz-review-reactoonz-series",
+    verifiedAt,
+  },
+  "playn-go-moon-princess-christmas-kingdom": {
+    field: "5×5",
+    fieldSource: "https://www.playngo.com/post/copy-of-grow-your-blog-community",
+    verifiedAt,
+  },
+  "playn-go-hotel-yeti-way": {
+    maxWin: "30000x",
+    maxWinSource: "https://www.playngo.com/games/hotel-yeti-way",
+    verifiedAt,
+  },
+  "playn-go-infernal-trinity-go-guaranteed": {
+    field: "5 барабанов",
+    fieldSource: "https://www.playngo.com/post/infernal-trinity-go-guaranteed",
+    verifiedAt,
+  },
 };
 
 export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
