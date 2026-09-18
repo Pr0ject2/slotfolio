@@ -19,26 +19,24 @@ test("current catalog quality baseline", () => {
 
   expect(catalogSeeds).toHaveLength(900);
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(0);
-  expect(ranked.filter((row) => row.score === 2)).toHaveLength(4);
-  expect(ranked.filter((row) => row.score === 3)).toHaveLength(303);
-  expect(ranked.filter((row) => row.score === 4)).toHaveLength(408);
-  expect(ranked.filter((row) => row.score === 5)).toHaveLength(59);
-  expect(ranked.filter((row) => row.score === 6)).toHaveLength(88);
-  expect(ranked.filter((row) => row.score === 7)).toHaveLength(38);
+  expect(ranked.filter((row) => row.score === 2)).toHaveLength(3);
+  expect(ranked.filter((row) => row.score === 3)).toHaveLength(173);
+  expect(ranked.filter((row) => row.score === 4)).toHaveLength(474);
+  expect(ranked.filter((row) => row.score === 5)).toHaveLength(90);
+  expect(ranked.filter((row) => row.score === 6)).toHaveLength(111);
+  expect(ranked.filter((row) => row.score === 7)).toHaveLength(49);
 
   expect(ranked.filter((row) => row.provider === "Hacksaw Gaming" && row.score <= 2)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Wazdan" && row.score <= 2)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Push Gaming" && row.score <= 2)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "3 Oaks Gaming" && row.score <= 2)).toHaveLength(0);
+  expect(ranked.filter((row) => row.provider === "Play’n GO" && row.score <= 2)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score === 2)).toHaveLength(3);
 
-  expect(
-    ranked.filter((row) => row.score <= 2).map((row) => row.slug).sort(),
-  ).toEqual([
+  expect(ranked.filter((row) => row.score <= 2).map((row) => row.slug).sort()).toEqual([
     "nolimit-city-bowel-of-beelzebub",
     "nolimit-city-fire-in-the-hole-4",
     "nolimit-city-six-feet-under",
-    "playn-go-rally-4-riches",
   ]);
 });

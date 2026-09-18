@@ -1,6 +1,7 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 
 const verifiedAt = "2026-09-16";
+const verifiedAtLatest = "2026-09-17";
 
 const details: Record<string, CatalogVerifiedDetails> = {
   "wazdan-16-coins-x5000": {
@@ -28,19 +29,31 @@ const details: Record<string, CatalogVerifiedDetails> = {
     verifiedAt,
   },
   "wazdan-choco-reels": {
+    field: "6 барабанов · до 46 656 способов",
     rtp: "96,22%",
+    maxWin: "9500x",
+    volatility: "Средняя–высокая",
+    releaseDate: "2020-08-26",
     source: "https://wazdan.com/games/choco-reels",
-    verifiedAt,
+    verifiedAt: verifiedAtLatest,
   },
   "wazdan-cube-mania": {
+    field: "4 барабана · 9 линий",
     rtp: "96,43%",
+    maxWin: "1400x",
+    volatility: "Стандартная",
+    releaseDate: "2013-07-28",
     source: "https://wazdan.com/games/cube-mania",
-    verifiedAt,
+    verifiedAt: verifiedAtLatest,
   },
   "wazdan-cube-mania-deluxe": {
+    field: "4 барабана · 9 линий",
     rtp: "96,59%",
+    maxWin: "570x",
+    volatility: "Средняя",
+    releaseDate: "2018-06-06",
     source: "https://wazdan.com/games/cube-mania-deluxe",
-    verifiedAt,
+    verifiedAt: verifiedAtLatest,
   },
   "wazdan-football-mania": {
     field: "9 барабанов",
@@ -61,9 +74,13 @@ const details: Record<string, CatalogVerifiedDetails> = {
     verifiedAt,
   },
   "wazdan-jelly-reels": {
+    field: "8 барабанов · 16 777 216 способов",
     rtp: "96,22%",
+    maxWin: "2500x",
+    volatility: "Очень высокая",
+    releaseDate: "2021-11-18",
     source: "https://wazdan.com/games/jelly-reels",
-    verifiedAt,
+    verifiedAt: verifiedAtLatest,
   },
   "wazdan-joker-explosion": {
     field: "4 барабана · 7 линий",
@@ -78,9 +95,13 @@ const details: Record<string, CatalogVerifiedDetails> = {
     verifiedAt,
   },
   "wazdan-lucky-fish": {
+    field: "5 барабанов · 243 способа",
     rtp: "96,50%",
+    maxWin: "350x",
+    volatility: "Низкая–средняя",
+    releaseDate: "2019-07-02",
     source: "https://wazdan.com/games/lucky-fish",
-    verifiedAt,
+    verifiedAt: verifiedAtLatest,
   },
   "wazdan-power-of-gods-hades": {
     field: "5 барабанов · 243 способа",

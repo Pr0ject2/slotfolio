@@ -1,8 +1,13 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 
-const verifiedAt = "2026-09-16";
+type ProviderWideDetails = CatalogVerifiedDetails & {
+  releaseDateSource?: string;
+};
 
-const details: Record<string, CatalogVerifiedDetails> = {
+const verifiedAt = "2026-09-16";
+const verifiedAtLatest = "2026-09-17";
+
+const details: Record<string, ProviderWideDetails> = {
   "push-gaming-big-bamboo": {
     rtp: "96,13% / 94,13%",
     maxWin: "50 000x",
@@ -54,9 +59,14 @@ const details: Record<string, CatalogVerifiedDetails> = {
     verifiedAt,
   },
   "push-gaming-fire-pig-push-ways": {
+    field: "6 барабанов",
     rtp: "96,27% / 94,37%",
+    maxWin: "4 941x",
+    volatility: "Средняя",
+    releaseDate: "2025-08-13",
+    releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-expands-push-ways-portfolio-fire-pig-release.html",
     source: "https://www.pushgaming.com/games/fire-pig-push-ways.html",
-    verifiedAt,
+    verifiedAt: verifiedAtLatest,
   },
   "push-gaming-iron-phoenix": {
     rtp: "96,24% / 94,01%",
@@ -67,8 +77,10 @@ const details: Record<string, CatalogVerifiedDetails> = {
   },
   "push-gaming-power-paws": {
     rtp: "96,25% / 94,32%",
+    maxWin: "6 500x",
+    volatility: "Средняя–высокая",
     source: "https://www.pushgaming.com/games/power-paws.html",
-    verifiedAt,
+    verifiedAt: verifiedAtLatest,
   },
   "push-gaming-retroverse": {
     field: "6×9",
@@ -78,13 +90,19 @@ const details: Record<string, CatalogVerifiedDetails> = {
   },
   "push-gaming-sea-of-spirits": {
     rtp: "96,36% / 94,28%",
+    maxWin: "25 000x",
+    volatility: "Высокая",
     source: "https://www.pushgaming.com/games/sea-spirits.html",
-    verifiedAt,
+    verifiedAt: verifiedAtLatest,
   },
   "push-gaming-tarot-treasures": {
     rtp: "96,39% / 94,33%",
+    maxWin: "10 000x",
+    volatility: "Средняя",
+    releaseDate: "2025-10-15",
+    releaseDateSource: "https://www.pushgaming.com/blog/q-head-studio-ihor-lozinskiy-speaks-demo-slot.html",
     source: "https://www.pushgaming.com/games/tarot-treasures.html",
-    verifiedAt,
+    verifiedAt: verifiedAtLatest,
   },
   "push-gaming-tiki-tumble": {
     field: "5×4 · 20 линий",
@@ -94,13 +112,20 @@ const details: Record<string, CatalogVerifiedDetails> = {
   },
   "push-gaming-tricky-treats": {
     rtp: "96,32% / 94,38%",
+    maxWin: "10 000x",
+    volatility: "Высокая",
     source: "https://www.pushgaming.com/games/tricky-treats.html",
-    verifiedAt,
+    verifiedAt: verifiedAtLatest,
   },
   "push-gaming-vegas-vault": {
+    field: "3 барабана · 1 линия",
     rtp: "96,36% / 94,33%",
+    maxWin: "8 976x",
+    volatility: "Низкая–средняя",
+    releaseDate: "2026-05-20",
+    releaseDateSource: "https://www.pushgaming.com/blog/reel-hot-games-continues-redefine-classic-slots-gameplay-release-vegas-vault-global-markets.html",
     source: "https://www.pushgaming.com/games/vegas-vault.html",
-    verifiedAt,
+    verifiedAt: verifiedAtLatest,
   },
 };
 
