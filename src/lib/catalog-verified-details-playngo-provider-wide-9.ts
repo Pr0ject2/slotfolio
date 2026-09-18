@@ -35,7 +35,7 @@ const details: Record<string, SourcedCatalogVerifiedDetails> = {
   "playn-go-motley-crue": { field: "≥5 барабанов", releaseDate: "2022-12-22", source: "https://www.playngo.com/games/m%C3%B6tley-cr%C3%BCe", fieldSource: "https://www.playngo.com/games/m%C3%B6tley-cr%C3%BCe", verifiedAt },
   "playn-go-ninja-fruits": { field: "≥5 барабанов", releaseDate: "2013-06-19", source: "https://www.playngo.com/games/ninja-fruits", fieldSource: "https://www.playngo.com/games/ninja-fruits", verifiedAt },
   "playn-go-odin-protector-of-realms": { field: "Шестиугольная сетка · 37 символов", releaseDate: "2021-07-29", source: "https://www.playngo.com/games/odin-protector-of-realms", fieldSource: "https://www.playngo.com/posts/play-n-go-return-to-asgard-with-odin-protector-of-the-realms", verifiedAt },
-  "playn-go-ras-reckoning": { field: "6×5", releaseDate: "2025-12-04", source: "https://www.playngo.com/games/ra%27s-reckoning", fieldSource: "https://www.playngo.com/games/ra%27s-reckoning", releaseDateSource: "https://www.playngo.com/games/ra%27s-reckoning", verifiedAt },
+  "playn-go-ras-reckoning": { field: "6×5", releaseDate: "2025-12-04", source: "https://www.playngo.com/games/ra's-reckoning", fieldSource: "https://www.playngo.com/games/ra%27s-reckoning", releaseDateSource: "https://www.playngo.com/games/ra%27s-reckoning", verifiedAt },
 };
 
 export function getCatalogVerifiedDetailsPlayngoProviderWide9(slug: string) {
