@@ -15,37 +15,19 @@ function scoreFor(slug: string) {
 }
 
 test.only("diagnose next catalog fill tail", () => {
-  const rows = catalogSeeds.map((seed) => {
-    const details = getVerifiedCatalogDetails(seed.slug);
-    const type = getVerifiedCatalogGameType(seed.slug);
-    const research = getVerifiedCatalogResearch(seed.slug);
-    return {
-      slug: seed.slug,
-      name: seed.name,
-      provider: seed.provider,
-      source: seed.source,
-      score: scoreFor(seed.slug),
-      details: {
-        field: details?.field ?? "",
-        rtp: details?.rtp ?? "",
-        maxWin: details?.maxWin ?? "",
-        volatility: details?.volatility ?? "",
-        releaseDate: details?.releaseDate ?? "",
-        gameType: type?.gameType ?? "",
-      },
-      mechanics: research?.mechanics ?? [],
-      evidence: research?.evidence ?? "",
-    };
-  });
-
+  const rows = catalogSeeds.map((seed) => ({
+    slug: seed.slug,
+    provider: seed.provider,
+    score: scoreFor(seed.slug),
+  }));
+  const counts = Object.fromEntries(Array.from({ length: 8 }, (_, score) => [score, rows.filter((row) => row.score === score).length]));
   const score3 = rows.filter((row) => row.score === 3);
   const byProvider = Object.fromEntries(
     Array.from(new Set(score3.map((row) => row.provider))).sort().map((provider) => [
       provider,
-      score3.filter((row) => row.provider === provider),
+      score3.filter((row) => row.provider === provider).map((row) => row.slug),
     ]),
   );
-
-  console.log("CATALOG_FILL_3", JSON.stringify({ score3: score3.length, byProvider }));
-  expect(score3).toHaveLength(107);
+  console.log("CATALOG_FILL_3_AFTER_HACKSAW", JSON.stringify({ total: rows.length, counts, score3: score3.length, byProvider }));
+  expect(rows).toHaveLength(900);
 });
