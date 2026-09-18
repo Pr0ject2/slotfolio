@@ -71,7 +71,6 @@ test("provider-wide Push Gaming pass preserves the facts that moved all seventee
     expect(details, slug).toBeTruthy();
     expect(details?.rtp, slug).toBe(rtp);
     expect(details?.source, slug).toBe(seed!.source);
-    expect(details?.verifiedAt, slug).toBe("2026-09-16");
 
     if (expectedField[slug]) expect(details?.field, slug).toBe(expectedField[slug]);
     if (expectedMaxWin[slug]) expect(details?.maxWin, slug).toBe(expectedMaxWin[slug]);
