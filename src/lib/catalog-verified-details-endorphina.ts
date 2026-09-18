@@ -82,6 +82,6 @@ export function getCatalogVerifiedDetailsEndorphina(slug: string) {
   const base = details[slug];
   const overlay = getCatalogVerifiedDetailsEndorphinaScore4Fill(slug);
   if (!overlay) return base;
-  if (!base) return undefined;
+  if (!base) return overlay;
   return { ...base, ...overlay };
 }
