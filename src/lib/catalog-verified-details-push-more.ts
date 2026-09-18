@@ -2,6 +2,7 @@ import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 
 type PushMoreDetails = CatalogVerifiedDetails & {
   releaseDateSource?: string;
+  fieldSource?: string;
 };
 
 const verifiedAt = "2026-09-11";
@@ -33,7 +34,15 @@ const details: Record<string, PushMoreDetails> = {
     source: "https://www.pushgaming.com/games/bamboo-ways.html",
     verifiedAt: verifiedAtScore4,
   },
-  "push-gaming-big-bam-book": { rtp: "96,31% / 94,42%", maxWin: "10 000x", volatility: "Высокая", source: "https://www.pushgaming.com/games/big-bam-book.html", verifiedAt },
+  "push-gaming-big-bam-book": {
+    rtp: "96,31% / 94,42%",
+    maxWin: "10 000x",
+    volatility: "Высокая",
+    releaseDate: "2024-08-29",
+    releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-opens-new-martial-arts-chapter-big-bam-book.html",
+    source: "https://www.pushgaming.com/games/big-bam-book.html",
+    verifiedAt: verifiedAtScore4,
+  },
   "push-gaming-big-bamboo": { rtp: "96,13% / 94,13%", maxWin: "50 000x", source: "https://www.pushgaming.com/games/big-bamboo.html", verifiedAt },
   "push-gaming-big-bamboo-2": {
     rtp: "96,36% / 94,47%",
@@ -102,7 +111,17 @@ const details: Record<string, PushMoreDetails> = {
     source: "https://www.pushgaming.com/games/dj-cat.html",
     verifiedAt: verifiedAtScore4,
   },
-  "push-gaming-dj-fox": { rtp: "96,28% / 94,31%", maxWin: "10 000x", volatility: "Высокая", source: "https://www.pushgaming.com/games/dj-fox.html", verifiedAt },
+  "push-gaming-dj-fox": {
+    field: "старт 1×3 · расширяемое поле",
+    rtp: "96,28% / 94,31%",
+    maxWin: "10 000x",
+    volatility: "Высокая",
+    releaseDate: "2023-12-14",
+    fieldSource: "https://www.pushgaming.com/blog/push-gaming-turns-volume-dj-fox.html",
+    releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-turns-volume-dj-fox.html",
+    source: "https://www.pushgaming.com/games/dj-fox.html",
+    verifiedAt: verifiedAtScore4,
+  },
   "push-gaming-dragon-hopper": { rtp: "96,33% / 94,39%", maxWin: "10 000x", volatility: "Средняя–высокая", source: "https://www.pushgaming.com/games/dragon-hopper.html", verifiedAt },
   "push-gaming-fang-city": {
     rtp: "96,33% / 94,37%",
