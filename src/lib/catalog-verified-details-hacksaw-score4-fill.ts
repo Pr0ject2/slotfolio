@@ -44,12 +44,7 @@ const values: Record<string, HacksawScore4Values> = {
   },
 };
 
-export function getCatalogVerifiedDetailsHacksawScore4Fill(slug: string): CatalogVerifiedDetails | undefined {
+export function getCatalogVerifiedDetailsHacksawScore4Fill(slug: string) {
   const value = values[slug];
-  if (!value) return undefined;
-  return {
-    ...value,
-    source: `https://www.hacksawgaming.com/games/${slug.replace("hacksaw-gaming-", "")}`,
-    verifiedAt,
-  };
+  return value ? { ...value, verifiedAt } : undefined;
 }
