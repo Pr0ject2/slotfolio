@@ -36,6 +36,26 @@ const details: Record<string, ThreeOaksFill3Overlay> = {
     releaseDateSource: "https://3oaks.com/news/new-release-4-fairy-flowers",
     verifiedAt: "2026-09-18",
   },
+  "3-oaks-gaming-4-pots-of-egypt": {
+    releaseDate: "2025-12-04",
+    releaseDateSource: "https://3oaks.com/news/new-release-4-pots-of-gold",
+    verifiedAt: "2026-09-18",
+  },
+  "3-oaks-gaming-777-fruity-coins": {
+    releaseDate: "2025-07-03",
+    releaseDateSource: "https://3oaks.com/news/new-release-777-fruity-coins",
+    verifiedAt: "2026-09-18",
+  },
+  "3-oaks-gaming-4-wolf-drums": {
+    releaseDate: "2026-02-19",
+    releaseDateSource: "https://3oaks.com/news/new-release-4-wolf-drums",
+    verifiedAt: "2026-09-18",
+  },
+  "3-oaks-gaming-amazonia-wins": {
+    releaseDate: "2025-07-10",
+    releaseDateSource: "https://3oaks.com/news/new-release-amazonia-wins",
+    verifiedAt: "2026-09-18",
+  },
 };
 
 export function getCatalogVerifiedDetails3OaksFill3(slug: string) {
