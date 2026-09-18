@@ -55,6 +55,7 @@ import { getCatalogResearchPlayngoMechanicsTail } from "./catalog-research-playn
 import { getCatalogResearchPlayngoMechanicsFinal2 } from "./catalog-research-playngo-mechanics-final2";
 import { getCatalogResearchPlayngoMechanicsFinal3 } from "./catalog-research-playngo-mechanics-final3";
 import { getCatalogResearchPlayngoFillMechanicsAll } from "./catalog-research-playngo-fill-mechanics-all";
+import { getCatalogResearchPlayngoScore3Fill } from "./catalog-research-playngo-score3-fill";
 import { getCatalogResearchWazdan } from "./catalog-research-wazdan";
 import { getCatalogResearchWazdanWave4 } from "./catalog-research-wazdan-wave4";
 import { getCatalogResearchWazdanWave5 } from "./catalog-research-wazdan-wave5";
@@ -112,6 +113,7 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearchHacksawNormalizedFill3(slug) ??
     getCatalogResearchHacksawNormalizedFill2(slug) ??
     getCatalogResearchHacksawNormalizedFill(slug) ??
+    getCatalogResearchPlayngoScore3Fill(slug) ??
     getCatalogResearchPlayngoFillMechanicsAll(slug) ??
     getCatalogResearchMechanicsFinalTail(slug) ??
     getCatalogResearchPlayngoMechanicsFinal3(slug) ??
