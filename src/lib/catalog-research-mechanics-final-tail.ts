@@ -58,10 +58,10 @@ const records: Record<string, CatalogResearch> = {
     evidence: "Official Wazdan page explicitly lists Collector Multiplier and sticky bonus-symbol respins as core mechanics.",
   },
   "push-gaming-big-bamboo": {
-    mechanics: ["Сбор символов"],
+    mechanics: ["Mystery Symbols", "Респины", "Множители", "Сбор символов"],
     source: "https://www.pushgaming.com/games/big-bamboo.html",
-    verifiedAt,
-    evidence: "Official Push Gaming page lists Collector Symbols in Golden Bamboo and describes symbol collection in the Free Spins feature.",
+    verifiedAt: "2026-09-18",
+    evidence: "Official Push Gaming page describes Mystery Stacks, a Golden Bamboo feature with one respin, Multiplier Symbols up to x10 and Collector Symbols.",
   },
   "push-gaming-bison-battle": {
     mechanics: ["Множители"],
