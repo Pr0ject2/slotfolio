@@ -14,7 +14,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("diagnose remaining score-three catalog tail", () => {
+test.only("diagnose remaining score-three catalog tail", () => {
   const rows = catalogSeeds.map((seed) => {
     const details = getVerifiedCatalogDetails(seed.slug);
     const type = getVerifiedCatalogGameType(seed.slug);
@@ -25,6 +25,8 @@ test("diagnose remaining score-three catalog tail", () => {
       provider: seed.provider,
       source: seed.source,
       score: scoreFor(seed.slug),
+      evidence: research?.evidence ?? "",
+      mechanics: research?.mechanics ?? [],
       shape: {
         field: Boolean(details?.field),
         rtp: Boolean(details?.rtp),
@@ -48,6 +50,11 @@ test("diagnose remaining score-three catalog tail", () => {
     ]),
   );
 
+  const threeOaksSlotEvidence = score3
+    .filter((row) => row.provider === "3 Oaks Gaming" && !row.shape.gameType && /\bslot\b/i.test(row.evidence))
+    .map((row) => ({ slug: row.slug, source: row.source, evidence: row.evidence }));
+
   console.log("CATALOG_FILL_2_DIAGNOSTIC", JSON.stringify({ total: rows.length, score3: score3.length, byProvider }));
+  console.log("THREE_OAKS_SLOT_EVIDENCE", JSON.stringify({ count: threeOaksSlotEvidence.length, records: threeOaksSlotEvidence }));
   expect(score3).toHaveLength(173);
 });
