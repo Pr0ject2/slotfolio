@@ -13,6 +13,7 @@ import { getCatalogResearch3OaksQualityPass18 } from "./catalog-research-3oaks-q
 import { getCatalogResearch3OaksFill3 } from "./catalog-research-3oaks-fill-3";
 import { getCatalogResearch3OaksFill4 } from "./catalog-research-3oaks-fill-4";
 import { getCatalogResearch3OaksFill5 } from "./catalog-research-3oaks-fill-5";
+import { getCatalogResearch3OaksScore4ProviderPass } from "./catalog-research-3oaks-score4-provider-pass";
 import { getCatalogResearchPlayngoQualityPass19 } from "./catalog-research-playngo-quality-pass-19";
 import { getCatalogResearchPlayngoQualityPass21 } from "./catalog-research-playngo-quality-pass-21";
 import { getCatalogResearchPlayngoQualityPass22 } from "./catalog-research-playngo-quality-pass-22";
@@ -113,6 +114,7 @@ function canonicalizeResearchSource(
 
 export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearch | undefined {
   const threeOaksFill =
+    getCatalogResearch3OaksScore4ProviderPass(slug) ??
     getCatalogResearch3OaksFill5(slug) ??
     getCatalogResearch3OaksFill4(slug) ??
     getCatalogResearch3OaksFill3(slug);

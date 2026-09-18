@@ -7,6 +7,7 @@ import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const expected = {
   "push-gaming-razor-shark-jackpots": {
+    rtp: "96,38% / 94,30%",
     maxWin: "11007.70x",
     volatility: "Средняя",
     releaseDate: "2026-06-03",
@@ -15,6 +16,7 @@ const expected = {
       "https://www.pushgaming.com/blog/push-gaming-redefines-staple-slot-series-release-razor-shark-jackpots.html",
   },
   "push-gaming-red-hot-multipliers": {
+    rtp: "96,22% / 94,23%",
     maxWin: "2500x",
     volatility: "Низкая",
     releaseDate: "2026-02",
@@ -36,7 +38,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 15 preserves separately sourced Push release dates", () => {
+test("quality pass 15 preserves separately sourced Push release dates while allowing later RTP enrichment", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(2);
@@ -54,11 +56,11 @@ test("quality pass 15 preserves separately sourced Push release dates", () => {
     const details = getVerifiedCatalogDetails(slug);
     expect(details, slug).toBeTruthy();
     expect(details?.source, slug).toBe(values.source);
+    expect(details?.rtp, slug).toBe(values.rtp);
     expect(details?.maxWin, slug).toBe(values.maxWin);
     expect(details?.volatility, slug).toBe(values.volatility);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
     expect(details?.field, `${slug} must not invent a field`).toBeUndefined();
-    expect(details?.rtp, `${slug} must not collapse multiple RTP configurations`).toBeUndefined();
     expect("releaseDateSource" in details!, `${slug} must retain a separate release source`).toBe(true);
     if ("releaseDateSource" in details!) {
       expect(details.releaseDateSource, slug).toBe(values.releaseDateSource);

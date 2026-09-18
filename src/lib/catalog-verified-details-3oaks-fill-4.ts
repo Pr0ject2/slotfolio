@@ -1,11 +1,23 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 
-type ThreeOaksFill4Overlay = Partial<Pick<CatalogVerifiedDetails, "releaseDate">> & {
+type ThreeOaksFill4Overlay = Partial<
+  Pick<CatalogVerifiedDetails, "maxWin" | "volatility" | "releaseDate">
+> & {
   verifiedAt: string;
-  releaseDateSource: string;
+  releaseDateSource?: string;
 };
 
 const details: Record<string, ThreeOaksFill4Overlay> = {
+  "3-oaks-gaming-4-african-drums": {
+    maxWin: "20000x",
+    volatility: "Высокая",
+    verifiedAt: "2026-09-18",
+  },
+  "3-oaks-gaming-egypt-power-x1000": {
+    maxWin: "40000x",
+    volatility: "Высокая",
+    verifiedAt: "2026-09-18",
+  },
   "3-oaks-gaming-magic-clovers": {
     releaseDate: "2025-08-14",
     releaseDateSource: "https://3oaks.com/news/new-release-magic-clovers",

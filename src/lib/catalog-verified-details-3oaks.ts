@@ -13,6 +13,13 @@ const details: Record<string, CatalogVerifiedDetails> = {
     source: "https://3oaks.com/game/3_african_drums",
     verifiedAt,
   },
+  "3-oaks-gaming-4-african-drums": {
+    field: "5×3 · 25 линий",
+    maxWin: "20000x",
+    volatility: "Высокая",
+    source: "https://3oaks.com/news/new-release-4-african-drums",
+    verifiedAt: "2026-09-18",
+  },
   "3-oaks-gaming-buddha-megaways": {
     field: "6 барабанов · 64–117 649 способов",
     maxWin: "12000x",
@@ -23,6 +30,13 @@ const details: Record<string, CatalogVerifiedDetails> = {
     field: "6×5 · Scatter Pays",
     source: "https://3oaks.com/game/coin_princess_x1000",
     verifiedAt,
+  },
+  "3-oaks-gaming-egypt-power-x1000": {
+    field: "6×5 · Scatter Pays · каскады",
+    maxWin: "40000x",
+    volatility: "Высокая",
+    source: "https://3oaks.com/news/new-release-egypt-power-x1000",
+    verifiedAt: "2026-09-18",
   },
   "3-oaks-gaming-lady-fortune": {
     field: "6×5 · Scatter Pays · каскады",
