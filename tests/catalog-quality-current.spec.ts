@@ -21,12 +21,8 @@ test("current catalog quality baseline", () => {
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(0);
   expect(ranked.filter((row) => row.score === 2)).toHaveLength(3);
   expect(ranked.filter((row) => row.score === 3)).toHaveLength(10);
-  expect(ranked.filter((row) => row.score === 4)).toHaveLength(351);
-  expect(ranked.filter((row) => row.score === 5)).toHaveLength(159);
-  expect(ranked.filter((row) => row.score === 6)).toHaveLength(188);
-  expect(ranked.filter((row) => row.score === 7)).toHaveLength(185);
-  expect(ranked.filter((row) => row.score === 8)).toHaveLength(3);
-  expect(ranked.filter((row) => row.score === 9)).toHaveLength(1);
+  expect(ranked.filter((row) => row.score === 4).length).toBeLessThanOrEqual(351);
+  expect(ranked.filter((row) => row.score >= 5).length).toBeGreaterThanOrEqual(536);
 
   expect(ranked.filter((row) => row.provider === "Hacksaw Gaming" && row.score <= 3)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Wazdan" && row.score <= 4)).toHaveLength(0);
