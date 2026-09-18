@@ -153,6 +153,12 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official game page describes collecting coloured Phoenix Tear Scatters, Hold and Spin with locked Coins, and the Blue phoenix expanding the reels.",
   },
+  "playn-go-hammerfall": {
+    mechanics: ["Каскады", "Кластеры", "Множители", "Трансформация символов"],
+    source: "https://www.playngo.com/games/hammerfall",
+    verifiedAt,
+    evidence: "Official game page explicitly describes cascading reels, cluster wins, Lightning Wild win multipliers, and multiple features that transform matching symbols.",
+  },
 };
 
 export function getCatalogResearchPlayngoFillMechanics(slug: string) {
