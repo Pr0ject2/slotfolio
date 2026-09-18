@@ -9,11 +9,12 @@ type SourcedCatalogVerifiedDetails = CatalogVerifiedDetails & {
 };
 
 const details: Record<string, SourcedCatalogVerifiedDetails> = {
+  "playn-go-1001-mystery-genie-fortunes": { field: "5×4 · 20 линий", maxWin: "1001x", releaseDate: "2025-04-10", source: "https://www.playngo.com/games/1001-mystery-genie-fortunes", fieldSource: "https://www.playngo.com/posts/1001-mystery-genie-fortunes", maxWinSource: "https://www.playngo.com/posts/1001-mystery-genie-fortunes", verifiedAt },
   "playn-go-agent-destiny": { field: "≥5 барабанов", releaseDate: "2020-05-07", source: "https://www.playngo.com/games/agent-destiny", fieldSource: "https://www.playngo.com/games/agent-destiny", verifiedAt },
   "playn-go-alice-cooper-and-the-tome-of-madness": { field: "5×5", releaseDate: "2021-10-07", source: "https://www.playngo.com/games/alice-cooper-and-the-tome-of-madness", fieldSource: "https://www.playngo.com/post/monsters-n-music-slots", verifiedAt },
   "playn-go-aztec-idols": { field: "≥5 барабанов", releaseDate: "2012-08-11", source: "https://www.playngo.com/games/aztec-idols", fieldSource: "https://www.playngo.com/games/aztec-idols", verifiedAt },
   "playn-go-bullion-xpress": { field: "≥5 барабанов", releaseDate: "2025-09-25", source: "https://www.playngo.com/games/bullion-xpress", fieldSource: "https://www.playngo.com/games/bullion-xpress", verifiedAt },
-  "playn-go-cashin-joker": { maxWin: "10800x", releaseDate: "2025-07-17", source: "https://www.playngo.com/games/cashin%27-joker", maxWinSource: "https://www.playngo.com/games/cashin%27-joker", verifiedAt },
+  "playn-go-cashin-joker": { field: "3×1 · до 4×1", maxWin: "10800x", releaseDate: "2025-07-17", source: "https://www.playngo.com/games/cashin%27-joker", fieldSource: "https://www.playngo.com/games/cashin%27-joker", maxWinSource: "https://www.playngo.com/games/cashin%27-joker", verifiedAt },
   "playn-go-cat-wilde-and-the-pyramids-of-dead": { maxWin: "5000x / 10000x", releaseDate: "2022-06-23", source: "https://www.playngo.com/games/cat-wilde-and-the-pyramids-of-dead", maxWinSource: "https://www.playngo.com/posts/cat-wilde-pyramids-of-dead", verifiedAt },
   "playn-go-cloud-quest": { field: "5×5", releaseDate: "2016-03-09", source: "https://www.playngo.com/games/cloud-quest", fieldSource: "https://www.playngo.com/games/cloud-quest", verifiedAt },
   "playn-go-crazy-cows": { field: "≥5 барабанов", releaseDate: "2014-11-05", source: "https://www.playngo.com/games/crazy-cows", fieldSource: "https://www.playngo.com/games/crazy-cows", verifiedAt },
@@ -33,6 +34,7 @@ const details: Record<string, SourcedCatalogVerifiedDetails> = {
   "playn-go-merry-xmas": { field: "15 линий", releaseDate: "2014-11-17", source: "https://www.playngo.com/games/merry-xmas", fieldSource: "https://www.playngo.com/post/top-christmas-slots-2023", verifiedAt },
   "playn-go-motley-crue": { field: "≥5 барабанов", releaseDate: "2022-12-22", source: "https://www.playngo.com/games/m%C3%B6tley-cr%C3%BCe", fieldSource: "https://www.playngo.com/games/m%C3%B6tley-cr%C3%BCe", verifiedAt },
   "playn-go-ninja-fruits": { field: "≥5 барабанов", releaseDate: "2013-06-19", source: "https://www.playngo.com/games/ninja-fruits", fieldSource: "https://www.playngo.com/games/ninja-fruits", verifiedAt },
+  "playn-go-odin-protector-of-realms": { field: "Шестиугольная сетка · 37 символов", releaseDate: "2021-07-29", source: "https://www.playngo.com/games/odin-protector-of-realms", fieldSource: "https://www.playngo.com/posts/play-n-go-return-to-asgard-with-odin-protector-of-the-realms", verifiedAt },
   "playn-go-ras-reckoning": { field: "6×5", releaseDate: "2025-12-04", source: "https://www.playngo.com/games/ra%27s-reckoning", fieldSource: "https://www.playngo.com/games/ra%27s-reckoning", releaseDateSource: "https://www.playngo.com/games/ra%27s-reckoning", verifiedAt },
 };
 
