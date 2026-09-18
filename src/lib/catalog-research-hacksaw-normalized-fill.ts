@@ -159,6 +159,48 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official rules define Orb symbol transformations and separately define Sacred Scripture, which awards 500x when low symbols spell HORUS horizontally.",
   },
+  "hacksaw-gaming-chaos-crew-3": {
+    mechanics: ["EPIC DROP™", "Множители", "Трансформация символов"],
+    source: "https://www.hacksawgaming.com/games/chaos-crew-3",
+    verifiedAt,
+    evidence: "Official feature rules state that spelling CHAOS across a row triggers EPIC DROP™, an award spin with a Reel Multiplier and transformed multiplier symbols.",
+  },
+  "hacksaw-gaming-duel-at-dawn": {
+    mechanics: ["DuelReels™", "The Outlaw Feature", "Расширяющиеся барабаны"],
+    source: "https://www.hacksawgaming.com/games/duel-at-dawn",
+    verifiedAt,
+    evidence: "Official rules define DuelReels™ and The Outlaw Feature, where an Outlaw expands into a full Wild reel and shoots additional Wild symbols onto the grid.",
+  },
+  "hacksaw-gaming-epic-bullets-and-bounty": {
+    mechanics: ["DuelReels™", "Расширяющиеся барабаны"],
+    source: "https://www.hacksawgaming.com/games/epic-bullets-and-bounty",
+    verifiedAt,
+    evidence: "Official rules describe Outlaw DuelReels™ and Bounty DuelReels™, both expanding VS symbols into full-reel wild duel features.",
+  },
+  "hacksaw-gaming-marlin-masters": {
+    mechanics: ["Сбор символов", "Marlin Progress Bar", "Множители"],
+    source: "https://www.hacksawgaming.com/games/marlin-masters",
+    verifiedAt,
+    evidence: "Official rules state Fishermen collect Marlin cash prizes and the Marlin Progress Bar advances on Fisherman symbols and unlocks free-spin and multiplier upgrades.",
+  },
+  "hacksaw-gaming-pray-for-three": {
+    mechanics: ["Каскады", "Бонусное колесо"],
+    source: "https://www.hacksawgaming.com/games/pray-for-three",
+    verifiedAt,
+    evidence: "Official Wheel of Sin rules state that activated and other winning symbols are removed before new symbols drop in.",
+  },
+  "hacksaw-gaming-rise-of-fortuna": {
+    mechanics: ["Сбор символов", "Бонусное колесо"],
+    source: "https://www.hacksawgaming.com/games/rise-of-fortuna",
+    verifiedAt,
+    evidence: "Official page says Fortuna Wheel values are collected by the Cash Prize Bar before the final cash prize is awarded.",
+  },
+  "hacksaw-gaming-stormborn": {
+    mechanics: ["Сбор символов", "Множители"],
+    source: "https://www.hacksawgaming.com/games/stormborn",
+    verifiedAt,
+    evidence: "Official page says Collector Chests collect all Coin values and may multiply the total before collecting.",
+  },
 };
 
 export function getCatalogResearchHacksawNormalizedFill(slug: string) {
