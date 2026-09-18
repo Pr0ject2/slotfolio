@@ -31,6 +31,7 @@ import { getCatalogResearchHacksawVerifiedWave1 } from "./catalog-research-hacks
 import { getCatalogResearchHacksawFinal } from "./catalog-research-hacksaw-final";
 import { getCatalogResearchHacksawNormalizedFill } from "./catalog-research-hacksaw-normalized-fill";
 import { getCatalogResearchHacksawNormalizedFill2 } from "./catalog-research-hacksaw-normalized-fill-2";
+import { getCatalogResearchHacksawNormalizedFill3 } from "./catalog-research-hacksaw-normalized-fill-3";
 import { getCatalogResearchPlayngo } from "./catalog-research-playngo";
 import { getCatalogResearchPlayngoMore } from "./catalog-research-playngo-more";
 import { getCatalogResearchPlayngoThird } from "./catalog-research-playngo-third";
@@ -108,6 +109,7 @@ function canonicalizeResearchSource(
 
 export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearch | undefined {
   const freshMechanics =
+    getCatalogResearchHacksawNormalizedFill3(slug) ??
     getCatalogResearchHacksawNormalizedFill2(slug) ??
     getCatalogResearchHacksawNormalizedFill(slug) ??
     getCatalogResearchPlayngoFillMechanicsAll(slug) ??
