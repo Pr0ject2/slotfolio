@@ -107,6 +107,11 @@ const details: Record<string, PlayngoFillOverlay> = {
     fieldSource: "https://www.playngo.com/post/infernal-trinity-go-guaranteed",
     verifiedAt,
   },
+  "playn-go-lord-merlin-and-the-lady-of-the-lake": {
+    field: "5×3 · 10 линий",
+    fieldSource: "https://www.playngo.com/post/the-tales-of-merlin-slots-at-playngo",
+    verifiedAt,
+  },
 };
 
 export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
