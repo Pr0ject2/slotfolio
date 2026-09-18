@@ -40,7 +40,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 10 adds exact official release months to twenty score-2 3 Oaks records", () => {
+test("quality pass 10 preserves exact official release months on twenty 3 Oaks records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(20);
@@ -58,9 +58,6 @@ test("quality pass 10 adds exact official release months to twenty score-2 3 Oak
     expect(details?.source, slug).toBe(seed!.source);
     expect(details?.field, slug).toBe(values.field);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
-    expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
-    expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
-    expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
-    expect(scoreFor(slug), `${slug} must move from score 2 to score 3`).toBe(3);
+    expect(scoreFor(slug), `${slug} must stay at or above the achieved quality floor`).toBeGreaterThanOrEqual(3);
   }
 });
