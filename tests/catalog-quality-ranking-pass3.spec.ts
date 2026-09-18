@@ -33,7 +33,7 @@ const expected = {
   "push-gaming-wild-swarm-triple-hive": { maxWin: "23902.8x", volatility: "Средняя" },
 } as const;
 
-test("quality pass 3 enriches all thin Push Gaming runtime records with official win and volatility facts", () => {
+test("quality pass 3 preserves its official Push win and volatility facts while allowing later enrichment", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(Object.keys(expected)).toHaveLength(25);
@@ -48,7 +48,6 @@ test("quality pass 3 enriches all thin Push Gaming runtime records with official
     expect(details?.source, slug).toBe(seed!.source);
     expect(details?.maxWin, slug).toBe(values.maxWin);
     expect(details?.volatility, slug).toBe(values.volatility);
-    expect(details?.rtp, `${slug} must not collapse Push Gaming RTP variants into one value`).toBeUndefined();
     expect(getVerifiedCatalogResearch(slug)?.mechanics.length, slug).toBeGreaterThan(0);
   }
 
