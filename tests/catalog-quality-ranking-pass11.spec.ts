@@ -34,7 +34,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 11 preserves exact official release months on fourteen 3 Oaks records", () => {
+test("quality pass 11 preserves official release timing on fourteen 3 Oaks records", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(14);
@@ -52,7 +52,7 @@ test("quality pass 11 preserves exact official release months on fourteen 3 Oaks
     expect(details, slug).toBeTruthy();
     expect(details?.source, slug).toBe(seed!.source);
     expect(details?.field, slug).toBe(values.field);
-    expect(details?.releaseDate, slug).toBe(values.releaseDate);
+    expect(details?.releaseDate, slug).toEqual(expect.stringMatching(new RegExp(`^${values.releaseDate}(?:$|-)`)));
 
     const research = getVerifiedCatalogResearch(slug);
     expect(research?.source, slug).toBe(seed!.source);

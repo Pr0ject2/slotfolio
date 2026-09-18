@@ -10,6 +10,9 @@ import { getCatalogResearch3OaksQualityPass14 } from "./catalog-research-3oaks-q
 import { getCatalogResearch3OaksQualityPass16 } from "./catalog-research-3oaks-quality-pass-16";
 import { getCatalogResearch3OaksQualityPass17 } from "./catalog-research-3oaks-quality-pass-17";
 import { getCatalogResearch3OaksQualityPass18 } from "./catalog-research-3oaks-quality-pass-18";
+import { getCatalogResearch3OaksFill3 } from "./catalog-research-3oaks-fill-3";
+import { getCatalogResearch3OaksFill4 } from "./catalog-research-3oaks-fill-4";
+import { getCatalogResearch3OaksFill5 } from "./catalog-research-3oaks-fill-5";
 import { getCatalogResearchPlayngoQualityPass19 } from "./catalog-research-playngo-quality-pass-19";
 import { getCatalogResearchPlayngoQualityPass21 } from "./catalog-research-playngo-quality-pass-21";
 import { getCatalogResearchPlayngoQualityPass22 } from "./catalog-research-playngo-quality-pass-22";
@@ -31,6 +34,7 @@ import { getCatalogResearchHacksawVerifiedWave1 } from "./catalog-research-hacks
 import { getCatalogResearchHacksawFinal } from "./catalog-research-hacksaw-final";
 import { getCatalogResearchHacksawNormalizedFill } from "./catalog-research-hacksaw-normalized-fill";
 import { getCatalogResearchHacksawNormalizedFill2 } from "./catalog-research-hacksaw-normalized-fill-2";
+import { getCatalogResearchHacksawNormalizedFill3 } from "./catalog-research-hacksaw-normalized-fill-3";
 import { getCatalogResearchPlayngo } from "./catalog-research-playngo";
 import { getCatalogResearchPlayngoMore } from "./catalog-research-playngo-more";
 import { getCatalogResearchPlayngoThird } from "./catalog-research-playngo-third";
@@ -54,6 +58,7 @@ import { getCatalogResearchPlayngoMechanicsTail } from "./catalog-research-playn
 import { getCatalogResearchPlayngoMechanicsFinal2 } from "./catalog-research-playngo-mechanics-final2";
 import { getCatalogResearchPlayngoMechanicsFinal3 } from "./catalog-research-playngo-mechanics-final3";
 import { getCatalogResearchPlayngoFillMechanicsAll } from "./catalog-research-playngo-fill-mechanics-all";
+import { getCatalogResearchPlayngoScore3Fill } from "./catalog-research-playngo-score3-fill";
 import { getCatalogResearchWazdan } from "./catalog-research-wazdan";
 import { getCatalogResearchWazdanWave4 } from "./catalog-research-wazdan-wave4";
 import { getCatalogResearchWazdanWave5 } from "./catalog-research-wazdan-wave5";
@@ -107,9 +112,15 @@ function canonicalizeResearchSource(
 }
 
 export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearch | undefined {
+  const threeOaksFill =
+    getCatalogResearch3OaksFill5(slug) ??
+    getCatalogResearch3OaksFill4(slug) ??
+    getCatalogResearch3OaksFill3(slug);
   const freshMechanics =
+    getCatalogResearchHacksawNormalizedFill3(slug) ??
     getCatalogResearchHacksawNormalizedFill2(slug) ??
     getCatalogResearchHacksawNormalizedFill(slug) ??
+    getCatalogResearchPlayngoScore3Fill(slug) ??
     getCatalogResearchPlayngoFillMechanicsAll(slug) ??
     getCatalogResearchMechanicsFinalTail(slug) ??
     getCatalogResearchPlayngoMechanicsFinal3(slug) ??
@@ -118,7 +129,7 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearchPushMechanicsTail(slug) ??
     getCatalogResearchWazdanMechanicsTail(slug);
 
-  if (freshMechanics?.mechanics.length) {
+  if (!threeOaksFill && freshMechanics?.mechanics.length) {
     return canonicalizeResearchSource(slug, freshMechanics);
   }
 
@@ -185,10 +196,18 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearchPush(slug) ??
     getCatalogResearchNolimit(slug);
 
-  if (existing?.mechanics.length) {
-    return canonicalizeResearchSource(slug, existing);
+  const legacy = freshMechanics?.mechanics.length
+    ? freshMechanics
+    : existing?.mechanics.length
+      ? existing
+      : getCatalogResearchFromVerifiedField(slug) ?? existing;
+
+  if (threeOaksFill?.mechanics.length) {
+    return canonicalizeResearchSource(slug, {
+      ...threeOaksFill,
+      mechanics: [...new Set([...(legacy?.mechanics ?? []), ...threeOaksFill.mechanics])],
+    });
   }
 
-  const selected = getCatalogResearchFromVerifiedField(slug) ?? existing;
-  return canonicalizeResearchSource(slug, selected);
+  return canonicalizeResearchSource(slug, legacy);
 }

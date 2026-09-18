@@ -20,6 +20,8 @@ import { getCatalogVerifiedDetailsPlayngoFill } from "./catalog-verified-details
 import { getCatalogVerifiedDetails3Oaks } from "./catalog-verified-details-3oaks";
 import { getCatalogVerifiedDetails3OaksWave1 } from "./catalog-verified-details-3oaks-wave1";
 import { getCatalogVerifiedDetails3OaksFinal } from "./catalog-verified-details-3oaks-final";
+import { getCatalogVerifiedDetails3OaksFill3 } from "./catalog-verified-details-3oaks-fill-3";
+import { getCatalogVerifiedDetails3OaksFill4 } from "./catalog-verified-details-3oaks-fill-4";
 import { getCatalogVerifiedDetailsBgaming } from "./catalog-verified-details-bgaming";
 import { getCatalogVerifiedDetailsBgamingMore } from "./catalog-verified-details-bgaming-more";
 import { getCatalogVerifiedDetailsBgamingThird } from "./catalog-verified-details-bgaming-third";
@@ -53,6 +55,7 @@ import { getCatalogVerifiedDetailsHacksawWave1 } from "./catalog-verified-detail
 import { getCatalogVerifiedDetailsHacksawFinal } from "./catalog-verified-details-hacksaw-final";
 import { getCatalogVerifiedDetailsHacksawMaxWinProviderWide } from "./catalog-verified-details-hacksaw-maxwin-provider-wide";
 import { getCatalogVerifiedDetailsHacksawFill2 } from "./catalog-verified-details-hacksaw-fill-2";
+import { getCatalogVerifiedDetailsHacksawFill3 } from "./catalog-verified-details-hacksaw-fill-3";
 import { getCatalogVerifiedDetailsNolimit } from "./catalog-verified-details-nolimit";
 import { getCatalogVerifiedDetailsWazdanProviderWide } from "./catalog-verified-details-wazdan-provider-wide";
 import { getCatalogVerifiedDetailsWazdanWave1 } from "./catalog-verified-details-wazdan-wave1";
@@ -131,15 +134,36 @@ export function getVerifiedCatalogDetails(slug: string): VerifiedCatalogDetails 
   const withPlayngoFill =
     playngoFillOverlay && withPushFill ? { ...playngoFillOverlay, ...withPushFill } : withPushFill;
 
-  const hacksawOverlay = getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug);
-  const withHacksawOverlay = !hacksawOverlay
+  const threeOaksFill3Overlay = getCatalogVerifiedDetails3OaksFill3(slug);
+  const withThreeOaksFill3 = !threeOaksFill3Overlay
     ? withPlayngoFill
     : !withPlayngoFill
+      ? undefined
+      : { ...withPlayngoFill, ...threeOaksFill3Overlay };
+
+  const threeOaksFill4Overlay = getCatalogVerifiedDetails3OaksFill4(slug);
+  const withThreeOaksFill = !threeOaksFill4Overlay
+    ? withThreeOaksFill3
+    : !withThreeOaksFill3
+      ? undefined
+      : { ...withThreeOaksFill3, ...threeOaksFill4Overlay };
+
+  const hacksawOverlay = getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug);
+  const withHacksawOverlay = !hacksawOverlay
+    ? withThreeOaksFill
+    : !withThreeOaksFill
       ? hacksawOverlay
-      : { ...withPlayngoFill, ...hacksawOverlay };
+      : { ...withThreeOaksFill, ...hacksawOverlay };
 
   const hacksawFill2Overlay = getCatalogVerifiedDetailsHacksawFill2(slug);
-  if (!hacksawFill2Overlay) return withHacksawOverlay;
-  if (!withHacksawOverlay) return undefined;
-  return { ...withHacksawOverlay, ...hacksawFill2Overlay };
+  const withHacksawFill2 = !hacksawFill2Overlay
+    ? withHacksawOverlay
+    : !withHacksawOverlay
+      ? undefined
+      : { ...withHacksawOverlay, ...hacksawFill2Overlay };
+
+  const hacksawFill3Overlay = getCatalogVerifiedDetailsHacksawFill3(slug);
+  if (!hacksawFill3Overlay) return withHacksawFill2;
+  if (!withHacksawFill2) return undefined;
+  return { ...withHacksawFill2, ...hacksawFill3Overlay };
 }

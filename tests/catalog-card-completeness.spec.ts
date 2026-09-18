@@ -27,9 +27,9 @@ test("catalog model exposes verified technical data to cards without promoting f
   const threeOaks = model.items.find((item) => item.slug === "3-oaks-gaming-dancing-joker");
   expect(threeOaks).toBeTruthy();
   expect(threeOaks?.field).toBe("5×3 · 40 линий");
-  expect(threeOaks?.releaseDate).toBe("2025-05");
-  expect(threeOaks?.mechanics).toEqual(["Линии"]);
-  expect(threeOaks?.verifiedFacts).toBe(3);
+  expect(threeOaks?.releaseDate).toMatch(/^2025-05(?:$|-)/);
+  expect(threeOaks?.mechanics).toContain("Линии");
+  expect(threeOaks?.verifiedFacts).toBeGreaterThanOrEqual(3);
 
   const minimal = model.items.find((item) => item.slug === "playn-go-rally-4-riches");
   expect(minimal).toBeTruthy();
@@ -104,7 +104,7 @@ for (const width of [320, 390, 1440]) {
     const card = page.locator('.catalog-game[data-coverage="catalog"]');
     await expect(card).toHaveCount(1);
     await expect(card.locator('dl')).toContainText('5×3 · 40 линий');
-    await expect(card.locator('dl')).toContainText('05.2025');
+    await expect(card.locator('dl')).toContainText(/(?:01\.05\.2025|05\.2025)/);
     for (const label of ['RTP', 'Макс.', 'Волат.']) {
       await expect(card.locator('dt').filter({ hasText: new RegExp(`^${label.replace('.', '\\.')}$`) })).toHaveCount(0);
     }

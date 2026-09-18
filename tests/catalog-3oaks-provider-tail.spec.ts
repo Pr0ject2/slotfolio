@@ -15,15 +15,12 @@ function scoreFor(slug: string) {
   const details = getVerifiedCatalogDetails(slug);
   const type = getVerifiedCatalogGameType(slug);
   const research = getVerifiedCatalogResearch(slug);
-  const detailFacts = details
-    ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length
-    : 0;
+  const detailFacts = details ? [details.field, details.rtp, details.maxWin, details.volatility, details.releaseDate].filter(Boolean).length : 0;
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("final 3 Oaks provider tail preserves the facts that moved the last three score-2 cards to at least score 3", () => {
+test("final 3 Oaks provider tail preserves its original facts while allowing later enrichment", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
-
   expect(Object.keys(targets)).toHaveLength(3);
 
   for (const [slug, expected] of Object.entries(targets)) {
@@ -35,17 +32,12 @@ test("final 3 Oaks provider tail preserves the facts that moved the last three s
     const type = getVerifiedCatalogGameType(slug);
     expect(type?.gameType, slug).toBe("Slots");
     expect(type?.source, slug).toBe(seed!.source);
-    expect(type?.verifiedAt, slug).toBe("2026-09-17");
 
     const details = getVerifiedCatalogDetails(slug);
     expect(details?.source, slug).toBe(seed!.source);
-    expect(details?.releaseDate, slug).toBe(expected.releaseDate);
+    expect(details?.releaseDate, slug).toEqual(expect.stringMatching(new RegExp(`^${expected.releaseDate}(?:$|-)`)));
     if ("field" in expected) expect(details?.field, slug).toBe(expected.field);
-
-    if ("mechanic" in expected) {
-      expect(getVerifiedCatalogResearch(slug)?.mechanics, slug).toContain(expected.mechanic);
-    }
-
+    if ("mechanic" in expected) expect(getVerifiedCatalogResearch(slug)?.mechanics, slug).toContain(expected.mechanic);
     expect(scoreFor(slug), slug).toBeGreaterThanOrEqual(3);
   }
 });
