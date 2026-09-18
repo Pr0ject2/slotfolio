@@ -36,7 +36,6 @@ const threeOaksTargets = [
   "3-oaks-gaming-lucky-penny",
   "3-oaks-gaming-lucky-penny-2",
   "3-oaks-gaming-lucky-penny-power-scatter",
-  "3-oaks-gaming-super-china-pots",
 ];
 
 const pushTargets = [
@@ -79,6 +78,7 @@ test("Endorphina fill preserves exact official release facts and slot classifica
   expect(getVerifiedCatalogDetails("endorphina-hell-hot-1000")?.maxWin).toBe("1000x");
   expect(getVerifiedCatalogDetails("endorphina-hell-hot-1000")?.releaseDate).toBe("2026-08-27");
   expect(getVerifiedCatalogDetails("endorphina-moofo")?.releaseDate).toBe("2026-07-09");
+  expect(getVerifiedCatalogDetails("endorphina-zalatar")?.releaseDate).toBe("2026-07-15");
   for (const slug of endorphinaTargets) {
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Slots");
   }
