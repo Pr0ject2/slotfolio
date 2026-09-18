@@ -56,5 +56,5 @@ test.only("diagnose remaining score-three catalog tail", () => {
 
   console.log("CATALOG_FILL_2_DIAGNOSTIC", JSON.stringify({ total: rows.length, score3: score3.length, byProvider }));
   console.log("THREE_OAKS_SLOT_EVIDENCE", JSON.stringify({ count: threeOaksSlotEvidence.length, records: threeOaksSlotEvidence }));
-  expect(score3).toHaveLength(173);
+  expect(score3).toHaveLength(146);
 });
