@@ -25,7 +25,7 @@ const targets = {
   "playn-go-monkey-battle-for-the-scrolls": { releaseDate: "2023-10-26", mechanics: ["Сбор символов"] },
 } as const;
 
-test("fifth provider-wide Play’n GO batch preserves its seventeen original official facts", () => {
+test("fifth provider-wide Play’n GO batch preserves its original official facts while allowing later enrichment", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
   expect(Object.keys(targets)).toHaveLength(17);
   expect(catalogSeeds).toHaveLength(900);
@@ -38,8 +38,8 @@ test("fifth provider-wide Play’n GO batch preserves its seventeen original off
     const details = getVerifiedCatalogDetails(slug);
     expect(details?.source, slug).toBe(seed!.source);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
-    if ("field" in values) expect(details?.field, slug).toBe(values.field);
-    if ("maxWin" in values) expect(details?.maxWin, slug).toBe(values.maxWin);
+    if ("field" in values) expect(details?.field, slug).toContain(values.field);
+    if ("maxWin" in values) expect(details?.maxWin, slug).toContain(values.maxWin);
     if ("mechanics" in values) {
       const research = getVerifiedCatalogResearch(slug);
       expect(research?.mechanics, slug).toEqual(expect.arrayContaining([...values.mechanics]));

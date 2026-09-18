@@ -5,9 +5,15 @@ import { getCatalogResearchPlayngoFillMechanics4 } from "./catalog-research-play
 import { getCatalogResearchPlayngoFillMechanics5 } from "./catalog-research-playngo-fill-mechanics-5";
 import { getCatalogResearchPlayngoFillMechanics6 } from "./catalog-research-playngo-fill-mechanics-6";
 import { getCatalogResearchPlayngoFillMechanics7 } from "./catalog-research-playngo-fill-mechanics-7";
+import { getCatalogResearchPlayngoFillMechanics8 } from "./catalog-research-playngo-fill-mechanics-8";
+import { getCatalogResearchPlayngoFillMechanics9 } from "./catalog-research-playngo-fill-mechanics-9";
+import { getCatalogResearchPlayngoFillMechanics10 } from "./catalog-research-playngo-fill-mechanics-10";
 
 export function getCatalogResearchPlayngoFillMechanicsAll(slug: string) {
   return (
+    getCatalogResearchPlayngoFillMechanics10(slug) ??
+    getCatalogResearchPlayngoFillMechanics9(slug) ??
+    getCatalogResearchPlayngoFillMechanics8(slug) ??
     getCatalogResearchPlayngoFillMechanics7(slug) ??
     getCatalogResearchPlayngoFillMechanics6(slug) ??
     getCatalogResearchPlayngoFillMechanics5(slug) ??
