@@ -15,10 +15,20 @@ function scoreFor(slug: string) {
 
 const enrichedMechanics = [
   "playn-go-1001-mystery-genie-fortunes",
+  "playn-go-13th-trial-hercules-abyssways",
   "playn-go-agent-of-hearts",
+  "playn-go-ankh-of-anubis-awakening",
+  "playn-go-banana-rush",
+  "playn-go-banquet-of-dead",
+  "playn-go-bao-shi",
   "playn-go-barn-busters",
+  "playn-go-baron-lord-of-saturday",
+  "playn-go-beasts-of-fire-maximum",
   "playn-go-big-win-cat-pawsperity",
+  "playn-go-boat-bonanza-croconile",
   "playn-go-book-of-dead-go-collect",
+  "playn-go-bubblin-riches",
+  "playn-go-buildin-even-more-bucks",
   "playn-go-buildin-more-bucks",
   "playn-go-captain-glum-pirate-hunter",
   "playn-go-cashin-joker",
@@ -98,5 +108,11 @@ test("Play’n GO mechanics pass corrects Cashin’ Joker and keeps richer offic
   );
   expect(getVerifiedCatalogResearch("playn-go-potion-of-madness")?.mechanics).toEqual(
     expect.arrayContaining(["Линии", "Sticky Wilds", "Респины", "Расширяющиеся барабаны", "Трансформация символов"]),
+  );
+  expect(getVerifiedCatalogResearch("playn-go-ankh-of-anubis-awakening")?.mechanics).toEqual(
+    expect.arrayContaining(["Сбор символов", "Респины", "Sticky Wilds", "Расширяющиеся символы", "Stacked Wilds"]),
+  );
+  expect(getVerifiedCatalogResearch("playn-go-boat-bonanza-croconile")?.mechanics).toEqual(
+    expect.arrayContaining(["Линии", "Сбор символов", "Респины", "Lock’n Spin", "Множители", "Instant Prizes"]),
   );
 });
