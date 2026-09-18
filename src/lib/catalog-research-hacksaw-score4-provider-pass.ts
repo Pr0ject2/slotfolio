@@ -69,6 +69,30 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Charred Land rules define Wild multipliers whose values increase through cascades and combine additively in wins.",
   },
+  "hacksaw-gaming-duel-at-dawn": {
+    mechanics: ["Множители"],
+    source: "https://www.hacksawgaming.com/games/duel-at-dawn",
+    verifiedAt,
+    evidence: "Official DuelReels and Outlaw reels expand into Wild reels with reel multipliers applied to winning combinations; multiple reel multipliers add together.",
+  },
+  "hacksaw-gaming-dynasty-of-death": {
+    mechanics: ["Cash Prizes"],
+    source: "https://www.hacksawgaming.com/games/dynasty-of-death",
+    verifiedAt,
+    evidence: "Official DuelReels can carry Cash Prizes connected to either duelist, awarded as a multiple of the bet when that duelist wins.",
+  },
+  "hacksaw-gaming-epic-bullets-and-bounty": {
+    mechanics: ["Множители"],
+    source: "https://www.hacksawgaming.com/games/epic-bullets-and-bounty",
+    verifiedAt,
+    evidence: "Official Outlaw and Bounty DuelReels expand into Wild reels and apply winning or accumulated duel multipliers to all wins on that reel.",
+  },
+  "hacksaw-gaming-eternal-duel": {
+    mechanics: ["FS DuelReels™"],
+    source: "https://www.hacksawgaming.com/games/eternal-duel",
+    verifiedAt,
+    evidence: "Official FS DuelReels expand three or more FS symbols into reels where free-spin values duel and determine the awarded bonus spins and upgrades.",
+  },
   "hacksaw-gaming-evil-eyes": {
     mechanics: ["Evil Spread", "Трансформация символов"],
     source: "https://www.hacksawgaming.com/games/evil-eyes",
@@ -93,11 +117,41 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Speaker Mechanic replaces symbols across identified paylines; the X Symbol reveals a global multiplier applied to the total spin win.",
   },
+  "hacksaw-gaming-fire-my-laser": {
+    mechanics: ["Каскады", "Bombs Away", "Множители"],
+    source: "https://www.hacksawgaming.com/games/fire-my-laser",
+    verifiedAt,
+    evidence: "Official Deploy Shields rules explicitly activate multiplier symbols and apply the combined multiplier to the collected Total Win; bonuses store progressive multipliers.",
+  },
   "hacksaw-gaming-fist-of-destruction": {
     mechanics: ["Fist Wild Reels", "Расширяющиеся барабаны", "Множители"],
     source: "https://www.hacksawgaming.com/games/fist-of-destruction",
     verifiedAt,
     evidence: "Official Fist Wild Reel mechanic expands upward and gains multipliers when punching Fighter or Wild symbols.",
+  },
+  "hacksaw-gaming-freds-food-truck": {
+    mechanics: ["Прогрессивные множители"],
+    source: "https://www.hacksawgaming.com/games/freds-food-truck",
+    verifiedAt,
+    evidence: "Official Big Menu bonus makes landed Green Chili multipliers progressively increase the Global Multiplier and keeps that value between free spins.",
+  },
+  "hacksaw-gaming-hounds-of-hell": {
+    mechanics: ["Сбор символов"],
+    source: "https://www.hacksawgaming.com/games/hounds-of-hell",
+    verifiedAt,
+    evidence: "Official Hellhound rules collect revealed adding and multiplying values bottom-to-top and aggregate them above each reel before paying the result times the bet.",
+  },
+  "hacksaw-gaming-invictus": {
+    mechanics: ["Респины", "Sticky Wilds"],
+    source: "https://www.hacksawgaming.com/games/invictus",
+    verifiedAt,
+    evidence: "Official Olympian Respins keep winning high-paying or Wild symbols sticky and respin everything else while the qualifying win continues to grow.",
+  },
+  "hacksaw-gaming-jaws-of-justice": {
+    mechanics: ["Множители"],
+    source: "https://www.hacksawgaming.com/games/jaws-of-justice",
+    verifiedAt,
+    evidence: "Official Force Fields can redirect Laser Sharks; when a laser hits an existing Wild or Laser Shark it adds a multiplier value to that Wild.",
   },
   "hacksaw-gaming-klowns": {
     mechanics: ["Needle Boxes", "Множители"],
