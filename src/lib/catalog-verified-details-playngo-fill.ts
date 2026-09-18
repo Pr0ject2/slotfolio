@@ -112,6 +112,16 @@ const details: Record<string, PlayngoFillOverlay> = {
     fieldSource: "https://www.playngo.com/post/the-tales-of-merlin-slots-at-playngo",
     verifiedAt,
   },
+  "playn-go-leprechauns-diamond-dig": {
+    field: "5 барабанов",
+    fieldSource: "https://www.playngo.com/games/leprechaun's-diamond-dig",
+    verifiedAt,
+  },
+  "playn-go-playn-go-wrappin-gold": {
+    field: "5 барабанов",
+    fieldSource: "https://www.playngo.com/post/wrappin-gold",
+    verifiedAt,
+  },
 };
 
 export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
