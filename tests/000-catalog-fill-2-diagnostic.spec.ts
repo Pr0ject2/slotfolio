@@ -53,11 +53,6 @@ test.only("diagnose remaining score-three catalog tail", () => {
     ]),
   );
 
-  const threeOaksSlotEvidence = score3
-    .filter((row) => row.provider === "3 Oaks Gaming" && !row.shape.gameType && /\bslot\b/i.test(row.evidence))
-    .map((row) => ({ slug: row.slug, source: row.source, evidence: row.evidence }));
-
   console.log("CATALOG_FILL_2_DIAGNOSTIC", JSON.stringify({ total: rows.length, score3: score3.length, scoreCounts, byProvider }));
-  console.log("THREE_OAKS_SLOT_EVIDENCE", JSON.stringify({ count: threeOaksSlotEvidence.length, records: threeOaksSlotEvidence }));
-  expect(score3).toHaveLength(120);
+  expect(score3).toHaveLength(113);
 });
