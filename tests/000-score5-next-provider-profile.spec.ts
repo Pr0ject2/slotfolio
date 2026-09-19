@@ -64,7 +64,7 @@ test.only("profile current score-five provider tail", () => {
   console.log("SCORE5_BY_PROVIDER", JSON.stringify(byProvider));
   console.log("SCORE5_MISSING_PATTERNS", JSON.stringify(missingPatterns));
   console.log("SCORE5_PROVIDER_PATTERNS", JSON.stringify(providerPatterns));
-  console.log("SCORE5_ROWS", JSON.stringify(rows.map(({ mechanics, ...row }) => ({ ...row, mechanicsCount: mechanics.length }))));
+  console.log("HACKSAW_SCORE5_ROWS", JSON.stringify(rows.filter((row) => row.provider === "Hacksaw Gaming")));
 
   expect(rows.length).toBeGreaterThan(0);
 });
