@@ -69,6 +69,12 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official game page describes the Dragon Fireworks bonus game, a fireworks wheel that selects an extra Scatter and an optional card Gamble round.",
   },
+  "playn-go-playn-go-wrappin-gold": {
+    mechanics: ["Сбор символов", "Instant Prizes"],
+    source: "https://www.playngo.com/games/wrappin'-gold",
+    verifiedAt,
+    evidence: "Official page describes Triggering Symbol collection, Collect and Win from Pots and Wild-triggered Instant Bonuses.",
+  },
 };
 
 export function getCatalogResearchPlayngoFillMechanics13(slug: string) {
