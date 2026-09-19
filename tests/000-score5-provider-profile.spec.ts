@@ -16,6 +16,9 @@ function profile(slug: string) {
     releaseDate: details?.releaseDate ?? null,
     gameType: type?.gameType ?? null,
     mechanics: research?.mechanics ?? [],
+    detailsSource: details?.source ?? null,
+    releaseDateSource: details?.releaseDateSource ?? null,
+    researchSource: research?.source ?? null,
   };
   const score = [facts.field, facts.rtp, facts.maxWin, facts.volatility, facts.releaseDate].filter(Boolean).length
     + (facts.gameType ? 1 : 0)
@@ -28,7 +31,7 @@ function profile(slug: string) {
     ["releaseDate", facts.releaseDate],
     ["gameType", facts.gameType],
   ].filter(([, value]) => !value).map(([name]) => name);
-  return { score, missing, mechanicsCount: facts.mechanics.length };
+  return { score, missing, ...facts };
 }
 
 test.only("profile score-five catalog cards by provider and missing technical fields", () => {
@@ -49,9 +52,12 @@ test.only("profile score-five catalog cards by provider and missing technical fi
     if (providerExamples[row.provider].length < 25) providerExamples[row.provider].push(row.slug);
   }
 
+  const pushRows = rows.filter((row) => row.provider === "Push Gaming");
+
   console.log("SCORE5_COUNT", rows.length);
   console.log("SCORE5_BY_PROVIDER", JSON.stringify(providerCounts));
   console.log("SCORE5_PATTERNS", JSON.stringify(providerPatterns));
   console.log("SCORE5_EXAMPLES", JSON.stringify(providerExamples));
+  console.log("PUSH_SCORE5_ROWS", JSON.stringify(pushRows));
   expect(rows.length).toBeGreaterThan(0);
 });
