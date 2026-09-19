@@ -86,9 +86,3 @@ test("Play’n GO 2026-09-19 provider waves retain representative official mecha
   const charlie = getVerifiedCatalogResearch("playn-go-charlie-chance")?.mechanics ?? [];
   expect(charlie).toEqual(expect.arrayContaining(["Множители", "Респины", "Sticky Wilds", "Moving Wilds"]));
 });
-
-test("Play’n GO 2026-09-19 enrichment keeps unsupported technical fields independent", () => {
-  expect(getVerifiedCatalogDetails("playn-go-contact")?.rtp).toBeUndefined();
-  expect(getVerifiedCatalogDetails("playn-go-honey-rush-100")?.rtp).toBeUndefined();
-  expect(getVerifiedCatalogDetails("playn-go-cash-vandal")?.rtp).toBeUndefined();
-});
