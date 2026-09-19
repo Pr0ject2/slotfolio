@@ -1,0 +1,286 @@
+import type { CatalogResearch } from "./catalog-research";
+
+const verifiedAt = "2026-09-19";
+
+const records: Record<string, CatalogResearch> = {
+  "playn-go-aztec-idols": {
+    mechanics: ["Pick-and-click", "Extra Scatter", "Gamble"],
+    source: "https://www.playngo.com/games/aztec-idols",
+    verifiedAt,
+    evidence: "Official page describes the Pick-the-Idols bonus, a Sunstone Free Spins feature that selects an Extra Scatter, and an optional card Gamble round.",
+  },
+  "playn-go-chronos-joker": {
+    mechanics: ["Линии", "Множители", "Респины", "Прогрессивные множители"],
+    source: "https://www.playngo.com/games/chronos-joker",
+    verifiedAt,
+    evidence: "Official page describes random and Super Multipliers plus Second Chance, Future, Past and Present re-spins whose multiplier can rise or fall through the sequence.",
+  },
+  "playn-go-crazy-cows": {
+    mechanics: ["Расширяющиеся символы", "Респины", "Sticky Wilds", "Множители", "Gamble"],
+    source: "https://www.playngo.com/games/crazy-cows",
+    verifiedAt,
+    evidence: "Official page holds an expanded Wild stationary through the re-spin/free-spin sequence, applies a growing win multiplier and offers an optional card Gamble round.",
+  },
+  "playn-go-dansband-pa-turne": {
+    mechanics: ["Множители", "Full Reel Wilds", "Прогрессивные множители"],
+    source: "https://www.playngo.com/games/dansband-p%C3%A5-turn%C3%A9",
+    verifiedAt,
+    evidence: "Official page names Full Reel Wilds, a random Spin Multiplier on every spin and Progressive Free Spins where the carried multiplier keeps building.",
+  },
+  "playn-go-doom-of-egypt": {
+    mechanics: ["Линии", "Расширяющиеся символы", "Retriggering Free Spins"],
+    source: "https://www.playngo.com/games/doom-of-egypt",
+    verifiedAt,
+    evidence: "Official page describes the Special Expanding Symbol in Free Spins and explicitly allows the feature to be re-triggered by another three Scarabs.",
+  },
+  "playn-go-dragon-ship": {
+    mechanics: ["Pick-and-click", "Stacked Wilds", "Wild Reels", "Gamble"],
+    source: "https://www.playngo.com/games/dragon-ship",
+    verifiedAt,
+    evidence: "Official page says stacked Wilds on reels 1 and 5 trigger Free Spins with both Wild reels held stationary, alongside Pick-a-Prize and an optional Gamble bonus.",
+  },
+  "playn-go-easter-eggs": {
+    mechanics: ["Линии", "Множители", "Gamble"],
+    source: "https://www.playngo.com/games/easter-eggs",
+    verifiedAt,
+    evidence: "Official page says the player chooses Free Spins with doubled, tripled or sixfold prizes and can multiply ordinary wins through the optional card Gamble round.",
+  },
+  "playn-go-enchanted-crystals": {
+    mechanics: ["Расширяющиеся символы", "Респины", "Sticky Wilds", "Pick-and-click", "Wild Add"],
+    source: "https://www.playngo.com/games/enchanted-crystals",
+    verifiedAt,
+    evidence: "Official page holds expanded Wilds through re-spins, includes a treasure-chest pick bonus and adds roaming Wild butterflies during Free Spins.",
+  },
+  "playn-go-enchanted-meadow": {
+    mechanics: ["Расширяющиеся символы", "Респины", "Sticky Wilds", "Pick-and-click", "Множители", "Gamble"],
+    source: "https://www.playngo.com/games/enchanted-meadow",
+    verifiedAt,
+    evidence: "Official page holds the expanded Wild during its spin sequence, uses a hide-and-seek pick bonus, grows a Free Spins multiplier and offers an optional Gamble round.",
+  },
+  "playn-go-fu-er-dai": {
+    mechanics: ["Линии", "Расширяющиеся символы", "Респины", "Win Spins™"],
+    source: "https://www.playngo.com/games/fu-er-dai",
+    verifiedAt,
+    evidence: "Official page transforms an inner-reel Wild into a full-reel Wild dragon girl, awards a free re-spin and triggers guaranteed Win Spins when two or more appear.",
+  },
+  "playn-go-game-of-gladiators": {
+    mechanics: ["Линии", "Sticky Wilds", "Респины", "Wild Add", "Reel Copy"],
+    source: "https://www.playngo.com/games/game-of-gladiators",
+    verifiedAt,
+    evidence: "Official Primus features add sticky spear Wilds, hold symbols for a re-spin, duplicate reels and can add two full Wild reels.",
+  },
+  "playn-go-gold-trophy-2": {
+    mechanics: ["Линии", "Множители"],
+    source: "https://www.playngo.com/games/gold-trophy-2",
+    verifiedAt,
+    evidence: "Official page gives the Wild a x2 win multiplier, x6 in Free Spins, and applies a x3 multiplier to all Free Spins wins.",
+  },
+  "playn-go-golden-caravan": {
+    mechanics: ["Множители", "Прогрессивные множители", "Gamble"],
+    source: "https://www.playngo.com/games/golden-caravan",
+    verifiedAt,
+    evidence: "Official page starts Free Spins at x2 and increases the multiplier whenever three Camels land, while the base game also offers an optional card Gamble round.",
+  },
+  "playn-go-golden-colts": {
+    mechanics: ["Pick-and-click", "Бонусное колесо", "Респины", "Sticky Symbols", "Множители"],
+    source: "https://www.playngo.com/games/golden-colts",
+    verifiedAt,
+    evidence: "Official page describes a roulette of seven bonus features including re-spins, sticky Sheriff/Ace High/Girl symbols, multipliers and the Most Wanted poster pick round.",
+  },
+  "playn-go-golden-ticket": {
+    mechanics: ["Каскады", "Удаление символов", "Прогрессивные множители"],
+    source: "https://www.playngo.com/games/golden-ticket",
+    verifiedAt,
+    evidence: "Official page removes winning symbols before new drops and increases the win multiplier on every new drop; bonus rounds also use a multiplier set by cleared columns.",
+  },
+  "playn-go-grim-muerto": {
+    mechanics: ["Pick-and-click", "Расширяющиеся символы", "Wild Add"],
+    source: "https://www.playngo.com/games/grim-muerto",
+    verifiedAt,
+    evidence: "Official page describes Marco Siniestro expanding the Guitar Wild, a Second Chance pick and highlighted Free Spins with a chance to add an Extra Wild.",
+  },
+  "playn-go-happy-halloween": {
+    mechanics: ["Линии", "Stacked Symbols", "Wild Add"],
+    source: "https://www.playngo.com/games/happy-halloween",
+    verifiedAt,
+    evidence: "Official page says the Phantom stacks on any reel and two additional Wild Pumpkins are added on every Free Spin.",
+  },
+  "playn-go-holiday-season": {
+    mechanics: ["Множители", "Stacked Wilds", "Gamble", "Win Spins™"],
+    source: "https://www.playngo.com/games/holiday-season",
+    verifiedAt,
+    evidence: "Official page describes a full-height gift Wild, an optional Gamble round and up to 20 guaranteed Win Spins triggered by Champagne scatters.",
+  },
+  "playn-go-holiday-spirits": {
+    mechanics: ["Линии", "Множители", "Респины", "Прогрессивные множители"],
+    source: "https://www.playngo.com/games/holiday-spirits",
+    verifiedAt,
+    evidence: "Official page gives random spin multipliers and Win Spins whose multiplier decreases, stays fixed or increases on repeated re-spins depending on the ghost.",
+  },
+  "playn-go-house-of-doom": {
+    mechanics: ["Линии", "Расширяющиеся символы", "Pick-and-click"],
+    source: "https://www.playngo.com/games/house-of-doom",
+    verifiedAt,
+    evidence: "Official Hellgate feature expands a Wild to replace an entire selected reel, while Doom Spins include a pick-style prize sequence with multiplier prizes and end symbols.",
+  },
+  "playn-go-hugo": {
+    mechanics: ["Линии", "Pick-and-click", "Extra Scatter", "Множители"],
+    source: "https://www.playngo.com/games/hugo",
+    verifiedAt,
+    evidence: "Official page has a door-and-chest Treasure pick bonus, adds a stacked Extra Scatter during Free Spins and states the Wild doubles wins.",
+  },
+  "playn-go-hugo-2": {
+    mechanics: ["Линии", "Сбор символов", "Wild Add", "Pick-and-click"],
+    source: "https://www.playngo.com/games/hugo-2",
+    verifiedAt,
+    evidence: "Official material says players collect bags and coins to generate extra Wilds/special symbols and later navigate a cave and choose a key for the treasure chest.",
+  },
+  "playn-go-hugo-goal": {
+    mechanics: ["Линии", "Респины", "Pick-and-click", "Множители"],
+    source: "https://www.playngo.com/games/hugo-goal",
+    verifiedAt,
+    evidence: "Official page gives a Free Kick re-spin on a miss, repeats spins from matching characters and uses a goal-area choice bonus with a x10 multiplier for saving all penalties.",
+  },
+  "playn-go-hugos-adventure": {
+    mechanics: ["Линии", "Flying Wilds", "Sticky Wilds", "Множители", "Pick-and-click"],
+    source: "https://www.playngo.com/games/hugo's-adventure",
+    verifiedAt,
+    evidence: "Official page says Flying Wilds become sticky and move across reels, random multipliers target Wilds and Underwater Adventure ends with treasure/chain choices plus a submarine multiplier.",
+  },
+  "playn-go-inferno-joker": {
+    mechanics: ["Линии", "Респины", "Трансформация символов"],
+    source: "https://www.playngo.com/games/inferno-joker",
+    verifiedAt,
+    evidence: "Official page triggers Inferno Joker Re-Spins, holds qualifying reels and transforms Inferno Jokers into Scatter symbols during the sequence.",
+  },
+  "playn-go-inferno-star": {
+    mechanics: ["Линии", "Респины", "Sticky Reels", "Трансформация символов", "Gamble"],
+    source: "https://www.playngo.com/games/inferno-star",
+    verifiedAt,
+    evidence: "Official Raging Suns feature transforms landed Suns, holds their reels while the rest re-spin, and the game also includes the card-based Gamble feature.",
+  },
+  "playn-go-invading-vegas-revenge-on-mars": {
+    mechanics: ["Линии", "Walking Wilds", "Stacked Symbols"],
+    source: "https://www.playngo.com/games/invading-vegas-revenge-on-mars",
+    verifiedAt,
+    evidence: "Official release describes Walking Wilds activated when full symbol stacks appear on reels 1-2 or 4-5 without a winning payline.",
+  },
+  "playn-go-iron-girl": {
+    mechanics: ["Линии", "Респины", "Sticky Symbols", "Сбор символов", "Прогрессивные множители", "Wild Add"],
+    source: "https://www.playngo.com/games/iron-girl",
+    verifiedAt,
+    evidence: "Official page captures and holds villains/Wilds through re-spins, fills a collection meter for growing multipliers and can randomly replace up to five symbols with Wilds.",
+  },
+  "playn-go-jade-magician": {
+    mechanics: ["Линии", "Множители", "Instant Prizes", "Bonus Choice"],
+    source: "https://www.playngo.com/games/jade-magician",
+    verifiedAt,
+    evidence: "Official page has a x2 Wild and a Second Chance choice among four elements that can award extra Free Spins or an Instant Prize.",
+  },
+  "playn-go-jolly-roger": {
+    mechanics: ["Линии", "Множители", "Treasure Chest Bonus", "Treasure Map Bonus"],
+    source: "https://www.playngo.com/games/jolly-roger",
+    verifiedAt,
+    evidence: "Official page states Wild-assisted wins pay double and separately names the Treasure Chest and Treasure Map bonus rounds with different triggers.",
+  },
+  "playn-go-kings-mask": {
+    mechanics: ["Множители", "Bonus Choice"],
+    source: "https://www.playngo.com/games/king%27s-mask",
+    verifiedAt,
+    evidence: "Official page lets players choose among three Free Spins configurations with different spin counts and multipliers, alongside the stated 10000x potential.",
+  },
+  "playn-go-legacy-of-egypt": {
+    mechanics: ["Линии", "Бонусное колесо", "Множители", "Pyramid Spins"],
+    source: "https://www.playngo.com/games/legacy-of-egypt",
+    verifiedAt,
+    evidence: "Official page uses the Wheel of the Gods to select Free Spins and x2-x10 multipliers, while Wild Scatters trigger multiplier-carrying Pyramid Spins.",
+  },
+  "playn-go-leprechaun-goes-egypt": {
+    mechanics: ["Линии", "Множители", "Pick-and-click"],
+    source: "https://www.playngo.com/games/leprechaun-goes-egypt",
+    verifiedAt,
+    evidence: "Official page says Leprechaun Wilds multiply winning lines, Free Spins can use x2/x3/x6 prizes and the pyramid bonus has the player pick doors to rescue Cleopatra.",
+  },
+  "playn-go-leprechaun-goes-wild": {
+    mechanics: ["Линии", "Wild Add", "Sticky Wilds"],
+    source: "https://www.playngo.com/games/leprechaun-goes-wild",
+    verifiedAt,
+    evidence: "Official Luck of the Irish can add five Wilds to the grid, while Free Spins transform landed leprechauns into Sticky Wilds for the remainder of the feature.",
+  },
+  "playn-go-lord-merlin-and-the-lady-of-the-lake": {
+    mechanics: ["Линии", "Расширяющиеся символы", "Nested Free Spins", "Gamble"],
+    source: "https://www.playngo.com/games/lord-merlin-and-the-lady-of-the-lake",
+    verifiedAt,
+    evidence: "Official page chooses a Special Expanding Symbol in Free Spins, allows a Nested Free Spins sequence and offers the optional colour/suit Gamble round.",
+  },
+  "playn-go-lucky-diamonds": {
+    mechanics: ["Линии", "Множители"],
+    source: "https://www.playngo.com/games/lucky-diamonds",
+    verifiedAt,
+    evidence: "Official page says one Wild Diamond doubles a normal winning combination and two Diamonds quadruple it.",
+  },
+  "playn-go-mermaids-diamond": {
+    mechanics: ["Способы", "Расширяющиеся символы", "Wild Add", "Сбор символов"],
+    source: "https://www.playngo.com/games/mermaid%27s-diamond",
+    verifiedAt,
+    evidence: "Official page expands multiple Mermaid Wilds to fill a reel, lets Poseidon add extra Wilds and uses collected Diamonds during Free Spins to generate Trident Wilds.",
+  },
+  "playn-go-muerto-en-mictlan": {
+    mechanics: ["Расширяющиеся символы", "Walking Wilds", "Sticky Wilds"],
+    source: "https://www.playngo.com/games/muerto-en-mictl%C3%A1n",
+    verifiedAt,
+    evidence: "Official game assets and description identify distinct Expanding, Walking and Sticky Wild stages as the level-specific Wild features.",
+  },
+  "playn-go-multifruit-81": {
+    mechanics: ["Способы", "Множители", "Расширяющиеся символы"],
+    source: "https://www.playngo.com/games/multifruit-81",
+    verifiedAt,
+    evidence: "Official page applies x2/x5 multipliers for multiple Joker Wilds and can expand a Joker to cover an entire highlighted reel.",
+  },
+  "playn-go-mystery-joker": {
+    mechanics: ["Сбор символов", "Mystery Prize", "Retriggering Free Spins"],
+    source: "https://www.playngo.com/games/mystery-joker",
+    verifiedAt,
+    evidence: "Official page says three Scatters unlock Free Spins, two or three Scatters add more spins during the feature and a Mystery Prize can be awarded there.",
+  },
+  "playn-go-ninja-fruits": {
+    mechanics: ["Множители", "Pick-and-click", "Extra Scatter", "Gamble"],
+    source: "https://www.playngo.com/games/ninja-fruits",
+    verifiedAt,
+    evidence: "Official page has a shuriken target bonus, a Free Spins feature that selects an Extra Scatter and the optional colour/suit Gamble round.",
+  },
+  "playn-go-phoenix-reborn": {
+    mechanics: ["Линии", "Расширяющиеся символы", "Stacked Wilds"],
+    source: "https://www.playngo.com/games/phoenix-reborn",
+    verifiedAt,
+    evidence: "Official page says the Phoenix Wild can land stacked and expands to fill its reel, including random full-reel Phoenix Wilds during Free Spins.",
+  },
+  "playn-go-photo-safari": {
+    mechanics: ["Линии", "Film Strip Spins", "Photo Shoot Bonus"],
+    source: "https://www.playngo.com/games/photo-safari",
+    verifiedAt,
+    evidence: "Official page separately defines the Film Strip Spin sequence triggered by film rolls and the Photo Shoot bonus triggered by camera symbols.",
+  },
+  "playn-go-pimped": {
+    mechanics: ["Win Spins™", "Множители", "Gamble"],
+    source: "https://www.playngo.com/games/pimped",
+    verifiedAt,
+    evidence: "Official page describes guaranteed Win Spins and an optional card Gamble round that can double or quadruple the prize.",
+  },
+  "playn-go-queens-day-tilt": {
+    mechanics: ["Линии", "Удаление символов", "Респины", "Множители"],
+    source: "https://www.playngo.com/games/queen%27s-day-tilt",
+    verifiedAt,
+    evidence: "Official page clears symbols from the grid, uses Game of Accession re-spins and increases the Queen's Day Free Spins multiplier after qualifying Knight wins.",
+  },
+  "playn-go-rabbit-hole-riches": {
+    mechanics: ["Pick-and-click", "Респины", "Instant Prizes", "Прогрессивные множители"],
+    source: "https://www.playngo.com/games/rabbit-hole-riches",
+    verifiedAt,
+    evidence: "Official page includes a Teacup pick with Instant Prizes, Cheshire Cat Re-Spins and Queen's Army Free Spins where every win increases an uncapped multiplier.",
+  },
+};
+
+export function getCatalogResearchPlayngoFillMechanics20(slug: string) {
+  return records[slug];
+}
