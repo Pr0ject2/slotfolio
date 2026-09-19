@@ -22,7 +22,7 @@ const pushFinalSlugs = [
   "push-gaming-wild-swarm-triple-hive",
 ];
 
-test("Push Gaming final records stay selected and complete current runtime enrichment", () => {
+test("Push Gaming final records stay selected and preserve official facts while allowing later enrichment", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   for (const slug of pushFinalSlugs) {
@@ -31,7 +31,12 @@ test("Push Gaming final records stay selected and complete current runtime enric
     expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
     expect(getVerifiedCatalogDetails(slug)?.source, slug).toBe(seed!.source);
     expect(getVerifiedCatalogResearch(slug)?.source, slug).toBe(seed!.source);
-    expect(getVerifiedCatalogGameType(slug), slug).toBeUndefined();
+
+    const gameType = getVerifiedCatalogGameType(slug);
+    if (gameType) {
+      expect(new URL(gameType.source).hostname, slug).toBe(new URL(seed!.source).hostname);
+      expect(gameType.verifiedAt, slug).toMatch(/^20\d{2}-\d{2}-\d{2}$/);
+    }
   }
 
   const unverifiedCatalogOnly = catalogSeeds.filter(

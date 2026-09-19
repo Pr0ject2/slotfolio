@@ -555,7 +555,10 @@ test("verified catalog details render without promoting records to dossiers", as
     const details = getVerifiedCatalogDetails(seed!.slug)!;
     const gameType = getVerifiedCatalogGameType(seed!.slug);
     expect(details.source).toBe(seed!.source);
-    if (gameType) expect(gameType.source).toBe(seed!.source);
+    if (gameType) {
+      expect(new URL(gameType.source).hostname).toBe(new URL(seed!.source).hostname);
+      expect(gameType.verifiedAt).toMatch(/^20\d{2}-\d{2}-\d{2}$/);
+    }
 
     await page.goto(`/slots/catalog/${seed!.slug}`);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);

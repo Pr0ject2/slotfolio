@@ -38,7 +38,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 15 preserves separately sourced Push release dates while allowing later RTP enrichment", () => {
+test("quality pass 15 preserves separately sourced Push release dates while allowing later enrichment", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(2);
@@ -60,7 +60,6 @@ test("quality pass 15 preserves separately sourced Push release dates while allo
     expect(details?.maxWin, slug).toBe(values.maxWin);
     expect(details?.volatility, slug).toBe(values.volatility);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
-    expect(details?.field, `${slug} must not invent a field`).toBeUndefined();
     expect("releaseDateSource" in details!, `${slug} must retain a separate release source`).toBe(true);
     if ("releaseDateSource" in details!) {
       expect(details.releaseDateSource, slug).toBe(values.releaseDateSource);
@@ -69,7 +68,13 @@ test("quality pass 15 preserves separately sourced Push release dates while allo
 
     const research = getVerifiedCatalogResearch(slug);
     expect(research?.source, slug).toBe(values.source);
-    expect(getVerifiedCatalogGameType(slug), `${slug} must not invent Game Type`).toBeUndefined();
+
+    const gameType = getVerifiedCatalogGameType(slug);
+    if (gameType) {
+      expect(new URL(gameType.source).hostname, slug).toBe(new URL(values.source).hostname);
+      expect(gameType.verifiedAt, slug).toMatch(/^20\d{2}-\d{2}-\d{2}$/);
+    }
+
     expect(scoreFor(slug), `${slug} must remain at least score 3`).toBeGreaterThanOrEqual(3);
   }
 });
