@@ -27,6 +27,12 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official page describes expanding Wild Sirens with multipliers up to 200x, semi-persistent Pink Sirens and expanding Diver Wild reels with multiplier values.",
   },
+  "hacksaw-gaming-bouncy-bombs": {
+    mechanics: ["Прогрессивные множители"],
+    source: "https://www.hacksawgaming.com/games/bouncy-bombs",
+    verifiedAt,
+    evidence: "Official Cascading Dynamite Bombs double their multiplier value on every new cascade, making the multiplier value progressive through the cascade sequence.",
+  },
   "hacksaw-gaming-danny-dollar": {
     mechanics: ["Расширяющиеся барабаны", "Множители", "Прогрессивные множители"],
     source: "https://www.hacksawgaming.com/games/danny-dollar",
@@ -51,6 +57,12 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Nine Lives bonus states that reels activated by Ro$$ or Hot Ro$$ remain activated throughout the bonus and guarantee one such symbol on every spin.",
   },
+  "hacksaw-gaming-jaws-of-justice": {
+    mechanics: ["Force Fields"],
+    source: "https://www.hacksawgaming.com/games/jaws-of-justice",
+    verifiedAt,
+    evidence: "Official Force Fields sit on the grid edges, redirect Laser Shark beams and can cause multipliers to be added when a redirected laser hits a Wild or Laser Shark.",
+  },
   "hacksaw-gaming-jelly-slice": {
     mechanics: ["Slicer Mechanic"],
     source: "https://www.hacksawgaming.com/games/jelly-slice",
@@ -63,11 +75,35 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Cash'em/Get'em rules collect Cash values, while Keep'em awards three respins and locks triggering and later Cash/Get'em/FS symbols on the grid through the respin sequence.",
   },
+  "hacksaw-gaming-le-fisherman": {
+    mechanics: ["Множители"],
+    source: "https://www.hacksawgaming.com/games/le-fisherman",
+    verifiedAt,
+    evidence: "Official Golden Squares can reveal Green and Gold Clovers that boost nearby Coin values or all Coin values on the grid before Buckets collect them.",
+  },
+  "hacksaw-gaming-le-pharaoh": {
+    mechanics: ["Instant Prizes"],
+    source: "https://www.hacksawgaming.com/games/le-pharaoh",
+    verifiedAt,
+    evidence: "Official Golden Riches reveals Bronze, Silver and Gold Coins as cash prizes paid as multiples of the bet before Clover multipliers and Pot of Gold collection resolve.",
+  },
+  "hacksaw-gaming-le-viking": {
+    mechanics: ["Instant Prizes"],
+    source: "https://www.hacksawgaming.com/games/le-viking",
+    verifiedAt,
+    evidence: "Official Raid Spins reveal cash values on Coins and Diamonds at the end of the respin mode, with those values paid according to the current bet.",
+  },
   "hacksaw-gaming-mayan-stackways": {
     mechanics: ["Stackways™", "Сбор символов"],
     source: "https://www.hacksawgaming.com/games/mayan-stackways",
     verifiedAt,
     evidence: "Official page explicitly names Stackways, stacking up to ten symbols per reel for up to 100,000 ways, and the Mayan Gold feature stacks and collects ancient coins.",
+  },
+  "hacksaw-gaming-munchy-milo": {
+    mechanics: ["Sticky Wilds", "Chain Reaction"],
+    source: "https://www.hacksawgaming.com/games/munchy-milo",
+    verifiedAt,
+    evidence: "Official Chain Reaction spreads further Jolt Frames when matching symbols are hit, while Gravity Groove makes Wild multiplier symbols sticky through the bonus.",
   },
   "hacksaw-gaming-rainbow-princess": {
     mechanics: ["Sticky Symbols", "Прогрессивные множители"],
@@ -117,17 +153,41 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Gas Canisters transform surrounding or matching symbols into Wilds, Purple Gas Canisters can add multipliers, and all three bonuses advertise Sticky Wild Multipliers.",
   },
+  "hacksaw-gaming-sun-princess": {
+    mechanics: ["Sticky Wilds", "Chain Reaction"],
+    source: "https://www.hacksawgaming.com/games/sun-princess",
+    verifiedAt,
+    evidence: "Official Chain Reaction creates further Sun Ray Frames when matching symbols are crossed; Sunfire Palace makes hit Wild multiplier symbols sticky through the bonus.",
+  },
   "hacksaw-gaming-the-count": {
     mechanics: ["Трансформация символов"],
     source: "https://www.hacksawgaming.com/games/the-count",
     verifiedAt,
     evidence: "Official Rest in Pieces bonus uses a Symbol Counter that turns low-paying symbols into Wild Bat symbols when the counter fills.",
   },
+  "hacksaw-gaming-the-wildwood-curse": {
+    mechanics: ["Sticky Wilds"],
+    source: "https://www.hacksawgaming.com/games/the-wildwood-curse",
+    verifiedAt,
+    evidence: "Official Nightmare Respins keep every landed Wild sticky on the grid until the respin sequence ends.",
+  },
+  "hacksaw-gaming-toshi-ways-club": {
+    mechanics: ["Slicer Mechanic"],
+    source: "https://www.hacksawgaming.com/games/toshi-ways-club",
+    verifiedAt,
+    evidence: "Official Slicing Swap replaces all Flash Frames with one paying symbol and cuts those framed symbols into the smallest possible symbol size.",
+  },
   "hacksaw-gaming-twisted-lab": {
     mechanics: ["RotoGrid™", "Множители", "Сбор символов", "Sticky Symbols"],
     source: "https://www.hacksawgaming.com/games/twisted-lab",
     verifiedAt,
     evidence: "Official RotoGrid rotates the entire grid, Oozing Beakers and Twisters carry additive or multiplying values, Collector symbols collect Twister multipliers, and Twisters remain on the grid until collected or the feature ends.",
+  },
+  "hacksaw-gaming-zeus-ze-zecond": {
+    mechanics: ["Instant Prizes", "Sticky Symbols"],
+    source: "https://www.hacksawgaming.com/games/zeus-ze-zecond",
+    verifiedAt,
+    evidence: "Official Wonder Reels reveal Coins and Diamonds as instant cash prizes, while Gates of Hades makes all Wonder symbols sticky for the duration of the bonus.",
   },
 };
 
