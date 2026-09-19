@@ -51,7 +51,7 @@ function scoreFor(slug: string) {
   );
 }
 
-test("Hacksaw fill exposes normalized mechanics already explicit in official evidence", () => {
+test("Hacksaw fill preserves normalized official mechanics while allowing later enrichment", () => {
   expect(Object.keys(expectedAdditions)).toHaveLength(33);
 
   for (const [slug, additions] of Object.entries(expectedAdditions)) {
@@ -60,7 +60,7 @@ test("Hacksaw fill exposes normalized mechanics already explicit in official evi
 
     expect(seed, slug).toBeTruthy();
     expect(research?.source, slug).toBe(seed?.source);
-    expect(research?.verifiedAt, slug).toBe("2026-09-18");
+    expect(research?.verifiedAt, slug).toMatch(/^20\d{2}-\d{2}-\d{2}$/);
     for (const mechanic of additions) {
       expect(research?.mechanics, `${slug}: ${mechanic}`).toContain(mechanic);
     }
