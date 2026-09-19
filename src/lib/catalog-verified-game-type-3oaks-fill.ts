@@ -86,6 +86,12 @@ const entries: Record<string, SourcedGameType> = {
     evidenceSource: "https://3oaks.com/news/new-release-super-china-pots",
     verifiedAt: "2026-09-19",
   },
+  "3-oaks-gaming-tiger-jungle": {
+    gameType: "Slots",
+    source: "https://3oaks.com/game/tiger_jungle",
+    evidenceSource: "https://bng.games/game/tiger_jungle/",
+    verifiedAt: "2026-09-19",
+  },
 };
 
 export function getVerifiedCatalogGameType3OaksFill(slug: string) {
