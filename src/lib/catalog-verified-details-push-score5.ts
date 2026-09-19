@@ -86,6 +86,12 @@ const details: Record<string, PushScore5Details> = {
     source: "https://www.pushgaming.com/games/fish-n-nudge.html",
     verifiedAt,
   },
+  "push-gaming-fish-n-nudge-big-catch": {
+    releaseDate: "2025-07-09",
+    releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-reels-fish-n-nudge-big-catch.html",
+    source: "https://www.pushgaming.com/games/fish-n-nudge-big-catch.html",
+    verifiedAt,
+  },
   "push-gaming-jammin-jars-2": {
     releaseDate: "2021-06-02",
     releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-heads-back-dance-floor-jammin-jars-2.html",
