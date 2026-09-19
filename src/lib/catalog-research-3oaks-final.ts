@@ -3,6 +3,12 @@ import type { CatalogResearch } from "./catalog-research";
 const verifiedAt = "2026-09-13";
 
 export const catalogResearch3OaksFinal: Record<string, CatalogResearch> = {
+  "3-oaks-gaming-hit-the-gold": {
+    mechanics: ["Линии", "Hold & Win", "Респины", "Jackpots", "Mystery Symbols", "Free Spins"],
+    source: "https://3oaks.com/game/hit_the_gold",
+    verifiedAt: "2026-09-19",
+    evidence: "Official page describes the 5x3, 25-line game with a Hold & Win bonus starting at three resetting respins, fixed MINI/MINOR/MAJOR/GRAND jackpots, a Dynamite Mystery Symbol and retriggerable Free Spins.",
+  },
   "3-oaks-gaming-super-china-pots": { mechanics: ["Линии"], source: "https://3oaks.com/game/super_china_pots", verifiedAt, evidence: "Official page describes the base game as 5x3 with 25 lines." },
   "3-oaks-gaming-super-hot-chilli": { mechanics: ["Линии"], source: "https://3oaks.com/game/super_hot_chilli", verifiedAt, evidence: "Official page describes the base game as 5x4 with 25 lines." },
   "3-oaks-gaming-super-hot-teapots": { mechanics: ["Линии"], source: "https://3oaks.com/game/super_hot_teapots", verifiedAt, evidence: "Official page describes the base game as 5x3 with 25 lines." },
