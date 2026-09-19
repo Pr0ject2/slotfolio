@@ -62,6 +62,12 @@ const entries: Record<string, SourcedGameType> = {
     evidenceSource: "https://3oaks.com/news/new-release-lucky-penny-power-scatter",
     verifiedAt,
   },
+  "3-oaks-gaming-super-china-pots": {
+    gameType: "Slots",
+    source: "https://3oaks.com/game/super_china_pots",
+    evidenceSource: "https://3oaks.com/news/new-release-super-china-pots",
+    verifiedAt: "2026-09-19",
+  },
 };
 
 export function getVerifiedCatalogGameType3OaksFill(slug: string) {
