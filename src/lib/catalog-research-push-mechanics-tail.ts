@@ -79,8 +79,8 @@ const entries: Record<string, Entry> = {
     evidence: "Official page says matching symbols from the leftmost reel award line wins and identifies the Fisherman as a Collector Symbol that collects all visible Instant Prizes.",
   },
   "iron-phoenix": {
-    mechanics: ["Способы"],
-    evidence: "Official page says any three or more matching symbols win anywhere on adjacent reels starting from the leftmost reel, without fixed paylines.",
+    mechanics: ["Способы", "Phoenix Reel", "Cash Prizes", "Jackpots"],
+    evidence: "Official page says three or more matching symbols win anywhere on adjacent reels from the leftmost reel; the Phoenix Reel can award Cash Values, Jackpots and Scatters, and expands to three Phoenix reels during Free Spins.",
   },
   "masked-mayhem": {
     mechanics: ["Сбор символов", "Множители"],

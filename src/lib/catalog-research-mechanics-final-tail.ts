@@ -4,9 +4,9 @@ const verifiedAt = "2026-09-17";
 
 const records: Record<string, CatalogResearch> = {
   "3-oaks-gaming-coin-up-volcano": {
-    mechanics: ["Сбор символов"],
+    mechanics: ["Сбор символов", "Респины"],
     source: "https://3oaks.com/game/coinup_volcano",
-    verifiedAt,
+    verifiedAt: "2026-09-19",
     evidence: "Official 3 Oaks page says Bonus Symbols are collected during respins and the Collect Symbol gathers all current coin values.",
   },
   "bgaming-cats-love-yummy": {
@@ -76,10 +76,10 @@ const records: Record<string, CatalogResearch> = {
     evidence: "Official Push Gaming page explicitly says matching an outlaw to its Wanted Poster triggers the Expanding Symbols Feature.",
   },
   "push-gaming-iron-phoenix": {
-    mechanics: ["Способы"],
+    mechanics: ["Способы", "Phoenix Reel", "Cash Prizes", "Jackpots"],
     source: "https://www.pushgaming.com/games/iron-phoenix.html",
-    verifiedAt,
-    evidence: "Official Push Gaming page says three or more matching symbols win anywhere on adjacent reels starting from the leftmost reel, without fixed paylines.",
+    verifiedAt: "2026-09-19",
+    evidence: "Official Push Gaming page says three or more matching symbols win anywhere on adjacent reels from the leftmost reel; the Phoenix Reel can award Cash Values, Jackpots and Scatters, and expands to three Phoenix reels during Free Spins.",
   },
   "push-gaming-razor-shark-jackpots": {
     mechanics: ["Mystery Symbols"],
