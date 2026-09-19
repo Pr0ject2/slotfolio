@@ -15,16 +15,18 @@ function scoreFor(slug: string) {
   );
 }
 
-test("final legacy 3 Oaks corrections preserve exact official facts", () => {
+test("final legacy 3 Oaks corrections preserve exact official facts and provenance", () => {
   const blackWolf = getVerifiedCatalogDetails("3-oaks-gaming-black-wolf-2");
   expect(blackWolf?.field).toBe("5×4 · 25 линий");
   expect(blackWolf?.releaseDate).toBe("2023-08");
-  expect(blackWolf?.source).toBe("https://bng.games/game/black_wolf_2/?lang=en");
+  expect(blackWolf?.source).toBe("https://3oaks.com/game/black_wolf_2");
+  expect(blackWolf?.releaseDateSource).toBe("https://bng.games/game/black_wolf_2/?lang=en");
 
   const dragonPearls = getVerifiedCatalogDetails("3-oaks-gaming-dragon-pearls");
   expect(dragonPearls?.maxWin).toBe("1000x");
   expect(dragonPearls?.releaseDate).toBe("2019-03");
-  expect(dragonPearls?.source).toBe("https://bng.games/game/dragon_pearls/");
+  expect(dragonPearls?.source).toBe("https://3oaks.com/game/dragon_pearls");
+  expect(dragonPearls?.releaseDateSource).toBe("https://bng.games/game/dragon_pearls/");
 
   const hotFireFruits = getVerifiedCatalogDetails("3-oaks-gaming-hot-fire-fruits");
   expect(hotFireFruits?.field).toBe("3×3 · 5 линий");
