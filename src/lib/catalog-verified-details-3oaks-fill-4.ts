@@ -18,6 +18,11 @@ const details: Record<string, ThreeOaksFill4Overlay> = {
     volatility: "Высокая",
     verifiedAt: "2026-09-18",
   },
+  "3-oaks-gaming-hot-fire-fruits": {
+    releaseDate: "2024-10-24",
+    releaseDateSource: "https://3oaks.com/news/new-release-hot-fire-fruits",
+    verifiedAt: "2026-09-19",
+  },
   "3-oaks-gaming-magic-clovers": {
     releaseDate: "2025-08-14",
     releaseDateSource: "https://3oaks.com/news/new-release-magic-clovers",
@@ -64,9 +69,10 @@ const details: Record<string, ThreeOaksFill4Overlay> = {
     verifiedAt: "2026-09-18",
   },
   "3-oaks-gaming-super-china-pots": {
+    maxWin: "2000x",
     releaseDate: "2025-06-05",
     releaseDateSource: "https://3oaks.com/news/new-release-super-china-pots",
-    verifiedAt: "2026-09-18",
+    verifiedAt: "2026-09-19",
   },
   "3-oaks-gaming-super-sticky-piggy": {
     releaseDate: "2024-06-06",
