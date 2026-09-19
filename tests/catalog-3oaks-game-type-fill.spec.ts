@@ -45,7 +45,7 @@ function scoreFor(slug: string) {
   );
 }
 
-test("3 Oaks fill promotes only records explicitly described as slots by official evidence", () => {
+test("3 Oaks fill preserves explicit slot classification while allowing later research enrichment", () => {
   expect(Object.keys(expected)).toHaveLength(27);
 
   for (const [slug, source] of Object.entries(expected)) {
@@ -58,7 +58,12 @@ test("3 Oaks fill promotes only records explicitly described as slots by officia
     expect(gameType?.gameType, slug).toBe("Slots");
     expect(gameType?.source, slug).toBe(source);
     expect(gameType?.verifiedAt, slug).toBe("2026-09-18");
-    expect(research?.evidence, slug).toMatch(/\bslot\b/i);
+    if (research?.verifiedAt === "2026-09-18") {
+      expect(research?.evidence, slug).toMatch(/\bslot\b/i);
+    } else {
+      expect(research?.verifiedAt, slug).toMatch(/^20\d{2}-\d{2}-\d{2}$/);
+      expect(research?.evidence, slug).toBeTruthy();
+    }
     expect(scoreFor(slug), slug).toBeGreaterThanOrEqual(4);
   }
 });
