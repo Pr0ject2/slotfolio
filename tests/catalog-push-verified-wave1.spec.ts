@@ -48,7 +48,7 @@ const pushWave1Slugs = [
   "push-gaming-santas-vault",
 ];
 
-test("Push Gaming verified wave 1 records stay selected and keep exact official sources", () => {
+test("Push Gaming verified wave 1 records stay selected and preserve exact official sources while allowing later enrichment", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   for (const slug of pushWave1Slugs) {
@@ -57,7 +57,12 @@ test("Push Gaming verified wave 1 records stay selected and keep exact official 
     expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
     expect(getVerifiedCatalogDetails(slug)?.source, slug).toBe(seed!.source);
     expect(getVerifiedCatalogResearch(slug)?.source, slug).toBe(seed!.source);
-    expect(getVerifiedCatalogGameType(slug), slug).toBeUndefined();
+
+    const gameType = getVerifiedCatalogGameType(slug);
+    if (gameType) {
+      expect(new URL(gameType.source).hostname, slug).toBe(new URL(seed!.source).hostname);
+      expect(gameType.verifiedAt, slug).toMatch(/^20\d{2}-\d{2}-\d{2}$/);
+    }
   }
 
   expect(getVerifiedCatalogDetails("push-gaming-retro-tapes")).toBeUndefined();
