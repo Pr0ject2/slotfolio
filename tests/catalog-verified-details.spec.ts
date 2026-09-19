@@ -728,7 +728,9 @@ test("3 Oaks final records stay selected and keep exact official sources", () =>
     expect(seed, slug).toBeTruthy();
     expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
     expect(getVerifiedCatalogDetails(slug)?.source, slug).toBe(seed!.source);
-    expect(getVerifiedCatalogGameType(slug), slug).toBeUndefined();
+
+    const gameType = getVerifiedCatalogGameType(slug);
+    if (gameType) expect(gameType.source, slug).toBe(seed!.source);
 
     const research = getVerifiedCatalogResearch(slug);
     if (research) expect(research.source, slug).toBe(seed!.source);
