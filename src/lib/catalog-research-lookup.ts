@@ -61,6 +61,7 @@ import { getCatalogResearchPlayngoMechanicsFinal2 } from "./catalog-research-pla
 import { getCatalogResearchPlayngoMechanicsFinal3 } from "./catalog-research-playngo-mechanics-final3";
 import { getCatalogResearchPlayngoFillMechanicsAll } from "./catalog-research-playngo-fill-mechanics-all";
 import { getCatalogResearchPlayngoScore3Fill } from "./catalog-research-playngo-score3-fill";
+import { getCatalogResearchPlayngoScore5ProviderPass } from "./catalog-research-playngo-score5-provider-pass";
 import { getCatalogResearchWazdan } from "./catalog-research-wazdan";
 import { getCatalogResearchWazdanWave4 } from "./catalog-research-wazdan-wave4";
 import { getCatalogResearchWazdanWave5 } from "./catalog-research-wazdan-wave5";
@@ -120,6 +121,7 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearch3OaksFill4(slug) ??
     getCatalogResearch3OaksFill3(slug);
   const playngoScore3Fill = getCatalogResearchPlayngoScore3Fill(slug);
+  const playngoScore5Pass = getCatalogResearchPlayngoScore5ProviderPass(slug);
   const hacksawScore4Pass = getCatalogResearchHacksawScore4ProviderPass(slug);
   const freshMechanics =
     getCatalogResearchHacksawNormalizedFill3(slug) ??
@@ -133,7 +135,7 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearchPushMechanicsTail(slug) ??
     getCatalogResearchWazdanMechanicsTail(slug);
 
-  if (!threeOaksFill && !playngoScore3Fill && !hacksawScore4Pass && freshMechanics?.mechanics.length) {
+  if (!threeOaksFill && !playngoScore3Fill && !hacksawScore4Pass && freshMechanics?.mechanics.length && !playngoScore5Pass) {
     return canonicalizeResearchSource(slug, freshMechanics);
   }
 
@@ -224,6 +226,13 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     return canonicalizeResearchSource(slug, {
       ...threeOaksFill,
       mechanics: [...new Set([...(legacy?.mechanics ?? []), ...threeOaksFill.mechanics])],
+    });
+  }
+
+  if (playngoScore5Pass?.mechanics.length) {
+    return canonicalizeResearchSource(slug, {
+      ...playngoScore5Pass,
+      mechanics: [...new Set([...(legacy?.mechanics ?? []), ...playngoScore5Pass.mechanics])],
     });
   }
 
