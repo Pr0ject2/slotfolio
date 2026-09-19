@@ -3,6 +3,12 @@ import type { CatalogResearch } from "./catalog-research";
 const verifiedAt = "2026-09-18";
 
 const records: Record<string, CatalogResearch> = {
+  "3-oaks-gaming-hit-the-gold": {
+    mechanics: ["Линии", "Hold & Win", "Респины", "Jackpots", "Mystery Symbols", "Free Spins"],
+    source: "https://3oaks.com/game/hit_the_gold",
+    verifiedAt: "2026-09-19",
+    evidence: "Official page describes the 5x3, 25-line game with a Hold & Win bonus starting at three resetting respins, fixed MINI/MINOR/MAJOR/GRAND jackpots, a Dynamite Mystery Symbol and retriggerable Free Spins.",
+  },
   "3-oaks-gaming-sun-of-egypt": {
     mechanics: ["Линии", "Респины", "Блокировка символов"],
     source: "https://3oaks.com/game/sun_of_egypt",
