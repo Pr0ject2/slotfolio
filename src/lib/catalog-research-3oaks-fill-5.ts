@@ -3,6 +3,18 @@ import type { CatalogResearch } from "./catalog-research";
 const verifiedAt = "2026-09-18";
 
 const records: Record<string, CatalogResearch> = {
+  "3-oaks-gaming-black-wolf-2": {
+    mechanics: ["Линии", "Респины", "Сбор символов", "Mystery Symbols", "Jackpots", "Free Spins"],
+    source: "https://bng.games/game/black_wolf_2/?lang=en",
+    verifiedAt: "2026-09-19",
+    evidence: "Official BNG/Booongo page describes the 5x4, 25-line sequel with Hold & Win streak respins, a BOOST collector, MYSTERY symbols that can reveal jackpot symbols, fixed jackpots up to GRAND x2000 and eight Free Spins.",
+  },
+  "3-oaks-gaming-dragon-pearls": {
+    mechanics: ["Линии", "Респины", "Jackpots", "Free Spins"],
+    source: "https://bng.games/game/dragon_pearls/",
+    verifiedAt: "2026-09-19",
+    evidence: "Official BNG/Booongo page describes the 5-reel, 25-line game with Hold & Win respins, a Grand Jackpot and Free Spins triggered by Scatters; it explicitly states wins up to x1000.",
+  },
   "3-oaks-gaming-hit-the-gold": {
     mechanics: ["Линии", "Hold & Win", "Респины", "Jackpots", "Mystery Symbols", "Free Spins"],
     source: "https://3oaks.com/game/hit_the_gold",
@@ -62,6 +74,12 @@ const records: Record<string, CatalogResearch> = {
     source: "https://3oaks.com/game/tiger_gems",
     verifiedAt,
     evidence: "Official page states a 25-line slot; Hold & Win starts with three resetting respins, Boost collects visible Bonus values and Mystery Symbols transform from the Fortune Slide queue.",
+  },
+  "3-oaks-gaming-tiger-jungle": {
+    mechanics: ["Линии", "Hold & Win", "Респины", "Сбор символов", "Sticky Wilds", "Jackpots", "Free Spins"],
+    source: "https://bng.games/game/tiger_jungle/",
+    verifiedAt: "2026-09-19",
+    evidence: "Official BNG/Booongo page identifies Tiger Jungle as a 5x3, 25-line slot with Hold & Win, a Collect Symbol, eight Free Spins with Sticky Wilds and fixed jackpots including GRAND x5000.",
   },
   "3-oaks-gaming-wolf-night": {
     mechanics: ["Линии", "Респины", "Блокировка символов", "Mystery Symbols", "Множители"],

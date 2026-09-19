@@ -22,7 +22,7 @@ const expected = {
   "3-oaks-gaming-aztec-sun": { field: "5×3 · 25 линий", releaseDate: "2020-06" },
   "3-oaks-gaming-big-heist": { field: "5×3 · 10 линий", releaseDate: "2022-09" },
   "3-oaks-gaming-black-wolf": { field: "5×4 · 25 линий", releaseDate: "2021-12" },
-  "3-oaks-gaming-black-wolf-2": { field: "5×4 · 25 линий", releaseDate: "2023-09" },
+  "3-oaks-gaming-black-wolf-2": { field: "5×4 · 25 линий", releaseDate: "2023-08" },
   "3-oaks-gaming-book-of-sun-multichance": { field: "5×3 · 10 линий", releaseDate: "2019-05" },
   "3-oaks-gaming-chili-coins": { field: "3×3 · 5 линий", releaseDate: "2026-01" },
   "3-oaks-gaming-coin-express": { field: "5×3 · 5 линий", releaseDate: "2025-04" },
