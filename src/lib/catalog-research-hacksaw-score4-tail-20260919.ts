@@ -129,6 +129,12 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Flash Frames remain on winning positions through the continuing reveal sequence until no new wins occur.",
   },
+  "hacksaw-gaming-wings-of-horus": {
+    mechanics: ["Instant Prizes"],
+    source: "https://www.hacksawgaming.com/games/wings-of-horus",
+    verifiedAt,
+    evidence: "Official Sacred Scripture feature awards an immediate cash payout of 500 times the current bet when HORUS forms horizontally on the grid.",
+  },
   "hacksaw-gaming-ze-zeus": {
     mechanics: ["Сбор символов", "Множители", "Instant Prizes"],
     source: "https://www.hacksawgaming.com/games/ze-zeus",
