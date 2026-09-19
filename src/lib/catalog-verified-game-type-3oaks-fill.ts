@@ -16,7 +16,19 @@ const entries: Record<string, SourcedGameType> = {
   "3-oaks-gaming-3-coins": { gameType: "Slots", source: "https://3oaks.com/game/3_coins", verifiedAt },
   "3-oaks-gaming-3-egypt-chests": { gameType: "Slots", source: "https://3oaks.com/game/3_egypt_chests", verifiedAt },
   "3-oaks-gaming-3-pots-of-egypt": { gameType: "Slots", source: "https://3oaks.com/game/3_pots_of_egypt", verifiedAt },
+  "3-oaks-gaming-3-super-hot-teapots": {
+    gameType: "Slots",
+    source: "https://3oaks.com/game/3_super_hot_teapots",
+    evidenceSource: "https://www.3oaks.com/",
+    verifiedAt: "2026-09-19",
+  },
   "3-oaks-gaming-4-african-drums": { gameType: "Slots", source: "https://3oaks.com/game/4_african_drums", verifiedAt },
+  "3-oaks-gaming-4-fortune-clovers": {
+    gameType: "Slots",
+    source: "https://3oaks.com/game/4_fortune_clovers",
+    evidenceSource: "https://www.3oaks.com/",
+    verifiedAt: "2026-09-19",
+  },
   "3-oaks-gaming-777-gems-respin": { gameType: "Slots", source: "https://3oaks.com/game/777_gems_respin", verifiedAt },
   "3-oaks-gaming-aztec-fire": { gameType: "Slots", source: "https://3oaks.com/game/aztec_fire", verifiedAt },
   "3-oaks-gaming-aztec-sun": { gameType: "Slots", source: "https://3oaks.com/game/aztec_sun", verifiedAt },
@@ -55,6 +67,12 @@ const entries: Record<string, SourcedGameType> = {
     source: "https://3oaks.com/game/lucky_penny_2",
     evidenceSource: "https://3oaks.com/news/new-partnership-eurobet",
     verifiedAt,
+  },
+  "3-oaks-gaming-lucky-penny-3-pots-super-wheel": {
+    gameType: "Slots",
+    source: "https://3oaks.com/game/lucky_penny_3_pots_super_wheel",
+    evidenceSource: "https://www.3oaks.com/",
+    verifiedAt: "2026-09-19",
   },
   "3-oaks-gaming-lucky-penny-power-scatter": {
     gameType: "Slots",
