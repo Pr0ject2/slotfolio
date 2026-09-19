@@ -16,14 +16,14 @@ const details: Record<string, ThreeOaksFill4Overlay> = {
   "3-oaks-gaming-black-wolf-2": {
     field: "5×4 · 25 линий",
     releaseDate: "2023-08",
-    source: "https://bng.games/game/black_wolf_2/?lang=en",
+    source: "https://3oaks.com/game/black_wolf_2",
     releaseDateSource: "https://bng.games/game/black_wolf_2/?lang=en",
     verifiedAt: "2026-09-19",
   },
   "3-oaks-gaming-dragon-pearls": {
     maxWin: "1000x",
     releaseDate: "2019-03",
-    source: "https://bng.games/game/dragon_pearls/",
+    source: "https://3oaks.com/game/dragon_pearls",
     releaseDateSource: "https://bng.games/game/dragon_pearls/",
     verifiedAt: "2026-09-19",
   },
