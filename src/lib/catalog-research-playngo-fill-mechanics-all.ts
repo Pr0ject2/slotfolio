@@ -11,9 +11,21 @@ import { getCatalogResearchPlayngoFillMechanics10 } from "./catalog-research-pla
 import { getCatalogResearchPlayngoFillMechanics11 } from "./catalog-research-playngo-fill-mechanics-11";
 import { getCatalogResearchPlayngoFillMechanics12 } from "./catalog-research-playngo-fill-mechanics-12";
 import { getCatalogResearchPlayngoFillMechanics13 } from "./catalog-research-playngo-fill-mechanics-13";
+import { getCatalogResearchPlayngoFillMechanics14 } from "./catalog-research-playngo-fill-mechanics-14";
+import { getCatalogResearchPlayngoFillMechanics15 } from "./catalog-research-playngo-fill-mechanics-15";
+import { getCatalogResearchPlayngoFillMechanics16 } from "./catalog-research-playngo-fill-mechanics-16";
+import { getCatalogResearchPlayngoFillMechanics17 } from "./catalog-research-playngo-fill-mechanics-17";
+import { getCatalogResearchPlayngoFillMechanics18 } from "./catalog-research-playngo-fill-mechanics-18";
+import { getCatalogResearchPlayngoFillMechanics19 } from "./catalog-research-playngo-fill-mechanics-19";
 
 export function getCatalogResearchPlayngoFillMechanicsAll(slug: string) {
   return (
+    getCatalogResearchPlayngoFillMechanics19(slug) ??
+    getCatalogResearchPlayngoFillMechanics18(slug) ??
+    getCatalogResearchPlayngoFillMechanics17(slug) ??
+    getCatalogResearchPlayngoFillMechanics16(slug) ??
+    getCatalogResearchPlayngoFillMechanics15(slug) ??
+    getCatalogResearchPlayngoFillMechanics14(slug) ??
     getCatalogResearchPlayngoFillMechanics13(slug) ??
     getCatalogResearchPlayngoFillMechanics12(slug) ??
     getCatalogResearchPlayngoFillMechanics11(slug) ??
