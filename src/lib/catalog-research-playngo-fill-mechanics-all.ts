@@ -9,9 +9,11 @@ import { getCatalogResearchPlayngoFillMechanics8 } from "./catalog-research-play
 import { getCatalogResearchPlayngoFillMechanics9 } from "./catalog-research-playngo-fill-mechanics-9";
 import { getCatalogResearchPlayngoFillMechanics10 } from "./catalog-research-playngo-fill-mechanics-10";
 import { getCatalogResearchPlayngoFillMechanics11 } from "./catalog-research-playngo-fill-mechanics-11";
+import { getCatalogResearchPlayngoFillMechanics12 } from "./catalog-research-playngo-fill-mechanics-12";
 
 export function getCatalogResearchPlayngoFillMechanicsAll(slug: string) {
   return (
+    getCatalogResearchPlayngoFillMechanics12(slug) ??
     getCatalogResearchPlayngoFillMechanics11(slug) ??
     getCatalogResearchPlayngoFillMechanics10(slug) ??
     getCatalogResearchPlayngoFillMechanics9(slug) ??
