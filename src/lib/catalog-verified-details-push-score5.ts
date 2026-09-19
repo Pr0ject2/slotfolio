@@ -62,6 +62,12 @@ const details: Record<string, PushScore5Details> = {
     source: "https://www.pushgaming.com/games/dino-pd.html",
     verifiedAt,
   },
+  "push-gaming-dragon-hopper": {
+    releaseDate: "2025-01-16",
+    releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-blends-legacy-success-good-fortune-dragon-hopper.html",
+    source: "https://www.pushgaming.com/games/dragon-hopper.html",
+    verifiedAt,
+  },
   "push-gaming-fat-drac": {
     releaseDate: "2021-10-14",
     releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-sinks-its-teeth-latest-slot-fat-drac.html",
@@ -74,10 +80,23 @@ const details: Record<string, PushScore5Details> = {
     source: "https://www.pushgaming.com/games/fat-santa.html",
     verifiedAt,
   },
+  "push-gaming-fish-n-nudge": {
+    releaseDate: "2023-10-10",
+    releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-reels-another-hit-fish-n-nudge.html",
+    source: "https://www.pushgaming.com/games/fish-n-nudge.html",
+    verifiedAt,
+  },
   "push-gaming-jammin-jars-2": {
     releaseDate: "2021-06-02",
     releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-heads-back-dance-floor-jammin-jars-2.html",
     source: "https://www.pushgaming.com/games/jammin-jars-2.html",
+    verifiedAt,
+  },
+  "push-gaming-joker-troupe": {
+    volatility: "Высокая",
+    releaseDate: "2020-02-17",
+    releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-turn-heat-joker-troupe.html",
+    source: "https://www.pushgaming.com/games/joker-troupe.html",
     verifiedAt,
   },
   "push-gaming-masked-mayhem": {
