@@ -1,7 +1,7 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 
 type ThreeOaksFill4Overlay = Partial<
-  Pick<CatalogVerifiedDetails, "maxWin" | "volatility" | "releaseDate">
+  Pick<CatalogVerifiedDetails, "field" | "maxWin" | "volatility" | "releaseDate" | "source">
 > & {
   verifiedAt: string;
   releaseDateSource?: string;
@@ -13,13 +13,29 @@ const details: Record<string, ThreeOaksFill4Overlay> = {
     volatility: "Высокая",
     verifiedAt: "2026-09-18",
   },
+  "3-oaks-gaming-black-wolf-2": {
+    field: "5×4 · 25 линий",
+    releaseDate: "2023-08",
+    source: "https://bng.games/game/black_wolf_2/?lang=en",
+    releaseDateSource: "https://bng.games/game/black_wolf_2/?lang=en",
+    verifiedAt: "2026-09-19",
+  },
+  "3-oaks-gaming-dragon-pearls": {
+    maxWin: "1000x",
+    releaseDate: "2019-03",
+    source: "https://bng.games/game/dragon_pearls/",
+    releaseDateSource: "https://bng.games/game/dragon_pearls/",
+    verifiedAt: "2026-09-19",
+  },
   "3-oaks-gaming-egypt-power-x1000": {
     maxWin: "40000x",
     volatility: "Высокая",
     verifiedAt: "2026-09-18",
   },
   "3-oaks-gaming-hot-fire-fruits": {
+    field: "3×3 · 5 линий",
     releaseDate: "2024-10-24",
+    source: "https://3oaks.com/game/hot_fire_fruits",
     releaseDateSource: "https://3oaks.com/news/new-release-hot-fire-fruits",
     verifiedAt: "2026-09-19",
   },
