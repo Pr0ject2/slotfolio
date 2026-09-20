@@ -122,6 +122,16 @@ const details: Record<string, PlayngoFillOverlay> = {
     fieldSource: "https://www.playngo.com/post/wrappin-gold",
     verifiedAt,
   },
+  "playn-go-forge-of-fortunes": {
+    maxWin: "2500x",
+    maxWinSource: "https://www.playngo.com/games/forge-of-fortunes",
+    verifiedAt: "2026-09-20",
+  },
+  "playn-go-lordi-reel-monsters": {
+    maxWin: "4000x",
+    maxWinSource: "https://www.playngo.com/games/lordi-reel-monsters",
+    verifiedAt: "2026-09-20",
+  },
 };
 
 export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
