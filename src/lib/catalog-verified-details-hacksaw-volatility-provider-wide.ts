@@ -15,7 +15,6 @@ const details: Record<string, HacksawVolatilityDetails> = {
   "hacksaw-gaming-evil-eyes": { volatility: "4/5", volatilitySource, source: "https://www.hacksawgaming.com/games/evil-eyes", verifiedAt },
   "hacksaw-gaming-fire-my-laser": { volatility: "3/5", volatilitySource, source: "https://www.hacksawgaming.com/games/fire-my-laser", verifiedAt },
   "hacksaw-gaming-hounds-of-hell": { volatility: "4/5", volatilitySource, source: "https://www.hacksawgaming.com/games/hounds-of-hell", verifiedAt },
-  "hacksaw-gaming-jelly-slice": { volatility: "3/5", volatilitySource, source: "https://www.hacksawgaming.com/games/jelly-slice", verifiedAt },
   "hacksaw-gaming-klowns": { volatility: "3/5", volatilitySource, source: "https://www.hacksawgaming.com/games/klowns", verifiedAt },
   "hacksaw-gaming-le-cowboy": { volatility: "3/5", volatilitySource, source: "https://www.hacksawgaming.com/games/le-cowboy", verifiedAt },
   "hacksaw-gaming-le-pharaoh": { volatility: "3/5", volatilitySource, source: "https://www.hacksawgaming.com/games/le-pharaoh", verifiedAt },
