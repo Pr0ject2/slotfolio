@@ -31,6 +31,22 @@ test("catalog records expose separate official evidence when release timing has 
   }
 });
 
+test("catalog records expose provider-wide volatility evidence without replacing the canonical game source", async ({ page }) => {
+  const primary = "https://www.hacksawgaming.com/games/cloud-princess";
+  const volatility = "https://www.hacksawgaming.com/games";
+
+  await page.goto("/slots/catalog/hacksaw-gaming-cloud-princess");
+  const facts = page.locator(".catalog-record-facts");
+
+  await expect(facts).toContainText("Волатильность3/5");
+  await expect(facts).toContainText("Источник параметров");
+  await expect(facts).toContainText("Источник волатильности");
+  await expect(facts.locator(`a[href="${primary}"]`)).toHaveCount(1);
+  await expect(facts.locator(`a[href="${volatility}"]`)).toHaveCount(1);
+  await expect(facts.locator(`a[href="${primary}"]`)).toHaveText("Официальный каталог ↗");
+  await expect(facts.locator(`a[href="${volatility}"]`)).toHaveText("Официальный рейтинг ↗");
+});
+
 test("ordinary catalog records keep one source row without duplicate provenance", async ({ page }) => {
   await page.goto("/slots/catalog/wazdan-mayan-ritual");
   const facts = page.locator(".catalog-record-facts");
@@ -38,5 +54,6 @@ test("ordinary catalog records keep one source row without duplicate provenance"
   await expect(facts.locator("dt", { hasText: /^Источник$/ })).toHaveCount(1);
   await expect(facts.locator("dt", { hasText: "Источник параметров" })).toHaveCount(0);
   await expect(facts.locator("dt", { hasText: "Источник даты релиза" })).toHaveCount(0);
+  await expect(facts.locator("dt", { hasText: "Источник волатильности" })).toHaveCount(0);
   await expect(facts.locator('a[href="https://wazdan.com/games/mayan-ritual"]')).toHaveCount(1);
 });
