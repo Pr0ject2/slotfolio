@@ -62,6 +62,10 @@ const playngoTargets = [
   "playn-go-pimped",
   "playn-go-prosperity-palace",
   "playn-go-ras-reckoning",
+  "playn-go-cat-wilde-and-the-lost-chapter",
+  "playn-go-def-leppard-hysteria",
+  "playn-go-irish-gold",
+  "playn-go-mega-don",
 ] as const;
 
 const hacksawTargets = [
@@ -103,6 +107,7 @@ const smallTailTargets = [
   "endorphina-3-golden-chests",
   "endorphina-burning-coins-20-dice",
   "endorphina-fortune-chests-dice",
+  "push-gaming-red-hot-multipliers",
 ] as const;
 
 test("2026-09-20 provider passes keep every explicitly enriched score-five target above score five", () => {
@@ -130,6 +135,10 @@ test("Play’n GO score-five pass preserves exact newly verified technical wins 
   expect(getVerifiedCatalogResearch("playn-go-ras-reckoning")?.mechanics).toEqual(
     expect.arrayContaining(["Free Spins", "Persistent Frames"]),
   );
+  expect(getVerifiedCatalogResearch("playn-go-cat-wilde-and-the-lost-chapter")?.mechanics).toContain("Random Symbol Selection");
+  expect(getVerifiedCatalogResearch("playn-go-def-leppard-hysteria")?.mechanics).toContain("Charge Meter");
+  expect(getVerifiedCatalogResearch("playn-go-irish-gold")?.mechanics).toContain("Pot of Gold x25");
+  expect(getVerifiedCatalogResearch("playn-go-mega-don")?.mechanics).toContain("Symbol Upgrades");
 });
 
 test("Hacksaw and small-provider tails retain their official feature evidence", () => {
@@ -142,11 +151,19 @@ test("Hacksaw and small-provider tails retain their official feature evidence", 
   expect(getVerifiedCatalogResearch("bgaming-cats-love-yummy")?.mechanics).toEqual(
     expect.arrayContaining(["Wilds", "Free Spins", "Jackpots"]),
   );
-  expect(getVerifiedCatalogResearch("bgaming-money-maker")?.mechanics).toContain("Gamble");
+  expect(getVerifiedCatalogResearch("bgaming-money-maker")?.mechanics).toEqual(
+    expect.arrayContaining(["Gamble", "Pay-on-line"]),
+  );
+  expect(getVerifiedCatalogResearch("endorphina-3-golden-chests")?.mechanics).toEqual(
+    expect.arrayContaining(["Risk Game", "Hold & Win", "Pile Feature"]),
+  );
+  expect(getVerifiedCatalogDetails("endorphina-3-golden-chests")?.releaseDate).toBe("2026-09-03");
+  expect(getVerifiedCatalogGameType("endorphina-3-golden-chests")?.gameType).toBe("Slots");
   expect(getVerifiedCatalogResearch("endorphina-burning-coins-20-dice")?.mechanics).toEqual(
     expect.arrayContaining(["Wilds", "Hold & Win", "Jackpots"]),
   );
   expect(getVerifiedCatalogResearch("endorphina-fortune-chests-dice")?.mechanics).toEqual(
     expect.arrayContaining(["Hold & Win", "Pick Game", "Jackpots"]),
   );
+  expect(getVerifiedCatalogGameType("push-gaming-red-hot-multipliers")?.gameType).toBe("Slots");
 });
