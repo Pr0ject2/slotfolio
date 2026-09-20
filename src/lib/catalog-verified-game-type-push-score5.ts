@@ -27,6 +27,7 @@ const sources: Record<string, string> = {
   "push-gaming-olympus-unleashed": "https://www.pushgaming.com/blog/push-gaming-ascends-new-heights-mythic-new-release-olympus-unleashed.html",
   "push-gaming-razor-returns": "https://www.pushgaming.com/blog/q-game-producer-ihor-lozinskiy-speaks-slot-gods.html",
   "push-gaming-razor-shark-jackpots": "https://www.pushgaming.com/blog/push-gaming-redefines-staple-slot-series-release-razor-shark-jackpots.html",
+  "push-gaming-red-hot-multipliers": "https://www.pushgaming.com/blog/reel-hot-games-continues-2026-momentum-release-diamonds-4-win.html",
   "push-gaming-regal-knights": "https://www.pushgaming.com/blog/push-gaming-embarks-chivalrous-quest-regal-knights.html",
   "push-gaming-retroverse": "https://www.pushgaming.com/blog/push-gaming-starts-q2-bang-launches-retroverse-online-slot-global-markets.html",
   "push-gaming-samurais-katana": "https://www.pushgaming.com/blog/push-gamings-samurais-katana-adds-cyberpunk-edge-classic-features.html",
