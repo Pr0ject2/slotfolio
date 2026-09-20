@@ -11,9 +11,8 @@ const records: Record<string, CatalogResearch> = {
   },
   "playn-go-def-leppard-hysteria": {
     mechanics: ["Charge Meter"],
-    source: "https://www.playngo.com/games/def-leppard%3A-hysteria",
+    source: "https://www.playngo.com/post/def-leppard-hysteria",
     verifiedAt,
-    evidenceSource: "https://www.playngo.com/post/def-leppard-hysteria",
     evidence: "Official Play’n GO release article explicitly describes the game’s triangular charge metre as part of the Hysteria design and feature presentation.",
   },
   "playn-go-mega-don": {
