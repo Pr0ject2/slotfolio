@@ -12,7 +12,6 @@ const releaseDates: Record<string, string> = {
   "hacksaw-gaming-dropem": "2023-07-27",
   "hacksaw-gaming-eye-of-medusa": "2025-07-10",
   "hacksaw-gaming-immortal-desire": "2023-11",
-  "hacksaw-gaming-le-cowboy": "2025-11-06",
   "hacksaw-gaming-mighty-masks": "2023-06",
   "hacksaw-gaming-ronin-stackways": "2023-08-10",
   "hacksaw-gaming-temple-of-torment": "2023-05-25",
