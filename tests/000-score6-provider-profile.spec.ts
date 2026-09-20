@@ -27,14 +27,16 @@ test.only("profile remaining score-six catalog tail after current provider waves
   const allRows = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, source: seed.source, ...profile(seed.slug) }));
   const rows = allRows.filter((row) => row.score === 6);
 
+  const missingFor = (row: (typeof rows)[number]) => ["field", "rtp", "maxWin", "volatility", "releaseDate", "gameType"]
+    .filter((key) => !row[key as keyof typeof row]);
+
   const byProvider = [...new Map(
     rows.map((row) => row.provider).map((provider) => [provider, rows.filter((row) => row.provider === provider).length]),
   ).entries()].sort((a, b) => b[1] - a[1]);
 
   const signatureCounts = new Map<string, number>();
   for (const row of rows) {
-    const missing = ["field", "rtp", "maxWin", "volatility", "releaseDate", "gameType"]
-      .filter((key) => !row[key as keyof typeof row]);
+    const missing = missingFor(row);
     const signature = `${row.provider} :: missing=${missing.join(",") || "none"} :: mechanics=${row.mechanics.length}`;
     signatureCounts.set(signature, (signatureCounts.get(signature) ?? 0) + 1);
   }
@@ -49,10 +51,15 @@ test.only("profile remaining score-six catalog tail after current provider waves
     }))
     .filter((row) => row.missing.length > 0);
 
+  const singleGap = rows
+    .map((row) => ({ slug: row.slug, provider: row.provider, source: row.source, missing: missingFor(row), mechanics: row.mechanics.length }))
+    .filter((row) => row.missing.length === 1);
+
   console.log("SCORE6_COUNT", rows.length);
   console.log("SCORE6_BY_PROVIDER", JSON.stringify(byProvider));
   console.log("SCORE6_SIGNATURES", JSON.stringify(signatures));
   console.log("BGAMING_PASSPORT_GAPS", JSON.stringify(bgamingGaps));
+  console.log("SCORE6_SINGLE_GAPS", JSON.stringify(singleGap));
 
   expect(rows.length).toBeGreaterThan(0);
 });
