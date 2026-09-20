@@ -23,13 +23,25 @@ function profile(slug: string) {
   return { score, ...facts };
 }
 
-test.only("profile exact Wazdan score-six game-type targets", () => {
-  const targets = catalogSeeds
+test.only("profile Wazdan score-six remainder after game-type wave", () => {
+  const rows = catalogSeeds
     .filter((seed) => seed.provider === "Wazdan")
     .map((seed) => ({ slug: seed.slug, source: seed.source, ...profile(seed.slug) }))
-    .filter((row) => row.score === 6 && !row.gameType);
+    .filter((row) => row.score === 6);
 
-  console.log("WAZDAN_SCORE6_GAMETYPE_COUNT", targets.length);
-  console.log("WAZDAN_SCORE6_GAMETYPE_TARGETS", JSON.stringify(targets.map(({ slug, source }) => ({ slug, source }))));
-  expect(targets).toHaveLength(45);
+  const missingGameType = rows.filter((row) => !row.gameType);
+  const signatures = Object.entries(
+    rows.reduce<Record<string, number>>((acc, row) => {
+      const missing = ["field", "rtp", "maxWin", "volatility", "releaseDate", "gameType"]
+        .filter((key) => !row[key as keyof typeof row]);
+      const signature = `missing=${missing.join(",") || "none"} :: mechanics=${row.mechanics.length}`;
+      acc[signature] = (acc[signature] ?? 0) + 1;
+      return acc;
+    }, {}),
+  ).sort((a, b) => b[1] - a[1]);
+
+  console.log("WAZDAN_SCORE6_REMAINING", rows.length);
+  console.log("WAZDAN_SCORE6_SIGNATURES", JSON.stringify(signatures));
+  console.log("WAZDAN_SCORE6_ROWS", JSON.stringify(rows));
+  expect(missingGameType).toHaveLength(0);
 });
