@@ -132,6 +132,11 @@ const details: Record<string, PlayngoFillOverlay> = {
     maxWinSource: "https://www.playngo.com/games/lordi-reel-monsters",
     verifiedAt: "2026-09-20",
   },
+  "playn-go-monkey-battle-for-the-scrolls": {
+    field: "5×3 · до 7776 способов",
+    fieldSource: "https://www.playngo.com/games/monkey%3A-battle-for-the-scrolls",
+    verifiedAt: "2026-09-20",
+  },
 };
 
 export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {

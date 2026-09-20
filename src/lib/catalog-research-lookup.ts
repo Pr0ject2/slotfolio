@@ -71,6 +71,7 @@ import { getCatalogResearchWazdanWave6c } from "./catalog-research-wazdan-wave6c
 import { getCatalogResearchWazdanWave6d } from "./catalog-research-wazdan-wave6d";
 import { getCatalogResearchWazdanWave6e } from "./catalog-research-wazdan-wave6e";
 import { getCatalogResearchWazdanMechanicsTail } from "./catalog-research-wazdan-mechanics-tail";
+import { getCatalogResearchWazdanScore6Wave } from "./catalog-research-wazdan-score6-wave";
 import { getCatalogResearchPush } from "./catalog-research-push";
 import { getCatalogResearchPushWave1 } from "./catalog-research-push-wave1";
 import { getCatalogResearchPushFinal } from "./catalog-research-push-final";
@@ -123,6 +124,7 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
   const playngoScore3Fill = getCatalogResearchPlayngoScore3Fill(slug);
   const playngoScore5Pass = getCatalogResearchPlayngoScore5ProviderPass(slug);
   const hacksawScore4Pass = getCatalogResearchHacksawScore4ProviderPass(slug);
+  const wazdanScore6Pass = getCatalogResearchWazdanScore6Wave(slug);
   const freshMechanics =
     getCatalogResearchHacksawNormalizedFill3(slug) ??
     getCatalogResearchHacksawNormalizedFill2(slug) ??
@@ -135,7 +137,14 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearchPushMechanicsTail(slug) ??
     getCatalogResearchWazdanMechanicsTail(slug);
 
-  if (!threeOaksFill && !playngoScore3Fill && !hacksawScore4Pass && freshMechanics?.mechanics.length && !playngoScore5Pass) {
+  if (
+    !threeOaksFill &&
+    !playngoScore3Fill &&
+    !hacksawScore4Pass &&
+    freshMechanics?.mechanics.length &&
+    !playngoScore5Pass &&
+    !wazdanScore6Pass
+  ) {
     return canonicalizeResearchSource(slug, freshMechanics);
   }
 
@@ -233,6 +242,13 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     return canonicalizeResearchSource(slug, {
       ...playngoScore5Pass,
       mechanics: [...new Set([...(legacy?.mechanics ?? []), ...playngoScore5Pass.mechanics])],
+    });
+  }
+
+  if (wazdanScore6Pass?.mechanics.length) {
+    return canonicalizeResearchSource(slug, {
+      ...wazdanScore6Pass,
+      mechanics: [...new Set([...(legacy?.mechanics ?? []), ...wazdanScore6Pass.mechanics])],
     });
   }
 

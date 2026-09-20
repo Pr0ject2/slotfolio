@@ -66,6 +66,7 @@ import { getCatalogVerifiedDetailsWazdanWave2 } from "./catalog-verified-details
 import { getCatalogVerifiedDetailsWazdanWave3 } from "./catalog-verified-details-wazdan-wave3";
 import { getCatalogVerifiedDetailsWazdanWave4 } from "./catalog-verified-details-wazdan-wave4";
 import { getCatalogVerifiedDetailsWazdanScore4Fill } from "./catalog-verified-details-wazdan-score4-fill";
+import { getCatalogVerifiedDetailsWazdanScore6Wave } from "./catalog-verified-details-wazdan-score6-wave";
 
 type VerifiedCatalogDetails = CatalogVerifiedDetails & {
   releaseDateSource?: string;
@@ -187,12 +188,19 @@ export function getVerifiedCatalogDetails(slug: string): VerifiedCatalogDetails 
       ? undefined
       : { ...withHacksawScore4, ...wazdanScore4Overlay };
 
-  const endorphinaScore4Overlay = getCatalogVerifiedDetailsEndorphinaScore4Fill(slug);
-  const withEndorphinaScore4 = !endorphinaScore4Overlay
+  const wazdanScore6Overlay = getCatalogVerifiedDetailsWazdanScore6Wave(slug);
+  const withWazdanScore6 = !wazdanScore6Overlay
     ? withWazdanScore4
     : !withWazdanScore4
+      ? (wazdanScore6Overlay as VerifiedCatalogDetails)
+      : { ...withWazdanScore4, ...wazdanScore6Overlay };
+
+  const endorphinaScore4Overlay = getCatalogVerifiedDetailsEndorphinaScore4Fill(slug);
+  const withEndorphinaScore4 = !endorphinaScore4Overlay
+    ? withWazdanScore6
+    : !withWazdanScore6
       ? endorphinaScore4Overlay
-      : { ...withWazdanScore4, ...endorphinaScore4Overlay };
+      : { ...withWazdanScore6, ...endorphinaScore4Overlay };
 
   const pushScore5Overlay = getCatalogVerifiedDetailsPushScore5(slug);
   if (!pushScore5Overlay) return withEndorphinaScore4;
