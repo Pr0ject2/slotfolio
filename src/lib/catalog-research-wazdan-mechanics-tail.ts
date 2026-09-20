@@ -1,7 +1,6 @@
 import type { CatalogResearch } from "./catalog-research";
 
 const verifiedAt = "2026-09-17";
-const score6VerifiedAt = "2026-09-20";
 
 const holdTheJackpotGames = [
   "12-coins",
@@ -74,57 +73,6 @@ const explicitCollectGames: Record<string, string> = {
   "valentines-coins": "Official page says collected symbols remain locked during the respin-based Love the Jackpot bonus.",
 };
 
-const score6FeatureAdditions: Record<string, Pick<CatalogResearch, "mechanics" | "evidence">> = {
-  "9-burning-stars": {
-    mechanics: ["Сбор символов", "Множители"],
-    evidence: "Official page lists Hold the Jackpot and a Multiplier symbol that multiplies collected prize values.",
-  },
-  "back-to-the-70s": {
-    mechanics: ["Линии", "Расширяющиеся символы"],
-    evidence: "Official page lists Free Spins with an Expanding Bonus Symbol among the game features.",
-  },
-  "black-hawk": {
-    mechanics: ["Линии", "Gamble Feature"],
-    evidence: "Official page explicitly lists the Unique Gamble Feature alongside the Wild feature.",
-  },
-  "fenix-play-27": {
-    mechanics: ["Линии", "x3 Wall Multiplier"],
-    evidence: "Official page explicitly lists the x3 Wall Multiplier feature.",
-  },
-  "fire-bird": {
-    mechanics: ["Линии", "Bonus Symbol"],
-    evidence: "Official page explicitly lists the Bonus Symbol as a game feature.",
-  },
-  "football-mania": {
-    mechanics: ["Блокировка символов", "Football Bonus"],
-    evidence: "Official page lists Football Bonus and Football Lottery Bonus in addition to Block Symbols Mode.",
-  },
-  "hot-777": {
-    mechanics: ["Линии", "Coin Bonus"],
-    evidence: "Official page explicitly lists Coin Bonus among the game features.",
-  },
-  "hot-party": {
-    mechanics: ["Линии", "Scatter"],
-    evidence: "Official page explicitly lists Scatter as a game feature.",
-  },
-  "magic-fruits": {
-    mechanics: ["Линии", "Bonus Symbol"],
-    evidence: "Official page explicitly lists the Bonus Symbol as a game feature.",
-  },
-  "magic-fruits-27": {
-    mechanics: ["Линии", "x3 Wall Multiplier"],
-    evidence: "Official page explicitly lists the x3 Wall Multiplier feature.",
-  },
-  "relic-hunters-and-the-book-of-faith": {
-    mechanics: ["Линии", "Walking Wilds"],
-    evidence: "Official page explicitly lists Walking Wilds among the game features; the conflicting official release dates remain unresolved and are not forced here.",
-  },
-  "vegas-hot": {
-    mechanics: ["Линии", "x2 Wall Multiplier"],
-    evidence: "Official page explicitly lists the x2 Wall Multiplier feature.",
-  },
-};
-
 const records: Record<string, CatalogResearch> = {};
 
 for (const game of holdTheJackpotGames) {
@@ -143,14 +91,6 @@ for (const [game, evidence] of Object.entries(explicitCollectGames)) {
     source: `https://wazdan.com/games/${game}`,
     verifiedAt,
     evidence,
-  };
-}
-
-for (const [game, value] of Object.entries(score6FeatureAdditions)) {
-  records[`wazdan-${game}`] = {
-    ...value,
-    source: `https://wazdan.com/games/${game}`,
-    verifiedAt: score6VerifiedAt,
   };
 }
 
