@@ -7,6 +7,18 @@ type HacksawScore6Details = Pick<CatalogVerifiedDetails, "source" | "verifiedAt"
 const verifiedAt = "2026-09-20";
 
 const details: Record<string, HacksawScore6Details> = {
+  "hacksaw-gaming-bash-bros": {
+    releaseDate: "2025-10-09",
+    releaseDateSource: "https://www.hacksawgaming.com/news/september-round-up",
+    source: "https://www.hacksawgaming.com/games/bash-bros",
+    verifiedAt,
+  },
+  "hacksaw-gaming-bouncy-bombs": {
+    releaseDate: "2024-03",
+    releaseDateSource: "https://www.hacksawgaming.com/news/march-monthly-round-up",
+    source: "https://www.hacksawgaming.com/games/bouncy-bombs",
+    verifiedAt,
+  },
   "hacksaw-gaming-dark-summoning": {
     releaseDate: "2023-12",
     releaseDateSource: "https://www.hacksawgaming.com/news/end-of-year-game-release-roundup",
@@ -25,10 +37,22 @@ const details: Record<string, HacksawScore6Details> = {
     source: "https://www.hacksawgaming.com/games/drop-em",
     verifiedAt,
   },
+  "hacksaw-gaming-eye-of-medusa": {
+    releaseDate: "2025-07-10",
+    releaseDateSource: "https://www.hacksawgaming.com/news/june-round-up-awards-and-anniversaries",
+    source: "https://www.hacksawgaming.com/games/eye-of-medusa",
+    verifiedAt,
+  },
   "hacksaw-gaming-immortal-desire": {
     releaseDate: "2023-11",
     releaseDateSource: "https://www.hacksawgaming.com/news/end-of-year-game-release-roundup",
     source: "https://www.hacksawgaming.com/games/immortal-desire",
+    verifiedAt,
+  },
+  "hacksaw-gaming-le-cowboy": {
+    releaseDate: "2025-11-06",
+    releaseDateSource: "https://www.hacksawgaming.com/news/october-round-up",
+    source: "https://www.hacksawgaming.com/games/le-cowboy",
     verifiedAt,
   },
   "hacksaw-gaming-mighty-masks": {
