@@ -1,4 +1,5 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
+import { getCatalogVerifiedDetailsPushScore6 } from "./catalog-verified-details-push-score6";
 
 type PushScore5Details = Pick<CatalogVerifiedDetails, "source" | "verifiedAt"> &
   Partial<Pick<CatalogVerifiedDetails, "field" | "rtp" | "maxWin" | "volatility" | "releaseDate">> & {
@@ -138,5 +139,10 @@ const details: Record<string, PushScore5Details> = {
 };
 
 export function getCatalogVerifiedDetailsPushScore5(slug: string) {
-  return details[slug];
+  const score5 = details[slug];
+  const score6 = getCatalogVerifiedDetailsPushScore6(slug);
+
+  if (!score6) return score5;
+  if (!score5) return score6;
+  return { ...score5, ...score6 };
 }
