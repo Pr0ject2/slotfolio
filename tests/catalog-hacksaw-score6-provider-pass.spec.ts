@@ -4,6 +4,8 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
+// Only records that already participate in the verified-details chain belong here.
+// Le Cowboy has official release timing, but no compatible detail base yet, so it stays out rather than widening lookup semantics for one fact.
 const releaseDates: Record<string, string> = {
   "hacksaw-gaming-bash-bros": "2025-10-09",
   "hacksaw-gaming-bouncy-bombs": "2024-03",
