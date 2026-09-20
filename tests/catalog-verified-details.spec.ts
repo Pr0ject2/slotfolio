@@ -659,13 +659,8 @@ test("Wazdan wave 4 technical records stay selected and keep exact official sour
     expect(seed, slug).toBeTruthy();
     expect(slots.some((slot) => slot.provider === seed!.provider && slot.name === seed!.name), slug).toBe(false);
     expect(getVerifiedCatalogDetails(slug)?.source, slug).toBe(seed!.source);
-
-    if (slug === "wazdan-valentines-coins") {
-      expect(getVerifiedCatalogGameType(slug), slug).toBeUndefined();
-    } else {
-      expect(getVerifiedCatalogGameType(slug)?.source, slug).toBe(seed!.source);
-      expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Slots");
-    }
+    expect(getVerifiedCatalogGameType(slug)?.source, slug).toBe(seed!.source);
+    expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Slots");
   }
 
   expect(getVerifiedCatalogDetails("wazdan-three-cards")).toBeUndefined();
