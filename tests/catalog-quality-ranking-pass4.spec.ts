@@ -50,11 +50,6 @@ const slugs = [
   "wazdan-sizzling-777-deluxe",
 ] as const;
 
-const ambiguousFieldSlugs = new Set([
-  "wazdan-dino-reels-81",
-  "wazdan-hot-slot-gold-coins",
-]);
-
 test("quality pass 4 completes thin Wazdan runtime records from official Game Info", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
@@ -71,12 +66,7 @@ test("quality pass 4 completes thin Wazdan runtime records from official Game In
     expect(details?.rtp, slug).toBeTruthy();
     expect(details?.maxWin, slug).toBeTruthy();
     expect(details?.volatility, slug).toBeTruthy();
-
-    if (ambiguousFieldSlugs.has(slug)) {
-      expect(details?.field, `${slug} keeps contradictory layout metadata unknown`).toBeUndefined();
-    } else {
-      expect(details?.field, slug).toBeTruthy();
-    }
+    expect(details?.field, slug).toBeTruthy();
 
     const gameType = getVerifiedCatalogGameType(slug);
     expect(gameType?.gameType, slug).toBe("Slots");
@@ -86,10 +76,12 @@ test("quality pass 4 completes thin Wazdan runtime records from official Game In
 
   expect(getVerifiedCatalogDetails("wazdan-beach-party-hot")?.field).toBe("5 барабанов · 20 линий");
   expect(getVerifiedCatalogDetails("wazdan-beach-party-hot")?.rtp).toBe("96,24%");
+  expect(getVerifiedCatalogDetails("wazdan-dino-reels-81")?.field).toBe("4 барабана · 7 линий");
+  expect(getVerifiedCatalogDetails("wazdan-hot-slot-gold-coins")?.field).toBe("15 барабанов · 10 линий");
   expect(getVerifiedCatalogDetails("wazdan-fortune-reels")?.field).toBe("6 барабанов · 46 656 способов");
   expect(getVerifiedCatalogDetails("wazdan-hot-slot-777-rubies")?.volatility).toBe("Настраиваемая");
   expect(getVerifiedCatalogDetails("wazdan-magic-fruits-dice")?.releaseDate).toBe("2026-03-12");
-  expect(getVerifiedCatalogDetails("wazdan-black-horse")?.releaseDate).toBeUndefined();
+  expect(getVerifiedCatalogDetails("wazdan-black-horse")?.releaseDate).toBe("2012-02-20");
 
   const remainingThinWazdan = catalogSeeds
     .filter((seed) => seed.provider === "Wazdan")
