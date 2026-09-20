@@ -81,7 +81,7 @@ test("quality pass 4 completes thin Wazdan runtime records from official Game In
   expect(getVerifiedCatalogDetails("wazdan-fortune-reels")?.field).toBe("6 барабанов · 46 656 способов");
   expect(getVerifiedCatalogDetails("wazdan-hot-slot-777-rubies")?.volatility).toBe("Настраиваемая");
   expect(getVerifiedCatalogDetails("wazdan-magic-fruits-dice")?.releaseDate).toBe("2026-03-12");
-  expect(getVerifiedCatalogDetails("wazdan-black-horse")?.releaseDate).toBeUndefined();
+  expect(getVerifiedCatalogDetails("wazdan-black-horse")?.releaseDate).toBe("2012-02-20");
 
   const remainingThinWazdan = catalogSeeds
     .filter((seed) => seed.provider === "Wazdan")
