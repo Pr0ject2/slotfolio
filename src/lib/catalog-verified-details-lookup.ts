@@ -70,6 +70,7 @@ import { getCatalogVerifiedDetailsWazdanScore6Wave } from "./catalog-verified-de
 
 type VerifiedCatalogDetails = CatalogVerifiedDetails & {
   releaseDateSource?: string;
+  volatilitySource?: string;
 };
 
 export function getVerifiedCatalogDetails(slug: string): VerifiedCatalogDetails | undefined {
