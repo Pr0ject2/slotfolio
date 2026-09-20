@@ -51,7 +51,6 @@ const slugs = [
 ] as const;
 
 const ambiguousFieldSlugs = new Set([
-  "wazdan-dino-reels-81",
   "wazdan-hot-slot-gold-coins",
 ]);
 
@@ -86,6 +85,7 @@ test("quality pass 4 completes thin Wazdan runtime records from official Game In
 
   expect(getVerifiedCatalogDetails("wazdan-beach-party-hot")?.field).toBe("5 барабанов · 20 линий");
   expect(getVerifiedCatalogDetails("wazdan-beach-party-hot")?.rtp).toBe("96,24%");
+  expect(getVerifiedCatalogDetails("wazdan-dino-reels-81")?.field).toBe("4 барабана · 7 линий");
   expect(getVerifiedCatalogDetails("wazdan-fortune-reels")?.field).toBe("6 барабанов · 46 656 способов");
   expect(getVerifiedCatalogDetails("wazdan-hot-slot-777-rubies")?.volatility).toBe("Настраиваемая");
   expect(getVerifiedCatalogDetails("wazdan-magic-fruits-dice")?.releaseDate).toBe("2026-03-12");
