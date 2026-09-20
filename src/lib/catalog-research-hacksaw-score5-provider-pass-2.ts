@@ -93,6 +93,96 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official page says WHO LET THE HOUNDS OUT awards 10 free spins and additional FS symbols can award extra free spins during the bonus.",
   },
+  "hacksaw-gaming-bash-bros": {
+    mechanics: ["Free Spins"],
+    source: "https://www.hacksawgaming.com/games/bash-bros",
+    verifiedAt,
+    evidence: "Official page describes three FS-scatter bonus games, each awarding 10 free spins with upgraded Cash Stack and bash/smash behaviour.",
+  },
+  "hacksaw-gaming-booze-bash": {
+    mechanics: ["Free Spins", "Wilds", "Global Multiplier"],
+    source: "https://www.hacksawgaming.com/games/booze-bash",
+    verifiedAt,
+    evidence: "Official page says Multiplier Pairs act as a Global Multiplier and all three bonus games award 10 free spins; the bonuses can also include Wild symbols and extra spins from FS Pairs.",
+  },
+  "hacksaw-gaming-cloud-princess": {
+    mechanics: ["Free Spins"],
+    source: "https://www.hacksawgaming.com/games/cloud-princess",
+    verifiedAt,
+    evidence: "Official page says CLOUD SURGE and DIVINE BOOST each activate with 10 free spins and can award additional free spins from further FS symbols.",
+  },
+  "hacksaw-gaming-cursed-crypt": {
+    mechanics: ["Free Spins", "Wilds"],
+    source: "https://www.hacksawgaming.com/games/cursed-crypt",
+    verifiedAt,
+    evidence: "Official page says WRATH OF SOBEK and TOMB OF TUTANKHAMUN each award 10 free spins, while the Wild substitutes for every symbol in the paytable.",
+  },
+  "hacksaw-gaming-dawn-of-kings": {
+    mechanics: ["Free Spins", "Wilds", "Расширяющиеся символы"],
+    source: "https://www.hacksawgaming.com/games/dawn-of-kings",
+    verifiedAt,
+    evidence: "Official page says the Book is Wild, bonus modes award 10 or 12 free spins, and selected Special symbols spread to cover the reels where they land.",
+  },
+  "hacksaw-gaming-get-the-cheese": {
+    mechanics: ["Free Spins", "Wilds", "Прогрессивные множители"],
+    source: "https://www.hacksawgaming.com/games/get-the-cheese",
+    verifiedAt,
+    evidence: "Official page describes Jumping Wild Multipliers whose values increase after cascades and a FROMAGE FRENZY bonus starting with 8 free spins and persistent Jumping Wild Multipliers.",
+  },
+  "hacksaw-gaming-marlin-masters": {
+    mechanics: ["Free Spins", "Wilds"],
+    source: "https://www.hacksawgaming.com/games/marlin-masters",
+    verifiedAt,
+    evidence: "Official page says the Wild substitutes for all paytable symbols and REEL IT IN awards 10 free spins, with further ten-spin upgrades through the Marlin Progress Bar.",
+  },
+  "hacksaw-gaming-pray-for-six": {
+    mechanics: ["Free Spins", "Instant Prizes"],
+    source: "https://www.hacksawgaming.com/games/pray-for-six",
+    verifiedAt,
+    evidence: "Official Wailing Wheels can award direct cash prizes or MAX WIN, while UNHOLY OFFSPRING activates with 10 free spins and can retrigger extra spins.",
+  },
+  "hacksaw-gaming-pray-for-three": {
+    mechanics: ["Free Spins", "Wilds"],
+    source: "https://www.hacksawgaming.com/games/pray-for-three",
+    verifiedAt,
+    evidence: "Official WICKED WAYS and LIVING ON A PRAYER bonuses each activate with 10 free spins, and the bonus description explicitly increases the chance of Wild symbols.",
+  },
+  "hacksaw-gaming-shaolin-master": {
+    mechanics: ["Free Spins", "Wilds"],
+    source: "https://www.hacksawgaming.com/games/shaolin-master",
+    verifiedAt,
+    evidence: "Official page defines Chi Orbs as Wild multiplier symbols and THE STUDENT bonus as 10 or 12 free spins depending on the number of FS scatters.",
+  },
+  "hacksaw-gaming-sixsixsix": {
+    mechanics: ["Free Spins", "Instant Prizes"],
+    source: "https://www.hacksawgaming.com/games/sixsixsix",
+    verifiedAt,
+    evidence: "Official Wicked Wheels can award MAX WIN immediately, while all three named bonus features activate with 10 free spins from Wicked Wheel triggers.",
+  },
+  "hacksaw-gaming-smoking-dragon": {
+    mechanics: ["Free Spins", "Wilds"],
+    source: "https://www.hacksawgaming.com/games/smoking-dragon",
+    verifiedAt,
+    evidence: "Official page defines Wild and Epic Wild multiplier symbols and says PUFF OF LUCK and SMOLDERING RICHES activate with 10 free spins.",
+  },
+  "hacksaw-gaming-tiger-legends": {
+    mechanics: ["Free Spins"],
+    source: "https://www.hacksawgaming.com/games/tiger-legends",
+    verifiedAt,
+    evidence: "Official CLAWS OF DESTINY and BATTLE OF THE BEASTS bonus games each award 10 free spins with upgraded Legendary Frame Warrior mechanics.",
+  },
+  "hacksaw-gaming-wings-of-horus": {
+    mechanics: ["Free Spins", "Wilds"],
+    source: "https://www.hacksawgaming.com/games/wings-of-horus",
+    verifiedAt,
+    evidence: "Official page says the Wild substitutes for all paytable symbols and REVENGE OF THE PHARAOH activates with 10 free spins plus retriggered extra spins.",
+  },
+  "hacksaw-gaming-wishbringer": {
+    mechanics: ["Free Spins", "Wilds"],
+    source: "https://www.hacksawgaming.com/games/wishbringer",
+    verifiedAt,
+    evidence: "Official page says Genie and Cloud positions count as Wilds and ARABIAN NIGHTS awards 5, 10, 20 or 40 free spins depending on the number of FS scatters.",
+  },
 };
 
 export function getCatalogResearchHacksawScore5ProviderPass2(slug: string) {
