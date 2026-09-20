@@ -23,15 +23,23 @@ function profile(slug: string) {
   return { score, ...facts };
 }
 
-test.only("profile Wazdan score-six remainder after game-type wave", () => {
+test.only("profile all score-six records after Wazdan wave", () => {
   const rows = catalogSeeds
-    .filter((seed) => seed.provider === "Wazdan")
-    .map((seed) => ({ slug: seed.slug, source: seed.source, ...profile(seed.slug) }))
+    .map((seed) => ({ provider: seed.provider, slug: seed.slug, source: seed.source, ...profile(seed.slug) }))
     .filter((row) => row.score === 6);
 
-  const missingGameType = rows.filter((row) => !row.gameType);
-  const signatures = Object.entries(
+  const counts = Object.entries(
     rows.reduce<Record<string, number>>((acc, row) => {
+      acc[row.provider] = (acc[row.provider] ?? 0) + 1;
+      return acc;
+    }, {}),
+  ).sort((a, b) => b[1] - a[1]);
+
+  const topProvider = counts[0]?.[0] ?? null;
+  const topRows = topProvider ? rows.filter((row) => row.provider === topProvider) : [];
+
+  const topSignatures = Object.entries(
+    topRows.reduce<Record<string, number>>((acc, row) => {
       const missing = ["field", "rtp", "maxWin", "volatility", "releaseDate", "gameType"]
         .filter((key) => !row[key as keyof typeof row]);
       const signature = `missing=${missing.join(",") || "none"} :: mechanics=${row.mechanics.length}`;
@@ -40,8 +48,11 @@ test.only("profile Wazdan score-six remainder after game-type wave", () => {
     }, {}),
   ).sort((a, b) => b[1] - a[1]);
 
-  console.log("WAZDAN_SCORE6_REMAINING", rows.length);
-  console.log("WAZDAN_SCORE6_SIGNATURES", JSON.stringify(signatures));
-  console.log("WAZDAN_SCORE6_ROWS", JSON.stringify(rows));
-  expect(missingGameType).toHaveLength(0);
+  console.log("SCORE6_TOTAL", rows.length);
+  console.log("SCORE6_BY_PROVIDER", JSON.stringify(counts));
+  console.log("SCORE6_TOP_PROVIDER", topProvider);
+  console.log("SCORE6_TOP_SIGNATURES", JSON.stringify(topSignatures));
+  console.log("SCORE6_TOP_ROWS", JSON.stringify(topRows));
+
+  expect(rows.filter((row) => row.provider === "Wazdan")).toHaveLength(0);
 });
