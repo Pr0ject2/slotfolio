@@ -23,36 +23,14 @@ function profile(slug: string) {
   return { score, ...facts };
 }
 
-test.only("profile all score-six records after Wazdan wave", () => {
+test.only("profile Play’n GO score-six field gaps after Wazdan wave", () => {
   const rows = catalogSeeds
-    .map((seed) => ({ provider: seed.provider, slug: seed.slug, source: seed.source, ...profile(seed.slug) }))
-    .filter((row) => row.score === 6);
+    .filter((seed) => seed.provider === "Play’n GO")
+    .map((seed) => ({ slug: seed.slug, source: seed.source, ...profile(seed.slug) }))
+    .filter((row) => row.score === 6 && !row.field);
 
-  const counts = Object.entries(
-    rows.reduce<Record<string, number>>((acc, row) => {
-      acc[row.provider] = (acc[row.provider] ?? 0) + 1;
-      return acc;
-    }, {}),
-  ).sort((a, b) => b[1] - a[1]);
+  console.log("PLAYNGO_SCORE6_FIELD_GAPS", rows.length);
+  console.log("PLAYNGO_SCORE6_FIELD_ROWS", JSON.stringify(rows));
 
-  const topProvider = counts[0]?.[0] ?? null;
-  const topRows = topProvider ? rows.filter((row) => row.provider === topProvider) : [];
-
-  const topSignatures = Object.entries(
-    topRows.reduce<Record<string, number>>((acc, row) => {
-      const missing = ["field", "rtp", "maxWin", "volatility", "releaseDate", "gameType"]
-        .filter((key) => !row[key as keyof typeof row]);
-      const signature = `missing=${missing.join(",") || "none"} :: mechanics=${row.mechanics.length}`;
-      acc[signature] = (acc[signature] ?? 0) + 1;
-      return acc;
-    }, {}),
-  ).sort((a, b) => b[1] - a[1]);
-
-  console.log("SCORE6_TOTAL", rows.length);
-  console.log("SCORE6_BY_PROVIDER", JSON.stringify(counts));
-  console.log("SCORE6_TOP_PROVIDER", topProvider);
-  console.log("SCORE6_TOP_SIGNATURES", JSON.stringify(topSignatures));
-  console.log("SCORE6_TOP_ROWS", JSON.stringify(topRows));
-
-  expect(rows.filter((row) => row.provider === "Wazdan")).toHaveLength(0);
+  expect(rows.length).toBeGreaterThan(0);
 });
