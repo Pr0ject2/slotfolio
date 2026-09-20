@@ -12,6 +12,7 @@ import { getVerifiedCatalogGameTypeWazdanWave1 } from "./catalog-verified-game-t
 import { getVerifiedCatalogGameTypeWazdanWave2 } from "./catalog-verified-game-type-wazdan-wave2";
 import { getVerifiedCatalogGameTypeWazdanWave3 } from "./catalog-verified-game-type-wazdan-wave3";
 import { getVerifiedCatalogGameTypeWazdanWave4 } from "./catalog-verified-game-type-wazdan-wave4";
+import { getVerifiedCatalogGameTypeWazdanWave5 } from "./catalog-verified-game-type-wazdan-wave5";
 import { getVerifiedCatalogGameTypeHacksawWave1 } from "./catalog-verified-game-type-hacksaw-wave1";
 import { getVerifiedCatalogGameTypeHacksawFinal } from "./catalog-verified-game-type-hacksaw-final";
 import { getVerifiedCatalogGameTypeNolimit } from "./catalog-verified-game-type-nolimit";
@@ -91,5 +92,5 @@ const gameTypes: Record<string, CatalogVerifiedGameType> = {
 };
 
 export function getVerifiedCatalogGameType(slug: string) {
-  return gameTypes[slug] ?? getVerifiedCatalogGameType3OaksFill(slug) ?? getVerifiedCatalogGameTypeEndorphinaFill(slug) ?? getVerifiedCatalogGameTypePlayngoFill(slug) ?? getVerifiedCatalogGameTypePlayngoWave15To18(slug) ?? getVerifiedCatalogGameTypePlayngoGoldH(slug) ?? getVerifiedCatalogGameTypePlayngoIJ(slug) ?? getVerifiedCatalogGameTypePlayngoKL(slug) ?? getVerifiedCatalogGameTypePlayngoMN(slug) ?? getVerifiedCatalogGameTypePlayngoOP(slug) ?? getVerifiedCatalogGameTypePlayngoQR(slug) ?? getVerifiedCatalogGameTypeWazdanWave1(slug) ?? getVerifiedCatalogGameTypeWazdanWave2(slug) ?? getVerifiedCatalogGameTypeWazdanWave3(slug) ?? getVerifiedCatalogGameTypeWazdanWave4(slug) ?? getVerifiedCatalogGameTypeHacksawWave1(slug) ?? getVerifiedCatalogGameTypeHacksawFinal(slug) ?? getVerifiedCatalogGameTypeNolimit(slug) ?? getVerifiedCatalogGameTypePushScore5(slug);
+  return gameTypes[slug] ?? getVerifiedCatalogGameType3OaksFill(slug) ?? getVerifiedCatalogGameTypeEndorphinaFill(slug) ?? getVerifiedCatalogGameTypePlayngoFill(slug) ?? getVerifiedCatalogGameTypePlayngoWave15To18(slug) ?? getVerifiedCatalogGameTypePlayngoGoldH(slug) ?? getVerifiedCatalogGameTypePlayngoIJ(slug) ?? getVerifiedCatalogGameTypePlayngoKL(slug) ?? getVerifiedCatalogGameTypePlayngoMN(slug) ?? getVerifiedCatalogGameTypePlayngoOP(slug) ?? getVerifiedCatalogGameTypePlayngoQR(slug) ?? getVerifiedCatalogGameTypeWazdanWave1(slug) ?? getVerifiedCatalogGameTypeWazdanWave2(slug) ?? getVerifiedCatalogGameTypeWazdanWave3(slug) ?? getVerifiedCatalogGameTypeWazdanWave4(slug) ?? getVerifiedCatalogGameTypeWazdanWave5(slug) ?? getVerifiedCatalogGameTypeHacksawWave1(slug) ?? getVerifiedCatalogGameTypeHacksawFinal(slug) ?? getVerifiedCatalogGameTypeNolimit(slug) ?? getVerifiedCatalogGameTypePushScore5(slug);
 }
