@@ -4,10 +4,15 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
+// Only records that already participate in the verified-details chain belong here.
+// Le Cowboy has official release timing, but no compatible detail base yet, so it stays out rather than widening lookup semantics for one fact.
 const releaseDates: Record<string, string> = {
+  "hacksaw-gaming-bash-bros": "2025-10-09",
+  "hacksaw-gaming-bouncy-bombs": "2024-03",
   "hacksaw-gaming-dark-summoning": "2023-12",
   "hacksaw-gaming-densho": "2023-09-07",
   "hacksaw-gaming-dropem": "2023-07-27",
+  "hacksaw-gaming-eye-of-medusa": "2025-07-10",
   "hacksaw-gaming-immortal-desire": "2023-11",
   "hacksaw-gaming-mighty-masks": "2023-06",
   "hacksaw-gaming-ronin-stackways": "2023-08-10",
