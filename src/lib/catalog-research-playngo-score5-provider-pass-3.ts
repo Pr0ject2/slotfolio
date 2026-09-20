@@ -105,6 +105,48 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Play’n GO page defines three Feature Pots — BOOST, MYSTERY and COLLECT — that fill from coloured Gems and apply ordered enhancements to the Hold’n Win feature.",
   },
+  "playn-go-playn-go-buffalo-of-wealth": {
+    mechanics: ["Wilds", "Множители", "Free Spins", "Расширяющиеся барабаны", "Stacked Symbols"],
+    source: "https://www.playngo.com/games/play%27n-go-buffalo-of-wealth",
+    verifiedAt,
+    evidence: "Official Play’n GO page describes standard and x2/x3 Multiplier Wilds, Free Spins that unlock extra rows from 5x4 up to 5x8, and stacked symbols in the base game.",
+  },
+  "playn-go-playn-go-wrappin-gold": {
+    mechanics: ["Bonus Spins", "Wilds", "Collect & Win"],
+    source: "https://www.playngo.com/games/wrappin%27-gold",
+    verifiedAt,
+    evidence: "Official Play’n GO page says triggering symbols feed feature activation, Pots can trigger Collect and Win, three Bonus Spins symbols award retriggerable Bonus Spins, and Wilds can trigger Instant Bonuses.",
+  },
+  "playn-go-primal-rampage": {
+    mechanics: ["Wilds"],
+    source: "https://www.playngo.com/games/primal-rampage",
+    verifiedAt,
+    evidence: "Official Play’n GO page explicitly describes Wild Multipliers alongside the Primal Wheel and Vault Bonus features.",
+  },
+  "playn-go-raging-rex-2": {
+    mechanics: ["Free Spins"],
+    source: "https://www.playngo.com/games/raging-rex-2",
+    verifiedAt,
+    evidence: "Official Play’n GO page says Raging Rex 2 offers three selectable Free Spin features: Primal Fury, Hatchling Mania and Jurassic Mayhem.",
+  },
+  "playn-go-rabbit-hole-riches-court-of-hearts": {
+    mechanics: ["Wilds", "Mega Wilds", "Free Spins", "Прогрессивные множители"],
+    source: "https://www.playngo.com/games/rabbit-hole-riches---court-of-hearts",
+    verifiedAt,
+    evidence: "Official Play’n GO page describes moving Expanded Wilds, random Wilds, a growing Mega Wild, Free Spins and a Win Multiplier that increases by x1 on every line win without a stated limit.",
+  },
+  "playn-go-pandastic-adventure": {
+    mechanics: ["Free Spins", "Upgrades", "Bonus Round"],
+    source: "https://www.playngo.com/games/pandastic-adventure",
+    verifiedAt,
+    evidence: "Official Play’n GO release explicitly lists Upgrades, Free Spins and a Bonus Round among Pandastic Adventure’s gameplay features.",
+  },
+  "playn-go-piggy-blitz-disco-gold": {
+    mechanics: ["Instant Prizes", "Free Spins", "Множители"],
+    source: "https://www.playngo.com/games/piggy-blitz-disco-gold",
+    verifiedAt,
+    evidence: "Official Play’n GO page describes cash-coin rewards and a random Gold Piggy prize up to 5000x, plus selectable Free Spinz modes including multiplier stages.",
+  },
 };
 
 export function getCatalogResearchPlayngoScore5ProviderPass3(slug: string) {
