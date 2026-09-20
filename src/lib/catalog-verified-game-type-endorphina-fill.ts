@@ -3,6 +3,7 @@ import type { CatalogVerifiedGameType } from "./catalog-verified-game-type";
 const verifiedAt = "2026-09-18";
 
 const gameTypes: Record<string, CatalogVerifiedGameType> = {
+  "endorphina-3-golden-chests": { gameType: "Slots", source: "https://endorphina.com/games/3-golden-chests/play", verifiedAt: "2026-09-20" },
   "endorphina-burning-coins-100": { gameType: "Slots", source: "https://endorphina.com/games/burning-coins-100/play", verifiedAt },
   "endorphina-burning-coins-20-dice": { gameType: "Slots", source: "https://endorphina.com/games/burning-coins-20-dice/play", verifiedAt },
   "endorphina-chance-machine-90s": { gameType: "Slots", source: "https://endorphina.com/games/chance-machine-90s/play", verifiedAt },

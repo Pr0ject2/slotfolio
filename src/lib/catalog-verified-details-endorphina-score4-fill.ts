@@ -8,6 +8,12 @@ type EndorphinaScore4Overlay = Partial<Pick<CatalogVerifiedDetails, "maxWin" | "
 const verifiedAt = "2026-09-18";
 
 const details: Record<string, EndorphinaScore4Overlay> = {
+  "endorphina-3-golden-chests": {
+    releaseDate: "2026-09-03",
+    source: "https://endorphina.com/games/3-golden-chests/play",
+    releaseDateSource: "https://endorphina.com/news/think-inside-the-box-in-endorphinas-3-golden-chests",
+    verifiedAt: "2026-09-20",
+  },
   "endorphina-burning-coins-100": {
     releaseDate: "2026-07-01",
     source: "https://endorphina.com/games/burning-coins-100/play",
