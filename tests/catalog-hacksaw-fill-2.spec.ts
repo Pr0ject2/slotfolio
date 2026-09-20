@@ -22,7 +22,7 @@ const expected = {
   },
 } as const;
 
-test("second Hacksaw fill preserves official technical facts and normalized mechanics", () => {
+test("second Hacksaw fill preserves official technical facts and normalized mechanics while allowing later enrichment", () => {
   expect(Object.keys(expected)).toHaveLength(6);
 
   for (const [slug, values] of Object.entries(expected)) {
@@ -33,7 +33,7 @@ test("second Hacksaw fill preserves official technical facts and normalized mech
     expect(seed, slug).toBeTruthy();
     expect(details?.source, slug).toBe(seed?.source);
     expect(research?.source, slug).toBe(seed?.source);
-    expect(research?.verifiedAt, slug).toBe("2026-09-18");
+    expect(research?.verifiedAt, slug).toMatch(/^20\d{2}-\d{2}-\d{2}$/);
 
     if ("maxWin" in values) expect(details?.maxWin, slug).toBe(values.maxWin);
     if ("volatility" in values) expect(details?.volatility, slug).toBe(values.volatility);

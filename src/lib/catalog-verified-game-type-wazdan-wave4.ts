@@ -2,6 +2,7 @@ import type { CatalogVerifiedGameType } from "./catalog-verified-game-type";
 import { getVerifiedCatalogGameTypeWazdanQualityPass4 } from "./catalog-verified-game-type-wazdan-quality-pass-4";
 
 const verifiedAt = "2026-09-12";
+const verifiedAtScore5 = "2026-09-19";
 
 const sources: Record<string, string> = {
   "wazdan-space-gem": "https://wazdan.com/games/space-gem",
@@ -23,10 +24,28 @@ const sources: Record<string, string> = {
   "wazdan-wild-jack-81": "https://wazdan.com/games/wild-jack-81",
 };
 
+const score5Sources: Record<string, string> = {
+  "wazdan-arcade": "https://wazdan.com/games/arcade",
+  "wazdan-back-to-the-70s": "https://wazdan.com/games/back-to-the-70s",
+  "wazdan-black-hawk": "https://wazdan.com/games/black-hawk",
+  "wazdan-black-horse-cash-out-edition": "https://wazdan.com/games/black-horse-cash-out-edition",
+  "wazdan-fenix-play-27": "https://wazdan.com/games/fenix-play-27",
+  "wazdan-hot-777": "https://wazdan.com/games/hot-777",
+  "wazdan-relic-hunters-and-the-book-of-faith": "https://wazdan.com/games/relic-hunters-and-the-book-of-faith",
+  "wazdan-turbo-play": "https://wazdan.com/games/turbo-play",
+};
+
 const gameTypes = Object.fromEntries(
   Object.entries(sources).map(([slug, source]) => [slug, { gameType: "Slots", source, verifiedAt }]),
 ) as Record<string, CatalogVerifiedGameType>;
 
+const score5GameTypes = Object.fromEntries(
+  Object.entries(score5Sources).map(([slug, source]) => [
+    slug,
+    { gameType: "Slots", source, verifiedAt: verifiedAtScore5 },
+  ]),
+) as Record<string, CatalogVerifiedGameType>;
+
 export function getVerifiedCatalogGameTypeWazdanWave4(slug: string) {
-  return getVerifiedCatalogGameTypeWazdanQualityPass4(slug) ?? gameTypes[slug];
+  return getVerifiedCatalogGameTypeWazdanQualityPass4(slug) ?? gameTypes[slug] ?? score5GameTypes[slug];
 }
