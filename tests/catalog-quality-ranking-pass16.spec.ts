@@ -37,7 +37,13 @@ test("quality pass 16 preserves its original collect evidence while allowing lat
     const research = getVerifiedCatalogResearch(slug);
     expect(research?.source, slug).toBe(values.source);
     expect(research?.mechanics, `${slug} must retain the verified collect mechanic`).toContain("Сбор символов");
-    expect(getVerifiedCatalogGameType(slug), `${slug} must not invent Game Type`).toBeUndefined();
+
+    const gameType = getVerifiedCatalogGameType(slug);
+    if (gameType) {
+      expect(gameType.source, `${slug} later Game Type must stay canonical`).toBe(values.source);
+      expect(gameType.gameType, `${slug} later Game Type must stay provider-backed`).toBe("Slots");
+    }
+
     expect(scoreFor(slug), `${slug} must stay at or above its achieved quality floor`).toBeGreaterThanOrEqual(3);
   }
 });
