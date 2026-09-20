@@ -24,9 +24,8 @@ function profile(slug: string) {
 }
 
 test.only("profile remaining score-six catalog tail after current provider waves", () => {
-  const rows = catalogSeeds
-    .map((seed) => ({ slug: seed.slug, provider: seed.provider, source: seed.source, ...profile(seed.slug) }))
-    .filter((row) => row.score === 6);
+  const allRows = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, source: seed.source, ...profile(seed.slug) }));
+  const rows = allRows.filter((row) => row.score === 6);
 
   const byProvider = [...new Map(
     rows.map((row) => row.provider).map((provider) => [provider, rows.filter((row) => row.provider === provider).length]),
@@ -41,16 +40,19 @@ test.only("profile remaining score-six catalog tail after current provider waves
   }
   const signatures = [...signatureCounts.entries()].sort((a, b) => b[1] - a[1]);
 
-  const missingType = (provider: string) => rows
-    .filter((row) => row.provider === provider && !row.gameType)
-    .map((row) => ({ slug: row.slug, source: row.source }));
+  const bgamingGaps = allRows
+    .filter((row) => row.provider === "BGaming")
+    .map((row) => ({
+      slug: row.slug,
+      source: row.source,
+      missing: ["field", "rtp", "maxWin", "volatility", "releaseDate", "gameType"].filter((key) => !row[key as keyof typeof row]),
+    }))
+    .filter((row) => row.missing.length > 0);
 
   console.log("SCORE6_COUNT", rows.length);
   console.log("SCORE6_BY_PROVIDER", JSON.stringify(byProvider));
   console.log("SCORE6_SIGNATURES", JSON.stringify(signatures));
-  console.log("THREEOAKS_MISSING_GAME_TYPE", JSON.stringify(missingType("3 Oaks Gaming")));
-  console.log("BGAMING_MISSING_GAME_TYPE", JSON.stringify(missingType("BGaming")));
-  console.log("PUSH_MISSING_GAME_TYPE", JSON.stringify(missingType("Push Gaming")));
+  console.log("BGAMING_PASSPORT_GAPS", JSON.stringify(bgamingGaps));
 
   expect(rows.length).toBeGreaterThan(0);
 });
