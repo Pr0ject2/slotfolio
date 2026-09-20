@@ -1,4 +1,5 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
+import { getCatalogVerifiedDetailsHacksawVolatilityProviderWide } from "./catalog-verified-details-hacksaw-volatility-provider-wide";
 
 const verifiedAt = "2026-09-17";
 
@@ -44,5 +45,10 @@ const details: Record<string, CatalogVerifiedDetails> = {
 };
 
 export function getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug: string) {
-  return details[slug];
+  const maxWin = details[slug];
+  const volatility = getCatalogVerifiedDetailsHacksawVolatilityProviderWide(slug);
+
+  if (!volatility) return maxWin;
+  if (!maxWin) return volatility;
+  return { ...maxWin, ...volatility };
 }
