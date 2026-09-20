@@ -15,6 +15,12 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Play’n GO release article explicitly describes the game’s triangular charge metre as part of the Hysteria design and feature presentation.",
   },
+  "playn-go-irish-gold": {
+    mechanics: ["Pot of Gold x25"],
+    source: "https://www.playngo.com/post/top-gold-games-at-play-n-go",
+    verifiedAt,
+    evidence: "Official Play’n GO Gold Games article says Irish Gold can land Pots of Gold that can raise the game’s potential to x25, a named feature separate from the already recorded line, Wild and multiplier mechanics.",
+  },
   "playn-go-mega-don": {
     mechanics: ["Symbol Upgrades"],
     source: "https://www.playngo.com/games/mega-don",
