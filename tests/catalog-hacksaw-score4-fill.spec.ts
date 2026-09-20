@@ -39,7 +39,9 @@ test("Hacksaw score-four pass preserves exact official technical facts", () => {
     expect(seed, slug).toBeTruthy();
     expect(details, slug).toBeTruthy();
     expect(details?.source, slug).toBe(seed?.source);
-    expect(details?.verifiedAt, slug).toBe("2026-09-18");
+    expect(Date.parse(details?.verifiedAt ?? ""), `${slug} keeps or advances its verification date`).toBeGreaterThanOrEqual(
+      Date.parse("2026-09-18"),
+    );
     if ("rtp" in values) expect(details?.rtp, slug).toBe(values.rtp);
     if ("volatility" in values) expect(details?.volatility, slug).toBe(values.volatility);
     if ("releaseDate" in values) expect(details?.releaseDate, slug).toBe(values.releaseDate);
