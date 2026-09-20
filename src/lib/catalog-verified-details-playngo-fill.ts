@@ -41,9 +41,11 @@ const details: Record<string, PlayngoFillOverlay> = {
     verifiedAt,
   },
   "playn-go-mystery-joker-6000": {
+    field: "3×3",
     maxWin: "6000x",
+    fieldSource: "https://www.playngo.com/post/play-n-go-return-to-the-classics-with-the-paying-piano-club",
     maxWinSource: "https://www.playngo.com/games/mystery-joker-6000",
-    verifiedAt,
+    verifiedAt: "2026-09-20",
   },
   "playn-go-inferno-joker": {
     field: "5×3",
@@ -98,9 +100,11 @@ const details: Record<string, PlayngoFillOverlay> = {
     verifiedAt,
   },
   "playn-go-hotel-yeti-way": {
+    field: "4096 способов",
     maxWin: "30000x",
+    fieldSource: "https://www.playngo.com/games/hotel-yeti-way",
     maxWinSource: "https://www.playngo.com/games/hotel-yeti-way",
-    verifiedAt,
+    verifiedAt: "2026-09-20",
   },
   "playn-go-infernal-trinity-go-guaranteed": {
     field: "5 барабанов",
