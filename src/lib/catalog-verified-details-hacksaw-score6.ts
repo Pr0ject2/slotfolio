@@ -49,12 +49,6 @@ const details: Record<string, HacksawScore6Details> = {
     source: "https://www.hacksawgaming.com/games/immortal-desire",
     verifiedAt,
   },
-  "hacksaw-gaming-le-cowboy": {
-    releaseDate: "2025-11-06",
-    releaseDateSource: "https://www.hacksawgaming.com/news/october-round-up",
-    source: "https://www.hacksawgaming.com/games/le-cowboy",
-    verifiedAt,
-  },
   "hacksaw-gaming-mighty-masks": {
     releaseDate: "2023-06",
     releaseDateSource: "https://www.hacksawgaming.com/news/june-monthly-round-up-at-hacksaw",
