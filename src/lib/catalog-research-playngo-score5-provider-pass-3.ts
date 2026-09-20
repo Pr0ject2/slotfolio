@@ -63,6 +63,48 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Play’n GO page identifies Champagne as the Wild and the Midnight Clock as the Scatter; three Scatters trigger ten New Year Free Spins with an escalating win multiplier.",
   },
+  "playn-go-pandoras-box-of-evil": {
+    mechanics: ["Wilds", "Блокировка символов"],
+    source: "https://www.playngo.com/games/pandora%27s-box-of-evil",
+    verifiedAt,
+    evidence: "Official Play’n GO page says Zeus can turn Mystery symbols into Mystery Wilds with x2–x5 multipliers, and the Re-Spin of Hope locks Mystery Symbols, Scatters and Mystery Wilds for the re-spin.",
+  },
+  "playn-go-pilgrim-of-dead": {
+    mechanics: ["Free Spins", "Sticky Wilds"],
+    source: "https://www.playngo.com/games/pilgrim-of-dead",
+    verifiedAt,
+    evidence: "Official Play’n GO page says three or more Tomb Scatters trigger Free Spins, where the selected special symbol becomes golden and sticky on the reels and can expand.",
+  },
+  "playn-go-rage-to-riches": {
+    mechanics: ["Wilds"],
+    source: "https://www.playngo.com/games/rage-to-riches",
+    verifiedAt,
+    evidence: "Official Play’n GO page explicitly says the Wild substitutes for every other reel symbol except the girl and can land on reels two through four.",
+  },
+  "playn-go-rally-4-riches": {
+    mechanics: ["Free Spins", "Win Spins™", "Wilds", "Jackpots", "Gamble"],
+    source: "https://www.playngo.com/games/rally-4-riches",
+    verifiedAt,
+    evidence: "Official Play’n GO page says race finishing positions can award Free Spins or Win Spins with Nudging Wilds, while first place opens a Jackpot Bonus Game whose penultimate tier can be collected or gambled toward x1000.",
+  },
+  "playn-go-piggy-blitz": {
+    mechanics: ["Сбор символов", "Free Spins", "Jackpots", "Множители"],
+    source: "https://www.playngo.com/games/piggy-blitz",
+    verifiedAt,
+    evidence: "Official Play’n GO page describes Bonus Cash Collection, three fixed jackpots, Blitz Spinz Free Spins and Gold Coin rewards carrying multiplier values up to x25.",
+  },
+  "playn-go-lab-of-madness-its-a-wild": {
+    mechanics: ["Wilds", "Walking Wilds", "Free Spins", "Instant Prizes"],
+    source: "https://www.playngo.com/games/lab-of-madness-it%27s-a-wild%21",
+    verifiedAt,
+    evidence: "Official Play’n GO page describes Expanding, Walking and Multiplier Wilds, four zap-prize tiers from Power Up symbols and Free Spins where charged Wild combinations can build the feature up to forty spins.",
+  },
+  "playn-go-playn-go-mole-digger": {
+    mechanics: ["Feature Pots"],
+    source: "https://www.playngo.com/games/play%27n-go-mole-digger",
+    verifiedAt,
+    evidence: "Official Play’n GO page defines three Feature Pots — BOOST, MYSTERY and COLLECT — that fill from coloured Gems and apply ordered enhancements to the Hold’n Win feature.",
+  },
 };
 
 export function getCatalogResearchPlayngoScore5ProviderPass3(slug: string) {
