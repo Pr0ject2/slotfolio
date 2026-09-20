@@ -99,6 +99,54 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official page describes stacked Wilds, symbol splitting, a Free Spins round and Minor/Major progressive Jackpots as separate features.",
   },
+  "playn-go-15-crystal-roses-a-tale-of-love": {
+    mechanics: ["Free Spins"],
+    source: "https://www.playngo.com/games/15-crystal-roses%3A-a-tale-of-love",
+    verifiedAt,
+    evidence: "Official page states that progressing along the Quest Map by collecting Crystal Roses unlocks a Free Spins feature.",
+  },
+  "playn-go-3-blades-and-blessings": {
+    mechanics: ["Instant Prizes"],
+    source: "https://www.playngo.com/games/3-blades-%26-blessings",
+    verifiedAt,
+    evidence: "Official page states Prize Coins in the Collect Free Spins mode display and award instant prize values.",
+  },
+  "playn-go-ankh-of-anubis": {
+    mechanics: ["Free Spins"],
+    source: "https://www.playngo.com/games/ankh-of-anubis",
+    verifiedAt,
+    evidence: "Official page states three or more Scatter symbols trigger Free Spins, where collected Ankhs can activate Anubis Wilds.",
+  },
+  "playn-go-bao-shi": {
+    mechanics: ["Free Spins"],
+    source: "https://www.playngo.com/games/bao-shi",
+    verifiedAt,
+    evidence: "Official page states three, four or five Gong symbols trigger 8, 12 or 15 Free Spins respectively.",
+  },
+  "playn-go-barn-busters": {
+    mechanics: ["Instant Prizes"],
+    source: "https://www.playngo.com/games/barn-busters",
+    verifiedAt,
+    evidence: "Official page describes Instant Prizes as a separate feature alongside the Double Wheel and Sheep re-spins.",
+  },
+  "playn-go-beasts-of-fire": {
+    mechanics: ["Free Spins"],
+    source: "https://www.playngo.com/games/beasts-of-fire",
+    verifiedAt,
+    evidence: "Official Play'n GO release material explicitly describes the buffalo symbols changing form during Free Spins in Beasts of Fire.",
+  },
+  "playn-go-big-win-cat-pawsperity": {
+    mechanics: ["Instant Prizes"],
+    source: "https://www.playngo.com/games/big-win-cat-pawsperity",
+    verifiedAt,
+    evidence: "Official page describes the Instant Bonus as a separate prize-awarding feature alongside Re-spin of Luck and Wheel of Pawsperity.",
+  },
+  "playn-go-boat-bonanza-christmas": {
+    mechanics: ["Free Spins"],
+    source: "https://www.playngo.com/games/boat-bonanza-christmas",
+    verifiedAt,
+    evidence: "Official page explicitly describes a Free Spins feature in addition to Instant Win fish, Mega Catch collection and multiplier mechanics.",
+  },
 };
 
 export function getCatalogResearchPlayngoScore6Wave(slug: string) {
