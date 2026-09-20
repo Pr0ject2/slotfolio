@@ -26,6 +26,7 @@ function profile(slug: string) {
 test.only("profile remaining score-five catalog-only records", () => {
   const all = catalogSeeds.map((seed) => ({ slug: seed.slug, provider: seed.provider, ...profile(seed.slug) }));
   const rows = all.filter((row) => row.score === 5);
+  const score4Rows = all.filter((row) => row.score === 4);
   const histogram = Object.fromEntries(
     Array.from(new Set(all.map((row) => row.score))).sort((a, b) => a - b).map((score) => [score, all.filter((row) => row.score === score).length]),
   );
@@ -46,6 +47,8 @@ test.only("profile remaining score-five catalog-only records", () => {
   ).sort((a, b) => b[1] - a[1]);
 
   console.log("SCORE_HISTOGRAM", JSON.stringify(histogram));
+  console.log("SCORE4_COUNT", score4Rows.length);
+  console.log("SCORE4_ROWS", JSON.stringify(score4Rows));
   console.log("SCORE5_COUNT", rows.length);
   console.log("SCORE5_BY_PROVIDER", JSON.stringify(byProvider));
   console.log("SCORE5_SIGNATURES", JSON.stringify(signatures));
