@@ -1,4 +1,5 @@
 import type { CatalogVerifiedGameType } from "./catalog-verified-game-type";
+import { getVerifiedCatalogGameTypePushScore6 } from "./catalog-verified-game-type-push-score6";
 
 const verifiedAt = "2026-09-19";
 
@@ -40,5 +41,5 @@ const gameTypes = Object.fromEntries(
 ) as Record<string, CatalogVerifiedGameType>;
 
 export function getVerifiedCatalogGameTypePushScore5(slug: string) {
-  return gameTypes[slug];
+  return gameTypes[slug] ?? getVerifiedCatalogGameTypePushScore6(slug);
 }
