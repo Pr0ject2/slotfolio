@@ -67,6 +67,7 @@ test("quality pass 8 improves twelve thin Hacksaw runtime records from exact off
     expect(details?.rtp, slug).toBeUndefined();
     expect(details?.maxWin, slug).toBeUndefined();
     expect(details?.volatility, slug).toBeUndefined();
+    // Later evidence-backed passes may add release timing without invalidating this original field evidence.
   }
 
   for (const slug of targetSlugs) {
