@@ -1,4 +1,5 @@
 import type { CatalogResearch } from "./catalog-research";
+import { getCatalogResearchPlayngoScore5ProviderPass } from "./catalog-research-playngo-score5-provider-pass";
 
 const records: Record<string, CatalogResearch> = {
   "playn-go-invading-vegas": {
@@ -40,5 +41,16 @@ const records: Record<string, CatalogResearch> = {
 };
 
 export function getCatalogResearchPlayngoScore3Fill(slug: string) {
-  return records[slug];
+  const score3 = records[slug];
+  const score5 = getCatalogResearchPlayngoScore5ProviderPass(slug);
+
+  if (!score5) return score3;
+  if (!score3) return undefined;
+
+  return {
+    ...score3,
+    ...score5,
+    mechanics: [...new Set([...score3.mechanics, ...score5.mechanics])],
+    evidence: `${score3.evidence} ${score5.evidence}`,
+  };
 }
