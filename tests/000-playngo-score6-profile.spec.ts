@@ -40,10 +40,17 @@ test.only("profile exact Play’n GO score-six tail", () => {
     const key = `missing=${row.missing.join(",") || "none"}; mechanics=${row.mechanics.length}`;
     signatures.set(key, (signatures.get(key) ?? 0) + 1);
   }
-  const singleGapRows = rows.filter((row) => row.missing.length === 1);
+
+  const maxWinTargets = rows
+    .filter((row) => row.missing.includes("maxWin"))
+    .map(({ slug, source, missing, mechanics }) => ({ slug, source, missing, mechanics: mechanics.length }));
+  const fieldTargets = rows
+    .filter((row) => row.missing.includes("field"))
+    .map(({ slug, source, missing, mechanics }) => ({ slug, source, missing, mechanics: mechanics.length }));
 
   console.log("PLAYNGO_SCORE6_COUNT", rows.length);
   console.log("PLAYNGO_SCORE6_SIGNATURES", JSON.stringify([...signatures.entries()].sort((a, b) => b[1] - a[1])));
-  console.log("PLAYNGO_SCORE6_SINGLE_GAPS", JSON.stringify(singleGapRows));
+  console.log("PLAYNGO_SCORE6_MAXWIN_TARGETS", JSON.stringify(maxWinTargets));
+  console.log("PLAYNGO_SCORE6_FIELD_TARGETS", JSON.stringify(fieldTargets));
   expect(rows.length).toBeGreaterThan(0);
 });
