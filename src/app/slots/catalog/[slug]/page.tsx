@@ -102,9 +102,14 @@ export default async function CatalogSlotPage({
   const releaseDate = displayDate(details?.releaseDate);
   const primarySource = details?.source ?? gameType?.source ?? slot.source;
   const releaseDateSource = details?.releaseDateSource ?? null;
+  const volatilitySource = details?.volatilitySource ?? null;
   const hasSeparateReleaseDateSource = Boolean(
     details?.releaseDate && releaseDateSource && releaseDateSource !== primarySource,
   );
+  const hasSeparateVolatilitySource = Boolean(
+    details?.volatility && volatilitySource && volatilitySource !== primarySource,
+  );
+  const hasSeparateParameterSource = hasSeparateReleaseDateSource || hasSeparateVolatilitySource;
 
   const providerItems = catalogModel.items
     .filter((item) => item.slug !== slot.slug && item.provider === slot.provider)
@@ -167,13 +172,19 @@ export default async function CatalogSlotPage({
               {details?.volatility ? <div><dt>Волатильность</dt><dd>{details.volatility}</dd></div> : null}
               {releaseDate ? <div><dt>Дата релиза</dt><dd>{releaseDate}</dd></div> : null}
               <div>
-                <dt>{hasSeparateReleaseDateSource ? "Источник параметров" : "Источник"}</dt>
+                <dt>{hasSeparateParameterSource ? "Источник параметров" : "Источник"}</dt>
                 <dd><a href={primarySource} rel="noreferrer">Официальный каталог ↗</a></dd>
               </div>
               {hasSeparateReleaseDateSource ? (
                 <div>
                   <dt>Источник даты релиза</dt>
                   <dd><a href={releaseDateSource!} rel="noreferrer">Официальная публикация ↗</a></dd>
+                </div>
+              ) : null}
+              {hasSeparateVolatilitySource ? (
+                <div>
+                  <dt>Источник волатильности</dt>
+                  <dd><a href={volatilitySource!} rel="noreferrer">Официальный рейтинг ↗</a></dd>
                 </div>
               ) : null}
             </dl>
