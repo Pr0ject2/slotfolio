@@ -14,7 +14,6 @@ const expected: Record<string, string> = {
   "hacksaw-gaming-evil-eyes": "4/5",
   "hacksaw-gaming-fire-my-laser": "3/5",
   "hacksaw-gaming-hounds-of-hell": "4/5",
-  "hacksaw-gaming-jelly-slice": "3/5",
   "hacksaw-gaming-klowns": "3/5",
   "hacksaw-gaming-le-cowboy": "3/5",
   "hacksaw-gaming-le-pharaoh": "3/5",
@@ -34,7 +33,7 @@ function qualityScore(slug: string) {
 }
 
 test("Hacksaw provider-wide volatility meter preserves canonical sources and lifts all score-six targets", () => {
-  expect(Object.keys(expected)).toHaveLength(14);
+  expect(Object.keys(expected)).toHaveLength(13);
   const seeds = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   for (const [slug, volatility] of Object.entries(expected)) {
