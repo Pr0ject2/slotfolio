@@ -27,7 +27,10 @@ const values: Record<string, HacksawScore4Values> = {
     rtp: "96,24% / 94,12% / 92,27% / 88,25%",
     volatility: "4/5",
   },
-  "hacksaw-gaming-jelly-slice": { volatility: "3/5" },
+  "hacksaw-gaming-jelly-slice": {
+    field: "5×4 · до 1204 способов",
+    volatility: "3/5",
+  },
   "hacksaw-gaming-keepem": { volatility: "3/5" },
   "hacksaw-gaming-le-prechaun": {
     rtp: "97,52% / 96,28% / 94,29% / 92,28% / 86,31%",
