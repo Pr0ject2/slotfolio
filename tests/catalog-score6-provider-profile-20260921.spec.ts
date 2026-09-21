@@ -14,17 +14,9 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("profile current score-six provider tail", () => {
-  const scoreSix = catalogSeeds.filter((seed) => scoreFor(seed.slug) === 6);
-  const byProvider = Object.entries(
-    scoreSix.reduce<Record<string, number>>((acc, seed) => {
-      acc[seed.provider] = (acc[seed.provider] ?? 0) + 1;
-      return acc;
-    }, {}),
-  ).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
-
-  const playngo = scoreSix
-    .filter((seed) => seed.provider === "Play’n GO")
+function profileProvider(provider: string, scoreSix: typeof catalogSeeds) {
+  return scoreSix
+    .filter((seed) => seed.provider === provider)
     .map((seed) => {
       const details = getVerifiedCatalogDetails(seed.slug);
       const type = getVerifiedCatalogGameType(seed.slug);
@@ -42,8 +34,23 @@ test("profile current score-six provider tail", () => {
         mechanicsCount: research?.mechanics.length ?? 0,
       };
     });
+}
+
+test("profile current score-six provider tail", () => {
+  const scoreSix = catalogSeeds.filter((seed) => scoreFor(seed.slug) === 6);
+  const byProvider = Object.entries(
+    scoreSix.reduce<Record<string, number>>((acc, seed) => {
+      acc[seed.provider] = (acc[seed.provider] ?? 0) + 1;
+      return acc;
+    }, {}),
+  ).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 
   console.log("SCORE6_PROVIDER_COUNTS", JSON.stringify(byProvider));
-  console.log("PLAYNGO_SCORE6_PROFILE", JSON.stringify(playngo));
+  console.log("PLAYNGO_SCORE6_PROFILE", JSON.stringify(profileProvider("Play’n GO", scoreSix)));
+  console.log("3OAKS_SCORE6_PROFILE", JSON.stringify(profileProvider("3 Oaks Gaming", scoreSix)));
+  console.log("ENDORPHINA_SCORE6_PROFILE", JSON.stringify(profileProvider("Endorphina", scoreSix)));
+  console.log("HACKSAW_SCORE6_PROFILE", JSON.stringify(profileProvider("Hacksaw Gaming", scoreSix)));
+  console.log("PUSH_SCORE6_PROFILE", JSON.stringify(profileProvider("Push Gaming", scoreSix)));
+  console.log("NOLIMIT_SCORE6_PROFILE", JSON.stringify(profileProvider("Nolimit City", scoreSix)));
   expect(scoreSix.length).toBeGreaterThan(0);
 });
