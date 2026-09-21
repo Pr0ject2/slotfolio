@@ -32,23 +32,18 @@ const newlyClassified = [
 ] as const;
 
 const expectedScoreSix = [
-  "push-gaming-10-cash-bisons",
   "push-gaming-big-bamboo-2",
-  "push-gaming-bison-battle",
-  "push-gaming-blaze-of-ra",
   "push-gaming-fang-city",
   "push-gaming-happy-bamboo",
   "push-gaming-henry-the-ape",
   "push-gaming-mad-blast",
-  "push-gaming-olympus-unleashed",
   "push-gaming-razor-shark-jackpots",
   "push-gaming-red-hot-multipliers",
   "push-gaming-regal-knights",
-  "push-gaming-the-grand-show",
   "push-gaming-the-great-banker",
 ] as const;
 
-test("Push Gaming score-six tail drops from 28 to the fourteen remaining technical gaps", () => {
+test("Push Gaming score-six tail drops from 28 to nine remaining evidence gaps", () => {
   const scoreSix = catalogSeeds
     .filter((seed) => seed.provider === "Push Gaming" && scoreFor(seed.slug) === 6)
     .map((seed) => seed.slug)
@@ -62,6 +57,24 @@ test("official Push game pages classify the fourteen promoted score-six records 
     const type = getVerifiedCatalogGameType(slug);
     expect(type?.gameType, slug).toBe("Slots");
     expect(type?.source, slug).toContain("pushgaming.com/");
+    expect(scoreFor(slug), slug).toBeGreaterThanOrEqual(7);
+  }
+});
+
+test("five direct Push facts close another five score-six gaps", () => {
+  expect(getVerifiedCatalogDetails("push-gaming-10-cash-bisons")?.releaseDate).toBe("2025-08");
+  expect(getVerifiedCatalogDetails("push-gaming-bison-battle")?.field).toBe("5 барабанов");
+  expect(getVerifiedCatalogDetails("push-gaming-blaze-of-ra")?.releaseDate).toBe("2018-05-22");
+  expect(getVerifiedCatalogDetails("push-gaming-olympus-unleashed")?.field).toBe("5 рядов");
+  expect(getVerifiedCatalogDetails("push-gaming-the-grand-show")?.field).toBe("Бонус: 5×8");
+
+  for (const slug of [
+    "push-gaming-10-cash-bisons",
+    "push-gaming-bison-battle",
+    "push-gaming-blaze-of-ra",
+    "push-gaming-olympus-unleashed",
+    "push-gaming-the-grand-show",
+  ]) {
     expect(scoreFor(slug), slug).toBeGreaterThanOrEqual(7);
   }
 });
