@@ -1,17 +1,34 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 
 type PushScore6Details = Pick<CatalogVerifiedDetails, "source" | "verifiedAt"> &
-  Partial<Pick<CatalogVerifiedDetails, "releaseDate">> & {
+  Partial<Pick<CatalogVerifiedDetails, "field" | "releaseDate">> & {
     releaseDateSource?: string;
   };
 
 const verifiedAt = "2026-09-20";
 
 const details: Record<string, PushScore6Details> = {
+  "push-gaming-10-cash-bisons": {
+    releaseDate: "2025-08",
+    releaseDateSource: "https://www.pushgaming.com/blog/q-head-studio-ihor-lozinskiy-speaks-demo-slot.html",
+    source: "https://www.pushgaming.com/games/10-cash-bisons.html",
+    verifiedAt,
+  },
   "push-gaming-10-flaming-bisons": {
     releaseDate: "2024-12-11",
     releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-ignites-reels-10-flaming-bisons.html",
     source: "https://www.pushgaming.com/games/10-flaming-bisons.html",
+    verifiedAt,
+  },
+  "push-gaming-bison-battle": {
+    field: "5 барабанов",
+    source: "https://www.pushgaming.com/games/bison-battle.html",
+    verifiedAt,
+  },
+  "push-gaming-blaze-of-ra": {
+    releaseDate: "2018-05-22",
+    releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-light-sky-new-title-blaze-ra.html",
+    source: "https://www.pushgaming.com/games/blaze-ra.html",
     verifiedAt,
   },
   "push-gaming-dinopolis": {
@@ -50,10 +67,20 @@ const details: Record<string, PushScore6Details> = {
     source: "https://www.pushgaming.com/games/mystery-nile.html",
     verifiedAt,
   },
+  "push-gaming-olympus-unleashed": {
+    field: "5 рядов",
+    source: "https://www.pushgaming.com/games/olympus-unleashed.html",
+    verifiedAt,
+  },
   "push-gaming-retro-sweets": {
     releaseDate: "2024-05-02",
     releaseDateSource: "https://www.pushgaming.com/blog/push-gaming-releases-sugary-sequel-retro-sweets.html",
     source: "https://www.pushgaming.com/games/retro-sweets.html",
+    verifiedAt,
+  },
+  "push-gaming-the-grand-show": {
+    field: "Бонус: 5×8",
+    source: "https://www.pushgaming.com/games/grand-show.html",
     verifiedAt,
   },
   "push-gaming-triple-rampage": {
