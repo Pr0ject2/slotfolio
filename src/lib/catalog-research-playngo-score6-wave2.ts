@@ -2,7 +2,11 @@ import type { CatalogResearch } from "./catalog-research";
 
 const verifiedAt = "2026-09-22";
 
-const records: Record<string, CatalogResearch> = {
+type SourcedCatalogResearch = CatalogResearch & {
+  evidenceSource?: string;
+};
+
+const records: Record<string, SourcedCatalogResearch> = {
   "playn-go-animal-madness": {
     mechanics: ["Удаление символов"],
     source: "https://www.playngo.com/games/animal-madness",
