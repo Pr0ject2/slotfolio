@@ -4,13 +4,15 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
-const expectedScoreSix = [
+const fieldLimited = [
   "hacksaw-gaming-epic-ze-zeus",
   "hacksaw-gaming-great-game-rockies",
   "hacksaw-gaming-le-hooligan",
   "hacksaw-gaming-le-sortudo",
   "hacksaw-gaming-supreme-zeus",
 ] as const;
+
+const expectedScoreSix = [...fieldLimited, "hacksaw-gaming-jelly-slice"] as const;
 
 function scoreFor(slug: string) {
   const details = getVerifiedCatalogDetails(slug);
@@ -22,7 +24,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("Hacksaw score-six tail contains only the five evidence-limited field gaps", () => {
+test("Hacksaw score-six tail contains only six evidence-limited records", () => {
   const scoreSix = catalogSeeds
     .filter((seed) => seed.provider === "Hacksaw Gaming" && scoreFor(seed.slug) === 6)
     .map((seed) => seed.slug)
@@ -30,7 +32,7 @@ test("Hacksaw score-six tail contains only the five evidence-limited field gaps"
 
   expect(scoreSix).toEqual([...expectedScoreSix].sort());
 
-  for (const slug of expectedScoreSix) {
+  for (const slug of fieldLimited) {
     const details = getVerifiedCatalogDetails(slug);
     expect(details?.field, `${slug} field remains unknown`).toBeUndefined();
     expect(details?.rtp, `${slug} RTP stays verified`).toBeTruthy();
@@ -41,6 +43,11 @@ test("Hacksaw score-six tail contains only the five evidence-limited field gaps"
     expect(getVerifiedCatalogResearch(slug)?.mechanics.length, `${slug} keeps win mechanics`).toBeGreaterThan(0);
   }
 
-  expect(getVerifiedCatalogDetails("hacksaw-gaming-jelly-slice")?.field).toBe("5×4 · до 1204 способов");
-  expect(scoreFor("hacksaw-gaming-jelly-slice")).toBeGreaterThan(6);
+  const jelly = getVerifiedCatalogDetails("hacksaw-gaming-jelly-slice");
+  expect(jelly?.field).toBe("5×4 · до 1204 способов");
+  expect(jelly?.maxWin).toBe("10 000x");
+  expect(jelly?.volatility).toBe("3/5");
+  expect(getVerifiedCatalogGameType("hacksaw-gaming-jelly-slice")?.gameType).toBe("Slots");
+  expect(getVerifiedCatalogResearch("hacksaw-gaming-jelly-slice")?.mechanics.length).toBeGreaterThan(0);
+  expect(scoreFor("hacksaw-gaming-jelly-slice")).toBe(6);
 });
