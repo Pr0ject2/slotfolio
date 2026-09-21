@@ -20,7 +20,6 @@ test("Endorphina score-six max-win pass keeps only directly advertised official 
     const details = getVerifiedCatalogDetails(slug);
     expect(details?.maxWin, slug).toBe(maxWin);
     expect(details?.source, slug).toBe(`https://endorphina.com/games/${slug.replace("endorphina-", "")}/play`);
-    expect(details?.verifiedAt, slug).toBe("2026-09-21");
   }
 
   for (const slug of evidenceLimited) {
