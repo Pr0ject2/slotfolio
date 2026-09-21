@@ -21,7 +21,7 @@ const expectedFields: Record<string, string> = {
   "hacksaw-gaming-fighter-pit": "5×4",
   "hacksaw-gaming-fist-of-destruction": "5×4",
   "hacksaw-gaming-immortal-desire": "1024 способа",
-  "hacksaw-gaming-jelly-slice": "до 1204 способов",
+  "hacksaw-gaming-jelly-slice": "5×4 · до 1204 способов",
   "hacksaw-gaming-keepem": "6×5 · 15 625 способов",
   "hacksaw-gaming-klowns": "6×5",
   "hacksaw-gaming-rise-of-ymir": "5×4",

@@ -10,7 +10,7 @@ const expected = {
   "hacksaw-gaming-densho": { rtp: "96,40% / 94,38% / 92,33% / 88,34%", volatility: "4/5" },
   "hacksaw-gaming-dropem": { rtp: "96,21% / 94,19% / 92,26% / 88,10%", volatility: "4/5" },
   "hacksaw-gaming-immortal-desire": { rtp: "96,24% / 94,12% / 92,27% / 88,25%", volatility: "4/5" },
-  "hacksaw-gaming-jelly-slice": { volatility: "3/5" },
+  "hacksaw-gaming-jelly-slice": { field: "5×4 · до 1204 способов", volatility: "3/5" },
   "hacksaw-gaming-keepem": { volatility: "3/5" },
   "hacksaw-gaming-marlin-masters-og": { rtp: "96,25% / 94,23% / 92,27%", volatility: "3/5", releaseDate: "2026-07-28" },
   "hacksaw-gaming-mayan-stackways": { volatility: "Средняя–высокая" },
@@ -42,6 +42,7 @@ test("Hacksaw score-four pass preserves exact official technical facts", () => {
     expect(Date.parse(details?.verifiedAt ?? ""), `${slug} keeps or advances its verification date`).toBeGreaterThanOrEqual(
       Date.parse("2026-09-18"),
     );
+    if ("field" in values) expect(details?.field, slug).toBe(values.field);
     if ("rtp" in values) expect(details?.rtp, slug).toBe(values.rtp);
     if ("volatility" in values) expect(details?.volatility, slug).toBe(values.volatility);
     if ("releaseDate" in values) expect(details?.releaseDate, slug).toBe(values.releaseDate);
