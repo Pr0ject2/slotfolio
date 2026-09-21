@@ -1,4 +1,5 @@
 import type { CatalogResearch } from "./catalog-research";
+import { getCatalogResearch3OaksScore6Final } from "./catalog-research-3oaks-score6-final";
 
 const verifiedAt = "2026-09-18";
 
@@ -162,5 +163,5 @@ const records: Record<string, CatalogResearch> = {
 };
 
 export function getCatalogResearch3OaksScore4ProviderPass(slug: string) {
-  return records[slug];
+  return getCatalogResearch3OaksScore6Final(slug) ?? records[slug];
 }
