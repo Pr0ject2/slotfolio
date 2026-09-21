@@ -31,32 +31,34 @@ const newlyClassified = [
   "push-gaming-tarot-treasures",
 ] as const;
 
-const finalMechanics = {
+const scoreBearingMechanics = {
   "push-gaming-big-bamboo-2": "Instant Prizes",
   "push-gaming-fang-city": "Множители",
-  "push-gaming-happy-bamboo": "Респины",
-  "push-gaming-henry-the-ape": "Сбор символов",
-  "push-gaming-mad-blast": "Множители",
-  "push-gaming-razor-shark-jackpots": "Instant Prizes",
-  "push-gaming-regal-knights": "Instant Prizes",
   "push-gaming-the-great-banker": "Wheel Feature",
 } as const;
 
-const expectedScoreSix = ["push-gaming-red-hot-multipliers"] as const;
+const expectedScoreSix = [
+  "push-gaming-happy-bamboo",
+  "push-gaming-henry-the-ape",
+  "push-gaming-mad-blast",
+  "push-gaming-razor-shark-jackpots",
+  "push-gaming-red-hot-multipliers",
+  "push-gaming-regal-knights",
+] as const;
 
-test("Push Gaming score-six tail contains only the evidence-limited Red Hot Multipliers record", () => {
+test("Push Gaming score-six tail contains only six evidence-limited records", () => {
   const scoreSix = catalogSeeds
     .filter((seed) => seed.provider === "Push Gaming" && scoreFor(seed.slug) === 6)
     .map((seed) => seed.slug)
     .sort();
 
-  expect(scoreSix).toEqual([...expectedScoreSix]);
+  expect(scoreSix).toEqual([...expectedScoreSix].sort());
   expect(getVerifiedCatalogDetails("push-gaming-red-hot-multipliers")?.source).toContain("pushgaming.com/");
   expect(getVerifiedCatalogGameType("push-gaming-red-hot-multipliers")?.gameType).toBe("Slots");
 });
 
-test("final official Push features lift eight remaining score-six records without inventing layouts", () => {
-  for (const [slug, mechanic] of Object.entries(finalMechanics)) {
+test("final official Push features lift three remaining score-six records without inventing layouts", () => {
+  for (const [slug, mechanic] of Object.entries(scoreBearingMechanics)) {
     const research = getVerifiedCatalogResearch(slug);
     expect(research?.mechanics, slug).toContain(mechanic);
     expect(research?.source, slug).toContain("pushgaming.com/games/");
