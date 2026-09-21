@@ -53,6 +53,18 @@ test("profile current score-six catalog tail by provider and missing signature",
     }))
     .sort((a, b) => b.count - a.count || a.provider.localeCompare(b.provider));
 
+  const threeOaks = rows
+    .filter((row) => row.provider === "3 Oaks Gaming")
+    .map((row) => {
+      const research = getVerifiedCatalogResearch(row.slug);
+      return {
+        slug: row.slug,
+        mechanics: research?.mechanics ?? [],
+        source: research?.source,
+        evidenceSource: research?.evidenceSource,
+      };
+    });
+
   console.log("SCORE6_PROVIDER_PROFILE", JSON.stringify({ total: rows.length, summary }));
-  console.log("SCORE6_ROWS", JSON.stringify(rows));
+  console.log("SCORE6_3OAKS_MECHANICS", JSON.stringify(threeOaks));
 });
