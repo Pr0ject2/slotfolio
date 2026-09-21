@@ -6,6 +6,7 @@ import { getCatalogResearchPlayngoScore5ProviderPass4 } from "./catalog-research
 import { getCatalogResearchPlayngoScore5ProviderPass5 } from "./catalog-research-playngo-score5-provider-pass-5";
 import { getCatalogResearchPlayngoScore5ProviderPass6 } from "./catalog-research-playngo-score5-provider-pass-6";
 import { getCatalogResearchPlayngoScore6Wave } from "./catalog-research-playngo-score6-wave";
+import { getCatalogResearchPlayngoScore6Wave2 } from "./catalog-research-playngo-score6-wave2";
 
 export function getCatalogResearchPlayngoScore5ProviderPass(slug: string): CatalogResearch | undefined {
   const score5 =
@@ -15,7 +16,17 @@ export function getCatalogResearchPlayngoScore5ProviderPass(slug: string): Catal
     getCatalogResearchPlayngoScore5ProviderPass3(slug) ??
     getCatalogResearchPlayngoScore5ProviderPass2(slug) ??
     getCatalogResearchPlayngoScore5ProviderPassLegacy(slug);
-  const score6 = getCatalogResearchPlayngoScore6Wave(slug);
+  const score6Base = getCatalogResearchPlayngoScore6Wave(slug);
+  const score6Wave2 = getCatalogResearchPlayngoScore6Wave2(slug);
+  const score6 =
+    score6Base && score6Wave2
+      ? {
+          ...score6Base,
+          ...score6Wave2,
+          mechanics: [...new Set([...score6Base.mechanics, ...score6Wave2.mechanics])],
+          evidence: [score6Base.evidence, score6Wave2.evidence].filter(Boolean).join(" "),
+        }
+      : score6Wave2 ?? score6Base;
 
   if (!score6) return score5;
   if (!score5) return score6;
