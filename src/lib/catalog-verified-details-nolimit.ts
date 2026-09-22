@@ -1,10 +1,15 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 
+type NolimitVerifiedDetails = CatalogVerifiedDetails & {
+  volatilitySource?: string;
+};
+
 const verifiedAt = "2026-09-11";
 const verifiedAtFinal = "2026-09-13";
 const verifiedAtLatest = "2026-09-17";
+const verifiedAtScore6 = "2026-09-22";
 
-const details: Record<string, CatalogVerifiedDetails> = {
+const details: Record<string, NolimitVerifiedDetails> = {
   "nolimit-city-bowel-of-beelzebub": {
     releaseDate: "2026-12-01",
     source: "https://nolimitcity.com/games/bowel-of-beelzebub",
@@ -22,9 +27,11 @@ const details: Record<string, CatalogVerifiedDetails> = {
     field: "6×6",
     rtp: "96,00%",
     maxWin: "40 000x",
+    volatility: "Экстремальная",
+    volatilitySource: "https://nolimitcity.com/posts/duck-hunters-2-now-live",
     releaseDate: "2026-09-10",
     source: "https://nolimitcity.com/games/duck-hunters-2",
-    verifiedAt,
+    verifiedAt: verifiedAtScore6,
   },
   "nolimit-city-fire-in-the-hole-4": {
     releaseDate: "2026-11-17",
