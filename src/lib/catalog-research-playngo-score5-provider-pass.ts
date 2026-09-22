@@ -7,6 +7,19 @@ import { getCatalogResearchPlayngoScore5ProviderPass5 } from "./catalog-research
 import { getCatalogResearchPlayngoScore5ProviderPass6 } from "./catalog-research-playngo-score5-provider-pass-6";
 import { getCatalogResearchPlayngoScore6Wave } from "./catalog-research-playngo-score6-wave";
 import { getCatalogResearchPlayngoScore6Wave2 } from "./catalog-research-playngo-score6-wave2";
+import { getCatalogResearchPlayngoScore6Wave3 } from "./catalog-research-playngo-score6-wave3";
+
+function mergeResearch(base: CatalogResearch | undefined, extra: CatalogResearch | undefined) {
+  if (!base) return extra;
+  if (!extra) return base;
+
+  return {
+    ...base,
+    ...extra,
+    mechanics: [...new Set([...base.mechanics, ...extra.mechanics])],
+    evidence: [base.evidence, extra.evidence].filter(Boolean).join(" "),
+  };
+}
 
 export function getCatalogResearchPlayngoScore5ProviderPass(slug: string): CatalogResearch | undefined {
   const score5 =
@@ -16,25 +29,10 @@ export function getCatalogResearchPlayngoScore5ProviderPass(slug: string): Catal
     getCatalogResearchPlayngoScore5ProviderPass3(slug) ??
     getCatalogResearchPlayngoScore5ProviderPass2(slug) ??
     getCatalogResearchPlayngoScore5ProviderPassLegacy(slug);
-  const score6Base = getCatalogResearchPlayngoScore6Wave(slug);
-  const score6Wave2 = getCatalogResearchPlayngoScore6Wave2(slug);
-  const score6 =
-    score6Base && score6Wave2
-      ? {
-          ...score6Base,
-          ...score6Wave2,
-          mechanics: [...new Set([...score6Base.mechanics, ...score6Wave2.mechanics])],
-          evidence: [score6Base.evidence, score6Wave2.evidence].filter(Boolean).join(" "),
-        }
-      : score6Wave2 ?? score6Base;
+  const score6 = mergeResearch(
+    mergeResearch(getCatalogResearchPlayngoScore6Wave(slug), getCatalogResearchPlayngoScore6Wave2(slug)),
+    getCatalogResearchPlayngoScore6Wave3(slug),
+  );
 
-  if (!score6) return score5;
-  if (!score5) return score6;
-
-  return {
-    ...score5,
-    ...score6,
-    mechanics: [...new Set([...score5.mechanics, ...score6.mechanics])],
-    evidence: [score5.evidence, score6.evidence].filter(Boolean).join(" "),
-  };
+  return mergeResearch(score5, score6);
 }
