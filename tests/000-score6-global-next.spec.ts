@@ -32,7 +32,16 @@ function missingFor(slug: string) {
 test.only("profile current global score-six tail", () => {
   const rows = catalogSeeds
     .filter((seed) => scoreFor(seed.slug) === 6)
-    .map((seed) => ({ provider: seed.provider, slug: seed.slug, missing: missingFor(seed.slug) }));
+    .map((seed) => {
+      const research = getVerifiedCatalogResearch(seed.slug);
+      return {
+        provider: seed.provider,
+        slug: seed.slug,
+        missing: missingFor(seed.slug),
+        mechanics: research?.mechanics ?? [],
+        source: research?.source,
+      };
+    });
 
   const byProvider = Object.entries(
     rows.reduce<Record<string, number>>((acc, row) => {
