@@ -2,9 +2,11 @@ import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 
 type WazdanScore6Values = Partial<Pick<CatalogVerifiedDetails, "field" | "maxWin" | "volatility" | "releaseDate">> & {
   releaseDateSource?: string;
+  releaseDateVerifiedAt?: string;
 };
 
 const verifiedAt = "2026-09-20";
+const newReleaseDateVerifiedAt = "2026-09-23";
 
 const values: Record<string, WazdanScore6Values> = {
   "wazdan-16-coins-x5000": {
@@ -40,6 +42,7 @@ const values: Record<string, WazdanScore6Values> = {
   "wazdan-back-to-the-70s": {
     releaseDate: "2017-05-01",
     releaseDateSource: "https://wazdan.com/news/new-releases-updates/four-new-games-added-in-may",
+    releaseDateVerifiedAt: newReleaseDateVerifiedAt,
   },
   "wazdan-black-horse": {
     releaseDate: "2012-02-20",
@@ -70,6 +73,7 @@ const values: Record<string, WazdanScore6Values> = {
   },
   "wazdan-relic-hunters-and-the-book-of-faith": {
     releaseDate: "2019-10-04",
+    releaseDateVerifiedAt: newReleaseDateVerifiedAt,
   },
   "wazdan-space-gem": {
     releaseDate: "2019-01-22",
