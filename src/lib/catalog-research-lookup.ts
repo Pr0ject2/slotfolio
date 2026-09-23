@@ -200,8 +200,9 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
     getCatalogResearchPush(slug) ??
     getCatalogResearchNolimit(slug);
 
+  const preserveExistingMechanics = slug !== "playn-go-cashin-joker";
   const legacy = freshMechanics?.mechanics.length
-    ? existing?.mechanics.length
+    ? existing?.mechanics.length && preserveExistingMechanics
       ? {
           ...freshMechanics,
           mechanics: [...new Set([...existing.mechanics, ...freshMechanics.mechanics])],
