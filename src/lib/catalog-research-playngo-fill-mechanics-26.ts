@@ -39,6 +39,24 @@ const records: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Play’n GO page describes Mine Cart Cash Collect as a separate random base-game feature that gathers visible cash Gem values.",
   },
+  "playn-go-coils-of-cash": {
+    mechanics: ["Power Coil"],
+    source: "https://www.playngo.com/games/coils-of-cash",
+    verifiedAt,
+    evidence: "Official Play’n GO material identifies the Power Coil as a separate horizontal reel that can charge player wins.",
+  },
+  "playn-go-love-joker": {
+    mechanics: ["Golden Hearts"],
+    source: "https://www.playngo.com/games/love-joker",
+    verifiedAt,
+    evidence: "Official Play’n GO page identifies Golden Hearts as a distinct collected feature that doubles the active multiplier during Love Re-Spins.",
+  },
+  "playn-go-gold-of-fortune-god": {
+    mechanics: ["Golden Frames"],
+    source: "https://www.playngo.com/games/gold-of-fortune-god",
+    verifiedAt,
+    evidence: "Official Play’n GO release describes Golden Frames as a separate moving-frame feature that shifts position and awards Mini, Minor and Major rewards.",
+  },
 };
 
 export function getCatalogResearchPlayngoFillMechanics26(slug: string) {
