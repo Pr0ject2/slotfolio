@@ -14,9 +14,11 @@ const expected = {
   },
   "playn-go-legion-gold-unleashed": {
     field: "5×3 · 25 линий",
+    maxWin: "3000x",
     releaseDate: "2024-02-29",
     source: "https://www.playngo.com/games/legion-gold-unleashed",
     fieldSource: "https://www.playngo.com/posts/legion-gold-unleashed-online-slot-review",
+    maxWinSource: "https://www.playngo.com/post/legion-gold-unleashed-online-slot-review",
   },
   "playn-go-legion-gold-and-the-sphinx-of-dead": {
     field: "5×3",
@@ -58,8 +60,17 @@ test("quality pass 23 preserves exact official layouts on three Play’n GO reco
     expect(details?.field, slug).toBe(values.field);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
     expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
-    expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
     expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
+
+    if ("maxWin" in values) {
+      expect(details?.maxWin, slug).toBe(values.maxWin);
+      expect(details && "maxWinSource" in details, `${slug} must retain separate official max-win provenance`).toBe(true);
+      if (details && "maxWinSource" in details) {
+        expect(details.maxWinSource, slug).toBe(values.maxWinSource);
+      }
+    } else {
+      expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
+    }
 
     if ("fieldSource" in values) {
       expect(details && "fieldSource" in details, `${slug} must retain the separate official field source`).toBe(true);
