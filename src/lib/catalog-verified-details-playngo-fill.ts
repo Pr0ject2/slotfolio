@@ -141,6 +141,21 @@ const details: Record<string, PlayngoFillOverlay> = {
     fieldSource: "https://www.playngo.com/games/monkey%3A-battle-for-the-scrolls",
     verifiedAt: "2026-09-20",
   },
+  "playn-go-ace-of-spades": {
+    maxWin: "2500 монет",
+    maxWinSource: "https://www.playngo.com/games/ace-of-spades",
+    verifiedAt: "2026-09-23",
+  },
+  "playn-go-derby-wheel": {
+    maxWin: "2800x",
+    maxWinSource: "https://www.playngo.com/games/derby-wheel",
+    verifiedAt: "2026-09-23",
+  },
+  "playn-go-leprechauns-vault": {
+    maxWin: "9000x",
+    maxWinSource: "https://www.playngo.com/games/leprechaun%27s-vault",
+    verifiedAt: "2026-09-23",
+  },
 };
 
 export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
