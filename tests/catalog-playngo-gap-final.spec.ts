@@ -41,8 +41,9 @@ const finalSlugs = [
 const gridSlots = new Set([
   "playn-go-charlie-chance-and-the-curse-of-cleopatra",
   "playn-go-lordi-reel-monsters",
+  "playn-go-ras-reckoning",
 ]);
-const unknownGameType = new Set(["playn-go-ras-reckoning"]);
+const unknownGameType = new Set<string>();
 const researchedSlugs = new Set([
   "playn-go-chambers-of-ancients",
   "playn-go-charlie-chance",
@@ -56,7 +57,7 @@ const researchedSlugs = new Set([
   "playn-go-raging-rex-3",
 ]);
 
-test("final Play’n GO gap records stay selected and preserve exact official sources", () => {
+test("final Play’n GO gap records stay selected and preserve exact official sources while allowing later Game Type evidence", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   for (const slug of finalSlugs) {
