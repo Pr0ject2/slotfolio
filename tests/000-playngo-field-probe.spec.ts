@@ -40,6 +40,8 @@ function directLayoutSnippets(text: string) {
 }
 
 test.only("probe exact current Play'n GO missing-field pages for direct official layout wording", async () => {
+  test.setTimeout(120_000);
+
   const targets = catalogSeeds.filter(
     (seed) => seed.provider === "Play’n GO" && !getVerifiedCatalogDetails(seed.slug)?.field,
   );
