@@ -156,6 +156,21 @@ const details: Record<string, PlayngoFillOverlay> = {
     maxWinSource: "https://www.playngo.com/games/leprechaun%27s-vault",
     verifiedAt: "2026-09-23",
   },
+  "playn-go-octopus-treasure": {
+    maxWin: "5000x",
+    maxWinSource: "https://www.playngo.com/games/octopus-treasure",
+    verifiedAt: "2026-09-23",
+  },
+  "playn-go-legion-gold-unleashed": {
+    maxWin: "3000x",
+    maxWinSource: "https://www.playngo.com/post/legion-gold-unleashed-online-slot-review",
+    verifiedAt: "2026-09-23",
+  },
+  "playn-go-rally-4-riches": {
+    field: "3 барабана",
+    fieldSource: "https://www.playngo.com/games/rally-4-riches",
+    verifiedAt: "2026-09-23",
+  },
 };
 
 export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
