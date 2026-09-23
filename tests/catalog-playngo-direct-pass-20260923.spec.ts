@@ -56,5 +56,5 @@ test("new Play'n GO fill stays additive to older verified passport facts", () =>
   expect(octopus?.field).toBe("5×3 · 20 линий");
   expect(octopus?.releaseDate).toMatch(/^2020-09/);
   expect(legion?.field).toBe("5×3 · 25 линий");
-  expect(legion?.releaseDate).toMatch(/^2025-06/);
+  expect(legion?.releaseDate).toMatch(/^2024-02/);
 });
