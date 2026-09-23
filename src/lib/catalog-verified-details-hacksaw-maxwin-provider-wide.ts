@@ -1,9 +1,16 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 import { getCatalogVerifiedDetailsHacksawVolatilityProviderWide } from "./catalog-verified-details-hacksaw-volatility-provider-wide";
 
-const verifiedAt = "2026-09-17";
+type HacksawMaxWinDetails = CatalogVerifiedDetails & {
+  maxWinSource?: string;
+  maxWinVerifiedAt?: string;
+  volatilitySource?: string;
+};
 
-const details: Record<string, CatalogVerifiedDetails> = {
+const verifiedAt = "2026-09-17";
+const newVerifiedAt = "2026-09-23";
+
+const details: Record<string, HacksawMaxWinDetails> = {
   "hacksaw-gaming-beam-boys": { maxWin: "12 500x", source: "https://www.hacksawgaming.com/games/beam-boys", verifiedAt },
   "hacksaw-gaming-bouncy-bombs": { maxWin: "10 000x", source: "https://www.hacksawgaming.com/games/bouncy-bombs", verifiedAt },
   "hacksaw-gaming-danny-dollar": { maxWin: "12 500x", source: "https://www.hacksawgaming.com/games/danny-dollar", verifiedAt },
@@ -23,6 +30,7 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "hacksaw-gaming-keepem": { maxWin: "10 000x", source: "https://www.hacksawgaming.com/games/keep-em", verifiedAt },
   "hacksaw-gaming-klowns": { maxWin: "10 000x", source: "https://www.hacksawgaming.com/games/klowns", verifiedAt },
   "hacksaw-gaming-le-football-fan": { maxWin: "2 500x", source: "https://www.hacksawgaming.com/games/le-football-fan", verifiedAt },
+  "hacksaw-gaming-le-pharaoh": { maxWin: "15 000x", maxWinSource: "https://static-stg.hacksawgaming.com/1562/1.42.1/gameinfoassets/templates/en-us/en-us-gameinfo.html", maxWinVerifiedAt: newVerifiedAt, source: "https://www.hacksawgaming.com/games/le-pharaoh", verifiedAt: newVerifiedAt },
   "hacksaw-gaming-le-prechaun": { maxWin: "15 000x", source: "https://www.hacksawgaming.com/games/le-prechaun", verifiedAt },
   "hacksaw-gaming-magic-piggy-og": { maxWin: "2 500x", source: "https://www.hacksawgaming.com/games/magic-piggy-og", verifiedAt },
   "hacksaw-gaming-marlin-masters-og": { maxWin: "7 500x", source: "https://www.hacksawgaming.com/games/marlin-masters-og", verifiedAt },
@@ -44,7 +52,7 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "hacksaw-gaming-ze-zeus": { maxWin: "10 000x", source: "https://www.hacksawgaming.com/games/ze-zeus", verifiedAt },
 };
 
-export function getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug: string) {
+export function getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug: string): HacksawMaxWinDetails | undefined {
   const maxWin = details[slug];
   const volatility = getCatalogVerifiedDetailsHacksawVolatilityProviderWide(slug);
 
