@@ -3,6 +3,7 @@ import { getCatalogVerifiedDetailsHacksawVolatilityProviderWide } from "./catalo
 
 type HacksawMaxWinDetails = CatalogVerifiedDetails & {
   maxWinSource?: string;
+  maxWinVerifiedAt?: string;
   volatilitySource?: string;
 };
 
@@ -29,7 +30,7 @@ const details: Record<string, HacksawMaxWinDetails> = {
   "hacksaw-gaming-keepem": { maxWin: "10 000x", source: "https://www.hacksawgaming.com/games/keep-em", verifiedAt },
   "hacksaw-gaming-klowns": { maxWin: "10 000x", source: "https://www.hacksawgaming.com/games/klowns", verifiedAt },
   "hacksaw-gaming-le-football-fan": { maxWin: "2 500x", source: "https://www.hacksawgaming.com/games/le-football-fan", verifiedAt },
-  "hacksaw-gaming-le-pharaoh": { maxWin: "15 000x", maxWinSource: "https://static-stg.hacksawgaming.com/1562/1.42.1/gameinfoassets/templates/en-us/en-us-gameinfo.html", source: "https://www.hacksawgaming.com/games/le-pharaoh", verifiedAt: newVerifiedAt },
+  "hacksaw-gaming-le-pharaoh": { maxWin: "15 000x", maxWinSource: "https://static-stg.hacksawgaming.com/1562/1.42.1/gameinfoassets/templates/en-us/en-us-gameinfo.html", maxWinVerifiedAt: newVerifiedAt, source: "https://www.hacksawgaming.com/games/le-pharaoh", verifiedAt: newVerifiedAt },
   "hacksaw-gaming-le-prechaun": { maxWin: "15 000x", source: "https://www.hacksawgaming.com/games/le-prechaun", verifiedAt },
   "hacksaw-gaming-magic-piggy-og": { maxWin: "2 500x", source: "https://www.hacksawgaming.com/games/magic-piggy-og", verifiedAt },
   "hacksaw-gaming-marlin-masters-og": { maxWin: "7 500x", source: "https://www.hacksawgaming.com/games/marlin-masters-og", verifiedAt },
