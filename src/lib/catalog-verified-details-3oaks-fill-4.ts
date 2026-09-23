@@ -20,6 +20,11 @@ const details: Record<string, ThreeOaksFill4Overlay> = {
     releaseDateSource: "https://bng.games/game/black_wolf_2/?lang=en",
     verifiedAt: "2026-09-19",
   },
+  "3-oaks-gaming-buddha-megaways": {
+    releaseDate: "2021-12",
+    releaseDateSource: "https://3oaks.com/game/buddha_megaways",
+    verifiedAt: "2026-09-23",
+  },
   "3-oaks-gaming-dragon-pearls": {
     maxWin: "1000x",
     releaseDate: "2019-03",
