@@ -4,6 +4,8 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
+type PassportField = "field" | "rtp" | "maxWin" | "volatility" | "releaseDate";
+
 function scoreFor(slug: string) {
   const details = getVerifiedCatalogDetails(slug);
   const type = getVerifiedCatalogGameType(slug);
@@ -17,13 +19,14 @@ test.only("profile current Hacksaw passport residual", () => {
     .filter((seed) => seed.provider === "Hacksaw Gaming")
     .map((seed) => {
       const details = getVerifiedCatalogDetails(seed.slug);
-      const missing = [
+      const facts: Array<[PassportField, unknown]> = [
         ["field", details?.field],
         ["rtp", details?.rtp],
         ["maxWin", details?.maxWin],
         ["volatility", details?.volatility],
         ["releaseDate", details?.releaseDate],
-      ].filter(([, value]) => !value).map(([field]) => field);
+      ];
+      const missing: PassportField[] = facts.filter(([, value]) => !value).map(([field]) => field);
       return {
         slug: seed.slug,
         score: scoreFor(seed.slug),
@@ -37,9 +40,9 @@ test.only("profile current Hacksaw passport residual", () => {
     .sort((a, b) => a.score - b.score || b.missing.length - a.missing.length || a.slug.localeCompare(b.slug));
 
   console.log("HACKSAW_PASSPORT_RESIDUAL", JSON.stringify(rows));
-  console.log("HACKSAW_MISSING_COUNTS", JSON.stringify(rows.reduce<Record<string, number>>((acc, row) => {
-    for (const field of row.missing) acc[field] = (acc[field] ?? 0) + 1;
+  console.log("HACKSAW_MISSING_COUNTS", JSON.stringify(rows.reduce<Record<PassportField, number>>((acc, row) => {
+    for (const field of row.missing) acc[field] += 1;
     return acc;
-  }, {})));
+  }, { field: 0, rtp: 0, maxWin: 0, volatility: 0, releaseDate: 0 })));
   expect(rows.length).toBe(-1);
 });
