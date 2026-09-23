@@ -15,8 +15,8 @@ test("Le Pharaoh max win keeps canonical source separate from official gameinfo 
   expect(seed?.source).toBe("https://www.hacksawgaming.com/games/le-pharaoh");
   expect(direct?.maxWin).toBe("15 000x");
   expect(direct?.maxWinSource).toBe(maxWinSource);
+  expect(direct?.maxWinVerifiedAt).toBe("2026-09-23");
   expect(direct?.source).toBe(seed?.source);
-  expect(direct?.verifiedAt).toBe("2026-09-23");
   expect(merged?.maxWin).toBe("15 000x");
 });
 
