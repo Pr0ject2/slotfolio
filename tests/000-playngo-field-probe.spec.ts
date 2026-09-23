@@ -39,6 +39,21 @@ function directLayoutSnippets(text: string) {
   return snippets;
 }
 
+async function fetchOfficialPage(source: string) {
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= 2; attempt += 1) {
+    try {
+      return await fetch(source, {
+        headers: { "user-agent": "Mozilla/5.0 Slotfolio catalog verification" },
+        signal: AbortSignal.timeout(10_000),
+      });
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError;
+}
+
 test.only("probe exact current Play'n GO missing-field pages for direct official layout wording", async () => {
   test.setTimeout(120_000);
 
@@ -47,17 +62,23 @@ test.only("probe exact current Play'n GO missing-field pages for direct official
   );
 
   const rows = [];
+  const errors = [];
   for (const seed of targets) {
-    const response = await fetch(seed.source, {
-      headers: { "user-agent": "Mozilla/5.0 Slotfolio catalog verification" },
-    });
-    const text = plainText(await response.text());
-    const matches = directLayoutSnippets(text);
-    if (matches.length) {
-      rows.push({ slug: seed.slug, source: seed.source, status: response.status, matches });
+    try {
+      const response = await fetchOfficialPage(seed.source);
+      const text = plainText(await response.text());
+      const matches = directLayoutSnippets(text);
+      if (matches.length) {
+        rows.push({ slug: seed.slug, source: seed.source, status: response.status, matches });
+      }
+    } catch (error) {
+      errors.push({ slug: seed.slug, source: seed.source, error: String(error) });
     }
   }
 
-  console.log("PLAYNGO_FIELD_PROBE", JSON.stringify({ residual: targets.length, directOfficialRows: rows }));
+  console.log(
+    "PLAYNGO_FIELD_PROBE",
+    JSON.stringify({ residual: targets.length, directOfficialRows: rows, errors }),
+  );
   expect(targets.length).toBe(-1);
 });
