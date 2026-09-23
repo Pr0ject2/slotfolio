@@ -8,6 +8,7 @@ const verifiedAt = "2026-09-11";
 const verifiedAtFinal = "2026-09-13";
 const verifiedAtLatest = "2026-09-17";
 const verifiedAtScore6 = "2026-09-22";
+const verifiedAtScore6Latest = "2026-09-23";
 
 const details: Record<string, NolimitVerifiedDetails> = {
   "nolimit-city-bowel-of-beelzebub": {
@@ -19,9 +20,11 @@ const details: Record<string, NolimitVerifiedDetails> = {
     field: "6×3",
     rtp: "95,83%",
     maxWin: "14 280x",
+    volatility: "Экстремальная",
+    volatilitySource: "https://nolimitcity.com/posts/ding-dong-death-now-live",
     releaseDate: "2026-09-22",
     source: "https://nolimitcity.com/games/ding-dong-death",
-    verifiedAt,
+    verifiedAt: verifiedAtScore6Latest,
   },
   "nolimit-city-duck-hunters-2": {
     field: "6×6",
