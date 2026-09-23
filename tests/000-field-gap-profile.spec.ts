@@ -1,48 +1,14 @@
 import { expect, test } from "@playwright/test";
 import { catalogSeeds } from "../src/lib/catalog-seeds";
 import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
-import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
-import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
-type PassportField = "field" | "rtp" | "maxWin" | "volatility" | "releaseDate";
-
-function scoreFor(slug: string) {
-  const details = getVerifiedCatalogDetails(slug);
-  const type = getVerifiedCatalogGameType(slug);
-  const research = getVerifiedCatalogResearch(slug);
-  const facts = [details?.field, details?.rtp, details?.maxWin, details?.volatility, details?.releaseDate];
-  return facts.filter(Boolean).length + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
-}
-
-test.only("profile current Hacksaw passport residual", () => {
+test.only("list exact Hacksaw volatility residual", () => {
   const rows = catalogSeeds
     .filter((seed) => seed.provider === "Hacksaw Gaming")
-    .map((seed) => {
-      const details = getVerifiedCatalogDetails(seed.slug);
-      const facts: Array<[PassportField, unknown]> = [
-        ["field", details?.field],
-        ["rtp", details?.rtp],
-        ["maxWin", details?.maxWin],
-        ["volatility", details?.volatility],
-        ["releaseDate", details?.releaseDate],
-      ];
-      const missing: PassportField[] = facts.filter(([, value]) => !value).map(([field]) => field);
-      return {
-        slug: seed.slug,
-        score: scoreFor(seed.slug),
-        missing,
-        gameType: getVerifiedCatalogGameType(seed.slug)?.gameType,
-        mechanics: getVerifiedCatalogResearch(seed.slug)?.mechanics ?? [],
-        source: details?.source ?? seed.source,
-      };
-    })
-    .filter((row) => row.missing.length > 0)
-    .sort((a, b) => a.score - b.score || b.missing.length - a.missing.length || a.slug.localeCompare(b.slug));
+    .filter((seed) => !getVerifiedCatalogDetails(seed.slug)?.volatility)
+    .map((seed) => seed.slug)
+    .sort();
 
-  console.log("HACKSAW_PASSPORT_RESIDUAL", JSON.stringify(rows));
-  console.log("HACKSAW_MISSING_COUNTS", JSON.stringify(rows.reduce<Record<PassportField, number>>((acc, row) => {
-    for (const field of row.missing) acc[field] += 1;
-    return acc;
-  }, { field: 0, rtp: 0, maxWin: 0, volatility: 0, releaseDate: 0 })));
+  console.log("HACKSAW_VOLATILITY_RESIDUAL", JSON.stringify(rows));
   expect(rows.length).toBe(-1);
 });
