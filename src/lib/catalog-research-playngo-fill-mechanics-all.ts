@@ -21,6 +21,7 @@ import { getCatalogResearchPlayngoFillMechanics20 } from "./catalog-research-pla
 import { getCatalogResearchPlayngoFillMechanics21 } from "./catalog-research-playngo-fill-mechanics-21";
 import { getCatalogResearchPlayngoFillMechanics22 } from "./catalog-research-playngo-fill-mechanics-22";
 import { getCatalogResearchPlayngoFillMechanics23 } from "./catalog-research-playngo-fill-mechanics-23";
+import { getCatalogResearchPlayngoFillMechanics24 } from "./catalog-research-playngo-fill-mechanics-24";
 
 function getPrevious(slug: string) {
   return (
@@ -61,5 +62,6 @@ function mergeResearch(base: ReturnType<typeof getPrevious>, extra: ReturnType<t
 
 export function getCatalogResearchPlayngoFillMechanicsAll(slug: string) {
   const with22 = mergeResearch(getPrevious(slug), getCatalogResearchPlayngoFillMechanics22(slug));
-  return mergeResearch(with22, getCatalogResearchPlayngoFillMechanics23(slug));
+  const with23 = mergeResearch(with22, getCatalogResearchPlayngoFillMechanics23(slug));
+  return mergeResearch(with23, getCatalogResearchPlayngoFillMechanics24(slug));
 }
