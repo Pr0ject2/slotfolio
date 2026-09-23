@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { catalogSeeds } from "../src/lib/catalog-seeds";
 import { getCatalogVerifiedDetailsHacksawVolatilityProviderWide } from "../src/lib/catalog-verified-details-hacksaw-volatility-provider-wide";
 import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
 
@@ -30,12 +31,16 @@ const cases = [
 ] as const;
 
 test("third Hacksaw provider-wide volatility wave preserves official meter values and provenance", () => {
+  const selected = new Set(catalogSeeds.map((seed) => seed.slug));
+
   for (const [slug, volatility] of cases) {
     const direct = getCatalogVerifiedDetailsHacksawVolatilityProviderWide(slug);
     const merged = getVerifiedCatalogDetails(slug);
 
+    expect(selected.has(slug), `${slug}: selected catalog target`).toBe(true);
     expect(direct?.volatility, `${slug}: direct volatility`).toBe(volatility);
     expect(direct?.volatilitySource, `${slug}: provider-wide source`).toBe(volatilitySource);
+    expect(direct?.source, `${slug}: canonical game source`).toBe(`https://www.hacksawgaming.com/games/${slug.replace("hacksaw-gaming-", "")}`);
     expect(direct?.verifiedAt, `${slug}: verification date`).toBe("2026-09-23");
     expect(merged?.volatility, `${slug}: merged volatility`).toBe(volatility);
   }
