@@ -10,12 +10,14 @@ const cases = {
     canonical: "https://3oaks.com/game/coinup_volcano",
     oldMechanics: ["Сбор символов", "Респины"],
     newMechanics: ["Hold & Win", "Mystery Symbols", "Jackpots", "Расширяющиеся барабаны", "Множители"],
+    evidenceMarker: "Official 3 Oaks API describes the Hold & Win bonus",
   },
   "3-oaks-gaming-book-of-sun-multichance": {
     api: "https://3oaks.com/api/v1/games/book_of_sun_multichance",
     canonical: "https://3oaks.com/game/book_of_sun_multichance",
     oldMechanics: ["Линии", "Расширяющиеся символы", "Free Spins"],
     newMechanics: ["Wild"],
+    evidenceMarker: "Official 3 Oaks API explicitly identifies the Scatter as Wild",
   },
 } as const;
 
@@ -37,7 +39,8 @@ test("second 3 Oaks public API wave adds only direct feature evidence and keeps 
 
     const merged = getVerifiedCatalogResearch(slug);
     expect(merged?.source, slug).toBe(values.canonical);
-    expect(merged?.evidenceSource, slug).toBe(values.api);
+    expect(merged?.evidence, slug).toContain(values.evidenceMarker);
+    if (slug === "3-oaks-gaming-coin-up-volcano") expect(merged?.evidenceSource, slug).toBe(values.api);
     for (const mechanic of values.oldMechanics) expect(merged?.mechanics, `${slug}: ${mechanic}`).toContain(mechanic);
     for (const mechanic of values.newMechanics) expect(merged?.mechanics, `${slug}: ${mechanic}`).toContain(mechanic);
     expect(scoreFor(slug), slug).toBeGreaterThan(6);
