@@ -20,6 +20,7 @@ import { getCatalogResearchPlayngoFillMechanics19 } from "./catalog-research-pla
 import { getCatalogResearchPlayngoFillMechanics20 } from "./catalog-research-playngo-fill-mechanics-20";
 import { getCatalogResearchPlayngoFillMechanics21 } from "./catalog-research-playngo-fill-mechanics-21";
 import { getCatalogResearchPlayngoFillMechanics22 } from "./catalog-research-playngo-fill-mechanics-22";
+import { getCatalogResearchPlayngoFillMechanics23 } from "./catalog-research-playngo-fill-mechanics-23";
 
 function getPrevious(slug: string) {
   return (
@@ -47,17 +48,18 @@ function getPrevious(slug: string) {
   );
 }
 
-export function getCatalogResearchPlayngoFillMechanicsAll(slug: string) {
-  const latest = getCatalogResearchPlayngoFillMechanics22(slug);
-  const previous = getPrevious(slug);
-
-  if (!latest) return previous;
-  if (!previous) return latest;
-
+function mergeResearch(base: ReturnType<typeof getPrevious>, extra: ReturnType<typeof getCatalogResearchPlayngoFillMechanics22>) {
+  if (!extra) return base;
+  if (!base) return extra;
   return {
-    ...previous,
-    ...latest,
-    mechanics: [...new Set([...previous.mechanics, ...latest.mechanics])],
-    evidence: [previous.evidence, latest.evidence].filter(Boolean).join(" "),
+    ...base,
+    ...extra,
+    mechanics: [...new Set([...base.mechanics, ...extra.mechanics])],
+    evidence: [base.evidence, extra.evidence].filter(Boolean).join(" "),
   };
+}
+
+export function getCatalogResearchPlayngoFillMechanicsAll(slug: string) {
+  const with22 = mergeResearch(getPrevious(slug), getCatalogResearchPlayngoFillMechanics22(slug));
+  return mergeResearch(with22, getCatalogResearchPlayngoFillMechanics23(slug));
 }
