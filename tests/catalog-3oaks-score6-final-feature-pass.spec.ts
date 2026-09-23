@@ -48,11 +48,11 @@ test("final 3 Oaks score-six feature pass lifts all directly evidenced targets",
   }
 });
 
-test("3 Oaks score-six tail contains only the evidence-limited Book of Sun record", () => {
+test("3 Oaks released score-six tail is empty after later direct API evidence", () => {
   const scoreSix = catalogSeeds
     .filter((seed) => seed.provider === "3 Oaks Gaming" && scoreFor(seed.slug) === 6)
     .map((seed) => seed.slug)
     .sort();
 
-  expect(scoreSix).toEqual(["3-oaks-gaming-book-of-sun-multichance"]);
+  expect(scoreSix).toEqual([]);
 });
