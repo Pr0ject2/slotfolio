@@ -228,9 +228,13 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
   }
 
   if (threeOaksFill?.mechanics.length) {
+    const legacyEvidenceSource =
+      legacy?.source && legacy.source !== threeOaksFill.source ? legacy.source : undefined;
     return canonicalizeResearchSource(slug, {
       ...threeOaksFill,
+      ...(legacyEvidenceSource ? { evidenceSource: legacyEvidenceSource } : {}),
       mechanics: [...new Set([...(legacy?.mechanics ?? []), ...threeOaksFill.mechanics])],
+      evidence: [threeOaksFill.evidence, legacy?.evidence].filter(Boolean).join(" "),
     });
   }
 
