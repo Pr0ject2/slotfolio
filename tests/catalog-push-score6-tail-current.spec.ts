@@ -35,18 +35,16 @@ const scoreBearingMechanics = {
   "push-gaming-big-bamboo-2": "Instant Prizes",
   "push-gaming-fang-city": "Множители",
   "push-gaming-the-great-banker": "Wheel Feature",
+  "push-gaming-happy-bamboo": "Hold & Respin",
+  "push-gaming-henry-the-ape": "Rewind",
+  "push-gaming-mad-blast": "Extra Life",
+  "push-gaming-razor-shark-jackpots": "Jackpot Feature",
+  "push-gaming-regal-knights": "Mystery Symbols",
 } as const;
 
-const expectedScoreSix = [
-  "push-gaming-happy-bamboo",
-  "push-gaming-henry-the-ape",
-  "push-gaming-mad-blast",
-  "push-gaming-razor-shark-jackpots",
-  "push-gaming-red-hot-multipliers",
-  "push-gaming-regal-knights",
-] as const;
+const expectedScoreSix = ["push-gaming-red-hot-multipliers"] as const;
 
-test("Push Gaming score-six tail contains only six evidence-limited records", () => {
+test("Push Gaming score-six tail contains only the evidence-limited Red Hot Multipliers record", () => {
   const scoreSix = catalogSeeds
     .filter((seed) => seed.provider === "Push Gaming" && scoreFor(seed.slug) === 6)
     .map((seed) => seed.slug)
@@ -57,7 +55,7 @@ test("Push Gaming score-six tail contains only six evidence-limited records", ()
   expect(getVerifiedCatalogGameType("push-gaming-red-hot-multipliers")?.gameType).toBe("Slots");
 });
 
-test("final official Push features lift three remaining score-six records without inventing layouts", () => {
+test("official Push features lift eight score-six records without inventing layouts", () => {
   for (const [slug, mechanic] of Object.entries(scoreBearingMechanics)) {
     const research = getVerifiedCatalogResearch(slug);
     expect(research?.mechanics, slug).toContain(mechanic);
