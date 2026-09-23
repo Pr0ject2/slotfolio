@@ -156,6 +156,11 @@ const details: Record<string, PlayngoFillOverlay> = {
     maxWinSource: "https://www.playngo.com/games/leprechaun%27s-vault",
     verifiedAt: "2026-09-23",
   },
+  "playn-go-kings-mask": {
+    maxWin: "10000x",
+    maxWinSource: "https://www.playngo.com/games/king%27s-mask",
+    verifiedAt: "2026-09-23",
+  },
 };
 
 export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
