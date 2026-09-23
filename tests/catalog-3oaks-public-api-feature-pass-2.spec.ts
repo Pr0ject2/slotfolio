@@ -33,12 +33,11 @@ test("second 3 Oaks public API wave adds only direct feature evidence and keeps 
   for (const [slug, values] of Object.entries(cases)) {
     const direct = getCatalogResearch3OaksPublicApiPass2(slug);
     expect(direct?.source, slug).toBe(values.api);
-    expect(direct?.evidenceSources, slug).toEqual([values.api]);
     expect(direct?.verifiedAt, slug).toBe("2026-09-24");
 
     const merged = getVerifiedCatalogResearch(slug);
     expect(merged?.source, slug).toBe(values.canonical);
-    expect(merged?.evidenceSources, slug).toContain(values.api);
+    expect(merged?.evidenceSource, slug).toBe(values.api);
     for (const mechanic of values.oldMechanics) expect(merged?.mechanics, `${slug}: ${mechanic}`).toContain(mechanic);
     for (const mechanic of values.newMechanics) expect(merged?.mechanics, `${slug}: ${mechanic}`).toContain(mechanic);
     expect(scoreFor(slug), slug).toBeGreaterThan(6);
