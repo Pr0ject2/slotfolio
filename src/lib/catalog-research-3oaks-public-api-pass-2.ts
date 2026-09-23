@@ -9,7 +9,6 @@ function apiSource(path: string) {
 const records: Record<string, CatalogResearch> = {
   "3-oaks-gaming-coin-up-volcano": {
     source: apiSource("coinup_volcano"),
-    evidenceSources: [apiSource("coinup_volcano")],
     mechanics: ["Hold & Win", "Mystery Symbols", "Jackpots", "Расширяющиеся барабаны", "Множители"],
     verifiedAt,
     evidence:
@@ -17,7 +16,6 @@ const records: Record<string, CatalogResearch> = {
   },
   "3-oaks-gaming-book-of-sun-multichance": {
     source: apiSource("book_of_sun_multichance"),
-    evidenceSources: [apiSource("book_of_sun_multichance")],
     mechanics: ["Wild"],
     verifiedAt,
     evidence:
