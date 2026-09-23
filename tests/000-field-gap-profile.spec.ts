@@ -12,26 +12,34 @@ function scoreFor(slug: string) {
   return facts.filter(Boolean).length + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test.only("profile current field gaps", () => {
+test.only("profile current Hacksaw passport residual", () => {
   const rows = catalogSeeds
-    .map((seed) => ({
-      provider: seed.provider,
-      slug: seed.slug,
-      score: scoreFor(seed.slug),
-      source: getVerifiedCatalogDetails(seed.slug)?.source ?? seed.source,
-      gameType: getVerifiedCatalogGameType(seed.slug)?.gameType,
-      mechanics: getVerifiedCatalogResearch(seed.slug)?.mechanics ?? [],
-      missingField: !getVerifiedCatalogDetails(seed.slug)?.field,
-    }))
-    .filter((row) => row.missingField)
-    .sort((a, b) => a.score - b.score || a.provider.localeCompare(b.provider) || a.slug.localeCompare(b.slug));
+    .filter((seed) => seed.provider === "Hacksaw Gaming")
+    .map((seed) => {
+      const details = getVerifiedCatalogDetails(seed.slug);
+      const missing = [
+        ["field", details?.field],
+        ["rtp", details?.rtp],
+        ["maxWin", details?.maxWin],
+        ["volatility", details?.volatility],
+        ["releaseDate", details?.releaseDate],
+      ].filter(([, value]) => !value).map(([field]) => field);
+      return {
+        slug: seed.slug,
+        score: scoreFor(seed.slug),
+        missing,
+        gameType: getVerifiedCatalogGameType(seed.slug)?.gameType,
+        mechanics: getVerifiedCatalogResearch(seed.slug)?.mechanics ?? [],
+        source: details?.source ?? seed.source,
+      };
+    })
+    .filter((row) => row.missing.length > 0)
+    .sort((a, b) => a.score - b.score || b.missing.length - a.missing.length || a.slug.localeCompare(b.slug));
 
-  const byProvider = rows.reduce<Record<string, number>>((acc, row) => {
-    acc[row.provider] = (acc[row.provider] ?? 0) + 1;
+  console.log("HACKSAW_PASSPORT_RESIDUAL", JSON.stringify(rows));
+  console.log("HACKSAW_MISSING_COUNTS", JSON.stringify(rows.reduce<Record<string, number>>((acc, row) => {
+    for (const field of row.missing) acc[field] = (acc[field] ?? 0) + 1;
     return acc;
-  }, {});
-
-  console.log("FIELD_GAP_PROVIDER_COUNTS", JSON.stringify(byProvider));
-  console.log("FIELD_GAPS", JSON.stringify(rows));
+  }, {})));
   expect(rows.length).toBe(-1);
 });
