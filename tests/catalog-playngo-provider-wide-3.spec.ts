@@ -6,7 +6,7 @@ import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-typ
 
 const targets = {
   "playn-go-oasis-of-dead": { field: "5×3 · 20 линий", releaseDate: "2024-07-04", fieldSource: "https://www.playngo.com/posts/oasis-of-dead-review" },
-  "playn-go-octopus-treasure": { field: "5×3 · 20 линий", releaseDate: "2020-09-10", fieldSource: "https://www.playngo.com/post/the-top-4-underwater-slots-to-play-in-2023" },
+  "playn-go-octopus-treasure": { field: "5×3 · 20 линий", maxWin: "5000x", releaseDate: "2020-09-10", fieldSource: "https://www.playngo.com/post/the-top-4-underwater-slots-to-play-in-2023", maxWinSource: "https://www.playngo.com/games/octopus-treasure" },
   "playn-go-pandastic-adventure": { field: "5×3", maxWin: "6500x", releaseDate: "2024-01-11", fieldSource: "https://www.playngo.com/post/pandastic-adventure", maxWinSource: "https://www.playngo.com/post/pandastic-adventure" },
   "playn-go-phoenix-reborn": { field: "5 барабанов", releaseDate: "2019-04-16", fieldSource: "https://www.playngo.com/post/play-n-go-rise-to-the-occasion-with-phoenix-reborn" },
   "playn-go-piggy-blitz-casino-gold": { field: "6 барабанов · 4096 способов", releaseDate: "2026-01-29", fieldSource: "https://www.playngo.com/posts/piggy-blitz-casino-gold" },
