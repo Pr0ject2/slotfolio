@@ -38,7 +38,13 @@ test("quality pass 14 preserves its original 3 Oaks line evidence while allowing
     const research = getVerifiedCatalogResearch(slug);
     expect(research?.source, slug).toBe(values.source);
     expect(research?.mechanics, `${slug} must retain the verified line mechanic`).toContain("Линии");
-    expect(getVerifiedCatalogGameType(slug), `${slug} must not invent Game Type`).toBeUndefined();
+
+    const gameType = getVerifiedCatalogGameType(slug);
+    if (gameType) {
+      expect(gameType.gameType, `${slug} later Game Type enrichment must remain slot-only`).toBe("Slots");
+      expect(gameType.source, `${slug} later Game Type enrichment must preserve the canonical source`).toBe(values.source);
+    }
+
     expect(scoreFor(slug), `${slug} must stay at or above its achieved quality floor`).toBeGreaterThanOrEqual(3);
   }
 });
