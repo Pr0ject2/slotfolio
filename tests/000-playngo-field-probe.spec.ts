@@ -45,7 +45,7 @@ async function fetchOfficialPage(source: string) {
     try {
       return await fetch(source, {
         headers: { "user-agent": "Mozilla/5.0 Slotfolio catalog verification" },
-        signal: AbortSignal.timeout(10_000),
+        signal: AbortSignal.timeout(8_000),
       });
     } catch (error) {
       lastError = error;
@@ -61,18 +61,39 @@ test.only("probe exact current Play'n GO missing-field pages for direct official
     (seed) => seed.provider === "Play’n GO" && !getVerifiedCatalogDetails(seed.slug)?.field,
   );
 
-  const rows = [];
-  const errors = [];
-  for (const seed of targets) {
-    try {
-      const response = await fetchOfficialPage(seed.source);
-      const text = plainText(await response.text());
-      const matches = directLayoutSnippets(text);
-      if (matches.length) {
-        rows.push({ slug: seed.slug, source: seed.source, status: response.status, matches });
-      }
-    } catch (error) {
-      errors.push({ slug: seed.slug, source: seed.source, error: String(error) });
+  const rows: Array<{
+    slug: string;
+    source: string;
+    status: number;
+    matches: Array<{ match: string; snippet: string }>;
+  }> = [];
+  const errors: Array<{ slug: string; source: string; error: string }> = [];
+  const batchSize = 6;
+
+  for (let index = 0; index < targets.length; index += batchSize) {
+    const batch = targets.slice(index, index + batchSize);
+    const results = await Promise.all(
+      batch.map(async (seed) => {
+        try {
+          const response = await fetchOfficialPage(seed.source);
+          const text = plainText(await response.text());
+          return {
+            row: {
+              slug: seed.slug,
+              source: seed.source,
+              status: response.status,
+              matches: directLayoutSnippets(text),
+            },
+          };
+        } catch (error) {
+          return { error: { slug: seed.slug, source: seed.source, error: String(error) } };
+        }
+      }),
+    );
+
+    for (const result of results) {
+      if (result.row?.matches.length) rows.push(result.row);
+      if (result.error) errors.push(result.error);
     }
   }
 
