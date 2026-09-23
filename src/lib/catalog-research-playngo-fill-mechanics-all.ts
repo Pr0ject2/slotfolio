@@ -19,8 +19,13 @@ import { getCatalogResearchPlayngoFillMechanics18 } from "./catalog-research-pla
 import { getCatalogResearchPlayngoFillMechanics19 } from "./catalog-research-playngo-fill-mechanics-19";
 import { getCatalogResearchPlayngoFillMechanics20 } from "./catalog-research-playngo-fill-mechanics-20";
 import { getCatalogResearchPlayngoFillMechanics21 } from "./catalog-research-playngo-fill-mechanics-21";
+import { getCatalogResearchPlayngoFillMechanics22 } from "./catalog-research-playngo-fill-mechanics-22";
+import { getCatalogResearchPlayngoFillMechanics23 } from "./catalog-research-playngo-fill-mechanics-23";
+import { getCatalogResearchPlayngoFillMechanics24 } from "./catalog-research-playngo-fill-mechanics-24";
+import { getCatalogResearchPlayngoFillMechanics25 } from "./catalog-research-playngo-fill-mechanics-25";
+import { getCatalogResearchPlayngoFillMechanics26 } from "./catalog-research-playngo-fill-mechanics-26";
 
-export function getCatalogResearchPlayngoFillMechanicsAll(slug: string) {
+function getPrevious(slug: string) {
   return (
     getCatalogResearchPlayngoFillMechanics21(slug) ??
     getCatalogResearchPlayngoFillMechanics20(slug) ??
@@ -44,4 +49,23 @@ export function getCatalogResearchPlayngoFillMechanicsAll(slug: string) {
     getCatalogResearchPlayngoFillMechanics2(slug) ??
     getCatalogResearchPlayngoFillMechanics(slug)
   );
+}
+
+function mergeResearch(base: ReturnType<typeof getPrevious>, extra: ReturnType<typeof getCatalogResearchPlayngoFillMechanics22>) {
+  if (!extra) return base;
+  if (!base) return extra;
+  return {
+    ...base,
+    ...extra,
+    mechanics: [...new Set([...base.mechanics, ...extra.mechanics])],
+    evidence: [base.evidence, extra.evidence].filter(Boolean).join(" "),
+  };
+}
+
+export function getCatalogResearchPlayngoFillMechanicsAll(slug: string) {
+  const with22 = mergeResearch(getPrevious(slug), getCatalogResearchPlayngoFillMechanics22(slug));
+  const with23 = mergeResearch(with22, getCatalogResearchPlayngoFillMechanics23(slug));
+  const with24 = mergeResearch(with23, getCatalogResearchPlayngoFillMechanics24(slug));
+  const with25 = mergeResearch(with24, getCatalogResearchPlayngoFillMechanics25(slug));
+  return mergeResearch(with25, getCatalogResearchPlayngoFillMechanics26(slug));
 }
