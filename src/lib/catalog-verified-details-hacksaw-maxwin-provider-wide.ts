@@ -3,6 +3,7 @@ import { getCatalogVerifiedDetailsHacksawVolatilityProviderWide } from "./catalo
 
 type HacksawMaxWinDetails = CatalogVerifiedDetails & {
   maxWinSource?: string;
+  volatilitySource?: string;
 };
 
 const verifiedAt = "2026-09-17";
@@ -50,7 +51,7 @@ const details: Record<string, HacksawMaxWinDetails> = {
   "hacksaw-gaming-ze-zeus": { maxWin: "10 000x", source: "https://www.hacksawgaming.com/games/ze-zeus", verifiedAt },
 };
 
-export function getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug: string) {
+export function getCatalogVerifiedDetailsHacksawMaxWinProviderWide(slug: string): HacksawMaxWinDetails | undefined {
   const maxWin = details[slug];
   const volatility = getCatalogVerifiedDetailsHacksawVolatilityProviderWide(slug);
 
