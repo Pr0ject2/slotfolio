@@ -171,6 +171,11 @@ const details: Record<string, PlayngoFillOverlay> = {
     fieldSource: "https://www.playngo.com/games/rally-4-riches",
     verifiedAt: "2026-09-23",
   },
+  "playn-go-def-leppard-hysteria": {
+    field: "5×7",
+    fieldSource: "https://it.playngo.com/series/grid-slots",
+    verifiedAt: "2026-09-23",
+  },
 };
 
 export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
