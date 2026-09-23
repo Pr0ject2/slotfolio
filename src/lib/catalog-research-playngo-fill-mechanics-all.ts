@@ -19,8 +19,9 @@ import { getCatalogResearchPlayngoFillMechanics18 } from "./catalog-research-pla
 import { getCatalogResearchPlayngoFillMechanics19 } from "./catalog-research-playngo-fill-mechanics-19";
 import { getCatalogResearchPlayngoFillMechanics20 } from "./catalog-research-playngo-fill-mechanics-20";
 import { getCatalogResearchPlayngoFillMechanics21 } from "./catalog-research-playngo-fill-mechanics-21";
+import { getCatalogResearchPlayngoFillMechanics22 } from "./catalog-research-playngo-fill-mechanics-22";
 
-export function getCatalogResearchPlayngoFillMechanicsAll(slug: string) {
+function getPrevious(slug: string) {
   return (
     getCatalogResearchPlayngoFillMechanics21(slug) ??
     getCatalogResearchPlayngoFillMechanics20(slug) ??
@@ -44,4 +45,19 @@ export function getCatalogResearchPlayngoFillMechanicsAll(slug: string) {
     getCatalogResearchPlayngoFillMechanics2(slug) ??
     getCatalogResearchPlayngoFillMechanics(slug)
   );
+}
+
+export function getCatalogResearchPlayngoFillMechanicsAll(slug: string) {
+  const latest = getCatalogResearchPlayngoFillMechanics22(slug);
+  const previous = getPrevious(slug);
+
+  if (!latest) return previous;
+  if (!previous) return latest;
+
+  return {
+    ...previous,
+    ...latest,
+    mechanics: [...new Set([...previous.mechanics, ...latest.mechanics])],
+    evidence: [previous.evidence, latest.evidence].filter(Boolean).join(" "),
+  };
 }
