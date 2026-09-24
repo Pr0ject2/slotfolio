@@ -1,6 +1,7 @@
 import type { CatalogVerifiedGameType } from "./catalog-verified-game-type";
 
 const verifiedAt = "2026-09-20";
+const verifiedAtLatest = "2026-09-24";
 
 const sources: Record<string, string> = {
   "wazdan-12-bells": "https://wazdan.com/games/12-bells",
@@ -50,9 +51,21 @@ const sources: Record<string, string> = {
   "wazdan-win-replay": "https://wazdan.com/games/win-replay",
 };
 
+const latestSources: Record<string, string> = {
+  "wazdan-choco-reels": "https://wazdan.com/games/choco-reels",
+  "wazdan-cube-mania": "https://wazdan.com/games/cube-mania",
+  "wazdan-cube-mania-deluxe": "https://wazdan.com/games/cube-mania-deluxe",
+  "wazdan-jelly-reels": "https://wazdan.com/games/jelly-reels",
+  "wazdan-lucky-fish": "https://wazdan.com/games/lucky-fish",
+};
+
 const gameTypes = Object.fromEntries(
   Object.entries(sources).map(([slug, source]) => [slug, { gameType: "Slots", source, verifiedAt }]),
 ) as Record<string, CatalogVerifiedGameType>;
+
+for (const [slug, source] of Object.entries(latestSources)) {
+  gameTypes[slug] = { gameType: "Slots", source, verifiedAt: verifiedAtLatest };
+}
 
 export function getVerifiedCatalogGameTypeWazdanWave5(slug: string) {
   return gameTypes[slug];
