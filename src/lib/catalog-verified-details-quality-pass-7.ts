@@ -5,11 +5,12 @@ const verifiedAt = "2026-09-13";
 const details: Record<string, CatalogVerifiedDetails> = {
   "bgaming-money-maker": {
     field: "3×1 · 1 линия",
+    rtp: "97,00%",
     maxWin: "1 000x",
     volatility: "Низкая",
     releaseDate: "2026-06-10",
     source: "https://bgaming.com/games/money-maker",
-    verifiedAt,
+    verifiedAt: "2026-09-24",
   },
   "endorphina-moofo": {
     field: "5×3 · 30 линий",
