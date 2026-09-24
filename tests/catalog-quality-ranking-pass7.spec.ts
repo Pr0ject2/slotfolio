@@ -40,13 +40,13 @@ test("quality pass 7 preserves its original official facts while allowing later 
   const moofo = getVerifiedCatalogDetails("endorphina-moofo");
   expect(moofo?.field).toBe("5×3 · 30 линий");
   expect(moofo?.rtp).toBe("96,05%");
-  expect(moofo?.maxWin).toBeUndefined();
+  expect(moofo?.maxWin).toBe("1500x");
   expect(moofo?.volatility).toBe("Высокая");
 
   const zalatar = getVerifiedCatalogDetails("endorphina-zalatar");
   expect(zalatar?.field).toBe("5×3 · 25 линий");
   expect(zalatar?.rtp).toBe("96,03%");
-  expect(zalatar?.maxWin).toBeUndefined();
+  expect(zalatar?.maxWin).toBe("6600x");
   expect(zalatar?.volatility).toBe("Высокая");
 
   const chineseNewYear = getVerifiedCatalogDetails("playn-go-chinese-new-year");
