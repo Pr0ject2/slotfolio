@@ -32,7 +32,7 @@ test("quality pass 7 preserves its original official facts while allowing later 
 
   const moneyMaker = getVerifiedCatalogDetails("bgaming-money-maker");
   expect(moneyMaker?.field).toBe("3×1 · 1 линия");
-  expect(moneyMaker?.rtp, "conflicting official BGaming RTP values must remain unknown").toBeUndefined();
+  expect(moneyMaker?.rtp).toBe("97,00%");
   expect(moneyMaker?.maxWin).toBe("1 000x");
   expect(moneyMaker?.volatility).toBe("Низкая");
   expect(moneyMaker?.releaseDate).toBe("2026-06-10");
