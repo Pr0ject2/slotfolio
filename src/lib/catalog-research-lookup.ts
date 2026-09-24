@@ -230,10 +230,18 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
   if (threeOaksFill?.mechanics.length) {
     const fillResearch = threeOaksFill as VerifiedCatalogResearch;
     const legacyResearch = legacy as VerifiedCatalogResearch | undefined;
-    const preservedEvidenceSource =
+    const canonicalSource = canonicalSourceBySlug.get(slug);
+    const fillEvidenceSource =
       fillResearch.evidenceSource ??
+      (canonicalSource && decodedUrl(fillResearch.source) !== decodedUrl(canonicalSource)
+        ? fillResearch.source
+        : undefined);
+    const preservedEvidenceSource =
+      fillEvidenceSource ??
       legacyResearch?.evidenceSource ??
-      (legacyResearch?.source && legacyResearch.source !== fillResearch.source
+      (legacyResearch?.source &&
+      decodedUrl(legacyResearch.source) !== decodedUrl(fillResearch.source) &&
+      (!canonicalSource || decodedUrl(legacyResearch.source) !== decodedUrl(canonicalSource))
         ? legacyResearch.source
         : undefined);
     return canonicalizeResearchSource(slug, {
