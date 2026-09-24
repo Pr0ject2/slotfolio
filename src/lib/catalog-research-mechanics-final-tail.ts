@@ -2,6 +2,7 @@ import type { CatalogResearch } from "./catalog-research";
 import { getCatalogResearchMechanicsFinalTail as getCatalogResearchMechanicsFinalTailLegacy } from "./catalog-research-mechanics-final-tail-legacy";
 import { getCatalogResearch3OaksScore5ProviderPass } from "./catalog-research-3oaks-score5-provider-pass";
 import { getCatalogResearch3OaksPublicApiPass } from "./catalog-research-3oaks-public-api-pass";
+import { getCatalogResearch3OaksPublicApiPass2 } from "./catalog-research-3oaks-public-api-pass-2";
 import { getCatalogResearchScore5SmallTail20260920 } from "./catalog-research-score5-small-tail-20260920";
 import { getCatalogResearchPushMechanicsTail } from "./catalog-research-push-mechanics-tail";
 
@@ -24,9 +25,11 @@ export function getCatalogResearchMechanicsFinalTail(slug: string): CatalogResea
   const legacy = getCatalogResearchMechanicsFinalTailLegacy(slug);
   const threeOaks = getCatalogResearch3OaksScore5ProviderPass(slug);
   const threeOaksPublicApi = getCatalogResearch3OaksPublicApiPass(slug);
+  const threeOaksPublicApi2 = getCatalogResearch3OaksPublicApiPass2(slug);
   const smallTail = getCatalogResearchScore5SmallTail20260920(slug);
   const pushTail = getCatalogResearchPushMechanicsTail(slug);
 
-  const fresh = mergeResearch(mergeResearch(mergeResearch(threeOaks, threeOaksPublicApi), smallTail), pushTail);
+  const threeOaksApi = mergeResearch(threeOaksPublicApi, threeOaksPublicApi2);
+  const fresh = mergeResearch(mergeResearch(mergeResearch(threeOaks, threeOaksApi), smallTail), pushTail);
   return mergeResearch(legacy, fresh);
 }

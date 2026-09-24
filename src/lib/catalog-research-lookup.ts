@@ -228,9 +228,27 @@ export function getVerifiedCatalogResearch(slug: string): VerifiedCatalogResearc
   }
 
   if (threeOaksFill?.mechanics.length) {
+    const fillResearch = threeOaksFill as VerifiedCatalogResearch;
+    const legacyResearch = legacy as VerifiedCatalogResearch | undefined;
+    const canonicalSource = canonicalSourceBySlug.get(slug);
+    const fillEvidenceSource =
+      fillResearch.evidenceSource ??
+      (canonicalSource && decodedUrl(fillResearch.source) !== decodedUrl(canonicalSource)
+        ? fillResearch.source
+        : undefined);
+    const preservedEvidenceSource =
+      fillEvidenceSource ??
+      legacyResearch?.evidenceSource ??
+      (legacyResearch?.source &&
+      decodedUrl(legacyResearch.source) !== decodedUrl(fillResearch.source) &&
+      (!canonicalSource || decodedUrl(legacyResearch.source) !== decodedUrl(canonicalSource))
+        ? legacyResearch.source
+        : undefined);
     return canonicalizeResearchSource(slug, {
-      ...threeOaksFill,
-      mechanics: [...new Set([...(legacy?.mechanics ?? []), ...threeOaksFill.mechanics])],
+      ...fillResearch,
+      ...(preservedEvidenceSource ? { evidenceSource: preservedEvidenceSource } : {}),
+      mechanics: [...new Set([...(legacyResearch?.mechanics ?? []), ...fillResearch.mechanics])],
+      evidence: [fillResearch.evidence, legacyResearch?.evidence].filter(Boolean).join(" "),
     });
   }
 
