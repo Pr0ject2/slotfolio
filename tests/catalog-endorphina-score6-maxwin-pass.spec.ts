@@ -1,28 +1,31 @@
 import { test, expect } from "@playwright/test";
 import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
 
-const enriched = {
+const officialMaxWins = {
   "endorphina-burning-coins-100": "200 000x",
   "endorphina-druids-fortune": "10 000x",
 } as const;
 
-const evidenceLimited = [
-  "endorphina-chance-machine-90s",
-  "endorphina-fortune-bankers",
-  "endorphina-gift-of-midas",
-  "endorphina-groovin-tiger",
-  "endorphina-moofo",
-  "endorphina-zalatar",
-] as const;
+const secondaryMaxWins = {
+  "endorphina-chance-machine-90s": "2500x",
+  "endorphina-fortune-bankers": "25000x",
+  "endorphina-gift-of-midas": "6500x",
+  "endorphina-groovin-tiger": "1000x",
+  "endorphina-moofo": "1500x",
+  "endorphina-zalatar": "6600x",
+} as const;
 
-test("Endorphina score-six max-win pass keeps only directly advertised official maxima", () => {
-  for (const [slug, maxWin] of Object.entries(enriched)) {
+test("Endorphina max-win coverage keeps canonical provider sources while allowing later evidence", () => {
+  for (const [slug, maxWin] of Object.entries(officialMaxWins)) {
     const details = getVerifiedCatalogDetails(slug);
     expect(details?.maxWin, slug).toBe(maxWin);
     expect(details?.source, slug).toBe(`https://endorphina.com/games/${slug.replace("endorphina-", "")}/play`);
   }
 
-  for (const slug of evidenceLimited) {
-    expect(getVerifiedCatalogDetails(slug)?.maxWin, slug).toBeUndefined();
+  for (const [slug, maxWin] of Object.entries(secondaryMaxWins)) {
+    const details = getVerifiedCatalogDetails(slug) as (ReturnType<typeof getVerifiedCatalogDetails> & { maxWinSource?: string });
+    expect(details?.maxWin, slug).toBe(maxWin);
+    expect(details?.source, slug).toContain("endorphina.com/games/");
+    expect(details?.maxWinSource, slug).toBeTruthy();
   }
 });
