@@ -4,8 +4,6 @@ import { createCatalogModel } from "../src/lib/catalog-index";
 const expectedUnresolved = [
   "nolimit-city-bowel-of-beelzebub",
   "nolimit-city-fire-in-the-hole-4",
-  "nolimit-city-gator-hunters-2",
-  "nolimit-city-six-feet-under",
 ];
 
 test("current public catalog mechanics coverage stays evidence-backed", () => {
@@ -16,7 +14,7 @@ test("current public catalog mechanics coverage stays evidence-backed", () => {
     .sort();
 
   expect(model.facets.total).toBe(1000);
-  expect(model.facets.mechanicsKnown).toBe(996);
+  expect(model.facets.mechanicsKnown).toBe(998);
   expect(unresolved).toEqual(expectedUnresolved);
 });
 
