@@ -19,7 +19,7 @@ test("current catalog quality baseline", () => {
 
   expect(catalogSeeds).toHaveLength(900);
   expect(ranked.filter((row) => row.score <= 1)).toHaveLength(0);
-  expect(ranked.filter((row) => row.score === 2).length).toBeLessThanOrEqual(3);
+  expect(ranked.filter((row) => row.score === 2).length).toBeLessThanOrEqual(2);
   expect(ranked.filter((row) => row.score === 3).length).toBeLessThanOrEqual(1);
   expect(ranked.filter((row) => row.score === 4).length).toBeLessThanOrEqual(6);
   expect(ranked.filter((row) => row.score >= 5).length).toBeGreaterThanOrEqual(890);
@@ -30,11 +30,10 @@ test("current catalog quality baseline", () => {
   expect(ranked.filter((row) => row.provider === "3 Oaks Gaming" && row.score <= 2)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Play’n GO" && row.score <= 2)).toHaveLength(0);
   expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score <= 1)).toHaveLength(0);
-  expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score === 2)).toHaveLength(3);
+  expect(ranked.filter((row) => row.provider === "Nolimit City" && row.score === 2)).toHaveLength(2);
 
   expect(ranked.filter((row) => row.score <= 2).map((row) => row.slug).sort()).toEqual([
     "nolimit-city-bowel-of-beelzebub",
     "nolimit-city-fire-in-the-hole-4",
-    "nolimit-city-six-feet-under",
   ]);
 });
