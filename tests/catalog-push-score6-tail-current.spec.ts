@@ -42,17 +42,19 @@ const scoreBearingMechanics = {
   "push-gaming-regal-knights": "Mystery Symbols",
 } as const;
 
-const expectedScoreSix = ["push-gaming-red-hot-multipliers"] as const;
-
-test("Push Gaming score-six tail contains only the evidence-limited Red Hot Multipliers record", () => {
+test("Push Gaming score-six tail is closed by direct official feature evidence", () => {
   const scoreSix = catalogSeeds
     .filter((seed) => seed.provider === "Push Gaming" && scoreFor(seed.slug) === 6)
     .map((seed) => seed.slug)
     .sort();
 
-  expect(scoreSix).toEqual([...expectedScoreSix].sort());
-  expect(getVerifiedCatalogDetails("push-gaming-red-hot-multipliers")?.source).toContain("pushgaming.com/");
-  expect(getVerifiedCatalogGameType("push-gaming-red-hot-multipliers")?.gameType).toBe("Slots");
+  expect(scoreSix).toEqual([]);
+
+  const slug = "push-gaming-red-hot-multipliers";
+  expect(getVerifiedCatalogDetails(slug)?.source).toContain("pushgaming.com/");
+  expect(getVerifiedCatalogGameType(slug)?.gameType).toBe("Slots");
+  expect(getVerifiedCatalogResearch(slug)?.mechanics).toContain("Hot Multipliers");
+  expect(scoreFor(slug)).toBeGreaterThan(6);
 });
 
 test("official Push features lift eight score-six records without inventing layouts", () => {
