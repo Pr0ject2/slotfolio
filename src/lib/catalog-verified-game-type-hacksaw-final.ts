@@ -4,6 +4,7 @@ import { getVerifiedCatalogGameTypeHacksawQualityPass6 } from "./catalog-verifie
 import { getVerifiedCatalogGameTypeHacksawScore6 } from "./catalog-verified-game-type-hacksaw-score6";
 
 const verifiedAt = "2026-09-13";
+const verifiedAtCurrent = "2026-09-24";
 
 const sources: Record<string, string> = {
   "hacksaw-gaming-pray-for-three": "https://www.hacksawgaming.com/games/pray-for-three",
@@ -26,6 +27,16 @@ const gameTypes = Object.fromEntries(
   Object.entries(sources).map(([slug, source]) => [slug, { gameType: "Slots", source, verifiedAt }]),
 ) as Record<string, CatalogVerifiedGameType>;
 
+const currentGameTypes: Record<string, CatalogVerifiedGameType> = {
+  "hacksaw-gaming-3-cursed-chests-hold-and-win": { gameType: "Slots", source: "https://www.hacksawgaming.com/games/3-cursed-chests%3A-hold-%26-win", verifiedAt: verifiedAtCurrent },
+  "hacksaw-gaming-arizona-james-and-the-lost-relics": { gameType: "Slots", source: "https://www.hacksawgaming.com/games/arizona-james-and-the-lost-relics", verifiedAt: verifiedAtCurrent },
+  "hacksaw-gaming-beast-below": { gameType: "Slots", source: "https://www.hacksawgaming.com/games/beast-below", verifiedAt: verifiedAtCurrent },
+  "hacksaw-gaming-benny-the-beer": { gameType: "Slots", source: "https://www.hacksawgaming.com/games/benny-the-beer", verifiedAt: verifiedAtCurrent },
+  "hacksaw-gaming-cursed-crypt": { gameType: "Slots", source: "https://www.hacksawgaming.com/games/cursed-crypt", verifiedAt: verifiedAtCurrent },
+  "hacksaw-gaming-red-rascal": { gameType: "Slots", source: "https://www.hacksawgaming.com/games/red-rascal", verifiedAt: verifiedAtCurrent },
+  "hacksaw-gaming-sand-and-ashes": { gameType: "Slots", source: "https://www.hacksawgaming.com/games/sand-and-ashes", verifiedAt: verifiedAtCurrent },
+};
+
 export function getVerifiedCatalogGameTypeHacksawFinal(slug: string) {
-  return getVerifiedCatalogGameTypeHacksawScore6(slug) ?? getVerifiedCatalogGameTypeHacksawProviderWide2(slug) ?? getVerifiedCatalogGameTypeHacksawQualityPass6(slug) ?? gameTypes[slug];
+  return getVerifiedCatalogGameTypeHacksawScore6(slug) ?? getVerifiedCatalogGameTypeHacksawProviderWide2(slug) ?? getVerifiedCatalogGameTypeHacksawQualityPass6(slug) ?? currentGameTypes[slug] ?? gameTypes[slug];
 }
