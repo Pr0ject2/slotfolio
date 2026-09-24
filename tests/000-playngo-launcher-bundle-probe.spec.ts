@@ -1,44 +1,37 @@
 import { expect, test } from "@playwright/test";
 
-const bundleUrl = "https://cdn.playngonetwork.com/hera/hera-1.46.0.29/container-launcher/ContainerLauncher_bundle.js";
+const games = [
+  { name: "5x Magic", gameId: 199 },
+  { name: "Pimped", gameId: 291 },
+  { name: "Fortune Teller", gameId: 196 },
+  { name: "Lucky Diamonds", gameId: 5 },
+] as const;
 
-function snippets(body: string, needle: RegExp, limit = 20) {
-  const rows: string[] = [];
-  for (const match of body.matchAll(needle)) {
-    const index = match.index ?? 0;
-    const text = body.slice(Math.max(0, index - 220), Math.min(body.length, index + match[0].length + 320));
-    const normalized = text.replace(/\s+/g, " ").trim();
-    if (!rows.includes(normalized)) rows.push(normalized);
-    if (rows.length >= limit) break;
+const base = "https://asccw.playngonetwork.com/";
+
+test.only("probe official Play'n GO prelaunch configuration", async ({ request }) => {
+  const rows = [] as Array<{ name: string; gameId: number; url: string; status: number; body: string }>;
+
+  for (const game of games) {
+    const url = new URL("configuration/prelaunchconfiguration", base);
+    url.searchParams.set("gameId", String(game.gameId));
+    url.searchParams.set("language", "en_GB");
+    url.searchParams.set("productGroup", "2");
+    url.searchParams.set("gapTime", "");
+    url.searchParams.set("brand", "");
+    url.searchParams.set("ctx", "");
+    url.searchParams.set("practice", "1");
+    url.searchParams.set("channel", "mobile");
+
+    const response = await request.get(url.toString(), { timeout: 30_000 });
+    rows.push({
+      ...game,
+      url: response.url(),
+      status: response.status(),
+      body: (await response.text()).slice(0, 30_000),
+    });
   }
-  return rows;
-}
 
-test.only("probe official Play'n GO launcher bundle for runtime endpoints", async ({ request }) => {
-  const response = await request.get(bundleUrl, { timeout: 30_000 });
-  const body = await response.text();
-
-  const absoluteUrls = [...new Set(body.match(/https?:\\?\/\\?\/[^"'`\\s)]+/g) ?? [])].slice(0, 100);
-  const pathStrings = [...new Set(
-    [...body.matchAll(/["'`]([^"'`]{0,180}(?:casino|launch|config|resource|game|api|ticket)[^"'`]{0,180})["'`]/gi)]
-      .map((match) => match[1])
-      .filter((value) => value.includes("/") || value.includes("Url") || value.includes("URL")),
-  )].slice(0, 150);
-
-  const result = {
-    status: response.status(),
-    contentType: response.headers()["content-type"],
-    size: body.length,
-    absoluteUrls,
-    pathStrings,
-    gameId: snippets(body, /gameId/gi),
-    resourceRoot: snippets(body, /resourceRoot/gi),
-    ticket: snippets(body, /ticket/gi),
-    launch: snippets(body, /launch/gi),
-    config: snippets(body, /config/gi),
-    api: snippets(body, /api/gi),
-  };
-
-  console.log("PLAYNGO_LAUNCHER_BUNDLE_PROBE", JSON.stringify(result));
-  expect(body.length).toBe(-1);
+  console.log("PLAYNGO_PRELAUNCH_PROBE", JSON.stringify(rows));
+  expect(rows.length).toBe(-1);
 });
