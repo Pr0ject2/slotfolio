@@ -4,6 +4,7 @@ import { getCatalogVerifiedDetailsHacksawScore6 } from "./catalog-verified-detai
 import { getCatalogVerifiedDetailsHacksawPassportCloseout } from "./catalog-verified-details-hacksaw-passport-closeout";
 import { getCatalogVerifiedDetailsHacksawPassportCloseout2 } from "./catalog-verified-details-hacksaw-passport-closeout-2";
 import { getCatalogVerifiedDetailsHacksawPassportCloseout3 } from "./catalog-verified-details-hacksaw-passport-closeout-3";
+import { getCatalogVerifiedDetailsHacksawPassportCloseout4 } from "./catalog-verified-details-hacksaw-passport-closeout-4";
 
 export function getCatalogVerifiedDetailsHacksawScore4Fill(slug: string) {
   const legacy = getLegacyHacksawScore4Fill(slug);
@@ -16,8 +17,10 @@ export function getCatalogVerifiedDetailsHacksawScore4Fill(slug: string) {
   const closeout2 = getCatalogVerifiedDetailsHacksawPassportCloseout2(slug);
   const withCloseout2 = !closeout2 ? withCloseout : !withCloseout ? closeout2 : { ...withCloseout, ...closeout2 };
   const closeout3 = getCatalogVerifiedDetailsHacksawPassportCloseout3(slug);
+  const withCloseout3 = !closeout3 ? withCloseout2 : !withCloseout2 ? closeout3 : { ...withCloseout2, ...closeout3 };
+  const closeout4 = getCatalogVerifiedDetailsHacksawPassportCloseout4(slug);
 
-  if (!closeout3) return withCloseout2;
-  if (!withCloseout2) return closeout3;
-  return { ...withCloseout2, ...closeout3 };
+  if (!closeout4) return withCloseout3;
+  if (!withCloseout3) return closeout4;
+  return { ...withCloseout3, ...closeout4 };
 }
