@@ -10,14 +10,14 @@ test.only("profile full catalog passport gaps", () => {
     const type = getVerifiedCatalogGameType(seed.slug);
     const research = getVerifiedCatalogResearch(seed.slug);
     const missing = [
-      !details?.field && "field",
-      !details?.rtp && "rtp",
-      !details?.maxWin && "maxWin",
-      !details?.volatility && "volatility",
-      !details?.releaseDate && "releaseDate",
-      !type?.gameType && "gameType",
-      !(research?.mechanics?.length) && "mechanics",
-    ].filter(Boolean);
+      !details?.field ? "field" : null,
+      !details?.rtp ? "rtp" : null,
+      !details?.maxWin ? "maxWin" : null,
+      !details?.volatility ? "volatility" : null,
+      !details?.releaseDate ? "releaseDate" : null,
+      !type?.gameType ? "gameType" : null,
+      !(research?.mechanics?.length) ? "mechanics" : null,
+    ].filter((field): field is string => Boolean(field));
     return { provider: seed.provider, slug: seed.slug, missing };
   }).filter((row) => row.missing.length > 0);
 
