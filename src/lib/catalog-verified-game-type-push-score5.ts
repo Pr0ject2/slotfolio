@@ -2,6 +2,7 @@ import type { CatalogVerifiedGameType } from "./catalog-verified-game-type";
 import { getVerifiedCatalogGameTypePushScore6 } from "./catalog-verified-game-type-push-score6";
 
 const verifiedAt = "2026-09-19";
+const verifiedAtLatest = "2026-09-24";
 
 const sources: Record<string, string> = {
   "push-gaming-10-cash-bisons": "https://www.pushgaming.com/blog/q-head-studio-ihor-lozinskiy-speaks-demo-slot.html",
@@ -36,10 +37,36 @@ const sources: Record<string, string> = {
   "push-gaming-the-great-banker": "https://www.pushgaming.com/games/great-banker.html"
 };
 
+const latestSources: Record<string, string> = {
+  "push-gaming-bamboo-ways": "https://www.pushgaming.com/games/bamboo-ways.html",
+  "push-gaming-big-bam-book": "https://www.pushgaming.com/games/big-bam-book.html",
+  "push-gaming-big-bamboo": "https://www.pushgaming.com/games/big-bamboo.html",
+  "push-gaming-dinopolis": "https://www.pushgaming.com/games/dinopolis.html",
+  "push-gaming-dj-cat": "https://www.pushgaming.com/games/dj-cat.html",
+  "push-gaming-fire-pig-push-ways": "https://www.pushgaming.com/games/fire-pig-push-ways.html",
+  "push-gaming-iron-phoenix": "https://www.pushgaming.com/games/iron-phoenix.html",
+  "push-gaming-jaguar-drop": "https://www.pushgaming.com/games/jaguar-drop.html",
+  "push-gaming-mystery-of-the-nile": "https://www.pushgaming.com/games/mystery-nile.html",
+  "push-gaming-neon-cash-city": "https://www.pushgaming.com/games/neon-cash-city.html",
+  "push-gaming-power-paws": "https://www.pushgaming.com/games/power-paws.html",
+  "push-gaming-razor-ways": "https://www.pushgaming.com/games/razor-ways.html",
+  "push-gaming-santas-vault": "https://www.pushgaming.com/games/santas-vault.html",
+  "push-gaming-sea-of-spirits": "https://www.pushgaming.com/games/sea-spirits.html",
+  "push-gaming-tiki-tumble": "https://www.pushgaming.com/games/tiki-tumble.html",
+  "push-gaming-tricky-treats": "https://www.pushgaming.com/games/tricky-treats.html",
+  "push-gaming-triple-rampage": "https://www.pushgaming.com/games/triple-rampage.html",
+  "push-gaming-vegas-vault": "https://www.pushgaming.com/games/vegas-vault.html",
+  "push-gaming-viva-lock-vegas": "https://www.pushgaming.com/games/viva-lock-vegas.html",
+};
+
 const gameTypes = Object.fromEntries(
   Object.entries(sources).map(([slug, source]) => [slug, { gameType: "Slots", source, verifiedAt }]),
 ) as Record<string, CatalogVerifiedGameType>;
 
+const latestGameTypes = Object.fromEntries(
+  Object.entries(latestSources).map(([slug, source]) => [slug, { gameType: "Slots", source, verifiedAt: verifiedAtLatest }]),
+) as Record<string, CatalogVerifiedGameType>;
+
 export function getVerifiedCatalogGameTypePushScore5(slug: string) {
-  return gameTypes[slug] ?? getVerifiedCatalogGameTypePushScore6(slug);
+  return latestGameTypes[slug] ?? gameTypes[slug] ?? getVerifiedCatalogGameTypePushScore6(slug);
 }

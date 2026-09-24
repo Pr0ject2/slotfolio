@@ -1,5 +1,6 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 import { getCatalogVerifiedDetailsPushScore6 } from "./catalog-verified-details-push-score6";
+import { getCatalogVerifiedDetailsPushCloseout20260924 } from "./catalog-verified-details-push-closeout-20260924";
 
 type PushScore5Details = Pick<CatalogVerifiedDetails, "source" | "verifiedAt"> &
   Partial<Pick<CatalogVerifiedDetails, "field" | "rtp" | "maxWin" | "volatility" | "releaseDate">> & {
@@ -141,8 +142,10 @@ const details: Record<string, PushScore5Details> = {
 export function getCatalogVerifiedDetailsPushScore5(slug: string) {
   const score5 = details[slug];
   const score6 = getCatalogVerifiedDetailsPushScore6(slug);
+  const closeout = getCatalogVerifiedDetailsPushCloseout20260924(slug);
 
-  if (!score6) return score5;
-  if (!score5) return score6;
-  return { ...score5, ...score6 };
+  const legacy = score6 ? (score5 ? { ...score5, ...score6 } : score6) : score5;
+  if (!closeout) return legacy;
+  if (!legacy) return closeout;
+  return { ...legacy, ...closeout };
 }
