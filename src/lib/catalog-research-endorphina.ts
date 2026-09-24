@@ -66,16 +66,16 @@ export const catalogResearchEndorphina: Record<string, CatalogResearch> = {
     evidence: "Official Game Details list 100 fixed lines on a 5x4 grid.",
   },
   "endorphina-moofo": {
-    mechanics: ["Линии"],
-    source: "https://endorphina.com/games/moofo/play",
-    verifiedAt,
-    evidence: "Official Game Details list 30 fixed lines on a 5x3 grid.",
+    mechanics: ["Линии", "Hold and Win", "Pick Game", "Free Games"],
+    source: "https://endorphina.com/it/news/join-the-space-race-in-endorphinas-moofo",
+    verifiedAt: verifiedAtLatest,
+    evidence: "Official Endorphina release confirms 30 fixed paylines plus Hold and Win, Pick-me bonus gameplay and Free Games.",
   },
   "endorphina-zalatar": {
-    mechanics: ["Линии"],
+    mechanics: ["Линии", "Hold and Win", "Множители", "Сбор символов", "Free Games"],
     source: "https://endorphina.com/games/zalatar/play",
-    verifiedAt,
-    evidence: "Official Endorphina release describes a 5x3 slot with 25 fixed paylines.",
+    verifiedAt: verifiedAtLatest,
+    evidence: "Official Endorphina game materials confirm 25 fixed paylines, Hold and Win, Free Games, multipliers and Collector-style jackpot collection.",
   },
 };
 
