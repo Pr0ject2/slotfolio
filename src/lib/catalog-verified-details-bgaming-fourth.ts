@@ -1,6 +1,7 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 
 const verifiedAt = "2026-09-11";
+const verifiedAtCurrent = "2026-09-24";
 
 const details: Record<string, CatalogVerifiedDetails> = {
   "bgaming-reel-of-ra": {
@@ -31,12 +32,13 @@ const details: Record<string, CatalogVerifiedDetails> = {
     verifiedAt,
   },
   "bgaming-cats-love-yummy": {
+    field: "6 барабанов · jackpot на 6-м",
     rtp: "96,07%",
     maxWin: "1500x",
     volatility: "Средняя–высокая",
     releaseDate: "2026-09-30",
     source: "https://bgaming.com/games/cats-love-yummy",
-    verifiedAt,
+    verifiedAt: verifiedAtCurrent,
   },
 };
 
