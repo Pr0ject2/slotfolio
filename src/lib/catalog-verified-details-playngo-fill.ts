@@ -1,5 +1,6 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 import { getCatalogVerifiedDetailsPlayngoPassportCloseout1 } from "./catalog-verified-details-playngo-passport-closeout-1";
+import { getCatalogVerifiedDetailsPlayngoPassportCloseout2 } from "./catalog-verified-details-playngo-passport-closeout-2";
 
 type PlayngoFillOverlay = Partial<
   Pick<CatalogVerifiedDetails, "field" | "rtp" | "maxWin" | "volatility" | "releaseDate">
@@ -181,7 +182,8 @@ const details: Record<string, PlayngoFillOverlay> = {
 
 export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
   const legacy = details[slug];
-  const closeout = getCatalogVerifiedDetailsPlayngoPassportCloseout1(slug);
-  if (!legacy && !closeout) return undefined;
-  return { ...closeout, ...legacy };
+  const closeout1 = getCatalogVerifiedDetailsPlayngoPassportCloseout1(slug);
+  const closeout2 = getCatalogVerifiedDetailsPlayngoPassportCloseout2(slug);
+  if (!legacy && !closeout1 && !closeout2) return undefined;
+  return { ...closeout2, ...closeout1, ...legacy };
 }
