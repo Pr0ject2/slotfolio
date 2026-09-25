@@ -52,7 +52,7 @@ const expectedDetails = {
 
 const targetSlugs = new Set([...gameTypeSlugs, ...collectionSlugs]);
 
-test("quality pass 6 improves thirty thin Hacksaw runtime records from official evidence", () => {
+test("quality pass 6 preserves its official Hacksaw facts while allowing later passport completion", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(30);
@@ -84,14 +84,14 @@ test("quality pass 6 improves thirty thin Hacksaw runtime records from official 
     const seed = selected.get(slug)!;
     const details = getVerifiedCatalogDetails(slug);
     expect(details?.source, slug).toBe(seed.source);
-    expect(details?.field, `${slug} must not invent layout`).toBeUndefined();
+    expect(details?.field, `${slug} field is now verified`).toBeTruthy();
     expect(details?.rtp, slug).toBe(expected.rtp);
     expect(details?.maxWin, slug).toBe(expected.maxWin);
     expect(details?.volatility, slug).toBe(expected.volatility);
     if ("releaseDate" in expected) {
       expect(details?.releaseDate, slug).toBe(expected.releaseDate);
     } else {
-      expect(details?.releaseDate, `${slug} must not guess release date`).toBeUndefined();
+      expect(details?.releaseDate, `${slug} release date is now verified`).toBeTruthy();
     }
   }
 

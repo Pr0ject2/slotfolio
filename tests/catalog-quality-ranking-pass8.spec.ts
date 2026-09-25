@@ -35,7 +35,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 8 improves twelve thin Hacksaw runtime records from exact official evidence", () => {
+test("quality pass 8 preserves original Hacksaw evidence while allowing full passport completion", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(12);
@@ -64,9 +64,8 @@ test("quality pass 8 improves twelve thin Hacksaw runtime records from exact off
     expect(details, slug).toBeTruthy();
     expect(details?.source, slug).toBe(seed.source);
     expect(details?.field, slug).toBe(field);
-    expect(details?.rtp, slug).toBeUndefined();
-    expect(details?.maxWin, slug).toBeUndefined();
-    // Later evidence-backed passes may add volatility or release timing without invalidating this original field evidence.
+    expect(details?.rtp, `${slug} RTP is now verified`).toBeTruthy();
+    expect(details?.maxWin, `${slug} max win is now verified`).toBeTruthy();
   }
 
   for (const slug of targetSlugs) {

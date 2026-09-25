@@ -22,7 +22,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("Hacksaw score-six tail is closed by direct official feature evidence", () => {
+test("Hacksaw score-six tail is closed by direct evidence and later passport completion", () => {
   const scoreSix = catalogSeeds
     .filter((seed) => seed.provider === "Hacksaw Gaming" && scoreFor(seed.slug) === 6)
     .map((seed) => seed.slug)
@@ -32,7 +32,7 @@ test("Hacksaw score-six tail is closed by direct official feature evidence", () 
 
   for (const slug of formerlyFieldLimited) {
     const details = getVerifiedCatalogDetails(slug);
-    expect(details?.field, `${slug} field remains unknown`).toBeUndefined();
+    expect(details?.field, `${slug} field is now verified`).toBeTruthy();
     expect(details?.rtp, `${slug} RTP stays verified`).toBeTruthy();
     expect(details?.maxWin, `${slug} max win stays verified`).toBeTruthy();
     expect(details?.volatility, `${slug} volatility stays verified`).toBeTruthy();
