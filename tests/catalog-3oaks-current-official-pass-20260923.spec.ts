@@ -18,13 +18,7 @@ const slotEvidence = {
   "3-oaks-gaming-wolf-night": "https://3oaks.com/game/wolf_night",
 } as const;
 
-const evidenceLimitedGameTypeTail = [
-  "3-oaks-gaming-3-coin-volcanoes",
-  "3-oaks-gaming-hit-the-gold",
-  "3-oaks-gaming-sunlight-princess",
-] as const;
-
-test("current official 3 Oaks pass adds only directly published slot classifications", () => {
+test("current official 3 Oaks pass preserves directly published slot classifications", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   for (const [slug, evidenceSource] of Object.entries(slotEvidence)) {
@@ -43,7 +37,7 @@ test("current official 3 Oaks pass adds only directly published slot classificat
     .filter((seed) => seed.provider === "3 Oaks Gaming" && !getVerifiedCatalogGameType(seed.slug))
     .map((seed) => seed.slug)
     .sort();
-  expect(residual).toEqual([...evidenceLimitedGameTypeTail].sort());
+  expect(residual).toEqual([]);
 });
 
 test("Buddha Megaways keeps its official release month without inventing a day", () => {
@@ -53,6 +47,9 @@ test("Buddha Megaways keeps its official release month without inventing a day",
   expect(details?.source).toBe("https://3oaks.com/game/buddha_megaways");
 });
 
-test("new 3 Oaks evidence does not rewrite older verification dates", () => {
-  expect(getVerifiedCatalogDetails("3-oaks-gaming-sun-of-egypt-5")?.verifiedAt).toBe("2026-09-18");
+test("later 3 Oaks enrichment preserves the earlier Sun of Egypt 5 release evidence", () => {
+  const details = getVerifiedCatalogDetails("3-oaks-gaming-sun-of-egypt-5");
+  expect(details?.releaseDate).toBe("2025-09-25");
+  expect(details?.releaseDateSource).toBe("https://3oaks.com/news/new-release-sun-of-egypt-5");
+  expect(details?.verifiedAt).toBe("2026-09-25");
 });
