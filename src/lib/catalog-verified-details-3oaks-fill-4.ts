@@ -1,4 +1,5 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
+import { getCatalogVerifiedDetails3OaksPassportCloseout1 } from "./catalog-verified-details-3oaks-passport-closeout-1";
 
 type ThreeOaksFill4Overlay = Partial<
   Pick<CatalogVerifiedDetails, "field" | "maxWin" | "volatility" | "releaseDate" | "source">
@@ -108,5 +109,5 @@ const details: Record<string, ThreeOaksFill4Overlay> = {
 };
 
 export function getCatalogVerifiedDetails3OaksFill4(slug: string) {
-  return details[slug];
+  return getCatalogVerifiedDetails3OaksPassportCloseout1(slug) ?? details[slug];
 }
