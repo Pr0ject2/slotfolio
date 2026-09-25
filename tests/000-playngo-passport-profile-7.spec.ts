@@ -5,9 +5,9 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
-test.only("profile remaining Play'n GO passport gaps", () => {
+test.only("profile remaining Play’n GO passport gaps", () => {
   const rows = catalogSeeds
-    .filter((seed) => seed.provider === "Play'n GO")
+    .filter((seed) => seed.provider === "Play’n GO")
     .map((seed) => {
       const details = getVerifiedCatalogDetails(seed.slug);
       const type = getVerifiedCatalogGameType(seed.slug);
