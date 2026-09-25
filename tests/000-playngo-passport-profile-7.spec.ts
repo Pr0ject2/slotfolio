@@ -20,7 +20,7 @@ test.only("profile remaining Play'n GO passport gaps", () => {
         !type?.gameType ? "gameType" : null,
         !(research?.mechanics?.length) ? "mechanics" : null,
       ].filter((field): field is string => Boolean(field));
-      return { slug: seed.slug, title: seed.title, missing };
+      return { slug: seed.slug, name: seed.name, missing };
     })
     .filter((row) => row.missing.length > 0);
 
