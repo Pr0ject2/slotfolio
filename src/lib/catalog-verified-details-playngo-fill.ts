@@ -6,6 +6,7 @@ import { getCatalogVerifiedDetailsPlayngoPassportCloseout4 } from "./catalog-ver
 import { getCatalogVerifiedDetailsPlayngoPassportCloseout5 } from "./catalog-verified-details-playngo-passport-closeout-5";
 import { getCatalogVerifiedDetailsPlayngoPassportCloseout6 } from "./catalog-verified-details-playngo-passport-closeout-6";
 import { getCatalogVerifiedDetailsPlayngoPassportCloseout7 } from "./catalog-verified-details-playngo-passport-closeout-7";
+import { getCatalogVerifiedDetailsPlayngoPassportCloseout8 } from "./catalog-verified-details-playngo-passport-closeout-8";
 
 type PlayngoFillOverlay = Partial<
   Pick<CatalogVerifiedDetails, "field" | "rtp" | "maxWin" | "volatility" | "releaseDate">
@@ -194,6 +195,7 @@ export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
   const closeout5 = getCatalogVerifiedDetailsPlayngoPassportCloseout5(slug);
   const closeout6 = getCatalogVerifiedDetailsPlayngoPassportCloseout6(slug);
   const closeout7 = getCatalogVerifiedDetailsPlayngoPassportCloseout7(slug);
-  if (!legacy && !closeout1 && !closeout2 && !closeout3 && !closeout4 && !closeout5 && !closeout6 && !closeout7) return undefined;
-  return { ...closeout7, ...closeout6, ...closeout5, ...closeout4, ...closeout3, ...closeout2, ...closeout1, ...legacy };
+  const closeout8 = getCatalogVerifiedDetailsPlayngoPassportCloseout8(slug);
+  if (!legacy && !closeout1 && !closeout2 && !closeout3 && !closeout4 && !closeout5 && !closeout6 && !closeout7 && !closeout8) return undefined;
+  return { ...closeout8, ...closeout7, ...closeout6, ...closeout5, ...closeout4, ...closeout3, ...closeout2, ...closeout1, ...legacy };
 }
