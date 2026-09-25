@@ -24,7 +24,7 @@ const fieldTargets = new Set([
   "playn-go-champions-of-mithrune",
 ]);
 
-const maxWinTargets = new Set(targets.filter((slug) => slug !== "playn-go-ace-of-spades"));
+const maxWinTargets = new Set<string>(targets.filter((slug) => slug !== "playn-go-ace-of-spades"));
 
 test("seventh Play'n GO passport closeout batch is fully populated", () => {
   const selected = new Set(catalogSeeds.map((seed) => seed.slug));
