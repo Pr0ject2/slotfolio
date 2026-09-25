@@ -47,7 +47,13 @@ test("second 3 Oaks public API wave adds only direct feature evidence and keeps 
   }
 });
 
-test("second 3 Oaks API wave does not promote jackpot values into maxWin", () => {
-  expect(getVerifiedCatalogDetails("3-oaks-gaming-coin-up-volcano")?.maxWin).toBeUndefined();
-  expect(getVerifiedCatalogDetails("3-oaks-gaming-book-of-sun-multichance")?.maxWin).toBeUndefined();
+test("later max-win completion stays separate from the feature API evidence", () => {
+  for (const [slug, values] of Object.entries(cases)) {
+    const details = getVerifiedCatalogDetails(slug) as ReturnType<typeof getVerifiedCatalogDetails> & {
+      maxWinSource?: string;
+    };
+    expect(details?.maxWin, slug).toBeTruthy();
+    expect(details?.maxWinSource, `${slug} max-win provenance`).toMatch(/^https:\/\//);
+    expect(details?.maxWinSource, `${slug} must not derive max win from the feature API`).not.toBe(values.api);
+  }
 });

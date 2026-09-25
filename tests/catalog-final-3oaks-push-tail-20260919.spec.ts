@@ -26,7 +26,7 @@ test("final 3 Oaks tail keeps new official facts without freezing future enrichm
   expect(hotFire?.releaseDateSource).toBe("https://3oaks.com/news/new-release-hot-fire-fruits");
 
   const chinaPots = getVerifiedCatalogDetails("3-oaks-gaming-super-china-pots");
-  expect(chinaPots?.maxWin).toBe("2000x");
+  expect(chinaPots?.maxWin).toBe("2 000x");
   expect(chinaPots?.releaseDate).toBe("2025-06-05");
   expect(getVerifiedCatalogGameType("3-oaks-gaming-super-china-pots")?.gameType).toBe("Slots");
   expect(scoreFor("3-oaks-gaming-super-china-pots")).toBeGreaterThanOrEqual(6);

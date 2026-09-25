@@ -28,8 +28,11 @@ test("catalog model exposes verified technical data to cards without promoting f
   expect(threeOaks).toBeTruthy();
   expect(threeOaks?.field).toBe("5×3 · 40 линий");
   expect(threeOaks?.releaseDate).toMatch(/^2025-05(?:$|-)/);
+  expect(threeOaks?.verifiedRtp).toBeTruthy();
+  expect(threeOaks?.maxWin).toBeTruthy();
+  expect(threeOaks?.verifiedVolatility).toBeTruthy();
   expect(threeOaks?.mechanics).toContain("Линии");
-  expect(threeOaks?.verifiedFacts).toBeGreaterThanOrEqual(3);
+  expect(threeOaks?.verifiedFacts).toBeGreaterThanOrEqual(6);
 
   const minimal = model.items.find((item) => item.slug === "playn-go-rally-4-riches");
   expect(minimal).toBeTruthy();
@@ -98,7 +101,7 @@ test("cover view keeps two slot cards per row on 390px without horizontal overfl
 });
 
 for (const width of [320, 390, 1440]) {
-  test(`partial catalog passport shows only available facts at ${width}px`, async ({ page }) => {
+  test(`completed 3 Oaks passport renders all core facts at ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 1000 });
     await page.goto('/slots?q=Dancing%20Joker');
     const card = page.locator('.catalog-game[data-coverage="catalog"]');
@@ -106,7 +109,7 @@ for (const width of [320, 390, 1440]) {
     await expect(card.locator('dl')).toContainText('5×3 · 40 линий');
     await expect(card.locator('dl')).toContainText(/(?:01\.05\.2025|05\.2025)/);
     for (const label of ['RTP', 'Макс.', 'Волат.']) {
-      await expect(card.locator('dt').filter({ hasText: new RegExp(`^${label.replace('.', '\\.')}$`) })).toHaveCount(0);
+      await expect(card.locator('dt').filter({ hasText: new RegExp(`^${label.replace('.', '\\.')}$`) })).toHaveCount(1);
     }
     await expect(card.locator('dd').filter({ hasText: /^—$/ })).toHaveCount(0);
     await expect(card).not.toContainText('не подтвержден');

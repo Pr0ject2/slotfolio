@@ -1,4 +1,18 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
+import { getCatalogVerifiedDetails3OaksPassportCloseout1 } from "./catalog-verified-details-3oaks-passport-closeout-1";
+import { getCatalogVerifiedDetails3OaksPassportCloseout2 } from "./catalog-verified-details-3oaks-passport-closeout-2";
+import { getCatalogVerifiedDetails3OaksPassportCloseout3 } from "./catalog-verified-details-3oaks-passport-closeout-3";
+import { getCatalogVerifiedDetails3OaksPassportCloseout4 } from "./catalog-verified-details-3oaks-passport-closeout-4";
+import { getCatalogVerifiedDetails3OaksPassportCloseout5 } from "./catalog-verified-details-3oaks-passport-closeout-5";
+import { getCatalogVerifiedDetails3OaksPassportCloseout6 } from "./catalog-verified-details-3oaks-passport-closeout-6";
+import { getCatalogVerifiedDetails3OaksPassportCloseout7 } from "./catalog-verified-details-3oaks-passport-closeout-7";
+import { getCatalogVerifiedDetails3OaksPassportCloseout8 } from "./catalog-verified-details-3oaks-passport-closeout-8";
+import { getCatalogVerifiedDetails3OaksPassportCloseout9 } from "./catalog-verified-details-3oaks-passport-closeout-9";
+import { getCatalogVerifiedDetails3OaksPassportCloseout10 } from "./catalog-verified-details-3oaks-passport-closeout-10";
+import { getCatalogVerifiedDetails3OaksPassportCloseout11 } from "./catalog-verified-details-3oaks-passport-closeout-11";
+import { getCatalogVerifiedDetails3OaksPassportCloseout12 } from "./catalog-verified-details-3oaks-passport-closeout-12";
+import { getCatalogVerifiedDetails3OaksPassportCloseout13 } from "./catalog-verified-details-3oaks-passport-closeout-13";
+import { getCatalogVerifiedDetails3OaksPassportCloseout14 } from "./catalog-verified-details-3oaks-passport-closeout-14";
 
 type ThreeOaksFill4Overlay = Partial<
   Pick<CatalogVerifiedDetails, "field" | "maxWin" | "volatility" | "releaseDate" | "source">
@@ -108,5 +122,21 @@ const details: Record<string, ThreeOaksFill4Overlay> = {
 };
 
 export function getCatalogVerifiedDetails3OaksFill4(slug: string) {
-  return details[slug];
+  const legacy = details[slug];
+  const closeout1 = getCatalogVerifiedDetails3OaksPassportCloseout1(slug);
+  const closeout2 = getCatalogVerifiedDetails3OaksPassportCloseout2(slug);
+  const closeout3 = getCatalogVerifiedDetails3OaksPassportCloseout3(slug);
+  const closeout4 = getCatalogVerifiedDetails3OaksPassportCloseout4(slug);
+  const closeout5 = getCatalogVerifiedDetails3OaksPassportCloseout5(slug);
+  const closeout6 = getCatalogVerifiedDetails3OaksPassportCloseout6(slug);
+  const closeout7 = getCatalogVerifiedDetails3OaksPassportCloseout7(slug);
+  const closeout8 = getCatalogVerifiedDetails3OaksPassportCloseout8(slug);
+  const closeout9 = getCatalogVerifiedDetails3OaksPassportCloseout9(slug);
+  const closeout10 = getCatalogVerifiedDetails3OaksPassportCloseout10(slug);
+  const closeout11 = getCatalogVerifiedDetails3OaksPassportCloseout11(slug);
+  const closeout12 = getCatalogVerifiedDetails3OaksPassportCloseout12(slug);
+  const closeout13 = getCatalogVerifiedDetails3OaksPassportCloseout13(slug);
+  const closeout14 = getCatalogVerifiedDetails3OaksPassportCloseout14(slug);
+  if (!legacy && !closeout1 && !closeout2 && !closeout3 && !closeout4 && !closeout5 && !closeout6 && !closeout7 && !closeout8 && !closeout9 && !closeout10 && !closeout11 && !closeout12 && !closeout13 && !closeout14) return undefined;
+  return { ...legacy, ...closeout1, ...closeout2, ...closeout3, ...closeout4, ...closeout5, ...closeout6, ...closeout7, ...closeout8, ...closeout9, ...closeout10, ...closeout11, ...closeout12, ...closeout13, ...closeout14 };
 }
