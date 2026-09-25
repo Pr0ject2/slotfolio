@@ -1,4 +1,5 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
+import { getCatalogVerifiedDetails3OaksPassportCloseout16 } from "./catalog-verified-details-3oaks-passport-closeout-16";
 
 type ThreeOaksPassportCloseout = Partial<
   Pick<CatalogVerifiedDetails, "rtp" | "maxWin" | "volatility">
@@ -107,5 +108,5 @@ const details: Record<string, ThreeOaksPassportCloseout> = {
 };
 
 export function getCatalogVerifiedDetails3OaksPassportCloseout15(slug: string) {
-  return details[slug];
+  return getCatalogVerifiedDetails3OaksPassportCloseout16(slug) ?? details[slug];
 }
