@@ -1,6 +1,7 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 import { getCatalogVerifiedDetailsPlayngoPassportCloseout1 } from "./catalog-verified-details-playngo-passport-closeout-1";
 import { getCatalogVerifiedDetailsPlayngoPassportCloseout2 } from "./catalog-verified-details-playngo-passport-closeout-2";
+import { getCatalogVerifiedDetailsPlayngoPassportCloseout3 } from "./catalog-verified-details-playngo-passport-closeout-3";
 
 type PlayngoFillOverlay = Partial<
   Pick<CatalogVerifiedDetails, "field" | "rtp" | "maxWin" | "volatility" | "releaseDate">
@@ -56,7 +57,7 @@ const details: Record<string, PlayngoFillOverlay> = {
   },
   "playn-go-frozen-gems": {
     field: "5×3 · до 8748 способов",
-    fieldSource: "https://www.playngo.com/post/play-n-go-unearth-their-latest-gem-with-new-release",
+    fieldSource: "https://www.playngo.com/post/playngo-unearth-their-latest-gem-with-new-release",
     verifiedAt,
   },
   "playn-go-golden-osiris": {
@@ -184,6 +185,7 @@ export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
   const legacy = details[slug];
   const closeout1 = getCatalogVerifiedDetailsPlayngoPassportCloseout1(slug);
   const closeout2 = getCatalogVerifiedDetailsPlayngoPassportCloseout2(slug);
-  if (!legacy && !closeout1 && !closeout2) return undefined;
-  return { ...closeout2, ...closeout1, ...legacy };
+  const closeout3 = getCatalogVerifiedDetailsPlayngoPassportCloseout3(slug);
+  if (!legacy && !closeout1 && !closeout2 && !closeout3) return undefined;
+  return { ...closeout3, ...closeout2, ...closeout1, ...legacy };
 }
