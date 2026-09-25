@@ -1,3 +1,4 @@
+import { writeFileSync } from "node:fs";
 import { test } from "@playwright/test";
 import { catalogSeeds } from "../src/lib/catalog-seeds";
 import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
@@ -29,5 +30,5 @@ test.only("profile remaining Play'n GO passport gaps", () => {
     for (const field of row.missing) byField[field] = (byField[field] ?? 0) + 1;
   }
 
-  throw new Error(`PLAYNGO_PROFILE ${JSON.stringify({ totalIncomplete: rows.length, byField, first30: rows.slice(0, 30) })}`);
+  writeFileSync("playngo-profile.json", JSON.stringify({ totalIncomplete: rows.length, byField, rows }, null, 2));
 });
