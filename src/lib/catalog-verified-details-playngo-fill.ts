@@ -5,6 +5,7 @@ import { getCatalogVerifiedDetailsPlayngoPassportCloseout3 } from "./catalog-ver
 import { getCatalogVerifiedDetailsPlayngoPassportCloseout4 } from "./catalog-verified-details-playngo-passport-closeout-4";
 import { getCatalogVerifiedDetailsPlayngoPassportCloseout5 } from "./catalog-verified-details-playngo-passport-closeout-5";
 import { getCatalogVerifiedDetailsPlayngoPassportCloseout6 } from "./catalog-verified-details-playngo-passport-closeout-6";
+import { getCatalogVerifiedDetailsPlayngoPassportCloseout7 } from "./catalog-verified-details-playngo-passport-closeout-7";
 
 type PlayngoFillOverlay = Partial<
   Pick<CatalogVerifiedDetails, "field" | "rtp" | "maxWin" | "volatility" | "releaseDate">
@@ -66,7 +67,7 @@ const details: Record<string, PlayngoFillOverlay> = {
   "playn-go-golden-osiris": {
     maxWin: "12000x",
     maxWinSource: "https://www.playngo.com/games/golden-osiris",
-    verifiedAt,
+    verifiedAt: "2026-09-20",
   },
   "playn-go-moon-princess-origins": {
     field: "5×5",
@@ -192,6 +193,7 @@ export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
   const closeout4 = getCatalogVerifiedDetailsPlayngoPassportCloseout4(slug);
   const closeout5 = getCatalogVerifiedDetailsPlayngoPassportCloseout5(slug);
   const closeout6 = getCatalogVerifiedDetailsPlayngoPassportCloseout6(slug);
-  if (!legacy && !closeout1 && !closeout2 && !closeout3 && !closeout4 && !closeout5 && !closeout6) return undefined;
-  return { ...closeout6, ...closeout5, ...closeout4, ...closeout3, ...closeout2, ...closeout1, ...legacy };
+  const closeout7 = getCatalogVerifiedDetailsPlayngoPassportCloseout7(slug);
+  if (!legacy && !closeout1 && !closeout2 && !closeout3 && !closeout4 && !closeout5 && !closeout6 && !closeout7) return undefined;
+  return { ...closeout7, ...closeout6, ...closeout5, ...closeout4, ...closeout3, ...closeout2, ...closeout1, ...legacy };
 }
