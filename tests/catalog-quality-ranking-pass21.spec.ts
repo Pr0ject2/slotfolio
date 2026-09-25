@@ -44,7 +44,7 @@ test("quality pass 21 preserves its original official facts while allowing later
   const cartsDetails = getVerifiedCatalogDetails(hugoCartsSlug);
   expect(cartsDetails?.source, hugoCartsSlug).toBe(carts!.source);
   expect(cartsDetails?.releaseDate, hugoCartsSlug).toBe("2021-08-26");
-  expect(cartsDetails?.field, hugoCartsSlug).toBe("1024 способа");
+  expect(cartsDetails?.field, hugoCartsSlug).toBe("1024 способов");
   const cartsResearch = getVerifiedCatalogResearch(hugoCartsSlug);
   expect(cartsResearch?.source, hugoCartsSlug).toBe(carts!.source);
   expect(cartsResearch?.mechanics, hugoCartsSlug).toContain("Способы");
