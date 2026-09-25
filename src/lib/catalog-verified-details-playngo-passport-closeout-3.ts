@@ -51,6 +51,15 @@ const details: Record<string, PlayngoPassportCloseout> = {
     volatilitySource: "https://slotcatalog.com/en/slots/Aztec-Idols",
     verifiedAt,
   },
+  "playn-go-aztec-warrior-princess": {
+    rtp: "96,69%",
+    maxWin: "5 000x",
+    volatility: "Средняя",
+    rtpSource: "https://www.slotstemple.com/free-slots/aztec-warrior-princess/",
+    maxWinSource: "https://www.slotstemple.com/free-slots/aztec-warrior-princess/",
+    volatilitySource: "https://www.slotstemple.com/free-slots/aztec-warrior-princess/",
+    verifiedAt,
+  },
   "playn-go-bakers-treat": {
     rtp: "96,04% / 94,03%",
     maxWin: "5 000x",
@@ -87,6 +96,15 @@ const details: Record<string, PlayngoPassportCloseout> = {
     rtpSource: "https://slotcatalog.com/en/slots/Banquet-of-Dead",
     maxWinSource: "https://slotcatalog.com/en/slots/Banquet-of-Dead",
     volatilitySource: "https://slotcatalog.com/en/slots/Banquet-of-Dead",
+    verifiedAt,
+  },
+  "playn-go-bao-shi": {
+    rtp: "96,20% / 94,20% / 91,20% / 87,20% / 84,20%",
+    maxWin: "15 000x",
+    volatility: "Высокая",
+    rtpSource: "https://www.bigwinboard.com/bao-shi-playn-go-slot-review/",
+    maxWinSource: "https://www.bigwinboard.com/bao-shi-playn-go-slot-review/",
+    volatilitySource: "https://www.bigwinboard.com/bao-shi-playn-go-slot-review/",
     verifiedAt,
   },
   "playn-go-barn-busters": {
