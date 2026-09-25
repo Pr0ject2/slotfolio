@@ -69,3 +69,11 @@ jobs:
           CHROME_PATH: /usr/bin/google-chrome
           SLOTFOLIO_STATIC_PREVIEW: "true"
         run: npm test
+
+      - name: Upload Play'n GO passport profile
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playngo-passport-profile
+          path: playngo-profile.json
+          if-no-files-found: error
