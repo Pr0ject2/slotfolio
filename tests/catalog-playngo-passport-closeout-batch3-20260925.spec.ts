@@ -9,10 +9,12 @@ const targets = [
   "playn-go-annihilator",
   "playn-go-athena-ascending",
   "playn-go-aztec-idols",
+  "playn-go-aztec-warrior-princess",
   "playn-go-bakers-treat",
   "playn-go-banana-rock",
   "playn-go-banana-rush",
   "playn-go-banquet-of-dead",
+  "playn-go-bao-shi",
   "playn-go-barn-busters",
   "playn-go-baron-lord-of-saturday",
   "playn-go-battle-royal",
@@ -23,7 +25,7 @@ const targets = [
 
 test("third Play'n GO passport closeout batch is fully populated", () => {
   const selected = new Set(catalogSeeds.map((seed) => seed.slug));
-  expect(targets).toHaveLength(14);
+  expect(targets).toHaveLength(16);
 
   for (const slug of targets) {
     expect(selected.has(slug), `${slug} must be in the selected catalog`).toBe(true);
