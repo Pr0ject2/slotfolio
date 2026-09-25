@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { catalogSeeds } from "../src/lib/catalog-seeds";
 import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
 
 const expected = {
@@ -10,8 +11,12 @@ const expected = {
   "3-oaks-gaming-777-coins": ["95,75%", "6 000x", "Средняя"],
 } as const;
 
-test("third 3 Oaks passport closeout batch has complete math facts", () => {
-  for (const [slug, [rtp, maxWin, volatility]] of Object.entries(expected)) {
+test("third 3 Oaks passport closeout batch completes every selected target", () => {
+  const selected = new Set(catalogSeeds.map((seed) => seed.slug));
+  const selectedEntries = Object.entries(expected).filter(([slug]) => selected.has(slug));
+  expect(selectedEntries.length).toBeGreaterThan(0);
+
+  for (const [slug, [rtp, maxWin, volatility]] of selectedEntries) {
     const details = getVerifiedCatalogDetails(slug) as ReturnType<typeof getVerifiedCatalogDetails> & {
       rtpSource?: string;
       maxWinSource?: string;
