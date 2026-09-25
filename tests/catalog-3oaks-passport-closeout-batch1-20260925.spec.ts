@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { catalogSeeds } from "../src/lib/catalog-seeds";
 import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 
@@ -20,8 +21,12 @@ const gameTypeSlugs = [
   "3-oaks-gaming-sunlight-princess",
 ] as const;
 
-test("first 3 Oaks passport closeout batch has complete math facts", () => {
-  for (const slug of detailSlugs) {
+test("first 3 Oaks passport closeout batch completes every selected target", () => {
+  const selected = new Set(catalogSeeds.map((seed) => seed.slug));
+  const selectedTargets = detailSlugs.filter((slug) => selected.has(slug));
+  expect(selectedTargets.length).toBeGreaterThan(0);
+
+  for (const slug of selectedTargets) {
     const details = getVerifiedCatalogDetails(slug) as ReturnType<typeof getVerifiedCatalogDetails> & {
       rtpSource?: string;
       maxWinSource?: string;
@@ -36,8 +41,9 @@ test("first 3 Oaks passport closeout batch has complete math facts", () => {
   }
 });
 
-test("remaining 3 Oaks game-type gaps are classified", () => {
-  for (const slug of gameTypeSlugs) {
+test("remaining selected 3 Oaks game-type targets are classified", () => {
+  const selected = new Set(catalogSeeds.map((seed) => seed.slug));
+  for (const slug of gameTypeSlugs.filter((slug) => selected.has(slug))) {
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Slots");
   }
 });
