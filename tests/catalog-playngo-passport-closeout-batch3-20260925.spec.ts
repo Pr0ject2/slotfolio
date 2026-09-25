@@ -50,6 +50,11 @@ test("third Play'n GO passport closeout batch is fully populated", () => {
   const bananaRock = getVerifiedCatalogDetails("playn-go-banana-rock") as ReturnType<typeof getVerifiedCatalogDetails> & { fieldSource?: string };
   expect(athena?.fieldSource).toMatch(/^https:\/\//);
   expect(bananaRock?.fieldSource).toMatch(/^https:\/\//);
+
+  const aztecWarrior = getVerifiedCatalogDetails("playn-go-aztec-warrior-princess");
+  expect(aztecWarrior?.maxWin).toBe("1 000x");
+  const barnBusters = getVerifiedCatalogDetails("playn-go-barn-busters");
+  expect(barnBusters?.volatility).toBe("Средняя");
 });
 
 test("third closeout keeps canonical Play'n GO pages primary", () => {
