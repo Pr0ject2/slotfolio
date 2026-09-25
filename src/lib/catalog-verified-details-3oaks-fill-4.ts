@@ -1,6 +1,7 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 import { getCatalogVerifiedDetails3OaksPassportCloseout1 } from "./catalog-verified-details-3oaks-passport-closeout-1";
 import { getCatalogVerifiedDetails3OaksPassportCloseout2 } from "./catalog-verified-details-3oaks-passport-closeout-2";
+import { getCatalogVerifiedDetails3OaksPassportCloseout3 } from "./catalog-verified-details-3oaks-passport-closeout-3";
 
 type ThreeOaksFill4Overlay = Partial<
   Pick<CatalogVerifiedDetails, "field" | "maxWin" | "volatility" | "releaseDate" | "source">
@@ -113,6 +114,7 @@ export function getCatalogVerifiedDetails3OaksFill4(slug: string) {
   const legacy = details[slug];
   const closeout1 = getCatalogVerifiedDetails3OaksPassportCloseout1(slug);
   const closeout2 = getCatalogVerifiedDetails3OaksPassportCloseout2(slug);
-  if (!legacy && !closeout1 && !closeout2) return undefined;
-  return { ...legacy, ...closeout1, ...closeout2 };
+  const closeout3 = getCatalogVerifiedDetails3OaksPassportCloseout3(slug);
+  if (!legacy && !closeout1 && !closeout2 && !closeout3) return undefined;
+  return { ...legacy, ...closeout1, ...closeout2, ...closeout3 };
 }
