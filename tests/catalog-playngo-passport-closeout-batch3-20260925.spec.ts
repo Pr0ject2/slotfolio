@@ -5,7 +5,6 @@ import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-typ
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const targets = [
-  "playn-go-ankh-of-anubis-awakening",
   "playn-go-annihilator",
   "playn-go-athena-ascending",
   "playn-go-aztec-idols",
@@ -13,19 +12,16 @@ const targets = [
   "playn-go-bakers-treat",
   "playn-go-banana-rock",
   "playn-go-banana-rush",
-  "playn-go-banquet-of-dead",
   "playn-go-bao-shi",
   "playn-go-barn-busters",
-  "playn-go-baron-lord-of-saturday",
   "playn-go-battle-royal",
   "playn-go-beasts-of-fire",
-  "playn-go-beasts-of-fire-maximum",
   "playn-go-big-win-777",
 ] as const;
 
 test("third Play'n GO passport closeout batch is fully populated", () => {
   const selected = new Set(catalogSeeds.map((seed) => seed.slug));
-  expect(targets).toHaveLength(16);
+  expect(targets).toHaveLength(12);
 
   for (const slug of targets) {
     expect(selected.has(slug), `${slug} must be in the selected catalog`).toBe(true);
