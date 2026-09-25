@@ -12,6 +12,7 @@ import { getCatalogVerifiedDetails3OaksPassportCloseout10 } from "./catalog-veri
 import { getCatalogVerifiedDetails3OaksPassportCloseout11 } from "./catalog-verified-details-3oaks-passport-closeout-11";
 import { getCatalogVerifiedDetails3OaksPassportCloseout12 } from "./catalog-verified-details-3oaks-passport-closeout-12";
 import { getCatalogVerifiedDetails3OaksPassportCloseout13 } from "./catalog-verified-details-3oaks-passport-closeout-13";
+import { getCatalogVerifiedDetails3OaksPassportCloseout14 } from "./catalog-verified-details-3oaks-passport-closeout-14";
 
 type ThreeOaksFill4Overlay = Partial<
   Pick<CatalogVerifiedDetails, "field" | "maxWin" | "volatility" | "releaseDate" | "source">
@@ -135,6 +136,7 @@ export function getCatalogVerifiedDetails3OaksFill4(slug: string) {
   const closeout11 = getCatalogVerifiedDetails3OaksPassportCloseout11(slug);
   const closeout12 = getCatalogVerifiedDetails3OaksPassportCloseout12(slug);
   const closeout13 = getCatalogVerifiedDetails3OaksPassportCloseout13(slug);
-  if (!legacy && !closeout1 && !closeout2 && !closeout3 && !closeout4 && !closeout5 && !closeout6 && !closeout7 && !closeout8 && !closeout9 && !closeout10 && !closeout11 && !closeout12 && !closeout13) return undefined;
-  return { ...legacy, ...closeout1, ...closeout2, ...closeout3, ...closeout4, ...closeout5, ...closeout6, ...closeout7, ...closeout8, ...closeout9, ...closeout10, ...closeout11, ...closeout12, ...closeout13 };
+  const closeout14 = getCatalogVerifiedDetails3OaksPassportCloseout14(slug);
+  if (!legacy && !closeout1 && !closeout2 && !closeout3 && !closeout4 && !closeout5 && !closeout6 && !closeout7 && !closeout8 && !closeout9 && !closeout10 && !closeout11 && !closeout12 && !closeout13 && !closeout14) return undefined;
+  return { ...legacy, ...closeout1, ...closeout2, ...closeout3, ...closeout4, ...closeout5, ...closeout6, ...closeout7, ...closeout8, ...closeout9, ...closeout10, ...closeout11, ...closeout12, ...closeout13, ...closeout14 };
 }
