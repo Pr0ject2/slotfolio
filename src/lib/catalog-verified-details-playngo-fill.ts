@@ -2,6 +2,7 @@ import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 import { getCatalogVerifiedDetailsPlayngoPassportCloseout1 } from "./catalog-verified-details-playngo-passport-closeout-1";
 import { getCatalogVerifiedDetailsPlayngoPassportCloseout2 } from "./catalog-verified-details-playngo-passport-closeout-2";
 import { getCatalogVerifiedDetailsPlayngoPassportCloseout3 } from "./catalog-verified-details-playngo-passport-closeout-3";
+import { getCatalogVerifiedDetailsPlayngoPassportCloseout4 } from "./catalog-verified-details-playngo-passport-closeout-4";
 
 type PlayngoFillOverlay = Partial<
   Pick<CatalogVerifiedDetails, "field" | "rtp" | "maxWin" | "volatility" | "releaseDate">
@@ -39,7 +40,7 @@ const details: Record<string, PlayngoFillOverlay> = {
     verifiedAt,
   },
   "playn-go-hugo-carts": {
-    field: "1024 способа",
+    field: "1024 способов",
     fieldSource: "https://www.playngo.com/games/hugo-carts",
     verifiedAt,
   },
@@ -186,6 +187,7 @@ export function getCatalogVerifiedDetailsPlayngoFill(slug: string) {
   const closeout1 = getCatalogVerifiedDetailsPlayngoPassportCloseout1(slug);
   const closeout2 = getCatalogVerifiedDetailsPlayngoPassportCloseout2(slug);
   const closeout3 = getCatalogVerifiedDetailsPlayngoPassportCloseout3(slug);
-  if (!legacy && !closeout1 && !closeout2 && !closeout3) return undefined;
-  return { ...closeout3, ...closeout2, ...closeout1, ...legacy };
+  const closeout4 = getCatalogVerifiedDetailsPlayngoPassportCloseout4(slug);
+  if (!legacy && !closeout1 && !closeout2 && !closeout3 && !closeout4) return undefined;
+  return { ...closeout4, ...closeout3, ...closeout2, ...closeout1, ...legacy };
 }
