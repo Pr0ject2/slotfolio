@@ -29,12 +29,12 @@ test("first legacy dossier batch keeps auditable 1win availability evidence", ()
   }
 });
 
-test("legacy 1win provenance residual falls from thirty dossiers to twenty-four", () => {
-  const missing = slots
-    .filter((slot) => !slot.availability?.some((item) => item.operator === "1win"))
-    .map((slot) => slot.slug)
-    .sort();
+test("later legacy enrichment cannot reopen any batch-one provenance gap", () => {
+  const missing = new Set(
+    slots
+      .filter((slot) => !slot.availability?.some((item) => item.operator === "1win"))
+      .map((slot) => slot.slug),
+  );
 
-  expect(missing).toHaveLength(24);
-  for (const slug of Object.keys(expectedSources)) expect(missing).not.toContain(slug);
+  for (const slug of Object.keys(expectedSources)) expect(missing.has(slug), slug).toBe(false);
 });
