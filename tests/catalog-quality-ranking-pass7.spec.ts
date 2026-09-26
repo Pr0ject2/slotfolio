@@ -51,9 +51,9 @@ test("quality pass 7 preserves its original official facts while allowing later 
 
   const chineseNewYear = getVerifiedCatalogDetails("playn-go-chinese-new-year");
   expect(chineseNewYear?.field).toBe("5×3");
-  expect(chineseNewYear?.rtp).toBeUndefined();
-  expect(chineseNewYear?.maxWin).toBeUndefined();
-  expect(chineseNewYear?.volatility).toBeUndefined();
+  expect(chineseNewYear?.rtp).toBe("96,65%");
+  expect(chineseNewYear?.maxWin).toBe("6 250x");
+  expect(chineseNewYear?.volatility).toBe("Средняя");
   expect(chineseNewYear?.releaseDate).toBe("2014-04-28");
 
   const luckyDiamonds = getVerifiedCatalogDetails("playn-go-lucky-diamonds");
