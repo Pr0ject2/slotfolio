@@ -39,7 +39,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 23 preserves exact official layouts on three Play’n GO records", () => {
+test("quality pass 23 preserves exact official layouts while allowing later enrichment", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(3);
@@ -59,8 +59,6 @@ test("quality pass 23 preserves exact official layouts on three Play’n GO reco
     expect(details?.source, slug).toBe(values.source);
     expect(details?.field, slug).toBe(values.field);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
-    expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
-    expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
 
     if ("maxWin" in values) {
       expect(details?.maxWin, slug).toBe(values.maxWin);
@@ -68,8 +66,6 @@ test("quality pass 23 preserves exact official layouts on three Play’n GO reco
       if (details && "maxWinSource" in details) {
         expect(details.maxWinSource, slug).toBe(values.maxWinSource);
       }
-    } else {
-      expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
     }
 
     if ("fieldSource" in values) {
