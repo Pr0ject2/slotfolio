@@ -1,20 +1,19 @@
 import type { CatalogResearch } from "./catalog-research";
 
-const verifiedAt = "2026-09-11";
 const verifiedAtLatest = "2026-09-26";
 
 export const catalogResearchNolimit: Record<string, CatalogResearch> = {
   "nolimit-city-ding-dong-death": {
-    mechanics: ["Bonus Buy", "Action Spin", "xNudge", "Avalanche"],
+    mechanics: ["Bonus Buy", "Action Spin"],
     source: "https://fan-dev.nolimitcity.com/affiliates-info",
     verifiedAt: verifiedAtLatest,
-    evidence: "Official Nolimit City affiliate technical feed marks Ding Dong Death with hasBonusBuy=true and hasActionSpin=true. The official game page documents xNudge Wild multipliers, Death Meter modes and avalanche progression.",
+    evidence: "Official Nolimit City affiliate technical feed marks Ding Dong Death with hasBonusBuy=true and hasActionSpin=true. The official game page separately documents its Death Meter, xNudge and extra-spin feature set.",
   },
   "nolimit-city-duck-hunters-2": {
-    mechanics: ["Способы", "Bonus Buy", "Action Spin", "xWays", "Infectious xWays"],
+    mechanics: ["Способы", "Bonus Buy", "Action Spin"],
     source: "https://fan-dev.nolimitcity.com/affiliates-info",
     verifiedAt: verifiedAtLatest,
-    evidence: "Official Nolimit City affiliate technical feed marks Duck Hunters 2 with hasBonusBuy=true and hasActionSpin=true. The official game page documents Scatter Wins, xWays/Infectious xWays and the expanding ways-to-win mechanics.",
+    evidence: "Official Nolimit City affiliate technical feed marks Duck Hunters 2 with hasBonusBuy=true and hasActionSpin=true. The official game page separately documents Scatter Wins and its xWays/Infectious xWays feature set.",
   },
   "nolimit-city-gator-hunters-2": {
     mechanics: ["Bonus Buy", "Action Spin"],
