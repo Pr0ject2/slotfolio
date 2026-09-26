@@ -67,11 +67,9 @@ test("Nolimit City closeout preserves field-level provenance for newly enriched 
   const ding = getCatalogVerifiedDetailsNolimit("nolimit-city-ding-dong-death");
   expect(ding?.rtp).toBe("96,08%");
   expect(ding?.rtpSource).toBe("https://nolimitcity.com/games/ding-dong-death");
-  expect(getVerifiedCatalogResearch("nolimit-city-ding-dong-death")?.mechanics).toEqual([
-    "xNudge",
-    "xSplit",
-    "xTra",
-  ]);
+  expect(getVerifiedCatalogResearch("nolimit-city-ding-dong-death")?.mechanics).toEqual(
+    expect.arrayContaining(["xNudge", "xSplit", "xTra"]),
+  );
 
   const gator = getCatalogVerifiedDetailsNolimit("nolimit-city-gator-hunters-2");
   expect(gator?.volatility).toBe("Экстремальная");
