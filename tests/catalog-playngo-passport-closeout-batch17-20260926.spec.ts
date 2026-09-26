@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { catalogSeeds } from "../src/lib/catalog-seeds";
 import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
@@ -27,4 +28,23 @@ test("seventeenth Play’n GO passport closeout batch is fully populated", () =>
     expect(getVerifiedCatalogGameType(slug)?.gameType, `${slug} game type`).toBeTruthy();
     expect(getVerifiedCatalogResearch(slug)?.mechanics.length, `${slug} mechanics`).toBeGreaterThan(0);
   }
+
+  const residual = catalogSeeds
+    .filter((seed) => seed.provider === "Play’n GO")
+    .map((seed) => {
+      const details = getVerifiedCatalogDetails(seed.slug);
+      const missing = [
+        !details?.field && "field",
+        !details?.rtp && "rtp",
+        !details?.maxWin && "maxWin",
+        !details?.volatility && "volatility",
+        !details?.releaseDate && "releaseDate",
+        !getVerifiedCatalogGameType(seed.slug)?.gameType && "gameType",
+        !(getVerifiedCatalogResearch(seed.slug)?.mechanics.length) && "mechanics",
+      ].filter(Boolean);
+      return { slug: seed.slug, name: seed.name, missing };
+    })
+    .filter((row) => row.missing.length > 0);
+
+  console.log(`PLAYNGO_RESIDUAL ${JSON.stringify({ count: residual.length, first40: residual.slice(0, 40) })}`);
 });
