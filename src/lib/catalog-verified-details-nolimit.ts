@@ -1,14 +1,18 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 
 type NolimitVerifiedDetails = CatalogVerifiedDetails & {
+  fieldSource?: string;
+  rtpSource?: string;
+  maxWinSource?: string;
   volatilitySource?: string;
+  releaseDateSource?: string;
 };
 
 const verifiedAt = "2026-09-11";
 const verifiedAtFinal = "2026-09-13";
 const verifiedAtLatest = "2026-09-17";
 const verifiedAtScore6 = "2026-09-22";
-const verifiedAtScore6Latest = "2026-09-23";
+const verifiedAtProviderCloseout = "2026-09-26";
 
 const details: Record<string, NolimitVerifiedDetails> = {
   "nolimit-city-bowel-of-beelzebub": {
@@ -18,13 +22,14 @@ const details: Record<string, NolimitVerifiedDetails> = {
   },
   "nolimit-city-ding-dong-death": {
     field: "6×3",
-    rtp: "95,83%",
+    rtp: "96,08%",
+    rtpSource: "https://nolimitcity.com/games/ding-dong-death",
     maxWin: "14 280x",
     volatility: "Экстремальная",
     volatilitySource: "https://nolimitcity.com/posts/ding-dong-death-now-live",
     releaseDate: "2026-09-22",
     source: "https://nolimitcity.com/games/ding-dong-death",
-    verifiedAt: verifiedAtScore6Latest,
+    verifiedAt: verifiedAtProviderCloseout,
   },
   "nolimit-city-duck-hunters-2": {
     field: "6×6",
@@ -45,9 +50,11 @@ const details: Record<string, NolimitVerifiedDetails> = {
     field: "6×5",
     rtp: "96,00%",
     maxWin: "30 000x",
+    volatility: "Экстремальная",
+    volatilitySource: "https://www.slotshawk.com/slot-games/gator-hunters-2/",
     releaseDate: "2026-10-06",
     source: "https://nolimitcity.com/games/gator-hunters-2",
-    verifiedAt: verifiedAtLatest,
+    verifiedAt: verifiedAtProviderCloseout,
   },
   "nolimit-city-six-feet-under": {
     releaseDate: "2026-10-20",
