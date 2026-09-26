@@ -87,3 +87,25 @@ test("Retro Tapes treats 10 000x as observed rather than a fixed cap", () => {
   expect(metrics?.rtpVariants).toEqual(["96,47%", "94,46%"]);
   expect(metrics?.source).toBe("https://www.pushgaming.com/games/retro-tapes.html");
 });
+
+test("observed wins render as their own dossier metric", async ({ page }) => {
+  await page.goto("/slots/fat-rabbit");
+
+  await expect(page.locator(".facts")).toContainText("Наблюдавшийся максимум");
+  await expect(page.locator(".facts")).toContainText("3 844x");
+  await expect(page.locator("#math-profile")).toContainText("Наблюдавшийся максимум");
+  await expect(page.locator("#math-profile")).toContainText(
+    "Наблюдавшийся результат, не обязательно фиксированный cap",
+  );
+});
+
+test("Jammin Jars renders both the fixed cap and observed value with provenance", async ({ page }) => {
+  await page.goto("/slots/jammin-jars");
+
+  await expect(page.locator(".facts")).toContainText("Максимальная выплата");
+  await expect(page.locator(".facts")).toContainText("20 000x");
+  await expect(page.locator(".facts")).toContainText("Наблюдавшийся максимум");
+  await expect(page.locator(".facts")).toContainText("19 998,5x");
+  await expect(page.locator("#facts")).toContainText("Дополнительные источники");
+  await expect(page.locator("#facts")).toContainText("интервью Push Gaming о Jammin’ Jars 2");
+});
