@@ -34,11 +34,13 @@ test("verified metric overlays preserve existing dossier metrics", () => {
   expect(existing?.rtpVariants).toEqual(["96,38%", "94,55%", "92,33%", "88,42%"]);
 });
 
-test("Jammin Jars distinguishes its fixed cap from the current highest-observed value", () => {
+test("Jammin Jars keeps its fixed cap separate from Highest Observed Win", () => {
   const metrics = getVerifiedSlotMetrics("jammin-jars");
 
   expect(metrics?.maxWin).toBe("20 000x");
   expect(metrics?.maxWinLabel).toBe("Максимальная выплата");
+  expect(metrics?.observedWin).toBe("19 998,5x");
+  expect(metrics?.observedWinLabel).toBe("Наблюдавшийся максимум");
   expect(metrics?.rtpVariants).toEqual(["96,83%", "94,25%"]);
   expect(metrics?.source).toBe("https://www.pushgaming.com/games/jammin-jars.html");
   expect(metrics?.note).toContain("Highest Observed Win 19 998,5x");
@@ -50,15 +52,38 @@ test("Jammin Jars distinguishes its fixed cap from the current highest-observed 
   ]);
 });
 
-test("Razor Shark stays uncapped instead of turning an observed win into maxWin", () => {
+test("Razor Shark stays uncapped and stores its documented player hit separately", () => {
   const metrics = getVerifiedSlotMetrics("razor-shark");
 
   expect(metrics?.maxWin).toBeUndefined();
+  expect(metrics?.observedWin).toBe("85 475,4x");
+  expect(metrics?.observedWinLabel).toBe("Задокументированный выигрыш");
   expect(metrics?.rtpVariants).toEqual(["96,70%", "94,06%"]);
   expect(metrics?.source).toBe("https://www.pushgaming.com/games/razor-shark.html");
   expect(metrics?.note).toContain("нет фиксированного max-win cap");
-  expect(metrics?.note).toContain("85 475,4x");
   expect(metrics?.additionalSources?.[0]?.url).toBe(
     "https://www.pushgaming.com/blog/q-marketing-director-darren-stephenson-speaks-kongebonus.html",
   );
+});
+
+test("Fat Rabbit treats 3 844x as observed rather than a fixed cap", () => {
+  const metrics = getVerifiedSlotMetrics("fat-rabbit");
+
+  expect(metrics?.maxWin).toBeUndefined();
+  expect(metrics?.maxWinLabel).toBeUndefined();
+  expect(metrics?.observedWin).toBe("3 844x");
+  expect(metrics?.observedWinLabel).toBe("Наблюдавшийся максимум");
+  expect(metrics?.rtpVariants).toEqual(["96,45%", "94,15%"]);
+  expect(metrics?.source).toBe("https://www.pushgaming.com/games/fat-rabbit.html");
+});
+
+test("Retro Tapes treats 10 000x as observed rather than a fixed cap", () => {
+  const metrics = getVerifiedSlotMetrics("retro-tapes");
+
+  expect(metrics?.maxWin).toBeUndefined();
+  expect(metrics?.maxWinLabel).toBeUndefined();
+  expect(metrics?.observedWin).toBe("10 000x");
+  expect(metrics?.observedWinLabel).toBe("Наблюдавшийся максимум");
+  expect(metrics?.rtpVariants).toEqual(["96,47%", "94,46%"]);
+  expect(metrics?.source).toBe("https://www.pushgaming.com/games/retro-tapes.html");
 });
