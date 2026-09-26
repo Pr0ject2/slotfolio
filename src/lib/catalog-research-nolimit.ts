@@ -2,8 +2,15 @@ import type { CatalogResearch } from "./catalog-research";
 
 const verifiedAt = "2026-09-11";
 const verifiedAtLatest = "2026-09-24";
+const verifiedAtProviderCloseout = "2026-09-26";
 
 export const catalogResearchNolimit: Record<string, CatalogResearch> = {
+  "nolimit-city-ding-dong-death": {
+    mechanics: ["xNudge", "xSplit", "xTra"],
+    source: "https://nolimitcity.com/games/ding-dong-death",
+    verifiedAt: verifiedAtProviderCloseout,
+    evidence: "Official game page lists xNudge®, xSplit® and xTra™ under Game xMechanics.",
+  },
   "nolimit-city-duck-hunters-2": {
     mechanics: ["Способы"],
     source: "https://nolimitcity.com/games/duck-hunters-2",
