@@ -18,6 +18,7 @@ import { slotAdditions3 } from "./slot-additions-3";
 import { slotAdditions4 } from "./slot-additions-4";
 import { slotAdditions5 } from "./slot-additions-5";
 import { slotAdditions6 } from "./slot-additions-6";
+import { legacyOneWinAvailabilityBySlug } from "./legacy-1win-availability";
 import { providerProfileOverrides } from "./provider-profile-overrides";
 import { providerProfileAdditions5 } from "./provider-profile-additions-5";
 import { providerProfileAdditions6 } from "./provider-profile-additions-6";
@@ -41,8 +42,15 @@ const mergedSlots: Slot[] = [
   ...slotAdditions6,
 ];
 
+function withLegacyOneWinAvailability(slot: Slot): Slot {
+  const evidence = legacyOneWinAvailabilityBySlug[slot.slug];
+  if (!evidence || slot.availability?.some((item) => item.operator === "1win")) return slot;
+  return { ...slot, availability: [...(slot.availability ?? []), evidence] };
+}
+
 // Keep the latest record for a slug, but never expose duplicate public routes/cards.
-export const slots: Slot[] = uniqueBySlug(mergedSlots);
+// Legacy operator evidence is additive and never replaces a newer per-slot availability record.
+export const slots: Slot[] = uniqueBySlug(mergedSlots).map(withLegacyOneWinAvailability);
 export const getSlot = (slug: string) => slots.find((slot) => slot.slug === slug);
 
 export const slotFeatureOptions = Array.from(
