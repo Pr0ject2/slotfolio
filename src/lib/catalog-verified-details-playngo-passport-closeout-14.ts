@@ -42,9 +42,11 @@ const details: Record<string, PlayngoPassportCloseout> = {
     verifiedAt,
   },
   "playn-go-hammerfall": {
+    field: "7×7 · кластеры",
     rtp: "94,20%",
     maxWin: "30 000x",
     volatility: "Высокая",
+    fieldSource: "https://slotsia.com/en/games/slots/hammerfall",
     rtpSource: "https://slotcatalog.com/en/slots/Hammerfall",
     maxWinSource: "https://slotcatalog.com/en/slots/Hammerfall",
     volatilitySource: "https://slotcatalog.com/en/slots/Hammerfall",
