@@ -195,6 +195,12 @@ export default async function Page({
                 <dd>{verified.maxWin}</dd>
               </div>
             )}
+            {verified?.observedWin && (
+              <div>
+                <dt>{verified.observedWinLabel || "Наблюдавшийся выигрыш"}</dt>
+                <dd>{verified.observedWin}</dd>
+              </div>
+            )}
             <div className="facts-wide">
               <dt>Ключевые особенности</dt>
               <dd className="slot-tag-list">
@@ -293,6 +299,13 @@ export default async function Page({
                   <small>В единицах ставки</small>
                 </div>
               )}
+              {verified?.observedWin && (
+                <div>
+                  <span>{verified.observedWinLabel || "Наблюдавшийся выигрыш"}</span>
+                  <strong>{verified.observedWin}</strong>
+                  <small>Наблюдавшийся результат, не обязательно фиксированный cap</small>
+                </div>
+              )}
               <div>
                 <span>Волатильность</span>
                 <strong>{s.volatility}</strong>
@@ -364,16 +377,33 @@ export default async function Page({
               .
               {verified && verified.source !== s.source && (
                 <>
-                  {" "}Дополнительные числовые параметры сверены по {" "}
+                  {" "}Дополнительные числовые параметры сверены по{" "}
                   <a href={verified.source} target="_blank" rel="noreferrer">
                     {verified.sourceLabel || "официальному источнику"} ↗
                   </a>
                   .
                 </>
               )}
-              {verified && verified.source === s.source &&
-                " Дополнительные числовые параметры взяты с той же официальной страницы."}
+              {verified && verified.source === s.source && verified.additionalSources?.length
+                ? " Базовые числовые параметры взяты с этой страницы; отдельные уточнения подтверждены дополнительными источниками ниже."
+                : verified && verified.source === s.source
+                  ? " Дополнительные числовые параметры взяты с той же официальной страницы."
+                  : null}
             </p>
+            {verified?.additionalSources?.length ? (
+              <p className="source-note">
+                Дополнительные источники:{" "}
+                {verified.additionalSources.map((source, index) => (
+                  <span key={source.url}>
+                    {index > 0 ? " · " : ""}
+                    <a href={source.url} target="_blank" rel="noreferrer">
+                      {source.label} ↗
+                    </a>
+                  </span>
+                ))}
+                .
+              </p>
+            ) : null}
           </section>
           <Affiliate />
           <section id="faq">

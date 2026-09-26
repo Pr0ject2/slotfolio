@@ -11,10 +11,15 @@ export type VerifiedMetricSource = {
 };
 
 export type EnrichedVerifiedSlotMetrics = VerifiedSlotMetrics & {
+  observedWin?: string;
+  observedWinLabel?: string;
   additionalSources?: VerifiedMetricSource[];
 };
 
 type VerifiedMetricOverlay = Partial<VerifiedSlotMetrics> & {
+  observedWin?: string;
+  observedWinLabel?: string;
+  clearMaxWin?: boolean;
   additionalSources?: VerifiedMetricSource[];
 };
 
@@ -42,6 +47,8 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
   "jammin-jars": {
     maxWin: "20 000x",
     maxWinLabel: "Максимальная выплата",
+    observedWin: "19 998,5x",
+    observedWinLabel: "Наблюдавшийся максимум",
     note:
       "Push Gaming указывает для оригинального Jammin’ Jars фиксированный максимум 20 000x; текущая карточка игры отдельно показывает Highest Observed Win 19 998,5x.",
     additionalSources: [
@@ -52,8 +59,10 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     ],
   },
   "razor-shark": {
+    observedWin: "85 475,4x",
+    observedWinLabel: "Задокументированный выигрыш",
     note:
-      "У оригинального Razor Shark нет фиксированного max-win cap: Push Gaming описывает верхний ориентир как наблюдавшийся выигрыш и отдельно подтверждает реальный выигрыш 85 475,4x, превысивший результаты тестовых симуляций.",
+      "У оригинального Razor Shark нет фиксированного max-win cap: Push Gaming подтверждает реальный выигрыш 85 475,4x и объясняет, что для игр без cap публикуется наблюдавшийся ориентир, а не искусственный потолок.",
     additionalSources: [
       {
         label: "Q&A Push Gaming о Razor Shark",
@@ -61,15 +70,37 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "fat-rabbit": {
+    clearMaxWin: true,
+    observedWin: "3 844x",
+    observedWinLabel: "Наблюдавшийся максимум",
+    note:
+      "Push Gaming публикует 3 844x как Highest Observed Win. Это наблюдавшийся результат, а не подтверждённый фиксированный max-win cap.",
+  },
+  "retro-tapes": {
+    clearMaxWin: true,
+    observedWin: "10 000x",
+    observedWinLabel: "Наблюдавшийся максимум",
+    note:
+      "Push Gaming публикует 10 000x как Highest Observed Win. Slotfolio не трактует это значение как фиксированный max-win cap.",
+  },
 };
 
 export function getVerifiedSlotMetrics(slug: string): EnrichedVerifiedSlotMetrics | undefined {
   const base = getBaseVerifiedSlotMetrics(slug);
   const overlay = verifiedMetricOverlays[slug];
   if (!overlay) return base;
+
+  const { clearMaxWin, ...values } = overlay;
   if (!base) {
-    if (!overlay.source) return undefined;
-    return overlay as EnrichedVerifiedSlotMetrics;
+    if (!values.source) return undefined;
+    return values as EnrichedVerifiedSlotMetrics;
   }
-  return { ...base, ...overlay };
+
+  const merged = { ...base, ...values } as EnrichedVerifiedSlotMetrics;
+  if (clearMaxWin) {
+    delete merged.maxWin;
+    delete merged.maxWinLabel;
+  }
+  return merged;
 }
