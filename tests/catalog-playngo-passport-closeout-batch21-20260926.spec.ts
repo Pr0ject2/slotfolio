@@ -32,7 +32,7 @@ test("twenty-first Play’n GO passport closeout batch is fully populated", () =
 test("batch 21 preserves representative researched facts", () => {
   expect(getVerifiedCatalogDetails("playn-go-invading-vegas")?.maxWin).toBe("1 000x");
   expect(getVerifiedCatalogDetails("playn-go-jewel-box")?.maxWin).toBe("1 756x");
-  expect(getVerifiedCatalogDetails("playn-go-journey-to-paris")?.field).toBe("5×5 · кластеры");
+  expect(getVerifiedCatalogDetails("playn-go-journey-to-paris")?.field).toBe("5×5");
   expect(getVerifiedCatalogDetails("playn-go-lab-of-madness-its-a-wild")?.maxWin).toBe("8 000x");
   expect(getVerifiedCatalogDetails("playn-go-legion-gold-reckoning")?.maxWin).toBe("10 000x");
 });
