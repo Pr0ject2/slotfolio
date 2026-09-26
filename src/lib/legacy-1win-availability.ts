@@ -13,6 +13,10 @@ const deadOrAliveSource =
 const oneWinTopWinsSource = "https://t.me/s/reg_official_1win/1386";
 const oneWinStarburstSource = "https://t.me/s/reg_official_1win/706";
 const oneWinMoneyTrainSource = "https://t.me/s/reg_official_1win/986";
+const oneWinClassicPromoSource = "https://t.me/s/reg_official_1win/226";
+const oneWinFireInTheHoleSource = "https://t.me/s/reg_official_1win/1426";
+const oneWinBook99Source = "https://t.me/s/reg_official_1win/3266";
+const oneWinMentalSource = "https://t.me/s/reg_official_1win/2866";
 
 export const legacyOneWinAvailabilityBySlug: Record<string, OperatorAvailability> = {
   "gates-of-olympus": {
@@ -112,5 +116,40 @@ export const legacyOneWinAvailabilityBySlug: Record<string, OperatorAvailability
     source: oneWinMoneyTrainSource,
     evidence:
       "Официальный Telegram-канал 1WIN прямо сообщает о выигрыше стримера в Money Train 2 в казино 1WIN.",
+  },
+  "gonzos-quest": {
+    operator: "1win",
+    verifiedAt: "2026-09-26",
+    source: oneWinClassicPromoSource,
+    evidence:
+      "Официальный Telegram-канал 1WIN прямо называет Gonzo's Quest от NetEnt в публикации о казино 1WIN.",
+  },
+  "fat-rabbit": {
+    operator: "1win",
+    verifiedAt: "2026-09-26",
+    source: oneWinClassicPromoSource,
+    evidence:
+      "Официальный Telegram-канал 1WIN включает Fat Rabbit от Push Gaming в праздничную подборку игр.",
+  },
+  "fire-in-the-hole": {
+    operator: "1win",
+    verifiedAt: "2026-09-26",
+    source: oneWinFireInTheHoleSource,
+    evidence:
+      "Официальный Telegram-канал 1WIN прямо перечисляет оригинальный Fire In The Hole среди игр, в которых выигрывают игроки 1WIN.",
+  },
+  "book-of-99": {
+    operator: "1win",
+    verifiedAt: "2026-09-26",
+    source: oneWinBook99Source,
+    evidence:
+      "Официальный Telegram-канал 1WIN прямо включает Book Of 99 в рубрику выигрышей недели казино 1WIN.",
+  },
+  mental: {
+    operator: "1win",
+    verifiedAt: "2026-09-26",
+    source: oneWinMentalSource,
+    evidence:
+      "Официальный Telegram-канал 1WIN прямо перечисляет Mental в рубрике «Три выигрыша недели» среди игр казино 1WIN.",
   },
 };
