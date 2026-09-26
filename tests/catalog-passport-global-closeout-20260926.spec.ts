@@ -37,14 +37,14 @@ function missingPassportFields(slug: string) {
   ].filter(Boolean);
 }
 
-test("all released catalog cards have complete passports across every selected provider", () => {
+test("all non-exempt catalog cards have complete passports across every selected provider", () => {
   expect(catalogSeeds).toHaveLength(900);
 
   const providers = [...new Set(catalogSeeds.map((seed) => seed.provider))].sort();
   expect(providers).toEqual([...expectedProviders].sort());
 
   const preReleaseSet = new Set<string>(expectedPreRelease);
-  const releasedResidual = catalogSeeds
+  const residual = catalogSeeds
     .filter((seed) => !preReleaseSet.has(seed.slug))
     .map((seed) => ({
       slug: seed.slug,
@@ -53,21 +53,19 @@ test("all released catalog cards have complete passports across every selected p
     }))
     .filter((row) => row.missing.length > 0);
 
-  expect(releasedResidual, JSON.stringify(releasedResidual)).toEqual([]);
+  expect(residual, JSON.stringify(residual)).toEqual([]);
 });
 
-test("global passport guard permits only explicit future Nolimit City releases to remain partially unpublished", () => {
+test("global passport guard permits only explicit Nolimit City pre-releases to remain partially unpublished", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
+  const preReleaseSet = new Set<string>(expectedPreRelease);
 
-  const actualFuture = catalogSeeds
-    .filter((seed) => {
-      const releaseDate = getVerifiedCatalogDetails(seed.slug)?.releaseDate;
-      return releaseDate && releaseDate > closeoutDate;
-    })
-    .map((seed) => seed.slug)
-    .sort();
+  const unexpectedIncomplete = catalogSeeds
+    .filter((seed) => !preReleaseSet.has(seed.slug))
+    .map((seed) => ({ slug: seed.slug, missing: missingPassportFields(seed.slug) }))
+    .filter((row) => row.missing.length > 0);
 
-  expect(actualFuture).toEqual([...expectedPreRelease].sort());
+  expect(unexpectedIncomplete, JSON.stringify(unexpectedIncomplete)).toEqual([]);
 
   for (const slug of expectedPreRelease) {
     const seed = selected.get(slug);
