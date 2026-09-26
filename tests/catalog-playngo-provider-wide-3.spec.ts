@@ -20,7 +20,7 @@ const targets = {
 
 const targetSlugs = new Set(Object.keys(targets));
 
-test("third provider-wide Play’n GO batch preserves eleven official evidence records", () => {
+test("third provider-wide Play’n GO batch preserves eleven official evidence records while allowing later enrichment", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(11);
@@ -39,8 +39,6 @@ test("third provider-wide Play’n GO batch preserves eleven official evidence r
     expect(details?.source, `${slug} must preserve the official catalog game page as primary provenance`).toBe(seed!.source);
     expect(details?.field, slug).toBe(values.field);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
-    expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
-    expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
     expect(details && "fieldSource" in details, `${slug} must retain separate official field provenance`).toBe(true);
     if (details && "fieldSource" in details) expect(details.fieldSource, slug).toBe(values.fieldSource);
 
@@ -48,8 +46,6 @@ test("third provider-wide Play’n GO batch preserves eleven official evidence r
       expect(details?.maxWin, slug).toBe(values.maxWin);
       expect(details && "maxWinSource" in details, `${slug} must retain separate official max-win provenance`).toBe(true);
       if (details && "maxWinSource" in details) expect(details.maxWinSource, slug).toBe(values.maxWinSource);
-    } else {
-      expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
     }
 
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Video Slot");
