@@ -36,7 +36,7 @@ function scoreFor(slug: string) {
   return detailFacts + (type ? 1 : 0) + (research?.mechanics.length ?? 0);
 }
 
-test("quality pass 20 preserves exact official layout facts on three Play’n GO records", () => {
+test("quality pass 20 preserves exact official layout facts after later Play’n GO passport enrichment", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
   expect(targetSlugs.size).toBe(3);
@@ -56,20 +56,18 @@ test("quality pass 20 preserves exact official layout facts on three Play’n GO
     expect(details?.source, slug).toBe(values.source);
     expect(details?.field, slug).toBe(values.field);
     expect(details?.releaseDate, slug).toBe(values.releaseDate);
-    expect(details?.rtp, `${slug} must not invent RTP`).toBeUndefined();
-    expect(details?.maxWin, `${slug} must not invent max win`).toBeUndefined();
-    expect(details?.volatility, `${slug} must not invent volatility`).toBeUndefined();
+    expect(details?.rtp, `${slug} RTP`).toBeTruthy();
+    expect(details?.maxWin, `${slug} max win`).toBeTruthy();
+    expect(details?.volatility, `${slug} volatility`).toBeTruthy();
 
     if ("fieldSource" in values) {
       expect(details && "fieldSource" in details, `${slug} must retain the separate official field source`).toBe(true);
       if (details && "fieldSource" in details) {
         expect(details.fieldSource, slug).toBe(values.fieldSource);
       }
-    } else {
-      expect(details && "fieldSource" in details, `${slug} must not invent a second field source`).toBe(false);
     }
 
     expect(getVerifiedCatalogGameType(slug)?.gameType, slug).toBe("Video Slot");
-    expect(scoreFor(slug), `${slug} must remain at least score 3`).toBeGreaterThanOrEqual(3);
+    expect(scoreFor(slug), `${slug} must stay fully enriched`).toBeGreaterThanOrEqual(6);
   }
 });
