@@ -33,6 +33,6 @@ test("batch 26 preserves representative sourced facts", () => {
   expect(getVerifiedCatalogDetails("playn-go-moon-princess-trinity")?.field).toBe("5×5 · кластеры");
   expect(getVerifiedCatalogDetails("playn-go-mount-m")?.maxWin).toBe("13 000x");
   expect(getVerifiedCatalogDetails("playn-go-mystery-egg-surprise")?.maxWin).toBe("6 480x");
-  expect(getVerifiedCatalogDetails("playn-go-mystery-joker")?.field).toBe("3×3 · 5 линий");
+  expect(getVerifiedCatalogDetails("playn-go-mystery-joker")?.field).toBe("3 барабана");
   expect(getVerifiedCatalogDetails("playn-go-naughty-nicks-book")?.maxWin).toBe("7 500x");
 });
