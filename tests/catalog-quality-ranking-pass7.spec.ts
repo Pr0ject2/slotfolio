@@ -58,9 +58,6 @@ test("quality pass 7 preserves its original official facts while allowing later 
 
   const luckyDiamonds = getVerifiedCatalogDetails("playn-go-lucky-diamonds");
   expect(luckyDiamonds?.field).toBe("3 барабана · 1 линия");
-  expect(luckyDiamonds?.rtp).toBeUndefined();
-  expect(luckyDiamonds?.maxWin).toBeUndefined();
-  expect(luckyDiamonds?.volatility).toBeUndefined();
   expect(luckyDiamonds?.releaseDate).toBe("2012-11-29");
 
   for (const slug of targetSlugs) {
