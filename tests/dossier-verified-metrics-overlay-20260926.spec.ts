@@ -11,6 +11,22 @@ test("Money Train 2 keeps its official Relax Gaming max win", () => {
   expect(metrics!.sourceLabel).toBe("официальная страница Relax Gaming");
 });
 
+test("Dead or Alive 2 uses the coherent official Evolution NetEnt max-win reference", () => {
+  const metrics = getVerifiedSlotMetrics("dead-or-alive-2");
+
+  expect(metrics?.maxWin).toBe("100 000x");
+  expect(metrics?.maxWinLabel).toBe("Максимальная выплата");
+  expect(metrics?.source).toBe("https://games.evolution.com/slots/dead-or-alive-2/");
+  expect(metrics?.sourceLabel).toBe("официальная страница Evolution / NetEnt");
+  expect(metrics?.note).toContain("Max payout 1 600x");
+  expect(metrics?.additionalSources).toEqual([
+    {
+      label: "карточка NetEnt с конфликтующим metadata-полем",
+      url: "https://netent.com/games/dead-or-alive-2",
+    },
+  ]);
+});
+
 test("verified metric overlays preserve existing dossier metrics", () => {
   const existing = getVerifiedSlotMetrics("wanted-dead-or-a-wild");
 
