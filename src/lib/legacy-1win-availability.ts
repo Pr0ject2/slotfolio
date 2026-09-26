@@ -10,6 +10,9 @@ const pragmaticCandySource =
   "https://forum.1win.com/topic/346-%F0%9F%8D%AC-sugar-rush-or-sugar-crash-the-candy-slot-dilemma/";
 const deadOrAliveSource =
   "https://forum.1win.com/topic/180-%F0%9F%8E%B0-longest-bonus-ever-this-slot-goes-wild/";
+const oneWinTopWinsSource = "https://t.me/s/reg_official_1win/1386";
+const oneWinStarburstSource = "https://t.me/s/reg_official_1win/706";
+const oneWinMoneyTrainSource = "https://t.me/s/reg_official_1win/986";
 
 export const legacyOneWinAvailabilityBySlug: Record<string, OperatorAvailability> = {
   "gates-of-olympus": {
@@ -74,5 +77,40 @@ export const legacyOneWinAvailabilityBySlug: Record<string, OperatorAvailability
     source: deadOrAliveSource,
     evidence:
       "Администратор Daria публикует в Slot Games описание Dead or Alive 2 как игрового слота и даёт ссылку Explore Slots на официальном форуме 1win.",
+  },
+  "book-of-dead": {
+    operator: "1win",
+    verifiedAt: "2026-09-26",
+    source: oneWinTopWinsSource,
+    evidence:
+      "Официальный Telegram-канал 1WIN прямо перечисляет Book of Dead среди слотов в подборке выигрышей игроков 1WIN.",
+  },
+  "fruit-party": {
+    operator: "1win",
+    verifiedAt: "2026-09-26",
+    source: oneWinTopWinsSource,
+    evidence:
+      "Официальный Telegram-канал 1WIN прямо перечисляет Fruit Party среди слотов в подборке выигрышей игроков 1WIN.",
+  },
+  "razor-shark": {
+    operator: "1win",
+    verifiedAt: "2026-09-26",
+    source: oneWinTopWinsSource,
+    evidence:
+      "Официальный Telegram-канал 1WIN прямо перечисляет Razor Shark среди слотов в подборке выигрышей игроков 1WIN.",
+  },
+  starburst: {
+    operator: "1win",
+    verifiedAt: "2026-09-26",
+    source: oneWinStarburstSource,
+    evidence:
+      "Официальный Telegram-канал 1WIN публикует раздачу бонус-кодов на 50 free spins именно в Starburst для участников канала.",
+  },
+  "money-train-2": {
+    operator: "1win",
+    verifiedAt: "2026-09-26",
+    source: oneWinMoneyTrainSource,
+    evidence:
+      "Официальный Telegram-канал 1WIN прямо сообщает о выигрыше стримера в Money Train 2 в казино 1WIN.",
   },
 };
