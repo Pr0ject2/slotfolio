@@ -25,6 +25,20 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     source: "https://www.relax-gaming.com/products/casino/moneytrain2",
     sourceLabel: "официальная страница Relax Gaming",
   },
+  "dead-or-alive-2": {
+    maxWin: "100 000x",
+    maxWinLabel: "Максимальная выплата",
+    source: "https://games.evolution.com/slots/dead-or-alive-2/",
+    sourceLabel: "официальная страница Evolution / NetEnt",
+    note:
+      "Официальная страница Evolution для NetEnt несколько раз указывает потенциал до 100 000x original bet. На отдельной карточке netent.com одновременно присутствует противоречащее metadata-поле Max payout 1 600x; Slotfolio сохраняет этот конфликт в provenance и не смешивает две цифры.",
+    additionalSources: [
+      {
+        label: "карточка NetEnt с конфликтующим metadata-полем",
+        url: "https://netent.com/games/dead-or-alive-2",
+      },
+    ],
+  },
   "jammin-jars": {
     maxWin: "20 000x",
     maxWinLabel: "Максимальная выплата",
