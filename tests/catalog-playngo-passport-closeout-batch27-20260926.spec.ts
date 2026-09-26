@@ -30,7 +30,8 @@ test("twenty-seventh Play’n GO passport closeout batch is fully populated", ()
 });
 
 test("batch 27 preserves representative sourced facts", () => {
-  expect(getVerifiedCatalogDetails("playn-go-multifruit-81")?.field).toBe("4×3 · 81 линия");
+  expect(getVerifiedCatalogDetails("playn-go-multifruit-81")?.field).toBe("81 способ");
+  expect(getVerifiedCatalogDetails("playn-go-multifruit-81")?.rtp).toBe("96,55%");
   expect(getVerifiedCatalogDetails("playn-go-odin-protector-of-realms")?.field).toBe("37 позиций · кластеры (4-5-6-7-6-5-4)");
   expect(getVerifiedCatalogDetails("playn-go-pack-and-cash")?.maxWin).toBe("10 000x");
   expect(getVerifiedCatalogDetails("playn-go-perfect-gems")?.rtp).toBe("96,50% / 94,50% / 91,50% / 87,50% / 84,50%");
