@@ -1,4 +1,5 @@
 import type { CatalogVerifiedDetails } from "./catalog-verified-details";
+import { getCatalogVerifiedDetailsPlayngoPassportCloseout20 } from "./catalog-verified-details-playngo-passport-closeout-20";
 
 type PlayngoPassportCloseout = Partial<
   Pick<CatalogVerifiedDetails, "field" | "rtp" | "maxWin" | "volatility">
@@ -108,5 +109,5 @@ const details: Record<string, PlayngoPassportCloseout> = {
 };
 
 export function getCatalogVerifiedDetailsPlayngoPassportCloseout19(slug: string) {
-  return details[slug];
+  return details[slug] ?? getCatalogVerifiedDetailsPlayngoPassportCloseout20(slug);
 }
