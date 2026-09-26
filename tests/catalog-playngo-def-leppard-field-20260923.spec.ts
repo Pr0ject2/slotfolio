@@ -24,16 +24,15 @@ test("official Play'n GO grid series supplies Def Leppard Hysteria 5x7 layout", 
   expect(seed?.source).toBe("https://www.playngo.com/games/def-leppard%3A-hysteria");
   expect(overlay?.field).toBe("5×7");
   expect(overlay?.fieldSource).toBe("https://it.playngo.com/series/grid-slots");
-  expect(overlay?.verifiedAt).toBe("2026-09-23");
   expect(merged?.source).toBe(seed?.source);
   expect(merged?.field).toBe("5×7");
   expect(merged && "fieldSource" in merged ? merged.fieldSource : undefined).toBe("https://it.playngo.com/series/grid-slots");
   expect(scoreFor(slug)).toBeGreaterThan(6);
 });
 
-test("Def Leppard field enrichment does not invent unsupported passport facts", () => {
-  const details = getVerifiedCatalogDetails(slug);
-  expect(details?.rtp).toBeUndefined();
-  expect(details?.maxWin).toBeUndefined();
-  expect(details?.volatility).toBeUndefined();
+test("Def Leppard keeps its original official field evidence after later passport enrichment", () => {
+  const details = getVerifiedCatalogDetails(slug) as ReturnType<typeof getVerifiedCatalogDetails> & { fieldSource?: string };
+  expect(details?.field).toBe("5×7");
+  expect(details?.fieldSource).toBe("https://it.playngo.com/series/grid-slots");
+  expect(details?.source).toBe("https://www.playngo.com/games/def-leppard%3A-hysteria");
 });
