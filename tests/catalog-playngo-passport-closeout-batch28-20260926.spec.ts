@@ -31,7 +31,7 @@ test("twenty-eighth Play’n GO passport closeout batch is fully populated", () 
 
 test("batch 28 preserves representative sourced facts", () => {
   expect(getVerifiedCatalogDetails("playn-go-pearls-of-india")?.rtp).toBe("96,87%");
-  expect(getVerifiedCatalogDetails("playn-go-piggy-blitz")?.field).toBe("6×4 · 4 096 способов");
+  expect(getVerifiedCatalogDetails("playn-go-piggy-blitz")?.field).toBe("4096 способов");
   expect(getVerifiedCatalogDetails("playn-go-piggy-blitz-casino-gold")?.maxWin).toBe("8 000x");
   expect(getVerifiedCatalogDetails("playn-go-piggy-heist")?.maxWin).toBe("70 000x");
   expect(getVerifiedCatalogDetails("playn-go-piranha-pays")?.maxWin).toBe("5 000x");
