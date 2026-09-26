@@ -14,9 +14,11 @@ const verifiedAt = "2026-09-26";
 
 const details: Record<string, PlayngoPassportCloseout> = {
   "playn-go-gnawn-gold": {
+    field: "5×3 · 10 линий",
     rtp: "96,24%",
     maxWin: "40 000x",
     volatility: "Высокая",
+    fieldSource: "https://fruityslots.com/slots/reviews/gnawn-gold/",
     rtpSource: "https://fruityslots.com/slots/reviews/gnawn-gold/",
     maxWinSource: "https://fruityslots.com/slots/reviews/gnawn-gold/",
     volatilitySource: "https://fruityslots.com/slots/reviews/gnawn-gold/",
