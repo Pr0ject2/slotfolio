@@ -90,6 +90,7 @@ test("Nolimit roadmap parser artifacts resolve to canonical catalog slugs", () =
   expect(dingDongDeath?.source).toBe("https://nolimitcity.com/games/ding-dong-death");
   expect(dingDongDeath?.volatilitySource).toBe("https://nolimitcity.com/posts/ding-dong-death-now-live");
 
-  expect(getVerifiedCatalogResearch("nolimit-city-duck-hunters-2")?.mechanics).toEqual(["Способы"]);
+  expect(getVerifiedCatalogResearch("nolimit-city-duck-hunters-2")?.mechanics).toEqual(["Способы", "Bonus Buy", "Action Spin"]);
+  expect(getVerifiedCatalogResearch("nolimit-city-ding-dong-death")?.mechanics).toEqual(["Bonus Buy", "Action Spin"]);
   expect(getVerifiedCatalogResearch("nolimit-city-duck-hunters-23rd-september-202610th-september-2026")).toBeUndefined();
 });
