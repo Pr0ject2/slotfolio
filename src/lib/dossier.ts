@@ -79,6 +79,15 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     note:
       "Официальная страница Hacksaw Gaming прямо указывает для High-Roller FeatureSpins максимальный выигрыш 10 000x. RTP-варианты не добавляются как verified-метрика, потому что текущая публичная страница не публикует их в доступном описании.",
   },
+  "nitro-nights": {
+    maxWin: "15 000x",
+    maxWinLabel: "Максимальная выплата",
+    rtpVariants: ["96,31%", "94,34%", "92,22%", "86,26%"],
+    source: "https://www.hacksawgaming.com/games/nitro-nights",
+    sourceLabel: "официальная страница Hacksaw Gaming",
+    note:
+      "Текущая страница Hacksaw Gaming публикует volatility 4/5, max win 15 000x и четыре RTP-конфигурации. Верхнее значение 96,31% совпадает со справочным RTP досье.",
+  },
   "jammin-jars": {
     maxWin: "20 000x",
     maxWinLabel: "Максимальная выплата",
