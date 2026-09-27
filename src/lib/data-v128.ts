@@ -44,13 +44,23 @@ const mergedSlots: Slot[] = [
 
 const sourceBackedTagRemovals: Record<string, string[]> = {
   "crown-coins": ["Pick-бонус"],
+  "max-win-machine": ["FeatureSpins", "Множители", "Мгновенные призы"],
 };
 
-function withSourceBackedTagCorrections(slot: Slot): Slot {
-  const removals = sourceBackedTagRemovals[slot.slug];
-  if (!removals?.length) return slot;
-  const tags = slot.tags.filter((tag) => !removals.includes(tag));
-  return tags.length === slot.tags.length ? slot : { ...slot, tags };
+const sourceBackedFeatureCorrections: Record<string, string> = {
+  "max-win-machine":
+    "Один, два или три Lucky Seven слева направо дают фиксированные выплаты 1x, 10x и 10 000x соответственно. Текущая официальная страница Hacksaw Gaming не заявляет для игры дополнительных FeatureSpins или multiplier-функций.",
+};
+
+function withSourceBackedCorrections(slot: Slot): Slot {
+  const removals = sourceBackedTagRemovals[slot.slug] ?? [];
+  const feature = sourceBackedFeatureCorrections[slot.slug] ?? slot.feature;
+  const tags = removals.length
+    ? slot.tags.filter((tag) => !removals.includes(tag))
+    : slot.tags;
+  const tagsChanged = tags.length !== slot.tags.length;
+  const featureChanged = feature !== slot.feature;
+  return tagsChanged || featureChanged ? { ...slot, tags, feature } : slot;
 }
 
 function withLegacyOneWinAvailability(slot: Slot): Slot {
@@ -63,7 +73,7 @@ function withLegacyOneWinAvailability(slot: Slot): Slot {
 // Source-backed corrections remove claims that no longer match the provider evidence.
 // Legacy operator evidence is additive and never replaces a newer per-slot availability record.
 export const slots: Slot[] = uniqueBySlug(mergedSlots)
-  .map(withSourceBackedTagCorrections)
+  .map(withSourceBackedCorrections)
   .map(withLegacyOneWinAvailability);
 export const getSlot = (slug: string) => slots.find((slot) => slot.slug === slug);
 
