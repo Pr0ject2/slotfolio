@@ -52,15 +52,23 @@ const sourceBackedFeatureCorrections: Record<string, string> = {
     "Один, два или три Lucky Seven слева направо дают фиксированные выплаты 1x, 10x и 10 000x соответственно. Текущая официальная страница Hacksaw Gaming не заявляет для игры дополнительных FeatureSpins или multiplier-функций.",
 };
 
+const sourceBackedVolatilityCorrections: Record<string, string> = {
+  gemhalla: "Очень высокая",
+};
+
 function withSourceBackedCorrections(slot: Slot): Slot {
   const removals = sourceBackedTagRemovals[slot.slug] ?? [];
   const feature = sourceBackedFeatureCorrections[slot.slug] ?? slot.feature;
+  const volatility = sourceBackedVolatilityCorrections[slot.slug] ?? slot.volatility;
   const tags = removals.length
     ? slot.tags.filter((tag) => !removals.includes(tag))
     : slot.tags;
   const tagsChanged = tags.length !== slot.tags.length;
   const featureChanged = feature !== slot.feature;
-  return tagsChanged || featureChanged ? { ...slot, tags, feature } : slot;
+  const volatilityChanged = volatility !== slot.volatility;
+  return tagsChanged || featureChanged || volatilityChanged
+    ? { ...slot, tags, feature, volatility }
+    : slot;
 }
 
 function withLegacyOneWinAvailability(slot: Slot): Slot {
