@@ -9,6 +9,9 @@ const allowedHostsByProvider: Record<string, string[]> = {
   "Hacksaw Gaming": ["hacksawgaming.com"],
   "Nolimit City": ["nolimitcity.com"],
   BGaming: ["bgaming.com"],
+  Wazdan: ["wazdan.com"],
+  "Belatra Games": ["belatragames.com"],
+  "Yggdrasil Gaming": ["yggdrasilgaming.com"],
   NetEnt: ["netent.com", "evolution.com"],
   "Relax Gaming": ["relax-gaming.com"],
 };
@@ -53,5 +56,5 @@ test("verified full-dossier numeric provenance stays first-party", () => {
     }
   }
 
-  expect(covered).toBeGreaterThanOrEqual(25);
+  expect(covered).toBeGreaterThanOrEqual(28);
 });
