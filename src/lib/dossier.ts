@@ -110,6 +110,33 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "mighty-hot-amazonia": {
+    maxWin: "1 500x",
+    maxWinLabel: "Максимальная выплата",
+    rtpVariants: ["96,22%"],
+    source: "https://wazdan.com/mighty-hot-amazonia",
+    sourceLabel: "официальная страница Wazdan",
+    note:
+      "Текущая страница Wazdan прямо публикует max win 1 500x и RTP 96,22%. Игра использует Volatility Levels™, поэтому verified-профиль не превращает настраиваемый риск в одну дополнительную фиксированную категорию.",
+  },
+  "mummyland-treasures": {
+    maxWin: "25 000x",
+    maxWinLabel: "Максимальная выплата",
+    rtpVariants: ["96,37%"],
+    source: "https://belatragames.com/en/games/game/mummyland-treasures",
+    sourceLabel: "официальная страница Belatra Games",
+    note:
+      "Текущая карточка Belatra Games публикует RTP 96,37%, max win 25 000x и volatility High. Значения совпадают со справочным профилем полного досье.",
+  },
+  "troy-superways": {
+    maxWin: "35 336x",
+    maxWinLabel: "Максимальная выплата",
+    rtpVariants: ["96,00%", "94,00%", "90,50%"],
+    source: "https://yggdrasilgaming.com/games/troy-superways",
+    sourceLabel: "официальная страница Yggdrasil Gaming",
+    note:
+      "Текущая страница Yggdrasil Gaming публикует max multiplier 35 336x, volatility High и три RTP-конфигурации: 96%, 94% и 90,5%. Верхнее значение совпадает со справочным RTP досье.",
+  },
   "jammin-jars": {
     maxWin: "20 000x",
     maxWinLabel: "Максимальная выплата",
