@@ -20,6 +20,7 @@ type VerifiedMetricOverlay = Partial<VerifiedSlotMetrics> & {
   observedWin?: string;
   observedWinLabel?: string;
   clearMaxWin?: boolean;
+  clearRtpVariants?: boolean;
   additionalSources?: VerifiedMetricSource[];
 };
 
@@ -43,6 +44,11 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
         url: "https://netent.com/games/dead-or-alive-2",
       },
     ],
+  },
+  "hand-of-anubis": {
+    clearRtpVariants: true,
+    note:
+      "Официальный релиз Hacksaw Gaming подтверждает максимальную выплату 10 000x, высокую волатильность и поле 5 × 6, но не публикует сохранённый ранее список RTP-конфигураций. Неподтверждённые варианты не показываются как verified-метрика; справочный RTP досье остаётся отдельным базовым параметром.",
   },
   "jammin-jars": {
     maxWin: "20 000x",
@@ -91,7 +97,7 @@ export function getVerifiedSlotMetrics(slug: string): EnrichedVerifiedSlotMetric
   const overlay = verifiedMetricOverlays[slug];
   if (!overlay) return base;
 
-  const { clearMaxWin, ...values } = overlay;
+  const { clearMaxWin, clearRtpVariants, ...values } = overlay;
   if (!base) {
     if (!values.source) return undefined;
     return values as EnrichedVerifiedSlotMetrics;
@@ -102,5 +108,6 @@ export function getVerifiedSlotMetrics(slug: string): EnrichedVerifiedSlotMetric
     delete merged.maxWin;
     delete merged.maxWinLabel;
   }
+  if (clearRtpVariants) delete merged.rtpVariants;
   return merged;
 }
