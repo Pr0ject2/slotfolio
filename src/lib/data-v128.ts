@@ -42,6 +42,17 @@ const mergedSlots: Slot[] = [
   ...slotAdditions6,
 ];
 
+const sourceBackedTagRemovals: Record<string, string[]> = {
+  "crown-coins": ["Pick-бонус"],
+};
+
+function withSourceBackedTagCorrections(slot: Slot): Slot {
+  const removals = sourceBackedTagRemovals[slot.slug];
+  if (!removals?.length) return slot;
+  const tags = slot.tags.filter((tag) => !removals.includes(tag));
+  return tags.length === slot.tags.length ? slot : { ...slot, tags };
+}
+
 function withLegacyOneWinAvailability(slot: Slot): Slot {
   const evidence = legacyOneWinAvailabilityBySlug[slot.slug];
   if (!evidence || slot.availability?.some((item) => item.operator === "1win")) return slot;
@@ -49,8 +60,11 @@ function withLegacyOneWinAvailability(slot: Slot): Slot {
 }
 
 // Keep the latest record for a slug, but never expose duplicate public routes/cards.
+// Source-backed corrections remove claims that no longer match the provider evidence.
 // Legacy operator evidence is additive and never replaces a newer per-slot availability record.
-export const slots: Slot[] = uniqueBySlug(mergedSlots).map(withLegacyOneWinAvailability);
+export const slots: Slot[] = uniqueBySlug(mergedSlots)
+  .map(withSourceBackedTagCorrections)
+  .map(withLegacyOneWinAvailability);
 export const getSlot = (slug: string) => slots.find((slot) => slot.slug === slug);
 
 export const slotFeatureOptions = Array.from(
