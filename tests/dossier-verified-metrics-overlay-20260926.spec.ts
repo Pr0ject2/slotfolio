@@ -34,6 +34,16 @@ test("verified metric overlays preserve existing dossier metrics", () => {
   expect(existing?.rtpVariants).toEqual(["96,38%", "94,55%", "92,33%", "88,42%"]);
 });
 
+test("Hand of Anubis keeps the official max win but drops unsupported RTP variants", () => {
+  const metrics = getVerifiedSlotMetrics("hand-of-anubis");
+
+  expect(metrics?.maxWin).toBe("10 000x");
+  expect(metrics?.maxWinLabel).toBe("Максимальная выплата");
+  expect(metrics?.rtpVariants).toBeUndefined();
+  expect(metrics?.source).toBe("https://www.hacksawgaming.com/news/new-game-release-april-summary");
+  expect(metrics?.note).toContain("не публикует сохранённый ранее список RTP-конфигураций");
+});
+
 test("Jammin Jars keeps its fixed cap separate from Highest Observed Win", () => {
   const metrics = getVerifiedSlotMetrics("jammin-jars");
 
@@ -86,6 +96,16 @@ test("Retro Tapes treats 10 000x as observed rather than a fixed cap", () => {
   expect(metrics?.observedWinLabel).toBe("Наблюдавшийся максимум");
   expect(metrics?.rtpVariants).toEqual(["96,47%", "94,46%"]);
   expect(metrics?.source).toBe("https://www.pushgaming.com/games/retro-tapes.html");
+});
+
+test("Hand of Anubis dossier does not render unsupported RTP configurations", async ({ page }) => {
+  await page.goto("/slots/hand-of-anubis");
+
+  await expect(page.locator(".facts")).toContainText("10 000x");
+  await expect(page.locator("#math-profile")).not.toContainText("RTP-конфигурации");
+  await expect(page.locator("body")).not.toContainText("94,32%");
+  await expect(page.locator("body")).not.toContainText("92,28%");
+  await expect(page.locator("body")).not.toContainText("88,41%");
 });
 
 test("observed wins render as their own dossier metric", async ({ page }) => {
