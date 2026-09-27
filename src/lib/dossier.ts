@@ -155,6 +155,15 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     note:
       "Текущая страница Clawbuster прямо называет Max Win 10 000x и Max Multiplier x10 000, одновременно публикуя RTP 95% и volatility High.",
   },
+  "clawbass-bonanza": {
+    maxWin: "6 000x",
+    maxWinLabel: "Заявленный потенциал",
+    rtpVariants: ["95,00%"],
+    source: "https://clawbuster.com/games/clawbass-bonanza.html",
+    sourceLabel: "официальная страница Clawbuster",
+    note:
+      "Clawbuster публикует RTP 95% и volatility Very High; в описании Float Multipliers провайдер отдельно указывает, что итог может достигать 6 000x original bet. Slotfolio хранит эту цифру как заявленный потенциал, а не как отдельно объявленный fixed max-win cap.",
+  },
   "clawbass-bonanza-free-rush": {
     maxWin: "6 000x",
     maxWinLabel: "Заявленный потенциал",
