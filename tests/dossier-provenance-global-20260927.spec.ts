@@ -12,6 +12,7 @@ const allowedHostsByProvider: Record<string, string[]> = {
   Wazdan: ["wazdan.com"],
   "Belatra Games": ["belatragames.com"],
   "Yggdrasil Gaming": ["yggdrasilgaming.com"],
+  "3 Oaks Gaming": ["3oaks.com"],
   Clawbuster: ["clawbuster.com"],
   NetEnt: ["netent.com", "evolution.com"],
   "Relax Gaming": ["relax-gaming.com"],

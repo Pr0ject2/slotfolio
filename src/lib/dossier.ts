@@ -187,6 +187,14 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "777-coins": {
+    maxWin: "6 000x",
+    maxWinLabel: "Заявленный потенциал",
+    source: "https://3oaks.com/game/777_coins",
+    sourceLabel: "официальная страница 3 Oaks Gaming",
+    note:
+      "3 Oaks Gaming указывает GRAND JACKPOT x2 000 и отдельно пишет, что сочетание трёх COLLECT SYMBOLS с GRAND JACKPOT SYMBOL потенциально утраивает Grand Prize до x6 000. Slotfolio хранит 6 000x как заявленный потенциал бонусного приза, а не как независимо опубликованный fixed max-win cap всей игры.",
+  },
   "jammin-jars": {
     maxWin: "20 000x",
     maxWinLabel: "Максимальная выплата",
