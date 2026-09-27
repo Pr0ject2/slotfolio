@@ -30,14 +30,14 @@ test("Claw Bonanza Gold Rush keeps the explicit 10 000x max win", () => {
   expect(metrics?.rtpVariants).toEqual(["95,00%"]);
 });
 
-test("ClawBass Free Rush keeps 6 000x as provider-stated potential rather than a fixed-cap claim", () => {
+test("ClawBass Free Rush keeps 6 000x potential and Clawbuster's Very High volatility", () => {
   const slot = getSlot("clawbass-bonanza-free-rush");
   const metrics = getVerifiedSlotMetrics("clawbass-bonanza-free-rush");
 
   expect(slot).toBeTruthy();
   expect(slot?.provider).toBe("Clawbuster");
   expect(slot?.rtp).toBe("94,97%");
-  expect(slot?.volatility).toBe("Высокая");
+  expect(slot?.volatility).toBe("Очень высокая");
   expect(metrics?.source).toBe("https://clawbuster.com/games/clawbass-bonanza-free-rush.html");
   expect(metrics?.maxWin).toBe("6 000x");
   expect(metrics?.maxWinLabel).toBe("Заявленный потенциал");
@@ -58,5 +58,6 @@ test("Clawbuster math overlays render on their public dossiers with first-party 
   await page.goto("/slots/clawbass-bonanza-free-rush");
   await expect(page.locator("#math-profile")).toContainText("6 000x");
   await expect(page.locator("#math-profile")).toContainText("Заявленный потенциал");
+  await expect(page.locator(".facts")).toContainText("Очень высокая");
   await expect(page.locator("#facts")).toContainText("clawbuster.com");
 });
