@@ -96,6 +96,20 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     note:
       "Официальный релиз Hacksaw Gaming от 31.07.2022 описывает Dork Unit как игру medium 3/5 volatility с 16 линиями и max win 10 000x. RTP-конфигурации в этом релизе не опубликованы, поэтому verified-профиль их не добавляет.",
   },
+  gemhalla: {
+    maxWin: "5 000x",
+    maxWinLabel: "Максимальная выплата",
+    source: "https://bgaming.com/games/gemhalla",
+    sourceLabel: "текущая официальная страница BGaming",
+    note:
+      "Текущая официальная страница BGaming публикует RTP 97,17%, max multiplier 5 000x и volatility Very-high. Slotfolio сохраняет публичную укрупнённую категорию «Высокая»; отдельная официальная страница BGaming Players Hub для той же игры одновременно использует High, поэтому расхождение формулировок волатильности сохранено в provenance.",
+    additionalSources: [
+      {
+        label: "BGaming Players Hub с формулировкой Volatility: High",
+        url: "https://hub.bgaming.com/players-hub/games/gemhalla",
+      },
+    ],
+  },
   "jammin-jars": {
     maxWin: "20 000x",
     maxWinLabel: "Максимальная выплата",
