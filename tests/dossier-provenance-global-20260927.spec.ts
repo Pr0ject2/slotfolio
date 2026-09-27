@@ -8,6 +8,7 @@ const allowedHostsByProvider: Record<string, string[]> = {
   "Push Gaming": ["pushgaming.com"],
   "Hacksaw Gaming": ["hacksawgaming.com"],
   "Nolimit City": ["nolimitcity.com"],
+  BGaming: ["bgaming.com"],
   NetEnt: ["netent.com", "evolution.com"],
   "Relax Gaming": ["relax-gaming.com"],
 };
