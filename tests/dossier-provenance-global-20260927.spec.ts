@@ -4,6 +4,7 @@ import { getVerifiedSlotMetrics } from "../src/lib/dossier";
 
 const allowedHostsByProvider: Record<string, string[]> = {
   "Pragmatic Play": ["pragmaticplay.com"],
+  Endorphina: ["endorphina.com"],
   "Push Gaming": ["pushgaming.com"],
   "Hacksaw Gaming": ["hacksawgaming.com"],
   "Nolimit City": ["nolimitcity.com"],
