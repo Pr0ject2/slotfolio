@@ -19,7 +19,9 @@ test("Dork Unit dossier renders the verified max win without unsupported RTP var
   await page.goto("/slots/dork-unit");
 
   await expect(page.locator("#math-profile")).toContainText("10 000x");
-  await expect(page.locator("#math-profile")).not.toContainText("RTP-конфигурации");
+  await expect(
+    page.locator("#math-profile .dossier-metric-grid > div").filter({ hasText: "RTP-конфигурации" }),
+  ).toHaveCount(0);
   await expect(page.locator("#math-profile")).toContainText("Средняя");
   await expect(page.locator("#facts")).toContainText("hacksawgaming.com");
 });
