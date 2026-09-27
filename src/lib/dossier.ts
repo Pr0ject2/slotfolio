@@ -137,6 +137,33 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     note:
       "Текущая страница Yggdrasil Gaming публикует max multiplier 35 336x, volatility High и три RTP-конфигурации: 96%, 94% и 90,5%. Верхнее значение совпадает со справочным RTP досье.",
   },
+  "wolf-hunt-claw-and-win": {
+    maxWin: "6 992x",
+    maxWinLabel: "Максимальная выплата",
+    rtpVariants: ["95,00%"],
+    source: "https://clawbuster.com/games/wolf-hunt-claw-and-win.html",
+    sourceLabel: "официальная страница Clawbuster",
+    note:
+      "Текущая страница Clawbuster прямо публикует Max Win Potential 6 992x, RTP 95% и volatility Low. Значения совпадают со справочным профилем полного досье.",
+  },
+  "claw-bonanza-gold-rush": {
+    maxWin: "10 000x",
+    maxWinLabel: "Максимальная выплата",
+    rtpVariants: ["95,00%"],
+    source: "https://clawbuster.com/games/claw-bonanza-gold-rush.html",
+    sourceLabel: "официальная страница Clawbuster",
+    note:
+      "Текущая страница Clawbuster прямо называет Max Win 10 000x и Max Multiplier x10 000, одновременно публикуя RTP 95% и volatility High.",
+  },
+  "clawbass-bonanza-free-rush": {
+    maxWin: "6 000x",
+    maxWinLabel: "Заявленный потенциал",
+    rtpVariants: ["94,97%"],
+    source: "https://clawbuster.com/games/clawbass-bonanza-free-rush.html",
+    sourceLabel: "официальная страница Clawbuster",
+    note:
+      "Clawbuster публикует RTP 94,97% и volatility Very High, а в описании Treasure Multipliers указывает, что суммарный выигрыш может достигать 6 000x original bet. Slotfolio хранит 6 000x как заявленный потенциал, а не как отдельно заявленный fixed cap.",
+  },
   "jammin-jars": {
     maxWin: "20 000x",
     maxWinLabel: "Максимальная выплата",
