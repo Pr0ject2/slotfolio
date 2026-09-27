@@ -71,6 +71,14 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     note:
       "Текущая страница Hacksaw Gaming описывает только Lucky Seven: один, два или три символа слева направо дают 1x, 10x и 10 000x. FeatureSpins и отдельная multiplier-механика на этой странице не заявлены.",
   },
+  "power-of-ten": {
+    maxWin: "10 000x",
+    maxWinLabel: "Максимальная выплата",
+    source: "https://www.hacksawgaming.com/games/power-of-ten",
+    sourceLabel: "официальная страница Hacksaw Gaming",
+    note:
+      "Официальная страница Hacksaw Gaming прямо указывает для High-Roller FeatureSpins максимальный выигрыш 10 000x. RTP-варианты не добавляются как verified-метрика, потому что текущая публичная страница не публикует их в доступном описании.",
+  },
   "nitro-nights": {
     maxWin: "15 000x",
     maxWinLabel: "Максимальная выплата",
