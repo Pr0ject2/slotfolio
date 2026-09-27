@@ -372,7 +372,7 @@ export default async function Page({
             <p className="source-note">
               Базовый источник описания функций:{" "}
               <a href={s.source} target="_blank" rel="noreferrer">
-                официальная страница {s.provider} ↗
+                {s.source.replace(/^https?:\/\/(?:www\.)?/, "").split("/")[0]} ↗
               </a>
               .
               {verified && verified.source !== s.source && (
