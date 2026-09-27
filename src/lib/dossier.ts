@@ -173,6 +173,20 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     note:
       "Clawbuster публикует RTP 94,97% и volatility Very High, а в описании Treasure Multipliers указывает, что суммарный выигрыш может достигать 6 000x original bet. Slotfolio хранит 6 000x как заявленный потенциал, а не как отдельно заявленный fixed cap.",
   },
+  "panda-claw-jackpot": {
+    maxWin: "5 000x",
+    maxWinLabel: "Заявленный максимум",
+    source: "https://panda-claw-jackpot-iframe-dev.clawbuster.com/",
+    sourceLabel: "официальный игровой iframe Clawbuster",
+    note:
+      "Официальный игровой iframe Clawbuster прямо показывает Win up to 5 000x. Основная карточка Panda Claw Jackpot отдельно публикует RTP 95%, volatility Medium и Extreme Jackpot 2 500x; jackpot-значение не смешивается с общим заявленным максимумом игры.",
+    additionalSources: [
+      {
+        label: "основная карточка Clawbuster с Extreme Jackpot 2 500x",
+        url: "https://clawbuster.com/games/panda-claw-jackpot.html",
+      },
+    ],
+  },
   "jammin-jars": {
     maxWin: "20 000x",
     maxWinLabel: "Максимальная выплата",
