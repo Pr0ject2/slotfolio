@@ -62,6 +62,15 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "max-win-machine": {
+    maxWin: "10 000x",
+    maxWinLabel: "Максимальная выплата",
+    rtpVariants: ["96,22%", "94,28%", "92,20%"],
+    source: "https://www.hacksawgaming.com/games/max-win-machine",
+    sourceLabel: "официальная страница Hacksaw Gaming",
+    note:
+      "Текущая страница Hacksaw Gaming описывает только Lucky Seven: один, два или три символа слева направо дают 1x, 10x и 10 000x. FeatureSpins и отдельная multiplier-механика на этой странице не заявлены.",
+  },
   "jammin-jars": {
     maxWin: "20 000x",
     maxWinLabel: "Максимальная выплата",
