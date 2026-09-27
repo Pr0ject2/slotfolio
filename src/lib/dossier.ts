@@ -88,6 +88,14 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     note:
       "Текущая страница Hacksaw Gaming публикует volatility 4/5, max win 15 000x и четыре RTP-конфигурации. Верхнее значение 96,31% совпадает со справочным RTP досье.",
   },
+  "dork-unit": {
+    maxWin: "10 000x",
+    maxWinLabel: "Максимальная выплата",
+    source: "https://www.hacksawgaming.com/news/new-game-release-july-summary",
+    sourceLabel: "официальный релиз Hacksaw Gaming",
+    note:
+      "Официальный релиз Hacksaw Gaming от 31.07.2022 описывает Dork Unit как игру medium 3/5 volatility с 16 линиями и max win 10 000x. RTP-конфигурации в этом релизе не опубликованы, поэтому verified-профиль их не добавляет.",
+  },
   "jammin-jars": {
     maxWin: "20 000x",
     maxWinLabel: "Максимальная выплата",
