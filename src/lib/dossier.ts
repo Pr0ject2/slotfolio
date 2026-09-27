@@ -50,6 +50,18 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     note:
       "Официальный релиз Hacksaw Gaming подтверждает максимальную выплату 10 000x, высокую волатильность и поле 5 × 6, но не публикует сохранённый ранее список RTP-конфигураций. Неподтверждённые варианты не показываются как verified-метрика; справочный RTP досье остаётся отдельным базовым параметром.",
   },
+  "2026-hit-slot": {
+    source: "https://endorphina.com/games/2026-hit-slot",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Текущая официальная карточка Endorphina указывает Volatility: High, поэтому Slotfolio сохраняет категорию «Высокая». В официальном релизе от 03.03.2026 та же игра одновременно названа Ultra-High volatility; это расхождение источников сохранено явно, а не сведено к одной неподтверждённой трактовке.",
+    additionalSources: [
+      {
+        label: "релиз Endorphina от 03.03.2026 с формулировкой Ultra-High volatility",
+        url: "https://endorphina.com/news/endorphinas-2026-hit-slot-show-is-here-and-youve-got-a-backstage-pass",
+      },
+    ],
+  },
   "jammin-jars": {
     maxWin: "20 000x",
     maxWinLabel: "Максимальная выплата",
