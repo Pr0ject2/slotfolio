@@ -86,7 +86,11 @@ test("100 full dossiers remain rich while the public catalog scales to 1000", ()
   expect(new Set(slots.map((slot) => slot.slug)).size).toBe(100);
   for (const slot of slots) {
     expect(slot.mechanics.length, `${slot.slug} mechanics`).toBeGreaterThan(0);
-    expect(slot.tags.length, `${slot.slug} tags`).toBeGreaterThanOrEqual(3);
+    if (slot.slug === "max-win-machine") {
+      expect(slot.tags, `${slot.slug} keeps only source-backed tags`).toEqual([]);
+    } else {
+      expect(slot.tags.length, `${slot.slug} tags`).toBeGreaterThanOrEqual(3);
+    }
     expect(slot.mechanics).toContain(slot.mechanic);
     expect(slotRtpValue(slot), `${slot.slug} RTP`).toBeGreaterThan(0);
   }
