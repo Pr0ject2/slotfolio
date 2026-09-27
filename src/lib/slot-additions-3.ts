@@ -174,13 +174,13 @@ export const slotAdditions3: Slot[] = [
       feature:
         "Растущие множители и специальные символы продолжают развитие раунда в Free Spins; опубликованный максимум составляет 10 000x.",
       note:
-        "Официальный материал 1win прямо называет BGaming разработчиком и описывает кластерную сетку 6 × 8; числовая RTP-конфигурация остаётся оператор-зависимой.",
-      source: "https://forum.1win.com/topic/964-%F0%9F%8E%B0-3-favorite-1win-slots-play-by-your-rules/",
+        "Отдельная официальная промо-страница 1win подтверждает поле 6 × 8, cluster wins с каскадами, растущие cell multipliers, sticky Wild, Free Spins, Buy Free Spins, Sins Spin и max win 10 000x. Значение RTP на этой странице не опубликовано, поэтому 96,00% в карточке остаётся справочным и не продвигается как verified-метрика.",
+      source: "https://forum.1win.com/topic/359-%E2%80%8B%F0%9F%96%A4%E2%80%8B-up-to-x10000-in-house-of-sins/",
       availability: [{
         operator: "1win",
         verifiedAt: "2026-09-07",
-        source: "https://forum.1win.com/topic/964-%F0%9F%8E%B0-3-favorite-1win-slots-play-by-your-rules/",
-        evidence: "Официальный форум 1win включает House of Sins в раздел 1win Only и прямо называет игру эксклюзивным релизом BGaming.",
+        source: "https://forum.1win.com/topic/359-%E2%80%8B%F0%9F%96%A4%E2%80%8B-up-to-x10000-in-house-of-sins/",
+        evidence: "Официальная промо-страница 1win прямо представляет House of Sins by BGaming, предлагает Play Now и подтверждает max win 10 000x.",
       }],
     },
   {
