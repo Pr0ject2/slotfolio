@@ -102,10 +102,14 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     source: "https://bgaming.com/games/gemhalla",
     sourceLabel: "текущая официальная страница BGaming",
     note:
-      "Текущая официальная страница BGaming публикует RTP 97,17%, max multiplier 5 000x и volatility Very-high. Slotfolio сохраняет публичную укрупнённую категорию «Высокая»; отдельная официальная страница BGaming Players Hub для той же игры одновременно использует High, поэтому расхождение формулировок волатильности сохранено в provenance.",
+      "Текущая официальная страница BGaming и официальный обзор июньских релизов публикуют volatility Very-high, поэтому Slotfolio использует текущую категорию «Очень высокая». Отдельная официальная страница BGaming Players Hub для той же игры одновременно использует High; конфликт сохранён в provenance и не сглаживается до более низкой категории.",
     additionalSources: [
       {
-        label: "BGaming Players Hub с формулировкой Volatility: High",
+        label: "официальный обзор BGaming с формулировкой very high volatility",
+        url: "https://bgaming.com/news/bgaming-introduces-a-wave-of-fresh-june-game-releases",
+      },
+      {
+        label: "BGaming Players Hub с конфликтующей формулировкой Volatility: High",
         url: "https://hub.bgaming.com/players-hub/games/gemhalla",
       },
     ],
