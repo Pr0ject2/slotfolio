@@ -45,6 +45,21 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "gonzos-quest": {
+    maxWin: "2 200x",
+    maxWinLabel: "Максимальная выплата",
+    rtpVariants: ["95,97%"],
+    source: "https://netent.com/games/gonzos-quest",
+    sourceLabel: "текущая официальная страница NetEnt",
+    note:
+      "Текущая canonical NetEnt page публикует Max payout 2 200x bet и RTP 95,97%. Текущая страница Evolution для той же оригинальной Gonzo’s Quest одновременно указывает maximum win 2 500x original bet при том же RTP 95,97%; Slotfolio сохраняет 2 200x как primary provider value и явно показывает first-party конфликт.",
+    additionalSources: [
+      {
+        label: "страница Evolution / NetEnt с конфликтующим максимумом 2 500x",
+        url: "https://games.evolution.com/slots/gonzos-quest/",
+      },
+    ],
+  },
   "hand-of-anubis": {
     clearRtpVariants: true,
     note:
