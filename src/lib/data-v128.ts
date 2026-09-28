@@ -61,6 +61,8 @@ const sourceBackedVolatilityCorrections: Record<string, string> = {
 const sourceBackedNoteCorrections: Record<string, string> = {
   "snake-arena":
     "Официальный релиз Relax Gaming описывает Snake Arena как maximum volatility gaming experience, но ниже в том же материале называет её high volatility title. Slotfolio сохраняет категорию «Экстремальная» по более сильной формулировке и явно отмечает внутреннее расхождение источника.",
+  "dork-unit":
+    "Справочный RTP карточки составляет 96,28%. Официальный релиз Hacksaw Gaming подтверждает medium 3/5 volatility, 16 линий и максимум 10 000x, но RTP-конфигурации в этом релизе не опубликованы, поэтому более низкие варианты не заявляются как verified-метрика.",
 };
 
 const sourceBackedSourceCorrections: Record<string, string> = {
