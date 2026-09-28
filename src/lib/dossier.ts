@@ -118,10 +118,20 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     maxWin: "1 500x",
     maxWinLabel: "Максимальная выплата",
     rtpVariants: ["96,22%"],
-    source: "https://wazdan.com/mighty-hot-amazonia",
-    sourceLabel: "официальная страница Wazdan",
+    source: "https://wazdan.com/games/mighty-hot-amazonia",
+    sourceLabel: "текущая официальная карточка Wazdan",
     note:
-      "Текущая страница Wazdan прямо публикует max win 1 500x и RTP 96,22%. Игра использует Volatility Levels™, поэтому verified-профиль не превращает настраиваемый риск в одну дополнительную фиксированную категорию.",
+      "Текущая карточка Wazdan публикует max win 1 500x, RTP 96,22% и базовый профиль Volatility: Low-Medium. Та же игра использует Volatility Levels™, а Wazdan описывает эту функцию как выбор уровня волатильности игроком. Поэтому Slotfolio сохраняет опубликованный базовый профиль в provenance, но публичную категорию показывает как «Настраиваемая».",
+    additionalSources: [
+      {
+        label: "официальная страница Mighty Hot Amazonia с описанием выбора волатильности",
+        url: "https://wazdan.com/mighty-hot-amazonia",
+      },
+      {
+        label: "официальное описание Wazdan Volatility Levels™",
+        url: "https://wazdan.com/news/new-releases-updates/wazdans-new-jersey-entry-bolstered-with-the-introduction-of-volatility-levels-feature",
+      },
+    ],
   },
   "mummyland-treasures": {
     maxWin: "25 000x",
