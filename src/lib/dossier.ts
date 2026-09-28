@@ -37,11 +37,26 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     source: "https://games.evolution.com/slots/dead-or-alive-2/",
     sourceLabel: "официальная страница Evolution / NetEnt",
     note:
-      "Официальная страница Evolution для NetEnt несколько раз указывает потенциал до 100 000x original bet. На отдельной карточке netent.com одновременно присутствует противоречащее metadata-поле Max payout 1 600x; Slotfolio сохраняет этот конфликт в provenance и не смешивает две цифры.",
+      "Официальная страница Evolution для NetEnt несколько раз указывает потенциал до 100 000x original bet. На отдельной карточке netent.com одновременно присутствует противоречащее metadata-полe Max payout 1 600x; Slotfolio сохраняет этот конфликт в provenance и не смешивает две цифры.",
     additionalSources: [
       {
         label: "карточка NetEnt с конфликтующим metadata-полем",
         url: "https://netent.com/games/dead-or-alive-2",
+      },
+    ],
+  },
+  "gonzos-quest": {
+    maxWin: "2 200x",
+    maxWinLabel: "Максимальная выплата",
+    rtpVariants: ["95,97%"],
+    source: "https://netent.com/games/gonzos-quest",
+    sourceLabel: "текущая официальная страница NetEnt",
+    note:
+      "Текущая canonical NetEnt page публикует Max payout 2 200x bet и RTP 95,97%. Текущая страница Evolution для той же оригинальной Gonzo’s Quest одновременно указывает maximum win 2 500x original bet при том же RTP 95,97%; Slotfolio сохраняет 2 200x как primary provider value и явно показывает first-party конфликт.",
+    additionalSources: [
+      {
+        label: "страница Evolution / NetEnt с конфликтующим максимумом 2 500x",
+        url: "https://games.evolution.com/slots/gonzos-quest/",
       },
     ],
   },
