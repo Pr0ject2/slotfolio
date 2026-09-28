@@ -56,6 +56,7 @@ const sourceBackedVolatilityCorrections: Record<string, string> = {
   gemhalla: "Очень высокая",
   "max-win-machine": "Экстремальная",
   "hand-of-anubis": "Экстремальная",
+  "power-of-ten": "Экстремальная",
   "clawbass-bonanza": "Очень высокая",
   "clawbass-bonanza-free-rush": "Очень высокая",
 };
@@ -68,7 +69,7 @@ const sourceBackedNoteCorrections: Record<string, string> = {
   "dork-unit":
     "Справочный RTP карточки составляет 96,28%. Официальный релиз Hacksaw Gaming подтверждает medium 3/5 volatility, 16 линий и максимум 10 000x, но RTP-конфигурации в этом релизе не опубликованы, поэтому более низкие варианты не заявляются как verified-метрика.",
   "power-of-ten":
-    "Справочный RTP карточки составляет 96,23%. Текущая официальная страница Hacksaw Gaming подтверждает механику Power Wheels и максимум 10 000x, но RTP-конфигурации на этой странице не опубликованы, поэтому более низкие варианты не заявляются как verified-метрика.",
+    "Справочный RTP карточки составляет 96,23%. Текущая официальная страница Hacksaw Gaming подтверждает механику Power Wheels и максимум 10 000x, но не публикует RTP-конфигурации или отдельное текстовое поле volatility. Текущий официальный каталог Hacksaw Gaming показывает полный volatility meter 5/5, поэтому Slotfolio использует категорию «Экстремальная»; более низкие RTP-варианты не заявляются как verified-метрика.",
   "clawbass-bonanza":
     "Текущая официальная карточка Clawbuster публикует RTP 95% и Very High volatility. Float Multipliers достигают 100x, а общий результат может доходить до 6 000x original bet; Slotfolio хранит 6 000x как заявленный потенциал, а не как отдельно объявленный fixed max-win cap.",
   "clawbass-bonanza-free-rush":

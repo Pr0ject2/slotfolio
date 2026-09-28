@@ -20,6 +20,6 @@ test("Power of Ten dossier renders the verified max win and its first-party prov
   await page.goto("/slots/power-of-ten");
 
   await expect(page.locator("#math-profile")).toContainText("10 000x");
-  await expect(page.locator("#math-profile")).not.toContainText("RTP-конфигурации");
+  await expect(page.locator("#math-profile")).not.toContainText("Варианты RTP");
   await expect(page.locator("#facts")).toContainText("hacksawgaming.com");
 });
