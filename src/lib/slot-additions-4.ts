@@ -18,8 +18,8 @@ export const slotAdditions4: Slot[] = [
       feature:
         "Wall of Symbols заполняет барабаны совпадающими символами, а Fortune Wheel способен добавить множители до 15x; Volatility Levels меняет профиль игры.",
       note:
-        "Официальная страница Wazdan публикует RTP 96,22% и максимум 1 500x; уровень риска здесь корректнее проверять вместе с выбранной настройкой Volatility Levels.",
-      source: "https://wazdan.com/mighty-hot-amazonia",
+        "Текущая карточка Wazdan публикует RTP 96,22%, максимум 1 500x и базовый профиль Low-Medium; Volatility Levels™ позволяет менять уровень риска, поэтому публичная категория Slotfolio остаётся настраиваемой.",
+      source: "https://wazdan.com/games/mighty-hot-amazonia",
       availability: [{
         operator: "1win",
         verifiedAt: "2026-09-07",
