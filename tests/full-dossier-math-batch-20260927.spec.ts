@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 import { getSlot } from "../src/lib/data";
 import { getVerifiedSlotMetrics } from "../src/lib/dossier";
 
-test("Mighty Hot Amazonia keeps Wazdan's published math without flattening Volatility Levels", () => {
+test("Mighty Hot Amazonia preserves Wazdan's baseline and adjustable volatility provenance", () => {
   const slot = getSlot("mighty-hot-amazonia");
   const metrics = getVerifiedSlotMetrics("mighty-hot-amazonia");
 
@@ -10,10 +10,23 @@ test("Mighty Hot Amazonia keeps Wazdan's published math without flattening Volat
   expect(slot?.provider).toBe("Wazdan");
   expect(slot?.rtp).toBe("96,22%");
   expect(slot?.volatility).toBe("Настраиваемая");
-  expect(metrics?.source).toBe("https://wazdan.com/mighty-hot-amazonia");
+  expect(slot?.source).toBe("https://wazdan.com/games/mighty-hot-amazonia");
+  expect(slot?.note).toContain("Low-Medium");
+  expect(metrics?.source).toBe("https://wazdan.com/games/mighty-hot-amazonia");
   expect(metrics?.maxWin).toBe("1 500x");
   expect(metrics?.rtpVariants).toEqual(["96,22%"]);
+  expect(metrics?.note).toContain("Volatility: Low-Medium");
   expect(metrics?.note).toContain("Volatility Levels");
+  expect(metrics?.additionalSources).toEqual([
+    {
+      label: "официальная страница Mighty Hot Amazonia с описанием выбора волатильности",
+      url: "https://wazdan.com/mighty-hot-amazonia",
+    },
+    {
+      label: "официальное описание Wazdan Volatility Levels™",
+      url: "https://wazdan.com/news/new-releases-updates/wazdans-new-jersey-entry-bolstered-with-the-introduction-of-volatility-levels-feature",
+    },
+  ]);
 });
 
 test("Mummyland Treasures keeps Belatra's published math profile", () => {
@@ -46,6 +59,8 @@ test("three enriched dossiers render their first-party math on public pages", as
   await page.goto("/slots/mighty-hot-amazonia");
   await expect(page.locator("#math-profile")).toContainText("1 500x");
   await expect(page.locator(".slot-intro")).toContainText("Настраиваемая");
+  await expect(page.locator("#facts")).toContainText("Low-Medium");
+  await expect(page.locator("#facts")).toContainText("Volatility Levels");
   await expect(page.locator("#facts")).toContainText("wazdan.com");
 
   await page.goto("/slots/mummyland-treasures");
