@@ -101,6 +101,25 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "fury-of-anubis": {
+    maxWin: "10 000x",
+    maxWinLabel: "Заявленный потенциал",
+    rtpVariants: ["96,52%"],
+    source: "https://www.pragmaticplay.com/en/campaign/fury-of-anubis/",
+    sourceLabel: "структурированная страница Pragmatic Play",
+    note:
+      "Структурированная campaign page Pragmatic Play публикует Reels x Rows 6 x 5, RTP 96,52% и Max Multiplier 10 000x; официальный релиз также описывает игру как 6 × 5 и win potential up to 10 000x. Обычная текущая game page одновременно пишет 5×6, поэтому Slotfolio сохраняет этот first-party конфликт явно и использует 6 × 5 как поле по двум согласующимся источникам.",
+    additionalSources: [
+      {
+        label: "текущая game page Pragmatic Play с конфликтующим 5×6",
+        url: "https://www.pragmaticplay.com/en/games/fury-of-anubis/",
+      },
+      {
+        label: "официальный релиз Pragmatic Play с 6×5 и потенциалом 10 000x",
+        url: "https://www.pragmaticplay.com/en/news/pragmatic-play-unleashes-the-power-of-ancient-egypt-in-fury-of-anubis/",
+      },
+    ],
+  },
   "nitro-nights": {
     maxWin: "15 000x",
     maxWinLabel: "Максимальная выплата",

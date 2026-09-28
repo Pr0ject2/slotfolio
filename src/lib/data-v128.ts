@@ -52,6 +52,15 @@ const sourceBackedFeatureCorrections: Record<string, string> = {
     "Один, два или три Lucky Seven слева направо дают фиксированные выплаты 1x, 10x и 10 000x соответственно. Текущая официальная страница Hacksaw Gaming не заявляет для игры дополнительных FeatureSpins или multiplier-функций.",
 };
 
+const sourceBackedFieldCorrections: Record<string, string> = {
+  "fury-of-anubis": "6 × 5",
+};
+
+const sourceBackedDescriptionCorrections: Record<string, string> = {
+  "fury-of-anubis":
+    "Поле 6 × 5 с выплатами за восемь и более одинаковых символов в любых позициях. После выигрыша символы исчезают, а tumble-multiplier растёт по цепочке.",
+};
+
 const sourceBackedVolatilityCorrections: Record<string, string> = {
   gemhalla: "Очень высокая",
   "max-win-machine": "Экстремальная",
@@ -70,6 +79,8 @@ const sourceBackedNoteCorrections: Record<string, string> = {
     "Справочный RTP карточки составляет 96,28%. Официальный релиз Hacksaw Gaming подтверждает medium 3/5 volatility, 16 линий и максимум 10 000x, но RTP-конфигурации в этом релизе не опубликованы, поэтому более низкие варианты не заявляются как verified-метрика.",
   "power-of-ten":
     "Справочный RTP карточки составляет 96,23%. Текущая официальная страница Hacksaw Gaming подтверждает механику Power Wheels и максимум 10 000x, но не публикует RTP-конфигурации или отдельное текстовое поле volatility. Текущий официальный каталог Hacksaw Gaming показывает полный volatility meter 5/5, поэтому Slotfolio использует категорию «Экстремальная»; более низкие RTP-варианты не заявляются как verified-метрика.",
+  "fury-of-anubis":
+    "Текущая структурированная campaign page Pragmatic Play публикует Reels x Rows 6 x 5, RTP 96,52% и Max Multiplier 10 000x; официальный релиз также описывает поле как 6 × 5. Текущая обычная game page одновременно пишет 5×6, поэтому Slotfolio использует структурированное 6 × 5 и сохраняет конфликт first-party источников явно.",
   "clawbass-bonanza":
     "Текущая официальная карточка Clawbuster публикует RTP 95% и Very High volatility. Float Multipliers достигают 100x, а общий результат может доходить до 6 000x original bet; Slotfolio хранит 6 000x как заявленный потенциал, а не как отдельно объявленный fixed max-win cap.",
   "clawbass-bonanza-free-rush":
@@ -81,11 +92,15 @@ const sourceBackedSourceCorrections: Record<string, string> = {
     "https://www.relax-gaming.com/news/2020/01/relax-gaming-launches-actionpacked-new-slot-snake-arena-across-network",
   "hand-of-anubis":
     "https://www.hacksawgaming.com/news/new-game-release-april-summary",
+  "fury-of-anubis":
+    "https://www.pragmaticplay.com/en/campaign/fury-of-anubis/",
 };
 
 function withSourceBackedCorrections(slot: Slot): Slot {
   const removals = sourceBackedTagRemovals[slot.slug] ?? [];
   const feature = sourceBackedFeatureCorrections[slot.slug] ?? slot.feature;
+  const field = sourceBackedFieldCorrections[slot.slug] ?? slot.field;
+  const description = sourceBackedDescriptionCorrections[slot.slug] ?? slot.description;
   const volatility = sourceBackedVolatilityCorrections[slot.slug] ?? slot.volatility;
   const note = sourceBackedNoteCorrections[slot.slug] ?? slot.note;
   const source = sourceBackedSourceCorrections[slot.slug] ?? slot.source;
@@ -94,11 +109,13 @@ function withSourceBackedCorrections(slot: Slot): Slot {
     : slot.tags;
   const tagsChanged = tags.length !== slot.tags.length;
   const featureChanged = feature !== slot.feature;
+  const fieldChanged = field !== slot.field;
+  const descriptionChanged = description !== slot.description;
   const volatilityChanged = volatility !== slot.volatility;
   const noteChanged = note !== slot.note;
   const sourceChanged = source !== slot.source;
-  return tagsChanged || featureChanged || volatilityChanged || noteChanged || sourceChanged
-    ? { ...slot, tags, feature, volatility, note, source }
+  return tagsChanged || featureChanged || fieldChanged || descriptionChanged || volatilityChanged || noteChanged || sourceChanged
+    ? { ...slot, tags, feature, field, description, volatility, note, source }
     : slot;
 }
 
