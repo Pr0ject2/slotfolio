@@ -59,9 +59,10 @@ test("three enriched dossiers render their first-party math on public pages", as
   await page.goto("/slots/mighty-hot-amazonia");
   await expect(page.locator("#math-profile")).toContainText("1 500x");
   await expect(page.locator(".slot-intro")).toContainText("Настраиваемая");
-  await expect(page.locator("#facts")).toContainText("Low-Medium");
-  await expect(page.locator("#facts")).toContainText("Volatility Levels");
+  await expect(page.locator("#math-profile .metric-caveat")).toContainText("Low-Medium");
+  await expect(page.locator("#math-profile .metric-caveat")).toContainText("Volatility Levels");
   await expect(page.locator("#facts")).toContainText("wazdan.com");
+  await expect(page.locator("#facts")).toContainText("официальное описание Wazdan Volatility Levels");
 
   await page.goto("/slots/mummyland-treasures");
   await expect(page.locator("#math-profile")).toContainText("25 000x");
