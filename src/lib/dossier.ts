@@ -93,7 +93,13 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     source: "https://www.hacksawgaming.com/games/power-of-ten",
     sourceLabel: "официальная страница Hacksaw Gaming",
     note:
-      "Официальная страница Hacksaw Gaming прямо указывает для High-Roller FeatureSpins максимальный выигрыш 10 000x. RTP-варианты не добавляются как verified-метрика, потому что текущая публичная страница не публикует их в доступном описании.",
+      "Текущая dedicated page Hacksaw Gaming подтверждает Power Wheels и максимальный выигрыш 10 000x, но не публикует RTP-конфигурации или отдельное текстовое поле volatility. Текущий официальный каталог Hacksaw Gaming показывает для Power of Ten полный volatility meter 5/5, поэтому публичная категория Slotfolio — «Экстремальная». RTP-варианты не добавляются как verified-метрика.",
+    additionalSources: [
+      {
+        label: "текущий каталог Hacksaw Gaming с volatility meter 5/5",
+        url: "https://www.hacksawgaming.com/games/slots",
+      },
+    ],
   },
   "nitro-nights": {
     maxWin: "15 000x",
