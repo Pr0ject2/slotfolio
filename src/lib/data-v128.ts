@@ -84,10 +84,12 @@ const sourceBackedNoteCorrections: Record<string, string> = {
   "clawbass-bonanza":
     "Текущая официальная карточка Clawbuster публикует RTP 95% и Very High volatility. Float Multipliers достигают 100x, а общий результат может доходить до 6 000x original bet; Slotfolio хранит 6 000x как заявленный потенциал, а не как отдельно объявленный fixed max-win cap.",
   "clawbass-bonanza-free-rush":
-    "Текущая официальная карточка Clawbuster публикует RTP 94,97% и Very High volatility. Treasure Multipliers достигают 100x, а общий результат может доходить до 6 000x original bet; Slotfolio хранит 6 000x как заявленный потенциал, а не как отдельно объявленный fixed max-win cap.",
+    "Текущая официальная карточка Clawbuster публикует RTP 94,97% и Very High volatility. Treasure Multipliers достигают 100x, а общий результат может доходить до 6 000x original bet; Slotfolio хранит 6 000x как заявленный потенциал, а не как отдельно объявленный fixed cap.",
 };
 
 const sourceBackedSourceCorrections: Record<string, string> = {
+  "book-of-dead":
+    "https://www.playngo.com/games/rich-wilde-and-the-book-of-dead",
   "snake-arena":
     "https://www.relax-gaming.com/news/2020/01/relax-gaming-launches-actionpacked-new-slot-snake-arena-across-network",
   "hand-of-anubis":
