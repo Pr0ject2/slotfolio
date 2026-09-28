@@ -37,7 +37,7 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     source: "https://games.evolution.com/slots/dead-or-alive-2/",
     sourceLabel: "официальная страница Evolution / NetEnt",
     note:
-      "Официальная страница Evolution для NetEnt несколько раз указывает потенциал до 100 000x original bet. На отдельной карточке netent.com одновременно присутствует противоречащее metadata-полe Max payout 1 600x; Slotfolio сохраняет этот конфликт в provenance и не смешивает две цифры.",
+      "Официальная страница Evolution для NetEnt несколько раз указывает потенциал до 100 000x original bet. На отдельной карточке netent.com одновременно присутствует противоречащее metadata-поле Max payout 1 600x; Slotfolio сохраняет этот конфликт в provenance и не смешивает две цифры.",
     additionalSources: [
       {
         label: "карточка NetEnt с конфликтующим metadata-полем",
