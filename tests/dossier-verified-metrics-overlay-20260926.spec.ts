@@ -34,14 +34,22 @@ test("verified metric overlays preserve existing dossier metrics", () => {
   expect(existing?.rtpVariants).toEqual(["96,38%", "94,55%", "92,33%", "88,42%"]);
 });
 
-test("Hand of Anubis keeps the official max win but drops unsupported RTP variants", () => {
+test("Hand of Anubis preserves the official volatility conflict and drops unsupported RTP variants", () => {
   const metrics = getVerifiedSlotMetrics("hand-of-anubis");
 
   expect(metrics?.maxWin).toBe("10 000x");
   expect(metrics?.maxWinLabel).toBe("Максимальная выплата");
   expect(metrics?.rtpVariants).toBeUndefined();
   expect(metrics?.source).toBe("https://www.hacksawgaming.com/news/new-game-release-april-summary");
-  expect(metrics?.note).toContain("не публикует сохранённый ранее список RTP-конфигураций");
+  expect(metrics?.note).toContain("volatility meter 5/5");
+  expect(metrics?.note).toContain("high volatility");
+  expect(metrics?.note).toContain("не показывается как verified-метрика");
+  expect(metrics?.additionalSources).toEqual([
+    {
+      label: "текущий каталог Hacksaw Gaming с volatility meter 5/5",
+      url: "https://www.hacksawgaming.com/games/slots",
+    },
+  ]);
 });
 
 test("Jammin Jars keeps its fixed cap separate from Highest Observed Win", () => {
@@ -98,11 +106,15 @@ test("Retro Tapes treats 10 000x as observed rather than a fixed cap", () => {
   expect(metrics?.source).toBe("https://www.pushgaming.com/games/retro-tapes.html");
 });
 
-test("Hand of Anubis dossier does not render unsupported RTP configurations", async ({ page }) => {
+test("Hand of Anubis dossier renders the current 5/5 mapping and the older official conflict", async ({ page }) => {
   await page.goto("/slots/hand-of-anubis");
 
   await expect(page.locator(".facts")).toContainText("10 000x");
+  await expect(page.locator(".facts")).toContainText("Экстремальная");
+  await expect(page.locator("#math-profile")).toContainText("volatility meter 5/5");
+  await expect(page.locator("#math-profile")).toContainText("high volatility");
   await expect(page.locator("#math-profile")).not.toContainText("RTP-конфигурации");
+  await expect(page.locator("#facts")).toContainText("текущий каталог Hacksaw Gaming с volatility meter 5/5");
   await expect(page.locator("body")).not.toContainText("94,32%");
   await expect(page.locator("body")).not.toContainText("92,28%");
   await expect(page.locator("body")).not.toContainText("88,41%");
