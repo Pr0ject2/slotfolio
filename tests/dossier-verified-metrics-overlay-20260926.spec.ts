@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { getSlot } from "../src/lib/data";
 import { getVerifiedSlotMetrics } from "../src/lib/dossier";
 
 test("Money Train 2 keeps its official Relax Gaming max win", () => {
@@ -35,7 +36,13 @@ test("verified metric overlays preserve existing dossier metrics", () => {
 });
 
 test("Hand of Anubis preserves the official volatility conflict and drops unsupported RTP variants", () => {
+  const slot = getSlot("hand-of-anubis");
   const metrics = getVerifiedSlotMetrics("hand-of-anubis");
+
+  expect(slot?.volatility).toBe("Экстремальная");
+  expect(slot?.source).toBe("https://www.hacksawgaming.com/news/new-game-release-april-summary");
+  expect(slot?.note).toContain("volatility meter 5/5");
+  expect(slot?.note).toContain("high volatility");
 
   expect(metrics?.maxWin).toBe("10 000x");
   expect(metrics?.maxWinLabel).toBe("Максимальная выплата");
@@ -111,6 +118,8 @@ test("Hand of Anubis dossier renders the current 5/5 mapping and the older offic
 
   await expect(page.locator(".facts")).toContainText("10 000x");
   await expect(page.locator(".facts")).toContainText("Экстремальная");
+  await expect(page.locator("#editor-view")).toContainText("volatility meter 5/5");
+  await expect(page.locator("#editor-view")).toContainText("high volatility");
   await expect(page.locator("#math-profile")).toContainText("volatility meter 5/5");
   await expect(page.locator("#math-profile")).toContainText("high volatility");
   await expect(page.locator("#math-profile")).not.toContainText("RTP-конфигурации");
