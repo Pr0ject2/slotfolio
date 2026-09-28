@@ -60,6 +60,21 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  starburst: {
+    maxWin: "800x",
+    maxWinLabel: "Максимальная выплата",
+    rtpVariants: ["96,08%"],
+    source: "https://netent.com/games/starburst",
+    sourceLabel: "текущая официальная страница NetEnt",
+    note:
+      "Текущая canonical NetEnt page публикует RTP 96,08%, Max payout 800x bet, поле 5 × 3 и 10 линий. Текущая страница Evolution для той же оригинальной Starburst одновременно публикует RTP 96,09%; Slotfolio сохраняет 96,08% как primary provider value и явно показывает first-party конфликт.",
+    additionalSources: [
+      {
+        label: "страница Evolution / NetEnt с конфликтующим RTP 96,09%",
+        url: "https://games.evolution.com/slots/starburst/",
+      },
+    ],
+  },
   "hand-of-anubis": {
     clearRtpVariants: true,
     note:
