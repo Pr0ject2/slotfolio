@@ -88,6 +88,8 @@ const sourceBackedNoteCorrections: Record<string, string> = {
 };
 
 const sourceBackedSourceCorrections: Record<string, string> = {
+  "book-of-dead":
+    "https://www.playngo.com/games/rich-wilde-and-the-book-of-dead",
   "snake-arena":
     "https://www.relax-gaming.com/news/2020/01/relax-gaming-launches-actionpacked-new-slot-snake-arena-across-network",
   "hand-of-anubis":
