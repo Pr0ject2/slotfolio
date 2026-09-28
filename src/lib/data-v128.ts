@@ -55,6 +55,7 @@ const sourceBackedFeatureCorrections: Record<string, string> = {
 const sourceBackedVolatilityCorrections: Record<string, string> = {
   gemhalla: "Очень высокая",
   "max-win-machine": "Экстремальная",
+  "hand-of-anubis": "Экстремальная",
   "clawbass-bonanza": "Очень высокая",
   "clawbass-bonanza-free-rush": "Очень высокая",
 };
@@ -62,6 +63,8 @@ const sourceBackedVolatilityCorrections: Record<string, string> = {
 const sourceBackedNoteCorrections: Record<string, string> = {
   "snake-arena":
     "Официальный релиз Relax Gaming описывает Snake Arena как maximum volatility gaming experience, но ниже в том же материале называет её high volatility title. Slotfolio сохраняет категорию «Экстремальная» по более сильной формулировке и явно отмечает внутреннее расхождение источника.",
+  "hand-of-anubis":
+    "Текущий официальный каталог Hacksaw Gaming показывает для Hand of Anubis полный volatility meter 5/5, тогда как официальный релиз от 30.04.2022 называет игру high volatility. Slotfolio сохраняет текущую категорию «Экстремальная» и явно отмечает first-party конфликт.",
   "dork-unit":
     "Справочный RTP карточки составляет 96,28%. Официальный релиз Hacksaw Gaming подтверждает medium 3/5 volatility, 16 линий и максимум 10 000x, но RTP-конфигурации в этом релизе не опубликованы, поэтому более низкие варианты не заявляются как verified-метрика.",
   "power-of-ten":
@@ -75,6 +78,8 @@ const sourceBackedNoteCorrections: Record<string, string> = {
 const sourceBackedSourceCorrections: Record<string, string> = {
   "snake-arena":
     "https://www.relax-gaming.com/news/2020/01/relax-gaming-launches-actionpacked-new-slot-snake-arena-across-network",
+  "hand-of-anubis":
+    "https://www.hacksawgaming.com/news/new-game-release-april-summary",
 };
 
 function withSourceBackedCorrections(slot: Slot): Slot {
