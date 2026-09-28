@@ -84,7 +84,7 @@ const sourceBackedNoteCorrections: Record<string, string> = {
   "clawbass-bonanza":
     "Текущая официальная карточка Clawbuster публикует RTP 95% и Very High volatility. Float Multipliers достигают 100x, а общий результат может доходить до 6 000x original bet; Slotfolio хранит 6 000x как заявленный потенциал, а не как отдельно объявленный fixed max-win cap.",
   "clawbass-bonanza-free-rush":
-    "Текущая официальная карточка Clawbuster публикует RTP 94,97% и Very High volatility. Treasure Multipliers достигают 100x, а общий результат может доходить до 6 000x original bet; Slotfolio хранит 6 000x как заявленный потенциал, а не как отдельно объявленный fixed cap.",
+    "Текущая официальная карточка Clawbuster публикует RTP 94,97% и Very High volatility. Treasure Multipliers достигают 100x, а общий результат может доходить до 6 000x original bet; Slotfolio хранит 6 000x как заявленный потенциал, а не как отдельно объявленный fixed max-win cap.",
 };
 
 const sourceBackedSourceCorrections: Record<string, string> = {
