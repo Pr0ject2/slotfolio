@@ -38,6 +38,10 @@ test("ClawBass Free Rush keeps 6 000x potential and Clawbuster's Very High volat
   expect(slot?.provider).toBe("Clawbuster");
   expect(slot?.rtp).toBe("94,97%");
   expect(slot?.volatility).toBe("Очень высокая");
+  expect(slot?.note).toContain("Текущая официальная карточка Clawbuster публикует RTP 94,97%");
+  expect(slot?.note).toContain("Very High volatility");
+  expect(slot?.note).toContain("заявленный потенциал");
+  expect(slot?.note).not.toContain("отображается как высокая");
   expect(metrics?.source).toBe("https://clawbuster.com/games/clawbass-bonanza-free-rush.html");
   expect(metrics?.maxWin).toBe("6 000x");
   expect(metrics?.maxWinLabel).toBe("Заявленный потенциал");
@@ -59,5 +63,7 @@ test("Clawbuster math overlays render on their public dossiers with first-party 
   await expect(page.locator("#math-profile")).toContainText("6 000x");
   await expect(page.locator("#math-profile")).toContainText("Заявленный потенциал");
   await expect(page.locator(".facts")).toContainText("Очень высокая");
+  await expect(page.locator("#editor-view")).toContainText("Текущая официальная карточка Clawbuster публикует RTP 94,97%");
+  await expect(page.locator("#editor-view")).toContainText("Very High volatility");
   await expect(page.locator("#facts")).toContainText("clawbuster.com");
 });
