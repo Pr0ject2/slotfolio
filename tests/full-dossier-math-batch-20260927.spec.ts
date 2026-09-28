@@ -9,6 +9,7 @@ test("Mighty Hot Amazonia keeps Wazdan's published math without flattening Volat
   expect(slot).toBeTruthy();
   expect(slot?.provider).toBe("Wazdan");
   expect(slot?.rtp).toBe("96,22%");
+  expect(slot?.volatility).toBe("Настраиваемая");
   expect(metrics?.source).toBe("https://wazdan.com/mighty-hot-amazonia");
   expect(metrics?.maxWin).toBe("1 500x");
   expect(metrics?.rtpVariants).toEqual(["96,22%"]);
@@ -44,6 +45,7 @@ test("Troy SuperWays keeps Yggdrasil's full RTP ladder and max multiplier", () =
 test("three enriched dossiers render their first-party math on public pages", async ({ page }) => {
   await page.goto("/slots/mighty-hot-amazonia");
   await expect(page.locator("#math-profile")).toContainText("1 500x");
+  await expect(page.locator("#facts")).toContainText("Настраиваемая");
   await expect(page.locator("#facts")).toContainText("wazdan.com");
 
   await page.goto("/slots/mummyland-treasures");
