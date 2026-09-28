@@ -11,7 +11,7 @@ export const slotAdditions4: Slot[] = [
       tags: ["Wall of Symbols", "Множители", "Fortune Wheel", "Chance Level", "Volatility Levels"],
       field: "5 × 3",
       rtp: "96,22%",
-      volatility: "Средняя",
+      volatility: "Настраиваемая",
       image: "/images/slots/mighty-hot-amazonia.webp",
       description:
         "Классическая сетка 5 × 3, в которой Wazdan связывает заполнение барабанов одинаковыми символами с отдельным Fortune Wheel и настраиваемой волатильностью.",
