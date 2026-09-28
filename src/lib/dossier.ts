@@ -75,6 +75,15 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "snake-arena": {
+    maxWin: "2 758,8x",
+    maxWinLabel: "Максимальная выплата",
+    rtpVariants: ["96,25%", "90,00%"],
+    source: "https://www.relax-gaming.com/products/casino/snakearena",
+    sourceLabel: "текущая официальная страница Relax Gaming",
+    note:
+      "Текущая официальная страница Relax Gaming публикует основной RTP 96,25%, отдельный German RTP 90% и выигрыши до 2 758,8x ставки. Slotfolio сохраняет 90,00% как отдельный verified RTP variant, не заменяя основной справочный RTP 96,25%.",
+  },
   "hand-of-anubis": {
     clearRtpVariants: true,
     note:
