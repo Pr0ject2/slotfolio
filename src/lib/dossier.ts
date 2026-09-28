@@ -30,6 +30,8 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     maxWinLabel: "Максимальная выплата",
     source: "https://www.relax-gaming.com/products/casino/moneytrain2",
     sourceLabel: "официальная страница Relax Gaming",
+    note:
+      "Текущая официальная страница Relax Gaming подтверждает максимум 50 000x и отдельно публикует German RTP 90%. Справочное значение досье 96,40% сохраняется как reference RTP, но текущая страница не публикует его как отдельную подтверждённую конфигурацию, поэтому Slotfolio не формирует из этих значений verified RTP-лестницу.",
   },
   "dead-or-alive-2": {
     maxWin: "100 000x",
