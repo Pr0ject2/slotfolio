@@ -56,6 +56,16 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "wanted-dead-or-a-wild": {
+    note:
+      "Текущая детальная страница Hacksaw Gaming публикует Volatility: 4 / 5, поэтому публичная категория Slotfolio остаётся «Высокая». Общий текущий каталог Hacksaw Gaming одновременно показывает Wanted Dead Or a Wild с пятью заполненными делениями volatility meter 5/5; конфликт двух first-party поверхностей сохранён явно без повышения публичной категории.",
+    additionalSources: [
+      {
+        label: "текущий каталог Hacksaw Gaming с конфликтующим volatility meter 5/5",
+        url: "https://www.hacksawgaming.com/games/slots",
+      },
+    ],
+  },
   "2026-hit-slot": {
     source: "https://endorphina.com/games/2026-hit-slot",
     sourceLabel: "текущая официальная карточка Endorphina",
