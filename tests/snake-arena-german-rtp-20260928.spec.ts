@@ -2,7 +2,9 @@ import { expect, test } from "@playwright/test";
 import { getSlot } from "../src/lib/data";
 import { getVerifiedSlotMetrics } from "../src/lib/dossier";
 
-const relaxSource = "https://www.relax-gaming.com/products/casino/snakearena";
+const relaxMathSource = "https://www.relax-gaming.com/products/casino/snakearena";
+const relaxReleaseSource =
+  "https://www.relax-gaming.com/news/2020/01/relax-gaming-launches-actionpacked-new-slot-snake-arena-across-network";
 
 test("Snake Arena preserves the 96.25% main RTP and adds the official German 90% variant", () => {
   const slot = getSlot("snake-arena");
@@ -12,9 +14,9 @@ test("Snake Arena preserves the 96.25% main RTP and adds the official German 90%
   expect(slot?.provider).toBe("Relax Gaming");
   expect(slot?.field).toBe("5 × 5");
   expect(slot?.rtp).toBe("96,25%");
-  expect(slot?.source).toBe(relaxSource);
+  expect(slot?.source).toBe(relaxReleaseSource);
 
-  expect(metrics?.source).toBe(relaxSource);
+  expect(metrics?.source).toBe(relaxMathSource);
   expect(metrics?.maxWin).toBe("2 758,8x");
   expect(metrics?.rtpVariants).toEqual(["96,25%", "90,00%"]);
   expect(metrics?.note).toContain("основной RTP 96,25%");
