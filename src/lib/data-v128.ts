@@ -54,6 +54,7 @@ const sourceBackedFeatureCorrections: Record<string, string> = {
 
 const sourceBackedVolatilityCorrections: Record<string, string> = {
   gemhalla: "Очень высокая",
+  "max-win-machine": "Экстремальная",
   "clawbass-bonanza": "Очень высокая",
   "clawbass-bonanza-free-rush": "Очень высокая",
 };
