@@ -328,8 +328,15 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
     clearMaxWin: true,
     observedWin: "10 000x",
     observedWinLabel: "Наблюдавшийся максимум",
+    sourceLabel: "текущая официальная страница Push Gaming",
     note:
-      "Push Gaming публикует 10 000x как Highest Observed Win. Slotfolio не трактует это значение как фиксированный max-win cap.",
+      "Текущая карточка Push Gaming публикует RTP 96,47% и Highest Observed Win 10 000x. Официальный материал Push Gaming от 04.04.2023 отдельно подтверждает диапазон RTP 94,46%–96,47%, поэтому Slotfolio сохраняет обе verified RTP-конфигурации и не трактует наблюдавшийся выигрыш как фиксированный max-win cap.",
+    additionalSources: [
+      {
+        label: "официальный материал Push Gaming с RTP 94,46%–96,47%",
+        url: "https://www.pushgaming.com/blog/push-gaming-wins-most-watched-most-streamed-slot-award-february-tier-2-category.html",
+      },
+    ],
   },
 };
 
