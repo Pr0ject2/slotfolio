@@ -167,7 +167,7 @@ export const slotAdditions4: Slot[] = [
       tags: ["Множители", "Свободные вращения", "Расширяемое поле", "Bonus Buy"],
       field: "6 барабанов",
       rtp: "96,40%",
-      volatility: "Высокая",
+      volatility: "Очень высокая",
       image: "/images/slots/devils-finger.webp",
       description:
         "Шестибарабанная игра Shady Lady с расширяемой структурой и выплатами по способам, где основное развитие связано с разрушением символов и ростом множителей.",
