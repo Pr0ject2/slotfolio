@@ -48,7 +48,13 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
   "hand-of-anubis": {
     clearRtpVariants: true,
     note:
-      "Официальный релиз Hacksaw Gaming подтверждает максимальную выплату 10 000x, высокую волатильность и поле 5 × 6, но не публикует сохранённый ранее список RTP-конфигураций. Неподтверждённые варианты не показываются как verified-метрика; справочный RTP досье остаётся отдельным базовым параметром.",
+      "Текущий официальный каталог Hacksaw Gaming показывает Hand of Anubis с полностью заполненным volatility meter 5/5, поэтому публичная категория Slotfolio остаётся «Экстремальная». Официальный релиз от 30.04.2022 одновременно описывает игру как high volatility и подтверждает поле 5 × 6 и максимум 10 000x; конфликт сохранён явно. RTP-конфигурации в релизе не опубликованы, поэтому сохранённый ранее список не показывается как verified-метрика.",
+    additionalSources: [
+      {
+        label: "текущий каталог Hacksaw Gaming с volatility meter 5/5",
+        url: "https://www.hacksawgaming.com/games/slots",
+      },
+    ],
   },
   "2026-hit-slot": {
     source: "https://endorphina.com/games/2026-hit-slot",
