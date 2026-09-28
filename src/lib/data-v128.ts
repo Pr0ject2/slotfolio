@@ -58,18 +58,32 @@ const sourceBackedVolatilityCorrections: Record<string, string> = {
   "clawbass-bonanza-free-rush": "Очень высокая",
 };
 
+const sourceBackedNoteCorrections: Record<string, string> = {
+  "snake-arena":
+    "Официальный релиз Relax Gaming описывает Snake Arena как maximum volatility gaming experience, но ниже в том же материале называет её high volatility title. Slotfolio сохраняет категорию «Экстремальная» по более сильной формулировке и явно отмечает внутреннее расхождение источника.",
+};
+
+const sourceBackedSourceCorrections: Record<string, string> = {
+  "snake-arena":
+    "https://www.relax-gaming.com/news/2020/01/relax-gaming-launches-actionpacked-new-slot-snake-arena-across-network",
+};
+
 function withSourceBackedCorrections(slot: Slot): Slot {
   const removals = sourceBackedTagRemovals[slot.slug] ?? [];
   const feature = sourceBackedFeatureCorrections[slot.slug] ?? slot.feature;
   const volatility = sourceBackedVolatilityCorrections[slot.slug] ?? slot.volatility;
+  const note = sourceBackedNoteCorrections[slot.slug] ?? slot.note;
+  const source = sourceBackedSourceCorrections[slot.slug] ?? slot.source;
   const tags = removals.length
     ? slot.tags.filter((tag) => !removals.includes(tag))
     : slot.tags;
   const tagsChanged = tags.length !== slot.tags.length;
   const featureChanged = feature !== slot.feature;
   const volatilityChanged = volatility !== slot.volatility;
-  return tagsChanged || featureChanged || volatilityChanged
-    ? { ...slot, tags, feature, volatility }
+  const noteChanged = note !== slot.note;
+  const sourceChanged = source !== slot.source;
+  return tagsChanged || featureChanged || volatilityChanged || noteChanged || sourceChanged
+    ? { ...slot, tags, feature, volatility, note, source }
     : slot;
 }
 
