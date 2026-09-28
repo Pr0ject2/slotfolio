@@ -122,7 +122,7 @@ test("Hand of Anubis dossier renders the current 5/5 mapping and the older offic
   await expect(page.locator("#editor-view")).toContainText("high volatility");
   await expect(page.locator("#math-profile")).toContainText("volatility meter 5/5");
   await expect(page.locator("#math-profile")).toContainText("high volatility");
-  await expect(page.locator("#math-profile")).not.toContainText("RTP-конфигурации");
+  await expect(page.locator("#math-profile")).toContainText("не показывается как verified-метрика");
   await expect(page.locator("#facts")).toContainText("текущий каталог Hacksaw Gaming с volatility meter 5/5");
   await expect(page.locator("body")).not.toContainText("94,32%");
   await expect(page.locator("body")).not.toContainText("92,28%");
