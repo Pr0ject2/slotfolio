@@ -6,6 +6,12 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
+  "big-bass-bonanza": {
+    releaseDate: "14 декабря 2020",
+    gameType: "Slot",
+    source: "https://www.pragmaticplay.com/en/news/pragmatic-play-turns-fishing-to-spins-in-big-bass-bonanza/",
+    sourceLabel: "официальный релиз Pragmatic Play от 14.12.2020",
+  },
   "book-of-dead": {
     releaseDate: "14 января 2016",
     gameType: "Video Slot",
