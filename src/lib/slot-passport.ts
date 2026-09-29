@@ -18,6 +18,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/legacy-of-dead",
     sourceLabel: "официальная страница Play’n GO",
   },
+  reactoonz: {
+    releaseDate: "23 октября 2017",
+    gameType: "Grid Slot",
+    source: "https://www.playngo.com/games/reactoonz",
+    sourceLabel: "официальная страница Play’n GO",
+  },
 };
 
 export function getVerifiedSlotPassport(slug: string) {
