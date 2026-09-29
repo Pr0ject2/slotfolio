@@ -18,6 +18,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/rich-wilde-and-the-book-of-dead",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "fat-rabbit": {
+    releaseDate: "27 марта 2018",
+    gameType: "Slot",
+    source: "https://www.pushgaming.com/blog/push-gaming-brings-further-entertainment-mobile-new-game-fat-rabbit.html",
+    sourceLabel: "официальный релиз Push Gaming от 27.03.2018",
+  },
   "fire-joker": {
     releaseDate: "13 июня 2016",
     gameType: "Video Slot",
