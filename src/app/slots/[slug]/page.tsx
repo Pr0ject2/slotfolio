@@ -25,6 +25,7 @@ import {
   slotFeatureCards,
   volatilityContext,
 } from "@/lib/dossier";
+import { getVerifiedSlotPassport } from "@/lib/slot-passport";
 export const dynamicParams = false;
 export function generateStaticParams() {
   return slots.map((s) => ({ slug: s.slug }));
@@ -134,6 +135,7 @@ export default async function Page({
   const related = relatedSlots(s, 3);
   const featureCards = slotFeatureCards(s);
   const verified = getVerifiedSlotMetrics(s.slug);
+  const passport = getVerifiedSlotPassport(s.slug);
   const rtpContext = catalogRtpContext(s);
   const volatilitySummary = volatilityContext(s);
 
@@ -181,6 +183,18 @@ export default async function Page({
               <dt>Игровое поле</dt>
               <dd>{s.field}</dd>
             </div>
+            {passport && (
+              <>
+                <div>
+                  <dt>Дата релиза</dt>
+                  <dd>{passport.releaseDate}</dd>
+                </div>
+                <div>
+                  <dt>Тип игры</dt>
+                  <dd>{passport.gameType}</dd>
+                </div>
+              </>
+            )}
             <div>
               <dt>RTP, справочно</dt>
               <dd>{s.rtp}*</dd>
@@ -375,6 +389,18 @@ export default async function Page({
                 {s.source.replace(/^https?:\/\/(?:www\.)?/, "").split("/")[0]} ↗
               </a>
               .
+              {passport && passport.source === s.source
+                ? " Дата релиза и тип игры сверены по той же официальной странице."
+                : null}
+              {passport && passport.source !== s.source && (
+                <>
+                  {" "}Дата релиза и тип игры сверены по{" "}
+                  <a href={passport.source} target="_blank" rel="noreferrer">
+                    {passport.sourceLabel} ↗
+                  </a>
+                  .
+                </>
+              )}
               {verified && verified.source !== s.source && (
                 <>
                   {" "}Дополнительные числовые параметры сверены по{" "}
