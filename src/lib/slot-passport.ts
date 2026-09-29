@@ -48,6 +48,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/legacy-of-dead",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "razor-shark": {
+    releaseDate: "3 сентября 2019",
+    gameType: "Slot",
+    source: "https://www.pushgaming.com/blog/push-gaming-release-deep-sea-themed-slot-razor-shark.html",
+    sourceLabel: "официальный релиз Push Gaming от 03.09.2019",
+  },
   reactoonz: {
     releaseDate: "23 октября 2017",
     gameType: "Grid Slot",
