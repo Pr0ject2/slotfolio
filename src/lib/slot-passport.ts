@@ -48,6 +48,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/rise-of-olympus",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "sweet-bonanza": {
+    releaseDate: "25 июня 2019",
+    gameType: "Video Slot",
+    source: "https://www.pragmaticplay.com/en/news/pragmatic-play-launches-sweet-bonanza/",
+    sourceLabel: "официальный релиз Pragmatic Play от 25.06.2019",
+  },
 };
 
 export function getVerifiedSlotPassport(slug: string) {
