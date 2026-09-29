@@ -54,6 +54,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.pragmaticplay.com/en/news/pragmatic-play-launches-sweet-bonanza/",
     sourceLabel: "официальный релиз Pragmatic Play от 25.06.2019",
   },
+  "the-dog-house": {
+    releaseDate: "9 мая 2019",
+    gameType: "Video Slot",
+    source: "https://www.pragmaticplay.com/en/news/pragmatic-play-launches-the-dog-house/",
+    sourceLabel: "официальный релиз Pragmatic Play от 09.05.2019",
+  },
 };
 
 export function getVerifiedSlotPassport(slug: string) {
