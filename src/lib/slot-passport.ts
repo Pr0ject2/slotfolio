@@ -72,6 +72,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.pragmaticplay.com/en/news/pragmatic-play-delivers-regal-adventure-in-starlight-princess/",
     sourceLabel: "официальный релиз Pragmatic Play от 23.09.2021",
   },
+  "sugar-rush": {
+    releaseDate: "30 июня 2022",
+    gameType: "Slot",
+    source: "https://www.pragmaticplay.com/ru/news/pragmatic-play-%D0%B4%D0%B0%D1%80%D0%B8%D1%82-%D0%B8%D1%81%D1%82%D0%B8%D0%BD%D0%BD%D0%BE%D0%B5-%D1%83%D0%B4%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B8%D0%B5-%D0%B2-sugar-rush/",
+    sourceLabel: "официальный релиз Pragmatic Play от 30.06.2022",
+  },
   "sweet-bonanza": {
     releaseDate: "25 июня 2019",
     gameType: "Video Slot",
