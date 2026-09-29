@@ -18,6 +18,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/fire-joker",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "gates-of-olympus": {
+    releaseDate: "24 февраля 2021",
+    gameType: "Video Slot",
+    source: "https://www.pragmaticplay.com/en/news/pragmatic-play-aims-for-the-heavens-in-gates-of-olympus/",
+    sourceLabel: "официальный релиз Pragmatic Play от 24.02.2021",
+  },
   "jammin-jars": {
     releaseDate: "18 сентября 2018",
     gameType: "Cascading Cluster Pays",
