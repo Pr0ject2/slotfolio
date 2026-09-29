@@ -72,6 +72,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/legacy-of-dead",
     sourceLabel: "официальная страница Play’n GO",
   },
+  mental: {
+    releaseDate: "31 августа 2021",
+    gameType: "Slot",
+    source: "https://nolimitcity.com/games/mental",
+    sourceLabel: "официальная страница Nolimit City",
+  },
   "razor-shark": {
     releaseDate: "3 сентября 2019",
     gameType: "Slot",
