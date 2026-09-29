@@ -18,6 +18,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/rich-wilde-and-the-book-of-dead",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "dork-unit": {
+    releaseDate: "26 июля 2022",
+    gameType: "Slot",
+    source: "https://www.hacksawgaming.com/news/new-game-release-july-summary",
+    sourceLabel: "официальный релиз Hacksaw Gaming от 26.07.2022",
+  },
   "fire-joker": {
     releaseDate: "13 июня 2016",
     gameType: "Video Slot",
