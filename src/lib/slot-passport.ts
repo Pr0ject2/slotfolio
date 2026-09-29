@@ -18,6 +18,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/rich-wilde-and-the-book-of-dead",
     sourceLabel: "официальная страница Play’n GO",
   },
+  deadwood: {
+    releaseDate: "6 мая 2020",
+    gameType: "Slot",
+    source: "https://nolimitcity.com/games/deadwood",
+    sourceLabel: "официальная страница Nolimit City",
+  },
   "dork-unit": {
     releaseDate: "26 июля 2022",
     gameType: "Slot",
