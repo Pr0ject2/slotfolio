@@ -30,10 +30,12 @@ test("Sweet Bonanza renders verified release date, game type and separate passpo
   await expect(page.locator(".slot-summary .facts")).toContainText("25 июня 2019");
   await expect(page.locator(".slot-summary .facts")).toContainText("Тип игры");
   await expect(page.locator(".slot-summary .facts")).toContainText("Video Slot");
-  await expect(page.locator(`#facts a[href='${gameSource}']`)).toHaveCount(1);
-  await expect(page.locator(`#facts a[href='${passportSource}']`)).toHaveCount(1);
-  await expect(page.locator("#facts")).toContainText("Дата релиза и тип игры сверены по");
-  await expect(page.locator("#facts")).not.toContainText(
+
+  const primaryProvenance = page.locator("#facts .source-note").first();
+  await expect(primaryProvenance.locator(`a[href='${gameSource}']`)).toHaveCount(1);
+  await expect(primaryProvenance.locator(`a[href='${passportSource}']`)).toHaveCount(1);
+  await expect(primaryProvenance).toContainText("Дата релиза и тип игры сверены по");
+  await expect(primaryProvenance).not.toContainText(
     "Дата релиза и тип игры сверены по той же официальной странице.",
   );
 });
