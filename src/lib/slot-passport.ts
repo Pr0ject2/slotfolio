@@ -42,6 +42,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.pragmaticplay.com/en/news/pragmatic-play-aims-for-the-heavens-in-gates-of-olympus/",
     sourceLabel: "официальный релиз Pragmatic Play от 24.02.2021",
   },
+  "hand-of-anubis": {
+    releaseDate: "21 апреля 2022",
+    gameType: "Cascading Cluster-based Slot",
+    source: "https://www.hacksawgaming.com/news/new-game-release-april-summary",
+    sourceLabel: "официальный релиз Hacksaw Gaming от 21.04.2022",
+  },
   "jammin-jars": {
     releaseDate: "18 сентября 2018",
     gameType: "Cascading Cluster Pays",
