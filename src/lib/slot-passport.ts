@@ -18,6 +18,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/fire-joker",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "jammin-jars": {
+    releaseDate: "18 сентября 2018",
+    gameType: "Cascading Cluster Pays",
+    source: "https://www.pushgaming.com/blog/push-gaming-get-groove-new-game-jammin-jars.html",
+    sourceLabel: "официальный релиз Push Gaming от 18.09.2018",
+  },
   "legacy-of-dead": {
     releaseDate: "2 января 2020",
     gameType: "Video Slot",
