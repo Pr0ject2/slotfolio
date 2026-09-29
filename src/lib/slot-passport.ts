@@ -120,6 +120,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://nolimitcity.com/games/san-quentin",
     sourceLabel: "официальная страница Nolimit City",
   },
+  starburst: {
+    releaseDate: "23 января 2012",
+    gameType: "Video Slot",
+    source: "https://netent.com/games/starburst",
+    sourceLabel: "каноническая официальная страница NetEnt",
+  },
   "starlight-princess": {
     releaseDate: "23 сентября 2021",
     gameType: "Video Slot",
