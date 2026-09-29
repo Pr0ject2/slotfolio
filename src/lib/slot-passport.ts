@@ -84,6 +84,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/rise-of-olympus",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "san-quentin-xways": {
+    releaseDate: "12 января 2021",
+    gameType: "Slot",
+    source: "https://nolimitcity.com/games/san-quentin",
+    sourceLabel: "официальная страница Nolimit City",
+  },
   "starlight-princess": {
     releaseDate: "23 сентября 2021",
     gameType: "Video Slot",
