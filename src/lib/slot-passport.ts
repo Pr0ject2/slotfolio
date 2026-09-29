@@ -24,6 +24,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/fire-joker",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "fruit-party": {
+    releaseDate: "27 мая 2020",
+    gameType: "Video Slot",
+    source: "https://www.pragmaticplay.com/en/news/pragmatic-play-gets-summer-started-with-fruit-party/",
+    sourceLabel: "официальный релиз Pragmatic Play от 27.05.2020",
+  },
   "gates-of-olympus": {
     releaseDate: "24 февраля 2021",
     gameType: "Video Slot",
