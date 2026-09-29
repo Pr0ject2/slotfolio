@@ -18,6 +18,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/rich-wilde-and-the-book-of-dead",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "chaos-crew-2": {
+    releaseDate: "28 сентября 2023",
+    gameType: "Slot",
+    source: "https://www.hacksawgaming.com/news/september-game-release-round-up",
+    sourceLabel: "официальный сентябрьский round-up Hacksaw Gaming от 04.10.2023",
+  },
   deadwood: {
     releaseDate: "6 мая 2020",
     gameType: "Slot",
