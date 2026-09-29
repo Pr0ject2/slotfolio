@@ -30,6 +30,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/reactoonz",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "rise-of-olympus": {
+    releaseDate: "22 августа 2018",
+    gameType: "Grid Slot",
+    source: "https://www.playngo.com/games/rise-of-olympus",
+    sourceLabel: "официальная страница Play’n GO",
+  },
 };
 
 export function getVerifiedSlotPassport(slug: string) {
