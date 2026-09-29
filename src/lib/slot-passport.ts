@@ -60,6 +60,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/reactoonz",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "retro-tapes": {
+    releaseDate: "23 ноября 2022",
+    gameType: "Slot",
+    source: "https://www.pushgaming.com/blog/push-gaming-rewinds-classic-gameplay-retro-tapes.html",
+    sourceLabel: "официальный релиз Push Gaming от 23.11.2022",
+  },
   "rise-of-olympus": {
     releaseDate: "22 августа 2018",
     gameType: "Grid Slot",
