@@ -24,6 +24,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.hacksawgaming.com/news/new-game-release-july-summary",
     sourceLabel: "официальный релиз Hacksaw Gaming от 26.07.2022",
   },
+  "fire-in-the-hole": {
+    releaseDate: "2 марта 2021",
+    gameType: "Slot",
+    source: "https://nolimitcity.com/games/fire-in-the-hole",
+    sourceLabel: "официальная страница Nolimit City",
+  },
   "fire-joker": {
     releaseDate: "13 июня 2016",
     gameType: "Video Slot",
