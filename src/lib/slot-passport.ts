@@ -12,6 +12,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/rich-wilde-and-the-book-of-dead",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "fire-joker": {
+    releaseDate: "13 июня 2016",
+    gameType: "Video Slot",
+    source: "https://www.playngo.com/games/fire-joker",
+    sourceLabel: "официальная страница Play’n GO",
+  },
   "legacy-of-dead": {
     releaseDate: "2 января 2020",
     gameType: "Video Slot",
