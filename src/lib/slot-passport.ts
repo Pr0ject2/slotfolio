@@ -60,6 +60,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/rise-of-olympus",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "starlight-princess": {
+    releaseDate: "23 сентября 2021",
+    gameType: "Video Slot",
+    source: "https://www.pragmaticplay.com/en/news/pragmatic-play-delivers-regal-adventure-in-starlight-princess/",
+    sourceLabel: "официальный релиз Pragmatic Play от 23.09.2021",
+  },
   "sweet-bonanza": {
     releaseDate: "25 июня 2019",
     gameType: "Video Slot",
