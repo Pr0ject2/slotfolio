@@ -48,5 +48,8 @@ test("Money Train 2 renders verified release date, game type and separate first-
     }),
   ).toHaveCount(1);
   await expect(facts).toContainText("Дата релиза и тип игры сверены по");
-  await expect(facts).toContainText("German RTP 90%");
+
+  const mathProfile = page.locator("#math-profile");
+  await expect(mathProfile).toContainText("German RTP 90%");
+  await expect(mathProfile).toContainText("не формирует");
 });
