@@ -96,6 +96,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://nolimitcity.com/games/mental",
     sourceLabel: "официальная страница Nolimit City",
   },
+  "money-train-2": {
+    releaseDate: "2 сентября 2020",
+    gameType: "Slot",
+    source: "https://www.relax-gaming.com/news/2020/08/relax-gaming-to-roll-out-biggest-release-of-the-year-with-money-train-2",
+    sourceLabel: "официальный анонс Relax Gaming с датой запуска 02.09.2020",
+  },
   "razor-shark": {
     releaseDate: "3 сентября 2019",
     gameType: "Slot",
