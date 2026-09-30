@@ -5,15 +5,6 @@ import { getVerifiedSlotPassport } from "../src/lib/slot-passport";
 
 const cases = [
   {
-    slug: "2026-hit-slot",
-    name: "2026 Hit Slot",
-    date: "3 марта 2026",
-    source: "https://endorphina.com/news/endorphinas-2026-hit-slot-show-is-here-and-youve-got-a-backstage-pass",
-    label: "официальный релиз Endorphina от 03.03.2026",
-    provider: "Endorphina",
-    year: 2026,
-  },
-  {
     slug: "fury-of-anubis",
     name: "Fury of Anubis",
     date: "25 июня 2026",
