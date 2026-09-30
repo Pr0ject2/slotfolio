@@ -18,6 +18,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.playngo.com/games/rich-wilde-and-the-book-of-dead",
     sourceLabel: "официальная страница Play’n GO",
   },
+  "book-of-99": {
+    releaseDate: "4 мая 2021",
+    gameType: "Video Slot",
+    source: "https://www.relax-gaming.com/news/2021/05/relax-gaming-rewrites-the-genre-with-book-of-99",
+    sourceLabel: "официальный релиз Relax Gaming от 04.05.2021",
+  },
   "chaos-crew-2": {
     releaseDate: "28 сентября 2023",
     gameType: "Slot",
