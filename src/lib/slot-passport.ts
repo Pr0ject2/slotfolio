@@ -30,6 +30,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://nolimitcity.com/games/deadwood",
     sourceLabel: "официальная страница Nolimit City",
   },
+  "dead-or-alive-2": {
+    releaseDate: "23 апреля 2019",
+    gameType: "Slot",
+    source: "https://netent.com/games/dead-or-alive-2",
+    sourceLabel: "каноническая официальная страница NetEnt",
+  },
   "dork-unit": {
     releaseDate: "26 июля 2022",
     gameType: "Slot",
