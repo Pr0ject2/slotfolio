@@ -215,3 +215,7 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
 export function getVerifiedSlotPassport(slug: string) {
   return verifiedSlotPassports[slug];
 }
+
+export function getVerifiedSlotPassports() {
+  return Object.entries(verifiedSlotPassports);
+}
