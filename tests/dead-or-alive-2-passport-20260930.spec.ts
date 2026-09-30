@@ -40,11 +40,11 @@ test("Dead or Alive 2 renders verified release date and game type without hiding
   await expect(summary).toContainText("23 апреля 2019");
   await expect(summary).toContainText("Тип игры");
   await expect(summary).toContainText("Slot");
+  await expect(summary).toContainText("100 000x");
 
   const facts = page.locator("#facts");
   await expect(facts).toContainText("Дата релиза и тип игры сверены по той же официальной странице.");
   await expect(facts.locator(`a[href='${canonicalSource}']`)).toHaveCount(2);
   await expect(facts.locator(`a[href='${evolutionSource}']`)).toHaveCount(1);
   await expect(facts).toContainText("карточка NetEnt с конфликтующим metadata-полем");
-  await expect(facts).toContainText("100 000x");
 });
