@@ -10,6 +10,22 @@ type ExpectedDossier = {
 
 const dossiers: ExpectedDossier[] = [
   {
+    slug: "hell-hot-100",
+    rtp: "96,07%",
+    source: "https://endorphina.com/games/hell-hot-100",
+  },
+  {
+    slug: "joker-stoker",
+    rtp: "96,07%",
+    source: "https://endorphina.com/games/joker-stoker",
+  },
+  {
+    slug: "lucky-streak-1000",
+    rtp: "96,07%",
+    maxWin: "1 000x",
+    source: "https://endorphina.com/games/lucky-streak-1000",
+  },
+  {
     slug: "burning-coins-20",
     rtp: "96,01%",
     maxWin: "1 000x",
@@ -27,7 +43,7 @@ const dossiers: ExpectedDossier[] = [
   },
 ];
 
-test("Endorphina full dossiers retain official metric provenance without inventing max win", async ({ page }) => {
+test("Endorphina full dossiers retain official metric provenance and payout semantics", async ({ page }) => {
   for (const dossier of dossiers) {
     const metrics = getVerifiedSlotMetrics(dossier.slug)!;
     expect(metrics.rtpVariants).toContain(dossier.rtp);
