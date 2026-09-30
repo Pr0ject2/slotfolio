@@ -84,6 +84,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.pragmaticplay.com/en/news/zeus-strikes-mighty-multipliers-in-pragmatic-plays-latest-release-gates-of-olympus-1000/",
     sourceLabel: "официальный релиз Pragmatic Play от 14.12.2023",
   },
+  "gates-of-olympus-super-scatter": {
+    releaseDate: "28 апреля 2025",
+    gameType: "Slot",
+    source: "https://www.pragmaticplay.com/en/news/pragmatic-play-amps-up-win-potential-with-gates-of-olympus-super-scatter/",
+    sourceLabel: "официальный релиз Pragmatic Play от 28.04.2025",
+  },
   "gonzos-quest": {
     releaseDate: "15 марта 2010",
     gameType: "Video Slot",
