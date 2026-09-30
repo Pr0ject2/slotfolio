@@ -107,6 +107,29 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "hell-hot-100": {
+    rtpVariants: ["96,07%"],
+    source: "https://endorphina.com/games/hell-hot-100",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,07%, низкую volatility, поле 5 × 4 и 100 фиксированных линий. Wild может появляться stacked, а Risk Game позволяет увеличить отдельную выплату до 10 раз. Общий max win провайдер не публикует, поэтому Slotfolio не выводит частную 500x scatter-выплату как максимум игры.",
+  },
+  "joker-stoker": {
+    rtpVariants: ["96,07%"],
+    source: "https://endorphina.com/games/joker-stoker",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,07%, Medium-Low volatility, поле 5 × 4 и 40 фиксированных линий. Три, четыре или пять Scatter дают 10, 20 или 30 Free Games; Bonus Pop зависит от доступности у оператора. Общий max win провайдер не публикует.",
+  },
+  "lucky-streak-1000": {
+    maxWin: "1 000x",
+    maxWinLabel: "Заявленный потенциал бонуса",
+    rtpVariants: ["96,07%"],
+    source: "https://endorphina.com/games/lucky-streak-1000",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,07%, Medium-High volatility, поле 3 × 3 и пять линий. Diamond Mystery Bonus выплачивает jackpot до 1 000x total bet. Это заявленный потенциал конкретного бонуса, а не отдельно опубликованный общий fixed max win.",
+  },
   "burning-coins-20": {
     maxWin: "1 000x",
     maxWinLabel: "Заявленный потенциал бонуса",
