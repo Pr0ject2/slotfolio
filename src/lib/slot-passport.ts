@@ -6,12 +6,6 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
-  "2026-hit-slot": {
-    releaseDate: "3 марта 2026",
-    gameType: "Slot",
-    source: "https://endorphina.com/news/endorphinas-2026-hit-slot-show-is-here-and-youve-got-a-backstage-pass",
-    sourceLabel: "официальный релиз Endorphina от 03.03.2026",
-  },
   "big-bass-bonanza": {
     releaseDate: "14 декабря 2020",
     gameType: "Slot",
