@@ -72,6 +72,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.pragmaticplay.com/en/news/pragmatic-play-aims-for-the-heavens-in-gates-of-olympus/",
     sourceLabel: "официальный релиз Pragmatic Play от 24.02.2021",
   },
+  "gonzos-quest": {
+    releaseDate: "15 марта 2010",
+    gameType: "Video Slot",
+    source: "https://netent.com/games/gonzos-quest",
+    sourceLabel: "каноническая официальная страница NetEnt",
+  },
   "hand-of-anubis": {
     releaseDate: "21 апреля 2022",
     gameType: "Cascading Cluster-based Slot",
