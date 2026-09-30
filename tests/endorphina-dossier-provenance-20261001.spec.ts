@@ -1,7 +1,14 @@
 import { expect, test } from "@playwright/test";
 import { getVerifiedSlotMetrics } from "../src/lib/dossier";
 
-const dossiers = [
+type ExpectedDossier = {
+  slug: string;
+  rtp: string;
+  maxWin?: string;
+  label: string;
+};
+
+const dossiers: ExpectedDossier[] = [
   {
     slug: "burning-coins-20",
     rtp: "96,01%",
@@ -18,7 +25,7 @@ const dossiers = [
     rtp: "96,05%",
     label: "текущая официальная карточка Endorphina",
   },
-] as const;
+];
 
 test("Endorphina full dossiers retain official metric provenance without inventing max win", async ({ page }) => {
   for (const dossier of dossiers) {
