@@ -107,6 +107,29 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "burning-coins-20": {
+    maxWin: "1 000x",
+    maxWinLabel: "Заявленный потенциал бонуса",
+    rtpVariants: ["96,01%"],
+    source: "https://endorphina.com/games/burning-coins-20",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,01%, среднюю volatility, поле 5 × 3 и 20 фиксированных линий. В Fiery Fortune шесть и более Burning Coins запускают отдельную бонусную сетку; её выплаты могут достигать 1 000x total bet. Эта цифра сохранена как заявленный потенциал бонуса, а не как неподтверждённый общий fixed max win.",
+  },
+  "chance-machine-20": {
+    rtpVariants: ["96,01%"],
+    source: "https://endorphina.com/games/chance-machine-20",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,01%, низкую volatility, поле 5 × 3 и 20 фиксированных линий. Wild расширяется на барабанах 2, 3 и 4, а два вида Scatter оплачиваются вне обычных линий. Общий max win провайдер на этой странице не публикует, поэтому Slotfolio не подменяет его отдельными выплатами символов.",
+  },
+  "dia-de-los-muertos-2": {
+    rtpVariants: ["96,05%"],
+    source: "https://endorphina.com/games/dia-de-los-muertos-2",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,05%, высокую volatility, поле 6 × 5 и scatter payouts. Восемь и более одинаковых символов в любых позициях запускают каскады; 4+ Bonus дают 15 Free Games с накоплением множителей до 500x. Множитель не объявлен общим max win, поэтому Slotfolio не выводит его как таковой.",
+  },
   "2026-hit-slot": {
     source: "https://endorphina.com/games/2026-hit-slot",
     sourceLabel: "текущая официальная карточка Endorphina",
