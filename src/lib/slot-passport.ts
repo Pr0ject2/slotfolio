@@ -6,6 +6,12 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
+  "2026-hit-slot": {
+    releaseDate: "3 марта 2026",
+    gameType: "Slot",
+    source: "https://endorphina.com/news/endorphinas-2026-hit-slot-show-is-here-and-youve-got-a-backstage-pass",
+    sourceLabel: "официальный релиз Endorphina от 03.03.2026",
+  },
   "big-bass-bonanza": {
     releaseDate: "14 декабря 2020",
     gameType: "Slot",
@@ -53,6 +59,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     gameType: "Slot",
     source: "https://www.pushgaming.com/blog/push-gaming-brings-further-entertainment-mobile-new-game-fat-rabbit.html",
     sourceLabel: "официальный релиз Push Gaming от 27.03.2018",
+  },
+  "fury-of-anubis": {
+    releaseDate: "25 июня 2026",
+    gameType: "Slot",
+    source: "https://www.pragmaticplay.com/en/news/pragmatic-play-unleashes-the-power-of-ancient-egypt-in-fury-of-anubis/",
+    sourceLabel: "официальный релиз Pragmatic Play от 25.06.2026",
   },
   "fire-in-the-hole": {
     releaseDate: "2 марта 2021",
@@ -113,6 +125,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     gameType: "Video Slot",
     source: "https://www.playngo.com/games/legacy-of-dead",
     sourceLabel: "официальная страница Play’n GO",
+  },
+  "mahjong-wins-super-scatter": {
+    releaseDate: "29 мая 2025",
+    gameType: "Slot",
+    source: "https://www.pragmaticplay.com/en/news/pragmatic-play-expands-super-scatter-series-with-mahjong-wins-super-scatter/",
+    sourceLabel: "официальный релиз Pragmatic Play от 29.05.2025",
   },
   mental: {
     releaseDate: "31 августа 2021",
