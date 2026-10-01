@@ -300,6 +300,30 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.pragmaticplay.com/en/news/pragmatic-play-sweetens-an-all-time-classic-in-sweet-bonanza-super-scatter/",
     sourceLabel: "официальный релиз Pragmatic Play от 31.07.2025",
   },
+  "bear-crazy": {
+    releaseDate: "11 июня 2026",
+    gameType: "Slot",
+    source: "https://www.pragmaticplay.fun/en/slots/bear-crazy/",
+    sourceLabel: "официальная страница Pragmatic Play от 11.06.2026",
+  },
+  "mummyland-treasures": {
+    releaseDate: "28 февраля 2023",
+    gameType: "Slot",
+    source: "https://belatragames.com/en/news/article/mummyland-treasures-solve-the-riddle-of-an-ancient-mummy%21",
+    sourceLabel: "официальный релиз Belatra Games от 28.02.2023",
+  },
+  "troy-superways": {
+    releaseDate: "14 мая 2026",
+    gameType: "Video Slot",
+    source: "https://yggdrasilgaming.com/games/troy-superways",
+    sourceLabel: "официальная страница Yggdrasil Gaming от 14.05.2026",
+  },
+  "mighty-hot-amazonia": {
+    releaseDate: "30 июня 2026",
+    gameType: "Slots",
+    source: "https://wazdan.com/games/mighty-hot-amazonia",
+    sourceLabel: "официальная карточка Wazdan от 30.06.2026",
+  },
   "the-dog-house": {
     releaseDate: "9 мая 2019",
     gameType: "Video Slot",
