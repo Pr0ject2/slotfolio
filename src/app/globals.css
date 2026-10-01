@@ -4698,6 +4698,15 @@ summary {
 .comparison-summary > div + div {
   border-color: #d2d6d4;
 }
+.catalog-dossier-heading {
+  margin-top: 50px;
+}
+.catalog-dossier-intro {
+  grid-template-columns: minmax(0, 1fr);
+}
+.catalog-dossier-intro .slot-summary {
+  max-width: 700px;
+}
 .comparison-selection-empty {
   color: #a6aaa8;
 }
