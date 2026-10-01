@@ -107,6 +107,13 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "2021-hit-slot": {
+    rtpVariants: ["96,02%"],
+    source: "https://endorphina.com/games/2021-hit-slot",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,02%, низкую volatility, поле 3×3 и 5 фиксированных линий. Поставщик не публикует общий максимальный выигрыш, поэтому он не указан.",
+  },
   "2025-hit-slot": {
     maxWin: "2 025x",
     maxWinLabel: "Максимальная выплата",

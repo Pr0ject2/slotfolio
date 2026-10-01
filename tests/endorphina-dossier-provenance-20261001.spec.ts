@@ -14,6 +14,15 @@ type ExpectedDossier = {
 
 const dossiers: ExpectedDossier[] = [
   {
+    slug: "2021-hit-slot",
+    rtp: "96,02%",
+    source: "https://endorphina.com/games/2021-hit-slot",
+    releaseDate: "11 мая 2021",
+    gameType: "Classic Slot Game",
+    passportSource: "https://endorphina.com/news/mesmerize-yourself-in-2021-hit-slot",
+  },
+
+  {
     slug: "2025-hit-slot",
     rtp: "96,05%",
     maxWin: "2 025x",
