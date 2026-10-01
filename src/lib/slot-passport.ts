@@ -432,6 +432,19 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://mancalagaming.com/games/roadmap",
     sourceLabel: "официальный календарь релизов Mancala Gaming от 11.03.2025",
   },
+  "joker-stoker": {
+    releaseDate: "22 июня 2021",
+    gameType: "Fruit Slot",
+    source: "https://endorphina.com/news/set-your-summer-on-fire",
+    sourceLabel: "официальный релиз Endorphina от 22.06.2021",
+  },
+  "le-bandit": {
+    releaseDate: "24 августа 2023",
+    gameType: "Cluster Pays",
+    source: "https://www.hacksawgaming.com/news/august-2023-game-release-wrap",
+    sourceLabel: "официальный августовский release wrap Hacksaw Gaming от 01.09.2023: Ronin Stackways 10.08.2023, Le Bandit через две недели",
+  },
+
 };
 
 export function getVerifiedSlotPassport(slug: string) {
