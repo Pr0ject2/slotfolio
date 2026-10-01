@@ -107,6 +107,13 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "prestige-crown": {
+    rtpVariants: ["96,08%"],
+    source: "https://endorphina.com/games/prestige-crown",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальные материалы Endorphina подтверждают RTP 96,08%, высокую volatility, поле 6×5 и scatter-выплаты. Множители до 1 000x относятся к механике накопления в игре и Free Games; общий фиксированный max win поставщиком не заявлен.",
+  },
   "2021-hit-slot": {
     rtpVariants: ["96,02%"],
     source: "https://endorphina.com/games/2021-hit-slot",

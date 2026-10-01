@@ -14,6 +14,15 @@ type ExpectedDossier = {
 
 const dossiers: ExpectedDossier[] = [
   {
+    slug: "prestige-crown",
+    rtp: "96,08%",
+    source: "https://endorphina.com/games/prestige-crown",
+    releaseDate: "17 июля 2025",
+    gameType: "Cascading Slot",
+    passportSource: "https://endorphina.com/news/prestige-crown-brings-legendary-riches-to-life",
+  },
+
+  {
     slug: "2021-hit-slot",
     rtp: "96,02%",
     source: "https://endorphina.com/games/2021-hit-slot",
