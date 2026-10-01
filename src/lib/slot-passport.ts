@@ -6,6 +6,36 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
+  "bgaming-3-lucky-monkeys-hold-and-win": {
+    releaseDate: "28 сентября 2026",
+    gameType: "Slots",
+    source: "https://bgaming.com/games/3-lucky-monkeys-hold-win",
+    sourceLabel: "официальная страница BGaming",
+  },
+  "endorphina-3-golden-chests": {
+    releaseDate: "3 сентября 2026",
+    gameType: "Slots",
+    source: "https://endorphina.com/news/think-inside-the-box-in-endorphinas-3-golden-chests",
+    sourceLabel: "официальный релиз Endorphina от 03.09.2026",
+  },
+  "playn-go-nsync-pop": {
+    releaseDate: "30 июня 2022",
+    gameType: "Video Slot",
+    source: "https://www.playngo.com/games/*nsync-pop",
+    sourceLabel: "официальная страница Play’n GO",
+  },
+  "wazdan-12-bells": {
+    releaseDate: "6 ноября 2024",
+    gameType: "Slots",
+    source: "https://wazdan.com/games/12-bells",
+    sourceLabel: "официальная страница Wazdan",
+  },
+  "3-oaks-gaming-3-african-drums": {
+    releaseDate: "24 сентября 2026",
+    gameType: "Slots",
+    source: "https://3oaks.com/news/new-release-3-african-drums",
+    sourceLabel: "официальный релиз 3 Oaks Gaming от 24.09.2026",
+  },
   "lucky-streak-1": {
     releaseDate: "8 ноября 2018",
     gameType: "Fruit Slot",
