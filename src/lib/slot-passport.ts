@@ -84,6 +84,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://endorphina.com/news/mesmerize-yourself-in-2021-hit-slot",
     sourceLabel: "официальный релиз Endorphina от 11.05.2021",
   },
+  "2026-hit-slot": {
+    releaseDate: "3 марта 2026",
+    gameType: "Slot",
+    source: "https://endorphina.com/news/endorphinas-2026-hit-slot-show-is-here-and-youve-got-a-backstage-pass",
+    sourceLabel: "официальный релиз Endorphina от 03.03.2026",
+  },
   "2025-hit-slot": {
     releaseDate: "10 апреля 2025",
     gameType: "Fruit Slot",
