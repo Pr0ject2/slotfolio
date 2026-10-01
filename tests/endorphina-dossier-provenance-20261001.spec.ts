@@ -14,6 +14,13 @@ type ExpectedDossier = {
 
 const dossiers: ExpectedDossier[] = [
   {
+    slug: "lucky-streak-3", rtp: "96,01%",
+    source: "https://endorphina.com/games/lucky-streak-3",
+    releaseDate: "28 февраля 2019", gameType: "Fruit Slot",
+    passportSource: "https://endorphina.com/news/drop-it-like-it-s-hot-lucky-streak-3-just-landed-in-our-portfolio",
+  },
+
+  {
     slug: "burning-coins-20", rtp: "96,01%", maxWin: "1 000x",
     source: "https://endorphina.com/games/burning-coins-20",
     releaseDate: "15 мая 2025", gameType: "Classic Slot",
