@@ -1,14 +1,36 @@
 import { expect, test } from "@playwright/test";
 import { getVerifiedSlotMetrics } from "../src/lib/dossier";
+import { getVerifiedSlotPassport } from "../src/lib/slot-passport";
 
 type ExpectedDossier = {
   slug: string;
   rtp: string;
   maxWin?: string;
   source: string;
+  releaseDate?: string;
+  gameType?: string;
+  passportSource?: string;
 };
 
 const dossiers: ExpectedDossier[] = [
+  {
+    slug: "3-coin-towers",
+    rtp: "96,08%",
+    maxWin: "1 000x",
+    source: "https://endorphina.com/games/3-coin-towers",
+    releaseDate: "17 февраля 2026",
+    gameType: "Oriental Slot",
+    passportSource: "https://endorphina.com/news/endorphina-releases-3-coin-towers-a-festival-of-fortune-with-three-bonus-games",
+  },
+  {
+    slug: "burning-coins-40",
+    rtp: "96,12%",
+    maxWin: "2 000x",
+    source: "https://endorphina.com/games/burning-coins-40",
+    releaseDate: "9 декабря 2025",
+    gameType: "Fruit Game",
+    passportSource: "https://endorphina.com/news/burning-coins-40-a-fiery-new-world-of-multiple-bonus-variations",
+  },
   {
     slug: "81-burning-ways",
     rtp: "96,05%",
@@ -80,6 +102,13 @@ test("Endorphina full dossiers retain official metric provenance and payout sema
     expect(metrics.rtpVariants).toContain(dossier.rtp);
     expect(metrics.source).toBe(dossier.source);
     expect(metrics.maxWin).toBe(dossier.maxWin);
+
+    if (dossier.releaseDate && dossier.gameType && dossier.passportSource) {
+      const passport = getVerifiedSlotPassport(dossier.slug)!;
+      expect(passport.releaseDate).toBe(dossier.releaseDate);
+      expect(passport.gameType).toBe(dossier.gameType);
+      expect(passport.source).toBe(dossier.passportSource);
+    }
 
     await page.goto(`/slots/${dossier.slug}`);
     await expect(
