@@ -6,6 +6,12 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
+  "2025-hit-slot": {
+    releaseDate: "10 апреля 2025",
+    gameType: "Fruit Slot",
+    source: "https://endorphina.com/news/set-the-reels-on-fire-with-endorphinas-2025-hit-slot",
+    sourceLabel: "официальный релиз Endorphina от 10.04.2025",
+  },
   "3-coin-towers": {
     releaseDate: "17 февраля 2026",
     gameType: "Oriental Slot",
