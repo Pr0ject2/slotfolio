@@ -6,6 +6,18 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
+  "3-coin-towers": {
+    releaseDate: "17 февраля 2026",
+    gameType: "Oriental Slot",
+    source: "https://endorphina.com/news/endorphina-releases-3-coin-towers-a-festival-of-fortune-with-three-bonus-games",
+    sourceLabel: "официальный релиз Endorphina от 17.02.2026",
+  },
+  "burning-coins-40": {
+    releaseDate: "9 декабря 2025",
+    gameType: "Fruit Game",
+    source: "https://endorphina.com/news/burning-coins-40-a-fiery-new-world-of-multiple-bonus-variations",
+    sourceLabel: "официальный релиз Endorphina от 09.12.2025",
+  },
   "big-bass-bonanza": {
     releaseDate: "14 декабря 2020",
     gameType: "Slot",
