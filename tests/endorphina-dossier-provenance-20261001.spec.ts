@@ -14,6 +14,31 @@ type ExpectedDossier = {
 
 const dossiers: ExpectedDossier[] = [
   {
+    slug: "lucky-streak-1", rtp: "96,09%",
+    source: "https://endorphina.com/games/lucky-streak-1",
+    releaseDate: "8 ноября 2018", gameType: "Fruit Slot",
+    passportSource: "https://endorphina.com/it/news/new-game-lucky-streak-1-will-put-reels-on-fire",
+  },
+  {
+    slug: "hell-hot-40", rtp: "96,04%",
+    source: "https://endorphina.com/games/hell-hot-40",
+    releaseDate: "21 октября 2021", gameType: "Slot",
+    passportSource: "https://endorphina.com/news/ready-to-heat-things-up-in-the-new-hell-hot-40",
+  },
+  {
+    slug: "chance-machine-20", rtp: "96,01%",
+    source: "https://endorphina.com/games/chance-machine-20",
+    releaseDate: "16 сентября 2020", gameType: "Classic Slot",
+    passportSource: "https://endorphina.com/news/they-say-diamonds-are-our-best-friends",
+  },
+  {
+    slug: "dia-de-los-muertos-2", rtp: "96,05%",
+    source: "https://endorphina.com/games/dia-de-los-muertos-2",
+    releaseDate: "24 октября 2023", gameType: "Cascading Slot",
+    passportSource: "https://endorphina.com/news/were-adding-another-cascading-slot-to-our-game-portfolio",
+  },
+
+  {
     slug: "money-train-2", maxWin: "50 000x",
     source: "https://www.relax-gaming.com/products/casino/moneytrain2",
     releaseDate: "2 сентября 2020", gameType: "Slot",
