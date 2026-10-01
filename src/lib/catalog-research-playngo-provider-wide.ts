@@ -22,10 +22,10 @@ const research: Record<string, SourcedCatalogResearch> = {
     evidenceSource: "https://www.playngo.com/games/agent-destiny",
   },
   "playn-go-animal-madness": {
-    mechanics: ["Кластеры", "Каскады"],
+    mechanics: ["Кластеры", "Каскады", "Удаление символов", "Шкала прогресса", "Wilds"],
     source: "https://www.playngo.com/games/animal-madness",
     verifiedAt,
-    evidence: "Official review states that wins form from matching clusters on the 5x5 grid and that winning symbols disappear before new symbols cascade from above.",
+    evidence: "Official Play’n GO page describes cluster wins and cascades, the Sunflower Charge Metre that awards successive Wilds, and Rabbit Destruction removing a row, column, or low-paying symbols on non-winning spins.",
     evidenceSource: "https://www.playngo.com/post/review-animal-madness-play-n-go-grid-slot",
   },
   "playn-go-banana-rock": {

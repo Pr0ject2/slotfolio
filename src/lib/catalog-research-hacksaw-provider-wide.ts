@@ -10,7 +10,7 @@ const research: Record<string, CatalogResearch> = {
     evidence: "Official feature rules state that Spirit symbols become expanding Wilds when they form a win, with reel multipliers and Zephyr-triggered respins.",
   },
   "hacksaw-gaming-chaos-crew-3": {
-    mechanics: ["EPIC DROP™"],
+    mechanics: ["EPIC DROP™", "Множители", "Free Spins"],
     source: "https://www.hacksawgaming.com/games/chaos-crew-3",
     verifiedAt,
     evidence: "Official feature rules state that spelling CHAOS across a row triggers EPIC DROP™, an award spin with a Reel Multiplier and transformed multiplier symbols.",
