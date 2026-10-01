@@ -14,6 +14,19 @@ type ExpectedDossier = {
 
 const dossiers: ExpectedDossier[] = [
   {
+    slug: "crown-coins", rtp: "96,06%", maxWin: "1 000x",
+    source: "https://endorphina.com/games/crown-coins",
+    releaseDate: "4 июля 2024", gameType: "Classic Slot",
+    passportSource: "https://endorphina.com/news/the-classic-crown-coins-slot-joins-our-game-portfolio",
+  },
+  {
+    slug: "lucky-streak-1000", rtp: "96,07%", maxWin: "1 000x",
+    source: "https://endorphina.com/games/lucky-streak-1000",
+    releaseDate: "10 декабря 2024", gameType: "Classic Slot",
+    passportSource: "https://endorphina.com/news/discover-hidden-riches-in-the-online-slot-game-lucky-streak-1000",
+  },
+
+  {
     slug: "2023-hit-slot",
     rtp: "96,01%",
     source: "https://endorphina.com/games/2023-hit-slot",
