@@ -107,6 +107,13 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "2023-hit-slot": {
+    rtpVariants: ["96,01%"],
+    source: "https://endorphina.com/games/2023-hit-slot",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,01%, высокую volatility, поле 6×4 и 4 096 способов выплаты. Общий фиксированный max win поставщиком не заявлен, поэтому значение не выдумывается.",
+  },
   "prestige-crown": {
     rtpVariants: ["96,08%"],
     source: "https://endorphina.com/games/prestige-crown",
