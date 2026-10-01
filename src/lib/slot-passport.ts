@@ -342,6 +342,24 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.hacksawgaming.com/news/hacksaw-gaming-slot-r.i.p.-city-wins-januarys-slot-of-the-month-award",
     sourceLabel: "официальный материал Hacksaw Gaming с датой релиза 05.01.2023",
   },
+  "snake-arena": {
+    releaseDate: "6 января 2020",
+    gameType: "Slot",
+    source: "https://www.relax-gaming.com/news/2020/01/relax-gaming-launches-actionpacked-new-slot-snake-arena-across-network",
+    sourceLabel: "официальный релиз Relax Gaming от 06.01.2020",
+  },
+  "nitro-nights": {
+    releaseDate: "23 июня 2026",
+    gameType: "Slot",
+    source: "https://www.hacksawgaming.com/games/nitro-nights",
+    sourceLabel: "официальная страница Hacksaw Gaming от 23.06.2026",
+  },
+  "max-win-machine": {
+    releaseDate: "6 августа 2026",
+    gameType: "Slot",
+    source: "https://www.hacksawgaming.com/games/max-win-machine",
+    sourceLabel: "официальная страница Hacksaw Gaming от 06.08.2026",
+  },
   "the-dog-house": {
     releaseDate: "9 мая 2019",
     gameType: "Video Slot",
