@@ -16,7 +16,7 @@ const dossiers: ExpectedDossier[] = [
   {
     slug: "money-train-2", rtp: "96,40%", maxWin: "50 000x",
     source: "https://www.relax-gaming.com/products/casino/moneytrain2",
-    releaseDate: "2 сентября 2020", gameType: "Video Slot",
+    releaseDate: "2 сентября 2020", gameType: "Slot",
     passportSource: "https://www.relax-gaming.com/news/2020/08/relax-gaming-to-roll-out-biggest-release-of-the-year-with-money-train-2",
   },
 
