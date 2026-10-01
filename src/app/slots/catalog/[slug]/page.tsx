@@ -99,10 +99,10 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
         <article className="prose">
           {mechanics.length ? <section id="mechanic"><span className="eyebrow accent">Механики</span><h2>Что подтверждено у этой игры</h2><div className="dossier-feature-grid">{mechanics.map((mechanic, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={mechanic}><span>{String(index + 1).padStart(2, "0")}</span><h3>{mechanic}</h3><p>Механика указана в официальном описании игры.</p></article>)}</div></section> : null}
           {details ? <section id="math-profile"><span className="eyebrow accent">Параметры игры</span><h2>Цифры без предположений</h2><div className="dossier-metric-grid">
-            {details.rtp ? <div><span>RTP, справочно</span><strong>{details.rtp}</strong><small>Конфигурация из официального источника</small></div> : null}
-            {details.maxWin ? <div><span>Максимальная выплата</span><strong>{details.maxWin}</strong><small>В единицах ставки</small></div> : null}
-            {details.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>Формулировка разработчика</small></div> : null}
-            {details.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>Структура, указанная разработчиком</small></div> : null}
+            {details.rtp ? <div><span>RTP</span><strong>Подтверждён</strong><small>Точное значение указано в характеристиках выше</small></div> : null}
+            {details.maxWin ? <div><span>Максимальная выплата</span><strong>Подтверждена</strong><small>Точное значение указано в характеристиках выше</small></div> : null}
+            {details.volatility ? <div><span>Волатильность</span><strong>Подтверждена</strong><small>Формулировка разработчика указана выше</small></div> : null}
+            {details.field ? <div><span>Игровое поле</span><strong>Подтверждено</strong><small>Структура указана в характеристиках выше</small></div> : null}
           </div></section> : null}
           <section id="facts"><span className="eyebrow accent">Факты и источники</span><h2>Проверяемая основа записи</h2><p className="source-note">Основной источник: <a href={source} target="_blank" rel="noreferrer">официальная страница разработчика ↗</a>.</p>{sources.length > 1 ? <p className="source-note">Дополнительные официальные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}{research?.evidence ? <p>{research.evidence}</p> : null}<p>Если параметра здесь нет, он не был добавлен без надёжного подтверждения. Для запущенной версии всегда сверяйте правила оператора.</p></section>
         </article>
