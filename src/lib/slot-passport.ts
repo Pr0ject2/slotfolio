@@ -402,6 +402,36 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://mancalagaming.com/news/interview-with-slotscalendar-and-pantel-spyrou",
     sourceLabel: "официальный материал Mancala Gaming от 23.08.2024 с датой выхода 27.08.2024",
   },
+  "coin-craze-jackpot": {
+    releaseDate: "13 мая 2025",
+    gameType: "Slots",
+    source: "https://mancalagaming.com/games/roadmap",
+    sourceLabel: "официальный календарь релизов Mancala Gaming от 13.05.2025",
+  },
+  "caishen-gold-infinity-dragon": {
+    releaseDate: "3 июня 2025",
+    gameType: "Slots",
+    source: "https://mancalagaming.com/games/roadmap",
+    sourceLabel: "официальный календарь релизов Mancala Gaming от 03.06.2025",
+  },
+  "money-booster": {
+    releaseDate: "17 июня 2025",
+    gameType: "Slots",
+    source: "https://mancalagaming.com/games/roadmap",
+    sourceLabel: "официальный календарь релизов Mancala Gaming от 17.06.2025",
+  },
+  "midas-hand-of-fortune": {
+    releaseDate: "29 апреля 2025",
+    gameType: "Slots",
+    source: "https://mancalagaming.com/games/roadmap",
+    sourceLabel: "официальный календарь релизов Mancala Gaming от 29.04.2025",
+  },
+  "mustang-rush": {
+    releaseDate: "11 марта 2025",
+    gameType: "Slots",
+    source: "https://mancalagaming.com/games/roadmap",
+    sourceLabel: "официальный календарь релизов Mancala Gaming от 11.03.2025",
+  },
 };
 
 export function getVerifiedSlotPassport(slug: string) {
