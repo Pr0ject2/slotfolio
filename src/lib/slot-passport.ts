@@ -336,6 +336,12 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://bgaming.com/games/gemhalla",
     sourceLabel: "официальная карточка BGaming от 15.06.2023",
   },
+  "rip-city": {
+    releaseDate: "5 января 2023",
+    gameType: "Slot",
+    source: "https://www.hacksawgaming.com/news/hacksaw-gaming-slot-r.i.p.-city-wins-januarys-slot-of-the-month-award",
+    sourceLabel: "официальный материал Hacksaw Gaming с датой релиза 05.01.2023",
+  },
   "the-dog-house": {
     releaseDate: "9 мая 2019",
     gameType: "Video Slot",
