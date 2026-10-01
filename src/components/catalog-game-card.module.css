@@ -49,6 +49,16 @@
   color: var(--muted);
 }
 
+.number {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 10px;
+  line-height: 1.4;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+}
+
 .metaRow {
   display: flex;
   align-items: flex-start;

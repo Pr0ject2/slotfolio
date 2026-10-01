@@ -35,7 +35,7 @@ function displayFacts(item: CatalogItem): DisplayFact[] {
   return facts.filter((fact) => Boolean(fact.value));
 }
 
-export function CatalogGameCard({ item }: { item: CatalogItem }) {
+export function CatalogGameCard({ item, number }: { item: CatalogItem; number: number }) {
   const href = item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
   const year = displayYear(item);
   const facts = displayFacts(item);
@@ -60,6 +60,7 @@ export function CatalogGameCard({ item }: { item: CatalogItem }) {
 
       <div className="catalog-game-copy">
         <div className={styles.metaRow}>
+          <span className={styles.number} aria-label={`Номер карточки ${number}`}>№ {number}</span>
           <span className="eyebrow">
             {item.provider}{year ? ` / ${year}` : ""}
           </span>
