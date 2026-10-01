@@ -88,8 +88,6 @@ export function Catalog({
   }, [filtersOpen]);
   const deferredQ = useDeferredValue(q);
 
-  const catalogNumbers = useMemo(() => new Map(model.items.map((item, index) => [item.slug, index + 1])), [model.items]);
-
   const results = useMemo(
     () =>
       sortCatalogItems(
@@ -297,7 +295,7 @@ export function Catalog({
           ) : (
             <>
               <div className={"catalog-results " + view}>
-                {visibleResults.map((item) => <CatalogGameCard item={item} number={catalogNumbers.get(item.slug) || 0} key={item.slug} />)}
+                {visibleResults.map((item, index) => <CatalogGameCard item={item} number={offset + index + 1} key={item.slug} />)}
               </div>
 
               {pageCount > 1 && (
