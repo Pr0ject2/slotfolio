@@ -107,6 +107,24 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "3-coin-towers": {
+    maxWin: "1 000x",
+    maxWinLabel: "Максимальный ULTRA Jackpot",
+    rtpVariants: ["96,08%"],
+    source: "https://endorphina.com/games/3-coin-towers",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,08%, высокую volatility, поле 5×3 и 30 фиксированных линий. 1 000x относится именно к ULTRA Jackpot в Coin Hold Bonus при сборе всех 15 символов; это не заявленный общий max win игры.",
+  },
+  "burning-coins-40": {
+    maxWin: "2 000x",
+    maxWinLabel: "Заявленный потенциал бонуса",
+    rtpVariants: ["96,12%"],
+    source: "https://endorphina.com/games/burning-coins-40",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,12%, высокую volatility, поле 5×4 и 40 фиксированных линий. Джекпоты расширенных вариантов Hot Hold Bonus достигают 2 000x от общей ставки; это бонусный потенциал, а не общий фиксированный max win.",
+  },
   "81-burning-ways": {
     rtpVariants: ["96,05%"],
     source: "https://endorphina.com/games/81-burning-ways",
