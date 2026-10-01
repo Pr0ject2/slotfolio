@@ -107,6 +107,15 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "2025-hit-slot": {
+    maxWin: "2 025x",
+    maxWinLabel: "Максимальная выплата",
+    rtpVariants: ["96,05%"],
+    source: "https://endorphina.com/games/2025-hit-slot",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальные материалы Endorphina подтверждают RTP 96,05%, среднюю volatility, поле 5×4 и 100 фиксированных линий. Максимальная выплата игры заявлена как 2 025x от общей ставки.",
+  },
   "3-coin-towers": {
     maxWin: "1 000x",
     maxWinLabel: "Максимальный ULTRA Jackpot",
