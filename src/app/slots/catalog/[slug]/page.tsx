@@ -47,10 +47,14 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const mechanics = research?.mechanics ?? [];
   const source = details?.source ?? gameType?.source ?? research?.source ?? slot.source;
   const sources = Array.from(new Set([slot.source, details?.source, gameType?.source, research?.source].filter((value): value is string => Boolean(value))));
-  const related = catalogModel.items
-    .filter((item) => item.slug !== slot.slug && (item.provider === slot.provider || item.mechanics.some((mechanic) => mechanics.includes(mechanic))))
-    .sort((a, b) => Number(b.provider === slot.provider) - Number(a.provider === slot.provider) || b.mechanics.length - a.mechanics.length || a.name.localeCompare(b.name, "ru"))
-    .slice(0, 6);
+  const releaseSource = details?.releaseDateSource ?? null;
+  const volatilitySource = details?.volatilitySource ?? null;
+  const parameterSource = details?.source ?? gameType?.source ?? slot.source;
+  const separateRelease = Boolean(details?.releaseDate && releaseSource && releaseSource !== parameterSource);
+  const separateVolatility = Boolean(details?.volatility && volatilitySource && volatilitySource !== parameterSource);
+  const providerItems = catalogModel.items.filter((item) => item.slug !== slot.slug && item.provider === slot.provider).sort((a, b) => b.mechanics.length - a.mechanics.length || a.name.localeCompare(b.name, "ru")).slice(0, 6);
+  const providerSlugs = new Set(providerItems.map((item) => item.slug));
+  const mechanicItems = mechanics.length ? catalogModel.items.filter((item) => item.slug !== slot.slug && !providerSlugs.has(item.slug) && item.mechanics.some((mechanic) => mechanics.includes(mechanic))).sort((a, b) => b.mechanics.filter((mechanic) => mechanics.includes(mechanic)).length - a.mechanics.filter((mechanic) => mechanics.includes(mechanic)).length).slice(0, 6) : [];
 
   return (
     <>
@@ -66,6 +70,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
         <div className="slot-summary">
           <span className="eyebrow">Подтверждённые сведения</span>
           <p className="slot-deck">В этой записи показаны только характеристики, подтверждённые страницами разработчика.</p>
+          <h2>Характеристики</h2>
           <dl className="facts catalog-record-facts">
             <div><dt>Провайдер</dt><dd><Link href={`/slots?provider=${providerSlug(slot.provider)}`}>{slot.provider}</Link></dd></div>
             {gameType ? <div><dt>Тип игры</dt><dd>{gameType.gameType}</dd></div> : null}
@@ -75,6 +80,9 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
             {details?.maxWin ? <div><dt>Максимальная выплата</dt><dd>{details.maxWin}</dd></div> : null}
             {date(details?.releaseDate) ? <div><dt>Дата релиза</dt><dd>{date(details?.releaseDate)}</dd></div> : null}
             {mechanics.length ? <div className="facts-wide"><dt>Ключевые механики</dt><dd className="slot-tag-list">{mechanics.map((mechanic) => <Link href={`/slots?mechanic=${encodeURIComponent(mechanic)}`} key={mechanic}>{mechanic}</Link>)}</dd></div> : null}
+            <div><dt>{separateRelease || separateVolatility ? "Источник параметров" : "Источник"}</dt><dd><a href={parameterSource} target="_blank" rel="noreferrer">Официальный каталог ↗</a></dd></div>
+            {separateRelease ? <div><dt>Источник даты релиза</dt><dd><a href={releaseSource!} target="_blank" rel="noreferrer">Официальная публикация ↗</a></dd></div> : null}
+            {separateVolatility ? <div><dt>Источник волатильности</dt><dd><a href={volatilitySource!} target="_blank" rel="noreferrer">Официальный рейтинг ↗</a></dd></div> : null}
           </dl>
           <p className="data-note">Отсутствующие характеристики не заменяются оценками. Версия у оператора может отличаться.</p>
         </div>
@@ -85,7 +93,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
           {mechanics.length ? <a href="#mechanic">Механики</a> : null}
           {details ? <a href="#math-profile">Параметры игры</a> : null}
           <a href="#facts">Источники</a>
-          {related.length ? <a href="#related">Похожие игры</a> : null}
+          {providerItems.length || mechanicItems.length ? <a href="#related">Похожие игры</a> : null}
           <Link href="/slots">Весь каталог ↗</Link>
         </aside>
         <article className="prose">
@@ -99,7 +107,10 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
           <section id="facts"><span className="eyebrow accent">Факты и источники</span><h2>Проверяемая основа записи</h2><p className="source-note">Основной источник: <a href={source} target="_blank" rel="noreferrer">официальная страница разработчика ↗</a>.</p>{sources.length > 1 ? <p className="source-note">Дополнительные официальные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}{research?.evidence ? <p>{research.evidence}</p> : null}<p>Если параметра здесь нет, он не был добавлен без надёжного подтверждения. Для запущенной версии всегда сверяйте правила оператора.</p></section>
         </article>
       </div>
-      {related.length ? <section id="related"><div className="section-title"><h2>Продолжить знакомство</h2><Link className="text-link" href="/slots">В каталог ↗</Link></div><div>{related.map((item, index) => <Link className="game-row" href={itemHref(item)} key={item.slug}><span className="row-index">{String(index + 1).padStart(2, "0")}</span><div className="row-main"><h3>{item.name}</h3><p>{item.provider}{item.mechanics.length ? <><span>·</span>{item.mechanics.join(" · ")}</> : null}</p></div><span className="row-arrow" aria-hidden="true">↗</span></Link>)}</div></section> : null}
+      {providerItems.length || mechanicItems.length ? <section id="related">
+        {providerItems.length ? <><div className="section-title"><h2>Ещё у {slot.provider}</h2><Link className="text-link" href={`/slots?provider=${providerSlug(slot.provider)}`}>Все игры {slot.provider} ↗</Link></div><div>{providerItems.map((item, index) => <Link className="game-row" href={itemHref(item)} key={item.slug}><span className="row-index">{String(index + 1).padStart(2, "0")}</span><div className="row-main"><h3>{item.name}</h3><p>{item.provider}</p></div><span className="row-arrow" aria-hidden="true">↗</span></Link>)}</div></> : null}
+        {mechanicItems.length ? <><div className="section-title"><h2>Похожие по механике</h2><Link className="text-link" href={`/slots?mechanic=${encodeURIComponent(mechanics[0])}`}>Открыть фильтр ↗</Link></div><div>{mechanicItems.map((item, index) => <Link className="game-row" href={itemHref(item)} key={item.slug}><span className="row-index">{String(index + 1).padStart(2, "0")}</span><div className="row-main"><h3>{item.name}</h3><p>{item.provider}</p></div><span className="row-arrow" aria-hidden="true">↗</span></Link>)}</div></> : null}
+      </section> : null}
     </>
   );
 }
