@@ -6,6 +6,12 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
+  "prestige-crown": {
+    releaseDate: "17 июля 2025",
+    gameType: "Cascading Slot",
+    source: "https://endorphina.com/news/prestige-crown-brings-legendary-riches-to-life",
+    sourceLabel: "официальный релиз Endorphina от 17.07.2025",
+  },
   "2021-hit-slot": {
     releaseDate: "11 мая 2021",
     gameType: "Classic Slot Game",
