@@ -10,6 +10,21 @@ type ExpectedDossier = {
 
 const dossiers: ExpectedDossier[] = [
   {
+    slug: "hell-hot-40",
+    rtp: "96,04%",
+    source: "https://endorphina.com/games/hell-hot-40",
+  },
+  {
+    slug: "lucky-streak-1",
+    rtp: "96,09%",
+    source: "https://endorphina.com/games/lucky-streak-1",
+  },
+  {
+    slug: "lucky-streak-3",
+    rtp: "96,01%",
+    source: "https://endorphina.com/games/lucky-streak-3",
+  },
+  {
     slug: "hell-hot-100",
     rtp: "96,07%",
     source: "https://endorphina.com/games/hell-hot-100",
