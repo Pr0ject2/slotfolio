@@ -38,9 +38,10 @@ for (const item of cases) {
     });
 
     await page.goto(`/slots/${item.slug}`);
+    const summary = page.locator(".slot-summary .facts");
+    await expect(summary).toContainText(item.date);
+    await expect(summary).toContainText(item.type);
     const facts = page.locator("#facts");
-    await expect(facts).toContainText(item.date);
-    await expect(facts).toContainText(item.type);
     await expect(facts.getByRole("link", { name: item.label })).toHaveCount(1);
   });
 }
