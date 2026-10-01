@@ -295,7 +295,7 @@ export function Catalog({
           ) : (
             <>
               <div className={"catalog-results " + view}>
-                {visibleResults.map((item) => <CatalogGameCard item={item} key={item.slug} />)}
+                {visibleResults.map((item, index) => <CatalogGameCard item={item} number={offset + index + 1} key={item.slug} />)}
               </div>
 
               {pageCount > 1 && (
