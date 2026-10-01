@@ -6,6 +6,30 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
+  "lucky-streak-1": {
+    releaseDate: "8 ноября 2018",
+    gameType: "Fruit Slot",
+    source: "https://endorphina.com/it/news/new-game-lucky-streak-1-will-put-reels-on-fire",
+    sourceLabel: "официальный релиз Endorphina от 08.11.2018",
+  },
+  "hell-hot-40": {
+    releaseDate: "21 октября 2021",
+    gameType: "Slot",
+    source: "https://endorphina.com/news/ready-to-heat-things-up-in-the-new-hell-hot-40",
+    sourceLabel: "официальный релиз Endorphina от 21.10.2021",
+  },
+  "chance-machine-20": {
+    releaseDate: "16 сентября 2020",
+    gameType: "Classic Slot",
+    source: "https://endorphina.com/news/they-say-diamonds-are-our-best-friends",
+    sourceLabel: "официальный релиз Endorphina от 16.09.2020",
+  },
+  "dia-de-los-muertos-2": {
+    releaseDate: "24 октября 2023",
+    gameType: "Cascading Slot",
+    source: "https://endorphina.com/news/were-adding-another-cascading-slot-to-our-game-portfolio",
+    sourceLabel: "официальный релиз Endorphina от 24.10.2023",
+  },
   "lucky-streak-3": {
     releaseDate: "28 февраля 2019",
     gameType: "Fruit Slot",
