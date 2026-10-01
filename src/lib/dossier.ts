@@ -107,6 +107,29 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "81-burning-ways": {
+    rtpVariants: ["96,05%"],
+    source: "https://endorphina.com/games/81-burning-ways",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,05%, высокую volatility, поле 4 × 3 и 81 фиксированный способ выплаты. Wild превращается в 2x multiplier; несколько Wild перемножаются, но это механика отдельных комбинаций, а не общий max win. Провайдер общего cap не публикует.",
+  },
+  "crown-coins": {
+    maxWin: "1 000x",
+    maxWinLabel: "Заявленный потенциал бонуса",
+    rtpVariants: ["96,06%"],
+    source: "https://endorphina.com/games/crown-coins",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,06%, Medium-High volatility, поле 3 × 3 и пять фиксированных линий. Royal Treasury Bonus содержит четыре jackpot-приза до 1 000x total bet. Это потенциал бонуса, а не отдельно опубликованный общий fixed max win.",
+  },
+  "ultra-fresh": {
+    rtpVariants: ["96,01%"],
+    source: "https://endorphina.com/games/ultra-fresh",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,01%, низкую volatility, поле 3 × 3 и пять линий. Полный экран одинаковых символов умножает выигрыш на 2x, но это не общий max win. Провайдер общего cap не публикует.",
+  },
   "hell-hot-40": {
     rtpVariants: ["96,04%"],
     source: "https://endorphina.com/games/hell-hot-40",
