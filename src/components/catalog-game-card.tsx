@@ -43,6 +43,8 @@ export function CatalogGameCard({ item, number }: { item: CatalogItem; number: n
   return (
     <article
       className={`catalog-game ${item.coverage === "catalog" ? "catalog-only" : ""} ${styles.card}`}
+      data-slot={item.slug}
+      data-card-number={number}
       data-coverage={item.coverage}
       data-verified-facts={item.verifiedFacts}
     >
