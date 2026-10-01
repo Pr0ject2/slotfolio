@@ -324,6 +324,18 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://wazdan.com/games/mighty-hot-amazonia",
     sourceLabel: "официальная карточка Wazdan от 30.06.2026",
   },
+  "jungle-volcano": {
+    releaseDate: "7 мая 2026",
+    gameType: "Slot",
+    source: "https://3oaks.com/news/new-release-jungle-volcano",
+    sourceLabel: "официальный релиз 3 Oaks Gaming от 07.05.2026",
+  },
+  gemhalla: {
+    releaseDate: "15 июня 2023",
+    gameType: "Slots",
+    source: "https://bgaming.com/games/gemhalla",
+    sourceLabel: "официальная карточка BGaming от 15.06.2023",
+  },
   "the-dog-house": {
     releaseDate: "9 мая 2019",
     gameType: "Video Slot",
