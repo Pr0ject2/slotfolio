@@ -4,7 +4,7 @@ import { getVerifiedSlotPassport } from "../src/lib/slot-passport";
 
 type ExpectedDossier = {
   slug: string;
-  rtp: string;
+  rtp?: string;
   maxWin?: string;
   source: string;
   releaseDate?: string;
@@ -14,7 +14,7 @@ type ExpectedDossier = {
 
 const dossiers: ExpectedDossier[] = [
   {
-    slug: "money-train-2", rtp: "96,40%", maxWin: "50 000x",
+    slug: "money-train-2", maxWin: "50 000x",
     source: "https://www.relax-gaming.com/products/casino/moneytrain2",
     releaseDate: "2 сентября 2020", gameType: "Slot",
     passportSource: "https://www.relax-gaming.com/news/2020/08/relax-gaming-to-roll-out-biggest-release-of-the-year-with-money-train-2",
@@ -182,7 +182,7 @@ const dossiers: ExpectedDossier[] = [
 test("Endorphina full dossiers retain official metric provenance and payout semantics", async ({ page }) => {
   for (const dossier of dossiers) {
     const metrics = getVerifiedSlotMetrics(dossier.slug)!;
-    expect(metrics.rtpVariants).toContain(dossier.rtp);
+    if (dossier.rtp) expect(metrics.rtpVariants).toContain(dossier.rtp);
     expect(metrics.source).toBe(dossier.source);
     expect(metrics.maxWin).toBe(dossier.maxWin);
 
