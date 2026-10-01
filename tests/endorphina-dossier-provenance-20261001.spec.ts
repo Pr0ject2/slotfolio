@@ -14,6 +14,25 @@ type ExpectedDossier = {
 
 const dossiers: ExpectedDossier[] = [
   {
+    slug: "burning-coins-20", rtp: "96,01%", maxWin: "1 000x",
+    source: "https://endorphina.com/games/burning-coins-20",
+    releaseDate: "15 мая 2025", gameType: "Classic Slot",
+    passportSource: "https://endorphina.com/news/burning-coins-20-strengthens-endorphinas-classic-slot-range",
+  },
+  {
+    slug: "hell-hot-100", rtp: "96,07%",
+    source: "https://endorphina.com/games/hell-hot-100",
+    releaseDate: "26 мая 2021", gameType: "Slot",
+    passportSource: "https://endorphina.com/news/take-the-heat-in-hell-hot-100",
+  },
+  {
+    slug: "81-burning-ways", rtp: "96,05%",
+    source: "https://endorphina.com/games/81-burning-ways",
+    releaseDate: "20 августа 2024", gameType: "Classic Slot",
+    passportSource: "https://endorphina.com/news/81-burning-ways-the-newest-classic-fruit-slot-makes-way-to-our-portfolio",
+  },
+
+  {
     slug: "crown-coins", rtp: "96,06%", maxWin: "1 000x",
     source: "https://endorphina.com/games/crown-coins",
     releaseDate: "4 июля 2024", gameType: "Classic Slot",
