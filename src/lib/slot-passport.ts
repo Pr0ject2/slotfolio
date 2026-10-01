@@ -6,6 +6,12 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
+  "lucky-streak-3": {
+    releaseDate: "28 февраля 2019",
+    gameType: "Fruit Slot",
+    source: "https://endorphina.com/news/drop-it-like-it-s-hot-lucky-streak-3-just-landed-in-our-portfolio",
+    sourceLabel: "официальный релиз Endorphina от 28.02.2019",
+  },
   "burning-coins-20": {
     releaseDate: "15 мая 2025",
     gameType: "Classic Slot",
