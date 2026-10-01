@@ -6,6 +6,12 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
+  "money-train-2": {
+    releaseDate: "2 сентября 2020",
+    gameType: "Video Slot",
+    source: "https://www.relax-gaming.com/news/2020/08/relax-gaming-to-roll-out-biggest-release-of-the-year-with-money-train-2",
+    sourceLabel: "официальный релиз Relax Gaming от 02.09.2020",
+  },
   "lucky-streak-3": {
     releaseDate: "28 февраля 2019",
     gameType: "Fruit Slot",
