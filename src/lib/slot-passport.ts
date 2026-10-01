@@ -6,6 +6,18 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
+  "crown-coins": {
+    releaseDate: "4 июля 2024",
+    gameType: "Classic Slot",
+    source: "https://endorphina.com/news/the-classic-crown-coins-slot-joins-our-game-portfolio",
+    sourceLabel: "официальный релиз Endorphina от 04.07.2024",
+  },
+  "lucky-streak-1000": {
+    releaseDate: "10 декабря 2024",
+    gameType: "Classic Slot",
+    source: "https://endorphina.com/news/discover-hidden-riches-in-the-online-slot-game-lucky-streak-1000",
+    sourceLabel: "официальный релиз Endorphina от 10.12.2024",
+  },
   "2023-hit-slot": {
     releaseDate: "14 марта 2023",
     gameType: "Video Slot",
