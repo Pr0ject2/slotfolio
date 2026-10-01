@@ -6,6 +6,24 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
+  "burning-coins-20": {
+    releaseDate: "15 мая 2025",
+    gameType: "Classic Slot",
+    source: "https://endorphina.com/news/burning-coins-20-strengthens-endorphinas-classic-slot-range",
+    sourceLabel: "официальный релиз Endorphina от 15.05.2025",
+  },
+  "hell-hot-100": {
+    releaseDate: "26 мая 2021",
+    gameType: "Slot",
+    source: "https://endorphina.com/news/take-the-heat-in-hell-hot-100",
+    sourceLabel: "официальный релиз Endorphina от 26.05.2021",
+  },
+  "81-burning-ways": {
+    releaseDate: "20 августа 2024",
+    gameType: "Classic Slot",
+    source: "https://endorphina.com/news/81-burning-ways-the-newest-classic-fruit-slot-makes-way-to-our-portfolio",
+    sourceLabel: "официальный релиз Endorphina от 20.08.2024",
+  },
   "crown-coins": {
     releaseDate: "4 июля 2024",
     gameType: "Classic Slot",
