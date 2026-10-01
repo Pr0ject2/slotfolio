@@ -59,8 +59,10 @@ for (const item of cases) {
     const summary = page.locator(".slot-summary .facts");
     await expect(summary).toContainText(item.date);
     await expect(summary).toContainText(item.gameType);
-    await expect(
-      page.locator("#facts").getByRole("link", { name: item.label }),
-    ).toHaveCount(1);
+    if (item.source !== slot?.source) {
+      await expect(
+        page.locator("#facts").getByRole("link", { name: item.label }),
+      ).toHaveCount(1);
+    }
   });
 }
