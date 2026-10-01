@@ -45,11 +45,11 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const gameType = getVerifiedCatalogGameType(slot.slug);
   const research = getVerifiedCatalogResearch(slot.slug);
   const mechanics = research?.mechanics ?? [];
-  const source = details?.source ?? gameType?.source ?? research?.source ?? slot.source;
+  const source = details?.source ?? gameType?.source ?? slot.source;
   const sources = Array.from(new Set([slot.source, details?.source, gameType?.source, research?.source].filter((value): value is string => Boolean(value))));
   const releaseSource = details?.releaseDateSource ?? null;
   const volatilitySource = details?.volatilitySource ?? null;
-  const parameterSource = details?.source ?? gameType?.source ?? slot.source;
+  const parameterSource = source;
   const separateRelease = Boolean(details?.releaseDate && releaseSource && releaseSource !== parameterSource);
   const separateVolatility = Boolean(details?.volatility && volatilitySource && volatilitySource !== parameterSource);
   const providerItems = catalogModel.items.filter((item) => item.slug !== slot.slug && item.provider === slot.provider).sort((a, b) => b.mechanics.length - a.mechanics.length || a.name.localeCompare(b.name, "ru")).slice(0, 6);
