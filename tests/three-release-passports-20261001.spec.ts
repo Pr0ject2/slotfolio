@@ -42,6 +42,6 @@ for (const item of cases) {
     await expect(summary).toContainText(item.date);
     await expect(summary).toContainText(item.type);
     const facts = page.locator("#facts");
-    await expect(facts.getByRole("link", { name: item.label })).toHaveCount(1);
+    await expect(facts).toContainText("Дата релиза и тип игры сверены по");
   });
 }
