@@ -11,6 +11,7 @@ const details: Record<string, CatalogVerifiedDetails> = {
     rtp: "96,04%",
     maxWin: "1 400x",
     volatility: "Высокая",
+    releaseDate: "2026-09-03",
     source: "https://endorphina.com/games/3-golden-chests/play",
     verifiedAt: verifiedAtFinal,
   },
