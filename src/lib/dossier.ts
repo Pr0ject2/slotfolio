@@ -107,6 +107,27 @@ const verifiedMetricOverlays: Record<string, VerifiedMetricOverlay> = {
       },
     ],
   },
+  "hell-hot-40": {
+    rtpVariants: ["96,04%"],
+    source: "https://endorphina.com/games/hell-hot-40",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,04%, низкую volatility, поле 5 × 4 и 40 фиксированных линий. Stacked Wild и Scatter не меняют базовую линейную механику, а Risk Game относится к отдельной выплате. Общий max win провайдер не публикует.",
+  },
+  "lucky-streak-1": {
+    rtpVariants: ["96,09%"],
+    source: "https://endorphina.com/games/lucky-streak-1",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,09%, среднюю volatility, поле 5 × 4 и 40 линий. Wild может появляться stacked, а Risk Game отделена от базовой игры. Общий max win провайдер не публикует.",
+  },
+  "lucky-streak-3": {
+    rtpVariants: ["96,01%"],
+    source: "https://endorphina.com/games/lucky-streak-3",
+    sourceLabel: "текущая официальная карточка Endorphina",
+    note:
+      "Официальная карточка Endorphina подтверждает RTP 96,01%, низкую volatility, поле 3 × 3 и пять линий. При полном экране одинаковых символов выигрыш умножается на 2x, но это не объявленный общий max win. Общий cap провайдер не публикует.",
+  },
   "hell-hot-100": {
     rtpVariants: ["96,07%"],
     source: "https://endorphina.com/games/hell-hot-100",
