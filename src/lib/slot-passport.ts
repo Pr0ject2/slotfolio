@@ -6,6 +6,12 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
+  "2023-hit-slot": {
+    releaseDate: "14 марта 2023",
+    gameType: "Video Slot",
+    source: "https://endorphina.com/news/2023-hit-slot-2",
+    sourceLabel: "официальный релиз Endorphina от 14.03.2023",
+  },
   "prestige-crown": {
     releaseDate: "17 июля 2025",
     gameType: "Cascading Slot",
