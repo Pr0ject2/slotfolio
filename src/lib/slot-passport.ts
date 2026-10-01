@@ -372,6 +372,36 @@ const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
     source: "https://www.pragmaticplay.com/en/news/pragmatic-play-launches-the-dog-house/",
     sourceLabel: "официальный релиз Pragmatic Play от 09.05.2019",
   },
+  "caramelo-jackpot": {
+    releaseDate: "21 марта 2024",
+    gameType: "Video Slot",
+    source: "https://onlyplay.net/games/caramelo-jackpot",
+    sourceLabel: "официальная страница Onlyplay от 21.03.2024",
+  },
+  "hot-and-spicy-jackpot": {
+    releaseDate: "1 октября 2021",
+    gameType: "Video Slots",
+    source: "https://onlyplay.com/games/hot-and-spicy-jackpot",
+    sourceLabel: "официальная страница Onlyplay от 01.10.2021",
+  },
+  "coin-flynn": {
+    releaseDate: "12 декабря 2024",
+    gameType: "Video Slots",
+    source: "https://onlyplay.com/games/coin-flynn",
+    sourceLabel: "официальная страница Onlyplay от 12.12.2024",
+  },
+  "fruit-train-express-hold-win": {
+    releaseDate: "6 мая 2025",
+    gameType: "Video Slots",
+    source: "https://onlyplay.com/games/fruit-train-express-hold-and-win",
+    sourceLabel: "официальная страница Onlyplay от 06.05.2025",
+  },
+  "power-of-zeus-mancala": {
+    releaseDate: "27 августа 2024",
+    gameType: "Video Slot",
+    source: "https://mancalagaming.com/news/interview-with-slotscalendar-and-pantel-spyrou",
+    sourceLabel: "официальный материал Mancala Gaming от 23.08.2024 с датой выхода 27.08.2024",
+  },
 };
 
 export function getVerifiedSlotPassport(slug: string) {
