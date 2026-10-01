@@ -4,7 +4,7 @@ const verifiedAt = "2026-09-18";
 
 const records: Record<string, CatalogResearch> = {
   "hacksaw-gaming-2-wild-2-die": {
-    mechanics: ["Линии", "Множители"],
+    mechanics: ["Линии", "Revolver", "Sticky Wilds", "Множители"],
     source: "https://www.hacksawgaming.com/games/2-wild-2-die",
     verifiedAt,
     evidence: "Official Revolver rules turn hit positions into Wild Multipliers, add multiplier values on repeat hits and use additive/multiplicative multipliers in the Most Wanted bonus.",
