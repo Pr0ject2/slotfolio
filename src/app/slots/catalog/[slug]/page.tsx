@@ -66,7 +66,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
         <div className="slot-summary">
           <span className="eyebrow">Подтверждённые сведения</span>
           <p className="slot-deck">В этой записи показаны только характеристики, подтверждённые страницами разработчика.</p>
-          <dl className="facts">
+          <dl className="facts catalog-record-facts">
             <div><dt>Провайдер</dt><dd><Link href={`/slots?provider=${providerSlug(slot.provider)}`}>{slot.provider}</Link></dd></div>
             {gameType ? <div><dt>Тип игры</dt><dd>{gameType.gameType}</dd></div> : null}
             {details?.field ? <div><dt>Игровое поле</dt><dd>{details.field}</dd></div> : null}
