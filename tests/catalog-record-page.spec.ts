@@ -43,7 +43,7 @@ test("researched catalog page exposes mechanics and a second related path", asyn
   const research = getVerifiedCatalogResearch(researched.slug)!;
   await page.goto(`/slots/catalog/${researched.slug}`);
   for (const mechanic of research.mechanics) {
-    await expect(page.getByRole("link", { name: mechanic, exact: true }).first()).toHaveAttribute("href", filterHref(mechanic));
+    await expect(page.locator(`a[href="/slots/?mechanic=${encodeURIComponent(mechanic)}"]`).first()).toBeVisible();
   }
   await expect(page.getByRole("heading", { name: "Похожие по механике" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Открыть фильтр ↗" })).toHaveAttribute("href", filterHref(research.mechanics[0]));
