@@ -3791,6 +3791,13 @@ summary {
   margin-bottom: 28px;
 }
 .comparison-selection article,
+.mechanics-evidence {
+  max-width: 720px;
+  margin: 0 0 28px;
+}
+.catalog-mechanic-list {
+  margin-top: 24px;
+}
 .comparison-selection-empty {
   position: relative;
   min-height: 138px;
