@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/editorial";
+import { SlotArtwork } from "@/components/slot-artwork";
+import { withBasePath } from "@/lib/base-path";
 import { catalogSeeds, getCatalogSeed } from "@/lib/catalog-seeds";
 import { getVerifiedCatalogResearch } from "@/lib/catalog-research-lookup";
 import { getVerifiedCatalogDetails } from "@/lib/catalog-verified-details-lookup";
@@ -67,6 +69,16 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
         </div>
       </div>
       <div className="slot-intro catalog-dossier-intro">
+        <figure className="slot-figure">
+          <SlotArtwork
+            className="game-image catalog-dossier-art"
+            src={withBasePath("/images/unavailable.svg")}
+            alt="Карточка игры"
+            width={500}
+            height={280}
+          />
+          <figcaption>Карточка игры · {slot.provider} · {slot.name}</figcaption>
+        </figure>
         <div className="slot-summary">
           <span className="eyebrow">Подтверждённые сведения</span>
           <p className="slot-deck">В этой записи показаны только характеристики, подтверждённые страницами разработчика.</p>
