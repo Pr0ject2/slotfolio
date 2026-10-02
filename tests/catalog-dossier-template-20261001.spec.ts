@@ -34,3 +34,19 @@ test("3 Aztec Temples shows only its own translated mechanics details", async ({
   await expect(page.getByRole("heading", { name: "Три храмовые шкалы" })).toBeVisible();
   await expect(page.locator("#functions")).not.toContainText("Дополнительная функция меняет сценарий игрового раунда.");
 });
+
+for (const [slug, title, text] of [
+  ["3-oaks-gaming-3-clover-pots-extra", "Rainbow Coin в Hold & Win", "Rainbow Coin может открыть ещё одну функцию горшка"],
+  ["3-oaks-gaming-3-coin-volcanoes", "Life, Multi и Grow", "Grow открывает две дополнительные строки"],
+  ["3-oaks-gaming-3-coins", "Алмаз x100–x500", "алмаз с множителем от x100 до x500"],
+  ["3-oaks-gaming-3-egypt-chests", "Multi, Extra и Double", "Double удваивает игровое поле"],
+  ["3-oaks-gaming-3-hot-chillies", "Три режима усиления", "Double Reels открывает второе поле"],
+] as const) {
+  test(`catalog ${slug} shows its own Russian mechanics`, async ({ page }) => {
+    await page.goto(`/slots/catalog/${slug}`);
+    await expect(page.locator("#functions")).toBeVisible();
+    await expect(page.getByRole("heading", { name: title })).toBeVisible();
+    await expect(page.locator("#functions")).toContainText(text);
+    await expect(page.locator("#functions")).not.toContainText("Дополнительная функция меняет сценарий игрового раунда.");
+  });
+}
