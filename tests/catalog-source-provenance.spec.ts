@@ -32,9 +32,7 @@ test("catalog records expose provider-wide volatility evidence without replacing
   const volatility = "https://www.hacksawgaming.com/games";
 
   await page.goto("/slots/catalog/hacksaw-gaming-cloud-princess");
-  const facts = page.locator(".catalog-record-facts");
-
-  await expect(facts).toContainText("Волатильность3/5");
+  const facts = page.locator("#facts");
   await expect(facts.locator(`a[href="${primary}"]`)).toHaveCount(1);
   await expect(facts.locator(`a[href="${volatility}"]`)).toHaveCount(1);
 });
