@@ -37,6 +37,11 @@ const slots = [
   "3-oaks-gaming-coin-express",
   "3-oaks-gaming-coin-lamp",
   "3-oaks-gaming-coin-princess-x1000",
+  "3-oaks-gaming-coin-up-volcano",
+  "3-oaks-gaming-coin-volcano",
+  "3-oaks-gaming-coin-volcano-2",
+  "3-oaks-gaming-crystal-scarabs",
+  "3-oaks-gaming-dancing-joker",
 ];
 
 test("approved 3 Oaks catalog cards use their local game artwork", async ({ page }) => {
