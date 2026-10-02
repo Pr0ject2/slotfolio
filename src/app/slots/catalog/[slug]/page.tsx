@@ -139,6 +139,41 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       { title: "Collect, Multi и Extra", description: "Collect собирает значения, Multi добавляет множители к пустым ячейкам, Extra открывает две дополнительные строки и может дублировать символ между ними. Расширенная полная сетка приносит Extra Grand Jackpot." },
       { title: "Master Drum в респинах", description: "Master Drum может сработать в любой момент респинов и добавить до трёх бонусных символов, в том числе с джекпотами. В базовой игре он также может включать функции барабанов." },
     ],
+  },,
+  "3-oaks-gaming-4-clover-pots": {
+    features: [
+      { title: "Три малых горшка", description: "Фиолетовый, синий и красный горшки заполняются клеверами и запускают Hold & Win. В бонусе доступны MINI, MINOR и MAJOR, а полное поле может дать Grand Jackpot." },
+      { title: "Multi, Collect и Mystery", description: "Multi ставит множитель до x5 на пустую ячейку, Collect собирает текущие значения, Mystery может открыть дорогой бонусный символ или один из джекпотов от MINI до MAJOR." },
+      { title: "Super Pot 10 000x", description: "Четвёртый большой горшок запускает Super Bonus с одной, двумя или тремя функциями и добавляет две строки. Заполнение всех 25 ячеек может принести Super Jackpot 10 000x ставки." },
+    ],
+  },
+  "3-oaks-gaming-4-fairy-flowers": {
+    features: [
+      { title: "Три цветка запускают Hold & Win", description: "Красный, фиолетовый и зелёный цветки заполняются символами прогресса. Полностью раскрытый хотя бы один цветок включает Hold & Win с MINI, MINOR и MAJOR; полная сетка даёт Grand Jackpot." },
+      { title: "Extra, Collect и Multi", description: "Extra открывает денежное значение, Collect собирает текущие значения, Multi даёт множители. Mystery Symbol может также включить неактивную функцию." },
+      { title: "Magic Bonus четвёртого цветка", description: "Magic Progress Symbols пробуждают четвёртый цветок. Magic Bonus стартует хотя бы с одной функцией, расширяет поле на две строки, а фея может добавлять символы и восстанавливать респины." },
+    ],
+  },
+  "3-oaks-gaming-4-fortune-clovers": {
+    features: [
+      { title: "Четыре шкалы клевера", description: "Совпадающие символы заполняют четыре шкалы и запускают Hold & Win. В бонусе могут появиться MINI, MINOR и MAJOR, а полная сетка клеверов даёт Grand Jackpot." },
+      { title: "Expand, Multi, Boost и Collect", description: "Expand открывает дополнительные строки до сетки 5×6, Multi выдаёт множители, Boost прибавляет случайное значение до трём символам, Collect собирает все видимые призы." },
+      { title: "Fortune Situation", description: "Перед бонусом Fortune Situation может нарастить дополнительные клеверы до шести бонусных символов и случайно включить дополнительные функции. Mystery Symbol тоже превращается в один из feature-символов." },
+    ],
+  },
+  "3-oaks-gaming-4-pots-of-egypt": {
+    features: [
+      { title: "Четыре горшка и Hold & Win", description: "Четыре шкалы-горшка заполняются символами прогресса и запускают Hold & Win. Бонусные монеты могут содержать MINI, MINOR, MAXI, MAJOR или GRAND, а полное поле даёт Royal Jackpot." },
+      { title: "Четыре функции горшков", description: "Boost увеличивает все значения, Collect собирает видимые значения, Multi применяет множитель ко всем символам, а Jackpot Feature добавляет от MINI до MAJOR к трём случайным символам." },
+      { title: "Mystery в респинах", description: "Mystery Symbol в серии респинов превращается в одну из четырёх функций. Если заполнены все четыре шкалы, все функции запускаются одновременно." },
+    ],
+  },
+  "3-oaks-gaming-4-wolf-drums": {
+    features: [
+      { title: "Три волчьих барабана", description: "Зелёная, синяя и красная шкалы заполняются бонусными символами и запускают Hold & Win. В бонусе доступны MINI, MINOR, MAJOR и GRAND; полная сетка также даёт Grand Jackpot." },
+      { title: "Collect, Multi и Mirror", description: "Collect собирает значения, Multi добавляет множители в пустые ячейки и повышает их на +1 при повторном попадании. Mirror открывает две строки и может продублировать символ между ними." },
+      { title: "Master Drum", description: "Master Drum может сработать в любой момент бонуса: добавить бонусные или jackpot-символы в пустые ячейки, сбросить респины либо включить неактивную функцию." },
+    ],
   },
 };
 
