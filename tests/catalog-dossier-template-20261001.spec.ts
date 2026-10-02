@@ -14,6 +14,7 @@ for (const slug of ["bgaming-multi-rush", "playn-go-nsync-pop"]) {
     await expect(page.locator("#facts")).toBeVisible();
     await expect(page.locator(".slot-deck")).not.toContainText(/Official page|Official release|Подтверждённое игровое поле/);
     await expect(page.locator("body")).not.toContainText("Механика «");
+    await expect.poll(() => page.locator(".dossier-feature-card p").count()).toBeGreaterThan(0);
     await expect(page.locator("body")).not.toContainText("подтверждённые механики собраны по официальной странице");
     await expect(page.locator(".catalog-record-page")).toHaveCount(0);
   });
