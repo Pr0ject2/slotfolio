@@ -22,6 +22,11 @@ const slots = [
   "3-oaks-gaming-4-pots-of-egypt",
   "3-oaks-gaming-4-wolf-drums",
   "3-oaks-gaming-777-fruity-coins",
+  "3-oaks-gaming-777-gems-respin",
+  "3-oaks-gaming-amazonia-wins",
+  "3-oaks-gaming-aztec-fire",
+  "3-oaks-gaming-aztec-fire-2",
+  "3-oaks-gaming-aztec-sun",
 ];
 
 test("approved 3 Oaks catalog cards use their local game artwork", async ({ page }) => {
