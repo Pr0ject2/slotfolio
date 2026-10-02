@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/editorial";
-import { SlotArtwork } from "@/components/slot-artwork";
-import { withBasePath } from "@/lib/base-path";
 import { catalogSeeds, getCatalogSeed } from "@/lib/catalog-seeds";
 import { getVerifiedCatalogResearch } from "@/lib/catalog-research-lookup";
 import { getVerifiedCatalogDetails } from "@/lib/catalog-verified-details-lookup";
@@ -71,19 +69,17 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
       </div>
       <div className="slot-intro catalog-dossier-intro">
         <figure className="slot-figure">
-          <SlotArtwork
-            className="game-image catalog-dossier-art"
-            src={withBasePath("/images/unavailable.svg")}
-            alt="Карточка игры"
-            width={500}
-            height={280}
-          />
-          <figcaption>Карточка игры · {slot.provider} · {slot.name}</figcaption>
+          <div className="catalog-editorial-cover" role="img" aria-label={`Обложка записи ${slot.name}`}>
+            <span>{slot.provider}</span>
+            <strong>{slot.name}</strong>
+            <small>Slotfolio · каталог игры</small>
+          </div>
+          <figcaption>Редакционная обложка · {slot.provider} · {slot.name}</figcaption>
         </figure>
         <div className="slot-summary">
-          <span className="eyebrow">Подтверждённые сведения</span>
-          <p className="slot-deck">В этой записи показаны только характеристики, подтверждённые страницами разработчика.</p>
-          <h2>Характеристики</h2>
+          <span className="eyebrow">Суть игры</span>
+          <p className="slot-deck">{research?.evidence || `${slot.name} представлена в официальном каталоге ${slot.provider}.`}</p>
+          <h2 className="catalog-facts-heading">Характеристики</h2>
           <dl className="facts catalog-record-facts">
             <div><dt>Провайдер</dt><dd><Link href={`/slots?provider=${providerSlug(slot.provider)}`}>{slot.provider}</Link></dd></div>
             {gameType ? <div><dt>Тип игры</dt><dd>{gameType.gameType}</dd></div> : null}
@@ -102,22 +98,22 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
       </div>
       <div className="article-layout slot-body">
         <aside className="article-toc">
-          <span className="eyebrow">В этой записи</span>
-          {mechanics.length ? <a href="#mechanic">Механики</a> : null}
-          {details ? <a href="#math-profile">Параметры игры</a> : null}
-          <a href="#facts">Источники</a>
+          <span className="eyebrow">В этом досье</span>
+          {mechanics.length ? <a href="#mechanic">Как устроена игра</a> : null}
+          {details ? <a href="#math-profile">Математический профиль</a> : null}
+          <a href="#facts">Факты и источники</a>
           {providerItems.length || mechanicItems.length ? <a href="#related">Похожие игры</a> : null}
           <Link href="/slots">Весь каталог ↗</Link>
         </aside>
         <article className="prose">
-          {mechanics.length ? <section id="mechanic"><span className="eyebrow accent">Механики</span><h2>Что подтверждено у этой игры</h2>{research?.evidence ? <p className="mechanics-evidence">{research.evidence}</p> : null}{mechanicsWithDetails.length ? <div className="dossier-feature-grid">{mechanicsWithDetails.map((mechanic, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={mechanic}><span>{String(index + 1).padStart(2, "0")}</span><h3>{mechanic}</h3><p>{research?.mechanicDetails?.[mechanic]}</p></article>)}</div> : <div className="slot-tag-list catalog-mechanic-list">{mechanics.map((mechanic) => <Link href={`/slots?mechanic=${encodeURIComponent(mechanic)}`} key={mechanic}>{mechanic}</Link>)}</div>}</section> : null}
-          {details ? <section id="math-profile"><span className="eyebrow accent">Параметры игры</span><h2>Цифры без предположений</h2><div className="dossier-metric-grid">
-            {details.rtp ? <div><span>RTP</span><strong>Подтверждён</strong><small>Точное значение указано в характеристиках выше</small></div> : null}
-            {details.maxWin ? <div><span>Максимальная выплата</span><strong>Подтверждена</strong><small>Точное значение указано в характеристиках выше</small></div> : null}
-            {details.volatility ? <div><span>Волатильность</span><strong>Подтверждена</strong><small>Формулировка разработчика указана выше</small></div> : null}
-            {details.field ? <div><span>Игровое поле</span><strong>Подтверждено</strong><small>Структура указана в характеристиках выше</small></div> : null}
-          </div></section> : null}
-          <section id="facts"><span className="eyebrow accent">Факты и источники</span><h2>Проверяемая основа записи</h2><p className="source-note">Основной источник: <a href={source} target="_blank" rel="noreferrer">официальная страница разработчика ↗</a>.</p>{sources.length > 1 ? <p className="source-note">Дополнительные официальные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}{research?.evidence ? <p>{research.evidence}</p> : null}<p>Если параметра здесь нет, он не был добавлен без надёжного подтверждения. Для запущенной версии всегда сверяйте правила оператора.</p></section>
+          {mechanics.length ? <section id="mechanic"><h2>Как устроена игра</h2>{research?.evidence ? <p className="mechanics-evidence">{research.evidence}</p> : null}<p>Механики ниже приведены только по подтверждённому описанию игры.</p><div className="dossier-feature-grid">{mechanics.map((mechanic, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={mechanic}><span>{String(index + 1).padStart(2, "0")}</span><h3>{mechanic}</h3><p>{research?.mechanicDetails?.[mechanic] || research?.evidence || "Подтверждённая механика из официального описания игры."}</p></article>)}</div></section> : null}
+          {details ? <section id="math-profile"><span className="eyebrow accent">Математический профиль</span><h2>Цифры без ложной точности</h2><div className="dossier-metric-grid">
+            {details.rtp ? <div><span>RTP, справочно</span><strong>{details.rtp}</strong><small>Параметр из официального источника</small></div> : null}
+            {details.maxWin ? <div><span>Максимальная выплата</span><strong>{details.maxWin}</strong><small>Формулировка из официального источника</small></div> : null}
+            {details.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>Категория разработчика</small></div> : null}
+            {details.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.join(" · ")}</small></div> : null}
+          </div><p className="metric-caveat">Параметры могут отличаться у конкретного оператора. Неуказанные значения не подставляются.</p></section> : null}
+          <section id="facts"><span className="eyebrow accent">Факты и источники</span><h2>Как читать числа</h2><p className="source-note">Основной источник: <a href={source} target="_blank" rel="noreferrer">официальная страница разработчика ↗</a>.</p>{sources.length > 1 ? <p className="source-note">Дополнительные официальные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}{research?.evidence ? <p>{research.evidence}</p> : null}<p>Если параметра здесь нет, он не был добавлен без надёжного подтверждения. Для запущенной версии всегда сверяйте правила оператора.</p></section>
         </article>
       </div>
       {providerItems.length || mechanicItems.length ? <section id="related">
