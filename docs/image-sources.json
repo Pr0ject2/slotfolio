@@ -528,5 +528,40 @@
     "image": "https://3oaks.com/media/thumbnails/public/4_clover_pots/4_clover_pots_banner_uowsf_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-4-clover-pots.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-4-fairy-flowers",
+    "page": "https://3oaks.com/game/4_fairy_flowers",
+    "image": "https://3oaks.com/media/thumbnails/public/4_fairy_flowers/4_fairy_flowers_banner_ruinz_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-4-fairy-flowers.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-4-fortune-clovers",
+    "page": "https://3oaks.com/game/4_fortune_clovers",
+    "image": "https://3oaks.com/media/thumbnails/public/4_fortune_clovers/4_fortune_clovers_banner_wajkr_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-4-fortune-clovers.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-4-pots-of-egypt",
+    "page": "https://3oaks.com/game/4_pots_of_egypt",
+    "image": "https://3oaks.com/media/thumbnails/public/4_pots_of_egypt/4_pots_of_egypt_banner_nparh_768x432.png",
+    "local": "/images/catalog/3-oaks-gaming-4-pots-of-egypt.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-4-wolf-drums",
+    "page": "https://3oaks.com/game/4_wolf_drums",
+    "image": "https://3oaks.com/media/thumbnails/public/4_wolf_drums/4_wolf_drums_banner_harme_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-4-wolf-drums.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-777-fruity-coins",
+    "page": "https://3oaks.com/game/777_fruity_coins",
+    "image": "https://3oaks.com/media/thumbnails/public/777_fruity_coins/777_fruity_coins_banner_gpjwi_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-777-fruity-coins.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
   }
 ]

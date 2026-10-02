@@ -17,6 +17,11 @@ const slots = [
   "3-oaks-gaming-3-super-hot-teapots",
   "3-oaks-gaming-4-african-drums",
   "3-oaks-gaming-4-clover-pots",
+  "3-oaks-gaming-4-fairy-flowers",
+  "3-oaks-gaming-4-fortune-clovers",
+  "3-oaks-gaming-4-pots-of-egypt",
+  "3-oaks-gaming-4-wolf-drums",
+  "3-oaks-gaming-777-fruity-coins",
 ];
 
 test("approved 3 Oaks catalog cards use their local game artwork", async ({ page }) => {
@@ -24,8 +29,9 @@ test("approved 3 Oaks catalog cards use their local game artwork", async ({ page
     const artwork = getCatalogArtwork(slug);
     expect(artwork).toBe(`/images/catalog/${slug}.webp`);
     await page.goto(`/slots/catalog/${slug}`);
+    await expect(page.locator(".slot-heading"), `Missing static card for ${slug}`).toBeVisible();
     const image = page.locator(".slot-figure .catalog-dossier-art");
-    await expect(image).toBeVisible();
+    await expect(image, `Missing rendered artwork for ${slug}`).toBeVisible();
     await expect(image).toHaveAttribute("src", new RegExp(slug));
   }
 });
