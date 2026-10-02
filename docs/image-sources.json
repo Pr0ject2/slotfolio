@@ -598,5 +598,40 @@
     "image": "https://3oaks.com/media/thumbnails/public/aztec_sun/aztec_sun_banner_scekz_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-aztec-sun.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-big-heist",
+    "page": "https://3oaks.com/game/big_heist",
+    "image": "https://3oaks.com/media/thumbnails/public/big_heist/big_heist_banner_kvvyq_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-big-heist.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-black-wolf",
+    "page": "https://3oaks.com/game/black_wolf",
+    "image": "https://3oaks.com/media/thumbnails/public/black_wolf/black_wolf_banner_tfiwn_768x432.png",
+    "local": "/images/catalog/3-oaks-gaming-black-wolf.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-black-wolf-2",
+    "page": "https://3oaks.com/game/black_wolf_2",
+    "image": "https://3oaks.com/media/thumbnails/public/black_wolf_2/black_wolf_2_banner_fqvqo_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-black-wolf-2.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-book-of-sun-multichance",
+    "page": "https://3oaks.com/game/book_of_sun_multichance",
+    "image": "https://3oaks.com/media/thumbnails/public/book_of_sun_multichance/book_of_sun_multichance_banner_dxtfh_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-book-of-sun-multichance.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-buddha-megaways",
+    "page": "https://3oaks.com/game/buddha_megaways",
+    "image": "https://3oaks.com/media/thumbnails/public/buddha_megaways/buddha_megaways_banner_baxke_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-buddha-megaways.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
   }
 ]
