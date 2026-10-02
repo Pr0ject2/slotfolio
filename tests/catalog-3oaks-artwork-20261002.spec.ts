@@ -47,6 +47,11 @@ const slots = [
   "3-oaks-gaming-egypt-fire-2",
   "3-oaks-gaming-egypt-power-x1000",
   "3-oaks-gaming-fortune-globe",
+  "3-oaks-gaming-gold-express",
+  "3-oaks-gaming-gold-nuggets",
+  "3-oaks-gaming-golden-teapot",
+  "3-oaks-gaming-grab-more-gold",
+  "3-oaks-gaming-grab-the-gold",
 ];
 
 test("approved 3 Oaks catalog cards use their local game artwork", async ({ page }) => {
