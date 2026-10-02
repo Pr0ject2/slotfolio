@@ -52,6 +52,11 @@ const slots = [
   "3-oaks-gaming-golden-teapot",
   "3-oaks-gaming-grab-more-gold",
   "3-oaks-gaming-grab-the-gold",
+  "3-oaks-gaming-green-chilli",
+  "3-oaks-gaming-green-chilli-2",
+  "3-oaks-gaming-hit-more-gold",
+  "3-oaks-gaming-hit-the-gold",
+  "3-oaks-gaming-hot-fire-fruits",
 ];
 
 test("approved 3 Oaks catalog cards use their local game artwork", async ({ page }) => {
