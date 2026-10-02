@@ -30,6 +30,31 @@ function russianGameType(gameType: string) {
   return translations[gameType] ?? gameType;
 }
 
+type MechanicPresentation = { title: string; description: string };
+
+function russianMechanic(mechanic: string): MechanicPresentation {
+  const copy: Record<string, MechanicPresentation> = {
+    "Линии": { title: "Линии", description: "Выигрышные комбинации формируются по линиям из таблицы выплат." },
+    "Респины": { title: "Респины", description: "Повторные вращения дают раунду ещё одну возможность развить специальный результат." },
+    "Блокировка символов": { title: "Блокировка символов", description: "Специальные символы могут оставаться на поле во время дальнейших вращений." },
+    "Сбор символов": { title: "Сбор символов", description: "Особые символы накапливаются для запуска следующего игрового эффекта." },
+    "Множители": { title: "Множители", description: "Активный множитель увеличивает выплату связанного с ним выигрыша." },
+    "Кластеры": { title: "Кластерные выплаты", description: "Выигрыш формируется группами одинаковых символов, а не по линиям." },
+    "Cascades": { title: "Каскады", description: "После выигрышной комбинации символы могут исчезнуть, освобождая место для новых." },
+    "Mystery Symbols": { title: "Таинственные символы", description: "Скрытые символы раскрываются после остановки барабанов." },
+    "Free Spins": { title: "Бесплатные вращения", description: "Бонусный режим добавляет серию вращений без новой ставки." },
+    "Wilds": { title: "Вайлды", description: "Вайлды заменяют другие символы и помогают завершать выигрышные комбинации." },
+    "Sticky Wilds": { title: "Липкие вайлды", description: "Вайлды остаются на поле на протяжении нескольких вращений." },
+    "Expanding Wilds": { title: "Расширяющиеся вайлды", description: "Вайлд может занять больше позиций на игровом поле." },
+    "Расширяющиеся барабаны": { title: "Расширяющиеся барабаны", description: "Поле увеличивается в бонусной части игры, открывая дополнительные позиции." },
+    "Hold & Win": { title: "Удержание и выигрыши", description: "Специальные символы удерживаются на поле во время серии повторных вращений." },
+    "Risk Game": { title: "Риск-игра", description: "После выигрыша доступен отдельный раунд с возможностью изменить его размер." },
+    "Jackpots": { title: "Джекпоты", description: "Игра включает отдельные призовые уровни джекпота." },
+    "Bonus Game": { title: "Бонусная игра", description: "Отдельный режим меняет обычный сценарий раунда." },
+  };
+  return copy[mechanic] ?? { title: mechanic, description: "Дополнительная функция меняет сценарий игрового раунда." };
+}
+
 function itemHref(item: CatalogItem) {
   return item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
 }
@@ -117,7 +142,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
           <Link href="/slots">Весь каталог ↗</Link>
         </aside>
         <article className="prose">
-          {mechanics.length ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Что реально меняет ход раунда</h2><div className="dossier-feature-grid">{mechanics.map((mechanic, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={mechanic}><span>{String(index + 1).padStart(2, "0")}</span><h3>{mechanic}</h3></article>)}</div></section> : null}
+          {mechanics.length ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Что реально меняет ход раунда</h2><div className="dossier-feature-grid">{mechanics.map((mechanic, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={mechanic}><span>{String(index + 1).padStart(2, "0")}</span><h3>{russianMechanic(mechanic).title}</h3><p>{russianMechanic(mechanic).description}</p></article>)}</div></section> : null}
           <section id="editorial"><span className="eyebrow accent">Взгляд редакции</span><h2>На что смотреть перед запуском</h2><p>Сначала проверьте игровое поле, список механик и таблицу выплат в правилах оператора. Эти параметры показывают структуру раунда, но не гарантируют результат отдельной сессии.</p></section>
           <section id="catalog-comparison"><span className="eyebrow accent">Сравнение с каталогом</span><h2>Где искать похожие игры</h2><p>В каталоге можно отобрать игры того же провайдера или перейти к карточкам с совпадающими механиками. Так сравнение остаётся привязанным к подтверждённым данным, а не к предположениям.</p><Link className="text-link" href={`/slots?provider=${providerSlug(slot.provider)}`}>Все игры {slot.provider} ↗</Link></section>
           {details ? <section id="math-profile"><span className="eyebrow accent">Математический профиль</span><h2>Цифры без ложной точности</h2><div className="dossier-metric-grid">
