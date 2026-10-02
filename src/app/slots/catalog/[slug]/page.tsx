@@ -1,11 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/editorial";
+import { SlotArtwork } from "@/components/slot-artwork";
+import { withBasePath } from "@/lib/base-path";
 import { catalogSeeds, getCatalogSeed } from "@/lib/catalog-seeds";
 import { getVerifiedCatalogResearch } from "@/lib/catalog-research-lookup";
 import { getVerifiedCatalogDetails } from "@/lib/catalog-verified-details-lookup";
 import { getVerifiedCatalogGameType } from "@/lib/catalog-verified-game-type";
 import { createCatalogModel } from "@/lib/catalog-index";
+import { getCatalogArtwork } from "@/lib/catalog-artwork";
 import type { CatalogItem } from "@/lib/catalog-query";
 import { providerSlug } from "@/lib/data";
 import { pageMetadata } from "@/lib/seo";
@@ -42,6 +45,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const slot = getCatalogSeed((await params).slug);
   if (!slot) notFound();
   const details = getVerifiedCatalogDetails(slot.slug);
+  const artwork = getCatalogArtwork(slot.slug);
   const gameType = getVerifiedCatalogGameType(slot.slug);
   const research = getVerifiedCatalogResearch(slot.slug);
   const mechanics = research?.mechanics ?? [];
@@ -69,11 +73,17 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
       </div>
       <div className="slot-intro catalog-dossier-intro">
         <figure className="slot-figure">
-          <div className="catalog-editorial-cover" role="img" aria-label={`Обложка записи ${slot.name}`}>
+          {artwork ? <SlotArtwork
+            className="game-image catalog-dossier-art"
+            src={withBasePath(artwork)}
+            alt={`Игровая графика ${slot.name}`}
+            width={960}
+            height={540}
+          /> : <div className="catalog-editorial-cover" role="img" aria-label={`Обложка записи ${slot.name}`}>
             <span>{slot.provider}</span>
             <strong>{slot.name}</strong>
             <small>Slotfolio · каталог игры</small>
-          </div>
+          </div>}
           <figcaption>Редакционная обложка · {slot.provider} · {slot.name}</figcaption>
         </figure>
         <div className="slot-summary">
