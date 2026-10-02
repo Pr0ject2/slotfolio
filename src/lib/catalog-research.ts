@@ -1,5 +1,7 @@
 export type CatalogResearch = {
   mechanics: string[];
+  /** Short, game-specific explanation for mechanics shown as dossier cards. */
+  mechanicDetails?: Partial<Record<string, string>>;
   source: string;
   verifiedAt: string;
   evidence: string;
