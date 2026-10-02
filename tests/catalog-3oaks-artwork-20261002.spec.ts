@@ -27,6 +27,11 @@ const slots = [
   "3-oaks-gaming-aztec-fire",
   "3-oaks-gaming-aztec-fire-2",
   "3-oaks-gaming-aztec-sun",
+  "3-oaks-gaming-big-heist",
+  "3-oaks-gaming-black-wolf",
+  "3-oaks-gaming-black-wolf-2",
+  "3-oaks-gaming-book-of-sun-multichance",
+  "3-oaks-gaming-buddha-megaways",
 ];
 
 test("approved 3 Oaks catalog cards use their local game artwork", async ({ page }) => {
