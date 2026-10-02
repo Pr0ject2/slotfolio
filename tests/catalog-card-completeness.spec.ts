@@ -72,7 +72,7 @@ test("minimal catalog record still looks finished without invented facts or rese
   const card = page.locator('.catalog-game[data-coverage="catalog"]').filter({ hasText: "Rally 4 Riches" });
   await expect(card).toHaveCount(1);
   await expect(card).toContainText("Rally 4 Riches");
-  await expect(card).toContainText("Video Slot");
+  await expect(card).toContainText("Видеослот");
   await expect(card).toContainText("Линии");
   await expect(card).toContainText("11.06.2020");
   await expect(card.locator("dd").filter({ hasText: /^—$/ })).toHaveCount(0);

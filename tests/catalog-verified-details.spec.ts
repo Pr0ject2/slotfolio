@@ -5,6 +5,17 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
+
+function displayedGameType(gameType: string) {
+  const translations: Record<string, string> = {
+    "Slots": "Слот",
+    "Video Slot": "Видеослот",
+    "Grid Slot": "Слот с сеткой",
+    "Cascading Cluster Pays": "Кластерный слот с каскадами",
+  };
+  return translations[gameType] ?? gameType;
+}
+
 const providers = ["Wazdan", "BGaming", "Endorphina", "Push Gaming", "3 Oaks Gaming", "Play’n GO", "Hacksaw Gaming", "Nolimit City"];
 const detailedSeeds = providers.map((provider) =>
   catalogSeeds.find((seed) => seed.provider === provider && getVerifiedCatalogDetails(seed.slug)),
@@ -565,7 +576,7 @@ test("verified catalog details render without promoting records to dossiers", as
     await expect(page.getByRole("heading", { name: "Характеристики" })).toBeVisible();
     await expect(page.locator(".catalog-record-heading").getByText("Базовая запись", { exact: true })).toHaveCount(0);
     await expect(page.getByText("Технические данные проверены", { exact: true })).toHaveCount(0);
-    if (gameType) await expect(page.locator(".catalog-record-facts").getByText(gameType.gameType, { exact: true })).toBeVisible();
+    if (gameType) await expect(page.locator(".catalog-record-facts").getByText(displayedGameType(gameType.gameType), { exact: true })).toBeVisible();
     if (details.field) await expect(page.locator(".catalog-record-facts").getByText(details.field, { exact: true })).toBeVisible();
     if (details.rtp) await expect(page.locator(".catalog-record-facts").getByText(details.rtp, { exact: true })).toBeVisible();
     if (details.maxWin) await expect(page.locator(".catalog-record-facts").getByText(details.maxWin, { exact: true })).toBeVisible();

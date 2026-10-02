@@ -4,6 +4,17 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 import { getVerifiedCatalogGameType } from "../src/lib/catalog-verified-game-type";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
+
+function displayedGameType(gameType: string) {
+  const translations: Record<string, string> = {
+    "Slots": "Слот",
+    "Video Slot": "Видеослот",
+    "Grid Slot": "Слот с сеткой",
+    "Cascading Cluster Pays": "Кластерный слот с каскадами",
+  };
+  return translations[gameType] ?? gameType;
+}
+
 const cases = [
   ["bgaming-3-lucky-monkeys-hold-and-win", "2026-09-28"],
   ["endorphina-3-golden-chests", "2026-09-03"],
@@ -29,6 +40,6 @@ for (const [slug, releaseDate] of cases) {
     await page.goto(`/slots/catalog/${slug}`);
     await expect(page.locator(".catalog-record-facts")).toContainText("Дата релиза");
     await expect(page.locator(".catalog-record-facts")).toContainText(releaseDate.slice(0, 4));
-    await expect(page.locator(".catalog-record-facts")).toContainText(gameType!.gameType);
+    await expect(page.locator(".catalog-record-facts")).toContainText(displayedGameType(gameType!.gameType));
   });
 }
