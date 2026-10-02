@@ -20,6 +20,16 @@ function date(value?: string) {
   return value ? value.split("-").reverse().join(".") : null;
 }
 
+function russianDossierLead(slot: { name: string; provider: string }, details: ReturnType<typeof getVerifiedCatalogDetails> | undefined, mechanics: string[]) {
+  const field = details?.field ? `Подтверждённое игровое поле: ${details.field}.` : "Техническое описание подтверждено на странице разработчика.";
+  const mechanicText = mechanics.length ? ` В карточке отмечены механики: ${mechanics.join(", ")}.` : "";
+  return `${slot.name} от ${slot.provider}. ${field}${mechanicText}`;
+}
+
+function russianMechanicCopy(mechanic: string) {
+  return `Механика «${mechanic}» отмечена в официальном описании игры. Условия её активации и доступность зависят от правил выбранной версии.`;
+}
+
 function itemHref(item: CatalogItem) {
   return item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
 }
@@ -81,7 +91,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
         </figure> : null}
         <div className="slot-summary">
           <span className="eyebrow">Суть игры</span>
-          <p className="slot-deck">{research?.evidence || `${slot.name} представлена в официальном каталоге ${slot.provider}.`}</p>
+          <p className="slot-deck">{russianDossierLead(slot, details, mechanics)}</p>
           <h2 className="catalog-facts-heading">Характеристики</h2>
           <dl className="facts catalog-record-facts">
             <div><dt>Провайдер</dt><dd><Link href={`/slots?provider=${providerSlug(slot.provider)}`}>{slot.provider}</Link></dd></div>
@@ -99,20 +109,28 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
         <aside className="article-toc">
           <span className="eyebrow">В этом досье</span>
           {mechanics.length ? <a href="#mechanic">Как устроена игра</a> : null}
+          {mechanics.length ? <a href="#functions">Функции и бонусы</a> : null}
           {details ? <a href="#math-profile">Математический профиль</a> : null}
+          <a href="#editorial">Взгляд редакции</a>
+          <a href="#catalog-comparison">Сравнение с каталогом</a>
           <a href="#facts">Факты и источники</a>
+          <a href="#faq">Вопросы об игре</a>
           {providerItems.length || mechanicItems.length ? <a href="#related">Похожие игры</a> : null}
           <Link href="/slots">Весь каталог ↗</Link>
         </aside>
         <article className="prose">
-          {mechanics.length ? <section id="mechanic"><h2>Как устроена игра</h2>{research?.evidence ? <p className="mechanics-evidence">{research.evidence}</p> : null}<p>Механики ниже приведены только по подтверждённому описанию игры.</p><div className="dossier-feature-grid">{mechanics.map((mechanic, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={mechanic}><span>{String(index + 1).padStart(2, "0")}</span><h3>{mechanic}</h3><p>{research?.mechanicDetails?.[mechanic] || research?.evidence || "Подтверждённая механика из официального описания игры."}</p></article>)}</div></section> : null}
+          {mechanics.length ? <section id="mechanic"><h2>Как устроена игра</h2><p className="mechanics-evidence">{russianDossierLead(slot, details, mechanics)}</p><p>Базовый сценарий игры и подтверждённые механики собраны по официальной странице. Перед запуском стоит сверить правила конкретного оператора.</p></section> : null}
+          {mechanics.length ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Что реально меняет ход раунда</h2><div className="dossier-feature-grid">{mechanics.map((mechanic, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={mechanic}><span>{String(index + 1).padStart(2, "0")}</span><h3>{mechanic}</h3><p>{russianMechanicCopy(mechanic)}</p></article>)}</div></section> : null}
+          <section id="editorial"><span className="eyebrow accent">Взгляд редакции</span><h2>На что смотреть перед запуском</h2><p>Сначала проверьте игровое поле, список механик и таблицу выплат в правилах оператора. Эти параметры показывают структуру раунда, но не гарантируют результат отдельной сессии.</p></section>
+          <section id="catalog-comparison"><span className="eyebrow accent">Сравнение с каталогом</span><h2>Где искать похожие игры</h2><p>В каталоге можно отобрать игры того же провайдера или перейти к карточкам с совпадающими механиками. Так сравнение остаётся привязанным к подтверждённым данным, а не к предположениям.</p><Link className="text-link" href={`/slots?provider=${providerSlug(slot.provider)}`}>Все игры {slot.provider} ↗</Link></section>
           {details ? <section id="math-profile"><span className="eyebrow accent">Математический профиль</span><h2>Цифры без ложной точности</h2><div className="dossier-metric-grid">
             {details.rtp ? <div><span>RTP, справочно</span><strong>{details.rtp}</strong><small>Параметр из официального источника</small></div> : null}
             {details.maxWin ? <div><span>Максимальная выплата</span><strong>{details.maxWin}</strong><small>Формулировка из официального источника</small></div> : null}
             {details.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>Категория разработчика</small></div> : null}
             {details.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.join(" · ")}</small></div> : null}
           </div><p className="metric-caveat">Параметры могут отличаться у конкретного оператора. Неуказанные значения не подставляются.</p></section> : null}
-          <section id="facts"><span className="eyebrow accent">Факты и источники</span><h2>Как читать числа</h2><p className="source-note">Основной источник: <a href={source} target="_blank" rel="noreferrer">Официальный каталог ↗</a>.</p>{sources.length > 1 ? <p className="source-note">Дополнительные официальные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}{research?.evidence ? <p>{research.evidence}</p> : null}<p>Если параметра здесь нет, он не был добавлен без надёжного подтверждения. Для запущенной версии всегда сверяйте правила оператора.</p></section>
+          <section id="facts"><span className="eyebrow accent">Факты и источники</span><h2>Как читать числа</h2><p className="source-note">Основной источник: <a href={source} target="_blank" rel="noreferrer">Официальный каталог ↗</a>.</p>{sources.length > 1 ? <p className="source-note">Дополнительные официальные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}<p>Если параметра здесь нет, он не был добавлен без надёжного подтверждения. Для запущенной версии всегда сверяйте правила оператора.</p></section>
+          <section id="faq"><span className="eyebrow accent">Вопросы об игре</span><h2>Что нужно знать</h2><details><summary>Какие параметры подтверждены?</summary><p>На странице показаны только значения и механики, для которых указан источник. Пустые поля не заполняются оценками.</p></details><details><summary>Почему значения могут отличаться у оператора?</summary><p>Оператор может запускать другую конфигурацию игры. Перед ставкой сверяйте таблицу выплат и правила в самом казино.</p></details></section>
         </article>
       </div>
       {providerItems.length || mechanicItems.length ? <section id="related">
