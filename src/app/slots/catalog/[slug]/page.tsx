@@ -139,7 +139,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       { title: "Collect, Multi и Extra", description: "Collect собирает значения, Multi добавляет множители к пустым ячейкам, Extra открывает две дополнительные строки и может дублировать символ между ними. Расширенная полная сетка приносит Extra Grand Jackpot." },
       { title: "Master Drum в респинах", description: "Master Drum может сработать в любой момент респинов и добавить до трёх бонусных символов, в том числе с джекпотами. В базовой игре он также может включать функции барабанов." },
     ],
-  },,
+  },
   "3-oaks-gaming-4-clover-pots": {
     features: [
       { title: "Три малых горшка", description: "Фиолетовый, синий и красный горшки заполняются клеверами и запускают Hold & Win. В бонусе доступны MINI, MINOR и MAJOR, а полное поле может дать Grand Jackpot." },
