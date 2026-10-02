@@ -563,5 +563,40 @@
     "image": "https://3oaks.com/media/thumbnails/public/777_fruity_coins/777_fruity_coins_banner_gpjwi_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-777-fruity-coins.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-777-gems-respin",
+    "page": "https://3oaks.com/game/777_gems_respin",
+    "image": "https://3oaks.com/media/thumbnails/public/777_gems_respin/777_gems_respin_banner_vvcdu_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-777-gems-respin.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-amazonia-wins",
+    "page": "https://3oaks.com/game/amazonia_wins",
+    "image": "https://3oaks.com/media/thumbnails/public/amazonia_wins/amazonia_wins_banner_oklnr_768x432.png",
+    "local": "/images/catalog/3-oaks-gaming-amazonia-wins.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-aztec-fire",
+    "page": "https://3oaks.com/game/aztec_fire",
+    "image": "https://3oaks.com/media/thumbnails/public/aztec_fire/aztec_fire_banner_jmhvp_768x432.png",
+    "local": "/images/catalog/3-oaks-gaming-aztec-fire.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-aztec-fire-2",
+    "page": "https://3oaks.com/game/aztec_fire_2",
+    "image": "https://3oaks.com/media/thumbnails/public/aztec_fire_2/aztec_fire_2_banner_jpvrn_768x432.png",
+    "local": "/images/catalog/3-oaks-gaming-aztec-fire-2.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-aztec-sun",
+    "page": "https://3oaks.com/game/aztec_sun",
+    "image": "https://3oaks.com/media/thumbnails/public/aztec_sun/aztec_sun_banner_scekz_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-aztec-sun.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
   }
 ]
