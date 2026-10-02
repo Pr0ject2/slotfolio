@@ -51,7 +51,9 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const mechanics = research?.mechanics ?? [];
   const mechanicsWithDetails = mechanics.filter((mechanic) => Boolean(research?.mechanicDetails?.[mechanic]));
   const source = details?.source ?? gameType?.source ?? slot.source;
-  const sources = Array.from(new Set([slot.source, details?.source, gameType?.source, research?.source].filter((value): value is string => Boolean(value))));
+  const releaseSource = details?.releaseDateSource;
+  const volatilitySource = details?.volatilitySource;
+  const sources = Array.from(new Set([slot.source, details?.source, gameType?.source, research?.source, releaseSource, volatilitySource].filter((value): value is string => Boolean(value))));
   const providerItems = catalogModel.items.filter((item) => item.slug !== slot.slug && item.provider === slot.provider).sort((a, b) => b.mechanics.length - a.mechanics.length || a.name.localeCompare(b.name, "ru")).slice(0, 6);
   const providerSlugs = new Set(providerItems.map((item) => item.slug));
   const mechanicItems = mechanics.length ? catalogModel.items.filter((item) => item.slug !== slot.slug && !providerSlugs.has(item.slug) && item.mechanics.some((mechanic) => mechanics.includes(mechanic))).sort((a, b) => b.mechanics.filter((mechanic) => mechanics.includes(mechanic)).length - a.mechanics.filter((mechanic) => mechanics.includes(mechanic)).length).slice(0, 6) : [];
@@ -110,7 +112,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
             {details.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>Категория разработчика</small></div> : null}
             {details.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.join(" · ")}</small></div> : null}
           </div><p className="metric-caveat">Параметры могут отличаться у конкретного оператора. Неуказанные значения не подставляются.</p></section> : null}
-          <section id="facts"><span className="eyebrow accent">Факты и источники</span><h2>Как читать числа</h2><p className="source-note">Основной источник: <a href={source} target="_blank" rel="noreferrer">официальная страница разработчика ↗</a>.</p>{sources.length > 1 ? <p className="source-note">Дополнительные официальные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}{research?.evidence ? <p>{research.evidence}</p> : null}<p>Если параметра здесь нет, он не был добавлен без надёжного подтверждения. Для запущенной версии всегда сверяйте правила оператора.</p></section>
+          <section id="facts"><span className="eyebrow accent">Факты и источники</span><h2>Как читать числа</h2><p className="source-note">Основной источник: <a href={source} target="_blank" rel="noreferrer">Официальный каталог ↗</a>.</p>{sources.length > 1 ? <p className="source-note">Дополнительные официальные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}{research?.evidence ? <p>{research.evidence}</p> : null}<p>Если параметра здесь нет, он не был добавлен без надёжного подтверждения. Для запущенной версии всегда сверяйте правила оператора.</p></section>
         </article>
       </div>
       {providerItems.length || mechanicItems.length ? <section id="related">
