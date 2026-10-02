@@ -9,6 +9,7 @@ import { getVerifiedCatalogDetails } from "@/lib/catalog-verified-details-lookup
 import { getVerifiedCatalogGameType } from "@/lib/catalog-verified-game-type";
 import { createCatalogModel } from "@/lib/catalog-index";
 import { getCatalogArtwork } from "@/lib/catalog-artwork";
+import { getCatalogCover } from "@/lib/catalog-cover";
 import type { CatalogItem } from "@/lib/catalog-query";
 import { providerSlug } from "@/lib/data";
 import { pageMetadata } from "@/lib/seo";
@@ -45,7 +46,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const slot = getCatalogSeed((await params).slug);
   if (!slot) notFound();
   const details = getVerifiedCatalogDetails(slot.slug);
-  const artwork = getCatalogArtwork(slot.slug);
+  const artwork = getCatalogArtwork(slot.slug) ?? getCatalogCover(slot);
   const gameType = getVerifiedCatalogGameType(slot.slug);
   const research = getVerifiedCatalogResearch(slot.slug);
   const mechanics = research?.mechanics ?? [];
@@ -68,8 +69,8 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
           <Link className="provider-link" href={`/slots?provider=${providerSlug(slot.provider)}`}>{slot.provider} ↗</Link>
         </div>
       </div>
-      <div className={`slot-intro catalog-dossier-intro${artwork ? "" : " without-artwork"}`}>
-        {artwork ? <figure className="slot-figure">
+      <div className="slot-intro catalog-dossier-intro">
+        <figure className="slot-figure">
           <SlotArtwork
             className="game-image catalog-dossier-art"
             src={withBasePath(artwork)}
@@ -78,7 +79,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
             height={540}
           />
           <figcaption>Игровая графика · {slot.provider} · {slot.name}</figcaption>
-        </figure> : null}
+        </figure>
         <div className="slot-summary">
           <span className="eyebrow">Суть игры</span>
           <p className="slot-deck">{research?.evidence || `${slot.name} представлена в официальном каталоге ${slot.provider}.`}</p>
