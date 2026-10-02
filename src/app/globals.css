@@ -4752,3 +4752,6 @@ summary {
 }
 
 .catalog-facts-heading { font: 400 24px/1.2 var(--serif); margin: 24px 0 12px; }
+
+.catalog-dossier-intro.without-artwork { display: block; }
+.catalog-dossier-intro.without-artwork .slot-summary { max-width: 760px; }
