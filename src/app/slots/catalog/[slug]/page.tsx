@@ -52,11 +52,6 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const mechanicsWithDetails = mechanics.filter((mechanic) => Boolean(research?.mechanicDetails?.[mechanic]));
   const source = details?.source ?? gameType?.source ?? slot.source;
   const sources = Array.from(new Set([slot.source, details?.source, gameType?.source, research?.source].filter((value): value is string => Boolean(value))));
-  const releaseSource = details?.releaseDateSource ?? null;
-  const volatilitySource = details?.volatilitySource ?? null;
-  const parameterSource = source;
-  const separateRelease = Boolean(details?.releaseDate && releaseSource && releaseSource !== parameterSource);
-  const separateVolatility = Boolean(details?.volatility && volatilitySource && volatilitySource !== parameterSource);
   const providerItems = catalogModel.items.filter((item) => item.slug !== slot.slug && item.provider === slot.provider).sort((a, b) => b.mechanics.length - a.mechanics.length || a.name.localeCompare(b.name, "ru")).slice(0, 6);
   const providerSlugs = new Set(providerItems.map((item) => item.slug));
   const mechanicItems = mechanics.length ? catalogModel.items.filter((item) => item.slug !== slot.slug && !providerSlugs.has(item.slug) && item.mechanics.some((mechanic) => mechanics.includes(mechanic))).sort((a, b) => b.mechanics.filter((mechanic) => mechanics.includes(mechanic)).length - a.mechanics.filter((mechanic) => mechanics.includes(mechanic)).length).slice(0, 6) : [];
@@ -71,21 +66,17 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
           <Link className="provider-link" href={`/slots?provider=${providerSlug(slot.provider)}`}>{slot.provider} ↗</Link>
         </div>
       </div>
-      <div className="slot-intro catalog-dossier-intro">
-        <figure className="slot-figure">
-          {artwork ? <SlotArtwork
+      <div className={`slot-intro catalog-dossier-intro${artwork ? "" : " without-artwork"}`}>
+        {artwork ? <figure className="slot-figure">
+          <SlotArtwork
             className="game-image catalog-dossier-art"
             src={withBasePath(artwork)}
             alt={`Игровая графика ${slot.name}`}
             width={960}
             height={540}
-          /> : <div className="catalog-editorial-cover" role="img" aria-label={`Обложка записи ${slot.name}`}>
-            <span>{slot.provider}</span>
-            <strong>{slot.name}</strong>
-            <small>Slotfolio · каталог игры</small>
-          </div>}
-          <figcaption>Редакционная обложка · {slot.provider} · {slot.name}</figcaption>
-        </figure>
+          />
+          <figcaption>Игровая графика · {slot.provider} · {slot.name}</figcaption>
+        </figure> : null}
         <div className="slot-summary">
           <span className="eyebrow">Суть игры</span>
           <p className="slot-deck">{research?.evidence || `${slot.name} представлена в официальном каталоге ${slot.provider}.`}</p>
@@ -99,11 +90,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
             {details?.maxWin ? <div><dt>Максимальная выплата</dt><dd>{details.maxWin}</dd></div> : null}
             {date(details?.releaseDate) ? <div><dt>Дата релиза</dt><dd>{date(details?.releaseDate)}</dd></div> : null}
             {mechanics.length ? <div className="facts-wide"><dt>Ключевые механики</dt><dd className="slot-tag-list">{mechanics.map((mechanic) => <Link href={`/slots?mechanic=${encodeURIComponent(mechanic)}`} key={mechanic}>{mechanic}</Link>)}</dd></div> : null}
-            <div><dt>{separateRelease || separateVolatility ? "Источник параметров" : "Источник"}</dt><dd><a href={parameterSource} target="_blank" rel="noreferrer">Официальный каталог ↗</a></dd></div>
-            {separateRelease ? <div><dt>Источник даты релиза</dt><dd><a href={releaseSource!} target="_blank" rel="noreferrer">Официальная публикация ↗</a></dd></div> : null}
-            {separateVolatility ? <div><dt>Источник волатильности</dt><dd><a href={volatilitySource!} target="_blank" rel="noreferrer">Официальный рейтинг ↗</a></dd></div> : null}
           </dl>
-          <p className="data-note">Отсутствующие характеристики не заменяются оценками. Версия у оператора может отличаться.</p>
         </div>
       </div>
       <div className="article-layout slot-body">
