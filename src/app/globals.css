@@ -4595,7 +4595,6 @@ summary {
 .catalog-coverage { display: block; font-size: 11px; line-height: 1.6; color: var(--muted); margin: 0 0 10px; }
 .catalog-game-art img, .slot-figure .game-image { object-fit: contain; background: var(--olive); }
 .list .catalog-only { grid-template-columns: minmax(0, 1fr) 22px; padding: 22px 0; }
-.list .catalog-only .catalog-game-art { display: none; }
 .catalog-only .catalog-game-data { margin-top: 8px; }
 .catalog-art-pending { display: grid; place-items: center; aspect-ratio: 16 / 9; width: 100%; padding: 20px; background: var(--olive); color: var(--muted); font-size: 12px; text-align: center; }
 .covers .catalog-game-art img { aspect-ratio: 16 / 9; }
@@ -4752,6 +4751,3 @@ summary {
 }
 
 .catalog-facts-heading { font: 400 24px/1.2 var(--serif); margin: 24px 0 12px; }
-
-.catalog-dossier-intro.without-artwork { display: block; }
-.catalog-dossier-intro.without-artwork .slot-summary { max-width: 760px; }
