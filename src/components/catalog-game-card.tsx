@@ -18,6 +18,16 @@ function displayYear(item: CatalogItem) {
   return /^\d{4}/.test(item.releaseDate) ? item.releaseDate.slice(0, 4) : "";
 }
 
+function russianGameType(gameType: string) {
+  const translations: Record<string, string> = {
+    "Slots": "Слот",
+    "Video Slot": "Видеослот",
+    "Grid Slot": "Слот с сеткой",
+    "Cascading Cluster Pays": "Кластерный слот с каскадами",
+  };
+  return translations[gameType] ?? gameType;
+}
+
 type DisplayFact = {
   label: string;
   value: string;
@@ -25,7 +35,7 @@ type DisplayFact = {
 
 function displayFacts(item: CatalogItem): DisplayFact[] {
   const facts: DisplayFact[] = [
-    { label: "Тип", value: item.gameType },
+    { label: "Тип", value: russianGameType(item.gameType) },
     { label: "Поле", value: item.field },
     { label: "RTP", value: item.verifiedRtp },
     { label: "Макс.", value: item.maxWin },
