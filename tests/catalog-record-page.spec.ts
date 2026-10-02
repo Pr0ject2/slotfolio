@@ -27,7 +27,7 @@ test("catalog-only pages show useful facts without internal research workflow", 
     await expect(page.getByRole("heading", { name: "Характеристики" })).toBeVisible();
     await expect(page.getByRole("heading", { name: `Ещё у ${seed.provider}` })).toBeVisible();
     await expect.poll(() => page.locator(".game-row").count()).toBeGreaterThanOrEqual(6);
-    await expect(page.getByRole("link", { name: new RegExp(`Все игры ${seed.provider.replace(/[.*+?^${}()|[\]\\]/g, "\\await expect(page.getByRole("link", { name: new RegExp(`Все игры ${seed.provider.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`) })).toBeVisible();")}`) }).last()).toBeVisible();
+    await expect(page.getByRole("link", { name: `Все игры ${seed.provider} ↗` }).last()).toBeVisible();
     await expect(page.getByRole("link", { name: /Официальный каталог/ })).toHaveAttribute("href", seed.source);
     await expect(page.locator(".catalog-record-facts dt").filter({ hasText: /^Статус$/ })).toHaveCount(0);
     await expect(page.locator(".catalog-record-facts dt").filter({ hasText: /^Проверено$/ })).toHaveCount(0);
