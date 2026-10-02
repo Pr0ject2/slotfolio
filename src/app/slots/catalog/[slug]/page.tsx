@@ -98,13 +98,13 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       { title: "Два Grand Jackpot", description: "В респинах могут появиться MINI, MINOR и MAJOR, а Boost собирает все видимые значения. Заполненное поле даёт Grand Jackpot 5 000x ставки; с Double возможны два Grand Jackpot." },
     ],
   },
-  "3-oaks-gaming-3-hot-chillies": {
+  "3-oaks-gaming-3-jewel-crowns": {
     features: [
-      { title: "Перцы заполняют шкалы", description: "Зелёные, жёлтые и красные перцы являются бонусными символами и заполняют три шкалы над барабанами. Они запускают Hold & Win с фиксирующимися символами и респинами." },
-      { title: "Три режима усиления", description: "Перец, который запускает бонус, определяет функцию: Ultra добавляет множители к символам, Extra Spins увеличивает число респинов до четырёх, Double Reels открывает второе поле с дублированием бонусных символов." },
-      { title: "Джекпоты в бонусе", description: "В Hold & Win доступны MINI, MINOR и MAJOR. Полностью заполненное поле может принести Grand Jackpot 1 000x ставки, а все три усиления могут сработать одновременно." },
+      { title: "Короны открывают семь фриспинов", description: "Зелёные, красные и синие короны заполняют свои шкалы. Заполненные шкалы запускают семь бесплатных вращений и включают соответствующие усилители." },
+      { title: "Extra Spins, Jackpot и Double Reels", description: "Extra Spins добавляет ещё семь фриспинов, Jackpot открывает MINI, MAJOR и GRAND, а Double Reels включает второе игровое поле. Все три функции могут работать вместе." },
+      { title: "Растущие джекпоты", description: "Каждая выпавшая корона увеличивает случайный джекпот на размер текущей ставки до лимита. В режиме Jackpot Prize значения растут: Minor до 50x, Major до 250x, Grand до 5 000x ставки." },
     ],
-  },
+  }
 };
 
 function getCatalogEditorial(slug: string) {
