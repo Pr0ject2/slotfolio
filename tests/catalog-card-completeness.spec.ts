@@ -118,3 +118,20 @@ for (const width of [320, 390, 1440]) {
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   });
 }
+
+test("catalog list keeps approved artwork compact beside the card data", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/slots?q=3%20Coin%20Volcanoes");
+  await page.waitForLoadState("networkidle");
+
+  const card = page.locator('[data-slot="3-oaks-gaming-3-coin-volcanoes"]');
+  const art = card.locator(".catalog-game-art");
+  const copy = card.locator(".catalog-game-copy");
+  await expect(art).toBeVisible();
+
+  const [artBox, copyBox] = await Promise.all([art.boundingBox(), copy.boundingBox()]);
+  expect(artBox).toBeTruthy();
+  expect(copyBox).toBeTruthy();
+  expect(artBox?.width ?? 0).toBeLessThanOrEqual(210);
+  expect(copyBox?.width ?? 0).toBeGreaterThan(artBox?.width ?? 0);
+});
