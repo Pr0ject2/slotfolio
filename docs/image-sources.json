@@ -423,5 +423,40 @@
     "local": "/images/catalog/3-oaks-gaming-3-clover-pots.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request.",
     "image": "https://3oaks.com/media/thumbnails/public/3_clover_pots/3_clover_pots_banner_ietyg_768x432.png"
+  },
+  {
+    "slug": "3-oaks-gaming-3-clover-pots-extra",
+    "page": "https://3oaks.com/game/3_clover_pots_extra",
+    "image": "https://3oaks.com/media/thumbnails/public/3_clover_pots_extra/3_clover_pots_extra_banner_sxdaa_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-3-clover-pots-extra.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-3-coin-volcanoes",
+    "page": "https://3oaks.com/game/3_coin_volcanoes",
+    "image": "https://3oaks.com/media/thumbnails/public/3_coin_volcanoes/3_coin_volcanoes_banner_emyef_768x432.png",
+    "local": "/images/catalog/3-oaks-gaming-3-coin-volcanoes.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-3-coins",
+    "page": "https://3oaks.com/game/3_coins",
+    "image": "https://3oaks.com/media/thumbnails/public/3_coins/3_coins_banner_iswgy_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-3-coins.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-3-egypt-chests",
+    "page": "https://3oaks.com/game/3_egypt_chests",
+    "image": "https://3oaks.com/media/thumbnails/public/3_egypt_chests/3_egypt_chests_banner_szjrz_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-3-egypt-chests.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-3-hot-chillies",
+    "page": "https://3oaks.com/game/3_hot_chillies",
+    "image": "https://3oaks.com/media/thumbnails/public/3_hot_chillies/3_hot_chillies_banner_ygicb_768x432.png",
+    "local": "/images/catalog/3-oaks-gaming-3-hot-chillies.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
   }
 ]
