@@ -566,10 +566,10 @@ test("verified catalog details render without promoting records to dossiers", as
     await expect(page.locator(".catalog-record-heading").getByText("Базовая запись", { exact: true })).toHaveCount(0);
     await expect(page.getByText("Технические данные проверены", { exact: true })).toHaveCount(0);
     if (gameType) await expect(page.locator(".catalog-record-facts").getByText(gameType.gameType, { exact: true })).toBeVisible();
-    if (details.field) await expect(page.getByText(details.field, { exact: true })).toBeVisible();
-    if (details.rtp) await expect(page.getByText(details.rtp, { exact: true })).toBeVisible();
-    if (details.maxWin) await expect(page.getByText(details.maxWin, { exact: true })).toBeVisible();
-    if (details.volatility) await expect(page.getByText(details.volatility, { exact: true })).toBeVisible();
+    if (details.field) await expect(page.locator(".catalog-record-facts").getByText(details.field, { exact: true })).toBeVisible();
+    if (details.rtp) await expect(page.locator(".catalog-record-facts").getByText(details.rtp, { exact: true })).toBeVisible();
+    if (details.maxWin) await expect(page.locator(".catalog-record-facts").getByText(details.maxWin, { exact: true })).toBeVisible();
+    if (details.volatility) await expect(page.locator(".catalog-record-facts").getByText(details.volatility, { exact: true })).toBeVisible();
     if (details.releaseDate) {
       await expect(page.getByText(details.releaseDate.split("-").reverse().join("."), { exact: true })).toBeVisible();
     }
