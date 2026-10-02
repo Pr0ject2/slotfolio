@@ -104,7 +104,42 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       { title: "Extra Spins, Jackpot и Double Reels", description: "Extra Spins добавляет ещё семь фриспинов, Jackpot открывает MINI, MAJOR и GRAND, а Double Reels включает второе игровое поле. Все три функции могут работать вместе." },
       { title: "Растущие джекпоты", description: "Каждая выпавшая корона увеличивает случайный джекпот на размер текущей ставки до лимита. В режиме Jackpot Prize значения растут: Minor до 50x, Major до 250x, Grand до 5 000x ставки." },
     ],
-  }
+  },
+  "3-oaks-gaming-3-olymp-fortunes": {
+    features: [
+      { title: "Три горшка Олимпа", description: "Один или несколько заполненных горшков запускают Hold & Win. В бонусе доступны MINI, MINOR и MAJOR, а полная сетка приносит Grand Jackpot 1 000x ставки." },
+      { title: "Extra, Multi и Double", description: "Extra увеличивает число респинов до четырёх, Multi добавляет множители к случайным символам с перемножением в одной ячейке, Double открывает вторую сетку и шанс на два Grand Jackpot." },
+      { title: "Super Wheel перед бонусом", description: "Перед каждой бонусной игрой Super Wheel гарантирует награду: дополнительные бонусные символы, ещё одну функцию или мгновенный джекпот." },
+    ],
+  },
+  "3-oaks-gaming-3-pots-of-egypt": {
+    features: [
+      { title: "Шесть золотых монет", description: "Шесть и более золотых монет запускают Hold & Win с респинами. Внутри могут выпасть MINI, MINOR и MAJOR." },
+      { title: "Collect, Boost и Multi", description: "Синие, красные и зелёные специальные монеты заполняют шкалы горшков: Collect собирает значения, Boost прибавляет случайное значение ко всем символам, Multi умножает все значения до x5." },
+      { title: "Mystery Symbol и Lucky Spin", description: "Во время респинов Mystery может открыть один из трёх усилителей или джекпот. Lucky Spin также запускает Hold & Win; полная сетка может дать Grand Jackpot 2 000x ставки." },
+    ],
+  },
+  "3-oaks-gaming-3-super-coin-volcanoes": {
+    features: [
+      { title: "Четыре символа запускают Hold & Win", description: "Четыре совпадения на активной линии включают бонус. В нём доступны MINI, MINOR, MAJOR, Mystery, Mystery Jackpot и Collect; заполненная сетка может дать Grand Jackpot." },
+      { title: "Life, Multi Volcano и Grow", description: "Life восстанавливает респины, Multi Volcano размещает от двух до шести множителей x2, а Grow добавляет две строки. С новым множителем в той же ячейке её суммарный множитель растёт на +1." },
+      { title: "Super Wheel и Gold Volcano", description: "Super Wheel срабатывает перед бонусом. Gold Volcano является усиленной версией Multi Volcano: даёт множители x5 и прибавляет +5, если множитель попадает в занятую ячейку." },
+    ],
+  },
+  "3-oaks-gaming-3-super-hot-teapots": {
+    features: [
+      { title: "Три чайника прогресса", description: "Красный, синий и фиолетовый чайники заполняются соответствующими символами. Полная шкала запускает Hold & Win с MINI, MINOR и MAJOR; заполненные 15 позиций дают Grand Jackpot." },
+      { title: "Boost, Double и Multi", description: "Boost добавляет случайное значение ко всем видимым символам, Double открывает второе поле, Multi размещает множители в случайных ячейках. Повторное попадание увеличивает множитель ячейки на +1." },
+      { title: "Super Wheel даёт старт", description: "Перед бонусной игрой Super Wheel гарантирует один из стартовых эффектов: джекпот, дополнительную функцию или бонусные символы." },
+    ],
+  },
+  "3-oaks-gaming-4-african-drums": {
+    features: [
+      { title: "Шкалы четырёх барабанов", description: "Алмазы заполняют шкалы соответствующих барабанов и запускают Hold & Win. В бонусе могут выпасть MINI, MINOR, MAJOR и GRAND; полная сетка также может дать Grand Jackpot." },
+      { title: "Collect, Multi и Extra", description: "Collect собирает значения, Multi добавляет множители к пустым ячейкам, Extra открывает две дополнительные строки и может дублировать символ между ними. Расширенная полная сетка приносит Extra Grand Jackpot." },
+      { title: "Master Drum в респинах", description: "Master Drum может сработать в любой момент респинов и добавить до трёх бонусных символов, в том числе с джекпотами. В базовой игре он также может включать функции барабанов." },
+    ],
+  },
 };
 
 function getCatalogEditorial(slug: string) {

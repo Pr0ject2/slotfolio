@@ -50,3 +50,17 @@ for (const [slug, title, text] of [
     await expect(page.locator("#functions")).not.toContainText("Дополнительная функция меняет сценарий игрового раунда.");
   });
 }
+
+for (const [slug, title] of [
+  ["3-oaks-gaming-3-olymp-fortunes", "Super Wheel перед бонусом"],
+  ["3-oaks-gaming-3-pots-of-egypt", "Collect, Boost и Multi"],
+  ["3-oaks-gaming-3-super-coin-volcanoes", "Super Wheel и Gold Volcano"],
+  ["3-oaks-gaming-3-super-hot-teapots", "Super Wheel даёт старт"],
+  ["3-oaks-gaming-4-african-drums", "Master Drum в респинах"],
+] as const) {
+  test(`catalog ${slug} keeps source-specific Russian feature cards`, async ({ page }) => {
+    await page.goto(`/slots/catalog/${slug}`);
+    await expect(page.locator("#functions")).toBeVisible();
+    await expect(page.getByRole("heading", { name: title })).toBeVisible();
+  });
+}
