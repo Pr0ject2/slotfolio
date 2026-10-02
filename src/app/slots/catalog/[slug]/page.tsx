@@ -125,7 +125,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
             {details?.volatility ? <div><dt>Волатильность</dt><dd>{details.volatility}</dd></div> : null}
             {details?.maxWin ? <div><dt>Максимальная выплата</dt><dd>{details.maxWin}</dd></div> : null}
             {date(details?.releaseDate) ? <div><dt>Дата релиза</dt><dd>{date(details?.releaseDate)}</dd></div> : null}
-            {mechanics.length ? <div className="facts-wide"><dt>Ключевые механики</dt><dd className="slot-tag-list">{mechanics.map((mechanic) => <Link href={`/slots?mechanic=${encodeURIComponent(mechanic)}`} key={mechanic}>{mechanic}</Link>)}</dd></div> : null}
+            {mechanics.length ? <div className="facts-wide"><dt>Ключевые механики</dt><dd className="slot-tag-list">{mechanics.map((mechanic) => <Link href={`/slots?mechanic=${encodeURIComponent(mechanic)}`} key={mechanic}>{russianMechanic(mechanic).title}</Link>)}</dd></div> : null}
           </dl>
         </div>
       </div>
