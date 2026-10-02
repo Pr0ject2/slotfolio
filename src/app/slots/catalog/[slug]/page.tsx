@@ -30,29 +30,63 @@ function russianGameType(gameType: string) {
   return translations[gameType] ?? gameType;
 }
 
-type MechanicPresentation = { title: string; description: string };
+type EditorialFeature = { title: string; description: string };
 
-function russianMechanic(mechanic: string): MechanicPresentation {
-  const copy: Record<string, MechanicPresentation> = {
-    "Линии": { title: "Линии", description: "Выигрышные комбинации формируются по линиям из таблицы выплат." },
-    "Респины": { title: "Респины", description: "Повторные вращения дают раунду ещё одну возможность развить специальный результат." },
-    "Блокировка символов": { title: "Блокировка символов", description: "Специальные символы могут оставаться на поле во время дальнейших вращений." },
-    "Сбор символов": { title: "Сбор символов", description: "Особые символы накапливаются для запуска следующего игрового эффекта." },
-    "Множители": { title: "Множители", description: "Активный множитель увеличивает выплату связанного с ним выигрыша." },
-    "Кластеры": { title: "Кластерные выплаты", description: "Выигрыш формируется группами одинаковых символов, а не по линиям." },
-    "Cascades": { title: "Каскады", description: "После выигрышной комбинации символы могут исчезнуть, освобождая место для новых." },
-    "Mystery Symbols": { title: "Таинственные символы", description: "Скрытые символы раскрываются после остановки барабанов." },
-    "Free Spins": { title: "Бесплатные вращения", description: "Бонусный режим добавляет серию вращений без новой ставки." },
-    "Wilds": { title: "Вайлды", description: "Вайлды заменяют другие символы и помогают завершать выигрышные комбинации." },
-    "Sticky Wilds": { title: "Липкие вайлды", description: "Вайлды остаются на поле на протяжении нескольких вращений." },
-    "Expanding Wilds": { title: "Расширяющиеся вайлды", description: "Вайлд может занять больше позиций на игровом поле." },
-    "Расширяющиеся барабаны": { title: "Расширяющиеся барабаны", description: "Поле увеличивается в бонусной части игры, открывая дополнительные позиции." },
-    "Hold & Win": { title: "Удержание и выигрыши", description: "Специальные символы удерживаются на поле во время серии повторных вращений." },
-    "Risk Game": { title: "Риск-игра", description: "После выигрыша доступен отдельный раунд с возможностью изменить его размер." },
-    "Jackpots": { title: "Джекпоты", description: "Игра включает отдельные призовые уровни джекпота." },
-    "Bonus Game": { title: "Бонусная игра", description: "Отдельный режим меняет обычный сценарий раунда." },
+type CatalogEditorial = { features: EditorialFeature[] };
+
+const catalogEditorial: Record<string, CatalogEditorial> = {
+  "3-oaks-gaming-15-dragon-pearls": {
+    features: [
+      { title: "Шесть респинов Hold & Win", description: "Шесть золотых жемчужин запускают бонус Hold & Win с шестью респинами. Символы, активировавшие режим, фиксируются, как и каждая новая жемчужина в ходе бонуса." },
+      { title: "Зелёные и синие жемчужины", description: "Зелёная жемчужина собирает значения всех золотых жемчужин. Синяя собирает все видимые значения, включая значения других синих жемчужин." },
+      { title: "Восемь бесплатных вращений", description: "Отдельный режим состоит из восьми бесплатных вращений только с высокооплачиваемыми символами и может запускаться повторно." },
+    ],
+  },
+  "3-oaks-gaming-3-african-drums": {
+    features: [
+      { title: "Шкалы трёх барабанов", description: "Зелёные, красные и жёлтые символы прогресса заполняют соответствующие шкалы барабанов и активируют Hold & Win." },
+      { title: "Джекпоты в Hold & Win", description: "В серии респинов могут появиться MINI, MINOR и MAJOR. Полностью заполненное поле приносит Grand Jackpot размером 2 000x ставки." },
+      { title: "Collect, Double и Multi", description: "Collect собирает текущие значения, Double открывает второе поле, а Multi добавляет множители на случайные позиции. Все три функции могут включиться одновременно." },
+    ],
+  },
+  "3-oaks-gaming-3-aztec-temples": {
+    features: [
+      { title: "Шесть бонусных монет", description: "Шесть золотых монет запускают Hold & Win с респинами. В бонусе могут появиться MINI, MINOR и MAJOR, а полное поле может дать Grand Jackpot." },
+      { title: "Три храмовые шкалы", description: "Красные, синие и зелёные символы заполняют шкалы над барабанами. Заполненная шкала добавляет к Hold & Win одну из функций: Boost, Collect или Multi." },
+      { title: "Mystery Symbol и Lucky Spin", description: "Таинственный символ в бонусе может открыть дополнительную функцию или джекпот. Lucky Spin запускает бонус с активной функцией; Super Bonus включает все три функции." },
+    ],
+  },
+  "3-oaks-gaming-3-china-pots": {
+    features: [
+      { title: "Монеты и три горшка", description: "Синие, красные и фиолетовые монеты заполняют три шкалы-горшка и запускают Hold & Win с соответствующими Pot Features." },
+      { title: "Extra, Multi и Double", description: "Extra даёт четыре респина вместо трёх, Multi добавляет множители к бонусным символам, Double открывает второе поле. Можно активировать две или все три функции." },
+      { title: "Финал Hold & Win", description: "Бонус начинается с трёх респинов, а бонусные символы фиксируются. MINI, MINOR и MAJOR могут появиться в серии, а полное поле даёт Grand Jackpot 2 000x ставки." },
+    ],
+  },
+  "3-oaks-gaming-3-clover-pots": {
+    features: [
+      { title: "Клеверный Hold & Win", description: "Золотые клеверы с различными значениями запускают Hold & Win. В бонусе могут появиться MINI, MINOR и MAJOR, а полное поле приносит Grand Jackpot 5 000x ставки." },
+      { title: "Три Magic Pot Features", description: "Красный, зелёный и фиолетовый клевер включают свои усилители: Double удваивает значения, Mystery превращается в ценный бонусный символ или джекпот, Collect собирает все видимые значения." },
+      { title: "Бесплатные вращения с Wild x2", description: "В режиме бесплатных вращений Wild несёт множитель x2." },
+    ],
+  },
+};
+
+function getCatalogEditorial(slug: string) {
+  return catalogEditorial[slug];
+}
+
+function russianMechanicTitle(mechanic: string) {
+  const translations: Record<string, string> = {
+    "Mystery Symbols": "Таинственные символы",
+    "Free Spins": "Бесплатные вращения",
+    "Wilds": "Вайлды",
+    "Cascades": "Каскады",
+    "Hold & Win": "Удержание и выигрыши",
+    "Risk Game": "Риск-игра",
+    "Jackpots": "Джекпоты",
   };
-  return copy[mechanic] ?? { title: mechanic, description: "Дополнительная функция меняет сценарий игрового раунда." };
+  return translations[mechanic] ?? mechanic;
 }
 
 function itemHref(item: CatalogItem) {
@@ -84,6 +118,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const gameType = getVerifiedCatalogGameType(slot.slug);
   const research = getVerifiedCatalogResearch(slot.slug);
   const mechanics = research?.mechanics ?? [];
+  const editorial = getCatalogEditorial(slot.slug);
   const source = details?.source ?? gameType?.source ?? slot.source;
   const releaseSource = details?.releaseDateSource;
   const volatilitySource = details?.volatilitySource;
@@ -125,14 +160,14 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
             {details?.volatility ? <div><dt>Волатильность</dt><dd>{details.volatility}</dd></div> : null}
             {details?.maxWin ? <div><dt>Максимальная выплата</dt><dd>{details.maxWin}</dd></div> : null}
             {date(details?.releaseDate) ? <div><dt>Дата релиза</dt><dd>{date(details?.releaseDate)}</dd></div> : null}
-            {mechanics.length ? <div className="facts-wide"><dt>Ключевые механики</dt><dd className="slot-tag-list">{mechanics.map((mechanic) => <Link href={`/slots?mechanic=${encodeURIComponent(mechanic)}`} key={mechanic}>{russianMechanic(mechanic).title}</Link>)}</dd></div> : null}
+            {mechanics.length ? <div className="facts-wide"><dt>Ключевые механики</dt><dd className="slot-tag-list">{mechanics.map((mechanic) => <Link href={`/slots?mechanic=${encodeURIComponent(mechanic)}`} key={mechanic}>{russianMechanicTitle(mechanic)}</Link>)}</dd></div> : null}
           </dl>
         </div>
       </div>
       <div className="article-layout slot-body">
         <aside className="article-toc">
           <span className="eyebrow">В этом досье</span>
-          {mechanics.length ? <a href="#functions">Функции и бонусы</a> : null}
+          {editorial ? <a href="#functions">Функции и бонусы</a> : null}
           {details ? <a href="#math-profile">Математический профиль</a> : null}
           <a href="#editorial">Взгляд редакции</a>
           <a href="#catalog-comparison">Сравнение с каталогом</a>
@@ -142,7 +177,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
           <Link href="/slots">Весь каталог ↗</Link>
         </aside>
         <article className="prose">
-          {mechanics.length ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Что реально меняет ход раунда</h2><div className="dossier-feature-grid">{mechanics.map((mechanic, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={mechanic}><span>{String(index + 1).padStart(2, "0")}</span><h3>{russianMechanic(mechanic).title}</h3><p>{russianMechanic(mechanic).description}</p></article>)}</div></section> : null}
+          {editorial ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Что реально меняет ход раунда</h2><div className="dossier-feature-grid">{editorial.features.map((feature, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={feature.title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{feature.title}</h3><p>{feature.description}</p></article>)}</div></section> : null}
           <section id="editorial"><span className="eyebrow accent">Взгляд редакции</span><h2>На что смотреть перед запуском</h2><p>Сначала проверьте игровое поле, список механик и таблицу выплат в правилах оператора. Эти параметры показывают структуру раунда, но не гарантируют результат отдельной сессии.</p></section>
           <section id="catalog-comparison"><span className="eyebrow accent">Сравнение с каталогом</span><h2>Где искать похожие игры</h2><p>В каталоге можно отобрать игры того же провайдера или перейти к карточкам с совпадающими механиками. Так сравнение остаётся привязанным к подтверждённым данным, а не к предположениям.</p><Link className="text-link" href={`/slots?provider=${providerSlug(slot.provider)}`}>Все игры {slot.provider} ↗</Link></section>
           {details ? <section id="math-profile"><span className="eyebrow accent">Математический профиль</span><h2>Цифры без ложной точности</h2><div className="dossier-metric-grid">

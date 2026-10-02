@@ -14,7 +14,6 @@ for (const slug of ["bgaming-multi-rush", "playn-go-nsync-pop"]) {
     await expect(page.locator("#facts")).toBeVisible();
     await expect(page.locator(".slot-deck")).not.toContainText(/Official page|Official release|Подтверждённое игровое поле/);
     await expect(page.locator("body")).not.toContainText("Механика «");
-    await expect.poll(() => page.locator(".dossier-feature-card p").count()).toBeGreaterThan(0);
     await expect(page.locator("body")).not.toContainText("подтверждённые механики собраны по официальной странице");
     await expect(page.locator(".catalog-record-page")).toHaveCount(0);
   });
@@ -25,4 +24,13 @@ test("catalog dossier renders approved game artwork", async ({ page }) => {
   const artwork = page.locator(".slot-figure .catalog-dossier-art");
   await expect(artwork).toBeVisible();
   await expect(artwork).toHaveAttribute("src", /3-oaks-gaming-3-clover-pots-extra\.webp$/);
+});
+
+
+test("3 Aztec Temples shows only its own translated mechanics details", async ({ page }) => {
+  await page.goto("/slots/catalog/3-oaks-gaming-3-aztec-temples");
+  await expect(page.getByRole("heading", { name: "Шесть бонусных монет" })).toBeVisible();
+  await expect(page.getByText("Шесть золотых монет запускают Hold & Win с респинами.", { exact: false })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Три храмовые шкалы" })).toBeVisible();
+  await expect(page.locator("#functions")).not.toContainText("Дополнительная функция меняет сценарий игрового раунда.");
 });
