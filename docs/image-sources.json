@@ -493,5 +493,40 @@
     "image": "https://3oaks.com/media/thumbnails/public/3_pots_of_egypt/3_pots_of_egypt_banner_matxq_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-3-pots-of-egypt.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-3-super-coin-volcanoes",
+    "page": "https://3oaks.com/game/3_super_coin_volcanoes",
+    "image": "https://3oaks.com/media/thumbnails/public/3_super_coin_volcanoes/3_super_coin_volcanoes_banner_ghomw_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-3-super-coin-volcanoes.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-3-super-hot-chillies",
+    "page": "https://3oaks.com/game/3_super_hot_chillies",
+    "image": "https://3oaks.com/media/thumbnails/public/3_super_hot_chillies/3_super_hot_chillies_banner_xxylp_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-3-super-hot-chillies.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-3-super-hot-teapots",
+    "page": "https://3oaks.com/game/3_super_hot_teapots",
+    "image": "https://3oaks.com/media/thumbnails/public/3_super_hot_teapots/3_super_hot_teapots_banner_woysh_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-3-super-hot-teapots.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-4-african-drums",
+    "page": "https://3oaks.com/game/4_african_drums",
+    "image": "https://3oaks.com/media/thumbnails/public/4_african_drums/4_african_drums_banner_qdkuh_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-4-african-drums.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-4-clover-pots",
+    "page": "https://3oaks.com/game/4_clover_pots",
+    "image": "https://3oaks.com/media/thumbnails/public/4_clover_pots/4_clover_pots_banner_uowsf_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-4-clover-pots.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
   }
 ]
