@@ -49,15 +49,7 @@ export function CatalogGameCard({ item, number }: { item: CatalogItem; number: n
       data-verified-facts={item.verifiedFacts}
     >
       <Link className={`catalog-game-art ${styles.art}`} href={href} aria-label={`Открыть ${item.name}`}>
-        {item.coverage === "dossier" ? (
-          <GameImage slot={item} />
-        ) : (
-          <span className={styles.artFallback} aria-hidden="true">
-            <span className={styles.artProvider}>{item.provider}</span>
-            <strong className={styles.artTitle}>{item.name}</strong>
-            <span className={styles.artNote}>{year ? `релиз ${year}` : "официальная запись"}</span>
-          </span>
-        )}
+        <GameImage slot={item} />
       </Link>
 
       <div className="catalog-game-copy">
