@@ -32,6 +32,11 @@ const slots = [
   "3-oaks-gaming-black-wolf-2",
   "3-oaks-gaming-book-of-sun-multichance",
   "3-oaks-gaming-buddha-megaways",
+  "3-oaks-gaming-chili-coins",
+  "3-oaks-gaming-china-festival",
+  "3-oaks-gaming-coin-express",
+  "3-oaks-gaming-coin-lamp",
+  "3-oaks-gaming-coin-princess-x1000",
 ];
 
 test("approved 3 Oaks catalog cards use their local game artwork", async ({ page }) => {
