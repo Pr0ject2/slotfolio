@@ -778,4 +778,40 @@
     "local": "/images/catalog/3-oaks-gaming-grab-the-gold.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
   }
+,
+  {
+    "slug": "3-oaks-gaming-green-chilli",
+    "page": "https://3oaks.com/game/green_chilli",
+    "image": "https://3oaks.com/media/thumbnails/public/green_chilli/green_chilli_banner_mrhbg_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-green-chilli.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-green-chilli-2",
+    "page": "https://3oaks.com/game/green_chilli_2",
+    "image": "https://3oaks.com/media/thumbnails/public/green_chilli_2/green_chilli_2_banner_syvie_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-green-chilli-2.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-hit-more-gold",
+    "page": "https://3oaks.com/game/hit_more_gold",
+    "image": "https://3oaks.com/media/thumbnails/public/hit_more_gold/hit_more_gold_banner_hqvdi_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-hit-more-gold.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-hit-the-gold",
+    "page": "https://3oaks.com/game/hit_the_gold",
+    "image": "https://3oaks.com/media/thumbnails/public/hit_the_gold/hit_the_gold_banner_kifks_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-hit-the-gold.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-hot-fire-fruits",
+    "page": "https://3oaks.com/game/hot_fire_fruits",
+    "image": "https://3oaks.com/media/thumbnails/public/hot_fire_fruits/hot_fire_fruits_banner_tdiiy_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-hot-fire-fruits.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  }
 ]
