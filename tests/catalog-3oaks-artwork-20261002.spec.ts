@@ -21,7 +21,7 @@ const slots = [
   "3-oaks-gaming-4-fortune-clovers",
   "3-oaks-gaming-4-pots-of-egypt",
   "3-oaks-gaming-4-wolf-drums",
-  "3-oaks-gaming-777-coins",
+  "3-oaks-gaming-777-fruity-coins",
 ];
 
 test("approved 3 Oaks catalog cards use their local game artwork", async ({ page }) => {
