@@ -558,10 +558,10 @@
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
   },
   {
-    "slug": "3-oaks-gaming-777-coins",
-    "page": "https://3oaks.com/game/777_coins",
-    "image": "https://3oaks.com/media/thumbnails/public/777_coins/777_coins_banner_byift_768x432.jpg",
-    "local": "/images/catalog/3-oaks-gaming-777-coins.webp",
+    "slug": "3-oaks-gaming-777-fruity-coins",
+    "page": "https://3oaks.com/game/777_fruity_coins",
+    "image": "https://3oaks.com/media/thumbnails/public/777_fruity_coins/777_fruity_coins_banner_gpjwi_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-777-fruity-coins.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
   }
 ]
