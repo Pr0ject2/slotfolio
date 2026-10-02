@@ -4701,11 +4701,9 @@ summary {
 .catalog-dossier-heading {
   margin-top: 50px;
 }
-.catalog-dossier-intro {
-  grid-template-columns: minmax(0, 1fr);
-}
-.catalog-dossier-intro .slot-summary {
-  max-width: 700px;
+.catalog-dossier-art {
+  background: color-mix(in srgb, var(--olive) 18%, var(--paper));
+  object-fit: contain !important;
 }
 .comparison-selection-empty {
   color: #a6aaa8;
