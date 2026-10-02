@@ -7,6 +7,11 @@ const slots = [
   "3-oaks-gaming-3-aztec-temples",
   "3-oaks-gaming-3-china-pots",
   "3-oaks-gaming-3-clover-pots",
+  "3-oaks-gaming-3-hot-teapots",
+  "3-oaks-gaming-3-jewel-crowns",
+  "3-oaks-gaming-3-lucky-sparks",
+  "3-oaks-gaming-3-olymp-fortunes",
+  "3-oaks-gaming-3-pots-of-egypt",
 ];
 
 test("approved 3 Oaks catalog cards use their local game artwork", async ({ page }) => {
