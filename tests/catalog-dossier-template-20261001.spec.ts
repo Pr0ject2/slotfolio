@@ -26,3 +26,12 @@ test("catalog dossier renders approved game artwork", async ({ page }) => {
   await expect(artwork).toBeVisible();
   await expect(artwork).toHaveAttribute("src", /3-oaks-gaming-3-clover-pots-extra\.webp$/);
 });
+
+
+test("3 Aztec Temples shows only its own translated mechanics details", async ({ page }) => {
+  await page.goto("/slots/catalog/3-oaks-gaming-3-aztec-temples");
+  await expect(page.getByRole("heading", { name: "Шесть бонусных монет" })).toBeVisible();
+  await expect(page.getByText("Шесть золотых монет запускают Hold & Win с респинами.", { exact: false })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Три храмовые шкалы" })).toBeVisible();
+  await expect(page.locator("#functions")).not.toContainText("Дополнительная функция меняет сценарий игрового раунда.");
+});
