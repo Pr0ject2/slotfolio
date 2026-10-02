@@ -458,5 +458,40 @@
     "image": "https://3oaks.com/media/thumbnails/public/3_hot_chillies/3_hot_chillies_banner_ygicb_768x432.png",
     "local": "/images/catalog/3-oaks-gaming-3-hot-chillies.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-3-hot-teapots",
+    "page": "https://3oaks.com/game/3_hot_teapots",
+    "image": "https://3oaks.com/media/thumbnails/public/3_hot_teapots/3_hot_teapots_banner_nskgt_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-3-hot-teapots.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-3-jewel-crowns",
+    "page": "https://3oaks.com/game/3_jewel_crowns",
+    "image": "https://3oaks.com/media/thumbnails/public/3_jewel_crowns/3_jewel_crowns_banner_mvocf_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-3-jewel-crowns.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-3-lucky-sparks",
+    "page": "https://3oaks.com/game/3_lucky_sparks",
+    "image": "https://3oaks.com/media/thumbnails/public/3_lucky_sparks/3_lucky_sparks_banner_ogbge_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-3-lucky-sparks.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-3-olymp-fortunes",
+    "page": "https://3oaks.com/game/3_olymp_fortunes",
+    "image": "https://3oaks.com/media/thumbnails/public/3_olymp_fortunes/3_olymp_fortunes_banner_whxyp_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-3-olymp-fortunes.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-3-pots-of-egypt",
+    "page": "https://3oaks.com/game/3_pots_of_egypt",
+    "image": "https://3oaks.com/media/thumbnails/public/3_pots_of_egypt/3_pots_of_egypt_banner_matxq_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-3-pots-of-egypt.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
   }
 ]
