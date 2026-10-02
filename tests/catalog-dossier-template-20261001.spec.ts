@@ -64,3 +64,17 @@ for (const [slug, title] of [
     await expect(page.getByRole("heading", { name: title })).toBeVisible();
   });
 }
+
+for (const [slug, title] of [
+  ["3-oaks-gaming-4-clover-pots", "Super Pot 10 000x"],
+  ["3-oaks-gaming-4-fairy-flowers", "Magic Bonus четвёртого цветка"],
+  ["3-oaks-gaming-4-fortune-clovers", "Fortune Situation"],
+  ["3-oaks-gaming-4-pots-of-egypt", "Четыре функции горшков"],
+  ["3-oaks-gaming-4-wolf-drums", "Master Drum"],
+] as const) {
+  test(`catalog ${slug} keeps source-specific Russian feature cards`, async ({ page }) => {
+    await page.goto(`/slots/catalog/${slug}`);
+    await expect(page.locator("#functions")).toBeVisible();
+    await expect(page.getByRole("heading", { name: title })).toBeVisible();
+  });
+}
