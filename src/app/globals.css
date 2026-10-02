@@ -4750,3 +4750,5 @@ summary {
 @media (max-width: 700px) {
   .catalog-editorial-cover { min-height: 220px; }
 }
+
+.catalog-facts-heading { font: 400 24px/1.2 var(--serif); margin: 24px 0 12px; }
