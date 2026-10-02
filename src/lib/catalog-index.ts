@@ -11,7 +11,6 @@ import { getVerifiedCatalogDetails } from "./catalog-verified-details-lookup";
 import { getVerifiedCatalogGameType } from "./catalog-verified-game-type";
 import { getVerifiedSlotMetrics } from "./dossier";
 import { getCatalogArtwork } from "./catalog-artwork";
-import { getCatalogCover } from "./catalog-cover";
 import {
   buildCatalogSearchText,
   type CatalogItem,
@@ -110,7 +109,7 @@ export function createCatalogModel(): CatalogModel {
       rtp: "",
       rtpValue: null,
       volatility: "",
-      image: getCatalogArtwork(seed.slug) ?? getCatalogCover(seed),
+      image: getCatalogArtwork(seed.slug) ?? "/images/unavailable.svg",
       description,
       coverage: "catalog",
       source: seed.source,
