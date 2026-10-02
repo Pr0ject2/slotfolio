@@ -79,6 +79,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
         <div className="slot-summary">
           <span className="eyebrow">Суть игры</span>
           <p className="slot-deck">{research?.evidence || `${slot.name} представлена в официальном каталоге ${slot.provider}.`}</p>
+          <h2 className="catalog-facts-heading">Характеристики</h2>
           <dl className="facts catalog-record-facts">
             <div><dt>Провайдер</dt><dd><Link href={`/slots?provider=${providerSlug(slot.provider)}`}>{slot.provider}</Link></dd></div>
             {gameType ? <div><dt>Тип игры</dt><dd>{gameType.gameType}</dd></div> : null}
