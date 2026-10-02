@@ -4715,3 +4715,38 @@ summary {
 .comparison-selection-empty {
   color: #a6aaa8;
 }
+
+
+/* Catalog entries use the same editorial hero proportions as full dossiers.
+   These are intentionally neutral covers until a game-specific licensed asset is available. */
+.catalog-editorial-cover {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 12px;
+  padding: clamp(24px, 5vw, 48px);
+  color: var(--paper);
+  background:
+    linear-gradient(135deg, rgba(220, 65, 42, .95), rgba(41, 45, 43, .94) 58%, rgba(10, 15, 14, .98));
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.catalog-editorial-cover span,
+.catalog-editorial-cover small {
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.catalog-editorial-cover strong {
+  max-width: 12ch;
+  font: 400 clamp(34px, 5vw, 62px)/.98 var(--serif);
+  letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+}
+.catalog-editorial-cover small { color: rgba(244, 245, 244, .72); }
+@media (max-width: 700px) {
+  .catalog-editorial-cover { min-height: 220px; }
+}
