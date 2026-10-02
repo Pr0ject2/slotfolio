@@ -4751,3 +4751,20 @@ summary {
 }
 
 .catalog-facts-heading { font: 400 24px/1.2 var(--serif); margin: 24px 0 12px; }
+
+/* Catalog-only rows retain a compact artwork column when an approved game banner exists. */
+.list .catalog-only:has(.catalog-game-art) {
+  grid-template-columns: 210px minmax(0, 1fr) 20px;
+}
+.list .catalog-only:has(.catalog-game-art) .catalog-game-art img {
+  aspect-ratio: 16 / 9;
+}
+@media (max-width: 600px) {
+  .list .catalog-only:has(.catalog-game-art) {
+    grid-template-columns: 112px minmax(0, 1fr);
+    gap: 14px;
+  }
+  .list .catalog-only:has(.catalog-game-art) .catalog-game-copy {
+    grid-column: auto;
+  }
+}
