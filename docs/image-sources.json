@@ -742,4 +742,40 @@
     "local": "/images/catalog/3-oaks-gaming-fortune-globe.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
   }
+,
+  {
+    "slug": "3-oaks-gaming-gold-express",
+    "page": "https://3oaks.com/game/gold_express",
+    "image": "https://3oaks.com/media/thumbnails/public/gold_express/gold_express_banner_tztpa_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-gold-express.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-gold-nuggets",
+    "page": "https://3oaks.com/game/gold_nuggets",
+    "image": "https://3oaks.com/media/thumbnails/public/gold_nuggets/gold_nuggets_banner_qvwsw_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-gold-nuggets.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-golden-teapot",
+    "page": "https://3oaks.com/game/golden_teapot",
+    "image": "https://3oaks.com/media/thumbnails/public/golden_teapot/golden_teapot_banner_czsxd_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-golden-teapot.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-grab-more-gold",
+    "page": "https://3oaks.com/game/grab_more_gold",
+    "image": "https://3oaks.com/media/thumbnails/public/grab_more_gold/grab_more_gold_banner_hsczd_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-grab-more-gold.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-grab-the-gold",
+    "page": "https://3oaks.com/game/grab_the_gold",
+    "image": "https://3oaks.com/media/thumbnails/public/grab_the_gold/grab_the_gold_banner_fmcse_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-grab-the-gold.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  }
 ]
