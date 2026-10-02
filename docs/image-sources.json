@@ -706,4 +706,40 @@
     "local": "/images/catalog/3-oaks-gaming-dancing-joker.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
   }
+,
+  {
+    "slug": "3-oaks-gaming-dj-tiger-x1000",
+    "page": "https://3oaks.com/game/dj_tiger_x1000",
+    "image": "https://3oaks.com/media/thumbnails/public/dj_tiger_x1000/dj_tiger_x1000_banner_uzkxm_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-dj-tiger-x1000.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-dragon-pearls",
+    "page": "https://3oaks.com/game/dragon_pearls",
+    "image": "https://3oaks.com/media/thumbnails/public/dragon_pearls/dragon_pearls_banner_vmari_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-dragon-pearls.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-egypt-fire-2",
+    "page": "https://3oaks.com/game/egypt_fire_2",
+    "image": "https://3oaks.com/media/thumbnails/public/egypt_fire_2/egypt_fire_2_banner_wutft_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-egypt-fire-2.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-egypt-power-x1000",
+    "page": "https://3oaks.com/game/egypt_power_x1000",
+    "image": "https://3oaks.com/media/thumbnails/public/egypt_power_x1000/egypt_power_x1000_banner_oajhm_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-egypt-power-x1000.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-fortune-globe",
+    "page": "https://3oaks.com/game/fortune_globe",
+    "image": "https://3oaks.com/media/thumbnails/public/fortune_globe/fortune_globe_banner_irmjm_768x432.png",
+    "local": "/images/catalog/3-oaks-gaming-fortune-globe.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  }
 ]
