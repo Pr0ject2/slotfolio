@@ -69,7 +69,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       { title: "Три Magic Pot Features", description: "Красный, зелёный и фиолетовый клевер включают свои усилители: Double удваивает значения, Mystery превращается в ценный бонусный символ или джекпот, Collect собирает все видимые значения." },
       { title: "Бесплатные вращения с Wild x2", description: "В режиме бесплатных вращений Wild несёт множитель x2." },
     ],
-  },,
+  },
   "3-oaks-gaming-3-clover-pots-extra": {
     features: [
       { title: "Rainbow Coin в Hold & Win", description: "Золотые клеверы запускают Hold & Win с MINI, MINOR и MAJOR. Во время респинов Rainbow Coin может открыть ещё одну функцию горшка, превратившись в специальный бонусный символ." },
