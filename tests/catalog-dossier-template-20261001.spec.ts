@@ -40,7 +40,7 @@ for (const [slug, title, text] of [
   ["3-oaks-gaming-3-coin-volcanoes", "Life, Multi и Grow", "Grow открывает две дополнительные строки"],
   ["3-oaks-gaming-3-coins", "Алмаз x100–x500", "алмаз с множителем от x100 до x500"],
   ["3-oaks-gaming-3-egypt-chests", "Multi, Extra и Double", "Double удваивает игровое поле"],
-  ["3-oaks-gaming-3-hot-chillies", "Три режима усиления", "Double Reels открывает второе поле"],
+  ["3-oaks-gaming-3-jewel-crowns", "Короны открывают семь фриспинов", "Заполненные шкалы запускают семь бесплатных вращений"],
 ] as const) {
   test(`catalog ${slug} shows its own Russian mechanics`, async ({ page }) => {
     await page.goto(`/slots/catalog/${slug}`);
