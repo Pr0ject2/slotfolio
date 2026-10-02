@@ -50,7 +50,7 @@ test("catalog card presents every available passport value without workflow stat
   const card = page.locator('.catalog-game[data-coverage="catalog"]').filter({ hasText: "Mayan Ritual" });
   await expect(card).toHaveCount(1);
   await expect(card).toContainText("Mayan Ritual");
-  await expect(card).toContainText("релиз 2018");
+  await expect(card).toContainText("Wazdan / 2018");
   await expect(card).toContainText("5 барабанов · 40 линий");
   await expect(card).toContainText("96,29%");
   await expect(card).toContainText("850x");
