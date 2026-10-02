@@ -8,7 +8,11 @@ for (const slug of ["bgaming-multi-rush", "playn-go-nsync-pop"]) {
     await expect(page.locator(".slot-figure")).toHaveCount(0);
     await expect(page.locator(".article-layout")).toBeVisible();
     await expect(page.getByRole("heading", { name: "Цифры без ложной точности" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "На что смотреть перед запуском" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Где искать похожие игры" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Что нужно знать" })).toBeVisible();
     await expect(page.locator("#facts")).toBeVisible();
+    await expect(page.locator(".slot-deck")).not.toContainText(/Official page|Official release/);
     await expect(page.locator(".catalog-record-page")).toHaveCount(0);
   });
 }
