@@ -393,30 +393,35 @@
     "slug": "3-oaks-gaming-15-dragon-pearls",
     "page": "https://3oaks.com/game/15_dragon_pearls",
     "local": "/images/catalog/3-oaks-gaming-15-dragon-pearls.webp",
-    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request.",
+    "image": "https://3oaks.com/media/thumbnails/public/15_dragon_pearls/15_dragon_pearls_banner_fttku_768x432.jpg"
   },
   {
     "slug": "3-oaks-gaming-3-african-drums",
     "page": "https://3oaks.com/game/3_african_drums",
     "local": "/images/catalog/3-oaks-gaming-3-african-drums.webp",
-    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request.",
+    "image": "https://3oaks.com/media/thumbnails/public/3_african_drums/3_african_drums_banner_vxdta_768x432.jpg"
   },
   {
     "slug": "3-oaks-gaming-3-aztec-temples",
     "page": "https://3oaks.com/game/3_aztec_temples",
     "local": "/images/catalog/3-oaks-gaming-3-aztec-temples.webp",
-    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request.",
+    "image": "https://3oaks.com/media/thumbnails/public/3_aztec_temples/3_aztec_temples_banner_fgxkc_768x432.jpg"
   },
   {
     "slug": "3-oaks-gaming-3-china-pots",
     "page": "https://3oaks.com/game/3_china_pots",
     "local": "/images/catalog/3-oaks-gaming-3-china-pots.webp",
-    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request.",
+    "image": "https://3oaks.com/media/thumbnails/public/3_china_pots/3_china_pots_banner_mpfsr_768x432.jpg"
   },
   {
     "slug": "3-oaks-gaming-3-clover-pots",
     "page": "https://3oaks.com/game/3_clover_pots",
     "local": "/images/catalog/3-oaks-gaming-3-clover-pots.webp",
-    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request.",
+    "image": "https://3oaks.com/media/thumbnails/public/3_clover_pots/3_clover_pots_banner_ietyg_768x432.png"
   }
 ]
