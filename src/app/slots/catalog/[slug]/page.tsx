@@ -26,6 +26,16 @@ function russianDossierLead(slot: { name: string; provider: string }, details: R
   return `${slot.name} от ${slot.provider}. ${field}${mechanicText}`;
 }
 
+function russianGameType(gameType: string) {
+  const translations: Record<string, string> = {
+    "Slots": "Слот",
+    "Video Slot": "Видеослот",
+    "Grid Slot": "Слот с сеткой",
+    "Cascading Cluster Pays": "Кластерный слот с каскадами",
+  };
+  return translations[gameType] ?? gameType;
+}
+
 function russianMechanicCopy(mechanic: string) {
   return `Механика «${mechanic}» отмечена в официальном описании игры. Условия её активации и доступность зависят от правил выбранной версии.`;
 }
@@ -95,7 +105,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
           <h2 className="catalog-facts-heading">Характеристики</h2>
           <dl className="facts catalog-record-facts">
             <div><dt>Провайдер</dt><dd><Link href={`/slots?provider=${providerSlug(slot.provider)}`}>{slot.provider}</Link></dd></div>
-            {gameType ? <div><dt>Тип игры</dt><dd>{gameType.gameType}</dd></div> : null}
+            {gameType ? <div><dt>Тип игры</dt><dd>{russianGameType(gameType.gameType)}</dd></div> : null}
             {details?.field ? <div><dt>Игровое поле</dt><dd>{details.field}</dd></div> : null}
             {details?.rtp ? <div><dt>RTP, справочно</dt><dd>{details.rtp}</dd></div> : null}
             {details?.volatility ? <div><dt>Волатильность</dt><dd>{details.volatility}</dd></div> : null}
