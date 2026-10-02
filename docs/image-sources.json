@@ -670,4 +670,40 @@
     "local": "/images/catalog/3-oaks-gaming-coin-princess-x1000.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
   }
+,
+  {
+    "slug": "3-oaks-gaming-coin-up-volcano",
+    "page": "https://3oaks.com/game/coinup_volcano",
+    "image": "https://3oaks.com/media/thumbnails/public/coinup_volcano/coinup_volcano_banner_vmuuz_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-coin-up-volcano.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-coin-volcano",
+    "page": "https://3oaks.com/game/coin_volcano",
+    "image": "https://3oaks.com/media/thumbnails/public/coin_volcano/coin_volcano_banner_xyxqb_768x432.png",
+    "local": "/images/catalog/3-oaks-gaming-coin-volcano.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-coin-volcano-2",
+    "page": "https://3oaks.com/game/coin_volcano_2",
+    "image": "https://3oaks.com/media/thumbnails/public/coin_volcano_2/coin_volcano_2_banner_zhfkq_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-coin-volcano-2.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-crystal-scarabs",
+    "page": "https://3oaks.com/game/crystal_scarabs",
+    "image": "https://3oaks.com/media/thumbnails/public/crystal_scarabs/crystal_scarabs_banner_pmhjc_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-crystal-scarabs.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-dancing-joker",
+    "page": "https://3oaks.com/game/dancing_joker",
+    "image": "https://3oaks.com/media/thumbnails/public/dancing_joker/dancing_joker_banner_oafzq_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-dancing-joker.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  }
 ]
