@@ -9,6 +9,11 @@ const artworkBySlug: Record<string, string> = {
   "3-oaks-gaming-3-coins": "/images/catalog/3-oaks-gaming-3-coins.webp",
   "3-oaks-gaming-3-egypt-chests": "/images/catalog/3-oaks-gaming-3-egypt-chests.webp",
   "3-oaks-gaming-3-hot-chillies": "/images/catalog/3-oaks-gaming-3-hot-chillies.webp",
+  "3-oaks-gaming-3-hot-teapots": "/images/catalog/3-oaks-gaming-3-hot-teapots.webp",
+  "3-oaks-gaming-3-jewel-crowns": "/images/catalog/3-oaks-gaming-3-jewel-crowns.webp",
+  "3-oaks-gaming-3-lucky-sparks": "/images/catalog/3-oaks-gaming-3-lucky-sparks.webp",
+  "3-oaks-gaming-3-olymp-fortunes": "/images/catalog/3-oaks-gaming-3-olymp-fortunes.webp",
+  "3-oaks-gaming-3-pots-of-egypt": "/images/catalog/3-oaks-gaming-3-pots-of-egypt.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
