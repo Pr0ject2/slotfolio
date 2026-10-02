@@ -47,6 +47,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const gameType = getVerifiedCatalogGameType(slot.slug);
   const research = getVerifiedCatalogResearch(slot.slug);
   const mechanics = research?.mechanics ?? [];
+  const mechanicsWithDetails = mechanics.filter((mechanic) => Boolean(research?.mechanicDetails?.[mechanic]));
   const source = details?.source ?? gameType?.source ?? slot.source;
   const sources = Array.from(new Set([slot.source, details?.source, gameType?.source, research?.source].filter((value): value is string => Boolean(value))));
   const releaseSource = details?.releaseDateSource ?? null;
@@ -109,7 +110,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
           <Link href="/slots">Весь каталог ↗</Link>
         </aside>
         <article className="prose">
-          {mechanics.length ? <section id="mechanic"><span className="eyebrow accent">Механики</span><h2>Что подтверждено у этой игры</h2><div className="dossier-feature-grid">{mechanics.map((mechanic, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={mechanic}><span>{String(index + 1).padStart(2, "0")}</span><h3>{mechanic}</h3><p>Механика указана в официальном описании игры.</p></article>)}</div></section> : null}
+          {mechanics.length ? <section id="mechanic"><span className="eyebrow accent">Механики</span><h2>Что подтверждено у этой игры</h2>{research?.evidence ? <p className="mechanics-evidence">{research.evidence}</p> : null}{mechanicsWithDetails.length ? <div className="dossier-feature-grid">{mechanicsWithDetails.map((mechanic, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={mechanic}><span>{String(index + 1).padStart(2, "0")}</span><h3>{mechanic}</h3><p>{research?.mechanicDetails?.[mechanic]}</p></article>)}</div> : <div className="slot-tag-list catalog-mechanic-list">{mechanics.map((mechanic) => <Link href={`/slots?mechanic=${encodeURIComponent(mechanic)}`} key={mechanic}>{mechanic}</Link>)}</div>}</section> : null}
           {details ? <section id="math-profile"><span className="eyebrow accent">Параметры игры</span><h2>Цифры без предположений</h2><div className="dossier-metric-grid">
             {details.rtp ? <div><span>RTP</span><strong>Подтверждён</strong><small>Точное значение указано в характеристиках выше</small></div> : null}
             {details.maxWin ? <div><span>Максимальная выплата</span><strong>Подтверждена</strong><small>Точное значение указано в характеристиках выше</small></div> : null}
