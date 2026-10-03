@@ -7,11 +7,11 @@ for (const slug of ["bgaming-multi-rush", "playn-go-nsync-pop"]) {
     await expect(page.locator(".slot-intro")).toBeVisible();
     await expect(page.locator(".slot-figure")).toHaveCount(0);
     await expect(page.locator(".article-layout")).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Цифры без ложной точности" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "С чем сравнивать эту игру" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Как читать параметры игры" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Основные характеристики" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Сравнение с другими играми" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Параметры и источники" })).toBeVisible();
     await expect(page.locator("#editorial")).toHaveCount(0);
-    await expect(page.getByRole("heading", { name: "Что нужно знать перед запуском" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Ответы на частые вопросы" })).toBeVisible();
     await expect(page.locator("#facts")).toBeVisible();
     await expect(page.locator(".slot-deck")).not.toContainText(/Official page|Official release|Подтверждённое игровое поле/);
     await expect(page.locator("body")).not.toContainText("Механика «");
@@ -35,7 +35,7 @@ test("3 Aztec Temples shows only its own translated mechanics details", async ({
   await expect(page.locator("#functions")).not.toContainText("Дополнительная функция меняет сценарий игрового раунда.");
   await expect(page.locator("#how-it-works")).toContainText("условия запуска важнее одиночного выигрыша по линии");
   await expect(page.locator("#editorial")).toContainText("состояние трёх храмовых шкал");
-  await expect(page.locator("#catalog-comparison")).toContainText("С чем сравнивать эту игру");
+  await expect(page.locator("#catalog-comparison")).toContainText("Сравнение с другими играми");
 });
 
 for (const [slug, title, text] of [
