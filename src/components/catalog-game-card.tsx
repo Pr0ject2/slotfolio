@@ -2,7 +2,6 @@ import Link from "next/link";
 import { CompareButton } from "./compare-button";
 import { GameImage } from "./editorial-client";
 import type { CatalogItem } from "@/lib/catalog-query";
-import { getCatalogArtwork } from "@/lib/catalog-artwork";
 import styles from "./catalog-game-card.module.css";
 
 function displayRelease(value: string) {
@@ -50,7 +49,7 @@ export function CatalogGameCard({ item, number }: { item: CatalogItem; number: n
   const href = item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
   const year = displayYear(item);
   const facts = displayFacts(item);
-  const hasArtwork = item.coverage === "dossier" || Boolean(getCatalogArtwork(item.slug));
+  const hasArtwork = item.coverage === "dossier" || item.image !== "/images/unavailable.svg";
 
   return (
     <article
