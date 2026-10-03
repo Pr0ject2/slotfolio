@@ -95,3 +95,18 @@ for (const [slug, title] of [
     await expect(page.getByRole("heading", { name: title })).toBeVisible();
   });
 }
+
+
+for (const [slug, intro, editorial] of [
+  ["3-oaks-gaming-3-olymp-fortunes", "Super Wheel гарантирует дополнительную награду", "зависит и от горшков, и от Super Wheel"],
+  ["3-oaks-gaming-3-pots-of-egypt", "цветные специальные монеты", "какие горшки успели заполниться"],
+  ["3-oaks-gaming-3-super-coin-volcanoes", "Три вулканические функции", "Gold Volcano даёт множители x5"],
+  ["3-oaks-gaming-3-super-hot-teapots", "цветные символы заполняют три чайника", "повторные множители растут на +1"],
+  ["3-oaks-gaming-4-african-drums", "алмазы заполняют четыре шкалы барабанов", "Master Drum"],
+] as const) {
+  test(`catalog ${slug} has distinct game-specific dossier copy`, async ({ page }) => {
+    await page.goto(`/slots/catalog/${slug}`);
+    await expect(page.locator("#how-it-works")).toContainText(intro);
+    await expect(page.locator("#editorial")).toContainText(editorial);
+  });
+}
