@@ -1023,5 +1023,65 @@
     "image": "https://bgaming.com/wp-content/uploads/2026/08/Cats_Love_Yummy_1020x1280-720x904.webp",
     "local": "/images/catalog/bgaming-cats-love-yummy.webp",
     "note": "Official provider game artwork from the first-party BGaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-chicken-fire",
+    "page": "https://bgaming.com/games/chicken-fire",
+    "local": "/images/catalog/bgaming-chicken-fire.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-divine-queen-power-of-sun",
+    "page": "https://bgaming.com/games/divine-queen-power-of-sun",
+    "local": "/images/catalog/bgaming-divine-queen-power-of-sun.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-dusty-duel",
+    "page": "https://bgaming.com/games/dusty-duel",
+    "local": "/images/catalog/bgaming-dusty-duel.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-fortune-trio-minions-of-fu",
+    "page": "https://bgaming.com/games/fortune-trio-minions-of-fu",
+    "local": "/images/catalog/bgaming-fortune-trio-minions-of-fu.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-frenzy-clusters",
+    "page": "https://bgaming.com/games/frenzy-clusters",
+    "local": "/images/catalog/bgaming-frenzy-clusters.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-fruit-million-respin",
+    "page": "https://bgaming.com/games/fruit-million-respin",
+    "local": "/images/catalog/bgaming-fruit-million-respin.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-johnny-vs-chicken",
+    "page": "https://bgaming.com/games/johnny-vs-chicken",
+    "local": "/images/catalog/bgaming-johnny-vs-chicken.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-miss-cherry-wild-frames",
+    "page": "https://bgaming.com/games/miss-cherry-wild-frames",
+    "local": "/images/catalog/bgaming-miss-cherry-wild-frames.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-money-maker",
+    "page": "https://bgaming.com/games/money-maker",
+    "local": "/images/catalog/bgaming-money-maker.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-multi-rush",
+    "page": "https://bgaming.com/games/multi-rush",
+    "local": "/images/catalog/bgaming-multi-rush.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
   }
 ]
