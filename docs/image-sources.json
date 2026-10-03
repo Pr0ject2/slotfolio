@@ -953,5 +953,75 @@
     "image": "https://3oaks.com/media/thumbnails/public/super_sticky_piggy/super_sticky_piggy_banner_toutr_768x432.png",
     "local": "/images/catalog/3-oaks-gaming-super-sticky-piggy.webp",
     "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-supreme-diamond-xxl",
+    "page": "https://3oaks.com/game/supreme_diamond_xxl",
+    "image": "https://3oaks.com/media/thumbnails/public/supreme_diamond_xxl/supreme_diamond_xxl_banner_cdatz_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-supreme-diamond-xxl.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-thunder-tiger",
+    "page": "https://3oaks.com/game/thunder_tiger",
+    "image": "https://3oaks.com/media/thumbnails/public/thunder_tiger/thunder_tiger_banner_gxsab_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-thunder-tiger.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-tiger-gems",
+    "page": "https://3oaks.com/game/tiger_gems",
+    "image": "https://3oaks.com/media/thumbnails/public/tiger_gems/tiger_gems_banner_tgycj_768x432.png",
+    "local": "/images/catalog/3-oaks-gaming-tiger-gems.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-tiger-jungle",
+    "page": "https://3oaks.com/game/tiger_jungle",
+    "image": "https://3oaks.com/media/thumbnails/public/tiger_jungle/tiger_jungle_banner_gdicr_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-tiger-jungle.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-wolf-night",
+    "page": "https://3oaks.com/game/wolf_night",
+    "image": "https://3oaks.com/media/thumbnails/public/wolf_night/wolf_night_banner_bmdig_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-wolf-night.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-3-lucky-monkeys-hold-and-win",
+    "page": "https://bgaming.com/games/3-lucky-monkeys-hold-win",
+    "image": "https://bgaming.com/wp-content/uploads/2026/09/3-Lucky-Monkeys-Hold-Win_1020x1280-720x904.webp",
+    "local": "/images/catalog/bgaming-3-lucky-monkeys-hold-and-win.webp",
+    "note": "Official provider game artwork from the first-party BGaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-alien-fruits-3",
+    "page": "https://bgaming.com/games/alien-fruits-3",
+    "image": "https://hub.bgaming.com/wp-content/uploads/2026/06/alien_fruits_3_2x_cat_s_soup_2x1728_670-1-scaled.webp",
+    "local": "/images/catalog/bgaming-alien-fruits-3.webp",
+    "note": "Official provider game artwork from the first-party BGaming Players Hub. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-bonanza-billion-merge-uptm",
+    "page": "https://bgaming.com/games/bonanza-billion-merge-up",
+    "image": "https://bgaming.com/wp-content/uploads/2026/08/Bonanza_Merge_Up_1020x1280-720x904.webp",
+    "local": "/images/catalog/bgaming-bonanza-billion-merge-uptm.webp",
+    "note": "Official provider game artwork from the first-party BGaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-book-of-hidden-tombs",
+    "page": "https://bgaming.com/games/book-of-hidden-tombs",
+    "image": "https://bgaming.com/wp-content/uploads/2026/07/Book_of_Hidden_Tombs_1020x1280-720x904.webp",
+    "local": "/images/catalog/bgaming-book-of-hidden-tombs.webp",
+    "note": "Official provider game artwork from the first-party BGaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-cats-love-yummy",
+    "page": "https://bgaming.com/games/cats-love-yummy",
+    "image": "https://bgaming.com/wp-content/uploads/2026/08/Cats_Love_Yummy_1020x1280-720x904.webp",
+    "local": "/images/catalog/bgaming-cats-love-yummy.webp",
+    "note": "Official provider game artwork from the first-party BGaming game page. Local build-time copy only; no runtime remote request."
   }
 ]
