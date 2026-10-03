@@ -99,6 +99,16 @@ const artworkBySlug: Record<string, string> = {
   "bgaming-miss-cherry-wild-frames": "/images/catalog/bgaming-miss-cherry-wild-frames.webp",
   "bgaming-money-maker": "/images/catalog/bgaming-money-maker.webp",
   "bgaming-multi-rush": "/images/catalog/bgaming-multi-rush.webp",
+  "bgaming-mystic-reels": "/images/catalog/bgaming-mystic-reels.webp",
+  "bgaming-red-hot-chilli-chickens": "/images/catalog/bgaming-red-hot-chilli-chickens.webp",
+  "bgaming-reel-of-ra": "/images/catalog/bgaming-reel-of-ra.webp",
+  "bgaming-st-patricks-pots-hold-and-win": "/images/catalog/bgaming-st-patricks-pots-hold-and-win.webp",
+  "bgaming-stars-and-stripes-hold-and-win": "/images/catalog/bgaming-stars-and-stripes-hold-and-win.webp",
+  "bgaming-sweet-samurai": "/images/catalog/bgaming-sweet-samurai.webp",
+  "bgaming-the-godfather-3-pillars-of-power": "/images/catalog/bgaming-the-godfather-3-pillars-of-power.webp",
+  "bgaming-train-heist-johnny-cash": "/images/catalog/bgaming-train-heist-johnny-cash.webp",
+  "bgaming-wincent-wolf": "/images/catalog/bgaming-wincent-wolf.webp",
+  "bgaming-yokai": "/images/catalog/bgaming-yokai.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
