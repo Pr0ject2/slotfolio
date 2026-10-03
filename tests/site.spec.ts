@@ -198,8 +198,8 @@ test("all established public routes, local navigation targets, images and headin
 
 test("seo metadata, structured data, robots and sitemap stay conservative", async ({ page, request }) => {
   await page.goto("/slots/gates-of-olympus");
-  await expect(page.getByRole("heading", { name: "Что реально меняет ход раунда" })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Цифры без ложной точности" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Основные функции" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Основные параметры" })).toBeVisible();
   const canonical = await page.locator('link[rel="canonical"]').getAttribute("href");
   expect(canonical).toContain("/slots/gates-of-olympus");
   await expect(page.locator('meta[property="og:title"]')).toHaveAttribute("content", /Gates of Olympus/);
