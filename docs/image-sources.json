@@ -1208,5 +1208,75 @@
     "local": "/images/catalog/endorphina-hell-hot-1000.webp",
     "note": "Official provider artwork from the first-party Endorphina game-page gallery. Local build-time copy only; no runtime remote request.",
     "image": "https://endorphina.com/uploads/thumbs/hell-hot-1000-preloader-daa52dc112-154x96.png"
+  },
+  {
+    "slug": "endorphina-moofo",
+    "page": "https://endorphina.com/games/moofo",
+    "image": "https://endorphina.com/uploads/thumbs/preloader-c3586405d4-154x96.png",
+    "local": "/images/catalog/endorphina-moofo.webp",
+    "note": "Official provider artwork from the first-party Endorphina game-page gallery. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "endorphina-zalatar",
+    "page": "https://endorphina.com/games/zalatar",
+    "image": "https://endorphina.com/uploads/thumbs/zalatar-preloader-b2ec485e7d-154x96.png",
+    "local": "/images/catalog/endorphina-zalatar.webp",
+    "note": "Official provider artwork from the first-party Endorphina game-page gallery. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-2-wild-2-die",
+    "page": "https://www.hacksawgaming.com/games/2-wild-2-die",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1400_hero_Device_Desktop16x9.png",
+    "local": "/images/catalog/hacksaw-gaming-2-wild-2-die.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-3-cursed-chests-hold-and-win",
+    "page": "https://www.hacksawgaming.com/games/3-cursed-chests%3A-hold-%26-win",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2296_hero_Device_Desktop%2016x9.png",
+    "local": "/images/catalog/hacksaw-gaming-3-cursed-chests-hold-and-win.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-aiko-and-the-wind-spirit",
+    "page": "https://www.hacksawgaming.com/games/aiko-and-the-wind-spirit",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1756_hero_AikoAndTheWindSpirit_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-aiko-and-the-wind-spirit.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-arizona-james-and-the-lost-relics",
+    "page": "https://www.hacksawgaming.com/games/arizona-james-and-the-lost-relics",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2492_hero_ArizonaJamesAndTheLostRelics_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-arizona-james-and-the-lost-relics.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-army-of-ares",
+    "page": "https://www.hacksawgaming.com/games/army-of-ares",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1977_hero_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-army-of-ares.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-bash-bros",
+    "page": "https://www.hacksawgaming.com/games/bash-bros",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1928_hero_BashBros_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-bash-bros.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-beam-boys",
+    "page": "https://www.hacksawgaming.com/games/beam-boys",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1426_hero_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-beam-boys.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-beast-below",
+    "page": "https://www.hacksawgaming.com/games/beast-below",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1279_hero_Device_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-beast-below.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
   }
 ]
