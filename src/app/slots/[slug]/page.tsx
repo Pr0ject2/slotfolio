@@ -276,7 +276,7 @@ export default async function Page({
           </section>
           <section id="features">
             <span className="eyebrow accent">Функции и бонусы</span>
-            <h2>Что реально меняет ход раунда</h2>
+            <h2>Основные функции</h2>
             <div className="dossier-feature-grid">
               {featureCards.map((card, index) => (
                 <article
@@ -291,8 +291,8 @@ export default async function Page({
             </div>
           </section>
           <section id="math-profile">
-            <span className="eyebrow accent">Математический профиль</span>
-            <h2>Цифры без ложной точности</h2>
+            <span className="eyebrow accent">Параметры игры</span>
+            <h2>Основные параметры</h2>
             <div className="dossier-metric-grid">
               <div>
                 <span>RTP в каталоге</span>
@@ -344,8 +344,8 @@ export default async function Page({
             </p>
           </section>
           <section id="catalog-context">
-            <span className="eyebrow accent">Контекст каталога</span>
-            <h2>С чем сравнивать эту игру</h2>
+            <span className="eyebrow accent">Похожие игры</span>
+            <h2>Сравнение с другими играми</h2>
             <div className="dossier-context-grid">
               <div>
                 <span>RTP относительно базы</span>
