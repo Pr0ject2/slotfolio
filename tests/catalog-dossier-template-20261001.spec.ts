@@ -33,8 +33,8 @@ test("3 Aztec Temples shows only its own translated mechanics details", async ({
   await expect(page.getByRole("heading", { name: "Шесть бонусных монет" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Три храмовые шкалы" })).toBeVisible();
   await expect(page.locator("#functions")).not.toContainText("Дополнительная функция меняет сценарий игрового раунда.");
-  await expect(page.locator("#how-it-works")).toContainText("Шесть золотых монет запускают Hold & Win");
-  await expect(page.locator("#editorial")).toContainText("3 Aztec Temples");
+  await expect(page.locator("#how-it-works")).toContainText("условия запуска важнее одиночного выигрыша по линии");
+  await expect(page.locator("#editorial")).toContainText("состояние трёх храмовых шкал");
   await expect(page.locator("#catalog-comparison")).toContainText("С чем сравнивать эту игру");
 });
 
