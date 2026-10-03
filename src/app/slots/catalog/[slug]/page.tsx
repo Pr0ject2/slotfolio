@@ -156,6 +156,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-3-olymp-fortunes": {
+    intro: [
+      "В 3 Olymp Fortunes заполненные горшки открывают Hold & Win. Перед каждой бонусной игрой Super Wheel гарантирует дополнительную награду.",
+      "Во время респинов Extra добавляет попытки, Multi работает с множителями, а Double открывает вторую сетку.",
+    ],
+    editorial: "В 3 Olymp Fortunes результат запуска зависит и от горшков, и от Super Wheel: колесо может сразу добавить бонусные символы, новую функцию или джекпот.",
     features: [
       { title: "Три горшка Олимпа", description: "Один или несколько заполненных горшков запускают Hold & Win. В бонусе доступны MINI, MINOR и MAJOR, а полная сетка приносит Grand Jackpot 1 000x ставки." },
       { title: "Extra, Multi и Double", description: "Extra увеличивает число респинов до четырёх, Multi добавляет множители к случайным символам с перемножением в одной ячейке, Double открывает вторую сетку и шанс на два Grand Jackpot." },
@@ -163,6 +168,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-3-pots-of-egypt": {
+    intro: [
+      "В 3 Pots of Egypt шесть золотых монет запускают Hold & Win, а цветные специальные монеты параллельно заполняют три шкалы горшков.",
+      "Эти шкалы включают Collect, Boost и Multi, поэтому состав выпавших монет меняет сам сценарий бонуса.",
+    ],
+    editorial: "В 3 Pots of Egypt важно, какие горшки успели заполниться до запуска: Collect собирает значения, Boost прибавляет их всем символам, а Multi умножает значения до x5.",
     features: [
       { title: "Шесть золотых монет", description: "Шесть и более золотых монет запускают Hold & Win с респинами. Внутри могут выпасть MINI, MINOR и MAJOR." },
       { title: "Collect, Boost и Multi", description: "Синие, красные и зелёные специальные монеты заполняют шкалы горшков: Collect собирает значения, Boost прибавляет случайное значение ко всем символам, Multi умножает все значения до x5." },
@@ -170,6 +180,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-3-super-coin-volcanoes": {
+    intro: [
+      "В 3 Super Coin Volcanoes четыре совпадения на активной линии запускают Hold & Win. До начала серии Super Wheel гарантирует стартовый эффект.",
+      "Три вулканические функции управляют респинами, множителями и расширением поля: Life восстанавливает счётчик, Multi Volcano добавляет множители, Grow открывает две строки.",
+    ],
+    editorial: "В 3 Super Coin Volcanoes решающим становится тип вулкана: Gold Volcano даёт множители x5 вместо x2 и усиливает уже занятую ячейку на +5.",
     features: [
       { title: "Четыре символа запускают Hold & Win", description: "Четыре совпадения на активной линии включают бонус. В нём доступны MINI, MINOR, MAJOR, Mystery, Mystery Jackpot и Collect; заполненная сетка может дать Grand Jackpot." },
       { title: "Life, Multi Volcano и Grow", description: "Life восстанавливает респины, Multi Volcano размещает от двух до шести множителей x2, а Grow добавляет две строки. С новым множителем в той же ячейке её суммарный множитель растёт на +1." },
@@ -177,6 +192,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-3-super-hot-teapots": {
+    intro: [
+      "В 3 Super Hot Teapots цветные символы заполняют три чайника. Полная шкала запускает Hold & Win с соответствующими функциями.",
+      "Boost повышает значения видимых символов, Double открывает второе поле, Multi размещает множители. Super Wheel до бонуса задаёт один из стартовых эффектов.",
+    ],
+    editorial: "В 3 Super Hot Teapots полезно смотреть на заполненные чайники: они определяют, какие функции будут активны в Hold & Win, а повторные множители растут на +1.",
     features: [
       { title: "Три чайника прогресса", description: "Красный, синий и фиолетовый чайники заполняются соответствующими символами. Полная шкала запускает Hold & Win с MINI, MINOR и MAJOR; заполненные 15 позиций дают Grand Jackpot." },
       { title: "Boost, Double и Multi", description: "Boost добавляет случайное значение ко всем видимым символам, Double открывает второе поле, Multi размещает множители в случайных ячейках. Повторное попадание увеличивает множитель ячейки на +1." },
@@ -184,6 +204,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-4-african-drums": {
+    intro: [
+      "В 4 African Drums алмазы заполняют четыре шкалы барабанов, после чего начинается Hold & Win. Бонус может получить отдельное усиление от Master Drum.",
+      "Collect собирает значения, Multi добавляет множители, Extra раскрывает ещё две строки. При заполнении расширенной сетки доступен Extra Grand Jackpot.",
+    ],
+    editorial: "Главная особенность 4 African Drums — Master Drum: он может добавить до трёх бонусных символов во время респинов, в том числе символы джекпотов.",
     features: [
       { title: "Шкалы четырёх барабанов", description: "Алмазы заполняют шкалы соответствующих барабанов и запускают Hold & Win. В бонусе могут выпасть MINI, MINOR, MAJOR и GRAND; полная сетка также может дать Grand Jackpot." },
       { title: "Collect, Multi и Extra", description: "Collect собирает значения, Multi добавляет множители к пустым ячейкам, Extra открывает две дополнительные строки и может дублировать символ между ними. Расширенная полная сетка приносит Extra Grand Jackpot." },
