@@ -1143,5 +1143,65 @@
     "page": "https://bgaming.com/games/yokai",
     "local": "/images/catalog/bgaming-yokai.webp",
     "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "endorphina-3-golden-chests",
+    "page": "https://endorphina.com/games/3-golden-chests",
+    "local": "/images/catalog/endorphina-3-golden-chests.webp",
+    "note": "Official provider game artwork discovered from first-party Endorphina page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "endorphina-burning-coins-100",
+    "page": "https://endorphina.com/games/burning-coins-100",
+    "local": "/images/catalog/endorphina-burning-coins-100.webp",
+    "note": "Official provider game artwork discovered from first-party Endorphina page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "endorphina-burning-coins-20-dice",
+    "page": "https://endorphina.com/games/burning-coins-20-dice",
+    "local": "/images/catalog/endorphina-burning-coins-20-dice.webp",
+    "note": "Official provider game artwork discovered from first-party Endorphina page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "endorphina-chance-machine-90s",
+    "page": "https://endorphina.com/games/chance-machine-90s",
+    "local": "/images/catalog/endorphina-chance-machine-90s.webp",
+    "note": "Official provider game artwork discovered from first-party Endorphina page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "endorphina-druids-fortune",
+    "page": "https://endorphina.com/games/druids-fortune",
+    "local": "/images/catalog/endorphina-druids-fortune.webp",
+    "note": "Official provider game artwork discovered from first-party Endorphina page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "endorphina-fortune-bankers",
+    "page": "https://endorphina.com/games/fortune-bankers",
+    "local": "/images/catalog/endorphina-fortune-bankers.webp",
+    "note": "Official provider game artwork discovered from first-party Endorphina page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "endorphina-fortune-chests-dice",
+    "page": "https://endorphina.com/games/fortune-chests-dice",
+    "local": "/images/catalog/endorphina-fortune-chests-dice.webp",
+    "note": "Official provider game artwork discovered from first-party Endorphina page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "endorphina-gift-of-midas",
+    "page": "https://endorphina.com/games/gift-of-midas",
+    "local": "/images/catalog/endorphina-gift-of-midas.webp",
+    "note": "Official provider game artwork discovered from first-party Endorphina page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "endorphina-groovin-tiger",
+    "page": "https://endorphina.com/games/groovin-tiger",
+    "local": "/images/catalog/endorphina-groovin-tiger.webp",
+    "note": "Official provider game artwork discovered from first-party Endorphina page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "endorphina-hell-hot-1000",
+    "page": "https://endorphina.com/games/hell-hot-1000",
+    "local": "/images/catalog/endorphina-hell-hot-1000.webp",
+    "note": "Official provider game artwork discovered from first-party Endorphina page metadata. Local build-time copy only; no runtime remote request."
   }
 ]
