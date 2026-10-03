@@ -109,6 +109,16 @@ const artworkBySlug: Record<string, string> = {
   "bgaming-train-heist-johnny-cash": "/images/catalog/bgaming-train-heist-johnny-cash.webp",
   "bgaming-wincent-wolf": "/images/catalog/bgaming-wincent-wolf.webp",
   "bgaming-yokai": "/images/catalog/bgaming-yokai.webp",
+  "endorphina-3-golden-chests": "/images/catalog/endorphina-3-golden-chests.webp",
+  "endorphina-burning-coins-100": "/images/catalog/endorphina-burning-coins-100.webp",
+  "endorphina-burning-coins-20-dice": "/images/catalog/endorphina-burning-coins-20-dice.webp",
+  "endorphina-chance-machine-90s": "/images/catalog/endorphina-chance-machine-90s.webp",
+  "endorphina-druids-fortune": "/images/catalog/endorphina-druids-fortune.webp",
+  "endorphina-fortune-bankers": "/images/catalog/endorphina-fortune-bankers.webp",
+  "endorphina-fortune-chests-dice": "/images/catalog/endorphina-fortune-chests-dice.webp",
+  "endorphina-gift-of-midas": "/images/catalog/endorphina-gift-of-midas.webp",
+  "endorphina-groovin-tiger": "/images/catalog/endorphina-groovin-tiger.webp",
+  "endorphina-hell-hot-1000": "/images/catalog/endorphina-hell-hot-1000.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
