@@ -9,7 +9,7 @@ for (const slug of ["bgaming-multi-rush", "playn-go-nsync-pop"]) {
     await expect(page.locator(".article-layout")).toBeVisible();
     await expect(page.getByRole("heading", { name: "Цифры без ложной точности" })).toBeVisible();
     await expect(page.getByRole("heading", { name: "С чем сравнивать эту игру" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Как читать эти характеристики" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Как читать параметры игры" })).toBeVisible();
     await expect(page.locator("#editorial")).toHaveCount(0);
     await expect(page.getByRole("heading", { name: "Что нужно знать перед запуском" })).toBeVisible();
     await expect(page.locator("#facts")).toBeVisible();
