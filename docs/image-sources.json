@@ -633,8 +633,7 @@
     "image": "https://3oaks.com/media/thumbnails/public/buddha_megaways/buddha_megaways_banner_baxke_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-buddha-megaways.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
-  }
-,
+  },
   {
     "slug": "3-oaks-gaming-chili-coins",
     "page": "https://3oaks.com/game/chili_coins",
@@ -669,8 +668,7 @@
     "image": "https://3oaks.com/media/thumbnails/public/coin_princess_x1000/coin_princess_x1000_banner_bweos_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-coin-princess-x1000.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
-  }
-,
+  },
   {
     "slug": "3-oaks-gaming-coin-up-volcano",
     "page": "https://3oaks.com/game/coinup_volcano",
@@ -705,8 +703,7 @@
     "image": "https://3oaks.com/media/thumbnails/public/dancing_joker/dancing_joker_banner_oafzq_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-dancing-joker.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
-  }
-,
+  },
   {
     "slug": "3-oaks-gaming-dj-tiger-x1000",
     "page": "https://3oaks.com/game/dj_tiger_x1000",
@@ -741,8 +738,7 @@
     "image": "https://3oaks.com/media/thumbnails/public/fortune_globe/fortune_globe_banner_irmjm_768x432.png",
     "local": "/images/catalog/3-oaks-gaming-fortune-globe.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
-  }
-,
+  },
   {
     "slug": "3-oaks-gaming-gold-express",
     "page": "https://3oaks.com/game/gold_express",
@@ -777,8 +773,7 @@
     "image": "https://3oaks.com/media/thumbnails/public/grab_the_gold/grab_the_gold_banner_fmcse_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-grab-the-gold.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
-  }
-,
+  },
   {
     "slug": "3-oaks-gaming-green-chilli",
     "page": "https://3oaks.com/game/green_chilli",
@@ -812,6 +807,66 @@
     "page": "https://3oaks.com/game/hot_fire_fruits",
     "image": "https://3oaks.com/media/thumbnails/public/hot_fire_fruits/hot_fire_fruits_banner_tdiiy_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-hot-fire-fruits.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-moon-sisters",
+    "page": "https://3oaks.com/game/moon_sisters",
+    "local": "/images/catalog/3-oaks-gaming-moon-sisters.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-more-magic-apple",
+    "page": "https://3oaks.com/game/more_magic_apple",
+    "local": "/images/catalog/3-oaks-gaming-more-magic-apple.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-power-sun",
+    "page": "https://3oaks.com/game/power_sun",
+    "local": "/images/catalog/3-oaks-gaming-power-sun.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-power-sun-xxl",
+    "page": "https://3oaks.com/game/power_sun_xxl",
+    "local": "/images/catalog/3-oaks-gaming-power-sun-xxl.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-purple-diamond",
+    "page": "https://3oaks.com/game/purple_diamond",
+    "local": "/images/catalog/3-oaks-gaming-purple-diamond.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-rio-gems",
+    "page": "https://3oaks.com/game/rio_gems",
+    "local": "/images/catalog/3-oaks-gaming-rio-gems.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-rush-for-gold",
+    "page": "https://3oaks.com/game/rush_for_gold",
+    "local": "/images/catalog/3-oaks-gaming-rush-for-gold.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-scarab-temple",
+    "page": "https://3oaks.com/game/scarab_temple",
+    "local": "/images/catalog/3-oaks-gaming-scarab-temple.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-sky-pearls",
+    "page": "https://3oaks.com/game/sky_pearls",
+    "local": "/images/catalog/3-oaks-gaming-sky-pearls.webp",
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-space-coins",
+    "page": "https://3oaks.com/game/space_coins",
+    "local": "/images/catalog/3-oaks-gaming-space-coins.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
   }
 ]
