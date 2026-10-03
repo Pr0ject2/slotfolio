@@ -31,6 +31,10 @@ jobs:
         run: |
           rm -f 'src/app/go/[operator]/route.ts'
           npx next build
+      - name: Print published 3 Oaks catalog tail
+        shell: bash
+        run: |
+          find out/slots/catalog -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | grep '^3-oaks-gaming-' | sort | sed -n '/3-oaks-gaming-magic-clovers/,$p'
       - name: Start static site
         run: |
           python3 -m http.server 3000 --directory out > /tmp/slotfolio-http.log 2>&1 &
