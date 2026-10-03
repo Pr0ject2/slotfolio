@@ -32,7 +32,7 @@ function russianGameType(gameType: string) {
 
 type EditorialFeature = { title: string; description: string };
 
-type CatalogEditorial = { features: EditorialFeature[] };
+type CatalogEditorial = { intro?: string[]; editorial?: string; features: EditorialFeature[] };
 
 const catalogEditorial: Record<string, CatalogEditorial> = {
   "3-oaks-gaming-15-dragon-pearls": {
@@ -320,7 +320,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
           <Link href="/slots">Весь каталог ↗</Link>
         </aside>
         <article className="prose">
-          {editorial ? <section id="how-it-works"><h2>Как устроена игра</h2>{editorialMechanics.map((feature) => <p key={feature.title}>{feature.description}</p>)}</section> : null}
+          {editorial ? <section id="how-it-works"><h2>Как устроена игра</h2>{(editorial.intro ?? editorialMechanics.map((feature) => feature.description)).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section> : null}
           {editorial ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Что реально меняет ход раунда</h2><div className="dossier-feature-grid">{editorial.features.map((feature, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={feature.title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{feature.title}</h3><p>{feature.description}</p></article>)}</div></section> : null}
           {details ? <section id="math-profile"><span className="eyebrow accent">Математический профиль</span><h2>Цифры без ложной точности</h2><div className="dossier-metric-grid">
             {details.rtp ? <div><span>RTP в каталоге</span><strong>{details.rtp}</strong><small>Справочная конфигурация</small></div> : null}
@@ -328,7 +328,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
             {details.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>Справочная категория</small></div> : null}
             {details.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.join(" · ")}</small></div> : null}
           </div></section> : null}
-          {editorial ? <section id="editorial"><span className="eyebrow accent">Взгляд редакции</span><h2>{slot.name}: что важно в раунде</h2><blockquote>{editorial.features[0].description}</blockquote>{editorial.features[2] ? <p>{editorial.features[2].description}</p> : null}</section> : null}
+          {editorial ? <section id="editorial"><span className="eyebrow accent">Взгляд редакции</span><h2>{slot.name}: что важно в раунде</h2><blockquote>{editorial.editorial ?? editorial.features[0].description}</blockquote>{!editorial.editorial && editorial.features[2] ? <p>{editorial.features[2].description}</p> : null}</section> : null}
           <section id="catalog-comparison"><span className="eyebrow accent">Контекст каталога</span><h2>С чем сравнивать эту игру</h2><div className="dossier-metric-grid">
             {details?.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.map(russianMechanicTitle).join(" · ")}</small></div> : null}
             <div><span>Провайдер</span><strong>{slot.provider}</strong><small>Другие игры с теми же механиками доступны в каталоге</small></div>
