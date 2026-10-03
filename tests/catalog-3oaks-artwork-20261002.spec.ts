@@ -67,6 +67,16 @@ const slots = [
   "3-oaks-gaming-sky-pearls",
   "3-oaks-gaming-space-coins",
   "3-oaks-gaming-sun-of-egypt",
+  "3-oaks-gaming-sun-of-egypt-2",
+  "3-oaks-gaming-sun-of-egypt-3",
+  "3-oaks-gaming-sun-of-egypt-4",
+  "3-oaks-gaming-sun-of-egypt-5",
+  "3-oaks-gaming-sunlight-princess",
+  "3-oaks-gaming-super-china-pots",
+  "3-oaks-gaming-super-hot-chilli",
+  "3-oaks-gaming-super-hot-teapots",
+  "3-oaks-gaming-super-hotfire-diamonds",
+  "3-oaks-gaming-super-sticky-piggy",
 ];
 
 test("approved 3 Oaks catalog cards use their local game artwork", async ({ page }) => {
