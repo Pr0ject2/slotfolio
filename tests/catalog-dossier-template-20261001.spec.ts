@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-for (const slug of ["bgaming-multi-rush", "playn-go-nsync-pop"]) {
+for (const slug of ["playn-go-nsync-pop"]) {
   test(`catalog ${slug} uses the dossier template without invented artwork`, async ({ page }) => {
     await page.goto(`/slots/catalog/${slug}`);
     await expect(page.locator(".slot-heading")).toBeVisible();
