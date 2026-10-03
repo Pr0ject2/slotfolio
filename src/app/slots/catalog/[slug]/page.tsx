@@ -372,7 +372,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
         <article className="prose">
           {editorial ? <section id="how-it-works"><h2>Как устроена игра</h2>{(editorial.intro ?? editorialMechanics.map((feature) => feature.description)).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section> : null}
           {editorial ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Основные функции</h2><div className="dossier-feature-grid">{editorial.features.map((feature, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={feature.title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{feature.title}</h3><p>{feature.description}</p></article>)}</div></section> : null}
-          {details ? <section id="math-profile"><span className="eyebrow accent">Характеристики игры</span><h2>Основные характеристики</h2><div className="dossier-metric-grid">
+          {details ? <section id="math-profile"><span className="eyebrow accent">Характеристики игры</span><h2>Параметры игры</h2><div className="dossier-metric-grid">
             {details.rtp ? <div><span>RTP в каталоге</span><strong>{details.rtp}</strong><small>Справочная конфигурация</small></div> : null}
             {details.maxWin ? <div><span>Максимальная выплата</span><strong>{details.maxWin}</strong><small>Заявлено провайдером</small></div> : null}
             {details.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>Справочная категория</small></div> : null}
