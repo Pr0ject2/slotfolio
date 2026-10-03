@@ -9,8 +9,8 @@ const slots = [
   ["hacksaw-gaming-chaos-crew-3", "Glitch Dogs"],
   ["hacksaw-gaming-circle-of-life", "Tree of Life"],
   ["hacksaw-gaming-cloud-princess", "Progressive Divine Multiplier"],
-  ["hacksaw-gaming-chaos-crew", "Bonus multipliers"],
-  ["hacksaw-gaming-chaos-crew-2", "Epic Drop"],
+  ["hacksaw-gaming-cursed-crypt", "Cursed Positions"],
+  ["hacksaw-gaming-dandy-diamonds", "Dandy Respin"],
 ] as const;
 
 test("wave 16 Hacksaw cards render game-specific editorial copy and official artwork", async ({ page }) => {
