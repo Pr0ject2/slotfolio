@@ -864,13 +864,6 @@
     "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
   },
   {
-    "slug": "3-oaks-gaming-scarab-temple",
-    "page": "https://3oaks.com/game/scarab_temple",
-    "image": "https://3oaks.com/media/thumbnails/public/scarab_temple/scarab_temple_banner_wkkwo_768x432.jpg",
-    "local": "/images/catalog/3-oaks-gaming-scarab-temple.webp",
-    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
-  },
-  {
     "slug": "3-oaks-gaming-sky-pearls",
     "page": "https://3oaks.com/game/sky_pearls",
     "image": "https://3oaks.com/media/thumbnails/public/sky_pearls/sky_pearls_banner_emcny_768x432.png",
@@ -882,6 +875,13 @@
     "page": "https://3oaks.com/game/space_coins",
     "image": "https://3oaks.com/media/thumbnails/public/space_coins/space_coins_banner_ecjdy_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-space-coins.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-sun-of-egypt",
+    "page": "https://3oaks.com/game/sun_of_egypt",
+    "image": "https://3oaks.com/media/thumbnails/public/sun_of_egypt/sun_of_egypt_banner_thulu_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-sun-of-egypt.webp",
     "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
   }
 ]
