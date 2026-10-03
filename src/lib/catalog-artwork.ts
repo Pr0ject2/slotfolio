@@ -119,6 +119,16 @@ const artworkBySlug: Record<string, string> = {
   "endorphina-gift-of-midas": "/images/catalog/endorphina-gift-of-midas.webp",
   "endorphina-groovin-tiger": "/images/catalog/endorphina-groovin-tiger.webp",
   "endorphina-hell-hot-1000": "/images/catalog/endorphina-hell-hot-1000.webp",
+  "endorphina-moofo": "/images/catalog/endorphina-moofo.webp",
+  "endorphina-zalatar": "/images/catalog/endorphina-zalatar.webp",
+  "hacksaw-gaming-2-wild-2-die": "/images/catalog/hacksaw-gaming-2-wild-2-die.webp",
+  "hacksaw-gaming-3-cursed-chests-hold-and-win": "/images/catalog/hacksaw-gaming-3-cursed-chests-hold-and-win.webp",
+  "hacksaw-gaming-aiko-and-the-wind-spirit": "/images/catalog/hacksaw-gaming-aiko-and-the-wind-spirit.webp",
+  "hacksaw-gaming-arizona-james-and-the-lost-relics": "/images/catalog/hacksaw-gaming-arizona-james-and-the-lost-relics.webp",
+  "hacksaw-gaming-army-of-ares": "/images/catalog/hacksaw-gaming-army-of-ares.webp",
+  "hacksaw-gaming-bash-bros": "/images/catalog/hacksaw-gaming-bash-bros.webp",
+  "hacksaw-gaming-beam-boys": "/images/catalog/hacksaw-gaming-beam-boys.webp",
+  "hacksaw-gaming-beast-below": "/images/catalog/hacksaw-gaming-beast-below.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
