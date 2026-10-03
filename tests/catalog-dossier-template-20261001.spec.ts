@@ -110,3 +110,23 @@ for (const [slug, intro, editorial] of [
     await expect(page.locator("#editorial")).toContainText(editorial);
   });
 }
+
+
+for (const [slug, intro, editorial] of [
+  ["3-oaks-gaming-4-clover-pots", "Четвёртый большой горшок", "два уровня бонуса"],
+  ["3-oaks-gaming-4-fairy-flowers", "Четвёртый цветок", "пробуждение четвёртого цветка"],
+  ["3-oaks-gaming-4-fortune-clovers", "Fortune Situation", "до шести"],
+  ["3-oaks-gaming-4-pots-of-egypt", "четыре шкалы-горшка", "включаются одновременно"],
+  ["3-oaks-gaming-4-wolf-drums", "Master Drum", "недостающую функцию"],
+  ["3-oaks-gaming-777-fruity-coins", "Collect с 777", "утроить Grand Jackpot"],
+  ["3-oaks-gaming-777-gems-respin", "два заполненных одинаковыми Gems", "третий"],
+  ["3-oaks-gaming-amazonia-wins", "Extra Board", "связкой Win и Collect"],
+  ["3-oaks-gaming-aztec-fire", "шесть огненных метеоров", "40 позиций"],
+  ["3-oaks-gaming-aztec-fire-2", "шесть метеоров", "до восьми рядов"],
+] as const) {
+  test(`catalog ${slug} has its own full dossier copy`, async ({ page }) => {
+    await page.goto(`/slots/catalog/${slug}`);
+    await expect(page.locator("#how-it-works")).toContainText(intro);
+    await expect(page.locator("#editorial")).toContainText(editorial);
+  });
+}
