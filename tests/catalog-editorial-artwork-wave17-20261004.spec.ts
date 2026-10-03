@@ -7,7 +7,7 @@ const slots = [
   ["hacksaw-gaming-dawn-of-kings", "Triple Book of Dawn"],
   ["hacksaw-gaming-deal-with-death", "Poker Mode"],
   ["hacksaw-gaming-death-becomes-you", "Duel With Death"],
-  ["hacksaw-gaming-densho", "Progression Trackers"],
+  ["hacksaw-gaming-densho", "Progression Tracker"],
   ["hacksaw-gaming-divine-drop", "Vitality"],
   ["hacksaw-gaming-donny-and-danny", "Cash Board"],
   ["hacksaw-gaming-donny-dough", "Multi-Dough"],
