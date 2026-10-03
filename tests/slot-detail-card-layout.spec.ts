@@ -57,3 +57,14 @@ test("catalog-only fact grid adapts without hiding available data", async ({ pag
   expect((await facts.evaluate((element) => getComputedStyle(element).gridTemplateColumns)).split(" ").length).toBe(1);
   expect(await facts.locator("dd").count()).toBeGreaterThanOrEqual(8);
 });
+
+
+test("full dossier uses plain section headings", async ({ page }) => {
+  await page.goto("/slots/gates-of-olympus");
+  await expect(page.getByRole("heading", { name: "Основные параметры" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Основные функции" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Сравнение с другими играми" })).toBeVisible();
+  await expect(page.locator("body")).not.toContainText("Цифры без ложной точности");
+  await expect(page.locator("body")).not.toContainText("Что реально меняет ход раунда");
+  await expect(page.locator("body")).not.toContainText("С чем сравнивать эту игру");
+});
