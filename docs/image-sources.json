@@ -1278,5 +1278,75 @@
     "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1279_hero_Device_Desktop.png",
     "local": "/images/catalog/hacksaw-gaming-beast-below.webp",
     "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-benny-the-beer",
+    "page": "https://www.hacksawgaming.com/games/benny-the-beer",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1356_hero_Device_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-benny-the-beer.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-booze-bash",
+    "page": "https://www.hacksawgaming.com/games/booze-bash",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1783_hero_Device_Desktop16x9.png",
+    "local": "/images/catalog/hacksaw-gaming-booze-bash.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-bouncy-bombs",
+    "page": "https://www.hacksawgaming.com/games/bouncy-bombs",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1422_hero_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-bouncy-bombs.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-bullets-and-bounty",
+    "page": "https://www.hacksawgaming.com/games/Bullets-and-bounty",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1799_hero_Device_Desktop16x9%20%282%29.png",
+    "local": "/images/catalog/hacksaw-gaming-bullets-and-bounty.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-cash-crew",
+    "page": "https://www.hacksawgaming.com/games/cash-crew",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1456_hero_CashCrew_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-cash-crew.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-chaos-crew",
+    "page": "https://www.hacksawgaming.com/games/chaos-crew",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1059_hero_1059_screen_thumbnail.png",
+    "local": "/images/catalog/hacksaw-gaming-chaos-crew.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-chaos-crew-2",
+    "page": "https://www.hacksawgaming.com/games/chaos-crew-2",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1352_hero_Device_Desktop16x9.png",
+    "local": "/images/catalog/hacksaw-gaming-chaos-crew-2.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-chaos-crew-3",
+    "page": "https://www.hacksawgaming.com/games/chaos-crew-3",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1867_hero_Device_Desktop16x9.png",
+    "local": "/images/catalog/hacksaw-gaming-chaos-crew-3.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-circle-of-life",
+    "page": "https://www.hacksawgaming.com/games/circle-of-life",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2019_hero_Device_Desktop16x9%20%281%29.png",
+    "local": "/images/catalog/hacksaw-gaming-circle-of-life.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-cloud-princess",
+    "page": "https://www.hacksawgaming.com/games/cloud-princess",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1602_hero_Devices_Desktop%20%281%29.png",
+    "local": "/images/catalog/hacksaw-gaming-cloud-princess.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
   }
 ]
