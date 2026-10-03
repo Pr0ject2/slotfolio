@@ -69,6 +69,16 @@ const artworkBySlug: Record<string, string> = {
   "3-oaks-gaming-sky-pearls": "/images/catalog/3-oaks-gaming-sky-pearls.webp",
   "3-oaks-gaming-space-coins": "/images/catalog/3-oaks-gaming-space-coins.webp",
   "3-oaks-gaming-sun-of-egypt": "/images/catalog/3-oaks-gaming-sun-of-egypt.webp",
+  "3-oaks-gaming-sun-of-egypt-2": "/images/catalog/3-oaks-gaming-sun-of-egypt-2.webp",
+  "3-oaks-gaming-sun-of-egypt-3": "/images/catalog/3-oaks-gaming-sun-of-egypt-3.webp",
+  "3-oaks-gaming-sun-of-egypt-4": "/images/catalog/3-oaks-gaming-sun-of-egypt-4.webp",
+  "3-oaks-gaming-sun-of-egypt-5": "/images/catalog/3-oaks-gaming-sun-of-egypt-5.webp",
+  "3-oaks-gaming-sunlight-princess": "/images/catalog/3-oaks-gaming-sunlight-princess.webp",
+  "3-oaks-gaming-super-china-pots": "/images/catalog/3-oaks-gaming-super-china-pots.webp",
+  "3-oaks-gaming-super-hot-chilli": "/images/catalog/3-oaks-gaming-super-hot-chilli.webp",
+  "3-oaks-gaming-super-hot-teapots": "/images/catalog/3-oaks-gaming-super-hot-teapots.webp",
+  "3-oaks-gaming-super-hotfire-diamonds": "/images/catalog/3-oaks-gaming-super-hotfire-diamonds.webp",
+  "3-oaks-gaming-super-sticky-piggy": "/images/catalog/3-oaks-gaming-super-sticky-piggy.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
