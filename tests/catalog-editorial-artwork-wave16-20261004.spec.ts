@@ -6,11 +6,11 @@ const slots = [
   ["hacksaw-gaming-bouncy-bombs", "Cascading Dynamite Bomb"],
   ["hacksaw-gaming-bullets-and-bounty", "Wild DuelReel"],
   ["hacksaw-gaming-cash-crew", "Grab ’em"],
-  ["hacksaw-gaming-chaos-crew", "Cranky Cat"],
-  ["hacksaw-gaming-chaos-crew-2", "Epic Drop"],
   ["hacksaw-gaming-chaos-crew-3", "Glitch Dogs"],
   ["hacksaw-gaming-circle-of-life", "Tree of Life"],
   ["hacksaw-gaming-cloud-princess", "Progressive Divine Multiplier"],
+  ["hacksaw-gaming-cursed-crypt", "Cursed Positions"],
+  ["hacksaw-gaming-dandy-diamonds", "Dandy Respin"],
 ] as const;
 
 test("wave 16 Hacksaw cards render game-specific editorial copy and official artwork", async ({ page }) => {
