@@ -7,7 +7,7 @@ for (const slug of ["bgaming-multi-rush", "playn-go-nsync-pop"]) {
     await expect(page.locator(".slot-intro")).toBeVisible();
     await expect(page.locator(".slot-figure")).toHaveCount(0);
     await expect(page.locator(".article-layout")).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Основные характеристики" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Параметры игры" })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Сравнение с другими играми" })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Параметры и источники" })).toBeVisible();
     await expect(page.locator("#editorial")).toHaveCount(0);
