@@ -77,6 +77,11 @@ const slots = [
   "3-oaks-gaming-super-hot-teapots",
   "3-oaks-gaming-super-hotfire-diamonds",
   "3-oaks-gaming-super-sticky-piggy",
+  "3-oaks-gaming-supreme-diamond-xxl",
+  "3-oaks-gaming-thunder-tiger",
+  "3-oaks-gaming-tiger-gems",
+  "3-oaks-gaming-tiger-jungle",
+  "3-oaks-gaming-wolf-night",
 ];
 
 test("approved 3 Oaks catalog cards use their local game artwork", async ({ page }) => {
