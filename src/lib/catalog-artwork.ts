@@ -79,6 +79,16 @@ const artworkBySlug: Record<string, string> = {
   "3-oaks-gaming-super-hot-teapots": "/images/catalog/3-oaks-gaming-super-hot-teapots.webp",
   "3-oaks-gaming-super-hotfire-diamonds": "/images/catalog/3-oaks-gaming-super-hotfire-diamonds.webp",
   "3-oaks-gaming-super-sticky-piggy": "/images/catalog/3-oaks-gaming-super-sticky-piggy.webp",
+  "3-oaks-gaming-supreme-diamond-xxl": "/images/catalog/3-oaks-gaming-supreme-diamond-xxl.webp",
+  "3-oaks-gaming-thunder-tiger": "/images/catalog/3-oaks-gaming-thunder-tiger.webp",
+  "3-oaks-gaming-tiger-gems": "/images/catalog/3-oaks-gaming-tiger-gems.webp",
+  "3-oaks-gaming-tiger-jungle": "/images/catalog/3-oaks-gaming-tiger-jungle.webp",
+  "3-oaks-gaming-wolf-night": "/images/catalog/3-oaks-gaming-wolf-night.webp",
+  "bgaming-3-lucky-monkeys-hold-and-win": "/images/catalog/bgaming-3-lucky-monkeys-hold-and-win.webp",
+  "bgaming-alien-fruits-3": "/images/catalog/bgaming-alien-fruits-3.webp",
+  "bgaming-bonanza-billion-merge-uptm": "/images/catalog/bgaming-bonanza-billion-merge-uptm.webp",
+  "bgaming-book-of-hidden-tombs": "/images/catalog/bgaming-book-of-hidden-tombs.webp",
+  "bgaming-cats-love-yummy": "/images/catalog/bgaming-cats-love-yummy.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
