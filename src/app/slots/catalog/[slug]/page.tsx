@@ -32,10 +32,15 @@ function russianGameType(gameType: string) {
 
 type EditorialFeature = { title: string; description: string };
 
-type CatalogEditorial = { features: EditorialFeature[] };
+type CatalogEditorial = { intro?: string[]; editorial?: string; features: EditorialFeature[] };
 
 const catalogEditorial: Record<string, CatalogEditorial> = {
   "3-oaks-gaming-15-dragon-pearls": {
+    intro: [
+      "В 15 Dragon Pearls два самостоятельных бонусных режима строятся вокруг золотых жемчужин: Hold & Win фиксирует их на поле, а Scatter открывает бесплатные вращения.",
+      "В Hold & Win каждое новое попадание жемчужины сохраняется до финала серии. Поэтому главная динамика режима связана не с отдельной линией, а с заполнением позиций и сбором накопленных значений.",
+    ],
+    editorial: "Ключевой момент 15 Dragon Pearls — различать роли зелёных и синих жемчужин: первые собирают золотые значения, вторые учитывают всё видимое поле, включая другие синие жемчужины.",
     features: [
       { title: "Шесть респинов Hold & Win", description: "Шесть золотых жемчужин запускают бонус Hold & Win с шестью респинами. Символы, активировавшие режим, фиксируются, как и каждая новая жемчужина в ходе бонуса." },
       { title: "Зелёные и синие жемчужины", description: "Зелёная жемчужина собирает значения всех золотых жемчужин. Синяя собирает все видимые значения, включая значения других синих жемчужин." },
@@ -43,6 +48,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-3-african-drums": {
+    intro: [
+      "В 3 African Drums основная игра подводит к Hold & Win через три цветные шкалы барабанов. Каждая шкала отвечает за свой набор усилителей в бонусе.",
+      "После запуска серии респинов на поле остаются Bonus Symbols, а COLLECT и MULTI меняют их значения. Это и есть центральная механика игры.",
+    ],
+    editorial: "В 3 African Drums важнее следить за тем, какие барабаны активированы до Hold & Win: их сочетание определяет, появятся ли сбор значений, второе поле или множители.",
     features: [
       { title: "Шкалы трёх барабанов", description: "Зелёные, красные и жёлтые символы прогресса заполняют соответствующие шкалы барабанов и активируют Hold & Win." },
       { title: "Джекпоты в Hold & Win", description: "В серии респинов могут появиться MINI, MINOR и MAJOR. Полностью заполненное поле приносит Grand Jackpot размером 2 000x ставки." },
@@ -50,6 +60,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-3-aztec-temples": {
+    intro: [
+      "В 3 Aztec Temples шесть бонусных монет запускают Hold & Win с респинами. Новые монеты, выпавшие в режиме, остаются в сетке до конца серии.",
+      "Три храмовые шкалы заполняются цветовыми символами в основной игре. Они добавляют к бонусу Boost, Collect и Multi, поэтому условия запуска важнее одиночного выигрыша по линии.",
+    ],
+    editorial: "Главный ориентир в 3 Aztec Temples — состояние трёх храмовых шкал: именно они определяют набор усилителей, с которым начнётся Hold & Win.",
     features: [
       { title: "Шесть бонусных монет", description: "Шесть золотых монет запускают Hold & Win с респинами. В бонусе могут появиться MINI, MINOR и MAJOR, а полное поле может дать Grand Jackpot." },
       { title: "Три храмовые шкалы", description: "Красные, синие и зелёные символы заполняют шкалы над барабанами. Заполненная шкала добавляет к Hold & Win одну из функций: Boost, Collect или Multi." },
@@ -57,6 +72,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-3-china-pots": {
+    intro: [
+      "В 3 China Pots цветные монеты заполняют три горшка над барабанами и подготавливают соответствующие Pot Features для Hold & Win.",
+      "После старта бонуса Bonus Symbols фиксируются, а Extra, Multi и Double меняют число респинов, значения символов и размер игрового поля.",
+    ],
+    editorial: "В 3 China Pots полезно смотреть не только на запуск Hold & Win, но и на то, какие горшки уже заполнены: от этого зависит, будет ли серия длиннее, появятся ли множители или второе поле.",
     features: [
       { title: "Монеты и три горшка", description: "Синие, красные и фиолетовые монеты заполняют три шкалы-горшка и запускают Hold & Win с соответствующими Pot Features." },
       { title: "Extra, Multi и Double", description: "Extra даёт четыре респина вместо трёх, Multi добавляет множители к бонусным символам, Double открывает второе поле. Можно активировать две или все три функции." },
@@ -64,6 +84,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-3-clover-pots": {
+    intro: [
+      "В 3 Clover Pots есть два разных пути в бонус: золотые клеверы запускают Hold & Win, а три Scatter открывают бесплатные вращения.",
+      "Hold & Win строится вокруг трёх Magic Pot Features: Double меняет значения, Mystery раскрывает ценный символ или джекпот, Collect собирает видимые значения.",
+    ],
+    editorial: "Особенность 3 Clover Pots — два независимых режима с разной ролью Wild: в бесплатных вращениях он умножает выигрыш по линии на x2, а Hold & Win работает через клеверы и горшки.",
     features: [
       { title: "Клеверный Hold & Win", description: "Золотые клеверы с различными значениями запускают Hold & Win. В бонусе могут появиться MINI, MINOR и MAJOR, а полное поле приносит Grand Jackpot 5 000x ставки." },
       { title: "Три Magic Pot Features", description: "Красный, зелёный и фиолетовый клевер включают свои усилители: Double удваивает значения, Mystery превращается в ценный бонусный символ или джекпот, Collect собирает все видимые значения." },
@@ -320,7 +345,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
           <Link href="/slots">Весь каталог ↗</Link>
         </aside>
         <article className="prose">
-          {editorial ? <section id="how-it-works"><h2>Как устроена игра</h2>{editorialMechanics.map((feature) => <p key={feature.title}>{feature.description}</p>)}</section> : null}
+          {editorial ? <section id="how-it-works"><h2>Как устроена игра</h2>{(editorial.intro ?? editorialMechanics.map((feature) => feature.description)).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section> : null}
           {editorial ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Что реально меняет ход раунда</h2><div className="dossier-feature-grid">{editorial.features.map((feature, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={feature.title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{feature.title}</h3><p>{feature.description}</p></article>)}</div></section> : null}
           {details ? <section id="math-profile"><span className="eyebrow accent">Математический профиль</span><h2>Цифры без ложной точности</h2><div className="dossier-metric-grid">
             {details.rtp ? <div><span>RTP в каталоге</span><strong>{details.rtp}</strong><small>Справочная конфигурация</small></div> : null}
@@ -328,7 +353,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
             {details.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>Справочная категория</small></div> : null}
             {details.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.join(" · ")}</small></div> : null}
           </div></section> : null}
-          {editorial ? <section id="editorial"><span className="eyebrow accent">Взгляд редакции</span><h2>{slot.name}: что важно в раунде</h2><blockquote>{editorial.features[0].description}</blockquote>{editorial.features[2] ? <p>{editorial.features[2].description}</p> : null}</section> : null}
+          {editorial ? <section id="editorial"><span className="eyebrow accent">Взгляд редакции</span><h2>{slot.name}: что важно в раунде</h2><blockquote>{editorial.editorial ?? editorial.features[0].description}</blockquote>{!editorial.editorial && editorial.features[2] ? <p>{editorial.features[2].description}</p> : null}</section> : null}
           <section id="catalog-comparison"><span className="eyebrow accent">Контекст каталога</span><h2>С чем сравнивать эту игру</h2><div className="dossier-metric-grid">
             {details?.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.map(russianMechanicTitle).join(" · ")}</small></div> : null}
             <div><span>Провайдер</span><strong>{slot.provider}</strong><small>Другие игры с теми же механиками доступны в каталоге</small></div>
