@@ -324,7 +324,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
             {details.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>Категория провайдера</small></div> : null}
             {details.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.join(" · ")}</small></div> : null}
           </div></section> : null}
-          <section id="facts"><span className="eyebrow accent">Источники</span><h2>Данные об игре</h2><p className="source-note"><a href={source} target="_blank" rel="noreferrer">Официальная страница игры ↗</a></p>{sources.length > 1 ? <p className="source-note">Дополнительные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}</section>
+          <section id="facts"><span className="eyebrow accent">Источники</span><h2>Данные об игре</h2><p className="source-note"><a href={source} target="_blank" rel="noreferrer">Официальный каталог игры ↗</a></p>{sources.length > 1 ? <p className="source-note">Дополнительные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}</section>
         </article>
       </div>
       {providerItems.length || mechanicItems.length ? <section id="related">
