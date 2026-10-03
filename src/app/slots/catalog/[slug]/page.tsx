@@ -96,6 +96,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-3-clover-pots-extra": {
+    intro: [
+      "В 3 Clover Pots Extra удерживаемые клеверы запускают Hold & Win, а Rainbow Coin может открыть дополнительную функцию горшка прямо во время респинов.",
+      "Три цветных клевера управляют Boost, Mystery и Collect, а отдельные бесплатные вращения используют Wild с множителем x2.",
+    ],
+    editorial: "Главное отличие 3 Clover Pots Extra от исходной версии — поле 5×4 и 30 линий, но логика выбора остаётся в сочетании трёх функций горшков и случайного Rainbow Coin.",
     features: [
       { title: "Rainbow Coin в Hold & Win", description: "Золотые клеверы запускают Hold & Win с MINI, MINOR и MAJOR. Во время респинов Rainbow Coin может открыть ещё одну функцию горшка, превратившись в специальный бонусный символ." },
       { title: "Три Magic Pot Features", description: "Зелёный, красный и фиолетовый клевер включают свои горшки: Boost прибавляет своё значение ко всем символам, Mystery открывает дорогой бонусный символ или джекпот, Collect собирает видимые значения." },
@@ -103,6 +108,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-3-coin-volcanoes": {
+    intro: [
+      "В 3 Coin Volcanoes бонус начинается с трёх респинов, а цветные Bonus Symbols в базовой игре зажигают соответствующие вулканы над барабанами.",
+      "Вулканы добавляют Life, Multi и Grow: они восстанавливают респины, объединяют множители и расширяют сетку на две строки.",
+    ],
+    editorial: "В 3 Coin Volcanoes важнее всего состав активных вулканов. Grow меняет сам размер поля и открывает путь к Royal Jackpot, тогда как обычное заполнение связано с Grand Jackpot.",
     features: [
       { title: "Три вулкана и респины", description: "Четыре символа на активной линии запускают три респина бонусной игры. Бонусные символы на линиях в базовой игре зажигают зелёный, красный и синий вулканы над барабанами." },
       { title: "Life, Multi и Grow", description: "Активные вулканы добавляют усилители: Life восстанавливает счётчик респинов, Multi объединяет множители в одной ячейке, Grow открывает две дополнительные строки." },
@@ -110,6 +120,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-3-coins": {
+    intro: [
+      "В 3 Coins Hold & Win запускается только после полного заполнения среднего барабана серебряными и золотыми монетами.",
+      "Средняя колонка остаётся фиксированной, а каждая новая монета добавляет своё значение вместе со всеми видимыми значениями и обновляет счётчик респинов.",
+    ],
+    editorial: "В этой игре ключевое условие — полный центральный стек. После его фиксации освобождаются внешние барабаны, где могут появляться новые монеты и алмаз с множителем x100–x500.",
     features: [
       { title: "Полный стек в центре", description: "Бонус Hold & Win включается, когда средний барабан полностью заполнен серебряными и золотыми монетами. Их значения сразу прибавляются к счётчику выигрыша, после чего начинаются четыре респина." },
       { title: "Фиксированная средняя колонка", description: "Монеты на среднем барабане остаются на месте. Каждая новая монета прибавляет своё значение вместе со всеми видимыми значениями и заново запускает счётчик респинов." },
@@ -117,6 +132,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-3-egypt-chests": {
+    intro: [
+      "В 3 Egypt Chests цветные монеты последовательно заполняют три шкалы сундуков. Достаточно одной полной шкалы, чтобы начать Hold & Win.",
+      "Цвет монет, запустивших режим, определяет сочетание Multi, Extra и Double: множители, четыре респина и второе поле могут работать одновременно.",
+    ],
+    editorial: "В 3 Egypt Chests ценность запуска задаёт не только сам бонус, но и заполненные сундуки: Double расширяет поле и делает возможными два Grand Jackpot.",
     features: [
       { title: "Три сундука прогресса", description: "Синие, зелёные и жёлтые монеты заполняют соответствующие шкалы сундуков над барабанами. Заполненная хотя бы одна шкала запускает Hold & Win, где монеты становятся бонусными символами." },
       { title: "Multi, Extra и Double", description: "Цвет монеты, запустившей бонус, определяет усилители: Multi добавляет множители, Extra повышает число респинов до четырёх, Double удваивает игровое поле. За один спин могут сработать все три." },
@@ -124,6 +144,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
   "3-oaks-gaming-3-jewel-crowns": {
+    intro: [
+      "В 3 Jewel Crowns три цвета корон заполняют собственные шкалы. Полные шкалы открывают семь бесплатных вращений с соответствующими усилителями.",
+      "Extra Spins добавляет ещё семь вращений, Jackpot открывает джекпотный режим, а Double Reels включает второе поле; все функции могут совмещаться.",
+    ],
+    editorial: "В 3 Jewel Crowns основной ориентир — не отдельная корона, а набор заполненных шкал: от него зависит, будут ли добавлены фриспины, джекпоты и второе поле.",
     features: [
       { title: "Короны открывают семь фриспинов", description: "Зелёные, красные и синие короны заполняют свои шкалы. Заполненные шкалы запускают семь бесплатных вращений и включают соответствующие усилители." },
       { title: "Extra Spins, Jackpot и Double Reels", description: "Extra Spins добавляет ещё семь фриспинов, Jackpot открывает MINI, MAJOR и GRAND, а Double Reels включает второе игровое поле. Все три функции могут работать вместе." },
@@ -336,30 +361,30 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
           <span className="eyebrow">В этом досье</span>
           {editorial ? <a href="#how-it-works">Как устроена игра</a> : null}
           {editorial ? <a href="#functions">Функции и бонусы</a> : null}
-          {details ? <a href="#math-profile">Математический профиль</a> : null}
+          {details ? <a href="#math-profile">Характеристики игры</a> : null}
           {editorial ? <a href="#editorial">Взгляд редакции</a> : null}
-          <a href="#catalog-comparison">Сравнение с каталогом</a>
-          <a href="#facts">Факты и источники</a>
-          <a href="#faq">Вопросы об игре</a>
+          <a href="#catalog-comparison">Похожие игры</a>
+          <a href="#facts">Параметры и источники</a>
+          <a href="#faq">Частые вопросы</a>
           {providerItems.length || mechanicItems.length ? <a href="#related">Похожие игры</a> : null}
           <Link href="/slots">Весь каталог ↗</Link>
         </aside>
         <article className="prose">
           {editorial ? <section id="how-it-works"><h2>Как устроена игра</h2>{(editorial.intro ?? editorialMechanics.map((feature) => feature.description)).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section> : null}
-          {editorial ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Что реально меняет ход раунда</h2><div className="dossier-feature-grid">{editorial.features.map((feature, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={feature.title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{feature.title}</h3><p>{feature.description}</p></article>)}</div></section> : null}
-          {details ? <section id="math-profile"><span className="eyebrow accent">Математический профиль</span><h2>Цифры без ложной точности</h2><div className="dossier-metric-grid">
+          {editorial ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Основные функции</h2><div className="dossier-feature-grid">{editorial.features.map((feature, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={feature.title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{feature.title}</h3><p>{feature.description}</p></article>)}</div></section> : null}
+          {details ? <section id="math-profile"><span className="eyebrow accent">Характеристики игры</span><h2>Параметры игры</h2><div className="dossier-metric-grid">
             {details.rtp ? <div><span>RTP в каталоге</span><strong>{details.rtp}</strong><small>Справочная конфигурация</small></div> : null}
             {details.maxWin ? <div><span>Максимальная выплата</span><strong>{details.maxWin}</strong><small>Заявлено провайдером</small></div> : null}
             {details.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>Справочная категория</small></div> : null}
             {details.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.join(" · ")}</small></div> : null}
           </div></section> : null}
           {editorial ? <section id="editorial"><span className="eyebrow accent">Взгляд редакции</span><h2>{slot.name}: что важно в раунде</h2><blockquote>{editorial.editorial ?? editorial.features[0].description}</blockquote>{!editorial.editorial && editorial.features[2] ? <p>{editorial.features[2].description}</p> : null}</section> : null}
-          <section id="catalog-comparison"><span className="eyebrow accent">Контекст каталога</span><h2>С чем сравнивать эту игру</h2><div className="dossier-metric-grid">
+          <section id="catalog-comparison"><span className="eyebrow accent">Похожие игры</span><h2>Сравнение с другими играми</h2><div className="dossier-metric-grid">
             {details?.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.map(russianMechanicTitle).join(" · ")}</small></div> : null}
             <div><span>Провайдер</span><strong>{slot.provider}</strong><small>Другие игры с теми же механиками доступны в каталоге</small></div>
           </div><Link className="text-link" href={`/slots?provider=${providerSlug(slot.provider)}`}>Все игры {slot.provider} ↗</Link></section>
-          <section id="facts"><h2>Как читать параметры игры</h2><p>RTP описывает теоретическую долю возврата на большой дистанции. Волатильность показывает разброс результатов, но не позволяет предсказать следующий раунд.</p><p className="source-note">Базовый источник: <a href={source} target="_blank" rel="noreferrer">Официальный каталог игры ↗</a>.</p>{sources.length > 1 ? <p className="source-note">Дополнительные официальные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}</section>
-          <section id="faq"><span className="eyebrow accent">Вопросы об игре</span><h2>Что нужно знать перед запуском</h2><details><summary>Можно ли предсказать следующий результат?</summary><p>Нет. RTP и волатильность описывают игру на большой дистанции, а не исход следующего вращения.</p></details><details><summary>Почему RTP может отличаться у оператора?</summary><p>У одной игры бывают разные конфигурации. Перед запуском ориентируйтесь на таблицу выплат в выбранной версии.</p></details><details><summary>Что сравнивать перед выбором?</summary><p>Смотрите на игровое поле, механики, RTP, волатильность и максимальную выплату, если она указана провайдером.</p></details></section>
+          <section id="facts"><h2>Параметры и источники</h2><p>RTP описывает теоретическую долю возврата на большой дистанции. Волатильность показывает разброс результатов, но не позволяет предсказать следующий раунд.</p><p className="source-note">Базовый источник: <a href={source} target="_blank" rel="noreferrer">Официальный каталог игры ↗</a>.</p>{sources.length > 1 ? <p className="source-note">Дополнительные официальные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}</section>
+          <section id="faq"><span className="eyebrow accent">Частые вопросы</span><h2>Ответы на частые вопросы</h2><details><summary>Можно ли предсказать следующий результат?</summary><p>Нет. RTP и волатильность описывают игру на большой дистанции, а не исход следующего вращения.</p></details><details><summary>Почему RTP может отличаться у оператора?</summary><p>У одной игры бывают разные конфигурации. Перед запуском ориентируйтесь на таблицу выплат в выбранной версии.</p></details><details><summary>Что сравнивать перед выбором?</summary><p>Смотрите на игровое поле, механики, RTP, волатильность и максимальную выплату, если она указана провайдером.</p></details></section>
         </article>
       </div>
       {providerItems.length || mechanicItems.length ? <section id="related">
