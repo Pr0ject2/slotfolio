@@ -139,6 +139,16 @@ const artworkBySlug: Record<string, string> = {
   "hacksaw-gaming-cloud-princess": "/images/catalog/hacksaw-gaming-cloud-princess.webp",
   "hacksaw-gaming-cursed-crypt": "/images/catalog/hacksaw-gaming-cursed-crypt.webp",
   "hacksaw-gaming-dandy-diamonds": "/images/catalog/hacksaw-gaming-dandy-diamonds.webp",
+  "hacksaw-gaming-danny-dollar": "/images/catalog/hacksaw-gaming-danny-dollar.webp",
+  "hacksaw-gaming-dark-spiral": "/images/catalog/hacksaw-gaming-dark-spiral.webp",
+  "hacksaw-gaming-dark-summoning": "/images/catalog/hacksaw-gaming-dark-summoning.webp",
+  "hacksaw-gaming-dawn-of-kings": "/images/catalog/hacksaw-gaming-dawn-of-kings.webp",
+  "hacksaw-gaming-deal-with-death": "/images/catalog/hacksaw-gaming-deal-with-death.webp",
+  "hacksaw-gaming-death-becomes-you": "/images/catalog/hacksaw-gaming-death-becomes-you.webp",
+  "hacksaw-gaming-densho": "/images/catalog/hacksaw-gaming-densho.webp",
+  "hacksaw-gaming-divine-drop": "/images/catalog/hacksaw-gaming-divine-drop.webp",
+  "hacksaw-gaming-donny-and-danny": "/images/catalog/hacksaw-gaming-donny-and-danny.webp",
+  "hacksaw-gaming-donny-dough": "/images/catalog/hacksaw-gaming-donny-dough.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
