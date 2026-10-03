@@ -134,11 +134,11 @@ const artworkBySlug: Record<string, string> = {
   "hacksaw-gaming-bouncy-bombs": "/images/catalog/hacksaw-gaming-bouncy-bombs.webp",
   "hacksaw-gaming-bullets-and-bounty": "/images/catalog/hacksaw-gaming-bullets-and-bounty.webp",
   "hacksaw-gaming-cash-crew": "/images/catalog/hacksaw-gaming-cash-crew.webp",
+  "hacksaw-gaming-chaos-crew": "/images/catalog/hacksaw-gaming-chaos-crew.webp",
+  "hacksaw-gaming-chaos-crew-2": "/images/catalog/hacksaw-gaming-chaos-crew-2.webp",
   "hacksaw-gaming-chaos-crew-3": "/images/catalog/hacksaw-gaming-chaos-crew-3.webp",
   "hacksaw-gaming-circle-of-life": "/images/catalog/hacksaw-gaming-circle-of-life.webp",
   "hacksaw-gaming-cloud-princess": "/images/catalog/hacksaw-gaming-cloud-princess.webp",
-  "hacksaw-gaming-cursed-crypt": "/images/catalog/hacksaw-gaming-cursed-crypt.webp",
-  "hacksaw-gaming-dandy-diamonds": "/images/catalog/hacksaw-gaming-dandy-diamonds.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
