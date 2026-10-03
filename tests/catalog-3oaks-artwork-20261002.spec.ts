@@ -57,6 +57,16 @@ const slots = [
   "3-oaks-gaming-hit-more-gold",
   "3-oaks-gaming-hit-the-gold",
   "3-oaks-gaming-hot-fire-fruits",
+  "3-oaks-gaming-moon-sisters",
+  "3-oaks-gaming-more-magic-apple",
+  "3-oaks-gaming-power-sun",
+  "3-oaks-gaming-power-sun-xxl",
+  "3-oaks-gaming-purple-diamond",
+  "3-oaks-gaming-rio-gems",
+  "3-oaks-gaming-rush-for-gold",
+  "3-oaks-gaming-scarab-temple",
+  "3-oaks-gaming-sky-pearls",
+  "3-oaks-gaming-space-coins",
 ];
 
 test("approved 3 Oaks catalog cards use their local game artwork", async ({ page }) => {
