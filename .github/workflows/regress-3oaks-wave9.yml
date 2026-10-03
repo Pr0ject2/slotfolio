@@ -1,0 +1,47 @@
+name: Wave9 artwork browser regression
+
+on:
+  push:
+    branches: ["fix/catalog-artwork-wave9-20261003"]
+    paths:
+      - ".github/workflows/regress-3oaks-wave9.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Localize reviewed artwork
+        run: npm run assets:localize -- --soft
+      - name: Build static production site
+        env:
+          NEXT_PUBLIC_SITE_URL: https://example.invalid
+          NEXT_PUBLIC_INDEXABLE: "false"
+          NEXT_PUBLIC_BASE_PATH: ""
+        run: |
+          rm -f 'src/app/go/[operator]/route.ts'
+          npx next build
+      - name: Start static site
+        run: |
+          python3 -m http.server 3000 --directory out > /tmp/slotfolio-http.log 2>&1 &
+          for i in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/slotfolio-http.log
+          exit 1
+      - name: Run artwork browser regression
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+          SLOTFOLIO_STATIC_PREVIEW: "true"
+        run: npx playwright test tests/catalog-3oaks-artwork-20261002.spec.ts
