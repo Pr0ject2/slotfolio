@@ -7,15 +7,12 @@ for (const slug of ["bgaming-multi-rush", "playn-go-nsync-pop"]) {
     await expect(page.locator(".slot-intro")).toBeVisible();
     await expect(page.locator(".slot-figure")).toHaveCount(0);
     await expect(page.locator(".article-layout")).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Основные данные" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Похожие игры" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Данные об игре" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Цифры без ложной точности" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "С чем сравнивать эту игру" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Как читать параметры игры" })).toBeVisible();
     await expect(page.locator("#editorial")).toHaveCount(0);
-    await expect(page.locator("#faq")).toHaveCount(0);
+    await expect(page.getByRole("heading", { name: "Что нужно знать перед запуском" })).toBeVisible();
     await expect(page.locator("#facts")).toBeVisible();
-    await expect(page.locator("body")).not.toContainText("Что реально меняет ход раунда");
-    await expect(page.locator("body")).not.toContainText("Цифры без ложной точности");
-    await expect(page.locator("body")).not.toContainText("Как читать числа");
     await expect(page.locator(".slot-deck")).not.toContainText(/Official page|Official release|Подтверждённое игровое поле/);
     await expect(page.locator("body")).not.toContainText("Механика «");
     await expect(page.locator("body")).not.toContainText("подтверждённые механики собраны по официальной странице");
@@ -34,9 +31,11 @@ test("catalog dossier renders approved game artwork", async ({ page }) => {
 test("3 Aztec Temples shows only its own translated mechanics details", async ({ page }) => {
   await page.goto("/slots/catalog/3-oaks-gaming-3-aztec-temples");
   await expect(page.getByRole("heading", { name: "Шесть бонусных монет" })).toBeVisible();
-  await expect(page.getByText("Шесть золотых монет запускают Hold & Win с респинами.", { exact: false })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Три храмовые шкалы" })).toBeVisible();
   await expect(page.locator("#functions")).not.toContainText("Дополнительная функция меняет сценарий игрового раунда.");
+  await expect(page.locator("#how-it-works")).toContainText("Шесть золотых монет запускают Hold & Win");
+  await expect(page.locator("#editorial")).toContainText("3 Aztec Temples");
+  await expect(page.locator("#catalog-comparison")).toContainText("С чем сравнивать эту игру");
 });
 
 for (const [slug, title, text] of [

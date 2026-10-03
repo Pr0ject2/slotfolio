@@ -260,6 +260,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const research = getVerifiedCatalogResearch(slot.slug);
   const mechanics = research?.mechanics ?? [];
   const editorial = getCatalogEditorial(slot.slug);
+  const editorialMechanics = editorial?.features.slice(0, 2) ?? [];
   const source = details?.source ?? gameType?.source ?? slot.source;
   const releaseSource = details?.releaseDateSource;
   const volatilitySource = details?.volatilitySource;
@@ -308,23 +309,32 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
       <div className="article-layout slot-body">
         <aside className="article-toc">
           <span className="eyebrow">В этом досье</span>
+          {editorial ? <a href="#how-it-works">Как устроена игра</a> : null}
           {editorial ? <a href="#functions">Функции и бонусы</a> : null}
-          {details ? <a href="#math-profile">Параметры игры</a> : null}
-          <a href="#catalog-comparison">Похожие игры</a>
-          <a href="#facts">Источники</a>
+          {details ? <a href="#math-profile">Математический профиль</a> : null}
+          {editorial ? <a href="#editorial">Взгляд редакции</a> : null}
+          <a href="#catalog-comparison">Сравнение с каталогом</a>
+          <a href="#facts">Факты и источники</a>
+          <a href="#faq">Вопросы об игре</a>
           {providerItems.length || mechanicItems.length ? <a href="#related">Похожие игры</a> : null}
           <Link href="/slots">Весь каталог ↗</Link>
         </aside>
         <article className="prose">
-          {editorial ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Основные механики</h2><div className="dossier-feature-grid">{editorial.features.map((feature, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={feature.title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{feature.title}</h3><p>{feature.description}</p></article>)}</div></section> : null}
-          <section id="catalog-comparison"><span className="eyebrow accent">Каталог</span><h2>Похожие игры</h2><Link className="text-link" href={`/slots?provider=${providerSlug(slot.provider)}`}>Все игры {slot.provider} ↗</Link></section>
-          {details ? <section id="math-profile"><span className="eyebrow accent">Параметры игры</span><h2>Основные данные</h2><div className="dossier-metric-grid">
-            {details.rtp ? <div><span>RTP, справочно</span><strong>{details.rtp}</strong><small>Указан в источнике</small></div> : null}
+          {editorial ? <section id="how-it-works"><h2>Как устроена игра</h2>{editorialMechanics.map((feature) => <p key={feature.title}>{feature.description}</p>)}</section> : null}
+          {editorial ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Что реально меняет ход раунда</h2><div className="dossier-feature-grid">{editorial.features.map((feature, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={feature.title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{feature.title}</h3><p>{feature.description}</p></article>)}</div></section> : null}
+          {details ? <section id="math-profile"><span className="eyebrow accent">Математический профиль</span><h2>Цифры без ложной точности</h2><div className="dossier-metric-grid">
+            {details.rtp ? <div><span>RTP в каталоге</span><strong>{details.rtp}</strong><small>Справочная конфигурация</small></div> : null}
             {details.maxWin ? <div><span>Максимальная выплата</span><strong>{details.maxWin}</strong><small>Заявлено провайдером</small></div> : null}
-            {details.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>Категория провайдера</small></div> : null}
+            {details.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>Справочная категория</small></div> : null}
             {details.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.join(" · ")}</small></div> : null}
           </div></section> : null}
-          <section id="facts"><span className="eyebrow accent">Источники</span><h2>Данные об игре</h2><p className="source-note"><a href={source} target="_blank" rel="noreferrer">Официальный каталог игры ↗</a></p>{sources.length > 1 ? <p className="source-note">Дополнительные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}</section>
+          {editorial ? <section id="editorial"><span className="eyebrow accent">Взгляд редакции</span><h2>{slot.name}: что важно в раунде</h2><blockquote>{editorial.features[0].description}</blockquote>{editorial.features[2] ? <p>{editorial.features[2].description}</p> : null}</section> : null}
+          <section id="catalog-comparison"><span className="eyebrow accent">Контекст каталога</span><h2>С чем сравнивать эту игру</h2><div className="dossier-metric-grid">
+            {details?.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.map(russianMechanicTitle).join(" · ")}</small></div> : null}
+            <div><span>Провайдер</span><strong>{slot.provider}</strong><small>Другие игры с теми же механиками доступны в каталоге</small></div>
+          </div><Link className="text-link" href={`/slots?provider=${providerSlug(slot.provider)}`}>Все игры {slot.provider} ↗</Link></section>
+          <section id="facts"><h2>Как читать параметры игры</h2><p>RTP описывает теоретическую долю возврата на большой дистанции. Волатильность показывает разброс результатов, но не позволяет предсказать следующий раунд.</p><p className="source-note">Базовый источник: <a href={source} target="_blank" rel="noreferrer">Официальный каталог игры ↗</a>.</p>{sources.length > 1 ? <p className="source-note">Дополнительные официальные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}</section>
+          <section id="faq"><span className="eyebrow accent">Вопросы об игре</span><h2>Что нужно знать перед запуском</h2><details><summary>Можно ли предсказать следующий результат?</summary><p>Нет. RTP и волатильность описывают игру на большой дистанции, а не исход следующего вращения.</p></details><details><summary>Почему RTP может отличаться у оператора?</summary><p>У одной игры бывают разные конфигурации. Перед запуском ориентируйтесь на таблицу выплат в выбранной версии.</p></details><details><summary>Что сравнивать перед выбором?</summary><p>Смотрите на игровое поле, механики, RTP, волатильность и максимальную выплату, если она указана провайдером.</p></details></section>
         </article>
       </div>
       {providerItems.length || mechanicItems.length ? <section id="related">
