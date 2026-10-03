@@ -14,43 +14,21 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Fetch official API image fields
+      - name: Verify official banners
         shell: bash
         run: |
           node <<'NODE'
-          const keys = [
-            "moon_sisters",
-            "more_magic_apple",
-            "power_sun",
-            "power_sun_xxl",
-            "purple_diamond",
-            "rio_gems",
-            "rush_for_gold",
-            "scarab_temple",
-            "sky_pearls",
-            "space_coins",
-          ];
-          function walk(value, path = [], out = []) {
-            if (typeof value === "string" && /(media|image|img|banner|thumb|gallery|\.png|\.jpe?g|\.webp)/i.test(value)) {
-              out.push({ path: path.join("."), value });
-            } else if (Array.isArray(value)) {
-              value.forEach((v, i) => walk(v, [...path, String(i)], out));
-            } else if (value && typeof value === "object") {
-              for (const [k, v] of Object.entries(value)) {
-                if (/(media|image|img|banner|thumb|gallery|cover|poster)/i.test(k) && typeof v !== "object") out.push({path:[...path,k].join("."), value:v});
-                walk(v, [...path, k], out);
-              }
+          const keys=["moon_sisters","more_magic_apple","power_sun","power_sun_xxl","purple_diamond","rio_gems","rush_for_gold","scarab_temple","sky_pearls","space_coins"];
+          for(const key of keys){
+            const api=await fetch(`https://3oaks.com/api/v1/games/${key}`,{headers:{accept:"application/json","user-agent":"SlotfolioImageProbe/1.2"}});
+            const json=await api.json();
+            const path=json?.data?.banner_file;
+            const image=path ? new URL(path,"https://3oaks.com").toString() : null;
+            let imageStatus=null, contentType=null, length=null;
+            if(image){
+              const r=await fetch(image,{method:"HEAD",headers:{"user-agent":"SlotfolioImageProbe/1.2"}});
+              imageStatus=r.status; contentType=r.headers.get("content-type"); length=r.headers.get("content-length");
             }
-            return out;
-          }
-          for (const key of keys) {
-            const url = `https://3oaks.com/api/v1/games/${key}`;
-            const response = await fetch(url, { headers: { accept: "application/json", "user-agent": "SlotfolioImageProbe/1.1" } });
-            console.log("===GAME===", key, "STATUS", response.status);
-            const text = await response.text();
-            if (!response.ok) { console.log(text.slice(0, 1000)); continue; }
-            const data = JSON.parse(text);
-            const urls = walk(data);
-            console.log(JSON.stringify(urls, null, 2));
+            console.log(JSON.stringify({key,apiStatus:api.status,banner:path,image,imageStatus,contentType,length}));
           }
           NODE
