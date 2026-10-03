@@ -813,5 +813,75 @@
     "image": "https://3oaks.com/media/thumbnails/public/hot_fire_fruits/hot_fire_fruits_banner_tdiiy_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-hot-fire-fruits.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-moon-sisters",
+    "page": "https://3oaks.com/game/moon_sisters",
+    "image": "https://3oaks.com/media/thumbnails/public/moon_sisters/moon_sisters_banner_vspxe_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-moon-sisters.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-more-magic-apple",
+    "page": "https://3oaks.com/game/more_magic_apple",
+    "image": "https://3oaks.com/media/thumbnails/public/more_magic_apple/more_magic_apple_banner_saekl_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-more-magic-apple.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-power-sun",
+    "page": "https://3oaks.com/game/power_sun",
+    "image": "https://3oaks.com/media/thumbnails/public/power_sun/power_sun_banner_ikuim_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-power-sun.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-power-sun-xxl",
+    "page": "https://3oaks.com/game/power_sun_xxl",
+    "image": "https://3oaks.com/media/thumbnails/public/power_sun_xxl/power_sun_xxl_banner_qpjrk_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-power-sun-xxl.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-purple-diamond",
+    "page": "https://3oaks.com/game/purple_diamond",
+    "image": "https://3oaks.com/media/thumbnails/public/purple_diamond/purple_diamond_banner_nyedi_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-purple-diamond.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-rio-gems",
+    "page": "https://3oaks.com/game/rio_gems",
+    "image": "https://3oaks.com/media/thumbnails/public/rio_gems/rio_gems_banner_zkzkd_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-rio-gems.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-rush-for-gold",
+    "page": "https://3oaks.com/game/rush_for_gold",
+    "image": "https://3oaks.com/media/thumbnails/public/rush_for_gold/rush_for_gold_banner_xbmyx_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-rush-for-gold.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-sky-pearls",
+    "page": "https://3oaks.com/game/sky_pearls",
+    "image": "https://3oaks.com/media/thumbnails/public/sky_pearls/sky_pearls_banner_emcny_768x432.png",
+    "local": "/images/catalog/3-oaks-gaming-sky-pearls.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-space-coins",
+    "page": "https://3oaks.com/game/space_coins",
+    "image": "https://3oaks.com/media/thumbnails/public/space_coins/space_coins_banner_ecjdy_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-space-coins.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "3-oaks-gaming-sun-of-egypt",
+    "page": "https://3oaks.com/game/sun_of_egypt",
+    "image": "https://3oaks.com/media/thumbnails/public/sun_of_egypt/sun_of_egypt_banner_thulu_768x432.jpg",
+    "local": "/images/catalog/3-oaks-gaming-sun-of-egypt.webp",
+    "note": "Official provider banner returned by the first-party 3 Oaks game API. Local build-time copy only; no runtime remote request."
   }
 ]
