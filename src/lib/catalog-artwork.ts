@@ -139,6 +139,8 @@ const artworkBySlug: Record<string, string> = {
   "hacksaw-gaming-chaos-crew-3": "/images/catalog/hacksaw-gaming-chaos-crew-3.webp",
   "hacksaw-gaming-circle-of-life": "/images/catalog/hacksaw-gaming-circle-of-life.webp",
   "hacksaw-gaming-cloud-princess": "/images/catalog/hacksaw-gaming-cloud-princess.webp",
+  "hacksaw-gaming-cursed-crypt": "/images/catalog/hacksaw-gaming-cursed-crypt.webp",
+  "hacksaw-gaming-dandy-diamonds": "/images/catalog/hacksaw-gaming-dandy-diamonds.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
