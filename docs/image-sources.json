@@ -1083,5 +1083,65 @@
     "page": "https://bgaming.com/games/multi-rush",
     "local": "/images/catalog/bgaming-multi-rush.webp",
     "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-mystic-reels",
+    "page": "https://bgaming.com/games/mystic-reels",
+    "local": "/images/catalog/bgaming-mystic-reels.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-red-hot-chilli-chickens",
+    "page": "https://bgaming.com/games/red-hot-chilli-chickens",
+    "local": "/images/catalog/bgaming-red-hot-chilli-chickens.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-reel-of-ra",
+    "page": "https://bgaming.com/games/reel-of-ra",
+    "local": "/images/catalog/bgaming-reel-of-ra.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-st-patricks-pots-hold-and-win",
+    "page": "https://bgaming.com/games/st-patricks-pots-hold-and-win",
+    "local": "/images/catalog/bgaming-st-patricks-pots-hold-and-win.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-stars-and-stripes-hold-and-win",
+    "page": "https://bgaming.com/games/stars-stripes-hold-and-win",
+    "local": "/images/catalog/bgaming-stars-and-stripes-hold-and-win.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-sweet-samurai",
+    "page": "https://bgaming.com/games/sweet-samurai",
+    "local": "/images/catalog/bgaming-sweet-samurai.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-the-godfather-3-pillars-of-power",
+    "page": "https://bgaming.com/games/the-godfather-3-pillars-of-power",
+    "local": "/images/catalog/bgaming-the-godfather-3-pillars-of-power.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-train-heist-johnny-cash",
+    "page": "https://bgaming.com/games/train-heist-johnny-cash",
+    "local": "/images/catalog/bgaming-train-heist-johnny-cash.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-wincent-wolf",
+    "page": "https://bgaming.com/games/wincent-wolf",
+    "local": "/images/catalog/bgaming-wincent-wolf.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "bgaming-yokai",
+    "page": "https://bgaming.com/games/yokai",
+    "local": "/images/catalog/bgaming-yokai.webp",
+    "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
   }
 ]
