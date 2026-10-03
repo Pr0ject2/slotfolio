@@ -89,6 +89,16 @@ const artworkBySlug: Record<string, string> = {
   "bgaming-bonanza-billion-merge-uptm": "/images/catalog/bgaming-bonanza-billion-merge-uptm.webp",
   "bgaming-book-of-hidden-tombs": "/images/catalog/bgaming-book-of-hidden-tombs.webp",
   "bgaming-cats-love-yummy": "/images/catalog/bgaming-cats-love-yummy.webp",
+  "bgaming-chicken-fire": "/images/catalog/bgaming-chicken-fire.webp",
+  "bgaming-divine-queen-power-of-sun": "/images/catalog/bgaming-divine-queen-power-of-sun.webp",
+  "bgaming-dusty-duel": "/images/catalog/bgaming-dusty-duel.webp",
+  "bgaming-fortune-trio-minions-of-fu": "/images/catalog/bgaming-fortune-trio-minions-of-fu.webp",
+  "bgaming-frenzy-clusters": "/images/catalog/bgaming-frenzy-clusters.webp",
+  "bgaming-fruit-million-respin": "/images/catalog/bgaming-fruit-million-respin.webp",
+  "bgaming-johnny-vs-chicken": "/images/catalog/bgaming-johnny-vs-chicken.webp",
+  "bgaming-miss-cherry-wild-frames": "/images/catalog/bgaming-miss-cherry-wild-frames.webp",
+  "bgaming-money-maker": "/images/catalog/bgaming-money-maker.webp",
+  "bgaming-multi-rush": "/images/catalog/bgaming-multi-rush.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
