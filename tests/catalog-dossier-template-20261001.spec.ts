@@ -78,3 +78,17 @@ for (const [slug, title] of [
     await expect(page.getByRole("heading", { name: title })).toBeVisible();
   });
 }
+
+for (const [slug, title] of [
+  ["3-oaks-gaming-777-fruity-coins", "Три Collect и Grand"],
+  ["3-oaks-gaming-777-gems-respin", "Полный экран Gems x2"],
+  ["3-oaks-gaming-amazonia-wins", "Win + Collect забирают награду"],
+  ["3-oaks-gaming-aztec-fire", "Расширение до 40 позиций"],
+  ["3-oaks-gaming-aztec-fire-2", "Восемь рядов в Hold & Win"],
+] as const) {
+  test(`catalog ${slug} keeps source-specific Russian feature cards`, async ({ page }) => {
+    await page.goto(`/slots/catalog/${slug}`);
+    await expect(page.locator("#functions")).toBeVisible();
+    await expect(page.getByRole("heading", { name: title })).toBeVisible();
+  });
+}
