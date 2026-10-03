@@ -1336,17 +1336,17 @@
     "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
   },
   {
-    "slug": "hacksaw-gaming-chaos-crew",
-    "page": "https://www.hacksawgaming.com/games/chaos-crew",
-    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1059_hero_1059_screen_thumbnail.png",
-    "local": "/images/catalog/hacksaw-gaming-chaos-crew.webp",
-    "note": "Official provider game artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+    "slug": "hacksaw-gaming-cursed-crypt",
+    "page": "https://www.hacksawgaming.com/games/cursed-crypt",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1434_hero_Device_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-cursed-crypt.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
   },
   {
-    "slug": "hacksaw-gaming-chaos-crew-2",
-    "page": "https://www.hacksawgaming.com/games/chaos-crew-2",
-    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1352_hero_Device_Desktop16x9.png",
-    "local": "/images/catalog/hacksaw-gaming-chaos-crew-2.webp",
+    "slug": "hacksaw-gaming-dandy-diamonds",
+    "page": "https://www.hacksawgaming.com/games/dandy-diamonds",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2334_hero_DandyDiamonds_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-dandy-diamonds.webp",
     "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
   }
 ]
