@@ -633,8 +633,7 @@
     "image": "https://3oaks.com/media/thumbnails/public/buddha_megaways/buddha_megaways_banner_baxke_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-buddha-megaways.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
-  }
-,
+  },
   {
     "slug": "3-oaks-gaming-chili-coins",
     "page": "https://3oaks.com/game/chili_coins",
@@ -669,8 +668,7 @@
     "image": "https://3oaks.com/media/thumbnails/public/coin_princess_x1000/coin_princess_x1000_banner_bweos_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-coin-princess-x1000.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
-  }
-,
+  },
   {
     "slug": "3-oaks-gaming-coin-up-volcano",
     "page": "https://3oaks.com/game/coinup_volcano",
@@ -705,8 +703,7 @@
     "image": "https://3oaks.com/media/thumbnails/public/dancing_joker/dancing_joker_banner_oafzq_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-dancing-joker.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
-  }
-,
+  },
   {
     "slug": "3-oaks-gaming-dj-tiger-x1000",
     "page": "https://3oaks.com/game/dj_tiger_x1000",
@@ -741,8 +738,7 @@
     "image": "https://3oaks.com/media/thumbnails/public/fortune_globe/fortune_globe_banner_irmjm_768x432.png",
     "local": "/images/catalog/3-oaks-gaming-fortune-globe.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
-  }
-,
+  },
   {
     "slug": "3-oaks-gaming-gold-express",
     "page": "https://3oaks.com/game/gold_express",
@@ -777,8 +773,7 @@
     "image": "https://3oaks.com/media/thumbnails/public/grab_the_gold/grab_the_gold_banner_fmcse_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-grab-the-gold.webp",
     "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
-  }
-,
+  },
   {
     "slug": "3-oaks-gaming-green-chilli",
     "page": "https://3oaks.com/game/green_chilli",
@@ -1143,5 +1138,75 @@
     "page": "https://bgaming.com/games/yokai",
     "local": "/images/catalog/bgaming-yokai.webp",
     "note": "Official provider game artwork discovered from first-party BGaming page metadata. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "endorphina-3-golden-chests",
+    "page": "https://endorphina.com/games/3-golden-chests",
+    "local": "/images/catalog/endorphina-3-golden-chests.webp",
+    "note": "Official provider artwork from the first-party Endorphina game-page gallery. Local build-time copy only; no runtime remote request.",
+    "image": "https://endorphina.com/uploads/thumbs/3-golden-chests-preloader-8203273fbf-154x96.png"
+  },
+  {
+    "slug": "endorphina-burning-coins-100",
+    "page": "https://endorphina.com/games/burning-coins-100",
+    "local": "/images/catalog/endorphina-burning-coins-100.webp",
+    "note": "Official provider artwork from the first-party Endorphina game-page gallery. Local build-time copy only; no runtime remote request.",
+    "image": "https://endorphina.com/uploads/thumbs/preloader-bd49acc285-154x96.png"
+  },
+  {
+    "slug": "endorphina-burning-coins-20-dice",
+    "page": "https://endorphina.com/games/burning-coins-20-dice",
+    "local": "/images/catalog/endorphina-burning-coins-20-dice.webp",
+    "note": "Official provider artwork from the first-party Endorphina game-page gallery. Local build-time copy only; no runtime remote request.",
+    "image": "https://endorphina.com/uploads/thumbs/burning-coins-20-dice-new-slot-ff535e67c6-154x96.jpg"
+  },
+  {
+    "slug": "endorphina-chance-machine-90s",
+    "page": "https://endorphina.com/games/chance-machine-90s",
+    "local": "/images/catalog/endorphina-chance-machine-90s.webp",
+    "note": "Official provider artwork from the first-party Endorphina game-page gallery. Local build-time copy only; no runtime remote request.",
+    "image": "https://endorphina.com/uploads/thumbs/preloader-b919bb7bbe-154x96.png"
+  },
+  {
+    "slug": "endorphina-druids-fortune",
+    "page": "https://endorphina.com/games/druids-fortune",
+    "local": "/images/catalog/endorphina-druids-fortune.webp",
+    "note": "Official provider artwork from the first-party Endorphina game-page gallery. Local build-time copy only; no runtime remote request.",
+    "image": "https://endorphina.com/uploads/thumbs/preloader-ad04327ac0-154x96.png"
+  },
+  {
+    "slug": "endorphina-fortune-bankers",
+    "page": "https://endorphina.com/games/fortune-bankers",
+    "local": "/images/catalog/endorphina-fortune-bankers.webp",
+    "note": "Official provider artwork from the first-party Endorphina game-page gallery. Local build-time copy only; no runtime remote request.",
+    "image": "https://endorphina.com/uploads/thumbs/preloader-a0f648a2d1-154x96.png"
+  },
+  {
+    "slug": "endorphina-fortune-chests-dice",
+    "page": "https://endorphina.com/games/fortune-chests-dice",
+    "local": "/images/catalog/endorphina-fortune-chests-dice.webp",
+    "note": "Official provider artwork from the first-party Endorphina game-page gallery. Local build-time copy only; no runtime remote request.",
+    "image": "https://endorphina.com/uploads/thumbs/fortune-chests-dice-preloader-ad701db487-154x96.png"
+  },
+  {
+    "slug": "endorphina-gift-of-midas",
+    "page": "https://endorphina.com/games/gift-of-midas",
+    "local": "/images/catalog/endorphina-gift-of-midas.webp",
+    "note": "Official provider artwork from the first-party Endorphina game-page gallery. Local build-time copy only; no runtime remote request.",
+    "image": "https://endorphina.com/uploads/thumbs/preloader-gift-of-midas-7396a5705f-154x96.png"
+  },
+  {
+    "slug": "endorphina-groovin-tiger",
+    "page": "https://endorphina.com/games/groovin-tiger",
+    "local": "/images/catalog/endorphina-groovin-tiger.webp",
+    "note": "Official provider artwork from the first-party Endorphina game-page gallery. Local build-time copy only; no runtime remote request.",
+    "image": "https://endorphina.com/uploads/thumbs/preloader-dae902ad02-154x96.png"
+  },
+  {
+    "slug": "endorphina-hell-hot-1000",
+    "page": "https://endorphina.com/games/hell-hot-1000",
+    "local": "/images/catalog/endorphina-hell-hot-1000.webp",
+    "note": "Official provider artwork from the first-party Endorphina game-page gallery. Local build-time copy only; no runtime remote request.",
+    "image": "https://endorphina.com/uploads/thumbs/hell-hot-1000-preloader-daa52dc112-154x96.png"
   }
 ]
