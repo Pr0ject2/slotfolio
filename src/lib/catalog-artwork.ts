@@ -259,6 +259,16 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-5x-magic": "/images/catalog/playn-go-5x-magic.webp",
   "playn-go-7-sins": "/images/catalog/playn-go-7-sins.webp",
   "playn-go-ace-of-spades": "/images/catalog/playn-go-ace-of-spades.webp",
+  "playn-go-agent-destiny": "/images/catalog/playn-go-agent-destiny.webp",
+  "playn-go-agent-of-hearts": "/images/catalog/playn-go-agent-of-hearts.webp",
+  "playn-go-alice-cooper-and-the-tome-of-madness": "/images/catalog/playn-go-alice-cooper-and-the-tome-of-madness.webp",
+  "playn-go-animal-madness": "/images/catalog/playn-go-animal-madness.webp",
+  "playn-go-ankh-of-anubis": "/images/catalog/playn-go-ankh-of-anubis.webp",
+  "playn-go-ankh-of-anubis-awakening": "/images/catalog/playn-go-ankh-of-anubis-awakening.webp",
+  "playn-go-annihilator": "/images/catalog/playn-go-annihilator.webp",
+  "playn-go-athena-ascending": "/images/catalog/playn-go-athena-ascending.webp",
+  "playn-go-aztec-idols": "/images/catalog/playn-go-aztec-idols.webp",
+  "playn-go-aztec-warrior-princess": "/images/catalog/playn-go-aztec-warrior-princess.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
