@@ -1558,5 +1558,75 @@
     "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1580_hero_Device_Desktop16x9%20%281%29.png",
     "local": "/images/catalog/hacksaw-gaming-get-the-cheese.webp",
     "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-great-game-rockies",
+    "page": "https://www.hacksawgaming.com/games/great-game-rockies",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2303_hero_Devices_Desktop%20%281%29.png",
+    "local": "/images/catalog/hacksaw-gaming-great-game-rockies.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-grug-make-fire",
+    "page": "https://www.hacksawgaming.com/games/grug-make-fire",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2166_hero_GrugMakeFire_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-grug-make-fire.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-hot-ross",
+    "page": "https://www.hacksawgaming.com/games/hot-ross",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2062_hero_Hacksaw%20Desktop%2016x9.png",
+    "local": "/images/catalog/hacksaw-gaming-hot-ross.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-hounds-of-hell",
+    "page": "https://www.hacksawgaming.com/games/hounds-of-hell",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1666_hero_HoundsOfHell_Device_Desktop16x9.png",
+    "local": "/images/catalog/hacksaw-gaming-hounds-of-hell.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-immortal-desire",
+    "page": "https://www.hacksawgaming.com/games/immortal-desire",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1364_hero_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-immortal-desire.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-invictus",
+    "page": "https://www.hacksawgaming.com/games/invictus",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1791_hero_Device_Desktop16x9%20%281%29.png",
+    "local": "/images/catalog/hacksaw-gaming-invictus.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-jaws-of-justice",
+    "page": "https://www.hacksawgaming.com/games/jaws-of-justice",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1946_hero_JawsOfJustice_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-jaws-of-justice.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-jelly-slice",
+    "page": "https://www.hacksawgaming.com/games/jelly-slice",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1452_hero_Device_Desktop.jpg",
+    "local": "/images/catalog/hacksaw-gaming-jelly-slice.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-keepem",
+    "page": "https://www.hacksawgaming.com/games/keep-em",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1494_hero_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-keepem.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-klowns",
+    "page": "https://www.hacksawgaming.com/games/klowns",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1438_hero_Device_Desktop16x9.png",
+    "local": "/images/catalog/hacksaw-gaming-klowns.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
   }
 ]
