@@ -1,21 +1,23 @@
 import { expect, test } from "@playwright/test";
 
 for (const slug of ["playn-go-nsync-pop"]) {
-  test(`catalog ${slug} uses the dossier template without invented artwork`, async ({ page }) => {
+  test(`catalog ${slug} uses the dossier template with verified first-party artwork`, async ({ page }) => {
     await page.goto(`/slots/catalog/${slug}`);
     await expect(page.locator(".slot-heading")).toBeVisible();
     await expect(page.locator(".slot-intro")).toBeVisible();
-    await expect(page.locator(".slot-figure")).toHaveCount(0);
+    const artwork = page.locator(".slot-figure .catalog-dossier-art");
+    await expect(artwork).toBeVisible();
+    await expect(artwork).toHaveAttribute("src", /playn-go-nsync-pop\.webp$/);
+    await artwork.scrollIntoViewIfNeeded();
+    await expect.poll(async () => artwork.evaluate((node) => (node as HTMLImageElement).naturalWidth), { timeout: 15_000 }).toBeGreaterThan(0);
     await expect(page.locator(".article-layout")).toBeVisible();
     await expect(page.getByRole("heading", { name: "Параметры игры" })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Сравнение с другими играми" })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Параметры и источники" })).toBeVisible();
-    await expect(page.locator("#editorial")).toHaveCount(0);
+    await expect(page.locator("#editorial")).toBeVisible();
+    await expect(page.locator("#how-it-works")).toContainText("Encore Spin");
     await expect(page.getByRole("heading", { name: "Ответы на частые вопросы" })).toBeVisible();
     await expect(page.locator("#facts")).toBeVisible();
-    await expect(page.locator(".slot-deck")).not.toContainText(/Official page|Official release|Подтверждённое игровое поле/);
-    await expect(page.locator("body")).not.toContainText("Механика «");
-    await expect(page.locator("body")).not.toContainText("подтверждённые механики собраны по официальной странице");
     await expect(page.locator(".catalog-record-page")).toHaveCount(0);
   });
 }
