@@ -2048,5 +2048,75 @@
     "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1711_hero_Devices_Desktop%20(1).png",
     "local": "/images/catalog/hacksaw-gaming-wishbringer.webp",
     "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-xmas-drop",
+    "page": "https://www.hacksawgaming.com/games/xmas-drop",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1396_hero_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-xmas-drop.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-ze-zeus",
+    "page": "https://www.hacksawgaming.com/games/ze-zeus",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1508_hero_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-ze-zeus.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-zeus-ze-zecond",
+    "page": "https://www.hacksawgaming.com/games/zeus-ze-zecond",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2077_hero_ZeusZeZecond_Devices_Desktop%20(1).png",
+    "local": "/images/catalog/hacksaw-gaming-zeus-ze-zecond.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "nolimit-city-bowel-of-beelzebub",
+    "page": "https://nolimitcity.com/games/bowel-of-beelzebub",
+    "image": "https://fan-cdn.nolimitcity.com/Website_Icon_Text_12e3df2a33.png",
+    "local": "/images/catalog/nolimit-city-bowel-of-beelzebub.webp",
+    "note": "Official first-party social/game artwork exposed by the Nolimit City game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "nolimit-city-ding-dong-death",
+    "page": "https://nolimitcity.com/games/ding-dong-death",
+    "image": "https://fan-cdn.nolimitcity.com/Web_Icon_Ding_Dong_Death_With_Text_cba5958536.png",
+    "local": "/images/catalog/nolimit-city-ding-dong-death.webp",
+    "note": "Official first-party social/game artwork exposed by the Nolimit City game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "nolimit-city-duck-hunters-2",
+    "page": "https://nolimitcity.com/games/duck-hunters-2",
+    "image": "https://fan-cdn.nolimitcity.com/Share_Image_Duck_Hunters2_f274538921.png",
+    "local": "/images/catalog/nolimit-city-duck-hunters-2.webp",
+    "note": "Official first-party share artwork exposed by the Nolimit City game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "nolimit-city-fire-in-the-hole-4",
+    "page": "https://nolimitcity.com/games/game-1",
+    "image": "https://fan-cdn.nolimitcity.com/Website_Icon_Fire_in_the_Hole_4_64f1bfb332.jpg",
+    "local": "/images/catalog/nolimit-city-fire-in-the-hole-4.webp",
+    "note": "Official first-party game artwork exposed by the Nolimit City preview page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "nolimit-city-gator-hunters-2",
+    "page": "https://nolimitcity.com/games/gator-hunters-2",
+    "image": "https://fan-cdn.nolimitcity.com/Share_Image_a0dcdb4b3a.png",
+    "local": "/images/catalog/nolimit-city-gator-hunters-2.webp",
+    "note": "Official first-party share artwork exposed by the Nolimit City game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "nolimit-city-six-feet-under",
+    "page": "https://nolimitcity.com/games/six-feet-under",
+    "image": "https://fan-cdn.nolimitcity.com/Website_Icon_Six_Feet_Under_With_Text_18a7e2c8b2.png",
+    "local": "/images/catalog/nolimit-city-six-feet-under.webp",
+    "note": "Official first-party game artwork exposed by the Nolimit City game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-nsync-pop",
+    "page": "https://www.playngo.com/games/*nsync-pop",
+    "image": "https://static.wixstatic.com/media/2a0c90_2bdfea69ed834f299ce937e11e3253db~mv2.webp/v1/fill/w_1280,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsyncpop_web_games_hero.webp",
+    "local": "/images/catalog/playn-go-nsync-pop.webp",
+    "note": "Official first-party hero artwork from the Play’n GO game page. Local build-time copy only; no runtime remote request."
   }
 ]
