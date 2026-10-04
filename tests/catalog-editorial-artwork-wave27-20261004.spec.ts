@@ -4,7 +4,7 @@ const slots = [
   ["hacksaw-gaming-xmas-drop", "Wild Gift"],
   ["hacksaw-gaming-ze-zeus", "Divine Squares"],
   ["hacksaw-gaming-zeus-ze-zecond", "Wonder Reels"],
-  ["nolimit-city-bowel-of-beelzebub", "механика Bowel Of Beelzebub"],
+  ["nolimit-city-bowel-of-beelzebub", "не раскрывает механику Bowel Of Beelzebub"],
   ["nolimit-city-ding-dong-death", "Death Meter"],
   ["nolimit-city-duck-hunters-2", "x16 384"],
   ["nolimit-city-fire-in-the-hole-4", "механику Fire In The Hole 4"],
