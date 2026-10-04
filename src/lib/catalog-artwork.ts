@@ -189,6 +189,16 @@ const artworkBySlug: Record<string, string> = {
   "hacksaw-gaming-le-pharaoh": "/images/catalog/hacksaw-gaming-le-pharaoh.webp",
   "hacksaw-gaming-le-prechaun": "/images/catalog/hacksaw-gaming-le-prechaun.webp",
   "hacksaw-gaming-le-santa": "/images/catalog/hacksaw-gaming-le-santa.webp",
+  "hacksaw-gaming-le-sortudo": "/images/catalog/hacksaw-gaming-le-sortudo.webp",
+  "hacksaw-gaming-le-viking": "/images/catalog/hacksaw-gaming-le-viking.webp",
+  "hacksaw-gaming-le-zeus": "/images/catalog/hacksaw-gaming-le-zeus.webp",
+  "hacksaw-gaming-magic-piggy-og": "/images/catalog/hacksaw-gaming-magic-piggy-og.webp",
+  "hacksaw-gaming-marlin-masters": "/images/catalog/hacksaw-gaming-marlin-masters.webp",
+  "hacksaw-gaming-marlin-masters-atlantis": "/images/catalog/hacksaw-gaming-marlin-masters-atlantis.webp",
+  "hacksaw-gaming-marlin-masters-og": "/images/catalog/hacksaw-gaming-marlin-masters-og.webp",
+  "hacksaw-gaming-marlin-masters-the-big-haul": "/images/catalog/hacksaw-gaming-marlin-masters-the-big-haul.webp",
+  "hacksaw-gaming-mayan-stackways": "/images/catalog/hacksaw-gaming-mayan-stackways.webp",
+  "hacksaw-gaming-miami-mayhem": "/images/catalog/hacksaw-gaming-miami-mayhem.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
