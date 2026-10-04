@@ -2258,5 +2258,75 @@
     "image": "https://static.wixstatic.com/media/00153c_a592654f2807414dad49504313ee7fa1~mv2.webp/v1/fill/w_500,h_350,al_c/00153c_a592654f2807414dad49504313ee7fa1~mv2.webp",
     "local": "/images/catalog/playn-go-aztec-warrior-princess.webp",
     "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-bakers-treat",
+    "page": "https://www.playngo.com/games/baker%27s-treat",
+    "image": "https://static.wixstatic.com/media/8efede_cecd60cc5b1942769e7b17769fd540d6~mv2.webp/v1/fill/w_500,h_350,al_c/8efede_cecd60cc5b1942769e7b17769fd540d6~mv2.webp",
+    "local": "/images/catalog/playn-go-bakers-treat.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-banana-rock",
+    "page": "https://www.playngo.com/games/banana-rock",
+    "image": "https://static.wixstatic.com/media/1446a0_d4ddb7bb082e48c3b43a7ca26ad3e957~mv2.webp/v1/fill/w_500,h_350,al_c/1446a0_d4ddb7bb082e48c3b43a7ca26ad3e957~mv2.webp",
+    "local": "/images/catalog/playn-go-banana-rock.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-banana-rush",
+    "page": "https://www.playngo.com/games/banana-rush",
+    "image": "https://static.wixstatic.com/media/d3445f_9ceee7fc3118423883732c6bec3e071e~mv2.webp/v1/fill/w_500,h_350,al_c/d3445f_9ceee7fc3118423883732c6bec3e071e~mv2.webp",
+    "local": "/images/catalog/playn-go-banana-rush.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-banquet-of-dead",
+    "page": "https://www.playngo.com/games/banquet-of-dead",
+    "image": "https://static.wixstatic.com/media/6a45d1_29b30e8af85d44398dcb2a3c59adc58b~mv2.webp/v1/fill/w_500,h_350,al_c/6a45d1_29b30e8af85d44398dcb2a3c59adc58b~mv2.webp",
+    "local": "/images/catalog/playn-go-banquet-of-dead.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-bao-shi",
+    "page": "https://www.playngo.com/games/bao-shi",
+    "image": "https://static.wixstatic.com/media/c7eca0_3ff70a66298a488f8427ee7cf8d19555~mv2.webp/v1/fill/w_500,h_350,al_c/c7eca0_3ff70a66298a488f8427ee7cf8d19555~mv2.webp",
+    "local": "/images/catalog/playn-go-bao-shi.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-barn-busters",
+    "page": "https://www.playngo.com/games/barn-busters",
+    "image": "https://static.wixstatic.com/media/80f1a1_325f29a89bd64d99b796e6c27b3be70c~mv2.webp/v1/fill/w_500,h_350,al_c/80f1a1_325f29a89bd64d99b796e6c27b3be70c~mv2.webp",
+    "local": "/images/catalog/playn-go-barn-busters.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-baron-lord-of-saturday",
+    "page": "https://www.playngo.com/games/baron%3A-lord-of-saturday",
+    "image": "https://static.wixstatic.com/media/70bc84_53ac80a3b11c48caa3211f735f1ba0cd~mv2.webp/v1/fill/w_500,h_350,al_c/70bc84_53ac80a3b11c48caa3211f735f1ba0cd~mv2.webp",
+    "local": "/images/catalog/playn-go-baron-lord-of-saturday.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-battle-royal",
+    "page": "https://www.playngo.com/games/battle-royal",
+    "image": "https://static.wixstatic.com/media/165762_843be3320a324829b73f758814962c72~mv2.webp/v1/fill/w_500,h_350,al_c/165762_843be3320a324829b73f758814962c72~mv2.webp",
+    "local": "/images/catalog/playn-go-battle-royal.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-beasts-of-fire",
+    "page": "https://www.playngo.com/games/beasts-of-fire",
+    "image": "https://static.wixstatic.com/media/ec5a1d_b30b8ba5ab1048b68cfd55264ec7b19a~mv2.jpg/v1/fill/w_500,h_350,al_c,q_80/beastoffire_panel_small.jpg",
+    "local": "/images/catalog/playn-go-beasts-of-fire.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-beasts-of-fire-maximum",
+    "page": "https://www.playngo.com/games/beasts-of-fire-maximum",
+    "image": "https://static.wixstatic.com/media/8a75f9_acc72942ca524ab1a5858bd7a2a7c0c6~mv2.webp/v1/fill/w_500,h_350,al_c/8a75f9_acc72942ca524ab1a5858bd7a2a7c0c6~mv2.webp",
+    "local": "/images/catalog/playn-go-beasts-of-fire-maximum.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
   }
 ]
