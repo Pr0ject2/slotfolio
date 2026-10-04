@@ -63,7 +63,20 @@ for (const [key, url] of games) {
         src: (node as HTMLImageElement).currentSrc || node.getAttribute("src"),
       }))
     );
+    const leaves = await page.locator("body *").evaluateAll((nodes) => {
+      const out: string[] = [];
+      const seen = new Set<string>();
+      for (const node of nodes) {
+        if (node.children.length) continue;
+        const text = (node.textContent || "").replace(/\\s+/g, " ").trim();
+        if (!text || text.length > 700 || seen.has(text)) continue;
+        seen.add(text);
+        out.push(text);
+      }
+      return out;
+    });
     console.log(`W23_${key.toUpperCase().replace(/-/g,"_")}_TEXT=` + JSON.stringify(texts));
+    console.log(`W23_${key.toUpperCase().replace(/-/g,"_")}_LEAVES=` + JSON.stringify(leaves));
     console.log(`W23_${key.toUpperCase().replace(/-/g,"_")}_IMAGES=` + JSON.stringify(images));
   });
 }
