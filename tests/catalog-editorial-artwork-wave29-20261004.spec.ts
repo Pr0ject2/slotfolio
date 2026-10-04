@@ -10,7 +10,7 @@ const slots = [
   ["playn-go-annihilator", "Fun Palace"],
   ["playn-go-athena-ascending", "Multiplier Wilds"],
   ["playn-go-aztec-idols", "Pick-the-Idols"],
-  ["playn-go-aztec-warrior-princess", "Temple Bonus"],
+  ["playn-go-aztec-warrior-princess", "jeweled Skull"],
 ] as const;
 
 test("wave 29 Play'n GO cards render verified game-specific copy and loaded artwork", async ({ page }) => {
