@@ -199,6 +199,16 @@ const artworkBySlug: Record<string, string> = {
   "hacksaw-gaming-marlin-masters-the-big-haul": "/images/catalog/hacksaw-gaming-marlin-masters-the-big-haul.webp",
   "hacksaw-gaming-mayan-stackways": "/images/catalog/hacksaw-gaming-mayan-stackways.webp",
   "hacksaw-gaming-miami-mayhem": "/images/catalog/hacksaw-gaming-miami-mayhem.webp",
+  "hacksaw-gaming-mighty-masks": "/images/catalog/hacksaw-gaming-mighty-masks.webp",
+  "hacksaw-gaming-munchy-milo": "/images/catalog/hacksaw-gaming-munchy-milo.webp",
+  "hacksaw-gaming-octo-attack": "/images/catalog/hacksaw-gaming-octo-attack.webp",
+  "hacksaw-gaming-orb-of-destiny": "/images/catalog/hacksaw-gaming-orb-of-destiny.webp",
+  "hacksaw-gaming-phoenix-duelreels": "/images/catalog/hacksaw-gaming-phoenix-duelreels.webp",
+  "hacksaw-gaming-pray-for-six": "/images/catalog/hacksaw-gaming-pray-for-six.webp",
+  "hacksaw-gaming-pray-for-three": "/images/catalog/hacksaw-gaming-pray-for-three.webp",
+  "hacksaw-gaming-rainbow-princess": "/images/catalog/hacksaw-gaming-rainbow-princess.webp",
+  "hacksaw-gaming-red-rascal": "/images/catalog/hacksaw-gaming-red-rascal.webp",
+  "hacksaw-gaming-reign-of-rome": "/images/catalog/hacksaw-gaming-reign-of-rome.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
