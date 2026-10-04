@@ -10,7 +10,7 @@ const slots = [
   ["hacksaw-gaming-ultimate-slot-of-america", "Gem Cluster"],
   ["hacksaw-gaming-vending-machine", "Multiplier Light"],
   ["hacksaw-gaming-wings-of-horus", "Orb of the Moon"],
-  ["hacksaw-gaming-wishbringer", "Wild Cloud Row"],
+  ["hacksaw-gaming-wishbringer", "Wild Clouds"],
 ] as const;
 
 test("wave 26 Hacksaw cards render game-specific editorial copy and loaded official artwork", async ({ page }) => {
