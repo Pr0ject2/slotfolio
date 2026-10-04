@@ -1978,5 +1978,75 @@
     "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1237_hero_Device_Desktop.png",
     "local": "/images/catalog/hacksaw-gaming-temple-of-torment.webp",
     "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-the-count",
+    "page": "https://www.hacksawgaming.com/games/the-count",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1803_hero_TheCount_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-the-count.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-the-luxe",
+    "page": "https://www.hacksawgaming.com/games/the-luxe",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1897_hero_Device_Desktop16x9%20(1).png",
+    "local": "/images/catalog/hacksaw-gaming-the-luxe.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-the-wildwood-curse",
+    "page": "https://www.hacksawgaming.com/games/the-wildwood-curse",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1891_hero_Device_Desktop16x9.png",
+    "local": "/images/catalog/hacksaw-gaming-the-wildwood-curse.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-tiger-legends",
+    "page": "https://www.hacksawgaming.com/games/tiger-legends",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1744_hero_Tiger-Legends_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-tiger-legends.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-toshi-ways-club",
+    "page": "https://www.hacksawgaming.com/games/toshi-ways-club",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1971_hero_Device_Desktop%2016x9.png",
+    "local": "/images/catalog/hacksaw-gaming-toshi-ways-club.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-twisted-lab",
+    "page": "https://www.hacksawgaming.com/games/twisted-lab",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1514_hero_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-twisted-lab.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-ultimate-slot-of-america",
+    "page": "https://www.hacksawgaming.com/games/ultimate-slot-of-america",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1760_hero_USA_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-ultimate-slot-of-america.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-vending-machine",
+    "page": "https://www.hacksawgaming.com/games/vending-machine",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1340_hero_Device_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-vending-machine.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-wings-of-horus",
+    "page": "https://www.hacksawgaming.com/games/wings-of-horus",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1612_hero_Device_Desktop%2016_9.png",
+    "local": "/images/catalog/hacksaw-gaming-wings-of-horus.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-wishbringer",
+    "page": "https://www.hacksawgaming.com/games/wishbringer",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1711_hero_Devices_Desktop%20(1).png",
+    "local": "/images/catalog/hacksaw-gaming-wishbringer.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
   }
 ]
