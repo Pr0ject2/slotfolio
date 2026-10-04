@@ -149,6 +149,16 @@ const artworkBySlug: Record<string, string> = {
   "hacksaw-gaming-divine-drop": "/images/catalog/hacksaw-gaming-divine-drop.webp",
   "hacksaw-gaming-donny-and-danny": "/images/catalog/hacksaw-gaming-donny-and-danny.webp",
   "hacksaw-gaming-donny-dough": "/images/catalog/hacksaw-gaming-donny-dough.webp",
+  "hacksaw-gaming-donut-division": "/images/catalog/hacksaw-gaming-donut-division.webp",
+  "hacksaw-gaming-dorks-of-the-deep": "/images/catalog/hacksaw-gaming-dorks-of-the-deep.webp",
+  "hacksaw-gaming-dragons-domain": "/images/catalog/hacksaw-gaming-dragons-domain.webp",
+  "hacksaw-gaming-dropem": "/images/catalog/hacksaw-gaming-dropem.webp",
+  "hacksaw-gaming-duel-at-dawn": "/images/catalog/hacksaw-gaming-duel-at-dawn.webp",
+  "hacksaw-gaming-dusk-princess": "/images/catalog/hacksaw-gaming-dusk-princess.webp",
+  "hacksaw-gaming-dynasty-of-death": "/images/catalog/hacksaw-gaming-dynasty-of-death.webp",
+  "hacksaw-gaming-epic-bullets-and-bounty": "/images/catalog/hacksaw-gaming-epic-bullets-and-bounty.webp",
+  "hacksaw-gaming-epic-ze-zeus": "/images/catalog/hacksaw-gaming-epic-ze-zeus.webp",
+  "hacksaw-gaming-eternal-duel": "/images/catalog/hacksaw-gaming-eternal-duel.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
