@@ -4,7 +4,7 @@ const slots = [
   ["playn-go-agent-destiny", "Linked Reels"],
   ["playn-go-agent-of-hearts", "Queen’s Heart"],
   ["playn-go-alice-cooper-and-the-tome-of-madness", "Insane Asylum"],
-  ["playn-go-animal-madness", "Sunflower Charge Meter"],
+  ["playn-go-animal-madness", "Sunflower работает как Charge Meter"],
   ["playn-go-ankh-of-anubis", "пять Ankh symbols"],
   ["playn-go-ankh-of-anubis-awakening", "Anubis Re-Spins"],
   ["playn-go-annihilator", "Fun Palace"],
