@@ -23,5 +23,7 @@ test("wave 17 artwork is visible in the catalog list, not only on dossier pages"
     await expect(art).toBeVisible();
     await expect(art).toHaveAttribute("src", new RegExp(`/images/catalog/${slug}\\.webp$`));
     await expect(art).not.toHaveAttribute("src", /unavailable\.svg/);
+    await expect.poll(async () => art.evaluate((node) => (node as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+    await expect.poll(async () => art.evaluate((node) => (node as HTMLImageElement).naturalHeight)).toBeGreaterThan(0);
   }
 });
