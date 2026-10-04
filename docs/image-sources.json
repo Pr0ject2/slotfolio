@@ -2118,5 +2118,75 @@
     "image": "https://static.wixstatic.com/media/2a0c90_2bdfea69ed834f299ce937e11e3253db~mv2.webp/v1/fill/w_1280,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsyncpop_web_games_hero.webp",
     "local": "/images/catalog/playn-go-nsync-pop.webp",
     "note": "Official first-party hero artwork from the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-1001-mystery-genie-fortunes",
+    "page": "https://www.playngo.com/games/1001-mystery-genie-fortunes",
+    "image": "https://static.wixstatic.com/media/b54d3c_e82f041a2c554432a0c1f20652279a06~mv2.webp/v1/fill/w_500,h_350,al_c/b54d3c_e82f041a2c554432a0c1f20652279a06~mv2.webp",
+    "local": "/images/catalog/playn-go-1001-mystery-genie-fortunes.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-13th-trial-hercules-abyssways",
+    "page": "https://www.playngo.com/games/13th-trial-hercules-abyssways",
+    "image": "https://static.wixstatic.com/media/7e5930_5a042277b0fd42fea170e8aa17ca361d~mv2.webp/v1/fill/w_500,h_350,al_c/7e5930_5a042277b0fd42fea170e8aa17ca361d~mv2.webp",
+    "local": "/images/catalog/playn-go-13th-trial-hercules-abyssways.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-15-crystal-roses-a-tale-of-love",
+    "page": "https://www.playngo.com/games/15-crystal-roses%3A-a-tale-of-love",
+    "image": "https://static.wixstatic.com/media/da2fcf_4cada974cd1b4e099faba754c420d451~mv2.webp/v1/fill/w_500,h_350,al_c/da2fcf_4cada974cd1b4e099faba754c420d451~mv2.webp",
+    "local": "/images/catalog/playn-go-15-crystal-roses-a-tale-of-love.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-24k-dragon",
+    "page": "https://www.playngo.com/games/24k-dragon",
+    "image": "https://static.wixstatic.com/media/4f46ba_a5d0483d44804cd59f067f6a57ef272c~mv2.jpg/v1/fill/w_500,h_350,al_c,q_80/twentyfourkdragon_panel_small_new.jpg",
+    "local": "/images/catalog/playn-go-24k-dragon.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-3-blades-and-blessings",
+    "page": "https://www.playngo.com/games/3-blades-%26-blessings",
+    "image": "https://static.wixstatic.com/media/28d5ed_43c06b84891d44a59cd2854df4f835c5~mv2.webp/v1/fill/w_500,h_350,al_c/28d5ed_43c06b84891d44a59cd2854df4f835c5~mv2.webp",
+    "local": "/images/catalog/playn-go-3-blades-and-blessings.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-3-clown-monty",
+    "page": "https://www.playngo.com/games/3-clown-monty",
+    "image": "https://static.wixstatic.com/media/0be5db_47f29addd87d4840a6abcdb3db200433~mv2.webp/v1/fill/w_500,h_350,al_c/0be5db_47f29addd87d4840a6abcdb3db200433~mv2.webp",
+    "local": "/images/catalog/playn-go-3-clown-monty.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-3-clown-monty-ii",
+    "page": "https://www.playngo.com/games/3-clown-monty-ii",
+    "image": "https://static.wixstatic.com/media/f3aeae_fc511b06ee1c4877ac929b0746b764e7~mv2.webp/v1/fill/w_500,h_350,al_c/f3aeae_fc511b06ee1c4877ac929b0746b764e7~mv2.webp",
+    "local": "/images/catalog/playn-go-3-clown-monty-ii.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-5x-magic",
+    "page": "https://www.playngo.com/games/5x-magic",
+    "image": "https://static.wixstatic.com/media/4d0d57_d1147dd3d1734948ae94d6ffa1137767~mv2.webp/v1/fill/w_500,h_350,al_c/4d0d57_d1147dd3d1734948ae94d6ffa1137767~mv2.webp",
+    "local": "/images/catalog/playn-go-5x-magic.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-7-sins",
+    "page": "https://www.playngo.com/games/7-sins",
+    "image": "https://static.wixstatic.com/media/0e60c5_dd1fabbe9f2d4277beb04b6878ba273f~mv2.webp/v1/fill/w_500,h_350,al_c/0e60c5_dd1fabbe9f2d4277beb04b6878ba273f~mv2.webp",
+    "local": "/images/catalog/playn-go-7-sins.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-ace-of-spades",
+    "page": "https://www.playngo.com/games/ace-of-spades",
+    "image": "https://static.wixstatic.com/media/9a1570_d0cc7fcad2d449f988cc263fe68e29c6~mv2.webp/v1/fill/w_500,h_350,al_c/9a1570_d0cc7fcad2d449f988cc263fe68e29c6~mv2.webp",
+    "local": "/images/catalog/playn-go-ace-of-spades.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
   }
 ]
