@@ -1908,5 +1908,75 @@
     "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1558_hero_SnowSlingers_Devices_Desktop%20%281%29.png",
     "local": "/images/catalog/hacksaw-gaming-snow-slingers.webp",
     "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-spear-of-athena",
+    "page": "https://www.hacksawgaming.com/games/spear-of-athena",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1938_hero_SpearOfAthena_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-spear-of-athena.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-spinman",
+    "page": "https://www.hacksawgaming.com/games/spinman",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1752_hero_Spinman_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-spinman.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-steamrunners",
+    "page": "https://www.hacksawgaming.com/games/steamrunners",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1871_hero_Steamrunners_Devices_Desktop_Euro.png",
+    "local": "/images/catalog/hacksaw-gaming-steamrunners.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-stormborn",
+    "page": "https://www.hacksawgaming.com/games/stormborn",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1875_hero_Device_Desktop16x9.png",
+    "local": "/images/catalog/hacksaw-gaming-stormborn.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-strength-of-hercules",
+    "page": "https://www.hacksawgaming.com/games/strength-of-hercules",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1697_hero_Device_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-strength-of-hercules.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-sun-princess",
+    "page": "https://www.hacksawgaming.com/games/sun-princess",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1914_hero_SunPrincess_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-sun-princess.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-superstar-sevens",
+    "page": "https://www.hacksawgaming.com/games/superstar-sevens",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2138_hero_Device_Desktop%2016x9%20.png",
+    "local": "/images/catalog/hacksaw-gaming-superstar-sevens.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-supreme-zeus",
+    "page": "https://www.hacksawgaming.com/games/supreme-zeus",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2458_hero_SupremeZeus_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-supreme-zeus.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-tai-the-toad",
+    "page": "https://www.hacksawgaming.com/games/tai-the-toad",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1478_hero_TaiTheToad_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-tai-the-toad.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-temple-of-torment",
+    "page": "https://www.hacksawgaming.com/games/temple-of-torment",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1237_hero_Device_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-temple-of-torment.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
   }
 ]

@@ -219,6 +219,16 @@ const artworkBySlug: Record<string, string> = {
   "hacksaw-gaming-slayers-inc": "/images/catalog/hacksaw-gaming-slayers-inc.webp",
   "hacksaw-gaming-smoking-dragon": "/images/catalog/hacksaw-gaming-smoking-dragon.webp",
   "hacksaw-gaming-snow-slingers": "/images/catalog/hacksaw-gaming-snow-slingers.webp",
+  "hacksaw-gaming-spear-of-athena": "/images/catalog/hacksaw-gaming-spear-of-athena.webp",
+  "hacksaw-gaming-spinman": "/images/catalog/hacksaw-gaming-spinman.webp",
+  "hacksaw-gaming-steamrunners": "/images/catalog/hacksaw-gaming-steamrunners.webp",
+  "hacksaw-gaming-stormborn": "/images/catalog/hacksaw-gaming-stormborn.webp",
+  "hacksaw-gaming-strength-of-hercules": "/images/catalog/hacksaw-gaming-strength-of-hercules.webp",
+  "hacksaw-gaming-sun-princess": "/images/catalog/hacksaw-gaming-sun-princess.webp",
+  "hacksaw-gaming-superstar-sevens": "/images/catalog/hacksaw-gaming-superstar-sevens.webp",
+  "hacksaw-gaming-supreme-zeus": "/images/catalog/hacksaw-gaming-supreme-zeus.webp",
+  "hacksaw-gaming-tai-the-toad": "/images/catalog/hacksaw-gaming-tai-the-toad.webp",
+  "hacksaw-gaming-temple-of-torment": "/images/catalog/hacksaw-gaming-temple-of-torment.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
