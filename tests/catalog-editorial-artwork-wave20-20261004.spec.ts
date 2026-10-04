@@ -3,13 +3,13 @@ import { expect, test } from "@playwright/test";
 const slots = [
   ["hacksaw-gaming-great-game-rockies", "Hunting Season"],
   ["hacksaw-gaming-grug-make-fire", "Burning Wild"],
-  ["hacksaw-gaming-hot-ross", "Hot Ro$$"],
-  ["hacksaw-gaming-hounds-of-hell", "Roaring Pack"],
+  ["hacksaw-gaming-hot-ross", "Hot Ro$"],
+  ["hacksaw-gaming-hounds-of-hell", "Hellhound"],
   ["hacksaw-gaming-immortal-desire", "Blood Reel"],
   ["hacksaw-gaming-invictus", "Pantheon Multipliers"],
-  ["hacksaw-gaming-jaws-of-justice", "Force Fields"],
+  ["hacksaw-gaming-jaws-of-justice", "Laser Shark"],
   ["hacksaw-gaming-jelly-slice", "Slicer"],
-  ["hacksaw-gaming-keepem", "KEEP’EM reels"],
+  ["hacksaw-gaming-keepem", "GET’EM"],
   ["hacksaw-gaming-klowns", "Needle Box"],
 ] as const;
 
