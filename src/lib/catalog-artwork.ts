@@ -269,6 +269,16 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-athena-ascending": "/images/catalog/playn-go-athena-ascending.webp",
   "playn-go-aztec-idols": "/images/catalog/playn-go-aztec-idols.webp",
   "playn-go-aztec-warrior-princess": "/images/catalog/playn-go-aztec-warrior-princess.webp",
+  "playn-go-bakers-treat": "/images/catalog/playn-go-bakers-treat.webp",
+  "playn-go-banana-rock": "/images/catalog/playn-go-banana-rock.webp",
+  "playn-go-banana-rush": "/images/catalog/playn-go-banana-rush.webp",
+  "playn-go-banquet-of-dead": "/images/catalog/playn-go-banquet-of-dead.webp",
+  "playn-go-bao-shi": "/images/catalog/playn-go-bao-shi.webp",
+  "playn-go-barn-busters": "/images/catalog/playn-go-barn-busters.webp",
+  "playn-go-baron-lord-of-saturday": "/images/catalog/playn-go-baron-lord-of-saturday.webp",
+  "playn-go-battle-royal": "/images/catalog/playn-go-battle-royal.webp",
+  "playn-go-beasts-of-fire": "/images/catalog/playn-go-beasts-of-fire.webp",
+  "playn-go-beasts-of-fire-maximum": "/images/catalog/playn-go-beasts-of-fire-maximum.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
