@@ -229,6 +229,16 @@ const artworkBySlug: Record<string, string> = {
   "hacksaw-gaming-supreme-zeus": "/images/catalog/hacksaw-gaming-supreme-zeus.webp",
   "hacksaw-gaming-tai-the-toad": "/images/catalog/hacksaw-gaming-tai-the-toad.webp",
   "hacksaw-gaming-temple-of-torment": "/images/catalog/hacksaw-gaming-temple-of-torment.webp",
+  "hacksaw-gaming-the-count": "/images/catalog/hacksaw-gaming-the-count.webp",
+  "hacksaw-gaming-the-luxe": "/images/catalog/hacksaw-gaming-the-luxe.webp",
+  "hacksaw-gaming-the-wildwood-curse": "/images/catalog/hacksaw-gaming-the-wildwood-curse.webp",
+  "hacksaw-gaming-tiger-legends": "/images/catalog/hacksaw-gaming-tiger-legends.webp",
+  "hacksaw-gaming-toshi-ways-club": "/images/catalog/hacksaw-gaming-toshi-ways-club.webp",
+  "hacksaw-gaming-twisted-lab": "/images/catalog/hacksaw-gaming-twisted-lab.webp",
+  "hacksaw-gaming-ultimate-slot-of-america": "/images/catalog/hacksaw-gaming-ultimate-slot-of-america.webp",
+  "hacksaw-gaming-vending-machine": "/images/catalog/hacksaw-gaming-vending-machine.webp",
+  "hacksaw-gaming-wings-of-horus": "/images/catalog/hacksaw-gaming-wings-of-horus.webp",
+  "hacksaw-gaming-wishbringer": "/images/catalog/hacksaw-gaming-wishbringer.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
