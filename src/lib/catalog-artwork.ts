@@ -249,6 +249,16 @@ const artworkBySlug: Record<string, string> = {
   "nolimit-city-gator-hunters-2": "/images/catalog/nolimit-city-gator-hunters-2.webp",
   "nolimit-city-six-feet-under": "/images/catalog/nolimit-city-six-feet-under.webp",
   "playn-go-nsync-pop": "/images/catalog/playn-go-nsync-pop.webp",
+  "playn-go-1001-mystery-genie-fortunes": "/images/catalog/playn-go-1001-mystery-genie-fortunes.webp",
+  "playn-go-13th-trial-hercules-abyssways": "/images/catalog/playn-go-13th-trial-hercules-abyssways.webp",
+  "playn-go-15-crystal-roses-a-tale-of-love": "/images/catalog/playn-go-15-crystal-roses-a-tale-of-love.webp",
+  "playn-go-24k-dragon": "/images/catalog/playn-go-24k-dragon.webp",
+  "playn-go-3-blades-and-blessings": "/images/catalog/playn-go-3-blades-and-blessings.webp",
+  "playn-go-3-clown-monty": "/images/catalog/playn-go-3-clown-monty.webp",
+  "playn-go-3-clown-monty-ii": "/images/catalog/playn-go-3-clown-monty-ii.webp",
+  "playn-go-5x-magic": "/images/catalog/playn-go-5x-magic.webp",
+  "playn-go-7-sins": "/images/catalog/playn-go-7-sins.webp",
+  "playn-go-ace-of-spades": "/images/catalog/playn-go-ace-of-spades.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
