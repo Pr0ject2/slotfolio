@@ -169,6 +169,16 @@ const artworkBySlug: Record<string, string> = {
   "hacksaw-gaming-freds-food-truck": "/images/catalog/hacksaw-gaming-freds-food-truck.webp",
   "hacksaw-gaming-frkn-bananas": "/images/catalog/hacksaw-gaming-frkn-bananas.webp",
   "hacksaw-gaming-get-the-cheese": "/images/catalog/hacksaw-gaming-get-the-cheese.webp",
+  "hacksaw-gaming-great-game-rockies": "/images/catalog/hacksaw-gaming-great-game-rockies.webp",
+  "hacksaw-gaming-grug-make-fire": "/images/catalog/hacksaw-gaming-grug-make-fire.webp",
+  "hacksaw-gaming-hot-ross": "/images/catalog/hacksaw-gaming-hot-ross.webp",
+  "hacksaw-gaming-hounds-of-hell": "/images/catalog/hacksaw-gaming-hounds-of-hell.webp",
+  "hacksaw-gaming-immortal-desire": "/images/catalog/hacksaw-gaming-immortal-desire.webp",
+  "hacksaw-gaming-invictus": "/images/catalog/hacksaw-gaming-invictus.webp",
+  "hacksaw-gaming-jaws-of-justice": "/images/catalog/hacksaw-gaming-jaws-of-justice.webp",
+  "hacksaw-gaming-jelly-slice": "/images/catalog/hacksaw-gaming-jelly-slice.webp",
+  "hacksaw-gaming-keepem": "/images/catalog/hacksaw-gaming-keepem.webp",
+  "hacksaw-gaming-klowns": "/images/catalog/hacksaw-gaming-klowns.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
