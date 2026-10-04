@@ -179,6 +179,16 @@ const artworkBySlug: Record<string, string> = {
   "hacksaw-gaming-jelly-slice": "/images/catalog/hacksaw-gaming-jelly-slice.webp",
   "hacksaw-gaming-keepem": "/images/catalog/hacksaw-gaming-keepem.webp",
   "hacksaw-gaming-klowns": "/images/catalog/hacksaw-gaming-klowns.webp",
+  "hacksaw-gaming-le-bunny": "/images/catalog/hacksaw-gaming-le-bunny.webp",
+  "hacksaw-gaming-le-cowboy": "/images/catalog/hacksaw-gaming-le-cowboy.webp",
+  "hacksaw-gaming-le-digger": "/images/catalog/hacksaw-gaming-le-digger.webp",
+  "hacksaw-gaming-le-fisherman": "/images/catalog/hacksaw-gaming-le-fisherman.webp",
+  "hacksaw-gaming-le-football-fan": "/images/catalog/hacksaw-gaming-le-football-fan.webp",
+  "hacksaw-gaming-le-hooligan": "/images/catalog/hacksaw-gaming-le-hooligan.webp",
+  "hacksaw-gaming-le-king": "/images/catalog/hacksaw-gaming-le-king.webp",
+  "hacksaw-gaming-le-pharaoh": "/images/catalog/hacksaw-gaming-le-pharaoh.webp",
+  "hacksaw-gaming-le-prechaun": "/images/catalog/hacksaw-gaming-le-prechaun.webp",
+  "hacksaw-gaming-le-santa": "/images/catalog/hacksaw-gaming-le-santa.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
