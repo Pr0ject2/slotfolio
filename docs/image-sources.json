@@ -1488,5 +1488,75 @@
     "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2148_hero_EternalDuel_Devices_Desktop.png",
     "local": "/images/catalog/hacksaw-gaming-eternal-duel.webp",
     "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-evil-eyes",
+    "page": "https://www.hacksawgaming.com/games/evil-eyes",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1570_hero_EvilEyes_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-evil-eyes.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-eye-of-medusa",
+    "page": "https://www.hacksawgaming.com/games/eye-of-medusa",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1740_hero_EyeOfMedusa_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-eye-of-medusa.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-eye-of-the-panda",
+    "page": "https://www.hacksawgaming.com/games/eye-of-the-panda",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1344_hero_Device_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-eye-of-the-panda.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-feel-the-beat",
+    "page": "https://www.hacksawgaming.com/games/feel-the-beat",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1372_hero_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-feel-the-beat.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-fighter-pit",
+    "page": "https://www.hacksawgaming.com/games/fighter-pit",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1715_hero_Device_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-fighter-pit.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-fire-my-laser",
+    "page": "https://www.hacksawgaming.com/games/fire-my-laser",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1640_hero_Device_Desktop16x9_euro.png",
+    "local": "/images/catalog/hacksaw-gaming-fire-my-laser.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-fist-of-destruction",
+    "page": "https://www.hacksawgaming.com/games/fist-of-destruction",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1408_hero_FistOfDestruction_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-fist-of-destruction.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-freds-food-truck",
+    "page": "https://www.hacksawgaming.com/games/freds-food-truck",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1229_hero_Device_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-freds-food-truck.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-frkn-bananas",
+    "page": "https://www.hacksawgaming.com/games/frkn-bananas",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1693_hero_Device_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-frkn-bananas.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-get-the-cheese",
+    "page": "https://www.hacksawgaming.com/games/get-the-cheese",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1580_hero_Device_Desktop16x9%20%281%29.png",
+    "local": "/images/catalog/hacksaw-gaming-get-the-cheese.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
   }
 ]
