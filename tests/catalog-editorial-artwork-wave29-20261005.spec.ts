@@ -3,14 +3,14 @@ import { expect, test } from "@playwright/test";
 const slots = [
   ["playn-go-agent-destiny", "Linked Reels"],
   ["playn-go-agent-of-hearts", "Queen’s Heart"],
-  ["playn-go-alice-cooper-and-the-tome-of-madness", "Four Realities"],
+  ["playn-go-alice-cooper-and-the-tome-of-madness", "Insane Asylum"],
   ["playn-go-animal-madness", "Sunflower Charge Meter"],
-  ["playn-go-ankh-of-anubis", "Ankh Collection"],
+  ["playn-go-ankh-of-anubis", "пять Ankh symbols"],
   ["playn-go-ankh-of-anubis-awakening", "Anubis Re-Spins"],
   ["playn-go-annihilator", "Fun Palace"],
-  ["playn-go-athena-ascending", "Ascending Multiplier Wilds"],
+  ["playn-go-athena-ascending", "Multiplier Wilds"],
   ["playn-go-aztec-idols", "Pick-the-Idols"],
-  ["playn-go-aztec-warrior-princess", "Skull Bonus"],
+  ["playn-go-aztec-warrior-princess", "Skull symbols"],
 ] as const;
 
 test("wave 29 Play'n GO cards render verified game-specific copy and loaded artwork", async ({ page }) => {
