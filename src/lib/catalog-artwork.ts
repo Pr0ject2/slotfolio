@@ -159,6 +159,16 @@ const artworkBySlug: Record<string, string> = {
   "hacksaw-gaming-epic-bullets-and-bounty": "/images/catalog/hacksaw-gaming-epic-bullets-and-bounty.webp",
   "hacksaw-gaming-epic-ze-zeus": "/images/catalog/hacksaw-gaming-epic-ze-zeus.webp",
   "hacksaw-gaming-eternal-duel": "/images/catalog/hacksaw-gaming-eternal-duel.webp",
+  "hacksaw-gaming-evil-eyes": "/images/catalog/hacksaw-gaming-evil-eyes.webp",
+  "hacksaw-gaming-eye-of-medusa": "/images/catalog/hacksaw-gaming-eye-of-medusa.webp",
+  "hacksaw-gaming-eye-of-the-panda": "/images/catalog/hacksaw-gaming-eye-of-the-panda.webp",
+  "hacksaw-gaming-feel-the-beat": "/images/catalog/hacksaw-gaming-feel-the-beat.webp",
+  "hacksaw-gaming-fighter-pit": "/images/catalog/hacksaw-gaming-fighter-pit.webp",
+  "hacksaw-gaming-fire-my-laser": "/images/catalog/hacksaw-gaming-fire-my-laser.webp",
+  "hacksaw-gaming-fist-of-destruction": "/images/catalog/hacksaw-gaming-fist-of-destruction.webp",
+  "hacksaw-gaming-freds-food-truck": "/images/catalog/hacksaw-gaming-freds-food-truck.webp",
+  "hacksaw-gaming-frkn-bananas": "/images/catalog/hacksaw-gaming-frkn-bananas.webp",
+  "hacksaw-gaming-get-the-cheese": "/images/catalog/hacksaw-gaming-get-the-cheese.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
