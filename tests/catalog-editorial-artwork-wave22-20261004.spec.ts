@@ -9,7 +9,7 @@ const slots = [
   ["hacksaw-gaming-marlin-masters-atlantis", "Jackpot Marlins"],
   ["hacksaw-gaming-marlin-masters-og", "LootLine"],
   ["hacksaw-gaming-marlin-masters-the-big-haul", "Golden Marlin"],
-  ["hacksaw-gaming-mayan-stackways", "100 000 ways"],
+  ["hacksaw-gaming-mayan-stackways", "Stack Spins"],
   ["hacksaw-gaming-miami-mayhem", "Wanted Level"],
 ] as const;
 
