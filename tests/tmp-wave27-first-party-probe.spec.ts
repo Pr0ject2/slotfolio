@@ -46,16 +46,22 @@ const games = [
 for (const [key, url] of games) {
   test(`temporary probe ${key}`, async ({ page }) => {
     await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60_000 });
+    if (url.includes("playngo.com")) await page.waitForTimeout(5000);
     const title = await page.title();
     const bodyText = (await page.locator("body").innerText()).replace(/\r/g, "");
+    const ogImage = await page.locator('meta[property="og:image"]').getAttribute("content").catch(() => null);
+    const twitterImage = await page.locator('meta[name="twitter:image"]').getAttribute("content").catch(() => null);
     const images = await page.locator("img").evaluateAll((nodes) =>
       nodes.map((node) => ({
         alt: node.getAttribute("alt"),
         src: (node as HTMLImageElement).currentSrc || node.getAttribute("src"),
+        width: (node as HTMLImageElement).naturalWidth,
+        height: (node as HTMLImageElement).naturalHeight,
       }))
     );
     console.log(`W27_${key.toUpperCase().replace(/-/g,"_")}_TITLE=` + JSON.stringify(title));
     console.log(`W27_${key.toUpperCase().replace(/-/g,"_")}_BODY=` + JSON.stringify(bodyText));
+    console.log(`W27_${key.toUpperCase().replace(/-/g,"_")}_META=` + JSON.stringify({ ogImage, twitterImage }));
     console.log(`W27_${key.toUpperCase().replace(/-/g,"_")}_IMAGES=` + JSON.stringify(images));
   });
 }
