@@ -239,6 +239,16 @@ const artworkBySlug: Record<string, string> = {
   "hacksaw-gaming-vending-machine": "/images/catalog/hacksaw-gaming-vending-machine.webp",
   "hacksaw-gaming-wings-of-horus": "/images/catalog/hacksaw-gaming-wings-of-horus.webp",
   "hacksaw-gaming-wishbringer": "/images/catalog/hacksaw-gaming-wishbringer.webp",
+  "hacksaw-gaming-xmas-drop": "/images/catalog/hacksaw-gaming-xmas-drop.webp",
+  "hacksaw-gaming-ze-zeus": "/images/catalog/hacksaw-gaming-ze-zeus.webp",
+  "hacksaw-gaming-zeus-ze-zecond": "/images/catalog/hacksaw-gaming-zeus-ze-zecond.webp",
+  "nolimit-city-bowel-of-beelzebub": "/images/catalog/nolimit-city-bowel-of-beelzebub.webp",
+  "nolimit-city-ding-dong-death": "/images/catalog/nolimit-city-ding-dong-death.webp",
+  "nolimit-city-duck-hunters-2": "/images/catalog/nolimit-city-duck-hunters-2.webp",
+  "nolimit-city-fire-in-the-hole-4": "/images/catalog/nolimit-city-fire-in-the-hole-4.webp",
+  "nolimit-city-gator-hunters-2": "/images/catalog/nolimit-city-gator-hunters-2.webp",
+  "nolimit-city-six-feet-under": "/images/catalog/nolimit-city-six-feet-under.webp",
+  "playn-go-nsync-pop": "/images/catalog/playn-go-nsync-pop.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
