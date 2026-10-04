@@ -209,6 +209,16 @@ const artworkBySlug: Record<string, string> = {
   "hacksaw-gaming-rainbow-princess": "/images/catalog/hacksaw-gaming-rainbow-princess.webp",
   "hacksaw-gaming-red-rascal": "/images/catalog/hacksaw-gaming-red-rascal.webp",
   "hacksaw-gaming-reign-of-rome": "/images/catalog/hacksaw-gaming-reign-of-rome.webp",
+  "hacksaw-gaming-rise-of-fortuna": "/images/catalog/hacksaw-gaming-rise-of-fortuna.webp",
+  "hacksaw-gaming-rise-of-ymir": "/images/catalog/hacksaw-gaming-rise-of-ymir.webp",
+  "hacksaw-gaming-ronin-stackways": "/images/catalog/hacksaw-gaming-ronin-stackways.webp",
+  "hacksaw-gaming-rusty-and-curly": "/images/catalog/hacksaw-gaming-rusty-and-curly.webp",
+  "hacksaw-gaming-sand-and-ashes": "/images/catalog/hacksaw-gaming-sand-and-ashes.webp",
+  "hacksaw-gaming-shaolin-master": "/images/catalog/hacksaw-gaming-shaolin-master.webp",
+  "hacksaw-gaming-sixsixsix": "/images/catalog/hacksaw-gaming-sixsixsix.webp",
+  "hacksaw-gaming-slayers-inc": "/images/catalog/hacksaw-gaming-slayers-inc.webp",
+  "hacksaw-gaming-smoking-dragon": "/images/catalog/hacksaw-gaming-smoking-dragon.webp",
+  "hacksaw-gaming-snow-slingers": "/images/catalog/hacksaw-gaming-snow-slingers.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
