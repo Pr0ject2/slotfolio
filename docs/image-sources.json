@@ -2188,5 +2188,75 @@
     "image": "https://static.wixstatic.com/media/9a1570_d0cc7fcad2d449f988cc263fe68e29c6~mv2.webp/v1/fill/w_500,h_350,al_c/9a1570_d0cc7fcad2d449f988cc263fe68e29c6~mv2.webp",
     "local": "/images/catalog/playn-go-ace-of-spades.webp",
     "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-agent-destiny",
+    "page": "https://www.playngo.com/games/agent-destiny",
+    "image": "https://static.wixstatic.com/media/29764b_7e56667e36874ef6879801716b8241bb~mv2.webp/v1/fill/w_500,h_350,al_c/29764b_7e56667e36874ef6879801716b8241bb~mv2.webp",
+    "local": "/images/catalog/playn-go-agent-destiny.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-agent-of-hearts",
+    "page": "https://www.playngo.com/games/agent-of-hearts",
+    "image": "https://static.wixstatic.com/media/6c92b8_6d188f7eaecf48c99f17944cc6a027a7~mv2.webp/v1/fill/w_500,h_350,al_c/6c92b8_6d188f7eaecf48c99f17944cc6a027a7~mv2.webp",
+    "local": "/images/catalog/playn-go-agent-of-hearts.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-alice-cooper-and-the-tome-of-madness",
+    "page": "https://www.playngo.com/games/alice-cooper-and-the-tome-of-madness",
+    "image": "https://static.wixstatic.com/media/243633_4213bb57a60f47448f3168ae38a46d9a~mv2.webp/v1/fill/w_500,h_350,al_c/243633_4213bb57a60f47448f3168ae38a46d9a~mv2.webp",
+    "local": "/images/catalog/playn-go-alice-cooper-and-the-tome-of-madness.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-animal-madness",
+    "page": "https://www.playngo.com/games/animal-madness",
+    "image": "https://static.wixstatic.com/media/2a5e0f_2ce17e38e1314b299ae7ad62eef638b8~mv2.webp/v1/fill/w_500,h_350,al_c/2a5e0f_2ce17e38e1314b299ae7ad62eef638b8~mv2.webp",
+    "local": "/images/catalog/playn-go-animal-madness.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-ankh-of-anubis",
+    "page": "https://www.playngo.com/games/ankh-of-anubis",
+    "image": "https://static.wixstatic.com/media/4fb167_e0fa1aef4a954c588aecfa70c738c22d~mv2.webp/v1/fill/w_500,h_350,al_c/4fb167_e0fa1aef4a954c588aecfa70c738c22d~mv2.webp",
+    "local": "/images/catalog/playn-go-ankh-of-anubis.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-ankh-of-anubis-awakening",
+    "page": "https://www.playngo.com/games/ankh-of-anubis-awakening",
+    "image": "https://static.wixstatic.com/media/235432_018e81aa8df0458ebc1fa333cb38e04c~mv2.webp/v1/fill/w_500,h_350,al_c/235432_018e81aa8df0458ebc1fa333cb38e04c~mv2.webp",
+    "local": "/images/catalog/playn-go-ankh-of-anubis-awakening.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-annihilator",
+    "page": "https://www.playngo.com/games/annihilator",
+    "image": "https://static.wixstatic.com/media/599287_de6ac22af7494c1989e043f6e6cceabe~mv2.webp/v1/fill/w_500,h_350,al_c/599287_de6ac22af7494c1989e043f6e6cceabe~mv2.webp",
+    "local": "/images/catalog/playn-go-annihilator.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-athena-ascending",
+    "page": "https://www.playngo.com/games/athena-ascending",
+    "image": "https://static.wixstatic.com/media/ae5c38_51f4a78f79294254a333d75393e7575b~mv2.webp/v1/fill/w_500,h_350,al_c/ae5c38_51f4a78f79294254a333d75393e7575b~mv2.webp",
+    "local": "/images/catalog/playn-go-athena-ascending.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-aztec-idols",
+    "page": "https://www.playngo.com/games/aztec-idols",
+    "image": "https://static.wixstatic.com/media/858712_47a8f16f211b4adc95a7e96768a4a492~mv2.jpg/v1/fill/w_500,h_350,al_c,q_80/aztecidols_panel_small.jpg",
+    "local": "/images/catalog/playn-go-aztec-idols.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-aztec-warrior-princess",
+    "page": "https://www.playngo.com/games/aztec-warrior-princess",
+    "image": "https://static.wixstatic.com/media/00153c_a592654f2807414dad49504313ee7fa1~mv2.webp/v1/fill/w_500,h_350,al_c/00153c_a592654f2807414dad49504313ee7fa1~mv2.webp",
+    "local": "/images/catalog/playn-go-aztec-warrior-princess.webp",
+    "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
   }
 ]
