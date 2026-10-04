@@ -1698,5 +1698,75 @@
     "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1965_hero_Device_Desktop16x9.png",
     "local": "/images/catalog/hacksaw-gaming-le-santa.webp",
     "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-le-sortudo",
+    "page": "https://www.hacksawgaming.com/games/le-sortudo",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2613_hero_LeSortudo_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-le-sortudo.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-le-viking",
+    "page": "https://www.hacksawgaming.com/games/le-viking",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1689_hero_Device_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-le-viking.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-le-zeus",
+    "page": "https://www.hacksawgaming.com/games/le-zeus",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1830_hero_Device_Desktop16x9.png",
+    "local": "/images/catalog/hacksaw-gaming-le-zeus.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-magic-piggy-og",
+    "page": "https://www.hacksawgaming.com/games/magic-piggy-og",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2258_hero_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-magic-piggy-og.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-marlin-masters",
+    "page": "https://www.hacksawgaming.com/games/marlin-masters",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1681_hero_Device_Desktop16x9%20%281%29.png",
+    "local": "/images/catalog/hacksaw-gaming-marlin-masters.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-marlin-masters-atlantis",
+    "page": "https://www.hacksawgaming.com/games/marlin-masters-atlantis",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2108_hero_MarlinMastersAtlantis_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-marlin-masters-atlantis.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-marlin-masters-og",
+    "page": "https://www.hacksawgaming.com/games/marlin-masters-og",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/2378_hero_MarlinMastersOG_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-marlin-masters-og.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-marlin-masters-the-big-haul",
+    "page": "https://www.hacksawgaming.com/games/marlin-masters-the-big-haul",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1811_hero_Device_Desktop16x9%20%283%29.png",
+    "local": "/images/catalog/hacksaw-gaming-marlin-masters-the-big-haul.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-mayan-stackways",
+    "page": "https://www.hacksawgaming.com/games/mayan-stackways",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1275_hero_MayanStackways_Devices_Desktop.png",
+    "local": "/images/catalog/hacksaw-gaming-mayan-stackways.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "hacksaw-gaming-miami-mayhem",
+    "page": "https://www.hacksawgaming.com/games/miami-mayhem",
+    "image": "https://www-live.hacksawgaming.com/casino_thumbnails/1824_hero_Devices_Desktop16x9.png",
+    "local": "/images/catalog/hacksaw-gaming-miami-mayhem.webp",
+    "note": "Official provider hero artwork from the first-party Hacksaw Gaming game page. Local build-time copy only; no runtime remote request."
   }
 ]
