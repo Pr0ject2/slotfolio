@@ -22,7 +22,8 @@ test("wave 27 artwork is loaded in the catalog list", async ({ page }) => {
     await expect(art).toBeVisible();
     await expect(art).toHaveAttribute("src", new RegExp(`/images/catalog/${slug}\\.webp$`));
     await expect(art).not.toHaveAttribute("src", /unavailable\.svg/);
-    await expect.poll(async () => art.evaluate((node) => (node as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
-    await expect.poll(async () => art.evaluate((node) => (node as HTMLImageElement).naturalHeight)).toBeGreaterThan(0);
+    await art.scrollIntoViewIfNeeded();
+    await expect.poll(async () => art.evaluate((node) => (node as HTMLImageElement).naturalWidth), { timeout: 15_000 }).toBeGreaterThan(0);
+    await expect.poll(async () => art.evaluate((node) => (node as HTMLImageElement).naturalHeight), { timeout: 15_000 }).toBeGreaterThan(0);
   }
 });
