@@ -2,6 +2,7 @@ import Link from "next/link";
 import { CompareButton } from "./compare-button";
 import { GameImage } from "./editorial-client";
 import type { CatalogItem } from "@/lib/catalog-query";
+import { getCatalogArtwork } from "@/lib/catalog-artwork";
 import styles from "./catalog-game-card.module.css";
 
 function displayRelease(value: string) {
@@ -49,7 +50,9 @@ export function CatalogGameCard({ item, number }: { item: CatalogItem; number: n
   const href = item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
   const year = displayYear(item);
   const facts = displayFacts(item);
-  const hasArtwork = item.coverage === "dossier" || item.image !== "/images/unavailable.svg";
+  const mappedArtwork = item.coverage === "catalog" ? getCatalogArtwork(item.slug) : null;
+  const resolvedImage = mappedArtwork ?? item.image;
+  const hasArtwork = item.coverage === "dossier" || resolvedImage !== "/images/unavailable.svg";
 
   return (
     <article
@@ -59,7 +62,7 @@ export function CatalogGameCard({ item, number }: { item: CatalogItem; number: n
       data-coverage={item.coverage}
       data-verified-facts={item.verifiedFacts}
     >
-      {hasArtwork ? <Link className={`catalog-game-art ${styles.art}`} href={href} aria-label={`Открыть ${item.name}`}><GameImage slot={item} /></Link> : null}
+      {hasArtwork ? <Link className={`catalog-game-art ${styles.art}`} href={href} aria-label={`Открыть ${item.name}`}><GameImage slot={{ ...item, image: resolvedImage }} /></Link> : null}
 
       <div className="catalog-game-copy">
         <div className={styles.metaRow}>
