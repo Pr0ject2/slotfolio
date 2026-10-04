@@ -75,8 +75,14 @@ for (const [key, url] of games) {
         src: (node as HTMLImageElement).currentSrc || node.getAttribute("src"),
       }))
     );
+    const bodyText = (await page.locator("body").innerText()).replace(/\r/g, "");
+    const scripts = await page.locator("script").evaluateAll((nodes) =>
+      nodes.map((node) => node.textContent || "").filter((text) => text.length > 20)
+    );
     console.log(`W24_${key.toUpperCase().replace(/-/g,"_")}_TEXT=` + JSON.stringify(texts));
     console.log(`W24_${key.toUpperCase().replace(/-/g,"_")}_LEAVES=` + JSON.stringify(leaves));
+    console.log(`W24_${key.toUpperCase().replace(/-/g,"_")}_BODY=` + JSON.stringify(bodyText));
+    console.log(`W24_${key.toUpperCase().replace(/-/g,"_")}_SCRIPTS=` + JSON.stringify(scripts.filter((x) => /feature|bonus|multiplier|cascade|wild|resp|coin|stack|symbol/i.test(x)).slice(0, 20)));
     console.log(`W24_${key.toUpperCase().replace(/-/g,"_")}_IMAGES=` + JSON.stringify(images));
   });
 }
