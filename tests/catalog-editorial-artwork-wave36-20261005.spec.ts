@@ -1,3 +1,4 @@
+// Wave 36 Play’n GO dossier regression coverage.
 import { expect, test } from "@playwright/test";
 
 const slots = [
