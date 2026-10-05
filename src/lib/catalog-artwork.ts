@@ -349,6 +349,16 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-divina-commedia-i-nove-cerchi": "/images/catalog/playn-go-divina-commedia-i-nove-cerchi.webp",
   "playn-go-divine-showdown": "/images/catalog/playn-go-divine-showdown.webp",
   "playn-go-doom-of-egypt": "/images/catalog/playn-go-doom-of-egypt.webp",
+  "playn-go-dr-toonz": "/images/catalog/playn-go-dr-toonz.webp",
+  "playn-go-dragon-maiden": "/images/catalog/playn-go-dragon-maiden.webp",
+  "playn-go-dragon-ship": "/images/catalog/playn-go-dragon-ship.webp",
+  "playn-go-dragonfates-favor": "/images/catalog/playn-go-dragonfates-favor.webp",
+  "playn-go-easter-eggs": "/images/catalog/playn-go-easter-eggs.webp",
+  "playn-go-easter-eggspedition": "/images/catalog/playn-go-easter-eggspedition.webp",
+  "playn-go-enchanted-crystals": "/images/catalog/playn-go-enchanted-crystals.webp",
+  "playn-go-enchanted-meadow": "/images/catalog/playn-go-enchanted-meadow.webp",
+  "playn-go-energoonz": "/images/catalog/playn-go-energoonz.webp",
+  "playn-go-eye-of-atum": "/images/catalog/playn-go-eye-of-atum.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
