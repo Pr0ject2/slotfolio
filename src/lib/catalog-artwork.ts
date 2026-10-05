@@ -329,6 +329,16 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-colt-lightning-inferno": "/images/catalog/playn-go-colt-lightning-inferno.webp",
   "playn-go-contact": "/images/catalog/playn-go-contact.webp",
   "playn-go-cops-n-robbers": "/images/catalog/playn-go-cops-n-robbers.webp",
+  "playn-go-count-jokula": "/images/catalog/playn-go-count-jokula.webp",
+  "playn-go-coywolf-cash": "/images/catalog/playn-go-coywolf-cash.webp",
+  "playn-go-crabbys-gold": "/images/catalog/playn-go-crabbys-gold.webp",
+  "playn-go-crabbys-gold-ii": "/images/catalog/playn-go-crabbys-gold-ii.webp",
+  "playn-go-crazy-cows": "/images/catalog/playn-go-crazy-cows.webp",
+  "playn-go-crystal-hall": "/images/catalog/playn-go-crystal-hall.webp",
+  "playn-go-crystal-sun": "/images/catalog/playn-go-crystal-sun.webp",
+  "playn-go-cursed-moon-power-collection": "/images/catalog/playn-go-cursed-moon-power-collection.webp",
+  "playn-go-dansband-pa-turne": "/images/catalog/playn-go-dansband-pa-turne.webp",
+  "playn-go-dawn-of-egypt": "/images/catalog/playn-go-dawn-of-egypt.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
