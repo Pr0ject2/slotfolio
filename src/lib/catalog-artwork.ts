@@ -319,6 +319,16 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-charlie-chance-and-the-curse-of-cleopatra": "/images/catalog/playn-go-charlie-chance-and-the-curse-of-cleopatra.webp",
   "playn-go-charlie-chance-in-hell-to-pay": "/images/catalog/playn-go-charlie-chance-in-hell-to-pay.webp",
   "playn-go-chinese-new-year": "/images/catalog/playn-go-chinese-new-year.webp",
+  "playn-go-chronos-joker": "/images/catalog/playn-go-chronos-joker.webp",
+  "playn-go-city-of-sound": "/images/catalog/playn-go-city-of-sound.webp",
+  "playn-go-clash-of-camelot": "/images/catalog/playn-go-clash-of-camelot.webp",
+  "playn-go-cloud-quest": "/images/catalog/playn-go-cloud-quest.webp",
+  "playn-go-coils-of-cash": "/images/catalog/playn-go-coils-of-cash.webp",
+  "playn-go-colt-lightning": "/images/catalog/playn-go-colt-lightning.webp",
+  "playn-go-colt-lightning-firestorm": "/images/catalog/playn-go-colt-lightning-firestorm.webp",
+  "playn-go-colt-lightning-inferno": "/images/catalog/playn-go-colt-lightning-inferno.webp",
+  "playn-go-contact": "/images/catalog/playn-go-contact.webp",
+  "playn-go-cops-n-robbers": "/images/catalog/playn-go-cops-n-robbers.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
