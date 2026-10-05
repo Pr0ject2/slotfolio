@@ -279,6 +279,16 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-battle-royal": "/images/catalog/playn-go-battle-royal.webp",
   "playn-go-beasts-of-fire": "/images/catalog/playn-go-beasts-of-fire.webp",
   "playn-go-beasts-of-fire-maximum": "/images/catalog/playn-go-beasts-of-fire-maximum.webp",
+  "playn-go-big-win-777": "/images/catalog/playn-go-big-win-777.webp",
+  "playn-go-big-win-cat": "/images/catalog/playn-go-big-win-cat.webp",
+  "playn-go-big-win-cat-pawsperity": "/images/catalog/playn-go-big-win-cat-pawsperity.webp",
+  "playn-go-black-mamba": "/images/catalog/playn-go-black-mamba.webp",
+  "playn-go-blazin-bullfrog": "/images/catalog/playn-go-blazin-bullfrog.webp",
+  "playn-go-blinged": "/images/catalog/playn-go-blinged.webp",
+  "playn-go-boat-bonanza": "/images/catalog/playn-go-boat-bonanza.webp",
+  "playn-go-boat-bonanza-christmas": "/images/catalog/playn-go-boat-bonanza-christmas.webp",
+  "playn-go-boat-bonanza-colossal-catch": "/images/catalog/playn-go-boat-bonanza-colossal-catch.webp",
+  "playn-go-boat-bonanza-croconile": "/images/catalog/playn-go-boat-bonanza-croconile.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
