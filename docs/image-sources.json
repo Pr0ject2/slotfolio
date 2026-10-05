@@ -2568,5 +2568,65 @@
     "page": "https://www.playngo.com/games/chinese-new-year",
     "local": "/images/catalog/playn-go-chinese-new-year.webp",
     "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-chronos-joker",
+    "page": "https://www.playngo.com/games/chronos-joker",
+    "local": "/images/catalog/playn-go-chronos-joker.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-city-of-sound",
+    "page": "https://www.playngo.com/games/city-of-sound",
+    "local": "/images/catalog/playn-go-city-of-sound.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-clash-of-camelot",
+    "page": "https://www.playngo.com/games/clash-of-camelot",
+    "local": "/images/catalog/playn-go-clash-of-camelot.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-cloud-quest",
+    "page": "https://www.playngo.com/games/cloud-quest",
+    "local": "/images/catalog/playn-go-cloud-quest.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-coils-of-cash",
+    "page": "https://www.playngo.com/games/coils-of-cash",
+    "local": "/images/catalog/playn-go-coils-of-cash.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-colt-lightning",
+    "page": "https://www.playngo.com/games/colt-lightning",
+    "local": "/images/catalog/playn-go-colt-lightning.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-colt-lightning-firestorm",
+    "page": "https://www.playngo.com/games/colt-lightning-firestorm",
+    "local": "/images/catalog/playn-go-colt-lightning-firestorm.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-colt-lightning-inferno",
+    "page": "https://www.playngo.com/games/colt-lightning-inferno",
+    "local": "/images/catalog/playn-go-colt-lightning-inferno.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-contact",
+    "page": "https://www.playngo.com/games/contact",
+    "local": "/images/catalog/playn-go-contact.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-cops-n-robbers",
+    "page": "https://www.playngo.com/games/cops-%E2%80%99n%E2%80%99-robbers",
+    "local": "/images/catalog/playn-go-cops-n-robbers.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
   }
 ]
