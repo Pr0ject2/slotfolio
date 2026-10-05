@@ -309,6 +309,16 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-cashin-joker": "/images/catalog/playn-go-cashin-joker.webp",
   "playn-go-cat-wilde-and-the-doom-of-dead": "/images/catalog/playn-go-cat-wilde-and-the-doom-of-dead.webp",
   "playn-go-cat-wilde-and-the-incan-quest": "/images/catalog/playn-go-cat-wilde-and-the-incan-quest.webp",
+  "playn-go-cat-wilde-and-the-lost-chapter": "/images/catalog/playn-go-cat-wilde-and-the-lost-chapter.webp",
+  "playn-go-cat-wilde-and-the-pyramids-of-dead": "/images/catalog/playn-go-cat-wilde-and-the-pyramids-of-dead.webp",
+  "playn-go-cat-wilde-in-the-eclipse-of-the-sun-god": "/images/catalog/playn-go-cat-wilde-in-the-eclipse-of-the-sun-god.webp",
+  "playn-go-cats-and-cash": "/images/catalog/playn-go-cats-and-cash.webp",
+  "playn-go-chambers-of-ancients": "/images/catalog/playn-go-chambers-of-ancients.webp",
+  "playn-go-champions-of-mithrune": "/images/catalog/playn-go-champions-of-mithrune.webp",
+  "playn-go-charlie-chance": "/images/catalog/playn-go-charlie-chance.webp",
+  "playn-go-charlie-chance-and-the-curse-of-cleopatra": "/images/catalog/playn-go-charlie-chance-and-the-curse-of-cleopatra.webp",
+  "playn-go-charlie-chance-in-hell-to-pay": "/images/catalog/playn-go-charlie-chance-in-hell-to-pay.webp",
+  "playn-go-chinese-new-year": "/images/catalog/playn-go-chinese-new-year.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
