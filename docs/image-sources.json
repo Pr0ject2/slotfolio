@@ -2508,5 +2508,65 @@
     "page": "https://www.playngo.com/games/cat-wilde-and-the-incan-quest",
     "local": "/images/catalog/playn-go-cat-wilde-and-the-incan-quest.webp",
     "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-cat-wilde-and-the-lost-chapter",
+    "page": "https://www.playngo.com/games/cat-wilde-and-the-lost-chapter",
+    "local": "/images/catalog/playn-go-cat-wilde-and-the-lost-chapter.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-cat-wilde-and-the-pyramids-of-dead",
+    "page": "https://www.playngo.com/games/cat-wilde-and-the-pyramids-of-dead",
+    "local": "/images/catalog/playn-go-cat-wilde-and-the-pyramids-of-dead.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-cat-wilde-in-the-eclipse-of-the-sun-god",
+    "page": "https://www.playngo.com/games/cat-wilde-in-the-eclipse-of-the-sun-god",
+    "local": "/images/catalog/playn-go-cat-wilde-in-the-eclipse-of-the-sun-god.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-cats-and-cash",
+    "page": "https://www.playngo.com/games/cats-and-cash",
+    "local": "/images/catalog/playn-go-cats-and-cash.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-chambers-of-ancients",
+    "page": "https://www.playngo.com/games/chambers-of-ancients",
+    "local": "/images/catalog/playn-go-chambers-of-ancients.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-champions-of-mithrune",
+    "page": "https://www.playngo.com/games/champions-of-mithrune",
+    "local": "/images/catalog/playn-go-champions-of-mithrune.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-charlie-chance",
+    "page": "https://www.playngo.com/games/charlie-chance",
+    "local": "/images/catalog/playn-go-charlie-chance.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-charlie-chance-and-the-curse-of-cleopatra",
+    "page": "https://www.playngo.com/games/charlie-chance-and-the-curse-of-cleopatra",
+    "local": "/images/catalog/playn-go-charlie-chance-and-the-curse-of-cleopatra.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-charlie-chance-in-hell-to-pay",
+    "page": "https://www.playngo.com/games/charlie-chance-in-hell-to-pay",
+    "local": "/images/catalog/playn-go-charlie-chance-in-hell-to-pay.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-chinese-new-year",
+    "page": "https://www.playngo.com/games/chinese-new-year",
+    "local": "/images/catalog/playn-go-chinese-new-year.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
   }
 ]
