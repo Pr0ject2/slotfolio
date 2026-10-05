@@ -8,7 +8,7 @@ const slots = [
   ["playn-go-crabbys-gold-ii", "Treasure Trail"],
   ["playn-go-crazy-cows", "High-Dive Bonus"],
   ["playn-go-crystal-hall", "Lightning Blaze"],
-  ["playn-go-crystal-sun", "Expanding Wild Re-Spins"],
+  ["playn-go-crystal-sun", "Expanding Wild появляется"],
   ["playn-go-cursed-moon-power-collection", "Soul Fire Multiplier"],
   ["playn-go-dansband-pa-turne", "Progressive Free Spins"],
   ["playn-go-dawn-of-egypt", "Pyramid Spins"],
