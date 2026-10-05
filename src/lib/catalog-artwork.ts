@@ -289,6 +289,16 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-boat-bonanza-christmas": "/images/catalog/playn-go-boat-bonanza-christmas.webp",
   "playn-go-boat-bonanza-colossal-catch": "/images/catalog/playn-go-boat-bonanza-colossal-catch.webp",
   "playn-go-boat-bonanza-croconile": "/images/catalog/playn-go-boat-bonanza-croconile.webp",
+  "playn-go-boat-bonanza-down-under": "/images/catalog/playn-go-boat-bonanza-down-under.webp",
+  "playn-go-book-of-dead-go-collect": "/images/catalog/playn-go-book-of-dead-go-collect.webp",
+  "playn-go-bubblin-riches": "/images/catalog/playn-go-bubblin-riches.webp",
+  "playn-go-buildin-bucks": "/images/catalog/playn-go-buildin-bucks.webp",
+  "playn-go-buildin-even-more-bucks": "/images/catalog/playn-go-buildin-even-more-bucks.webp",
+  "playn-go-buildin-more-bucks": "/images/catalog/playn-go-buildin-more-bucks.webp",
+  "playn-go-bull-in-a-china-shop": "/images/catalog/playn-go-bull-in-a-china-shop.webp",
+  "playn-go-bull-in-a-rodeo": "/images/catalog/playn-go-bull-in-a-rodeo.webp",
+  "playn-go-bullion-xpress": "/images/catalog/playn-go-bullion-xpress.webp",
+  "playn-go-candy-island-princess": "/images/catalog/playn-go-candy-island-princess.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
