@@ -2328,5 +2328,65 @@
     "image": "https://static.wixstatic.com/media/8a75f9_acc72942ca524ab1a5858bd7a2a7c0c6~mv2.webp/v1/fill/w_500,h_350,al_c/8a75f9_acc72942ca524ab1a5858bd7a2a7c0c6~mv2.webp",
     "local": "/images/catalog/playn-go-beasts-of-fire-maximum.webp",
     "note": "Official first-party artwork exposed by the Play’n GO game page. Local build-time copy only; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-big-win-777",
+    "page": "https://www.playngo.com/games/big-win-777",
+    "local": "/images/catalog/playn-go-big-win-777.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers the game-specific og:image/twitter:image metadata and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-big-win-cat",
+    "page": "https://www.playngo.com/games/big-win-cat",
+    "local": "/images/catalog/playn-go-big-win-cat.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers the game-specific og:image/twitter:image metadata and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-big-win-cat-pawsperity",
+    "page": "https://www.playngo.com/games/big-win-cat-pawsperity",
+    "local": "/images/catalog/playn-go-big-win-cat-pawsperity.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers the game-specific og:image/twitter:image metadata and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-black-mamba",
+    "page": "https://www.playngo.com/games/black-mamba",
+    "local": "/images/catalog/playn-go-black-mamba.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers the game-specific og:image/twitter:image metadata and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-blazin-bullfrog",
+    "page": "https://www.playngo.com/games/blazin%27-bullfrog",
+    "local": "/images/catalog/playn-go-blazin-bullfrog.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers the game-specific og:image/twitter:image metadata and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-blinged",
+    "page": "https://www.playngo.com/games/blinged",
+    "local": "/images/catalog/playn-go-blinged.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers the game-specific og:image/twitter:image metadata and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-boat-bonanza",
+    "page": "https://www.playngo.com/games/boat-bonanza",
+    "local": "/images/catalog/playn-go-boat-bonanza.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers the game-specific og:image/twitter:image metadata and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-boat-bonanza-christmas",
+    "page": "https://www.playngo.com/games/boat-bonanza-christmas",
+    "local": "/images/catalog/playn-go-boat-bonanza-christmas.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers the game-specific og:image/twitter:image metadata and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-boat-bonanza-colossal-catch",
+    "page": "https://www.playngo.com/games/boat-bonanza-colossal-catch",
+    "local": "/images/catalog/playn-go-boat-bonanza-colossal-catch.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers the game-specific og:image/twitter:image metadata and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-boat-bonanza-croconile",
+    "page": "https://www.playngo.com/games/boat-bonanza-croconile!",
+    "local": "/images/catalog/playn-go-boat-bonanza-croconile.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers the game-specific og:image/twitter:image metadata and converts it to local WebP; no runtime remote request."
   }
 ]
