@@ -299,6 +299,16 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-bull-in-a-rodeo": "/images/catalog/playn-go-bull-in-a-rodeo.webp",
   "playn-go-bullion-xpress": "/images/catalog/playn-go-bullion-xpress.webp",
   "playn-go-candy-island-princess": "/images/catalog/playn-go-candy-island-princess.webp",
+  "playn-go-canine-carnage": "/images/catalog/playn-go-canine-carnage.webp",
+  "playn-go-captain-glum-pirate-hunter": "/images/catalog/playn-go-captain-glum-pirate-hunter.webp",
+  "playn-go-captain-xenos-earth-adventure": "/images/catalog/playn-go-captain-xenos-earth-adventure.webp",
+  "playn-go-cash-of-command": "/images/catalog/playn-go-cash-of-command.webp",
+  "playn-go-cash-pump": "/images/catalog/playn-go-cash-pump.webp",
+  "playn-go-cash-vandal": "/images/catalog/playn-go-cash-vandal.webp",
+  "playn-go-cash-a-cabana": "/images/catalog/playn-go-cash-a-cabana.webp",
+  "playn-go-cashin-joker": "/images/catalog/playn-go-cashin-joker.webp",
+  "playn-go-cat-wilde-and-the-doom-of-dead": "/images/catalog/playn-go-cat-wilde-and-the-doom-of-dead.webp",
+  "playn-go-cat-wilde-and-the-incan-quest": "/images/catalog/playn-go-cat-wilde-and-the-incan-quest.webp",
 };
 
 export function getCatalogArtwork(slug: string) {

@@ -2448,5 +2448,65 @@
     "page": "https://www.playngo.com/games/candy-island-princess",
     "local": "/images/catalog/playn-go-candy-island-princess.webp",
     "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-canine-carnage",
+    "page": "https://www.playngo.com/games/canine-carnage",
+    "local": "/images/catalog/playn-go-canine-carnage.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-captain-glum-pirate-hunter",
+    "page": "https://www.playngo.com/games/captain-glum%3A-pirate-hunter",
+    "local": "/images/catalog/playn-go-captain-glum-pirate-hunter.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-captain-xenos-earth-adventure",
+    "page": "https://www.playngo.com/games/captain-xeno%27s-earth-adventure",
+    "local": "/images/catalog/playn-go-captain-xenos-earth-adventure.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-cash-of-command",
+    "page": "https://www.playngo.com/games/cash-of-command",
+    "local": "/images/catalog/playn-go-cash-of-command.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-cash-pump",
+    "page": "https://www.playngo.com/games/cash-pump",
+    "local": "/images/catalog/playn-go-cash-pump.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-cash-vandal",
+    "page": "https://www.playngo.com/games/cash-vandal",
+    "local": "/images/catalog/playn-go-cash-vandal.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-cash-a-cabana",
+    "page": "https://www.playngo.com/games/cash-a-cabana",
+    "local": "/images/catalog/playn-go-cash-a-cabana.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-cashin-joker",
+    "page": "https://www.playngo.com/games/cashin%27-joker",
+    "local": "/images/catalog/playn-go-cashin-joker.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-cat-wilde-and-the-doom-of-dead",
+    "page": "https://www.playngo.com/games/cat-wilde-and-the-doom-of-dead",
+    "local": "/images/catalog/playn-go-cat-wilde-and-the-doom-of-dead.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-cat-wilde-and-the-incan-quest",
+    "page": "https://www.playngo.com/games/cat-wilde-and-the-incan-quest",
+    "local": "/images/catalog/playn-go-cat-wilde-and-the-incan-quest.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
   }
 ]
