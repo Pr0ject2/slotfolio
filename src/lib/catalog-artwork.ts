@@ -339,6 +339,16 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-cursed-moon-power-collection": "/images/catalog/playn-go-cursed-moon-power-collection.webp",
   "playn-go-dansband-pa-turne": "/images/catalog/playn-go-dansband-pa-turne.webp",
   "playn-go-dawn-of-egypt": "/images/catalog/playn-go-dawn-of-egypt.webp",
+  "playn-go-def-leppard-hysteria": "/images/catalog/playn-go-def-leppard-hysteria.webp",
+  "playn-go-demon": "/images/catalog/playn-go-demon.webp",
+  "playn-go-derby-wheel": "/images/catalog/playn-go-derby-wheel.webp",
+  "playn-go-diamond-vortex": "/images/catalog/playn-go-diamond-vortex.webp",
+  "playn-go-diamonds-of-the-realm": "/images/catalog/playn-go-diamonds-of-the-realm.webp",
+  "playn-go-dio-killing-the-dragon": "/images/catalog/playn-go-dio-killing-the-dragon.webp",
+  "playn-go-disco-diamonds": "/images/catalog/playn-go-disco-diamonds.webp",
+  "playn-go-divina-commedia-i-nove-cerchi": "/images/catalog/playn-go-divina-commedia-i-nove-cerchi.webp",
+  "playn-go-divine-showdown": "/images/catalog/playn-go-divine-showdown.webp",
+  "playn-go-doom-of-egypt": "/images/catalog/playn-go-doom-of-egypt.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
