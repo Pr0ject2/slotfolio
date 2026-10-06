@@ -11,12 +11,12 @@ for (const slug of ["playn-go-nsync-pop"]) {
     await artwork.scrollIntoViewIfNeeded();
     await expect.poll(async () => artwork.evaluate((node) => (node as HTMLImageElement).naturalWidth), { timeout: 15_000 }).toBeGreaterThan(0);
     await expect(page.locator(".article-layout")).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Параметры игры" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Основные параметры" })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Сравнение с другими играми" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Параметры и источники" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Факты и источники" })).toBeVisible();
     await expect(page.locator("#editorial")).toBeVisible();
     await expect(page.locator("#how-it-works")).toContainText("Encore Spin");
-    await expect(page.getByRole("heading", { name: "Ответы на частые вопросы" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Вопросы об игре" })).toBeVisible();
     await expect(page.locator("#facts")).toBeVisible();
     await expect(page.locator(".catalog-record-page")).toHaveCount(0);
   });
