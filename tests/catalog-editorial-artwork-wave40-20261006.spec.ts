@@ -10,7 +10,7 @@ const slots = [
   ["playn-go-fox-mayhem", "Prize Collection"],
   ["playn-go-free-reelin-joker", "Free Reelin’ Fun"],
   ["playn-go-free-reelin-joker-1000", "Expanding Reels"],
-  ["playn-go-frozen-gems", "Frozen Spins"],
+  ["playn-go-frozen-gems", "Splitting Scatter"],
 ] as const;
 
 test("wave 40 Play'n GO cards render verified game-specific copy and loaded artwork", async ({ page }) => {
