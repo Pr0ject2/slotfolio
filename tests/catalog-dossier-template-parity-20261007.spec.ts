@@ -25,7 +25,7 @@ test("researched catalog dossiers use the full dossier structure", async ({ page
     await expect(page.locator("#editorial .eyebrow")).toHaveText("Взгляд редакции");
     await expect(page.locator("#catalog-comparison h2")).toHaveText("Сравнение с другими играми");
     await expect(page.locator("#facts h2")).toHaveText("Параметры и источники");
-    await expect(page.locator("#facts")).toContainText("официальная страница провайдера");
+    await expect(page.locator("#facts")).toContainText("Официальный каталог игры");
   }
 });
 
