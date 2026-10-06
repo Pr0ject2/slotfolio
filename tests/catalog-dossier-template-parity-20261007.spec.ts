@@ -18,12 +18,13 @@ test("researched catalog dossiers use the full dossier structure", async ({ page
     await expect(page.locator("#functions h2")).toHaveText("Основные функции");
     await expect(page.locator("#functions .dossier-feature-card")).toHaveCount(3);
 
-    await expect(page.locator("#math-profile h2")).toHaveText("Цифры без ложной точности");
+    await expect(page.locator("#math-profile h2")).toHaveText("Параметры игры");
+    await expect(page.locator("#math-profile .eyebrow")).toHaveText("Цифры без ложной точности");
     await expect(page.locator("#math-profile")).toContainText("Slotfolio не заполняет отсутствующие цифры предположениями");
 
     await expect(page.locator("#editorial .eyebrow")).toHaveText("Взгляд редакции");
     await expect(page.locator("#catalog-comparison h2")).toHaveText("Сравнение с другими играми");
-    await expect(page.locator("#facts h2")).toHaveText("Как читать характеристики и источники");
+    await expect(page.locator("#facts h2")).toHaveText("Параметры и источники");
     await expect(page.locator("#facts")).toContainText("официальная страница провайдера");
   }
 });
@@ -34,5 +35,5 @@ test("unresearched catalog records do not receive fabricated editorial or metric
   await expect(page.locator("#how-it-works")).toHaveCount(0);
   await expect(page.locator("#functions")).toHaveCount(0);
   await expect(page.locator("#editorial")).toHaveCount(0);
-  await expect(page.locator("#math-profile")).toHaveCount(0);
+  await expect(page.locator("#math-profile .metric-caveat")).toContainText("не заполняет отсутствующие цифры предположениями");
 });
