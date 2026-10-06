@@ -359,6 +359,16 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-enchanted-meadow": "/images/catalog/playn-go-enchanted-meadow.webp",
   "playn-go-energoonz": "/images/catalog/playn-go-energoonz.webp",
   "playn-go-eye-of-atum": "/images/catalog/playn-go-eye-of-atum.webp",
+  "playn-go-eye-of-the-kraken": "/images/catalog/playn-go-eye-of-the-kraken.webp",
+  "playn-go-fangs-and-fire": "/images/catalog/playn-go-fangs-and-fire.webp",
+  "playn-go-fat-frankies": "/images/catalog/playn-go-fat-frankies.webp",
+  "playn-go-fate-of-dead-blitzways": "/images/catalog/playn-go-fate-of-dead-blitzways.webp",
+  "playn-go-fates-fortune": "/images/catalog/playn-go-fates-fortune.webp",
+  "playn-go-feline-fury": "/images/catalog/playn-go-feline-fury.webp",
+  "playn-go-fire-joker-100": "/images/catalog/playn-go-fire-joker-100.webp",
+  "playn-go-fire-joker-blitz": "/images/catalog/playn-go-fire-joker-blitz.webp",
+  "playn-go-fire-joker-freeze": "/images/catalog/playn-go-fire-joker-freeze.webp",
+  "playn-go-fire-toad": "/images/catalog/playn-go-fire-toad.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
