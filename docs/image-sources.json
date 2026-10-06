@@ -2928,5 +2928,65 @@
     "page": "https://www.playngo.com/games/frozen-gems",
     "local": "/images/catalog/playn-go-frozen-gems.webp",
     "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-fu-er-dai",
+    "page": "https://www.playngo.com/games/fu-er-dai",
+    "local": "/images/catalog/playn-go-fu-er-dai.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-fulong-88",
+    "page": "https://www.playngo.com/games/fulong-88",
+    "local": "/images/catalog/playn-go-fulong-88.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-game-of-gladiators",
+    "page": "https://www.playngo.com/games/game-of-gladiators",
+    "local": "/images/catalog/playn-go-game-of-gladiators.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-game-of-gladiators-uprising",
+    "page": "https://www.playngo.com/games/game-of-gladiators%3A-uprising",
+    "local": "/images/catalog/playn-go-game-of-gladiators-uprising.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-gargantoonz",
+    "page": "https://www.playngo.com/games/gargantoonz",
+    "local": "/images/catalog/playn-go-gargantoonz.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-gates-of-troy",
+    "page": "https://www.playngo.com/games/gates-of-troy",
+    "local": "/images/catalog/playn-go-gates-of-troy.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-gemix",
+    "page": "https://www.playngo.com/games/gemix",
+    "local": "/images/catalog/playn-go-gemix.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-gemix-100",
+    "page": "https://www.playngo.com/games/gemix-100",
+    "local": "/images/catalog/playn-go-gemix-100.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-gemix-2",
+    "page": "https://www.playngo.com/games/gemix-2",
+    "local": "/images/catalog/playn-go-gemix-2.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-gerards-gambit",
+    "page": "https://www.playngo.com/games/gerard%27s-gambit",
+    "local": "/images/catalog/playn-go-gerards-gambit.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
   }
 ]

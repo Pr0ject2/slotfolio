@@ -379,6 +379,16 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-free-reelin-joker": "/images/catalog/playn-go-free-reelin-joker.webp",
   "playn-go-free-reelin-joker-1000": "/images/catalog/playn-go-free-reelin-joker-1000.webp",
   "playn-go-frozen-gems": "/images/catalog/playn-go-frozen-gems.webp",
+  "playn-go-fu-er-dai": "/images/catalog/playn-go-fu-er-dai.webp",
+  "playn-go-fulong-88": "/images/catalog/playn-go-fulong-88.webp",
+  "playn-go-game-of-gladiators": "/images/catalog/playn-go-game-of-gladiators.webp",
+  "playn-go-game-of-gladiators-uprising": "/images/catalog/playn-go-game-of-gladiators-uprising.webp",
+  "playn-go-gargantoonz": "/images/catalog/playn-go-gargantoonz.webp",
+  "playn-go-gates-of-troy": "/images/catalog/playn-go-gates-of-troy.webp",
+  "playn-go-gemix": "/images/catalog/playn-go-gemix.webp",
+  "playn-go-gemix-100": "/images/catalog/playn-go-gemix-100.webp",
+  "playn-go-gemix-2": "/images/catalog/playn-go-gemix-2.webp",
+  "playn-go-gerards-gambit": "/images/catalog/playn-go-gerards-gambit.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
