@@ -815,10 +815,21 @@ function volatilityContext(value?: string) {
   return "Справочная категория описывает разброс результатов на дистанции, а не вероятность выигрыша в следующем раунде.";
 }
 
-function expandedEditorialFeatures(editorial?: CatalogEditorial) {
+function expandedEditorialFeatures(
+  editorial: CatalogEditorial | undefined,
+  research: ReturnType<typeof getVerifiedCatalogResearch>,
+) {
   if (!editorial) return [] as EditorialFeature[];
   const cards = [...editorial.features];
-  if (cards.length >= 2) return cards;
+  const descriptions = new Set(cards.map((card) => card.description.trim()));
+
+  for (const mechanic of research?.mechanics ?? []) {
+    if (cards.length >= 4) break;
+    const description = research?.mechanicDetails?.[mechanic]?.trim();
+    if (!description || descriptions.has(description)) continue;
+    cards.push({ title: russianMechanicTitle(mechanic), description });
+    descriptions.add(description);
+  }
 
   const supplements: EditorialFeature[] = [
     editorial.intro?.[0] ? { title: "Ход раунда", description: editorial.intro[0] } : null,
@@ -828,9 +839,12 @@ function expandedEditorialFeatures(editorial?: CatalogEditorial) {
 
   for (const card of supplements) {
     if (cards.length >= 3) break;
-    if (!cards.some((existing) => existing.description === card.description)) cards.push(card);
+    const description = card.description.trim();
+    if (descriptions.has(description)) continue;
+    cards.push(card);
+    descriptions.add(description);
   }
-  return cards;
+  return cards.slice(0, 4);
 }
 
 function sourceDomain(url: string) {
@@ -867,7 +881,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const research = getVerifiedCatalogResearch(slot.slug);
   const mechanics = research?.mechanics ?? [];
   const editorial = getCatalogEditorial(slot.slug);
-  const featureCards = expandedEditorialFeatures(editorial);
+  const featureCards = expandedEditorialFeatures(editorial, research);
   const releaseSource = details?.releaseDateSource;
   const volatilitySource = details?.volatilitySource;
   const releaseYear = details?.releaseDate?.slice(0, 4);
