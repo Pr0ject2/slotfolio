@@ -762,6 +762,67 @@ function itemHref(item: CatalogItem) {
   return item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
 }
 
+function parseRtp(value?: string) {
+  if (!value) return null;
+  const parsed = Number.parseFloat(value.replace(",", ".").replace("%", ""));
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function median(values: number[]) {
+  if (!values.length) return null;
+  const sorted = [...values].sort((a, b) => a - b);
+  const middle = Math.floor(sorted.length / 2);
+  return sorted.length % 2 ? sorted[middle] : (sorted[middle - 1] + sorted[middle]) / 2;
+}
+
+function buildEditorialFeatures(
+  editorial: CatalogEditorial | undefined,
+  research: ReturnType<typeof getVerifiedCatalogResearch>,
+) {
+  if (!editorial) return [];
+
+  const cards: EditorialFeature[] = [...editorial.features];
+  const descriptions = new Set(cards.map((card) => card.description.trim()));
+
+  for (const mechanic of research?.mechanics ?? []) {
+    const description = research?.mechanicDetails?.[mechanic]?.trim();
+    if (!description || descriptions.has(description)) continue;
+    cards.push({ title: russianMechanicTitle(mechanic), description });
+    descriptions.add(description);
+  }
+
+  const fallbackTitles = ["Базовая механика", "Развитие раунда"];
+  for (const [index, paragraph] of (editorial.intro ?? []).entries()) {
+    const description = paragraph.trim();
+    if (cards.length >= 3 || !description || descriptions.has(description)) continue;
+    cards.push({ title: fallbackTitles[index] ?? "Ключевая особенность", description });
+    descriptions.add(description);
+  }
+
+  return cards.slice(0, 4);
+}
+
+function catalogRtpContext(current?: string) {
+  const value = parseRtp(current);
+  if (value === null) return null;
+  const all = catalogModel.items
+    .map((item) => parseRtp(item.verifiedRtp || item.rtp))
+    .filter((item): item is number => item !== null);
+  const middle = median(all);
+  if (middle === null) return null;
+  const difference = value - middle;
+  const label = Math.abs(difference) < 0.005 ? "На уровне медианы" : difference > 0 ? "Выше медианы" : "Ниже медианы";
+  return { label, median: middle.toFixed(2).replace(".", ",") + "%", count: all.length };
+}
+
+function catalogVolatilityContext(current?: string) {
+  if (!current) return null;
+  const count = catalogModel.items.filter(
+    (item) => (item.verifiedVolatility || item.volatility) === current,
+  ).length;
+  return count ? `Такая же категория указана у ${count} игр каталога.` : "Справочная категория из проверенного источника.";
+}
+
 export function generateStaticParams() {
   return catalogSeeds.map(({ slug }) => ({ slug }));
 }
@@ -788,7 +849,8 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const research = getVerifiedCatalogResearch(slot.slug);
   const mechanics = research?.mechanics ?? [];
   const editorial = getCatalogEditorial(slot.slug);
-  const editorialMechanics = editorial?.features.slice(0, 2) ?? [];
+  const editorialFeatures = buildEditorialFeatures(editorial, research);
+  const editorialMechanics = editorialFeatures.slice(0, 2);
   const source = details?.source ?? gameType?.source ?? slot.source;
   const releaseSource = details?.releaseDateSource;
   const volatilitySource = details?.volatilitySource;
@@ -796,13 +858,19 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const providerItems = catalogModel.items.filter((item) => item.slug !== slot.slug && item.provider === slot.provider).sort((a, b) => b.mechanics.length - a.mechanics.length || a.name.localeCompare(b.name, "ru")).slice(0, 6);
   const providerSlugs = new Set(providerItems.map((item) => item.slug));
   const mechanicItems = mechanics.length ? catalogModel.items.filter((item) => item.slug !== slot.slug && !providerSlugs.has(item.slug) && item.mechanics.some((mechanic) => mechanics.includes(mechanic))).sort((a, b) => b.mechanics.filter((mechanic) => mechanics.includes(mechanic)).length - a.mechanics.filter((mechanic) => mechanics.includes(mechanic)).length).slice(0, 6) : [];
+  const rtpContext = catalogRtpContext(details?.rtp);
+  const volatilityContext = catalogVolatilityContext(details?.volatility);
+  const closestItems = [...providerItems, ...mechanicItems]
+    .filter((item, index, list) => list.findIndex((candidate) => candidate.slug === item.slug) === index)
+    .slice(0, 3);
+  const releaseYear = details?.releaseDate?.slice(0, 4);
 
   return (
     <>
       <Breadcrumbs items={[{ label: "Каталог", href: "/slots" }, { label: slot.name }]} />
       <div className="slot-heading catalog-dossier-heading">
         <div>
-          <span className="eyebrow accent">Запись каталога</span>
+          <span className="eyebrow accent">{`Досье игры${releaseYear ? ` / ${releaseYear}` : ""}`}</span>
           <h1>{slot.name}</h1>
           <Link className="provider-link" href={`/slots?provider=${providerSlug(slot.provider)}`}>{slot.provider} ↗</Link>
         </div>
@@ -820,7 +888,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
         </figure> : null}
         <div className="slot-summary">
           <span className="eyebrow">Суть игры</span>
-          <p className="slot-deck">{`${slot.name} от ${slot.provider}.`}</p>
+          <p className="slot-deck">{editorial?.intro?.[0] ?? `${slot.name} от ${slot.provider}.`}</p>
           <h2 className="catalog-facts-heading">Характеристики</h2>
           <dl className="facts catalog-record-facts">
             <div><dt>Провайдер</dt><dd><Link href={`/slots?provider=${providerSlug(slot.provider)}`}>{slot.provider}</Link></dd></div>
@@ -849,19 +917,20 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
         </aside>
         <article className="prose">
           {editorial ? <section id="how-it-works"><h2>Как устроена игра</h2>{(editorial.intro ?? editorialMechanics.map((feature) => feature.description)).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section> : null}
-          {editorial ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Основные функции</h2><div className="dossier-feature-grid">{editorial.features.map((feature, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={feature.title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{feature.title}</h3><p>{feature.description}</p></article>)}</div></section> : null}
-          {details ? <section id="math-profile"><span className="eyebrow accent">Характеристики игры</span><h2>Параметры игры</h2><div className="dossier-metric-grid">
-            {details.rtp ? <div><span>RTP в каталоге</span><strong>{details.rtp}</strong><small>Справочная конфигурация</small></div> : null}
-            {details.maxWin ? <div><span>Максимальная выплата</span><strong>{details.maxWin}</strong><small>Заявлено провайдером</small></div> : null}
-            {details.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>Справочная категория</small></div> : null}
-            {details.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.join(" · ")}</small></div> : null}
-          </div></section> : null}
-          {editorial ? <section id="editorial"><span className="eyebrow accent">Взгляд редакции</span><h2>{slot.name}: что важно в раунде</h2><blockquote>{editorial.editorial ?? editorial.features[0].description}</blockquote>{!editorial.editorial && editorial.features[2] ? <p>{editorial.features[2].description}</p> : null}</section> : null}
-          <section id="catalog-comparison"><span className="eyebrow accent">Похожие игры</span><h2>Сравнение с другими играми</h2><div className="dossier-metric-grid">
-            {details?.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.map(russianMechanicTitle).join(" · ")}</small></div> : null}
-            <div><span>Провайдер</span><strong>{slot.provider}</strong><small>Другие игры с теми же механиками доступны в каталоге</small></div>
+          {editorial ? <section id="functions"><span className="eyebrow accent">Функции и бонусы</span><h2>Основные функции</h2><div className="dossier-feature-grid">{editorialFeatures.map((feature, index) => <article className={`dossier-feature-card ${index === 0 ? "is-primary" : ""}`} key={`${feature.title}-${index}`}><span>{String(index + 1).padStart(2, "0")}</span><h3>{feature.title}</h3><p>{feature.description}</p></article>)}</div></section> : null}
+          {details ? <section id="math-profile"><span className="eyebrow accent">Параметры игры</span><h2>Цифры без ложной точности</h2><div className="dossier-metric-grid">
+            {details.rtp ? <div><span>RTP в каталоге</span><strong>{details.rtp}</strong><small>{rtpContext ? `${rtpContext.label}; медиана по ${rtpContext.count} играм — ${rtpContext.median}` : "Справочная конфигурация"}</small></div> : null}
+            {details.maxWin ? <div><span>Максимальная выплата</span><strong>{details.maxWin}</strong><small>Только если значение заявлено провайдером</small></div> : null}
+            {details.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>{volatilityContext}</small></div> : null}
+            {details.field ? <div><span>Игровое поле</span><strong>{details.field}</strong><small>{mechanics.map(russianMechanicTitle).join(" · ") || "Структура поля подтверждена источником"}</small></div> : null}
+          </div><p className="metric-caveat">Slotfolio не заполняет отсутствующие цифры предположениями: если RTP, максимум, волатильность или другой параметр не опубликован в проверенном источнике, поле остаётся пустым.</p></section> : null}
+          {editorial ? <section id="editorial"><span className="eyebrow accent">Взгляд редакции</span><h2>{slot.name}: что важно в раунде</h2><blockquote>{editorial.editorial ?? editorialFeatures[0]?.description}</blockquote><p>Это описание устройства конкретной игры, а не оценка её прибыльности. RTP и волатильность помогают сравнивать математический профиль, но не предсказывают следующий результат.</p></section> : null}
+          <section id="catalog-comparison"><span className="eyebrow accent">Контекст каталога</span><h2>Сравнение с другими играми</h2><div className="dossier-context-grid">
+            {rtpContext ? <div><span>RTP относительно базы</span><strong>{rtpContext.label}</strong><small>Медиана по {rtpContext.count} играм: {rtpContext.median}</small></div> : null}
+            {details?.volatility ? <div><span>Волатильность</span><strong>{details.volatility}</strong><small>{volatilityContext}</small></div> : null}
+            {closestItems.length ? <div><span>Ближайшие по устройству</span><strong>{closestItems.map((item) => item.name).join(" · ")}</strong><small>Подбор по провайдеру и совпадающим механикам</small></div> : null}
           </div><Link className="text-link" href={`/slots?provider=${providerSlug(slot.provider)}`}>Все игры {slot.provider} ↗</Link></section>
-          <section id="facts"><h2>Параметры и источники</h2><p>RTP описывает теоретическую долю возврата на большой дистанции. Волатильность показывает разброс результатов, но не позволяет предсказать следующий раунд.</p><p className="source-note">Базовый источник: <a href={source} target="_blank" rel="noreferrer">Официальный каталог игры ↗</a>.</p>{sources.length > 1 ? <p className="source-note">Дополнительные официальные источники: {sources.slice(1).map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">страница разработчика ↗</a></span>)}.</p> : null}</section>
+          <section id="facts"><h2>Как читать характеристики и источники</h2><p>RTP описывает теоретическую долю возврата на большой дистанции. Волатильность показывает разброс результатов, но не позволяет предсказать следующий раунд.</p><div className="margin-note"><strong>Сначала — версия игры</strong><p>У оператора могут использоваться другие математические настройки. Если публичный источник не подтверждает параметр для этой версии, Slotfolio не переносит его из похожей игры или продолжения.</p></div><p className="source-note">Базовый источник игры: <a href={slot.source} target="_blank" rel="noreferrer">официальная страница провайдера ↗</a>.</p>{details?.source && details.source !== slot.source ? <p className="source-note">Числовые параметры: <a href={details.source} target="_blank" rel="noreferrer">официальный источник провайдера ↗</a>.</p> : null}{gameType?.source && ![slot.source, details?.source].includes(gameType.source) ? <p className="source-note">Тип игры: <a href={gameType.source} target="_blank" rel="noreferrer">официальный источник провайдера ↗</a>.</p> : null}{research?.source && ![slot.source, details?.source, gameType?.source].includes(research.source) ? <p className="source-note">Механики: <a href={research.source} target="_blank" rel="noreferrer">официальный источник провайдера ↗</a>.</p> : null}{sources.length > 1 ? <p className="source-note">Все использованные официальные страницы: {sources.map((item, index) => <span key={item}>{index ? " · " : ""}<a href={item} target="_blank" rel="noreferrer">источник {index + 1} ↗</a></span>)}.</p> : null}</section>
           <section id="faq"><span className="eyebrow accent">Частые вопросы</span><h2>Ответы на частые вопросы</h2><details><summary>Можно ли предсказать следующий результат?</summary><p>Нет. RTP и волатильность описывают игру на большой дистанции, а не исход следующего вращения.</p></details><details><summary>Почему RTP может отличаться у оператора?</summary><p>У одной игры бывают разные конфигурации. Перед запуском ориентируйтесь на таблицу выплат в выбранной версии.</p></details><details><summary>Что сравнивать перед выбором?</summary><p>Смотрите на игровое поле, механики, RTP, волатильность и максимальную выплату, если она указана провайдером.</p></details></section>
         </article>
       </div>
