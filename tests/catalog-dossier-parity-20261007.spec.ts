@@ -41,8 +41,8 @@ test("one-feature editorial records are expanded without removing their game-spe
   await page.goto("/slots/catalog/playn-go-golden-colts");
   const cards = page.locator("#functions .dossier-feature-card");
   await expect(cards).toHaveCount(3);
-  await expect(cards.first()).toContainText("Seven Bonus Features");
-  await expect(cards).toContainText(["Seven Bonus Features", "Ход раунда", "Развитие бонуса"]);
+  await expect(cards.first()).toContainText("Семь бонусных функций");
+  await expect(cards).toContainText(["Семь бонусных функций", "Ход раунда", "Развитие бонуса"]);
 });
 
 test("researched catalog metadata uses local reviewed artwork", async ({ page }) => {
