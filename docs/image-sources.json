@@ -2988,5 +2988,125 @@
     "page": "https://www.playngo.com/games/gerard%27s-gambit",
     "local": "/images/catalog/playn-go-gerards-gambit.webp",
     "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-ghost-of-dead",
+    "page": "https://www.playngo.com/games/ghost-of-dead",
+    "local": "/images/catalog/playn-go-ghost-of-dead.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-gigantoonz",
+    "page": "https://www.playngo.com/games/gigantoonz",
+    "local": "/images/catalog/playn-go-gigantoonz.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-gnawn-gold",
+    "page": "https://www.playngo.com/games/gnaw%27n-gold",
+    "local": "/images/catalog/playn-go-gnawn-gold.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-gold-king",
+    "page": "https://www.playngo.com/games/gold-king",
+    "local": "/images/catalog/playn-go-gold-king.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-gold-of-fortune-god",
+    "page": "https://www.playngo.com/games/gold-of-fortune-god",
+    "local": "/images/catalog/playn-go-gold-of-fortune-god.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-gold-trophy-2",
+    "page": "https://www.playngo.com/games/gold-trophy-2",
+    "local": "/images/catalog/playn-go-gold-trophy-2.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-gold-volcano",
+    "page": "https://www.playngo.com/games/gold-volcano",
+    "local": "/images/catalog/playn-go-gold-volcano.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-golden-caravan",
+    "page": "https://www.playngo.com/games/golden-caravan",
+    "local": "/images/catalog/playn-go-golden-caravan.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-golden-colts",
+    "page": "https://www.playngo.com/games/golden-colts",
+    "local": "/images/catalog/playn-go-golden-colts.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-golden-legend",
+    "page": "https://www.playngo.com/games/golden-legend",
+    "local": "/images/catalog/playn-go-golden-legend.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-golden-osiris",
+    "page": "https://www.playngo.com/games/golden-osiris",
+    "local": "/images/catalog/playn-go-golden-osiris.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-golden-ticket",
+    "page": "https://www.playngo.com/games/golden-ticket",
+    "local": "/images/catalog/playn-go-golden-ticket.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-golden-ticket-2",
+    "page": "https://www.playngo.com/games/golden-ticket-2",
+    "local": "/images/catalog/playn-go-golden-ticket-2.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-grannys-wild",
+    "page": "https://www.playngo.com/games/granny%27s-wild",
+    "local": "/images/catalog/playn-go-grannys-wild.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-grim-muerto",
+    "page": "https://www.playngo.com/games/grim-muerto",
+    "local": "/images/catalog/playn-go-grim-muerto.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-hammerfall",
+    "page": "https://www.playngo.com/games/hammerfall",
+    "local": "/images/catalog/playn-go-hammerfall.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-happy-halloween",
+    "page": "https://www.playngo.com/games/happy-halloween",
+    "local": "/images/catalog/playn-go-happy-halloween.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-helloween",
+    "page": "https://www.playngo.com/games/helloween",
+    "local": "/images/catalog/playn-go-helloween.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-highway-legends",
+    "page": "https://www.playngo.com/games/highway-legends",
+    "local": "/images/catalog/playn-go-highway-legends.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-holiday-season",
+    "page": "https://www.playngo.com/games/holiday-season",
+    "local": "/images/catalog/playn-go-holiday-season.webp",
+    "note": "Official first-party Play’n GO game page. Build-time localizer discovers game-specific social preview artwork and converts it to local WebP; no runtime remote request."
   }
 ]
