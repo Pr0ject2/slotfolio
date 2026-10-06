@@ -20,7 +20,7 @@ const slots = [
   ["playn-go-hugos-adventure", "Air Race"],
   ["playn-go-ice-joker", "Winter’s Wheel"],
   ["playn-go-idol-of-fortune", "Wild Prize"],
-  ["playn-go-immortails-of-egypt", "Cat God"]
+  ["playn-go-immortails-of-egypt", "Bastet, Mafdet и Sekhmet"]
 ] as const;
 
 test("wave 43 Play'n GO cards render full game-specific dossiers and loaded artwork", async ({ page }) => {
