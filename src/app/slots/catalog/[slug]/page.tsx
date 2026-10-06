@@ -868,7 +868,6 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const mechanics = research?.mechanics ?? [];
   const editorial = getCatalogEditorial(slot.slug);
   const featureCards = expandedEditorialFeatures(editorial);
-  const source = details?.source ?? gameType?.source ?? research?.source ?? slot.source;
   const releaseSource = details?.releaseDateSource;
   const volatilitySource = details?.volatilitySource;
   const releaseYear = details?.releaseDate?.slice(0, 4);
@@ -896,13 +895,23 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
     .filter((item, index, items) => items.findIndex((candidate) => candidate.slug === item.slug) === index)
     .slice(0, 3);
 
-  const sourceRoles = [
-    { label: "Механика и функции", url: research?.source ?? slot.source },
-    { label: "Числовые параметры", url: details?.source },
-    { label: "Дата релиза", url: releaseSource ?? (details?.releaseDate ? details.source : undefined) },
-    { label: "Тип игры", url: gameType?.source },
-    { label: "Волатильность", url: volatilitySource ?? (details?.volatility ? details.source : undefined) },
-  ].filter((item): item is { label: string; url: string } => Boolean(item.url));
+  const sourceGroups = Array.from(
+    [
+      { label: "Базовая карточка игры", url: slot.source },
+      { label: "Механика и функции", url: research?.source },
+      { label: "Числовые параметры", url: details?.source },
+      { label: "Дата релиза", url: releaseSource ?? (details?.releaseDate ? details.source : undefined) },
+      { label: "Тип игры", url: gameType?.source },
+      { label: "Волатильность", url: volatilitySource ?? (details?.volatility ? details.source : undefined) },
+    ]
+      .filter((item): item is { label: string; url: string } => Boolean(item.url))
+      .reduce((groups, item) => {
+        const labels = groups.get(item.url) ?? [];
+        if (!labels.includes(item.label)) labels.push(item.label);
+        groups.set(item.url, labels);
+        return groups;
+      }, new Map<string, string[]>()),
+  ).map(([url, labels]) => ({ url, labels }));
 
   const verifiedFacts = [
     details?.field ? `поле ${details.field}` : null,
@@ -1063,12 +1072,19 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
           <section id="facts">
             <h2>Факты и источники</h2>
             <p>RTP описывает теоретическую долю возврата на большой дистанции. Волатильность показывает разброс результатов, но не позволяет предсказать следующий раунд.</p>
-            {sourceRoles.map((item) => (
-              <p className="source-note" key={`${item.label}-${item.url}`}>
-                {item.label}: <a href={item.url} target="_blank" rel="noreferrer">{sourceDomain(item.url)} ↗</a>.
-              </p>
-            ))}
-            {!sourceRoles.some((item) => item.url === source) ? <p className="source-note">Базовый источник: <a href={source} target="_blank" rel="noreferrer">{sourceDomain(source)} ↗</a>.</p> : null}
+            {sourceGroups.map((item) => {
+              const isCanonical = item.url === slot.source;
+              const roles = item.labels.filter((label) => label !== "Базовая карточка игры");
+              return (
+                <p className="source-note" key={item.url}>
+                  {isCanonical ? "Базовый first-party источник" : item.labels.join(" · ")}:{" "}
+                  <a href={item.url} target="_blank" rel="noreferrer">
+                    {isCanonical ? "Официальный каталог игры ↗" : `${sourceDomain(item.url)} ↗`}
+                  </a>
+                  {isCanonical && roles.length ? ` · подтверждает: ${roles.join(", ").toLowerCase()}` : null}.
+                </p>
+              );
+            })}
           </section>
 
           <section id="faq">
