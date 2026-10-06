@@ -16,7 +16,7 @@ for (const slug of ["playn-go-nsync-pop"]) {
     await expect(page.getByRole("heading", { name: "Факты и источники" })).toBeVisible();
     await expect(page.locator("#editorial")).toBeVisible();
     await expect(page.locator("#how-it-works")).toContainText("Encore Spin");
-    await expect(page.getByRole("heading", { name: "Ответы на частые вопросы" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Вопросы об игре" })).toBeVisible();
     await expect(page.locator("#facts")).toBeVisible();
     await expect(page.locator(".catalog-record-page")).toHaveCount(0);
   });
