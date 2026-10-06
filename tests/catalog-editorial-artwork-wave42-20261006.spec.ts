@@ -10,7 +10,7 @@ const slots = [
   ["playn-go-gold-volcano", "Eruption"],
   ["playn-go-golden-caravan", "Camel Scatters"],
   ["playn-go-golden-colts", "Ace High Gang"],
-  ["playn-go-golden-legend", "Growing Wild Stacks"],
+  ["playn-go-golden-legend", "Golden Sycee Wild"],
   ["playn-go-golden-osiris", "Pyramid"],
   ["playn-go-golden-ticket", "BONUS-column"],
   ["playn-go-golden-ticket-2", "Wild Meter"],
@@ -19,7 +19,7 @@ const slots = [
   ["playn-go-hammerfall", "Hammer Meter"],
   ["playn-go-happy-halloween", "Wild Pumpkins"],
   ["playn-go-helloween", "Keeper of the Seven Keys"],
-  ["playn-go-highway-legends", "Cash Bags"],
+  ["playn-go-highway-legends", "Money Bag symbols"],
   ["playn-go-holiday-season", "Win Spins"],
 ] as const;
 
