@@ -369,6 +369,16 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-fire-joker-blitz": "/images/catalog/playn-go-fire-joker-blitz.webp",
   "playn-go-fire-joker-freeze": "/images/catalog/playn-go-fire-joker-freeze.webp",
   "playn-go-fire-toad": "/images/catalog/playn-go-fire-toad.webp",
+  "playn-go-fire-toad-2": "/images/catalog/playn-go-fire-toad-2.webp",
+  "playn-go-firefly-frenzy": "/images/catalog/playn-go-firefly-frenzy.webp",
+  "playn-go-forge-of-fortunes": "/images/catalog/playn-go-forge-of-fortunes.webp",
+  "playn-go-forge-of-gems": "/images/catalog/playn-go-forge-of-gems.webp",
+  "playn-go-fortune-teller": "/images/catalog/playn-go-fortune-teller.webp",
+  "playn-go-fortunes-of-ali-baba": "/images/catalog/playn-go-fortunes-of-ali-baba.webp",
+  "playn-go-fox-mayhem": "/images/catalog/playn-go-fox-mayhem.webp",
+  "playn-go-free-reelin-joker": "/images/catalog/playn-go-free-reelin-joker.webp",
+  "playn-go-free-reelin-joker-1000": "/images/catalog/playn-go-free-reelin-joker-1000.webp",
+  "playn-go-frozen-gems": "/images/catalog/playn-go-frozen-gems.webp",
 };
 
 export function getCatalogArtwork(slug: string) {
