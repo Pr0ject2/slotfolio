@@ -717,6 +717,167 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   "playn-go-helloween": { intro:["Helloween использует 10 paylines и Keeper of the Seven Keys. Три Scatters на reels 1, 3 и 5 запускают feature wheel с семью outcomes, каждый связан с отдельной песней группы.","I’m Alive делает Wilds sticky и расширяющимися, Future World превращает их в full-reel Wilds, Eagle Fly Free добавляет moving Wild, Dr Stein преобразует выбранный royal symbol, March of Time двигает held Wilds влево, I Want Out расширяет их до 2×2. Отдельный Helloween outcome даёт 7 Free Spins вместо обычных 5."], editorial:"Helloween — это не один Free Spins шаблон, а семь song-specific режимов. После завершения feature дополнительно может сработать Helloween Multiplier с случайным значением до x10 на накопленный bonus win.", features:[{title:"Keeper of the Seven Keys",description:"3 Scatters на reels 1/3/5 открывают wheel из 7 song features; большинство дают 5 Free Spins, Helloween — 7 и позволяет повторно собирать Scatters для новых wheel triggers."}] },
   "playn-go-highway-legends": { intro:["Highway Legends использует несколько форм Wild. Rider on Horseback работает как Stacked Wild, Lady Pearl — как Sticky Wild, Gold Plaque — как Standard Wild. Money Bag symbols на reels 1–4 несут cash values, а попадание collector на reel 5 забирает их сумму.","Три Golden Pistol Scatters запускают Free Spins. Если выпало только два, reel 5 получает Re-Spin для попытки поймать третий. Lady Pearl Wilds могут оставаться на reels в течение feature, а Swift Rick способен сложить до четырёх Wilds на одном reel."], editorial:"Highway Legends разделяет роли персонажей прямо по Wild-механике: Pearl отвечает за sticky accumulation, Rick — за stacked Wilds. Cash Bags образуют отдельный collect-слой, не зависящий от Free Spins.", features:[{title:"Липкие и стековые Wild, сбор значений",description:"Cash Bags на reels 1–4 собираются через reel 5; 3 Pistols дают Free Spins, а 2 Scatters активируют дополнительный reel-5 Re-Spin для шанса на trigger."}] },
   "playn-go-holiday-season": { intro:["Holiday Season использует Gift Wild, который занимает все три позиции reel и заменяет обычные symbols. Также доступен Gamble round с угадыванием цвета или масти карты.","Три или больше Champagne Scatters запускают 5 Win Spins. На каждом таком spin гарантирована минимум одна winning combination; новые Scatters могут продлевать серию вплоть до 20 Win Spins подряд."], editorial:"Holiday Season использует именно Win Spins, а не обычные Free Spins: каждый bonus spin гарантированно содержит win. Retriggers наращивают длину серии, но провайдер ограничивает её двадцатью spins.", features:[{title:"Гарантированно выигрышные вращения",description:"3+ Champagne Scatters дают 5 Win Spins с гарантированной winning combination на каждом; новые Scatters могут продлить серию максимум до 20."}] },
+  "playn-go-holiday-spirits": {
+    intro:[
+      "Holiday Spirits строится вокруг пяти линий, Scrooge Wild и системы multipliers. Ebenezer’s Clock на случайном spin может назначить x2, x3, x4, x5 или x10, а Ebenezer’s Gift удваивает полученный multiplier.",
+      "Win Spins включаются, когда на non-winning spin выпадают два stacked reels одного symbol и одновременно назначается multiplier. Christmas Past уменьшает его до минимума x2, Present удерживает значение, Future увеличивает его до максимума x10 до получения win."
+    ],
+    editorial:"Holiday Spirits использует не обычный пакет Free Spins, а три варианта гарантированного Win Spin. Главное различие между духами — поведение multiplier во время повторных прокруток, а Ebenezer’s Gift способен дополнительно удвоить его.",
+    features:[{title:"Ebenezer’s Clock и три Win Spins",description:"Clock назначает x2–x10, Gift удваивает multiplier, а Past, Present и Future по-разному меняют его во время гарантированного Win Spin."}]
+  },
+  "playn-go-holy-moo-extreme-power": {
+    intro:[
+      "Holy Moo! Extreme Power работает на сетке 6×6 с cluster pays: пять и более соседних symbols дают win, выигрышные позиции очищаются, а новые symbols каскадируют сверху. После cluster-win соответствующие позиции получают persistent frames.",
+      "Divine Moo-ment превращает отмеченные frames в coin values, когда Moo-ighty Zeus появляется как Collector. Collector Path постепенно открывает новые типы Collectors, а отдельные Scatter/Super Scatter ведут к шести Free Spins или усиленному режиму Olympian Spins."
+    ],
+    editorial:"Здесь progression не декоративная: Collector Path меняет набор доступных Collectors по мере накопления, а одни и те же persistent frames могут быть собраны повторно несколькими Collectors внутри одной cascade-sequence.",
+    features:[{title:"Divine Moo-ment и Collector Path",description:"Cluster wins оставляют persistent frames; Collector превращает их в coin values и собирает, а progression открывает новые Collector variants и дополнительные instant-prize tiers."}]
+  },
+  "playn-go-honey-rush": {
+    intro:[
+      "Honey Rush использует шестиугольную cascading grid из 37 positions. Win образуется cluster из пяти и более соседних одинаковых symbols; после выплаты cluster исчезает, а новые symbols падают на свободные места.",
+      "Rush Meter заполняется количеством symbols в winning clusters. По уровням появляются sticky Honeypot Wilds с x1/x2/x3, Drone Colony и, на четвёртом уровне, Queen Colony, способная создать cluster минимум из 20 symbols."
+    ],
+    editorial:"Оригинальный Honey Rush строит бонус вокруг четырёх уровней Rush Meter и накопления Honeypot Wilds. Worker/Drone/Queen Colony нужны не как отдельные Free Spins, а как продолжение текущей cascade-sequence.",
+    features:[{title:"Rush Meter и Honeypot Wilds",description:"Winning clusters заряжают четырёхуровневый Rush Meter; уровни добавляют sticky Wilds с multipliers и Colony effects, а Queen Colony создаёт крупный cluster."}]
+  },
+  "playn-go-honey-rush-100": {
+    intro:[
+      "Honey Rush 100 сохраняет hexagonal cluster grid, но перестраивает progression вокруг Sticky Wilds и Overcharge Meter. Random Wild может добавить от двух до четырёх Wilds в случайные позиции.",
+      "Sticky Wild, участвующий в winning cluster, перемещается к нижней свободной позиции и остаётся в игре, пока не достигнет нижних клеток. Попав в Honey Pot, он повышает Multiplier; Overcharge units улучшают central symbol и дают дополнительные multiplier-бонусы."
+    ],
+    editorial:"Главное отличие Honey Rush 100 от первой части — не просто цифра 100 в названии. Здесь Wilds физически движутся вниз по сетке к Honey Pot, а Overcharge Meter превращает их путь в отдельную multiplier-прогрессию.",
+    features:[{title:"Sticky Wilds и Overcharge Meter",description:"Wilds двигаются вниз после winning clusters и повышают Multiplier в Honey Pot; Overcharge Meter апгрейдит central symbol и добавляет multiplier-бонусы."}]
+  },
+  "playn-go-honey-rush-black-and-yellow": {
+    intro:[
+      "Honey Rush Black and Yellow использует seven-reel hexagonal grid с cluster pays и cascades. Winning symbols заряжают Rush Meter, который последовательно открывает Drone, Worker и Queen Colony для создания новых clusters.",
+      "Walking Wilds остаются на поле, после winning cascade смещаются на новую свободную позицию и усиливаются. Cash Symbols раскрывают multipliers; если они не вошли в cluster, Bee собирает их и по мере накопления может случайно выдать instant bonus."
+    ],
+    editorial:"Эта версия не копирует Overcharge Meter из Honey Rush 100. Её отдельная связка — Rush Meter + Walking Wilds + Bee Cash Collect, поэтому движение Wilds и сбор несработавших Cash Symbols формируют собственный цикл.",
+    features:[{title:"Walking Wilds и Bee Cash Collect",description:"Rush Meter открывает Colony effects, Walking Wilds перемещаются после cascades, а Bee собирает несыгравшие Cash Symbols и может запустить instant bonus."}]
+  },
+  "playn-go-hooligan-hustle": {
+    intro:[
+      "Hooligan Hustle использует Dynamic Payways: symbols могут split-иться, а reel payway multipliers увеличивают число способов собрать win. На отдельных spins включается Rumble Row над reels.",
+      "Rumble Row может дать x2 Multiplier, Wild Reel или Double Trouble. Три Free Spin modes называются Lairy!, Riot! и Anarchy!, поэтому bonus-часть разделена на несколько сценариев, а не на один общий режим."
+    ],
+    editorial:"Ключевая механика Hooligan Hustle — рост числа payways через split symbols и reel multipliers. Rumble Row меняет конкретный spin, а три named Free Spin modes уже развивают этот Dynamic Payways слой внутри бонуса.",
+    features:[{title:"Dynamic Payways и Rumble Row",description:"Split symbols и reel multipliers расширяют число способов выигрыша; Rumble Row добавляет x2, Wild Reel или Double Trouble, а bonus разделён на Lairy!, Riot! и Anarchy!."}]
+  },
+  "playn-go-hope-unleashed-fortune-rises": {
+    intro:[
+      "Hope Unleashed Fortune Rises использует Mystery Symbols, которые могут раскрыть Magic Circle. После расчёта wins Magic Circle вызывает Pandora как Expanding Wild и запускает Re-Spin; повторный Circle продолжает цепочку и способен поднять Wild Multiplier до x5.",
+      "Souls прикрепляются к обычным symbols, а во Free Spins Mystery reveals могут создавать Spirit Orbs. Если Souls уже присутствуют, Orbs способны активировать Instant Bonus; отдельная Pandora’s Box также зависит от количества Souls на reels."
+    ],
+    editorial:"Игра соединяет две параллельные системы: Magic Circle Re-Spins с наращиваемым Expanding Wild и Soul-based instant prizes. Re-Spin chain ограничена 30, поэтому это самостоятельная progression-механика, а не бесконечный respin.",
+    features:[{title:"Magic Circle Re-Spin и Souls",description:"Magic Circle вызывает Expanding Wild и Re-Spin, повторные triggers усиливают его до x5; Souls и Spirit Orbs питают Instant Bonus и Pandora’s Box."}]
+  },
+  "playn-go-hot-dog-heist": {
+    intro:[
+      "Hot Dog Heist — 5×3 slot с 40 paylines и семью разными Free Spin modes. Отдельные собаки меняют сценарий: Golden Retriever даёт Wild Reels, Rough Collie использует sticky block, Labrador приносит multiplier x5–x30, Border Collie — Wilds и Re-Spins.",
+      "Pack Attack использует giant 4×4 Mega Symbols, Bulldog удерживает два 2×2 symbols для дополнительных Re-Spins. Who’s a Good Doggie — pick-and-click bonus на 20 tiles, где можно найти cash prizes или открыть один либо несколько Free Spin modes."
+    ],
+    editorial:"Hot Dog Heist нельзя свести к одному Free Spins шаблону: семь собачьих режимов дают разные типы Wilds, Mega Symbols, multipliers и re-spins. Pick bonus служит ещё одним способом собрать несколько этих режимов в одном раунде.",
+    features:[{title:"Семь Free Spin modes",description:"Pack Attack, Golden Retriever, Rough Collie, Labrador, Border Collie и Bulldog используют разные Mega/Wild/Multiplier сценарии, а Who’s a Good Doggie может открыть несколько из них."}]
+  },
+  "playn-go-hotel-yeti-way": {
+    intro:[
+      "Hotel Yeti-Way использует Dynamic Payways: базовые 4 096 ways могут вырасти до 262 144, когда symbols split-ятся. Во Free Spins дополнительно активны payway Multipliers.",
+      "В bonus доступны три тематические функции: Bungee Jumping повышает шанс получить четыре Stacked Wilds, Surfing добавляет до восьми Wilds на grid, а Scuba Diving оставляет Shark symbols sticky и даёт дополнительные Re-Spins."
+    ],
+    editorial:"Hotel Yeti-Way строит рост потенциала через геометрию Dynamic Payways, а не через фиксированные paylines. Три Free Spins functions по-разному меняют Wild/Sticky состояние, поэтому их не стоит смешивать в одну универсальную механику.",
+    features:[{title:"4 096 → 262 144 Dynamic Payways",description:"Splitting symbols расширяют ways, а во Free Spins Bungee Jumping, Surfing и Scuba Diving добавляют Stacked/extra Wilds и sticky Sharks с Re-Spins."}]
+  },
+  "playn-go-house-of-doom": {
+    intro:[
+      "House of Doom использует Hellgate: на каждом spin случайный reel подсвечивается, и если на него попадает Wild, он расширяется на весь reel. Дом выступает Scatter на reels 1, 3 и 5.",
+      "Три House Scatters запускают 10 Free Doom Spins; внутри бонуса House превращается в Wild House и может добавлять дополнительные spins. Отдельные Skulls of Abyss на reels 2–4 открывают pick bonus с cash prizes или переходом в Free Spins."
+    ],
+    editorial:"Первая House of Doom связывает expanding Wild с одним выбранным Hellgate reel, а bonus-ветки разделены: Doom Spins работают через House Scatters, Skulls of Abyss — через pick-механику. Это важно не переносить на sequel.",
+    features:[{title:"Hellgate и Doom Spins",description:"Подсвеченный Hellgate reel превращает попавший Wild в Expanding Wild; 3 House Scatters дают 10 Free Doom Spins, а 3 Skulls запускают отдельный pick bonus."}]
+  },
+  "playn-go-house-of-doom-2-the-crypt": {
+    intro:[
+      "House of Doom 2: The Crypt использует Spirit Gate. Случайный reel получает special frame; Wild внутри него становится Expanded Wild, закрывает reel и запускает Re-Spin.",
+      "Три духа меняют эти Re-Spins: Fire Mistress добавляет x2/x3/x5/x10 к wins, Metal Priestess апгрейдит symbols до Knives, Queen of the Damned активирует Spirit Gates на всех reels. Три Scatters дают 8 Free Spins, а upgraded Scatters открывают 8 Crypt Spins."
+    ],
+    editorial:"Sequel полностью перестраивает центральную механику вокруг Spirit Gate. Crypt Spins добавляют Spirit of Unity Wild и объединяют эффекты трёх духов, поэтому это не повтор Hellgate/Doom Spins из первой игры.",
+    features:[{title:"Spirit Gate и Crypt Spins",description:"Wild в Spirit Gate расширяется и запускает Re-Spin; духи добавляют multiplier, symbol upgrade или multiple gates, а upgraded Scatters ведут к 8 Crypt Spins."}]
+  },
+  "playn-go-hugo": {
+    intro:[
+      "Оригинальный Hugo — five-reel slot с максимум 10 active lines. Treasure Chest Scatters на reels 1, 3 и 5 запускают Treasure bonus, где игрок выбирает двери шахты и пытается добраться до treasure chamber, избегая Don Croco.",
+      "Три и более Afskylia Scatters запускают Free Spins с выбором 5, 10 или 15 spins. Hugoline Extra Scatter платит соответственно x3, x2 или x1 total bet, а Hugo Wild удваивает wins, если комбинация не состоит только из Wilds."
+    ],
+    editorial:"В Hugo выбор длины Free Spins напрямую меняет цену Extra Scatter: чем меньше spins, тем выше его multiplier. Treasure bonus при этом остаётся отдельной risk/pick веткой и не является частью Free Spins.",
+    features:[{title:"Treasure bonus и выбор 5/10/15 spins",description:"Treasure Chests ведут в шахтный pick bonus, Afskylia запускает Free Spins с тремя вариантами длины, а Hugoline Extra Scatter меняет выплату x3/x2/x1."}]
+  },
+  "playn-go-hugo-2": {
+    intro:[
+      "Hugo 2 переносит героя на railway journey с 10 lines. Три Beaver symbols запускают последовательность из 10 Free Spins, а Beaver Cleaver позволяет retrigger-ить её до максимума 20 spins подряд.",
+      "Во время пути bags и coins могут создавать extra Wilds и special symbols с дополнительными multipliers. Финальная часть bonus связана с выбором ключа, который должен открыть chest of gold."
+    ],
+    editorial:"Hugo 2 не повторяет выбор 5/10/15 spins из оригинала. Здесь центр bonus — Beaver Cleaver с максимумом 20 Free Spins и отдельная дорожка collectibles, которая меняет Wild/special-symbol состояние.",
+    features:[{title:"Beaver Cleaver Free Spins",description:"3 Beavers дают 10 Free Spins, retrigger продлевает серию максимум до 20; bags и coins добавляют extra Wilds и special symbols по ходу железнодорожного bonus."}]
+  },
+  "playn-go-hugo-carts": {
+    intro:[
+      "Hugo Carts распределяет base-game функции между персонажами: Hugo на reel 3 добавляет 2–5 golden nugget Wilds, Scylla на reel 4 создаёт 5–9 Mystery Symbols, а другие персонажи могут добавлять symbol multipliers до x10.",
+      "Три, четыре или пять Dynamite Scatters дают 7, 9 или 11 Free Spins. На старте выбирается случайный персонаж, чья feature работает на каждом spin; retrigger через 3+ Scatters выбирает нового персонажа, пока не будут использованы все три."
+    ],
+    editorial:"Hugo Carts строит bonus как смену character powers. Retrigger не просто добавляет spins, а подключает ещё одного персонажа, поэтому progression ограничена набором из трёх разных Free Spin features.",
+    features:[{title:"Character Free Spins",description:"3/4/5 Dynamite дают 7/9/11 spins; случайный character действует на каждом spin, а retrigger подключает нового, пока не будут открыты все три features."}]
+  },
+  "playn-go-hugo-goal": {
+    intro:[
+      "Hugo Goal — compact 3-reel slot. На non-winning spin два одинаковых character symbols могут вызвать Free Kick: один бесплатный Re-Spin повторяется до появления win или полного совпадения трёх symbols.",
+      "Если все девять positions заполнены одинаковыми symbols с помощью Wilds или без них, запускается Penalty Shoot-Out. Игрок защищает ворота в пяти ударах; пять saves дают Golden Trophy и умножают итог bonus winnings на x10."
+    ],
+    editorial:"В Hugo Goal бонус привязан к повторению одинаковых symbols на маленьком поле, а не к стандартным Scatter. Free Kick может перерасти в Penalty Shoot-Out, и именно полный 3×3 match переводит игру в пятиударный bonus.",
+    features:[{title:"Free Kick → Penalty Shoot-Out",description:"Два одинаковых characters на non-win дают Re-Spin; полный экран из девяти matching symbols запускает пять penalties, а все пять saves дают x10 к bonus win."}]
+  },
+  "playn-go-hugo-legacy": {
+    intro:[
+      "Hugo Legacy — 7×7 grid, где winning groups очищают symbols и заряжают Overcharge Meter. Когда Hugo собирает 15 Charges, случайно включается одна из пяти character features.",
+      "Character effects добавляют 5–8 Wilds, апгрейдят 2–5 low symbols, защищают 1–2 Wilds, превращают symbol type в Wild или дублируют captured symbols для новых clusters. Отдельно 35–50 Scylla/Don Croco symbols открывают пять tiers Free Spins."
+    ],
+    editorial:"Hugo Legacy объединяет anniversary cast через общую Charge progression: каждый персонаж меняет grid по-своему. Free Spins имеют собственную шкалу 35–50 collected symbols, поэтому Overcharge и bonus progression — две разные системы.",
+    features:[{title:"15 Charges и пять character powers",description:"После 15 Charges срабатывает одна из пяти character features; отдельный сбор Scylla/Don Croco symbols открывает пять уровней Free Spins."}]
+  },
+  "playn-go-hugos-adventure": {
+    intro:[
+      "Hugo’s Adventure работает на пяти reels и 10 paylines, а Hugo выступает Wild. Три Plane Scatters запускают Air Race: 20 Free Spins с одной life, где sky mines от Don Croco могут завершить полёт, а balloons добавляют extra lives.",
+      "В Air Race появляются random Multipliers и Flying Wilds, которые становятся sticky и двигаются по reels. Успешное завершение Free Spins переводит игру в Underwater Adventure, где Hugo ищет treasures по пути к Skull Castle."
+    ],
+    editorial:"Hugo’s Adventure связывает два bonus-этапа последовательно: сначала survival-style Air Race с lives и moving Sticky Wilds, затем Underwater Adventure. Это отдельная механика от Hugo/Hugo 2/Carts.",
+    features:[{title:"Air Race и Underwater Adventure",description:"3 Planes дают 20 Free Spins с lives, mines, random multipliers и moving Sticky Wilds; успешный полёт открывает второй underwater bonus."}]
+  },
+  "playn-go-ice-joker": {
+    intro:[
+      "Ice Joker использует Icelia как Special Wild. Когда она попадает на reel, reel замораживается и запускаются три Frozen Re-Spins; во время серии Icelia расширяется, пока не заполнит reel, после чего исчезает.",
+      "Snowflakes на reels 1, 3 и 5 открывают Winter’s Wheel. Колесо может собрать 2–7 Ice Jokers; если следующий Joker не выпал, один из уже собранных добавляется на reel и снова активирует Frozen Re-Spins. Общая серия может достигать 50 Re-Spins."
+    ],
+    editorial:"Ice Joker превращает Expanding Wild в счётчик повторных spins: каждый новый Icelia снова даёт три Re-Spins, а Winter’s Wheel формирует запас будущих Ice Jokers. Thermometer показывает оставшийся ресурс этой серии.",
+    features:[{title:"Frozen Re-Spins и Winter’s Wheel",description:"Icelia замораживает reel и даёт 3 Re-Spins, расширяясь по нему; Snowflakes запускают Wheel с 2–7 Ice Jokers, а общая серия может дойти до 50 Re-Spins."}]
+  },
+  "playn-go-idol-of-fortune": {
+    intro:[
+      "Idol of Fortune использует Gold Reel: если он активен и на него попадает Wild, запускается Wild Prize mini-game. Игрок выбирает из 12 symbols, пока не соберёт три одинаковых и не определит Wild Prize.",
+      "Во Free Spins игрок сам выбирает сочетание количества spins и Mystery Reels. Mystery Pick может дать до 88 Mystery Symbols при варианте с 20 Free Spins, поэтому длина bonus и плотность mystery-механики настраиваются вместе."
+    ],
+    editorial:"Idol of Fortune даёт игроку два разных выбора: match-three Wild Prize вне Free Spins и настройку spins/Mystery Reels внутри бонуса. Это делает Mystery Pick частью конфигурации feature, а не случайным фиксированным модификатором.",
+    features:[{title:"Wild Prize и Mystery Pick",description:"Wild на активном Gold Reel открывает match-three prize из 12 symbols; во Free Spins выбор количества spins связан с числом Mystery Reels и может дать до 88 Mystery Symbols."}]
+  },
+  "playn-go-immortails-of-egypt": {
+    intro:[
+      "ImmorTails of Egypt использует три character meters для Bastet, Mafdet и Sekhmet. По мере заполнения kittens на reels превращаются в Expanding Wilds, и в подходящей последовательности Wilds могут занять все пять reels.",
+      "Во Free Spins layout расширяется с 5×3 до 5×4. Одновременно работает Multiplier, визуально оформленный как locked treasure chest: выигрыши открывают его и раскрывают накопленное значение."
+    ],
+    editorial:"Здесь progression видна прямо над reels: meters показывают, насколько близко превращение kittens в Cat Gods. Free Spins усиливают эту систему сразу двумя способами — дополнительным рядом и отдельным Multiplier chest.",
+    features:[{title:"Cat God meters и расширение 5×4",description:"Bastet, Mafdet и Sekhmet превращают kittens в Expanding Wilds; во Free Spins grid растёт с 5×3 до 5×4 и включается отдельный Multiplier chest."}]
+  },
+
   "playn-go-def-leppard-hysteria": { intro:["Def Leppard: Hysteria — grid slot, где Play’n GO публично выделяет feature Pour Some Sugar on Me. Игрок постепенно открывает скрытый за grid слой «sugar», а symbols после срабатывания визуально опускаются вниз, повторяя эффект высыпающегося сахара.","На официальной странице провайдер не публикует точные условия trigger, число spins или таблицу multipliers для этой feature. Slotfolio поэтому фиксирует только подтверждённую grid-механику Pour Some Sugar on Me без выдуманных чисел."], editorial:"Здесь музыкальная тема встроена прямо в поведение grid: Pour Some Sugar on Me не просто название бонуса, а визуальная механика с открытием скрытого слоя и падением symbols. Недостающие числовые детали намеренно не додуманы.", features:[{title:"Pour Some Sugar on Me",description:"Game-specific feature открывает скрытый за grid слой и синхронизирует падение symbols с эффектом «pouring sugar»; точные trigger details Play’n GO публично не раскрывает."}] },
   "playn-go-demon": { intro:["Wild Mask появляется только на reel 3. Если Mask попадает в центральную позицию, все symbols Dave Hill на reels превращаются в Wilds; Wild Amulet появляется на reels 1 и 5.","Wild Amulet одновременно на reels 1 и 5 вместе с Wild Mask на reel 3 запускают One Helluva Night. Бонус даёт 6 Free Spins, а центральный Mask повышает старт до 11; на каждом spin случайно применяется multiplier x2, x3, x5 или x8."], editorial:"Demon строит бонус вокруг точной геометрии трёх Wild-позиций. Внутри One Helluva Night два Wild Amulet могут открыть вложенный Depths of Hell, где активный multiplier переносится на всю вложенную серию и при центральном Mask может быть удвоен.", features:[{title:"One Helluva Night и Depths of Hell",description:"Mask + Amulets запускают 6 или 11 Free Spins с random x2/x3/x5/x8; два Amulet внутри бонуса открывают Nested Free Spins с переносом активного multiplier."}] },
   "playn-go-derby-wheel": { intro:["Три Wheel symbols переводят игру на Bonus Wheel. На колесе находятся прямые multipliers и отдельный Horse Racing Bonus Feature.","Если Wheel останавливается на Horse Racing, игрок выбирает один из четырёх вариантов: No Bet даёт x40, Win позволяет выбрать победителя до x800, Exacta требует угадать первое и второе место до x1800, а Trifecta — первые три позиции в точном порядке до x2800."], editorial:"Derby Wheel делает выбор риска частью самого бонуса: после попадания на Horse Racing игрок сам решает, взять фиксированный x40 или обменять гарантию на более сложный прогноз с большим потенциальным multiplier.", features:[{title:"Bonus Wheel и Horse Racing",description:"3 Wheel symbols запускают колесо с multipliers; Horse Racing открывает выбор No Bet x40, Win до x800, Exacta x1800 или Trifecta x2800."}] },
