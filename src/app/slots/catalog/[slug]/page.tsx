@@ -853,7 +853,6 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
   const editorialMechanics = editorialFeatures.slice(0, 2);
   const releaseSource = details?.releaseDateSource;
   const volatilitySource = details?.volatilitySource;
-  const sources = Array.from(new Set([slot.source, details?.source, gameType?.source, research?.source, releaseSource, volatilitySource].filter((value): value is string => Boolean(value))));
   const providerItems = catalogModel.items.filter((item) => item.slug !== slot.slug && item.provider === slot.provider).sort((a, b) => b.mechanics.length - a.mechanics.length || a.name.localeCompare(b.name, "ru")).slice(0, 6);
   const providerSlugs = new Set(providerItems.map((item) => item.slug));
   const mechanicItems = mechanics.length ? catalogModel.items.filter((item) => item.slug !== slot.slug && !providerSlugs.has(item.slug) && item.mechanics.some((mechanic) => mechanics.includes(mechanic))).sort((a, b) => b.mechanics.filter((mechanic) => mechanics.includes(mechanic)).length - a.mechanics.filter((mechanic) => mechanics.includes(mechanic)).length).slice(0, 6) : [];
