@@ -111,6 +111,32 @@ export const catalogResearchPlayngoMN: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Play'n GO material describes Myth of Dead as a 5x3 video slot with 10 paylines.",
   },
+
+  "playn-go-merlin-realm-of-charm": {
+    mechanics: ["Линии", "Расширяющиеся символы"],
+    source: "https://www.playngo.com/games/merlin-realm-of-charm",
+    verifiedAt,
+    evidence: "Official Play'n GO release describes 5x3 reels, Free Spins with a randomly selected Sticky Expanding Symbol, instant prizes on the trigger, and an optional card Gamble Round.",
+  },
+  "playn-go-merlin-journey-of-flame": {
+    mechanics: ["Расширяющиеся символы"],
+    source: "https://www.playngo.com/games/merlin%3A-journey-of-flame",
+    verifiedAt,
+    evidence: "Official Play'n GO release describes a Special Expanding Symbol chosen before Free Spins, up to eight Free Spins with an additional sixth reel, and a Gamble feature.",
+  },
+  "playn-go-moon-princess-100": {
+    mechanics: ["Кластеры", "Каскады"],
+    source: "https://www.playngo.com/games/moon-princess-100",
+    verifiedAt,
+    evidence: "Official Play'n GO game page describes the Moon Princess grid loop, Girl Powers, Clear the Grid prize, and Free Spins with both multiplier and spin count capped at 100.",
+  },
+  "playn-go-motley-crue": {
+    mechanics: ["Wilds", "Free Spins"],
+    source: "https://www.playngo.com/games/m%C3%B6tley-cr%C3%BCe",
+    verifiedAt,
+    evidence: "Official Play'n GO game page describes Wild Side stacked Wilds, Live Wire random Wilds, and Shout at the Devil Free Spins triggered by Pentagram Scatters.",
+  },
+
 };
 
 export function getCatalogResearchPlayngoMN(slug: string) {
