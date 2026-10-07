@@ -1000,11 +1000,11 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   },
   "playn-go-journey-to-paris": {
     intro:[
-      "Journey to Paris работает на 5×5 grid с cluster wins и cascades. После winning cluster symbols удаляются, а новые падают на освободившиеся позиции.",
-      "Play’n GO отдельно выделяет Win Multipliers, Souvenir Shop Bonus Game и Mystery Jackpot. Эти функции встроены в grid progression, а не оформлены как стандартный line-slot Free Spins package."
+      "Journey to Paris работает на 5×5 grid: win образуют кластеры из 3+ одинаковых symbols, соприкасающихся по горизонтали или вертикали. Winning symbols исчезают, новые падают сверху, а multiplier растёт по ходу cascade sequence от x1 до x12.",
+      "Bonus Game запускается, когда удалённые symbols полностью открывают скрытое под grid слово «Bonus»; его позиция меняется на каждом spin. Feature даёт 10 free rounds, где 5+ одинаковых symbols платят anywhere по Scatter Pays, bonus multiplier может вырасти до x5, а 5+ Bonus symbols на одном spin добавляют ещё 5 rounds."
     ],
-    editorial:"Journey to Paris соединяет кластерную основу с двумя тематическими bonus-ветками: Souvenir Shop и Mystery Jackpot. Поэтому карточка не переносит сюда правила Free Spins из других adventure slots.",
-    features:[{title:"Кластеры, Souvenir Shop и Mystery Jackpot",description:"5×5 grid использует cluster wins и cascades; поверх них работают Win Multipliers, Souvenir Shop Bonus Game и отдельный Mystery Jackpot."}]
+    editorial:"Journey to Paris связывает bonus trigger прямо с clearing-механикой grid: нужно не собрать обычные Scatters, а расчистить позиции над скрытым словом «Bonus». В feature меняется и способ подсчёта wins — вместо кластеров работают 5+ matching symbols anywhere.",
+    features:[{title:"Hidden Bonus и Scatter Pays",description:"Раскрытое слово «Bonus» даёт 10 free rounds; внутри feature 5+ matching symbols платят anywhere, multiplier растёт до x5, а 5+ Bonus symbols добавляют ещё 5 spins."}]
   },
   "playn-go-king-of-sweets": {
     intro:[
