@@ -16,7 +16,7 @@ const slots = [
   ["playn-go-jolly-roger", "Treasure Chest"],
   ["playn-go-jolly-roger-2", "Treasure Map Hunt"],
   ["playn-go-jolly-roger-wild-kraken", "Cannon Free Spins"],
-  ["playn-go-journey-to-paris", "Souvenir Shop"],
+  ["playn-go-journey-to-paris", "Scatter Pays"],
   ["playn-go-king-of-sweets", "Sweet-o-meter"],
   ["playn-go-kings-mask", "15, 10 или 5 spins"],
   ["playn-go-kings-mask-eclipse-of-gods", "eclipse features"],
