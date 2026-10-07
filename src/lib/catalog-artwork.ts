@@ -449,6 +449,27 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-kings-mask": "/images/catalog/playn-go-kings-mask.webp",
   "playn-go-kings-mask-eclipse-of-gods": "/images/catalog/playn-go-kings-mask-eclipse-of-gods.webp",
   "playn-go-kingdom-below": "/images/catalog/playn-go-kingdom-below.webp",
+  "playn-go-kiss-reels-of-rock": "/images/catalog/playn-go-kiss-reels-of-rock.webp",
+  "playn-go-lab-of-madness-its-a-wild": "/images/catalog/playn-go-lab-of-madness-its-a-wild.webp",
+  "playn-go-lady-of-fortune": "/images/catalog/playn-go-lady-of-fortune.webp",
+  "playn-go-lady-of-fortune-destiny-spins": "/images/catalog/playn-go-lady-of-fortune-destiny-spins.webp",
+  "playn-go-lady-of-fortune-remastered": "/images/catalog/playn-go-lady-of-fortune-remastered.webp",
+  "playn-go-lawn-n-disorder": "/images/catalog/playn-go-lawn-n-disorder.webp",
+  "playn-go-legacy-of-dynasties": "/images/catalog/playn-go-legacy-of-dynasties.webp",
+  "playn-go-legacy-of-egypt": "/images/catalog/playn-go-legacy-of-egypt.webp",
+  "playn-go-legacy-of-gems-blitzways": "/images/catalog/playn-go-legacy-of-gems-blitzways.webp",
+  "playn-go-legacy-of-inca": "/images/catalog/playn-go-legacy-of-inca.webp",
+  "playn-go-legacy-of-undead-dragon-abyssways": "/images/catalog/playn-go-legacy-of-undead-dragon-abyssways.webp",
+  "playn-go-legend-of-the-ice-dragon": "/images/catalog/playn-go-legend-of-the-ice-dragon.webp",
+  "playn-go-legion-gold": "/images/catalog/playn-go-legion-gold.webp",
+  "playn-go-legion-gold-and-the-sphinx-of-dead": "/images/catalog/playn-go-legion-gold-and-the-sphinx-of-dead.webp",
+  "playn-go-legion-gold-and-the-throne-of-dead": "/images/catalog/playn-go-legion-gold-and-the-throne-of-dead.webp",
+  "playn-go-legion-gold-reckoning": "/images/catalog/playn-go-legion-gold-reckoning.webp",
+  "playn-go-legion-gold-unleashed": "/images/catalog/playn-go-legion-gold-unleashed.webp",
+  "playn-go-legion-gold-victory": "/images/catalog/playn-go-legion-gold-victory.webp",
+  "playn-go-leprechaun-goes-egypt": "/images/catalog/playn-go-leprechaun-goes-egypt.webp",
+  "playn-go-leprechaun-goes-wild": "/images/catalog/playn-go-leprechaun-goes-wild.webp",
+
 };
 
 export function getCatalogArtwork(slug: string) {
