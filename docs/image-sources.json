@@ -3268,5 +3268,161 @@
     "note": "Reviewed first-party Play’n GO artwork. Build-time localizer downloads the explicit game-specific image from Play’n GO/Wix CDN and converts it to local WebP; no runtime remote request.",
     "image": "https://static.wixstatic.com/media/194eff_b1a8bc50b7f647e1a0e40d34dc7ed3b8~mv2.jpg/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/immortails_EN_desktop.jpg",
     "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-imperial-opera",
+    "page": "https://www.playngo.com/games/imperial-opera",
+    "local": "/images/catalog/playn-go-imperial-opera.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/4db90d_fbb81613bcbe4a9b98dd631d93707f3d~mv2.jpg/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/imperial_opera_bg.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-infernal-trinity-go-guaranteed",
+    "page": "https://www.playngo.com/games/infernal-trinity-go-guaranteed",
+    "local": "/images/catalog/playn-go-infernal-trinity-go-guaranteed.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/ed506d_70cacf3e622d409389aef7122f85c92d~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/infernaltrinity_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-inferno-joker",
+    "page": "https://www.playngo.com/games/inferno-joker",
+    "local": "/images/catalog/playn-go-inferno-joker.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/b0e15a_a69e7114f4f34e8cbd09b2266f035f69~mv2.jpg/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/infernojoker_web_games_hero.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-inferno-star",
+    "page": "https://www.playngo.com/games/inferno-star",
+    "local": "/images/catalog/playn-go-inferno-star.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/bdbc60_c6ed32eca9904df7a403e491a3ccd0bb~mv2.jpg/v1/fill/w_980%2Ch_294%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/inferno_star_games_slider_banner_main.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-invading-vegas",
+    "page": "https://www.playngo.com/games/invading-vegas",
+    "local": "/images/catalog/playn-go-invading-vegas.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/b1b4a2_e647aba5bc154d6496fa2fd8e03b11aa~mv2.webp/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/invadingvegas_web_games_hero.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-invading-vegas-revenge-on-mars",
+    "page": "https://www.playngo.com/games/invading-vegas-revenge-on-mars",
+    "local": "/images/catalog/playn-go-invading-vegas-revenge-on-mars.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/53551e_f5c723ba41a9493696be43be974de4cc~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/revengeonmars_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-invading-vegas-las-christmas",
+    "page": "https://www.playngo.com/games/invading-vegas%3A-las-christmas",
+    "local": "/images/catalog/playn-go-invading-vegas-las-christmas.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/9740d9_87f74e35eec448f8bada42d8be82ace5~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/laschristmas_Clientzone_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-irish-gold",
+    "page": "https://www.playngo.com/games/irish-gold",
+    "local": "/images/catalog/playn-go-irish-gold.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/c0d960_dc31952d1401491498ca89fbf28f6021~mv2.jpg/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/irishgold_web_games_hero.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-iron-girl",
+    "page": "https://www.playngo.com/games/iron-girl",
+    "local": "/images/catalog/playn-go-iron-girl.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/cd077d_a1d7d63713114ca895c1150eb6ff795a~mv2.jpg/v1/fill/w_980%2Ch_294%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/IG_hp_slider_banner.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-jade-magician",
+    "page": "https://www.playngo.com/games/jade-magician",
+    "local": "/images/catalog/playn-go-jade-magician.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/e9c3fb_7f9c0c5e19f0413ea08710d279ac38c7~mv2.jpg/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/jade_magician_bg.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-jewel-box",
+    "page": "https://www.playngo.com/games/jewel-box",
+    "local": "/images/catalog/playn-go-jewel-box.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/e5a3b3_843dd6249a69473db22b00b833de097d~mv2.jpg/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/jewelbox_web_games_hero.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-joker-flip",
+    "page": "https://www.playngo.com/games/joker-flip",
+    "local": "/images/catalog/playn-go-joker-flip.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/b9788b_2b9cd97ad3f641f3a3186e17ddd39357~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/jokerflip_homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-jolly-roger",
+    "page": "https://www.playngo.com/games/jolly-roger",
+    "local": "/images/catalog/playn-go-jolly-roger.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-jolly-roger-2",
+    "page": "https://www.playngo.com/games/jolly-roger-2",
+    "local": "/images/catalog/playn-go-jolly-roger-2.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/8e4761_2bfa0d646cba4a219d9ea4368fcea1f7~mv2.webp/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/jolly_roger_2_bg.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-jolly-roger-wild-kraken",
+    "page": "https://www.playngo.com/post/jolly-roger-wild-kraken",
+    "local": "/images/catalog/playn-go-jolly-roger-wild-kraken.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request."
+  },
+  {
+    "slug": "playn-go-journey-to-paris",
+    "page": "https://www.playngo.com/post/journey-to-paris",
+    "local": "/images/catalog/playn-go-journey-to-paris.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/b6bdb7_f88f9bd1cc2b42e1808fe3a126a67a76~mv2.webp/v1/fill/w_980%2Ch_503%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/b6bdb7_f88f9bd1cc2b42e1808fe3a126a67a76~mv2.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-king-of-sweets",
+    "page": "https://www.playngo.com/games/king-of-sweets",
+    "local": "/images/catalog/playn-go-king-of-sweets.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/e73c88_907e2075596c4763af2f17efe8eb2484~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/kingofsweets_homepage_banner1.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-kings-mask",
+    "page": "https://www.playngo.com/games/king's-mask",
+    "local": "/images/catalog/playn-go-kings-mask.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/ff41a0_06f0f3886fad499c8b8b7009581df0b2~mv2.webp/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/kingsmask_web_games_hero.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-kings-mask-eclipse-of-gods",
+    "page": "https://www.playngo.com/post/kings-mask-eclipse-of-gods",
+    "local": "/images/catalog/playn-go-kings-mask-eclipse-of-gods.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/b6bdb7_430821a156474a80a6078ffe62f30a04~mv2.webp/v1/fill/w_980%2Ch_503%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/b6bdb7_430821a156474a80a6078ffe62f30a04~mv2.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-kingdom-below",
+    "page": "https://www.playngo.com/games/kingdom-below",
+    "local": "/images/catalog/playn-go-kingdom-below.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/03705a_b9b91b188e7b4937bf0ad481744b2451~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/kingdombelow_Clientzone_Homepage_banner.webp",
+    "requireExplicitImage": true
   }
 ]
