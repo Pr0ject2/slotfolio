@@ -3757,7 +3757,9 @@
     "slug": "playn-go-merlin-journey-of-flame",
     "page": "https://www.playngo.com/posts/merlin-journey-of-flame",
     "local": "/images/catalog/playn-go-merlin-journey-of-flame.webp",
-    "note": "Reviewed first-party Play’n GO release/review page used for artwork localization because the canonical game-page route returns HTTP 404 to GitHub Runner. Build-time localizer resolves official provider image metadata and stores a local WebP."
+    "note": "Reviewed first-party Play’n GO artwork pinned to the Wix CDN image linked from the official Journey of Flame release page.",
+    "image": "https://static.wixstatic.com/media/712fec_5faaef0c5e7d40b393061600f6980e07~mv2.webp",
+    "requireExplicitImage": true
   },
   {
     "slug": "playn-go-merlins-grimoire",
@@ -3805,7 +3807,9 @@
     "slug": "playn-go-monkey-battle-for-the-scrolls",
     "page": "https://www.playngo.com/posts/monkey-battle-for-the-scrolls",
     "local": "/images/catalog/playn-go-monkey-battle-for-the-scrolls.webp",
-    "note": "Reviewed first-party Play’n GO release/review page used for artwork localization because the canonical game-page route returns HTTP 404 to GitHub Runner. Build-time localizer resolves official provider image metadata and stores a local WebP."
+    "note": "Reviewed first-party Play’n GO artwork pinned to the Wix CDN image linked from the official Monkey: Battle for the Scrolls release page.",
+    "image": "https://static.wixstatic.com/media/59995c_b0bde41dd35842da867c98b23cd91722~mv2.webp",
+    "requireExplicitImage": true
   },
   {
     "slug": "playn-go-moon-princess",
@@ -3857,9 +3861,11 @@
   },
   {
     "slug": "playn-go-motley-crue",
-    "page": "https://www.playngo.com/posts/motley-crue",
+    "page": "https://www.playngo.com/ip-partnerships",
     "local": "/images/catalog/playn-go-motley-crue.webp",
-    "note": "Reviewed first-party Play’n GO release/review page used for artwork localization because the canonical game-page route returns HTTP 404 to GitHub Runner. Build-time localizer resolves official provider image metadata and stores a local WebP."
+    "note": "Reviewed first-party Play’n GO Mötley Crüe artwork selected from the official IP Partnerships page by the inline filename motley-block.jpg.",
+    "imageHint": "motley-block.jpg",
+    "requireExplicitImage": true
   },
   {
     "slug": "playn-go-mount-m",
