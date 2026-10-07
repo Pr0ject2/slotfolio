@@ -3588,5 +3588,163 @@
     "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
     "image": "https://static.wixstatic.com/media/c177f9_465e354a0e3e4b6fbf0433f24e522890~mv2.jpg/v1/fill/w_1333%2Ch_746%2Cal_c%2Cq_85/leprechaungoeswild_EN_Mlandscape.jpg",
     "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-leprechauns-diamond-dig",
+    "page": "https://www.playngo.com/games/leprechaun%27s-diamond-dig",
+    "local": "/images/catalog/playn-go-leprechauns-diamond-dig.webp",
+    "note": "Reviewed first-party Play’n GO game page. The localizer resolves the official social-preview image from provider metadata; Pages verification must fail if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-leprechauns-vault",
+    "page": "https://www.playngo.com/games/leprechaun%27s-vault",
+    "local": "/images/catalog/playn-go-leprechauns-vault.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/93a853_87e4587af1a5451e8ac4ebe5c8e66362~mv2.webp/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/leprechaunsvault_web_games_hero.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-lion-saga-odyssey",
+    "page": "https://www.playngo.com/games/lion-saga-odyssey",
+    "local": "/images/catalog/playn-go-lion-saga-odyssey.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/b03f30_fdf27844b3f94dd7afedee60e910238a~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/lionsagaodyssey_Clientzone_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-loot-and-labyrinths",
+    "page": "https://www.playngo.com/games/loot-%26-labyrinths",
+    "local": "/images/catalog/playn-go-loot-and-labyrinths.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/b92924_2d7cceb676ed4852bf85f6648214ec98~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/lootandlabyriths_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-lord-merlin-and-the-lady-of-the-lake",
+    "page": "https://www.playngo.com/games/lord-merlin-and-the-lady-of-the-lake",
+    "local": "/images/catalog/playn-go-lord-merlin-and-the-lady-of-the-lake.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/b0592d_6670d40cdaac486584c8cb753d184f93~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/ladyofthelake_hp_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-lordi-reel-monsters",
+    "page": "https://www.playngo.com/games/lordi-reel-monsters",
+    "local": "/images/catalog/playn-go-lordi-reel-monsters.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/1587fb_476515a42923430f86b510a6fbb3df5e~mv2.webp/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/lordi_web_games_hero.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-love-is-in-the-fair",
+    "page": "https://www.playngo.com/games/love-is-in-the-fair",
+    "local": "/images/catalog/playn-go-love-is-in-the-fair.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/b6bdb7_3f666684373e4ebd928e80792c834416~mv2.webp/v1/fill/w_980%2Ch_503%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/b6bdb7_3f666684373e4ebd928e80792c834416~mv2.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-love-joker",
+    "page": "https://www.playngo.com/games/love-joker",
+    "local": "/images/catalog/playn-go-love-joker.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/b08578_a94a74687ebd4e738a7e14175e5b75c9~mv2.webp/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/lovejoker_web_games_hero.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-luchamigos",
+    "page": "https://www.playngo.com/games/luchamigos",
+    "local": "/images/catalog/playn-go-luchamigos.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/3d5c82_36d9388391ea42a7900378017ece4d43~mv2.webp/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/luchamigos_web_games_hero.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-lucky-diamonds",
+    "page": "https://www.playngo.com/games/lucky-diamonds",
+    "local": "/images/catalog/playn-go-lucky-diamonds.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/c512e7_9943112f332c4cc4a949f58f8946ec38~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/luckydiamonds_homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-madame-ink",
+    "page": "https://www.playngo.com/games/madame-ink",
+    "local": "/images/catalog/playn-go-madame-ink.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/5ae5af_25617284f96642d7ad75c3980c101f3b~mv2.jpg/v1/fill/w_980%2Ch_294%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/madam_ink_hp_slider_banner.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-mafia-gold",
+    "page": "https://www.playngo.com/games/mafia-gold",
+    "local": "/images/catalog/playn-go-mafia-gold.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/a2d1dd_797bd2c31a1b49a19f81268587461402~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/mafiagold_Clientzone_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-mahjong-88",
+    "page": "https://www.playngo.com/games/mahjong-88",
+    "local": "/images/catalog/playn-go-mahjong-88.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/d6ecd5_af694d2213f24fdeb7a32d8b33e698e9~mv2.png/v1/fill/w_980%2Ch_343%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/d6ecd5_af694d2213f24fdeb7a32d8b33e698e9~mv2.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-manta-mayhem",
+    "page": "https://www.playngo.com/games/manta-mayhem",
+    "local": "/images/catalog/playn-go-manta-mayhem.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/c22772_ff092281d9d84ef38962e0d4a7c498cc~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/mantamayhem_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-matsuri",
+    "page": "https://www.playngo.com/games/matsuri",
+    "local": "/images/catalog/playn-go-matsuri.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://www.playngo.com/_next/image?q=75&url=https%3A%2F%2Fwsh4cfcctixmqqzl.public.blob.vercel-storage.com%2Fgames%2F320%2Flogo%2F0-1f191caf163623c2&w=3840",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-medusas-madness",
+    "page": "https://www.playngo.com/games/medusa%27s-madness",
+    "local": "/images/catalog/playn-go-medusas-madness.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://www.playngo.com/_next/image?q=75&url=https%3A%2F%2Fwsh4cfcctixmqqzl.public.blob.vercel-storage.com%2Fgames%2F989%2Flogo%2F0-05479d20e4b475c0&w=3840",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-mega-don",
+    "page": "https://www.playngo.com/games/mega-don",
+    "local": "/images/catalog/playn-go-mega-don.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/712fec_279a6baccf7d40ba9bb7a0b4aa0e99cd~mv2.png/v1/fill/w_980%2Ch_503%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/712fec_279a6baccf7d40ba9bb7a0b4aa0e99cd~mv2.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-mega-don-triple-threat",
+    "page": "https://www.playngo.com/games/mega-don-triple-threat",
+    "local": "/images/catalog/playn-go-mega-don-triple-threat.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/fbcb00_e9b5943e7e264bddbc1a06e115acb4c3~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/megadonthriplethreat_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-mega-don-feeding-frenzy",
+    "page": "https://www.playngo.com/games/mega-don%3A-feeding-frenzy",
+    "local": "/images/catalog/playn-go-mega-don-feeding-frenzy.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/670aa2_298a5ce1fa5c43efba3a25f4aa8b19ee~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/megadonfeedingfrenzy_Clientzone_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-merlin-and-the-ice-queen-morgana",
+    "page": "https://www.playngo.com/games/merlin-and-the-ice-queen-morgana",
+    "local": "/images/catalog/playn-go-merlin-and-the-ice-queen-morgana.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/45df48_3a3e61a921da4cdf9d4f98b41ce63af1~mv2.webp/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/icequeenmorgana_web_hp_hero.webp",
+    "requireExplicitImage": true
   }
 ]
