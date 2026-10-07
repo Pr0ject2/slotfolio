@@ -491,6 +491,27 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-mega-don-feeding-frenzy": "/images/catalog/playn-go-mega-don-feeding-frenzy.webp",
   "playn-go-merlin-and-the-ice-queen-morgana": "/images/catalog/playn-go-merlin-and-the-ice-queen-morgana.webp",
 
+  "playn-go-merlin-realm-of-charm": "/images/catalog/playn-go-merlin-realm-of-charm.webp",
+  "playn-go-merlin-journey-of-flame": "/images/catalog/playn-go-merlin-journey-of-flame.webp",
+  "playn-go-merlins-grimoire": "/images/catalog/playn-go-merlins-grimoire.webp",
+  "playn-go-mermaids-diamond": "/images/catalog/playn-go-mermaids-diamond.webp",
+  "playn-go-merry-xmas": "/images/catalog/playn-go-merry-xmas.webp",
+  "playn-go-midnight-gold": "/images/catalog/playn-go-midnight-gold.webp",
+  "playn-go-miner-donkey-trouble": "/images/catalog/playn-go-miner-donkey-trouble.webp",
+  "playn-go-mirror-joker": "/images/catalog/playn-go-mirror-joker.webp",
+  "playn-go-mission-cash": "/images/catalog/playn-go-mission-cash.webp",
+  "playn-go-monkey-battle-for-the-scrolls": "/images/catalog/playn-go-monkey-battle-for-the-scrolls.webp",
+  "playn-go-moon-princess": "/images/catalog/playn-go-moon-princess.webp",
+  "playn-go-moon-princess-100": "/images/catalog/playn-go-moon-princess-100.webp",
+  "playn-go-moon-princess-extreme": "/images/catalog/playn-go-moon-princess-extreme.webp",
+  "playn-go-moon-princess-origins": "/images/catalog/playn-go-moon-princess-origins.webp",
+  "playn-go-moon-princess-power-of-love": "/images/catalog/playn-go-moon-princess-power-of-love.webp",
+  "playn-go-moon-princess-stargazing": "/images/catalog/playn-go-moon-princess-stargazing.webp",
+  "playn-go-moon-princess-trinity": "/images/catalog/playn-go-moon-princess-trinity.webp",
+  "playn-go-moon-princess-christmas-kingdom": "/images/catalog/playn-go-moon-princess-christmas-kingdom.webp",
+  "playn-go-motley-crue": "/images/catalog/playn-go-motley-crue.webp",
+  "playn-go-mount-m": "/images/catalog/playn-go-mount-m.webp",
+
 };
 
 export function getCatalogArtwork(slug: string) {
