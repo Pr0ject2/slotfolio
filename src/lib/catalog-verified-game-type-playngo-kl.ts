@@ -29,7 +29,7 @@ const gameTypes: Record<string, CatalogVerifiedGameType> = {
   "playn-go-leprechaun-goes-wild": { gameType: "Video Slot", source: "https://www.playngo.com/games/leprechaun-goes-wild", verifiedAt },
 
   "playn-go-leprechauns-diamond-dig": { gameType: "Video Slot", source: "https://www.playngo.com/games/leprechaun's-diamond-dig", verifiedAt },
-  "playn-go-leprechauns-vault": { gameType: "Video Slot", source: "https://www.playngo.com/games/leprechaun%27s-vault", verifiedAt },
+  "playn-go-leprechauns-vault": { gameType: "Video Slot", source: "https://www.playngo.com/games/leprechaun's-vault", verifiedAt },
   "playn-go-lion-saga-odyssey": { gameType: "Video Slot", source: "https://www.playngo.com/games/lion-saga-odyssey", verifiedAt },
   "playn-go-loot-and-labyrinths": { gameType: "Video Slot", source: "https://www.playngo.com/games/loot-%26-labyrinths", verifiedAt },
   "playn-go-lord-merlin-and-the-lady-of-the-lake": { gameType: "Video Slot", source: "https://www.playngo.com/games/lord-merlin-and-the-lady-of-the-lake", verifiedAt },
