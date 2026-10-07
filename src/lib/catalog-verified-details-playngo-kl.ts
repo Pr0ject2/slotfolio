@@ -28,7 +28,7 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "playn-go-leprechaun-goes-wild": { field: "20 линий", releaseDate: "2020-02-13", source: "https://www.playngo.com/games/leprechaun-goes-wild", verifiedAt },
 
   "playn-go-leprechauns-diamond-dig": { releaseDate: "2025-08-26", source: "https://www.playngo.com/games/leprechaun's-diamond-dig", verifiedAt },
-  "playn-go-leprechauns-vault": { field: "5×3", releaseDate: "2022-08-04", source: "https://www.playngo.com/games/leprechaun%27s-vault", verifiedAt },
+  "playn-go-leprechauns-vault": { field: "5×3", releaseDate: "2022-08-04", source: "https://www.playngo.com/games/leprechaun's-vault", verifiedAt },
   "playn-go-lion-saga-odyssey": { field: "5×3 · 10 линий", releaseDate: "2024-12-05", source: "https://www.playngo.com/games/lion-saga-odyssey", verifiedAt },
   "playn-go-loot-and-labyrinths": { releaseDate: "2025-04-03", source: "https://www.playngo.com/games/loot-%26-labyrinths", verifiedAt },
   "playn-go-lord-merlin-and-the-lady-of-the-lake": { releaseDate: "2021-01-28", source: "https://www.playngo.com/games/lord-merlin-and-the-lady-of-the-lake", verifiedAt },
