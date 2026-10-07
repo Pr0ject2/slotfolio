@@ -3746,5 +3746,125 @@
     "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
     "image": "https://static.wixstatic.com/media/45df48_3a3e61a921da4cdf9d4f98b41ce63af1~mv2.webp/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/icequeenmorgana_web_hp_hero.webp",
     "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-merlin-realm-of-charm",
+    "page": "https://www.playngo.com/games/merlin-realm-of-charm",
+    "local": "/images/catalog/playn-go-merlin-realm-of-charm.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-merlin-journey-of-flame",
+    "page": "https://www.playngo.com/games/merlin%3A-journey-of-flame",
+    "local": "/images/catalog/playn-go-merlin-journey-of-flame.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-merlins-grimoire",
+    "page": "https://www.playngo.com/games/merlin's-grimoire",
+    "local": "/images/catalog/playn-go-merlins-grimoire.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-mermaids-diamond",
+    "page": "https://www.playngo.com/games/mermaid's-diamond",
+    "local": "/images/catalog/playn-go-mermaids-diamond.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-merry-xmas",
+    "page": "https://www.playngo.com/games/merry-xmas",
+    "local": "/images/catalog/playn-go-merry-xmas.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-midnight-gold",
+    "page": "https://www.playngo.com/games/midnight-gold",
+    "local": "/images/catalog/playn-go-midnight-gold.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-miner-donkey-trouble",
+    "page": "https://www.playngo.com/games/miner-donkey-trouble",
+    "local": "/images/catalog/playn-go-miner-donkey-trouble.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-mirror-joker",
+    "page": "https://www.playngo.com/games/mirror-joker",
+    "local": "/images/catalog/playn-go-mirror-joker.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-mission-cash",
+    "page": "https://www.playngo.com/games/mission-cash",
+    "local": "/images/catalog/playn-go-mission-cash.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-monkey-battle-for-the-scrolls",
+    "page": "https://www.playngo.com/games/monkey%3A-battle-for-the-scrolls",
+    "local": "/images/catalog/playn-go-monkey-battle-for-the-scrolls.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-moon-princess",
+    "page": "https://www.playngo.com/games/moon-princess",
+    "local": "/images/catalog/playn-go-moon-princess.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-moon-princess-100",
+    "page": "https://www.playngo.com/games/moon-princess-100",
+    "local": "/images/catalog/playn-go-moon-princess-100.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-moon-princess-extreme",
+    "page": "https://www.playngo.com/games/moon-princess-extreme",
+    "local": "/images/catalog/playn-go-moon-princess-extreme.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-moon-princess-origins",
+    "page": "https://www.playngo.com/games/moon-princess-origins",
+    "local": "/images/catalog/playn-go-moon-princess-origins.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-moon-princess-power-of-love",
+    "page": "https://www.playngo.com/games/moon-princess-power-of-love",
+    "local": "/images/catalog/playn-go-moon-princess-power-of-love.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-moon-princess-stargazing",
+    "page": "https://www.playngo.com/games/moon-princess-stargazing",
+    "local": "/images/catalog/playn-go-moon-princess-stargazing.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-moon-princess-trinity",
+    "page": "https://www.playngo.com/games/moon-princess-trinity",
+    "local": "/images/catalog/playn-go-moon-princess-trinity.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-moon-princess-christmas-kingdom",
+    "page": "https://www.playngo.com/games/moon-princess%3A-christmas-kingdom",
+    "local": "/images/catalog/playn-go-moon-princess-christmas-kingdom.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-motley-crue",
+    "page": "https://www.playngo.com/games/m%C3%B6tley-cr%C3%BCe",
+    "local": "/images/catalog/playn-go-motley-crue.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-mount-m",
+    "page": "https://www.playngo.com/games/mount-m",
+    "local": "/images/catalog/playn-go-mount-m.webp",
+    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
   }
 ]
