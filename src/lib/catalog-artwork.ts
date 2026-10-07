@@ -470,6 +470,27 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-leprechaun-goes-egypt": "/images/catalog/playn-go-leprechaun-goes-egypt.webp",
   "playn-go-leprechaun-goes-wild": "/images/catalog/playn-go-leprechaun-goes-wild.webp",
 
+  "playn-go-leprechauns-diamond-dig": "/images/catalog/playn-go-leprechauns-diamond-dig.webp",
+  "playn-go-leprechauns-vault": "/images/catalog/playn-go-leprechauns-vault.webp",
+  "playn-go-lion-saga-odyssey": "/images/catalog/playn-go-lion-saga-odyssey.webp",
+  "playn-go-loot-and-labyrinths": "/images/catalog/playn-go-loot-and-labyrinths.webp",
+  "playn-go-lord-merlin-and-the-lady-of-the-lake": "/images/catalog/playn-go-lord-merlin-and-the-lady-of-the-lake.webp",
+  "playn-go-lordi-reel-monsters": "/images/catalog/playn-go-lordi-reel-monsters.webp",
+  "playn-go-love-is-in-the-fair": "/images/catalog/playn-go-love-is-in-the-fair.webp",
+  "playn-go-love-joker": "/images/catalog/playn-go-love-joker.webp",
+  "playn-go-luchamigos": "/images/catalog/playn-go-luchamigos.webp",
+  "playn-go-lucky-diamonds": "/images/catalog/playn-go-lucky-diamonds.webp",
+  "playn-go-madame-ink": "/images/catalog/playn-go-madame-ink.webp",
+  "playn-go-mafia-gold": "/images/catalog/playn-go-mafia-gold.webp",
+  "playn-go-mahjong-88": "/images/catalog/playn-go-mahjong-88.webp",
+  "playn-go-manta-mayhem": "/images/catalog/playn-go-manta-mayhem.webp",
+  "playn-go-matsuri": "/images/catalog/playn-go-matsuri.webp",
+  "playn-go-medusas-madness": "/images/catalog/playn-go-medusas-madness.webp",
+  "playn-go-mega-don": "/images/catalog/playn-go-mega-don.webp",
+  "playn-go-mega-don-triple-threat": "/images/catalog/playn-go-mega-don-triple-threat.webp",
+  "playn-go-mega-don-feeding-frenzy": "/images/catalog/playn-go-mega-don-feeding-frenzy.webp",
+  "playn-go-merlin-and-the-ice-queen-morgana": "/images/catalog/playn-go-merlin-and-the-ice-queen-morgana.webp",
+
 };
 
 export function getCatalogArtwork(slug: string) {

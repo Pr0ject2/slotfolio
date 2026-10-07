@@ -1302,6 +1302,247 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       { title: "Sticky Wild Free Spins", description: "Три Scatters запускают Free Spins; выпавшие Leprechaun Wild фиксируются до конца серии, а бонус можно retrigger один раз." }
     ],
   },
+
+  "playn-go-leprechauns-diamond-dig": {
+    intro: [
+      "Leprechaun's Diamond Dig строит раунд вокруг двух вагонеток над барабанами. Когда появляется лепрекон, соответствующая Lucky Minecart становится активной и собирает значения Diamond symbols под собой.",
+      "Если обе активные вагонетки сходятся над одним барабаном, срабатывает Mega Blast и собирает Diamonds со всех пяти барабанов. Три и более Leprechaun Scatters дают 10 Free Spins, где обе вагонетки постоянно активны."
+    ],
+    editorial: "Главная прогрессия Diamond Dig находится внутри Free Spins: Lucky Clovers заряжают шкалу Mega Blast и одновременно добавляют вращения, поэтому множитель и длина бонуса растут одной системой.",
+    features: [
+      { title: "Lucky Minecarts", description: "Две вагонетки движутся над барабанами; появление лепрекона активирует вагонетку, которая собирает значения Diamonds под своей позицией." },
+      { title: "Mega Blast", description: "Совпадение двух активных вагонеток над одним барабаном собирает Diamonds сразу со всех пяти барабанов." },
+      { title: "Шкала Mega Blast", description: "Во Free Spins Lucky Clovers поднимают множитель Mega Blast по ступеням x2, x5, x10 и x25 и добавляют дополнительные вращения, всего максимум до 30." }
+    ],
+  },
+  "playn-go-leprechauns-vault": {
+    intro: [
+      "Leprechaun's Vault использует классическое поле 5×3, но число Free Spins заранее не фиксировано. Отдельные цифры кода на двери хранилища складываются и определяют длину бонусной серии.",
+      "Внутри хранилища три центральных барабана становятся золотыми. Wild, попавшие на эти барабаны, превращаются в Sticky Wild и остаются до конца Free Spins, а отдельные Wild могут нести множители."
+    ],
+    editorial: "В этой игре ключевой момент не сам вход в бонус, а стартовая конфигурация кода: она задаёт число вращений, после чего Sticky Wild постепенно меняют три центральных барабана.",
+    features: [
+      { title: "Код хранилища", description: "Числа на двери складываются в общее количество Free Spins, поэтому серия может начинаться с разной длиной." },
+      { title: "Sticky Wild", description: "Wild на трёх золотых центральных барабанах закрепляются и остаются на своих позициях до конца бонуса." },
+      { title: "Wild Multipliers", description: "В бонусной серии Wild могут приходить с множителями и усиливать выигрышные комбинации, в которых участвуют." }
+    ],
+  },
+  "playn-go-lion-saga-odyssey": {
+    intro: [
+      "Lion Saga Odyssey работает на поле 5×3 с 10 линиями. Три и более Scatter запускают 8 Free Spins, а дополнительные Scatter способны повторно продлевать серию до общего лимита выигрыша.",
+      "Перед бонусом один обычный символ выбирается как Special Expanding Symbol. Во Free Spins он расширяется на весь барабан, если его количества достаточно для стандартной выигрышной комбинации."
+    ],
+    editorial: "Lion Saga Odyssey использует знакомую формулу expanding-symbol, но здесь выбранный special symbol остаётся одним и тем же на всю бонусную серию. Это важнее визуального сходства с другими приключенческими слотами.",
+    features: [
+      { title: "8 Free Spins", description: "Три и более Scatter запускают восемь бесплатных вращений; новые Scatter могут продлевать бонус." },
+      { title: "Special Expanding Symbol", description: "Один обычный symbol выбирается перед бонусом и расширяется на весь reel, когда его количества хватает для выигрышной комбинации." },
+      { title: "Повторный запуск", description: "Дополнительные Scatter во Free Spins добавляют вращения, пока не достигнут установленный для игры общий лимит выигрыша." }
+    ],
+  },
+  "playn-go-loot-and-labyrinths": {
+    intro: [
+      "Loot & Labyrinths добавляет в базовую игру Random Encounter: специальный символ на первом барабане запускает одно из трёх событий, а символы в той же строке формируют параметры столкновения.",
+      "В Monster Attack, Treasure Lair и Tavern Night бросок кубика определяет исход и множитель. Критический результат 20 усиливает награду, а три Scatter открывают отдельные Dungeon Free Spins."
+    ],
+    editorial: "Здесь мини-игры базовой части и Dungeon Free Spins используют разные системы. Random Encounter зависит от строки и броска кубика, а бонус строится вокруг заранее выбранных усилений и накопления Attack Icons.",
+    features: [
+      { title: "Random Encounter", description: "Специальный символ на первом барабане запускает Monster Attack, Treasure Lair или Tavern Night с отдельными правилами риска и награды." },
+      { title: "Критический бросок", description: "Результат 20 считается критическим и способен увеличить множитель награды от x2 вплоть до x5." },
+      { title: "Dungeon Free Spins", description: "Три Scatter открывают бонус: перед стартом выбираются три усиления, а Attack Icons во время серии двигают общий множитель по ступеням x2, x5, x20 и x100." }
+    ],
+  },
+  "playn-go-lord-merlin-and-the-lady-of-the-lake": {
+    intro: [
+      "Lord Merlin and The Lady of The Lake использует поле 5×3 и 10 линий. Три и более Excalibur Scatters запускают 8 Free Spins, где перед каждым этапом выбирается Special Expanding Symbol.",
+      "Во Free Spins Excalibur одновременно становится Wild Scatter. Два Excalibur запускают Nested Free Spins: текущая серия ставится на паузу, выбранный expanding symbol фиксируется, а вложенный бонус можно продлевать повторными двумя Excalibur."
+    ],
+    editorial: "Особенность этой версии Merlin именно в структуре бонуса внутри бонуса. Nested Free Spins не заменяют основную серию, а временно вкладываются в неё и сохраняют выбранный expanding symbol.",
+    features: [
+      { title: "Excalibur Free Spins", description: "Три и более Excalibur запускают восемь вращений, а сам Excalibur в бонусе работает как Wild Scatter." },
+      { title: "Special Expanding Symbol", description: "Случайный обычный symbol становится special и может расширяться на весь reel при достаточном числе совпадений." },
+      { title: "Nested Free Spins", description: "Два Excalibur внутри бонуса открывают вложенную серию с закреплённым expanding symbol; ещё два способны повторно её продлить." }
+    ],
+  },
+  "playn-go-lordi-reel-monsters": {
+    intro: [
+      "Lordi Reel Monsters построен как поле 7×7, где участники группы уничтожают совпавшие symbols и каждый персонаж отвечает за собственный эффект. Это не обычная линейная структура.",
+      "Charge Metre и Free Spins образуют основную прогрессию. При входе в Free Spins игрок выбирает одну из двух песен Lordi, и выбранный вариант определяет оформление и ход бонусной серии."
+    ],
+    editorial: "У Lordi Reel Monsters музыкальная тема встроена в механику, а не приклеена поверх неё: выбор песни происходит прямо перед Free Spins, а функции участников группы работают на сетке.",
+    features: [
+      { title: "Поле 7×7", description: "Совпавшие symbols разрушаются на большой сетке, а разные участники Lordi запускают собственные эффекты." },
+      { title: "Charge Metre", description: "Шкала заряда участвует в развитии раунда и ведёт к усиленным игровым событиям." },
+      { title: "Выбор песни в Free Spins", description: "Перед бонусом выбирается одна из двух композиций Lordi, после чего серия разворачивается на grid-поле." }
+    ],
+  },
+  "playn-go-love-is-in-the-fair": {
+    intro: [
+      "Love is in the Fair использует поле 5×3 и постоянную Love Map. Romantic Pics двигают пару по карте ярмарки и открывают всё более сильные ступени множителя.",
+      "Love Cam Wild может появляться с множителем до x100. Три и более Scatter запускают Free Spins, а каждые дополнительные три Romantic Pics внутри бонуса добавляют вращения и повышают доступный множитель."
+    ],
+    editorial: "Здесь Love Map связывает долгую прогрессию и Free Spins: те же Romantic Pics, которые двигают карту, в бонусе одновременно продлевают серию и поднимают множитель.",
+    features: [
+      { title: "Love Map", description: "Romantic Pics сохраняют прогресс по карте и последовательно открывают ступени множителей до x100." },
+      { title: "Love Cam Wild", description: "Wild способен приходить с множителями x2, x3, x5, x10 или x100 и усиливать соответствующую комбинацию." },
+      { title: "Free Spins", description: "Три Scatter запускают бонус; каждые три дополнительных Romantic Pics добавляют три вращения и переводят множитель на следующую ступень." }
+    ],
+  },
+  "playn-go-love-joker": {
+    intro: [
+      "Love Joker работает на компактном поле 3×3. Love Joker Scatter запускает Love Re-Spins, а над барабанами идёт отдельный сбор Hearts и Golden Hearts.",
+      "Пять обычных Hearts повышают текущий множитель, а Golden Hearts удваивают его. Поэтому серия re-spin зависит не только от выпавших symbols, но и от накопления сердечек над полем."
+    ],
+    editorial: "Love Joker отличается от Love is in the Fair полностью другой логикой: здесь нет Love Map. Центральная система — Love Re-Spins и две категории Hearts, которые по-разному усиливают multiplier.",
+    features: [
+      { title: "Love Re-Spins", description: "Love Joker Scatter запускает повторные вращения, в которых продолжается сбор сердечек." },
+      { title: "Обычные Hearts", description: "Собранные Hearts накапливаются над reels; каждые пять повышают текущий multiplier." },
+      { title: "Golden Hearts", description: "Golden Heart не просто добавляется к счётчику, а удваивает текущий множитель серии." }
+    ],
+  },
+  "playn-go-luchamigos": {
+    intro: [
+      "Luchamigos использует поле 5×4 с выплатами за совпадающие symbols на соседних барабанах. Три персонажа-лучадора связаны с разными Wild-эффектами.",
+      "Power Chili Spins запускаются сочетанием Luchamigo Wild и Chili Scatter. Один герой добавляет stacked Wild на барабан, второй создаёт 2×2 Mega Wild, третий расставляет четыре случайных Wild."
+    ],
+    editorial: "У Luchamigos персонаж определяет конкретное поведение Wild, поэтому три лучадора нельзя считать декоративными вариантами одного symbol. Ultimate Meter затем усиливает именно эту систему.",
+    features: [
+      { title: "Power Chili Spins", description: "Luchamigo Wild вместе с Chili Scatter открывает серию, где активируется способность соответствующего героя." },
+      { title: "Три Wild-способности", description: "Персонажи дают stacked Wild, блок 2×2 Mega Wild или четыре Wild на случайных позициях." },
+      { title: "Ultimate Meter", description: "Заполнение шкалы открывает усиленные состояния, включая Ultimate Hot Spin с дополнительным вращением и гарантированным Wild-выигрышем." }
+    ],
+  },
+  "playn-go-lucky-diamonds": {
+    intro: [
+      "Lucky Diamonds — ранний трёхбарабанный слот с одной линией. Diamond Wild заменяет обычные symbols и одновременно меняет множитель выплаты.",
+      "Один Diamond Wild удваивает обычный выигрыш, два Diamonds увеличивают его в четыре раза. Комбинация из трёх Diamonds рассчитывается отдельно по собственной таблице выплат."
+    ],
+    editorial: "Lucky Diamonds полезен как чистый пример multiplier Wild без сложной бонусной архитектуры. Здесь вся специфика сводится к тому, сколько Diamond Wild участвует в одной линейной комбинации.",
+    features: [
+      { title: "Одна линия", description: "Игра использует три барабана и одну фиксированную линию, поэтому результат читается без дополнительных ways или cluster-правил." },
+      { title: "Diamond Wild x2", description: "Один Diamond Wild заменяет обычный symbol и удваивает стандартный выигрыш линии." },
+      { title: "Два Diamonds x4", description: "Два Diamond Wild в одной выигрышной комбинации увеличивают обычную выплату в четыре раза; три Diamonds имеют отдельную выплату." }
+    ],
+  },
+  "playn-go-madame-ink": {
+    intro: [
+      "Madame Ink работает на поле 5×3 и использует две случайные функции. Wild Ink может разлить чернила от выпавшего Wild и заполнить Wild-symbols весь соответствующий барабан.",
+      "Madame's Mystery помещает mystery symbol на средний барабан, превращает его в stack одинаковых дорогих symbols и меняет остальные такие symbols на поле в тот же тип. Три Scatter открывают выбор из трёх режимов Free Spins."
+    ],
+    editorial: "Выбор бонуса здесь действительно меняет механику серии: можно взять больше вращений только с Wild Ink, меньше с Mystery Reel или короткий вариант, где обе функции гарантированы на каждом spin.",
+    features: [
+      { title: "Wild Ink", description: "Случайно выпавший Wild может разлиться и превратить весь свой барабан в Wild." },
+      { title: "Madame's Mystery", description: "Mystery symbol на среднем reel становится stack одного дорогого symbol и преобразует совпадающие дорогие symbols на остальных reels." },
+      { title: "Три режима Free Spins", description: "Доступны 12 вращений только с Wild Ink, 6 только с Mystery Reel или 3 вращения, где обе функции активны на каждом spin." }
+    ],
+  },
+  "playn-go-mafia-gold": {
+    intro: [
+      "Mafia Gold работает на поле 5×4. Feature Reel активируется, когда Mafia Boss с золотой рамкой оказывается в той же строке, а случайный Drive-By способен добавить от трёх до восьми Wild.",
+      "До пяти Scatters дают до 20 Free Spins. В бонусе bullets уменьшают запас жизни четырёх участников мафии; каждый побеждённый персонаж добавляет пять вращений и превращает свой symbol в Mafia Boss."
+    ],
+    editorial: "Cash Hit Feature открывается только после победы над всей четвёркой. Поэтому бонус разворачивается как пошаговое устранение четырёх целей, а не как один стандартный Free Spins-модификатор.",
+    features: [
+      { title: "Drive-By", description: "Случайная функция расставляет на поле от трёх до восьми Wild и меняет текущий раунд до подсчёта результата." },
+      { title: "Охота в Free Spins", description: "Bullets уменьшают по 10 единиц жизни у четырёх mafia members; каждый побеждённый персонаж добавляет 5 Free Spins и становится Mafia Boss." },
+      { title: "Cash Hit Feature", description: "После победы над всеми четырьмя открывается Feature Reel, где золотые Mafia Boss собирают безопасные prize values в своей строке." }
+    ],
+  },
+  "playn-go-mahjong-88": {
+    intro: [
+      "Mahjong 88 — поле 8×8 с cluster wins: для выплаты нужны четыре и более одинаковых tiles, соединённых по вертикали или горизонтали. Обычных каскадов здесь нет: новые tiles раскрываются из-под исчезнувших.",
+      "Четыре Seasonal Wilds связаны с весной, летом, осенью и зимой и ведут себя по-разному. Размер выигрышных clusters также заряжает Mahjong Meter и приводит к дополнительным событиям."
+    ],
+    editorial: "Mahjong 88 важно не путать с типичной cascade-grid игрой. После удаления выигрышных tiles новые элементы раскрываются снизу, а не падают сверху стандартным каскадом.",
+    features: [
+      { title: "Clusters от четырёх symbols", description: "Выигрыш формируют группы из четырёх и более одинаковых tiles, соединённых сторонами на сетке 8×8." },
+      { title: "Seasonal Wilds", description: "Весенний, летний, осенний и зимний Wild имеют разные эффекты: от добавления symbols до разрушения соседних tiles и закрепления." },
+      { title: "Mahjong Meter", description: "Крупные выигрышные clusters заряжают шкалу, которая может открыть дополнительные события, включая Fortune Frog и Super Charge." }
+    ],
+  },
+  "playn-go-manta-mayhem": {
+    intro: [
+      "Manta Mayhem строится вокруг Pearl Collection. Pearls появляются максимум по одной на барабан и собираются Manta Ray; их видимая история на поле показывает прогресс, но сама по себе не меняет шанс следующего trigger.",
+      "Clam the Prize может случайно запустить 6, 8 или 10 Free Spins и выдать 3, 4 или 5 усилителей. Перед бонусом игрок выбирает соответствующее число жемчужин с разными modifiers."
+    ],
+    editorial: "Сила бонуса Manta Mayhem задаётся до первого Free Spin: выбранные boosters действуют всю серию. Это отдельная система от Pearl Collection и её визуального накопления.",
+    features: [
+      { title: "Pearl Collection", description: "Pearls собираются скатом; на одном reel может появиться не больше одной Pearl, а три видимых жемчужины служат отображением прогресса." },
+      { title: "Clam the Prize", description: "Функция назначает 6/8/10 Free Spins и 3/4/5 boosters; режим GO Ultra добавляет ещё одно вращение и дополнительный booster." },
+      { title: "Постоянные boosters", description: "Перед бонусом можно получить дополнительные spins, stacked symbols, sticky Wild на reels 2–4, превращение symbol в Wild, случайные Wild или multiplier x2/x5/x10." }
+    ],
+  },
+  "playn-go-matsuri": {
+    intro: [
+      "Matsuri использует пять барабанов и 25 линий. Paper Lantern выступает Wild, а три Festival Masks на reels 1, 3 и 5 запускают 8 Free Spins; каждый дополнительный mask добавляет ещё два.",
+      "Во Free Spins Paper Lantern расширяется на весь reel и на следующем spin сдвигается на один барабан влево, пока не покинет поле. Отдельно три Goldfish на reels 2–4 запускают pick-бонус kingyo sukui."
+    ],
+    editorial: "Matsuri разделяет два бонуса по разным symbols: Festival Masks отвечают за движущийся Expanding Wild в Free Spins, а Goldfish открывают отдельный выбор призов.",
+    features: [
+      { title: "Festival Mask Free Spins", description: "Три masks на reels 1, 3 и 5 дают восемь Free Spins, а каждый дополнительный mask добавляет два вращения." },
+      { title: "Движущийся Paper Lantern Wild", description: "Wild расширяется на весь reel и после каждого следующего spin перемещается на один барабан влево до выхода с поля." },
+      { title: "Kingyo sukui", description: "Три Goldfish на reels 2, 3 и 4 запускают отдельный pick-бонус, оформленный как фестивальная ловля золотых рыбок." }
+    ],
+  },
+  "playn-go-medusas-madness": {
+    intro: [
+      "Medusa's Madness использует поле 5×5 с каскадами. Выигрышные symbols исчезают, новые заполняют пустоты, а последовательность cascades заряжает Portal.",
+      "Portal Effects включают, среди прочего, Petrify с очисткой строк и столбцов и Gaze с удалением выбранного типа symbols. Цепочка из 42 выигрышных symbols открывает Other World Free Round."
+    ],
+    editorial: "Основной ресурс Medusa's Madness — заряд Portal. Каскады здесь нужны не только для повторных выигрышей: они постепенно открывают набор эффектов и ведут к отдельному Other World раунду.",
+    features: [
+      { title: "Каскады 5×5", description: "После выигрыша symbols удаляются, пустые позиции заполняются новыми, а цепочка продолжается, пока формируются новые комбинации." },
+      { title: "Portal Effects", description: "Petrify очищает строки и столбцы, Gaze убирает выбранный тип symbols, а другие эффекты меняют сетку по своим правилам." },
+      { title: "Other World Free Round", description: "После 42 выигрышных symbols открывается отдельный раунд с тремя случайными Portal Effects; дополнительный заряд способен добавить новые эффекты." }
+    ],
+  },
+  "playn-go-mega-don": {
+    intro: [
+      "Mega Don строится вокруг трансформации символов и постепенного усиления их ценности. Три Scatter запускают Free Spins и одновременно открывают symbol upgrades.",
+      "Чем больше Scatters выпало на входе, тем больше стартовых Free Spins и улучшений. Новые Scatters внутри бонуса дают retrigger и продолжают цепочку symbol transformations."
+    ],
+    editorial: "В оригинальном Mega Don центральная идея — не выбор одного из трёх акул, как в Feeding Frenzy, и не три отдельных Feast, как в Triple Threat. Здесь всё держится на upgrade-прогрессии symbols через Scatter.",
+    features: [
+      { title: "Три Scatter", description: "Три Scatter открывают Free Spins и запускают первую ступень symbol upgrades." },
+      { title: "Больше Scatter — больше усилений", description: "Дополнительные Scatter при запуске увеличивают число Free Spins и количество доступных улучшений symbols." },
+      { title: "Retrigger и трансформация", description: "Scatter внутри Free Spins продлежают бонус и продолжают преобразование symbols, повышая их роль в следующих spins." }
+    ],
+  },
+  "playn-go-mega-don-triple-threat": {
+    intro: [
+      "Mega Don Triple Threat использует три цвета Scatter и отдельные Hangry Meters для Leopard, Hammerhead и Mega Don. Шкалы показывают накопление, но не обещают, что соответствующий Feast сработает на следующем spin.",
+      "Каждая акула имеет собственный восьмиспиновый или шестиспиновый сценарий: Leopard создаёт Wild после поедания рыб, Hammerhead превращает Electric Eel Wild в multiplier Wild, Mega Don постепенно активирует дополнительные виды рыб."
+    ],
+    editorial: "Название Triple Threat буквально описывает механику: несколько Feast могут запуститься одновременно. Если среди них есть Mega Don, его ветка сохраняет возможность retrigger, тогда как отдельные Leopard и Hammerhead Feast не продлеваются.",
+    features: [
+      { title: "Hangry Meters", description: "Три цветных Scatter питают шкалы трёх акул и показывают прогресс каждой ветки, не меняя заявленную вероятность следующего trigger." },
+      { title: "Leopard и Hammerhead Feast", description: "Leopard превращает съеденных рыб в Wild, а Hammerhead усиливает Electric Eel Wild множителями x2, которые складываются в одном выигрыше." },
+      { title: "Mega Don Feast", description: "Mega Don начинает с одного активного вида fish; три blue Scatters добавляют три spins и открывают новый вид, максимум до шести и 30 Free Spins." }
+    ],
+  },
+  "playn-go-mega-don-feeding-frenzy": {
+    intro: [
+      "Mega Don: Feeding Frenzy работает на поле 5×4. В базовой игре случайный Snack Time выбирает от одного до трёх обычных symbols, превращает их в дорогие shark symbols, после чего выбранный symbol расширяется.",
+      "Три и более Scatter запускают Shark Feast. Игрок выбирает Leopard, Hammerhead или Mega Don и получает соответственно 10, 8 или 6 Free Spins; выбранная акула становится stacked symbol."
+    ],
+    editorial: "Feeding Frenzy отличается от оригинального Mega Don выбором акулы перед бонусом. Чем сильнее выбранный predator по структуре feature, тем меньше стартовых Free Spins, а retrigger ограничен общей серией до 20.",
+    features: [
+      { title: "Snack Time", description: "Случайная базовая функция выбирает 1–3 обычных symbols, превращает их в более дорогой shark symbol и расширяет выбранный тип." },
+      { title: "Shark Feast", description: "Leopard даёт 10 Free Spins, Hammerhead 8, Mega Don 6; выбранная акула становится stacked symbol на время серии." },
+      { title: "Retrigger до 20 spins", description: "Новые Scatter способны продлевать Shark Feast, но общая длина бонуса ограничена двадцатью Free Spins." }
+    ],
+  },
+  "playn-go-merlin-and-the-ice-queen-morgana": {
+    intro: [
+      "Merlin and the Ice Queen Morgana использует поле 5×3 и Expanding Symbols. Перед Free Spins один обычный symbol выбирается как Special Expanding Symbol и остаётся таким на всю серию.",
+      "Merlin's Staff работает как Scatter Wild, а Morgana Special Wild может появиться одиночным, двойным или полным stack на одном reel. Полный stack активирует отдельный multiplier."
+    ],
+    editorial: "Здесь два персонажа разделены по функциям: Merlin связан с Scatter Wild и входом в бонус, Morgana — с особым Wild и multiplier. Поэтому их эффекты не стоит описывать как один общий expanding-Wild.",
+    features: [
+      { title: "Special Expanding Symbol", description: "Перед бонусом выбирается один обычный symbol; если его количества достаточно для выигрыша, он расширяется на весь reel даже без полной последовательности соседних позиций." },
+      { title: "Merlin's Staff", description: "Посох Мерлина одновременно выполняет роль Scatter и Wild, связывая запуск Free Spins с заменой обычных symbols." },
+      { title: "Morgana Special Wild", description: "Morgana появляется на одном reel в размере 1, 2 или полного stack; полный stack активирует multiplier для соответствующего события." }
+    ],
+  },
 };
 
 function getCatalogEditorial(slug: string) {

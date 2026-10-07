@@ -26,6 +26,17 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "playn-go-legion-gold-unleashed": { releaseDate: "2024-02-29", source: "https://www.playngo.com/games/legion-gold-unleashed", verifiedAt },
   "playn-go-leprechaun-goes-egypt": { field: "до 20 линий", releaseDate: "2013-03-25", source: "https://www.playngo.com/games/leprechaun-goes-egypt", verifiedAt },
   "playn-go-leprechaun-goes-wild": { field: "20 линий", releaseDate: "2020-02-13", source: "https://www.playngo.com/games/leprechaun-goes-wild", verifiedAt },
+
+  "playn-go-leprechauns-diamond-dig": { releaseDate: "2025-08-26", source: "https://www.playngo.com/games/leprechaun's-diamond-dig", verifiedAt },
+  "playn-go-leprechauns-vault": { field: "5×3", releaseDate: "2022-08-04", source: "https://www.playngo.com/games/leprechaun's-vault", verifiedAt },
+  "playn-go-lion-saga-odyssey": { field: "5×3 · 10 линий", releaseDate: "2024-12-05", source: "https://www.playngo.com/games/lion-saga-odyssey", verifiedAt },
+  "playn-go-loot-and-labyrinths": { releaseDate: "2025-04-03", source: "https://www.playngo.com/games/loot-%26-labyrinths", verifiedAt },
+  "playn-go-lord-merlin-and-the-lady-of-the-lake": { releaseDate: "2021-01-28", source: "https://www.playngo.com/games/lord-merlin-and-the-lady-of-the-lake", verifiedAt },
+  "playn-go-lordi-reel-monsters": { field: "7×7", releaseDate: "2022-04-28", source: "https://www.playngo.com/games/lordi-reel-monsters", verifiedAt },
+  "playn-go-love-is-in-the-fair": { field: "5×3", releaseDate: "2024-02-01", source: "https://www.playngo.com/games/love-is-in-the-fair", verifiedAt },
+  "playn-go-love-joker": { releaseDate: "2022-01-20", source: "https://www.playngo.com/games/love-joker", verifiedAt },
+  "playn-go-luchamigos": { field: "5×4 · выплаты по соседним барабанам", releaseDate: "2023-05-11", source: "https://www.playngo.com/games/luchamigos", verifiedAt },
+  "playn-go-lucky-diamonds": { field: "3 барабана · 1 линия", releaseDate: "2012-11-29", source: "https://www.playngo.com/games/lucky-diamonds", verifiedAt },
 };
 
 export function getCatalogVerifiedDetailsPlayngoKL(slug: string) {
