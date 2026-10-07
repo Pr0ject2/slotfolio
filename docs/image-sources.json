@@ -3369,7 +3369,9 @@
     "slug": "playn-go-jolly-roger",
     "page": "https://www.playngo.com/games/jolly-roger",
     "local": "/images/catalog/playn-go-jolly-roger.webp",
-    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request."
+    "note": "Reviewed gameplay screenshot for the 2012 Play’n GO Jolly Roger game; first-party Play’n GO game page remains the dossier source. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.casino.guru/pict/22589/Jolly-Roger-Free-Slots.jpg?imageDataId=10685&timestamp=1653384780000&width=838",
+    "requireExplicitImage": true
   },
   {
     "slug": "playn-go-jolly-roger-2",
@@ -3381,9 +3383,11 @@
   },
   {
     "slug": "playn-go-jolly-roger-wild-kraken",
-    "page": "https://www.playngo.com/post/jolly-roger-wild-kraken",
+    "page": "https://www.playngo.com/games/jolly-roger-wild-kraken",
     "local": "/images/catalog/playn-go-jolly-roger-wild-kraken.webp",
-    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request."
+    "note": "Reviewed gameplay screenshot for Play’n GO Jolly Roger Wild Kraken; first-party Play’n GO game page remains the dossier source. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://hideousslots.com/wp-content/uploads/2025/01/Jolly-Roger-Wild-Kraken-1-scaled.jpg",
+    "requireExplicitImage": true
   },
   {
     "slug": "playn-go-journey-to-paris",
