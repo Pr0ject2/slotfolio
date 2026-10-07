@@ -17,7 +17,7 @@ const slots = [
   ["playn-go-legion-gold-and-the-sphinx-of-dead", "3×3 Mega Symbol"],
   ["playn-go-legion-gold-and-the-throne-of-dead", "Coin Chest"],
   ["playn-go-legion-gold-reckoning", "GO Ultra"],
-  ["playn-go-legion-gold-unleashed", "three initial re-spins"],
+  ["playn-go-legion-gold-unleashed", "три initial re-spins"],
   ["playn-go-legion-gold-victory", "Instant Prize Coins"],
   ["playn-go-leprechaun-goes-egypt", "Cleopatra"],
   ["playn-go-leprechaun-goes-wild", "Luck of the Irish"]
