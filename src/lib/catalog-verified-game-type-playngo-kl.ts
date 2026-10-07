@@ -27,6 +27,17 @@ const gameTypes: Record<string, CatalogVerifiedGameType> = {
   "playn-go-legion-gold-victory": { gameType: "Video Slot", source: "https://www.playngo.com/games/legion-gold-victory!", verifiedAt },
   "playn-go-leprechaun-goes-egypt": { gameType: "Video Slot", source: "https://www.playngo.com/games/leprechaun-goes-egypt", verifiedAt },
   "playn-go-leprechaun-goes-wild": { gameType: "Video Slot", source: "https://www.playngo.com/games/leprechaun-goes-wild", verifiedAt },
+
+  "playn-go-leprechauns-diamond-dig": { gameType: "Video Slot", source: "https://www.playngo.com/games/leprechaun's-diamond-dig", verifiedAt },
+  "playn-go-leprechauns-vault": { gameType: "Video Slot", source: "https://www.playngo.com/games/leprechaun%27s-vault", verifiedAt },
+  "playn-go-lion-saga-odyssey": { gameType: "Video Slot", source: "https://www.playngo.com/games/lion-saga-odyssey", verifiedAt },
+  "playn-go-loot-and-labyrinths": { gameType: "Video Slot", source: "https://www.playngo.com/games/loot-%26-labyrinths", verifiedAt },
+  "playn-go-lord-merlin-and-the-lady-of-the-lake": { gameType: "Video Slot", source: "https://www.playngo.com/games/lord-merlin-and-the-lady-of-the-lake", verifiedAt },
+  "playn-go-lordi-reel-monsters": { gameType: "Grid Slot", source: "https://www.playngo.com/games/lordi-reel-monsters", verifiedAt },
+  "playn-go-love-is-in-the-fair": { gameType: "Video Slot", source: "https://www.playngo.com/games/love-is-in-the-fair", verifiedAt },
+  "playn-go-love-joker": { gameType: "Video Slot", source: "https://www.playngo.com/games/love-joker", verifiedAt },
+  "playn-go-luchamigos": { gameType: "Video Slot", source: "https://www.playngo.com/games/luchamigos", verifiedAt },
+  "playn-go-lucky-diamonds": { gameType: "Video Slot", source: "https://www.playngo.com/games/lucky-diamonds", verifiedAt },
 };
 
 export function getVerifiedCatalogGameTypePlayngoKL(slug: string) {
