@@ -878,6 +878,167 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     features:[{title:"Cat God meters и расширение 5×4",description:"Bastet, Mafdet и Sekhmet превращают kittens в Expanding Wilds; во Free Spins grid растёт с 5×3 до 5×4 и включается отдельный Multiplier chest."}]
   },
 
+  "playn-go-imperial-opera": {
+    intro:[
+      "Imperial Opera — five-reel slot с 20 paylines, где Showcase на каждом spin добавляет stack случайного symbol. Crescendo случайно превращает один или два reels полностью в Wilds, а Harmony синхронизирует два или три reels.",
+      "Если Harmony охватывает три reels, на них может появиться 3×3 Golden Gong Mega Scatter. Он запускает 10 Free Spins, где reels 2–4 вращаются синхронно, а повторный Mega Scatter добавляет ещё 10 spins."
+    ],
+    editorial:"Imperial Opera строит bonus не вокруг одной случайной замены symbol, а вокруг трёх разных уровней синхронизации reels. Showcase работает постоянно, Crescendo усиливает отдельные spins, а Harmony открывает дорогу к Mega Scatter и Free Spins.",
+    features:[{title:"Showcase, Crescendo и Harmony",description:"Showcase добавляет stacked symbol на каждом spin, Crescendo превращает 1–2 reels в Wilds, Harmony синхронизирует 2–3 reels и может вывести 3×3 Golden Gong Mega Scatter."}]
+  },
+  "playn-go-infernal-trinity-go-guaranteed": {
+    intro:[
+      "Infernal Trinity GO Guaranteed использует три Phoenix Tear Scatter colours. Сбор слёз пробуждает Blue, Red и Purple phoenix, и каждый запускает собственный Hold and Spin modifier; несколько phoenix могут активироваться одновременно.",
+      "Blue расширяет reels, Red повышает coin values, Purple гарантирует jackpot coin. Отдельная GO Guaranteed ladder растёт, когда все три Tear colours выпадают на одном spin: фиксированные ступени идут от x10 до x100, а GO Ultra расширяет ladder до x120."
+    ],
+    editorial:"Здесь Hold and Spin не один и тот же при каждом trigger: итог зависит от того, какие phoenix проснулись одновременно. GO Guaranteed работает отдельной progression-системой и сбрасывается, когда все три phoenix features соединяются в одном Hold and Spin.",
+    features:[{title:"Три Phoenix и GO Guaranteed",description:"Blue расширяет reels, Red повышает coin values, Purple гарантирует jackpot coin; все три Tear colours на одном spin двигают guaranteed-win ladder от x10 до x100, а GO Ultra — до x120."}]
+  },
+  "playn-go-inferno-joker": {
+    intro:[
+      "Inferno Joker использует Wild Joker для обычных paylines и отдельный Joker Scatter, который появляется только на reel 3. Его появление сразу запускает Inferno Joker Re-Spins.",
+      "В Re-Spins все Inferno Jokers превращаются в Scatters. Reel с новым Scatter удерживается, остальные reels продолжают re-spin; серия заканчивается, когда новый Joker не выпал или когда Scatter занял все пять reels. Полное заполнение даёт x2500 исходной ставки."
+    ],
+    editorial:"Inferno Joker превращает re-spin в последовательное удержание reels. Здесь важна не сумма Scatters в одном кадре, а постепенное заполнение всех пяти reels через повторные spins.",
+    features:[{title:"Inferno Joker Re-Spins",description:"Joker Scatter на reel 3 запускает серию; reels с Inferno Joker Scatters удерживаются, а полное заполнение пяти reels завершает feature выплатой x2500."}]
+  },
+  "playn-go-inferno-star": {
+    intro:[
+      "Inferno Star работает на 5×3 и пяти paylines. Raging Sun Scatter появляется на третьем reel и запускает Raging Suns Re-Spin.",
+      "Все Sun symbols, выпавшие во время feature, становятся Raging Suns; reel с таким symbol удерживается, остальные reels re-spin. Серия продолжается, пока не перестанут появляться новые Suns или пока не будут удержаны все reels. После обычного win также доступен Gamble с x2 за цвет и x4 за масть."
+    ],
+    editorial:"Inferno Star использует тот же принцип накопительного удержания reels, но через Sun symbols. Feature заканчивается естественно при остановке цепочки, поэтому каждый новый Sun продлевает текущую попытку.",
+    features:[{title:"Raging Suns Re-Spin",description:"Raging Sun на reel 3 запускает feature; новые Suns превращаются в Raging Suns и удерживают соответствующие reels, пока цепочка не остановится или не будут собраны все пять reels."}]
+  },
+  "playn-go-invading-vegas": {
+    intro:[
+      "Invading Vegas соединяет Free Spins, Lock On Re-Spin, Walking Wilds и Expanding Wilds. Три Flying Saucer Scatters запускают 12 Free Spins с возможностью retrigger.",
+      "Lock On Re-Spin включается, когда reels 1 и 2 полностью заполнены одинаковыми stacked symbols или Wilds, но reel 3 не завершает комбинацию. В этом режиме reel 3 получает second chance, а Stacked Wild может превратиться в Walking Wild. Во Free Spins Walking Wild движется влево, в Lock On — вправо."
+    ],
+    editorial:"Оригинальный Invading Vegas различает направление Walking Wild по режиму. Это не тот же набор правил, что в Revenge on Mars или Las Christmas: здесь центральная идея — переворот reels и second-chance Lock On Re-Spin.",
+    features:[{title:"Lock On Re-Spin и Walking Wild",description:"3 Flying Saucers дают 12 Free Spins; stacked reels 1–2 могут запустить Lock On для reel 3, а Walking Wild меняет направление между Free Spins и Lock On mode."}]
+  },
+  "playn-go-invading-vegas-revenge-on-mars": {
+    intro:[
+      "Revenge on Mars — five-reel, 20-payline sequel с Walking Wilds и Mystery Symbols. Walking Wilds активируются, когда full symbol stacks появляются на reels 1–2 или 4–5 без winning payline.",
+      "Walking Wild проходит по reels и оставляет Mystery Symbols; multipliers могут доходить до x10 и складываться. Три Space Car Scatters дают 12 Free Spins, которые можно retrigger-ить вплоть до 120 spins."
+    ],
+    editorial:"Revenge on Mars перестраивает механику вокруг пар крайних reels и следа Mystery Symbols. В отличие от оригинала, ключевой progression здесь — Walking Wild + multipliers, а не переворот reels в Lock On режиме.",
+    features:[{title:"Walking Wilds с Mystery trail",description:"Full stacks на reels 1–2 или 4–5 могут запустить Walking Wild, который оставляет Mystery Symbols; 3 Space Cars дают 12 Free Spins с retrigger максимум до 120."}]
+  },
+  "playn-go-invading-vegas-las-christmas": {
+    intro:[
+      "Las Christmas использует поле 5×3. Mystery Symbols могут раскрыться как Wild с multiplier x2, x3, x5 или x10; три Scatters дают 12 Free Spins.",
+      "Lock On Re-Spin запускается, когда первые два reels полностью совпадают, но третий reel не завершает win. Stacked Wild на reel 3 превращается в Walking Wild: в Lock On он движется вправо, а во Free Spins — влево."
+    ],
+    editorial:"Las Christmas сохраняет знакомую основу Invading Vegas, но Mystery Symbols теперь непосредственно могут давать Wild Multipliers до x10. Поэтому это не просто сезонный reskin оригинала.",
+    features:[{title:"Mystery Gifts и Lock On",description:"Mystery Symbols могут раскрыть Wild x2/x3/x5/x10; 3 Scatters дают 12 Free Spins, а Lock On повторно прокручивает reel 3 и может создать Walking Wild."}]
+  },
+  "playn-go-irish-gold": {
+    intro:[
+      "Irish Gold — классический line-slot, где Pot of Gold выступает Wild и заменяет обычные symbols, кроме Scatter.",
+      "Один Pot of Gold умножает выплату winning combination на x5, два Pots — на x25, кроме комбинации из трёх Pots. Механика построена вокруг Wild multiplier, а не отдельного сложного bonus mode."
+    ],
+    editorial:"Irish Gold — ранний и предельно простой пример multiplier Wild. Здесь ценность Pot of Gold определяется количеством Wilds внутри конкретной winning line, поэтому главное отличие игры — x5/x25, а не многоступенчатый bonus.",
+    features:[{title:"Pot of Gold Wild",description:"Pot of Gold заменяет обычные symbols; один Wild даёт x5 к соответствующему win, два — x25, кроме отдельной комбинации из трёх Pots."}]
+  },
+  "playn-go-iron-girl": {
+    intro:[
+      "Iron Girl строится вокруг Sticky Villains и Re-Spins. Захват Villain или Wild запускает re-spin; если новый matching Villain или Wild добавляется, серия продолжается.",
+      "Villain Collection Meter усиливает финал цепочки: 8 Sticky Villains добавляют два Iron Girl Wilds, 10 дают x2 final win, 12 — x3, 14 — x5. Отдельный Iron Armour может случайно заменить до пяти symbols Wilds на non-winning spin без Wild."
+    ],
+    editorial:"Iron Girl делает количество захваченных Villains частью multiplier-progression. Re-Spins не просто повторяют reels: meter меняет итоговый эффект по мере того, сколько sticky targets удалось собрать.",
+    features:[{title:"Sticky Villains и Collection Meter",description:"Новые Villains/Wilds продлевают Re-Spins; пороги 8/10/12/14 Sticky Villains дают extra Wilds или x2/x3/x5 к финальному win."}]
+  },
+  "playn-go-jade-magician": {
+    intro:[
+      "Jade Magician — 5×3 slot с 15 paylines. Wild x2 заменяет обычные symbols и удваивает соответствующий win.",
+      "Два Jade Magician symbols могут включить Second Chance с выбором одного из четырёх элементов и шансом на instant prize или дополнительные spins. Три Jade Magician Scatters дают 5 Free Spins; внутри бонуса Magician способен добавить 1, 2 или 5 spins, максимум до 50 подряд."
+    ],
+    editorial:"Jade Magician связывает Second Chance и Free Spins через один character symbol, но функции разные: два symbols дают выбор, три запускают основную серию. Продление bonus ограничено 50 spins.",
+    features:[{title:"Second Chance и Jade Magician Free Spins",description:"2 Magicians открывают выбор из четырёх элементов; 3 дают 5 Free Spins, а дополнительные появления могут добавить 1/2/5 spins вплоть до 50."}]
+  },
+  "playn-go-jewel-box": {
+    intro:[
+      "Jewel Box использует случайный Multiplier Wild со значением от x2 до x5. Сам Jewel Box выступает Scatter.",
+      "Три Jewel Box Scatters запускают pick-and-click bonus: игрок выбирает один из трёх boxes с уникальным prize value, после чего может забрать награду или перейти к gamble и попытаться увеличить её."
+    ],
+    editorial:"В Jewel Box multiplier Wild и pick bonus независимы друг от друга. Bonus не является Free Spins: это один выбор из трёх values с последующим решением collect-or-gamble.",
+    features:[{title:"Jewel Box Pick Bonus",description:"3 Scatters открывают выбор одного из трёх prize values с возможностью collect или gamble; в base game отдельно встречается Wild multiplier x2–x5."}]
+  },
+  "playn-go-joker-flip": {
+    intro:[
+      "Joker Flip использует 5×3 reels и до 20 paylines. Full stack Wilds на центральном reel превращается в Walking Wild и даёт три Re-Spins.",
+      "В base game Walking Wild движется слева направо, а в Casino Free Spins — справа налево. Три Scatters дают 12 Free Spins. Mystery Symbols могут раскрывать обычные symbols или Wild Multipliers до x10."
+    ],
+    editorial:"Joker Flip строит bonus вокруг смены направления одного и того же Walking Wild. Casino Free Spins не просто добавляют spins — они разворачивают движение Wild и одновременно сохраняют Mystery Symbols с x10 potential.",
+    features:[{title:"Walking Wild и Casino Free Spins",description:"Full Wild stack на centre reel даёт 3 Re-Spins и начинает движение Wild; 3 Scatters дают 12 Casino Free Spins, где Walking Wild идёт в обратную сторону."}]
+  },
+  "playn-go-jolly-roger": {
+    intro:[
+      "Оригинальный Jolly Roger использует Wild, который удваивает выплату winning combination. Два и более Scatters в любых positions уже дают scatter win.",
+      "Три или больше Chest symbols на active line запускают Treasure Chest bonus, а три или больше Map symbols — отдельный Treasure Map bonus. Map появляется только на reels 1–3."
+    ],
+    editorial:"Первая Jolly Roger разделяет два бонуса по разным symbols и не использует механику sequel-игр. Здесь нет Cannon Free Spins или Kraken: Chest и Map запускают две самостоятельные bonus-ветки.",
+    features:[{title:"Treasure Chest и Treasure Map",description:"3+ Chests на active line запускают Treasure Chest bonus; 3+ Maps — Treasure Map bonus, при этом Map встречается только на reels 1–3."}]
+  },
+  "playn-go-jolly-roger-2": {
+    intro:[
+      "Jolly Roger 2 — 5×3 sequel с instant prizes и двумя разными Free Spin направлениями, которые открываются через pick-and-click progression.",
+      "Treasure Map Hunt запускается тремя Map symbols и даёт 10 Free Spins. Во время серии нужно собирать четыре части карты; завершённая карта даёт modifier — Sea Compass multiplier wheel или symbol upgrade — и дополнительные spins. Отдельный battle mode использует разные armada modifiers, включая Dutch Armada с синхронизацией трёх reels."
+    ],
+    editorial:"Jolly Roger 2 не повторяет два простых bonuses оригинала. Здесь Free Spins развиваются через сбор карты и накопление modifiers, а battle mode использует отдельные armada rules.",
+    features:[{title:"Treasure Map Hunt и Armada battle",description:"3 Maps дают 10 Free Spins; каждые 4 map pieces открывают buried-treasure modifier и extra spins, а отдельный battle mode меняет reels через armada effects."}]
+  },
+  "playn-go-jolly-roger-wild-kraken": {
+    intro:[
+      "Wild Kraken использует cascading five-reel grid. В base game Chest на reel 1 вместе с Key на reel 5 может открыть Instant Treasure до x50 total bet.",
+      "Шесть и более Cannonballs запускают Cannon Free Spins. Kraken Wild перемещается между reels 2–4, а Cannonball multipliers прикрепляются к winning spins. После шести попаданий по Kraken открываются Super Cannon Free Spins, где flaming cannonballs несут multipliers до x100."
+    ],
+    editorial:"Wild Kraken — это уже не line/pick структура первых двух Jolly Roger. Центральный цикл здесь — cascades, Cannonballs и damage progression по Kraken до усиленного Super режима.",
+    features:[{title:"Cannon Free Spins → Super Cannon",description:"6+ Cannonballs запускают Free Spins с moving Kraken Wild; 6 попаданий переводят feature в Super режим с flaming multipliers до x100."}]
+  },
+  "playn-go-journey-to-paris": {
+    intro:[
+      "Journey to Paris работает на 5×5 grid с cluster wins и cascades. После winning cluster symbols удаляются, а новые падают на освободившиеся позиции.",
+      "Play’n GO отдельно выделяет Win Multipliers, Souvenir Shop Bonus Game и Mystery Jackpot. Эти функции встроены в grid progression, а не оформлены как стандартный line-slot Free Spins package."
+    ],
+    editorial:"Journey to Paris соединяет кластерную основу с двумя тематическими bonus-ветками: Souvenir Shop и Mystery Jackpot. Поэтому карточка не переносит сюда правила Free Spins из других adventure slots.",
+    features:[{title:"Кластеры, Souvenir Shop и Mystery Jackpot",description:"5×5 grid использует cluster wins и cascades; поверх них работают Win Multipliers, Souvenir Shop Bonus Game и отдельный Mystery Jackpot."}]
+  },
+  "playn-go-king-of-sweets": {
+    intro:[
+      "King of Sweets — 5×5 cascading grid slot. Winning clusters заряжают Sweet-o-meter, который на разных порогах запускает Wild effects и mini-events вроде Delicious и Candy Craze.",
+      "На поле работают Sweet King Wild, 2×2 Flavour Unicorn Wild и Multiplier Wilds. При полном заряде Sweet-o-meter запускается один Flavour Frenzy Free Spin; meter можно overcharge, чтобы активировать до семи дополнительных effects внутри одной cascade-sequence."
+    ],
+    editorial:"King of Sweets использует один усиленный Free Spin вместо длинной серии. Вся progression происходит через Sweet-o-meter: обычные cluster wins постепенно открывают effects, а максимальный charge переводит игру в Flavour Frenzy.",
+    features:[{title:"Sweet-o-meter и Flavour Frenzy",description:"Clusters заряжают meter, пороги добавляют Wild effects и mini-events; полный charge даёт Flavour Frenzy Free Spin с возможностью overcharge и до 7 дополнительных effects."}]
+  },
+  "playn-go-kings-mask": {
+    intro:[
+      "King’s Mask предлагает три варианта Free Spins, между которыми игрок выбирает сам. Доступны 15, 10 или 5 spins, и каждый вариант использует собственный Multiplier.",
+      "Выбор устроен как обмен количества spins на силу multiplier, а максимальный заявленный win достигает x10 000 total bet."
+    ],
+    editorial:"Оригинальная King’s Mask строится на одном понятном trade-off: больше spins или более сильный multiplier. Это не feature-wheel и не случайный eclipse modifier из sequel.",
+    features:[{title:"Выбор Free Spins",description:"Игрок выбирает 15, 10 или 5 Free Spins; каждый вариант связан со своим Multiplier и меняет профиль bonus ещё до его старта."}]
+  },
+  "playn-go-kings-mask-eclipse-of-gods": {
+    intro:[
+      "King’s Mask Eclipse of Gods работает на 5×3 reels и случайно активирует eclipse features, включая Walking Wilds, прямо в base game.",
+      "Три Scatters запускают Free Spins. Перед началом игрок выбирает одну из доступных eclipse features, и выбранный эффект остаётся активным на протяжении всей bonus-серии."
+    ],
+    editorial:"Sequel не повторяет выбор 15/10/5 spins из оригинала. Здесь решение игрока касается не длины серии, а постоянного eclipse modifier, который будет работать на каждом Free Spin.",
+    features:[{title:"Eclipse Feature Choice",description:"Random eclipse effects могут срабатывать в base game; 3 Scatters дают Free Spins с выбором одной feature, которая остаётся активной до конца round."}]
+  },
+  "playn-go-kingdom-below": {
+    intro:[
+      "Kingdom Below использует 5×4 grid и Grab Symbols. Beast собирает Grab values с reel ниже себя и иногда может забрать дополнительный Grab Symbol или Scatter.",
+      "Slide n Grab проводит Beast по reels, собирая Grab Symbols и умножая итог на число reels, где был сбор. Три и более Scatters дают 10 Free Spins: перед стартом Pick a Fire выбирает modifiers, а каждые два шага по fiery trail дают ещё один modifier pick."
+    ],
+    editorial:"Kingdom Below делает Grab-механику общей для base game и Free Spins. В бонусе она усиливается заранее выбранными modifiers и последующими picks, поэтому progression строится по fiery trail, а не только по числу оставшихся spins.",
+    features:[{title:"Slide n Grab и Pick a Fire",description:"Beast собирает Grab Symbols; Slide n Grab умножает collected total по числу reels, а 3+ Scatters дают 10 Free Spins с pre-pick и дополнительным modifier каждые два шага."}]
+  },
+
   "playn-go-def-leppard-hysteria": { intro:["Def Leppard: Hysteria — grid slot, где Play’n GO публично выделяет feature Pour Some Sugar on Me. Игрок постепенно открывает скрытый за grid слой «sugar», а symbols после срабатывания визуально опускаются вниз, повторяя эффект высыпающегося сахара.","На официальной странице провайдер не публикует точные условия trigger, число spins или таблицу multipliers для этой feature. Slotfolio поэтому фиксирует только подтверждённую grid-механику Pour Some Sugar on Me без выдуманных чисел."], editorial:"Здесь музыкальная тема встроена прямо в поведение grid: Pour Some Sugar on Me не просто название бонуса, а визуальная механика с открытием скрытого слоя и падением symbols. Недостающие числовые детали намеренно не додуманы.", features:[{title:"Pour Some Sugar on Me",description:"Game-specific feature открывает скрытый за grid слой и синхронизирует падение symbols с эффектом «pouring sugar»; точные trigger details Play’n GO публично не раскрывает."}] },
   "playn-go-demon": { intro:["Wild Mask появляется только на reel 3. Если Mask попадает в центральную позицию, все symbols Dave Hill на reels превращаются в Wilds; Wild Amulet появляется на reels 1 и 5.","Wild Amulet одновременно на reels 1 и 5 вместе с Wild Mask на reel 3 запускают One Helluva Night. Бонус даёт 6 Free Spins, а центральный Mask повышает старт до 11; на каждом spin случайно применяется multiplier x2, x3, x5 или x8."], editorial:"Demon строит бонус вокруг точной геометрии трёх Wild-позиций. Внутри One Helluva Night два Wild Amulet могут открыть вложенный Depths of Hell, где активный multiplier переносится на всю вложенную серию и при центральном Mask может быть удвоен.", features:[{title:"One Helluva Night и Depths of Hell",description:"Mask + Amulets запускают 6 или 11 Free Spins с random x2/x3/x5/x8; два Amulet внутри бонуса открывают Nested Free Spins с переносом активного multiplier."}] },
   "playn-go-derby-wheel": { intro:["Три Wheel symbols переводят игру на Bonus Wheel. На колесе находятся прямые multipliers и отдельный Horse Racing Bonus Feature.","Если Wheel останавливается на Horse Racing, игрок выбирает один из четырёх вариантов: No Bet даёт x40, Win позволяет выбрать победителя до x800, Exacta требует угадать первое и второе место до x1800, а Trifecta — первые три позиции в точном порядке до x2800."], editorial:"Derby Wheel делает выбор риска частью самого бонуса: после попадания на Horse Racing игрок сам решает, взять фиксированный x40 или обменять гарантию на более сложный прогноз с большим потенциальным multiplier.", features:[{title:"Bonus Wheel и Horse Racing",description:"3 Wheel symbols запускают колесо с multipliers; Horse Racing открывает выбор No Bet x40, Win до x800, Exacta x1800 или Trifecta x2800."}] },
