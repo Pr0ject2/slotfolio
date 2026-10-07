@@ -57,6 +57,31 @@ export const catalogResearchPlayngoKL: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Play'n GO game page states that winning combinations are created across twenty paylines.",
   },
+
+  "playn-go-lion-saga-odyssey": {
+    mechanics: ["Линии"],
+    source: "https://www.playngo.com/games/lion-saga-odyssey",
+    verifiedAt,
+    evidence: "Official game page describes a 5x3 slot with ten paylines.",
+  },
+  "playn-go-lordi-reel-monsters": {
+    mechanics: ["Кластеры"],
+    source: "https://www.playngo.com/games/lordi-reel-monsters",
+    verifiedAt,
+    evidence: "Official game page describes a 7x7 grid where Lordi destroy matching symbols on the grid.",
+  },
+  "playn-go-luchamigos": {
+    mechanics: ["Способы"],
+    source: "https://www.playngo.com/games/luchamigos",
+    verifiedAt,
+    evidence: "Official game page describes adjacent-symbol wins across the 5x4 reels without fixed paylines.",
+  },
+  "playn-go-lucky-diamonds": {
+    mechanics: ["Линии"],
+    source: "https://www.playngo.com/games/lucky-diamonds",
+    verifiedAt,
+    evidence: "Official game page describes a three-reel slot with a single payline.",
+  },
 };
 
 export function getCatalogResearchPlayngoKL(slug: string) {
