@@ -130,11 +130,28 @@ async function downloadPublishedFallback(entry) {
   };
 }
 
-async function discoverImage(pageUrl) {
+function inlineImageContent(html, hint) {
+  if (!hint) return "";
+  const normalized = decodeHtml(html)
+    .replaceAll("\\/", "/")
+    .replaceAll("\\u002F", "/")
+    .replaceAll("\\u0026", "&");
+  const needle = hint.toLowerCase();
+  const position = normalized.toLowerCase().indexOf(needle);
+  if (position < 0) return "";
+  const window = normalized.slice(Math.max(0, position - 1800), position + 1800);
+  const matches = window.match(/https?:\/\/[^\s\"'<>]+/g) ?? [];
+  return matches.find((url) => url.toLowerCase().includes(needle)) ?? "";
+}
+
+async function discoverImage(pageUrl, imageHint) {
   const response = await fetchWithRetry(pageUrl, {
     accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.5",
   });
   const html = await response.text();
+  const hinted = inlineImageContent(html, imageHint);
+  if (hinted) return new URL(hinted, pageUrl).toString();
+  if (imageHint) throw new Error(`official page has no inline image matching ${imageHint}`);
   const candidate =
     metaContent(html, "og:image:secure_url") ||
     metaContent(html, "og:image") ||
@@ -145,8 +162,8 @@ async function discoverImage(pageUrl) {
 }
 
 async function resolveSource(entry) {
-  if (entry.requireExplicitImage && !entry.image) {
-    throw new Error("reviewed game-specific manifest image required; page preview is not approved artwork");
+  if (entry.requireExplicitImage && !entry.image && !entry.imageHint) {
+    throw new Error("reviewed game-specific manifest image or inline image hint required; page preview is not approved artwork");
   }
 
   const failures = [];
@@ -173,14 +190,14 @@ async function resolveSource(entry) {
 
   if (!entry.image) {
     try {
-      const discovered = await discoverImage(entry.page);
+      const discovered = await discoverImage(entry.page, entry.imageHint);
       return {
         buffer: await download(discovered, entry.page),
         resolvedUrl: discovered,
-        method: "official page metadata",
+        method: entry.imageHint ? "official page inline artwork" : "official page metadata",
       };
     } catch (error) {
-      failures.push(`official page metadata: ${error?.message || error}`);
+      failures.push(`official page artwork: ${error?.message || error}`);
     }
   }
 
