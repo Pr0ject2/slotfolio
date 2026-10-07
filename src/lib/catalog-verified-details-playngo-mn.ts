@@ -43,6 +43,10 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "playn-go-naughty-nicks-book": { releaseDate: "2022-12-08", source: "https://www.playngo.com/games/naughty-nick's-book", verifiedAt },
   "playn-go-new-year-riches": { releaseDate: "2020-11-26", source: "https://www.playngo.com/games/new-year-riches", verifiedAt },
   "playn-go-ninja-fruits": { releaseDate: "2013-06-19", source: "https://www.playngo.com/games/ninja-fruits", verifiedAt },
+
+  "playn-go-mystery-joker-6000": { releaseDate: "2017-12-20", source: "https://www.playngo.com/games/mystery-joker-6000", verifiedAt },
+  "playn-go-nugget-n-nonsense": { releaseDate: "2026-04-16", source: "https://www.playngo.com/games/nugget-n%E2%80%99-nonsense", verifiedAt },
+
 };
 
 export function getCatalogVerifiedDetailsPlayngoMN(slug: string) {
