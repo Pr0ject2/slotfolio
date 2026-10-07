@@ -36,6 +36,7 @@ jobs:
           path: |
             .asset-cache/slot-images
             public/images/slots
+            public/images/catalog
           key: slot-images-${{ runner.os }}-${{ hashFiles('docs/image-sources.json', 'docs/image-sources-v128.json', 'docs/image-sources-v129.json', 'docs/image-sources-v130.json', 'scripts/localize-slot-images.mjs') }}
           restore-keys: |
             slot-images-${{ runner.os }}-
@@ -47,7 +48,19 @@ jobs:
         run: npm run typecheck
 
       - name: Localize slot artwork for preview
-        run: npm run assets:localize -- --soft
+        shell: bash
+        run: |
+          for attempt in 1 2 3; do
+            echo "Artwork localization attempt ${attempt}/3"
+            if npm run assets:localize; then
+              exit 0
+            fi
+            if [ "${attempt}" -lt 3 ]; then
+              sleep $((attempt * 20))
+            fi
+          done
+          echo "Reviewed artwork is still incomplete after 3 attempts; refusing to publish placeholders."
+          exit 1
 
       - name: Build static site
         shell: bash
@@ -61,8 +74,8 @@ jobs:
           # remains in the source project, but is omitted from this preview build.
           rm -f 'src/app/go/[operator]/route.ts'
 
-          # Preview deployment is intentionally tolerant of temporary provider-CDN
-          # artwork failures. The project's regular npm run build remains strict.
+          # Artwork localization above is strict. A Pages release must not publish
+          # reviewed cards with missing local artwork.
           npx next build
           touch out/.nojekyll
 
