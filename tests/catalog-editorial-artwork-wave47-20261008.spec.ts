@@ -20,7 +20,7 @@ const slots = [
   ["playn-go-moon-princess-trinity", "Полная очистка поля"],
   ["playn-go-moon-princess-christmas-kingdom", "праздничное поле 5×5"],
   ["playn-go-motley-crue", "пентаграмме"],
-  ["playn-go-mount-m", "пять собранных орбов"]
+  ["playn-go-mount-m", "Пять собранных орбов"]
 ] as const;
 
 test("wave 47 Play'n GO cards render full game-specific dossiers and loaded artwork", async ({ page }) => {
