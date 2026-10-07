@@ -161,7 +161,17 @@ async function resolveSource(entry) {
     } catch (error) {
       failures.push(`manifest URL: ${error?.message || error}`);
     }
-  } else {
+  }
+
+  if (String(entry.local || "").startsWith("/images/catalog/")) {
+    try {
+      return await downloadPublishedFallback(entry);
+    } catch (error) {
+      failures.push(`published fallback: ${error?.message || error}`);
+    }
+  }
+
+  if (!entry.image) {
     try {
       const discovered = await discoverImage(entry.page);
       return {
@@ -171,14 +181,6 @@ async function resolveSource(entry) {
       };
     } catch (error) {
       failures.push(`official page metadata: ${error?.message || error}`);
-    }
-  }
-
-  if (String(entry.local || "").startsWith("/images/catalog/")) {
-    try {
-      return await downloadPublishedFallback(entry);
-    } catch (error) {
-      failures.push(`published fallback: ${error?.message || error}`);
     }
   }
 
