@@ -45,6 +45,18 @@ export const catalogResearchPlayngoKL: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official game page explicitly calls it a cascading grid slot.",
   },
+  "playn-go-leprechaun-goes-egypt": {
+    mechanics: ["Линии"],
+    source: "https://www.playngo.com/games/leprechaun-goes-egypt",
+    verifiedAt,
+    evidence: "Official Play'n GO game page states that players can activate up to 20 lines and separates Wild, Scatter and Bonus symbols.",
+  },
+  "playn-go-leprechaun-goes-wild": {
+    mechanics: ["Линии"],
+    source: "https://www.playngo.com/games/leprechaun-goes-wild",
+    verifiedAt,
+    evidence: "Official Play'n GO game page states that winning combinations are created across twenty paylines.",
+  },
 };
 
 export function getCatalogResearchPlayngoKL(slug: string) {
