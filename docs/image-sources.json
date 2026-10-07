@@ -3875,9 +3875,11 @@
   },
   {
     "slug": "playn-go-muerto-en-mictlan",
-    "page": "https://www.playngo.com/games/muerto-en-mictl%C3%A1n",
+    "page": "https://www.playngo.com/post/light-your-candles-for-the-day-of-the-dead-festival",
     "local": "/images/catalog/playn-go-muerto-en-mictlan.webp",
-    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+    "note": "Reviewed first-party Play’n GO release page used because the canonical game page returns HTTP 404 to GitHub Runner. The localizer selects an inline game-specific first-party image by filename hint and stores a local WebP.",
+    "imageHint": "muertoenmictlan",
+    "requireExplicitImage": true
   },
   {
     "slug": "playn-go-multifruit-81",
@@ -3893,9 +3895,11 @@
   },
   {
     "slug": "playn-go-mystery-genie-fortunes-of-the-lamp",
-    "page": "https://www.playngo.com/games/mystery-genie--fortunes-of-the-lamp",
+    "page": "https://www.playngo.com/post/mystery-genie-fortunes-of-the-lamp",
     "local": "/images/catalog/playn-go-mystery-genie-fortunes-of-the-lamp.webp",
-    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+    "note": "Reviewed first-party Play’n GO release page used because the canonical game page returns HTTP 404 to GitHub Runner. The localizer selects an inline game-specific first-party image by filename hint and stores a local WebP.",
+    "imageHint": "mysterygenie",
+    "requireExplicitImage": true
   },
   {
     "slug": "playn-go-mystery-joker",
@@ -3965,9 +3969,11 @@
   },
   {
     "slug": "playn-go-pack-and-cash",
-    "page": "https://www.playngo.com/games/pack-%26-cash",
+    "page": "https://www.playngo.com/post/playngo-packs-a-punch-with-their-latest-title",
     "local": "/images/catalog/playn-go-pack-and-cash.webp",
-    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+    "note": "Reviewed first-party Play’n GO release page used because the canonical game page returns HTTP 404 to GitHub Runner. The localizer selects an inline game-specific first-party image by filename hint and stores a local WebP.",
+    "imageHint": "packandcash",
+    "requireExplicitImage": true
   },
   {
     "slug": "playn-go-pandastic-adventure",
