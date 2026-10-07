@@ -1061,6 +1061,247 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
 
 
 
+
+  "playn-go-kiss-reels-of-rock": {
+    intro: [
+      "Kiss Reels of Rock работает на ромбовидном поле 6×4 и меняет структуру бонуса в зависимости от выбранной концертной остановки. Пять основных Free Spins-сценариев отличаются уровнем риска, а Encore открывает отдельный финальный режим.",
+      "В Encore Free Spin поле расширяется и число способов доходит до 4096. Поэтому ключевая особенность игры не просто набор Wild и множителей, а переход между разными конфигурациями одного концертного тура."
+    ],
+    editorial: "Kiss Reels of Rock стоит отделять от обычных музыкальных слотов: здесь сама геометрия поля становится частью бонуса, а города задают разные Free Spins-сценарии.",
+    features: [
+      { title: "Пять концертных Free Spins", description: "Johannesburg, Sydney, London, Rio de Janeiro и Tokyo дают разные варианты Free Spins с собственным профилем риска." },
+      { title: "Encore и расширение поля", description: "Encore Free Spin связан с New York и расширяет сетку, открывая до 4096 способов выигрыша." },
+      { title: "Wild и множители", description: "В базовой структуре используются Random Wilds и множители, которые работают вместе с концертными бонусами." }
+    ],
+  },
+  "playn-go-lab-of-madness-its-a-wild": {
+    intro: [
+      "Lab of Madness It's A-Wild! строит прогрессию вокруг светящихся орбов и ламп. Совпадающие орбы заряжают лампы, а уровень заряда определяет, насколько сложным станет поведение Monster Wild.",
+      "Monster Wild может расширяться на весь барабан, шагать по полю с re-spin, нести множитель x2, x3 или x5 либо совмещать несколько эффектов. Отдельный Power Up symbol способен открыть один из четырёх prize tiers."
+    ],
+    editorial: "Здесь важно не смешивать отдельные Wild-функции: Expanding, Walking и Multiplier Wild могут существовать сами по себе или объединяться в Hybrid Wild по мере зарядки ламп.",
+    features: [
+      { title: "Зарядка ламп", description: "Glowing Orbs постепенно переводят соответствующие bulbs из незаряженного состояния в полностью заряженное и усиливают доступные Wild-эффекты." },
+      { title: "Special и Hybrid Wilds", description: "Monster Wild может быть Expanding, Walking или Multiplier Wild; при достаточной зарядке эффекты способны объединяться." },
+      { title: "Free Spins и Power Up", description: "Орбы могут запускать Free Spins, где набор специальных Wild зависит от их количества; Power Up отдельно даёт шанс на один из четырёх prize tiers." }
+    ],
+  },
+  "playn-go-lady-of-fortune": {
+    intro: [
+      "Оригинальная Lady of Fortune использует выбранные линии и необычное правило старта комбинации: выигрыш может начинаться с первого, второго или третьего барабана. На одной линии оплачивается только самая высокая комбинация.",
+      "Четыре Wild несут множители x2, x3, x4 и x5 и появляются только на третьем барабане. Три символа Lady of Fortune запускают Pick-a-Prize, после которого выигрыш можно отдельно отправить в Gamble."
+    ],
+    editorial: "Главное отличие оригинала от Remastered и Destiny Spins в том, что здесь ядро игры состоит из multiplier Wild на третьем барабане и отдельного Pick-a-Prize, без переноса механик поздних версий.",
+    features: [
+      { title: "Multiplier Wild на третьем барабане", description: "Wild заменяет обычные символы и умножает соответствующий выигрыш на x2, x3, x4 или x5; Wild встречается только на reel 3." },
+      { title: "Pick-a-Prize", description: "Три Lady of Fortune symbols в scatter-позициях открывают выбор скрытого приза." },
+      { title: "Gamble", description: "После выигрыша можно угадывать цвет или масть карты: правильный цвет удваивает приз, правильная масть увеличивает его в четыре раза." }
+    ],
+  },
+  "playn-go-lady-of-fortune-destiny-spins": {
+    intro: [
+      "Lady of Fortune Destiny Spins связывает невыигрышные раунды с Persistent Crystal Ball: каждый dry spin заряжает шар, а полностью заряженное состояние может открыть Pick Prize.",
+      "Выигрыши считаются в трёх направлениях: слева направо, справа налево и через середину. Scatter запускают retriggerable Free Spins, а Wild могут приходить с множителями."
+    ],
+    editorial: "Destiny Spins не является просто ремастером оригинала: накопительная Crystal Ball превращает dry spins в отдельную progression-систему, а Pays 3 Ways меняет сам принцип чтения комбинаций.",
+    features: [
+      { title: "Persistent Crystal Ball", description: "Невыигрышные spins заряжают Crystal Ball; при полной зарядке она может открыть Pick Prize с выбором скрытой награды." },
+      { title: "Pays 3 Ways", description: "Комбинации могут считаться слева направо, справа налево и через центральное направление." },
+      { title: "Free Spins и Wild Multipliers", description: "Scatter открывают Free Spins с возможностью retrigger, а Wild могут усиливать комбинации множителями." }
+    ],
+  },
+  "playn-go-lady-of-fortune-remastered": {
+    intro: [
+      "Lady of Fortune Remastered возвращает линейную основу на поле 5×3 с 15 paylines. В базовой игре Wild заменяет обычные symbols и может увеличить соответствующий выигрыш до x5.",
+      "Три Ouija Planchette Scatters запускают Pick-a-Prize с тремя tarot cards. После обычного выигрыша доступен отдельный Gamble с выбором цвета или масти карты."
+    ],
+    editorial: "Remastered сохраняет компактную структуру оригинала, но оформляет бонусы как более чёткие самостоятельные блоки: Multiplier Wild, tarot Pick-a-Prize и карточный Gamble.",
+    features: [
+      { title: "Multiplier Wild до x5", description: "Wild заменяет обычные символы, кроме Scatter, и может умножить выигрышную комбинацию вплоть до x5." },
+      { title: "Tarot Pick-a-Prize", description: "Три Ouija Planchette Scatters открывают три tarot cards, из которых выбирается одна с готовым призом." },
+      { title: "Gamble Round", description: "После выигрышного раунда можно предсказать цвет или масть следующей карты, чтобы увеличить текущий приз." }
+    ],
+  },
+  "playn-go-lawn-n-disorder": {
+    intro: [
+      "Lawn n' Disorder использует 5×3 и 243 ways, а Coin symbols одновременно ведут к Wheel of Rewards и Hold & Spin. Колесо может открыть instant prize, Bonus Spins или Super Bonus Spins.",
+      "Шесть Coins запускают Hold & Spin: монеты фиксируются, а новый Coin перезапускает счётчик re-spins. В Bonus и Super Bonus Spins множители могут появляться на reels 2 и 4 и расти вместе с выигрышами."
+    ],
+    editorial: "У Lawn n' Disorder два связанных, но разных бонусных маршрута: отдельный Coin способен разбудить Wheel of Rewards, тогда как шесть Coins переводят игру в полноценный Hold & Spin.",
+    features: [
+      { title: "Wheel of Rewards", description: "Coin может активировать колесо с Instant Prizes, Bonus Spins или Super Bonus Spins." },
+      { title: "Hold & Spin", description: "Шесть Coins запускают режим с удержанием значений; каждый новый Coin обновляет число оставшихся re-spins." },
+      { title: "Растущие множители", description: "В Bonus и Super Bonus Spins множители на reels 2 и 4 усиливаются, когда участвуют в выигрышах, и могут складываться между собой." }
+    ],
+  },
+  "playn-go-legacy-of-dynasties": {
+    intro: [
+      "Legacy of Dynasties работает на 5×3 и использует Expanding Symbols уже в базовой игре. Случайно выбранный symbol расширяется, если набрано достаточно совпадений, причём expanded symbols могут платить через непоследовательные reels.",
+      "Три Scatters запускают Free Spins, число которых определяет wheel. Внутри бонуса Expanding Symbols гарантированы на каждом spin, а два Scatters включают Nested Spins и временно фиксируют текущие expanded symbols."
+    ],
+    editorial: "Nested Spins здесь не заменяют основной Free Spins-раунд, а вкладываются внутрь него. Это важное отличие: текущая серия ставится на паузу, special symbols фиксируются, затем игра возвращается к оставшимся spins.",
+    features: [
+      { title: "Expanding Symbols", description: "Случайно выбранные symbols могут расширяться и оплачивать комбинации даже без соседства reels; несколько расширений рассчитываются последовательно." },
+      { title: "Free Spins Wheel", description: "Три Scatters запускают бонус, а количество Free Spins выбирается отдельным wheel; Expanding Symbols появляются на каждом spin." },
+      { title: "Nested Spins", description: "Два Scatters внутри Free Spins запускают вложенную серию и фиксируют уже активные Expanding Symbols до её завершения." }
+    ],
+  },
+  "playn-go-legacy-of-egypt": {
+    intro: [
+      "Legacy of Egypt использует пять барабанов и 30 paylines. Scarab работает как Wild, а Pyramid выступает Free Spin Scatter.",
+      "Три и более Pyramid Scatters запускают Wheel of the Gods, который определяет число Free Spins вплоть до 20. Поэтому бонус начинается не с фиксированного количества spins, а с отдельного wheel-этапа."
+    ],
+    editorial: "Legacy of Egypt важно не смешивать с Legacy of Dead или Legacy of Inca: у этой версии центральный триггер Free Spins связан именно с Pyramid Scatter и Wheel of the Gods.",
+    features: [
+      { title: "Wheel of the Gods", description: "Три или больше Pyramid Scatters запускают колесо, которое может назначить до 20 Free Spins." },
+      { title: "Scarab Wild", description: "Scarab заменяет обычные symbols и помогает собирать комбинации на 30 paylines." },
+      { title: "Pyramid Scatter", description: "Pyramid является отдельным scatter-триггером бонуса и не заменяет роль Wild." }
+    ],
+  },
+  "playn-go-legacy-of-gems-blitzways": {
+    intro: [
+      "Legacy of Gems Blitzways смешивает динамические reel heights, cluster pays и Cascading Wins. После winning cluster symbols исчезают, а новые gems падают сверху, продолжая цепочку до spin без новой комбинации.",
+      "Кластеры создают Wild или Multiplier Wild, а три Scatters дают восемь Free Spins. В бонусе появляется случайный Sticky Wild, все новые Wild остаются на месте, а дополнительные Scatters добавляют spins."
+    ],
+    editorial: "Blitzways здесь меняет не косметику, а математику расположения: высота reels плавает от spin к spin, поэтому число доступных ways динамическое и может доходить до 16 807.",
+    features: [
+      { title: "Blitzways и динамические reels", description: "Высота барабанов меняется между spins, сочетая dynamic payways и cluster pays с максимумом до 16 807 ways." },
+      { title: "Cascading Wins и Multiplier Wilds", description: "Выигрышные clusters исчезают; новые symbols падают сверху, а cascades способны создавать обычные и multiplier Wilds." },
+      { title: "Free Spins со Sticky Wilds", description: "Три Scatters дают 8 Free Spins; случайный Wild становится Sticky, все новые Wild сохраняются, а Scatter добавляет ещё spin." }
+    ],
+  },
+  "playn-go-legacy-of-inca": {
+    intro: [
+      "Legacy of Inca возвращает Wheel of the Gods, но добавляет отдельную шкалу Wild над reels. Wheel назначает от 1 до 20 Free Spins, а верхняя шкала определяет, сколько Wild будет добавлено на каждом раунде.",
+      "Wild ограничены тремя центральными reels, где одновременно может появиться до девяти Wilds. Temple Scatters во Free Spins запускают Temple Spins с отдельным wheel на 1–6 дополнительных spins."
+    ],
+    editorial: "Главный поворот относительно Legacy of Egypt находится не в теме, а в bonus progression: количество Wild задаётся отдельной шкалой, а Temple Spins могут снова добавляться без фиксированного лимита числа срабатываний.",
+    features: [
+      { title: "Wheel of the Gods", description: "Колесо определяет стартовую серию от 1 до 20 Free Spins." },
+      { title: "Wild bar", description: "Отдельная шкала задаёт число Wild на каждом раунде; они размещаются на трёх центральных reels, максимум до девяти одновременно." },
+      { title: "Temple Spins", description: "Temple Scatters внутри бонуса открывают wheel на 1–6 дополнительных Free Spins и могут срабатывать повторно." }
+    ],
+  },
+  "playn-go-legacy-of-undead-dragon-abyssways": {
+    intro: [
+      "Legacy of Undead Dragon ABYSSWAYS начинается на поле 6×4. Haunted Gold Coins могут разбудить дракона и дать Instant Prize, а Dragon's Wrath на non-winning round запускает full respin и расширяет сетку до 6×6.",
+      "В Free Spins Fire Wild, созданные драконом, становятся Sticky и после каждого spin увеличивают свой win multiplier на +1. Abyssways меняет высоту reels: отмеченные нижние symbols исчезают, после чего сверху добавляется новый полный ряд."
+    ],
+    editorial: "Здесь расширение 6×4 → 6×6 и Abyssways работают по разным правилам: Dragon's Wrath увеличивает поле, а Abyssways внутри Free Spins циклически убирает нижние symbols и добавляет новый ряд.",
+    features: [
+      { title: "Dragon's Wrath", description: "На non-winning round дракон может дать полный respin, расширить grid с 6×4 до 6×6 и добавить случайные Fire Wilds." },
+      { title: "Sticky Fire Wilds", description: "Во Free Spins Fire Wilds, созданные драконом, фиксируются и после каждого spin получают +1 к своему win multiplier." },
+      { title: "Abyssways", description: "Отмеченные нижние symbols после spin исчезают и уменьшают высоту reel, затем сверху добавляется новый полный ряд." }
+    ],
+  },
+  "playn-go-legend-of-the-ice-dragon": {
+    intro: [
+      "Legend of the Ice Dragon - cascading grid slot: выигрышные цепочки продолжаются через падение новых symbols вместо полного сброса поля после каждого результата.",
+      "Три фирменные freezing-функции называются Hailstorm, Avalanche и Blizzard. Они работают как разные способы усилить текущий раунд, а атаки Ice Dragon добавляют отдельные события поверх cascade-структуры."
+    ],
+    editorial: "Эту игру лучше читать как grid/cascade-досье, а не как обычный line-slot: Hailstorm, Avalanche и Blizzard встроены в последовательность изменений одного поля.",
+    features: [
+      { title: "Cascading grid", description: "После выигрышных событий поле продолжает меняться каскадами, а не начинает каждый результат с полностью нового независимого layout." },
+      { title: "Hailstorm, Avalanche и Blizzard", description: "Три именованные freezing-функции по-разному вмешиваются в grid и усиливают текущую цепочку." },
+      { title: "Ice Dragon events", description: "Tail Lash, Ice Scorch, Destruction и Dragon Blast выступают отдельными событиями дракона в ходе прохождения." }
+    ],
+  },
+  "playn-go-legion-gold": {
+    intro: [
+      "Оригинальный Legion Gold связывает Mega Free Spins и Gold Re-Spins через Mega Coin. Три или больше Lion Scatters запускают Mega Free Spins, где на reels может появляться крупный Mega Symbol.",
+      "Шесть Coins или Mega Coin запускают Gold Re-Spins. Серия начинается с трёх lives: spin без нового coin отнимает жизнь, а новый coin помогает продолжить сбор."
+    ],
+    editorial: "Первая Legion Gold использует систему трёх lives как счётчик давления внутри Gold Re-Spins. Поздние версии серии меняют детали сбора, поэтому эту механику нельзя автоматически переносить на sequels.",
+    features: [
+      { title: "Mega Free Spins", description: "Три или больше Lion Scatters запускают Free Spins с Mega Symbol, который может появляться на reels." },
+      { title: "Gold Re-Spins", description: "Шесть Coins или Mega Coin запускают режим сбора Multiplying Wild Coins." },
+      { title: "Три lives", description: "В Gold Re-Spins серия стартует с тремя lives; spin без coin уменьшает их число и приближает завершение feature." }
+    ],
+  },
+  "playn-go-legion-gold-and-the-sphinx-of-dead": {
+    intro: [
+      "Legion Gold and the Sphinx of Dead запускает Gold Re-Spins после шести Gold Coins. Coins остаются locked, новый Coin обновляет счётчик, а полностью заполненный grid связан с 1000x multiplier.",
+      "Три или больше Scatters открывают Mega Free Spins с перемещающимся 3×3 Mega Symbol. Если Mega Symbol превращается в 3×3 Gold Coin, Gold Re-Spins стартуют сразу с девятью coins."
+    ],
+    editorial: "Египетская версия отличается от соседних Legion Gold не декорациями: 3×3 Mega Coin может отправить игрока из Mega Free Spins прямо в Gold Re-Spins с девятью стартовыми coins.",
+    features: [
+      { title: "Gold Re-Spins", description: "Шесть Gold Coins запускают hold-and-respin; coins фиксируются, новый Coin перезапускает счётчик, а полный grid даёт 1000x." },
+      { title: "Mega Free Spins", description: "Три Scatters дают бонус с движущимся 3×3 Mega Symbol; Mega Gold Coin может превратиться в девять coins и запустить Gold Re-Spins." },
+      { title: "Gold Bag", description: "В base game и Mega Free Spins Gold Bag собирает значения всех видимых Gold Coins и сразу выплачивает их сумму." }
+    ],
+  },
+  "playn-go-legion-gold-and-the-throne-of-dead": {
+    intro: [
+      "Legion Gold and the Throne of Dead добавляет к серии Coin Chest: Gold Coins, которые не запустили Gold Re-Spins или Golden Scales, складываются в отдельный накопитель.",
+      "Когда Coin Chest полностью открывается, начинается Picker Game с Instant Prize. Три Scatters запускают Mega Spins, где на каждом spin появляется Mega Symbol, а Mega Gold Coin способен снова открыть Gold Re-Spins."
+    ],
+    editorial: "Throne of Dead важно отделять от Sphinx of Dead: здесь отдельной progression-системой становится Coin Chest с Picker Game, а Mega Spins сохраняют возможность перейти в Gold Re-Spins через Mega Gold Coin.",
+    features: [
+      { title: "Coin Chest Picker Game", description: "Gold Coins вне основных triggers накапливаются в Coin Chest; открытый chest запускает pick до совпадения Instant Prize." },
+      { title: "Mega Spins", description: "Три Scatters запускают Mega Spins с Mega Symbol в случайной позиции на каждом spin и возможностью retrigger." },
+      { title: "Mega Gold Coin", description: "Во время Mega Spins крупный Gold Coin может распасться на набор Coins и перевести игру в Gold Re-Spins." }
+    ],
+  },
+  "playn-go-legion-gold-reckoning": {
+    intro: [
+      "Legion Gold Reckoning сохраняет сбор шести Gold Coins для Gold Re-Spins, но добавляет Coin Chest и Picker Game. Coins вне re-spin режима накапливаются в chest, а полностью открытый chest запускает выбор до совпадения трёх prize coins.",
+      "Три Scatters дают пять Mega Spins с Mega Symbol на каждом spin. Отдельный GO Ultra toggle меняет частоту Animal Symbols и добавляет boosts к старту Mega Spins и Gold Re-Spins."
+    ],
+    editorial: "Reckoning отделяется от предыдущих частей через GO Ultra и полноценный Coin Chest progression. Это уже не просто вариация Gold Bag: накопленные coins могут привести к самостоятельному Picker Game.",
+    features: [
+      { title: "Gold Re-Spins", description: "Шесть Gold Coins запускают режим, где coins фиксируются, а новый Coin сбрасывает счётчик re-spins; Gold Coin Bag собирает текущие значения." },
+      { title: "Coin Chest и Picker Game", description: "Coins вне Gold Re-Spins заполняют chest; после открытия игрок выбирает до совпадения трёх coins и получает один из Instant Prize tiers." },
+      { title: "Mega Spins и GO Ultra", description: "Три Scatters дают пять Mega Spins с возможностью retrigger, а GO Ultra добавляет отдельные boosts к базовой игре и старту бонусов." }
+    ],
+  },
+  "playn-go-legion-gold-unleashed": {
+    intro: [
+      "Legion Gold Unleashed запускает Gold Re-Spins шестью Gold Coins: первые шесть остаются на месте, серия получает три initial re-spins, а каждый новый Coin добавляет ещё одну попытку.",
+      "Три Scatters открывают Mega Free Spins с движущимся 3×3 Mega Symbol. Gold Bag в base game и Free Spins мгновенно собирает все видимые Instant Win values."
+    ],
+    editorial: "Unleashed переносит фокус с системы lives оригинала на классический reset/additional re-spin и Gold Bag. Полный grid в Gold Re-Spins связан с 1000x multiplier, но подтверждённый общий max win в lookup выше и хранится отдельно.",
+    features: [
+      { title: "Gold Re-Spins", description: "Шесть Gold Coins запускают три initial re-spins; coins удерживаются, а каждое новое попадание добавляет ещё одну попытку." },
+      { title: "Mega Free Spins", description: "Три или больше Scatters запускают бонус с 3×3 Mega Symbol; Mega Gold Coin может открыть Gold Re-Spins сразу с девятью coins." },
+      { title: "Gold Bag", description: "Gold Bag собирает все видимые Instant Win values в base game или Mega Free Spins и сразу выплачивает их сумму." }
+    ],
+  },
+  "playn-go-legion-gold-victory": {
+    intro: [
+      "Legion Gold Victory! сочетает Gold Re-Spins, Mega Free Spins и Instant Prize Coins. Gold Re-Spins удерживают coins и обновляют grid по мере сбора, а заполнение поля связано с 1000x prize.",
+      "В Mega Free Spins по reels перемещаются 3×3 Mega Symbols. Instant Prize Coins дают собственные значения, а Gold Bag собирает их в общий результат."
+    ],
+    editorial: "Victory! собирает знакомые элементы серии в одном досье, но её отличительный слой - Instant Prize Coins. Их нужно отделять от обычных Gold Coins, потому что Gold Bag работает именно как механизм сбора значений.",
+    features: [
+      { title: "Gold Re-Spins", description: "Coins запускают hold-and-spin механику; новые попадания продолжают сбор, а полный grid связан с 1000x prize." },
+      { title: "Mega Free Spins", description: "Крупные 3×3 Mega Symbols перемещаются по reels во время Free Spins и формируют отдельный bonus-сценарий." },
+      { title: "Instant Prize Coins и Gold Bag", description: "Instant Prize Coins несут готовые значения, а Gold Bag собирает их и добавляет к итоговой выплате." }
+    ],
+  },
+  "playn-go-leprechaun-goes-egypt": {
+    intro: [
+      "Leprechaun goes Egypt использует до 20 paylines и разделяет роли трёх special symbols. Leprechaun выступает Wild, заменяет обычные symbols и удваивает выигрыши, в которых участвует.",
+      "Три Cleopatra Scatters запускают Free Spins с выбором multiplier-профиля, а три Pyramid symbols открывают отдельный Bonus Round с выбором дверей и поиском урн."
+    ],
+    editorial: "Здесь два бонуса не надо смешивать: Cleopatra ведёт в Free Spins, Pyramid - в отдельную pick-ветку по коридорам пирамиды, а Leprechaun остаётся multiplier Wild.",
+    features: [
+      { title: "Leprechaun Wild x2", description: "Wild заменяет обычные symbols, кроме Bonus и Scatter, и удваивает выигрышную линию, которую помогает собрать." },
+      { title: "Cleopatra Free Spins", description: "Три Cleopatra symbols в scatter-позициях открывают Free Spins с выбором усиления призов." },
+      { title: "Pyramid Bonus", description: "Три Pyramids запускают отдельный bonus с выбором дверей, сбором urns и риском завершить путь встречей с mummy." }
+    ],
+  },
+  "playn-go-leprechaun-goes-wild": {
+    intro: [
+      "Leprechaun Goes Wild использует 20 paylines и закрепляет за каждым reel собственного Leprechaun Wild. Wild заменяет обычные symbols только в своей колонке.",
+      "Два Clover Scatters запускают Luck of the Irish: feature либо добавляет по Wild на каждый reel, либо создаёт третий Scatter и переводит игру в Free Spins. Во Free Spins Leprechaun Wild становятся Sticky."
+    ],
+    editorial: "Эта часть серии строится не вокруг одного roaming Wild, а вокруг пяти reel-specific Leprechauns. Luck of the Irish служит мостом между двумя Scatters и полноценным Free Spins trigger.",
+    features: [
+      { title: "Пять reel-specific Wilds", description: "Каждый Leprechaun отвечает за свой reel и заменяет обычные symbols для построения комбинаций на 20 paylines." },
+      { title: "Luck of the Irish", description: "Два Clover Scatters дают либо пять дополнительных Wilds, по одному на каждый reel, либо третий Scatter для запуска Free Spins." },
+      { title: "Sticky Wild Free Spins", description: "Три Scatters запускают Free Spins; выпавшие Leprechaun Wild фиксируются до конца серии, а бонус можно retrigger один раз." }
+    ],
+  },
 };
 
 function getCatalogEditorial(slug: string) {
