@@ -16,6 +16,11 @@ const force = process.argv.includes("--force");
 const verifyOnly = process.argv.includes("--verify-only");
 const timeoutMs = 20_000;
 const maxSourceBytes = 16 * 1024 * 1024;
+const githubRepository = process.env.GITHUB_REPOSITORY || "Pr0ject2/slotfolio";
+const [githubOwner = "Pr0ject2", githubRepo = "slotfolio"] = githubRepository.split("/");
+const publishedAssetBase =
+  process.env.SLOTFOLIO_PUBLISHED_ASSET_BASE ||
+  `https://${githubOwner}.github.io/${githubRepo}`;
 
 const bytes = (n) => `${Math.max(1, Math.round(n / 1024))} KB`;
 
@@ -115,6 +120,16 @@ function metaContent(html, key) {
   return forward.exec(html)?.[1] || reverse.exec(html)?.[1] || "";
 }
 
+async function downloadPublishedFallback(entry) {
+  const local = String(entry.local || `/images/slots/${entry.slug}.webp`);
+  const url = new URL(local.replace(/^\/+/, ""), `${publishedAssetBase.replace(/\/$/, "")}/`).toString();
+  return {
+    buffer: await download(url, publishedAssetBase),
+    resolvedUrl: url,
+    method: "published Slotfolio fallback",
+  };
+}
+
 async function discoverImage(pageUrl) {
   const response = await fetchWithRetry(pageUrl, {
     accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.5",
@@ -133,6 +148,9 @@ async function resolveSource(entry) {
   if (entry.requireExplicitImage && !entry.image) {
     throw new Error("reviewed game-specific manifest image required; page preview is not approved artwork");
   }
+
+  const failures = [];
+
   if (entry.image) {
     try {
       return {
@@ -141,15 +159,32 @@ async function resolveSource(entry) {
         method: "manifest URL",
       };
     } catch (error) {
-      throw new Error(`manifest URL: ${error?.message || error}`);
+      failures.push(`manifest URL: ${error?.message || error}`);
     }
   }
-  const discovered = await discoverImage(entry.page);
-  return {
-    buffer: await download(discovered, entry.page),
-    resolvedUrl: discovered,
-    method: "official page metadata",
-  };
+
+  if (String(entry.local || "").startsWith("/images/catalog/")) {
+    try {
+      return await downloadPublishedFallback(entry);
+    } catch (error) {
+      failures.push(`published fallback: ${error?.message || error}`);
+    }
+  }
+
+  if (!entry.image) {
+    try {
+      const discovered = await discoverImage(entry.page);
+      return {
+        buffer: await download(discovered, entry.page),
+        resolvedUrl: discovered,
+        method: "official page metadata",
+      };
+    } catch (error) {
+      failures.push(`official page metadata: ${error?.message || error}`);
+    }
+  }
+
+  throw new Error(failures.join("; "));
 }
 
 async function processImage(buffer, output, entry) {
