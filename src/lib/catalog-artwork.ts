@@ -512,6 +512,27 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-motley-crue": "/images/catalog/playn-go-motley-crue.webp",
   "playn-go-mount-m": "/images/catalog/playn-go-mount-m.webp",
 
+  "playn-go-muerto-en-mictlan": "/images/catalog/playn-go-muerto-en-mictlan.webp",
+  "playn-go-multifruit-81": "/images/catalog/playn-go-multifruit-81.webp",
+  "playn-go-mystery-egg-surprise": "/images/catalog/playn-go-mystery-egg-surprise.webp",
+  "playn-go-mystery-genie-fortunes-of-the-lamp": "/images/catalog/playn-go-mystery-genie-fortunes-of-the-lamp.webp",
+  "playn-go-mystery-joker": "/images/catalog/playn-go-mystery-joker.webp",
+  "playn-go-mystery-joker-6000": "/images/catalog/playn-go-mystery-joker-6000.webp",
+  "playn-go-myth": "/images/catalog/playn-go-myth.webp",
+  "playn-go-myth-of-dead": "/images/catalog/playn-go-myth-of-dead.webp",
+  "playn-go-naughty-nicks-book": "/images/catalog/playn-go-naughty-nicks-book.webp",
+  "playn-go-new-year-riches": "/images/catalog/playn-go-new-year-riches.webp",
+  "playn-go-ninja-fruits": "/images/catalog/playn-go-ninja-fruits.webp",
+  "playn-go-nugget-n-nonsense": "/images/catalog/playn-go-nugget-n-nonsense.webp",
+  "playn-go-oasis-of-dead": "/images/catalog/playn-go-oasis-of-dead.webp",
+  "playn-go-octopus-treasure": "/images/catalog/playn-go-octopus-treasure.webp",
+  "playn-go-odin-protector-of-realms": "/images/catalog/playn-go-odin-protector-of-realms.webp",
+  "playn-go-pack-and-cash": "/images/catalog/playn-go-pack-and-cash.webp",
+  "playn-go-pandastic-adventure": "/images/catalog/playn-go-pandastic-adventure.webp",
+  "playn-go-pandoras-box-of-evil": "/images/catalog/playn-go-pandoras-box-of-evil.webp",
+  "playn-go-pearl-lagoon": "/images/catalog/playn-go-pearl-lagoon.webp",
+  "playn-go-pearls-of-india": "/images/catalog/playn-go-pearls-of-india.webp",
+
 };
 
 export function getCatalogArtwork(slug: string) {
