@@ -3755,9 +3755,9 @@
   },
   {
     "slug": "playn-go-merlin-journey-of-flame",
-    "page": "https://www.playngo.com/games/merlin%3A-journey-of-flame",
+    "page": "https://www.playngo.com/posts/merlin-journey-of-flame",
     "local": "/images/catalog/playn-go-merlin-journey-of-flame.webp",
-    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+    "note": "Reviewed first-party Play’n GO release/review page used for artwork localization because the canonical game-page route returns HTTP 404 to GitHub Runner. Build-time localizer resolves official provider image metadata and stores a local WebP."
   },
   {
     "slug": "playn-go-merlins-grimoire",
@@ -3803,9 +3803,9 @@
   },
   {
     "slug": "playn-go-monkey-battle-for-the-scrolls",
-    "page": "https://www.playngo.com/games/monkey%3A-battle-for-the-scrolls",
+    "page": "https://www.playngo.com/posts/monkey-battle-for-the-scrolls",
     "local": "/images/catalog/playn-go-monkey-battle-for-the-scrolls.webp",
-    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+    "note": "Reviewed first-party Play’n GO release/review page used for artwork localization because the canonical game-page route returns HTTP 404 to GitHub Runner. Build-time localizer resolves official provider image metadata and stores a local WebP."
   },
   {
     "slug": "playn-go-moon-princess",
@@ -3851,15 +3851,15 @@
   },
   {
     "slug": "playn-go-moon-princess-christmas-kingdom",
-    "page": "https://www.playngo.com/games/moon-princess%3A-christmas-kingdom",
+    "page": "https://www.playngo.com/post/copy-of-grow-your-blog-community",
     "local": "/images/catalog/playn-go-moon-princess-christmas-kingdom.webp",
-    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+    "note": "Reviewed first-party Play’n GO release/review page used for artwork localization because the canonical game-page route returns HTTP 404 to GitHub Runner. Build-time localizer resolves official provider image metadata and stores a local WebP."
   },
   {
     "slug": "playn-go-motley-crue",
-    "page": "https://www.playngo.com/games/m%C3%B6tley-cr%C3%BCe",
+    "page": "https://www.playngo.com/posts/motley-crue",
     "local": "/images/catalog/playn-go-motley-crue.webp",
-    "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+    "note": "Reviewed first-party Play’n GO release/review page used for artwork localization because the canonical game-page route returns HTTP 404 to GitHub Runner. Build-time localizer resolves official provider image metadata and stores a local WebP."
   },
   {
     "slug": "playn-go-mount-m",
