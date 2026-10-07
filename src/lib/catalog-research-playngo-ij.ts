@@ -27,6 +27,24 @@ export const catalogResearchPlayngoIJ: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Play'n GO release identifies the game as a five-reel, 20-payline slot.",
   },
+  "playn-go-irish-gold": {
+    mechanics: ["Линии"],
+    source: "https://www.playngo.com/games/irish-gold",
+    verifiedAt,
+    evidence: "Official game page explicitly describes Pot of Gold Wild substitutions and winning combinations on a payline.",
+  },
+  "playn-go-jolly-roger": {
+    mechanics: ["Линии"],
+    source: "https://www.playngo.com/games/jolly-roger",
+    verifiedAt,
+    evidence: "Official game page states that Treasure Chest and Treasure Map bonuses are triggered by symbols on an active line.",
+  },
+  "playn-go-jolly-roger-wild-kraken": {
+    mechanics: ["Каскады"],
+    source: "https://www.playngo.com/games/jolly-roger-wild-kraken",
+    verifiedAt,
+    evidence: "Official Play'n GO release explicitly describes cascading symbols/reels in Jolly Roger Wild Kraken.",
+  },
   "playn-go-iron-girl": {
     mechanics: ["Линии"],
     source: "https://www.playngo.com/games/iron-girl",
