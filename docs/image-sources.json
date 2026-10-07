@@ -3428,5 +3428,165 @@
     "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
     "image": "https://static.wixstatic.com/media/03705a_b9b91b188e7b4937bf0ad481744b2451~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/kingdombelow_Clientzone_Homepage_banner.webp",
     "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-kiss-reels-of-rock",
+    "page": "https://www.playngo.com/games/kiss-reels-of-rock",
+    "local": "/images/catalog/playn-go-kiss-reels-of-rock.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/fe6889_521f417ce7834da090e7f704859915dc~mv2.jpg/v1/fill/w_1920%2Ch_1080%2Cal_c%2Cq_90/kiss_EN_desktop.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-lab-of-madness-its-a-wild",
+    "page": "https://www.playngo.com/games/lab-of-madness-it's-a-wild!",
+    "local": "/images/catalog/playn-go-lab-of-madness-its-a-wild.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/bcf18b_ac7b49f9571d440e95662c4f1bc0e5d0~mv2.jpg/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/LabOfMadnessItsAWild_EN_Desktop_Main.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-lady-of-fortune",
+    "page": "https://www.playngo.com/games/lady-of-fortune",
+    "local": "/images/catalog/playn-go-lady-of-fortune.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/a11b6f_be5fdea1631146a5a16a45acd4ec153b~mv2.jpg/v1/fill/w_980%2Ch_735%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/ladyoffortune_EN_desktop.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-lady-of-fortune-destiny-spins",
+    "page": "https://www.playngo.com/games/lady-of-fortune-destiny-spins",
+    "local": "/images/catalog/playn-go-lady-of-fortune-destiny-spins.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/bb0cf5_f047404280e5493baeff867ea88ce280~mv2.png/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/LadyofFortuneDestinySpins_EN_Desktop_basic__.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-lady-of-fortune-remastered",
+    "page": "https://www.playngo.com/games/lady-of-fortune-remastered",
+    "local": "/images/catalog/playn-go-lady-of-fortune-remastered.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/9583e9_9168d1da029e431bafe6bef5cb70ac0d~mv2.jpg/v1/fill/w_1920%2Ch_1080%2Cal_c%2Cq_90/LOFR_EN_Desktop_Main.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-lawn-n-disorder",
+    "page": "https://www.playngo.com/games/lawn-n'-disorder",
+    "local": "/images/catalog/playn-go-lawn-n-disorder.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/ff8913_5d7bc926040e4fbaaadc1f9855f0cb14~mv2.jpg/v1/fill/w_1920%2Ch_1080%2Cal_c%2Cq_90/LawnNDisorder_EN_Main.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-legacy-of-dynasties",
+    "page": "https://www.playngo.com/games/legacy-of-dynasties",
+    "local": "/images/catalog/playn-go-legacy-of-dynasties.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/b4b71b_5bc14f292026428fbae5fb205e8604e0~mv2.png/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/LegacyofDynasties_EN_Desktop_basic.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-legacy-of-egypt",
+    "page": "https://www.playngo.com/games/legacy-of-egypt",
+    "local": "/images/catalog/playn-go-legacy-of-egypt.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://www.playngo.com/_next/image?q=75&url=https%3A%2F%2Fwsh4cfcctixmqqzl.public.blob.vercel-storage.com%2Fgames%2F339%2Flogo%2F0-62413ee671587c33&w=3840",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-legacy-of-gems-blitzways",
+    "page": "https://www.playngo.com/games/legacy-of-gems-blitzways",
+    "local": "/images/catalog/playn-go-legacy-of-gems-blitzways.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/648e63_af39a558e4b9498ca52bddd174998153~mv2.jpg/v1/fill/w_1920%2Ch_1080%2Cal_c%2Cq_90/LegacyOfGemsBlitzways_EN_Mobile_Main.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-legacy-of-inca",
+    "page": "https://www.playngo.com/games/legacy-of-inca",
+    "local": "/images/catalog/playn-go-legacy-of-inca.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/e15435_53fbdef2eda443bbbddf81ecc6ac23f5~mv2.png/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/legacyofinca_EN_Desktop_basic.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-legacy-of-undead-dragon-abyssways",
+    "page": "https://www.playngo.com/games/legacy-of-undead-dragon-abyssways",
+    "local": "/images/catalog/playn-go-legacy-of-undead-dragon-abyssways.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/26a117_3d55010d3f464b6c999c36e4680953e4~mv2.png/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/LegacyOfUndeadDragon_EN_Mobile_Main.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-legend-of-the-ice-dragon",
+    "page": "https://www.playngo.com/games/legend-of-the-ice-dragon",
+    "local": "/images/catalog/playn-go-legend-of-the-ice-dragon.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/d0f511_14d8e10595ac49b0acaf0a8bda7e2649~mv2.jpg/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/legendoftheicedragon_EN_desktop.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-legion-gold",
+    "page": "https://www.playngo.com/games/legion-gold",
+    "local": "/images/catalog/playn-go-legion-gold.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/1fc299_1dc3b0371d7a4c71902a495d50c5f4cf~mv2.png/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/legiongold_EN_Desktop_basic.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-legion-gold-and-the-sphinx-of-dead",
+    "page": "https://www.playngo.com/games/legion-gold-and-the-sphinx-of-dead",
+    "local": "/images/catalog/playn-go-legion-gold-and-the-sphinx-of-dead.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/c2f784_a366076dbe2f43ccab1e9351008fded5~mv2.jpg/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/LGSOD_EN_Desktop_Main.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-legion-gold-and-the-throne-of-dead",
+    "page": "https://www.playngo.com/games/legion-gold-and-the-throne-of-dead",
+    "local": "/images/catalog/playn-go-legion-gold-and-the-throne-of-dead.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/5d85b8_7c1d3efc123b40a3a81717165e5652e9~mv2.png/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/LegionDeadThroneofDead_EN_Desktop_basic_.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-legion-gold-reckoning",
+    "page": "https://www.playngo.com/games/legion-gold-reckoning",
+    "local": "/images/catalog/playn-go-legion-gold-reckoning.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/de1bc5_c9ec5b5df74649699785e3c23f311e6b~mv2.png/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/LegionGoldReckoning_EN_Desktop_Main.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-legion-gold-unleashed",
+    "page": "https://www.playngo.com/games/legion-gold-unleashed",
+    "local": "/images/catalog/playn-go-legion-gold-unleashed.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/fc31b2_f8d756fbaad44228acaaec2370c79438~mv2.png/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/legiongoldunleashed_EN_Desktop_basic.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-legion-gold-victory",
+    "page": "https://www.playngo.com/games/legion-gold-victory!",
+    "local": "/images/catalog/playn-go-legion-gold-victory.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/e05945_18740ad5f02143debe20adac409cd3a8~mv2.jpg/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/LegionGoldVictory__EN_Desktop_Main.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-leprechaun-goes-egypt",
+    "page": "https://www.playngo.com/games/leprechaun-goes-egypt",
+    "local": "/images/catalog/playn-go-leprechaun-goes-egypt.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/2a4a18_739969e20308480c9fed5068f5cb1a27~mv2.jpg/v1/fill/w_980%2Ch_552%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/leprechaungoesegypt_EN_desktop.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-leprechaun-goes-wild",
+    "page": "https://www.playngo.com/games/leprechaun-goes-wild",
+    "local": "/images/catalog/playn-go-leprechaun-goes-wild.webp",
+    "note": "Reviewed first-party Play’n GO artwork. Build-time localizer stores a local WebP; no runtime remote request.",
+    "image": "https://static.wixstatic.com/media/c177f9_465e354a0e3e4b6fbf0433f24e522890~mv2.jpg/v1/fill/w_1333%2Ch_746%2Cal_c%2Cq_85/leprechaungoeswild_EN_Mlandscape.jpg",
+    "requireExplicitImage": true
   }
 ]

@@ -24,6 +24,9 @@ const gameTypes: Record<string, CatalogVerifiedGameType> = {
   "playn-go-legion-gold-and-the-throne-of-dead": { gameType: "Video Slot", source: "https://www.playngo.com/games/legion-gold-and-the-throne-of-dead", verifiedAt },
   "playn-go-legion-gold-reckoning": { gameType: "Video Slot", source: "https://www.playngo.com/games/legion-gold-reckoning", verifiedAt },
   "playn-go-legion-gold-unleashed": { gameType: "Video Slot", source: "https://www.playngo.com/games/legion-gold-unleashed", verifiedAt },
+  "playn-go-legion-gold-victory": { gameType: "Video Slot", source: "https://www.playngo.com/games/legion-gold-victory!", verifiedAt },
+  "playn-go-leprechaun-goes-egypt": { gameType: "Video Slot", source: "https://www.playngo.com/games/leprechaun-goes-egypt", verifiedAt },
+  "playn-go-leprechaun-goes-wild": { gameType: "Video Slot", source: "https://www.playngo.com/games/leprechaun-goes-wild", verifiedAt },
 };
 
 export function getVerifiedCatalogGameTypePlayngoKL(slug: string) {

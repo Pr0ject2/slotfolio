@@ -24,6 +24,8 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "playn-go-legion-gold-and-the-throne-of-dead": { releaseDate: "2026-07-09", source: "https://www.playngo.com/games/legion-gold-and-the-throne-of-dead", verifiedAt },
   "playn-go-legion-gold-reckoning": { releaseDate: "2026-04-23", source: "https://www.playngo.com/games/legion-gold-reckoning", verifiedAt },
   "playn-go-legion-gold-unleashed": { releaseDate: "2024-02-29", source: "https://www.playngo.com/games/legion-gold-unleashed", verifiedAt },
+  "playn-go-leprechaun-goes-egypt": { field: "до 20 линий", releaseDate: "2013-03-25", source: "https://www.playngo.com/games/leprechaun-goes-egypt", verifiedAt },
+  "playn-go-leprechaun-goes-wild": { field: "20 линий", releaseDate: "2020-02-13", source: "https://www.playngo.com/games/leprechaun-goes-wild", verifiedAt },
 };
 
 export function getCatalogVerifiedDetailsPlayngoKL(slug: string) {
