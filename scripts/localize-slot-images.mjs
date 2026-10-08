@@ -141,7 +141,10 @@ function inlineImageContent(html, hint) {
   if (position < 0) return "";
   const window = normalized.slice(Math.max(0, position - 1800), position + 1800);
   const matches = window.match(/https?:\/\/[^\s\"'<>]+/g) ?? [];
-  return matches.find((url) => url.toLowerCase().includes(needle)) ?? "";
+  const absolute = matches.find((url) => url.toLowerCase().includes(needle));
+  if (absolute) return absolute;
+  const relative = normalized.match(/\/(?:uploads|images)\/[^\s\"\x27<>)]*/gi) ?? [];
+  return relative.find((url) => url.toLowerCase().includes(needle)) ?? "";
 }
 
 async function discoverImage(pageUrl, imageHint) {
