@@ -4624,5 +4624,165 @@
     "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
     "image": "https://www.pushgaming.com/uploads/Mad%20Cars/Game%20Page/MadCars_game-page1_BASE-GAME-INSTANT-PRIZE-CAR-SYMBOLS-_-MULTIPLIERS.png",
     "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-masked-mayhem",
+    "page": "https://www.pushgaming.com/games/masked-mayhem.html",
+    "image": "https://www.pushgaming.com/uploads/Masked%20Mayhem/Game%20Page/Masked_Mayhem_Game_Page_Base_Game.png",
+    "local": "/images/catalog/push-gaming-masked-mayhem.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-mystery-mission-to-the-moon",
+    "page": "https://www.pushgaming.com/games/mystery-mission-moon.html",
+    "image": "https://www.pushgaming.com/uploads/Mystery%20Mission%20-%20To%20The%20Moon/1-Base-Game-Symbols-and-Nudging.png",
+    "local": "/images/catalog/push-gaming-mystery-mission-to-the-moon.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-mystery-museum",
+    "page": "https://www.pushgaming.com/games/mystery-museum.html",
+    "image": "https://www.pushgaming.com/uploads/Mystery_Museum/POWER-GAMBLE.png",
+    "local": "/images/catalog/push-gaming-mystery-museum.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-mystery-of-the-nile",
+    "page": "https://www.pushgaming.com/games/mystery-nile.html",
+    "image": "https://www.pushgaming.com/uploads/Mystery%20of%20the%20Nile/Mystery_of_the_Nile_Nudge_and_Reveal.png",
+    "local": "/images/catalog/push-gaming-mystery-of-the-nile.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-neon-cash-city",
+    "page": "https://www.pushgaming.com/games/neon-cash-city.html",
+    "image": "https://www.pushgaming.com/uploads/Neon%20Cash%20City/Neon_Cash_City_Game_Page_Base_Game.png",
+    "local": "/images/catalog/push-gaming-neon-cash-city.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-olympus-unleashed",
+    "page": "https://www.pushgaming.com/games/olympus-unleashed.html",
+    "image": "https://www.pushgaming.com/uploads/Olympus%20Unleashed/Olympus_Unleashed_Game_Page_Wild_Symbol.png",
+    "local": "/images/catalog/push-gaming-olympus-unleashed.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-power-paws",
+    "page": "https://www.pushgaming.com/games/power-paws.html",
+    "image": "https://www.pushgaming.com/uploads/Power%20Paws/Game%20Page/Power_Paws_Game_Page_Progression_Meter.png",
+    "local": "/images/catalog/push-gaming-power-paws.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-power-vault",
+    "page": "https://www.pushgaming.com/games/power-vault.html",
+    "image": "https://www.pushgaming.com/uploads/Power%20Vault/Power_Vault_Game_Page_Instant_Prizes.png",
+    "local": "/images/catalog/push-gaming-power-vault.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-rat-king",
+    "page": "https://www.pushgaming.com/games/rat-king.html",
+    "image": "https://www.pushgaming.com/uploads/Rat_King/rat_king_1_BASE-GAME-COLLECTION-BOXES-_-DUD-SYMBOLS.png",
+    "local": "/images/catalog/push-gaming-rat-king.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-razor-returns",
+    "page": "https://www.pushgaming.com/games/razor-returns.html",
+    "image": "https://www.pushgaming.com/uploads/Razor%20Returns/RazorReturns_1_BASE-GAME-WILD-SHARK-SCATTER-_-MYSTERY-SYMBOLS.png",
+    "local": "/images/catalog/push-gaming-razor-returns.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-razor-shark-jackpots",
+    "page": "https://www.pushgaming.com/games/razor-shark-jackpots.html",
+    "image": "https://www.pushgaming.com/uploads/Razor%20Shark%20Jackpots/Razor_Shark_Jackpots_Game_Page_Nudge_Reveal_Feature.png",
+    "local": "/images/catalog/push-gaming-razor-shark-jackpots.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-razor-ways",
+    "page": "https://www.pushgaming.com/games/razor-ways.html",
+    "image": "https://www.pushgaming.com/uploads/Razor%20Ways/Razor_Ways_Game_Page_Expanding_Rows.png",
+    "local": "/images/catalog/push-gaming-razor-ways.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-red-hot-multipliers",
+    "page": "https://www.pushgaming.com/games/red-hot-multipliers.html",
+    "image": "https://www.pushgaming.com/uploads/Red%20Hot%20Multipliers/Red_Hot_Multipliers_Game_Page_Hot_Multipliers.png",
+    "local": "/images/catalog/push-gaming-red-hot-multipliers.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-regal-knights",
+    "page": "https://www.pushgaming.com/games/regal-knights.html",
+    "image": "https://www.pushgaming.com/uploads/Regal%20Knights/Regal_Knights_Game_Page_Mystery_Symbols.png",
+    "local": "/images/catalog/push-gaming-regal-knights.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-retro-sweets",
+    "page": "https://www.pushgaming.com/games/retro-sweets.html",
+    "image": "https://www.pushgaming.com/uploads/Retro%20Sweets/Retro-Sweets_1_Wild-Candy-Symbol.png",
+    "local": "/images/catalog/push-gaming-retro-sweets.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-retroverse",
+    "page": "https://www.pushgaming.com/games/retroverse.html",
+    "image": "https://www.pushgaming.com/uploads/RetroVerse/RetroVerse_Game_Page_Wild_Symbol.png",
+    "local": "/images/catalog/push-gaming-retroverse.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-samurais-katana",
+    "page": "https://www.pushgaming.com/games/samurais-katana.html",
+    "image": "https://www.pushgaming.com/uploads/Samurai%27s%20Katana/Samurai_s_Katana_Wild_Wild_Stacks_Symbols.png",
+    "local": "/images/catalog/push-gaming-samurais-katana.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-santa-hopper",
+    "page": "https://www.pushgaming.com/games/santa-hopper.html",
+    "image": "https://www.pushgaming.com/uploads/Santa%20Hopper/Santa_Hopper_Game_Page_Wild_Santa_Symbol.png",
+    "local": "/images/catalog/push-gaming-santa-hopper.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-santas-vault",
+    "page": "https://www.pushgaming.com/games/santas-vault.html",
+    "image": "https://www.pushgaming.com/uploads/Santas%20Vault/Santas_Vault_Game_Page_Instant_Prizes.png",
+    "local": "/images/catalog/push-gaming-santas-vault.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-sea-of-spirits",
+    "page": "https://www.pushgaming.com/games/sea-spirits.html",
+    "image": "https://www.pushgaming.com/uploads/Sea%20of%20Spirits/Sea_of_Spirits_Game_Page_Base_Game.png",
+    "local": "/images/catalog/push-gaming-sea-of-spirits.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
   }
 ]
