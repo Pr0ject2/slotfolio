@@ -4515,11 +4515,11 @@
   },
   {
     "slug": "push-gaming-fish-n-nudge-big-catch",
-    "page": "https://www.pushgaming.com/games/fish-n-nudge-big-catch.html",
+    "page": "https://www.pushgaming.com/games/",
     "local": "/images/catalog/push-gaming-fish-n-nudge-big-catch.webp",
-    "note": "Reviewed first-party Push Gaming Net Symbol artwork from the official Big Catch page, replacing a broken 404.",
-    "image": "https://www.pushgaming.com/uploads/Fish%20%27n%27%20Nudge%20Big%20Catch/Game%20Page/Fish_N_Nudge_Big_Catch_Game_Page_Net_Symbol.png",
-    "requireExplicitImage": true
+    "note": "Reviewed first-party Push Gaming official catalog artwork, selected by game-specific Catch image filename; explicit game-page feature URLs were 404.",
+    "requireExplicitImage": true,
+    "imageHint": "catch"
   },
   {
     "slug": "push-gaming-generous-jack",
