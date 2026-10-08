@@ -84,8 +84,19 @@ const cases = [
 
 test("wave 55 Wazdan /slots images load after lazy scrolling", async ({ page })=>{
   for(const [slug,name] of cases){
-    await page.goto(`/slots/?q=${encodeURIComponent(name)}`);
     const card=page.locator(`[data-slot="${slug}"]`);
+    let found=false;
+    for(let pageNumber=1;pageNumber<=40;pageNumber++){
+      await page.goto(`/slots/?q=${encodeURIComponent(name)}&sort=name&page=${pageNumber}`);
+      await expect(page.locator("#catalog-q")).toHaveValue(name);
+      if(await card.count()){
+        found=true;
+        break;
+      }
+      const next=page.getByRole("button",{name:"Следующая страница"});
+      if(!(await next.count()) || await next.isDisabled()) break;
+    }
+    expect(found, `Catalog search must list ${name} (${slug}) on some results page`).toBe(true);
     await expect(card).toBeVisible();
     const image=card.locator(".catalog-game-art .game-image");
     await expect(image).toBeVisible();
