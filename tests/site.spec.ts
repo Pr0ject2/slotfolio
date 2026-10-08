@@ -449,17 +449,18 @@ test("mobile filter apply returns to results and basic records remain actionable
   await page.getByRole("link", { name: "Открыть запись ↗", exact: true }).first().click();
   await expect(page).toHaveURL(/\/slots\/catalog\//);
   await expect(page.locator("main")).toHaveCount(1);
-  // A catalog record can hydrate into a researched dossier; check the settled route.
-  await page.waitForLoadState("networkidle");
-  const heading = page.locator(".slot-heading .eyebrow");
-  await expect(heading).toHaveText(/^(Досье игры|Запись каталога)/);
-  const isFullDossier = (await heading.innerText()).startsWith("Досье игры");
-  if (isFullDossier) {
-    await expect(page.locator(".compare-button")).toHaveCount(1);
-    await expect(page.locator(".compare-button")).toHaveAttribute("href", "#catalog-comparison");
-    await expect(page.locator("#catalog-comparison h2")).toHaveText("Сравнение с другими играми");
-  } else {
-    await expect(page.locator(".slot-heading .eyebrow")).toContainText("Запись каталога");
-    await expect(page.locator(".compare-button")).toHaveCount(0);
-  }
+  // A formerly basic catalog record can become a researched dossier between waves.
+  // Check the label and actions together: a client-side transition may change both.
+  await expect.poll(async () => {
+    const label = await page.locator(".slot-heading .eyebrow").innerText();
+    const compare = page.locator(".compare-button");
+    const count = await compare.count();
+    if (label.startsWith("Досье игры")) {
+      const href = count ? await compare.getAttribute("href") : null;
+      const title = await page.locator("#catalog-comparison h2").allTextContents();
+      return count === 1 && href === "#catalog-comparison" && title.includes("Сравнение с другими играми");
+    }
+    if (label.startsWith("Запись каталога")) return count === 0;
+    return false;
+  }, { timeout: 15_000 }).toBe(true);
 });
