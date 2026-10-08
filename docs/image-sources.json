@@ -3877,9 +3877,9 @@
     "slug": "playn-go-muerto-en-mictlan",
     "page": "https://www.playngo.com/post/light-your-candles-for-the-day-of-the-dead-festival",
     "local": "/images/catalog/playn-go-muerto-en-mictlan.webp",
-    "note": "Reviewed first-party Play’n GO release page used because the canonical game page returns HTTP 404 to GitHub Runner. The localizer selects an inline game-specific first-party image by filename hint and stores a local WebP.",
-    "imageHint": "muertoenmictlan",
-    "requireExplicitImage": true
+    "note": "Reviewed first-party game-specific Play’n GO artwork. Exact Wix CDN image from the official game page, localized into a WebP during build.",
+    "requireExplicitImage": true,
+    "image": "https://static.wixstatic.com/media/860592_79b41371b85049639cb0a54bb9b8d6ba~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/muerto_mictlan_bg.webp"
   },
   {
     "slug": "playn-go-multifruit-81",
@@ -3897,9 +3897,9 @@
     "slug": "playn-go-mystery-genie-fortunes-of-the-lamp",
     "page": "https://www.playngo.com/post/mystery-genie-fortunes-of-the-lamp",
     "local": "/images/catalog/playn-go-mystery-genie-fortunes-of-the-lamp.webp",
-    "note": "Reviewed first-party Play’n GO release page used because the canonical game page returns HTTP 404 to GitHub Runner. The localizer selects an inline game-specific first-party image by filename hint and stores a local WebP.",
-    "imageHint": "mysterygenie",
-    "requireExplicitImage": true
+    "note": "Reviewed first-party game-specific Play’n GO artwork. Exact Wix CDN image from the official game page, localized into a WebP during build.",
+    "requireExplicitImage": true,
+    "image": "https://static.wixstatic.com/media/01cc5f_e893a037ba0144a5b6d8df6f4ad07dd1~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/fortunesofthelamp_Clientzone_Homepage_banner.webp"
   },
   {
     "slug": "playn-go-mystery-joker",
@@ -3971,9 +3971,9 @@
     "slug": "playn-go-pack-and-cash",
     "page": "https://www.playngo.com/post/playngo-packs-a-punch-with-their-latest-title",
     "local": "/images/catalog/playn-go-pack-and-cash.webp",
-    "note": "Reviewed first-party Play’n GO release page used because the canonical game page returns HTTP 404 to GitHub Runner. The localizer selects an inline game-specific first-party image by filename hint and stores a local WebP.",
-    "imageHint": "packandcash",
-    "requireExplicitImage": true
+    "note": "Reviewed first-party game-specific Play’n GO artwork. Exact Wix CDN image from the official game page, localized into a WebP during build.",
+    "requireExplicitImage": true,
+    "image": "https://static.wixstatic.com/media/1c3085_52954ed152a846f7a5b81943ef3c53b0~mv2.webp/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/pack_and_cash_bg.webp"
   },
   {
     "slug": "playn-go-pandastic-adventure",
