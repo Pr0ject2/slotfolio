@@ -66,7 +66,7 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "push-gaming-regal-knights": { rtp: "96,22% / 94,25%", volatility: "Низкая", source: "https://www.pushgaming.com/games/regal-knights.html", verifiedAt },
   "push-gaming-retro-sweets": { field: "6×9 · Cluster Links", rtp: "96,49% / 94,42%", volatility: "Высокая", source: "https://www.pushgaming.com/games/retro-sweets.html", verifiedAt },
   "push-gaming-retroverse": { rtp: "96,24% / 94,37%", volatility: "Высокая", source: "https://www.pushgaming.com/games/retroverse.html", verifiedAt },
-  "push-gaming-samurais-katana": { rtp: "96,40% / 94,31%", volatility: "Высокая", source: "https://www.pushgaming.com/games/samurais-katana.html", verifiedAt },
+  "push-gaming-samurais-katana": { field: "5×4 · 20 линий", rtp: "96,40% / 94,31%", volatility: "Высокая", source: "https://www.pushgaming.com/games/samurais-katana.html", verifiedAt },
   "push-gaming-santas-vault": { field: "3 барабана", rtp: "96,37% / 94,38%", volatility: "Низкая", source: "https://www.pushgaming.com/games/santas-vault.html", verifiedAt },
   "push-gaming-sea-of-spirits": { rtp: "96,36% / 94,28%", volatility: "Высокая", source: "https://www.pushgaming.com/games/sea-spirits.html", verifiedAt },
 
