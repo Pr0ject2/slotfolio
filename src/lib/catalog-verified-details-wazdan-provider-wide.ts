@@ -134,6 +134,17 @@ const details: Record<string, CatalogVerifiedDetails> = {
     source: "https://wazdan.com/games/vegas-reels-ii",
     verifiedAt,
   },
+  "wazdan-black-horse-deluxe": { field: "6 барабанов · 20 линий", rtp: "96,23%", maxWin: "950x", volatility: "Средняя", releaseDate: "2020-07-01", source: "https://wazdan.com/games/black-horse-deluxe", verifiedAt: verifiedAtLatest },
+  "wazdan-book-of-faith": { field: "5 барабанов · 10 линий", rtp: "96,13%", maxWin: "5000x", volatility: "Высокая", releaseDate: "2023-12-05", source: "https://wazdan.com/games/book-of-faith", verifiedAt: verifiedAtLatest },
+  "wazdan-burning-reels": { field: "5 барабанов · 20 линий", rtp: "96,63%", maxWin: "1250x", volatility: "Низкая", releaseDate: "2017-07-14", source: "https://wazdan.com/games/burning-reels", verifiedAt: verifiedAtLatest },
+  "wazdan-burning-stars": { field: "5 барабанов · 20 линий", rtp: "96,50%", maxWin: "305x", volatility: "Низкая–средняя", releaseDate: "2014-08-09", source: "https://wazdan.com/games/burning-stars", verifiedAt: verifiedAtLatest },
+  "wazdan-captain-shark": { field: "5 барабанов · 20 линий", rtp: "96,25%", maxWin: "5350x", volatility: "Высокая", releaseDate: "2017-02-05", source: "https://wazdan.com/games/captain-shark", verifiedAt: verifiedAtLatest },
+  "wazdan-clover-lady": { field: "6 барабанов · 10 линий", rtp: "96,21%", maxWin: "3500x", volatility: "Высокая", releaseDate: "2021-02-10", source: "https://wazdan.com/games/clover-lady", verifiedAt: verifiedAtLatest },
+  "wazdan-colin-the-cat": { field: "4 барабана · 10 линий", rtp: "96,10%", maxWin: "260x", volatility: "Средняя", releaseDate: "2016-01-12", source: "https://wazdan.com/games/colin-the-cat", verifiedAt: verifiedAtLatest },
+  "wazdan-corrida-romance-deluxe": { field: "5 барабанов · 20 линий", rtp: "96,29%", maxWin: "4650x", volatility: "Средняя", releaseDate: "2018-07-04", source: "https://wazdan.com/games/corrida-romance-deluxe", verifiedAt: verifiedAtLatest },
+  "wazdan-crazy-cars": { field: "5 барабанов · 5 линий", rtp: "96,27%", maxWin: "1750x", volatility: "Высокая", releaseDate: "2016-02-11", source: "https://wazdan.com/games/crazy-cars", verifiedAt: verifiedAtLatest },
+  "wazdan-criss-cross-81": { field: "4 барабана · 81 линия", rtp: "96,29%", maxWin: "2144x", volatility: "Средняя–высокая", releaseDate: "2012-11-19", source: "https://wazdan.com/games/criss-cross-81", verifiedAt: verifiedAtLatest },
+
 };
 
 export function getCatalogVerifiedDetailsWazdanProviderWide(slug: string) {
