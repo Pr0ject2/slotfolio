@@ -170,6 +170,9 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "wazdan-hot-slot-777-stars-extremely-light": {"field":"5 барабанов · 20 линий","rtp":"96,10%","maxWin":"500x","volatility":"Средняя","releaseDate":"2024-01-10","source":"https://wazdan.com/games/hot-slot-777-stars-extremely-light","verifiedAt":"2026-10-09"},
   "wazdan-hot-slot-gold-coins": {"field":"15 барабанов · 10 линий","rtp":"96,15%","maxWin":"750x","volatility":"Средняя","releaseDate":"2025-04-24","source":"https://wazdan.com/games/hot-slot-gold-coins","verifiedAt":"2026-10-09"},
   "wazdan-hot-slot-magic-bombs": {"field":"5 барабанов · 10 линий","rtp":"96,17%","maxWin":"6000x","volatility":"Высокая","releaseDate":"2022-10-11","source":"https://wazdan.com/games/hot-slot-magic-bombs","verifiedAt":"2026-10-09"},
+  "wazdan-lucky-9": {"field":"6 барабанов · 20 линий","rtp":"96,11%","maxWin":"1300x","volatility":"Средняя","releaseDate":"2020-06-17","source":"https://wazdan.com/games/lucky-9","verifiedAt":"2026-10-09"},
+  "wazdan-lucky-fortune": {"field":"5 барабанов · 20 линий","rtp":"96,30%","maxWin":"4650x","volatility":"Средняя","source":"https://wazdan.com/games/lucky-fortune","verifiedAt":"2026-10-09"},
+  "wazdan-lucky-queen": {"field":"5 барабанов · 20 линий","rtp":"96,17%","maxWin":"4500x","volatility":"Низкая–средняя","releaseDate":"2015-04-23","source":"https://wazdan.com/games/lucky-queen","verifiedAt":"2026-10-09"},
 
 };
 
