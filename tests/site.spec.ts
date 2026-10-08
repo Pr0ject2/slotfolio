@@ -436,7 +436,7 @@ test("pagination visits all 1000 games once without accumulating DOM rows", asyn
   await expect(page.getByRole("button", { name: "Следующая страница" })).toBeDisabled();
 });
 
-test("mobile filter apply returns to results and basic records remain actionable", async ({ page }) => {
+test("mobile filter apply returns to results and reviewed catalog records remain actionable", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 844 });
   await page.goto("/slots?page=56");
   await page.getByRole("button", { name: /^Фильтры/ }).click();
@@ -449,18 +449,10 @@ test("mobile filter apply returns to results and basic records remain actionable
   await page.getByRole("link", { name: "Открыть запись ↗", exact: true }).first().click();
   await expect(page).toHaveURL(/\/slots\/catalog\//);
   await expect(page.locator("main")).toHaveCount(1);
-  // A formerly basic catalog record can become a researched dossier between waves.
-  // Check the label and actions together: a client-side transition may change both.
-  await expect.poll(async () => {
-    const label = await page.locator(".slot-heading .eyebrow").innerText();
-    const compare = page.locator(".compare-button");
-    const count = await compare.count();
-    if (label.startsWith("Досье игры")) {
-      const href = count ? await compare.getAttribute("href") : null;
-      const title = await page.locator("#catalog-comparison h2").allTextContents();
-      return count === 1 && href === "#catalog-comparison" && title.includes("Сравнение с другими играми");
-    }
-    if (label.startsWith("Запись каталога")) return count === 0;
-    return false;
-  }, { timeout: 15_000 }).toBe(true);
+  // Page 56 now opens a researched catalog dossier after the Play’n GO editorial waves.
+  // Assert the actual destination, its comparison action, and the comparison section.
+  await expect(page.locator(".slot-heading .eyebrow")).toContainText("Досье игры");
+  await expect(page.locator(".compare-button")).toHaveCount(1);
+  await expect(page.locator(".compare-button")).toHaveAttribute("href", "#catalog-comparison");
+  await expect(page.locator("#catalog-comparison h2")).toHaveText("Сравнение с другими играми");
 });
