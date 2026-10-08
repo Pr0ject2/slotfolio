@@ -3710,6 +3710,107 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ],
   },
 
+  "push-gaming-shamrock-saints": {
+    intro: ["Shamrock Saints собирает Token в Golden Pot: на пятом уровне новые жетоны могут взорвать горшок и открыть Shamrock Mode.","Стопки Mystery Symbols сдвигаются на каждом вращении; раскрытие Golden Leprechaun запускает призовую цепочку, а в бесплатных вращениях множитель растёт при каждом сдвиге."],
+    editorial: "У этой игры два разных пути к усилению: накопленный Golden Pot открывает Shamrock Mode, а Mystery Symbols дают раскрытия призов даже до активации горшка.",
+    features: [{ title: "Golden Pot", description: "Жетоны наполняют шкалу до пятого уровня, после чего новые могут вызвать взрыв и Shamrock Mode." },{ title: "Nudge & Reveal", description: "Стопки по четыре Mystery Symbols раскрывают Wild, призовые или Golden Leprechaun symbols." },{ title: "Free Spins и Shamrock Mode", description: "Во Free Spins Mystery-стопки сдвигаются и поднимают общий множитель; Shamrock Mode начинает его с x10." }],
+  },
+  "push-gaming-tarot-treasures": {
+    intro: ["Tarot Treasures делит символы в подвижных Hot Zones: каждый попавший туда знак разбивается пополам и открывает дополнительные варианты выигрыша.","Три последовательных каскада в базовой игре открывают выбор карты с улучшением; в бесплатных вращениях для этого требуется заполнить уже пять делений шкалы."],
+    editorial: "У Tarot Treasures рост числа способов и получение бонусных карт идут параллельно: Hot Zones меняют поле, а каскадная шкала добавляет усиления.",
+    features: [{ title: "Hot Zones", description: "Стопки из четырёх горячих зон с каждым спином смещаются вниз и разделяют попавшие в них symbols." },{ title: "Карта улучшения", description: "После трёх подряд каскадов выбирается усиление: дополнительные Wild, Hot Zones, множитель или Scatter." },{ title: "Free Spins", description: "Три Scatter дают восемь вращений, новые Scatter добавляют по одному; Hot Zones стоят на барабанах 2 и 5." }],
+  },
+  "push-gaming-the-grand-show": {
+    intro: ["The Grand Show связывает Collector на первом барабане с мгновенными призами и джекпотами, которые появляются правее.","Два Top Hat на первом и пятом барабанах открывают бонус 5×8: нижний ряд подталкивает значения вверх, а отдельный пятый барабан отвечает за усиления."],
+    editorial: "Главное отличие The Grand Show от обычного Hold & Win в движении нижнего ряда и раздельных функциях бонусных барабанов; Grand здесь относится к конкретному jackpot tier.",
+    features: [{ title: "Collector", description: "На первом барабане собирает Instant Prizes и Jackpot Symbols со своей позиции и последующих барабанов." },{ title: "Top Hat Bonus", description: "Top Hat на первом и пятом барабанах запускают сетку 5×8 со сдвигом призов снизу вверх." },{ title: "Бонусные усиления", description: "На пятом бонусном барабане возможны Nudge All, Boost и Re-trigger, а на остальных — Cash, Jackpot и Nudge Up." }],
+  },
+  "push-gaming-the-great-banker": {
+    intro: ["The Great Banker размещает Banker Collector только на пятом барабане, где он собирает значения видимых Coins.","Монеты также попадают в Wheel над полем; колесо может назначить jackpot или разные Free Spins, а в бонусе новые символы перезапускают счётчик трёх вращений."],
+    editorial: "У The Great Banker базовая игра ведёт сразу два независимых счётчика: мгновенный сбор монет через Banker и зарядку Wheel. Их нельзя путать с заключительным Safe retrigger.",
+    features: [{ title: "Banker Collector", description: "Banker на пятом барабане собирает присутствующие значения Coin Symbols." },{ title: "Wheel Feature", description: "Монеты могут активировать колесо с jackpot tiers и вариантами Free Spins, включая The Great Banker и Fat Money." },{ title: "Multiplier и Safe", description: "Множитель x2–x4 действует на соседние значения в 3×3, Great Multiplier — на все; Safe может дать полный повтор Free Spins." }],
+  },
+  "push-gaming-tiki-tumble": {
+    intro: ["Tiki Tumble использует поле 5×4 с двадцатью линиями и Wild-стопками, которые спускаются по барабанам после появления в верхних позициях.","Три золотые маски запускают Free Games с повторными сдвигами Wild и растущим множителем; Tiki Bonus начинает серию с полными стопками на втором и четвёртом барабанах."],
+    editorial: "Для Tiki Tumble важна вертикальная позиция Wild перед спином: дальнейший сдвиг стопки определяет последовательность повторных вращений, а не только итог одной комбинации.",
+    features: [{ title: "Nudging Wilds", description: "Wild на верхних трёх позициях запускают сдвиг вниз с новыми шансами на комбинации." },{ title: "Tiki Bonus", description: "Золотые маски переводят игру в бонус с полными Wild-стопками на барабанах 2 и 4." },{ title: "Free Games", description: "Три или больше маски открывают повторные вращения, где Wild продолжают двигаться и усиливают множитель." }],
+  },
+  "push-gaming-tricky-treats": {
+    intro: ["Tricky Treats строит кластеры с Wild, который одновременно служит Scatter и растит свой множитель на +1 после участвовавшего выигрыша.","Отдельный Multiplier Wild передаёт свой множитель всем видимым Wild, затем становится Instant Prize. Collector притягивает на сетке недостающие symbols, чтобы сформировать кластер."],
+    editorial: "Здесь Wild и Instant Prize имеют отдельные multiplier-правила: один разгоняет Wild-кластеры, другой умножает денежные значения на поле.",
+    features: [{ title: "Wild и Scatter", description: "Три Wild открывают Free Spins; каждый Wild с выигрышем увеличивает личный multiplier на +1." },{ title: "Multiplier Wild", description: "Передаёт x1, x2, x3 либо x5 всем Wild и затем превращается в Instant Prize." },{ title: "Collector", description: "Собирает от четырёх до девяти symbols одного типа вокруг себя, может притягивать Wild и денежные призы." }],
+  },
+  "push-gaming-triple-rampage": {
+    intro: ["Triple Rampage размещает над полем три Kaiju: у каждого собственная шкала Tokens и отдельный Free Spins-сценарий.","Синий Kaiju расширяет сетку до шести рядов и 46 656 способов, красный усиливает Collector, зелёный добавляет Instant Prizes; бонусы могут комбинироваться."],
+    editorial: "Название Triple Rampage описывает три независимые ветки Kaiju, а не одну универсальную функцию: Mega Reels, Power Collector и Kaiju Cash меняют разные аспекты вращения.",
+    features: [{ title: "Три шкалы Kaiju", description: "Совпадающие Token заряжают отдельных монстров и могут запустить их Free Spins." },{ title: "Mega Reels", description: "Синий монстр расширяет ряды до шести и поднимает число способов до 46 656." },{ title: "Power Collector и Kaiju Cash", description: "Красный Kaiju заставляет Collector двигаться вниз, зелёный добавляет Instant Prizes; Collector на барабанах 1 и 6 собирает значения." }],
+  },
+  "push-gaming-vegas-vault": {
+    intro: ["Vegas Vault запускает Bonus Game, когда в среднем ряду на крайних барабанах видны Cash или Jackpot, а на втором стоит Vault.","Три стартовых спина обновляются при новых призах или ключах. Бонусные Enhancer Reels добавляют multiplier или делят позиции на две, прежде чем Vault соберёт результат."],
+    editorial: "В Vegas Vault триггер строго позиционный, а Second Chance может случайно подвинуть нужный символ. Это отличается от Viva Lock Vegas со сбором шести денежных символов.",
+    features: [{ title: "Second Chance", description: "Случайный сдвиг символа вверх или вниз может собрать комбинацию для входа в бонус." },{ title: "Bonus Game", description: "В центральном ряду нужны Instant Prize или Jackpot на барабанах 1 и 3 и Vault на барабане 2." },{ title: "Enhancer Reels", description: "В бонусе Split делит призовые позиции, а Multiplier повышает их значения перед итоговым сбором в Vault." }],
+  },
+  "push-gaming-viva-lock-vegas": {
+    intro: ["Viva Lock Vegas складывает Instant Prizes в Mega Money Pot, который может случайно открыть Hold & Win и добавить собранные значения в бонус.","Отдельно три Jackpot Scatter открывают выбор jackpot, а три Scatter на барабанах 1, 3 и 5 запускают серию Free Spins до активации Hold & Win."],
+    editorial: "У Viva Lock Vegas три разных пути к бонусу Hold & Win: шесть призов в базе, шесть во Free Spins или срабатывание Mega Money Pot.",
+    features: [{ title: "Mega Money Pot", description: "Накопленные Instant Prizes могут активировать Hold & Win и усилить стартовый набор призов." },{ title: "Jackpot Pick", description: "Три Jackpot Scatter или Jackpot Picker в Hold & Win запускают выбор жетонов до трёх одного цвета." },{ title: "Hold & Win", description: "Шесть Instant Prizes активируют поле 5×3 с тремя lives, которые обновляются каждым новым призом; полное поле даёт Mega Jackpot." }],
+  },
+  "push-gaming-wild-swarm": {
+    intro: ["Оригинальный Wild Swarm использует поле 5×4 с двадцатью линиями и сбор пчёл в улей, постепенно приближая Swarm Mode.","Три Hive Symbols могут запустить до пятнадцати бесплатных вращений со Sticky Wild, а сундук открывает выбор Instant Prizes, бонусных вращений или мгновенного Swarm Mode."],
+    editorial: "Оригинал нельзя описывать правилами Wild Swarm 2: в первой игре акцент на общем сборе пчёл и Swarm Mode, без раздельных трёх яиц или ульев.",
+    features: [{ title: "Bee Collection", description: "Пчёлы постепенно усиливают улей и дают шанс запустить Swarm Mode." },{ title: "Free Games", description: "Три и более Hive Symbols дают до пятнадцати Free Spins со Sticky Wild." },{ title: "Chest Pick", description: "Сундук предлагает скрытые призы, бонусные вращения, усиление Swarm или непосредственный вход в режим." }],
+  },
+  "push-gaming-wild-swarm-2": {
+    intro: ["Wild Swarm 2 считает Worker Bees по одному делению шкалы, а Queen Bee сразу по пяти; при заполнении пятого уровня новые пчёлы могут вызвать взрыв улья.","В отличие от оригинала, версия 2 отдельно вводит Wild Honey и расширенный Chest Feature с возможностью открыть целый барабан Sticky Wild в бонусе."],
+    editorial: "Основной риск спутать Wild Swarm 2 с первой частью — различие в скорости накопления: Queen Bee даёт сразу пять сегментов, а Chest может целиком заполнить барабан Wild.",
+    features: [{ title: "Worker и Queen Bees", description: "Worker Bee добавляет одну секцию Hive, Queen Bee пять; после пятого уровня новый сбор может активировать Swarm Mode." },{ title: "Wild Honey", description: "Пчёлы в базе оставляют Wild Honey, который заменяет платящие символы." },{ title: "Chest и Sticky Wild Reel", description: "Сундук может добавить Extra Spins, множитель или заполнить барабан Sticky Wild во Free Games и Swarm Mode." }],
+  },
+  "push-gaming-wild-swarm-3-chocolate-eggs": {
+    intro: ["Wild Swarm 3 Chocolate Eggs заменяет единый улей тройкой Easter Eggs: красная Bunny Bee заряжает Jackpot Egg, зелёная Multiplier Egg, жёлтая Sticky Egg.","Queen Bunny Bee может попасть в случайное яйцо, а сундук запускает Wheel, где доступны призы и комбинации двух либо трёх Egg Features."],
+    editorial: "В этой части Wild Swarm сбор привязан к трём пасхальным яйцам, и их можно запустить одновременно. Не нужно переносить правила Worker/Queen шкалы из Wild Swarm 2.",
+    features: [{ title: "Три яйца", description: "Красная, зелёная и жёлтая Bunny Bees отвечают соответственно за Jackpot, Multiplier и Sticky Egg." },{ title: "Queen Bunny Bee", description: "Королевская пчела выбирает случайное яйцо и имеет повышенную возможность активировать его функцию." },{ title: "Chest Wheel", description: "Сундук может дать ставочный multiplier, jackpot или одну из комбинаций Egg Features." }],
+  },
+  "push-gaming-wild-swarm-triple-hive": {
+    intro: ["Wild Swarm Triple Hive использует три отдельных улья вместо пасхальных яиц: Jackpot Hive, Multiplier Hive и Sticky Hive получают пчёл своего цвета.","Wheel из Chest может запустить один улей либо комбинацию сразу нескольких; в бесплатных вращениях доступны дополнительные вращения и целый Sticky Wild reel."],
+    editorial: "Triple Hive сохраняет три ветки накопления, как Chocolate Eggs, но источником прогресса стали Knight Bees и три улья, поэтому нельзя называть их Bunny Eggs.",
+    features: [{ title: "Knight Bees", description: "Red Knight питает Jackpot Hive, Green Knight Multiplier Hive, Yellow Knight Sticky Hive; Queen Bee выбирает случайный улей." },{ title: "Wheel Feature", description: "Chest Wheel выбирает джекпоты, множители и сочетания функций вплоть до всех трёх ульев." },{ title: "Free Spins Upgrades", description: "Колесо в бонусе может добавить два-пять вращений или полностью заполнить барабан Sticky Wild." }],
+  },
+  "wazdan-12-bells": {
+    intro: ["12 Bells отличается от Coins-линейки вторым самостоятельным режимом 12 Bells Bonus Game: игрок выбирает три из двенадцати ворот с закрытыми призами.","Другой маршрут ведёт в Hold the Jackpot с Cash Infinity; функция One Click 2 Grand может выдать Grand Jackpot одним выбором."],
+    editorial: "В 12 Bells нельзя сводить оба бонуса к обычному Hold the Jackpot: выбор ворот и One Click 2 Grand создают самостоятельный игровой сценарий.",
+    features: [{ title: "12 Bells Bonus Game", description: "Можно открыть три из двенадцати ворот, в том числе с шансом на Grand Jackpot через One Click 2 Grand." },{ title: "Hold the Jackpot", description: "Отдельный бонус собирает денежные symbols и работает вместе со Sticky Cash Infinity." },{ title: "Chance Level", description: "Изменяет вероятность входа в бонусные режимы; провайдер раскрывает максимум 750x именно как приз игры." }],
+  },
+  "wazdan-12-coins": {
+    intro: ["12 Coins использует двенадцать независимых барабанов без обычных линий: базовая игра не выдаёт стандартных линейных выигрышей, а накапливает условия Hold the Jackpot.","Четыре Bonus Symbols в среднем ряду дают три респина; новый бонусный символ обновляет счётчик, а Cash Infinity остаётся на барабане до завершения следующего бонуса."],
+    editorial: "12 Coins важно отделять от Gold и Diamond: у оригинала Grand Jackpot 750x, а повышенные лимиты последующих выпусков к нему не относятся.",
+    features: [{ title: "Четыре Bonus Symbols", description: "Четыре символа в среднем ряду запускают Hold the Jackpot с тремя респинами и обновлением счётчика." },{ title: "Cash Infinity", description: "Символы могут закрепиться ещё в базовой игре и затем выплатиться внутри следующего бонуса." },{ title: "Гарантированный финальный сбор", description: "Только бонусная серия выплачивает значения; заполнение всех 12 позиций даёт Grand Jackpot 750x." }],
+  },
+  "wazdan-12-coins-grand-diamond-edition": {
+    intro: ["12 Coins Grand Diamond Edition сохраняет двенадцать барабанов, но добавляет расширенный Cash Out в базовой игре и повышает предел Grand Jackpot до 5000x.","Hold the Jackpot и Cash Infinity остались самостоятельными системами, а Chance Level меняет вероятность входа в бонус за счёт настроек игры."],
+    editorial: "Diamond нельзя считать просто другим изображением 12 Coins: здесь максимальный заявленный приз 5000x и более мощный Cash Out, которого не было в оригинальной конфигурации.",
+    features: [{ title: "Enhanced Cash Out", description: "В Diamond Edition функция Cash Out улучшена для дополнительных выплат вне Hold the Jackpot." },{ title: "Hold the Jackpot", description: "Бонус с удерживаемыми денежными значениями рассчитан на Grand Jackpot до 5000x ставки." },{ title: "Cash Infinity и Chance Level", description: "Cash Infinity переносит значения к бонусу, а Chance Level влияет на частоту его запуска." }],
+  },
+  "wazdan-12-coins-grand-gold-edition": {
+    intro: ["12 Coins Grand Gold Edition расширяет оригинальную комбинацию Hold the Jackpot и Cash Infinity функцией Chance Level.","В этой версии Grand Jackpot составляет до 1500x ставки: это выше оригинальных 750x, но ниже заявленных лимитов Platinum и Diamond."],
+    editorial: "Gold Edition следует сравнивать по реальным отличиям: Chance Level и приз 1500x, а не автоматически переносить Cash Out из более поздних Platinum и Diamond.",
+    features: [{ title: "Chance Level", description: "Настройка даёт возможность увеличить шанс попасть в Hold the Jackpot." },{ title: "Hold the Jackpot", description: "Бонусная серия сохраняет сбор денежных symbols и jackpot tiers, с Grand Jackpot до 1500x." },{ title: "Cash Infinity", description: "Закреплённые значения усиливают ожидание следующего Hold the Jackpot и собираются в нём." }],
+  },
+  "wazdan-12-coins-grand-platinum-edition": {
+    intro: ["12 Coins Grand Platinum Edition добавляет к Cash Infinity и Hold the Jackpot отдельный Cash Out, позволяющий получать призы в базовой игре.","Повышенный Chance Level и Grand Jackpot до 2500x отличают Platinum от Gold Edition с потолком 1500x."],
+    editorial: "Platinum занимает собственное место в линейке: Cash Out уже присутствует, а заявленный предел выигрыша 2500x. Нельзя использовать эти параметры для Gold Edition.",
+    features: [{ title: "Cash Out", description: "Функция открывает выплаты вне бонусной серии, чего не было в исходной версии." },{ title: "Chance Level", description: "Усиленная настройка повышает вероятность перехода в Hold the Jackpot." },{ title: "Grand Jackpot 2500x", description: "Максимальный приз Hold the Jackpot заявлен провайдером как 2500x ставки." }],
+  },
+  "wazdan-15-coins": {
+    intro: ["15 Coins расширяет Coins-формулу до пятнадцати барабанов, где обычная базовая игра не выдаёт стандартных выплат и фокус переносится на Hold the Jackpot.","Пять бонусных символов запускают бонус; полное заполнение трёх рядов связано с Grand Jackpot, а Cash Infinity может сохраняться до будущего бонуса."],
+    editorial: "У 15 Coins оригинальный предел 1000x, отдельный от 12 Coins и Grand Diamond Edition. Увеличение числа барабанов не означает автоматический перенос более высоких джекпотов.",
+    features: [{ title: "Пятнадцать барабанов", description: "Поле с пятнадцатью позициями рассчитано на сбор внутри бонуса, а не на обычные payline combinations." },{ title: "Пять символов", description: "Пять Bonus Symbols дают вход в Hold the Jackpot с респинами." },{ title: "Cash Infinity", description: "Sticky symbols остаются до следующего бонуса и затем участвуют в итоговом сборе." }],
+  },
+  "wazdan-15-coins-grand-diamond-edition": {
+    intro: ["15 Coins Grand Diamond Edition возвращает 15 позиций и Hold the Jackpot, но усиливает Cash Out: призовые метки могут оставаться на барабане до двадцати вращений.","Выплата Cash Out зависит от собираемых бонусных значений и динамического процента до 300%; максимальный заявленный выигрыш этой версии 5000x ставки."],
+    editorial: "Diamond Edition нельзя смешивать с обычной 15 Coins: здесь отдельные Cash Out labels и потолок 5000x, тогда как оригинал публикует 1000x.",
+    features: [{ title: "Cash Out на двадцать вращений", description: "Метка закрепляется на барабане на срок до 20 spins, собирает Bonus values и выдаёт их процент." },{ title: "До 300% Cash Out", description: "Усиленная функция может применять переменный процент к собранным значениям." },{ title: "Hold the Jackpot", description: "Основной бонус и Cash Infinity сохранены, максимальный приз заявлен как 5000x." }],
+  },
+
 };
 
 function getCatalogEditorial(slug: string) {

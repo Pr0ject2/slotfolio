@@ -3,6 +3,7 @@ import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 const verifiedAt = "2026-09-12";
 
 const details: Record<string, CatalogVerifiedDetails> = {
+  "wazdan-12-bells": { field: "12 барабанов", releaseDate: "2024-11-06", source: "https://wazdan.com/games/12-bells", verifiedAt },
   "wazdan-12-coins": { field: "12 барабанов", releaseDate: "2023-05-24", source: "https://wazdan.com/games/12-coins", verifiedAt },
   "wazdan-12-coins-grand-diamond-edition": { field: "12 барабанов", releaseDate: "2025-02-26", source: "https://wazdan.com/games/12-coins-grand-diamond-edition", verifiedAt },
   "wazdan-12-coins-grand-gold-edition": { field: "12 барабанов", releaseDate: "2023-11-08", source: "https://wazdan.com/games/12-coins-grand-gold-edition", verifiedAt },

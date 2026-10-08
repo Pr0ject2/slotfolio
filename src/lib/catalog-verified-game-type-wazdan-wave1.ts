@@ -3,6 +3,7 @@ import type { CatalogVerifiedGameType } from "./catalog-verified-game-type";
 const verifiedAt = "2026-09-12";
 
 const sources: Record<string, string> = {
+  "wazdan-12-bells": "https://wazdan.com/games/12-bells",
   "wazdan-12-coins": "https://wazdan.com/games/12-coins",
   "wazdan-12-coins-grand-diamond-edition": "https://wazdan.com/games/12-coins-grand-diamond-edition",
   "wazdan-12-coins-grand-gold-edition": "https://wazdan.com/games/12-coins-grand-gold-edition",
