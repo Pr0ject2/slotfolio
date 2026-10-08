@@ -65,6 +65,61 @@ export const catalogResearchPlayngoOP: Record<string, CatalogResearch> = {
     evidence: "Official game page describes Temple Free Spins that collect Wilds, followed by a Bonus Round where collecting eight Wilds activates Hold and Spin and prize tiers.",
   },
 
+  "playn-go-phoenix-reborn": {
+    mechanics: ["Линии","Free Spins"],
+    source: "https://www.playngo.com/games/phoenix-reborn",
+    verifiedAt,
+    evidence: "Official game page confirms five by six reels, 40 paylines, an Expanding Phoenix Wild, and 7/12/20 Free Spins triggered by three/four/five Aztec Masks.",
+  },
+  "playn-go-piggy-blitz-casino-gold": {
+    mechanics: ["Способы","Сбор символов"],
+    source: "https://www.playngo.com/games/piggy-blitz-casino-gold",
+    verifiedAt,
+    evidence: "Official game page describes Pig Collect, Bonus Game Multiplier from 1x to 5x, a Re-Spin from two collectors, and separate Blitz Spins and Free Spins.",
+  },
+  "playn-go-piggy-blitz-disco-gold": {
+    mechanics: ["Сбор символов","Free Spins"],
+    source: "https://www.playngo.com/games/piggy-blitz-disco-gold",
+    verifiedAt,
+    evidence: "Official game page describes Cash Coins, Piggy Bank collection on reels one and six, Gold Piggy, and Blitz/Free/Mystery Spins.",
+  },
+  "playn-go-piggy-heist": {
+    mechanics: ["Сбор символов","Hold & Spin"],
+    source: "https://www.playngo.com/games/piggy-heist",
+    verifiedAt,
+    evidence: "Official game page describes six reels, Safe Box collection, Hold and Spin, up to four Gamble choices, and persistent Stethoscope Wild Meter.",
+  },
+  "playn-go-piranha-pays": {
+    mechanics: ["Сбор символов","Множители"],
+    source: "https://www.playngo.com/games/piranha-pays",
+    verifiedAt,
+    evidence: "Official game page describes the Piranha Trail, an independent Multiplier Jar, and Scatter/Piranha Wild Instant Prizes.",
+  },
+  "playn-go-playn-go-buffalo-of-wealth": {
+    mechanics: ["Free Spins","Множители"],
+    source: "https://www.playngo.com/games/play'n-go-buffalo-of-wealth",
+    verifiedAt,
+    evidence: "Official game page describes random 2x/3x Wilds, three-Scatter Free Spins, and gradual reel expansion from 5x4 up to 5x8.",
+  },
+  "playn-go-potion-of-madness": {
+    mechanics: ["Re-Spin","Free Spins"],
+    source: "https://www.playngo.com/games/potion-of-madness",
+    verifiedAt,
+    evidence: "Official game page differentiates one-Scatter Wild transformation, two-Scatter Sticky Wild Re-Spins, and three-Scatter 5x6 Free Spins.",
+  },
+  "playn-go-primal-rampage": {
+    mechanics: ["Сбор символов","Free Spins"],
+    source: "https://www.playngo.com/games/primal-rampage",
+    verifiedAt,
+    evidence: "Official game page describes a compact three-reel slot, Rage Symbols, the Primal Wheel, and Kong Quest/King Spin bonus modes.",
+  },
+  "playn-go-prosperity-palace": {
+    mechanics: ["Линии","Free Spins"],
+    source: "https://www.playngo.com/games/prosperity-palace",
+    verifiedAt,
+    evidence: "Official game page confirms five reels, ten paylines, Jade Dragon Wild, three Golden Buddha Scatter triggers for ten Free Spins, and optional card Gamble.",
+  },
+
 };
 
 export function getCatalogResearchPlayngoOP(slug: string) {
