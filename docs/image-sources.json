@@ -4944,5 +4944,165 @@
     "local": "/images/catalog/wazdan-15-coins-grand-diamond-edition.webp",
     "requireExplicitImage": true,
     "note": "Reviewed first-party game-specific Wazdan asset from official provider page; CI localizes to WebP."
+  },
+  {
+    "slug": "wazdan-15-coins-grand-gold-edition",
+    "page": "https://wazdan.com/games/15-coins-grand-gold-edition",
+    "image": "https://wazdan.com/wp-content/uploads/15CoinsGrandGoldEdition_icon_600x450.webp",
+    "local": "/images/catalog/wazdan-15-coins-grand-gold-edition.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-15-coins-grand-platinum-edition",
+    "page": "https://wazdan.com/games/15-coins-grand-platinum-edition",
+    "image": "https://wazdan.com/wp-content/uploads/15CoinsGrandPlatinumEdition_icon_600x450.webp",
+    "local": "/images/catalog/wazdan-15-coins-grand-platinum-edition.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-16-coins",
+    "page": "https://wazdan.com/games/16-coins",
+    "image": "https://wazdan.com/wp-content/uploads/16Coins_icon_600x450-1.webp",
+    "local": "/images/catalog/wazdan-16-coins.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-16-coins-grand-gold-edition",
+    "page": "https://wazdan.com/games/16-coins-grand-gold-edition",
+    "image": "https://wazdan.com/wp-content/uploads/16CoinsGrandGoldEdition_icon_600x450.webp",
+    "local": "/images/catalog/wazdan-16-coins-grand-gold-edition.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-16-coins-grand-platinum-edition",
+    "page": "https://wazdan.com/games/16-coins-grand-platinum-edition",
+    "image": "https://wazdan.com/wp-content/uploads/16CoinsGrandPlatinumEdition_icon_600x450.webp",
+    "local": "/images/catalog/wazdan-16-coins-grand-platinum-edition.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-16-coins-x5000",
+    "page": "https://wazdan.com/games/16-coins-x5000",
+    "image": "https://wazdan.com/wp-content/uploads/16Coinsx5000_highlights_hold_the_jackpot-1.webp",
+    "local": "/images/catalog/wazdan-16-coins-x5000.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-20-coins",
+    "page": "https://wazdan.com/games/20-coins",
+    "image": "https://wazdan.com/wp-content/uploads/20Coins_icon_600x450.webp",
+    "local": "/images/catalog/wazdan-20-coins.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-20-coins-grand-gold-edition",
+    "page": "https://wazdan.com/games/20-coins-grand-gold-edition",
+    "image": "https://wazdan.com/wp-content/uploads/20CoinsGrandGoldEdition_icon_600x450.webp",
+    "local": "/images/catalog/wazdan-20-coins-grand-gold-edition.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-24-coins",
+    "page": "https://wazdan.com/games/24-coins",
+    "image": "https://wazdan.com/wp-content/uploads/24Coins_symbol_cash_infinity.webp",
+    "local": "/images/catalog/wazdan-24-coins.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-25-coins",
+    "page": "https://wazdan.com/games/25-coins",
+    "image": "https://wazdan.com/wp-content/uploads/25Coins_symbol_cash_250x250.webp",
+    "local": "/images/catalog/wazdan-25-coins.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-25-coins-grand-gold-edition",
+    "page": "https://wazdan.com/games/25-coins-grand-gold-edition",
+    "image": "https://wazdan.com/wp-content/uploads/25CoinsGrandGoldEdition_icon_600x450.webp",
+    "local": "/images/catalog/wazdan-25-coins-grand-gold-edition.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-25-coins-x3000",
+    "page": "https://wazdan.com/games/25-coins-x3000",
+    "image": "https://wazdan.com/wp-content/uploads/25Coinsx3000-1.webp",
+    "local": "/images/catalog/wazdan-25-coins-x3000.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-30-coins",
+    "page": "https://wazdan.com/games/30-coins",
+    "image": "https://wazdan.com/wp-content/uploads/30Coins_icon_600x450.webp",
+    "local": "/images/catalog/wazdan-30-coins.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-30-coins-grand-gold-edition",
+    "page": "https://wazdan.com/games/30-coins-grand-gold-edition",
+    "image": "https://wazdan.com/wp-content/uploads/30CoinsGrandGoldEdition_icon_600x450.webp",
+    "local": "/images/catalog/wazdan-30-coins-grand-gold-edition.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-36-coins",
+    "page": "https://wazdan.com/games/36-coins",
+    "image": "https://wazdan.com/wp-content/uploads/36Coins_symbol_cash_infinity_250x250.webp",
+    "local": "/images/catalog/wazdan-36-coins.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-36-coins-grand-gold-edition",
+    "page": "https://wazdan.com/games/36-coins-grand-gold-edition",
+    "image": "https://wazdan.com/wp-content/uploads/36CoinsGrandGoldEdition_symbol_cash_infinity_250x250.webp",
+    "local": "/images/catalog/wazdan-36-coins-grand-gold-edition.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-9-balls",
+    "page": "https://wazdan.com/games/9-balls",
+    "image": "https://wazdan.com/wp-content/uploads/9Balls_icon_600x450.webp",
+    "local": "/images/catalog/wazdan-9-balls.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-9-bells",
+    "page": "https://wazdan.com/games/9-bells",
+    "image": "https://wazdan.com/wp-content/uploads/9Bells_symbol_cash_infinity.webp",
+    "local": "/images/catalog/wazdan-9-bells.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-9-burning-dragons",
+    "page": "https://wazdan.com/games/9-burning-dragons",
+    "image": "https://wazdan.com/wp-content/uploads/9BurningDragons_highlights_hold_the_jackpot-1.webp",
+    "local": "/images/catalog/wazdan-9-burning-dragons.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-9-burning-stars",
+    "page": "https://wazdan.com/games/9-burning-stars",
+    "image": "https://wazdan.com/wp-content/uploads/9BurningStars_icon_600x450_webp90.webp",
+    "local": "/images/catalog/wazdan-9-burning-stars.webp",
+    "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
+    "requireExplicitImage": true
   }
 ]
