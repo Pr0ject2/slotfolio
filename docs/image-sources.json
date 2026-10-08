@@ -4784,5 +4784,165 @@
     "local": "/images/catalog/push-gaming-sea-of-spirits.webp",
     "requireExplicitImage": true,
     "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page; strict build-time WebP localization."
+  },
+  {
+    "slug": "push-gaming-shamrock-saints",
+    "page": "https://www.pushgaming.com/games/shamrock-saints.html",
+    "image": "https://www.pushgaming.com/uploads/Shamrock%20Saints/Shamrock-Saints_1_TOKENS.png",
+    "local": "/images/catalog/push-gaming-shamrock-saints.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page. CI localizes and validates WebP."
+  },
+  {
+    "slug": "push-gaming-tarot-treasures",
+    "page": "https://www.pushgaming.com/games/tarot-treasures.html",
+    "image": "https://www.pushgaming.com/uploads/Tarot%20Treasures/Game%20Page/Tarot_Treasures_Game_Page_Hot_Zones.png",
+    "local": "/images/catalog/push-gaming-tarot-treasures.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page. CI localizes and validates WebP."
+  },
+  {
+    "slug": "push-gaming-the-grand-show",
+    "page": "https://www.pushgaming.com/games/grand-show.html",
+    "image": "https://www.pushgaming.com/uploads/The%20Grand%20Show/The_Grand_Show_Game_Page_Base_Game.png",
+    "local": "/images/catalog/push-gaming-the-grand-show.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page. CI localizes and validates WebP."
+  },
+  {
+    "slug": "push-gaming-the-great-banker",
+    "page": "https://www.pushgaming.com/games/great-banker.html",
+    "image": "https://www.pushgaming.com/uploads/The%20Great%20Banker/The_Great_Banker_Game_Page_Base_Game_Banker_Symbol-.png",
+    "local": "/images/catalog/push-gaming-the-great-banker.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page. CI localizes and validates WebP."
+  },
+  {
+    "slug": "push-gaming-tiki-tumble",
+    "page": "https://www.pushgaming.com/games/tiki-tumble.html",
+    "image": "https://www.pushgaming.com/uploads/NewGamePages2020/TikiTumble/NUDGING-WILDS.png",
+    "local": "/images/catalog/push-gaming-tiki-tumble.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page. CI localizes and validates WebP."
+  },
+  {
+    "slug": "push-gaming-tricky-treats",
+    "page": "https://www.pushgaming.com/games/tricky-treats.html",
+    "image": "https://www.pushgaming.com/uploads/Tricky%20Treats/Game%20Page/Tricky_Treats_Game_Page_Wild_Symbol.png",
+    "local": "/images/catalog/push-gaming-tricky-treats.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page. CI localizes and validates WebP."
+  },
+  {
+    "slug": "push-gaming-triple-rampage",
+    "page": "https://www.pushgaming.com/games/triple-rampage.html",
+    "image": "https://www.pushgaming.com/uploads/Triple%20Rampage/Game%20Page/Triple_Rampage_Game_Page_3_Pots_Mechanic.png",
+    "local": "/images/catalog/push-gaming-triple-rampage.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page. CI localizes and validates WebP."
+  },
+  {
+    "slug": "push-gaming-vegas-vault",
+    "page": "https://www.pushgaming.com/games/vegas-vault.html",
+    "image": "https://www.pushgaming.com/uploads/Vegas%20Vault/Vegas_Vault_Game_Page_Second_Chance_Feature.png",
+    "local": "/images/catalog/push-gaming-vegas-vault.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page. CI localizes and validates WebP."
+  },
+  {
+    "slug": "push-gaming-viva-lock-vegas",
+    "page": "https://www.pushgaming.com/games/viva-lock-vegas.html",
+    "image": "https://www.pushgaming.com/uploads/Viva%20Lock%20Vegas/Viva_Lock_Vegas_Game_Page_Mega_Money_Pot.png",
+    "local": "/images/catalog/push-gaming-viva-lock-vegas.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page. CI localizes and validates WebP."
+  },
+  {
+    "slug": "push-gaming-wild-swarm",
+    "page": "https://www.pushgaming.com/games/wild-swarm.html",
+    "image": "https://www.pushgaming.com/uploads/NewGamePages2020/WildSwarm/FREE-GAMES.png",
+    "local": "/images/catalog/push-gaming-wild-swarm.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page. CI localizes and validates WebP."
+  },
+  {
+    "slug": "push-gaming-wild-swarm-2",
+    "page": "https://www.pushgaming.com/games/wild-swarm-2.html",
+    "image": "https://www.pushgaming.com/uploads/Wild%20Swarm%202/Wild_Swarm2_GamePage_1_WILD-SYMBOLS.png",
+    "local": "/images/catalog/push-gaming-wild-swarm-2.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page. CI localizes and validates WebP."
+  },
+  {
+    "slug": "push-gaming-wild-swarm-3-chocolate-eggs",
+    "page": "https://www.pushgaming.com/games/wild-swarm-3-chocolate-eggs.html",
+    "image": "https://www.pushgaming.com/uploads/Wild%20Swarm%203%20Chocolate%20Eggs/Wild_Swarm_3_Chocolate_Eggs_Game_Page_Wild_Symbol.png",
+    "local": "/images/catalog/push-gaming-wild-swarm-3-chocolate-eggs.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page. CI localizes and validates WebP."
+  },
+  {
+    "slug": "push-gaming-wild-swarm-triple-hive",
+    "page": "https://www.pushgaming.com/games/wild-swarm-triple-hive.html",
+    "image": "https://www.pushgaming.com/uploads/Wild%20Swarm%20Triple%20Hive/Game%20Page/Wild_Swarm_Triple_Hive_Game_Page_Wild_Symbol.png",
+    "local": "/images/catalog/push-gaming-wild-swarm-triple-hive.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Push Gaming illustration from the official game page. CI localizes and validates WebP."
+  },
+  {
+    "slug": "wazdan-12-bells",
+    "page": "https://wazdan.com/games/12-bells",
+    "image": "https://wazdan.com/wp-content/uploads/12Bells_symbol_bells_jackpot_mystery.webp",
+    "local": "/images/catalog/wazdan-12-bells.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party game-specific Wazdan asset from official provider page; CI localizes to WebP."
+  },
+  {
+    "slug": "wazdan-12-coins",
+    "page": "https://wazdan.com/games/12-coins",
+    "image": "https://wazdan.com/wp-content/uploads/12Coins_icon_600x450_webp90.webp",
+    "local": "/images/catalog/wazdan-12-coins.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party game-specific Wazdan asset from official provider page; CI localizes to WebP."
+  },
+  {
+    "slug": "wazdan-12-coins-grand-diamond-edition",
+    "page": "https://wazdan.com/games/12-coins-grand-diamond-edition",
+    "image": "https://wazdan.com/wp-content/uploads/12CoinsGrandDiamondEdition_icon_600x450.webp",
+    "local": "/images/catalog/wazdan-12-coins-grand-diamond-edition.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party game-specific Wazdan asset from official provider page; CI localizes to WebP."
+  },
+  {
+    "slug": "wazdan-12-coins-grand-gold-edition",
+    "page": "https://wazdan.com/games/12-coins-grand-gold-edition",
+    "image": "https://wazdan.com/wp-content/uploads/12CoinsGrandGoldEdition_icon_600x450.webp",
+    "local": "/images/catalog/wazdan-12-coins-grand-gold-edition.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party game-specific Wazdan asset from official provider page; CI localizes to WebP."
+  },
+  {
+    "slug": "wazdan-12-coins-grand-platinum-edition",
+    "page": "https://wazdan.com/games/12-coins-grand-platinum-edition",
+    "image": "https://wazdan.com/wp-content/uploads/12CoinsGrandPlatinumEdition_icon_600x450-1.webp",
+    "local": "/images/catalog/wazdan-12-coins-grand-platinum-edition.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party game-specific Wazdan asset from official provider page; CI localizes to WebP."
+  },
+  {
+    "slug": "wazdan-15-coins",
+    "page": "https://wazdan.com/games/15-coins",
+    "image": "https://wazdan.com/wp-content/uploads/15Coins_symbol_coin_250x250_webp90.webp",
+    "local": "/images/catalog/wazdan-15-coins.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party game-specific Wazdan asset from official provider page; CI localizes to WebP."
+  },
+  {
+    "slug": "wazdan-15-coins-grand-diamond-edition",
+    "page": "https://wazdan.com/games/15-coins-grand-diamond-edition",
+    "image": "https://wazdan.com/wp-content/uploads/15CoinsGrandDiamondEdition_symbol_coin_250x250.webp",
+    "local": "/images/catalog/wazdan-15-coins-grand-diamond-edition.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party game-specific Wazdan asset from official provider page; CI localizes to WebP."
   }
 ]
