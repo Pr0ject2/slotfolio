@@ -533,6 +533,27 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-pearl-lagoon": "/images/catalog/playn-go-pearl-lagoon.webp",
   "playn-go-pearls-of-india": "/images/catalog/playn-go-pearls-of-india.webp",
 
+  "playn-go-perfect-gems": "/images/catalog/playn-go-perfect-gems.webp",
+  "playn-go-phoenix-reborn": "/images/catalog/playn-go-phoenix-reborn.webp",
+  "playn-go-photo-safari": "/images/catalog/playn-go-photo-safari.webp",
+  "playn-go-piggy-bank-farm": "/images/catalog/playn-go-piggy-bank-farm.webp",
+  "playn-go-piggy-blitz": "/images/catalog/playn-go-piggy-blitz.webp",
+  "playn-go-piggy-blitz-casino-gold": "/images/catalog/playn-go-piggy-blitz-casino-gold.webp",
+  "playn-go-piggy-blitz-disco-gold": "/images/catalog/playn-go-piggy-blitz-disco-gold.webp",
+  "playn-go-piggy-heist": "/images/catalog/playn-go-piggy-heist.webp",
+  "playn-go-pilgrim-of-dead": "/images/catalog/playn-go-pilgrim-of-dead.webp",
+  "playn-go-pimped": "/images/catalog/playn-go-pimped.webp",
+  "playn-go-piranha-pays": "/images/catalog/playn-go-piranha-pays.webp",
+  "playn-go-planet-fortune": "/images/catalog/playn-go-planet-fortune.webp",
+  "playn-go-playn-go-buffalo-of-wealth": "/images/catalog/playn-go-playn-go-buffalo-of-wealth.webp",
+  "playn-go-playn-go-mole-digger": "/images/catalog/playn-go-playn-go-mole-digger.webp",
+  "playn-go-playn-go-wrappin-gold": "/images/catalog/playn-go-playn-go-wrappin-gold.webp",
+  "playn-go-potion-of-madness": "/images/catalog/playn-go-potion-of-madness.webp",
+  "playn-go-primal-rampage": "/images/catalog/playn-go-primal-rampage.webp",
+  "playn-go-prism-of-gems": "/images/catalog/playn-go-prism-of-gems.webp",
+  "playn-go-prissy-princess": "/images/catalog/playn-go-prissy-princess.webp",
+  "playn-go-prosperity-palace": "/images/catalog/playn-go-prosperity-palace.webp",
+
 };
 
 export function getCatalogArtwork(slug: string) {
