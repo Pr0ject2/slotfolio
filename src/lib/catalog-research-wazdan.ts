@@ -3,6 +3,7 @@ import type { CatalogResearch } from "./catalog-research";
 const verifiedAt = "2026-09-11";
 
 export const catalogResearchWazdan: Record<string, CatalogResearch> = {
+  "wazdan-12-bells": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/12-bells", verifiedAt, evidence: "Official Wazdan game page lists two separate bonus modes, 12 Bells Bonus Game and Hold the Jackpot, using 12 reels and Cash Infinity." },
   "wazdan-back-to-the-70s": {
     mechanics: ["Линии"],
     source: "https://wazdan.com/games/back-to-the-70s",
