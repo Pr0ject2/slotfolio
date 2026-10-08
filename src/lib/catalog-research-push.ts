@@ -321,6 +321,133 @@ export const catalogResearchPush: Record<string, CatalogResearch> = {
     "evidence": "Official page: seven Moon Symbols trigger Instant Prizes/Mystery Reveal; three to six Bonus Symbols set eight Free Spins multipliers."
   },
 
+  "push-gaming-fat-banker": {
+    "mechanics": [
+      "Сбор символов",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/fat-banker.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "The official game page distinguishes Bullion/Silver Safe Fortune Link from Fat Banker Free Spins collecting Wild Money Bags."
+  },
+  "push-gaming-fat-santa": {
+    "mechanics": [
+      "Линии",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/fat-santa.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official game page identifies 5x5 with 50 paylines, random Sleigh Wild Christmas Pies and Fat Santa Free Spins."
+  },
+  "push-gaming-fish-n-nudge": {
+    "mechanics": [
+      "Сбор символов",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/fish-n-nudge.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page describes nudging Net stacks, a Fisherman collector and free spins lasting until all nets leave."
+  },
+  "push-gaming-fish-n-nudge-big-catch": {
+    "mechanics": [
+      "Сбор символов",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/fish-n-nudge-big-catch.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official sequel page identifies locked Nets, per-reel multiplier meters, Boat and Boost symbols during Free Spins."
+  },
+  "push-gaming-generous-jack": {
+    "mechanics": [
+      "Мгновенные призы",
+      "Расширяющиеся барабаны"
+    ],
+    "source": "https://www.pushgaming.com/games/generous-jack.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page describes adjacent Number Chips forming multidigit prizes, Jack Symbols unlocking rows and paid Push-Up."
+  },
+  "push-gaming-goat-getter": {
+    "mechanics": [
+      "Сбор символов",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/goat-getter.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page describes six-Coin Drop, ten-Coin Instant Prizes, and Goat symbol collecting prizes in Free Spins."
+  },
+  "push-gaming-happy-bamboo": {
+    "mechanics": [
+      "Сбор символов",
+      "Re-Spin"
+    ],
+    "source": "https://www.pushgaming.com/games/happy-bamboo.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page distinguishes Mystery Bamboo and Golden Mystery Bamboo reveals and Panda Pot-triggered Hold and Respin."
+  },
+  "push-gaming-hearts-highway": {
+    "mechanics": [
+      "Линии",
+      "Мгновенные призы"
+    ],
+    "source": "https://www.pushgaming.com/games/hearts-highway.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page identifies four Hearts Instant Prize, edge-reel Slot Machine symbols and Progressive Free Spins."
+  },
+  "push-gaming-henry-the-ape": {
+    "mechanics": [
+      "Нарастающие множители",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/henry-ape.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page describes Nudging Super High symbols, Drop the Win, Rewind and Free Spins Gold Disk meter."
+  },
+  "push-gaming-iron-phoenix": {
+    "mechanics": [
+      "Способы",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/iron-phoenix.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page explains Phoenix reel above base reels and its split into three separate Phoenix reels during free spins."
+  },
+  "push-gaming-jiggys-pot-o-gold": {
+    "mechanics": [
+      "Линии",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/jiggys-pot-o-gold.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official game page identifies 3x3 and five paylines, Frame O' Gold Free Spins, Reel O' Plenty and Mighty Craic."
+  },
+  "push-gaming-joker-troupe": {
+    "mechanics": [
+      "Линии",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/joker-troupe.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page identifies ten paylines, three colored Joker triggers and timed Hypermode Free Spins."
+  },
+  "push-gaming-mad-blast": {
+    "mechanics": [
+      "Каскады",
+      "Множители"
+    ],
+    "source": "https://www.pushgaming.com/games/mad-blast.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page describes multiplier doubling per winning cascade to x2048, Extra Life and Mad Heads Free Spins."
+  },
+  "push-gaming-mad-cars": {
+    "mechanics": [
+      "Мгновенные призы",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/mad-cars.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page identifies Boost Reel racing cars to the finish, Mad Bonus and final Mad Race."
+  },
+
 };
 
 export function getCatalogResearchPush(slug: string) {
