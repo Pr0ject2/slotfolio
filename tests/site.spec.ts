@@ -436,7 +436,7 @@ test("pagination visits all 1000 games once without accumulating DOM rows", asyn
   await expect(page.getByRole("button", { name: "Следующая страница" })).toBeDisabled();
 });
 
-test("mobile filter apply returns to results and basic records remain actionable", async ({ page }) => {
+test("mobile filter apply returns to results and reviewed catalog records remain actionable", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 844 });
   await page.goto("/slots?page=56");
   await page.getByRole("button", { name: /^Фильтры/ }).click();
@@ -449,5 +449,10 @@ test("mobile filter apply returns to results and basic records remain actionable
   await page.getByRole("link", { name: "Открыть запись ↗", exact: true }).first().click();
   await expect(page).toHaveURL(/\/slots\/catalog\//);
   await expect(page.locator("main")).toHaveCount(1);
-  await expect(page.locator(".compare-button")).toHaveCount(0);
+  // Page 56 now opens a researched catalog dossier after the Play’n GO editorial waves.
+  // Assert the actual destination, its comparison action, and the comparison section.
+  await expect(page.locator(".slot-heading .eyebrow")).toContainText("Досье игры");
+  await expect(page.locator(".compare-button")).toHaveCount(1);
+  await expect(page.locator(".compare-button")).toHaveAttribute("href", "#catalog-comparison");
+  await expect(page.locator("#catalog-comparison h2")).toHaveText("Сравнение с другими играми");
 });

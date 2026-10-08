@@ -51,6 +51,7 @@ const details: Record<string, CatalogVerifiedDetails> = {
     source: "https://www.pushgaming.com/games/mystery-museum.html",
     verifiedAt,
   },
+
 };
 
 export function getCatalogVerifiedDetailsPush(slug: string) {
