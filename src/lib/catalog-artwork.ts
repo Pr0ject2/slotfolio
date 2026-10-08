@@ -554,6 +554,27 @@ const artworkBySlug: Record<string, string> = {
   "playn-go-prissy-princess": "/images/catalog/playn-go-prissy-princess.webp",
   "playn-go-prosperity-palace": "/images/catalog/playn-go-prosperity-palace.webp",
 
+  "playn-go-puebla-parade": "/images/catalog/playn-go-puebla-parade.webp",
+  "playn-go-queens-day-tilt": "/images/catalog/playn-go-queens-day-tilt.webp",
+  "playn-go-ras-reckoning": "/images/catalog/playn-go-ras-reckoning.webp",
+  "playn-go-rabbit-hole-riches": "/images/catalog/playn-go-rabbit-hole-riches.webp",
+  "playn-go-rabbit-hole-riches-court-of-hearts": "/images/catalog/playn-go-rabbit-hole-riches-court-of-hearts.webp",
+  "playn-go-rage-to-riches": "/images/catalog/playn-go-rage-to-riches.webp",
+  "playn-go-raging-rex": "/images/catalog/playn-go-raging-rex.webp",
+  "playn-go-raging-rex-2": "/images/catalog/playn-go-raging-rex-2.webp",
+  "push-gaming-10-cash-bisons": "/images/catalog/push-gaming-10-cash-bisons.webp",
+  "push-gaming-10-flaming-bisons": "/images/catalog/push-gaming-10-flaming-bisons.webp",
+  "push-gaming-10-pharaohs": "/images/catalog/push-gaming-10-pharaohs.webp",
+  "push-gaming-10-santas-reindeers": "/images/catalog/push-gaming-10-santas-reindeers.webp",
+  "push-gaming-10-swords": "/images/catalog/push-gaming-10-swords.webp",
+  "push-gaming-3-liberty-eagles": "/images/catalog/push-gaming-3-liberty-eagles.webp",
+  "push-gaming-3-magic-pots": "/images/catalog/push-gaming-3-magic-pots.webp",
+  "push-gaming-bait-n-bank": "/images/catalog/push-gaming-bait-n-bank.webp",
+  "push-gaming-bamboo-ways": "/images/catalog/push-gaming-bamboo-ways.webp",
+  "push-gaming-big-bam-book": "/images/catalog/push-gaming-big-bam-book.webp",
+  "push-gaming-big-bamboo": "/images/catalog/push-gaming-big-bamboo.webp",
+  "push-gaming-big-bamboo-2": "/images/catalog/push-gaming-big-bamboo-2.webp",
+
 };
 
 export function getCatalogArtwork(slug: string) {
