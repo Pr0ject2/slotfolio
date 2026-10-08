@@ -701,6 +701,27 @@ const artworkBySlug: Record<string, string> = {
   "wazdan-black-hawk-deluxe": "/images/catalog/wazdan-black-hawk-deluxe.webp",
   "wazdan-black-horse": "/images/catalog/wazdan-black-horse.webp",
 
+  "wazdan-black-horse-cash-out-edition": "/images/catalog/wazdan-black-horse-cash-out-edition.webp",
+  "wazdan-black-horse-deluxe": "/images/catalog/wazdan-black-horse-deluxe.webp",
+  "wazdan-book-of-faith": "/images/catalog/wazdan-book-of-faith.webp",
+  "wazdan-bumba-meu-boi-coin": "/images/catalog/wazdan-bumba-meu-boi-coin.webp",
+  "wazdan-burning-reels": "/images/catalog/wazdan-burning-reels.webp",
+  "wazdan-burning-stars": "/images/catalog/wazdan-burning-stars.webp",
+  "wazdan-burning-stars-3": "/images/catalog/wazdan-burning-stars-3.webp",
+  "wazdan-burning-sun": "/images/catalog/wazdan-burning-sun.webp",
+  "wazdan-burning-sun-extremely-light": "/images/catalog/wazdan-burning-sun-extremely-light.webp",
+  "wazdan-butterfly-lovers": "/images/catalog/wazdan-butterfly-lovers.webp",
+  "wazdan-captain-shark": "/images/catalog/wazdan-captain-shark.webp",
+  "wazdan-cash-grotto": "/images/catalog/wazdan-cash-grotto.webp",
+  "wazdan-choco-reels": "/images/catalog/wazdan-choco-reels.webp",
+  "wazdan-clover-lady": "/images/catalog/wazdan-clover-lady.webp",
+  "wazdan-colin-the-cat": "/images/catalog/wazdan-colin-the-cat.webp",
+  "wazdan-corrida-romance": "/images/catalog/wazdan-corrida-romance.webp",
+  "wazdan-corrida-romance-deluxe": "/images/catalog/wazdan-corrida-romance-deluxe.webp",
+  "wazdan-crazy-cars": "/images/catalog/wazdan-crazy-cars.webp",
+  "wazdan-criss-cross-81": "/images/catalog/wazdan-criss-cross-81.webp",
+  "wazdan-cube-mania": "/images/catalog/wazdan-cube-mania.webp",
+
 };
 
 export function getCatalogArtwork(slug: string) {
