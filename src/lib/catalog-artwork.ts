@@ -659,6 +659,27 @@ const artworkBySlug: Record<string, string> = {
   "wazdan-15-coins": "/images/catalog/wazdan-15-coins.webp",
   "wazdan-15-coins-grand-diamond-edition": "/images/catalog/wazdan-15-coins-grand-diamond-edition.webp",
 
+  "wazdan-15-coins-grand-gold-edition": "/images/catalog/wazdan-15-coins-grand-gold-edition.webp",
+  "wazdan-15-coins-grand-platinum-edition": "/images/catalog/wazdan-15-coins-grand-platinum-edition.webp",
+  "wazdan-16-coins": "/images/catalog/wazdan-16-coins.webp",
+  "wazdan-16-coins-grand-gold-edition": "/images/catalog/wazdan-16-coins-grand-gold-edition.webp",
+  "wazdan-16-coins-grand-platinum-edition": "/images/catalog/wazdan-16-coins-grand-platinum-edition.webp",
+  "wazdan-16-coins-x5000": "/images/catalog/wazdan-16-coins-x5000.webp",
+  "wazdan-20-coins": "/images/catalog/wazdan-20-coins.webp",
+  "wazdan-20-coins-grand-gold-edition": "/images/catalog/wazdan-20-coins-grand-gold-edition.webp",
+  "wazdan-24-coins": "/images/catalog/wazdan-24-coins.webp",
+  "wazdan-25-coins": "/images/catalog/wazdan-25-coins.webp",
+  "wazdan-25-coins-grand-gold-edition": "/images/catalog/wazdan-25-coins-grand-gold-edition.webp",
+  "wazdan-25-coins-x3000": "/images/catalog/wazdan-25-coins-x3000.webp",
+  "wazdan-30-coins": "/images/catalog/wazdan-30-coins.webp",
+  "wazdan-30-coins-grand-gold-edition": "/images/catalog/wazdan-30-coins-grand-gold-edition.webp",
+  "wazdan-36-coins": "/images/catalog/wazdan-36-coins.webp",
+  "wazdan-36-coins-grand-gold-edition": "/images/catalog/wazdan-36-coins-grand-gold-edition.webp",
+  "wazdan-9-balls": "/images/catalog/wazdan-9-balls.webp",
+  "wazdan-9-bells": "/images/catalog/wazdan-9-bells.webp",
+  "wazdan-9-burning-dragons": "/images/catalog/wazdan-9-burning-dragons.webp",
+  "wazdan-9-burning-stars": "/images/catalog/wazdan-9-burning-stars.webp",
+
 };
 
 export function getCatalogArtwork(slug: string) {
