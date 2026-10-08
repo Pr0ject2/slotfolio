@@ -4464,5 +4464,165 @@
     "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
     "image": "https://www.pushgaming.com/uploads/Fang%20City/Fang_City_Game_Page_Instant_Prizes.png",
     "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-fat-banker",
+    "page": "https://www.pushgaming.com/games/fat-banker.html",
+    "local": "/images/catalog/push-gaming-fat-banker.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Fat%20Banker/Game%20Page/1-BASE-GAME-BULLION-SYMBOLS-MULTIPLIERS.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-fat-drac",
+    "page": "https://www.pushgaming.com/games/fat-drac.html",
+    "local": "/images/catalog/push-gaming-fat-drac.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Fat%20Drac/Game%20Page/1-FAT-DRAC.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-fat-santa",
+    "page": "https://www.pushgaming.com/games/fat-santa.html",
+    "local": "/images/catalog/push-gaming-fat-santa.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/NewGamePages2020/FatSanta/SLEIGH-AWAY.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-fire-hopper",
+    "page": "https://www.pushgaming.com/games/fire-hopper.html",
+    "local": "/images/catalog/push-gaming-fire-hopper.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Fire%20Hopper/Game%20Page%20-%20%20Features/1-LEAPING-FROG-FIREFLY-SYMBOLS.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-fire-pig-push-ways",
+    "page": "https://www.pushgaming.com/games/fire-pig-push-ways.html",
+    "local": "/images/catalog/push-gaming-fire-pig-push-ways.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Fire%20Pig%20Push%20Ways/Game%20Page/Fire_Pig_Push_Ways_Game_Page_Fire_Pig_Symbol.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-fish-n-nudge",
+    "page": "https://www.pushgaming.com/games/fish-n-nudge.html",
+    "local": "/images/catalog/push-gaming-fish-n-nudge.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Fish-n-Nudge%2019.09.2023/Fish-n-Nudge_1_Base-Game_Net-Symbol.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-fish-n-nudge-big-catch",
+    "page": "https://www.pushgaming.com/games/",
+    "local": "/images/catalog/push-gaming-fish-n-nudge-big-catch.webp",
+    "note": "Reviewed first-party Push Gaming official catalog artwork, selected by game-specific Catch image filename; explicit game-page feature URLs were 404.",
+    "requireExplicitImage": true,
+    "imageHint": "catch"
+  },
+  {
+    "slug": "push-gaming-generous-jack",
+    "page": "https://www.pushgaming.com/games/generous-jack.html",
+    "local": "/images/catalog/push-gaming-generous-jack.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Generous%20Jack/1BASE-GAME-NUMBER-CHIPS-AND-DUDS.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-giga-jar",
+    "page": "https://www.pushgaming.com/games/giga-jar.html",
+    "local": "/images/catalog/push-gaming-giga-jar.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Giga%20Jar/1_BASE-GAME-FRUIT-SYMBOLS-CLUSTERS-AND-CASCADES.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-goat-getter",
+    "page": "https://www.pushgaming.com/games/goat-getter.html",
+    "local": "/images/catalog/push-gaming-goat-getter.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Goat%20Getter/1_BASE-GAME-INSTANT-PRIZES.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-happy-bamboo",
+    "page": "https://www.pushgaming.com/games/happy-bamboo.html",
+    "local": "/images/catalog/push-gaming-happy-bamboo.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Happy%20Bamboo/Game%20Page/Happy_Bamboo_Game_Page_Mystery_Bamboo_Reveal.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-hearts-highway",
+    "page": "https://www.pushgaming.com/games/hearts-highway.html",
+    "local": "/images/catalog/push-gaming-hearts-highway.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Hearts%20Highway%20Game%20Page%20Top%20Header/Hearts_Highway_Gp_1_INSTANT_WINS.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-henry-the-ape",
+    "page": "https://www.pushgaming.com/games/henry-ape.html",
+    "local": "/images/catalog/push-gaming-henry-the-ape.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Henry%20The%20Ape/Slides/Henry_The_Ape_Game_Page_Super_High_Symbol.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-iron-phoenix",
+    "page": "https://www.pushgaming.com/games/iron-phoenix.html",
+    "local": "/images/catalog/push-gaming-iron-phoenix.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Iron%20Phoenix/Game%20Page/Iron_Phoenix_Game_Page_Base_Game.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-jaguar-drop",
+    "page": "https://www.pushgaming.com/games/jaguar-drop.html",
+    "local": "/images/catalog/push-gaming-jaguar-drop.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Jaguar%20Drop/Jaguar_Drop_Cluster_Wins.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-jammin-jars-2",
+    "page": "https://www.pushgaming.com/games/jammin-jars-2.html",
+    "local": "/images/catalog/push-gaming-jammin-jars-2.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Jammin%20Jars%202/Game%20Page/1-GOLD-VINYL.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-jiggys-pot-o-gold",
+    "page": "https://www.pushgaming.com/games/",
+    "local": "/images/catalog/push-gaming-jiggys-pot-o-gold.webp",
+    "note": "Reviewed first-party Push Gaming catalog art; select only a provider image URL that contains jiggy, not a generic preview.",
+    "imageHint": "jiggy",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-joker-troupe",
+    "page": "https://www.pushgaming.com/games/joker-troupe.html",
+    "local": "/images/catalog/push-gaming-joker-troupe.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/NewGamePages2020/JokerTroupe/BASE-GAME.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-mad-blast",
+    "page": "https://www.pushgaming.com/games/mad-blast.html",
+    "local": "/images/catalog/push-gaming-mad-blast.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Mad%20Blast/Mad_Blast_Game_Page_Total_Multiplier_Meter.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-mad-cars",
+    "page": "https://www.pushgaming.com/games/mad-cars.html",
+    "local": "/images/catalog/push-gaming-mad-cars.webp",
+    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "image": "https://www.pushgaming.com/uploads/Mad%20Cars/Game%20Page/MadCars_game-page1_BASE-GAME-INSTANT-PRIZE-CAR-SYMBOLS-_-MULTIPLIERS.png",
+    "requireExplicitImage": true
   }
 ]

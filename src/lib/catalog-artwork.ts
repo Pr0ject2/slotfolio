@@ -596,6 +596,27 @@ const artworkBySlug: Record<string, string> = {
   "push-gaming-dragon-hopper": "/images/catalog/push-gaming-dragon-hopper.webp",
   "push-gaming-fang-city": "/images/catalog/push-gaming-fang-city.webp",
 
+  "push-gaming-fat-banker": "/images/catalog/push-gaming-fat-banker.webp",
+  "push-gaming-fat-drac": "/images/catalog/push-gaming-fat-drac.webp",
+  "push-gaming-fat-santa": "/images/catalog/push-gaming-fat-santa.webp",
+  "push-gaming-fire-hopper": "/images/catalog/push-gaming-fire-hopper.webp",
+  "push-gaming-fire-pig-push-ways": "/images/catalog/push-gaming-fire-pig-push-ways.webp",
+  "push-gaming-fish-n-nudge": "/images/catalog/push-gaming-fish-n-nudge.webp",
+  "push-gaming-fish-n-nudge-big-catch": "/images/catalog/push-gaming-fish-n-nudge-big-catch.webp",
+  "push-gaming-generous-jack": "/images/catalog/push-gaming-generous-jack.webp",
+  "push-gaming-giga-jar": "/images/catalog/push-gaming-giga-jar.webp",
+  "push-gaming-goat-getter": "/images/catalog/push-gaming-goat-getter.webp",
+  "push-gaming-happy-bamboo": "/images/catalog/push-gaming-happy-bamboo.webp",
+  "push-gaming-hearts-highway": "/images/catalog/push-gaming-hearts-highway.webp",
+  "push-gaming-henry-the-ape": "/images/catalog/push-gaming-henry-the-ape.webp",
+  "push-gaming-iron-phoenix": "/images/catalog/push-gaming-iron-phoenix.webp",
+  "push-gaming-jaguar-drop": "/images/catalog/push-gaming-jaguar-drop.webp",
+  "push-gaming-jammin-jars-2": "/images/catalog/push-gaming-jammin-jars-2.webp",
+  "push-gaming-jiggys-pot-o-gold": "/images/catalog/push-gaming-jiggys-pot-o-gold.webp",
+  "push-gaming-joker-troupe": "/images/catalog/push-gaming-joker-troupe.webp",
+  "push-gaming-mad-blast": "/images/catalog/push-gaming-mad-blast.webp",
+  "push-gaming-mad-cars": "/images/catalog/push-gaming-mad-cars.webp",
+
 };
 
 export function getCatalogArtwork(slug: string) {
