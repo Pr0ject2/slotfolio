@@ -5584,5 +5584,165 @@
     "image": "https://wazdan.com/wp-content/uploads/FruitMania_icon_600x450_webp90.webp",
     "requireExplicitImage": true,
     "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-fruit-mania-deluxe",
+    "page": "https://wazdan.com/games/fruit-mania-deluxe",
+    "local": "/images/catalog/wazdan-fruit-mania-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/FruitManiaDeluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-fruits-go-bananas",
+    "page": "https://wazdan.com/games/fruits-go-bananas",
+    "local": "/images/catalog/wazdan-fruits-go-bananas.webp",
+    "image": "https://wazdan.com/wp-content/uploads/FruitsGoBananas_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-gem-splitter",
+    "page": "https://wazdan.com/games/gem-splitter",
+    "local": "/images/catalog/wazdan-gem-splitter.webp",
+    "image": "https://wazdan.com/wp-content/uploads/GemSplitter_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-golden-sphinx",
+    "page": "https://wazdan.com/games/golden-sphinx",
+    "local": "/images/catalog/wazdan-golden-sphinx.webp",
+    "image": "https://wazdan.com/wp-content/uploads/GoldenSphinx_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-good-luck-40",
+    "page": "https://wazdan.com/games/good-luck-40",
+    "local": "/images/catalog/wazdan-good-luck-40.webp",
+    "image": "https://wazdan.com/wp-content/uploads/GoodLuck40_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-great-book-of-magic",
+    "page": "https://wazdan.com/games/great-book-of-magic",
+    "local": "/images/catalog/wazdan-great-book-of-magic.webp",
+    "image": "https://wazdan.com/wp-content/uploads/GreatBookOfMagic_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-great-book-of-magic-deluxe",
+    "page": "https://wazdan.com/games/great-book-of-magic-deluxe",
+    "local": "/images/catalog/wazdan-great-book-of-magic-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/GreatBookOfMagicDeluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-haunted-coins-x1000",
+    "page": "https://wazdan.com/games/haunted-coins-x1000",
+    "local": "/images/catalog/wazdan-haunted-coins-x1000.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HauntedCoinsx1000_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-haunted-hospital",
+    "page": "https://wazdan.com/games/haunted-hospital",
+    "local": "/images/catalog/wazdan-haunted-hospital.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HauntedHospital_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-highschool-manga",
+    "page": "https://wazdan.com/games/highschool-manga",
+    "local": "/images/catalog/wazdan-highschool-manga.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HighschoolManga_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-highway-to-hell",
+    "page": "https://wazdan.com/games/highway-to-hell",
+    "local": "/images/catalog/wazdan-highway-to-hell.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HighwayToHell_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-highway-to-hell-deluxe",
+    "page": "https://wazdan.com/games/highway-to-hell-deluxe",
+    "local": "/images/catalog/wazdan-highway-to-hell-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HighwayToHellDeluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-hot-777",
+    "page": "https://wazdan.com/games/hot-777",
+    "local": "/images/catalog/wazdan-hot-777.webp",
+    "image": "https://wazdan.com/wp-content/uploads/Hot777_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-hot-777-deluxe",
+    "page": "https://wazdan.com/games/hot-777-deluxe",
+    "local": "/images/catalog/wazdan-hot-777-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/Hot777Deluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-hot-party",
+    "page": "https://wazdan.com/games/hot-party",
+    "local": "/images/catalog/wazdan-hot-party.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotParty_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-hot-party-deluxe",
+    "page": "https://wazdan.com/games/hot-party-deluxe",
+    "local": "/images/catalog/wazdan-hot-party-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotPartyDeluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-cash-out-extremely-light",
+    "page": "https://wazdan.com/games/hot-slot-777-cash-out-extremely-light",
+    "local": "/images/catalog/wazdan-hot-slot-777-cash-out-extremely-light.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777CashOutExtremeLight_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-cash-out-grand-diamond-edition",
+    "page": "https://wazdan.com/games/hot-slot-777-cash-out-grand-diamond-edition",
+    "local": "/images/catalog/wazdan-hot-slot-777-cash-out-grand-diamond-edition.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777CashOutGrandDiamondEdition_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-cash-out-grand-gold-edition",
+    "page": "https://wazdan.com/games/hot-slot-777-cash-out-grand-gold-edition",
+    "local": "/images/catalog/wazdan-hot-slot-777-cash-out-grand-gold-edition.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777CashOutGrandGoldEdition_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-cash-out-grand-platinum-edition",
+    "page": "https://wazdan.com/games/hot-slot-777-cash-out-grand-platinum-edition",
+    "local": "/images/catalog/wazdan-hot-slot-777-cash-out-grand-platinum-edition.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777CashOutGrandPlatinumEdition_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
   }
 ]
