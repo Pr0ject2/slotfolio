@@ -680,6 +680,27 @@ const artworkBySlug: Record<string, string> = {
   "wazdan-9-burning-dragons": "/images/catalog/wazdan-9-burning-dragons.webp",
   "wazdan-9-burning-stars": "/images/catalog/wazdan-9-burning-stars.webp",
 
+  "wazdan-9-coins": "/images/catalog/wazdan-9-coins.webp",
+  "wazdan-9-coins-1000-edition": "/images/catalog/wazdan-9-coins-1000-edition.webp",
+  "wazdan-9-coins-extremely-light": "/images/catalog/wazdan-9-coins-extremely-light.webp",
+  "wazdan-9-coins-grand-diamond-edition": "/images/catalog/wazdan-9-coins-grand-diamond-edition.webp",
+  "wazdan-9-coins-grand-gold-edition": "/images/catalog/wazdan-9-coins-grand-gold-edition.webp",
+  "wazdan-9-coins-grand-platinum-edition": "/images/catalog/wazdan-9-coins-grand-platinum-edition.webp",
+  "wazdan-9-lions": "/images/catalog/wazdan-9-lions.webp",
+  "wazdan-9-lions-hold-the-jackpot": "/images/catalog/wazdan-9-lions-hold-the-jackpot.webp",
+  "wazdan-9-tigers": "/images/catalog/wazdan-9-tigers.webp",
+  "wazdan-arcade": "/images/catalog/wazdan-arcade.webp",
+  "wazdan-back-to-the-70s": "/images/catalog/wazdan-back-to-the-70s.webp",
+  "wazdan-bars7s": "/images/catalog/wazdan-bars7s.webp",
+  "wazdan-beach-party": "/images/catalog/wazdan-beach-party.webp",
+  "wazdan-beach-party-hot": "/images/catalog/wazdan-beach-party-hot.webp",
+  "wazdan-beauty-fruity": "/images/catalog/wazdan-beauty-fruity.webp",
+  "wazdan-bell-wizard": "/images/catalog/wazdan-bell-wizard.webp",
+  "wazdan-bells-of-fortune": "/images/catalog/wazdan-bells-of-fortune.webp",
+  "wazdan-black-hawk": "/images/catalog/wazdan-black-hawk.webp",
+  "wazdan-black-hawk-deluxe": "/images/catalog/wazdan-black-hawk-deluxe.webp",
+  "wazdan-black-horse": "/images/catalog/wazdan-black-horse.webp",
+
 };
 
 export function getCatalogArtwork(slug: string) {
