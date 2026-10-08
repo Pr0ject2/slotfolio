@@ -3811,6 +3811,107 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     features: [{ title: "Cash Out на двадцать вращений", description: "Метка закрепляется на барабане на срок до 20 spins, собирает Bonus values и выдаёт их процент." },{ title: "До 300% Cash Out", description: "Усиленная функция может применять переменный процент к собранным значениям." },{ title: "Hold the Jackpot", description: "Основной бонус и Cash Infinity сохранены, максимальный приз заявлен как 5000x." }],
   },
 
+  "wazdan-15-coins-grand-gold-edition": {
+    intro: ["15 Coins Grand Gold Edition сохраняет поле из пятнадцати самостоятельных барабанов, где основной выигрышный сценарий строится вокруг Hold the Jackpot, а не обычных платёжных линий.","Cash Infinity оставляет денежные символы до бонусного раунда. Chance Level способен увеличить вероятность попадания в него вплоть до десятикратного уровня, а предельный Grand Jackpot именно этой версии равен 2000x ставки."],
+    editorial: "Версия Grand Gold отличается от исходной 15 Coins пределом Grand Jackpot и усиленным Chance Level. Функцию Cash Out из Platinum здесь не нужно приписывать по аналогии.",
+    features: [{ title: "Hold the Jackpot", description: "Денежные символы удерживаются в бонусной серии; заявленный Grand Jackpot этой версии составляет 2000x ставки." },{ title: "Cash Infinity", description: "Особые денежные символы могут оставаться в базовой игре до бонуса и участвуют в сборе." },{ title: "Chance Level", description: "Выбор повышенного уровня ставки меняет вероятность активации бонуса, не превращая её в гарантированный триггер." }],
+  },
+  "wazdan-15-coins-grand-platinum-edition": {
+    intro: ["15 Coins Grand Platinum Edition дополняет знакомую комбинацию Hold the Jackpot и Cash Infinity отдельным Cash Out. Денежные метки позволяют получить выплаты в базовой игре, а не ждать только окончания бонусной серии.","На пятнадцати барабанах по-прежнему собираются значения для бонуса с Grand Jackpot до 2500x. Chance Level управляет частотой его появления, но не отменяет отдельную механику Cash Out."],
+    editorial: "Отличительная черта Platinum на фоне Gold Edition заключается в появлении Cash Out и более высоком подтверждённом пределе Grand Jackpot, а не в простом изменении цвета символов.",
+    features: [{ title: "Cash Out", description: "Накопительные метки дают возможность получить денежные значения ещё в базовом режиме." },{ title: "Hold the Jackpot", description: "Бонусная серия собирает денежные символы на 15 барабанах с Grand Jackpot до 2500x." },{ title: "Cash Infinity и Chance Level", description: "Сохраняющиеся символы усиливают будущий бонус, а настройка Chance Level меняет шанс входа в него." }],
+  },
+  "wazdan-16-coins": {
+    intro: ["16 Coins переводит серию на квадратное расположение 4×4: здесь шестнадцать отдельных барабанов и нет привычного подсчёта выигрыша по линиям.","Выигрыш формируется через сбор денежных значений в Hold the Jackpot. Cash Infinity сохраняет определённые символы между базовой игрой и бонусом, а Grand Jackpot в оригинальной 16 Coins ограничен подтверждёнными 1000x."],
+    editorial: "Это исходная версия шестнадцатибарабанной ветки: Cash Out и Grand Jackpot 5000x принадлежат более поздней x5000, а не самой 16 Coins.",
+    features: [{ title: "Квадратная сетка 4×4", description: "Шестнадцать барабанов формируют позиции для сбора денег в бонусе, а не шестнадцать payline-колонок." },{ title: "Cash Infinity", description: "Денежные символы сохраняются до следующего бонуса и усиливают итоговые значения." },{ title: "Hold the Jackpot", description: "Основной игровой результат связан с фиксированными бонусными символами; заявленный максимум составляет 1000x." }],
+  },
+  "wazdan-16-coins-grand-gold-edition": {
+    intro: ["16 Coins Grand Gold Edition сохраняет шестнадцать независимых барабанов оригинала, но расширяет выигрышный потенциал Hold the Jackpot до 2000x ставки.","Cash Infinity накапливает денежные значения, Sticky to Infinity способен удерживать Mystery Symbols до бонуса, а Chance Level увеличивает шанс попасть в Hold the Jackpot."],
+    editorial: "Главная разница с Platinum и x5000 в том, что Gold сосредоточена на усиленном Hold the Jackpot и накоплении символов, без отдельного Cash Out из этих версий.",
+    features: [{ title: "Grand Jackpot 2000x", description: "Hold the Jackpot в этой версии имеет собственный, отличный от оригинала призовой предел." },{ title: "Sticky to Infinity", description: "Mystery и Jackpot Mystery могут сохраняться на своих позициях до завершения следующего бонуса." },{ title: "Cash Infinity и Chance Level", description: "Денежные символы переносятся в бонус, а дополнительная настройка влияет на вероятность его запуска." }],
+  },
+  "wazdan-16-coins-grand-platinum-edition": {
+    intro: ["16 Coins Grand Platinum Edition использует то же шестнадцатипозиционное поле, но добавляет Cash Out к Hold the Jackpot и Cash Infinity.","Cash Out приносит результаты вне основного бонуса, а Grand Jackpot до 2500x закреплён именно за Platinum Edition. Возможность изменить Chance Level остаётся отдельным способом управления частотой бонуса."],
+    editorial: "Platinum находится между Gold с 2000x и x5000 с 5000x, но важнее чисел сама новая ветка Cash Out: она не является просто дополнительным символом Hold the Jackpot.",
+    features: [{ title: "Cash Out в базовой игре", description: "Отдельные денежные метки собирают призы до запуска бонусных респинов." },{ title: "Hold the Jackpot 2500x", description: "Поле из 16 барабанов используется для удерживаемых денежных позиций с подтверждённым максимумом 2500x." },{ title: "Cash Infinity и Chance Level", description: "Сохраняющиеся значения добавляются к бонусу; Chance Level меняет вероятность его начала." }],
+  },
+  "wazdan-16-coins-x5000": {
+    intro: ["16 Coins x5000 начинает Hold the Jackpot с трёх повторных вращений, и каждый новый денежный символ возвращает счётчик к трём. Заполнение всей сетки может принести Grand Jackpot в 5000x ставки.","Здесь добавлены Cash Out-метки с обратным отсчётом: они собирают значения Bonus Symbols и в конце выдают накопленную сумму с процентным усилением, которое провайдер ограничивает 300 процентами."],
+    editorial: "Формула x5000 не переносится на 16 Coins Gold и Platinum: у неё собственный лимит джекпота, четырёхуровневая система jackpots и Cash Out с отсчётом.",
+    features: [{ title: "Три обновляемых респина", description: "В Hold the Jackpot каждый новый symbol сбрасывает счётчик обратно к трём попыткам." },{ title: "Cash Out с таймером", description: "Метка собирает значения и после истечения счётчика выплачивает их с установленным процентным усилением." },{ title: "Grand Jackpot 5000x", description: "Полное заполнение 16 позиций может дать максимальный подтверждённый Grand Jackpot 5000x." }],
+  },
+  "wazdan-20-coins": {
+    intro: ["20 Coins увеличивает игровое поле до двадцати самостоятельных барабанов и добавляет Sticky to Infinity для Mystery и Jackpot Mystery Symbols.","Chance Level предлагает три ступени x2, x4 и x6 для повышения шанса запуска Hold the Jackpot. При этом Cash Infinity продолжает удерживать денежные symbols до бонуса, а общий заявленный максимум оригинала 1500x."],
+    editorial: "Оригинальную 20 Coins не стоит путать с Grand Gold: первая строит накопление на двадцати позициях и трёх значениях Chance Level, но не получает дополнительные версии Collect to Infinity из более поздних выпусков.",
+    features: [{ title: "Sticky to Infinity", description: "Mystery и Jackpot Mystery Symbols могут оставаться до завершения ближайшей бонусной серии." },{ title: "Chance Level x2/x4/x6", description: "Три настройки повышают вероятность запуска бонуса, а не гарантируют денежную выплату." },{ title: "Cash Infinity и Hold the Jackpot", description: "Накопленные символы участвуют в удерживаемом бонусе с Grand Jackpot до 1500x." }],
+  },
+  "wazdan-20-coins-grand-gold-edition": {
+    intro: ["20 Coins Grand Gold Edition использует двадцать позиций для Hold the Jackpot, сохраняя Cash Infinity и закрепляющиеся до бонуса Mystery Symbols.","Повышенный Grand Jackpot до 2000x отличает Gold от оригинальных 1500x. Настройка Chance Level помогает чаще выходить на основной бонус, но не изменяет число игровых барабанов."],
+    editorial: "Эта версия усиливает исходную двадцатипозиционную систему, не превращаясь автоматически в 25 Coins с Cluster Collector или в Platinum с Cash Out.",
+    features: [{ title: "Hold the Jackpot 2000x", description: "Заполненные денежные позиции участвуют в бонусе с увеличенным пределом Grand Jackpot." },{ title: "Cash Infinity", description: "Сохраняет специальные денежные значения между обычной игрой и бонусом." },{ title: "Sticky to Infinity и Chance Level", description: "Mystery Symbols могут удерживаться до бонуса, а Chance Level регулирует шанс его запуска." }],
+  },
+  "wazdan-24-coins": {
+    intro: ["24 Coins стала первым выпуском Coins с Moving Cash Out: накопительная денежная метка перемещается по полю и позволяет собрать значения ещё в базовом режиме.","Дополнительно Cluster Collector собирает суммы соседних symbols, а Hold the Jackpot использует 24 позиции с максимумом Grand Jackpot 1200x. Cash Infinity и Chance Level управляют накоплением и запуском бонуса."],
+    editorial: "Именно Moving Cash Out, а не просто количество барабанов, выделяет 24 Coins. Cluster Collector собирает соседние значения, тогда как Moving Cash Out ведёт отдельный сбор в базе.",
+    features: [{ title: "Moving Cash Out", description: "Движущаяся денежная метка даёт базовой игре самостоятельную накопительную механику." },{ title: "Cluster Collector", description: "Собирает денежные значения соседних symbols и добавляет их к призу." },{ title: "Hold the Jackpot 1200x", description: "Бонус заполняет 24 позиции; провайдер обозначает предел выигрыша как 1200x ставки." }],
+  },
+  "wazdan-25-coins": {
+    intro: ["25 Coins использует сетку из 25 отдельных позиций и вводит Cluster Collector, который собирает значения денежных symbols вокруг себя.","Cash Infinity переносит специальные значения к бонусу, Sticky to Infinity удерживает Mystery и Jackpot Mystery до его завершения. Hold the Jackpot в исходной версии связан с максимумом 2000x ставки."],
+    editorial: "В оригинальной 25 Coins Collector собирает соседние значения, но режим Collect to Infinity с его бессрочным удержанием принадлежит отдельной Grand Gold Edition.",
+    features: [{ title: "Cluster Collector", description: "Получает значения adjacent Cash Symbols и усиливает результат сбора на поле 25 позиций." },{ title: "Sticky to Infinity", description: "Mystery и Jackpot Mystery могут оставаться на сетке до конца следующей бонусной серии." },{ title: "Hold the Jackpot 2000x", description: "Удерживаемый режим собирает бонусные значения с максимумом 2000x ставки." }],
+  },
+  "wazdan-25-coins-grand-gold-edition": {
+    intro: ["25 Coins Grand Gold Edition дополняет Cluster Collector новой функцией Collect to Infinity: модифицированный Collector остаётся активным вплоть до завершения ближайшего бонусного раунда.","Sticky to Infinity удерживает Mystery и Jackpot Mystery symbols, а Cash Infinity накапливает денежные значения. Бонус Hold the Jackpot повышает Grand Jackpot до 2500x ставки."],
+    editorial: "У этой Grand Gold Edition не только больше предельный выигрыш: Collect to Infinity меняет время жизни Collector и отличает её от оригинальной 25 Coins.",
+    features: [{ title: "Collect to Infinity", description: "Специальный modifier сохраняет Cluster Collector до конца следующего бонуса." },{ title: "Усиленный Cluster Collector", description: "Собирает значения соседних symbols и может получать дополнительные изменения от modifiers." },{ title: "Hold the Jackpot 2500x", description: "Удерживаемая серия использует Grand Jackpot до 2500x; Chance Level даёт настройки вероятности триггера." }],
+  },
+  "wazdan-25-coins-x3000": {
+    intro: ["25 Coins x3000 запускает Hold the Jackpot с тремя респинами: каждый новый symbol возвращает счётчик к трём, а заполнение всех двадцати пяти ячеек приносит Grand Jackpot в 3000x ставки.","Cash Infinity сохраняет значения от 5x до 10x до бонуса; улучшенный Cluster Collector собирает значения соседних денежных symbols в течение пяти вращений. Mystery и Jackpot Mystery могут удерживаться Sticky to Infinity."],
+    editorial: "В x3000 важны не только 3000x в названии, но и конкретные пять ходов Cluster Collector и перенос Cash Infinity. Эти правила подтверждены релизом Wazdan от 1 октября 2026 года.",
+    features: [{ title: "Респины Hold the Jackpot", description: "Три стартовых респина обновляются новым symbol; заполнение 25 ячеек даёт Grand Jackpot 3000x." },{ title: "Cluster Collector на пять вращений", description: "Сборщик получает значения соседних Cash и Cash Infinity Symbols в течение максимум пяти spins." },{ title: "Cash Infinity и Sticky to Infinity", description: "Денежные значения 5x–10x и Mystery Symbols могут сохраняться до следующей бонусной серии." }],
+  },
+  "wazdan-30-coins": {
+    intro: ["30 Coins добавляет тридцать позиций для Hold the Jackpot и Cluster Collector, собирающий значения соседних денежных symbols.","Cash Infinity сохраняет призы до бонуса, Sticky to Infinity закрепляет Mystery и Jackpot Mystery. Заявленный Grand Jackpot оригинала составляет 1500x ставки."],
+    editorial: "Здесь Cluster Collector участвует в обычном соседнем сборе, а не работает с Collect to Infinity. Последний модификатор появился в более поздней Grand Gold Edition.",
+    features: [{ title: "Cluster Collector", description: "Собирает соседние денежные значения на тридцатипозиционной сетке." },{ title: "Sticky to Infinity", description: "Mystery и Jackpot Mystery могут оставаться до окончания следующего бонуса." },{ title: "Hold the Jackpot 1500x", description: "В бонусной серии собираются удерживаемые symbols; подтверждённый максимум оригинала 1500x." }],
+  },
+  "wazdan-30-coins-grand-gold-edition": {
+    intro: ["30 Coins Grand Gold Edition сохраняет сетку из тридцати позиций, но улучшает Cluster Collector: modifiers способны изменить его способ накопления.","Collect to Infinity оставляет улучшенный Collector активным до завершения бонусного раунда. Chance Level позволяет выбрать между тремя повышениями ставки, а Grand Jackpot поднимается до 2500x."],
+    editorial: "Gold отличается от обычной 30 Coins усиленными Collectors и Collect to Infinity, а не только прибавкой к максимуму с 1500x до 2500x.",
+    features: [{ title: "Модификаторы Cluster Collector", description: "Особые symbols усиливают сбор значений окружающих денежных symbols." },{ title: "Collect to Infinity", description: "Изменённый Collector продолжает работать до конца следующего бонуса." },{ title: "Chance Level и Jackpot 2500x", description: "Доступны три уровня изменения ставки, а Grand Jackpot удерживаемого бонуса доходит до 2500x." }],
+  },
+  "wazdan-36-coins": {
+    intro: ["36 Coins разворачивает серию на квадратном поле 6×6: отдельные 36 позиций можно заполнить денежными symbols в Hold the Jackpot.","Cluster Collector использует соседство ячеек на большой сетке, а Cash Infinity и Sticky to Infinity позволяют перенести Cash, Mystery и Jackpot Mystery к следующему бонусу."],
+    editorial: "Ключевой шаг 36 Coins относительно 30 Coins в размере 6×6 и новом масштабе Cluster Collector. Базовая версия не получает модификатор Collect to Infinity из Grand Gold.",
+    features: [{ title: "Сетка 6×6", description: "Тридцать шесть отдельных барабанов расширяют число позиций Hold the Jackpot." },{ title: "Cluster Collector", description: "Собирает значения соседних Cash Symbols по сетке из 36 позиций." },{ title: "Cash Infinity и Sticky to Infinity", description: "Часть денежных и Mystery Symbols сохраняется до следующего бонуса с Grand Jackpot до 2000x." }],
+  },
+  "wazdan-36-coins-grand-gold-edition": {
+    intro: ["36 Coins Grand Gold Edition использует поле 6×6, но впервые для этой ветки даёт Cluster Collector бессрочный модификатор Collect to Infinity.","Модифицированный Collector сохраняет активность до конца следующего бонуса, а Chance Level предлагает три уровня x2, x5 и x10. Grand Jackpot Hold the Jackpot равен максимум 2500x ставки."],
+    editorial: "Главное отличие Grand Gold от обычной 36 Coins заключается в сохранении Collector через Collect to Infinity и настройке Chance Level x2/x5/x10.",
+    features: [{ title: "Collect to Infinity", description: "Улучшенный Cluster Collector получает неограниченный таймер до завершения бонусной серии." },{ title: "Chance Level x2/x5/x10", description: "Три режима повышенной ставки меняют шанс начала Hold the Jackpot." },{ title: "Hold the Jackpot 2500x", description: "На поле 36 позиций можно получить Grand Jackpot до 2500x ставки." }],
+  },
+  "wazdan-9-balls": {
+    intro: ["9 Balls превращает девятипозиционную Coins-систему в футбольный сценарий: Penalty Kick даёт возможность получить денежную награду уже в базовом режиме.","Символ с меткой Penalty Kick удерживает обратный отсчёт до нуля, после чего собирает приз. Cash Infinity остаётся до бонуса, а xG Chance Level увеличивает шансы запустить Hold the Jackpot."],
+    editorial: "В отличие от 9 Bells, здесь нет Bonus Matrix с колоколами: 9 Balls использует футбольную метку Penalty Kick, собственный xG Chance Level и Grand Jackpot до 2500x.",
+    features: [{ title: "Penalty Kick", description: "Специальная метка имеет обратный отсчёт; при нуле выплачивает накопленные значения в базовой игре." },{ title: "xG Chance Level", description: "Повышение ставки меняет вероятность входа в футбольный Hold the Jackpot." },{ title: "Cash Infinity", description: "Денежные symbols могут сохраняться до конца бонусной серии; подтверждённый максимум 9 Balls 2500x." }],
+  },
+  "wazdan-9-bells": {
+    intro: ["9 Bells объединяет Cash Out и Bonus Matrix на девяти отдельных барабанах. Bell symbols наполняют бонусную матрицу, создавая второй путь к Hold the Jackpot.","Cash Infinity увеличивает будущие денежные значения, а Chance Level имеет три ступени, позволяющие поднять вероятность попадания в бонус вплоть до шести раз. Grand Jackpot заявлен в 1500x ставки."],
+    editorial: "9 Bells следует отличать от 12 Bells: здесь Bonus Matrix и Cash Out, а не отдельный режим выбора трёх из двенадцати ворот.",
+    features: [{ title: "Bonus Matrix", description: "Bell Symbols продвигают бонусную матрицу и способны активировать Hold the Jackpot." },{ title: "Cash Out", description: "Отдельная функция выплачивает накопленные денежные значения в базовой игре." },{ title: "Chance Level и Grand Jackpot", description: "Три режима повышают шансы бонуса максимум до шестикратного уровня, Grand Jackpot до 1500x." }],
+  },
+  "wazdan-9-burning-dragons": {
+    intro: ["9 Burning Dragons работает с девятью отдельными барабанами и простым Hold the Jackpot, который можно открыть обычным способом или через Buy Feature.","В отличие от новых Coins-версий, здесь нет длинной цепочки Cash Infinity, Cash Out и Cluster Collector: ключевые особенности состоят в прямом доступе к Hold the Jackpot и тематических Wild Symbols."],
+    editorial: "9 Burning Dragons полезно сравнивать не по числу наворотов, а по компактной структуре: девять позиций, Wild и bonus buy с подтверждённым максимумом 2187x ставки.",
+    features: [{ title: "Hold the Jackpot", description: "Основной бонус на девяти барабанах связан с денежными призами и заявленным пределом 2187x ставки." },{ title: "Buy Feature", description: "Опциональная функция позволяет перейти непосредственно к бонусному раунду." },{ title: "Wild и риск-игра", description: "Wild заменяет обычные symbols, а дополнительная Gamble Feature отделена от Hold the Jackpot." }],
+  },
+  "wazdan-9-burning-stars": {
+    intro: ["9 Burning Stars запускает Hold the Jackpot через Bonus Matrix: денежные Symbols постепенно заполняют отдельную матрицу до активации бонуса.","Multiplier Symbol усиливает общую выплату на x2, x3, x5, x7 либо x10, а Bonus Collector может изменить денежные значения внутри bonus-сценария."],
+    editorial: "Это не просто космическая версия 9 Burning Dragons. У 9 Burning Stars бонусный запуск опирается на Bonus Matrix, а множители действуют на общий выигрыш, не только на линию.",
+    features: [{ title: "Bonus Matrix", description: "Cash Symbols наполняют таблицу прогресса, после заполнения которой запускается Hold the Jackpot." },{ title: "Multiplier x2–x10", description: "Отдельный symbol увеличивает итоговую выплату на x2, x3, x5, x7 или x10." },{ title: "Bonus Collector", description: "Усиливает денежный сбор в Hold the Jackpot; Grand Jackpot версии 1500x ставки." }],
+  },
+
 };
 
 function getCatalogEditorial(slug: string) {
