@@ -5264,5 +5264,165 @@
     "image": "https://wazdan.com/wp-content/uploads/BlackHorse_icon_600x450_webp90.webp",
     "requireExplicitImage": true,
     "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-black-horse-cash-out-edition",
+    "page": "https://wazdan.com/games/black-horse-cash-out-edition",
+    "local": "/images/catalog/wazdan-black-horse-cash-out-edition.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BlackHorseCashOutEdition_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-black-horse-deluxe",
+    "page": "https://wazdan.com/games/black-horse-deluxe",
+    "local": "/images/catalog/wazdan-black-horse-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BlackHorseDeluxe_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-book-of-faith",
+    "page": "https://wazdan.com/games/book-of-faith",
+    "local": "/images/catalog/wazdan-book-of-faith.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BookOfFaith_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-bumba-meu-boi-coin",
+    "page": "https://wazdan.com/games/bumba-meu-boi-coin",
+    "local": "/images/catalog/wazdan-bumba-meu-boi-coin.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BumbaMeuBoiCoin_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-burning-reels",
+    "page": "https://wazdan.com/games/burning-reels",
+    "local": "/images/catalog/wazdan-burning-reels.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BurningReels_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-burning-stars",
+    "page": "https://wazdan.com/games/burning-stars",
+    "local": "/images/catalog/wazdan-burning-stars.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BurningStars_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-burning-stars-3",
+    "page": "https://wazdan.com/games/burning-stars-3",
+    "local": "/images/catalog/wazdan-burning-stars-3.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BurningStars3_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-burning-sun",
+    "page": "https://wazdan.com/games/burning-sun",
+    "local": "/images/catalog/wazdan-burning-sun.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BurningSun_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-burning-sun-extremely-light",
+    "page": "https://wazdan.com/games/burning-sun-extremely-light",
+    "local": "/images/catalog/wazdan-burning-sun-extremely-light.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BurningSunExtremeLight_icon_600x450-1.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-butterfly-lovers",
+    "page": "https://wazdan.com/games/butterfly-lovers",
+    "local": "/images/catalog/wazdan-butterfly-lovers.webp",
+    "image": "https://wazdan.com/wp-content/uploads/ButterflyLovers_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-captain-shark",
+    "page": "https://wazdan.com/games/captain-shark",
+    "local": "/images/catalog/wazdan-captain-shark.webp",
+    "image": "https://wazdan.com/wp-content/uploads/CaptainShark_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-cash-grotto",
+    "page": "https://wazdan.com/games/cash-grotto",
+    "local": "/images/catalog/wazdan-cash-grotto.webp",
+    "image": "https://wazdan.com/wp-content/uploads/CashGrotto_icon_600x450_v2.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-choco-reels",
+    "page": "https://wazdan.com/games/choco-reels",
+    "local": "/images/catalog/wazdan-choco-reels.webp",
+    "image": "https://wazdan.com/wp-content/uploads/ChocoReels_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-clover-lady",
+    "page": "https://wazdan.com/games/clover-lady",
+    "local": "/images/catalog/wazdan-clover-lady.webp",
+    "image": "https://wazdan.com/wp-content/uploads/CloverLady_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-colin-the-cat",
+    "page": "https://wazdan.com/games/colin-the-cat",
+    "local": "/images/catalog/wazdan-colin-the-cat.webp",
+    "image": "https://wazdan.com/wp-content/uploads/colin_the_cat_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-corrida-romance",
+    "page": "https://wazdan.com/games/corrida-romance",
+    "local": "/images/catalog/wazdan-corrida-romance.webp",
+    "image": "https://wazdan.com/wp-content/uploads/CorridaRomance_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-corrida-romance-deluxe",
+    "page": "https://wazdan.com/games/corrida-romance-deluxe",
+    "local": "/images/catalog/wazdan-corrida-romance-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/CorridaRomanceDeluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-crazy-cars",
+    "page": "https://wazdan.com/games/crazy-cars",
+    "local": "/images/catalog/wazdan-crazy-cars.webp",
+    "image": "https://wazdan.com/wp-content/uploads/CrazyCars_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-criss-cross-81",
+    "page": "https://wazdan.com/games/criss-cross-81",
+    "local": "/images/catalog/wazdan-criss-cross-81.webp",
+    "image": "https://wazdan.com/wp-content/uploads/CrissCross81_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-cube-mania",
+    "page": "https://wazdan.com/games/cube-mania",
+    "local": "/images/catalog/wazdan-cube-mania.webp",
+    "image": "https://wazdan.com/wp-content/uploads/CubeMania_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
   }
 ]
