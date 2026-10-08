@@ -5104,5 +5104,165 @@
     "local": "/images/catalog/wazdan-9-burning-stars.webp",
     "note": "Reviewed game-specific first-party Wazdan artwork from official game or provider showcase; strict build-time WebP localization.",
     "requireExplicitImage": true
+  },
+  {
+    "slug": "wazdan-9-coins",
+    "page": "https://wazdan.com/games/9-coins",
+    "local": "/images/catalog/wazdan-9-coins.webp",
+    "image": "https://wazdan.com/wp-content/uploads/9Coins_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-9-coins-1000-edition",
+    "page": "https://wazdan.com/games/9-coins-1000-edition",
+    "local": "/images/catalog/wazdan-9-coins-1000-edition.webp",
+    "image": "https://wazdan.com/wp-content/uploads/9Coins1000Edition_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-9-coins-extremely-light",
+    "page": "https://wazdan.com/games/9-coins-extremely-light",
+    "local": "/images/catalog/wazdan-9-coins-extremely-light.webp",
+    "image": "https://wazdan.com/wp-content/uploads/9CoinsExtremelyLight_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-9-coins-grand-diamond-edition",
+    "page": "https://wazdan.com/games/9-coins-grand-diamond-edition",
+    "local": "/images/catalog/wazdan-9-coins-grand-diamond-edition.webp",
+    "image": "https://wazdan.com/wp-content/uploads/9CoinsGrandDiamondEdition_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-9-coins-grand-gold-edition",
+    "page": "https://wazdan.com/games/9-coins-grand-gold-edition",
+    "local": "/images/catalog/wazdan-9-coins-grand-gold-edition.webp",
+    "image": "https://wazdan.com/wp-content/uploads/9CoinsGrandGoldEdition_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-9-coins-grand-platinum-edition",
+    "page": "https://wazdan.com/games/9-coins-grand-platinum-edition",
+    "local": "/images/catalog/wazdan-9-coins-grand-platinum-edition.webp",
+    "image": "https://wazdan.com/wp-content/uploads/9CoinsPlatinumEdition_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-9-lions",
+    "page": "https://wazdan.com/games/9-lions",
+    "local": "/images/catalog/wazdan-9-lions.webp",
+    "image": "https://wazdan.com/wp-content/uploads/9Lions_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-9-lions-hold-the-jackpot",
+    "page": "https://wazdan.com/games/9-lions-hold-the-jackpot",
+    "local": "/images/catalog/wazdan-9-lions-hold-the-jackpot.webp",
+    "image": "https://wazdan.com/wp-content/uploads/9LionsHoldTheJackpot_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-9-tigers",
+    "page": "https://wazdan.com/games/9-tigers",
+    "local": "/images/catalog/wazdan-9-tigers.webp",
+    "image": "https://wazdan.com/wp-content/uploads/9Tigers_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-arcade",
+    "page": "https://wazdan.com/games/arcade",
+    "local": "/images/catalog/wazdan-arcade.webp",
+    "image": "https://wazdan.com/wp-content/uploads/Arcade_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-back-to-the-70s",
+    "page": "https://wazdan.com/games/back-to-the-70s",
+    "local": "/images/catalog/wazdan-back-to-the-70s.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BackToThe70s_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-bars7s",
+    "page": "https://wazdan.com/games/bars7s",
+    "local": "/images/catalog/wazdan-bars7s.webp",
+    "image": "https://wazdan.com/wp-content/uploads/Bars7s_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-beach-party",
+    "page": "https://wazdan.com/games/beach-party",
+    "local": "/images/catalog/wazdan-beach-party.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BeachParty_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-beach-party-hot",
+    "page": "https://wazdan.com/games/beach-party-hot",
+    "local": "/images/catalog/wazdan-beach-party-hot.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BeachPartyHot_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-beauty-fruity",
+    "page": "https://wazdan.com/games/beauty-fruity",
+    "local": "/images/catalog/wazdan-beauty-fruity.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BeautyFruity_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-bell-wizard",
+    "page": "https://wazdan.com/games/bell-wizard",
+    "local": "/images/catalog/wazdan-bell-wizard.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BellWizard_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-bells-of-fortune",
+    "page": "https://wazdan.com/games/bells-of-fortune",
+    "local": "/images/catalog/wazdan-bells-of-fortune.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BellsOfFortune_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-black-hawk",
+    "page": "https://wazdan.com/games/black-hawk",
+    "local": "/images/catalog/wazdan-black-hawk.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BlackHawk_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-black-hawk-deluxe",
+    "page": "https://wazdan.com/games/black-hawk-deluxe",
+    "local": "/images/catalog/wazdan-black-hawk-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BlackHawkDeluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
+  },
+  {
+    "slug": "wazdan-black-horse",
+    "page": "https://wazdan.com/games/black-horse",
+    "local": "/images/catalog/wazdan-black-horse.webp",
+    "image": "https://wazdan.com/wp-content/uploads/BlackHorse_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific first-party Wazdan artwork, explicitly pinned for strict build-time WebP localization."
   }
 ]

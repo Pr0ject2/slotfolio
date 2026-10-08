@@ -137,6 +137,17 @@ export const catalogResearchWazdan: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official Game Info lists 4 reels and 9 lines, while the official features explicitly list Cascading Reels and describe winning symbols disappearing before new symbols fall into place.",
   },
+  "wazdan-9-coins": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/9-coins", verifiedAt, evidence: "Official page confirms nine independent reels with no base-game payouts, Cash Infinity and Hold the Jackpot with a 500x Grand Jackpot." },
+  "wazdan-9-coins-1000-edition": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/9-coins-1000-edition", verifiedAt, evidence: "Official page confirms nine independent reels without base-game pays, Cash Infinity and Hold the Jackpot, and a 1000x Grand Jackpot." },
+  "wazdan-9-coins-extremely-light": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/9-coins-extremely-light", verifiedAt, evidence: "Official page confirms an optimized lightweight nine-reel version with Cash Infinity and Hold the Jackpot and a 500x Grand Jackpot." },
+  "wazdan-9-coins-grand-diamond-edition": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/9-coins-grand-diamond-edition", verifiedAt, evidence: "Official page confirms nine reels with Cash Infinity, Cash Out, Chance Level and a 5000x Grand Jackpot." },
+  "wazdan-9-coins-grand-gold-edition": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/9-coins-grand-gold-edition", verifiedAt, evidence: "Official page confirms nine reels with Cash Infinity and Hold the Jackpot featuring a 1500x Grand Jackpot." },
+  "wazdan-9-coins-grand-platinum-edition": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/9-coins-grand-platinum-edition", verifiedAt, evidence: "Official page confirms nine reels with Chance Level, Cash Out, Cash Infinity and a 2500x Grand Jackpot." },
+  "wazdan-9-lions": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/9-lions", verifiedAt, evidence: "Official page identifies nine independent reels and separate Lions Bonus and Dragons Bonus, as well as Block Symbols Mode." },
+  "wazdan-9-lions-hold-the-jackpot": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/9-lions-hold-the-jackpot", verifiedAt, evidence: "Official page confirms Cash Infinity, Bonus Matrix, Hold the Jackpot and a separate 9 Lions Bonus with One Click 2 Grand." },
+  "wazdan-beauty-fruity": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/beauty-fruity", verifiedAt, evidence: "Official page identifies nine independent positions with wins from four identical symbols anywhere, Love Spins, nine Free Spins with x3 and Block Symbols." },
+  "wazdan-bells-of-fortune": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/bells-of-fortune", verifiedAt, evidence: "Official page confirms 16 independent reels, Hold the Jackpot after four central bonus symbols, a separate Bells of Fortune Bonus Game, Cash Infinity and Chance Level." },
+
 };
 
 export function getCatalogResearchWazdan(slug: string) {
