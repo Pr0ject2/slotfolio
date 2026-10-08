@@ -617,6 +617,27 @@ const artworkBySlug: Record<string, string> = {
   "push-gaming-mad-blast": "/images/catalog/push-gaming-mad-blast.webp",
   "push-gaming-mad-cars": "/images/catalog/push-gaming-mad-cars.webp",
 
+  "push-gaming-masked-mayhem": "/images/catalog/push-gaming-masked-mayhem.webp",
+  "push-gaming-mystery-mission-to-the-moon": "/images/catalog/push-gaming-mystery-mission-to-the-moon.webp",
+  "push-gaming-mystery-museum": "/images/catalog/push-gaming-mystery-museum.webp",
+  "push-gaming-mystery-of-the-nile": "/images/catalog/push-gaming-mystery-of-the-nile.webp",
+  "push-gaming-neon-cash-city": "/images/catalog/push-gaming-neon-cash-city.webp",
+  "push-gaming-olympus-unleashed": "/images/catalog/push-gaming-olympus-unleashed.webp",
+  "push-gaming-power-paws": "/images/catalog/push-gaming-power-paws.webp",
+  "push-gaming-power-vault": "/images/catalog/push-gaming-power-vault.webp",
+  "push-gaming-rat-king": "/images/catalog/push-gaming-rat-king.webp",
+  "push-gaming-razor-returns": "/images/catalog/push-gaming-razor-returns.webp",
+  "push-gaming-razor-shark-jackpots": "/images/catalog/push-gaming-razor-shark-jackpots.webp",
+  "push-gaming-razor-ways": "/images/catalog/push-gaming-razor-ways.webp",
+  "push-gaming-red-hot-multipliers": "/images/catalog/push-gaming-red-hot-multipliers.webp",
+  "push-gaming-regal-knights": "/images/catalog/push-gaming-regal-knights.webp",
+  "push-gaming-retro-sweets": "/images/catalog/push-gaming-retro-sweets.webp",
+  "push-gaming-retroverse": "/images/catalog/push-gaming-retroverse.webp",
+  "push-gaming-samurais-katana": "/images/catalog/push-gaming-samurais-katana.webp",
+  "push-gaming-santa-hopper": "/images/catalog/push-gaming-santa-hopper.webp",
+  "push-gaming-santas-vault": "/images/catalog/push-gaming-santas-vault.webp",
+  "push-gaming-sea-of-spirits": "/images/catalog/push-gaming-sea-of-spirits.webp",
+
 };
 
 export function getCatalogArtwork(slug: string) {

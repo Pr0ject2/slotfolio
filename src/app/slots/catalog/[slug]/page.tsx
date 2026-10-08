@@ -3529,6 +3529,187 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
     ]
   },
 
+  "push-gaming-masked-mayhem": {
+    intro: ["Зона Win Zone размером от 2×2 до 5×5 собирает мгновенные призы только в накрытых ячейках. В базовой игре размер и положение зоны могут меняться.", "В Free Spins она начинается с блока 2×2, затем проходит четыре уровня: расширяется, получает множители и дополнительные вращения. Символы Jackpot оплачиваются только после набора нужного количества значков."],
+    editorial: "Это игра про управление площадью сборщика, а не просто про умножение выпавших на барабаны монет.",
+    features: [
+      { title: "Win Zone", description: "Накладывается на поле и собирает Instant Prize внутри области, в том числе при движении через новые значения." },
+      { title: "Четыре уровня", description: "Бонусные символы продвигают Win Zone от 2×2 до 5×5 с добавлением spins и множителей." },
+      { title: "Jackpot Symbols", description: "Пять категорий джекпотов доступны в Free Spins и требуют накопить нужное число соответствующих значков." }
+    ],
+  },
+  "push-gaming-mystery-mission-to-the-moon": {
+    intro: ["Mystery Stacks занимают позиции барабанов и при трёх совпадениях делают Nudge & Reveal: заполняют барабан и превращаются в один Instant Win символ.", "Три Moon Symbols запускают Free Spins; в этой версии до шести Wild Scatter, а дополнительные Mystery Stacks во время бонуса дают ещё вращение."],
+    editorial: "В отличие от Mystery Museum здесь добавлен retrigger через Mystery Stack, поэтому не переносим правила серии целиком.",
+    features: [
+      { title: "Nudge & Reveal", description: "Три Mystery Stacks или больше сдвигаются, заполняют барабаны и раскрываются как Instant Win." },
+      { title: "Moon Scatter", description: "Три или больше лун открывают бонус, количество доступных вращений зависит от их числа." },
+      { title: "Дополнительное вращение", description: "Каждый Mystery Stack, появившийся во время Free Spins, прибавляет бонусный spin." }
+    ],
+  },
+  "push-gaming-mystery-museum": {
+    intro: ["Mystery Museum работает на поле 5×3 с десятью линиями. Три символа самурая запускают 8–12 бесплатных вращений.", "В базовой игре Nudge & Reveal открывает Mystery Stacks при выпадении минимум трёх стопок, а выигрыши выше x2 дают доступ к Power Gamble."],
+    editorial: "У Museum особая система риск-игры и липких Mystery Stacks: их не следует путать с лунным retrigger из Mystery Mission.",
+    features: [
+      { title: "Power Gamble", description: "После выигрыша выше x2 предлагает три риска: идти к бесплатным играм либо получить больший денежный приз." },
+      { title: "Nudge & Reveal", description: "Три Mystery Stacks раскрывают общие символы, создавая выигрышные линии." },
+      { title: "Sticky Mystery", description: "В бесплатных играх Mystery Stacks закрепляются до конца бонуса и раскрываются при возможности выигрыша." }
+    ],
+  },
+  "push-gaming-mystery-of-the-nile": {
+    intro: ["Mystery of the Nile развивает Nudge & Reveal: минимум три Mystery Stacks гарантируют выплату по десяти линиям после раскрытия.", "Golden Pharaoh открывает отдельную таблицу призов со сборщиками и множителями, а Free Spins закрепляют новые Mystery Stacks. Их множители могут удваиваться до x128."],
+    editorial: "Египетская версия отличается от Museum через Golden Pharaoh и прогрессию закреплённых стопок, а не через Power Gamble.",
+    features: [
+      { title: "Golden Pharaoh", description: "Раскрытый золотой фараон запускает розыгрыш Instant Prize, Collector, Multiplier и Bonus символов." },
+      { title: "Free Spins 8–12", description: "Три, четыре или пять бонусных символов дают соответственно 8, 10 или 12 вращений." },
+      { title: "Sticky Mystery Stacks", description: "Новые стопки заполняют барабаны и остаются, а множитель подходящего Mystery Symbol удваивается до x128." }
+    ],
+  },
+  "push-gaming-neon-cash-city": {
+    intro: ["Neon Cash City — сетка 8×8 с кластерами от пяти одинаковых символов. Каждый денежный символ несёт стоимость, а сумма кластера становится выплатой.", "Три Scatter дают 10 Free Spins; четыре или пять запускают бонус с уже очищенными низкими категориями символов. Внутри серии четыре собранных Scatter повышают уровень и добавляют два вращения."],
+    editorial: "Это кластерный сбор денежных значений, а не привычный Hold & Spin: задача бонуса — поэтапно убрать дешёвые цвета.",
+    features: [
+      { title: "Cash Clusters", description: "Суммируются значения всех денежных символов в соединённой группе из пяти и более." },
+      { title: "Прокачка Free Spins", description: "Scatter заполняют шкалу, каждый новый уровень убирает одну низкую категорию монет." },
+      { title: "Дополнительные spins", description: "После четырёх Scatter на шкале игра прибавляет два вращения." }
+    ],
+  },
+  "push-gaming-olympus-unleashed": {
+    intro: ["Olympus Unleashed использует Power-Up с тремя базовыми функциями: Expand, Surround и Upgrade. Они расширяют дорогие символы, окружают позиции или усиливают ценность символа.", "Unleashed Feature запускается через пять дорогих совпадений или Expand на первом барабане и переводит игру в сбор фиксирующихся позиций. Только здесь появляются Shift и Additional Row."],
+    editorial: "Важное различие: базовые Power-Up меняют обычные комбинации, а Unleashed перестраивает поле и может добавить до трёх рядов.",
+    features: [
+      { title: "Expand / Surround", description: "Функции распространяют дорогие символы по целому барабану или вокруг выбранной позиции." },
+      { title: "Upgrade", description: "Повышает стоимость одного дорогого символа до двух ступеней." },
+      { title: "Unleashed Feature", description: "Начинается с трёх попыток, фиксирует непустые позиции и открывает Shift и расширение сетки." }
+    ],
+  },
+  "push-gaming-power-paws": {
+    intro: ["Power Paws собирает выигрышные символы в шкалу Progression Meter с четырьмя уровнями. При остановке каскадов выбранный уровень выпускает соответствующую функцию.", "На нижних ступенях приходят Mystery Symbols и Wild, на следующих — крупные 2×2–4×4 Colossal Mystery, а Power Nudge двигает 2×2 символ вниз с растущим множителем."],
+    editorial: "В отличие от Power Vault здесь прогресс зависит от выигрышных кластеров и размера Mystery, а не от коллекции монет.",
+    features: [
+      { title: "Progression Meter", description: "Выигрышные символы наполняют шкалу из четырёх уровней; Charger добавляет сразу пять очков." },
+      { title: "Power Colossals", description: "На сетку приходят один или два крупных Mystery Symbols, которые раскрывают платящие знаки или Wild." },
+      { title: "Power Nudge", description: "Крупный символ движется вниз по строкам и увеличивает множитель за каждый сдвиг." }
+    ],
+  },
+  "push-gaming-power-vault": {
+    intro: ["Power Vault работает с тремя барабанами: Instant Prizes падают на крайние, а Collector собирает их на среднем. Если значения стоят с обеих сторон, начинается бонус.", "В Vault Feature монеты накапливаются над полем и могут спонтанно раскрыть дополнительные призы; в бонусе Collector становится Sticky, а Enhancer Reels прибавляют либо умножают значения."],
+    editorial: "Эта версия имеет очень простую центральную логику трёх барабанов; у Santa's Vault схожая схема, но отдельное праздничное оформление и результаты.",
+    features: [
+      { title: "Vault Collector", description: "Символ на втором барабане забирает Instant Prizes с первого и третьего." },
+      { title: "Vault Feature", description: "Собранные монеты заполняют верхнее хранилище, которое может взорваться и открыть бонус." },
+      { title: "Бонус с Enhancer Reels", description: "Серия начинается с трёх попыток и получает добавочные значения или множители над барабанами." }
+    ],
+  },
+  "push-gaming-rat-king": {
+    intro: ["Rat King собирает звёзды со значениями множителя через Collection Boxes в нижней части сетки. Все собранные звёзды складываются в множитель текущего раунда.", "Rat King символы, достигшие ячеек коллекции, заполняют отдельную шкалу Free Spins; три таких символа запускают бонус, а каждый дополнительный Rat King прибавляет три spins."],
+    editorial: "Здесь шкалы не взаимозаменяемы: звёзды усиливают выигрыш сейчас, а символы Rat King отдельно открывают серию вращений.",
+    features: [
+      { title: "Collection Boxes", description: "Звёзды в нижних сборщиках передают числовые множители в общий счётчик раунда." },
+      { title: "Rat King Scatter", description: "Три собранных символа Rat King активируют Free Spins." },
+      { title: "Бонусное накопление", description: "В Free Spins новый Rat King добавляет три попытки, а собранные звёзды увеличивают множитель выплат." }
+    ],
+  },
+  "push-gaming-razor-returns": {
+    intro: ["Razor Returns использует Mystery Symbols с Nudge & Reveal, а Golden Shark может включить Razor Reveal: Instant Prize, Collector, Converter и мультипликаторы.", "Три Torpedo Scatter открывают Free Spins, где Mystery Stacks фиксируются на барабанах 2 и 4, затем смещаются вниз и каждый шаг повышает Total Multiplier."],
+    editorial: "Не смешиваем оригинальный Razor Shark с Returns: здесь отдельная ветка золотой акулы, больше стартовых Scatter и собственная прогрессия Free Spins.",
+    features: [
+      { title: "Nudge & Reveal", description: "Mystery Symbols раскрывают платящие знаки или Golden Shark и сдвигаются вниз." },
+      { title: "Razor Reveal", description: "Golden Shark розыгрывает Instant Prizes, Converter, Collector и Multipliers." },
+      { title: "Множитель Free Spins", description: "Mystery Stacks на втором и четвёртом барабанах смещаются вниз и увеличивают общий множитель по ступеням." }
+    ],
+  },
+  "push-gaming-razor-shark-jackpots": {
+    intro: ["Razor Shark Jackpots сохраняет Nudge & Reveal и Razor Reveal, но центральное отличие версии — отдельный Shark Pot над барабанами.", "Когда активируется Shark Pot, собираются токены пяти уровней Jackpot. Четыре токена нужны большинству уровней, а Mega требует шести; Free Games отдельно запускаются тремя Scatter."],
+    editorial: "Эта версия не использует структуру Razor Ways с расширением строк: основной дополнительный риск здесь в накоплении Jackpot-токенов.",
+    features: [
+      { title: "Razor Reveal", description: "Золотые Mystery открывают Instant Prizes, бонусные знаки либо Nudge Up." },
+      { title: "Shark Pot", description: "Накопление токенов открывает Mini, Minor, Maxi, Major или Mega Jackpot." },
+      { title: "Free Games", description: "Три Scatter могут запустить бесплатные игры как в обычном спине, так и в ходе Razor Reveal." }
+    ],
+  },
+  "push-gaming-razor-ways": {
+    intro: ["Razor Ways начинает раунд на трёх активных рядах и может раскрыть ещё три верхних после каскадов или Instant Prize. При полной сетке доступно до 46 656 способов.", "Expanding Wild в бонусе раскрывает заблокированные ряды и может нести множитель; отдельный Converter превращает выбранный тип обычных символов в Wild."],
+    editorial: "Главное отличие Ways от Razor Returns — именно расширение сетки и счёт ways, а не движущиеся Mystery Stacks на фиксированных барабанах.",
+    features: [
+      { title: "Expanding Rows", description: "Каскад или Instant Prize открывает одну из трёх закрытых строк, но следующий базовый spin сбрасывает размер поля." },
+      { title: "Converter Wild", description: "Выбранный обычный символ превращается в Wild во всех активных позициях." },
+      { title: "Razor Reveal", description: "Три соседних Mystery барабана или случайное событие открывают розыгрыш Instant Prizes и специальных усилителей." }
+    ],
+  },
+  "push-gaming-red-hot-multipliers": {
+    intro: ["Red Hot Multipliers — классический фруктовый слот, в котором на каждом вращении случайные символы могут получить собственные Hot Multiplier.", "За один spin множитель может появиться максимум на трёх позициях; при участии в выигрышной комбинации он применяет именно показанный коэффициент x2, x3, x5, x10 или x20."],
+    editorial: "Здесь нет оснований описывать отдельные накопительные Free Spins: специфика этой версии в простых подсвеченных множителях базовой игры.",
+    features: [
+      { title: "Случайные Hot Multipliers", description: "До трёх отдельных позиций на каждом spin получают дополнительный коэффициент." },
+      { title: "Пять значений", description: "На множителе возможны x2, x3, x5, x10 или x20." },
+      { title: "Применение к линии", description: "Множитель действует на участвующий в выигрыше символ, а не автоматически на каждую выплату." }
+    ],
+  },
+  "push-gaming-regal-knights": {
+    intro: ["Regal Knights раскрывает Mystery Symbols как один одинаковый обычный знак, Wild или Golden Mystery. Золотой вариант запускает дополнительный респин с набором призов.", "Три Scatter дают восемь Free Spins. Внутри каждые четыре новых Scatter превращают одну категорию дешёвых символов в Mystery на следующих spins."],
+    editorial: "Regal Knights делает акцент на постепенном удалении слабых символов: старт с четырьмя и пятью Scatter открывает один или два уровня этого прогресса заранее.",
+    features: [
+      { title: "Golden Feature", description: "Золотой Mystery даёт отдельный респин со значениями, сборщиком, множителем или Scatter." },
+      { title: "Восемь Free Spins", description: "Три Scatter запускают серию, а четыре или пять дают предварительно улучшенное поле." },
+      { title: "Progressive Free Spins", description: "Каждые четыре новых Scatter на шкале преобразуют низкооплачиваемый символ в Mystery." }
+    ],
+  },
+  "push-gaming-retro-sweets": {
+    intro: ["Retro Sweets строится на сетке 6×9 с Cluster Link: выигрыш формируют группы из пяти одинаковых сладостей. Wild Candy участвует в кластерах и накапливает +1 к собственному множителю.", "В отличие от Retro Tapes здесь есть Instant Prize Multiplier, а Sweet Collector может притянуть разбросанные Wild Candy, монеты и обычные символы в одну выигрышную группу."],
+    editorial: "Это отдельная версия Retro-серии: сладкий Collector и Instant Prize Multiplier нельзя механически переносить в RetroVerse.",
+    features: [
+      { title: "Wild Candy", description: "Wild Scatter прибавляет единицу к своему множителю после участия в выигрышном кластере." },
+      { title: "Sweet Collector", description: "Притягивает один вид платящих символов, Wild Candy либо Instant Prizes, формируя кластер." },
+      { title: "Push Bet", description: "Увеличение ставки может гарантировать один или два Wild Candy в базовом spin." }
+    ],
+  },
+  "push-gaming-retroverse": {
+    intro: ["RetroVerse использует Cluster Link и развивает Mystery Wild через три уровня: после достаточного количества выигрышных кластеров символ раскрывает Wild, Scatter или Magnet.", "Новый Light Gun удаляет два типа платящих символов, а Magnet притягивает совпадающие. Во Free Spins Instant Prize закрепляются, а Collector и Multiplicator работают уже с их значениями."],
+    editorial: "Эта версия отличается от Retro Sweets механикой Light Gun и отдельным уровневым Wild Mystery, а не только пиксельным оформлением.",
+    features: [
+      { title: "Трёхуровневый Wild Mystery", description: "Символ раскрывает награду лишь после участия в нужном числе кластеров." },
+      { title: "Light Gun", description: "Убирает два типа обычных платящих символов из текущей сетки." },
+      { title: "Collector и Multiplicator", description: "Во Free Spins один собирает значения монет, второй умножает соседние Instant Prize и Collector." }
+    ],
+  },
+  "push-gaming-samurais-katana": {
+    intro: ["Samurai's Katana использует Wild Stacks по четыре знака на барабанах 2–4 и отдельные Instant Prize на крайних барабанах. Стопки могут сдвигаться вниз через Nudging Wilds.", "Перед Free Spins есть Gamble Wheel с риском потерять бонус или усилить его. В Free Spins за движение Wild Stacks растёт шкала множителя вплоть до x100."],
+    editorial: "Важна связь конкретных барабанов и бонуса: в базе Wild Stacks ограничены центральной тройкой, в Free Spins доступны в любом столбце.",
+    features: [
+      { title: "Wild Stacks", description: "Четыре Wild в стопке могут сдвигаться через серию респинов." },
+      { title: "Instant Prize", description: "На первом и пятом барабане значения оплачиваются при соответствующих Wild в центральных столбцах." },
+      { title: "Gamble Wheel", description: "После запуска Free Spins позволяет обменять стартовый бонус на потенциально более сильный вариант." }
+    ],
+  },
+  "push-gaming-santa-hopper": {
+    intro: ["Santa Hopper строит каскады вокруг Санты-Wild и дымоходов: каждый прыжок к Chimney повышает множитель Санты на единицу и оставляет золотой подарок.", "Jingle Drop случайно добавляет на сетку крупные Mystic Symbols, а Free Spins сохраняют Санту, подарки, дымоходы и Instant Prize из базового раунда."],
+    editorial: "Эта праздничная версия работает с прыгающим Wild, в отличие от Santa's Vault, где базовый цикл строится на сборе монет в хранилище.",
+    features: [
+      { title: "Santa Feature", description: "Санта прыгает между Chimney, увеличивает множитель и оставляет Golden Present." },
+      { title: "Jingle Drop", description: "После невыигрышного каскада на поле могут появиться один или два больших Mystery." },
+      { title: "Cluster Link Free Spins", description: "Три Scatter фиксируют связанные призовые символы и переводят игру в бонусную сетку." }
+    ],
+  },
+  "push-gaming-santas-vault": {
+    intro: ["Santa's Vault использует три барабана и Collector посередине: монеты и Jackpot на первом и третьем собираются только вместе с центральным символом Vault Collector.", "Монеты также заполняют верхнее хранилище, которое может раскрыть дополнительные призы и запустить бонус. В бонусе новые значения возвращают счётчик попыток к трём, а над барабанами появляются Enhancer Reels."],
+    editorial: "Сходство с Power Vault связано с принципом сбора, но Santa's Vault содержит собственную праздничную версию и значения призов, подтверждённые отдельно.",
+    features: [
+      { title: "Vault Collector", description: "Монеты по краям оплачиваются при Collector на втором барабане." },
+      { title: "Хранилище", description: "Накопленные Coins могут случайно открыть бонус ещё до стандартного сочетания." },
+      { title: "Enhancer Reels", description: "В бонусе отдельные значения над полем прибавляют либо умножают Instant Prizes." }
+    ],
+  },
+  "push-gaming-sea-of-spirits": {
+    intro: ["Sea of Spirits оставляет Bronze Frames после вращений: рамки смещаются вниз в базе и фиксируются во Free Spins. Activator Symbols могут превратить рамки в монеты, Wild или синхронизированные символы.", "Три Bonus Symbols запускают пять Bonus Spins; сочетание двух обычных и одного Super Bonus даёт восемь вращений с рамками разных уровней."],
+    editorial: "Здесь приз создаёт рамка и активатор, а не только символ на барабане: не смешиваем обычную Bonus и Super Bonus прогрессию.",
+    features: [
+      { title: "Frames", description: "Рамки остаются между базовыми вращениями и становятся Sticky в бонусе." },
+      { title: "Activator Symbols", description: "Symbol Sync, Coin и Wild Activator раскрывают соответствующие рамки в награды." },
+      { title: "Bonus / Super Bonus", description: "Три обычных Bonus дают пять spins, два Bonus плюс Super Bonus — восемь усиленных spins." }
+    ],
+  },
+
 };
 
 function getCatalogEditorial(slug: string) {
