@@ -148,6 +148,14 @@ export const catalogResearchWazdan: Record<string, CatalogResearch> = {
   "wazdan-beauty-fruity": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/beauty-fruity", verifiedAt, evidence: "Official page identifies nine independent positions with wins from four identical symbols anywhere, Love Spins, nine Free Spins with x3 and Block Symbols." },
   "wazdan-bells-of-fortune": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/bells-of-fortune", verifiedAt, evidence: "Official page confirms 16 independent reels, Hold the Jackpot after four central bonus symbols, a separate Bells of Fortune Bonus Game, Cash Infinity and Chance Level." },
 
+  "wazdan-black-horse-cash-out-edition": { mechanics: ["Линии","Сбор символов"], source: "https://wazdan.com/games/black-horse-cash-out-edition", verifiedAt, evidence: "Official page confirms 5 reels, 20 lines, Cash Out, Sticky Cash Out, Jackpot Coins and Chance Level." },
+  "wazdan-bumba-meu-boi-coin": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/bumba-meu-boi-coin", verifiedAt, evidence: "Official page confirms one main reel and three upper mini reels, Magic Coin, back matrix, Extra Life and Boi Da Fortuna Bonus." },
+  "wazdan-burning-stars-3": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/burning-stars-3", verifiedAt, evidence: "Official page confirms nine independent reels in a 3x3 matrix and Hold the Jackpot triggered by three Bonus stars, with three resetting respins." },
+  "wazdan-burning-sun": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/burning-sun", verifiedAt, evidence: "Official page confirms sixteen-reel 4x4 grid, Sticky to Infinity and Hold the Jackpot triggered by six Bonus symbols." },
+  "wazdan-burning-sun-extremely-light": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/burning-sun-extremely-light", verifiedAt, evidence: "Official release confirms lighter graphics with the original Burning Sun 4x4 and its Sticky to Infinity and Hold the Jackpot features preserved." },
+  "wazdan-butterfly-lovers": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/butterfly-lovers", verifiedAt, evidence: "Official page confirms 16 separate reels and wins from eight identical symbols; Liang Shanbo Bonus Spins, Magic Sack and Zhu Yingtai Free Spins are distinct." },
+  "wazdan-cash-grotto": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/cash-grotto", verifiedAt, evidence: "Official page confirms 24 reels, Hold the Jackpot triggered by four central Bonus symbols, Moving Cash Out, Cash Infinity and Sticky to Infinity." },
+
 };
 
 export function getCatalogResearchWazdan(slug: string) {
