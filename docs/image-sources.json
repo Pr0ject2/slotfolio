@@ -5744,5 +5744,165 @@
     "image": "https://wazdan.com/wp-content/uploads/HotSlot777CashOutGrandPlatinumEdition_icon_600x450.webp",
     "requireExplicitImage": true,
     "note": "Reviewed game-specific official Wazdan cover image, exact provider URL for strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-coins",
+    "page": "https://wazdan.com/games/hot-slot-777-coins",
+    "local": "/images/catalog/wazdan-hot-slot-777-coins.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777Coins_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-coins-extremely-light",
+    "page": "https://wazdan.com/games/hot-slot-777-coins-extremely-light",
+    "local": "/images/catalog/wazdan-hot-slot-777-coins-extremely-light.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777CoinsExtremelyLight_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-crown-extremely-light",
+    "page": "https://wazdan.com/games/hot-slot-777-crown-extremely-light",
+    "local": "/images/catalog/wazdan-hot-slot-777-crown-extremely-light.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777CrownExtremelyLight_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-diamond-crown",
+    "page": "https://wazdan.com/games/hot-slot-777-diamond-crown",
+    "local": "/images/catalog/wazdan-hot-slot-777-diamond-crown.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777DiamondCrown_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-gold-crown",
+    "page": "https://wazdan.com/games/hot-slot-777-gold-crown",
+    "local": "/images/catalog/wazdan-hot-slot-777-gold-crown.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777GoldCrown_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-hold-the-jackpot",
+    "page": "https://wazdan.com/games/hot-slot-777-hold-the-jackpot",
+    "local": "/images/catalog/wazdan-hot-slot-777-hold-the-jackpot.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777HoldTheJackpot_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-platinum-crown",
+    "page": "https://wazdan.com/games/hot-slot-777-platinum-crown",
+    "local": "/images/catalog/wazdan-hot-slot-777-platinum-crown.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777PlatinumCrown_banner_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-rubies",
+    "page": "https://wazdan.com/games/hot-slot-777-rubies",
+    "local": "/images/catalog/wazdan-hot-slot-777-rubies.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777Rubies_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-rubies-extremely-light",
+    "page": "https://wazdan.com/games/hot-slot-777-rubies-extremely-light",
+    "local": "/images/catalog/wazdan-hot-slot-777-rubies-extremely-light.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777RubiesExtremelyLight_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-stars",
+    "page": "https://wazdan.com/games/hot-slot-777-stars",
+    "local": "/images/catalog/wazdan-hot-slot-777-stars.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777Stars_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-777-stars-extremely-light",
+    "page": "https://wazdan.com/games/hot-slot-777-stars-extremely-light",
+    "local": "/images/catalog/wazdan-hot-slot-777-stars-extremely-light.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlot777StarsExtremelyLight_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-diamond-coins",
+    "page": "https://wazdan.com/games/hot-slot-diamond-coins",
+    "local": "/images/catalog/wazdan-hot-slot-diamond-coins.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlotDiamondCoins_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-gold-coins",
+    "page": "https://wazdan.com/games/hot-slot-gold-coins",
+    "local": "/images/catalog/wazdan-hot-slot-gold-coins.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlotGoldCoins_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-great-book-of-magic",
+    "page": "https://wazdan.com/games/hot-slot-great-book-of-magic",
+    "local": "/images/catalog/wazdan-hot-slot-great-book-of-magic.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlotGreatBookOfMagic_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-magic-bombs",
+    "page": "https://wazdan.com/games/hot-slot-magic-bombs",
+    "local": "/images/catalog/wazdan-hot-slot-magic-bombs.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlotMagicBombs_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-magic-pearls",
+    "page": "https://wazdan.com/games/hot-slot-magic-pearls",
+    "local": "/images/catalog/wazdan-hot-slot-magic-pearls.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlotMagicPearls_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-mystery-jackpot-joker",
+    "page": "https://wazdan.com/games/hot-slot-mystery-jackpot-joker",
+    "local": "/images/catalog/wazdan-hot-slot-mystery-jackpot-joker.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlotMysteryJackpotJoker_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hot-slot-platinum-coins",
+    "page": "https://wazdan.com/games/hot-slot-platinum-coins",
+    "local": "/images/catalog/wazdan-hot-slot-platinum-coins.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HotSlotPlatinumCoins_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-hungry-shark",
+    "page": "https://wazdan.com/games/hungry-shark",
+    "local": "/images/catalog/wazdan-hungry-shark.webp",
+    "image": "https://wazdan.com/wp-content/uploads/HungryShark_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-in-the-forest",
+    "page": "https://wazdan.com/games/in-the-forest",
+    "local": "/images/catalog/wazdan-in-the-forest.webp",
+    "image": "https://wazdan.com/wp-content/uploads/InTheForest_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
   }
 ]

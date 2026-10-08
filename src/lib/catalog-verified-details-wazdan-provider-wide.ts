@@ -162,6 +162,14 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "wazdan-fortune-reels": {"field":"6 барабанов · 46 656 способов","rtp":"96,12%","maxWin":"2100x","volatility":"Высокая","releaseDate":"2021-07-27","source":"https://wazdan.com/games/fortune-reels","verifiedAt":"2026-10-08"},
   "wazdan-fruit-fiesta": {"field":"5 барабанов · 20 линий","rtp":"96,32%","maxWin":"730x","volatility":"Высокая","releaseDate":"2017-12-01","source":"https://wazdan.com/games/fruit-fiesta","verifiedAt":"2026-10-08"},
   "wazdan-fruit-mania": {"field":"9 барабанов · 0 линий по Game Info","rtp":"96,59%","maxWin":"1000x","volatility":"Высокая","releaseDate":"2014-09-08","source":"https://wazdan.com/games/fruit-mania","verifiedAt":"2026-10-08"},
+  "wazdan-hot-slot-777-diamond-crown": {"field":"5 барабанов · 10 линий","rtp":"96,15%","maxWin":"5000x","volatility":"Средняя–высокая","releaseDate":"2025-09-26","source":"https://wazdan.com/games/hot-slot-777-diamond-crown","verifiedAt":"2026-10-09"},
+  "wazdan-hot-slot-777-gold-crown": {"field":"5 барабанов · 10 линий","rtp":"96,14%","maxWin":"1500x","volatility":"Низкая–средняя","releaseDate":"2025-04-02","source":"https://wazdan.com/games/hot-slot-777-gold-crown","verifiedAt":"2026-10-09"},
+  "wazdan-hot-slot-777-platinum-crown": {"field":"5 барабанов · 10 линий","rtp":"96,17%","maxWin":"2500x","volatility":"Средняя","releaseDate":"2025-07-10","source":"https://wazdan.com/games/hot-slot-777-platinum-crown","verifiedAt":"2026-10-09"},
+  "wazdan-hot-slot-777-rubies": {"field":"5 барабанов · 20 линий","rtp":"96,14%","maxWin":"500x","volatility":"Настраиваемая","releaseDate":"2023-02-16","source":"https://wazdan.com/games/hot-slot-777-rubies","verifiedAt":"2026-10-09"},
+  "wazdan-hot-slot-777-rubies-extremely-light": {"field":"5 барабанов · 20 линий","rtp":"96,14%","maxWin":"500x","volatility":"Высокая","releaseDate":"2024-02-21","source":"https://wazdan.com/games/hot-slot-777-rubies-extremely-light","verifiedAt":"2026-10-09"},
+  "wazdan-hot-slot-777-stars-extremely-light": {"field":"5 барабанов · 20 линий","rtp":"96,10%","maxWin":"500x","volatility":"Средняя","releaseDate":"2024-01-10","source":"https://wazdan.com/games/hot-slot-777-stars-extremely-light","verifiedAt":"2026-10-09"},
+  "wazdan-hot-slot-gold-coins": {"field":"15 барабанов · 10 линий","rtp":"96,15%","maxWin":"750x","volatility":"Средняя","releaseDate":"2025-04-24","source":"https://wazdan.com/games/hot-slot-gold-coins","verifiedAt":"2026-10-09"},
+  "wazdan-hot-slot-magic-bombs": {"field":"5 барабанов · 10 линий","rtp":"96,17%","maxWin":"6000x","volatility":"Высокая","releaseDate":"2022-10-11","source":"https://wazdan.com/games/hot-slot-magic-bombs","verifiedAt":"2026-10-09"},
 
 };
 
