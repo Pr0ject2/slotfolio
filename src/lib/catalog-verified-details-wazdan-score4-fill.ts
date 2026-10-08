@@ -5,6 +5,7 @@ type WazdanScore4Values = Partial<Pick<CatalogVerifiedDetails, "rtp" | "maxWin" 
 const verifiedAt = "2026-09-18";
 
 const values: Record<string, WazdanScore4Values> = {
+  "wazdan-12-bells": { rtp: "96,15%", maxWin: "750x", volatility: "Высокая" },
   "wazdan-12-coins": { rtp: "96,13%", maxWin: "750x", volatility: "Высокая" },
   "wazdan-12-coins-grand-diamond-edition": { rtp: "96,14%", maxWin: "5000x", volatility: "Высокая" },
   "wazdan-12-coins-grand-gold-edition": { rtp: "96,13%", maxWin: "1500x", volatility: "Высокая" },
