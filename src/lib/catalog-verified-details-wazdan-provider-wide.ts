@@ -173,6 +173,13 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "wazdan-lucky-9": {"field":"6 барабанов · 20 линий","rtp":"96,11%","maxWin":"1300x","volatility":"Средняя","releaseDate":"2020-06-17","source":"https://wazdan.com/games/lucky-9","verifiedAt":"2026-10-09"},
   "wazdan-lucky-fortune": {"field":"5 барабанов · 20 линий","rtp":"96,30%","maxWin":"4650x","volatility":"Средняя","source":"https://wazdan.com/games/lucky-fortune","verifiedAt":"2026-10-09"},
   "wazdan-lucky-queen": {"field":"5 барабанов · 20 линий","rtp":"96,17%","maxWin":"4500x","volatility":"Низкая–средняя","releaseDate":"2015-04-23","source":"https://wazdan.com/games/lucky-queen","verifiedAt":"2026-10-09"},
+  "wazdan-magic-fruits": {"field":"3 барабана · 5 линий","rtp":"96,41%","maxWin":"40x","volatility":"Стандартная","source":"https://wazdan.com/games/magic-fruits","verifiedAt":"2026-10-09"},
+  "wazdan-magic-fruits-27": {"field":"3 барабана · 27 линий","rtp":"96,37%","maxWin":"1104x","volatility":"Высокая","source":"https://wazdan.com/games/magic-fruits-27","verifiedAt":"2026-10-09"},
+  "wazdan-magic-fruits-4": {"field":"4 барабана · 10 линий","rtp":"96,10%","maxWin":"260x","volatility":"Средняя","releaseDate":"2014-09-08","source":"https://wazdan.com/games/magic-fruits-4","verifiedAt":"2026-10-09"},
+  "wazdan-magic-fruits-4-deluxe": {"field":"4 барабана · 10 линий","rtp":"96,10%","maxWin":"260x","volatility":"Средняя","releaseDate":"2017-12-01","source":"https://wazdan.com/games/magic-fruits-4-deluxe","verifiedAt":"2026-10-09"},
+  "wazdan-magic-fruits-81": {"field":"4 барабана · 81 линия (при Wild)","rtp":"96,42%","maxWin":"2240x","volatility":"Низкая–средняя","releaseDate":"2014-09-08","source":"https://wazdan.com/games/magic-fruits-81","verifiedAt":"2026-10-09"},
+  "wazdan-magic-fruits-deluxe": {"field":"3 барабана · 5 линий","rtp":"96,41%","maxWin":"40x","volatility":"Низкая–средняя","releaseDate":"2017-09-15","source":"https://wazdan.com/games/magic-fruits-deluxe","verifiedAt":"2026-10-09"},
+  "wazdan-magic-fruits-dice": {"field":"3 барабана · 5 линий","rtp":"96,41%","maxWin":"40x","volatility":"Низкая–средняя","releaseDate":"2026-03-12","source":"https://wazdan.com/games/magic-fruits-dice","verifiedAt":"2026-10-09"},
 
 };
 

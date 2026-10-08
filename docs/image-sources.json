@@ -6064,5 +6064,165 @@
     "image": "https://wazdan.com/wp-content/uploads/MagicFruitCherries_icon_600xx450.webp",
     "requireExplicitImage": true,
     "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-magic-fruit-oranges",
+    "page": "https://wazdan.com/games/magic-fruit-oranges",
+    "local": "/images/catalog/wazdan-magic-fruit-oranges.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicFruitOranges_press_release_1200x630-1024x538.webp",
+    "requireExplicitImage": true,
+    "note": "First-party Wazdan release page game-specific press artwork, used because official game page intermittently fails."
+  },
+  {
+    "slug": "wazdan-magic-fruits",
+    "page": "https://wazdan.com/games/magic-fruits",
+    "local": "/images/catalog/wazdan-magic-fruits.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicFruits_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-fruits-27",
+    "page": "https://wazdan.com/games/magic-fruits-27",
+    "local": "/images/catalog/wazdan-magic-fruits-27.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicFruits27_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-fruits-4",
+    "page": "https://wazdan.com/games/magic-fruits-4",
+    "local": "/images/catalog/wazdan-magic-fruits-4.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicFruits4_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-fruits-4-deluxe",
+    "page": "https://wazdan.com/games/magic-fruits-4-deluxe",
+    "local": "/images/catalog/wazdan-magic-fruits-4-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicFruits4Deluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-fruits-81",
+    "page": "https://wazdan.com/games/magic-fruits-81",
+    "local": "/images/catalog/wazdan-magic-fruits-81.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicFruits81_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-fruits-deluxe",
+    "page": "https://wazdan.com/games/magic-fruits-deluxe",
+    "local": "/images/catalog/wazdan-magic-fruits-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicFruitsDeluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-fruits-dice",
+    "page": "https://wazdan.com/games/magic-fruits-dice",
+    "local": "/images/catalog/wazdan-magic-fruits-dice.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicFruitsDice_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-hot",
+    "page": "https://wazdan.com/games/magic-hot",
+    "local": "/images/catalog/wazdan-magic-hot.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicHot_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-hot-4",
+    "page": "https://wazdan.com/games/magic-hot-4",
+    "local": "/images/catalog/wazdan-magic-hot-4.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicHot4_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-hot-4-deluxe",
+    "page": "https://wazdan.com/games/magic-hot-4-deluxe",
+    "local": "/images/catalog/wazdan-magic-hot-4-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicHot4Deluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-of-the-ring",
+    "page": "https://wazdan.com/games/magic-of-the-ring",
+    "local": "/images/catalog/wazdan-magic-of-the-ring.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicOfTheRing_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-of-the-ring-deluxe",
+    "page": "https://wazdan.com/games/magic-of-the-ring-deluxe",
+    "local": "/images/catalog/wazdan-magic-of-the-ring-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicOfTheRingDeluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-stars",
+    "page": "https://wazdan.com/games/magic-stars",
+    "local": "/images/catalog/wazdan-magic-stars.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicStars_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-stars-3",
+    "page": "https://wazdan.com/games/magic-stars-3",
+    "local": "/images/catalog/wazdan-magic-stars-3.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicStars3_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-stars-5",
+    "page": "https://wazdan.com/games/magic-stars-5",
+    "local": "/images/catalog/wazdan-magic-stars-5.webp",
+    "image": "https://wazdan.com/wp-content/uploads/magic_stars_5_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-stars-6",
+    "page": "https://wazdan.com/games/magic-stars-6",
+    "local": "/images/catalog/wazdan-magic-stars-6.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicStars6_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-stars-9",
+    "page": "https://wazdan.com/games/magic-stars-9",
+    "local": "/images/catalog/wazdan-magic-stars-9.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicStars9_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-target",
+    "page": "https://wazdan.com/games/magic-target",
+    "local": "/images/catalog/wazdan-magic-target.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicTarget_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-magic-target-deluxe",
+    "page": "https://wazdan.com/games/magic-target-deluxe",
+    "local": "/images/catalog/wazdan-magic-target-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicTargetDeluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
   }
 ]
