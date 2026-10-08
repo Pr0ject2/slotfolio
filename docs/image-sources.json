@@ -4304,5 +4304,165 @@
     "note": "Reviewed game-specific first-party provider artwork, pinned to an explicit image URL for strict build-time localization.",
     "image": "https://www.pushgaming.com/uploads/Big%20Bamboo%202/Big_Bamboo_2_Game_Page_Mystery_Bamboo_Symbols.png",
     "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-big-bite",
+    "page": "https://www.pushgaming.com/games/big-bite.html",
+    "local": "/images/catalog/push-gaming-big-bite.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Big%20Bite/Big_Bite_Game_Page_Orca.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-big-bite-push-ways",
+    "page": "https://www.pushgaming.com/games/big-bite-push-ways.html",
+    "local": "/images/catalog/push-gaming-big-bite-push-ways.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Big%20Bite%20Push%20Ways/Big_Bite_Push_Ways_Game_Page_Orca_Symbols.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-bison-battle",
+    "page": "https://www.pushgaming.com/games/bison-battle.html",
+    "local": "/images/catalog/push-gaming-bison-battle.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Bison%20Battle/2-BISON-CLASH.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-blaze-of-ra",
+    "page": "https://www.pushgaming.com/games/blaze-ra.html",
+    "local": "/images/catalog/push-gaming-blaze-of-ra.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/NewGamePages2020/BlazeOfRa/NUDGING-WILDS-min.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-boss-bear",
+    "page": "https://www.pushgaming.com/games/boss-bear.html",
+    "local": "/images/catalog/push-gaming-boss-bear.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Boss%20Bear/BossBear_Game_Page_1_Panda-Symbol.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-candy-blast",
+    "page": "https://www.pushgaming.com/games/candy-blast.html",
+    "local": "/images/catalog/push-gaming-candy-blast.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Candy%20Blast/Candy_Blast_Game_Page_Total_Multiplier_Meter-.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-cats-of-olympuss",
+    "page": "https://www.pushgaming.com/games/cats-olympuss.html",
+    "local": "/images/catalog/push-gaming-cats-of-olympuss.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Cats%20of%20Olympuss/Cats_of_Olympuss_Game_Page_Coin_Wild_Symbols.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-crystal-catcher",
+    "page": "https://www.pushgaming.com/games/crystal-catcher.html",
+    "local": "/images/catalog/push-gaming-crystal-catcher.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Crystal%20Catcher/BASE-GAME-INSTANT-PRIZE-AND-CRYSTAL-SYMBOLS.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-deadly-5",
+    "page": "https://www.pushgaming.com/games/deadly-5.html",
+    "local": "/images/catalog/push-gaming-deadly-5.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Deadly%205/Game%20Page/Deadly5_game-page1_BASE-GAME-SHERIFFS-BADGE.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-diamond-supernova-100",
+    "page": "https://www.pushgaming.com/games/diamond-supernova-100.html",
+    "local": "/images/catalog/push-gaming-diamond-supernova-100.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Diamond%20Supernova%20100/Diamond_Supernova_100_Game_Page_Scatter_Symbols.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-diamond-supernova-20",
+    "page": "https://www.pushgaming.com/games/diamond-supernova-20.html",
+    "local": "/images/catalog/push-gaming-diamond-supernova-20.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Diamond%20Supernova%2020/Diamond_Supernova_20_Game_Page_Scatter_Symbols.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-diamond-supernova-40",
+    "page": "https://www.pushgaming.com/games/diamond-supernova-40.html",
+    "local": "/images/catalog/push-gaming-diamond-supernova-40.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Diamond%20Supernova%2040/Diamond_Supernova_40_Game_Page_Scatter_Symbols.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-diamond-supernova-5",
+    "page": "https://www.pushgaming.com/games/diamond-supernova-5.html",
+    "local": "/images/catalog/push-gaming-diamond-supernova-5.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Diamond%20Supernova%205/Diamond_Supernova_5_Game_Page_Scatter_Symbols.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-diamonds-4-the-win",
+    "page": "https://www.pushgaming.com/games/diamonds-4-win.html",
+    "local": "/images/catalog/push-gaming-diamonds-4-the-win.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Diamonds%204%20the%20Win/Diamonds_4_The_Win_Game_Page_Diamond_Respin.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-dino-p-d",
+    "page": "https://www.pushgaming.com/games/dino-pd.html",
+    "local": "/images/catalog/push-gaming-dino-p-d.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Dino%20P.D./Dino_PD_GamePage_DINO-COIN-AND-WILD-SYMBOLS.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-dinopolis",
+    "page": "https://www.pushgaming.com/games/dinopolis.html",
+    "local": "/images/catalog/push-gaming-dinopolis.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Dinopolis/Game%20Page/1_WILD.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-dj-cat",
+    "page": "https://www.pushgaming.com/games/dj-cat.html",
+    "local": "/images/catalog/push-gaming-dj-cat.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/DJ%20Cat/DJ_Cat_Game_Page_CD_Symbols.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-dj-fox",
+    "page": "https://www.pushgaming.com/games/dj-fox.html",
+    "local": "/images/catalog/push-gaming-dj-fox.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/DJ%20Fox/DJ-Fox_game-page_Vinyl.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-dragon-hopper",
+    "page": "https://www.pushgaming.com/games/dragon-hopper.html",
+    "local": "/images/catalog/push-gaming-dragon-hopper.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Dragon%20Hopper/Dragon_Hopper_Game_Page_Wild_Dragon_Symbol.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "push-gaming-fang-city",
+    "page": "https://www.pushgaming.com/games/fang-city.html",
+    "local": "/images/catalog/push-gaming-fang-city.webp",
+    "note": "Reviewed game-specific first-party Push Gaming official game-page artwork; explicit URL ensures strict localization.",
+    "image": "https://www.pushgaming.com/uploads/Fang%20City/Fang_City_Game_Page_Instant_Prizes.png",
+    "requireExplicitImage": true
   }
 ]

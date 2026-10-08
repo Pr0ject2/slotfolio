@@ -212,6 +212,115 @@ export const catalogResearchPush: Record<string, CatalogResearch> = {
     "verifiedAt": "2026-10-08"
   },
 
+  "push-gaming-big-bite": {
+    "mechanics": [
+      "Сбор символов",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/big-bite.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page: Orca reels 1 and 5 collect Fish/Jackpot values from reels 2–4; 3–5 Bonus Symbols activate Free Spins."
+  },
+  "push-gaming-bison-battle": {
+    "mechanics": [
+      "Сбор символов",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/bison-battle.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page: Red Bison collision multiplies Instant Prize; Blue/Green Bisons trigger different Ice Park and Green Valley Free Spins."
+  },
+  "push-gaming-blaze-of-ra": {
+    "mechanics": [
+      "Линии",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/blaze-ra.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page identifies 5x4, 40 paylines, Nudging Wilds, and Wild-filled reels 1, 3 and 5 in Free Games."
+  },
+  "push-gaming-boss-bear": {
+    "mechanics": [
+      "Сбор символов",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/boss-bear.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page: Golden Reveal Stacks start Coin Feature, Panda pays two-of-a-kind; Scatter meters upgrade Reveal in Free Spins."
+  },
+  "push-gaming-cats-of-olympuss": {
+    "mechanics": [
+      "Сбор символов",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/cats-olympuss.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page: three or more Scatter activate Progressive Free Spins with card picks, while five special Coins unlock higher reel arrays."
+  },
+  "push-gaming-deadly-5": {
+    "mechanics": [
+      "Линии",
+      "Расширяющиеся символы"
+    ],
+    "source": "https://www.pushgaming.com/games/deadly-5.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page: 3-5 Safe Scatters trigger Sheriff's Free Spins; matching outlaw/Wanted Poster causes Expanding Symbols."
+  },
+  "push-gaming-diamonds-4-the-win": {
+    "mechanics": [
+      "Линии",
+      "Re-Spin"
+    ],
+    "source": "https://www.pushgaming.com/games/diamonds-4-win.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page identifies 3 reels, 5 paylines, central Diamond Wild Respin and Vault Super Diamond Respin multipliers."
+  },
+  "push-gaming-dino-p-d": {
+    "mechanics": [
+      "Сбор символов",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/dino-pd.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page: five Dino Coins pay, Scatters on reels 1 and 3 plus Gamble Scatter on reel 5 trigger Free Spins."
+  },
+  "push-gaming-dinopolis": {
+    "mechanics": [
+      "Сбор символов",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/dinopolis.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page identifies 3-4-4-4-3 grid, three Scatters on reels 2–4, card picks, and five collector progression levels."
+  },
+  "push-gaming-dj-cat": {
+    "mechanics": [
+      "Сбор символов",
+      "Множители"
+    ],
+    "source": "https://www.pushgaming.com/games/dj-cat.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page: CD numbers combine into multi-digit prizes, Arrow Symbols extend reel height and VIP symbols progress multiplier meters."
+  },
+  "push-gaming-dj-fox": {
+    "mechanics": [
+      "Сбор символов",
+      "Множители"
+    ],
+    "source": "https://www.pushgaming.com/games/dj-fox.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page: Vinyl numbers form multi-digit prizes; VIP symbols increase reel height and multiplier meter up to x20."
+  },
+  "push-gaming-fang-city": {
+    "mechanics": [
+      "Сбор символов",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/fang-city.html",
+    "verifiedAt": "2026-10-08",
+    "evidence": "Official page: seven Moon Symbols trigger Instant Prizes/Mystery Reveal; three to six Bonus Symbols set eight Free Spins multipliers."
+  },
+
 };
 
 export function getCatalogResearchPush(slug: string) {
