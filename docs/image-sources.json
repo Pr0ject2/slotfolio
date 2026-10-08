@@ -3998,5 +3998,165 @@
     "page": "https://www.playngo.com/games/pearls-of-india",
     "local": "/images/catalog/playn-go-pearls-of-india.webp",
     "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-perfect-gems",
+    "page": "https://www.playngo.com/games/perfect-gems",
+    "local": "/images/catalog/playn-go-perfect-gems.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://www.playngo.com/_next/image?q=75&url=https%3A%2F%2Fwsh4cfcctixmqqzl.public.blob.vercel-storage.com%2Fgames%2F373%2Flogo%2F0-b01b94950d15ae09&w=3840",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-phoenix-reborn",
+    "page": "https://www.playngo.com/games/phoenix-reborn",
+    "local": "/images/catalog/playn-go-phoenix-reborn.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/a25c33_f0e5e8f1c88e41e7bf5bb9c2bf7c2d47~mv2.jpg/v1/fill/w_1380%2Ch_776%2Cal_c%2Cq_85/phoenixreborn_EN_desktop.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-photo-safari",
+    "page": "https://www.playngo.com/games/photo-safari",
+    "local": "/images/catalog/playn-go-photo-safari.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/252d71_d9460003dc744ae1bdf84c32bf31e15f~mv2.jpg/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/photosafari_homepage_banner.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-piggy-bank-farm",
+    "page": "https://www.playngo.com/games/piggy-bank-farm",
+    "local": "/images/catalog/playn-go-piggy-bank-farm.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://www.playngo.com/_next/image?q=75&url=https%3A%2F%2Fwsh4cfcctixmqqzl.public.blob.vercel-storage.com%2Fgames%2F458%2Flogo%2F0-4e517d5edb54e40a&w=3840",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-piggy-blitz",
+    "page": "https://www.playngo.com/games/piggy-blitz",
+    "local": "/images/catalog/playn-go-piggy-blitz.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/5cb583_fc2c5ffc27304f31b688bfb3af9fd5f1~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/piggyblitz_Clientzone_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-piggy-blitz-casino-gold",
+    "page": "https://www.playngo.com/games/piggy-blitz-casino-gold",
+    "local": "/images/catalog/playn-go-piggy-blitz-casino-gold.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/c0450d_1f4c6e1127a74e2c8099ea5e289cbc4d~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/piggyblitzcasinogold_homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-piggy-blitz-disco-gold",
+    "page": "https://www.playngo.com/games/piggy-blitz-disco-gold",
+    "local": "/images/catalog/playn-go-piggy-blitz-disco-gold.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/663b1c_428b337cfc28437bb3f41d46538fe8b8~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/piggyblitzdiscogold_Clientzone_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-piggy-heist",
+    "page": "https://www.playngo.com/games/piggy-heist",
+    "local": "/images/catalog/playn-go-piggy-heist.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/c11de2_d98168a4704a49ada2ae89c150618544~mv2.png/v1/fill/w_1920%2Ch_1080%2Cal_c/PiggyHeist_EN_Desktop_Feature.png",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-pilgrim-of-dead",
+    "page": "https://www.playngo.com/games/pilgrim-of-dead",
+    "local": "/images/catalog/playn-go-pilgrim-of-dead.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/d6e198_dd0422aa75a34066b3bcc1819fb474a7~mv2.webp/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/pilgrimofdead_web_games_hero.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-pimped",
+    "page": "https://www.playngo.com/games/pimped",
+    "local": "/images/catalog/playn-go-pimped.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://www.playngo.com/_next/image?q=75&url=https%3A%2F%2Fwsh4cfcctixmqqzl.public.blob.vercel-storage.com%2Fgames%2F291%2Flogo%2F0-db9fdfa23c80e147&w=3840",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-piranha-pays",
+    "page": "https://www.playngo.com/games/piranha-pays",
+    "local": "/images/catalog/playn-go-piranha-pays.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/f1612a_f4128e4fa926495bac2a2de2896668b9~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/piranhapays_Clientzone_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-planet-fortune",
+    "page": "https://www.playngo.com/games/planet-fortune",
+    "local": "/images/catalog/playn-go-planet-fortune.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/3ba6b0_cfc2977322ac4b2f916fca42b355a658~mv2.jpg/v1/fill/w_742%2Ch_417%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/planetfortune_EN_Mlandscape.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-playn-go-buffalo-of-wealth",
+    "page": "https://www.playngo.com/games/play'n-go-buffalo-of-wealth",
+    "local": "/images/catalog/playn-go-playn-go-buffalo-of-wealth.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/d661f0_1931ba507d894bc59a75072d8398a296~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/buffaloofwealth_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-playn-go-mole-digger",
+    "page": "https://www.playngo.com/games/play'n-go-mole-digger",
+    "local": "/images/catalog/playn-go-playn-go-mole-digger.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/f1bad4_8e8ea894d60248619c5288b71c88df19~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/moledigger_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-playn-go-wrappin-gold",
+    "page": "https://www.playngo.com/games/wrappin'-gold",
+    "local": "/images/catalog/playn-go-playn-go-wrappin-gold.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/864861_1ec5eca7c1e543e082105634a8da6aa3~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/wrappingold_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-potion-of-madness",
+    "page": "https://www.playngo.com/games/potion-of-madness",
+    "local": "/images/catalog/playn-go-potion-of-madness.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/936aa0_85b05efd4ee642d2a2f0c59ef3cd1d2f~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/potionofmadness_Homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-primal-rampage",
+    "page": "https://www.playngo.com/games/primal-rampage",
+    "local": "/images/catalog/playn-go-primal-rampage.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/fa88c9_909074d7f7294110881dfe933a4c0f67~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/primalrampage_homepage_banner.webp",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-prism-of-gems",
+    "page": "https://www.playngo.com/games/prism-of-gems",
+    "local": "/images/catalog/playn-go-prism-of-gems.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/730764_cdb0558262b245de8c80661edf50aa3d~mv2.jpg/v1/fill/w_1920%2Ch_1080%2Cal_c%2Cq_90/prismofgems_EN_desktop.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-prissy-princess",
+    "page": "https://www.playngo.com/games/prissy-princess",
+    "local": "/images/catalog/playn-go-prissy-princess.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/c46ca5_07984677324444d5be1216e4c9c355ca~mv2.jpg/v1/fill/w_980%2Ch_215%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/prissyprincess_gamepage_banner.jpg",
+    "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-prosperity-palace",
+    "page": "https://www.playngo.com/games/prosperity-palace",
+    "local": "/images/catalog/playn-go-prosperity-palace.webp",
+    "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
+    "image": "https://static.wixstatic.com/media/7b26b8_9e05f1a2141f474fbc55f793b3afcbfd~mv2.jpg/v1/fill/w_980%2Ch_474%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/prosperitypalace_startpage.jpg",
+    "requireExplicitImage": true
   }
 ]
