@@ -112,6 +112,106 @@ export const catalogResearchPush: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official base-game description explicitly states that existing winlines are paid after Mystery Symbols reveal paying symbols.",
   },
+  "push-gaming-10-cash-bisons": {
+    "mechanics": [
+      "Сбор символов",
+      "Мгновенные призы"
+    ],
+    "source": "https://www.pushgaming.com/games/10-cash-bisons.html",
+    "evidence": "Official page describes cash collector only on reels one and five, Bison Instant Wins for 4-10 symbols and Scatter-led progressive Free Spins.",
+    "verifiedAt": "2026-10-08"
+  },
+  "push-gaming-10-flaming-bisons": {
+    "mechanics": [
+      "Мгновенные призы",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/10-flaming-bisons.html",
+    "evidence": "Official page describes Bison Scatter Pays, Jackpot Bison Instant Wins, Totem Free Spins and Push-Up expanding reel sets.",
+    "verifiedAt": "2026-10-08"
+  },
+  "push-gaming-10-pharaohs": {
+    "mechanics": [
+      "Мгновенные призы",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/10-pharaohs.html",
+    "evidence": "Official page describes Pharaoh Scatter Pays, Jackpot Pharaohs, Scarab-triggered progressive Free Spins and Push-Up.",
+    "verifiedAt": "2026-10-08"
+  },
+  "push-gaming-10-santas-reindeers": {
+    "mechanics": [
+      "Мгновенные призы",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/10-santas-reindeers.html",
+    "evidence": "Official page describes Reindeer Instant Prize counts and Bell Scatter Free Spins with progressive row unlocking.",
+    "verifiedAt": "2026-10-08"
+  },
+  "push-gaming-10-swords": {
+    "mechanics": [
+      "Мгновенные призы",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/10-swords.html",
+    "evidence": "Official page describes Sword Meter instant prizes and Shield Free Spins with low symbol conversion to Swords.",
+    "verifiedAt": "2026-10-08"
+  },
+  "push-gaming-3-liberty-eagles": {
+    "mechanics": [
+      "Сбор символов",
+      "Множители"
+    ],
+    "source": "https://www.pushgaming.com/games/3-liberty-eagles.html",
+    "evidence": "Official page describes three Eagle Pots, different Justice Collector/Patriotic Cash/Freedom Reels Free Spins and seven combinations.",
+    "verifiedAt": "2026-10-08"
+  },
+  "push-gaming-3-magic-pots": {
+    "mechanics": [
+      "Сбор символов",
+      "Множители"
+    ],
+    "source": "https://www.pushgaming.com/games/3-magic-pots.html",
+    "evidence": "Official page describes three colored pots with Magic Reels, Enchanted Collector and Cash Frenzy modes.",
+    "verifiedAt": "2026-10-08"
+  },
+  "push-gaming-bait-n-bank": {
+    "mechanics": [
+      "Сбор символов",
+      "Мгновенные призы"
+    ],
+    "source": "https://www.pushgaming.com/games/bait-n-bank.html",
+    "evidence": "Official page describes a 3x3 game with Chest Collector on the center reel collecting coins and jackpots from reels one and three.",
+    "verifiedAt": "2026-10-08"
+  },
+  "push-gaming-big-bam-book": {
+    "mechanics": [
+      "Сбор символов",
+      "Множители"
+    ],
+    "source": "https://www.pushgaming.com/games/big-bam-book.html",
+    "evidence": "Official page describes Golden Mystery Bamboo symbols and Scatter-driven progressive Free Spins, where the multiplier applies specifically to Instant Prizes.",
+    "verifiedAt": "2026-10-08"
+  },
+  "push-gaming-big-bamboo": {
+    "mechanics": [
+      "Сбор символов",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/big-bamboo.html",
+    "evidence": "Official page describes Mystery Stacks, Golden Bamboo Respin and Gamble Wheel choices before Free Spins.",
+    "verifiedAt": "2026-10-08"
+  },
+  "push-gaming-big-bamboo-2": {
+    "mechanics": [
+      "Сбор символов",
+      "Бонусные вращения"
+    ],
+    "source": "https://www.pushgaming.com/games/big-bamboo-2.html",
+    "evidence": "Official page describes Golden Bamboo, Lucky Bamboo Bronze-to-Diamond frame upgrades and persistent Free Spins frames.",
+    "verifiedAt": "2026-10-08"
+  },
+
 };
 
 export function getCatalogResearchPush(slug: string) {
