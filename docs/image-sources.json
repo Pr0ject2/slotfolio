@@ -4517,7 +4517,7 @@
     "slug": "push-gaming-fish-n-nudge-big-catch",
     "page": "https://www.pushgaming.com/games/fish-n-nudge-big-catch.html",
     "local": "/images/catalog/push-gaming-fish-n-nudge-big-catch.webp",
-    "note": "Reviewed game-specific first-party Push Gaming asset, localized to WebP at build time.",
+    "note": "Reviewed first-party Push Gaming Net Symbol artwork from the official Big Catch page, replacing a broken 404.",
     "image": "https://www.pushgaming.com/uploads/Fish%20%27n%27%20Nudge%20Big%20Catch/Game%20Page/Fish_N_Nudge_Big_Catch_Game_Page_Net_Symbol.png",
     "requireExplicitImage": true
   },
@@ -4595,9 +4595,11 @@
   },
   {
     "slug": "push-gaming-jiggys-pot-o-gold",
-    "page": "https://www.pushgaming.com/games/jiggys-pot-o-gold.html",
+    "page": "https://www.pushgaming.com/games/",
     "local": "/images/catalog/push-gaming-jiggys-pot-o-gold.webp",
-    "note": "Reviewed official Push Gaming game page. Localizer resolves first-party preview metadata; strict artwork check will reject missing images."
+    "note": "Reviewed first-party Push Gaming catalog art; select only a provider image URL that contains jiggy, not a generic preview.",
+    "imageHint": "jiggy",
+    "requireExplicitImage": true
   },
   {
     "slug": "push-gaming-joker-troupe",
