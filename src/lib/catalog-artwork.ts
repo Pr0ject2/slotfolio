@@ -638,6 +638,27 @@ const artworkBySlug: Record<string, string> = {
   "push-gaming-santas-vault": "/images/catalog/push-gaming-santas-vault.webp",
   "push-gaming-sea-of-spirits": "/images/catalog/push-gaming-sea-of-spirits.webp",
 
+  "push-gaming-shamrock-saints": "/images/catalog/push-gaming-shamrock-saints.webp",
+  "push-gaming-tarot-treasures": "/images/catalog/push-gaming-tarot-treasures.webp",
+  "push-gaming-the-grand-show": "/images/catalog/push-gaming-the-grand-show.webp",
+  "push-gaming-the-great-banker": "/images/catalog/push-gaming-the-great-banker.webp",
+  "push-gaming-tiki-tumble": "/images/catalog/push-gaming-tiki-tumble.webp",
+  "push-gaming-tricky-treats": "/images/catalog/push-gaming-tricky-treats.webp",
+  "push-gaming-triple-rampage": "/images/catalog/push-gaming-triple-rampage.webp",
+  "push-gaming-vegas-vault": "/images/catalog/push-gaming-vegas-vault.webp",
+  "push-gaming-viva-lock-vegas": "/images/catalog/push-gaming-viva-lock-vegas.webp",
+  "push-gaming-wild-swarm": "/images/catalog/push-gaming-wild-swarm.webp",
+  "push-gaming-wild-swarm-2": "/images/catalog/push-gaming-wild-swarm-2.webp",
+  "push-gaming-wild-swarm-3-chocolate-eggs": "/images/catalog/push-gaming-wild-swarm-3-chocolate-eggs.webp",
+  "push-gaming-wild-swarm-triple-hive": "/images/catalog/push-gaming-wild-swarm-triple-hive.webp",
+  "wazdan-12-bells": "/images/catalog/wazdan-12-bells.webp",
+  "wazdan-12-coins": "/images/catalog/wazdan-12-coins.webp",
+  "wazdan-12-coins-grand-diamond-edition": "/images/catalog/wazdan-12-coins-grand-diamond-edition.webp",
+  "wazdan-12-coins-grand-gold-edition": "/images/catalog/wazdan-12-coins-grand-gold-edition.webp",
+  "wazdan-12-coins-grand-platinum-edition": "/images/catalog/wazdan-12-coins-grand-platinum-edition.webp",
+  "wazdan-15-coins": "/images/catalog/wazdan-15-coins.webp",
+  "wazdan-15-coins-grand-diamond-edition": "/images/catalog/wazdan-15-coins-grand-diamond-edition.webp",
+
 };
 
 export function getCatalogArtwork(slug: string) {
