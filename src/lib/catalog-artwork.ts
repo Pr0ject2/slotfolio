@@ -575,6 +575,27 @@ const artworkBySlug: Record<string, string> = {
   "push-gaming-big-bamboo": "/images/catalog/push-gaming-big-bamboo.webp",
   "push-gaming-big-bamboo-2": "/images/catalog/push-gaming-big-bamboo-2.webp",
 
+  "push-gaming-big-bite": "/images/catalog/push-gaming-big-bite.webp",
+  "push-gaming-big-bite-push-ways": "/images/catalog/push-gaming-big-bite-push-ways.webp",
+  "push-gaming-bison-battle": "/images/catalog/push-gaming-bison-battle.webp",
+  "push-gaming-blaze-of-ra": "/images/catalog/push-gaming-blaze-of-ra.webp",
+  "push-gaming-boss-bear": "/images/catalog/push-gaming-boss-bear.webp",
+  "push-gaming-candy-blast": "/images/catalog/push-gaming-candy-blast.webp",
+  "push-gaming-cats-of-olympuss": "/images/catalog/push-gaming-cats-of-olympuss.webp",
+  "push-gaming-crystal-catcher": "/images/catalog/push-gaming-crystal-catcher.webp",
+  "push-gaming-deadly-5": "/images/catalog/push-gaming-deadly-5.webp",
+  "push-gaming-diamond-supernova-100": "/images/catalog/push-gaming-diamond-supernova-100.webp",
+  "push-gaming-diamond-supernova-20": "/images/catalog/push-gaming-diamond-supernova-20.webp",
+  "push-gaming-diamond-supernova-40": "/images/catalog/push-gaming-diamond-supernova-40.webp",
+  "push-gaming-diamond-supernova-5": "/images/catalog/push-gaming-diamond-supernova-5.webp",
+  "push-gaming-diamonds-4-the-win": "/images/catalog/push-gaming-diamonds-4-the-win.webp",
+  "push-gaming-dino-p-d": "/images/catalog/push-gaming-dino-p-d.webp",
+  "push-gaming-dinopolis": "/images/catalog/push-gaming-dinopolis.webp",
+  "push-gaming-dj-cat": "/images/catalog/push-gaming-dj-cat.webp",
+  "push-gaming-dj-fox": "/images/catalog/push-gaming-dj-fox.webp",
+  "push-gaming-dragon-hopper": "/images/catalog/push-gaming-dragon-hopper.webp",
+  "push-gaming-fang-city": "/images/catalog/push-gaming-fang-city.webp",
+
 };
 
 export function getCatalogArtwork(slug: string) {
