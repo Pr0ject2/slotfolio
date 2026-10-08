@@ -5904,5 +5904,165 @@
     "image": "https://wazdan.com/wp-content/uploads/InTheForest_icon_600x450_webp90.webp",
     "requireExplicitImage": true,
     "note": "Reviewed title-specific first-party Wazdan cover extracted from official game page; strict local WebP required for Pages."
+  },
+  {
+    "slug": "wazdan-infinity-hero",
+    "page": "https://wazdan.com/games/infinity-hero",
+    "local": "/images/catalog/wazdan-infinity-hero.webp",
+    "image": "https://wazdan.com/wp-content/uploads/InfinityHero_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-jack-on-hold",
+    "page": "https://wazdan.com/games/jack-on-hold",
+    "local": "/images/catalog/wazdan-jack-on-hold.webp",
+    "image": "https://wazdan.com/wp-content/uploads/JackOnHold_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-jacks-ride",
+    "page": "https://wazdan.com/games/jacks-ride",
+    "local": "/images/catalog/wazdan-jacks-ride.webp",
+    "image": "https://wazdan.com/wp-content/uploads/JacksRide_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-jackpot-builders",
+    "page": "https://wazdan.com/games/jackpot-builders",
+    "local": "/images/catalog/wazdan-jackpot-builders.webp",
+    "image": "https://wazdan.com/wp-content/uploads/jackpot_builders_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-jelly-reels",
+    "page": "https://wazdan.com/games/jelly-reels",
+    "local": "/images/catalog/wazdan-jelly-reels.webp",
+    "image": "https://wazdan.com/wp-content/uploads/JellyReels_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-joker-explosion",
+    "page": "https://wazdan.com/games/joker-explosion",
+    "local": "/images/catalog/wazdan-joker-explosion.webp",
+    "image": "https://wazdan.com/wp-content/uploads/JokerExplosion_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-juicy-reels",
+    "page": "https://wazdan.com/games/juicy-reels",
+    "local": "/images/catalog/wazdan-juicy-reels.webp",
+    "image": "https://wazdan.com/wp-content/uploads/JuicyReels_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-jumping-fruits",
+    "page": "https://wazdan.com/games/jumping-fruits",
+    "local": "/images/catalog/wazdan-jumping-fruits.webp",
+    "image": "https://wazdan.com/wp-content/uploads/JumpingFruits_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-kick-off",
+    "page": "https://wazdan.com/games/kick-off",
+    "local": "/images/catalog/wazdan-kick-off.webp",
+    "image": "https://wazdan.com/wp-content/uploads/KickOff_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-larry-the-leprechaun",
+    "page": "https://wazdan.com/games/larry-the-leprechaun",
+    "local": "/images/catalog/wazdan-larry-the-leprechaun.webp",
+    "image": "https://wazdan.com/wp-content/uploads/LarryTheLeprechaun_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-los-muertos",
+    "page": "https://wazdan.com/games/los-muertos",
+    "local": "/images/catalog/wazdan-los-muertos.webp",
+    "image": "https://wazdan.com/wp-content/uploads/LosMuertos_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-los-muertos-ii",
+    "page": "https://wazdan.com/games/los-muertos-ii",
+    "local": "/images/catalog/wazdan-los-muertos-ii.webp",
+    "image": "https://wazdan.com/wp-content/uploads/LosMuertos2_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-lost-treasure",
+    "page": "https://wazdan.com/games/lost-treasure",
+    "local": "/images/catalog/wazdan-lost-treasure.webp",
+    "image": "https://wazdan.com/wp-content/uploads/LostTreasure_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-lucky-9",
+    "page": "https://wazdan.com/games/lucky-9",
+    "local": "/images/catalog/wazdan-lucky-9.webp",
+    "image": "https://wazdan.com/wp-content/uploads/Lucky9_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-lucky-fish",
+    "page": "https://wazdan.com/games/lucky-fish",
+    "local": "/images/catalog/wazdan-lucky-fish.webp",
+    "image": "https://wazdan.com/wp-content/uploads/LuckyFish_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-lucky-fortune",
+    "page": "https://wazdan.com/games/lucky-fortune",
+    "local": "/images/catalog/wazdan-lucky-fortune.webp",
+    "image": "https://wazdan.com/wp-content/uploads/LuckyFortune_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-lucky-queen",
+    "page": "https://wazdan.com/games/lucky-queen",
+    "local": "/images/catalog/wazdan-lucky-queen.webp",
+    "image": "https://wazdan.com/wp-content/uploads/LuckyQueen_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-lucky-reels",
+    "page": "https://wazdan.com/games/lucky-reels",
+    "local": "/images/catalog/wazdan-lucky-reels.webp",
+    "image": "https://wazdan.com/wp-content/uploads/LuckyReels_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-magic-eggs",
+    "page": "https://wazdan.com/games/magic-eggs",
+    "local": "/images/catalog/wazdan-magic-eggs.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicEggs_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
+  },
+  {
+    "slug": "wazdan-magic-fruit-cherries",
+    "page": "https://wazdan.com/games/magic-fruit-cherries",
+    "local": "/images/catalog/wazdan-magic-fruit-cherries.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MagicFruitCherries_icon_600xx450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact title-specific first-party Wazdan cover URL from official game-page inline image; strict production localization."
   }
 ]
