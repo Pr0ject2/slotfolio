@@ -449,7 +449,11 @@ test("mobile filter apply returns to results and basic records remain actionable
   await page.getByRole("link", { name: "Открыть запись ↗", exact: true }).first().click();
   await expect(page).toHaveURL(/\/slots\/catalog\//);
   await expect(page.locator("main")).toHaveCount(1);
-  const isFullDossier = (await page.locator(".slot-heading .eyebrow").innerText()).startsWith("Досье игры");
+  // A catalog record can hydrate into a researched dossier; check the settled route.
+  await page.waitForLoadState("networkidle");
+  const heading = page.locator(".slot-heading .eyebrow");
+  await expect(heading).toHaveText(/^(Досье игры|Запись каталога)/);
+  const isFullDossier = (await heading.innerText()).startsWith("Досье игры");
   if (isFullDossier) {
     await expect(page.locator(".compare-button")).toHaveCount(1);
     await expect(page.locator(".compare-button")).toHaveAttribute("href", "#catalog-comparison");
