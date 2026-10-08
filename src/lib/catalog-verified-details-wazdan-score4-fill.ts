@@ -23,7 +23,7 @@ const values: Record<string, WazdanScore4Values> = {
   "wazdan-24-coins": { rtp: "96,15%", maxWin: "1200x", volatility: "Высокая" },
   "wazdan-25-coins": { rtp: "96,17%", maxWin: "2000x", volatility: "Высокая" },
   "wazdan-25-coins-grand-gold-edition": { rtp: "96,13%", maxWin: "2500x", volatility: "Очень высокая" },
-  "wazdan-25-coins-x3000": { rtp: "96,19%", volatility: "Высокая" },
+  "wazdan-25-coins-x3000": { rtp: "96,19%", maxWin: "3000x", volatility: "Высокая" },
   "wazdan-30-coins": { rtp: "96,18%", maxWin: "1500x", volatility: "Высокая" },
   "wazdan-30-coins-grand-gold-edition": { rtp: "96,2%", maxWin: "2500x", volatility: "Очень высокая" },
   "wazdan-36-coins": { rtp: "96,16%", maxWin: "2000x", volatility: "Высокая" },
