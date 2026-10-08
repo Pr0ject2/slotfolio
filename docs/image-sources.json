@@ -5424,5 +5424,165 @@
     "image": "https://wazdan.com/wp-content/uploads/CubeMania_icon_600x450_webp90.webp",
     "requireExplicitImage": true,
     "note": "Reviewed first-party Wazdan title-specific game icon; exact image link from official game page, build-time local WebP and strict Pages verification."
+  },
+  {
+    "slug": "wazdan-cube-mania-deluxe",
+    "page": "https://wazdan.com/games/cube-mania-deluxe",
+    "local": "/images/catalog/wazdan-cube-mania-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/CubeManiaDeluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-demon-jack-27",
+    "page": "https://wazdan.com/games/demon-jack-27",
+    "local": "/images/catalog/wazdan-demon-jack-27.webp",
+    "image": "https://wazdan.com/wp-content/uploads/DemonJack27_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-dino-reels-81",
+    "page": "https://wazdan.com/games/dino-reels-81",
+    "local": "/images/catalog/wazdan-dino-reels-81.webp",
+    "image": "https://wazdan.com/wp-content/uploads/DinoReels81_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-double-tigers",
+    "page": "https://wazdan.com/games/double-tigers",
+    "local": "/images/catalog/wazdan-double-tigers.webp",
+    "image": "https://wazdan.com/wp-content/uploads/DoubleTigers_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-draculas-castle",
+    "page": "https://wazdan.com/games/draculas-castle",
+    "local": "/images/catalog/wazdan-draculas-castle.webp",
+    "image": "https://wazdan.com/wp-content/uploads/DraculasCastle_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-dragons-lucky-8",
+    "page": "https://wazdan.com/games/dragons-lucky-8",
+    "local": "/images/catalog/wazdan-dragons-lucky-8.webp",
+    "image": "https://wazdan.com/wp-content/uploads/DragonsLucky8_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-dwarfs-fortune",
+    "page": "https://wazdan.com/games/dwarfs-fortune",
+    "local": "/images/catalog/wazdan-dwarfs-fortune.webp",
+    "image": "https://wazdan.com/wp-content/uploads/DwarfsFortune_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-easter-coins",
+    "page": "https://wazdan.com/games/easter-coins",
+    "local": "/images/catalog/wazdan-easter-coins.webp",
+    "image": "https://wazdan.com/wp-content/uploads/EasterCoins_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-eggs-of-fortune",
+    "page": "https://wazdan.com/games/eggs-of-fortune",
+    "local": "/images/catalog/wazdan-eggs-of-fortune.webp",
+    "image": "https://wazdan.com/wp-content/uploads/EggsOfFortune_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-fenix-play",
+    "page": "https://wazdan.com/games/fenix-play",
+    "local": "/images/catalog/wazdan-fenix-play.webp",
+    "image": "https://wazdan.com/wp-content/uploads/FenixPlay_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-fenix-play-27",
+    "page": "https://wazdan.com/games/fenix-play-27",
+    "local": "/images/catalog/wazdan-fenix-play-27.webp",
+    "image": "https://wazdan.com/wp-content/uploads/FenixPlay27_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-fenix-play-27-deluxe",
+    "page": "https://wazdan.com/games/fenix-play-27-deluxe",
+    "local": "/images/catalog/wazdan-fenix-play-27-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/FenixPlay27Deluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-fenix-play-deluxe",
+    "page": "https://wazdan.com/games/fenix-play-deluxe",
+    "local": "/images/catalog/wazdan-fenix-play-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/FenixPlayDeluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-fire-bird",
+    "page": "https://wazdan.com/games/fire-bird",
+    "local": "/images/catalog/wazdan-fire-bird.webp",
+    "image": "https://wazdan.com/wp-content/uploads/FireBird_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-fishermans-luck",
+    "page": "https://wazdan.com/games/fishermans-luck",
+    "local": "/images/catalog/wazdan-fishermans-luck.webp",
+    "image": "https://wazdan.com/wp-content/uploads/FishermansLuck_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-football-mania",
+    "page": "https://wazdan.com/games/football-mania",
+    "local": "/images/catalog/wazdan-football-mania.webp",
+    "image": "https://wazdan.com/wp-content/uploads/FootballMania_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-football-mania-deluxe",
+    "page": "https://wazdan.com/games/football-mania-deluxe",
+    "local": "/images/catalog/wazdan-football-mania-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/FootballManiaDeluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-fortune-reels",
+    "page": "https://wazdan.com/games/fortune-reels",
+    "local": "/images/catalog/wazdan-fortune-reels.webp",
+    "image": "https://wazdan.com/wp-content/uploads/FortuneReels_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-fruit-fiesta",
+    "page": "https://wazdan.com/games/fruit-fiesta",
+    "local": "/images/catalog/wazdan-fruit-fiesta.webp",
+    "image": "https://wazdan.com/wp-content/uploads/FruitFiesta_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
+  },
+  {
+    "slug": "wazdan-fruit-mania",
+    "page": "https://wazdan.com/games/fruit-mania",
+    "local": "/images/catalog/wazdan-fruit-mania.webp",
+    "image": "https://wazdan.com/wp-content/uploads/FruitMania_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed title-specific Wazdan official artwork, first-party image URL with strict build-time local WebP localization."
   }
 ]

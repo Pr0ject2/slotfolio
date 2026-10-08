@@ -56,10 +56,12 @@ const details: Record<string, CatalogVerifiedDetails> = {
     verifiedAt: verifiedAtLatest,
   },
   "wazdan-football-mania": {
-    field: "9 барабанов",
-    rtp: "96,59%",
-    source: "https://wazdan.com/games/football-mania",
-    verifiedAt,
+    "field": "9 барабанов",
+    "rtp": "96,59%",
+    "maxWin": "1000x",
+    "volatility": "Высокая",
+    "source": "https://wazdan.com/games/football-mania",
+    "verifiedAt": "2026-10-08"
   },
   "wazdan-highway-to-hell": {
     field: "5 барабанов · 5 линий",
@@ -144,6 +146,22 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "wazdan-corrida-romance-deluxe": { field: "5 барабанов · 20 линий", rtp: "96,29%", maxWin: "4650x", volatility: "Средняя", releaseDate: "2018-07-04", source: "https://wazdan.com/games/corrida-romance-deluxe", verifiedAt: verifiedAtLatest },
   "wazdan-crazy-cars": { field: "5 барабанов · 5 линий", rtp: "96,27%", maxWin: "1750x", volatility: "Высокая", releaseDate: "2016-02-11", source: "https://wazdan.com/games/crazy-cars", verifiedAt: verifiedAtLatest },
   "wazdan-criss-cross-81": { field: "4 барабана · 81 линия", rtp: "96,29%", maxWin: "2144x", volatility: "Средняя–высокая", releaseDate: "2012-11-19", source: "https://wazdan.com/games/criss-cross-81", verifiedAt: verifiedAtLatest },
+  "wazdan-demon-jack-27": {"field":"3 барабана · 27 линий","rtp":"96,09%","maxWin":"1104x","volatility":"Высокая","releaseDate":"2016-02-11","source":"https://wazdan.com/games/demon-jack-27","verifiedAt":"2026-10-08"},
+  "wazdan-dino-reels-81": {"field":"4 барабана · 7 линий в Game Info","rtp":"96,44%","maxWin":"691x","volatility":"Средняя–высокая","releaseDate":"2016-12-01","source":"https://wazdan.com/games/dino-reels-81","verifiedAt":"2026-10-08"},
+  "wazdan-double-tigers": {"field":"3 барабана · 8 линий по Game Info","rtp":"96,43%","maxWin":"40x","volatility":"Низкая–средняя","releaseDate":"2018-08-05","source":"https://wazdan.com/games/double-tigers","verifiedAt":"2026-10-08"},
+  "wazdan-draculas-castle": {"field":"5 барабанов · 5 линий","rtp":"96,56%","maxWin":"1000x","volatility":"Высокая","releaseDate":"2017-12-27","source":"https://wazdan.com/games/draculas-castle","verifiedAt":"2026-10-08"},
+  "wazdan-dragons-lucky-8": {"field":"6 барабанов · 20 линий","rtp":"96,26%","maxWin":"1150x","volatility":"Низкая–средняя","releaseDate":"2019-08-20","source":"https://wazdan.com/games/dragons-lucky-8","verifiedAt":"2026-10-08"},
+  "wazdan-dwarfs-fortune": {"field":"5 барабанов · 0 линий в Game Info","rtp":"96,16%","maxWin":"2500x","volatility":"Высокая","releaseDate":"2022-03-09","source":"https://wazdan.com/games/dwarfs-fortune","verifiedAt":"2026-10-08"},
+  "wazdan-easter-coins": {"field":"25 позиций · 0 линий","rtp":"96,17%","maxWin":"2000x","volatility":"Высокая","releaseDate":"2026-03-20","source":"https://wazdan.com/games/easter-coins","verifiedAt":"2026-10-08"},
+  "wazdan-eggs-of-fortune": {"field":"5 барабанов · 5 линий","rtp":"96,12%","maxWin":"5000x","volatility":"Экстремальная","releaseDate":"2025-08-07","source":"https://wazdan.com/games/eggs-of-fortune","verifiedAt":"2026-10-08"},
+  "wazdan-fenix-play-27-deluxe": {"field":"3 барабана · 27 линий","rtp":"96,25%","maxWin":"748x","volatility":"Высокая","releaseDate":"2017-09-15","source":"https://wazdan.com/games/fenix-play-27-deluxe","verifiedAt":"2026-10-08"},
+  "wazdan-fenix-play-deluxe": {"field":"3 барабана · 5 линий","rtp":"96,44%","maxWin":"75x","volatility":"Средняя","releaseDate":"2017-09-15","source":"https://wazdan.com/games/fenix-play-deluxe","verifiedAt":"2026-10-08"},
+  "wazdan-fire-bird": {"field":"3 барабана · 5 линий","rtp":"96,05%","maxWin":"72x","volatility":"Стандартная","source":"https://wazdan.com/games/fire-bird","verifiedAt":"2026-10-08"},
+  "wazdan-fishermans-luck": {"field":"10 барабанов · 0 линий по Game Info","rtp":"96,13%","maxWin":"2500x","volatility":"Средняя","releaseDate":"2026-03-05","source":"https://wazdan.com/games/fishermans-luck","verifiedAt":"2026-10-08"},
+  "wazdan-football-mania-deluxe": {"field":"9 барабанов · 0 линий по Game Info","rtp":"96,59%","maxWin":"1000x","volatility":"Высокая","releaseDate":"2018-05-30","source":"https://wazdan.com/games/football-mania-deluxe","verifiedAt":"2026-10-08"},
+  "wazdan-fortune-reels": {"field":"6 барабанов · 46 656 способов","rtp":"96,12%","maxWin":"2100x","volatility":"Высокая","releaseDate":"2021-07-27","source":"https://wazdan.com/games/fortune-reels","verifiedAt":"2026-10-08"},
+  "wazdan-fruit-fiesta": {"field":"5 барабанов · 20 линий","rtp":"96,32%","maxWin":"730x","volatility":"Высокая","releaseDate":"2017-12-01","source":"https://wazdan.com/games/fruit-fiesta","verifiedAt":"2026-10-08"},
+  "wazdan-fruit-mania": {"field":"9 барабанов · 0 линий по Game Info","rtp":"96,59%","maxWin":"1000x","volatility":"Высокая","releaseDate":"2014-09-08","source":"https://wazdan.com/games/fruit-mania","verifiedAt":"2026-10-08"},
 
 };
 
