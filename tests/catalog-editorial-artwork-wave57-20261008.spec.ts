@@ -42,7 +42,7 @@ const cases = [
   ],
   [
     "wazdan-captain-shark",
-    "Отдельные Scatter и Wild"
+    "15, 30 или 90"
   ],
   [
     "wazdan-cash-grotto",
