@@ -45,6 +45,26 @@ export const catalogResearchPlayngoOP: Record<string, CatalogResearch> = {
     verifiedAt,
     evidence: "Official page identifies a five-reel Dynamic Payways video slot with up to 3087 ways to win.",
   },
+
+  "playn-go-oasis-of-dead": {
+    mechanics: ["Расширяющиеся символы", "Free Spins", "Gamble"],
+    source: "https://www.playngo.com/games/oasis-of-dead",
+    verifiedAt,
+    evidence: "Official game page describes eight Free Spins, an instant multiplier, a randomly selected Expanding Symbol, unlimited retriggers and the optional colour/suit Gamble feature.",
+  },
+  "playn-go-octopus-treasure": {
+    mechanics: ["Re-Spin", "Pick-and-click"],
+    source: "https://www.playngo.com/games/octopus-treasure",
+    verifiedAt,
+    evidence: "Official game page describes a Key on reel three unlocking one of four Treasure Chest features, three Scatter-triggered Key Re-Spins and subsequent Treasure Spins with a bonus feature on every spin.",
+  },
+  "playn-go-pandastic-adventure": {
+    mechanics: ["Сбор символов", "Hold & Spin"],
+    source: "https://www.playngo.com/games/pandastic-adventure",
+    verifiedAt,
+    evidence: "Official game page describes Temple Free Spins that collect Wilds, followed by a Bonus Round where collecting eight Wilds activates Hold and Spin and prize tiers.",
+  },
+
 };
 
 export function getCatalogResearchPlayngoOP(slug: string) {

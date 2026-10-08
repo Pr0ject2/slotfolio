@@ -137,6 +137,38 @@ export const catalogResearchPlayngoMN: Record<string, CatalogResearch> = {
     evidence: "Official Play'n GO game page describes Wild Side stacked Wilds, Live Wire random Wilds, and Shout at the Devil Free Spins triggered by Pentagram Scatters.",
   },
 
+
+  "playn-go-muerto-en-mictlan": {
+    mechanics: ["Wilds"],
+    source: "https://www.playngo.com/games/muerto-en-mictl%C3%A1n",
+    verifiedAt,
+    evidence: "Official Play'n GO game page states that each level has a unique Wild feature and players choose which Wild feature guides the next part of the journey through Mictlán.",
+  },
+  "playn-go-mystery-genie-fortunes-of-the-lamp": {
+    mechanics: ["Mystery Symbols", "Re-Spin", "Множители"],
+    source: "https://www.playngo.com/games/mystery-genie--fortunes-of-the-lamp",
+    verifiedAt,
+    evidence: "Official game page describes Mystery Symbols, x2-x5 Mystery Wild multipliers, Sand Rewind locking special symbols for a respin, and retriggerable Free Spins.",
+  },
+  "playn-go-mystery-joker": {
+    mechanics: ["Free Spins"],
+    source: "https://www.playngo.com/games/mystery-joker",
+    verifiedAt,
+    evidence: "Official game page describes a simple three-reel slot where three Joker-hat Scatters trigger Free Spins and two or three Scatters during the feature award additional spins.",
+  },
+  "playn-go-naughty-nicks-book": {
+    mechanics: ["Расширяющиеся символы", "Free Spins", "Gamble"],
+    source: "https://www.playngo.com/games/naughty-nick's-book",
+    verifiedAt,
+    evidence: "Official game page states that three or more Book Scatters open an extra sixth reel and eight Free Spins, choose a random Expanding Symbol and allow retriggers; an optional card Gamble feature is also available.",
+  },
+  "playn-go-ninja-fruits": {
+    mechanics: ["Pick-and-click", "Free Spins", "Gamble"],
+    source: "https://www.playngo.com/games/ninja-fruits",
+    verifiedAt,
+    evidence: "Official game page describes the Shuriken fruit-hitting bonus, Geisha-triggered Free Spins with a randomly chosen Extra Scatter and an optional card Gamble round.",
+  },
+
 };
 
 export function getCatalogResearchPlayngoMN(slug: string) {

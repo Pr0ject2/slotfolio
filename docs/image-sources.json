@@ -3872,5 +3872,131 @@
     "page": "https://www.playngo.com/games/mount-m",
     "local": "/images/catalog/playn-go-mount-m.webp",
     "note": "Reviewed first-party Play’n GO game page. Build-time localizer resolves official provider image metadata and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-muerto-en-mictlan",
+    "page": "https://www.playngo.com/post/light-your-candles-for-the-day-of-the-dead-festival",
+    "local": "/images/catalog/playn-go-muerto-en-mictlan.webp",
+    "note": "Reviewed first-party game-specific Play’n GO artwork. Exact Wix CDN image from the official game page, localized into a WebP during build.",
+    "requireExplicitImage": true,
+    "image": "https://static.wixstatic.com/media/860592_79b41371b85049639cb0a54bb9b8d6ba~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/muerto_mictlan_bg.webp"
+  },
+  {
+    "slug": "playn-go-multifruit-81",
+    "page": "https://www.playngo.com/games/multifruit-81",
+    "local": "/images/catalog/playn-go-multifruit-81.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-mystery-egg-surprise",
+    "page": "https://www.playngo.com/games/mystery-egg-surprise",
+    "local": "/images/catalog/playn-go-mystery-egg-surprise.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-mystery-genie-fortunes-of-the-lamp",
+    "page": "https://www.playngo.com/post/mystery-genie-fortunes-of-the-lamp",
+    "local": "/images/catalog/playn-go-mystery-genie-fortunes-of-the-lamp.webp",
+    "note": "Reviewed first-party game-specific Play’n GO artwork. Exact Wix CDN image from the official game page, localized into a WebP during build.",
+    "requireExplicitImage": true,
+    "image": "https://static.wixstatic.com/media/01cc5f_e893a037ba0144a5b6d8df6f4ad07dd1~mv2.webp/v1/fill/w_980%2Ch_418%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/fortunesofthelamp_Clientzone_Homepage_banner.webp"
+  },
+  {
+    "slug": "playn-go-mystery-joker",
+    "page": "https://www.playngo.com/games/mystery-joker",
+    "local": "/images/catalog/playn-go-mystery-joker.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-mystery-joker-6000",
+    "page": "https://www.playngo.com/games/mystery-joker-6000",
+    "local": "/images/catalog/playn-go-mystery-joker-6000.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-myth",
+    "page": "https://www.playngo.com/games/myth",
+    "local": "/images/catalog/playn-go-myth.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-myth-of-dead",
+    "page": "https://www.playngo.com/games/myth-of-dead",
+    "local": "/images/catalog/playn-go-myth-of-dead.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-naughty-nicks-book",
+    "page": "https://www.playngo.com/games/naughty-nick's-book",
+    "local": "/images/catalog/playn-go-naughty-nicks-book.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-new-year-riches",
+    "page": "https://www.playngo.com/games/new-year-riches",
+    "local": "/images/catalog/playn-go-new-year-riches.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-ninja-fruits",
+    "page": "https://www.playngo.com/games/ninja-fruits",
+    "local": "/images/catalog/playn-go-ninja-fruits.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-nugget-n-nonsense",
+    "page": "https://www.playngo.com/posts/nugget-n-nonsense",
+    "local": "/images/catalog/playn-go-nugget-n-nonsense.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-oasis-of-dead",
+    "page": "https://www.playngo.com/games/oasis-of-dead",
+    "local": "/images/catalog/playn-go-oasis-of-dead.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-octopus-treasure",
+    "page": "https://www.playngo.com/games/octopus-treasure",
+    "local": "/images/catalog/playn-go-octopus-treasure.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-odin-protector-of-realms",
+    "page": "https://www.playngo.com/games/odin-protector-of-realms",
+    "local": "/images/catalog/playn-go-odin-protector-of-realms.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-pack-and-cash",
+    "page": "https://www.playngo.com/post/playngo-packs-a-punch-with-their-latest-title",
+    "local": "/images/catalog/playn-go-pack-and-cash.webp",
+    "note": "Reviewed first-party game-specific Play’n GO artwork. Exact Wix CDN image from the official game page, localized into a WebP during build.",
+    "requireExplicitImage": true,
+    "image": "https://static.wixstatic.com/media/1c3085_52954ed152a846f7a5b81943ef3c53b0~mv2.webp/v1/fill/w_980%2Ch_350%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/pack_and_cash_bg.webp"
+  },
+  {
+    "slug": "playn-go-pandastic-adventure",
+    "page": "https://www.playngo.com/games/pandastic-adventure",
+    "local": "/images/catalog/playn-go-pandastic-adventure.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-pandoras-box-of-evil",
+    "page": "https://www.playngo.com/games/pandora's-box-of-evil",
+    "local": "/images/catalog/playn-go-pandoras-box-of-evil.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-pearl-lagoon",
+    "page": "https://www.playngo.com/games/pearl-lagoon",
+    "local": "/images/catalog/playn-go-pearl-lagoon.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
+  },
+  {
+    "slug": "playn-go-pearls-of-india",
+    "page": "https://www.playngo.com/games/pearls-of-india",
+    "local": "/images/catalog/playn-go-pearls-of-india.webp",
+    "note": "Reviewed first-party Play’n GO page. Build-time localizer resolves official provider artwork and stores a local WebP; Pages verification fails if artwork cannot be localized."
   }
 ]

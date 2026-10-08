@@ -39,6 +39,10 @@ const gameTypes: Record<string, CatalogVerifiedGameType> = {
   "playn-go-naughty-nicks-book": { gameType: "Video Slot", source: "https://www.playngo.com/games/naughty-nick's-book", verifiedAt },
   "playn-go-new-year-riches": { gameType: "Video Slot", source: "https://www.playngo.com/games/new-year-riches", verifiedAt },
   "playn-go-ninja-fruits": { gameType: "Video Slot", source: "https://www.playngo.com/games/ninja-fruits", verifiedAt },
+
+  "playn-go-mystery-joker-6000": { gameType: "Video Slot", source: "https://www.playngo.com/games/mystery-joker-6000", verifiedAt },
+  "playn-go-nugget-n-nonsense": { gameType: "Video Slot", source: "https://www.playngo.com/games/nugget-n%E2%80%99-nonsense", verifiedAt },
+
 };
 
 export function getVerifiedCatalogGameTypePlayngoMN(slug: string) {
