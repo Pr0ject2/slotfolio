@@ -4158,5 +4158,125 @@
     "note": "Reviewed game-specific first-party Play’n GO/Wix/CDN artwork. The strict localizer stores this explicit source as local WebP, with no runtime remote image.",
     "image": "https://static.wixstatic.com/media/7b26b8_9e05f1a2141f474fbc55f793b3afcbfd~mv2.jpg/v1/fill/w_980%2Ch_474%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/prosperitypalace_startpage.jpg",
     "requireExplicitImage": true
+  },
+  {
+    "slug": "playn-go-puebla-parade",
+    "page": "https://www.playngo.com/games/puebla-parade",
+    "local": "/images/catalog/playn-go-puebla-parade.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "playn-go-queens-day-tilt",
+    "page": "https://www.playngo.com/games/queen%27s-day-tilt",
+    "local": "/images/catalog/playn-go-queens-day-tilt.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "playn-go-ras-reckoning",
+    "page": "https://www.playngo.com/games/ra%27s-reckoning",
+    "local": "/images/catalog/playn-go-ras-reckoning.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "playn-go-rabbit-hole-riches",
+    "page": "https://www.playngo.com/games/rabbit-hole-riches",
+    "local": "/images/catalog/playn-go-rabbit-hole-riches.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "playn-go-rabbit-hole-riches-court-of-hearts",
+    "page": "https://www.playngo.com/games/rabbit-hole-riches---court-of-hearts",
+    "local": "/images/catalog/playn-go-rabbit-hole-riches-court-of-hearts.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "playn-go-rage-to-riches",
+    "page": "https://www.playngo.com/games/rage-to-riches",
+    "local": "/images/catalog/playn-go-rage-to-riches.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "playn-go-raging-rex",
+    "page": "https://www.playngo.com/games/raging-rex",
+    "local": "/images/catalog/playn-go-raging-rex.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "playn-go-raging-rex-2",
+    "page": "https://www.playngo.com/games/raging-rex-2",
+    "local": "/images/catalog/playn-go-raging-rex-2.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "push-gaming-10-cash-bisons",
+    "page": "https://www.pushgaming.com/games/10-cash-bisons.html",
+    "local": "/images/catalog/push-gaming-10-cash-bisons.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "push-gaming-10-flaming-bisons",
+    "page": "https://www.pushgaming.com/games/10-flaming-bisons.html",
+    "local": "/images/catalog/push-gaming-10-flaming-bisons.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "push-gaming-10-pharaohs",
+    "page": "https://www.pushgaming.com/games/10-pharaohs.html",
+    "local": "/images/catalog/push-gaming-10-pharaohs.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "push-gaming-10-santas-reindeers",
+    "page": "https://www.pushgaming.com/games/10-santas-reindeers.html",
+    "local": "/images/catalog/push-gaming-10-santas-reindeers.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "push-gaming-10-swords",
+    "page": "https://www.pushgaming.com/games/10-swords.html",
+    "local": "/images/catalog/push-gaming-10-swords.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "push-gaming-3-liberty-eagles",
+    "page": "https://www.pushgaming.com/games/3-liberty-eagles.html",
+    "local": "/images/catalog/push-gaming-3-liberty-eagles.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "push-gaming-3-magic-pots",
+    "page": "https://www.pushgaming.com/games/3-magic-pots.html",
+    "local": "/images/catalog/push-gaming-3-magic-pots.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "push-gaming-bait-n-bank",
+    "page": "https://www.pushgaming.com/games/bait-n-bank.html",
+    "local": "/images/catalog/push-gaming-bait-n-bank.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "push-gaming-bamboo-ways",
+    "page": "https://www.pushgaming.com/games/bamboo-ways.html",
+    "local": "/images/catalog/push-gaming-bamboo-ways.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "push-gaming-big-bam-book",
+    "page": "https://www.pushgaming.com/games/big-bam-book.html",
+    "local": "/images/catalog/push-gaming-big-bam-book.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "push-gaming-big-bamboo",
+    "page": "https://www.pushgaming.com/games/big-bamboo.html",
+    "local": "/images/catalog/push-gaming-big-bamboo.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
+  },
+  {
+    "slug": "push-gaming-big-bamboo-2",
+    "page": "https://www.pushgaming.com/games/big-bamboo-2.html",
+    "local": "/images/catalog/push-gaming-big-bamboo-2.webp",
+    "note": "First-party game-specific provider page reviewed for artwork. Build-time localizer resolves provider image metadata; strict CI and Pages verification must fail rather than publish a missing asset."
   }
 ]
