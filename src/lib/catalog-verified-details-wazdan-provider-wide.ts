@@ -56,7 +56,7 @@ const details: Record<string, CatalogVerifiedDetails> = {
     verifiedAt: verifiedAtLatest,
   },
   "wazdan-football-mania": {
-    "field": "9 барабанов · 0 линий по Game Info",
+    "field": "9 барабанов",
     "rtp": "96,59%",
     "maxWin": "1000x",
     "volatility": "Высокая",
