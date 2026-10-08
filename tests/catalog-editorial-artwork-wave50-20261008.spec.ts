@@ -13,7 +13,7 @@ const slots = [
   ["push-gaming-10-pharaohs", "Scarab"],
   ["push-gaming-10-santas-reindeers", "Bell Symbols"],
   ["push-gaming-10-swords", "Shield"],
-  ["push-gaming-3-liberty-eagles", "Justice Collector"],
+  ["push-gaming-3-liberty-eagles", "Eagle Pots"],
   ["push-gaming-3-magic-pots", "Magic Reels"],
   ["push-gaming-bait-n-bank", "Chest Collector"],
   ["push-gaming-bamboo-ways", "Mystery Symbols"],
