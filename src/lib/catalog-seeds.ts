@@ -63,6 +63,7 @@ const rejectedSeedSlugs = new Set([
 const seedNameOverrides: Record<string, string> = {
   "nolimit-city-duck-hunters-23rd-september-202610th-september-2026": "Duck Hunters 2",
   "wazdan-throne-of-elements-platinum": "Throne of Elements: Platinum",
+  "wazdan-mighty-wild-panther-grand-diamond-edition": "Mighty Wild: Panther Grand Diamond Edition",
 };
 
 // Nolimit's roadmap markup leaked release-date text into a handful of harvested slugs.
