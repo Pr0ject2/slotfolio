@@ -241,9 +241,9 @@ export const catalogResearchWazdan: Record<string, CatalogResearch> = {
   "wazdan-power-of-gods-the-pantheon": { mechanics: ["Линии"], source: "https://wazdan.com/games/power-of-gods-the-pantheon", verifiedAt: "2026-10-09", evidence: "Official Pantheon 5/20, RTP 96.2%, max 1450x, medium, 2019-10-17; Kraken 10 spins with moving reels, Zeus 5 with extra Wild, Aphrodite cascades." },
   "wazdan-power-of-gods-valhalla": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/power-of-gods-valhalla", verifiedAt: "2026-10-09", evidence: "Official Valhalla Wazdan: Hold the Jackpot, sticky 3/4/5 Bonus and 2145x maximum; Buy Feature." },
   "wazdan-power-of-gods-valhalla-extremely-light": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/power-of-gods-valhalla-extremely-light", verifiedAt: "2026-10-09", evidence: "Official Valhalla Extremely Light Game Info 16/0, RTP 96.23%, Max Win 2145x, high, 2024-05-23; marketing mentions Grand 1000x; sticky bonus." },
-  "wazdan-power-of-sun-svarog": { mechanics: ["Линии","Сбор символов"], source: "https://wazdan.com/games/power-of-sun-svarog", verifiedAt: "2026-10-09", evidence: "Official Wazdan Svarog page lists game-specific sun-themed mechanics and first-party game info; avoid deriving unverified multipliers." },
+  "wazdan-power-of-sun-svarog": { mechanics: ["Способы","Сбор символов"], source: "https://wazdan.com/games/power-of-sun-svarog", verifiedAt: "2026-10-09", evidence: "Official Wazdan Svarog page lists game-specific sun-themed mechanics and first-party game info; avoid deriving unverified multipliers." },
   "wazdan-prosperity-pearls": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/prosperity-pearls", verifiedAt: "2026-10-09", evidence: "Official first-party Prosperity Pearls Wazdan page confirms pearl theme and bonus features." },
-  "wazdan-santas-gifts-frenzy": { mechanics: ["Сбор символов"], source: "https://wazdan.com/games/santas-gifts-frenzy", verifiedAt: "2026-10-09", evidence: "Official Santa's Gifts Frenzy Wazdan game information and game-specific gift features." },
+  "wazdan-santas-gifts-frenzy": { mechanics: ["Линии","Сбор символов"], source: "https://wazdan.com/games/santas-gifts-frenzy", verifiedAt: "2026-10-09", evidence: "Official Santa's Gifts Frenzy Wazdan game information and game-specific gift features." },
 
 };
 
