@@ -70,7 +70,7 @@ const cases=[
   ],
   [
     "wazdan-turbo-play",
-    "Turbo Play"
+    "Turbo"
   ],
   [
     "wazdan-unicorn-reels",
