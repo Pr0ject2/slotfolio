@@ -841,7 +841,7 @@ const artworkBySlug: Record<string, string> = {
   "wazdan-mystery-jack-deluxe": "/images/catalog/wazdan-mystery-jack-deluxe.webp",
   "wazdan-mystery-kingdom-mystery-bells": "/images/catalog/wazdan-mystery-kingdom-mystery-bells.webp",
   "wazdan-neon-city": "/images/catalog/wazdan-neon-city.webp",
-  "wazdan-throne-of-elements-platinum": "/images/catalog/wazdan-throne-of-elements-platinum.webp",
+  "wazdan-sizzling-bells": "/images/catalog/wazdan-sizzling-bells.webp",
   "wazdan-night-club-81": "/images/catalog/wazdan-night-club-81.webp",
   "wazdan-one-coin": "/images/catalog/wazdan-one-coin.webp",
   "wazdan-ox-coin": "/images/catalog/wazdan-ox-coin.webp",

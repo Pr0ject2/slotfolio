@@ -1,10 +1,6 @@
 import {expect,test} from "@playwright/test";
 const cases = [
   [
-    "wazdan-throne-of-elements-platinum",
-    "Throne of Elements: Platinum собирает энергию сти"
-  ],
-  [
     "wazdan-night-club-81",
     "Night Club 81 использует четыре барабана и ретро-"
   ],
@@ -79,6 +75,10 @@ const cases = [
   [
     "wazdan-sizzling-777-deluxe",
     "Sizzling 777 Deluxe обновляет оформление оригинал"
+  ],
+  [
+    "wazdan-sizzling-bells",
+    "Sizzling Bells строится на пяти барабанах и пяти л"
   ]
 ] as const;
 test("wave 64 Wazdan dossiers: game-specific sections and exact downloaded official artwork",async({page})=>{for(const [slug,phrase] of cases){

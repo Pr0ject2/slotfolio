@@ -1,10 +1,6 @@
 import {expect,test} from "@playwright/test";
 const cases = [
   [
-    "wazdan-throne-of-elements-platinum",
-    "Throne of Elements: Platinum"
-  ],
-  [
     "wazdan-night-club-81",
     "Night Club 81"
   ],
@@ -79,6 +75,10 @@ const cases = [
   [
     "wazdan-sizzling-777-deluxe",
     "Sizzling 777 Deluxe"
+  ],
+  [
+    "wazdan-sizzling-bells",
+    "Sizzling Bells"
   ]
 ] as const;
 test("wave 64 Wazdan catalog artwork: twenty precise loaded WebPs",async({page})=>{for(const [slug,name] of cases){

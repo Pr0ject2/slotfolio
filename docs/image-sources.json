@@ -6386,14 +6386,6 @@
     "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
   },
   {
-    "slug": "wazdan-throne-of-elements-platinum",
-    "page": "https://wazdan.com/games/throne-of-elements-platinum",
-    "local": "/images/catalog/wazdan-throne-of-elements-platinum.webp",
-    "image": "https://wazdan.com/wp-content/uploads/ThroneOfElementsPlatinum_icon_600x450.webp",
-    "requireExplicitImage": true,
-    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
-  },
-  {
     "slug": "wazdan-night-club-81",
     "page": "https://wazdan.com/games/night-club-81",
     "local": "/images/catalog/wazdan-night-club-81.webp",
@@ -6544,5 +6536,13 @@
     "image": "https://wazdan.com/wp-content/uploads/Sizzling777Deluxe_icon_600x450_webp90.webp",
     "requireExplicitImage": true,
     "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-sizzling-bells",
+    "page": "https://wazdan.com/games/sizzling-bells",
+    "local": "/images/catalog/wazdan-sizzling-bells.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SizzlingBells_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "First-party Wazdan Sizzling Bells exact game-cover asset; strict local WebP."
   }
 ]
