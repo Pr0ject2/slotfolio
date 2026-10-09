@@ -78,7 +78,7 @@ const cases=[
   ],
   [
     "wazdan-valentines-coins",
-    "Valentine’s Coins"
+    "Valentine`s Coins"
   ]
 ] as const;
 test("wave 65 /slots catalog artwork loads for 20 reviewed games",async({page})=>{for(const [slug,name] of cases){
