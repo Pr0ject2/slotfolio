@@ -6544,5 +6544,165 @@
     "image": "https://wazdan.com/wp-content/uploads/SizzlingBells_icon_600x450_webp90.webp",
     "requireExplicitImage": true,
     "note": "First-party Wazdan Sizzling Bells exact game-cover asset; strict local WebP."
+  },
+  {
+    "slug": "wazdan-mighty-wild-panther-grand-diamond-edition",
+    "page": "https://wazdan.com/games/mighty-wild-panther-grand-diamond-edition",
+    "local": "/images/catalog/wazdan-mighty-wild-panther-grand-diamond-edition.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MightyWildPantherGrandDiamondEdition_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-sizzling-eggs",
+    "page": "https://wazdan.com/games/sizzling-eggs",
+    "local": "/images/catalog/wazdan-sizzling-eggs.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SizzlingEggs_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-sizzling-eggs-extremely-light",
+    "page": "https://wazdan.com/games/sizzling-eggs-extremely-light",
+    "local": "/images/catalog/wazdan-sizzling-eggs-extremely-light.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SizzlingEggsExtremelyLight_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-sizzling-eggs-grand-gold-edition",
+    "page": "https://wazdan.com/games/sizzling-eggs-grand-gold-edition",
+    "local": "/images/catalog/wazdan-sizzling-eggs-grand-gold-edition.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SizzlingEggsGrandGoldEdition_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-sizzling-eggs-grand-platinum-edition",
+    "page": "https://wazdan.com/games/sizzling-eggs-grand-platinum-edition",
+    "local": "/images/catalog/wazdan-sizzling-eggs-grand-platinum-edition.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SizzlingEggsGrandPlatinumEdition_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-sizzling-kingdom-bison",
+    "page": "https://wazdan.com/games/sizzling-kingdom-bison",
+    "local": "/images/catalog/wazdan-sizzling-kingdom-bison.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SizzlingKingdomBison_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-sizzling-moon",
+    "page": "https://wazdan.com/games/sizzling-moon",
+    "local": "/images/catalog/wazdan-sizzling-moon.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SizzlingMoon_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-slot-jam",
+    "page": "https://wazdan.com/games/slot-jam",
+    "local": "/images/catalog/wazdan-slot-jam.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SlotJam_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-sonic-reels",
+    "page": "https://wazdan.com/games/sonic-reels",
+    "local": "/images/catalog/wazdan-sonic-reels.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SonicReels_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-space-gem",
+    "page": "https://wazdan.com/games/space-gem",
+    "local": "/images/catalog/wazdan-space-gem.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SpaceGem_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-space-spins",
+    "page": "https://wazdan.com/games/space-spins",
+    "local": "/images/catalog/wazdan-space-spins.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SpaceSpins_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-spectrum",
+    "page": "https://wazdan.com/games/spectrum",
+    "local": "/images/catalog/wazdan-spectrum.webp",
+    "image": "https://wazdan.com/wp-content/uploads/Spectrum_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-sun-of-fortune",
+    "page": "https://wazdan.com/games/sun-of-fortune",
+    "local": "/images/catalog/wazdan-sun-of-fortune.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SunOfFortune_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-super-hot",
+    "page": "https://wazdan.com/games/super-hot",
+    "local": "/images/catalog/wazdan-super-hot.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SuperHot_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-telly-reels",
+    "page": "https://wazdan.com/games/telly-reels",
+    "local": "/images/catalog/wazdan-telly-reels.webp",
+    "image": "https://wazdan.com/wp-content/uploads/TellyReels_icon_600x450_webp.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-throne-of-elements-platinum",
+    "page": "https://wazdan.com/games/throne-of-elements-platinum",
+    "local": "/images/catalog/wazdan-throne-of-elements-platinum.webp",
+    "image": "https://wazdan.com/wp-content/uploads/ThroneOfElementsPlatinum_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-triple-star",
+    "page": "https://wazdan.com/games/triple-star",
+    "local": "/images/catalog/wazdan-triple-star.webp",
+    "image": "https://wazdan.com/wp-content/uploads/TripleStar_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-turbo-play",
+    "page": "https://wazdan.com/games/turbo-play",
+    "local": "/images/catalog/wazdan-turbo-play.webp",
+    "image": "https://wazdan.com/wp-content/uploads/TurboPlay_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-unicorn-reels",
+    "page": "https://wazdan.com/games/unicorn-reels",
+    "local": "/images/catalog/wazdan-unicorn-reels.webp",
+    "image": "https://wazdan.com/wp-content/uploads/UnicornReels_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-valentines-coins",
+    "page": "https://wazdan.com/games/valentines-coins",
+    "local": "/images/catalog/wazdan-valentines-coins.webp",
+    "image": "https://wazdan.com/wp-content/uploads/ValentinesCoins_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
   }
 ]
