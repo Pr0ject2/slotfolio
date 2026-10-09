@@ -6224,5 +6224,165 @@
     "image": "https://wazdan.com/wp-content/uploads/MagicTargetDeluxe_icon_600x450_webp90.webp",
     "requireExplicitImage": true,
     "note": "Official Wazdan title-specific game cover image pinned to strict WebP localizer."
+  },
+  {
+    "slug": "wazdan-mayan-ritual",
+    "page": "https://wazdan.com/games/mayan-ritual",
+    "local": "/images/catalog/wazdan-mayan-ritual.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MayanRitual_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-miami-beach",
+    "page": "https://wazdan.com/games/miami-beach",
+    "local": "/images/catalog/wazdan-miami-beach.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MiamiBeach_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-midnight-in-tokyo",
+    "page": "https://wazdan.com/games/midnight-in-tokyo",
+    "local": "/images/catalog/wazdan-midnight-in-tokyo.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MidnightInTokyo_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mighty-crown-empire-of-gold",
+    "page": "https://wazdan.com/games/mighty-crown-empire-of-gold",
+    "local": "/images/catalog/wazdan-mighty-crown-empire-of-gold.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MightyCrownEmpireOfGold_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mighty-crown-legacy-of-mars",
+    "page": "https://wazdan.com/games/mighty-crown-legacy-of-mars",
+    "local": "/images/catalog/wazdan-mighty-crown-legacy-of-mars.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MightyCrownLegacyOfMars_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mighty-fish-blue-marlin",
+    "page": "https://wazdan.com/games/mighty-fish-blue-marlin",
+    "local": "/images/catalog/wazdan-mighty-fish-blue-marlin.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MightyFishBlueMarlin_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mighty-hot-777",
+    "page": "https://wazdan.com/games/mighty-hot-777",
+    "local": "/images/catalog/wazdan-mighty-hot-777.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MightyHot777_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mighty-symbols-crowns",
+    "page": "https://wazdan.com/games/mighty-symbols-crowns",
+    "local": "/images/catalog/wazdan-mighty-symbols-crowns.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MightySymbolsCrown_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mighty-symbols-diamonds",
+    "page": "https://wazdan.com/games/mighty-symbols-diamonds",
+    "local": "/images/catalog/wazdan-mighty-symbols-diamonds.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MightySymbolsDiamonds_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mighty-symbols-jokers",
+    "page": "https://wazdan.com/games/mighty-symbols-jokers",
+    "local": "/images/catalog/wazdan-mighty-symbols-jokers.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MightySymbolsJokers_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mighty-symbols-sevens",
+    "page": "https://wazdan.com/games/mighty-symbols-sevens",
+    "local": "/images/catalog/wazdan-mighty-symbols-sevens.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MightySymbolsSevens_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mighty-wild-gorilla",
+    "page": "https://wazdan.com/games/mighty-wild-gorilla",
+    "local": "/images/catalog/wazdan-mighty-wild-gorilla.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MightyWildGorilla_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mighty-wild-jaguar",
+    "page": "https://wazdan.com/games/mighty-wild-jaguar",
+    "local": "/images/catalog/wazdan-mighty-wild-jaguar.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MightyWildJaguar_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mighty-wild-panther-grand-gold-edition",
+    "page": "https://wazdan.com/games/mighty-wild-panther-grand-gold-edition",
+    "local": "/images/catalog/wazdan-mighty-wild-panther-grand-gold-edition.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MightyWildPantherGrandGoldEdition_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mighty-wild-panther-grand-platinum-edition",
+    "page": "https://wazdan.com/games/mighty-wild-panther-grand-platinum-edition",
+    "local": "/images/catalog/wazdan-mighty-wild-panther-grand-platinum-edition.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MightyWildPantherGrandPlatinumEdition_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-moon-of-fortune",
+    "page": "https://wazdan.com/games/moon-of-fortune",
+    "local": "/images/catalog/wazdan-moon-of-fortune.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MoonOfFortune_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mystery-jack",
+    "page": "https://wazdan.com/games/mystery-jack",
+    "local": "/images/catalog/wazdan-mystery-jack.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MysteryJack_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mystery-jack-deluxe",
+    "page": "https://wazdan.com/games/mystery-jack-deluxe",
+    "local": "/images/catalog/wazdan-mystery-jack-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MysteryJackDeluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-mystery-kingdom-mystery-bells",
+    "page": "https://wazdan.com/games/mystery-kingdom-mystery-bells",
+    "local": "/images/catalog/wazdan-mystery-kingdom-mystery-bells.webp",
+    "image": "https://wazdan.com/wp-content/uploads/MysteryKingdom_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-neon-city",
+    "page": "https://wazdan.com/games/neon-city",
+    "local": "/images/catalog/wazdan-neon-city.webp",
+    "image": "https://wazdan.com/wp-content/uploads/NeonCity_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
   }
 ]

@@ -180,6 +180,7 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "wazdan-magic-fruits-81": {"field":"4 барабана · 81 линия (при Wild)","rtp":"96,42%","maxWin":"2240x","volatility":"Низкая–средняя","releaseDate":"2014-09-08","source":"https://wazdan.com/games/magic-fruits-81","verifiedAt":"2026-10-09"},
   "wazdan-magic-fruits-deluxe": {"field":"3 барабана · 5 линий","rtp":"96,41%","maxWin":"40x","volatility":"Низкая–средняя","releaseDate":"2017-09-15","source":"https://wazdan.com/games/magic-fruits-deluxe","verifiedAt":"2026-10-09"},
   "wazdan-magic-fruits-dice": {"field":"3 барабана · 5 линий","rtp":"96,41%","maxWin":"40x","volatility":"Низкая–средняя","releaseDate":"2026-03-12","source":"https://wazdan.com/games/magic-fruits-dice","verifiedAt":"2026-10-09"},
+  "wazdan-mystery-jack": {"field":"3 барабана · 27 линий","rtp":"96,79%","maxWin":"710x","volatility":"Низкая–средняя","releaseDate":"2013-02-15","source":"https://wazdan.com/games/mystery-jack","verifiedAt":"2026-10-09"},
 
 };
 
