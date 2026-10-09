@@ -6384,5 +6384,165 @@
     "image": "https://wazdan.com/wp-content/uploads/NeonCity_icon_600x450_webp90.webp",
     "requireExplicitImage": true,
     "note": "Exact Wazdan first-party game-specific cover, confirmed from official product page inline artwork; strict localization required."
+  },
+  {
+    "slug": "wazdan-night-club-81",
+    "page": "https://wazdan.com/games/night-club-81",
+    "local": "/images/catalog/wazdan-night-club-81.webp",
+    "image": "https://wazdan.com/wp-content/uploads/night_club_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-one-coin",
+    "page": "https://wazdan.com/games/one-coin",
+    "local": "/images/catalog/wazdan-one-coin.webp",
+    "image": "https://wazdan.com/wp-content/uploads/OneCoin_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-ox-coin",
+    "page": "https://wazdan.com/games/ox-coin",
+    "local": "/images/catalog/wazdan-ox-coin.webp",
+    "image": "https://wazdan.com/wp-content/uploads/OxCoin_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-power-of-gods-egypt",
+    "page": "https://wazdan.com/games/power-of-gods-egypt",
+    "local": "/images/catalog/wazdan-power-of-gods-egypt.webp",
+    "image": "https://wazdan.com/wp-content/uploads/PowerOfGodsEgypt_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-power-of-gods-hades",
+    "page": "https://wazdan.com/games/power-of-gods-hades",
+    "local": "/images/catalog/wazdan-power-of-gods-hades.webp",
+    "image": "https://wazdan.com/wp-content/uploads/PowerOfGodsHades_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-power-of-gods-medusa",
+    "page": "https://wazdan.com/games/power-of-gods-medusa",
+    "local": "/images/catalog/wazdan-power-of-gods-medusa.webp",
+    "image": "https://wazdan.com/wp-content/uploads/PowerOfGodsMedusa_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-power-of-gods-medusa-extremely-light",
+    "page": "https://wazdan.com/games/power-of-gods-medusa-extremely-light",
+    "local": "/images/catalog/wazdan-power-of-gods-medusa-extremely-light.webp",
+    "image": "https://wazdan.com/wp-content/uploads/PowerOfGodsMedusaExtremelyLight_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-power-of-gods-the-pantheon",
+    "page": "https://wazdan.com/games/power-of-gods-the-pantheon",
+    "local": "/images/catalog/wazdan-power-of-gods-the-pantheon.webp",
+    "image": "https://wazdan.com/wp-content/uploads/PowerOfGodsThePantheon_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-power-of-gods-valhalla",
+    "page": "https://wazdan.com/games/power-of-gods-valhalla",
+    "local": "/images/catalog/wazdan-power-of-gods-valhalla.webp",
+    "image": "https://wazdan.com/wp-content/uploads/PowerOfGodsValhalla_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-power-of-gods-valhalla-extremely-light",
+    "page": "https://wazdan.com/games/power-of-gods-valhalla-extremely-light",
+    "local": "/images/catalog/wazdan-power-of-gods-valhalla-extremely-light.webp",
+    "image": "https://wazdan.com/wp-content/uploads/PowerofGodsValhallaExtremelyLight_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-power-of-sun-svarog",
+    "page": "https://wazdan.com/games/power-of-sun-svarog",
+    "local": "/images/catalog/wazdan-power-of-sun-svarog.webp",
+    "image": "https://wazdan.com/wp-content/uploads/PowerOfSunSvarog_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-prosperity-pearls",
+    "page": "https://wazdan.com/games/prosperity-pearls",
+    "local": "/images/catalog/wazdan-prosperity-pearls.webp",
+    "image": "https://wazdan.com/wp-content/uploads/ProsperityPearls_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-prosperity-reels",
+    "page": "https://wazdan.com/games/prosperity-reels",
+    "local": "/images/catalog/wazdan-prosperity-reels.webp",
+    "image": "https://wazdan.com/wp-content/uploads/ProsperityReels_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-reel-hero",
+    "page": "https://wazdan.com/games/reel-hero",
+    "local": "/images/catalog/wazdan-reel-hero.webp",
+    "image": "https://wazdan.com/wp-content/uploads/ReelHero_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-reel-joke",
+    "page": "https://wazdan.com/games/reel-joke",
+    "local": "/images/catalog/wazdan-reel-joke.webp",
+    "image": "https://wazdan.com/wp-content/uploads/ReelJoke_icon_600x450_webp-1.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-relic-hunters-and-the-book-of-faith",
+    "page": "https://wazdan.com/games/relic-hunters-and-the-book-of-faith",
+    "local": "/images/catalog/wazdan-relic-hunters-and-the-book-of-faith.webp",
+    "image": "https://wazdan.com/wp-content/uploads/RelicHuntersAndTheBookOfFaith_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-santas-gifts-frenzy",
+    "page": "https://wazdan.com/games/santas-gifts-frenzy",
+    "local": "/images/catalog/wazdan-santas-gifts-frenzy.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SantasGiftsFrenzy_icon_600x450.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-sizzling-777",
+    "page": "https://wazdan.com/games/sizzling-777",
+    "local": "/images/catalog/wazdan-sizzling-777.webp",
+    "image": "https://wazdan.com/wp-content/uploads/Sizzling777_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-sizzling-777-deluxe",
+    "page": "https://wazdan.com/games/sizzling-777-deluxe",
+    "local": "/images/catalog/wazdan-sizzling-777-deluxe.webp",
+    "image": "https://wazdan.com/wp-content/uploads/Sizzling777Deluxe_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "Wazdan title-specific game icon on official provider page; strict WebP localization required."
+  },
+  {
+    "slug": "wazdan-sizzling-bells",
+    "page": "https://wazdan.com/games/sizzling-bells",
+    "local": "/images/catalog/wazdan-sizzling-bells.webp",
+    "image": "https://wazdan.com/wp-content/uploads/SizzlingBells_icon_600x450_webp90.webp",
+    "requireExplicitImage": true,
+    "note": "First-party Wazdan Sizzling Bells exact game-cover asset; strict local WebP."
   }
 ]
