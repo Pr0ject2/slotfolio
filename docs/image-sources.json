@@ -6822,5 +6822,117 @@
     "local": "/images/catalog/3-oaks-gaming-grand.webp",
     "requireExplicitImage": true,
     "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "3-oaks-gaming-joker-glitz-x1000",
+    "page": "https://3oaks.com/game/joker_glitz_x1000",
+    "image": "https://3oaks.com/media/public/games/joker_glitz_x1000/img-fd37a35bf27be53277e67fbb61fa18c5.jpg",
+    "local": "/images/catalog/3-oaks-gaming-joker-glitz-x1000.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "3-oaks-gaming-lady-fortune",
+    "page": "https://3oaks.com/game/lady_fortune",
+    "image": "https://3oaks.com/media/public/games/lady_fortune/img-0ed942a59ac4e443bdd7b41a76d893ca.jpg",
+    "local": "/images/catalog/3-oaks-gaming-lady-fortune.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "3-oaks-gaming-lava-coins",
+    "page": "https://3oaks.com/game/lava_coins",
+    "image": "https://3oaks.com/media/public/games/lava_coins/img-1cd158c0f0bd4643786009898f222f7f.jpg",
+    "local": "/images/catalog/3-oaks-gaming-lava-coins.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "3-oaks-gaming-lava-coins-2",
+    "page": "https://3oaks.com/game/lava_coins_2",
+    "image": "https://3oaks.com/media/public/games/lava_coins_2/img-2735178102350b42f325dd88da086c58.jpg",
+    "local": "/images/catalog/3-oaks-gaming-lava-coins-2.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "3-oaks-gaming-little-farm",
+    "page": "https://3oaks.com/game/little_farm",
+    "image": "https://3oaks.com/media/public/games/little_farm/img-100e851abf689ec89433ebc3c7ad0d37.jpg",
+    "local": "/images/catalog/3-oaks-gaming-little-farm.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "3-oaks-gaming-lord-of-thunder",
+    "page": "https://3oaks.com/game/lord_of_thunder",
+    "image": "https://3oaks.com/media/public/games/lord_of_thunder/img-2498adc6eec897b5439ce7dd85f84793.jpg",
+    "local": "/images/catalog/3-oaks-gaming-lord-of-thunder.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "3-oaks-gaming-lucky-apple-x1000",
+    "page": "https://3oaks.com/game/lucky_apple_x1000",
+    "image": "https://3oaks.com/media/public/games/lucky_apple_x1000/img-4cc2e9dfee570cfb25865a9dfef3e0b2.jpg",
+    "local": "/images/catalog/3-oaks-gaming-lucky-apple-x1000.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "3-oaks-gaming-lucky-penny",
+    "page": "https://3oaks.com/game/lucky_penny",
+    "image": "https://3oaks.com/media/public/games/lucky_penny/img-8c936d8d0a4d933672fdef75e50e8e6b.jpg",
+    "local": "/images/catalog/3-oaks-gaming-lucky-penny.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "3-oaks-gaming-lucky-penny-2",
+    "page": "https://3oaks.com/game/lucky_penny_2",
+    "image": "https://3oaks.com/media/public/games/lucky_penny_2/img-fcc84510edb27dafadd314c0d7cca790.jpg",
+    "local": "/images/catalog/3-oaks-gaming-lucky-penny-2.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "3-oaks-gaming-lucky-penny-3-pots-super-wheel",
+    "page": "https://3oaks.com/game/lucky_penny_3_pots_super_wheel",
+    "image": "https://3oaks.com/media/public/games/lucky_penny_3_pots_super_wheel/img-662eee0c65e55965a8a7ae346ded0dec.jpg",
+    "local": "/images/catalog/3-oaks-gaming-lucky-penny-3-pots-super-wheel.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "3-oaks-gaming-lucky-penny-power-scatter",
+    "page": "https://3oaks.com/game/lucky_penny_powerscatter",
+    "image": "https://3oaks.com/media/public/games/lucky_penny_powerscatter/img-c7b97ede4ae56a8c89e697bbc49d5005.jpg",
+    "local": "/images/catalog/3-oaks-gaming-lucky-penny-power-scatter.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "3-oaks-gaming-magic-apple",
+    "page": "https://3oaks.com/game/magic_apple",
+    "image": "https://3oaks.com/media/public/games/magic_apple/img-82a4eacdfacad88a6b0a5d99318ec1e6.jpg",
+    "local": "/images/catalog/3-oaks-gaming-magic-apple.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "3-oaks-gaming-magic-apple-2",
+    "page": "https://3oaks.com/game/magic_apple_2",
+    "image": "https://3oaks.com/media/public/games/magic_apple_2/img-e4dc8d139e2ba417ebc10dd5ee4e1220.jpg",
+    "local": "/images/catalog/3-oaks-gaming-magic-apple-2.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "3-oaks-gaming-magic-clovers",
+    "page": "https://3oaks.com/game/magic_clovers",
+    "image": "https://3oaks.com/media/public/games/magic_clovers/img-8d3f826614bba6f05cb2dd7bfd26b01a.jpg",
+    "local": "/images/catalog/3-oaks-gaming-magic-clovers.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
   }
 ]
