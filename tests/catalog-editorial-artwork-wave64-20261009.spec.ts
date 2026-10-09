@@ -42,11 +42,11 @@ const cases = [
   ],
   [
     "wazdan-power-of-sun-svarog",
-    "Power of Sun: Svarog использует славянский миф о "
+    "Power of Sun: Svarog посвящён славянскому богу о"
   ],
   [
     "wazdan-prosperity-pearls",
-    "Prosperity Pearls посвящена жемчужинам в азиатско"
+    "Prosperity Pearls использует 25 отдельных позици"
   ],
   [
     "wazdan-prosperity-reels",
@@ -54,19 +54,19 @@ const cases = [
   ],
   [
     "wazdan-reel-hero",
-    "Reel Hero соединяет пятибарабанную сетку с геройс"
+    "Reel Hero построен на пяти барабанах и двадцати "
   ],
   [
     "wazdan-reel-joke",
-    "Reel Joke использует ретро-шутовскую тему и обычн"
+    "Reel Joke оформляет шесть барабанов и двадцать л"
   ],
   [
     "wazdan-relic-hunters-and-the-book-of-faith",
-    "Relic Hunters and the Book of Faith строится вокр"
+    "Relic Hunters and the Book of Faith использует ш"
   ],
   [
     "wazdan-santas-gifts-frenzy",
-    "Santa's Gifts Frenzy использует подарочную рождес"
+    "Santa’s Gifts Frenzy — праздничная игра на пяти "
   ],
   [
     "wazdan-sizzling-777",

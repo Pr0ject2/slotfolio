@@ -66,7 +66,7 @@ const cases = [
   ],
   [
     "wazdan-santas-gifts-frenzy",
-    "Santa's Gifts Frenzy"
+    "Santa`s Gifts Frenzy"
   ],
   [
     "wazdan-sizzling-777",
