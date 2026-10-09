@@ -881,6 +881,20 @@ const artworkBySlug: Record<string, string> = {
   "wazdan-turbo-play": "/images/catalog/wazdan-turbo-play.webp",
   "wazdan-unicorn-reels": "/images/catalog/wazdan-unicorn-reels.webp",
   "wazdan-valentines-coins": "/images/catalog/wazdan-valentines-coins.webp",
+  "wazdan-valhalla": "/images/catalog/wazdan-valhalla.webp",
+  "wazdan-vegas-hot": "/images/catalog/wazdan-vegas-hot.webp",
+  "wazdan-vegas-hot-81": "/images/catalog/wazdan-vegas-hot-81.webp",
+  "wazdan-vegas-reels-ii": "/images/catalog/wazdan-vegas-reels-ii.webp",
+  "wazdan-welcome-to-hell-81": "/images/catalog/wazdan-welcome-to-hell-81.webp",
+  "wazdan-wild-girls": "/images/catalog/wazdan-wild-girls.webp",
+  "wazdan-wild-guns": "/images/catalog/wazdan-wild-guns.webp",
+  "wazdan-wild-jack": "/images/catalog/wazdan-wild-jack.webp",
+  "wazdan-wild-jack-81": "/images/catalog/wazdan-wild-jack-81.webp",
+  "wazdan-win-replay": "/images/catalog/wazdan-win-replay.webp",
+  "3-oaks-gaming-coin-up-hot-fire": "/images/catalog/3-oaks-gaming-coin-up-hot-fire.webp",
+  "3-oaks-gaming-coin-up-lightning": "/images/catalog/3-oaks-gaming-coin-up-lightning.webp",
+  "3-oaks-gaming-fishin-bear": "/images/catalog/3-oaks-gaming-fishin-bear.webp",
+  "3-oaks-gaming-grand": "/images/catalog/3-oaks-gaming-grand.webp",
 
 };
 

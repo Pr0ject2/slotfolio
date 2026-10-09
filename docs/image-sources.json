@@ -674,7 +674,8 @@
     "page": "https://3oaks.com/game/coinup_volcano",
     "image": "https://3oaks.com/media/thumbnails/public/coinup_volcano/coinup_volcano_banner_vmuuz_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-coin-up-volcano.webp",
-    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request.",
+    "requireExplicitImage": true
   },
   {
     "slug": "3-oaks-gaming-coin-volcano",
@@ -716,7 +717,8 @@
     "page": "https://3oaks.com/game/dragon_pearls",
     "image": "https://3oaks.com/media/thumbnails/public/dragon_pearls/dragon_pearls_banner_vmari_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-dragon-pearls.webp",
-    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request.",
+    "requireExplicitImage": true
   },
   {
     "slug": "3-oaks-gaming-egypt-fire-2",
@@ -772,28 +774,32 @@
     "page": "https://3oaks.com/game/grab_the_gold",
     "image": "https://3oaks.com/media/thumbnails/public/grab_the_gold/grab_the_gold_banner_fmcse_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-grab-the-gold.webp",
-    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request.",
+    "requireExplicitImage": true
   },
   {
     "slug": "3-oaks-gaming-green-chilli",
     "page": "https://3oaks.com/game/green_chilli",
     "image": "https://3oaks.com/media/thumbnails/public/green_chilli/green_chilli_banner_mrhbg_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-green-chilli.webp",
-    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request.",
+    "requireExplicitImage": true
   },
   {
     "slug": "3-oaks-gaming-green-chilli-2",
     "page": "https://3oaks.com/game/green_chilli_2",
     "image": "https://3oaks.com/media/thumbnails/public/green_chilli_2/green_chilli_2_banner_syvie_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-green-chilli-2.webp",
-    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request.",
+    "requireExplicitImage": true
   },
   {
     "slug": "3-oaks-gaming-hit-more-gold",
     "page": "https://3oaks.com/game/hit_more_gold",
     "image": "https://3oaks.com/media/thumbnails/public/hit_more_gold/hit_more_gold_banner_hqvdi_768x432.jpg",
     "local": "/images/catalog/3-oaks-gaming-hit-more-gold.webp",
-    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request."
+    "note": "Provider game artwork used with permission. Local copy only; no runtime remote request.",
+    "requireExplicitImage": true
   },
   {
     "slug": "3-oaks-gaming-hit-the-gold",
@@ -6704,5 +6710,117 @@
     "image": "https://wazdan.com/wp-content/uploads/ValentinesCoins_icon_600x450.webp",
     "requireExplicitImage": true,
     "note": "Exact game-specific first-party Wazdan cover URL confirmed on official game page; reviewed and strictly localized."
+  },
+  {
+    "slug": "wazdan-valhalla",
+    "page": "https://wazdan.com/games/valhalla",
+    "image": "https://wazdan.com/wp-content/uploads/Valhalla_icon_600x450_webp90.webp",
+    "local": "/images/catalog/wazdan-valhalla.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-vegas-hot",
+    "page": "https://wazdan.com/games/vegas-hot",
+    "image": "https://wazdan.com/wp-content/uploads/VegasHot_icon_600x450_webp90.webp",
+    "local": "/images/catalog/wazdan-vegas-hot.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-vegas-hot-81",
+    "page": "https://wazdan.com/games/vegas-hot-81",
+    "image": "https://wazdan.com/wp-content/uploads/VegasHot81_icon_600x450_webp90.webp",
+    "local": "/images/catalog/wazdan-vegas-hot-81.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-vegas-reels-ii",
+    "page": "https://wazdan.com/games/vegas-reels-ii",
+    "image": "https://wazdan.com/wp-content/uploads/VegasReelsII_icon_600x450_webp90.webp",
+    "local": "/images/catalog/wazdan-vegas-reels-ii.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-welcome-to-hell-81",
+    "page": "https://wazdan.com/games/welcome-to-hell-81",
+    "image": "https://wazdan.com/wp-content/uploads/WelcomeToHell81_icon_600x450_webp90.webp",
+    "local": "/images/catalog/wazdan-welcome-to-hell-81.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-wild-girls",
+    "page": "https://wazdan.com/games/wild-girls",
+    "image": "https://wazdan.com/wp-content/uploads/WildGirls_icon_600x450_webp90.webp",
+    "local": "/images/catalog/wazdan-wild-girls.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-wild-guns",
+    "page": "https://wazdan.com/games/wild-guns",
+    "image": "https://wazdan.com/wp-content/uploads/WildGuns_icon_600x450_webp90.webp",
+    "local": "/images/catalog/wazdan-wild-guns.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-wild-jack",
+    "page": "https://wazdan.com/games/wild-jack",
+    "image": "https://wazdan.com/wp-content/uploads/WildJack_icon_600x450_webp90.webp",
+    "local": "/images/catalog/wazdan-wild-jack.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-wild-jack-81",
+    "page": "https://wazdan.com/games/wild-jack-81",
+    "image": "https://wazdan.com/wp-content/uploads/WildJack81_icon_600x450_webp90.webp",
+    "local": "/images/catalog/wazdan-wild-jack-81.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "wazdan-win-replay",
+    "page": "https://wazdan.com/games/win-replay",
+    "image": "https://wazdan.com/wp-content/uploads/WinReplay_icon_600x450_webp90.webp",
+    "local": "/images/catalog/wazdan-win-replay.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "3-oaks-gaming-coin-up-hot-fire",
+    "page": "https://3oaks.com/game/coin_up",
+    "image": "https://3oaks.com/media/public/games/coin_up/gallery/img_jnwji.png",
+    "local": "/images/catalog/3-oaks-gaming-coin-up-hot-fire.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "3-oaks-gaming-coin-up-lightning",
+    "page": "https://3oaks.com/game/coin_lightning",
+    "image": "https://3oaks.com/media/public/games/coin_lightning/gallery/img_uyung.jpg",
+    "local": "/images/catalog/3-oaks-gaming-coin-up-lightning.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "3-oaks-gaming-fishin-bear",
+    "page": "https://3oaks.com/game/fishing_bear",
+    "image": "https://3oaks.com/media/public/games/fishing_bear/gallery/img_xdfwb.png",
+    "local": "/images/catalog/3-oaks-gaming-fishin-bear.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
+  },
+  {
+    "slug": "3-oaks-gaming-grand",
+    "page": "https://3oaks.com/game/grand",
+    "image": "https://3oaks.com/media/public/news/new-release-grand_ooesw.png",
+    "local": "/images/catalog/3-oaks-gaming-grand.webp",
+    "requireExplicitImage": true,
+    "note": "Reviewed game-specific official developer image with strict local WebP generation."
   }
 ]
