@@ -40,9 +40,6 @@ jobs:
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
 
-      - name: Probe official 3 Oaks game artwork (temporary research)
-        run: node scripts/probe-3oaks.mjs
-
       - name: Typecheck source and tests
         run: npm run typecheck
 
