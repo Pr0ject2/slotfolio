@@ -356,10 +356,90 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   "3-oaks-gaming-crystal-scarabs": { intro:["В Crystal Scarabs Boost собирает значения синих скарабеев.","Hold & Win использует Bonus, Bonus Gold и Boost Symbols."], editorial:"Hold & Win использует Bonus, Bonus Gold и Boost Symbols.", features:[{title:"Три бустера",description:"Plus, Multiplier и Transform открываются над полем."}] },
   "3-oaks-gaming-dancing-joker": { intro:["В Dancing Joker Joker на третьем барабане одновременно Wild и Collect.","Шкалы копилок дают шесть или двенадцать фриспинов."], editorial:"Шкалы копилок дают шесть или двенадцать фриспинов.", features:[{title:"Joker Collect",description:"Он собирает все видимые Coin Symbols."}] },
   "3-oaks-gaming-dj-tiger-x1000": { intro:["DJ Tiger x1000 работает на каскадах с постоянным Wild.","Во фриспинах выигрышные множители складываются в общий."], editorial:"Во фриспинах выигрышные множители складываются в общий.", features:[{title:"Mystery Multiplier",description:"После каскада раскрывает значение от x10 до x1000."}] },
-  "3-oaks-gaming-coin-volcano-2": { intro:["Coin Volcano 2 запускает респины заполненной средней линией.","Вулканические множители и Boost Bonus меняют ход бонуса."], editorial:"Вулканические множители и Boost Bonus меняют ход бонуса.", features:[{title:"Основная механика",description:"Coin Volcano 2 запускает респины заполненной средней линией."}] },
-  "3-oaks-gaming-egypt-fire-2": { intro:["Egypt Fire 2 запускает Hold & Win шестью огненными шарами.","Power Symbol расширяет поле и добавляет возможности бонуса."], editorial:"Power Symbol расширяет поле и добавляет возможности бонуса.", features:[{title:"Основная механика",description:"Egypt Fire 2 запускает Hold & Win шестью огненными шарами."}] },
-  "3-oaks-gaming-egypt-power-x1000": { intro:["Egypt Power x1000 использует каскады и солнечные множители до x1000.","Во фриспинах множители накапливаются."], editorial:"Во фриспинах множители накапливаются.", features:[{title:"Основная механика",description:"Egypt Power x1000 использует каскады и солнечные множители до x1000."}] },
-  "3-oaks-gaming-fortune-globe": { intro:["Fortune Globe запускает Hold & Win шестью шарами.","Сбор 10, 15, 20 и 25 шаров открывает новые ряды."], editorial:"Сбор 10, 15, 20 и 25 шаров открывает новые ряды.", features:[{title:"Основная механика",description:"Fortune Globe запускает Hold & Win шестью шарами."}] },
+  "3-oaks-gaming-coin-volcano-2": {
+    "intro": [
+      "Coin Volcano 2 расширяет вулканический слот до 3×5: заполнение средней линии соответствующими символами открывает три респина, а Sticky Coin может закрепиться заранее и помочь запустить бонус.",
+      "В Hold & Win появляются монеты Mini, Minor и Major, Mystery и Collector. Извержение способно добавить до девяти Volcano Multipliers, а купленный Boost Bonus гарантирует множители от x5."
+    ],
+    "editorial": "Не переносим в сиквел условия оригинального Coin Volcano 3×3. Здесь увеличенная сетка, Sticky Coin и два специальных бонусных режима: Ultra появляется случайно, Boost доступен через покупку в отдельных регионах. Grand связан с заполнением сетки, а не с выпадением одного Mystery.",
+    "features": [
+      {
+        "title": "Sticky Coin и средняя линия",
+        "description": "Специальная монета фиксируется в основной игре; заполнение среднего ряда открывает три респина Hold & Win."
+      },
+      {
+        "title": "Mystery, Jackpot и Collect",
+        "description": "В респинах Mystery превращается в бонусный либо джекпотный символ, Collect собирает номиналы, а полный экран может дать Grand."
+      },
+      {
+        "title": "Volcano Multipliers и Boost",
+        "description": "Извержение добавляет до девяти множителей, повторные значения на клетке совмещаются; в Boost они стартуют с x5."
+      }
+    ]
+  },
+  "3-oaks-gaming-egypt-fire-2": {
+    "intro": [
+      "Egypt Fire 2 возвращает фараонов на поле 5×4 с двадцатью линиями. Шесть Fireball Bonus открывают Hold & Win, в котором новые призовые значения закрепляются, а сетка может вырасти до восьми рядов.",
+      "Scarab POWER SYMBOL после респинов открывает отдельное колесо из шести клеток. Если колесо заполнено, выплата мини-бонуса может получить множитель до x10; Scarab Metre даёт альтернативный вход в Hold & Win."
+    ],
+    "editorial": "Power Feature — именно новая часть механики второй Egypt Fire. Не следует путать Royal Jackpot за полное расширенное поле с множителем x10 колесного мини-раунда. В Free Spins остаются только дорогостоящие знаки.",
+    "features": [
+      {
+        "title": "Шесть Fireball и расширение до 5×8",
+        "description": "Hold & Win запускается шестью Bonus, новые символы удерживаются, а до четырёх дополнительных рядов способны привести к Royal 10 000x."
+      },
+      {
+        "title": "Scarab POWER Feature",
+        "description": "Скарабей открывает мини-бонус на шести позициях; заполненное колесо может умножить приз до x10 и запуститься неоднократно."
+      },
+      {
+        "title": "Scarab Metre и Free Spins",
+        "description": "Счётчик позволяет открыть Hold & Win без обычного сочетания, а Free Spins используют преимущественно дорогие символы."
+      }
+    ]
+  },
+  "3-oaks-gaming-egypt-power-x1000": {
+    "intro": [
+      "Egypt Power x1000 использует каскады на египетской сетке: после каждого выигрыша символы исчезают и могут создать следующую комбинацию в том же спине.",
+      "Четыре Scatter открывают Free Spins, где множители выигрышных вращений накапливаются в Total Multiplier. Bonus Shop предлагает четыре бонусных варианта, включая Epic Free Spins с начальным множителем x100."
+    ],
+    "editorial": "Множитель x1000 в названии не равен теоретическому выигрышу всего слота. Официальный выпуск отдельно указывает потенциал до 40 000x. Epic Multi Hunt Booster может гарантировать минимальный x100 на дополнительной ставке, но не выплату x100.",
+    "features": [
+      {
+        "title": "Каскады на египетских барабанах",
+        "description": "Оплаченные комбинации удаляются, и на их месте появляются новые символы для следующего расчёта."
+      },
+      {
+        "title": "Четыре Scatter и Total Multiplier",
+        "description": "В Free Spins множители за выигравшие вращения прибавляются к общему значению до конца бонуса."
+      },
+      {
+        "title": "Epic Free Spins и Spin Boosters",
+        "description": "В Bonus Shop четыре вида Free Spins, Epic стартует с x100; отдельные Boosters меняют шанс и минимальные множители за доплату."
+      }
+    ]
+  },
+  "3-oaks-gaming-fortune-globe": {
+    "intro": [
+      "Fortune Globe — мистический слот на поле 5×4 и двадцати линиях, в котором шесть бонусных шаров открывают Hold & Win с тремя респинами.",
+      "Когда собрано 10, 15, 20 и 25 Bonus Globes, открываются новые пятый, шестой, седьмой и восьмой ряды. Заполнение одного дополнительного ряда даёт множитель до x10, а вся расширенная сетка открывает Royal Jackpot 10 000x."
+    ],
+    "editorial": "Здесь пять фиксированных джекпотов и отдельный Royal за заполнение сорока позиций. Candle Metre работает даже во Free Spins и может открыть Hold & Win, но его не следует считать гарантирующим Royal.",
+    "features": [
+      {
+        "title": "Четыре этапа расширения",
+        "description": "Накопление 10/15/20/25 бонусных шаров открывает по одному дополнительному ряду до сетки 5×8."
+      },
+      {
+        "title": "Ряды-множители и Royal",
+        "description": "Полный дополнительный ряд усиливает номиналы до x10; заполнение всего поля даёт Royal Jackpot 10 000x."
+      },
+      {
+        "title": "Candles Metre и восемь Free Spins",
+        "description": "Заполненные свечи дают альтернативный Hold & Win; три Scatter открывают восемь Free Spins с дорогими символами и повторными запусками."
+      }
+    ]
+  },
   "3-oaks-gaming-gold-express": { intro:["Gold Express запускает Hold & Win шестью золотыми монетами.","Boost собирает видимые монеты."], editorial:"Boost собирает видимые монеты.", features:[{title:"Основная механика",description:"Gold Express запускает Hold & Win шестью золотыми монетами."}] },
   "3-oaks-gaming-gold-nuggets": { intro:["Gold Nuggets запускает Hold & Win тремя символами в центральной линии.","Collect собирает значения и добавляет множитель x2–x20."], editorial:"Collect собирает значения и добавляет множитель x2–x20.", features:[{title:"Основная механика",description:"Gold Nuggets запускает Hold & Win тремя символами в центральной линии."}] },
   "3-oaks-gaming-golden-teapot": { intro:["Golden Teapot сочетает фриспины с Wild до x3 и Hold & Win.","Золотые чайники дают джекпоты."], editorial:"Золотые чайники дают джекпоты.", features:[{title:"Основная механика",description:"Golden Teapot сочетает фриспины с Wild до x3 и Hold & Win."}] },

@@ -1,5 +1,9 @@
 import { expect, test } from "@playwright/test";
 const cases = [
+  ["3-oaks-gaming-coin-volcano-2","Coin Volcano 2 расширяет вулканический слот до"],
+  ["3-oaks-gaming-egypt-fire-2","Egypt Fire 2 возвращает фараонов на поле 5×4 с"],
+  ["3-oaks-gaming-egypt-power-x1000","Egypt Power x1000 использует каскады на египет"],
+  ["3-oaks-gaming-fortune-globe","Fortune Globe — мистический слот на поле 5×4 и"],
   [
     "3-oaks-gaming-hit-the-gold",
     "Hit the Gold! отправляет на золотой прииск с пол"

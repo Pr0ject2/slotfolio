@@ -1,5 +1,9 @@
 import { expect, test } from "@playwright/test";
 const cases = [
+  ["3-oaks-gaming-coin-volcano-2","Coin Volcano 2"],
+  ["3-oaks-gaming-egypt-fire-2","Egypt Fire 2"],
+  ["3-oaks-gaming-egypt-power-x1000","Egypt Power x1000"],
+  ["3-oaks-gaming-fortune-globe","Fortune Globe"],
   [
     "3-oaks-gaming-hit-the-gold",
     "Hit the Gold!"
