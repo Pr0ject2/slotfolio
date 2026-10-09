@@ -6852,6 +6852,426 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       }
     ]
   },
+  "wazdan-mayan-ritual": {
+    "intro": [
+      "Mayan Ritual разворачивается среди храмов майя: пять барабанов с сорока линиями принимают Giant Symbols размерами 2×2 и 3×3, которые сразу занимают несколько позиций.",
+      "Giant Bonus Symbol заменяет занятое место мини-слотом Bonus Slot; его результатом становятся множители и Free Spins. Giant Wild в виде пирамиды подменяет обычные символы."
+    ],
+    "editorial": "Mayan Ritual отличается от Los Muertos не названием функций, а темой символов и 40-линейной сеткой. Макс. выигрыш 850x из Game Info не равен множителю отдельного мини-слота.",
+    "features": [
+      {
+        "title": "Giant Symbols 2×2 и 3×3",
+        "description": "Крупные знаки могут занять четыре или девять клеток; расположение на первом барабане способно сразу дать сочетание."
+      },
+      {
+        "title": "Bonus Slot",
+        "description": "При Giant Bonus открывается дополнительный мини-слот на занятом месте с множителями либо Free Spins."
+      },
+      {
+        "title": "Пирамида Giant Wild",
+        "description": "Большой Wild замещает обычные символы, кроме бонусных; Gamble со склепами работает отдельно после приза."
+      }
+    ]
+  },
+  "wazdan-miami-beach": {
+    "intro": [
+      "Miami Beach использует пять барабанов и двадцать линий в пляжной теме. Обычный Wild имеет множитель x2 и помогает дополнить выигрышную комбинацию.",
+      "Серия Free Spins объединяет Expanding Wilds с Increasing Multiplier: внутри бонуса Wild способен расширяться, а множитель меняется по правилам выигрышей."
+    ],
+    "editorial": "Max Win 7200x относится ко всей математической модели Miami Beach. Нельзя считать любое появление Wild x2 гарантией такого результата или переносить отсюда бонус на фруктовые версии Wazdan.",
+    "features": [
+      {
+        "title": "Пляжный Wild x2",
+        "description": "Специальный знак подменяет обычные символы и удваивает выигрыш, в котором участвует."
+      },
+      {
+        "title": "Free Spins",
+        "description": "Scatter активирует бесплатные вращения; производитель выделяет их как отдельную функцию."
+      },
+      {
+        "title": "Растущий множитель и Expanding Wild",
+        "description": "В бонусе расширяющиеся Wild сочетаются с Increasing Multiplier, не равным фиксированному max win."
+      }
+    ]
+  },
+  "wazdan-midnight-in-tokyo": {
+    "intro": [
+      "Midnight in Tokyo отправляет пять барабанов с 243 способами выигрыша в неоновый Токио с котами-самураями. Wild Splitters меняют возможности формирования сочетаний.",
+      "Отдельный Hold the Jackpot собирает денежные значения; при этом Wild Splitters повышают число способов, а не заменяют бонусный раунд. В описании встречается 243+ ways, тогда как Game Info сообщает 243."
+    ],
+    "editorial": "Не следует приравнивать знак плюс из маркетингового текста «243+» к бесконечному числу способов. В техническом паспорте зафиксировано 243, а max win 3000x относится к полной игре.",
+    "features": [
+      {
+        "title": "Wild Splitters",
+        "description": "Разделяющие Wild расширяют комбинации и количество доступных способов оплаты."
+      },
+      {
+        "title": "Hold the Jackpot",
+        "description": "Бонусный режим отдельно накапливает Cash и джекпотные значения."
+      },
+      {
+        "title": "Buy Feature и Gamble",
+        "description": "Wazdan указывает покупку бонусной функции и риск-игру после выплаты; это разные пути взаимодействия."
+      }
+    ]
+  },
+  "wazdan-mighty-crown-empire-of-gold": {
+    "intro": [
+      "Mighty Crown: Empire of Gold построена на трёх барабанах и пяти линиях. Три Bonus Symbols открывают Empire Bonus, где каждый бонусный знак превращается в Wild.",
+      "Когда Wild занимают все позиции, отдельные значения от x1 до x5 могут сложиться в суммарный бонусный множитель до x15. Это не максимальный выигрыш всей игры 1500x."
+    ],
+    "editorial": "Empire of Gold делает ставку на Wild-превращение в Empire Bonus, в отличие от Legacy of Mars, где цель — короны Scatter и полное поле семёрок. У Empire официально очень высокая волатильность.",
+    "features": [
+      {
+        "title": "Три Bonus Symbols",
+        "description": "Тройка специальных знаков запускает Empire Bonus и преобразует их в Wild."
+      },
+      {
+        "title": "Wild в Empire Bonus",
+        "description": "Каждый Bonus становится подстановочным символом, меняя состав призовых линий."
+      },
+      {
+        "title": "До x15 суммарно",
+        "description": "При заполнении позиций Wild дают множители x1–x5, суммарно до x15; Chance Level и Buy Feature влияют на путь к бонусу."
+      }
+    ]
+  },
+  "wazdan-mighty-crown-legacy-of-mars": {
+    "intro": [
+      "Legacy of Mars — космическая версия Mighty Crown с пятью барабанами и десятью линиями. Scatter Respin удерживает попавшую корону на следующее вращение.",
+      "Пять корон Scatter либо пятнадцать семёрок на всём поле запускают Grand Jackpot 3000x. Две, три или четыре короны дают младшие джекпотные уровни."
+    ],
+    "editorial": "Legacy of Mars не использует Empire Bonus от трёх Wild: её независимая механика — лестница Scatter и альтернативный способ Grand через все пятнадцать семёрок.",
+    "features": [
+      {
+        "title": "Scatter Respin",
+        "description": "Коронa может закрепиться на следующем вращении, повышая шанс собрать остальные Scatter."
+      },
+      {
+        "title": "Grand за два разных условия",
+        "description": "Пять корон или полное поле пятнадцати семёрок открывают главный джекпот 3000x."
+      },
+      {
+        "title": "Chance Level x2/x5/x10",
+        "description": "Множители увеличивают цену ставки ради вероятности бонуса, но не являются множителями уже полученного приза."
+      }
+    ]
+  },
+  "wazdan-mighty-fish-blue-marlin": {
+    "intro": [
+      "Mighty Fish: Blue Marlin выстраивает бонус вокруг рыболовного Cash Out, а не классических линий: Game Info обозначает пять барабанов и ноль линий.",
+      "Помимо обычного Cash Out есть Trawler Cash Out, который участвует в сборе значений, а Collect to Infinity и Free Spins добавляют отдельные способы накопления."
+    ],
+    "editorial": "Blue Marlin отличается от Mighty Wild: Gorilla не только героем, но и двумя разновидностями Cash Out. RTP 96,18%, очень высокая волатильность и максимум 2500x подтверждены непосредственно Wazdan.",
+    "features": [
+      {
+        "title": "Два Cash Out",
+        "description": "Обычный Cash Out и Trawler Cash Out действуют как разные способы собрать видимые Cash-значения."
+      },
+      {
+        "title": "Collect to Infinity",
+        "description": "Коллекторы сохраняют роль в накопительном бонусе, влияя на итог собранных сумм."
+      },
+      {
+        "title": "Free Spins и Chance Level",
+        "description": "Scatter открывает серию бесплатных вращений, а Chance Level позволяет изменить шансы бонуса через ставку."
+      }
+    ]
+  },
+  "wazdan-mighty-hot-777": {
+    "intro": [
+      "Mighty Hot: 777 сохраняет фруктовую ретро-атмосферу на пяти барабанах, но Game Info указывает десять способов выигрыша вместо привычных линий.",
+      "Scatter приносит выплату за три, четыре или пять специальных символов независимо от линий. Заполнение барабанов стеной одинаковых знаков превращает сетку в основную цель крупных выплат."
+    ],
+    "editorial": "У Mighty Hot нет подтверждённого Hold the Jackpot из Mighty Symbols: Sevens. Макс. выплата 2500x относится к игре в целом, а стена одинаковых знаков не заявлена отдельным множителем x2500.",
+    "features": [
+      {
+        "title": "Пять барабанов и десять способов",
+        "description": "В официальном паспорте стоит 5 / 10 Ways to Win, а не десять фиксированных линий."
+      },
+      {
+        "title": "Scatter 3/4/5",
+        "description": "Три, четыре или пять Scatter оплачиваются независимо от обычных сочетаний."
+      },
+      {
+        "title": "Стены семёрок и фруктов",
+        "description": "Крупные комбинации получаются при заполнении целых барабанов одинаковыми символами; Gamble доступен отдельно."
+      }
+    ]
+  },
+  "wazdan-mighty-symbols-crowns": {
+    "intro": [
+      "Mighty Symbols: Crowns строится вокруг Giant Crown на пяти барабанах и десяти линиях. Огромная корона подменяет символы и может остаться закреплённой во Free Spins.",
+      "В бонусном раунде возможна Walking Giant Crown, перемещающаяся между позициями после вращений, а случайный бонусный множитель усиливает приз."
+    ],
+    "editorial": "Crowns не следует смешивать с Diamonds: Giant Crown имеет собственный Walking-режим, хотя RTP и максимальные выигрыши обеих версий близки. Официальный максимум Crowns — 2500x.",
+    "features": [
+      {
+        "title": "Giant Crown Wild",
+        "description": "Огромная корона подменяет другие обычные знаки в десятилинейных комбинациях."
+      },
+      {
+        "title": "Sticky и Walking Crown",
+        "description": "Во время Free Spins корона может закрепляться либо перемещаться при новых вращениях."
+      },
+      {
+        "title": "Случайный множитель бонуса",
+        "description": "Отдельный multiplier действует внутри Free Spins; три уровня Chance Level могут повысить вероятность входа."
+      }
+    ]
+  },
+  "wazdan-mighty-symbols-diamonds": {
+    "intro": [
+      "Mighty Symbols: Diamonds заменяет корону бриллиантовым Giant Diamond Wild, сохраняя пять барабанов и десять линий.",
+      "В Free Spins огромный бриллиант может перемещаться по полю как Walking Giant Diamond, а множители бонуса достигают x5."
+    ],
+    "editorial": "У Diamonds RTP 96,13%, у Crowns 96,15%, несмотря на общий максимум 2500x. Нельзя приравнивать x5 внутри Free Spins к общей максимальной выплате.",
+    "features": [
+      {
+        "title": "Diamond и Giant Diamond Wild",
+        "description": "Бриллиантовые Wild подставляются вместо обычных символов, образуя линейные сочетания."
+      },
+      {
+        "title": "Walking Giant Diamond",
+        "description": "В бесплатных вращениях крупный символ способен смещаться и создавать новые выигрыши."
+      },
+      {
+        "title": "Бонусные множители до x5",
+        "description": "Специальный множитель усиливает соответствующие выплаты Free Spins; Chance Level повышает вероятность запуска."
+      }
+    ]
+  },
+  "wazdan-mighty-symbols-jokers": {
+    "intro": [
+      "Mighty Symbols: Jokers отходит от линий: пятнадцать позиций и ноль линий дают отдельный Hold the Jackpot, а Joker Rampage создаёт альтернативный бонусный сценарий.",
+      "Cash Infinity и Sticky to Infinity помогают удерживать денежные значения до бонусного события. Mystery Multiplier действует внутри своей функции, а не является универсальным max win."
+    ],
+    "editorial": "Jokers отличается от Crowns и Diamonds полностью: вместо Free Spins с Walking Wild здесь Hold the Jackpot и Jokers Rampage. Потолок 750x заметно ниже их 2500x.",
+    "features": [
+      {
+        "title": "Hold the Jackpot",
+        "description": "На накопительной сетке сохраняются денежные и джекпотные символы."
+      },
+      {
+        "title": "Jokers Rampage",
+        "description": "Самостоятельный бонусный режим в исполнении Joker Wild, не равный Walking Crown."
+      },
+      {
+        "title": "Cash и Sticky to Infinity",
+        "description": "Специальные символы могут оставаться на поле; Mystery Multiplier и Chance Level относятся к отдельным условиям."
+      }
+    ]
+  },
+  "wazdan-mighty-symbols-sevens": {
+    "intro": [
+      "Mighty Symbols: Sevens использует пять барабанов и десять линий, где огромные семёрки выступают Wild и заменяют обычные знаки, кроме Scatter.",
+      "Одновременно заявлен Hold the Jackpot с верхней наградой 2000x: это другая математическая схема, чем бонус Walking Crown в Crowns."
+    ],
+    "editorial": "Максимум Sevens 2000x нельзя считать значением каждого Giant Seven Wild. Слот отличают связка классических линий с джекпотным сбором и собственный вариант Mighty Sevens.",
+    "features": [
+      {
+        "title": "Гигантские семёрки Wild",
+        "description": "Mighty Sevens подменяют стандартные символы, но не Scatter."
+      },
+      {
+        "title": "Hold the Jackpot",
+        "description": "Отдельный бонус собирает призовые значения с официальным максимумом игры 2000x."
+      },
+      {
+        "title": "Buy Feature и Chance Level",
+        "description": "Два способа попасть в бонус — покупка по правилам и изменение вероятности за более дорогую ставку."
+      }
+    ]
+  },
+  "wazdan-mighty-wild-gorilla": {
+    "intro": [
+      "Mighty Wild: Gorilla использует восемь базовых позиций без линий и Collector-символы, которые следят за значениями Cash.",
+      "Hold the Jackpot раскрывается на шестнадцатипозиционном бонусном поле с тремя респинами, обновляемыми новыми символами. В Free Spins Collector сохраняется, а Collect to Infinity удерживает его до конца серии."
+    ],
+    "editorial": "В описании Gorilla восемь барабанов Game Info и шестнадцать бонусных позиций относятся к разным этапам игры. Их нельзя смешивать в одном поле технического паспорта.",
+    "features": [
+      {
+        "title": "Hold the Jackpot на 16 позиций",
+        "description": "Бонус даёт три респина, новые символы обновляют счётчик; Grand Jackpot 2500x связан с полным заполнением."
+      },
+      {
+        "title": "Десять Free Spins и Collect to Infinity",
+        "description": "Collector не исчезает во Free Spins; Countdown Boosters и Collect to Infinity продлевают его работу."
+      },
+      {
+        "title": "Cash Out под Collector",
+        "description": "Случайный Cash Out выплачивает собранные значения, а Chance Level x2/x5/x10 увеличивает ставку ради бонуса."
+      }
+    ]
+  },
+  "wazdan-mighty-wild-jaguar": {
+    "intro": [
+      "Mighty Wild: Jaguar использует пятнадцать позиций без линий с двумя самостоятельными бонусами: Hold the Jackpot и Wild Rampage.",
+      "Cash Infinity и Sticky to Infinity закрепляют денежные значения, а Mystery Multiplier добавляет отдельный уровень преобразования приза."
+    ],
+    "editorial": "Jaguar имеет максимум 750x, как Mighty Symbols: Jokers, но его Wild Rampage не следует подменять Jokers Rampage. Здесь характерна комбинация двух джекпотных режимов и пантерообразного Wild.",
+    "features": [
+      {
+        "title": "Wild Rampage",
+        "description": "Самостоятельный бонус с участием Wild, не совпадающий с обычным сбором Hold the Jackpot."
+      },
+      {
+        "title": "Cash Infinity и Sticky to Infinity",
+        "description": "Удерживаемые денежные символы помогают приблизить джекпотное событие."
+      },
+      {
+        "title": "Hold the Jackpot и Mystery Multiplier",
+        "description": "В отдельном бонусе собираются Cash-значения, а множители имеют собственные условия; Chance Level повышает вероятность активации."
+      }
+    ]
+  },
+  "wazdan-mighty-wild-panther-grand-gold-edition": {
+    "intro": [
+      "Panther Grand Gold Edition работает на пятнадцатипозиционном поле и объединяет Hold the Jackpot с Wild Rampage.",
+      "В Wild Rampage Panther Mystery Symbols могут усиливать джекпотные награды, тогда как Cash Infinity повышает шанс собрать нужные символы для Hold the Jackpot."
+    ],
+    "editorial": "Grand Gold Edition подтверждает максимум 1500x при RTP 96,15%. У Platinum потолок 2500x и дополнительно появляется Cash Out в базовой игре — это не просто разница в цвете.",
+    "features": [
+      {
+        "title": "Wild Rampage и Panther Mystery",
+        "description": "Бонусная функция способна умножать отдельные джекпотные выигрыши от Panther Mystery Symbols."
+      },
+      {
+        "title": "Hold the Jackpot",
+        "description": "Денежные и джекпотные значения удерживаются в отдельном призовом событии с Grand до 1500x."
+      },
+      {
+        "title": "Cash Infinity и Chance Level",
+        "description": "Удерживаемые знаки помогают приблизить бонус; Chance Level увеличивает вероятность за счёт ставки."
+      }
+    ]
+  },
+  "wazdan-mighty-wild-panther-grand-platinum-edition": {
+    "intro": [
+      "Panther Grand Platinum Edition повышает максимум до 2500x и добавляет Cash Out в основную игру, чего нет в перечне Gold Edition.",
+      "Система бонусов по-прежнему разделена на Hold the Jackpot и Wild Rampage, а Cash Infinity подготавливает бонусные символы до перехода в джекпотный режим."
+    ],
+    "editorial": "Здесь важно не переносить RTP 96,15% от Gold: для Platinum Wazdan сообщает 96,12%. Cash Out — отдельное изменение версии, а не синоним её Wild Rampage.",
+    "features": [
+      {
+        "title": "Cash Out в базовой игре",
+        "description": "Новый для Platinum сборщик позволяет оплачивать Cash-значения ещё до бонусного Hold the Jackpot."
+      },
+      {
+        "title": "Wild Rampage",
+        "description": "Дополнительный режим даёт собственные джекпотные сценарии, отличающиеся от обычного сбора."
+      },
+      {
+        "title": "Hold the Jackpot и Cash Infinity",
+        "description": "Cash Infinity удерживает призовые символы, Chance Level и Buy Feature влияют на доступ к бонусу."
+      }
+    ]
+  },
+  "wazdan-moon-of-fortune": {
+    "intro": [
+      "Moon of Fortune использует шестнадцать позиций без стандартных линий. Sticky to Infinity закрепляет бонусные символы, помогая перейти к Hold the Jackpot.",
+      "Если в бонусе заполнены все шестнадцать позиций, Wazdan обещает Grand Jackpot 1500x. Chance Level x2/x4/x6 повышает вероятность бонуса, но не увеличивает сам приз."
+    ],
+    "editorial": "Лунная азиатская тема не делает Moon of Fortune классическим линейным слотом. Максимум 1500x относится к полному заполнению бонусной сетки, а не к отдельному Wild.",
+    "features": [
+      {
+        "title": "Sticky to Infinity",
+        "description": "Призовые символы способны удерживаться до запуска джекпотного события."
+      },
+      {
+        "title": "Grand за 16 заполненных позиций",
+        "description": "Полная бонусная сетка приносит Grand Jackpot 1500x ставки."
+      },
+      {
+        "title": "Collector и Chance Level",
+        "description": "Collector участвует в сборе значений, а уровни x2/x4/x6 удорожают ставку ради большей вероятности бонуса."
+      }
+    ]
+  },
+  "wazdan-mystery-jack": {
+    "intro": [
+      "Mystery Jack переносит Дикий Запад на три барабана с 27 линиями. Wild помогает собирать линейные выигрыши, а Scatter связан с запуском Free Spins.",
+      "Mystery Bonus отдельно выделен разработчиком как самостоятельная бонусная функция; его нельзя выдавать за те же Free Spins или за механизм Hold the Jackpot."
+    ],
+    "editorial": "У оригинала Mystery Jack RTP 96,79% и максимум 710x. У Deluxe RTP снижен до 96,49%, а максимум повышен до 820x; это действительно разные математические паспорта.",
+    "features": [
+      {
+        "title": "Free Spins через Scatter",
+        "description": "Scatter участвует в активации бесплатных вращений; точное количество не следует додумывать без источника."
+      },
+      {
+        "title": "Mystery Bonus",
+        "description": "Отдельный розыгрыш бонусного приза в ковбойском сеттинге."
+      },
+      {
+        "title": "Wild и Gamble",
+        "description": "Wild подменяет стандартные символы на 27 линиях, Gamble предлагает отдельную попытку увеличить выплату."
+      }
+    ]
+  },
+  "wazdan-mystery-jack-deluxe": {
+    "intro": [
+      "Mystery Jack Deluxe сохранил три барабана и 27 линий, но перерисовал ковбойскую графику. Сам Джек выполняет роль Wild, заменяя обычные символы и имея собственную выплату.",
+      "Free Spins и Mystery Bonus сохранены как разные функции. Wazdan отдельно подчёркивает, что Mystery-символ может открыть приз за одно действие."
+    ],
+    "editorial": "Для Deluxe проверены RTP 96,49% и максимум 820x против 96,79% и 710x у оригинала. Из-за обновления картинки нельзя считать эти карточки одинаковыми.",
+    "features": [
+      {
+        "title": "Джек Wild с собственной оплатой",
+        "description": "Главный персонаж заменяет обычные значки на 27 линиях и может быть призовым символом сам по себе."
+      },
+      {
+        "title": "Mystery Bonus",
+        "description": "Отдельный Mystery-символ раскрывает приз без обязательной цепочки Free Spins."
+      },
+      {
+        "title": "Free Spins и Gamble",
+        "description": "Бесплатные вращения и риск-игра после выигрыша отмечены производителем раздельно."
+      }
+    ]
+  },
+  "wazdan-mystery-kingdom-mystery-bells": {
+    "intro": [
+      "Mystery Kingdom: Mystery Bells использует двенадцать позиций без линий. Производитель прямо сообщает необычную математику: призы начисляются только в бонусной игре.",
+      "Cash Infinity помогает запустить Hold the Jackpot, а функция One Click to the Grand Jackpot предлагает отдельный шанс немедленно открыть главный приз."
+    ],
+    "editorial": "Эта игра не должна описываться как обычный слот с выплатами за линии: Game Info даёт 12/0, а Wazdan подчёркивает bonus-only выплаты. Grand 750x нельзя обещать каждым кликом.",
+    "features": [
+      {
+        "title": "One Click to the Grand Jackpot",
+        "description": "Специальная функция даёт шанс открыть Grand Jackpot одним действием, но не гарантирует награду."
+      },
+      {
+        "title": "Cash Infinity",
+        "description": "Удерживаемые символы облегчают вход в отдельный бонус."
+      },
+      {
+        "title": "Hold the Jackpot",
+        "description": "Джекпотные значения оплачиваются во время бонуса; у базовой игры нет обычных линий выплат."
+      }
+    ]
+  },
+  "wazdan-neon-city": {
+    "intro": [
+      "Neon City размещает ретро-фрукты среди огней футуристического города на пяти барабанах и двадцати линиях. Wild подменяет обычные значки, а Scatter открывает бонус.",
+      "Помимо Free Spins с Increasing Multiplier у слота есть Mega Spins — самостоятельное событие, а не просто другое название бесплатных вращений."
+    ],
+    "editorial": "Для Neon City подтверждены RTP 96,25%, максимум 1250x и низкая–средняя волатильность. Увеличивающийся множитель не следует трактовать как общий максимум выигрыша.",
+    "features": [
+      {
+        "title": "Free Spins с Increasing Multiplier",
+        "description": "Бонусные вращения используют нарастающий множитель по собственным условиям Wazdan."
+      },
+      {
+        "title": "Mega Spins",
+        "description": "Дополнительный самостоятельный игровой режим, отмеченный отдельно от обычных Free Spins."
+      },
+      {
+        "title": "Scatter и Wild",
+        "description": "Scatter активирует бонусы, Wild заменяет стандартные символы при выплатах на 20 линиях."
+      }
+    ]
+  },
 
 };
 
