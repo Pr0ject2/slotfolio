@@ -82,7 +82,7 @@ const cases=[
   ]
 ] as const;
 test("wave 66 /slots exact artwork regression twenty real images",async({page})=>{for(const [slug,name] of cases){
-await page.goto(slug === "3-oaks-gaming-grand" ? `/slots/?q=${encodeURIComponent(name)}&provider=${encodeURIComponent("3 Oaks Gaming")}&sort=name` : `/slots/?q=${encodeURIComponent(name)}`);
+await page.goto(slug === "3-oaks-gaming-grand" ? `/slots/?q=${encodeURIComponent(name)}&provider=${encodeURIComponent("3-oaks-gaming")}&sort=name` : `/slots/?q=${encodeURIComponent(name)}`);
 const card=page.locator(`[data-slot="${slug}"]`);
 await expect(card).toBeVisible();
 const art=card.locator(".catalog-game-art .game-image");
