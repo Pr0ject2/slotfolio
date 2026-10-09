@@ -43,8 +43,8 @@ jobs:
       - name: Typecheck source and tests
         run: npm run typecheck
 
-      - name: Localize reviewed artwork where available
-        run: npm run assets:localize -- --soft
+      - name: Localize and require all reviewed artwork
+        run: npm run assets:localize
 
       - name: Build static production site
         env:
