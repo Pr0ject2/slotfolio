@@ -895,6 +895,20 @@ const artworkBySlug: Record<string, string> = {
   "3-oaks-gaming-coin-up-lightning": "/images/catalog/3-oaks-gaming-coin-up-lightning.webp",
   "3-oaks-gaming-fishin-bear": "/images/catalog/3-oaks-gaming-fishin-bear.webp",
   "3-oaks-gaming-grand": "/images/catalog/3-oaks-gaming-grand.webp",
+  "3-oaks-gaming-joker-glitz-x1000": "/images/catalog/3-oaks-gaming-joker-glitz-x1000.webp",
+  "3-oaks-gaming-lady-fortune": "/images/catalog/3-oaks-gaming-lady-fortune.webp",
+  "3-oaks-gaming-lava-coins": "/images/catalog/3-oaks-gaming-lava-coins.webp",
+  "3-oaks-gaming-lava-coins-2": "/images/catalog/3-oaks-gaming-lava-coins-2.webp",
+  "3-oaks-gaming-little-farm": "/images/catalog/3-oaks-gaming-little-farm.webp",
+  "3-oaks-gaming-lord-of-thunder": "/images/catalog/3-oaks-gaming-lord-of-thunder.webp",
+  "3-oaks-gaming-lucky-apple-x1000": "/images/catalog/3-oaks-gaming-lucky-apple-x1000.webp",
+  "3-oaks-gaming-lucky-penny": "/images/catalog/3-oaks-gaming-lucky-penny.webp",
+  "3-oaks-gaming-lucky-penny-2": "/images/catalog/3-oaks-gaming-lucky-penny-2.webp",
+  "3-oaks-gaming-lucky-penny-3-pots-super-wheel": "/images/catalog/3-oaks-gaming-lucky-penny-3-pots-super-wheel.webp",
+  "3-oaks-gaming-lucky-penny-power-scatter": "/images/catalog/3-oaks-gaming-lucky-penny-power-scatter.webp",
+  "3-oaks-gaming-magic-apple": "/images/catalog/3-oaks-gaming-magic-apple.webp",
+  "3-oaks-gaming-magic-apple-2": "/images/catalog/3-oaks-gaming-magic-apple-2.webp",
+  "3-oaks-gaming-magic-clovers": "/images/catalog/3-oaks-gaming-magic-clovers.webp",
 
 };
 

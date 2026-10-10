@@ -3,6 +3,8 @@ import type { CatalogVerifiedDetails } from "./catalog-verified-details";
 const verifiedAt = "2026-09-13";
 
 const details: Record<string, CatalogVerifiedDetails> = {
+  "3-oaks-gaming-joker-glitz-x1000": { field: "6×5 · каскады / Scatter Pays", releaseDate: "2026-06", source: "https://3oaks.com/game/joker_glitz_x1000", verifiedAt },
+  "3-oaks-gaming-lady-fortune": { field: "6×5 · каскады / Scatter Pays", releaseDate: "2023-07", source: "https://3oaks.com/game/lady_fortune", verifiedAt },
   "3-oaks-gaming-3-jewel-crowns": { releaseDate: "2025-06", source: "https://3oaks.com/game/3_jewel_crowns", verifiedAt },
   "3-oaks-gaming-3-super-coin-volcanoes": { field: "4×3", releaseDate: "2026-01", source: "https://3oaks.com/game/3_super_coin_volcanoes", verifiedAt },
   "3-oaks-gaming-3-super-hot-teapots": { field: "5×3 · 25 линий", releaseDate: "2026-08", source: "https://3oaks.com/game/3_super_hot_teapots", verifiedAt },
@@ -26,7 +28,7 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "3-oaks-gaming-lucky-penny-3-pots-super-wheel": { field: "5×3 · 25 линий", releaseDate: "2026-08", source: "https://3oaks.com/game/lucky_penny_3_pots_super_wheel", verifiedAt },
   "3-oaks-gaming-lucky-penny-power-scatter": { field: "6×5 · каскады", releaseDate: "2026-05", source: "https://3oaks.com/game/lucky_penny_powerscatter", verifiedAt },
   "3-oaks-gaming-magic-apple": { field: "5×4 · 30 линий", releaseDate: "2021-03", source: "https://3oaks.com/game/magic_apple", verifiedAt },
-  "3-oaks-gaming-magic-apple-2": { releaseDate: "2022-06", source: "https://3oaks.com/game/magic_apple_2", verifiedAt },
+  "3-oaks-gaming-magic-apple-2": { field: "5×4 · 20 линий", releaseDate: "2022-06", source: "https://3oaks.com/game/magic_apple_2", verifiedAt },
   "3-oaks-gaming-magic-clovers": { field: "5×3 · 5 линий", releaseDate: "2025-08", source: "https://3oaks.com/game/magic_clovers", verifiedAt },
   "3-oaks-gaming-moon-sisters": { field: "5×3 · 25 линий", releaseDate: "2020-05", source: "https://3oaks.com/game/moon_sisters", verifiedAt },
   "3-oaks-gaming-more-magic-apple": { field: "5×4 · 25 линий", releaseDate: "2023-05", source: "https://3oaks.com/game/more_magic_apple", verifiedAt },
