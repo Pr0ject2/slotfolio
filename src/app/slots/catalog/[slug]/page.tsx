@@ -429,16 +429,256 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   "3-oaks-gaming-black-wolf": { intro:["В Black Wolf Boost собирает значения видимых лунных Bonus Symbols.","Шесть лун или пять лун вместе с Boost запускают Hold & Win."], editorial:"Mystery Symbol в бонусе превращается в джекпот, а заполненное поле может дать Grand Jackpot.", features:[{title:"Boost",description:"Собирает значения всех видимых Moon Bonus Symbols."},{title:"Hold & Win",description:"Луны фиксируются, а каждый новый символ возвращает три респина."},{title:"Фриспины",description:"В фриспинах появляется больше Boost и Bonus Symbols."}] },
   "3-oaks-gaming-black-wolf-2": { intro:["В Black Wolf 2 Boost собирает значения Full Moon Symbols, а Mystery превращается в ценный символ или джекпот.","Шесть Bonus, Boost или Mystery Symbols запускают Hold & Win."], editorial:"Fortune Slide задаёт очередь ценных символов: Mystery всегда превращается в первый из них.", features:[{title:"Fortune Slide",description:"Очередь содержит Bonus, Jackpot и Boost Symbols."},{title:"Три респина",description:"В бонусе остаются только Bonus и Mystery Symbols."},{title:"Второй путь",description:"Bonus Accum тоже может запустить Hold & Win."}] },
   "3-oaks-gaming-book-of-sun-multichance": { intro:["В Book of Sun: Multichance три Book Scatter дают двенадцать фриспинов.","Перед началом выбирается расширяющийся символ на весь бонус."], editorial:"Каждый повторный запуск открывает ещё один расширяющийся символ, вплоть до девяти.", features:[{title:"Двенадцать фриспинов",description:"Три Book Scatter запускают бонус."},{title:"Расширяющийся символ",description:"Он платит независимо от правил линий."},{title:"Повторный запуск",description:"Каждые три Scatter добавляют новый специальный символ."}] },
-  "3-oaks-gaming-buddha-megaways": { intro:["Buddha Megaways использует каскады и до 117 649 способов выиграть.","Каждый следующий каскад повышает множитель, а во фриспинах он не сбрасывается."], editorial:"Каждый следующий каскад повышает множитель, а во фриспинах он не сбрасывается.", features:[{title:"Каскады и растущий множитель",description:"После выигрыша символы исчезают, а множитель растёт на 1."}] },
-  "3-oaks-gaming-chili-coins": { intro:["В Chili Coins Collect на среднем барабане собирает монеты.","Совместный Collect и монеты на краях запускают Hold & Win."], editorial:"Совместный Collect и монеты на краях запускают Hold & Win.", features:[{title:"Chili Feature",description:"Случайно добавляет джекпоты, монеты или множители x2–x6."}] },
-  "3-oaks-gaming-china-festival": { intro:["В China Festival три шкалы петард запускают Hold & Win.","Цветные символы включают Boost, Double и Collect."], editorial:"Цветные символы включают Boost, Double и Collect.", features:[{title:"Три функции",description:"Все функции могут работать одновременно."}] },
-  "3-oaks-gaming-coin-express": { intro:["Шесть золотых монет запускают Hold & Win в Coin Express.","Collect собирает видимые значения и джекпоты."], editorial:"Collect собирает видимые значения и джекпоты.", features:[{title:"Шкала монет",description:"Заполненная шкала даёт дополнительный путь в бонус."}] },
-  "3-oaks-gaming-coin-lamp": { intro:["В Coin Lamp четыре символа в средней линии запускают бонус.","Лампа случайно ставит от двух до пяти множителей."], editorial:"Лампа случайно ставит от двух до пяти множителей.", features:[{title:"Расширение поля",description:"Символы открывают три дополнительных ряда."}] },
-  "3-oaks-gaming-coin-princess-x1000": { intro:["Coin Princess x1000 использует Scatter Pays и каскады.","Во фриспинах множители накапливаются до конца режима."], editorial:"Во фриспинах множители накапливаются до конца режима.", features:[{title:"Множители",description:"Монеты дают значения от x2 до x1000."}] },
-  "3-oaks-gaming-coin-volcano": { intro:["Три символа в средней линии запускают респины Coin Volcano.","Volcano Multiplier ставит до девяти множителей на поле."], editorial:"Volcano Multiplier ставит до девяти множителей на поле.", features:[{title:"Ultra Bonus",description:"Гарантирует Volcano Multiplier в начале."}] },
-  "3-oaks-gaming-crystal-scarabs": { intro:["В Crystal Scarabs Boost собирает значения синих скарабеев.","Hold & Win использует Bonus, Bonus Gold и Boost Symbols."], editorial:"Hold & Win использует Bonus, Bonus Gold и Boost Symbols.", features:[{title:"Три бустера",description:"Plus, Multiplier и Transform открываются над полем."}] },
-  "3-oaks-gaming-dancing-joker": { intro:["В Dancing Joker Joker на третьем барабане одновременно Wild и Collect.","Шкалы копилок дают шесть или двенадцать фриспинов."], editorial:"Шкалы копилок дают шесть или двенадцать фриспинов.", features:[{title:"Joker Collect",description:"Он собирает все видимые Coin Symbols."}] },
-  "3-oaks-gaming-dj-tiger-x1000": { intro:["DJ Tiger x1000 работает на каскадах с постоянным Wild.","Во фриспинах выигрышные множители складываются в общий."], editorial:"Во фриспинах выигрышные множители складываются в общий.", features:[{title:"Mystery Multiplier",description:"После каскада раскрывает значение от x10 до x1000."}] },
+  "3-oaks-gaming-buddha-megaways": {
+    "intro": [
+      "Buddha Megaways меняет высоту шести барабанов от двух до семи символов: за спин доступно от 64 до 117 649 способов собрать комбинацию.",
+      "Каскады после выигрыша поднимают множитель на один шаг. Во время Free Spins накопленный множитель не сбрасывается между вращениями."
+    ],
+    "editorial": "В Buddha Megaways важны не одни лишь 117 649 способов: высота барабанов меняется каждый раз, а накопленный в бонусе множитель и рискованный Gamble Free Spins принципиально отличают игру от обычных линейных слотов.",
+    "features": [
+      {
+        "title": "Переменная высота шести барабанов",
+        "description": "На каждом вращении барабаны независимо открывают от двух до семи позиций, что меняет число способов оплаты в диапазоне 64–117 649."
+      },
+      {
+        "title": "Каскады и множитель",
+        "description": "Выигравшие символы исчезают, новые падают на их места, а последовательные выигрыши увеличивают множитель на один без указанного верхнего ограничения."
+      },
+      {
+        "title": "Free Spins без сброса множителя",
+        "description": "В бонусном режиме множитель растёт от успешных каскадов и сохраняется до конца всей серии, а не обнуляется после каждого спина."
+      },
+      {
+        "title": "Gamble и покупка Free Spins",
+        "description": "Выигранные Free Spins можно поставить на кон, рискуя потерять их при неудаче. Провайдер также описывает покупку раунда за 100 ставок."
+      }
+    ]
+  },
+  "3-oaks-gaming-chili-coins": {
+    "intro": [
+      "Chili Coins использует фруктовое поле 3×3 с пятью линиями и центральным Red Chili Collect, который собирает видимые монеты, включая фиксированные джекпоты.",
+      "Попадание Collect с монетами по обеим сторонам запускает три респина; бонус сочетает до трёх закреплённых Collect и накапливаемые множители ячеек."
+    ],
+    "editorial": "Особенность Chili Coins не просто в Hold & Win: Chili Feature способна вмешаться в сбор монет, а sticky multipliers на одной позиции растут от повторных появлений; это два самостоятельных способа увеличить результат бонуса.",
+    "features": [
+      {
+        "title": "Red Chili Collect и джекпоты",
+        "description": "Collect встречается только на втором барабане и собирает суммы Coin Bonus Symbols, в том числе значения Mini, Minor, Major и Grand."
+      },
+      {
+        "title": "Случайная Chili Feature",
+        "description": "Во время Collect эта функция может назначить джекпоты, добавить монеты либо поставить на случайные позиции множители x2–x6."
+      },
+      {
+        "title": "Hold & Win с тремя Collect",
+        "description": "Collect в центре одновременно с Bonus на первом и третьем барабанах запускает три респина; в режиме могут закрепиться до трёх Collect."
+      },
+      {
+        "title": "Sticky multipliers и Chili Metre",
+        "description": "Множитель ячейки начинается с x2 и растёт на единицу при повторном выпадении; новая такая активация обновляет три респина. Заполнение Chili Metre может открыть бонус альтернативным способом."
+      }
+    ]
+  },
+  "3-oaks-gaming-china-festival": {
+    "intro": [
+      "China Festival разворачивает Hold & Win на сетке 5×3 с 25 линиями и тремя отдельными шкалами петард над барабанами.",
+      "Зелёная, красная и фиолетовая шкалы запускают соответственно Boost, Double и Collect. Бонус может применять несколько функций одновременно."
+    ],
+    "editorial": "China Festival отличается от Hold & Win с одним универсальным улучшением: здесь важно, какие именно шкалы петард заполнены до бонуса, потому что Boost, Double и Collect выполняют разные действия и могут сочетаться.",
+    "features": [
+      {
+        "title": "Три цветные шкалы Firecrackers",
+        "description": "Зелёные, красные и фиолетовые символы заряжают соответствующие шкалы над полем; их заполнение включает Hold & Win с выбранными функциями."
+      },
+      {
+        "title": "Boost, Double и Collect",
+        "description": "Boost прибавляет случайное значение всем символам, Double удваивает текущие значения, а Collect собирает содержимое поля."
+      },
+      {
+        "title": "Mystery Symbols и джекпоты",
+        "description": "В бонусе возможны Mini, Minor и Major; Mystery может раскрыться как джекпот, бонусный символ или одна из трёх функций. Заполнение поля ведёт к Grand."
+      },
+      {
+        "title": "Buy Bonus и Super Bonus",
+        "description": "Обычная покупка бонуса даёт до трёх случайных feature symbols; Super Bonus гарантирует три случайных feature symbols. Доступность покупки зависит от рынка."
+      }
+    ]
+  },
+  "3-oaks-gaming-coin-express": {
+    "intro": [
+      "Coin Express объединяет классическое фруктовое поле 5×3 с пятью линиями и Hold & Win, где шесть золотых монет запускают три респина.",
+      "Каждая новая монета закрепляется и обновляет счётчик, а Collect может собрать значения всех видимых монет, включая фиксированные джекпоты."
+    ],
+    "editorial": "Для Coin Express важны два пути в Hold & Win: мгновенное выпадение шести Gold Coins и постепенное заполнение Coin Metre. Коллектор внутри бонуса помогает отличить его от простого накопления монет.",
+    "features": [
+      {
+        "title": "Шесть монет и три респина",
+        "description": "Шесть золотых Gold Coin Bonus Symbols запускают Hold & Win; исходные монеты остаются на месте, новые фиксируются и обновляют число респинов."
+      },
+      {
+        "title": "Collector Coin",
+        "description": "Символ Collect во время бонуса суммирует значения всех видимых Coin Bonus и Jackpot Symbols, а не только значения на своей линии."
+      },
+      {
+        "title": "Mini, Minor, Major и Grand",
+        "description": "В бонусе появляются монеты с тремя фиксированными джекпотами; заполнение всего поля может привести к Grand x5000 ставки."
+      },
+      {
+        "title": "Шкала Coin Metre",
+        "description": "Bonus Symbols заряжают отдельную шкалу монет, которая предоставляет второй, не зависящий от одновременного выпадения шести монет путь в Hold & Win."
+      }
+    ]
+  },
+  "3-oaks-gaming-coin-lamp": {
+    "intro": [
+      "Coin Lamp переносит механику накопления монет в арабскую сказку: четыре бонусных символа на центральной линии включают серию респинов.",
+      "В бонусе волшебная лампа случайно раскладывает от двух до пяти множителей, а сбор символов постепенно открывает ещё три ряда."
+    ],
+    "editorial": "Здесь главная развилка — расширение поля. Множители лампы повышают значения отдельных позиций, но шанс на Grand появляется после открытия всех рядов и заполнения 24 ячеек, а не просто после получения одного большого множителя.",
+    "features": [
+      {
+        "title": "Триггер по центральной линии",
+        "description": "Четыре символа на среднем ряду открывают бонус с респинами и денежными Coin Bonus Symbols."
+      },
+      {
+        "title": "Collect и Mystery",
+        "description": "Collect собирает все видимые значения. Mystery может раскрыть Bonus, Collect или Jackpot, а отдельный Mystery Jackpot открывает Mini, Minor либо Major."
+      },
+      {
+        "title": "Множители волшебной лампы",
+        "description": "На случайном респине лампа может поставить от двух до пяти множителей размером до x10; множители в одной клетке объединяются."
+      },
+      {
+        "title": "Три дополнительных ряда и Power Bonus",
+        "description": "Сбор символов открывает три ряда, расширяя поле до 24 ячеек. Super и Power Bonus гарантируют стартовый multiplier effect, а Power начинает со всеми рядами."
+      }
+    ]
+  },
+  "3-oaks-gaming-coin-princess-x1000": {
+    "intro": [
+      "Coin Princess x1000 платит за восемь и более одинаковых символов где угодно на поле 6×5, после чего запускает каскад новых символов.",
+      "Денежные монеты-множители x2–x1000 суммируются после заключительного каскада. Во Free Spins общий множитель накапливается на протяжении бонусного режима."
+    ],
+    "editorial": "Coin Princess x1000 нельзя оценивать по одной монете x1000: в базовом режиме множители складываются для результата одного спина, а в Free Spins соответствующие значения переносятся в общий счётчик следующих выигрышных каскадов.",
+    "features": [
+      {
+        "title": "Scatter Pays и каскады",
+        "description": "Выплату дают восемь и более одинаковых символов в любых клетках поля 6×5; оплаченные символы исчезают и замещаются новыми."
+      },
+      {
+        "title": "Coin Multipliers x2–x1000",
+        "description": "Монеты с множителями могут выпадать в базовой игре; несколько значений складываются и применяются к совокупному выигрышу после завершения каскадов."
+      },
+      {
+        "title": "Free Spins с Total Multiplier",
+        "description": "В бонусе выигрышные монеты добавляют значения в общий множитель, который остаётся активным на протяжении серии Free Spins."
+      },
+      {
+        "title": "Super Free Spins",
+        "description": "Официальная страница описывает покупку бонуса на отдельных рынках и Super Free Spins с начальным множителем не меньше x10."
+      }
+    ]
+  },
+  "3-oaks-gaming-coin-volcano": {
+    "intro": [
+      "Оригинальный Coin Volcano использует компактное поле 3×3: три символа на центральной линии открывают бонус из трёх респинов.",
+      "Sticky Coin помогает собрать триггер, а уже в бонусе Volcano Multiplier может положить на барабаны до девяти множителей."
+    ],
+    "editorial": "Важно не смешивать оригинальный Coin Volcano с Coin Volcano 2: у первой игры поле 3×3 и Ultra Bonus без описанного во второй части Boost Bonus с исходным x5.",
+    "features": [
+      {
+        "title": "Sticky Coin до входа в бонус",
+        "description": "Sticky Coin остаётся закреплённой до запуска респинов, помогая собрать три бонусных символа в центральном ряду."
+      },
+      {
+        "title": "Bonus, Collect и Mystery",
+        "description": "Во время респинов Coin Bonus несут значения, Collect суммирует их, Mystery может раскрыть символ, а Mystery Jackpot — Mini, Minor или Major."
+      },
+      {
+        "title": "Volcano Multiplier",
+        "description": "Случайное извержение размещает от одного до девяти множителей; заполненное поле может открыть Grand Jackpot."
+      },
+      {
+        "title": "Ultra Bonus и Volcano Metre",
+        "description": "Ultra Bonus может стартовать случайно с гарантированной активацией Volcano Multiplier, а наполнение Volcano Metre даёт ещё один вход в обычный бонус."
+      }
+    ]
+  },
+  "3-oaks-gaming-crystal-scarabs": {
+    "intro": [
+      "Crystal Scarabs размещает синих и золотых скарабеев на египетском поле 5×4: Boost собирает денежные значения синих Bonus Symbols.",
+      "В Hold & Win к обычным и золотым скарабеям добавляется верхний ряд с Plus, Multiplier и Transform, а Free Spins усиливают поток Boost и Bonus."
+    ],
+    "editorial": "В Crystal Scarabs золотой скарабей связан с фиксированными уровнями джекпота, тогда как верхние Boosters отдельно меняют значения. Полное заполнение поля удваивает собранный результат, а не означает автоматическую подмену всех скарабеев на Grand.",
+    "features": [
+      {
+        "title": "Boost собирает синих скарабеев",
+        "description": "Синие Bonus Symbols содержат значения, которые выплачиваются при одновременном появлении Boost."
+      },
+      {
+        "title": "Gold Scarabs и четыре джекпота",
+        "description": "В Hold & Win золотые Bonus Gold Symbols могут принести Mini x20, Minor x50, Major x100 либо Grand x5000."
+      },
+      {
+        "title": "Верхний ряд трёх Boosters",
+        "description": "Дополнительный ряд предлагает Plus, Multiplier и Transform. Заполнение поля может удвоить суммарный бонусный результат."
+      },
+      {
+        "title": "Free Spins с Boost Symbols",
+        "description": "Free Spins повышают вероятность появления Bonus и Boost Symbols и оставляют возможность вновь запустить Hold & Win."
+      }
+    ]
+  },
+  "3-oaks-gaming-dancing-joker": {
+    "intro": [
+      "Dancing Joker: Break & Win использует 5×3 и 40 линий, но основную динамику создаёт Joker, который появляется только в центре третьего барабана.",
+      "Этот Joker одновременно Wild и Collect: собирает видимые монеты, заполняет две шкалы копилок и во Free Spins закрепляется на позиции."
+    ],
+    "editorial": "Dancing Joker не обычный Hold & Win с фиксированными монетами. Его центральный Joker связывает быстрый Collect, шкалы бесплатных вращений и случайные rewind-эффекты, поэтому движение бонуса зависит от появления одного конкретного символа.",
+    "features": [
+      {
+        "title": "Joker Wild/Collect на барабане 3",
+        "description": "Joker может оказаться только в центральной клетке третьего барабана, заменяет обычные символы и собирает значения всех видимых Coin Bonus."
+      },
+      {
+        "title": "Две копилки Free Spins",
+        "description": "Joker наполняет одну или две Piggy Bank Metres: заполнение одной даёт шесть вращений, обеих — двенадцать. Во Free Spins Joker остаётся закреплённым."
+      },
+      {
+        "title": "Wild и Bonus Rewind",
+        "description": "Случайные rewind-функции могут вернуть Joker на поле или превратить символы в Jackpot Bonus, в отличие от обычной оплаты по линиям."
+      },
+      {
+        "title": "Огненный дождь бонусных монет",
+        "description": "Случайное возгорание барабанов добавляет Coin Bonus Symbols, которые затем собирает Joker; возможны фиксированные Mini, Minor, Major и Grand."
+      }
+    ]
+  },
+  "3-oaks-gaming-dj-tiger-x1000": {
+    "intro": [
+      "DJ Tiger x1000 работает на поле 6×5: восемь одинаковых символов в любой части сетки дают выплату и запускают каскады.",
+      "Disco Ball приносит множители до x1000, Mystery Multiplier раскрывается после каскада, а Permanent Wild держится до его завершения."
+    ],
+    "editorial": "У DJ Tiger x1000 нужно различать множители обычного спина и накопительный Total Multiplier во Free Spins. Кроме того, Mystery Multiplier раскрывается только после окончания каскада — это не самостоятельная заранее известная ставка.",
+    "features": [
+      {
+        "title": "Scatter Pays и Permanent Wild",
+        "description": "Восемь и более одинаковых символов оплачиваются где угодно на поле 6×5. Wild остаётся на экране до завершения каскадной цепочки."
+      },
+      {
+        "title": "Disco Ball Multipliers",
+        "description": "Диско-шары могут появляться самостоятельно либо добавляться диджеем, принося множители до x1000, которые складываются в пределах вращения."
+      },
+      {
+        "title": "Mystery Multiplier x10–x1000",
+        "description": "Случайный Mystery Multiplier сообщает точное значение только после заключительного каскада."
+      },
+      {
+        "title": "Free Spins и Bonus Shop",
+        "description": "Во Free Spins выигрышные множители суммируются в общий Total Multiplier; Bonus Shop предлагает три разновидности бонуса, включая Mega Free Spins."
+      }
+    ]
+  },
   "3-oaks-gaming-coin-volcano-2": {
     "intro": [
       "Coin Volcano 2 расширяет вулканический слот до 3×5: заполнение средней линии соответствующими символами открывает три респина, а Sticky Coin может закрепиться заранее и помочь запустить бонус.",
@@ -523,10 +763,106 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       }
     ]
   },
-  "3-oaks-gaming-gold-express": { intro:["Gold Express запускает Hold & Win шестью золотыми монетами.","Boost собирает видимые монеты."], editorial:"Boost собирает видимые монеты.", features:[{title:"Основная механика",description:"Gold Express запускает Hold & Win шестью золотыми монетами."}] },
-  "3-oaks-gaming-gold-nuggets": { intro:["Gold Nuggets запускает Hold & Win тремя символами в центральной линии.","Collect собирает значения и добавляет множитель x2–x20."], editorial:"Collect собирает значения и добавляет множитель x2–x20.", features:[{title:"Основная механика",description:"Gold Nuggets запускает Hold & Win тремя символами в центральной линии."}] },
-  "3-oaks-gaming-golden-teapot": { intro:["Golden Teapot сочетает фриспины с Wild до x3 и Hold & Win.","Золотые чайники дают джекпоты."], editorial:"Золотые чайники дают джекпоты.", features:[{title:"Основная механика",description:"Golden Teapot сочетает фриспины с Wild до x3 и Hold & Win."}] },
-  "3-oaks-gaming-grab-more-gold": { intro:["Grab more Gold! использует Money Symbols и Miner Collect.","Во фриспинах режим накапливает символы."], editorial:"Во фриспинах режим накапливает символы.", features:[{title:"Основная механика",description:"Grab more Gold! использует Money Symbols и Miner Collect."}] },
+  "3-oaks-gaming-gold-express": {
+    "intro": [
+      "Gold Express возвращает Hold & Win к поезду и классическому полю 5×4 с 20 линиями: шесть Gold Coins включают три респина.",
+      "Piggy Bank Boost может сразу собрать монеты, а в отдельном Free Spins бонусе Power Wilds снабжены перемножающимися множителями."
+    ],
+    "editorial": "В Gold Express не следует смешивать Piggy Bank Boost с обычным Collect из других Hold & Win: Boost требует сочетания монеты и символа копилки. Power Wilds, в свою очередь, работают уже в Free Spins, а не в каждом респине.",
+    "features": [
+      {
+        "title": "Boost с копилкой Piggy Bank",
+        "description": "Gold Coin Bonus вместе с Piggy Bank Boost собирает значения всех видимых Gold Coins."
+      },
+      {
+        "title": "Шесть Gold Coins и sticky respins",
+        "description": "После появления шести бонусных монет все стартовые значения закрепляются; три респина обновляются всякий раз, когда появляется новая монета."
+      },
+      {
+        "title": "Фиксированные джекпоты",
+        "description": "Монеты могут нести Mini, Minor и Major; заполнение всего экрана во время бонуса открывает Grand x2000 ставки."
+      },
+      {
+        "title": "Free Spins и Power Wilds",
+        "description": "В отдельной серии бесплатных вращений Power Wilds могут умножать друг друга, если участвуют в одной выигрышной комбинации."
+      }
+    ]
+  },
+  "3-oaks-gaming-gold-nuggets": {
+    "intro": [
+      "Gold Nuggets — шахтёрский Hold & Win 3×3: три бонусных символа в средней линии открывают три респина с закреплёнными самородками.",
+      "Collect собирает все видимые суммы и добавляет случайный множитель x2–x20, а Mystery Jackpot раскрывает один из трёх младших джекпотов."
+    ],
+    "editorial": "Здесь Collect отличается от простой монеты с множителем: он суммирует уже видимые самородки и только затем повышает их стоимость. Отдельная шкала среднего ряда способна запустить Hold & Win даже без обычного тройного триггера.",
+    "features": [
+      {
+        "title": "Три символа в среднем ряду",
+        "description": "Три Bonus Symbols в центральной линии запускают три респина; исходные и новые Money Symbols остаются закреплёнными, а новое попадание сбрасывает счётчик."
+      },
+      {
+        "title": "Collect с множителем x2–x20",
+        "description": "В бонусе Collect собирает все видимые значения и применяет к сбору случайный множитель от двух до двадцати."
+      },
+      {
+        "title": "Mystery и Mystery Jackpot",
+        "description": "Mystery может стать Bonus, а Mystery Jackpot показывает Mini, Minor либо Major; заполнение поля может дать Grand x1000."
+      },
+      {
+        "title": "Шкала над барабанами",
+        "description": "Money и Jackpot Symbols, попадающие в центральный ряд, заряжают отдельный индикатор, способный тоже запустить Hold & Win."
+      }
+    ]
+  },
+  "3-oaks-gaming-golden-teapot": {
+    "intro": [
+      "Golden Teapot соединяет поле 5×4, Hold & Win с дополнительным верхним рядом и Free Spins: шесть чайников запускают бонусные респины.",
+      "Plus, Multiplier и Gold Booster меняют значения чайников; Gold Booster превращает их в золотые, открывая отдельную лестницу джекпотов."
+    ],
+    "editorial": "Не стоит сводить Golden Teapot к фриспинам с Wild: основной бонус строится вокруг дополнительного ряда и превращения чайников. Jackpot-зависимость определяется количеством золотых чайников, а не одним случайным Scatter.",
+    "features": [
+      {
+        "title": "Шесть чайников и дополнительный ряд",
+        "description": "Шесть или больше Bonus Teapots открывают Hold & Win, где сверху появляется ряд с Plus, Multiplier и Gold Booster."
+      },
+      {
+        "title": "Plus, Multiplier и Gold Booster",
+        "description": "Plus прибавляет суммы чайникам ниже, Multiplier повышает их значения, а Gold Booster меняет обычные чайники на золотые."
+      },
+      {
+        "title": "Золотые чайники и Collect",
+        "description": "Два, три, четыре или пять золотых чайников связаны с четырьмя уровнями джекпота; Collect собирает значения обычных и золотых чайников. Полное поле удваивает итог."
+      },
+      {
+        "title": "Free Spins по Scatter",
+        "description": "Три или более Scatter запускают Free Spins, а повторное появление такого набора в бонусе добавляет пять вращений; отдельная шкала Teapot Metre даёт ещё один вход в Hold & Win."
+      }
+    ]
+  },
+  "3-oaks-gaming-grab-more-gold": {
+    "intro": [
+      "Grab more Gold! продолжает шахтёрскую серию на поле 5×4 с 20 линиями: Miner Collect собирает Money Symbols в виде золотых самородков.",
+      "В Free Spins крюк может вернуть шахтёра к монетам, динамит добавляет недостающие Money Symbols, а прогресс каждых четырёх Collect расширяет бонус."
+    ],
+    "editorial": "Эта игра не равна первой Grab the Gold!: сиквел вводит Super Free Spins с увеличенными номиналами, а каждые четыре Collect на шкале дают десять дополнительных вращений и усиление вплоть до x10.",
+    "features": [
+      {
+        "title": "Miner Collect и несколько шахтёров",
+        "description": "Каждый видимый Miner Collect собирает значения Money Symbols; Mystery рядом с Collector может раскрыться как Mini, Minor, Major либо Grand."
+      },
+      {
+        "title": "Крюк и динамит во Free Spins",
+        "description": "Когда Money выпали без шахтёра, случайный крюк может привести Collector; при Collector без Money динамит может добавить денежные символы."
+      },
+      {
+        "title": "Шкала из четырёх Collect",
+        "description": "Каждые четыре Collect во Free Spins переводят прогресс на следующий уровень, добавляют десять вращений и повышают множитель вплоть до x10."
+      },
+      {
+        "title": "Super Free Spins и Gold Nugget Metre",
+        "description": "Super Free Spins использует более крупные денежные значения, а отдельная шкала Scatter может включить стандартные Free Spins при заполнении."
+      }
+    ]
+  },
   "3-oaks-gaming-jungle-volcano": { intro:["Jungle Volcano использует Hold & Win и бонусные символы.","Вулканические функции меняют серию респинов."], editorial:"Вулканические функции меняют серию респинов.", features:[{title:"Основная механика",description:"Jungle Volcano использует Hold & Win и бонусные символы."}] },
   "3-oaks-gaming-lady-fortune": {
     "intro": [
@@ -759,12 +1095,156 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       }
     ]
   },
-  "3-oaks-gaming-moon-sisters": { intro:["Шесть Moon Symbols запускают Hold & Win с тремя респинами.","Новые Moon Symbols фиксируются и сбрасывают счётчик респинов до трёх."], editorial:"Новые Moon Symbols фиксируются и сбрасывают счётчик респинов до трёх.", features:[{title:"Основная механика",description:"Шесть Moon Symbols запускают Hold & Win с тремя респинами."}] },
-  "3-oaks-gaming-more-magic-apple": { intro:["Шесть красных или золотых яблок запускают Hold & Win с тремя респинами.","Collect собирает значения яблок, а верхний ряд добавляет Plus, Multiplier и Gold Symbols."], editorial:"Collect собирает значения яблок, а верхний ряд добавляет Plus, Multiplier и Gold Symbols.", features:[{title:"Основная механика",description:"Шесть красных или золотых яблок запускают Hold & Win с тремя респинами."}] },
-  "3-oaks-gaming-power-sun": { intro:["Burning Sun Collect на среднем барабане собирает значения Coin Bonus Symbols.","Бонус запускается Collect и Bonus Symbols на крайних барабанах и переходит в серию респинов."], editorial:"Бонус запускается Collect и Bonus Symbols на крайних барабанах и переходит в серию респинов.", features:[{title:"Основная механика",description:"Burning Sun Collect на среднем барабане собирает значения Coin Bonus Symbols."}] },
-  "3-oaks-gaming-power-sun-xxl": { intro:["Hold & Win фиксирует Collect Symbols на втором барабане.","До пяти Collect Symbols могут собирать значения появляющихся Bonus Symbols."], editorial:"До пяти Collect Symbols могут собирать значения появляющихся Bonus Symbols.", features:[{title:"Основная механика",description:"Hold & Win фиксирует Collect Symbols на втором барабане."}] },
-  "3-oaks-gaming-purple-diamond": { intro:["Шесть Bonus и/или Collect Symbols запускают бонус на четыре спина.","Collect Symbols открывают дополнительные ряды и собирают значения символов под ними."], editorial:"Collect Symbols открывают дополнительные ряды и собирают значения символов под ними.", features:[{title:"Основная механика",description:"Шесть Bonus и/или Collect Symbols запускают бонус на четыре спина."}] },
-  "3-oaks-gaming-rio-gems": { intro:["Шесть синих или зелёных Gem Bonus Symbols запускают Hold & Win с тремя респинами.","Mystery Symbol может открыть джекпот или Super Bonus Symbol."], editorial:"Mystery Symbol может открыть джекпот или Super Bonus Symbol.", features:[{title:"Основная механика",description:"Шесть синих или зелёных Gem Bonus Symbols запускают Hold & Win с тремя респинами."}] },
+  "3-oaks-gaming-moon-sisters": {
+    "intro": [
+      "Moon Sisters предлагает поле 5×3 с 25 линиями и Hold & Win, в который ведут шесть Moon Symbols с денежными значениями.",
+      "Три начальных респина обновляются после каждого нового символа Луны, который остаётся на месте до конца серии."
+    ],
+    "editorial": "В Moon Sisters нет сложного дерева бустеров: напряжение рождается из заполнения пятнадцати клеток закреплёнными лунными символами. Mini и Major могут появиться в бонусе отдельно, Grand x1000 связан с полным полем.",
+    "features": [
+      {
+        "title": "Шесть Moon Symbols",
+        "description": "Шесть лунных бонусных символов в одном спине запускают Hold & Win, начальные значения остаются закреплёнными."
+      },
+      {
+        "title": "Три обновляемых респина",
+        "description": "После запуска остаются только пустые клетки; новые Moon Symbols тоже становятся sticky и возвращают счётчик к трём попыткам."
+      },
+      {
+        "title": "Mini и Major Moon Jackpots",
+        "description": "Отдельные Moon Symbols во время Hold & Win могут нести фиксированные Mini или Major значения."
+      },
+      {
+        "title": "Grand за полную сетку",
+        "description": "При заполнении всех пятнадцати клеток лунными символами возможен Grand Jackpot в размере x1000 ставки."
+      }
+    ]
+  },
+  "3-oaks-gaming-more-magic-apple": {
+    "intro": [
+      "More Magic Apple использует поле 5×4 с 25 линиями: шесть красных или золотых яблок открывают три респина Hold & Win.",
+      "В бонусе яблоки закрепляются, Collect собирает суммы, а отдельный верхний ряд добавляет Plus, Multiplier и Gold Symbols."
+    ],
+    "editorial": "More Magic Apple отличается от соседних Magic Apple более подробной шкалой золотых яблок: от двух до пяти Bonus Gold Symbols связаны с Mini, Minor, Major и Grand, а полное поле ещё и удваивает выплату.",
+    "features": [
+      {
+        "title": "Шесть яблок и три респина",
+        "description": "Любая смесь шести красных и золотых Bonus Symbols запускает Hold & Win с закреплением новых яблок и Collect, собирающим их значения."
+      },
+      {
+        "title": "Plus, Multiplier и Gold Symbols сверху",
+        "description": "Дополнительный верхний ряд меняет суммы уже выпавших яблок и может превращать бонусные символы в золотые."
+      },
+      {
+        "title": "Лестница золотых яблок",
+        "description": "Два, три, четыре и пять Bonus Gold Symbols соответствуют Mini, Minor, Major и Grand x5000. Полностью занятое поле удваивает итог."
+      },
+      {
+        "title": "Free Spins и Bonus Accum",
+        "description": "В Free Spins появляются множители Wild; Bonus Accum увеличивает шансы включить Hold & Win, не подменяя собой обычный бонусный триггер."
+      }
+    ]
+  },
+  "3-oaks-gaming-power-sun": {
+    "intro": [
+      "Power Sun оформлен как фруктовый слот 3×3 с пятью линиями, где Burning Sun Collect на втором барабане собирает видимые Coin Bonus.",
+      "Collect вместе с бонусными монетами на первом и третьем барабанах включает отдельный режим респинов; закреплённый центр вновь собирает суммы с поля."
+    ],
+    "editorial": "У оригинального Power Sun только три ряда, тогда как у Power Sun XXL пять. Здесь центральный Collect очищает уже собранные монеты, а Coin Metre даёт отдельный путь к запуску бонуса.",
+    "features": [
+      {
+        "title": "Burning Sun Collect на втором барабане",
+        "description": "Коллектор появляется только на центральном барабане и суммирует денежные значения всех видимых Coin Bonus Symbols."
+      },
+      {
+        "title": "Комбинация 1–2–3 для бонуса",
+        "description": "Hold & Win запускается при Collect на втором барабане и как минимум по одному Bonus на первом и третьем."
+      },
+      {
+        "title": "Повторный Collect и новые монеты",
+        "description": "Центральный Collect закрепляется в бонусе; собранные монеты исчезают, открывая место новым Bonus и возможным Mini, Minor, Major."
+      },
+      {
+        "title": "Coin Metre и Grand upgrade",
+        "description": "Шкала Coin Metre может включить бонус отдельно. Провайдер описывает возможность утроения Grand x1000 до x3000 при полном поле с тремя Collect."
+      }
+    ]
+  },
+  "3-oaks-gaming-power-sun-xxl": {
+    "intro": [
+      "Power Sun XXL расширяет оригинальную серию до поля 3×5 с 15 линиями: Collect на втором барабане собирает денежные Coin Bonus Symbols.",
+      "В Hold & Win второй барабан принимает до пяти закреплённых Collect, которые собирают и освобождают позиции монет с джекпотами."
+    ],
+    "editorial": "Именно до пяти центральных Collect делают XXL самостоятельной версией, а не просто увеличенным Power Sun 3×3. У игры есть отдельные входы через Sun Metre и Lucky Spin, а бонусная покупка описана лишь для отдельных рынков.",
+    "features": [
+      {
+        "title": "Поле 3×5 и центральный Collect",
+        "description": "Основная игра использует пятнадцать линий; Burning Sun Collect собирает Coin Bonus values с обоих крайних барабанов."
+      },
+      {
+        "title": "До пяти закреплённых Collect",
+        "description": "Hold & Win резервирует второй барабан под Collect Symbols. После сбора значения Bonus исчезают; новые монеты могут нести Mini, Minor, Major или Grand."
+      },
+      {
+        "title": "Sun Metre и Lucky Spin",
+        "description": "Помимо выпадения Collect в центре с Bonus по краям, бонус может запускаться за заполненную шкалу Sun Metre либо через Lucky Spin."
+      },
+      {
+        "title": "Super Bonus по покупке",
+        "description": "В отдельных регионах доступна покупка Hold & Win или Super Bonus, который может сразу начинаться с пяти Collect на втором барабане."
+      }
+    ]
+  },
+  "3-oaks-gaming-purple-diamond": {
+    "intro": [
+      "Purple Diamond развивает классический слот 5×3 с 20 линиями: шесть Bonus и/или Collect запускают четыре бонусных вращения.",
+      "В начале Hold & Win три дополнительных ряда закрыты. Каждый собранный Collect продвигает шкалу, раскрывает поле и прибавляет одну попытку."
+    ],
+    "editorial": "У Purple Diamond центральная цель — не просто собрать монеты, а открыть ряд Super Collect: золотистый Diamond работает только наверху, даёт две дополнительные попытки и собирает всё, что находится под ним.",
+    "features": [
+      {
+        "title": "Шесть символов и четыре попытки",
+        "description": "Сочетание шести синих Bonus и/или фиолетовых Collect запускает Hold & Win с четырьмя начальными вращениями."
+      },
+      {
+        "title": "Три закрытых ряда",
+        "description": "Три Progress Metres последовательно открывают дополнительные ряды снизу вверх; символы в закрытых рядах пока не активны."
+      },
+      {
+        "title": "Collect добавляет вращение",
+        "description": "Каждый фиолетовый Collect забирает значения Bonus Symbols ниже себя и прибавляет одно бонусное вращение."
+      },
+      {
+        "title": "Super Collect верхнего ряда",
+        "description": "После открытия верха жёлтый Super Collect добавляет два вращения и собирает все символы под ним; Grand может появиться как Super Collect."
+      }
+    ]
+  },
+  "3-oaks-gaming-rio-gems": {
+    "intro": [
+      "Rio Gems переносит Hold & Win на карнавальное поле 5×3 с 25 линиями: шесть синих или зелёных самоцветов открывают три респина.",
+      "Белый Super Symbol способен включить Super Bonus вместе с пятью обычными Gems. В этом режиме значения новых бонусных символов увеличены."
+    ],
+    "editorial": "В Rio Gems важно различать Grand и Royal: в обычном Hold & Win возможны четыре джекпота, а полное поле ведёт к отдельному Royal x10000. Super Bonus с белым Gems не тождественен обычному бонусу.",
+    "features": [
+      {
+        "title": "Шесть Gem Symbols для Hold & Win",
+        "description": "Шесть синих или зелёных Bonus Gems запускают три респина; Mystery может раскрыться как джекпот или Super Bonus Symbol."
+      },
+      {
+        "title": "Super Bonus с белым самоцветом",
+        "description": "Пять обычных Gems вместе с белым Super Symbol сразу запускают улучшенную версию Hold & Win; он может перейти в Super и посреди обычного бонуса."
+      },
+      {
+        "title": "Royal Jackpot за заполнение",
+        "description": "В Hold & Win возможны Mini, Minor, Major и Grand; заполнение всех позиций может привести к Royal Jackpot x10000 ставки."
+      },
+      {
+        "title": "Free Spins с дорогими символами",
+        "description": "Отдельные Free Spins используют только старшие платящие символы вместо обычного полного набора."
+      }
+    ]
+  },
   "3-oaks-gaming-rush-for-gold": { intro:["Miner работает как Wild и Collect, собирая значения Gold Nugget Bonus Symbols.","Заполнение вагонеток запускает фриспины с функциями Extra, Rise и Multi."], editorial:"Заполнение вагонеток запускает фриспины с функциями Extra, Rise и Multi.", features:[{title:"Основная механика",description:"Miner работает как Wild и Collect, собирая значения Gold Nugget Bonus Symbols."}] },
   "3-oaks-gaming-sky-pearls": { intro:["Шесть Bonus Pearls запускают Hold & Win с тремя респинами и липкими жемчужинами.","Golden Pearl работает как Mystery Symbol, а заполнение всех 16 позиций даёт Grand Jackpot."], editorial:"Golden Pearl работает как Mystery Symbol, а заполнение всех 16 позиций даёт Grand Jackpot.", features:[{title:"Основная механика",description:"Шесть Bonus Pearls запускают Hold & Win с тремя респинами и липкими жемчужинами."}] },
   "3-oaks-gaming-space-coins": { intro:["Coin Bonus Symbols на крайних барабанах вместе с Collect на среднем запускают бонус с тремя респинами.","Collect остаётся липким и собирает значения Bonus Symbols."], editorial:"Collect остаётся липким и собирает значения Bonus Symbols.", features:[{title:"Основная механика",description:"Coin Bonus Symbols на крайних барабанах вместе с Collect на среднем запускают бонус с тремя респинами."}] },
