@@ -108,7 +108,7 @@ await expect(card).toBeVisible();
 const art=card.locator(".catalog-game-art .game-image");
 await expect(art).toBeVisible();
 await expect(art).toHaveAttribute("src",new RegExp(`/images/catalog/${slug}\\.webp$`));
-await expect(art).not.toHaveAttribute("src",/unavailable\\.svg/);
+await expect(art).not.toHaveAttribute("src",/unavailable\.svg/);
 await art.scrollIntoViewIfNeeded();
 await expect.poll(async()=>art.evaluate(el=>(el as HTMLImageElement).naturalWidth),{timeout:15000}).toBeGreaterThan(0);
 await expect.poll(async()=>art.evaluate(el=>(el as HTMLImageElement).naturalHeight),{timeout:15000}).toBeGreaterThan(0);
