@@ -117,7 +117,7 @@ await expect(page.locator("#faq h2")).toHaveText("Вопросы об игре")
 const art=page.locator(".slot-figure .catalog-dossier-art");
 await expect(art).toBeVisible();
 await expect(art).toHaveAttribute("src",new RegExp(`/images/catalog/${slug}\\.webp$`));
-await expect(art).not.toHaveAttribute("src",/unavailable\\.svg/);
+await expect(art).not.toHaveAttribute("src",/unavailable\.svg/);
 await art.scrollIntoViewIfNeeded();
 await expect.poll(async()=>art.evaluate(el=>(el as HTMLImageElement).naturalWidth),{timeout:15000}).toBeGreaterThan(0);
 await expect.poll(async()=>art.evaluate(el=>(el as HTMLImageElement).naturalHeight),{timeout:15000}).toBeGreaterThan(0);
