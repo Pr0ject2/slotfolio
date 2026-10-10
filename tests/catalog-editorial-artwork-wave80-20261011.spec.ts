@@ -106,7 +106,7 @@ const cases = [
     "3-oaks-gaming-tiger-jungle",
     "Tiger Jungle",
     "https://3oaks.com/game/tiger_jungle",
-    "Отдельные Free Spins используют Wild Symbols,"
+    "Во время Hold & Win Collect Symbol забирает"
   ],
   [
     "3-oaks-gaming-wolf-night",
