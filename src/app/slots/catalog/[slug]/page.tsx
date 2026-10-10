@@ -1264,27 +1264,507 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   "3-oaks-gaming-tiger-gems": { intro:["Hold & Win в Tiger Gems начинается с трёх респинов, которые обновляются при новых символах.","Boost собирает значения видимых Bonus Symbols, а Mystery Symbols приходят из очереди Fortune Slide."], editorial:"Tiger Gems объединяет классический Hold & Win с отдельной очередью Fortune Slide, из которой в раунд могут попадать Mystery Symbols.", features:[{title:"Boost и Fortune Slide",description:"Boost собирает Bonus values, а Fortune Slide может добавить Mystery Symbols в Hold & Win."}] },
   "3-oaks-gaming-tiger-jungle": { intro:["Tiger Jungle сочетает Hold & Win с Collect Symbol и отдельным раундом Free Spins.","Во Free Spins используются Sticky Wilds, а в Hold & Win можно собирать значения и фиксированные jackpot-symbols."], editorial:"Игра разделяет акценты между двумя бонусами: Hold & Win отвечает за сбор значений, а Free Spins — за Sticky Wilds.", features:[{title:"Hold & Win и Sticky Wilds",description:"Collect работает в Hold & Win, а Sticky Wilds становятся ключевой особенностью Free Spins."}] },
   "3-oaks-gaming-wolf-night": { intro:["Wolf Night запускает Hold & Win с тремя респинами и фиксирующимися символами.","Mystery Symbols работают внутри Hold & Win, а во Free Spins появляются Wild-множители."], editorial:"Wolf Night добавляет к стандартному Hold & Win Mystery Symbols, а отдельный раунд Free Spins строится вокруг усиленных Wilds.", features:[{title:"Mystery и Wild-множители",description:"Mystery Symbols меняют Hold & Win, а Wild-множители работают в Free Spins."}] },
-  "bgaming-3-lucky-monkeys-hold-and-win": { intro:["Special Coins заполняют три денежные шкалы Expand, Collect и Boost.","Hold & Win начинается с трёх респинов: Expand расширяет поле, Collect собирает значения монет, а Boost усиливает их."], editorial:"В этой игре Hold & Win меняется в зависимости от трёх Monkey Powers, поэтому ключевой прогресс идёт через накопление Expand, Collect и Boost.", features:[{title:"Expand, Collect и Boost",description:"Три Monkey Powers могут активироваться до или во время Hold & Win и по-разному меняют бонусное поле."}] },
+  "bgaming-3-lucky-monkeys-hold-and-win": {
+    "intro": [
+      "3 Lucky Monkeys Hold & Win — слот 5×3, в котором специальные монеты заряжают три горшка над полем: Expand, Collect и Boost.",
+      "Шесть монет запускают Hold & Win с тремя респинами; Expand увеличивает сетку до 5×5, а заполнение стандартного или расширенного поля открывает разные джекпоты."
+    ],
+    "editorial": "Важное различие между Grand и Royal: Grand связан с заполнением исходного поля 5×3, тогда как Royal требует активации Expand и заполнения уже 5×5. Collect собирает значения, не убирая монеты с поля.",
+    "features": [
+      {
+        "title": "Монеты и три горшка",
+        "description": "Специальные монеты заряжают отдельно Expand, Collect и Boost; горшки могут активироваться до или во время Hold & Win."
+      },
+      {
+        "title": "Expand, Collect, Boost",
+        "description": "Expand увеличивает сетку 5×3 до 5×5; Collect суммирует все видимые монеты без удаления; Boost повышает значения обычных монет, кроме Jackpot Coins."
+      },
+      {
+        "title": "Три респина и повторный сброс",
+        "description": "Шесть и более монет напрямую запускают Hold & Win, а две и более дают меньший шанс запуска. Любая новая монета возвращает счётчик к трём попыткам."
+      },
+      {
+        "title": "Пять уровней джекпотов",
+        "description": "Mini, Minor и Major появляются на Jackpot Coins; Grand выплачивается за заполнение 5×3, Royal — за заполнение полностью расширенного поля 5×5."
+      }
+    ]
+  },
   "bgaming-alien-fruits-3": { intro:["Alien Fruits 3 использует Cluster Pays: выигрышные группы исчезают, после чего поле заполняется заново.","Spin Modifiers связаны с цветными метками, а заполнение Progress Bar запускает Cosmo Frenzy."], editorial:"Основной цикл строится вокруг кластеров и повторных заполнений поля, а Spin Modifiers становятся главным источником изменений внутри серии каскадов.", features:[{title:"Clusters и Spin Modifiers",description:"Выигрышные кластеры освобождают позиции, Progress Bar ведёт к Cosmo Frenzy, а цветные метки включают разные модификаторы."}] },
-  "bgaming-bonanza-billion-merge-uptm": { intro:["Четыре и более соседних одинаковых символа образуют кластер и запускают Merge Up™+.","После выплаты символы исчезают, а на их месте появляется случайный символ из уже присутствующих на поле; во Free Spins добавляются множители."], editorial:"Merge Up™+ меняет привычный каскад: после удаления выигрышного кластера новые позиции могут заполниться копией одного из уже видимых символов, создавая цепочки следующих выигрышей.", features:[{title:"Merge Up™+",description:"После выигрышного кластера удалённые символы заменяются случайным символом с текущего поля, после чего возможен следующий каскад."}] },
-  "bgaming-book-of-hidden-tombs": { intro:["Book работает как Scatter и Wild и открывает Free Spins.","В обычных Free Spins выбирается Golden Expanding Symbol, а Super Free Spins добавляют прогрессивный множитель, который растёт после пустых вращений."], editorial:"Book of Hidden Tombs разделяет два бонусных режима: один делает выбранный символ расширяющимся, второй добавляет прогрессивный множитель с отдельной логикой роста и сброса.", features:[{title:"Expanding Symbol и Progressive Multiplier",description:"Free Spins используют Golden Expanding Symbol, а Super Free Spins — прогрессивный множитель."}] },
-  "bgaming-cats-love-yummy": { intro:["Bonus Symbols запускают Free Spins, где пятый барабан становится источником Wild Symbols.","Cats Jackpot расположен на отдельном шестом барабане и связан с определёнными комбинациями одинаковых символов."], editorial:"Cats Love Yummy сочетает обычный Free Spins-цикл с отдельной jackpot-механикой на шестом барабане, поэтому бонусные вращения и Cats Jackpot работают как две разные системы.", features:[{title:"Free Spins и Cats Jackpot",description:"Во Free Spins Wild Symbols сосредоточены на пятом барабане, а Cats Jackpot проверяет отдельные комбинации через шестой барабан."}] },
-  "bgaming-chicken-fire": { intro:["Coin Symbols появляются на боковых барабанах, а Collect Symbols — на среднем и запускают Hold & Win.","В бонусе Collect Symbols остаются фиксированными, новые Coins обновляют респины, а Chicken Multipliers усиливают клетки."], editorial:"Chicken Fire строит Hold & Win вокруг фиксированных Collect Symbols: они собирают значения монет, а Chicken Multipliers постепенно усиливают отдельные позиции.", features:[{title:"Collect и Chicken Multipliers",description:"Collect Symbols остаются в центре бонуса, а Chicken Multipliers повышают значения Coin Symbols в своих клетках."}] },
-  "bgaming-divine-queen-power-of-sun": { intro:["Выигрышные Pay Anywhere-комбинации исчезают, после чего поле заполняется заново.","Cell Multipliers появляются в клетках после выигрышей и растут по ходу серии, а во Free Spins сохраняются до конца бонуса."], editorial:"Divine Queen: Power of Sun связывает Refilling с Cell Multipliers: каскады не только дают новые комбинации, но и наращивают множители в конкретных клетках.", features:[{title:"Refilling и Cell Multipliers",description:"После выигрыша символы исчезают, поле пополняется, а Cell Multipliers могут расти в течение серии и Free Spins."}] },
-  "bgaming-dusty-duel": { intro:["После выигрыша символы исчезают и поле заполняется снова по механике Refilling.","VS Symbols могут запустить Wild or Dead Duel или Multiplier Duel, а отдельный Multiplier Reel накапливает усиления."], editorial:"Dusty Duel меняет каскады через дуэли: Wild оставляет целый барабан Wild, Dead временно убирает барабан из текущего спина, а Multiplier Duel усиливает общий множитель.", features:[{title:"Wild or Dead и Multiplier Duels",description:"VS Symbols запускают дуэли, которые либо превращают барабан в Wild, либо очищают его, либо добавляют множитель."}] },
-  "bgaming-fortune-trio-minions-of-fu": { intro:["Yin-Yang Bonus Symbols открывают Free Spins с Giant Symbol или набором высокооплачиваемых символов.","Gold Coins запускают Hold & Win, где Collect Coin собирает значения монет и работают отдельные jackpot-условия."], editorial:"Fortune Trio разделяет бонусную игру на три направления: два режима Free Spins и отдельный Hold & Win с Coin Collection.", features:[{title:"Три бонусных режима",description:"Yin-Yang Symbols открывают два варианта Free Spins, а Gold Coins переводят игру в Hold & Win с Collect Coin."}] },
-  "bgaming-frenzy-clusters": { intro:["Кластеры одинаковых символов исчезают, а поле продолжает заполняться, пока формируются новые выигрыши.","Rocket, Book и Sphere могут очищать дополнительные позиции, а Rock Symbols способны расширять игровое поле."], editorial:"Frenzy Clusters дополняет Cluster Pays разрушающими спецсимволами и временным расширением поля, поэтому размер и форма следующего кластера постоянно меняются.", features:[{title:"Special Symbols и расширение поля",description:"Rocket, Book и Sphere очищают разные области сетки, а Rock Symbols могут открыть дополнительные клетки."}] },
-  "bgaming-fruit-million-respin": { intro:["Wild на средних барабанах расширяется на весь барабан и запускает Respin.","Каждый Expanding Wild приносит случайный множитель; при последовательных Wild множители складываются внутри одной серии респинов."], editorial:"Fruit Million Respin превращает появление Wild в короткую цепочку: расширение запускает новый спин, а последующие Wild одновременно продлевают серию и усиливают итоговый множитель.", features:[{title:"Expanding Wild Respins",description:"Expanding Wild запускает Respin, а множители от нескольких Wild в одной серии суммируются."}] },
-  "bgaming-johnny-vs-chicken": { intro:["VS Symbol в выигрышной комбинации запускает Multiplier Duel.","Победитель дуэли становится Expanding Wild с множителем; во Free Spins отдельные Buy Bonus-режимы могут сделать такие Wild липкими."], editorial:"Johnny vs Chicken строится вокруг дуэли за множитель: VS Symbol превращает один барабан в Expanding Wild, а итог дуэли определяет силу этого Wild.", features:[{title:"Multiplier Duel",description:"VS Symbol запускает дуэль, после которой один из персонажей становится Expanding Wild с выбранным множителем."}] },
-  "bgaming-miss-cherry-wild-frames": { intro:["Special Symbols создают Wild Frames, которые сохраняются в рамках десятиспинового цикла.","Попадание Special Symbol в существующую рамку увеличивает цикловый множитель, а на завершающем спине накопленные рамки превращаются в Wild."], editorial:"Miss Cherry Wild Frames строит базовую игру вокруг повторяющегося цикла: рамки копятся несколько спинов, множитель растёт, а кульминация приходит в конце цикла.", features:[{title:"Wild Frames и цикл",description:"Special Symbols создают сохраняющиеся Wild Frames и увеличивают общий множитель при повторном попадании в рамку."}] },
-  "bgaming-money-maker": { intro:["Money Maker — однолинейная игра, где фрагменты банкноты должны сложиться в полный купюроподобный символ.","После выигрыша можно перейти в Gamble Round с выбором орла или решки и попытаться удвоить результат."], editorial:"Механика Money Maker предельно простая: сначала нужно собрать банкноту на единственной линии, а затем решить, фиксировать выигрыш или рисковать им в Gamble Round.", features:[{title:"Banknote и Gamble Round",description:"Полная банкнота даёт выплату по своему множителю, после чего выигрыш можно попытаться удвоить в heads-or-tails раунде."}] },
-  "bgaming-multi-rush": { intro:["Кластеры одинаковых символов исчезают, после чего новые символы падают в освободившиеся клетки.","Rush Symbols могут принести случайные множители, Cell Multipliers растут в клетках, а Electric Win способен создать выигрышный кластер автоматически."], editorial:"Multi Rush наслаивает несколько усилителей на Cluster Pays: локальные Cell Multipliers, случайные Rush Symbols и Electric Win работают поверх обычных каскадов.", features:[{title:"Rush и Cell Multipliers",description:"Rush Symbols добавляют множители, Cell Multipliers усиливают клетки, а Electric Win может сформировать выигрышный кластер."}] },
-  "bgaming-mystic-reels": { intro:["Mystic Reels использует Cascade+: выигрышные линии исчезают, а на их место падают новые символы.","Encore mode добавляет респины через камни под полем, а во Free Spins Wilds повышают множители отдельных барабанов."], editorial:"Главный цикл Mystic Reels строится на Cascade+ и двух путях продолжения серии: Encore даёт респины, а Free Spins накапливают барабанные множители через Wilds.", features:[{title:"Cascade+, Encore и Free Spins",description:"Каскады могут вести к респинам и Free Spins, а Wilds во время бонуса повышают множители соответствующих барабанов."}] },
-  "bgaming-red-hot-chilli-chickens": { intro:["Mystery Symbols могут раскрывать Chillis, которые заполняют три отдельных feature-потa.","Полные pots запускают Colossal Free Spins, Jackpot Free Spins или Hold & Win; несколько pots могут активировать двойной или тройной бонус."], editorial:"Red Hot Chilli Chickens связывает три разных бонуса через сбор Chillis: один отвечает за Colossal Symbols, второй за джекпоты, третий за Hold & Win с Collector Symbols.", features:[{title:"Три pots и комбинированные бонусы",description:"Chillis заполняют три feature-потa, а одновременное заполнение нескольких pots объединяет соответствующие бонусные раунды."}] },
-  "bgaming-reel-of-ra": { intro:["Free Spins в Reel of Ra состоят из семи Coin-only вращений, где значения всех монет суммируются.","Отдельный Multiplier Reel умножает итог каждого спина, а заполнение всего поля Coins даёт Grand Prize."], editorial:"Reel of Ra строит бонус не на линиях, а на сумме Coin values: каждый спин усиливается Multiplier Reel, а полный экран монет открывает Grand Prize.", features:[{title:"Coin-only Free Spins и Multiplier Reel",description:"В семи Free Spins учитываются только Coins, их сумма умножается отдельным Multiplier Reel, а полный экран даёт Grand Prize."}] },
-  "bgaming-st-patricks-pots-hold-and-win": { intro:["Feature Pots в базовой игре развивают три функции: Boost, Jackpots и Minimum Coin.","В Hold & Win стартуют три респина, а активные features могут повышать Coin values, открывать jackpots и поднимать минимальное значение монет."], editorial:"St. Patrick’s Pots Hold and Win делает каждый бонус зависимым от состояния трёх Feature Pots: накопленные уровни напрямую меняют Boost, jackpot-потенциал и нижнюю границу Coin values.", features:[{title:"Feature Pots и Hold & Win",description:"Boost, Jackpots и Minimum Coin могут работать вместе внутри Hold & Win с тремя стартовыми респинами."}] },
-  "bgaming-stars-and-stripes-hold-and-win": { intro:["Шесть Coins запускают Coin Respin с тремя респинами, а новые Coins и Dynamite обновляют счётчик.","Dynamite делит крупные ячейки на меньшие, увеличивая число позиций; во Free Spins Wilds несут множители."], editorial:"Stars & Stripes Hold and Win связывает Coin Respin с изменяемой геометрией поля: Dynamite дробит ячейки и создаёт новые места для Coins, а Mega Jackpot требует заполнения всех 48 позиций после разблокировки.", features:[{title:"Coin Respin и Dynamite",description:"Coins остаются липкими, Dynamite делит ячейки и расширяет число доступных позиций, а полный Feature grid связан с Mega Jackpot."}] },
-  "bgaming-sweet-samurai": { intro:["Sweet Samurai использует асимметричное поле 3×4×3×4×3 и механику Ways pays.","Winning lines оформляются через Win Slice, но отдельных Bonus rounds и Buy Bonus у игры нет."], editorial:"Sweet Samurai — редкая для этой серии полностью базовая игра: её специфика в асимметричном поле и Ways pays, без отдельного бонусного режима.", features:[{title:"Асимметричное поле и Ways pays",description:"Комбинации собираются на соседних барабанах слева направо на поле 3×4×3×4×3; Win Slice визуально завершает выигрыш."}] },
+  "bgaming-bonanza-billion-merge-uptm": {
+    "intro": [
+      "Bonanza Billion Merge Up™+ сочетает фруктовую серию с кластерной системой Merge Up™+: выигрышные группы из четырёх соседних символов исчезают и создают новые случайные символы.",
+      "В Free Spins появляются отдельные множители от x2 до x100, которые суммируются в конце вращения; повторные Scatter способны продлить бонус."
+    ],
+    "editorial": "Множители в этой версии доступны именно в Free Spins, а не в базовой игре. Merge Up™+ не гарантирует следующий выигрыш: после оплаты новый символ выбирается случайно из присутствующих на экране.",
+    "features": [
+      {
+        "title": "Merge Up™+ и кластеры",
+        "description": "Четыре или больше соседних одинаковых символа образуют оплату. После неё выигравшие позиции исчезают и превращаются в случайный символ из уже присутствующих на поле."
+      },
+      {
+        "title": "Триггер Free Spins",
+        "description": "Четыре, пять либо шесть Scatter запускают соответственно 10, 20 или 30 бесплатных вращений."
+      },
+      {
+        "title": "Ретриггер и множители",
+        "description": "Три и более Scatter во Free Spins добавляют ещё пять спинов; отдельные множители x2–x100 суммируются по завершении вращения и применяются к выигрышу."
+      },
+      {
+        "title": "Chance x2 и покупка",
+        "description": "Chance x2 повышает шанс бонусного раунда, а Buy Bonus позволяет войти в него напрямую; эти опции нельзя смешивать в одну механику обычных каскадов."
+      }
+    ]
+  },
+  "bgaming-book-of-hidden-tombs": {
+    "intro": [
+      "Book of Hidden Tombs переосмысливает египетский Book-бонус на десяти линиях: книга одновременно выполняет функции Scatter и Wild.",
+      "Три и более книги запускают десять Free Spins с выбранным Golden Expanding Symbol — золотым расширяющимся символом. Отдельный Super Free Spins использует прогрессивный множитель до x512."
+    ],
+    "editorial": "У этой игры два различных сценария бонуса: обычный Free Spins строится вокруг золотого расширяющегося символа, а Super Free Spins — вокруг множителя, который удваивается после спина без выигрыша и сбрасывается после выплаты.",
+    "features": [
+      {
+        "title": "Книга как Scatter и Wild",
+        "description": "Book подменяет символы в выигрышных линиях и одновременно запускает бонус при трёх или более книгах."
+      },
+      {
+        "title": "Золотой Expanding Symbol",
+        "description": "До старта обычных Free Spins выбирается один символ, кроме книги. Два или три его экземпляра могут расширяться на весь барабан и оплачиваются по десяти линиям."
+      },
+      {
+        "title": "Прогрессивный множитель Super Free Spins",
+        "description": "Множитель стартует с x1 и удваивается после спина без выигрыша, вплоть до x512; после выигрышного вращения значение применяется и обнуляется."
+      },
+      {
+        "title": "Дополнительные вращения и покупка",
+        "description": "Три новые книги в бонусе прибавляют десять спинов. Для Super Free Spins нужны три или более Golden Scatters; обе бонусные версии также доступны через Buy Feature."
+      }
+    ]
+  },
+  "bgaming-cats-love-yummy": {
+    "intro": [
+      "Cats Love Yummy переносит игру в кошачье кафе, где комбинации пяти одинаковых символов связаны с отдельной системой Cats Jackpot.",
+      "Три, четыре и пять Bonus Symbols запускают соответственно 10, 15 или 25 Free Spins; в бонусе Wild ограничены пятым барабаном, а дополнительный Bonus продлевает серию."
+    ],
+    "editorial": "У Cats Love Yummy обычные Wild распределены по барабанам 3–5, но во Free Spins появляются только на пятом. Cats Jackpot связан с отдельной активной позицией шестого барабана, а не с любым символом кота на поле.",
+    "features": [
+      {
+        "title": "Триггеры Free Spins",
+        "description": "Три, четыре или пять Bonus Symbols включают 10, 15 или 25 вращений с бонусными множителями; во время раунда два и более Bonus добавляют пять спинов."
+      },
+      {
+        "title": "Wild в базе и бонусе",
+        "description": "В базовой игре Wild могут появляться на барабанах 3–5; в Free Spins появление Wild ограничено пятым барабаном."
+      },
+      {
+        "title": "Cats Jackpot на шестом барабане",
+        "description": "Джекпотный символ появляется только на шестом барабане и учитывается в центральной активной позиции; Mini, Minor, Major и Grand связаны с определёнными пятёрками котов или игрушек."
+      },
+      {
+        "title": "Buy Feature и Fast 100 Spins",
+        "description": "Прямой вход во Free Spins стоит 100 ставок. Fast 100 Spins автоматизирует серию из ста спинов и может быть остановлен до её завершения."
+      }
+    ]
+  },
+  "bgaming-chicken-fire": {
+    "intro": [
+      "Chicken Fire — вертикальный фруктовый слот 3×3 с пятью линиями: монеты приходят на крайние барабаны, а Collect занимает второй.",
+      "Coin на первом и третьем барабанах вместе с центральным Collect включают Hold & Win. В бонусе липкие Collect собирают значения, а Chicken Multipliers (Chicken’s Multipliers) оставляют множители в ячейках."
+    ],
+    "editorial": "В Chicken Fire курица меняет роль между базовой игрой и респинами: обычный Wild заменяет символы, но в бонусе Chicken’s Multiplier повышает конкретную клетку. Pile of Gold — отдельный случайный способ войти в бонус.",
+    "features": [
+      {
+        "title": "Coin и Collect по барабанам",
+        "description": "Coin с номиналами от x1 до x15 появляются на барабанах 1 и 3; центральный Collect на барабане 2 собирает их значения."
+      },
+      {
+        "title": "Hold & Win и Pile of Gold",
+        "description": "Совместное выпадение Coin по краям и Collect в центре включает три респина; Pile of Gold может случайно добавить эти символы и тоже запустить бонус."
+      },
+      {
+        "title": "Chicken’s Multipliers",
+        "description": "Курица в бонусе оставляет на ячейке x2; каждая следующая курица добавляет к множителю этой клетки единицу. Новые Coin обновляют три попытки."
+      },
+      {
+        "title": "Три покупки и джекпоты",
+        "description": "Доступны обычный, Super и Ultra Bonus с различным стартом Collect. Mini, Minor, Major и Grand обозначены собственными джекпотными символами."
+      }
+    ]
+  },
+  "bgaming-divine-queen-power-of-sun": {
+    "intro": [
+      "Divine Queen: Power of Sun использует выплаты за одинаковые символы в любых позициях, после которых Refilling удаляет выигравшие и добавляет новые.",
+      "Cell Multipliers отдельных ячеек могут расти до x128; в обычном спине они не переходят на следующий, а во Free Spins сохраняются до конца всей бонусной серии."
+    ],
+    "editorial": "Эту часть Divine Queen нельзя смешивать с Heart of Ice. Здесь решают накопленные Cell Multipliers и каскады, а Booster с исходным x32 и Bonus Rebuy — отдельные опции, не обязательные для базовой игры.",
+    "features": [
+      {
+        "title": "Pay Anywhere и Refilling",
+        "description": "Выплаты не зависят от классических линий. Выигравшие символы исчезают, остальные падают вниз, а пустые позиции заполняются сверху."
+      },
+      {
+        "title": "Cell Multipliers до x128",
+        "description": "Множители повышаются при выигрышах и в бонусе остаются на своих позициях до завершения Free Spins."
+      },
+      {
+        "title": "Free Spins и дополнительные попытки",
+        "description": "Четыре или более Scatter запускают Free Spins; три и более Scatter внутри раунда добавляют пять вращений."
+      },
+      {
+        "title": "Booster и Super Free Spins",
+        "description": "Booster может начинать спины со случайными множителями или x32. Покупной Super Free Spins начинается с x2 во всех клетках, а Bonus Rebuy повторяет последнюю приобретённую опцию."
+      }
+    ]
+  },
+  "bgaming-dusty-duel": {
+    "intro": [
+      "Dusty Duel переносит Pay Anywhere и Refilling на Дикий Запад, где VS Symbols запускают поединки за Wild или дополнительный множитель.",
+      "В игре есть два исхода Wild or Dead Duel: Wild заполняет барабан Wild Symbols, Dead временно очищает его до окончания вращения."
+    ],
+    "editorial": "Ключевой риск Dusty Duel: выигранная дуэль может усилить множитель, но исход Dead способен выключить целый барабан из текущей цепочки. Множитель барабана в обычной игре сбрасывается, а в Free Spins накапливается.",
+    "features": [
+      {
+        "title": "Wild or Dead Duel",
+        "description": "После исхода Wild весь барабан становится Wild до конца Refilling. При Dead барабан очищается и больше не участвует до завершения спина."
+      },
+      {
+        "title": "Multiplier Duel и верхний барабан",
+        "description": "VS Symbols запускают дуэль множителей. Случайные значения x2–x170 на поле и выигравшие дуэли увеличивают итоговый Multiplier Reel."
+      },
+      {
+        "title": "Scatter и Free Spins",
+        "description": "Четыре, пять или шесть Scatter открывают 10, 12 или 14 Free Spins; три и более в бонусе прибавляют ещё пять."
+      },
+      {
+        "title": "Три варианта Buy Bonus",
+        "description": "First Blood даёт обычный режим; Dead or Alive гарантирует дуэль каждый спин; No Mercy стартует с x50 и тоже гарантирует дуэль."
+      }
+    ]
+  },
+  "bgaming-fortune-trio-minions-of-fu": {
+    "intro": [
+      "Fortune Trio: Minions Of Fu делит бонусную систему на три сценария: Giant Symbol Free Spins, High Symbols Free Spins и Hold & Win с золотыми монетами.",
+      "От трёх Yin-Yang Symbols запускаются бесплатные вращения, а шесть Gold Coins включают Hold & Win, где отдельный Collect Coin собирает значения, не удаляя их."
+    ],
+    "editorial": "Важная разница между джекпотами Fortune Trio: Mini, Major и Mega зависят от числа заполненных горизонтальных рядов, а не суммируются между собой. Переход между бонусными сценариями возможен и в уже запущенном раунде.",
+    "features": [
+      {
+        "title": "Giant Symbols и High Symbols",
+        "description": "Три и более Yin-Yang дают либо пять вращений с гигантским символом на барабанах 2–4, либо восемь вращений только со старшими символами."
+      },
+      {
+        "title": "Hold & Win с шестью монетами",
+        "description": "Шесть и более Gold Coins открывают респины; новая монета возвращает счётчик к трём, а Collect Coin собирает значения монет без их исчезновения."
+      },
+      {
+        "title": "Джекпоты за заполненные линии",
+        "description": "Одна полностью заполненная горизонталь даёт Mini x20, две — Major x100, три — Mega x1000. Эти награды не суммируются."
+      },
+      {
+        "title": "Переход между тремя бонусами",
+        "description": "Yin-Yang или шесть Gold Coins могут выпасть в бонусных раундах и продлить либо переключить сценарий. Покупка позволяет выбрать конкретный вход."
+      }
+    ]
+  },
+  "bgaming-frenzy-clusters": {
+    "intro": [
+      "Frenzy Clusters — кластерный слот, в котором выигрыш начинается с четырёх соседних одинаковых символов, а Rocket, Book и Sphere очищают разные участки поля.",
+      "Каменные клетки могут освобождаться во время каскадов, а два бонуса различаются доступной площадью и накопительными множителями над сеткой."
+    ],
+    "editorial": "Frenzy Clusters не привязан к выбранному герою по математике: персонаж меняет сопровождение игры. Для результата важнее уничтожение символов, открытие камней и разница между Free Spins и покупным Mega Free Spins.",
+    "features": [
+      {
+        "title": "Rocket, Book и Sphere",
+        "description": "Rocket удаляет линию по горизонтали или вертикали, Book очищает квадрат 3×3, Sphere уничтожает копии случайного типа символов."
+      },
+      {
+        "title": "Камни и кластеры",
+        "description": "Группы из четырёх символов оплачиваются; выигрыши могут раскрывать каменные клетки, расширяя поле и открывая скрытые множители."
+      },
+      {
+        "title": "Free Spins с растущим множителем",
+        "description": "Три и более Scatter включают бонус: за Scatter добавляется x1 к общему множителю, а три множителя под камнями открываются по мере игры."
+      },
+      {
+        "title": "Mega Free Spins и Mystery Buy",
+        "description": "В покупном Mega Free Spins всё поле открыто сразу и стартует с тремя добавочными множителями; Mystery Buy выбирает случайный бонус через один из пяти порталов."
+      }
+    ]
+  },
+  "bgaming-fruit-million-respin": {
+    "intro": [
+      "Fruit Million Respin оставляет сто линий фруктового слота, но на барабанах 2–4 Expanding Wild может расшириться, оплатить комбинации и вызвать дополнительное вращение.",
+      "При новых Wild во время респинов серия продлевается, а их множители x1, x2, x3 и x5 складываются до завершения всей последовательности."
+    ],
+    "editorial": "Это не классические Free Spins: расширившийся Wild остаётся на барабане именно в рамках респинов. На странице BGaming есть разночтение по общему максимальному выигрышу (x3000 в таблице и x5000 в FAQ), поэтому спорное значение здесь не утверждается.",
+    "features": [
+      {
+        "title": "Expanding Wild на барабанах 2–4",
+        "description": "Каждый Wild в центральных барабанах раскрывается на весь барабан и может создать выигрышные комбинации."
+      },
+      {
+        "title": "Цепочка до трёх респинов",
+        "description": "Расширение Wild запускает один Respin. Новый Wild в ходе серии продлевает её; подряд возможно до трёх респинов."
+      },
+      {
+        "title": "Суммируемые множители Wild",
+        "description": "Каждый расширившийся Wild приносит случайный x1, x2, x3 либо x5; значения суммируются и применяются к выигрышу цепочки респинов."
+      },
+      {
+        "title": "Stacked Symbols и два Scatter",
+        "description": "Стопки одинаковых символов занимают часть или целый барабан. Первый Scatter может прийти на любой барабан, второй — только на 1, 3 или 5."
+      }
+    ]
+  },
+  "bgaming-johnny-vs-chicken": {
+    "intro": [
+      "Johnny vs Chicken сталкивает героев Wild West и Chicken Rush в Multiplier Duel: VS Symbol превращается в Expanding Wild после случайной победы одного из бойцов.",
+      "Дуэльные множители доходят до x500; три Scatter открывают десять Free Spins с возможностью добавлять десятки вращений."
+    ],
+    "editorial": "В Johnny vs Chicken победитель дуэли выбирается случайно, поэтому множитель x500 не обещает такую выплату в каждом бонусе. Купленные Flaming Shot и Inferno Shot отличаются Sticky Expanding Wild, которых базовая игра не запускает.",
+    "features": [
+      {
+        "title": "Multiplier Duel от VS Symbol",
+        "description": "Оба персонажа получают случайные множители из набора x2–x500, после боя победитель становится Expanding Wild на соответствующем барабане."
+      },
+      {
+        "title": "Сложение множителей Wild",
+        "description": "Когда в одной выигрышной комбинации участвуют несколько Expanding Wild, их множители складываются."
+      },
+      {
+        "title": "Десять Free Spins и ретриггер",
+        "description": "Три Scatter запускают десять бесплатных вращений; каждые новые три Scatter внутри режима добавляют ещё десять."
+      },
+      {
+        "title": "Hot Shot, Flaming Shot, Inferno Shot",
+        "description": "Покупной Hot Shot даёт обычные Free Spins; Flaming Shot добавляет случайные Sticky Wild, Inferno Shot гарантирует такой Wild с первого вращения."
+      }
+    ]
+  },
+  "bgaming-miss-cherry-wild-frames": {
+    "intro": [
+      "Miss Cherry Wild Frames устроен вокруг десятиспинного цикла: Special Symbols оставляют золотые Wild Frames, которые только на десятом вращении превращаются в Wild.",
+      "Повторное попадание Special Symbol в существующую рамку поднимает множитель цикла, но в Free Spins действует другая механика — Sticky Wild вместо Wild Frames."
+    ],
+    "editorial": "У Miss Cherry Wild Frames нельзя переносить десятиспинный цикл в бонус как готовые рамки: во Free Spins новые рамки не создаются. Основной режим — накопление Wild Frames до десятого спина, бонусный — удержание липких Wild.",
+    "features": [
+      {
+        "title": "Wild Frames на десять вращений",
+        "description": "Special Symbols создают рамки, которые сохраняются до десятого спина и тогда превращаются в Wild Symbols."
+      },
+      {
+        "title": "Множитель текущего цикла",
+        "description": "Дополнительный Special внутри рамки увеличивает множитель на +1; он влияет на выигрыши до завершения данного десятиспинного цикла."
+      },
+      {
+        "title": "Free Spins со Sticky Wild",
+        "description": "Три Scatter на барабанах 1, 3 и 5 дают десять Free Spins. Каждый выпавший Wild остаётся до конца раунда; новые Wild Frames не создаются."
+      },
+      {
+        "title": "Три покупки и Chance x2",
+        "description": "Покупные режимы включают Free Spins с гарантированными Wild 2×2 либо 3×3. Chance x2 повышает вероятность обычного бонуса при увеличенной ставке."
+      }
+    ]
+  },
+  "bgaming-money-maker": {
+    "intro": [
+      "Money Maker — трёхбарабанный степпер всего с одной горизонтальной выигрышной линией. Для оплаты нужно собрать целую банкноту из совпадающих частей.",
+      "Максимальная по номиналу банкнота на видимом поле приносит x1000; после выигрыша можно отдельно рискнуть суммой в Gamble Round (Heads or Tails)."
+    ],
+    "editorial": "В Money Maker нет описанных Free Spins, каскадов или Bonus Buy. Это намеренно простая игра с одной линией, где реальная дополнительная механика — добровольный Gamble после выплаты.",
+    "features": [
+      {
+        "title": "Одна линия и цельная банкнота",
+        "description": "Три барабана складывают цветные банкноты на центральной линии. Оплачивается только совпадающая банкнота; самая дорогая даёт x1000."
+      },
+      {
+        "title": "Heads or Tails Gamble",
+        "description": "После основного выигрыша доступно угадывание стороны монеты. Успех удваивает текущую сумму, которую можно вывести или вновь поставить."
+      },
+      {
+        "title": "Ограничение Gamble",
+        "description": "Повторять угадывание разрешено, пока выигрыш не достигнет четверти максимально возможной выплаты; этот лимит не является RTP."
+      },
+      {
+        "title": "Autoplay и Quick Spin",
+        "description": "Автоматические серии задаются числом вращений, а Quick Spin ускоряет анимацию без изменения количества линий или механики выплаты."
+      }
+    ]
+  },
+  "bgaming-multi-rush": {
+    "intro": [
+      "Multi Rush использует кластеры и накопление Cell Multipliers до x256; специальные Rush Symbols добавляют случайный множитель вплоть до x100.",
+      "В Free Spins четыре Multi Sync Cells способны скопировать самый высокий множитель друг другу, а Super Bonus начинает с x4 во всех клетках."
+    ],
+    "editorial": "Multi Rush разделяет три разных режима покупки: стандартный бонус, Super Bonus с Multi Sync Cells и Hyper Spins с исходными x64. Сам по себе Rush Symbol x100 не следует путать с общим max win всей игры.",
+    "features": [
+      {
+        "title": "Cell Multipliers и Rush",
+        "description": "Множители отдельных клеток растут при выигрышах до x256. Rush Symbols могут случайно появляться с добавочным значением до x100."
+      },
+      {
+        "title": "Electric Win",
+        "description": "Случайная функция создаёт выигрышные кластеры на сетке как в основной игре, так и в бонусных раундах."
+      },
+      {
+        "title": "Multi Sync Cells",
+        "description": "В бонусе самый высокий множитель из четырёх специальных ячеек может скопироваться во все остальные три; потолок таких ячеек x1024."
+      },
+      {
+        "title": "Super Bonus и Hyper Spins",
+        "description": "Покупной Super Bonus даёт 12 Free Spins с начальными x4; Hyper Spins стартует со значениями x64 во всех клетках. Это отдельные входы, а не базовые параметры обычного спина."
+      }
+    ]
+  },
+  "bgaming-mystic-reels": {
+    "intro": [
+      "Mystic Reels строится на двадцати линиях и системе Cascade+: выигрышные символы исчезают, освобождая место новым и продвигая цепочку к бонусу.",
+      "Encore Stones под сеткой могут дать респин, а в Free Spins отдельные Wild повышают множитель соответствующего барабана вплоть до x5."
+    ],
+    "editorial": "Mystic Reels отличается от обычного Scatter-бонуса: число Free Spins зависит от Cascade+ и может стартовать с 7, 10, 12, 18 или 25. Encore за увеличенную ставку меняет шанс респинов и путь к бонусу.",
+    "features": [
+      {
+        "title": "Cascade+ и линии",
+        "description": "Выигрышные комбинации по 20 линиям исчезают, новые символы падают на их место; каскады могут привести к респинам и Free Spins."
+      },
+      {
+        "title": "Encore Stones и режим Encore",
+        "description": "Активные камни под сеткой дают дополнительные респины, а Encore увеличивает общую ставку на 50% ради расширения бонусных возможностей."
+      },
+      {
+        "title": "Free Spins и Wild Multipliers",
+        "description": "Бонус Cascade+ может дать 7–25 стартовых вращений и ретриггеры. Каждый Wild повышает множитель своего барабана на +1 до x5."
+      },
+      {
+        "title": "Покупка бонуса",
+        "description": "Buy Bonus стоимостью x100 ставки гарантирует десять Free Spins с возможностью продления через Cascade+, а не фиксированный единичный приз."
+      }
+    ]
+  },
+  "bgaming-red-hot-chilli-chickens": {
+    "intro": [
+      "Red Hot Chilli Chickens объединяет три отдельные шкалы Chilli Pots: за их заполнение открываются Colossal Free Spins, Jackpot Free Spins либо Hold & Win.",
+      "Если несколько горшков срабатывают в одном вращении, игра может совместить два или сразу три бонуса; они не тождественны обычным бесплатным спинам."
+    ],
+    "editorial": "Здесь важна именно комбинация бонусов. Colossal даёт гигантский 3×3 символ, Jackpot собирает цветные перцы по порогам, а Hold & Win использует Prize и Collector, который добавляет попытки.",
+    "features": [
+      {
+        "title": "Три горшка и Triple Bonus",
+        "description": "Mystery может раскрыть один из трёх Chilli Symbols, которые заряжают разные горшки. Совпадение нескольких триггеров даёт двойной либо тройной бонус."
+      },
+      {
+        "title": "Colossal Free Spins",
+        "description": "На барабанах 2–4 в каждом бонусном вращении появляется крупный символ размером 3×3."
+      },
+      {
+        "title": "Jackpot Free Spins",
+        "description": "Накопление 3 синих, 4 зелёных, 5 фиолетовых, 6 жёлтых или 7 красных перцев ведёт к соответствующим Mini, Minor, Major, Mega либо Max."
+      },
+      {
+        "title": "Hold & Win Collector",
+        "description": "В респинах появляются Prize Symbols со значениями до x1000 и Collector, который собирает их и добавляет одну, две или три попытки."
+      }
+    ]
+  },
+  "bgaming-reel-of-ra": {
+    "intro": [
+      "Reel of Ra использует 243 способа выигрыша и отдельную монетную серию из семи Free Spins: вместо обычных символов в бонусе падают только Coins.",
+      "После сбора монет отдельный Multiplier Reel повышает результат спина на x1, x2, x3 или x5, а заполнение всего поля связано с Grand Prize."
+    ],
+    "editorial": "Особенность Reel of Ra — не смешивать Mega Prize Coin с множителем барабана: монета x100 учитывается отдельно, а Multiplier Reel применяется к сумме обычных монет за конкретный бонусный спин.",
+    "features": [
+      {
+        "title": "Триггер по монетам",
+        "description": "Три и более Coin Symbols открывают бонус с семью бесплатными вращениями; вход также доступен через Buy Bonus."
+      },
+      {
+        "title": "Семь Coin-only Free Spins",
+        "description": "В бонусе появляются только Coins, значения собираются в нижнем счётчике; Multiplier Reel выбирает x1, x2, x3 либо x5 для результата спина."
+      },
+      {
+        "title": "Mega Prize Coin x100",
+        "description": "Отдельная монета со значением x100 не умножается верхним Multiplier Reel, в отличие от обычной суммы Coin Symbols."
+      },
+      {
+        "title": "Grand за заполнение поля",
+        "description": "Если все позиции заняты монетами, присуждается Grand x1000, но при большей сумме монет с множителем выплачивается более высокая из двух величин."
+      }
+    ]
+  },
+  "bgaming-st-patricks-pots-hold-and-win": {
+    "intro": [
+      "St. Patrick's Pots Hold and Win постепенно заряжает три независимых Feature Pots (горшка) в базовой игре: Boost, Minimum Coin и Jackpot.",
+      "В Hold & Win работают до трёх усилений сразу; изменённая ставка сбрасывает видимый прогресс, но возвращение к прежней ставке восстанавливает соответствующие горшки."
+    ],
+    "editorial": "Главное здесь — не просто запустить Hold & Win, а понять накопленный уровень каждого горшка. Boost увеличивает монеты, Minimum Coin поднимает минимальный номинал, Jackpot улучшает младшие джекпоты, оставляя фиксированными Major и Grand.",
+    "features": [
+      {
+        "title": "Три накопительных Feature Pots",
+        "description": "Boost Pot растёт от x2 до x10, Minimum Coin от x3 до x10, Jackpot Pot улучшает Mini и Minor; прогресс учитывается отдельно для разных размеров ставки."
+      },
+      {
+        "title": "Hold & Win с тремя респинами",
+        "description": "Special Symbols могут улучшить горшок либо запустить бонус с текущим уровнем. В респинах собираются Coin Symbols и джекпоты."
+      },
+      {
+        "title": "Boost, Minimum Coin и Jackpot",
+        "description": "Boost повышает значения монет; Minimum Coin задаёт нижний порог; Jackpot изменяет Mini/Minor, а Major x200 и Grand x500 остаются фиксированными."
+      },
+      {
+        "title": "Buy Bonus и Chance x2",
+        "description": "Покупные варианты стартуют с одним или тремя усилениями и случайным их уровнем, а Chance x2 отдельно повышает вероятность Special Symbols."
+      }
+    ]
+  },
+  "bgaming-stars-and-stripes-hold-and-win": {
+    "intro": [
+      "Stars & Stripes Hold and Win сочетает Trueways, Free Spins с множителями Wild и Coin Respin, который запускается от шести Coin Symbols.",
+      "Dynamite (динамит) в Coin Respin разделяет крупные ячейки, постепенно увеличивая число позиций под монеты; Mega Jackpot требует отдельного открытия и заполнения 48 клеток."
+    ],
+    "editorial": "У этой игры на официальной странице есть ограничение по доступности для отдельных серверов. Нельзя автоматически заявлять наличие у всех операторов; в самой механике Mini/Major приходят с Coin, а Mega требует Collect и заполнения расширенной сетки.",
+    "features": [
+      {
+        "title": "Coin Respin и три респина",
+        "description": "Шесть и более монет включают Coin Respin, новые монеты удерживаются; новая Coin или Dynamite возвращает счётчик к трём попыткам."
+      },
+      {
+        "title": "Dynamite расширяет поле",
+        "description": "В респинах Dynamite разбивает среднюю или крупную ячейку на две, создавая дополнительные позиции для монет."
+      },
+      {
+        "title": "Free Spins и Wild Multipliers",
+        "description": "Четыре, пять или шесть Scatter дают 12, 15 или 20 вращений; Wild во Free Spins имеют x2, x3 либо x5 и суммируются для выигрышных комбинаций."
+      },
+      {
+        "title": "Условия Mega Jackpot",
+        "description": "Вначале Mega разблокируется Collect, затем необходимо заполнить монетами все 48 позиций. Mini и Major имеют отдельные Jackpot Coins."
+      }
+    ]
+  },
+  "bgaming-sweet-samurai": {
+    "intro": [
+      "Sweet Samurai — фруктовый слот с асимметричными пятью барабанами: на них расположено 3×4×3×4×3 символа соответственно.",
+      "Выигрыши собираются соседними барабанами слева направо по Ways Pays, а Broccoli Samurai оживает при крупных выплатах в анимации Win Slice."
+    ],
+    "editorial": "В Sweet Samurai нет подтверждённых Free Spins, Bonus Buy и Hold & Win. Основная игра здесь и есть всё досье: нестандартная высота барабанов, комбинации слева направо и старший Golden Pineapple.",
+    "features": [
+      {
+        "title": "Асимметричная схема 3×4×3×4×3",
+        "description": "На барабанах 1, 3, 5 по три позиции, на 2 и 4 — по четыре; это не классическое одинаковое поле 5×3 или 5×4."
+      },
+      {
+        "title": "Ways Pays слева направо",
+        "description": "Одинаковые символы на соседних барабанах слева направо оплачиваются без фиксированных линий; считается наиболее длинная комбинация данного символа."
+      },
+      {
+        "title": "Golden Pineapple",
+        "description": "Золотой ананас — самый дорогой обычный символ; его появление в выигрышной цепочке влияет на выплату по основной таблице."
+      },
+      {
+        "title": "Win Slice и отсутствие бонусного раунда",
+        "description": "При крупных выигрышах Broccoli Samurai разрубает фрукты в анимации Win Slice. Отдельного Free Spins либо Buy Feature провайдер не описывает."
+      }
+    ]
+  },
   "bgaming-the-godfather-3-pillars-of-power": { intro:["Три вида Bonus Tokens связаны с Loyalty Bonus Spins, Honor Hold & Win Spins и Vengeance Jackpot Spins.","В одном спине можно запустить от одного до трёх бонусов, включая комбинированные double и triple Bonus rounds."], editorial:"The Godfather: 3 Pillars of Power строится вокруг трёх независимых направлений бонуса: sticky Mystery Spins, Hold & Win с Collectors и отдельной Jackpot-системы.", features:[{title:"Три Pillars и комбинированные Bonus rounds",description:"Bronze, Silver и Gold Tokens открывают три разные bonus-механики, которые могут активироваться одновременно."}] },
   "bgaming-train-heist-johnny-cash": { intro:["Выигрышные кластеры превращаются в highlighted cells, где работают Coin Multipliers, Boosters и Collect Coin Symbols.","Три вида Free Spins используют те же highlighted cells по-разному, а Mega Free Spins добавляют TNT на каждом спине и убирают Bronze Coins."], editorial:"Train Heist Johnny Cash развивает Cluster Pays через Coin Modifier-систему: выигрышные клетки становятся постоянными точками для монетных эффектов, а три Free Spins-режима последовательно усиливают эту механику.", features:[{title:"Highlighted cells и три Free Spins-режима",description:"Coin Respins создают highlighted cells, где появляются Multipliers, Boosters и Collect Coins; Free Spins сохраняют и усиливают эти клетки."}] },
   "bgaming-wincent-wolf": { intro:["Три Scatter запускают Free Spins, а Wheel of Fortune перед бонусом определяет их стартовое количество.","Wilds во Free Spins становятся липкими; каждые три собранных Wild добавляют спины и повышают множители всех Wilds."], editorial:"Wincent Wolf строит бонус вокруг Sticky Wilds и Retrigger Counter: Wheel задаёт длину старта, а накопление Wilds продлевает раунд и одновременно усиливает множители.", features:[{title:"Wheel of Fortune и Sticky Wilds",description:"Wheel определяет стартовые Free Spins, а Sticky Wilds заполняют Retrigger Counter и повышают свои множители при перезапусках."}] },
