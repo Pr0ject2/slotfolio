@@ -1318,7 +1318,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   "bgaming-book-of-hidden-tombs": {
     "intro": [
       "Book of Hidden Tombs переосмысливает египетский Book-бонус на десяти линиях: книга одновременно выполняет функции Scatter и Wild.",
-      "Три и более книги запускают десять Free Spins с выбранным расширяющимся символом. Отдельный Super Free Spins использует прогрессивный множитель до x512."
+      "Три и более книги запускают десять Free Spins с выбранным Golden Expanding Symbol — золотым расширяющимся символом. Отдельный Super Free Spins использует прогрессивный множитель до x512."
     ],
     "editorial": "У этой игры два различных сценария бонуса: обычный Free Spins строится вокруг золотого расширяющегося символа, а Super Free Spins — вокруг множителя, который удваивается после спина без выигрыша и сбрасывается после выплаты.",
     "features": [
@@ -1368,7 +1368,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   "bgaming-chicken-fire": {
     "intro": [
       "Chicken Fire — вертикальный фруктовый слот 3×3 с пятью линиями: монеты приходят на крайние барабаны, а Collect занимает второй.",
-      "Coin на первом и третьем барабанах вместе с центральным Collect включают Hold & Win. В бонусе липкие Collect собирают значения, а Chicken’s Multipliers оставляют множители в ячейках."
+      "Coin на первом и третьем барабанах вместе с центральным Collect включают Hold & Win. В бонусе липкие Collect собирают значения, а Chicken Multipliers (Chicken’s Multipliers) оставляют множители в ячейках."
     ],
     "editorial": "В Chicken Fire курица меняет роль между базовой игрой и респинами: обычный Wild заменяет символы, но в бонусе Chicken’s Multiplier повышает конкретную клетку. Pile of Gold — отдельный случайный способ войти в бонус.",
     "features": [
@@ -1393,7 +1393,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   "bgaming-divine-queen-power-of-sun": {
     "intro": [
       "Divine Queen: Power of Sun использует выплаты за одинаковые символы в любых позициях, после которых Refilling удаляет выигравшие и добавляет новые.",
-      "Множители отдельных ячеек могут расти до x128; в обычном спине они не переходят на следующий, а во Free Spins сохраняются до конца всей бонусной серии."
+      "Cell Multipliers отдельных ячеек могут расти до x128; в обычном спине они не переходят на следующий, а во Free Spins сохраняются до конца всей бонусной серии."
     ],
     "editorial": "Эту часть Divine Queen нельзя смешивать с Heart of Ice. Здесь решают накопленные Cell Multipliers и каскады, а Booster с исходным x32 и Bonus Rebuy — отдельные опции, не обязательные для базовой игры.",
     "features": [
@@ -1418,7 +1418,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   "bgaming-dusty-duel": {
     "intro": [
       "Dusty Duel переносит Pay Anywhere и Refilling на Дикий Запад, где VS Symbols запускают поединки за Wild или дополнительный множитель.",
-      "В игре есть два разных исхода дуэли Wild or Dead: Wild заполняет барабан Wild Symbols, Dead временно очищает его до окончания вращения."
+      "В игре есть два исхода Wild or Dead Duel: Wild заполняет барабан Wild Symbols, Dead временно очищает его до окончания вращения."
     ],
     "editorial": "Ключевой риск Dusty Duel: выигранная дуэль может усилить множитель, но исход Dead способен выключить целый барабан из текущей цепочки. Множитель барабана в обычной игре сбрасывается, а в Free Spins накапливается.",
     "features": [
@@ -1492,7 +1492,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   },
   "bgaming-fruit-million-respin": {
     "intro": [
-      "Fruit Million Respin оставляет сто линий фруктового слота, но на барабанах 2–4 Wild может расшириться, оплатить комбинации и вызвать дополнительное вращение.",
+      "Fruit Million Respin оставляет сто линий фруктового слота, но на барабанах 2–4 Expanding Wild может расшириться, оплатить комбинации и вызвать дополнительное вращение.",
       "При новых Wild во время респинов серия продлевается, а их множители x1, x2, x3 и x5 складываются до завершения всей последовательности."
     ],
     "editorial": "Это не классические Free Spins: расширившийся Wild остаётся на барабане именно в рамках респинов. На странице BGaming есть разночтение по общему максимальному выигрышу (x3000 в таблице и x5000 в FAQ), поэтому спорное значение здесь не утверждается.",
@@ -1568,7 +1568,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   "bgaming-money-maker": {
     "intro": [
       "Money Maker — трёхбарабанный степпер всего с одной горизонтальной выигрышной линией. Для оплаты нужно собрать целую банкноту из совпадающих частей.",
-      "Максимальная по номиналу банкнота на видимом поле приносит x1000; после выигрыша можно отдельно рискнуть суммой в Heads or Tails Gamble."
+      "Максимальная по номиналу банкнота на видимом поле приносит x1000; после выигрыша можно отдельно рискнуть суммой в Gamble Round (Heads or Tails)."
     ],
     "editorial": "В Money Maker нет описанных Free Spins, каскадов или Bonus Buy. Это намеренно простая игра с одной линией, где реальная дополнительная механика — добровольный Gamble после выплаты.",
     "features": [
@@ -1692,7 +1692,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   },
   "bgaming-st-patricks-pots-hold-and-win": {
     "intro": [
-      "St. Patrick's Pots Hold and Win постепенно заряжает три независимых горшка в базовой игре: Boost, Minimum Coin и Jackpot.",
+      "St. Patrick's Pots Hold and Win постепенно заряжает три независимых Feature Pots (горшка) в базовой игре: Boost, Minimum Coin и Jackpot.",
       "В Hold & Win работают до трёх усилений сразу; изменённая ставка сбрасывает видимый прогресс, но возвращение к прежней ставке восстанавливает соответствующие горшки."
     ],
     "editorial": "Главное здесь — не просто запустить Hold & Win, а понять накопленный уровень каждого горшка. Boost увеличивает монеты, Minimum Coin поднимает минимальный номинал, Jackpot улучшает младшие джекпоты, оставляя фиксированными Major и Grand.",
@@ -1718,7 +1718,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   "bgaming-stars-and-stripes-hold-and-win": {
     "intro": [
       "Stars & Stripes Hold and Win сочетает Trueways, Free Spins с множителями Wild и Coin Respin, который запускается от шести Coin Symbols.",
-      "Динамит в Coin Respin разделяет крупные ячейки, постепенно увеличивая число позиций под монеты; Mega Jackpot требует отдельного открытия и заполнения 48 клеток."
+      "Dynamite (динамит) в Coin Respin разделяет крупные ячейки, постепенно увеличивая число позиций под монеты; Mega Jackpot требует отдельного открытия и заполнения 48 клеток."
     ],
     "editorial": "У этой игры на официальной странице есть ограничение по доступности для отдельных серверов. Нельзя автоматически заявлять наличие у всех операторов; в самой механике Mini/Major приходят с Coin, а Mega требует Collect и заполнения расширенной сетки.",
     "features": [
@@ -1742,7 +1742,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
   },
   "bgaming-sweet-samurai": {
     "intro": [
-      "Sweet Samurai — фруктовый слот с асимметричными пятью барабанами: на них соответственно 3, 4, 3, 4 и 3 символа.",
+      "Sweet Samurai — фруктовый слот с асимметричными пятью барабанами: на них расположено 3×4×3×4×3 символа соответственно.",
       "Выигрыши собираются соседними барабанами слева направо по Ways Pays, а Broccoli Samurai оживает при крупных выплатах в анимации Win Slice."
     ],
     "editorial": "В Sweet Samurai нет подтверждённых Free Spins, Bonus Buy и Hold & Win. Основная игра здесь и есть всё досье: нестандартная высота барабанов, комбинации слева направо и старший Golden Pineapple.",
