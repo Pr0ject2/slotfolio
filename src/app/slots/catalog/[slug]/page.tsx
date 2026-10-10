@@ -2138,7 +2138,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Три House Scatters запускают 10 Free Doom Spins; внутри бонуса House превращается в Wild House и может добавлять дополнительные spins. Отдельные Skulls of Abyss на reels 2–4 открывают pick bonus с cash prizes или переходом в Free Spins."
     ],
     editorial:"Первая House of Doom связывает expanding Wild с одним выбранным Hellgate reel, а bonus-ветки разделены: Doom Spins работают через House Scatters, Skulls of Abyss — через pick-механику. Это важно не переносить на sequel.",
-    features:[{title:"Hellgate и Doom Spins",description:"Подсвеченный Hellgate reel превращает попавший Wild в Expanding Wild; 3 House Scatters дают 10 Free Doom Spins, а 3 Skulls запускают отдельный pick bonus."}]
+    features: [{"title":"Hellgate и Expanding Wild","description":"На каждом обычном вращении случайный барабан становится Hellgate. Если на нём оказывается Wild Seer, символ расширяется на всю высоту барабана."},{"title":"House Scatters и Doom Spins","description":"Три House Scatter на барабанах 1, 3 и 5 запускают десять Free Doom Spins. Во время бонуса Wild House способен добавлять новые вращения."},{"title":"Skulls of Abyss","description":"Три черепа Skulls of Abyss на барабанах 2–4 открывают отдельную pick-игру с денежными призами либо переходом во Free Spins. Это не Hellgate-эффект."}]
   },
   "playn-go-house-of-doom-2-the-crypt": {
     intro:[
@@ -2146,7 +2146,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Три духа меняют эти Re-Spins: Fire Mistress добавляет x2/x3/x5/x10 к wins, Metal Priestess апгрейдит symbols до Knives, Queen of the Damned активирует Spirit Gates на всех reels. Три Scatters дают 8 Free Spins, а upgraded Scatters открывают 8 Crypt Spins."
     ],
     editorial:"Sequel полностью перестраивает центральную механику вокруг Spirit Gate. Crypt Spins добавляют Spirit of Unity Wild и объединяют эффекты трёх духов, поэтому это не повтор Hellgate/Doom Spins из первой игры.",
-    features:[{title:"Spirit Gate и Crypt Spins",description:"Wild в Spirit Gate расширяется и запускает Re-Spin; духи добавляют multiplier, symbol upgrade или multiple gates, а upgraded Scatters ведут к 8 Crypt Spins."}]
+    features: [{"title":"Spirit Gate и Re-Spin","description":"Случайный барабан выделяется Spirit Gate. Wild в рамке расширяется на всю высоту барабана и запускает повторное вращение."},{"title":"Три духа в Spirit Gate","description":"Fire Mistress добавляет множители x2, x3, x5 либо x10; Metal Priestess превращает символы в Knives, а Queen of the Damned активирует Spirit Gates сразу на всех барабанах."},{"title":"Free Spins и Crypt Spins","description":"Три Scatter запускают восемь Free Spins; улучшенные Scatter дают восемь Crypt Spins с Spirit of Unity Wild и эффектами духов. Это отдельные правила от оригинальной House of Doom."}]
   },
   "playn-go-hugo": {
     intro:[
@@ -2154,7 +2154,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Три и более Afskylia Scatters запускают Free Spins с выбором 5, 10 или 15 spins. Hugoline Extra Scatter платит соответственно x3, x2 или x1 total bet, а Hugo Wild удваивает wins, если комбинация не состоит только из Wilds."
     ],
     editorial:"В Hugo выбор длины Free Spins напрямую меняет цену Extra Scatter: чем меньше spins, тем выше его multiplier. Treasure bonus при этом остаётся отдельной risk/pick веткой и не является частью Free Spins.",
-    features:[{title:"Treasure bonus и выбор 5/10/15 spins",description:"Treasure Chests ведут в шахтный pick bonus, Afskylia запускает Free Spins с тремя вариантами длины, а Hugoline Extra Scatter меняет выплату x3/x2/x1."}]
+    features: [{"title":"Treasure Chests и шахтные двери","description":"Treasure Chest Scatter на барабанах 1, 3 и 5 открывают шахтный bonus: игрок выбирает двери по пути к сокровищам, стараясь избежать Don Croco."},{"title":"Afskylia Free Spins на выбор","description":"Три и более Afskylia Scatter позволяют выбрать пять, десять или пятнадцать Free Spins. Продолжительность меняет условия выплаты Hugoline Extra Scatter."},{"title":"Hugoline и Hugo Wild","description":"Hugoline Extra Scatter платит x3, x2 или x1 общей ставки при выборе 5, 10 или 15 spins. Hugo Wild удваивает выигрыши, если комбинация состоит не только из Wild."}]
   },
   "playn-go-hugo-2": {
     intro:[
@@ -2162,7 +2162,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Во время пути bags и coins могут создавать extra Wilds и special symbols с дополнительными multipliers. Финальная часть bonus связана с выбором ключа, который должен открыть chest of gold."
     ],
     editorial:"Hugo 2 не повторяет выбор 5/10/15 spins из оригинала. Здесь центр bonus — Beaver Cleaver с максимумом 20 Free Spins и отдельная дорожка collectibles, которая меняет Wild/special-symbol состояние.",
-    features:[{title:"Beaver Cleaver Free Spins",description:"3 Beavers дают 10 Free Spins, retrigger продлевает серию максимум до 20; bags и coins добавляют extra Wilds и special symbols по ходу железнодорожного bonus."}]
+    features: [{"title":"Beaver Cleaver Free Spins","description":"Три Beaver symbols запускают десять Free Spins. Повторный trigger может продлить серию, но не более чем до двадцати вращений подряд."},{"title":"Дорожные предметы и Wilds","description":"На железнодорожном пути bags и coins могут добавить extra Wilds и специальные символы с дополнительными множителями в бонусе."},{"title":"Выбор ключа от сундука","description":"Отдельный финальный этап приключения связан с выбором ключа, который должен открыть chest of gold. Это не выбор длительности 5/10/15 spins из первой Hugo."}]
   },
   "playn-go-hugo-carts": {
     intro:[
@@ -2170,7 +2170,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Три, четыре или пять Dynamite Scatters дают 7, 9 или 11 Free Spins. На старте выбирается случайный персонаж, чья feature работает на каждом spin; retrigger через 3+ Scatters выбирает нового персонажа, пока не будут использованы все три."
     ],
     editorial:"Hugo Carts строит bonus как смену character powers. Retrigger не просто добавляет spins, а подключает ещё одного персонажа, поэтому progression ограничена набором из трёх разных Free Spin features.",
-    features:[{title:"Character Free Spins",description:"3/4/5 Dynamite дают 7/9/11 spins; случайный character действует на каждом spin, а retrigger подключает нового, пока не будут открыты все три features."}]
+    features: [{"title":"Hugo, Scylla и character powers","description":"Hugo на третьем барабане добавляет от двух до пяти golden nugget Wilds. Scylla на четвёртом создаёт пять–девять Mystery Symbols; другая character feature даёт symbol multipliers до x10."},{"title":"Dynamite Scatter и Free Spins","description":"Три, четыре или пять Dynamite Scatter запускают соответственно семь, девять или одиннадцать бесплатных вращений. Don Croco может добавлять Dynamite Scatters в базовой игре."},{"title":"Новые персонажи при retrigger","description":"На старте Free Spins выбирается один случайный персонаж. Три и более новых Scatter выбирают следующего, пока не будут задействованы все три character features."}]
   },
   "playn-go-hugo-goal": {
     intro:[
@@ -2178,7 +2178,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Если все девять positions заполнены одинаковыми symbols с помощью Wilds или без них, запускается Penalty Shoot-Out. Игрок защищает ворота в пяти ударах; пять saves дают Golden Trophy и умножают итог bonus winnings на x10."
     ],
     editorial:"В Hugo Goal бонус привязан к повторению одинаковых symbols на маленьком поле, а не к стандартным Scatter. Free Kick может перерасти в Penalty Shoot-Out, и именно полный 3×3 match переводит игру в пятиударный bonus.",
-    features:[{title:"Free Kick → Penalty Shoot-Out",description:"Два одинаковых characters на non-win дают Re-Spin; полный экран из девяти matching symbols запускает пять penalties, а все пять saves дают x10 к bonus win."}]
+    features: [{"title":"Hugo Wild на футбольном поле","description":"Hugo заменяет обычные символы на компактном поле из трёх барабанов. Бонус не строится вокруг стандартных Scatter."},{"title":"Free Kick после неудачи","description":"Два одинаковых character symbols на невыигрышном вращении могут вызвать бесплатный Re-Spin; попытки продолжаются до выигрыша или полного совпадения."},{"title":"Penalty Shoot-Out","description":"Все девять одинаковых символов, включая Wild при необходимости, запускают пять пенальти. Пять успешных saves дают Golden Trophy и x10 к бонусному выигрышу."}]
   },
   "playn-go-hugo-legacy": {
     intro:[
@@ -2186,7 +2186,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Character effects добавляют 5–8 Wilds, апгрейдят 2–5 low symbols, защищают 1–2 Wilds, превращают symbol type в Wild или дублируют captured symbols для новых clusters. Отдельно 35–50 Scylla/Don Croco symbols открывают пять tiers Free Spins."
     ],
     editorial:"Hugo Legacy объединяет anniversary cast через общую Charge progression: каждый персонаж меняет grid по-своему. Free Spins имеют собственную шкалу 35–50 collected symbols, поэтому Overcharge и bonus progression — две разные системы.",
-    features:[{title:"15 Charges и пять character powers",description:"После 15 Charges срабатывает одна из пяти character features; отдельный сбор Scylla/Don Croco symbols открывает пять уровней Free Spins."}]
+    features: [{"title":"7×7 grid и Overcharge Meter","description":"Выигрышные группы на сетке 7×7 исчезают и заряжают Overcharge Meter. После пятнадцати Charges активируется случайная character feature."},{"title":"Пять разных character effects","description":"Персонажи могут добавить 5–8 Wilds, улучшить 2–5 младших символов, защитить Wilds, превратить выбранный тип символа в Wild или дублировать захваченные символы."},{"title":"Пять уровней Free Spins","description":"Отдельный сбор Scylla и Don Croco symbols открывает пять ступеней Free Spins при накоплении 35–50 символов; это не та же шкала, что 15 Charges."}]
   },
   "playn-go-hugos-adventure": {
     intro:[
@@ -2194,7 +2194,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "В Air Race появляются random Multipliers и Flying Wilds, которые становятся sticky и двигаются по reels. Успешное завершение Free Spins переводит игру в Underwater Adventure, где Hugo ищет treasures по пути к Skull Castle."
     ],
     editorial:"Hugo’s Adventure связывает два bonus-этапа последовательно: сначала survival-style Air Race с lives и moving Sticky Wilds, затем Underwater Adventure. Это отдельная механика от Hugo/Hugo 2/Carts.",
-    features:[{title:"Air Race и Underwater Adventure",description:"3 Planes дают 20 Free Spins с lives, mines, random multipliers и moving Sticky Wilds; успешный полёт открывает второй underwater bonus."}]
+    features: [{"title":"Hugo Wild и Plane Scatters","description":"Hugo заменяет обычные символы на пяти барабанах и десяти линиях. Три Plane Scatter переводят игру в Air Race."},{"title":"Air Race: lives и Flying Wilds","description":"Air Race даёт двадцать Free Spins и одну стартовую life: мины Don Croco могут прервать полёт, а balloons добавляют жизни. Flying Wilds становятся sticky и перемещаются."},{"title":"Underwater Adventure","description":"Если Hugo успешно завершает Air Race, открывается второй этап Underwater Adventure с поиском сокровищ на пути к Skull Castle."}]
   },
   "playn-go-ice-joker": {
     intro:[
@@ -2202,7 +2202,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Snowflakes на reels 1, 3 и 5 открывают Winter’s Wheel. Колесо может собрать 2–7 Ice Jokers; если следующий Joker не выпал, один из уже собранных добавляется на reel и снова активирует Frozen Re-Spins. Общая серия может достигать 50 Re-Spins."
     ],
     editorial:"Ice Joker превращает Expanding Wild в счётчик повторных spins: каждый новый Icelia снова даёт три Re-Spins, а Winter’s Wheel формирует запас будущих Ice Jokers. Thermometer показывает оставшийся ресурс этой серии.",
-    features:[{title:"Frozen Re-Spins и Winter’s Wheel",description:"Icelia замораживает reel и даёт 3 Re-Spins, расширяясь по нему; Snowflakes запускают Wheel с 2–7 Ice Jokers, а общая серия может дойти до 50 Re-Spins."}]
+    features: [{"title":"Icelia и Frozen Re-Spins","description":"Появление Icelia Wild замораживает барабан и запускает три Frozen Re-Spins. С каждым вращением Wild расширяется до заполнения барабана, затем исчезает."},{"title":"Winter’s Wheel и Snowflakes","description":"Snowflakes на барабанах 1, 3 и 5 запускают Winter’s Wheel с запасом из двух–семи Ice Jokers. Неиспользованный Joker может перейти на барабаны и снова вызвать Frozen Re-Spins."},{"title":"Thermometer и предел серии","description":"Каждый новый Ice Joker продолжает череду трёх респинов; Thermometer показывает её ресурс. Общая последовательность может достигать пятидесяти Re-Spins."}]
   },
   "playn-go-idol-of-fortune": {
     intro:[
@@ -2210,7 +2210,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Во Free Spins игрок сам выбирает сочетание количества spins и Mystery Reels. Mystery Pick может дать до 88 Mystery Symbols при варианте с 20 Free Spins, поэтому длина bonus и плотность mystery-механики настраиваются вместе."
     ],
     editorial:"Idol of Fortune даёт игроку два разных выбора: match-three Wild Prize вне Free Spins и настройку spins/Mystery Reels внутри бонуса. Это делает Mystery Pick частью конфигурации feature, а не случайным фиксированным модификатором.",
-    features:[{title:"Wild Prize и Mystery Pick",description:"Wild на активном Gold Reel открывает match-three prize из 12 symbols; во Free Spins выбор количества spins связан с числом Mystery Reels и может дать до 88 Mystery Symbols."}]
+    features: [{"title":"Gold Reel и Wild Prize","description":"Wild на активном Gold Reel запускает мини-игру Wild Prize: из двенадцати закрытых символов нужно собрать три одинаковых."},{"title":"Выбор Free Spins и Mystery Reels","description":"В бонусе игрок выбирает сочетание количества Free Spins и Mystery Reels. Это два связанных параметра, а не фиксированное число mystery-позиций."},{"title":"Mystery Pick","description":"При варианте с двадцатью Free Spins Mystery Pick может предоставить до восьмидесяти восьми Mystery Symbols. Это заявленный сценарий бонуса, а не общий максимум выигрыша."}]
   },
   "playn-go-immortails-of-egypt": {
     intro:[
@@ -2218,7 +2218,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Во Free Spins layout расширяется с 5×3 до 5×4. Одновременно работает Multiplier, визуально оформленный как locked treasure chest: выигрыши открывают его и раскрывают накопленное значение."
     ],
     editorial:"Здесь progression видна прямо над reels: meters показывают, насколько близко превращение kittens в Cat Gods. Free Spins усиливают эту систему сразу двумя способами — дополнительным рядом и отдельным Multiplier chest.",
-    features:[{title:"Cat God meters и расширение 5×4",description:"Bastet, Mafdet и Sekhmet превращают kittens в Expanding Wilds; во Free Spins grid растёт с 5×3 до 5×4 и включается отдельный Multiplier chest."}]
+    features: [{"title":"Bastet, Mafdet и Sekhmet","description":"Три character meters заряжаются отдельно и превращают kittens на барабанах в Expanding Wilds, постепенно расширяя покрытие до пяти барабанов."},{"title":"Увеличенное поле Free Spins","description":"Во Free Spins игровое поле расширяется с 5×3 до 5×4. Дополнительный ряд усиливает работу Wild-символов, а не заменяет character meters."},{"title":"Locked Treasure Multiplier","description":"Во время Free Spins отдельный multiplier оформлен как locked treasure chest: выигрыши раскрывают накопленное значение сундука."}]
   },
 
   "playn-go-imperial-opera": {
@@ -2227,7 +2227,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Если Harmony охватывает три reels, на них может появиться 3×3 Golden Gong Mega Scatter. Он запускает 10 Free Spins, где reels 2–4 вращаются синхронно, а повторный Mega Scatter добавляет ещё 10 spins."
     ],
     editorial:"Imperial Opera строит bonus не вокруг одной случайной замены symbol, а вокруг трёх разных уровней синхронизации reels. Showcase работает постоянно, Crescendo усиливает отдельные spins, а Harmony открывает дорогу к Mega Scatter и Free Spins.",
-    features:[{title:"Showcase, Crescendo и Harmony",description:"Showcase добавляет stacked symbol на каждом spin, Crescendo превращает 1–2 reels в Wilds, Harmony синхронизирует 2–3 reels и может вывести 3×3 Golden Gong Mega Scatter."}]
+    features: [{"title":"Showcase на каждом спине","description":"Showcase добавляет на каждом вращении стек случайного символа на пяти барабанах и двадцати линиях."},{"title":"Crescendo и Harmony","description":"Crescendo случайно превращает один–два барабана целиком в Wilds, а Harmony синхронизирует вращение двух либо трёх барабанов."},{"title":"Golden Gong Free Spins","description":"Harmony на трёх барабанах может создать Mega Scatter Golden Gong размером 3×3. Он даёт десять Free Spins с синхронизацией барабанов 2–4; повторное появление добавляет ещё десять."}]
   },
   "playn-go-infernal-trinity-go-guaranteed": {
     intro:[
@@ -2235,7 +2235,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Blue расширяет reels, Red повышает coin values, Purple гарантирует jackpot coin. Отдельная GO Guaranteed ladder растёт, когда все три Tear colours выпадают на одном spin: фиксированные ступени идут от x10 до x100, а GO Ultra расширяет ladder до x120."
     ],
     editorial:"Здесь Hold and Spin не один и тот же при каждом trigger: итог зависит от того, какие phoenix проснулись одновременно. GO Guaranteed работает отдельной progression-системой и сбрасывается, когда все три phoenix features соединяются в одном Hold and Spin.",
-    features:[{title:"Три Phoenix и GO Guaranteed",description:"Blue расширяет reels, Red повышает coin values, Purple гарантирует jackpot coin; все три Tear colours на одном spin двигают guaranteed-win ladder от x10 до x100, а GO Ultra — до x120."}]
+    features: [{"title":"Три цвета Phoenix Tears","description":"Blue, Red и Purple Phoenix Tear Scatter пробуждают три самостоятельных phoenix-функции. Несколько птиц могут активироваться одновременно в одном Hold and Spin."},{"title":"Усиления Blue, Red и Purple","description":"Blue Phoenix расширяет барабаны, Red увеличивает значения coins, Purple гарантирует jackpot coin в Hold and Spin. Бонус зависит от конкретных активных цветов."},{"title":"GO Guaranteed ladder","description":"Все три цвета Tears в одном spin повышают отдельную гарантированную шкалу от x10 до x100; в режиме GO Ultra верхняя ступень x120. При соединении всех трёх phoenix-шагов шкала сбрасывается."}]
   },
   "playn-go-inferno-joker": {
     intro:[
@@ -2243,7 +2243,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "В Re-Spins все Inferno Jokers превращаются в Scatters. Reel с новым Scatter удерживается, остальные reels продолжают re-spin; серия заканчивается, когда новый Joker не выпал или когда Scatter занял все пять reels. Полное заполнение даёт x2500 исходной ставки."
     ],
     editorial:"Inferno Joker превращает re-spin в последовательное удержание reels. Здесь важна не сумма Scatters в одном кадре, а постепенное заполнение всех пяти reels через повторные spins.",
-    features:[{title:"Inferno Joker Re-Spins",description:"Joker Scatter на reel 3 запускает серию; reels с Inferno Joker Scatters удерживаются, а полное заполнение пяти reels завершает feature выплатой x2500."}]
+    features: [{"title":"Wild и центральный Joker Scatter","description":"Wild Joker участвует в обычных линейных выигрышах, а специальный Joker Scatter появляется лишь на третьем барабане и запускает Re-Spins."},{"title":"Удержание барабанов","description":"Во время бонуса Inferno Joker становится Scatter: барабан с новым Scatter удерживается, остальные вращаются повторно до прекращения новых попаданий."},{"title":"Пять заполненных барабанов","description":"Серия заканчивается без нового Joker либо после заполнения всех пяти барабанов Scatter. Полное заполнение выплачивает x2500 исходной ставки."}]
   },
   "playn-go-inferno-star": {
     intro:[
@@ -2251,7 +2251,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Все Sun symbols, выпавшие во время feature, становятся Raging Suns; reel с таким symbol удерживается, остальные reels re-spin. Серия продолжается, пока не перестанут появляться новые Suns или пока не будут удержаны все reels. После обычного win также доступен Gamble с x2 за цвет и x4 за масть."
     ],
     editorial:"Inferno Star использует тот же принцип накопительного удержания reels, но через Sun symbols. Feature заканчивается естественно при остановке цепочки, поэтому каждый новый Sun продлевает текущую попытку.",
-    features:[{title:"Raging Suns Re-Spin",description:"Raging Sun на reel 3 запускает feature; новые Suns превращаются в Raging Suns и удерживают соответствующие reels, пока цепочка не остановится или не будут собраны все пять reels."}]
+    features: [{"title":"Raging Sun на третьем барабане","description":"Inferno Star работает на поле 5×3 с пятью линиями; Raging Sun Scatter на третьем барабане запускает Raging Suns Re-Spin."},{"title":"Raging Suns и удержание","description":"Новые Sun symbols становятся Raging Suns и удерживают соответствующие барабаны. Остальные вращаются снова, пока не прекратятся попадания Suns или не будут удержаны все барабаны."},{"title":"Gamble после выигрыша","description":"После обычной выплаты отдельная карточная игра позволяет попытаться увеличить приз: x2 за угадывание цвета карты и x4 за угадывание масти."}]
   },
   "playn-go-invading-vegas": {
     intro:[
@@ -2259,7 +2259,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Lock On Re-Spin включается, когда reels 1 и 2 полностью заполнены одинаковыми stacked symbols или Wilds, но reel 3 не завершает комбинацию. В этом режиме reel 3 получает second chance, а Stacked Wild может превратиться в Walking Wild. Во Free Spins Walking Wild движется влево, в Lock On — вправо."
     ],
     editorial:"Оригинальный Invading Vegas различает направление Walking Wild по режиму. Это не тот же набор правил, что в Revenge on Mars или Las Christmas: здесь центральная идея — переворот reels и second-chance Lock On Re-Spin.",
-    features:[{title:"Lock On Re-Spin и Walking Wild",description:"3 Flying Saucers дают 12 Free Spins; stacked reels 1–2 могут запустить Lock On для reel 3, а Walking Wild меняет направление между Free Spins и Lock On mode."}]
+    features: [{"title":"Flying Saucer Free Spins","description":"Три Flying Saucer Scatter дают двенадцать Free Spins с возможностью повторного запуска. Это стандартная бонусная ветка оригинала."},{"title":"Lock On Re-Spin","description":"Если барабаны 1 и 2 полностью заполнены одинаковыми стековыми символами или Wild, а третий не завершает комбинацию, третий барабан получает дополнительный Re-Spin."},{"title":"Walking Wild меняет направление","description":"Stacked Wild может стать Walking Wild. Во Free Spins он движется влево, а в Lock On Re-Spin вправо — правила оригинала не следует переносить на Revenge on Mars."}]
   },
   "playn-go-invading-vegas-revenge-on-mars": {
     intro:[
@@ -2267,7 +2267,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Walking Wild проходит по reels и оставляет Mystery Symbols; multipliers могут доходить до x10 и складываться. Три Space Car Scatters дают 12 Free Spins, которые можно retrigger-ить вплоть до 120 spins."
     ],
     editorial:"Revenge on Mars перестраивает механику вокруг пар крайних reels и следа Mystery Symbols. В отличие от оригинала, ключевой progression здесь — Walking Wild + multipliers, а не переворот reels в Lock On режиме.",
-    features:[{title:"Walking Wilds с Mystery trail",description:"Full stacks на reels 1–2 или 4–5 могут запустить Walking Wild, который оставляет Mystery Symbols; 3 Space Cars дают 12 Free Spins с retrigger максимум до 120."}]
+    features: [{"title":"Парные стеки и Walking Wild","description":"Полные стеки на барабанах 1–2 либо 4–5 без выигрыша по линии способны запустить Walking Wild, а не оригинальный Lock On на третьем барабане."},{"title":"Mystery trail и множители","description":"Двигающийся Wild оставляет после себя Mystery Symbols. Множители могут достигать x10 и складываться в итоговом результате."},{"title":"Space Car Free Spins","description":"Три Space Car Scatter дают двенадцать Free Spins; новые Scatters способны продлить серию до ста двадцати вращений."}]
   },
   "playn-go-invading-vegas-las-christmas": {
     intro:[
@@ -2275,7 +2275,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Lock On Re-Spin запускается, когда первые два reels полностью совпадают, но третий reel не завершает win. Stacked Wild на reel 3 превращается в Walking Wild: в Lock On он движется вправо, а во Free Spins — влево."
     ],
     editorial:"Las Christmas сохраняет знакомую основу Invading Vegas, но Mystery Symbols теперь непосредственно могут давать Wild Multipliers до x10. Поэтому это не просто сезонный reskin оригинала.",
-    features:[{title:"Mystery Gifts и Lock On",description:"Mystery Symbols могут раскрыть Wild x2/x3/x5/x10; 3 Scatters дают 12 Free Spins, а Lock On повторно прокручивает reel 3 и может создать Walking Wild."}]
+    features: [{"title":"Mystery Gifts и Wild-множители","description":"Mystery Symbols могут раскрыться как Wild с x2, x3, x5 либо x10, отдельная функция праздничной версии Invading Vegas."},{"title":"Christmas Free Spins","description":"Три Scatter в базовой игре запускают двенадцать Free Spins. В этой серии доступны дополнительные Lock On Re-Spins и Walking Wilds."},{"title":"Lock On и Walking Wilds","description":"Если два первых барабана заполнены одинаковыми стеками, но третий не даёт выигрыш, запускается Lock On Re-Spin; Walking Wild тогда идёт вправо, а в Free Spins влево."}]
   },
   "playn-go-irish-gold": {
     intro:[
@@ -2283,7 +2283,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Один Pot of Gold умножает выплату winning combination на x5, два Pots — на x25, кроме комбинации из трёх Pots. Механика построена вокруг Wild multiplier, а не отдельного сложного bonus mode."
     ],
     editorial:"Irish Gold — ранний и предельно простой пример multiplier Wild. Здесь ценность Pot of Gold определяется количеством Wilds внутри конкретной winning line, поэтому главное отличие игры — x5/x25, а не многоступенчатый bonus.",
-    features:[{title:"Pot of Gold Wild",description:"Pot of Gold заменяет обычные symbols; один Wild даёт x5 к соответствующему win, два — x25, кроме отдельной комбинации из трёх Pots."}]
+    features: [{"title":"Pot of Gold Wild","description":"Pot of Gold подменяет обычные символы на активной линии, но не заменяет Scatter. Это основа классической линейной механики Irish Gold."},{"title":"Множитель одного Pot","description":"Один Pot of Gold в выигрышной комбинации умножает её выплату на x5. Множитель относится к конкретной линии, не ко всей ставке."},{"title":"Два Pot и исключение","description":"Два Pot of Gold в комбинации увеличивают её выплату до x25; отдельная комбинация из трёх Pots не подпадает под это правило."}]
   },
   "playn-go-iron-girl": {
     intro:[
@@ -2291,7 +2291,7 @@ const catalogEditorial: Record<string, CatalogEditorial> = {
       "Villain Collection Meter усиливает финал цепочки: 8 Sticky Villains добавляют два Iron Girl Wilds, 10 дают x2 final win, 12 — x3, 14 — x5. Отдельный Iron Armour может случайно заменить до пяти symbols Wilds на non-winning spin без Wild."
     ],
     editorial:"Iron Girl делает количество захваченных Villains частью multiplier-progression. Re-Spins не просто повторяют reels: meter меняет итоговый эффект по мере того, сколько sticky targets удалось собрать.",
-    features:[{title:"Sticky Villains и Collection Meter",description:"Новые Villains/Wilds продлевают Re-Spins; пороги 8/10/12/14 Sticky Villains дают extra Wilds или x2/x3/x5 к финальному win."}]
+    features: [{"title":"Sticky Villains и Re-Spins","description":"Захват Villain либо Wild запускает Re-Spins. Новый подходящий Villain или Wild остаётся на поле и продолжает цепочку."},{"title":"Villain Collection Meter","description":"Восемь собранных Sticky Villains добавляют два Iron Girl Wilds. Пороги десять, двенадцать и четырнадцать дают соответственно x2, x3 и x5 к финальному выигрышу."},{"title":"Iron Armour","description":"На невыигрышном вращении без Wild функция Iron Armour может случайно превратить до пяти символов в Wild, отдельно от цепочки Sticky Villains."}]
   },
   "playn-go-jade-magician": {
     intro:[
