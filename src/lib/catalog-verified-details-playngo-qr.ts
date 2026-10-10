@@ -11,6 +11,18 @@ const details: Record<string, CatalogVerifiedDetails> = {
   "playn-go-raging-rex": { field: "6×4 · 4096 способов", releaseDate: "2019-01-10", source: "https://www.playngo.com/games/raging-rex", verifiedAt },
   "playn-go-raging-rex-2": { field: "4096 способов", maxWin: "30 000x", releaseDate: "2022-03-17", source: "https://www.playngo.com/games/raging-rex-2", verifiedAt: "2026-09-20" },
   "playn-go-rally-4-riches": { releaseDate: "2020-06-11", source: "https://www.playngo.com/games/rally-4-riches", verifiedAt: verifiedAtLatest },
+  "playn-go-raging-rex-3": {
+    "field": "6×4 · 4096 способов",
+    "releaseDate": "2023-10-12",
+    "source": "https://www.playngo.com/games/raging-rex-3",
+    "verifiedAt": "2026-10-10"
+  },
+  "playn-go-rainforest-magic": {
+    "field": "5 барабанов · 25 линий",
+    "releaseDate": "2019-10-10",
+    "source": "https://www.playngo.com/games/rainforest-magic",
+    "verifiedAt": "2026-10-10"
+  },
 };
 
 export function getCatalogVerifiedDetailsPlayngoQR(slug: string) {

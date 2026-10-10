@@ -67,6 +67,36 @@ export const catalogResearchPlayngoQR: Record<string, CatalogResearch> = {
     "verifiedAt": "2026-10-08"
   },
 
+  "playn-go-raging-rex-3": {
+    "mechanics": [
+      "Способы",
+      "Re-Spin",
+      "Free Spins"
+    ],
+    "source": "https://www.playngo.com/games/raging-rex-3",
+    "verifiedAt": "2026-10-10",
+    "evidence": "Official Raging Rex 3 page confirms 6x4, 4096 ways, walking Rex re-spins, 3–6 Scatters awarding 7/9/11/13 spins, and Feeding Frenzy, Hatchling Mania and Survival."
+  },
+  "playn-go-rainforest-magic": {
+    "mechanics": [
+      "Линии",
+      "Mystery Symbols",
+      "Free Spins"
+    ],
+    "source": "https://www.playngo.com/games/rainforest-magic",
+    "verifiedAt": "2026-10-10",
+    "evidence": "Official Rainforest Magic page confirms five reels, 25 paylines, synchronized Mystery Symbol reveals, Jaguar Wild triggering Free Spins, flower pick selecting 1–4 Mystery Reels and up to 30 free spins."
+  },
+  "playn-go-rally-4-riches": {
+    "mechanics": [
+      "Линии",
+      "Бонусный барабан",
+      "The Race"
+    ],
+    "source": "https://www.playngo.com/games/rally-4-riches",
+    "verifiedAt": "2026-10-10",
+    "evidence": "Official game page describes 3-reel slot plus independent bonus reel, x2/x3/x4/x5/x10 multipliers, 24-square The Race, rankings and five-tier jackpot reaching x1000; separate release post inconsistently says five reels."
+  },
 };
 
 export function getCatalogResearchPlayngoQR(slug: string) {
