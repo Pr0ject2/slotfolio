@@ -6934,5 +6934,23 @@
     "local": "/images/catalog/3-oaks-gaming-magic-clovers.webp",
     "requireExplicitImage": true,
     "note": "Reviewed precise game-specific first-party 3 Oaks gallery artwork: loaded 1280x720 image with official URL in live game page; strict localized WebP required."
+  },
+  {
+    "slug": "playn-go-raging-rex-3",
+    "page": "https://www.playngo.com/games/raging-rex-3",
+    "local": "/images/catalog/playn-go-raging-rex-3.webp",
+    "note": "Reviewed game-specific first-party Play’n GO provider game page. Strict build-time localization resolves official game-page image metadata; no runtime remote image requests and no soft fallback."
+  },
+  {
+    "slug": "playn-go-rainforest-magic",
+    "page": "https://www.playngo.com/games/rainforest-magic",
+    "local": "/images/catalog/playn-go-rainforest-magic.webp",
+    "note": "Reviewed game-specific first-party Play’n GO provider game page. Strict build-time localization resolves official game-page image metadata; no runtime remote image requests and no soft fallback."
+  },
+  {
+    "slug": "playn-go-rally-4-riches",
+    "page": "https://www.playngo.com/games/rally-4-riches",
+    "local": "/images/catalog/playn-go-rally-4-riches.webp",
+    "note": "Reviewed game-specific first-party Play’n GO provider game page. Strict build-time localization resolves official game-page image metadata; no runtime remote image requests and no soft fallback."
   }
 ]

@@ -1,4 +1,7 @@
 const artworkBySlug: Record<string, string> = {
+  "playn-go-raging-rex-3": "/images/catalog/playn-go-raging-rex-3.webp",
+  "playn-go-rainforest-magic": "/images/catalog/playn-go-rainforest-magic.webp",
+  "playn-go-rally-4-riches": "/images/catalog/playn-go-rally-4-riches.webp",
   "3-oaks-gaming-15-dragon-pearls": "/images/catalog/3-oaks-gaming-15-dragon-pearls.webp",
   "3-oaks-gaming-3-african-drums": "/images/catalog/3-oaks-gaming-3-african-drums.webp",
   "3-oaks-gaming-3-aztec-temples": "/images/catalog/3-oaks-gaming-3-aztec-temples.webp",
