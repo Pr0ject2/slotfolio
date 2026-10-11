@@ -3,7 +3,7 @@ import { catalogSeeds } from "../src/lib/catalog-seeds";
 import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const researched = catalogSeeds.find((seed) => (getVerifiedCatalogResearch(seed.slug)?.mechanics.length ?? 0) > 0)!;
-const pending = catalogSeeds.find((seed) => !getVerifiedCatalogResearch(seed.slug)?.mechanics.length)!;
+const newlyResearched = catalogSeeds.find((seed) => seed.slug === "playn-go-reactoonz-100")!;
 
 function filterHref(mechanic: string) {
   return new RegExp(`^/slots/?\\?mechanic=${encodeURIComponent(mechanic)}$`);
@@ -20,7 +20,9 @@ const internalCopy = [
 ];
 
 test("catalog-only pages show useful facts without internal research workflow", async ({ page }) => {
-  for (const seed of [researched, pending]) {
+  expect(researched.slug).not.toBe(newlyResearched.slug);
+  expect(getVerifiedCatalogResearch(newlyResearched.slug)?.mechanics.length).toBeGreaterThanOrEqual(3);
+  for (const seed of [researched, newlyResearched]) {
     await page.goto(`/slots/catalog/${seed.slug}`);
     await expect(page.locator("h1")).toHaveText(seed.name);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);

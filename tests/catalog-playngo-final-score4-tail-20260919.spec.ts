@@ -24,7 +24,11 @@ test("final Play’n GO score-four tail keeps the new official features without 
   for (const [slug, mechanics] of Object.entries(expectedMechanics)) {
     const research = getVerifiedCatalogResearch(slug);
     expect(research, slug).toBeTruthy();
-    expect(research?.source, slug).toContain("playngo.com/games/");
+    if (slug === "playn-go-def-leppard-hysteria") {
+      expect(research?.source, slug).toBe("https://www.playngo.com/post/def-leppard-hysteria");
+    } else {
+      expect(research?.source, slug).toContain("playngo.com/games/");
+    }
     expect(research?.verifiedAt, slug).toMatch(/^20\d{2}-\d{2}-\d{2}$/);
     for (const mechanic of mechanics) {
       expect(research?.mechanics, `${slug}: ${mechanic}`).toContain(mechanic);

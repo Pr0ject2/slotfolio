@@ -7,8 +7,6 @@ import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const closeoutDate = "2026-09-26";
 const expectedPreRelease = [
-  "nolimit-city-bowel-of-beelzebub",
-  "nolimit-city-fire-in-the-hole-4",
   "nolimit-city-gator-hunters-2",
   "nolimit-city-six-feet-under",
 ];
@@ -28,7 +26,7 @@ function missingPassportFields(slug: string) {
 
 test("Nolimit City released catalog cards have complete passports and future cards stay explicit pre-release", () => {
   const nolimitSeeds = catalogSeeds.filter((seed) => seed.provider === "Nolimit City");
-  expect(nolimitSeeds).toHaveLength(6);
+  expect(nolimitSeeds).toHaveLength(4);
 
   const releasedResidual = nolimitSeeds
     .filter((seed) => {

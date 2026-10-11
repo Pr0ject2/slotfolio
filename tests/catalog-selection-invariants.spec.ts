@@ -5,13 +5,18 @@ import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-l
 
 const sourceLockedTail = [
   "endorphina-3-golden-chests",
-  "nolimit-city-bowel-of-beelzebub",
-  "nolimit-city-fire-in-the-hole-4",
+  "playn-go-reactoonz-100",
+  "playn-go-rich-wilde-and-the-book-of-dead",
+  "playn-go-rise-of-olympus-100",
 ] as const;
 
 test("catalog selection keeps source-locked tail records and excludes non-slot Wazdan Three Cards", () => {
   const selected = new Map(catalogSeeds.map((seed) => [seed.slug, seed]));
 
+  for (const slug of ["nolimit-city-bowel-of-beelzebub", "nolimit-city-fire-in-the-hole-4", "playn-go-def-leppard-hysteria"]) {
+    expect(selected.has(slug), slug).toBe(false);
+    expect(getVerifiedCatalogDetails(slug)?.source, slug).toMatch(/^https:\/\//);
+  }
   for (const slug of sourceLockedTail) {
     const seed = selected.get(slug);
     expect(seed, slug).toBeTruthy();

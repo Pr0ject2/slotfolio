@@ -32,9 +32,15 @@ test("eighth provider-wide Play’n GO batch preserves its six original official
   }
 
   for (const slug of researchTargets) {
-    const seed = selected.get(slug)!;
+    const seed = selected.get(slug);
     const research = getVerifiedCatalogResearch(slug);
-    expect(research?.source, slug).toBe(seed.source);
+    if (slug === "playn-go-def-leppard-hysteria") {
+      expect(seed).toBeUndefined();
+      expect(research?.source, slug).toBe("https://www.playngo.com/post/def-leppard-hysteria");
+    } else {
+      expect(seed, slug).toBeTruthy();
+      expect(research?.source, slug).toBe(seed!.source);
+    }
     expect(research?.mechanics.length, slug).toBeGreaterThan(0);
     expect(research?.evidence, slug).toBeTruthy();
   }

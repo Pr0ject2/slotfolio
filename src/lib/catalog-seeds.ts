@@ -168,5 +168,27 @@ if (selected.length !== wanted) {
   throw new Error(`Catalog target mismatch: expected ${wanted} catalog-only records, got ${selected.length}.`);
 }
 
-export const catalogSeeds = selected;
+// Explicit, first-party-reviewed editorial replacements. Preserve the provider
+// round-robin selection and the 1000-card target for all other entries.
+const approvedSubstitutions: Readonly<Record<string, string>> = {
+  "nolimit-city-bowel-of-beelzebub": "playn-go-reactoonz-100",
+  "nolimit-city-fire-in-the-hole-4": "playn-go-rich-wilde-and-the-book-of-dead",
+  "playn-go-def-leppard-hysteria": "playn-go-rise-of-olympus-100"
+};
+const candidateBySlug = new Map(candidates.map((item) => [item.slug, item]));
+const previouslySelectedSlugs = new Set(selected.map((item) => item.slug));
+const publishedSelection = selected.map((item) => {
+  const replacementSlug = approvedSubstitutions[item.slug];
+  if (!replacementSlug) return item;
+  const replacement = candidateBySlug.get(replacementSlug);
+  if (!replacement || previouslySelectedSlugs.has(replacementSlug)) {
+    throw new Error(`Invalid catalog substitution: ${item.slug} -> ${replacementSlug}`);
+  }
+  return replacement;
+});
+if (new Set(publishedSelection.map((item) => item.slug)).size !== wanted) {
+  throw new Error("Duplicate catalog selection after approved substitutions.");
+}
+
+export const catalogSeeds = publishedSelection;
 export const getCatalogSeed = (slug: string) => catalogSeeds.find((item) => item.slug === slug);

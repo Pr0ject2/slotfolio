@@ -1,5 +1,9 @@
 export type CatalogVerifiedDetails = {
   field?: string;
+  fieldSource?: string;
+  rtpSource?: string;
+  maxWinSource?: string;
+  volatilitySource?: string;
   rtp?: string;
   maxWin?: string;
   volatility?: string;
@@ -11,6 +15,9 @@ export type CatalogVerifiedDetails = {
 const verifiedAt = "2026-09-11";
 
 const details: Record<string, CatalogVerifiedDetails> = {
+  "playn-go-reactoonz-100": { field: "7×7 · кластерные выплаты", rtp: "96,20% / 94,20% / 91,20% / 87,20% / 84,20%", maxWin: "10 000x", volatility: "Очень высокая (10/10)", releaseDate: "2025-10-23", source: "https://www.playngo.com/games/reactoonz-100", fieldSource: "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/EN-Reactoonz100.pdf", rtpSource: "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/EN-Reactoonz100.pdf", maxWinSource: "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/EN-Reactoonz100.pdf", volatilitySource: "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/EN-Reactoonz100.pdf", verifiedAt: "2026-10-12" },
+  "playn-go-rich-wilde-and-the-book-of-dead": { field: "5×3 · 10 линий", rtp: "96,21% / 94,25% / 91,25% / 87,25% / 84,18%", maxWin: "5 000x", volatility: "Очень высокая (10/10)", releaseDate: "2016-01-14", source: "https://www.playngo.com/games/rich-wilde-and-the-book-of-dead", fieldSource: "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/EN-Book-of-Dead.pdf", rtpSource: "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/EN-Book-of-Dead.pdf", maxWinSource: "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/EN-Book-of-Dead.pdf", volatilitySource: "https://cnsicdn.kubdev.com/common-content/help/CNSI/game-documents/EN-Book-of-Dead.pdf", verifiedAt: "2026-10-12" },
+  "playn-go-rise-of-olympus-100": { field: "5×5 · каскады", rtp: "96,20% / 94,20% / 91,20% / 87,20% / 84,20%", maxWin: "15 000x", volatility: "Высокая (8/10)", releaseDate: "2022-11-10", source: "https://www.playngo.com/games/rise-of-olympus-100", fieldSource: "https://clientzone.betconstruct.com/media/download/y7j12r/Rise%20of%20Olympus%20100%20Rules%20and%20Settings.pdf", rtpSource: "https://clientzone.betconstruct.com/media/download/y7j12r/Rise%20of%20Olympus%20100%20Rules%20and%20Settings.pdf", maxWinSource: "https://clientzone.betconstruct.com/media/download/y7j12r/Rise%20of%20Olympus%20100%20Rules%20and%20Settings.pdf", volatilitySource: "https://clientzone.betconstruct.com/media/download/y7j12r/Rise%20of%20Olympus%20100%20Rules%20and%20Settings.pdf", verifiedAt: "2026-10-12" },
   "wazdan-mayan-ritual": { field: "5 барабанов · 40 линий", rtp: "96,29%", maxWin: "850x", volatility: "Низкая–средняя", releaseDate: "2018-09-03", source: "https://wazdan.com/games/mayan-ritual", verifiedAt },
   "wazdan-magic-stars-3": { field: "3 барабана · 5 линий", rtp: "96,50%", maxWin: "200x", volatility: "Низкая–средняя", releaseDate: "2018-02-06", source: "https://wazdan.com/games/magic-stars-3", verifiedAt },
   "wazdan-magic-stars-5": { field: "5 барабанов · 20 линий", rtp: "96,42%", maxWin: "305x", volatility: "Низкая–средняя", releaseDate: "2019-02-12", source: "https://wazdan.com/games/magic-stars-5", verifiedAt },

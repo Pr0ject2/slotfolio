@@ -2,7 +2,7 @@
 import { expect, test } from "@playwright/test";
 
 const slots = [
-  ["playn-go-def-leppard-hysteria", "Pour Some Sugar on Me"],
+  ["playn-go-rise-of-olympus-100", "Hand of God"],
   ["playn-go-demon", "One Helluva Night"],
   ["playn-go-derby-wheel", "Bonus Wheel"],
   ["playn-go-diamond-vortex", "Sticky Wilds"],

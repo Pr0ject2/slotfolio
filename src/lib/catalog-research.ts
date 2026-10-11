@@ -10,6 +10,9 @@ export type CatalogResearch = {
 const verifiedAt = "2026-09-11";
 
 export const catalogResearch: Record<string, CatalogResearch> = {
+  "playn-go-reactoonz-100": { mechanics: ["Cascading Clusters и Quantum Meters","Implosion, Alteration, Demolition и Incision","Три стадии появления Gargantoon","Fluctuating Symbol и Energized Toon"], source: "https://www.playngo.com/games/reactoonz-100", verifiedAt: "2026-10-12", evidence: "First-party Play’n GO game page specifically documents Cascading Clusters и Quantum Meters; Implosion, Alteration, Demolition и Incision; Три стадии появления Gargantoon; Fluctuating Symbol и Energized Toon.", },
+  "playn-go-rich-wilde-and-the-book-of-dead": { mechanics: ["Tomb Scatter и десять Free Spins","Special Expanding Symbol","Неснятые соседством выплаты","Повторный запуск бонуса"], source: "https://www.playngo.com/games/rich-wilde-and-the-book-of-dead", verifiedAt: "2026-10-12", evidence: "First-party Play’n GO game page specifically documents Tomb Scatter и десять Free Spins; Special Expanding Symbol; Неснятые соседством выплаты; Повторный запуск бонуса.", },
+  "playn-go-rise-of-olympus-100": { mechanics: ["Поле 5×5 и каскадные выигрыши","Hand of God и силы трёх богов","Wrath of Olympus и Free Spins","Clear the Grid и бонусный множитель"], source: "https://www.playngo.com/games/rise-of-olympus-100", verifiedAt: "2026-10-12", evidence: "First-party rules: https://clientzone.betconstruct.com/media/download/y7j12r/Rise%20of%20Olympus%20100%20Rules%20and%20Settings.pdf. Hand of God randomly triggers on non-winning spins; meter activates Wrath of Olympus; Free Spins follow full grid clearance; Clear the Grid awards 50x bet at current multiplier.", },
   "3-oaks-gaming-15-dragon-pearls": {
     mechanics: ["Линии"],
     source: "https://3oaks.com/game/15_dragon_pearls",
