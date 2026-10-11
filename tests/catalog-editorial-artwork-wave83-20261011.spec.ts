@@ -59,7 +59,7 @@ const cases = [
     "slug": "hacksaw-gaming-hot-ross",
     "name": "Hot Ross",
     "source": "https://www.hacksawgaming.com/games/hot-ross",
-    "phrase": "Если расширяющийся Ro$$ или Hot Ro$$ проходит ск"
+    "phrase": "возникает множитель для всех выигрышей с новым Wild Reel"
   },
   {
     "slug": "hacksaw-gaming-hounds-of-hell",
