@@ -8,8 +8,9 @@ export function safeHttpsUrl(value, base) {
   if (typeof value !== "string" || !value.trim()) throw new Error("Missing source URL");
   const url = new URL(value, base);
   const host = url.hostname.toLowerCase().replace(/\.$/, "");
+  const ipCandidate = host.startsWith("[") && host.endsWith("]") ? host.slice(1, -1) : host;
   if (url.protocol !== "https:" || url.username || url.password || !host ||
-      host === "localhost" || isIP(host) !== 0 ||
+      host === "localhost" || isIP(ipCandidate) !== 0 ||
       localHostSuffixes.some((suffix) => host.endsWith(suffix))) {
     throw new Error("Source URL must use a public HTTPS hostname without credentials");
   }

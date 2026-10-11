@@ -27,7 +27,7 @@ test("traversal, path escapes and external file types are rejected", () => {
 test("SSRF-prone, credential and non-HTTPS addresses are rejected", () => {
   for (const url of ["http://example.com/image.webp","file:///etc/passwd","https://localhost/x",
     "https://127.0.0.1/x", "https://169.254.169.254/latest/meta-data",
-    "https://[::1]/x","https://x.internal/x", "https://x.local/x",
+    "https://[::1]/x","https://[fe80::1]/x","https://x.internal/x", "https://x.local/x",
     "https://name:pass@example.com/x","https://example.invalid/x"]) {
     assert.throws(() => safeHttpsUrl(url), url);
   }

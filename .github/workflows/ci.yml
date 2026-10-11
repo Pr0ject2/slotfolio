@@ -32,7 +32,7 @@ jobs:
             .asset-cache/slot-images
             public/images/slots
             public/images/catalog
-          key: ci-slot-images-${{ runner.os }}-${{ hashFiles('docs/image-sources.json', 'docs/image-sources-v128.json', 'docs/image-sources-v129.json', 'docs/image-sources-v130.json', 'scripts/localize-slot-images.mjs') }}
+          key: ci-slot-images-${{ runner.os }}-${{ hashFiles('docs/image-sources.json', 'docs/image-sources-v128.json', 'docs/image-sources-v129.json', 'docs/image-sources-v130.json', 'scripts/localize-slot-images.mjs', 'scripts/asset-security.mjs') }}
           restore-keys: |
             ci-slot-images-${{ runner.os }}-
             slot-images-${{ runner.os }}-
