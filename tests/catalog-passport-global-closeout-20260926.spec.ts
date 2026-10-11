@@ -18,8 +18,6 @@ const expectedProviders = [
 ] as const;
 
 const expectedPreRelease = [
-  "nolimit-city-bowel-of-beelzebub",
-  "nolimit-city-fire-in-the-hole-4",
   "nolimit-city-gator-hunters-2",
   "nolimit-city-six-feet-under",
 ] as const;

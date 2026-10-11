@@ -1,10 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { createCatalogModel } from "../src/lib/catalog-index";
 
-const expectedUnresolved = [
-  "nolimit-city-bowel-of-beelzebub",
-  "nolimit-city-fire-in-the-hole-4",
-];
+const expectedUnresolved: string[] = [];
 
 test("current public catalog mechanics coverage stays evidence-backed", () => {
   const model = createCatalogModel();
@@ -14,7 +11,7 @@ test("current public catalog mechanics coverage stays evidence-backed", () => {
     .sort();
 
   expect(model.facets.total).toBe(1000);
-  expect(model.facets.mechanicsKnown).toBe(998);
+  expect(model.facets.mechanicsKnown).toBe(1000);
   expect(unresolved).toEqual(expectedUnresolved);
 });
 
