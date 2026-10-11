@@ -22,8 +22,8 @@ const cases = [
     "slug": "playn-go-rise-of-olympus-100",
     "name": "Rise of Olympus 100",
     "source": "https://www.playngo.com/games/rise-of-olympus-100",
-    "phrase": "Заполненный charge meter запускает Hand of God. Hade",
-    "featureCount": 3
+    "phrase": "Случайный Hand of God возможен на вращении без выигрыша",
+    "featureCount": 4
   }
 ] as const;
 
