@@ -55,15 +55,20 @@ test("Nolimit roadmap parser artifacts resolve to canonical catalog slugs", () =
   const fullKeys = new Set(slots.map((slot) => `${slot.provider}\u0000${slot.name}`));
 
   expect(catalogSeeds).toHaveLength(900);
+  const archived = new Set(["nolimit-city-bowel-of-beelzebub", "nolimit-city-fire-in-the-hole-4"]);
 
   for (const item of repaired) {
     expect(selected.has(item.oldSlug), item.oldSlug).toBe(false);
 
     const seed = selected.get(item.slug);
-    expect(seed, item.slug).toBeTruthy();
-    expect(seed?.name, item.slug).toBe(item.name);
-    expect(seed?.provider, item.slug).toBe("Nolimit City");
-    expect(seed?.source, item.slug).toBe(item.source);
+    if (archived.has(item.slug)) {
+      expect(seed, item.slug).toBeUndefined();
+    } else {
+      expect(seed, item.slug).toBeTruthy();
+      expect(seed?.name, item.slug).toBe(item.name);
+      expect(seed?.provider, item.slug).toBe("Nolimit City");
+      expect(seed?.source, item.slug).toBe(item.source);
+    }
     expect(fullKeys.has(`Nolimit City\u0000${item.name}`), item.slug).toBe(false);
 
     const details = getVerifiedCatalogDetails(item.slug);

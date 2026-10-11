@@ -6,7 +6,7 @@ import { getVerifiedCatalogResearch } from "../src/lib/catalog-research-lookup";
 
 const targets = [
   "playn-go-count-jokula",
-  "playn-go-def-leppard-hysteria",
+  "playn-go-rise-of-olympus-100",
   "playn-go-derby-wheel",
   "playn-go-diamonds-of-the-realm",
   "playn-go-divina-commedia-i-nove-cerchi",

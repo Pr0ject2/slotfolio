@@ -20,11 +20,12 @@ test("official Play'n GO grid series supplies Def Leppard Hysteria 5x7 layout", 
   const overlay = getCatalogVerifiedDetailsPlayngoFill(slug);
   const merged = getVerifiedCatalogDetails(slug);
 
-  expect(seed).toBeTruthy();
-  expect(seed?.source).toBe("https://www.playngo.com/games/def-leppard%3A-hysteria");
+  expect(seed).toBeUndefined();
+  expect(catalogSeeds.some((entry) => entry.slug === "playn-go-rise-of-olympus-100")).toBe(true);
+  // Archived field remains independently source-verified.
   expect(overlay?.field).toBe("5×7");
   expect(overlay?.fieldSource).toBe("https://it.playngo.com/series/grid-slots");
-  expect(merged?.source).toBe(seed?.source);
+  expect(merged?.source).toBe("https://www.playngo.com/games/def-leppard%3A-hysteria");
   expect(merged?.field).toBe("5×7");
   expect(merged && "fieldSource" in merged ? merged.fieldSource : undefined).toBe("https://it.playngo.com/series/grid-slots");
   expect(scoreFor(slug)).toBeGreaterThan(6);
