@@ -6952,5 +6952,23 @@
     "page": "https://www.playngo.com/games/rally-4-riches",
     "local": "/images/catalog/playn-go-rally-4-riches.webp",
     "note": "Reviewed game-specific first-party Play’n GO provider game page. Strict build-time localization resolves official game-page image metadata; no runtime remote image requests and no soft fallback."
+  },
+  {
+    "slug": "playn-go-reactoonz-100",
+    "page": "https://www.playngo.com/games/reactoonz-100",
+    "local": "/images/catalog/playn-go-reactoonz-100.webp",
+    "note": "First-party Play’n GO game-specific official provider page artwork. Strict build-time localization resolves official page image metadata; no runtime remote image or soft fallback."
+  },
+  {
+    "slug": "playn-go-rich-wilde-and-the-book-of-dead",
+    "page": "https://www.playngo.com/games/rich-wilde-and-the-book-of-dead",
+    "local": "/images/catalog/playn-go-rich-wilde-and-the-book-of-dead.webp",
+    "note": "First-party Play’n GO game-specific official provider page artwork. Strict build-time localization resolves official page image metadata; no runtime remote image or soft fallback."
+  },
+  {
+    "slug": "playn-go-rise-of-olympus-100",
+    "page": "https://www.playngo.com/games/rise-of-olympus-100",
+    "local": "/images/catalog/playn-go-rise-of-olympus-100.webp",
+    "note": "First-party Play’n GO game-specific official provider page artwork. Strict build-time localization resolves official page image metadata; no runtime remote image or soft fallback."
   }
 ]

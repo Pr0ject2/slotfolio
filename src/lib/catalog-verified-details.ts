@@ -11,6 +11,9 @@ export type CatalogVerifiedDetails = {
 const verifiedAt = "2026-09-11";
 
 const details: Record<string, CatalogVerifiedDetails> = {
+  "playn-go-reactoonz-100": { field: "Кластерная сетка", releaseDate: "2025-10-23", source: "https://www.playngo.com/games/reactoonz-100", verifiedAt: "2026-10-12" },
+  "playn-go-rich-wilde-and-the-book-of-dead": { field: "5 барабанов × 3 ряда · 10 линий", releaseDate: "2016-01-14", source: "https://www.playngo.com/games/rich-wilde-and-the-book-of-dead", verifiedAt: "2026-10-12" },
+  "playn-go-rise-of-olympus-100": { field: "Сетка с каскадными выигрышами", releaseDate: "2022-11-10", source: "https://www.playngo.com/games/rise-of-olympus-100", verifiedAt: "2026-10-12" },
   "wazdan-mayan-ritual": { field: "5 барабанов · 40 линий", rtp: "96,29%", maxWin: "850x", volatility: "Низкая–средняя", releaseDate: "2018-09-03", source: "https://wazdan.com/games/mayan-ritual", verifiedAt },
   "wazdan-magic-stars-3": { field: "3 барабана · 5 линий", rtp: "96,50%", maxWin: "200x", volatility: "Низкая–средняя", releaseDate: "2018-02-06", source: "https://wazdan.com/games/magic-stars-3", verifiedAt },
   "wazdan-magic-stars-5": { field: "5 барабанов · 20 линий", rtp: "96,42%", maxWin: "305x", volatility: "Низкая–средняя", releaseDate: "2019-02-12", source: "https://wazdan.com/games/magic-stars-5", verifiedAt },

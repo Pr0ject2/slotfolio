@@ -28,6 +28,9 @@ export type CatalogVerifiedGameType = {
 };
 
 const gameTypes: Record<string, CatalogVerifiedGameType> = {
+  "playn-go-reactoonz-100": { gameType: "Grid Slot", source: "https://www.playngo.com/games/reactoonz-100", verifiedAt: "2026-10-12" },
+  "playn-go-rich-wilde-and-the-book-of-dead": { gameType: "Video Slot", source: "https://www.playngo.com/games/rich-wilde-and-the-book-of-dead", verifiedAt: "2026-10-12" },
+  "playn-go-rise-of-olympus-100": { gameType: "Grid Slot", source: "https://www.playngo.com/games/rise-of-olympus-100", verifiedAt: "2026-10-12" },
   "playn-go-5x-magic": { gameType: "Video Slot", source: "https://www.playngo.com/games/5x-magic", verifiedAt },
   "playn-go-7-sins": { gameType: "Video Slot", source: "https://www.playngo.com/games/7-sins", verifiedAt },
   "playn-go-agent-destiny": { gameType: "Video Slot", source: "https://www.playngo.com/games/agent-destiny", verifiedAt },
