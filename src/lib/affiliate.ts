@@ -9,9 +9,17 @@ export const operators = {
   },
 };
 export function affiliateUrl() {
+  // Fail closed until explicit trusted partner hostnames have been configured.
+  const allowlist = (process.env.AFFILIATE_1WIN_ALLOWED_HOSTS || "")
+    .split(",")
+    .map((host) => host.trim().toLowerCase())
+    .filter((host) => /^[a-z0-9][a-z0-9.-]*$/.test(host));
+  if (!allowlist.length) return null;
   try {
-    const u = new URL(operators["1win"].url);
-    return u.protocol === "https:" ? u.toString() : null;
+    const u = new URL(process.env.AFFILIATE_1WIN_URL || "");
+    if (u.protocol !== "https:" || u.username || u.password || u.port ||
+        !allowlist.includes(u.hostname.toLowerCase())) return null;
+    return u.toString();
   } catch {
     return null;
   }
