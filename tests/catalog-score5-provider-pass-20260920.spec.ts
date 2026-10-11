@@ -63,7 +63,7 @@ const playngoTargets = [
   "playn-go-prosperity-palace",
   "playn-go-ras-reckoning",
   "playn-go-cat-wilde-and-the-lost-chapter",
-  "playn-go-def-leppard-hysteria",
+  "playn-go-rise-of-olympus-100",
   "playn-go-irish-gold",
   "playn-go-mega-don",
 ] as const;

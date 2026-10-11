@@ -69,7 +69,7 @@ const playngoWave13Slugs = [
   "playn-go-crystal-hall",
   "playn-go-crystal-sun",
   "playn-go-dawn-of-egypt",
-  "playn-go-def-leppard-hysteria",
+  "playn-go-rise-of-olympus-100",
   "playn-go-demon",
 ];
 
