@@ -2,6 +2,7 @@ import { mkdir, readFile, rename, stat, unlink, writeFile } from "node:fs/promis
 import path from "node:path";
 import process from "node:process";
 import sharp from "sharp";
+import { safeHttpsUrl, validAssetLocal, validateAssetManifestEntry, readBounded } from "./asset-security.mjs";
 
 const projectRoot = process.cwd();
 const manifestFiles = [
@@ -32,8 +33,7 @@ function profileFor(entry) {
 }
 
 function outputFor(entry) {
-  const local = String(entry.local || `/images/slots/${entry.slug}.webp`).replace(/^\/+/, "");
-  return path.join(projectRoot, "public", local);
+  return path.join(projectRoot, "public", validAssetLocal(entry));
 }
 
 async function exists(file) {
@@ -60,13 +60,24 @@ async function fetchWithRetry(url, options) {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), timeoutMs);
     try {
-      const response = await fetch(url, {
-        redirect: "follow",
-        signal: controller.signal,
-        headers: headers(options),
-      });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response;
+      let current = safeHttpsUrl(url);
+      for (let hop = 0; hop <= 5; hop += 1) {
+        const response = await fetch(current, {
+          redirect: "manual",
+          signal: controller.signal,
+          headers: headers(options),
+        });
+        if (response.status >= 300 && response.status < 400) {
+          const location = response.headers.get("location");
+          await response.body?.cancel().catch(() => {});
+          if (!location || hop === 5) throw new Error("Unsafe or excessive source redirect");
+          current = safeHttpsUrl(location, current);
+          continue;
+        }
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        return response;
+      }
+      throw new Error("Excessive source redirects");
     } catch (error) {
       lastError = error;
       if (attempt < 3) await new Promise((resolve) => setTimeout(resolve, 700 * attempt));
@@ -92,7 +103,7 @@ async function download(url, referer) {
   ) throw new Error(`unexpected content-type: ${contentType}`);
   const declared = Number(response.headers.get("content-length") || 0);
   if (declared > maxSourceBytes) throw new Error(`source is too large: ${bytes(declared)}`);
-  const buffer = Buffer.from(await response.arrayBuffer());
+  const buffer = await readBounded(response, maxSourceBytes);
   if (buffer.length > maxSourceBytes) throw new Error(`source is too large: ${bytes(buffer.length)}`);
   if (buffer.length < 1024) throw new Error("source response is unexpectedly small");
   return buffer;
@@ -121,7 +132,7 @@ function metaContent(html, key) {
 }
 
 async function downloadPublishedFallback(entry) {
-  const local = String(entry.local || `/images/slots/${entry.slug}.webp`);
+  const local = "/" + validAssetLocal(entry);
   const url = new URL(local.replace(/^\/+/, ""), `${publishedAssetBase.replace(/\/$/, "")}/`).toString();
   return {
     buffer: await download(url, publishedAssetBase),
@@ -151,7 +162,7 @@ async function discoverImage(pageUrl, imageHint) {
   const response = await fetchWithRetry(pageUrl, {
     accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.5",
   });
-  const html = await response.text();
+  const html = (await readBounded(response, 8 * 1024 * 1024)).toString("utf8");
   const hinted = inlineImageContent(html, imageHint);
   if (hinted) return new URL(hinted, pageUrl).toString();
   if (imageHint) throw new Error(`official page has no inline image matching ${imageHint}`);
@@ -248,7 +259,9 @@ await mkdir(cacheDir, { recursive: true });
 const manifest = [];
 for (const file of manifestFiles) {
   try {
-    manifest.push(...JSON.parse(await readFile(file, "utf8")));
+    for (const entry of JSON.parse(await readFile(file, "utf8"))) {
+      manifest.push(validateAssetManifestEntry(entry));
+    }
   } catch (error) {
     if (error?.code !== "ENOENT") throw error;
   }
