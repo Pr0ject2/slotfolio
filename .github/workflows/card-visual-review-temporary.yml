@@ -1,0 +1,47 @@
+name: Temporary card visual review
+on:
+  push:
+    branches: ["ui/card-layout-qa-20261012"]
+    paths:
+      - ".github/workflows/card-visual-review-temporary.yml"
+      - "scripts/card-visual-review-temporary.mjs"
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Download and serve latest verified Pages artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p preview/slotfolio
+          gh api /repos/Pr0ject2/slotfolio/actions/artifacts/11719316703/zip > pages.zip
+          unzip -oq pages.zip
+          tar -xf artifact.tar -C preview/slotfolio
+          python3 -m http.server 3000 --bind 127.0.0.1 --directory preview >/tmp/cards-http.log 2>&1 &
+          for i in {1..25}; do
+            if curl -sf http://127.0.0.1:3000/slotfolio/slots/ >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/cards-http.log
+          exit 1
+      - name: Capture representative responsive card layouts
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: node scripts/card-visual-review-temporary.mjs
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: card-visual-review
+          path: card-visual-artifacts/
+          retention-days: 1
+          if-no-files-found: error
