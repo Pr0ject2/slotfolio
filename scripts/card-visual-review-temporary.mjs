@@ -11,6 +11,8 @@ for (const [w, h] of [[1440,900],[390,844],[320,720]]) {
     page.on('pageerror', err => errors.push(err.message));
     await page.goto('http://127.0.0.1:3000/slotfolio/slots/?view=' + view, { waitUntil:'domcontentloaded' });
     await page.locator('[data-slot]').first().waitFor({ timeout: 30000 });
+    await page.addStyleTag({path:'src/app/catalog-card-polish.css'});
+    await page.locator('[data-slot]').first().scrollIntoViewIfNeeded();
     await page.screenshot({ path:'card-visual-artifacts/' + view + '-' + w + '.png' });
     const details = await page.evaluate(() => {
       const cards = [...document.querySelectorAll('.catalog-results [data-slot]')].slice(0, 6);
