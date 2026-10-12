@@ -183,3 +183,43 @@
   font-size: 13px;
   line-height: 1.5;
 }
+
+/* Technical dossier headings were still 10px in the legacy context/metric grid.
+   These are meaningful labels, not decorative microcopy. */
+.site .dossier-context-grid > div > span,
+.site .dossier-metric-grid > div > span {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.site .dossier-context-grid > div > small,
+.site .dossier-metric-grid > div > small {
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+.site .prose .metric-caveat {
+  font-size: 14px;
+  line-height: 1.6;
+}
+/* Give long technical labels useful width instead of squeezing them into 155px. */
+@media (min-width: 801px) {
+  .site .dossier-context-grid > div {
+    grid-template-columns: minmax(175px, 185px) minmax(0, 1fr) minmax(185px, 210px);
+    column-gap: 18px;
+    align-items: start;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .site .dossier-context-grid > div {
+    grid-template-columns: 160px minmax(0, 1fr);
+    column-gap: 18px;
+    align-items: start;
+  }
+  .site .dossier-context-grid > div > small {
+    grid-column: 2;
+  }
+}
