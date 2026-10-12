@@ -1,0 +1,75 @@
+/* Keep multi-value technical facts readable in narrow summary columns.
+   The last "mechanics" row must span the whole passport, not share 110px
+   label/value columns or inherit the generic 70%-width tag list. */
+.catalog-record-facts > .facts-wide,
+.slot-summary .facts > .facts-wide {
+  grid-column: 1 / -1;
+  display: block;
+  min-width: 0;
+}
+.catalog-record-facts > .facts-wide dt,
+.slot-summary .facts > .facts-wide dt {
+  display: block;
+  margin: 0 0 10px;
+}
+.catalog-record-facts > .facts-wide dd.slot-tag-list,
+.slot-summary .facts > .facts-wide dd.slot-tag-list {
+  display: flex;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 0;
+  text-align: left;
+}
+.catalog-record-facts > .facts-wide .slot-tag-list a,
+.slot-summary .facts > .facts-wide .slot-tag-list a {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 32px;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1.35;
+  text-align: left;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+/* The same 70%-width constraint also affects the linked mechanics list
+   in full dossiers: give it its own line and let chips wrap naturally. */
+.slot-summary .facts > div:has(> dd.fact-link-list) {
+  display: block;
+  min-width: 0;
+}
+.slot-summary .facts dd.fact-link-list {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 9px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+  text-align: left;
+}
+.slot-summary .facts dd.fact-link-list a {
+  max-width: 100%;
+  min-width: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 600px) {
+  .catalog-record-facts > .facts-wide,
+  .slot-summary .facts > .facts-wide {
+    grid-column: 1 / -1;
+  }
+}
