@@ -84,20 +84,38 @@ test("minimal catalog record still looks finished without invented facts or rese
   await expect(card).not.toContainText("null");
 });
 
-test("cover view keeps two slot cards per row on 390px without horizontal overflow", async ({ page }) => {
-  await page.setViewportSize({ width: 390, height: 1000 });
-  await page.goto("/slots?provider=wazdan&view=covers");
-  await page.waitForLoadState("networkidle");
+test("cover view uses readable full-width cards at 390px and two columns at 600px", async ({ page }) => {
+  for (const width of [390, 600]) {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.goto("/slots?provider=wazdan&view=covers");
+    await page.waitForLoadState("networkidle");
 
-  const cards = page.locator(".catalog-results.covers .catalog-game");
-  await expect(cards).toHaveCount(18);
-  const first = await cards.nth(0).boundingBox();
-  const second = await cards.nth(1).boundingBox();
-  expect(first).toBeTruthy();
-  expect(second).toBeTruthy();
-  expect(Math.abs((first?.y ?? 0) - (second?.y ?? 0))).toBeLessThan(4);
-  expect((second?.x ?? 0)).toBeGreaterThan((first?.x ?? 0));
-  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    const cards = page.locator(".catalog-results.covers .catalog-game");
+    await expect(cards).toHaveCount(18);
+    const first = await cards.nth(0).boundingBox();
+    const second = await cards.nth(1).boundingBox();
+    expect(first, `first card at ${width}px`).toBeTruthy();
+    expect(second, `second card at ${width}px`).toBeTruthy();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `no overflow at ${width}px`).toBe(true);
+
+    if (width === 390) {
+      // Narrow phones need space for real provider and RTP data, not 130px tiles.
+      expect(first!.width).toBeGreaterThan(290);
+      expect(Math.abs(first!.x - second!.x)).toBeLessThan(4);
+      expect(second!.y).toBeGreaterThanOrEqual(first!.y + first!.height - 2);
+    } else {
+      // Preserve a useful compact grid as soon as the viewport is wide enough.
+      expect(Math.abs(first!.y - second!.y)).toBeLessThan(4);
+      expect(second!.x).toBeGreaterThan(first!.x + first!.width - 4);
+    }
+
+    const facts = cards.first().locator('dl[aria-label="Характеристики"] dd');
+    expect(await facts.count()).toBeGreaterThan(0);
+    const minFont = await facts.evaluateAll((els) =>
+      Math.min(...els.map((el) => parseFloat(getComputedStyle(el).fontSize))),
+    );
+    expect(minFont).toBeGreaterThanOrEqual(12);
+  }
 });
 
 for (const width of [320, 390, 1440]) {

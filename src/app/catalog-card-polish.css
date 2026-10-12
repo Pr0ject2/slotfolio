@@ -1,0 +1,35 @@
+/* Card layout refinement */
+.catalog-results .catalog-game{min-width:0;margin-top:0;background:#fbfcfb;transition:border-color .15s ease}
+.catalog-results .catalog-game:hover,.catalog-results .catalog-game:focus-within{border-color:#a9aeaa}
+.catalog-results .catalog-game .catalog-game-copy{min-width:0}
+.catalog-results .catalog-game .catalog-game-copy>div:first-child{display:flex;justify-content:flex-start;align-items:baseline;flex-wrap:wrap;gap:4px 12px}
+.catalog-results .catalog-game .catalog-game-copy>div:first-child span{font-size:11px;line-height:1.5;letter-spacing:.025em;overflow-wrap:anywhere}
+.catalog-results .catalog-game h2{font-size:clamp(19px,1.65vw,23px);line-height:1.22;overflow-wrap:anywhere;margin:7px 0 11px}
+.catalog-results .catalog-game .catalog-game-art{overflow:hidden;min-width:0;background:var(--olive);border:1px solid var(--line)}
+.catalog-results .catalog-game .catalog-game-art img{width:100%;aspect-ratio:16/9;object-fit:contain}
+.catalog-results .catalog-game [aria-label="Механики"]>span,.catalog-results .catalog-game [aria-label="Особенности игры"]>span{font-size:11px;line-height:1.45;padding:5px 8px;overflow-wrap:anywhere}
+.catalog-results .catalog-game dl[aria-label="Характеристики"]{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 18px;margin-top:15px;padding-top:14px;min-width:0}
+.catalog-results .catalog-game dl[aria-label="Характеристики"]>div{min-width:0;max-width:none}
+.catalog-results .catalog-game dl[aria-label="Характеристики"] dt{font-size:11px;line-height:1.4;margin-bottom:3px}
+.catalog-results .catalog-game dl[aria-label="Характеристики"] dd{font-size:13px;line-height:1.45;overflow-wrap:anywhere}
+.catalog-results .catalog-game .catalog-game-data{min-width:0;margin-top:12px;gap:10px}
+.catalog-results .catalog-game .catalog-game-data a,.catalog-results .catalog-game .catalog-game-data button{display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:1.45}
+.catalog-results.covers{row-gap:16px}
+.catalog-results.covers .catalog-game{display:flex;flex-direction:column;height:100%;padding:15px;align-self:stretch}
+.catalog-results.covers .catalog-game .catalog-game-art{flex:0 0 auto;margin-bottom:14px}
+.catalog-results.covers .catalog-game .catalog-game-copy{flex:1;display:flex;flex-direction:column}
+.catalog-results.covers .catalog-game dl[aria-label="Характеристики"]{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 15px}
+.catalog-results.covers .catalog-game [aria-label="Механики"]>span:nth-child(n+3){display:none}
+.catalog-results.covers .catalog-game .catalog-game-data{margin-top:auto;padding-top:13px}
+.catalog-results.covers .catalog-game h2{font-size:21px}
+.dossier-feature-grid>.dossier-feature-card:last-child:nth-child(odd){grid-column:1/-1;border-right:0}
+.dossier-feature-grid>.dossier-feature-card:nth-last-child(2):nth-child(even){border-bottom:1px solid var(--line)}
+.dossier-feature-card>span{font-size:11px}
+@media(max-width:800px){.catalog-results .catalog-game dl[aria-label="Характеристики"]{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-results.covers .catalog-game h2{font-size:19px}}
+@media(max-width:600px){.catalog-results .catalog-game{padding:13px}.catalog-results .catalog-game .catalog-game-copy>div:first-child span{font-size:10px}.catalog-results .catalog-game dl[aria-label="Характеристики"] dd{font-size:12px}.catalog-results.covers .catalog-game{padding:12px}.catalog-results.covers .catalog-game [aria-label="Механики"]>span:nth-child(2){display:inline-flex}}
+@media(max-width:420px){.catalog-results.covers{grid-template-columns:minmax(0,1fr);gap:14px}.catalog-results.list .catalog-game,.catalog-results.list .catalog-only:has(.catalog-game-art){grid-template-columns:minmax(0,1fr);gap:10px}.catalog-results.list .catalog-game .catalog-game-art{width:100%;max-width:220px}.catalog-results.list .catalog-game .catalog-game-copy{grid-column:1}.catalog-results .catalog-game dl[aria-label="Характеристики"]{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-results.covers .catalog-game h2{font-size:20px}}
+@media(prefers-reduced-motion:reduce){.catalog-results .catalog-game{transition:none}}
+
+/* Artwork must not stretch vertically with text-heavy list cards. */
+.catalog-results.list .catalog-game{align-items:start}
+.catalog-results.list .catalog-game .catalog-game-art{align-self:start}
