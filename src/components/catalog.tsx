@@ -280,10 +280,6 @@ export function Catalog({
               </button>
             </div>
           </div>
-          <details className="catalog-coverage-note">
-            <summary>Как читать карточки</summary>
-            <p>Досье содержат подробный разбор игры. Карточки каталога — краткие записи с проверенными данными. Показываем только подтверждённые характеристики; неизвестные значения не подставляем.</p>
-          </details>
 
           {hasFilters && (
             <div className="active-filters" aria-label="Активные фильтры">
