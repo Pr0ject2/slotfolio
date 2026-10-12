@@ -10,6 +10,9 @@ for (const path of ["/slots", "/search"]) {
     await expect(page.locator(".results-count")).toHaveText("1000 игр");
     await expect(page.locator(".results-composition")).toHaveCount(0);
     await expect(page.locator(".data-note")).toHaveCount(0);
+    await expect(page.locator(".catalog-coverage-note")).toHaveCount(0);
+    await expect(page.getByText("Как читать карточки", { exact: true })).toHaveCount(0);
+    await expect(page.locator("body")).not.toContainText("Досье содержат подробный разбор игры.");
     await expect(page.locator("body")).not.toContainText("RTP показывается только там");
     await expect(page.locator("body")).not.toContainText("У конкретного оператора конфигурация RTP может отличаться");
     await expect(page.getByRole("link", { name: "Как читать RTP" })).toHaveCount(0);
