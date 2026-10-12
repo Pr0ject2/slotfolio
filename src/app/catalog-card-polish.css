@@ -29,3 +29,7 @@
 @media(max-width:600px){.catalog-results .catalog-game{padding:13px}.catalog-results .catalog-game .catalog-game-copy>div:first-child span{font-size:10px}.catalog-results .catalog-game dl[aria-label="Характеристики"] dd{font-size:12px}.catalog-results.covers .catalog-game{padding:12px}.catalog-results.covers .catalog-game [aria-label="Механики"]>span:nth-child(2){display:inline-flex}}
 @media(max-width:420px){.catalog-results.covers{grid-template-columns:minmax(0,1fr);gap:14px}.catalog-results.list .catalog-game,.catalog-results.list .catalog-only:has(.catalog-game-art){grid-template-columns:minmax(0,1fr);gap:10px}.catalog-results.list .catalog-game .catalog-game-art{width:100%;max-width:220px}.catalog-results.list .catalog-game .catalog-game-copy{grid-column:1}.catalog-results .catalog-game dl[aria-label="Характеристики"]{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-results.covers .catalog-game h2{font-size:20px}}
 @media(prefers-reduced-motion:reduce){.catalog-results .catalog-game{transition:none}}
+
+/* Artwork must not stretch vertically with text-heavy list cards. */
+.catalog-results.list .catalog-game{align-items:start}
+.catalog-results.list .catalog-game .catalog-game-art{align-self:start}
