@@ -11,6 +11,7 @@ import {
   useSelection,
 } from "./compare-button";
 import type { ComparisonItem } from "@/lib/catalog-index";
+import styles from "./comparison.module.css";
 
 function ruPlural(count: number, one: string, few: string, many: string) {
   const mod100 = count % 100;
@@ -99,7 +100,7 @@ export function Comparison({ items }: { items: ComparisonItem[] }) {
   const fields = new Set(games.map((game) => game.field));
 
   return (
-    <div className="comparison">
+    <div className={`comparison ${styles.comparison}`}>
       {seedMessage && <p className="data-note" role="status">{seedMessage}</p>}
       <section className="comparison-builder" aria-label="Выбор игр для сравнения">
         <div className="comparison-builder-copy">
@@ -178,7 +179,8 @@ export function Comparison({ items }: { items: ComparisonItem[] }) {
 
       {games.length ? (
         <>
-          <div className="comparison-scroll" tabIndex={0} role="region" aria-label="Таблица сравнения, прокручивается по горизонтали">
+          <p className={styles.scrollHint} id="comparison-scroll-hint">Прокрутите таблицу вправо, чтобы увидеть остальные столбцы. С клавиатуры: Tab до таблицы, затем стрелки ← →.</p>
+          <div className="comparison-scroll" tabIndex={0} role="region" aria-label="Таблица сравнения, прокручивается по горизонтали" aria-describedby="comparison-scroll-hint">
             <table className="comparison-table">
               <caption className="sr-only">Сравнение выбранных игр</caption>
               <thead><tr><th>Параметр</th>{games.map((game) => <th key={game.slug}><Link href={`/slots/${game.slug}`}>{game.name}</Link></th>)}</tr></thead>

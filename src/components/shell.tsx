@@ -1,10 +1,18 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import styles from "./shell.module.css";
 export function Header() {
   const [open, setOpen] = useState(false);
+  const menuButton = useRef<HTMLButtonElement>(null);
   const path = usePathname();
+  useEffect(() => {
+    const desktop = window.matchMedia("(min-width: 601px)");
+    const reset = () => { if (desktop.matches) setOpen(false); };
+    desktop.addEventListener("change", reset);
+    return () => desktop.removeEventListener("change", reset);
+  }, []);
   const links = [
     ["/slots", "Слоты"],
     ["/mechanics", "Механики"],
@@ -12,7 +20,13 @@ export function Header() {
     ["/collections", "Подборки"],
   ];
   return (
-    <header className="header">
+    <header className={`header ${styles.header}`} onKeyDown={(event) => {
+      if (event.key === "Escape" && open) {
+        event.preventDefault();
+        setOpen(false);
+        menuButton.current?.focus();
+      }
+    }}>
       <div className="masthead">
         <Link href="/" className="brand" aria-label="Slotfolio — главная">
           slotfolio<span className="brand-dot">.</span>
@@ -40,6 +54,8 @@ export function Header() {
           <span>Найти игру</span>
         </Link>
         <button
+          ref={menuButton}
+          type="button"
           className="menu-toggle"
           aria-expanded={open}
           aria-controls="main-navigation"
