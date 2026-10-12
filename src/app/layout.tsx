@@ -6,6 +6,7 @@ import { SITE_DESCRIPTION, SITE_NAME, indexingEnabled, siteUrl } from "@/lib/seo
 import "./globals.css";
 import "./v127-overrides.css";
 import "./catalog-card-polish.css";
+import "./fact-layout-polish.css";
 
 const golos = localFont({
   variable: "--font-golos",
