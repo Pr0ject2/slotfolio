@@ -7,6 +7,7 @@ import "./globals.css";
 import "./v127-overrides.css";
 import "./catalog-card-polish.css";
 import "./fact-layout-polish.css";
+import "./typography-readability.css";
 
 const golos = localFont({
   variable: "--font-golos",

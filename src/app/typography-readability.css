@@ -1,0 +1,185 @@
+/* Slotfolio readability pass: retain the editorial palette and headings.
+   Tiny labels must not carry useful product or navigation information. */
+:root {
+  --slotfolio-caption-size: 12px;
+  --slotfolio-support-size: 13px;
+  --slotfolio-fact-size: 14px;
+}
+
+/* Masthead, breadcrumbs, and editorial labels */
+.site .eyebrow,
+.site .header-edition,
+.site .edition-line,
+.site .image-caption,
+.site .article-meta,
+.site .row-main .eyebrow,
+.site .catalog-game .eyebrow,
+.site .footer .eyebrow,
+.site .cover-copy .eyebrow,
+.site .article-toc .eyebrow {
+  font-size: var(--slotfolio-caption-size);
+  line-height: 1.45;
+  letter-spacing: .045em;
+}
+.site .tagline,
+.site .header-search,
+.site .secondary-nav,
+.site .breadcrumbs,
+.site .menu-toggle {
+  font-size: var(--slotfolio-support-size);
+  line-height: 1.5;
+}
+.site .article-toc > a,
+.site .footer-main > div:not(:first-child) > a,
+.site .text-link,
+.site .section-title .text-link,
+.site .reading-note .text-link,
+.site .row-main p,
+.site .row-rtp small {
+  font-size: var(--slotfolio-support-size);
+  line-height: 1.55;
+}
+.site .row-main .eyebrow { font-size: 12px; }
+.site .footer-bottom,
+.site .footer-responsibility p,
+.site .slot-figure figcaption,
+.site .article-figure figcaption,
+.site .prose .source-note,
+.site .data-note,
+.site .catalog-end,
+.site .catalog-range,
+.site .article-heading .article-meta {
+  font-size: var(--slotfolio-support-size);
+  line-height: 1.6;
+}
+.site .footer-bottom { flex-wrap: wrap; }
+.site .mini-search input { font-size: 15px; }
+
+/* Catalog controls, side filters, sorting, and pagination */
+.site .filter-heading,
+.site .filters > label,
+.site .filters legend,
+.site .filters fieldset label,
+.site .filters fieldset label span,
+.site .filter-note,
+.site .reset-link,
+.site .catalog-search > label,
+.site .active-filters,
+.site .results-toolbar,
+.site .results-toolbar select,
+.site .catalog-page-controls button,
+.site .catalog-page-controls select,
+.site .view-controls button,
+.site .filter-toggle {
+  font-size: var(--slotfolio-support-size);
+  line-height: 1.5;
+}
+.site .filters select { font-size: 14px; }
+.site .catalog-search input { font-size: 16px; }
+.site .filters fieldset label { gap: 10px; }
+.site .results-toolbar { flex-wrap: wrap; row-gap: 9px; }
+.site .results-toolbar select { max-width: 100%; }
+
+/* Catalog cards and preview rows */
+.site .catalog-game .eyebrow,
+.site .catalog-game .catalog-coverage,
+.site .catalog-game .catalog-game-copy > div:first-child span {
+  font-size: var(--slotfolio-caption-size);
+  line-height: 1.45;
+}
+.site .catalog-game .catalog-game-copy > p,
+.site .side-story p,
+.site .catalog-intro > p:not(.serif),
+.site .hub-list p,
+.site .collection-entry p {
+  font-size: var(--slotfolio-fact-size);
+  line-height: 1.65;
+}
+.site .catalog-game dl[aria-label="Характеристики"] dt { font-size: 12px; }
+.site .catalog-game dl[aria-label="Характеристики"] dd { font-size: 14px; line-height: 1.5; }
+.site .catalog-game-data,
+.site .catalog-game-data > span,
+.site .catalog-game-data a,
+.site .catalog-game-data .compare-button,
+.site .compare-button,
+.site .compare-control small {
+  font-size: var(--slotfolio-support-size);
+  line-height: 1.5;
+}
+.site .catalog-game .catalog-game-data a,
+.site .catalog-game .catalog-game-data button { min-height: 44px; }
+.site .catalog-game [aria-label="Механики"] > span,
+.site .catalog-game [aria-label="Особенности игры"] > span,
+.site .catalog-game-tags span,
+.site .slot-tag-list a {
+  font-size: 12px;
+  line-height: 1.45;
+  overflow-wrap: break-word;
+}
+
+/* Technical passports, navigation within dossiers, references */
+.site .slot-summary .facts dt,
+.site .catalog-record-facts dt {
+  font-size: 12px;
+  line-height: 1.4;
+}
+.site .slot-summary .facts dd,
+.site .catalog-record-facts dd {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.site .slot-summary .facts > div,
+.site .catalog-record-facts > div { min-width: 0; }
+.site .slot-summary .facts dd a,
+.site .catalog-record-facts dd a { font-size: inherit; }
+.site .slot-summary .fact-link-list a,
+.site .slot-summary .slot-tag-list a,
+.site .catalog-record-facts .slot-tag-list a {
+  font-size: 12px;
+  line-height: 1.45;
+}
+.site .dossier-feature-card > span,
+.site .dossier-metric-grid small,
+.site .dossier-context-grid small,
+.site .margin-note p,
+.site .prose .source-note,
+.site .affiliate small,
+.site .comparison-note {
+  font-size: var(--slotfolio-support-size);
+  line-height: 1.6;
+}
+.site .comparison-table th,
+.site .comparison-table td,
+.site .prose table th,
+.site .prose table td {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.site .comparison-table button { font-size: var(--slotfolio-support-size); }
+.site .comparison-table th:first-child,
+.site .comparison .comparison-table thead th:first-child { font-size: 12px; }
+
+/* Narrow screens require readable text without forced two-column values. */
+@media (max-width: 600px) {
+  .site .results-toolbar select,
+  .site .filters select,
+  .site .catalog-page-controls select,
+  .site .catalog-search input,
+  .site .mini-search input { font-size: 16px; }
+  .site .catalog-game .catalog-game-data a,
+  .site .catalog-game .catalog-game-data button { font-size: 13px; }
+  .site .catalog-game .catalog-game-copy > div:first-child span { font-size: 12px; }
+  .site .catalog-game .catalog-game-copy > p { font-size: 14px; }
+  .site .catalog-game dl[aria-label="Характеристики"] dt { font-size: 12px; }
+  .site .catalog-game dl[aria-label="Характеристики"] dd { font-size: 14px; }
+  .site .edition-line,
+  .site .footer-bottom { letter-spacing: normal; }
+}
+
+/* The catalog-only action link has a component-level style and must remain
+   legible even at the narrowest breakpoint. */
+.site .catalog-results .catalog-game[data-coverage="catalog"] .catalog-game-data a,
+.site .catalog-results .catalog-game[data-coverage="dossier"] .catalog-game-data button {
+  font-size: 13px;
+  line-height: 1.5;
+}

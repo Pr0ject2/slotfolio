@@ -82,8 +82,8 @@
 }
 
 .route :global(.facts dt) {
-  font-size: 9px;
-  line-height: 1.25;
+  font-size: 12px;
+  line-height: 1.4;
   letter-spacing: 0.65px;
   text-transform: uppercase;
   color: var(--muted);
@@ -92,9 +92,9 @@
 .route :global(.facts dd) {
   margin: 5px 0 0;
   text-align: left;
-  font-size: 12px;
-  line-height: 1.45;
-  overflow-wrap: anywhere;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-wrap: break-word;
 }
 
 .route :global(.facts .facts-wide) {
@@ -114,8 +114,8 @@
   border: 1px solid var(--line);
   padding: 4px 7px;
   background: var(--paper);
-  font-size: 10px;
-  line-height: 1.25;
+  font-size: 12px;
+  line-height: 1.4;
 }
 
 .route :global(.fact-link-list a:hover),
