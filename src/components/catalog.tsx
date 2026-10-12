@@ -111,7 +111,6 @@ export function Catalog({
   const page = Math.max(1, Math.min(pageCount, Number.isSafeInteger(requestedPage) ? requestedPage : 1));
   const offset = (page - 1) * PAGE_SIZE;
   const visibleResults = results.slice(offset, offset + PAGE_SIZE);
-  const dossierCount = results.filter((item) => item.coverage === "dossier").length;
   function showPage(next: number) {
     setPage(String(next));
     resultsRef.current?.scrollIntoView({ block: "start" });
@@ -173,7 +172,6 @@ export function Catalog({
               <label>
                 <input type="radio" name="mechanic" checked={!mechanic} onChange={() => setMechanic("")} />
                 Все механики
-                <span>{model.facets.mechanicsKnown}</span>
               </label>
               {model.facets.mechanics.map((item) => (
                 <label key={item.slug}>
@@ -187,9 +185,6 @@ export function Catalog({
                   <span>{item.count}</span>
                 </label>
               ))}
-              <p className="filter-note">
-                Механика подтверждена у {model.facets.mechanicsKnown} из {model.facets.total} игр.
-              </p>
             </fieldset>
 
             <div className="filter-select-group">
@@ -249,7 +244,6 @@ export function Catalog({
                 ? `${model.facets.total} игр`
                 : `Найдено ${results.length} из ${model.facets.total}`}
             </span>
-            <span className="results-composition">Досье — {dossierCount} <span aria-hidden="true"> / </span> Карточки каталога — {results.length - dossierCount}</span>
             </div>
             <label>
               <span className="sr-only">Сортировка</span>
@@ -322,9 +316,6 @@ export function Catalog({
             <Link href="/journal/understanding-rtp">Как читать RTP ↗</Link>
           </p>
           <div className="catalog-end">
-            <span>
-              {pageCount > 1 ? `Страница ${page} из ${pageCount}.` : "Показаны все игры, подходящие под текущие фильтры."}
-            </span>
             <Link href="/compare">Перейти к сравнению ↗</Link>
           </div>
         </div>
