@@ -29,7 +29,7 @@ test("catalog UI keeps labels, verified facts and controls readable at phone and
     await expectReadable(page, ".catalog-results .catalog-game dl[aria-label='Характеристики'] dt", 12);
     await expectReadable(page, ".catalog-results .catalog-game dl[aria-label='Характеристики'] dd", 14);
     await expectReadable(page, ".results-toolbar", 13);
-    await expectReadable(page, ".catalog-results .catalog-game .catalog-game-data a", 13);
+    await expectReadable(page, ".catalog-results .catalog-game[data-coverage='dossier'] .catalog-game-data button", 13);
     await expectNoHorizontalOverflow(page, width);
   }
 });

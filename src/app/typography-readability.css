@@ -175,3 +175,11 @@
   .site .edition-line,
   .site .footer-bottom { letter-spacing: normal; }
 }
+
+/* The catalog-only action link has a component-level style and must remain
+   legible even at the narrowest breakpoint. */
+.site .catalog-results .catalog-game[data-coverage="catalog"] .catalog-game-data a,
+.site .catalog-results .catalog-game[data-coverage="dossier"] .catalog-game-data button {
+  font-size: 13px;
+  line-height: 1.5;
+}
