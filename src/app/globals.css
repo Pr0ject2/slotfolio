@@ -4601,10 +4601,19 @@ summary {
 .covers .catalog-game-copy { min-width: 0; }
 .catalog-pagination { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 24px 0; border-bottom: 1px solid var(--line); }
 .catalog-range { font-size: 12px; color: var(--muted); white-space: nowrap; }
-.catalog-page-controls { display: flex; align-items: center; gap: 16px; }
-.catalog-page-controls button, .catalog-page-controls select { min-height: 44px; padding: 8px 12px; font-size: 13px; color: var(--ink); }
-.catalog-page-controls select { border: 1px solid var(--line); background: transparent; }
-.catalog-page-controls button:hover:not(:disabled) { color: var(--red); }
+.catalog-page-controls { display: flex; align-items: center; gap: 8px; }
+.catalog-page-numbers { display: flex; align-items: center; gap: 4px; }
+.catalog-page-controls button, .catalog-page-current {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 44px; min-height: 44px; padding: 8px 10px;
+  border: 1px solid var(--line); color: var(--ink); background: transparent;
+  font-size: 13px; line-height: 1.5; white-space: nowrap;
+}
+.catalog-page-current { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.catalog-page-gap { min-width: 18px; text-align: center; color: var(--muted); }
+.catalog-page-status { display: none; font-size: 13px; }
+.catalog-page-controls button:hover:not(:disabled) { color: var(--red); border-color: var(--red); }
+.catalog-page-controls button:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
 .catalog-page-controls button:disabled { opacity: .4; cursor: default; }
 .filter-apply { display: none; }
 .catalog-record-page { max-width: 1080px; margin: 50px auto 0; }
@@ -4623,6 +4632,10 @@ summary {
 .catalog-record-next { display: flex; flex-wrap: wrap; gap: 20px 40px; border-top: 1px solid var(--line); margin-top: 42px; padding-top: 26px; }
 @media (max-width: 900px) {
   .catalog-record-body { gap: 32px; }
+}
+@media (max-width: 950px) {
+  .catalog-page-numbers { display: none; }
+  .catalog-page-status { display: inline; white-space: nowrap; }
 }
 @media (max-width: 600px) {
   .slot-heading { flex-wrap: wrap; }
@@ -4646,8 +4659,9 @@ summary {
   .catalog-art-pending { font-size: 11px; padding: 14px 8px; }
   .catalog-pagination { display: block; padding: 22px 0; }
   .catalog-range { display: block; margin-bottom: 12px; }
-  .catalog-page-controls { justify-content: space-between; gap: 4px; }
-  .catalog-page-controls button, .catalog-page-controls select { padding: 8px; font-size: 12px; }
+  .catalog-page-controls { justify-content: space-between; gap: 8px; }
+  .catalog-page-controls button { padding: 8px; font-size: 16px; }
+  .catalog-page-nav-label { display: none; }
   .filter-apply { display: block; width: 100%; min-height: 46px; margin-top: 22px; background: var(--ink); color: var(--paper); font-size: 14px; padding: 12px; }
   .catalog-record-page { margin-top: 34px; }
   .catalog-record-deck { font-size: 16px; margin: 24px 0 32px; }
