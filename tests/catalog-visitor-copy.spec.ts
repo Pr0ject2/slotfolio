@@ -9,7 +9,8 @@ for (const path of ["/slots", "/search"]) {
 
     await expect(page.locator(".results-count")).toHaveText("1000 игр");
     await expect(page.locator(".results-composition")).toHaveCount(0);
-    await expect(page.locator(".catalog-end")).not.toContainText(/Страница \\d+ из \\d+|Показаны все игры/);
+    await expect(page.locator(".catalog-end")).not.toContainText("Страница ");
+    await expect(page.locator(".catalog-end")).not.toContainText("Показаны все игры");
     await expect(page.locator(".catalog-end").getByRole("link", { name: /сравнению/ })).toBeVisible();
 
     await page.getByRole("button", { name: /Фильтры/ }).click();
