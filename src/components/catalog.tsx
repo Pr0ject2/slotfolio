@@ -10,6 +10,23 @@ import {
   type CatalogModel,
 } from "@/lib/catalog-query";
 
+ 
+// Show nearby pages and both ends without rendering dozens of choices.
+function paginationWindow(current: number, total: number): (number | null)[] {
+  const candidates = new Set([1, total, current - 1, current, current + 1]);
+  if (current <= 3) for (let n = 2; n <= 4; n++) candidates.add(n);
+  if (current >= total - 2) for (let n = total - 3; n < total; n++) candidates.add(n);
+
+  const pages = [...candidates].filter((n) => n >= 1 && n <= total).sort((a, b) => a - b);
+  const window: (number | null)[] = [];
+  for (let index = 0; index < pages.length; index++) {
+    if (index > 0 && pages[index] - pages[index - 1] > 1) window.push(null);
+    window.push(pages[index]);
+  }
+  return window;
+}
+
+
 function useUrlFilter(name: string, initial: string) {
   const [value, setValue] = useState(initial);
   useEffect(() => setValue(initial), [initial]);
@@ -298,13 +315,20 @@ export function Catalog({
                 <nav className="catalog-pagination" aria-label="Страницы каталога">
                   <span className="catalog-range">{offset + 1}–{offset + visibleResults.length} из {results.length}</span>
                   <div className="catalog-page-controls">
-                    <button disabled={page === 1} onClick={() => showPage(page - 1)} aria-label="Предыдущая страница">← Назад</button>
-                    <label><span className="sr-only">Страница каталога</span>
-                      <select value={page} onChange={(event) => showPage(Number(event.target.value))}>
-                        {Array.from({ length: pageCount }, (_, index) => <option key={index} value={index + 1}>{index + 1} из {pageCount}</option>)}
-                      </select>
-                    </label>
-                    <button disabled={page === pageCount} onClick={() => showPage(page + 1)} aria-label="Следующая страница">Далее →</button>
+                    <button className="catalog-page-previous" disabled={page === 1} onClick={() => showPage(page - 1)} aria-label="Предыдущая страница"><span aria-hidden="true">←</span><span className="catalog-page-nav-label"> Назад</span></button>
+                    <div className="catalog-page-numbers" aria-label="Выбор страницы">
+                      {paginationWindow(page, pageCount).map((number, index) =>
+                        number === null ? (
+                          <span key={`gap-${index}`} className="catalog-page-gap" aria-hidden="true">…</span>
+                        ) : number === page ? (
+                          <span key={number} className="catalog-page-current" aria-label={`Страница ${number}`} aria-current="page">{number}</span>
+                        ) : (
+                          <button key={number} onClick={() => showPage(number)} aria-label={`Перейти на страницу ${number}`}>{number}</button>
+                        ),
+                      )}
+                    </div>
+                    <span className="catalog-page-status" aria-live="polite">Страница {page} из {pageCount}</span>
+                    <button className="catalog-page-next" disabled={page === pageCount} onClick={() => showPage(page + 1)} aria-label="Следующая страница"><span className="catalog-page-nav-label">Далее </span><span aria-hidden="true">→</span></button>
                   </div>
                 </nav>
               )}
