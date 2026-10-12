@@ -1,0 +1,42 @@
+.comparison :global(.comparison-scroll):focus-visible,
+.comparison :global(.comparison-selection):focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 4px;
+}
+.comparison :global(.comparison-picker > label),
+.comparison :global(.comparison-picker > div > button),
+.comparison :global(.comparison-clear),
+.comparison :global(.comparison-selection p),
+.comparison :global(.comparison-summary small),
+.comparison :global(.comparison-presets small),
+.comparison :global(.comparison-end p) {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.comparison :global(.comparison-clear),
+.comparison :global(.comparison-selection button) {
+  min-width: 44px;
+  min-height: 44px;
+}
+.comparison :global(.comparison-selection article) {
+  grid-template-columns: 24px 110px minmax(0, 1fr) 44px;
+}
+.scrollHint { display: none; }
+@media (max-width: 600px) {
+  .comparison :global(.comparison-selection article) {
+    grid-template-columns: 23px 82px minmax(0, 1fr) 44px;
+    gap: 8px;
+  }
+  .scrollHint {
+    display: block;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 24px 0 12px;
+    color: var(--ink);
+  }
+  .comparison :global(.comparison-picker select) { font-size: 16px; }
+  .comparison :global(.comparison-scroll) {
+    scrollbar-width: auto;
+    scrollbar-color: var(--muted) var(--paper);
+  }
+}
