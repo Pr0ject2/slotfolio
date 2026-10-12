@@ -335,10 +335,6 @@ export function Catalog({
             </>
           )}
 
-          <p className="data-note">
-            * RTP показывается только там, где значение подтверждено источником. У конкретного оператора конфигурация RTP может отличаться.{" "}
-            <Link href="/journal/understanding-rtp">Как читать RTP ↗</Link>
-          </p>
           <div className="catalog-end">
             <Link href="/compare">Перейти к сравнению ↗</Link>
           </div>
