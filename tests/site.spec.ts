@@ -243,7 +243,7 @@ test("catalog search, filters and pagination operate on all 1000 records", async
   await expect(page.locator(".catalog-game")).toHaveCount(18);
   for (const expected of [2, 3, 4]) {
     await page.getByRole("button", { name: "Следующая страница" }).click();
-    await expect(page.getByRole("combobox", { name: "Страница каталога" })).toHaveValue(String(expected));
+    await expect(page.locator(".catalog-page-current")).toHaveText(String(expected));
     await expect(page.locator(".catalog-game")).toHaveCount(18);
   }
 
@@ -397,22 +397,24 @@ test("catalog page and view survive reload, detail navigation and history", asyn
   await expect(page.locator(".catalog-game")).toHaveCount(10);
   await expect(page.getByRole("button", { name: "Следующая страница" })).toBeDisabled();
   await expect(page.locator(".catalog-pagination")).toContainText("991–1000");
-  await page.getByRole("combobox", { name: "Страница каталога" }).selectOption("2");
+  // A distant page remains reachable via the first-page button and nearby numbered pages.
+  await page.getByRole("button", { name: "Перейти на страницу 1" }).click();
+  await page.getByRole("button", { name: "Перейти на страницу 2" }).click();
   await expect(page).toHaveURL(/page=2/);
   const title = await page.locator(".catalog-game h2").first().innerText();
   await page.locator(".catalog-game h2 a").first().click();
   await expect(page).toHaveURL(/\/slots\/[^?]+$/);
   await page.goBack();
-  await expect(page.getByRole("combobox", { name: "Страница каталога" })).toHaveValue("2");
+  await expect(page.locator(".catalog-page-current")).toHaveText("2");
   await expect(page.locator(".catalog-game h2").first()).toHaveText(title);
   await page.getByRole("button", { name: "Обложки", exact: true }).click();
   await page.reload();
   await expect(page.locator(".catalog-results")).toHaveClass(/covers/);
-  await expect(page.getByRole("combobox", { name: "Страница каталога" })).toHaveValue("2");
+  await expect(page.locator(".catalog-page-current")).toHaveText("2");
   await page.getByRole("button", { name: "Следующая страница" }).click();
-  await expect(page.getByRole("combobox", { name: "Страница каталога" })).toHaveValue("3");
+  await expect(page.locator(".catalog-page-current")).toHaveText("3");
   await page.goBack();
-  await expect(page.getByRole("combobox", { name: "Страница каталога" })).toHaveValue("2");
+  await expect(page.locator(".catalog-page-current")).toHaveText("2");
   await page.getByRole("searchbox").fill("bonanza");
   await expect(page).not.toHaveURL(/page=/);
   await expect(page.locator(".catalog-game")).not.toHaveCount(0);
@@ -424,7 +426,7 @@ test("pagination visits all 1000 games once without accumulating DOM rows", asyn
   const seen = new Set<string>();
   const count = Math.ceil(catalogModel.items.length / 18);
   for (let current = 1; current <= count; current += 1) {
-    await expect(page.getByRole("combobox", { name: "Страница каталога" })).toHaveValue(String(current));
+    await expect(page.locator(".catalog-page-current")).toHaveText(String(current));
     await expect(page.locator(".catalog-game")).toHaveCount(Math.min(18, catalogModel.items.length - (current - 1) * 18));
     for (const href of await page.locator(".catalog-game h2 a").evaluateAll(links => links.map(link => link.getAttribute("href")!))) {
       expect(seen.has(href), href).toBe(false);

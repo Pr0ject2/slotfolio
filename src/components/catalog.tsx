@@ -10,6 +10,23 @@ import {
   type CatalogModel,
 } from "@/lib/catalog-query";
 
+ 
+// Show nearby pages and both ends without rendering dozens of choices.
+function paginationWindow(current: number, total: number): (number | null)[] {
+  const candidates = new Set([1, total, current - 1, current, current + 1]);
+  if (current <= 3) for (let n = 2; n <= 4; n++) candidates.add(n);
+  if (current >= total - 2) for (let n = total - 3; n < total; n++) candidates.add(n);
+
+  const pages = [...candidates].filter((n) => n >= 1 && n <= total).sort((a, b) => a - b);
+  const window: (number | null)[] = [];
+  for (let index = 0; index < pages.length; index++) {
+    if (index > 0 && pages[index] - pages[index - 1] > 1) window.push(null);
+    window.push(pages[index]);
+  }
+  return window;
+}
+
+
 function useUrlFilter(name: string, initial: string) {
   const [value, setValue] = useState(initial);
   useEffect(() => setValue(initial), [initial]);
@@ -111,7 +128,6 @@ export function Catalog({
   const page = Math.max(1, Math.min(pageCount, Number.isSafeInteger(requestedPage) ? requestedPage : 1));
   const offset = (page - 1) * PAGE_SIZE;
   const visibleResults = results.slice(offset, offset + PAGE_SIZE);
-  const dossierCount = results.filter((item) => item.coverage === "dossier").length;
   function showPage(next: number) {
     setPage(String(next));
     resultsRef.current?.scrollIntoView({ block: "start" });
@@ -173,7 +189,6 @@ export function Catalog({
               <label>
                 <input type="radio" name="mechanic" checked={!mechanic} onChange={() => setMechanic("")} />
                 Все механики
-                <span>{model.facets.mechanicsKnown}</span>
               </label>
               {model.facets.mechanics.map((item) => (
                 <label key={item.slug}>
@@ -187,9 +202,6 @@ export function Catalog({
                   <span>{item.count}</span>
                 </label>
               ))}
-              <p className="filter-note">
-                Механика подтверждена у {model.facets.mechanicsKnown} из {model.facets.total} игр.
-              </p>
             </fieldset>
 
             <div className="filter-select-group">
@@ -249,7 +261,6 @@ export function Catalog({
                 ? `${model.facets.total} игр`
                 : `Найдено ${results.length} из ${model.facets.total}`}
             </span>
-            <span className="results-composition">Досье — {dossierCount} <span aria-hidden="true"> / </span> Карточки каталога — {results.length - dossierCount}</span>
             </div>
             <label>
               <span className="sr-only">Сортировка</span>
@@ -304,13 +315,20 @@ export function Catalog({
                 <nav className="catalog-pagination" aria-label="Страницы каталога">
                   <span className="catalog-range">{offset + 1}–{offset + visibleResults.length} из {results.length}</span>
                   <div className="catalog-page-controls">
-                    <button disabled={page === 1} onClick={() => showPage(page - 1)} aria-label="Предыдущая страница">← Назад</button>
-                    <label><span className="sr-only">Страница каталога</span>
-                      <select value={page} onChange={(event) => showPage(Number(event.target.value))}>
-                        {Array.from({ length: pageCount }, (_, index) => <option key={index} value={index + 1}>{index + 1} из {pageCount}</option>)}
-                      </select>
-                    </label>
-                    <button disabled={page === pageCount} onClick={() => showPage(page + 1)} aria-label="Следующая страница">Далее →</button>
+                    <button className="catalog-page-previous" disabled={page === 1} onClick={() => showPage(page - 1)} aria-label="Предыдущая страница"><span aria-hidden="true">←</span><span className="catalog-page-nav-label"> Назад</span></button>
+                    <div className="catalog-page-numbers" aria-label="Выбор страницы">
+                      {paginationWindow(page, pageCount).map((number, index) =>
+                        number === null ? (
+                          <span key={`gap-${index}`} className="catalog-page-gap" aria-hidden="true">…</span>
+                        ) : number === page ? (
+                          <span key={number} className="catalog-page-current" aria-label={`Страница ${number}`} aria-current="page">{number}</span>
+                        ) : (
+                          <button key={number} onClick={() => showPage(number)} aria-label={`Перейти на страницу ${number}`}>{number}</button>
+                        ),
+                      )}
+                    </div>
+                    <span className="catalog-page-status" aria-live="polite">Страница {page} из {pageCount}</span>
+                    <button className="catalog-page-next" disabled={page === pageCount} onClick={() => showPage(page + 1)} aria-label="Следующая страница"><span className="catalog-page-nav-label">Далее </span><span aria-hidden="true">→</span></button>
                   </div>
                 </nav>
               )}
@@ -322,9 +340,6 @@ export function Catalog({
             <Link href="/journal/understanding-rtp">Как читать RTP ↗</Link>
           </p>
           <div className="catalog-end">
-            <span>
-              {pageCount > 1 ? `Страница ${page} из ${pageCount}.` : "Показаны все игры, подходящие под текущие фильтры."}
-            </span>
             <Link href="/compare">Перейти к сравнению ↗</Link>
           </div>
         </div>
