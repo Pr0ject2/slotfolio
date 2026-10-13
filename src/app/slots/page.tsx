@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Каталог слотов",
-  description: "Каталог слотов Slotfolio с поиском и фильтрами, проверенными источниками провайдеров и подробными редакционными досье для исследованных игр.",
+  description: "1000 слотов разных студий: ищите игры по названию, сравнивайте RTP, волатильность, бонусы и особенности.",
   path: "/slots",
 });
 
@@ -17,7 +17,7 @@ export default function Page() {
       <Breadcrumbs items={[{ label: "Каталог слотов" }]} />
       <div className="page-heading utility-heading">
         <div>
-          <span className="eyebrow accent">Игровой указатель</span>
+          <span className="eyebrow accent">1000 игр в одном месте</span>
           <h1>
             Каталог слотов
             <span className="title-count">{String(model.facets.total).padStart(2, "0")}</span>
