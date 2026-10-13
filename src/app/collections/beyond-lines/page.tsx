@@ -1,3 +1,4 @@
+import { ArticleJsonLd } from "@/components/article-json-ld";
 import Link from "next/link";
 import { slots, slotMechanics } from "@/lib/data";
 import { Breadcrumbs, GameImage, Affiliate } from "@/components/editorial";
@@ -20,6 +21,7 @@ export default function Page() {
   ];
   return (
     <>
+      <ArticleJsonLd title="За пределами линий — три игры с другой логикой" description="Подборка слотов без привычной логики линий: сравниваем Sweet Bonanza, Reactoonz и Gates of Olympus через правила и механику." path="/collections/beyond-lines" />
       <Breadcrumbs
         items={[
           { label: "Подборки", href: "/collections" },

@@ -5,7 +5,7 @@ import { GameImage, GameRow, SectionTitle } from "@/components/editorial";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Slotfolio — игры, механики и контекст",
+  title: "Slotfolio — каталог слотов, механики и RTP",
   description: "Редакционный каталог слотов: досье игр, механики, провайдеры, сравнение и понятные объяснения RTP и правил.",
   path: "/",
   absoluteTitle: true,

@@ -23,7 +23,7 @@ export default async function Page({params}: {params: Promise<{slug: string}>}) 
   const example = getSlot(guide.example);
   return <div className="entity-profile mechanic-dossier">
     <EntityJsonLd name={m.name} description={guide.contrast} path={"/mechanics/" + slug} parent="mechanics" games={games} />
-    <Breadcrumbs items={[{label: "Механики", href: "/mechanics"}, {label: m.name}]} />
+    <Breadcrumbs structuredData={false} items={[{label: "Механики", href: "/mechanics"}, {label: m.name}]} />
     <div className="simple-heading"><span className="eyebrow accent">Азбука слотов / Механика</span><h1>{m.name}</h1><p>{guide.subtitle}. {m.text}</p></div>
     <div className="article-layout"><aside className="article-toc"><span className="eyebrow">В справочнике</span><a href="#principle">Принцип работы</a><a href="#rhythm">Ритм и отличия</a><a href="#watch">Читать правила</a><a href="#example">На примере игры</a><a href="#catalog-profile">Портрет выборки</a><a href="#games">Игры · {games.length}</a></aside>
       <article className="prose"><section id="principle"><h2>Как это работает</h2>{guide.principle.map((text) => <p key={text}>{text}</p>)}<ol className="mechanic-sequence">{guide.sequence.map((text) => <li key={text}>{text}</li>)}</ol></section>

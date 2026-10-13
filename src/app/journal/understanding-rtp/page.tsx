@@ -1,3 +1,4 @@
+import { ArticleJsonLd } from "@/components/article-json-ld";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/editorial";
 import { pageMetadata } from "@/lib/seo";
@@ -12,6 +13,7 @@ export const metadata = pageMetadata({
 export default function Page() {
   return (
     <>
+      <ArticleJsonLd title="Что означает RTP" description="Что означает RTP в слотах, почему 96% не обещают возврат за одну сессию и почему показатель нужно читать вместе с правилами игры." path="/journal/understanding-rtp" />
       <Breadcrumbs
         items={[
           { label: "Разборы", href: "/journal" },
