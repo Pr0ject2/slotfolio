@@ -238,10 +238,8 @@
   overflow-wrap: normal;
 }
 .site .provider-index-stats,
-.site .provider-mark-refined small,
-.site .provider-facts small,
-.site .provider-mechanic-row p,
-.site .provider-mechanic-count,
+.site .entity-profile .data-note,
+.site .entity-games .row-main p,
 .site .entity-frequency small,
 .site .entity-rtp dt {
   font-size: 13px;
