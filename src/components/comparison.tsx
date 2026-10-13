@@ -107,7 +107,7 @@ export function Comparison({ items }: { items: ComparisonItem[] }) {
           <span className="eyebrow">Ваш набор</span>
           <h2>{games.length ? `${games.length} из ${MAX_COMPARE} мест занято` : "Выберите игры для таблицы"}</h2>
           <p>
-            Сравнение рассчитано на пару: так легче заметить различия в правилах и характеристиках, не превращая таблицу в простыню.
+            Сравните две игры рядом: так проще увидеть различия в правилах, бонусах и характеристиках.
           </p>
         </div>
 
@@ -188,8 +188,8 @@ export function Comparison({ items }: { items: ComparisonItem[] }) {
                 <tr><th scope="row">Провайдер</th>{games.map((game) => <td key={game.slug}><Link className="comparison-cell-link" href={`/providers/${game.providerSlug}`}>{game.provider} ↗</Link></td>)}</tr>
                 <tr><th scope="row">Механики</th>{games.map((game) => <td key={game.slug}><div className="comparison-mechanics">{game.mechanics.map((mechanic) => mechanic.slug ? <Link key={mechanic.name} className="comparison-cell-link" href={`/mechanics/${mechanic.slug}`}>{mechanic.name} ↗</Link> : <span key={mechanic.name}>{mechanic.name}</span>)}</div></td>)}</tr>
                 <tr><th scope="row">Ключевые особенности</th>{games.map((game) => <td key={game.slug}>{game.tags.join(" · ")}</td>)}</tr>
-                <tr><th scope="row">RTP-конфигурации</th>{games.map((game) => <td key={game.slug}>{game.metrics?.rtpVariants?.length ? game.metrics.rtpVariants.join(" · ") : `${game.rtp} · другие публично не подтверждены`}</td>)}</tr>
-                <tr><th scope="row">Подтверждённый максимум</th>{games.map((game) => <td key={game.slug}>{game.metrics?.maxWin ? `${game.metrics.maxWin} · ${(game.metrics.maxWinLabel || "максимум").toLowerCase()}` : "Не указан в используемом публичном источнике"}</td>)}</tr>
+                <tr><th scope="row">Варианты RTP</th>{games.map((game) => <td key={game.slug}>{game.metrics?.rtpVariants?.length ? game.metrics.rtpVariants.join(" · ") : `${game.rtp} · другие варианты не указаны`}</td>)}</tr>
+                <tr><th scope="row">Подтверждённый максимум</th>{games.map((game) => <td key={game.slug}>{game.metrics?.maxWin ? `${game.metrics.maxWin} · ${(game.metrics.maxWinLabel || "максимум").toLowerCase()}` : "Нет подтверждённого значения"}</td>)}</tr>
                 {[
                   ["Поле", "field"], ["RTP*", "rtp"], ["Волатильность", "volatility"], ["Год", "year"], ["Особенность", "feature"], ["Взгляд редакции", "note"],
                 ].map(([label, key]) => (
@@ -198,7 +198,7 @@ export function Comparison({ items }: { items: ComparisonItem[] }) {
               </tbody>
             </table>
           </div>
-          <p className="data-note comparison-note">* Справочные значения могут отличаться от конфигурации оператора. Высокий RTP не гарантирует выигрыш.</p>
+          <p className="data-note comparison-note">Значение RTP зависит от версии игры и не гарантирует выигрыш.</p>
         </>
       ) : (
         <div className="comparison-empty">
@@ -217,7 +217,7 @@ export function Comparison({ items }: { items: ComparisonItem[] }) {
       </section>
 
       <div className="comparison-end">
-        <p>Нужной игры ещё нет в указателе? Каталог расширяется постепенно, по мере подготовки и проверки новых досье.</p>
+        <p>Не нашли нужную игру? Попробуйте поискать её в каталоге.</p>
         <Link className="text-link" href="/slots">Открыть каталог ↗</Link>
       </div>
     </div>
