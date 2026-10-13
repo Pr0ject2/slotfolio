@@ -35,7 +35,7 @@ test("regional guides and bonuses do not contain work-in-progress notes", async 
   await page.goto("/bonuses");
   await expect(page.locator("main")).toContainText("Самые важные");
   await expect(page.locator("main")).not.toContainText("Когда они появятся");
-  await expect(page.getByRole("link", { name: /партнёрские материалы/ })).toHaveAttribute("href", "/disclosure");
+  await expect(page.getByRole("link", { name: /партнёрские материалы/ })).toHaveAttribute("href", /\/disclosure\/?$/);
 });
 
 test("provider and mechanic pages explain games, not internal samples", async ({ page }) => {
