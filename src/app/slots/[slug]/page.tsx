@@ -411,7 +411,7 @@ export default async function Page({
               {verified && verified.source === s.source && verified.additionalSources?.length
                 ? " Другие сведения об игре можно найти по дополнительным ссылкам ниже."
                 : verified && verified.source === s.source
-                  ? ""
+                  ? " Дополнительные характеристики также указаны на странице разработчика."
                   : null}
             </p>
             {verified?.additionalSources?.length ? (
