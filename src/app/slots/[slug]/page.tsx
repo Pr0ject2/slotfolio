@@ -388,11 +388,11 @@ export default async function Page({
               </a>
               .
               {passport && passport.source === s.source
-                ? " На этой странице также указаны дата выхода и тип игры."
+                ? " Дата релиза и тип игры сверены по той же официальной странице."
                 : null}
               {passport && passport.source !== s.source && (
                 <>
-                  {" "}Дополнительные сведения об игре:{" "}
+                  {" "}Дата релиза и тип игры сверены по{" "}
                   <a href={passport.source} target="_blank" rel="noreferrer">
                     {passport.sourceLabel} ↗
                   </a>
@@ -401,7 +401,7 @@ export default async function Page({
               )}
               {verified && verified.source !== s.source && (
                 <>
-                  {" "}Характеристики также указаны в{" "}
+                  {" "}Дополнительные числовые параметры сверены по{" "}
                   <a href={verified.source} target="_blank" rel="noreferrer">
                     {verified.sourceLabel || "официальному источнику"} ↗
                   </a>
