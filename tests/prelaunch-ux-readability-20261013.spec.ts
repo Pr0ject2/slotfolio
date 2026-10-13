@@ -64,9 +64,8 @@ test("provider and mechanic statistical captions are readable", async ({ page })
   for (const width of [320, 390, 768, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto("/providers/pragmatic-play/");
-    await expectFontAtLeast(page, ".provider-facts small", 13);
-    await expectFontAtLeast(page, ".provider-mechanic-row p", 13);
-    await expectFontAtLeast(page, ".provider-mechanic-count", 13);
+    await expectFontAtLeast(page, ".entity-profile .data-note", 13);
+    await expectFontAtLeast(page, ".entity-games .row-main p", 13);
     await expectNoPageOverflow(page, width);
     await page.goto("/mechanics/cascades/");
     await expectFontAtLeast(page, ".entity-frequency small", 13);
