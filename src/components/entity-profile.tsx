@@ -24,21 +24,20 @@ export function EntityStats({ games, filter, mechanicName }: { games: Slot[]; fi
   const stats = catalogStats(games);
   function href(key: string, value: string) { return `/slots?${new URLSearchParams({ ...filter, [key]: value })}`; }
   return <section id="catalog-profile" className="entity-statistics">
-    <SectionTitle title="Портрет выборки" />
+    <SectionTitle title="Игры и их особенности" />
     <div className="entity-statistics-lead">
-      <p>Сводка по {stats.count} {ruPlural(stats.count, "игре", "играм", "играм")} в Slotfolio. Это характеристики опубликованных досье, а не всего рынка или полного портфеля студии.</p>
-      <dl className="entity-rtp"><div><dt>Диапазон RTP*</dt><dd>{rtpRange(stats.rtp)}</dd></div><div><dt>Значения известны</dt><dd>{stats.rtp.count} из {stats.count} игр</dd></div></dl>
+      <p>Посмотрите, что общего у {stats.count} {ruPlural(stats.count, "игры", "игр", "игр")} в этом разделе: способы выплат, бонусы и волатильность.</p>
+      <dl className="entity-rtp"><div><dt>RTP у игр</dt><dd>{rtpRange(stats.rtp)}</dd></div><div><dt>RTP указан для</dt><dd>{stats.rtp.count} из {stats.count} игр</dd></div></dl>
     </div>
     <div className="entity-distributions">
       <section><h3>{mechanicName ? "Сочетается с механиками" : "Способы устройства игры"}</h3>
-        {stats.mechanics.filter((item) => item.name !== mechanicName).length ? <FrequencyList items={stats.mechanics.filter((item) => item.name !== mechanicName)} href={(name) => mechanicName ? `/mechanics/${mechanics.find((m) => m.name === name)!.slug}` : href("mechanic", name)} /> : <p className="data-note">Другие механики в этой выборке не отмечены.</p>}
-        <p className="data-note">Одна игра может входить в несколько групп. Числа показывают игры, не доли вероятности.</p>
+        {stats.mechanics.filter((item) => item.name !== mechanicName).length ? <FrequencyList items={stats.mechanics.filter((item) => item.name !== mechanicName)} href={(name) => mechanicName ? `/mechanics/${mechanics.find((m) => m.name === name)!.slug}` : href("mechanic", name)} /> : <p className="data-note">Для этих игр не указаны другие механики.</p>}
+        <p className="data-note">Одна игра может сочетать несколько способов получения выигрыша.</p>
       </section>
-      <section><h3>Волатильность</h3><FrequencyList items={stats.volatility} href={(name) => href("volatility", name)} /><p className="data-note">Категории справочные: шкалы студий не унифицированы и не предсказывают отдельный раунд.</p></section>
-      <section><h3>Особенности в досье</h3><FrequencyList items={stats.features.slice(0, 6)} href={(name) => href("feature", name)} /><p className="data-note">Частота тега в выборке не означает частоту срабатывания функции.</p></section>
-      <section><h3>{mechanicName ? "Представленные студии" : "Геометрия поля"}</h3>{mechanicName ? <FrequencyList items={stats.providers} href={(name) => `/providers/${providerSlug(name)}`} /> : <FrequencyList items={stats.fields} />}<p className="data-note">{mechanicName ? "Открывайте профиль студии для сравнения её разных подходов." : "Размер из досье: динамическое поле может менять форму в ходе раунда."}</p></section>
+      <section><h3>Волатильность</h3><FrequencyList items={stats.volatility} href={(name) => href("volatility", name)} /><p className="data-note">Волатильность помогает понять разброс результатов, но не предсказывает следующий выигрыш.</p></section>
+      <section><h3>Особенности игр</h3><FrequencyList items={stats.features.slice(0, 6)} href={(name) => href("feature", name)} /><p className="data-note">Числа показывают количество игр с этой особенностью, а не частоту появления бонуса.</p></section>
+      <section><h3>{mechanicName ? "Представленные студии" : "Геометрия поля"}</h3>{mechanicName ? <FrequencyList items={stats.providers} href={(name) => `/providers/${providerSlug(name)}`} /> : <FrequencyList items={stats.fields} />}<p className="data-note">{mechanicName ? "Открывайте профиль студии для сравнения её разных подходов." : "В некоторых играх размер поля меняется во время вращения."}</p></section>
     </div>
-    <p className="data-note">* Для каждого слота учтён один справочный RTP. Другие конфигурации перечислены в досье, если опубликованы источником. Диапазон не является преимуществом механики или оценкой провайдера. <Link href="/journal/understanding-rtp">Как читать RTP ↗</Link></p>
   </section>;
 }
 
