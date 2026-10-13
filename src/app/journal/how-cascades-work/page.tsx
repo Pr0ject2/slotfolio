@@ -1,3 +1,4 @@
+import { ArticleJsonLd } from "@/components/article-json-ld";
 import Link from "next/link";
 import { slots } from "@/lib/data";
 import {
@@ -18,6 +19,7 @@ export const metadata = pageMetadata({
 export default function Page() {
   return (
     <>
+      <ArticleJsonLd title="Один спин — несколько событий. Как работают каскады" description="Большой разбор каскадной механики: почему символы исчезают, как продолжается вращение и что меняется от игры к игре." path="/journal/how-cascades-work" datePublished="2026-09-07" />
       <Breadcrumbs
         items={[
           { label: "Разборы", href: "/journal" },

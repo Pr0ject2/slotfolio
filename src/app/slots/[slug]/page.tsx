@@ -142,7 +142,7 @@ export default async function Page({
   return (
     <>
       <JsonLd data={structuredData} />
-      <Breadcrumbs
+      <Breadcrumbs structuredData={false}
         items={[{ label: "Каталог", href: "/slots" }, { label: s.name }]}
       />
       <div className="slot-heading">

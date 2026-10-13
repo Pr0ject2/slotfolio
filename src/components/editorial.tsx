@@ -4,12 +4,18 @@ import { affiliateUrl, affiliateHref, operators } from "@/lib/affiliate";
 import { withBasePath } from "@/lib/base-path";
 import { CompareButton } from "./compare-button";
 import { SlotArtwork } from "./slot-artwork";
+import { JsonLd } from "./json-ld";
+import { absoluteUrl } from "@/lib/seo";
 export function Breadcrumbs({
   items,
+  structuredData = true,
 }: {
   items: { label: string; href?: string }[];
+  structuredData?: boolean;
 }) {
   return (
+    <>
+      {structuredData && <JsonLd data={{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ label: "Главная", href: "/" }, ...items].map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.label, ...(item.href ? { item: absoluteUrl(item.href) } : {}) })) }} />}
     <nav className="breadcrumbs" aria-label="Хлебные крошки">
       <Link href="/">Главная</Link>
       {items.map((x, i) => (
@@ -23,6 +29,7 @@ export function Breadcrumbs({
         </span>
       ))}
     </nav>
+    </>
   );
 }
 export function SectionTitle({

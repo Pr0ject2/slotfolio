@@ -23,7 +23,7 @@ export default async function Page({params}: {params: Promise<{slug: string}>}) 
   const reading = providerReadingNotesV129[slug] ?? providerReadingNotes[slug];
   return <div className="entity-profile provider-dossier">
     <EntityJsonLd name={profile.name} description={profile.catalogSummary} path={"/providers/" + slug} parent="providers" games={games} />
-    <Breadcrumbs items={[{label: "Провайдеры", href: "/providers"}, {label: profile.name}]} />
+    <Breadcrumbs structuredData={false} items={[{label: "Провайдеры", href: "/providers"}, {label: profile.name}]} />
     <div className="page-heading provider-profile-heading"><div><span className="eyebrow accent">Профиль студии</span><h1>{profile.name}</h1></div><p>{stats.count} {ruPlural(stats.count, "игра", "игры", "игр")} в Slotfolio<br/>{profile.mark}</p></div>
     <nav className="entity-jump" aria-label="Разделы профиля"><a href="#approach">Подход к играм</a><a href="#catalog-profile">Портрет выборки</a><a href="#games">Все игры · {stats.count}</a><Link href={"/slots?provider=" + slug}>Открыть в каталоге ↗</Link></nav>
     <section id="approach" className="entity-intro"><p className="big-serif">{profile.profileIntro}</p><div><p>{profile.profileBody}</p><p className="entity-editorial-note">{profile.signoff}</p></div></section>

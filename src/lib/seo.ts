@@ -7,15 +7,39 @@ export const SITE_DESCRIPTION =
 const DEFAULT_SITE_URL = "http://localhost:3000";
 
 export function siteUrl() {
-  const url = (process.env.NEXT_PUBLIC_SITE_URL || DEFAULT_SITE_URL).replace(/\/+$/, "");
+  const url = new URL(process.env.NEXT_PUBLIC_SITE_URL || DEFAULT_SITE_URL);
+  if (
+    !["http:", "https:"].includes(url.protocol) ||
+    url.username ||
+    url.password ||
+    url.search ||
+    url.hash
+  ) {
+    throw new Error(
+      "NEXT_PUBLIC_SITE_URL must be an HTTP(S) URL without credentials, query or fragment",
+    );
+  }
   const base = (process.env.NEXT_PUBLIC_BASE_PATH || "").replace(/\/+$/, "");
-  return base && !url.endsWith(base) ? `${url}${base}` : url;
+  const pathname = url.pathname.replace(/\/+$/, "");
+  url.pathname =
+    base && pathname !== base && !pathname.endsWith(base)
+      ? pathname + base
+      : pathname;
+  return url.toString().replace(/\/+$/, "");
 }
 
 export function absoluteUrl(path = "/") {
-  const normalized = path === "/" ? "/" : `/${path.replace(/^\/+/, "")}`;
-  const slash = process.env.GITHUB_ACTIONS === "true" && !normalized.endsWith("/") && !/\.[a-z0-9]+$/i.test(normalized) ? "/" : "";
-  return `${siteUrl()}${normalized}${slash}`;
+  const boundary = path.search(/[?#]/);
+  const pathname = boundary < 0 ? path : path.slice(0, boundary);
+  const suffix = boundary < 0 ? "" : path.slice(boundary);
+  const normalized = "/" + pathname.replace(/^\/+/, "");
+  const slash =
+    process.env.GITHUB_ACTIONS === "true" &&
+    !normalized.endsWith("/") &&
+    !/\.[a-z0-9]+$/i.test(normalized)
+      ? "/"
+      : "";
+  return siteUrl() + normalized + slash + suffix;
 }
 
 export function absoluteMediaUrl(path: string) {
@@ -24,7 +48,21 @@ export function absoluteMediaUrl(path: string) {
 }
 
 export function indexingEnabled() {
-  return process.env.NEXT_PUBLIC_INDEXABLE === "true";
+  if (process.env.NEXT_PUBLIC_INDEXABLE !== "true") return false;
+  const url = new URL(siteUrl());
+  if (
+    url.protocol !== "https:" ||
+    !process.env.NEXT_PUBLIC_SITE_URL ||
+    /^(localhost$|\d+\.\d+\.\d+\.\d+$|\[|.*\.(localhost|local|invalid|test|example)$)/i.test(
+      url.hostname,
+    ) ||
+    !url.hostname.includes(".")
+  ) {
+    throw new Error(
+      "Indexing requires an explicit public HTTPS NEXT_PUBLIC_SITE_URL",
+    );
+  }
+  return true;
 }
 
 export function pageMetadata({
