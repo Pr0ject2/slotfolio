@@ -65,10 +65,14 @@ jobs:
       - name: Build static site
         shell: bash
         run: |
-          REPO_NAME="${GITHUB_REPOSITORY#*/}"
-          export NEXT_PUBLIC_BASE_PATH="/${REPO_NAME}"
-          export NEXT_PUBLIC_SITE_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${REPO_NAME}"
-          export NEXT_PUBLIC_INDEXABLE="${{ vars.NEXT_PUBLIC_INDEXABLE }}"
+          # Custom-domain rollout: do not merge before GitHub Pages domain
+          # verification, Porkbun DNS, and HTTPS are ready. The public Pages
+          # preview must stay unchanged until then.
+          export NEXT_PUBLIC_BASE_PATH=""
+          export NEXT_PUBLIC_SITE_URL="https://slotfolio.org"
+          # First deployment on the real hostname is deliberately not indexable.
+          # Enable indexing only in a separate reviewed PR after live QA.
+          export NEXT_PUBLIC_INDEXABLE="false"
 
           # GitHub Pages is static hosting. The server-side affiliate redirect
           # remains in the source project, but is omitted from this preview build.
