@@ -7,13 +7,13 @@ test("about page explains Slotfolio to readers without development notes", async
 
   await expect(page).toHaveTitle(/О Slotfolio — каталог слотов и сравнение игр/);
   await expect(page.locator("h1")).toHaveCount(1);
-  await expect(page.locator("h1")).toContainText("У каждой игры");
+  await expect(page.locator("h1")).toHaveText("Как пользоваться Slotfolio");
   await expect(page.locator(".prose h2")).toHaveText([
-    "Что такое Slotfolio",
-    "Что здесь можно найти",
-    "Можно ли доверять характеристикам?",
-    "Важно помнить",
-    "Партнёрские ссылки",
+    "Найти игру",
+    "Сравнить две игры",
+    "Проверить характеристики",
+    "Что каталог не показывает",
+    "Внешние ссылки",
   ]);
   await expect(page.locator(".prose")).toContainText("1000 слотов");
   await expect(page.locator(".prose")).toContainText("не заменяем их догадками");
@@ -44,7 +44,7 @@ test("about page explains Slotfolio to readers without development notes", async
 });
 
 test("reader-friendly About page remains readable at narrow widths", async ({ page }) => {
-  for (const width of [320, 390, 768, 1440]) {
+  for (const width of [320, 390, 768, 1024, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto("/about");
     await expect(page.locator("h1.about-statement")).toBeVisible();

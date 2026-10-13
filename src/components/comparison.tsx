@@ -41,7 +41,7 @@ export function Comparison({ items }: { items: ComparisonItem[] }) {
   useEffect(() => {
     if (!presetRequest) return;
     selectionRef.current?.focus({ preventScroll: true });
-    selectionRef.current?.scrollIntoView({ block: "start" });
+    selectionRef.current?.scrollIntoView({ block: "start", behavior: "instant" });
   }, [presetRequest]);
   const seed = useSearchParams().get("seed");
   const itemBySlug = useMemo(() => new Map(items.map((item) => [item.slug, item])), [items]);
@@ -223,3 +223,4 @@ export function Comparison({ items }: { items: ComparisonItem[] }) {
     </div>
   );
 }
+

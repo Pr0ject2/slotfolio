@@ -4,17 +4,17 @@ test.use({ baseURL: process.env.AUDIT_BASE_URL || "http://localhost:3000" });
 
 test("editorial, privacy and partnership pages speak to visitors", async ({ page }) => {
   await page.goto("/editorial-policy");
-  await expect(page.getByRole("heading", { name: "Откуда мы берём информацию" })).toBeVisible();
-  await expect(page.locator("main")).toContainText("Если точной информации нет");
+  await expect(page.getByRole("heading", { name: "Как проверить сведения об игре" })).toBeVisible();
+  await expect(page.locator("main")).toContainText("Если подтвердить параметр не удалось");
   await expect(page.locator("main")).not.toContainText("Перед публичным запуском");
 
   await page.goto("/privacy");
-  await expect(page.locator("main")).toContainText("Для поиска и сравнения игр не нужно создавать аккаунт");
+  await expect(page.locator("main")).toContainText("Для просмотра каталога не нужен аккаунт");
   await expect(page.locator("main")).not.toContainText("slotfolio-compare");
   await expect(page.locator("main")).not.toContainText("До запуска политика будет дополнена");
 
   await page.goto("/disclosure");
-  await expect(page.getByRole("heading", { name: "Есть ли партнёрские предложения сейчас?" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Источники и предложения" })).toBeVisible();
   await expect(page.locator("main")).toContainText("Сейчас на Slotfolio нет действующих партнёрских предложений");
   await expect(page.locator("main")).not.toContainText("атрибутами sponsored");
   await expect(page.locator("main")).not.toContainText("Партнёрский адрес 1win");
