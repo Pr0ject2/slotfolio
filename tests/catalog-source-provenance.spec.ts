@@ -1,45 +1,15 @@
 import { test, expect } from "@playwright/test";
-
+import { getCatalogSeed } from "../src/lib/catalog-seeds";
+import { getVerifiedCatalogDetails } from "../src/lib/catalog-verified-details-lookup";
 test.use({ baseURL: process.env.AUDIT_BASE_URL || "http://localhost:3000" });
-
-const separatelySourced = [
-  {
-    slug: "push-gaming-razor-shark-jackpots",
-    primary: "https://www.pushgaming.com/games/razor-shark-jackpots.html",
-    release:
-      "https://www.pushgaming.com/blog/push-gaming-redefines-staple-slot-series-release-razor-shark-jackpots.html",
-  },
-  {
-    slug: "push-gaming-red-hot-multipliers",
-    primary: "https://www.pushgaming.com/games/red-hot-multipliers.html",
-    release:
-      "https://www.pushgaming.com/blog/reel-hot-games-continues-2026-momentum-release-diamonds-4-win.html",
-  },
-] as const;
-
-test("catalog records expose separate official evidence when release timing has its own source", async ({ page }) => {
-  for (const item of separatelySourced) {
-    await page.goto(`/slots/catalog/${item.slug}`);
-    const facts = page.locator("#facts");
-
-    await expect(facts.locator(`a[href="${item.primary}"]`)).toHaveCount(1);
-    await expect(facts.locator(`a[href="${item.release}"]`)).toHaveCount(1);
+test("catalog source records remain verified without outbound links", async ({ page }) => {
+  for (const slug of ["push-gaming-razor-shark-jackpots","push-gaming-red-hot-multipliers","hacksaw-gaming-cloud-princess","wazdan-mayan-ritual"]) {
+    expect(getCatalogSeed(slug)?.source).toMatch(/^https:\/\//);
+    const details = getVerifiedCatalogDetails(slug);
+    expect(details).toBeTruthy();
+    await page.goto(`/slots/catalog/${slug}`);
+    await expect(page.locator("#facts")).toContainText("RTP");
+    await expect(page.locator("#facts a[href^='http']")).toHaveCount(0);
+    await expect(page.locator("#facts")).not.toContainText("Базовый first-party источник");
   }
-});
-
-test("catalog records expose provider-wide volatility evidence without replacing the canonical game source", async ({ page }) => {
-  const primary = "https://www.hacksawgaming.com/games/cloud-princess";
-  const volatility = "https://www.hacksawgaming.com/games";
-
-  await page.goto("/slots/catalog/hacksaw-gaming-cloud-princess");
-  const facts = page.locator("#facts");
-  await expect(facts.locator(`a[href="${primary}"]`)).toHaveCount(1);
-  await expect(facts.locator(`a[href="${volatility}"]`)).toHaveCount(1);
-});
-
-test("ordinary catalog records keep provenance in the facts section", async ({ page }) => {
-  await page.goto("/slots/catalog/wazdan-mayan-ritual");
-  const facts = page.locator("#facts");
-  await expect(facts.locator('a[href="https://wazdan.com/games/mayan-ritual"]')).toHaveCount(1);
-  await expect(page.locator(".catalog-record-facts")).not.toContainText("Источник");
 });

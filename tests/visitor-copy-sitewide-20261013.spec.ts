@@ -28,7 +28,8 @@ test("regional guides and bonuses do not contain work-in-progress notes", async 
 
   await page.goto("/regions/great-britain");
   await expect(page.getByRole("heading", { name: "Знакомый бренд — не гарантия" })).toBeVisible();
-  await expect(page.getByRole("link", { name: /Открыть официальный реестр/ })).toHaveAttribute("href", /gamblingcommission.gov.uk/);
+  await expect(page.locator("#sources")).toContainText("Gambling Commission");
+  await expect(page.locator("#sources a[href^='http']")).toHaveCount(0);
   await expect(page.locator("main")).not.toContainText("В этом страновом разделе нет подключённых");
   await expect(page.locator("main")).not.toContainText("1win");
 
@@ -68,7 +69,8 @@ test("catalog, comparison and game overview use readable labels", async ({ page 
   await expect(page.locator(".slot-body")).not.toContainText("фиксированный cap");
   await expect(page.locator(".slot-body")).not.toContainText("Среднее по середине списка");
   await expect(page.locator(".slot-body")).toContainText("Серединное значение RTP");
-  await expect(page.locator(".slot-body")).toContainText("Об игре рассказывает разработчик");
+  await expect(page.locator("#facts")).toContainText("RTP");
+  await expect(page.locator("#facts a[href^='http']")).toHaveCount(0);
   await expect(page.getByRole("link", { name: /Открыть таблицу сравнения/ })).toBeVisible();
 });
 

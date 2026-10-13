@@ -220,7 +220,7 @@ test("Endorphina full dossiers retain official metric provenance and payout sema
 
     await page.goto(`/slots/${dossier.slug}`);
     await expect(
-      page.locator("#facts").locator(`a[href="${dossier.source}"]`),
-    ).toHaveCount(1);
+      page.locator("#facts a[href^='http']"),
+    ).toHaveCount(0);
   }
 });

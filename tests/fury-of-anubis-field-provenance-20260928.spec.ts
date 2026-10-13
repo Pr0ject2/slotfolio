@@ -46,6 +46,6 @@ test("Fury of Anubis dossier renders the corrected field, math and conflicting o
   await expect(page.locator(".facts")).toContainText("10 000x");
   await expect(page.locator("#math-profile")).toContainText("Заявленный потенциал");
   await expect(page.locator("#math-profile")).toContainText("5×6");
-  await expect(page.locator("#facts")).toContainText("текущая game page Pragmatic Play с конфликтующим 5×6");
-  await expect(page.locator("#facts")).toContainText("официальный релиз Pragmatic Play с 6×5 и потенциалом 10 000x");
+  await expect(page.locator("#facts")).toContainText("RTP");
+  await expect(page.locator("#facts a[href^='http']")).toHaveCount(0);
 });

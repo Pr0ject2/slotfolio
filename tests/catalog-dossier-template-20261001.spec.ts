@@ -13,7 +13,7 @@ for (const slug of ["playn-go-nsync-pop"]) {
     await expect(page.locator(".article-layout")).toBeVisible();
     await expect(page.getByRole("heading", { name: "Основные параметры" })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Сравнение с другими играми" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Факты и источники" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "О параметрах игры" })).toBeVisible();
     await expect(page.locator("#editorial")).toBeVisible();
     await expect(page.locator("#how-it-works")).toContainText("Encore Spin");
     await expect(page.getByRole("heading", { name: "Вопросы об игре" })).toBeVisible();

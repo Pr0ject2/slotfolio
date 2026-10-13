@@ -123,7 +123,7 @@ test("Hand of Anubis dossier renders the current 5/5 mapping and the older offic
   await expect(page.locator("#math-profile")).toContainText("volatility meter 5/5");
   await expect(page.locator("#math-profile")).toContainText("high volatility");
   await expect(page.locator("#math-profile")).toContainText("не показывается как verified-метрика");
-  await expect(page.locator("#facts")).toContainText("текущий каталог Hacksaw Gaming с volatility meter 5/5");
+  await expect(page.locator("#facts a[href^='http']")).toHaveCount(0);
   await expect(page.locator("body")).not.toContainText("94,32%");
   await expect(page.locator("body")).not.toContainText("92,28%");
   await expect(page.locator("body")).not.toContainText("88,41%");
@@ -147,6 +147,6 @@ test("Jammin Jars renders both the fixed cap and observed value with provenance"
   await expect(page.locator(".facts")).toContainText("20 000x");
   await expect(page.locator(".facts")).toContainText("Наблюдавшийся максимум");
   await expect(page.locator(".facts")).toContainText("19 998,5x");
-  await expect(page.locator("#facts")).toContainText("Дополнительные источники");
-  await expect(page.locator("#facts")).toContainText("интервью Push Gaming о Jammin’ Jars 2");
+  await expect(page.locator("#facts")).toContainText("RTP");
+  await expect(page.locator("#facts a[href^='http']")).toHaveCount(0);
 });
