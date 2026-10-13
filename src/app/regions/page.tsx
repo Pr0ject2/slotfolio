@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Страны и доступность",
-  description: "Страновой справочник Slotfolio: как проверять доступность игр, оператора, лицензию и локальные ограничения.",
+  description: "Где и как проверить, разрешён ли игровой сайт в вашей стране: лицензии, условия доступа и полезные ссылки.",
   path: "/regions",
 });
 
@@ -13,7 +13,7 @@ export default function Page() {
     <>
       <Breadcrumbs items={[{ label: "Страны и доступность" }]} />
       <div className="simple-heading">
-        <span className="eyebrow accent">Локальный контекст</span>
+        <span className="eyebrow accent">Игры в разных странах</span>
         <h1>
           Одна игра.
           <br />
@@ -36,8 +36,8 @@ export default function Page() {
         </Link>
       </div>
       <p className="data-note">
-        В каркасе представлена одна страна. Автоматическое определение
-        местоположения не используется.
+        Правила отличаются от страны к стране. Перед регистрацией на
+        игровом сайте проверяйте его лицензию и условия для вашего региона.
       </p>
     </>
   );
