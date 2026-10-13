@@ -79,7 +79,7 @@ test("minimal catalog record still looks finished without invented facts or rese
   await expect(card).not.toContainText("не подтвержден");
   await expect(card).not.toContainText("уточняется");
   await expect(card.getByRole("button", { name: /сравнен/ })).toHaveCount(0);
-  await expect(card.getByText("Открыть запись ↗", { exact: true })).toHaveCount(1);
+  await expect(card.getByText("Подробнее об игре ↗", { exact: true })).toHaveCount(1);
   await expect(card).not.toContainText("undefined");
   await expect(card).not.toContainText("null");
 });
