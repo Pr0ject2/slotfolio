@@ -26,7 +26,7 @@ export function EntityStats({ games, filter, mechanicName }: { games: Slot[]; fi
   return <section id="catalog-profile" className="entity-statistics">
     <SectionTitle title="Игры и их особенности" />
     <div className="entity-statistics-lead">
-      <p>Посмотрите, что общего у {stats.count} {ruPlural(stats.count, "игры", "игр", "игр")} в этом разделе: способы выплат, бонусы и волатильность.</p>
+      <p>Посмотрите, что общего у представленных игр: способы выплат, бонусы и волатильность.</p>
       <dl className="entity-rtp"><div><dt>RTP у игр</dt><dd>{rtpRange(stats.rtp)}</dd></div><div><dt>RTP указан для</dt><dd>{stats.rtp.count} из {stats.count} игр</dd></div></dl>
     </div>
     <div className="entity-distributions">
