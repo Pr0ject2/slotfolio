@@ -35,5 +35,5 @@ test("Dork Unit renders verified release date, game type and same-page provenanc
   await expect(facts).toContainText(
     "Дата релиза и тип игры сверены по той же официальной странице.",
   );
-  await expect(facts).toContainText("Дополнительные числовые параметры взяты с той же официальной страницы.");
+  await expect(facts).toContainText("Дополнительные характеристики также указаны на странице разработчика.");
 });

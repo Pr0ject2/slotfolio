@@ -17,8 +17,8 @@ test("Fury of Anubis uses the structured 6x5 profile and preserves the 5x6 first
   expect(slot?.rtp).toBe("96,52%");
   expect(slot?.source).toBe(structuredSource);
   expect(slot?.description).toContain("Поле 6 × 5");
-  expect(slot?.note).toContain("Reels x Rows 6 x 5");
-  expect(slot?.note).toContain("game page одновременно пишет 5×6");
+  expect(slot?.note).toContain("6 × 5 на странице кампании");
+  expect(slot?.note).toContain("5 × 6 на странице игры");
 
   expect(metrics?.source).toBe(structuredSource);
   expect(metrics?.maxWin).toBe("10 000x");

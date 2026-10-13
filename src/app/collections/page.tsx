@@ -15,8 +15,8 @@ export default function Page() {
       <Breadcrumbs items={[{ label: "Подборки" }]} />
       <div className="page-heading">
         <div>
-          <span className="eyebrow accent">Маршруты по каталогу</span>
-          <h1>Игры в контексте</h1>
+          <span className="eyebrow accent">Тематические подборки</span>
+          <h1>Игры с похожими особенностями</h1>
         </div>
         <p>
           Объединяем игры по идее.

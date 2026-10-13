@@ -41,8 +41,8 @@ test("Hand of Anubis preserves the official volatility conflict and drops unsupp
 
   expect(slot?.volatility).toBe("Экстремальная");
   expect(slot?.source).toBe("https://www.hacksawgaming.com/news/new-game-release-april-summary");
-  expect(slot?.note).toContain("volatility meter 5/5");
-  expect(slot?.note).toContain("high volatility");
+  expect(slot?.note).toContain("волатильность Hand of Anubis отмечена как 5 из 5");
+  expect(slot?.note).toContain("высоковолатильной");
 
   expect(metrics?.maxWin).toBe("10 000x");
   expect(metrics?.maxWinLabel).toBe("Максимальная выплата");
@@ -118,8 +118,8 @@ test("Hand of Anubis dossier renders the current 5/5 mapping and the older offic
 
   await expect(page.locator(".facts")).toContainText("10 000x");
   await expect(page.locator(".facts")).toContainText("Экстремальная");
-  await expect(page.locator("#editor-view")).toContainText("volatility meter 5/5");
-  await expect(page.locator("#editor-view")).toContainText("high volatility");
+  await expect(page.locator("#editor-view")).toContainText("волатильность Hand of Anubis отмечена как 5 из 5");
+  await expect(page.locator("#editor-view")).toContainText("высоковолатильной");
   await expect(page.locator("#math-profile")).toContainText("volatility meter 5/5");
   await expect(page.locator("#math-profile")).toContainText("high volatility");
   await expect(page.locator("#math-profile")).toContainText("не показывается как verified-метрика");
@@ -136,7 +136,7 @@ test("observed wins render as their own dossier metric", async ({ page }) => {
   await expect(page.locator(".facts")).toContainText("3 844x");
   await expect(page.locator("#math-profile")).toContainText("Наблюдавшийся максимум");
   await expect(page.locator("#math-profile")).toContainText(
-    "Наблюдавшийся результат, не обязательно фиксированный cap",
+    "Это не обязательно максимальный возможный выигрыш",
   );
 });
 

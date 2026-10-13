@@ -14,8 +14,8 @@ test("Snake Arena preserves Relax Gaming's conflicting volatility wording", () =
   expect(slot?.rtp).toBe("96,25%");
   expect(slot?.volatility).toBe("Экстремальная");
   expect(slot?.source).toBe(releaseUrl);
-  expect(slot?.note).toContain("maximum volatility");
-  expect(slot?.note).toContain("high volatility");
+  expect(slot?.note).toContain("максимальной волатильностью");
+  expect(slot?.note).toContain("высокой волатильностью");
 
   expect(metrics?.source).toBe("https://www.relax-gaming.com/products/casino/snakearena");
   expect(metrics?.maxWin).toBe("2 758,8x");
@@ -26,8 +26,8 @@ test("Snake Arena dossier exposes the wording conflict and current math source",
   await page.goto("/slots/snake-arena");
 
   await expect(page.locator(".slot-intro")).toContainText("Экстремальная");
-  await expect(page.locator("#editor-view")).toContainText("maximum volatility");
-  await expect(page.locator("#editor-view")).toContainText("high volatility");
+  await expect(page.locator("#editor-view")).toContainText("максимальной волатильностью");
+  await expect(page.locator("#editor-view")).toContainText("высокой волатильностью");
   await expect(page.locator("#math-profile")).toContainText("2 758,8x");
   await expect(page.locator("#facts")).toContainText("Дополнительные числовые параметры");
   await expect(page.locator("#facts")).toContainText("текущая официальная страница Relax Gaming");

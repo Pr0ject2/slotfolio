@@ -14,9 +14,9 @@ test("Power of Ten keeps reference RTP separate from current verified provider m
   expect(slot?.rtp).toBe("96,23%");
   expect(slot?.volatility).toBe("Экстремальная");
   expect(slot?.source).toBe(sourceUrl);
-  expect(slot?.note).toContain("Справочный RTP карточки составляет 96,23%");
-  expect(slot?.note).toContain("volatility meter 5/5");
-  expect(slot?.note).toContain("категорию «Экстремальная»");
+  expect(slot?.note).toContain("Для Power of Ten указан RTP 96,23%");
+  expect(slot?.note).toContain("волатильность отмечена как 5 из 5");
+  expect(slot?.note).toContain("«Экстремальная»");
   expect(slot?.note).not.toContain("Верхняя опубликованная RTP-конфигурация");
   expect(slot?.note).not.toContain("существуют более низкие варианты");
 
@@ -38,7 +38,7 @@ test("Power of Ten dossier renders 5/5 volatility without inventing an RTP ladde
 
   await expect(page.locator(".slot-intro")).toContainText("96,23%");
   await expect(page.locator(".slot-intro")).toContainText("Экстремальная");
-  await expect(page.locator("#editor-view")).toContainText("volatility meter 5/5");
+  await expect(page.locator("#editor-view")).toContainText("волатильность отмечена как 5 из 5");
   await expect(page.locator("#math-profile")).toContainText("10 000x");
   await expect(page.locator("#math-profile")).toContainText("volatility meter 5/5");
   await expect(page.locator("#math-profile")).toContainText("RTP-варианты не добавляются как verified-метрика");

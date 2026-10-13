@@ -95,8 +95,8 @@ export function createCatalogModel(): CatalogModel {
       releaseDate,
     ].filter(Boolean).length;
     const description = verifiedFacts
-      ? `${seed.name} от ${seed.provider}. В карточке уже подтверждено технических параметров: ${verifiedFacts}; неизвестные характеристики остаются пустыми до проверки.`
-      : `${seed.name} от ${seed.provider}. Название подтверждено в официальном каталоге провайдера; подробные характеристики проходят редакционную проверку.`;
+      ? `${seed.name} — слот студии ${seed.provider}. Посмотрите доступные характеристики и особенности игры.`
+       : `${seed.name} — слот студии ${seed.provider}. Подробные правила и характеристики пока не указаны.`;
     return {
       slug: seed.slug,
       name: seed.name,

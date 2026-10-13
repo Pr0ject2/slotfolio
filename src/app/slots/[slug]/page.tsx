@@ -39,7 +39,7 @@ export async function generateMetadata({
   if (!s) {
     return pageMetadata({
       title: "Игра не найдена",
-      description: "Такого игрового досье нет в текущем каталоге Slotfolio.",
+      description: "Этой игры нет в каталоге Slotfolio.",
       path: "/slots",
       noIndex: true,
     });
@@ -147,7 +147,7 @@ export default async function Page({
       />
       <div className="slot-heading">
         <div>
-          <span className="eyebrow accent">Досье игры / {s.year}</span>
+          <span className="eyebrow accent">Обзор игры / {s.year}</span>
           <h1>{s.name}</h1>
           <Link
             className="provider-link"
@@ -196,8 +196,8 @@ export default async function Page({
               </>
             )}
             <div>
-              <dt>RTP, справочно</dt>
-              <dd>{s.rtp}*</dd>
+              <dt>RTP</dt>
+              <dd>{s.rtp}</dd>
             </div>
             <div>
               <dt>Волатильность</dt>
@@ -230,22 +230,22 @@ export default async function Page({
             </div>
           </dl>
           <p className="data-note">
-            * RTP указан для справочной конфигурации.
+            RTP может различаться в зависимости от версии игры.
             {verified?.rtpVariants && verified.rtpVariants.length > 1
-              ? ` Публичный источник также перечисляет варианты: ${verified.rtpVariants.join(" · ")}.`
-              : " У оператора может использоваться другая версия."}
+              ? ` Известные варианты: ${verified.rtpVariants.join(" · ")}.`
+              : " Проверьте значение в правилах игры."}
           </p>
         </div>
       </div>
       <div className="article-layout slot-body">
         <aside className="article-toc">
-          <span className="eyebrow">В этом досье</span>
+          <span className="eyebrow">Об игре</span>
           <a href="#mechanic">Как устроена игра</a>
           <a href="#features">Функции и бонусы</a>
-          <a href="#math-profile">Математический профиль</a>
+          <a href="#math-profile">RTP и другие параметры</a>
           <a href="#editor-view">Взгляд редакции</a>
-          <a href="#catalog-context">Сравнение с каталогом</a>
-          <a href="#facts">Факты и источники</a>
+          <a href="#catalog-context">Похожие игры</a>
+          <a href="#facts">Правила и источники</a>
           <a href="#faq">Вопросы об игре</a>
           <a href="#related">Похожие игры</a>
           <Link href="/compare">Открыть сравнение ↗</Link>
@@ -295,13 +295,13 @@ export default async function Page({
             <h2>Основные параметры</h2>
             <div className="dossier-metric-grid">
               <div>
-                <span>RTP в каталоге</span>
+                <span>RTP</span>
                 <strong>{s.rtp}</strong>
-                <small>Справочная конфигурация</small>
+                <small>Проверьте значение в правилах игры</small>
               </div>
               {verified?.rtpVariants && verified.rtpVariants.length > 1 && (
                 <div>
-                  <span>RTP-конфигурации</span>
+                  <span>Варианты RTP</span>
                   <strong>{verified.rtpVariants.length}</strong>
                   <small>{verified.rtpVariants.join(" · ")}</small>
                 </div>
@@ -317,7 +317,7 @@ export default async function Page({
                 <div>
                   <span>{verified.observedWinLabel || "Наблюдавшийся выигрыш"}</span>
                   <strong>{verified.observedWin}</strong>
-                  <small>Наблюдавшийся результат, не обязательно фиксированный cap</small>
+                  <small>Это не обязательно максимальный возможный выигрыш</small>
                 </div>
               )}
               <div>
@@ -337,10 +337,9 @@ export default async function Page({
             <span className="eyebrow accent">Взгляд редакции</span>
             <blockquote>{s.note}</blockquote>
             <p>
-              Это качественное описание устройства игры, а не оценка её
-              прибыльности. Сравнивайте игры по понятности правил, темпу и
-              визуальной подаче — эти критерии не меняют математического
-              ожидания.
+              Здесь мы описываем, чем игра отличается от других — её темп,
+              правила и особенности. Это не рекомендация играть на деньги
+              и не оценка шансов на выигрыш.
             </p>
           </section>
           <section id="catalog-context">
@@ -348,9 +347,9 @@ export default async function Page({
             <h2>Сравнение с другими играми</h2>
             <div className="dossier-context-grid">
               <div>
-                <span>RTP относительно базы</span>
+                <span>RTP по сравнению с другими играми</span>
                 <strong>{rtpContext.label}</strong>
-                <small>Медиана по {rtpContext.count} играм: {formatRtp(rtpContext.median)}</small>
+                <small>Серединное значение RTP среди {rtpContext.count} игр: {formatRtp(rtpContext.median)}</small>
               </div>
               <div>
                 <span>Волатильность</span>
@@ -360,7 +359,7 @@ export default async function Page({
               <div>
                 <span>Ближайшие по устройству</span>
                 <strong>{related.map((item) => item.name).join(" · ")}</strong>
-                <small>Подбор по механикам, тегам, провайдеру и RTP</small>
+                <small>Игры с похожими правилами и особенностями</small>
               </div>
             </div>
             <Link className="text-link" href={`/compare?seed=${s.slug}`}>
@@ -368,7 +367,7 @@ export default async function Page({
             </Link>
           </section>
           <section id="facts">
-            <h2>Как читать эти характеристики</h2>
+            <h2>Что важно знать об этих цифрах</h2>
             <p>
               RTP описывает теоретическую долю возврата на большой дистанции. Он
               не показывает, сколько вернётся за одну сессию. Волатильность
@@ -378,13 +377,12 @@ export default async function Page({
             <div className="margin-note">
               <strong>Сначала — версия игры</strong>
               <p>
-                В досье приведены справочные характеристики. У
-                оператора могут быть другие настройки RTP. При расхождении
-                ориентируйтесь на правила именно запущенной версии.
+                У одной игры может быть несколько вариантов RTP. Точное значение
+                всегда ищите в правилах той версии, в которую собираетесь играть.
               </p>
             </div>
             <p className="source-note">
-              Базовый источник описания функций:{" "}
+              Об игре рассказывает разработчик:{" "}
               <a href={s.source} target="_blank" rel="noreferrer">
                 {s.source.replace(/^https?:\/\/(?:www\.)?/, "").split("/")[0]} ↗
               </a>
@@ -411,9 +409,9 @@ export default async function Page({
                 </>
               )}
               {verified && verified.source === s.source && verified.additionalSources?.length
-                ? " Базовые числовые параметры взяты с этой страницы; отдельные уточнения подтверждены дополнительными источниками ниже."
+                ? " Другие сведения об игре можно найти по дополнительным ссылкам ниже."
                 : verified && verified.source === s.source
-                  ? " Дополнительные числовые параметры взяты с той же официальной страницы."
+                  ? " Дополнительные характеристики также указаны на странице разработчика."
                   : null}
             </p>
             {verified?.additionalSources?.length ? (

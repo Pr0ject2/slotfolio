@@ -448,7 +448,7 @@ test("mobile filter apply returns to results and reviewed catalog records remain
   await expect(page).not.toHaveURL(/page=/);
   await expect(page.getByRole("status")).toContainText("9");
   await page.goto("/slots?page=56");
-  await page.getByRole("link", { name: "Открыть запись ↗", exact: true }).first().click();
+  await page.getByRole("link", { name: "Подробнее об игре ↗", exact: true }).first().click();
   await expect(page).toHaveURL(/\/slots\/catalog\//);
   await expect(page.locator("main")).toHaveCount(1);
   // Page 56 now opens a researched catalog dossier after the Play’n GO editorial waves.

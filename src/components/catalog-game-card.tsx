@@ -101,7 +101,7 @@ export function CatalogGameCard({ item, number }: { item: CatalogItem; number: n
           {item.coverage === "dossier" ? (
             <CompareButton slug={item.slug} name={item.name} />
           ) : (
-            <Link className={styles.openRecord} href={href}>Открыть запись ↗</Link>
+            <Link className={styles.openRecord} href={href}>Подробнее об игре ↗</Link>
           )}
         </div>
       </div>
