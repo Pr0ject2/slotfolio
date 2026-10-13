@@ -100,7 +100,7 @@ export function GameRow({ slot, index, compare = false }: { slot: Slot; index?: 
         </p>
       </div>
       <span className="row-rtp">
-        <small>RTP*</small>
+        <small>RTP</small>
         {slot.rtp}
       </span>
       {compare && <CompareButton slug={slot.slug} name={slot.name} />}
