@@ -7,6 +7,7 @@ export const metadata = pageMetadata({
   description:
     "Slotfolio — каталог 1000 слотов с понятными объяснениями правил, бонусов и особенностей игр. Ищите, изучайте и сравнивайте игры в одном месте.",
   path: "/about",
+  absoluteTitle: true,
 });
 
 export default function Page() {
