@@ -4,13 +4,15 @@ import sitemap from "../src/app/sitemap";
 import robots from "../src/app/robots";
 
 test("slotfolio.org static-root preview generates canonical and sitemap URLs without indexing", () => {
-  const vars = ["NEXT_PUBLIC_SITE_URL", "NEXT_PUBLIC_BASE_PATH", "NEXT_PUBLIC_INDEXABLE", "GITHUB_ACTIONS"] as const;
+  const vars = ["NEXT_PUBLIC_SITE_URL", "NEXT_PUBLIC_BASE_PATH", "NEXT_PUBLIC_INDEXABLE", "GITHUB_ACTIONS", "SLOTFOLIO_STATIC_EXPORT"] as const;
   const saved = vars.map((key) => process.env[key]);
   try {
     process.env.NEXT_PUBLIC_SITE_URL = "https://slotfolio.org";
     process.env.NEXT_PUBLIC_BASE_PATH = "";
     process.env.NEXT_PUBLIC_INDEXABLE = "false";
-    process.env.GITHUB_ACTIONS = "true";
+    // Cloudflare Pages is not a GitHub Actions runtime. Exercise its opt-in export mode.
+    delete process.env.GITHUB_ACTIONS;
+    process.env.SLOTFOLIO_STATIC_EXPORT = "true";
 
     expect(siteUrl()).toBe("https://slotfolio.org");
     expect(absoluteUrl("/")).toBe("https://slotfolio.org/");
