@@ -25,15 +25,15 @@ export default async function Page({params}: {params: Promise<{slug: string}>}) 
     <EntityJsonLd name={profile.name} description={profile.catalogSummary} path={"/providers/" + slug} parent="providers" games={games} />
     <Breadcrumbs structuredData={false} items={[{label: "Провайдеры", href: "/providers"}, {label: profile.name}]} />
     <div className="page-heading provider-profile-heading"><div><span className="eyebrow accent">Профиль студии</span><h1>{profile.name}</h1></div><p>{stats.count} {ruPlural(stats.count, "игра", "игры", "игр")} в Slotfolio<br/>{profile.mark}</p></div>
-    <nav className="entity-jump" aria-label="Разделы профиля"><a href="#approach">Подход к играм</a><a href="#catalog-profile">Портрет выборки</a><a href="#games">Все игры · {stats.count}</a><Link href={"/slots?provider=" + slug}>Открыть в каталоге ↗</Link></nav>
+    <nav className="entity-jump" aria-label="Разделы профиля"><a href="#approach">Подход к играм</a><a href="#catalog-profile">Игры и характеристики</a><a href="#games">Все игры · {stats.count}</a><Link href={"/slots?provider=" + slug}>Открыть в каталоге ↗</Link></nav>
     <section id="approach" className="entity-intro"><p className="big-serif">{profile.profileIntro}</p><div><p>{profile.profileBody}</p><p className="entity-editorial-note">{profile.signoff}</p></div></section>
-    <SectionTitle title="Два входа в каталог студии" />
-    <p className="entity-section-note">Первый ориентир и игра с другим набором функций. Это примеры устройства, а не рейтинг.</p>
+    <SectionTitle title="С каких игр начать" />
+    <p className="entity-section-note">Две игры одной студии помогут увидеть, насколько разными могут быть её слоты.</p>
     <FeaturedGames games={representativeGames(games)} />
-    {reading && <section className="entity-reading"><span className="eyebrow accent">Редакционный маршрут</span><div><h2>{reading.title}</h2><p>{reading.text}</p><div className="entity-reading-links">{reading.compare.map((gameSlug) => { const game = games.find((s) => s.slug === gameSlug); return game && <Link key={game.slug} href={"/slots/" + game.slug}>{game.name} ↗</Link>; })}<Link href="/compare">Открыть сравнение ↗</Link></div></div></section>}
+    {reading && <section className="entity-reading"><span className="eyebrow accent">На что обратить внимание</span><div><h2>{reading.title}</h2><p>{reading.text}</p><div className="entity-reading-links">{reading.compare.map((gameSlug) => { const game = games.find((s) => s.slug === gameSlug); return game && <Link key={game.slug} href={"/slots/" + game.slug}>{game.name} ↗</Link>; })}<Link href="/compare">Открыть сравнение ↗</Link></div></div></section>}
     <EntityStats games={games} filter={{provider: slug}} />
     <SectionTitle title="Связанные механики" /><MechanicLinks names={stats.mechanics.map((m) => m.name)} />
     <section id="games"><SectionTitle title="Все игры студии" href={"/slots?provider=" + slug} label="Уточнить фильтры" /><div className="entity-games">{games.map((slot, index) => <GameRow key={slot.slug} slot={slot} index={index} compare />)}</div></section>
-    <div className="editorial-signoff provider-signoff"><p>Характеристики и ссылки на первичные источники приведены в каждом досье. Сравнивайте конкретные версии и правила игры.</p><Link href="/compare">Поставить игры рядом ↗</Link></div>
+    <div className="editorial-signoff provider-signoff"><p>Откройте интересующие игры, чтобы узнать больше об их правилах и бонусах.</p><Link href="/compare">Поставить игры рядом ↗</Link></div>
   </div>;
 }
