@@ -1,3 +1,5 @@
+import Link from "next/link";
+import styles from "@/components/information-page.module.css";
 import { notFound } from "next/navigation";
 import { systemPages } from "@/lib/system-pages";
 import { Breadcrumbs } from "@/components/editorial";
@@ -36,7 +38,7 @@ export default async function Page({
   const data = systemPages[(await params).page];
   if (!data) notFound();
   return (
-    <>
+    <div className={styles.page}>
       <Breadcrumbs items={[{ label: data.eyebrow }]} />
       <div className="simple-heading">
         <span className="eyebrow accent">{data.eyebrow}</span>
@@ -44,7 +46,7 @@ export default async function Page({
         <p>{data.intro}</p>
       </div>
       <div className="article-layout">
-        <nav className="article-toc">
+        <nav className="article-toc" aria-label="На странице">
           <span className="eyebrow">На странице</span>
           {data.sections.map((s, i) => (
             <a href={"#section-" + i} key={s.title}>
@@ -57,10 +59,12 @@ export default async function Page({
             <section id={"section-" + i} key={s.title}>
               <h2>{s.title}</h2>
               <p>{s.text}</p>
+              {s.steps && <ul>{s.steps.map(step => <li key={step}>{step}</li>)}</ul>}
+              {s.links && <ul className={styles.links}>{s.links.map(link => <li key={link.href}>{link.href.startsWith("/") ? <Link href={link.href}>{link.label}</Link> : <a href={link.href}>{link.label} ↗</a>}</li>)}</ul>}
             </section>
           ))}
         </article>
       </div>
-    </>
+    </div>
   );
 }
