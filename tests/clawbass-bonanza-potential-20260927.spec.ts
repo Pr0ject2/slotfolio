@@ -10,9 +10,9 @@ test("ClawBass Bonanza keeps provider-stated potential and Very High volatility"
   expect(slot?.provider).toBe("Clawbuster");
   expect(slot?.rtp).toBe("95,00%");
   expect(slot?.volatility).toBe("Очень высокая");
-  expect(slot?.note).toContain("Текущая официальная карточка Clawbuster публикует RTP 95%");
-  expect(slot?.note).toContain("Very High volatility");
-  expect(slot?.note).toContain("заявленный потенциал");
+  expect(slot?.note).toContain("На официальной странице Clawbuster указаны RTP 95%");
+  expect(slot?.note).toContain("очень высокая волатильность");
+  expect(slot?.note).toContain("Разработчик описывает эту сумму как возможный результат");
   expect(slot?.note).not.toContain("Публичные каталоги расходятся");
   expect(slot?.note).not.toContain("распространённую конфигурацию");
   expect(metrics?.source).toBe("https://clawbuster.com/games/clawbass-bonanza.html");
@@ -29,7 +29,7 @@ test("ClawBass Bonanza dossier renders current volatility with first-party prove
   await expect(page.locator("#math-profile")).toContainText("6 000x");
   await expect(page.locator("#math-profile")).toContainText("Заявленный потенциал");
   await expect(page.locator(".facts")).toContainText("Очень высокая");
-  await expect(page.locator("#editor-view")).toContainText("Текущая официальная карточка Clawbuster публикует RTP 95%");
-  await expect(page.locator("#editor-view")).toContainText("Very High volatility");
+  await expect(page.locator("#editor-view")).toContainText("На официальной странице Clawbuster указаны RTP 95%");
+  await expect(page.locator("#editor-view")).toContainText("очень высокая волатильность");
   await expect(page.locator("#facts")).toContainText("clawbuster.com");
 });
