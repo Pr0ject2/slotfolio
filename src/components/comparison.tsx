@@ -170,7 +170,7 @@ export function Comparison({ items }: { items: ComparisonItem[] }) {
             <small>{Array.from(fields).join(" · ")}</small>
           </div>
           <div>
-            <span className="eyebrow">RTP*</span>
+            <span className="eyebrow">RTP</span>
             <strong>{formatRange(games.map((game) => game.rtpValue))}</strong>
             <small>Справочные версии игр</small>
           </div>
@@ -191,7 +191,7 @@ export function Comparison({ items }: { items: ComparisonItem[] }) {
                 <tr><th scope="row">Варианты RTP</th>{games.map((game) => <td key={game.slug}>{game.metrics?.rtpVariants?.length ? game.metrics.rtpVariants.join(" · ") : `${game.rtp} · другие варианты не указаны`}</td>)}</tr>
                 <tr><th scope="row">Подтверждённый максимум</th>{games.map((game) => <td key={game.slug}>{game.metrics?.maxWin ? `${game.metrics.maxWin} · ${(game.metrics.maxWinLabel || "максимум").toLowerCase()}` : "Нет подтверждённого значения"}</td>)}</tr>
                 {[
-                  ["Поле", "field"], ["RTP*", "rtp"], ["Волатильность", "volatility"], ["Год", "year"], ["Особенность", "feature"], ["Взгляд редакции", "note"],
+                  ["Поле", "field"], ["RTP", "rtp"], ["Волатильность", "volatility"], ["Год", "year"], ["Особенность", "feature"], ["Взгляд редакции", "note"],
                 ].map(([label, key]) => (
                   <tr key={key}><th scope="row">{label}</th>{games.map((game) => <td key={game.slug}>{String(game[key as keyof ComparisonItem] ?? "")}</td>)}</tr>
                 ))}
