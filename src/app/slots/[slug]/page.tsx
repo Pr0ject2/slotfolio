@@ -147,7 +147,7 @@ export default async function Page({
       />
       <div className="slot-heading">
         <div>
-          <span className="eyebrow accent">Досье игры / {s.year}</span>
+          <span className="eyebrow accent">Обзор игры / {s.year}</span>
           <h1>{s.name}</h1>
           <Link
             className="provider-link"
@@ -196,8 +196,8 @@ export default async function Page({
               </>
             )}
             <div>
-              <dt>RTP, справочно</dt>
-              <dd>{s.rtp}*</dd>
+              <dt>RTP</dt>
+              <dd>{s.rtp}</dd>
             </div>
             <div>
               <dt>Волатильность</dt>
@@ -230,10 +230,10 @@ export default async function Page({
             </div>
           </dl>
           <p className="data-note">
-            * RTP указан для справочной конфигурации.
+            RTP может различаться в зависимости от версии игры.
             {verified?.rtpVariants && verified.rtpVariants.length > 1
-              ? ` Публичный источник также перечисляет варианты: ${verified.rtpVariants.join(" · ")}.`
-              : " У оператора может использоваться другая версия."}
+              ? ` Известные варианты: ${verified.rtpVariants.join(" · ")}.`
+              : " Проверьте значение в правилах игры."}
           </p>
         </div>
       </div>
@@ -301,7 +301,7 @@ export default async function Page({
               </div>
               {verified?.rtpVariants && verified.rtpVariants.length > 1 && (
                 <div>
-                  <span>RTP-конфигурации</span>
+                  <span>Варианты RTP</span>
                   <strong>{verified.rtpVariants.length}</strong>
                   <small>{verified.rtpVariants.join(" · ")}</small>
                 </div>
@@ -349,7 +349,7 @@ export default async function Page({
               <div>
                 <span>RTP по сравнению с другими играми</span>
                 <strong>{rtpContext.label}</strong>
-                <small>Среднее по середине списка из {rtpContext.count} игр: {formatRtp(rtpContext.median)}</small>
+                <small>Серединное значение RTP среди {rtpContext.count} игр: {formatRtp(rtpContext.median)}</small>
               </div>
               <div>
                 <span>Волатильность</span>
