@@ -9,6 +9,7 @@
     "assets:localize": "node scripts/localize-slot-images.mjs",
     "prebuild": "node scripts/localize-slot-images.mjs --verify-only",
     "build": "next build",
+    "build:cloudflare": "bash scripts/build-cloudflare-pages.sh",
     "start": "next start --hostname 0.0.0.0",
     "typecheck": "tsc --noEmit",
     "test:security": "node --test tests/security-asset-sources.test.mjs",

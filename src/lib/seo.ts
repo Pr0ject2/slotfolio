@@ -34,7 +34,7 @@ export function absoluteUrl(path = "/") {
   const suffix = boundary < 0 ? "" : path.slice(boundary);
   const normalized = "/" + pathname.replace(/^\/+/, "");
   const slash =
-    process.env.GITHUB_ACTIONS === "true" &&
+    (process.env.GITHUB_ACTIONS === "true" || process.env.SLOTFOLIO_STATIC_EXPORT === "true") &&
     !normalized.endsWith("/") &&
     !/\.[a-z0-9]+$/i.test(normalized)
       ? "/"
