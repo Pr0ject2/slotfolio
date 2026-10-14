@@ -276,15 +276,7 @@ export default function Page() {
               <Link href="/journal/understanding-rtp">
                 нашем объяснении RTP
               </Link>{" "}
-              и{" "}
-              <a
-                href="https://www.gamblingcommission.gov.uk/public-and-players/guide/return-to-player-how-much-gaming-machines-payout"
-                rel="noreferrer"
-                target="_blank"
-              >
-                справке Gambling Commission
-              </a>
-              .
+.
             </p>
             <p>
               Полезный итог знакомства с механикой — умение описать происходящее
@@ -292,18 +284,7 @@ export default function Page() {
               когда завершился раунд. Это делает игру понятнее, но не превращает
               случайность в прогноз.
             </p>
-            <p className="source-note">
-              Функции сверены по официальным страницам{" "}
-              <a href="https://www.pragmaticplay.com/en/games/sweet-bonanza/">
-                Sweet Bonanza
-              </a>
-              ,{" "}
-              <a href="https://www.pragmaticplay.com/en/games/gates-of-olympus/">
-                Gates of Olympus
-              </a>{" "}
-              и <a href="https://www.playngo.com/games/reactoonz">Reactoonz</a>.
-              Редакционный материал Slotfolio.
-            </p>
+
           </section>
         </article>
       </div>

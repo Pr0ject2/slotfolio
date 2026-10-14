@@ -33,7 +33,6 @@ test("2026 Hit Slot dossier exposes the official volatility conflict without cha
   await expect(page.locator(".facts")).toContainText("Высокая");
   await expect(page.locator("#math-profile .metric-caveat")).toContainText("Volatility: High");
   await expect(page.locator("#math-profile .metric-caveat")).toContainText("Ultra-High volatility");
-  await expect(page.locator("#facts")).toContainText(
-    "релиз Endorphina от 03.03.2026 с формулировкой Ultra-High volatility",
-  );
+  await expect(page.locator("#facts")).toContainText("RTP");
+  await expect(page.locator("#facts a[href^='http']")).toHaveCount(0);
 });
