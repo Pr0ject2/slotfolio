@@ -24,3 +24,4 @@
 }
 .page .intro { display: block; padding: 0; }
 .page .intro h1, .card h2 { font-family: var(--serif); font-weight: 400; letter-spacing: -0.025em; }
+@media (max-width: 600px) { .page :global(.collection-entry) > div { grid-column: 1 / -1; } }

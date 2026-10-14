@@ -57,6 +57,8 @@ for (const width of [320, 390, 768, 1024, 1440]) {
         await image.scrollIntoViewIfNeeded();
         await expect.poll(() => image.evaluate(node => (node as HTMLImageElement).complete && (node as HTMLImageElement).naturalWidth > 0)).toBe(true);
       }
+      await heading.click();
+      await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
       await page.screenshot({ path: testInfo.outputPath(`${route.replaceAll("/", "_")}-${width}.png`), fullPage: true });
     }
     await page.goto("/collections");
@@ -67,4 +69,5 @@ for (const width of [320, 390, 768, 1024, 1440]) {
     await expect(page).toHaveURL(/#beyond-lines$/);
   });
 }
+
 
