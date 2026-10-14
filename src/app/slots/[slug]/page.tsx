@@ -160,7 +160,7 @@ export default async function Page({
       </div>
       <div className="slot-intro">
         <figure className="slot-figure">
-          <GameImage slot={s} priority preferEditorial />
+          <GameImage slot={s} priority />
           <figcaption>
             Игровая графика · {s.provider} · {s.name}
           </figcaption>
