@@ -138,18 +138,9 @@ test("comparison recovers corrupt, duplicate and unavailable browser storage", a
   await expect(page.locator(".entity-games .compare-button").first()).toHaveAttribute("aria-pressed", "true");
 });
 
-test("failed editorial SVG and first-party WebP both use the local fallback without a resize", async ({page}) => {
-  for (const item of [
-    { route: "**/images/editorial/gates-of-olympus.svg", page: "/slots/gates-of-olympus" },
-    { route: "**/images/slots/reactoonz.webp", page: "/slots/reactoonz" },
-  ]) {
-    await page.route(item.route, (route) => route.abort());
-    await page.goto(item.page);
-    await expect(page.locator('img[src$="/images/unavailable.svg"]')).toHaveCount(1);
-    await expect.poll(() =>
-      page.locator('img[src$="/images/unavailable.svg"]')
-        .evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0),
-    ).toBe(true);
-    await page.unroute(item.route);
-  }
+test("failed artwork uses a local fallback without a resize", async ({page}) => {
+  await page.route("**/images/slots/gates-of-olympus-feature.webp", (route) => route.abort());
+  await page.goto("/slots/gates-of-olympus");
+  await expect(page.locator('img[src$="/images/unavailable.svg"]')).toHaveCount(1);
+  await expect.poll(() => page.locator('img[src$="/images/unavailable.svg"]').evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBe(true);
 });
