@@ -37,6 +37,11 @@ jobs:
             ci-slot-images-${{ runner.os }}-
             slot-images-${{ runner.os }}-
 
+      # The asset cache can contain stale copies of committed WebP files.
+      # Preserve cached generated artwork but prefer files from this commit.
+      - name: Reapply source-controlled slot artwork after cache
+        run: git restore --source=HEAD --worktree -- public/images/slots
+
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
 
