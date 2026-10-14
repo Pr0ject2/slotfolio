@@ -6,6 +6,7 @@ import { CompareButton } from "./compare-button";
 import { SlotArtwork } from "./slot-artwork";
 import { JsonLd } from "./json-ld";
 import { absoluteUrl } from "@/lib/seo";
+import { getEditorialArtwork } from "@/lib/editorial-artwork";
 export function Breadcrumbs({
   items,
   structuredData = true,
@@ -56,16 +57,22 @@ export function GameImage({
   slot,
   className = "",
   priority = false,
+  preferEditorial = false,
 }: {
   slot: Slot;
   className?: string;
   priority?: boolean;
+  preferEditorial?: boolean;
 }) {
   return (
     <SlotArtwork
       className={"game-image " + className}
       src={withBasePath(
-        priority && slot.featureImage ? slot.featureImage : slot.image,
+        preferEditorial
+          ? getEditorialArtwork(slot.slug) ?? slot.image
+          : priority && slot.featureImage
+            ? slot.featureImage
+            : getEditorialArtwork(slot.slug) ?? slot.image,
       )}
       alt={`Иллюстрация ${slot.name}`}
       width={500}
