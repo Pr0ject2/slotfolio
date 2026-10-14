@@ -3,6 +3,8 @@ import Link from "next/link";
 import { slots, slotMechanics } from "@/lib/data";
 import { Breadcrumbs, GameImage, Affiliate } from "@/components/editorial";
 import { CompareButton } from "@/components/compare-button";
+import { SlotArtwork } from "@/components/slot-artwork";
+import { withBasePath } from "@/lib/base-path";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
@@ -56,10 +58,22 @@ export default function Page() {
         </p>
       </div>
       {games.map((s, i) => (
-        <article className="collection-entry" key={s.slug}>
+        <article className={`collection-entry${s.slug === "sweet-bonanza" ? " collection-entry--sweet-bonanza" : ""}`} key={s.slug}>
           <span className="number">0{i + 1}</span>
           <Link href={"/slots/" + s.slug}>
-            <GameImage slot={s} />
+            {s.slug === "sweet-bonanza" ? (
+              <SlotArtwork
+                className="game-image"
+                src={withBasePath("/images/collections/sweet-bonanza-feature.svg")}
+                alt="Sweet Bonanza: оригинальный логотип игры на декоративном фоне"
+                width={1200}
+                height={675}
+                loading="lazy"
+                decoding="async"
+              />
+            ) : (
+              <GameImage slot={s} />
+            )}
           </Link>
           <div>
             <span className="eyebrow accent">
