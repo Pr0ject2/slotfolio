@@ -4785,7 +4785,7 @@ summary {
 
 /* Keep the original Sweet Bonanza logo at its reviewed scale inside a crisp, self-contained collection cover. */
 .collection-entry--sweet-bonanza img {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 799 / 466;
   object-fit: contain;
   background: #f8cce4;
 }
