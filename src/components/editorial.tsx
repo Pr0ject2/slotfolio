@@ -57,18 +57,22 @@ export function GameImage({
   slot,
   className = "",
   priority = false,
+  preferEditorial = false,
 }: {
   slot: Slot;
   className?: string;
   priority?: boolean;
+  preferEditorial?: boolean;
 }) {
   return (
     <SlotArtwork
       className={"game-image " + className}
       src={withBasePath(
-        priority && slot.featureImage
-          ? slot.featureImage
-          : getEditorialArtwork(slot.slug) ?? slot.image,
+        preferEditorial
+          ? getEditorialArtwork(slot.slug) ?? slot.image
+          : priority && slot.featureImage
+            ? slot.featureImage
+            : getEditorialArtwork(slot.slug) ?? slot.image,
       )}
       alt={`Иллюстрация ${slot.name}`}
       width={500}
