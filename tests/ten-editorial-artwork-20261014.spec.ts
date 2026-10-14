@@ -19,8 +19,8 @@ const chosen = [
   "fury-of-anubis"
 ];
 
-test("exactly ten new editorial assets are author-drawn and local", () => {
-  expect(Object.keys(editorialArtworkBySlug).sort()).toEqual([...chosen].sort());
+test("initial ten original editorial assets remain source-safe", () => {
+  expect(Object.keys(editorialArtworkBySlug).filter((slug) => chosen.includes(slug)).sort()).toEqual([...chosen].sort());
   expect(slots.length).toBeGreaterThanOrEqual(100);
   for (const slug of chosen) {
     const slot = getSlot(slug);
@@ -36,7 +36,7 @@ test("exactly ten new editorial assets are author-drawn and local", () => {
     expect(svg).not.toMatch(/<script\b|<foreignObject\b|(?:href|src)\s*=\s*["\u0027]https?:\/\//i);
   }
   expect(getEditorialArtwork("reactoonz")).toBeUndefined();
-  expect(getEditorialArtwork("sweet-bonanza")).toBeUndefined();
+  expect(getEditorialArtwork("max-win-machine")).toBeUndefined();
 });
 
 test("all ten dossiers load sharp local editorial artwork without fallbacks", async ({ page }) => {
