@@ -21,3 +21,15 @@
     min-height: 44px;
   }
 }
+
+/* Keyboard-friendly language switch. */
+.languageSwitch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  font-weight: 700;
+  border: 1px solid var(--line);
+}
+.languageSwitch:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }

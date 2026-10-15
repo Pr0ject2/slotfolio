@@ -50,8 +50,11 @@ export const metadata: Metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ru" className={golos.variable}>
+    <html lang="ru" suppressHydrationWarning className={golos.variable}>
       <body>
+        {/* Sync the top-level document language for static /en pages without
+            request headers, middleware or runtime locale negotiation. */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang = /^\\/en(?:\\/|$)/.test(location.pathname.replace(/^\\/slotfolio(?=\\/|$)/, '')) ? 'en' : 'ru';" }} />
         <JsonLd
           data={{
             "@context": "https://schema.org",

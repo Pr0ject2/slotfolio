@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { isEnglishPath, russianPath, translatedCounterpart } from "./locales";
 
 export const SITE_NAME = "Slotfolio";
 export const SITE_DESCRIPTION =
@@ -85,14 +86,22 @@ export function pageMetadata({
   return {
     title: absoluteTitle ? { absolute: title } : title,
     description,
-    alternates: { canonical: absoluteUrl(path) },
+    alternates: {
+      canonical: absoluteUrl(path),
+      ...(translatedCounterpart(path) ? {
+        languages: {
+          ru: absoluteUrl(russianPath(path)),
+          en: absoluteUrl(isEnglishPath(path) ? path : translatedCounterpart(path)!),
+        },
+      } : {}),
+    },
     ...(noIndex ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
       title,
       description,
       url: absoluteUrl(path),
       siteName: SITE_NAME,
-      locale: "ru_RU",
+      locale: isEnglishPath(path) ? "en_US" : "ru_RU",
       type: openGraphType,
       images: [{ url: absoluteMediaUrl(image), alt: `${SITE_NAME}: ${title}` }],
     },
