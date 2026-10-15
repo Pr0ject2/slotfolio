@@ -62,7 +62,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             name: SITE_NAME,
             url: siteUrl(),
             description: SITE_DESCRIPTION,
-            inLanguage: "ru",
+            inLanguage: ["ru", "en"],
             publisher: {
               "@type": "Organization",
               name: SITE_NAME,
@@ -70,8 +70,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             },
           }}
         />
-        <a href="#main" className="skip-link">
+        <a href="#main" className="skip-link" data-locale="ru" lang="ru">
           Перейти к содержимому
+        </a>
+        <a href="#main" className="skip-link" data-locale="en" lang="en">
+          Skip to content
         </a>
         <div className="site">
           <Header />

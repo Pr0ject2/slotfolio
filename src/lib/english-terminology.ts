@@ -1,0 +1,15 @@
+export const englishTerminology = {
+  rtp: "return to player (RTP)",
+  volatility: "volatility",
+  maxWin: "maximum win",
+  paylines: "paylines",
+  cascades: "cascades",
+  clusterPays: "cluster pays",
+  ways: "ways to win",
+  freeSpins: "free spins",
+  wild: "wild symbol",
+  scatter: "scatter symbol",
+  wagering: "wagering requirements",
+  saferGambling: "safer gambling",
+  publisherRules: "publisher's rules",
+} as const;

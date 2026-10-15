@@ -5,8 +5,8 @@ import { withBasePath } from "@/lib/base-path";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Slotfolio | Slot game rules, RTP and independent guides",
-  description: "Explore slot game mechanics, RTP, and bonus rules. Clear editorial explanations and safer gambling information without promises of winning.",
+  title: "Slotfolio | Understand slot rules, features and RTP",
+  description: "Understand how slot games work: pay rules, bonus features, RTP and volatility explained clearly, alongside safer gambling advice.",
   path: "/en",
   absoluteTitle: true,
 });
@@ -18,7 +18,7 @@ export default function EnglishHome() {
     <>
       <div className="edition-line">
         <span><i /> IN FOCUS</span>
-        <span>Games, mechanics, and facts</span>
+        <span>Rules, features and context</span>
         <span>18+ · Know the risks</span>
       </div>
       <section className="front-lead">
@@ -35,7 +35,7 @@ export default function EnglishHome() {
           <div className="cover-copy">
             <span className="eyebrow accent">Game rules / Pragmatic Play</span>
             <h1><Link href={`/slots/${featured.slug}`}>Gates of Olympus <span className="eyebrow">(RU)</span></Link></h1>
-            <p>Learn what cascades and multipliers do, how bonus features work, and which rules deserve a closer look. A high volatility label cannot predict the next result.</p>
+            <p>Cascading wins and multipliers can make a single spin more involved than it first appears. We explain the rules behind those features, not what your next spin will pay.</p>
             <Link className="text-link" href={`/slots/${featured.slug}`}>Read dossier (Russian) ↗</Link>
           </div>
         </article>
@@ -45,14 +45,14 @@ export default function EnglishHome() {
               <SlotArtwork className="game-image" src={withBasePath(secondary.image)}
                 alt="Reactoonz game artwork" width={500} height={280} loading="lazy" decoding="async" />
             </Link>
-            <span className="eyebrow accent">A different kind of win</span>
+            <span className="eyebrow accent">Different rules for forming wins</span>
             <h2><Link href={`/slots/${secondary.slug}`}>Reactoonz: beyond paylines (RU)</Link></h2>
-            <p>What changes when winning groups form across the game grid rather than on fixed lines?</p>
+            <p>Reactoonz rewards groups of adjacent symbols rather than combinations along traditional paylines. Learn why that distinction matters.</p>
             <Link className="text-link" href={`/slots/${secondary.slug}`}>Original dossier (Russian) ↗</Link>
           </article>
           <div className="reading-note">
             <span className="eyebrow">Before you play</span>
-            <h3><Link href="/en/journal/understanding-rtp">96% RTP is not a promise to return 96% of your money</Link></h3>
+            <h3><Link href="/en/journal/understanding-rtp">96% RTP doesn't mean you'll get 96% of your money back</Link></h3>
             <Link className="text-link" href="/en/journal/understanding-rtp">Understand RTP ↗</Link>
           </div>
         </aside>
@@ -71,11 +71,11 @@ export default function EnglishHome() {
           <div className="prose">
             <section>
               <h2><Link href="/en/journal/understanding-rtp">What does RTP mean?</Link></h2>
-              <p>A theoretical long-run return is not a prediction for an individual player or session.</p>
+              <p>RTP is a theoretical average over many bets. It cannot tell you what will happen in your session.</p>
             </section>
             <section>
               <h2><Link href="/en/editorial-policy">How we verify information</Link></h2>
-              <p>We distinguish documented rules from interpretation and do not fill missing numbers with guesses.</p>
+              <p>We separate verified game rules from our own explanations. If a figure cannot be checked, we leave it unconfirmed.</p>
             </section>
             <section>
               <h2><Link href="/en/responsible-gaming">Safer gambling</Link></h2>
@@ -86,8 +86,8 @@ export default function EnglishHome() {
       </section>
       <div className="editorial-signoff">
         <span className="brand-small">s.</span>
-        <p>The English edition is being translated in stages.
-          <br /><span>The 1,000-game catalogue and detailed game dossiers currently remain available in Russian.</span>
+        <p>Our English-language coverage is expanding.
+          <br /><span>The 1,000-game catalogue and individual game dossiers are currently in Russian.</span>
         </p>
         <Link href="/slots">Open Russian catalogue ↗</Link>
       </div>

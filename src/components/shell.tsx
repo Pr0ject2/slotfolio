@@ -33,11 +33,11 @@ export function Header() {
           slotfolio<span className="brand-dot">.</span>
         </Link>
         <span className="tagline">
-          {english ? "Games, guides" : "Каталог, разборы"}
+          {english ? "Game rules, guides" : "Каталог, разборы"}
           <br />{english ? "and mechanics" : "и механики игр"}
         </span>
         <span className="header-edition">
-          {english ? "GAMES · GUIDES · COMPARISONS" : "КАТАЛОГ · РАЗБОРЫ · СРАВНЕНИЕ"} <span>18+</span>
+          {english ? "GAME RULES · GUIDES · RTP" : "КАТАЛОГ · РАЗБОРЫ · СРАВНЕНИЕ"} <span>18+</span>
         </span>
         <Link className="header-search" href="/search" aria-label={english ? "Game search (Russian)" : "Найти игру"}>
           <svg

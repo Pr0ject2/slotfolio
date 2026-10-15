@@ -7,29 +7,29 @@ export type EnglishInformationPage = {
   sections: InformationSection[];
 };
 
-// Reviewed translations of the visitor-facing Russian policy pages. Keep the
+// Editorially adapted English versions of the visitor-facing policy pages. Keep the
 // factual claims in step with their Russian counterparts; no game facts here.
 export const englishSystemPages: Record<string, EnglishInformationPage> = {
   "editorial-policy": {
-    title: "How we check game information",
+    title: "How we verify game details",
     eyebrow: "Editorial policy",
-    intro: "Where game facts come from, how to read the numbers, and what to do when two sources disagree.",
+    intro: "Where our game information comes from, how to interpret the figures and what to check when sources disagree.",
     sections: [
       {
-        title: "Start with the game's own rules",
+        title: "Start with the publisher's rules",
         text: "Slotfolio uses game rules and publisher materials to describe mechanics and technical parameters. Names and versions matter: a sequel or a different configuration may have different rules even when the artwork looks similar.",
         steps: [
           "Confirm the exact game title and publisher before comparing values.",
-          "Check RTP, release date, and maximum win in the appropriate game documentation; they may appear in different places.",
-          "A date of verification tells you when information was checked, not that it can never change.",
+          "Look up RTP, release dates and maximum-win figures in the relevant documents. They may be published separately.",
+          "A 'last checked' date records when we reviewed a detail. It does not mean the information will never change.",
         ],
         links: [{ label: "Browse the original Russian catalogue", href: "/slots" }],
       },
       {
         title: "When figures do not match",
-        text: "An operator may offer one of several configurations of the same game. The help screen inside the particular game is the best place to check the active version. Do not average incompatible figures or assume the catalogue's setting applies everywhere.",
+        text: "A casino may offer one of several versions of the same game. Check the help screen or paytable in the version actually available to you. Do not average incompatible figures or assume the catalogue's setting applies everywhere.",
         steps: [
-          "Match the game, version, and units. A maximum win expressed as a stake multiplier is not a fixed cash amount.",
+          "Match the game, version, and units. A maximum win quoted as a multiple of your bet is not a fixed amount of money.",
           "Check whether the listed RTP is one setting or a range of available settings.",
           "Treat any parameter you cannot verify as unknown. A blank field does not mean zero.",
         ],
@@ -37,7 +37,7 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
       },
       {
         title: "Facts, explanations, and limitations",
-        text: "Pay rules, game layout, and bonus conditions can be checked against documentation. Commentary about pace or complexity is an interpretation of those rules. It is not a claim about profitability or a verification of any casino's payment practices.",
+        text: "Pay rules, game layout, and bonus conditions can be checked against documentation. When we describe a game's pace or complexity, we are interpreting its documented rules. It is not a claim about profitability or a verification of any casino's payment practices.",
         links: [
           { label: "Affiliate disclosure", href: "/en/disclosure" },
           { label: "Safer gambling", href: "/en/responsible-gaming" },
@@ -51,7 +51,7 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
     intro: "You do not need an account to browse Slotfolio. Here is what your browser may store and how to clear it.",
     sections: [
       {
-        title: "Your comparison list",
+        title: "Games saved for comparison",
         text: "Games selected for comparison are stored locally in the browser on this device. The list does not automatically follow you to another browser or computer.",
         steps: [
           "In the comparison view, use its clear option to remove selected games.",
@@ -65,7 +65,7 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
         text: "Search queries and filters may appear in a page URL. Anyone receiving that link can see them; the URL may also be stored in browser history and hosting logs.",
         steps: [
           "Do not enter passwords, payment details, or other sensitive information into site search.",
-          "To share without a search query, send the game's own link or the catalogue URL without query parameters.",
+          "To share a clean link, use the game's page or the catalogue address without anything after the question mark.",
           "Clearing the comparison list does not remove browser history; delete individual visits separately if necessary.",
         ],
         links: [{ label: "Browse the catalogue (Russian interface)", href: "/slots" }],
@@ -78,18 +78,18 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
     ],
   },
   disclosure: {
-    title: "Affiliate links and editorial independence",
+    title: "Affiliate links and our editorial approach",
     eyebrow: "Affiliate disclosure",
-    intro: "How to tell reference information from commercial links and what to check before visiting an operator.",
+    intro: "How we distinguish reference material from commercial links, and what to check before using another website.",
     sections: [
       {
         title: "Reference material is not an offer",
-        text: "Game rules and publisher information are used to check a game's characteristics. They do not establish that real-money play is available. Slotfolio currently has no active casino affiliate offers.",
+        text: "Game rules and publisher information are used to check a game's characteristics. They do not establish that real-money play is available. Slotfolio does not currently display any active casino affiliate offers.",
         links: [{ label: "How we verify game information", href: "/en/editorial-policy" }],
       },
       {
         title: "What an affiliate label means",
-        text: "An affiliate link may earn Slotfolio a commission. The label indicates a commercial relationship, not that a casino is trustworthy, a bonus is good value, or a win is likely. A game listed here may not be available from your operator.",
+        text: "If we display an affiliate link, Slotfolio may earn a commission when someone follows it or takes an eligible action. That label discloses a commercial relationship. It is not an endorsement of the casino, a guarantee about the bonus or a claim that you are more likely to win. A game listed here may not be available from your operator.",
       },
       {
         title: "Before joining another website",
@@ -97,7 +97,7 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
         steps: [
           "Compare the site's domain and company name with the relevant regulator's public register.",
           "Check whether the operator accepts players in your country and what identity verification is required.",
-          "Read withdrawal, wagering, time-limit, bet-limit, and game-exclusion terms before accepting a bonus.",
+          "Before claiming a bonus, check withdrawal rules, wagering requirements, expiry dates, maximum bets and excluded games.",
         ],
         links: [{ label: "Safer gambling advice", href: "/en/responsible-gaming" }],
       },
@@ -106,15 +106,15 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
   "responsible-gaming": {
     title: "Safer gambling and getting help",
     eyebrow: "Safer gambling · 18+",
-    intro: "If gambling is affecting essential expenses, relationships, or your ability to stop, there are practical ways to limit it and seek support.",
+    intro: "If gambling is putting pressure on your finances, relationships or ability to stop, support and practical limits are available.",
     sections: [
       {
         title: "If you need to stop right now",
-        text: "Close the game and avoid making another deposit to recover losses. The next spin does not owe you compensation for previous results.",
+        text: "Close the game and avoid making another deposit to recover losses. A previous loss does not make a win on the next spin any more certain.",
         steps: [
           "Look for a time-out or self-exclusion option in the operator's account settings, or contact its support team.",
           "Turn off promotional notifications and remove apps that encourage you to return.",
-          "Check whether your bank can block gambling-related payments.",
+          "Ask your bank whether it offers a gambling-transaction block.",
           "Talk to someone you trust. You do not have to wait until you are in debt to ask for help.",
         ],
       },
@@ -124,7 +124,7 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
       },
       {
         title: "Help and self-exclusion services",
-        text: "In Great Britain, GamCare supports people affected by gambling harm and their loved ones. GAMSTOP offers online self-exclusion from participating operators. Check coverage and eligibility on their websites. Elsewhere, look for locally available support services and regulators.",
+        text: "In Great Britain, GamCare offers support to people affected by gambling harm and those close to them. GAMSTOP provides self-exclusion from participating online gambling operators. Check coverage and eligibility on their websites. Elsewhere, look for locally available support services and regulators.",
         links: [
           { label: "GamCare support", href: "https://www.gamcare.org.uk/" },
           { label: "GAMSTOP self-exclusion", href: "https://www.gamstop.co.uk/" },

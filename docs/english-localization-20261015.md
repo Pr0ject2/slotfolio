@@ -19,7 +19,7 @@ Page navigation and footer translate according to explicit /en routes. The Engli
 - `src/lib/locales.ts` is the reviewed English route allowlist.
 - `src/lib/english-system-pages.ts` contains explicit human-readable English editorial-policy and safety copy. No machine translation of technical game details or invented operator availability.
 - `src/components/shell.tsx` provides localized site navigation; `src/app/en/layout.tsx` marks English content with `lang=en`.
-- `src/lib/seo.ts` adds bilingual canonical/alternate metadata only where both route versions exist. English OpenGraph language is `en_US`.
+- `src/lib/seo.ts` adds bilingual canonical/alternate metadata only where both route versions exist. Use **UK English spelling and internationally understandable terminology** (e.g. catalogue, licence, paytable, paylines, Return to Player). English OpenGraph locale is `en_GB`.
 - Root document language follows the current locale even on client-side navigation. Russian route defaults remain unchanged.
 - Cloudflare Pages and GitHub Pages stay noindex. Do **not** enable indexing as part of localization.
 - Cloudflare static export explicitly verifies English output files and noindex for `/en`.
@@ -32,4 +32,4 @@ Page navigation and footer translate according to explicit /en routes. The Engli
 5. Add locale-aware sitemap hreflang entries only for translated/indexable pages once the site is cleared for SEO. Preserve existing `noindex` gates in the meantime.
 
 ## Gate for every PR
-Exact-head CI success (dependencies, typecheck, strict artwork, production build, full Playwright); verify English route render and language links at mobile and desktop widths. Guarded merge with expected head SHA, followed by both GitHub Pages and Cloudflare Pages deployment verification. English pages cannot claim full catalog translation while game dossiers remain Russian.
+Exact-head CI success (dependencies, typecheck, strict artwork, production build, full Playwright); verify English route render and language links at mobile and desktop widths. Guarded merge with expected head SHA, followed by both GitHub Pages and Cloudflare Pages deployment verification. English pages cannot claim full catalogue translation while game dossiers remain Russian. A translated page must read naturally in English, not mechanically follow Russian syntax. The editor must verify factual equivalence against the Russian page, check policy/affiliate claims, use the terminology glossary, and label all Russian-only links.

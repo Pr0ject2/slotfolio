@@ -101,7 +101,7 @@ export function pageMetadata({
       description,
       url: absoluteUrl(path),
       siteName: SITE_NAME,
-      locale: isEnglishPath(path) ? "en_US" : "ru_RU",
+      locale: isEnglishPath(path) ? "en_GB" : "ru_RU",
       type: openGraphType,
       images: [{ url: absoluteMediaUrl(image), alt: `${SITE_NAME}: ${title}` }],
     },
