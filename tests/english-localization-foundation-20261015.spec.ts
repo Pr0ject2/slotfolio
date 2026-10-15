@@ -29,7 +29,7 @@ test("each translated page has real English copy, locale metadata and noindex", 
     await expect(page.locator("main")).toBeVisible();
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
     await expect(page.locator("main > div[lang='en']")).toBeVisible();
-    await expect(page.locator('meta[property="og:locale"]')).toHaveAttribute("content", "en_US");
+    await expect(page.locator('meta[property="og:locale"]')).toHaveAttribute("content", "en_GB");
     const englishAlternate = await page.locator('link[rel="alternate"][hreflang="en"]').getAttribute("href");
     expect(new URL(englishAlternate!).pathname.replace(/\/$/, "")).toBe(path);
     await expect(page.locator('link[rel="alternate"][hreflang="ru"]')).toHaveAttribute("href", /^https?:\/\//);

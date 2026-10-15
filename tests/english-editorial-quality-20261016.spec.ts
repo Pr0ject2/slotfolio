@@ -17,7 +17,7 @@ test("English shell and metadata use British editorial English and accessible la
   await expect(page.locator('.skip-link[data-locale="en"]')).toHaveText("Skip to content");
   await expect(page.locator('.skip-link[data-locale="ru"]')).toBeHidden();
   await expect(page.locator('.skip-link[data-locale="en"]')).not.toBeHidden();
-  await expect(page.locator('a[href="/en/privacy"]').first()).toBeVisible();
+  await expect(page.locator('a[href$="/en/privacy"]').first()).toBeVisible();
   await page.goto("/about");
   await expect(page.locator('.skip-link[data-locale="en"]')).toBeHidden();
   await expect(page.locator('.skip-link[data-locale="ru"]')).not.toBeHidden();
