@@ -1,0 +1,27 @@
+.intro { max-width: 850px; margin: 32px 0; }
+.page .intro h1 { font-size: clamp(32px, 4.5vw, 58px); line-height: 1.12; margin: 16px 0 24px; padding: 0; }
+.page p { font-size: 17px; line-height: 1.65; }
+.page .caption { font-size: 15px; }
+.caption a, .topics a, .note a { text-decoration: underline; text-underline-offset: 3px; }
+.topics { display: flex; flex-wrap: wrap; gap: 12px 28px; padding: 24px 0; border-top: 1px solid var(--line); }
+.topics a { font-size: 16px; line-height: 1.5; }
+.card { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 40px; padding: 40px 0; border-top: 1px solid var(--line); scroll-margin-top: 24px; }
+.card h2 { font-size: clamp(27px, 3vw, 40px); line-height: 1.2; margin: 14px 0; }
+.card p { margin: 16px 0; }
+.question { font-weight: 600; }
+.covers { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-self: center; min-width: 0; }
+.covers img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: contain; }
+.note { max-width: 75ch; margin: 32px 0 56px; }
+.checklist { padding-left: 24px; max-width: 75ch; }
+.checklist li { margin: 12px 0; font-size: 17px; line-height: 1.6; }
+.page :global(.collection-entry) p { font-size: 17px; }
+.page :global(.collection-entry) h2 { overflow-wrap: anywhere; }
+@media (max-width: 767px) {
+  .card { grid-template-columns: 1fr; gap: 24px; padding: 28px 0; }
+  .covers { max-width: 520px; }
+  .page p, .checklist li, .page :global(.collection-entry) p { font-size: 16px; }
+  .topics { display: grid; }
+}
+.page .intro { display: block; padding: 0; }
+.page .intro h1, .card h2 { font-family: var(--serif); font-weight: 400; letter-spacing: -0.025em; }
+@media (max-width: 600px) { .page :global(.collection-entry) > div { grid-column: 1 / -1; } }

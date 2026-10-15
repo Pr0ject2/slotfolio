@@ -1,3 +1,4 @@
+import { gameCollections } from "@/lib/collections";
 import type { MetadataRoute } from "next";
 import { mechanics, providerProfiles, slots } from "@/lib/data";
 import { systemPages } from "@/lib/system-pages";
@@ -15,7 +16,7 @@ const staticRoutes = [
   "/journal/understanding-rtp",
   "/bonuses",
   "/collections",
-  "/collections/beyond-lines",
+
   "/regions",
   "/regions/great-britain",
   "/about",
@@ -24,6 +25,7 @@ const staticRoutes = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     ...staticRoutes,
+    ...gameCollections.map(collection => `/collections/${collection.slug}`),
     ...slots.map((slot) => `/slots/${slot.slug}`),
     ...mechanics.map((mechanic) => `/mechanics/${mechanic.slug}`),
     ...providerProfiles.map((provider) => `/providers/${provider.slug}`),
@@ -32,3 +34,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return routes.map((route) => ({ url: absoluteUrl(route) }));
 }
+
