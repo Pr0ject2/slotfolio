@@ -47,7 +47,10 @@ test("English site keeps readable navigation and mobile layout", async ({ page }
     await page.setViewportSize({ width, height: 900 });
     for (const path of ["/en", "/en/about", "/en/privacy", "/en/journal/understanding-rtp"]) {
       await page.goto(path);
-      await expect(page.getByRole("link", { name: "RU", exact: true })).toHaveCount(1);
+      if (width <= 600) {
+        await page.getByRole("button", { name: /^Menu/ }).click();
+      }
+      await expect(page.getByRole("link", { name: "RU", exact: true })).toBeVisible();
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth);
       expect(overflow, `horizontal overflow at ${width}px on ${path}`).toBeLessThanOrEqual(width + 1);
     }
