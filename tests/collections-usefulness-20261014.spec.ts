@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 import { gameCollections } from "../src/lib/collections";
 import { getSlot } from "../src/lib/data";
 import sitemap from "../src/app/sitemap";
+import { absoluteUrl } from "../src/lib/seo";
 
 test.use({ baseURL: process.env.AUDIT_BASE_URL || "http://localhost:3000" });
 
@@ -11,7 +12,7 @@ test("collections connect distinct learning questions with existing games and si
   const urls = sitemap().map(item => item.url);
   for (const collection of gameCollections) {
     expect(new Set(collection.games.map(game => game.slug)).size).toBe(3);
-    expect(urls.some(url => url.endsWith(`/collections/${collection.slug}`))).toBe(true);
+    expect(urls.filter(url => url === absoluteUrl(`/collections/${collection.slug}`))).toHaveLength(1);
     for (const game of collection.games) {
       expect(getSlot(game.slug)?.source).toMatch(/^https:\/\//);
       expect(game.check.length).toBeGreaterThan(30);
@@ -69,5 +70,6 @@ for (const width of [320, 390, 768, 1024, 1440]) {
     await expect(page).toHaveURL(/#beyond-lines$/);
   });
 }
+
 
 
