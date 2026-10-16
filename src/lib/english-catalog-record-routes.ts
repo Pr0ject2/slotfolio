@@ -1,3 +1,4 @@
+import { englishCatalogBatch05Slugs } from "./english-catalog-batch05";
 import { englishCatalogBatch04Slugs } from "./english-catalog-batch04";
 import { englishCatalogBatch03Slugs } from "./english-catalog-batch03";
 import { englishCatalogBatch02Slugs } from "./english-catalog-batch02";
@@ -106,7 +107,7 @@ const first100Slugs = [
   "hacksaw-gaming-chaos-crew-3",
   "playn-go-alice-cooper-and-the-tome-of-madness"
 ] as const;
-export const englishCatalogRecordSlugs = [...first100Slugs, ...englishCatalogBatch02Slugs, ...englishCatalogBatch03Slugs, ...englishCatalogBatch04Slugs] as const;
+export const englishCatalogRecordSlugs = [...first100Slugs, ...englishCatalogBatch02Slugs, ...englishCatalogBatch03Slugs, ...englishCatalogBatch04Slugs, ...englishCatalogBatch05Slugs] as const;
 const ready = new Set<string>(englishCatalogRecordSlugs);
 export function hasEnglishCatalogRecord(slug: string): boolean {
   return ready.has(slug);
