@@ -5,7 +5,8 @@ import { GameImage } from "@/components/editorial";
 import { pageMetadata } from "@/lib/seo";
 import { englishDossierBatch } from "@/lib/english-dossier-batch-20261016";
 import { englishDossierBatch25 } from "@/lib/english-dossier-batch25-20261016";
-const englishDossiers: Record<string, { introduction?: string; rules: string; feature: string; perspective: string }> = { ...englishDossierBatch, ...englishDossierBatch25 };
+import { englishDossierBatch25B } from "@/lib/english-dossier-batch25b-20261016";
+const englishDossiers: Record<string, { introduction?: string; rules: string; feature: string; perspective: string }> = { ...englishDossierBatch, ...englishDossierBatch25, ...englishDossierBatch25B };
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -68,7 +69,8 @@ export default async function EnglishGameDossier({ params }: { params: Promise<{
             <p>Volatility does not predict the result of any individual spin. A published RTP is a theoretical long-run figure, not a return promised to a player.</p>
           </section>
           <section id="source"><h2>Sources and risks</h2>
-            <p>This guide uses the Slotfolio dossier and its recorded publisher reference. If the game has several RTP settings or variants, the applicable in-game rules take precedence.</p>
+            <p>This guide is based on the Slotfolio source dossier and the reference recorded for this game. Published figures may differ between configurations. Check the in-game paytable and rules for the version available to you.</p>
+            {/^https:\/\//.test(game.source) && <p><a href={game.source} target="_blank" rel="noopener noreferrer">Publisher information / primary reference ↗</a></p>}
             <p>Gambling can result in losing the money you stake. <Link href="/en/responsible-gaming">Safer gambling information</Link> · <Link href="/en/editorial-policy">Editorial policy</Link></p>
           </section>
         </article>
