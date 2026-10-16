@@ -309,7 +309,7 @@ export function Catalog({
           ) : (
             <>
               <div className={"catalog-results " + view} lang={locale === "en" ? "ru" : undefined}>
-                {visibleResults.map((item) => <CatalogGameCard item={item} number={catalogNumbers.get(item.slug) || 0} key={item.slug} />)}
+                {visibleResults.map((item) => <CatalogGameCard item={item} number={catalogNumbers.get(item.slug) || 0} locale={locale} key={item.slug} />)}
               </div>
 
               {pageCount > 1 && (
