@@ -308,7 +308,7 @@ export function Catalog({
             </div>
           ) : (
             <>
-              <div className={"catalog-results " + view} lang={locale === "en" ? "ru" : undefined}>
+              <div className={"catalog-results " + view} lang={locale === "en" ? "en" : undefined}>
                 {visibleResults.map((item) => <CatalogGameCard item={item} number={catalogNumbers.get(item.slug) || 0} locale={locale} key={item.slug} />)}
               </div>
 
