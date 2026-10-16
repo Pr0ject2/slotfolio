@@ -5,6 +5,8 @@ test("English catalogue links reviewed dossiers and labels untranslated records"
   const translated = page.locator('[data-slot="gates-of-olympus"]');
   await expect(translated).toBeVisible();
   await expect(translated.locator('h2 a')).toHaveAttribute("href", /\/en\/slots\/gates-of-olympus/);
+  // With 56 reviewed dossiers, first-page entries are already translated.
+  await page.goto("/en/slots/?page=4");
   const untranslated = page.locator('.catalog-game').filter({ hasText: "Detailed review in Russian" }).first();
   await expect(untranslated).toBeVisible();
   await expect(untranslated.locator("dl")).toHaveAttribute("aria-label", "Game details");
