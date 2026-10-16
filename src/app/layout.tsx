@@ -55,6 +55,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {/* Sync the top-level document language for static /en pages without
             request headers, middleware or runtime locale negotiation. */}
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang = /^\\/en(?:\\/|$)/.test(location.pathname.replace(/^\\/slotfolio(?=\\/|$)/, '')) ? 'en' : 'ru';" }} />
+        {/* Save an explicit language click even before React has hydrated the header. */}
+        <script dangerouslySetInnerHTML={{ __html: `document.addEventListener('click', function(event) {
+          var link = event.target instanceof Element ? event.target.closest('a[data-language-choice]') : null;
+          var locale = link && link.getAttribute('data-language-choice');
+          if (locale === 'ru' || locale === 'en') {
+            try { localStorage.setItem('slotfolio-language', locale); } catch {}
+          }
+        }, true);` }} />
         <JsonLd
           data={{
             "@context": "https://schema.org",
