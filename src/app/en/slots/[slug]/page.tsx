@@ -65,7 +65,7 @@ export default async function EnglishGameDossier({ params }: { params: Promise<{
           <section id="rules"><h2>How wins work</h2><p>{copy.rules}</p></section>
           <section id="feature"><h2>Key feature</h2><p>{copy.feature}</p></section>
           <section id="perspective"><h2>Editorial perspective</h2><p>{copy.perspective}</p>
-            <p>High volatility does not predict the result of any individual spin. A published RTP is a theoretical long-run figure, not a return promised to a player.</p>
+            <p>Volatility does not predict the result of any individual spin. A published RTP is a theoretical long-run figure, not a return promised to a player.</p>
           </section>
           <section id="source"><h2>Sources and risks</h2>
             <p>This guide uses the Slotfolio dossier and its recorded publisher reference. If the game has several RTP settings or variants, the applicable in-game rules take precedence.</p>
