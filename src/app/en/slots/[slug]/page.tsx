@@ -6,7 +6,8 @@ import { pageMetadata } from "@/lib/seo";
 import { englishDossierBatch } from "@/lib/english-dossier-batch-20261016";
 import { englishDossierBatch25 } from "@/lib/english-dossier-batch25-20261016";
 import { englishDossierBatch25B } from "@/lib/english-dossier-batch25b-20261016";
-const englishDossiers: Record<string, { introduction?: string; rules: string; feature: string; perspective: string }> = { ...englishDossierBatch, ...englishDossierBatch25, ...englishDossierBatch25B };
+import { englishDossierBatch25C } from "@/lib/english-dossier-batch25c-20261016";
+const englishDossiers: Record<string, { introduction?: string; rules: string; feature: string; perspective: string }> = { ...englishDossierBatch, ...englishDossierBatch25, ...englishDossierBatch25B, ...englishDossierBatch25C };
 
 export const dynamicParams = false;
 export function generateStaticParams() {
