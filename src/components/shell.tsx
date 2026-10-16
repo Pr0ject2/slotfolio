@@ -10,6 +10,31 @@ export function Header() {
   const path = usePathname();
   const english = isEnglishPath(path);
   useEffect(() => { document.documentElement.lang = english ? "en" : "ru"; }, [english]);
+  useEffect(() => {
+    // Static hosting: language negotiation happens in the browser, not at the edge.
+    // An explicit saved choice always wins over browser settings.
+    let preference: "ru" | "en" | null = null;
+    try {
+      const stored = window.localStorage.getItem("slotfolio-language");
+      if (stored === "ru" || stored === "en") preference = stored;
+    } catch { /* Storage may be disabled; browser language still works. */ }
+    const browserLanguages = navigator.languages?.length ? navigator.languages : [navigator.language];
+    const browserLocale = browserLanguages.some((value) => /^ru(?:-|$)/i.test(value)) &&
+      !browserLanguages.some((value, index) => index === 0 && !/^ru(?:-|$)/i.test(value))
+      ? "ru" : "en";
+    // Direct /en links are intentional; do not override them on first visit.
+    const targetLocale = preference ?? (isEnglishPath(path) ? "en" : browserLocale);
+    const target = languageHref(path, targetLocale);
+    const current = path.replace(/\/$/, "") || "/";
+    if (target !== current) {
+      window.location.replace(target + window.location.search + window.location.hash);
+    }
+  }, [path]);
+  function chooseLanguage(locale: "ru" | "en") {
+    try { window.localStorage.setItem("slotfolio-language", locale); }
+    catch { /* Keep navigation functional when persistence is unavailable. */ }
+    setOpen(false);
+  }
   const to = (route: string) => english ? languageHref(route, "en") : route;
   useEffect(() => {
     const desktop = window.matchMedia("(min-width: 601px)");
@@ -89,7 +114,7 @@ export function Header() {
             {english ? "Safer gambling" : "Сравнить игры"} <span>↗</span>
           </Link>
           <Link href={languageHref(path, english ? "ru" : "en")} hrefLang={english ? "ru" : "en"} lang={english ? "ru" : "en"}
-            className={styles.languageSwitch} onClick={() => setOpen(false)}>
+            className={styles.languageSwitch} onClick={() => chooseLanguage(english ? "ru" : "en")}>
             {english ? "RU" : "EN"}
           </Link>
         </div>
