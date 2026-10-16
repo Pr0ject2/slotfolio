@@ -4789,3 +4789,7 @@ summary {
   object-fit: contain;
   background: #f8cce4;
 }
+
+/* The keyboard skip link uses the actual page language, including static /en pages. */
+html[lang="ru"] .skip-link[data-locale="en"],
+html[lang="en"] .skip-link[data-locale="ru"] { display: none; }

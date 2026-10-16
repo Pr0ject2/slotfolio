@@ -32,9 +32,13 @@ npm run build
 # Fail closed: never publish a root-domain artifact with broken URLs or indexing.
 test -s out/index.html
 test -s out/slots/index.html
+test -s out/en/index.html
+test -s out/en/about/index.html
+test -s out/en/responsible-gaming/index.html
 test -s out/sitemap.xml
 test -s out/robots.txt
 grep -qi 'noindex' out/index.html
+grep -qi 'noindex' out/en/index.html
 grep -q 'Disallow: /' out/robots.txt
 grep -q 'https://slotfolio.org/' out/sitemap.xml
 echo "Cloudflare Pages static root-domain preview generated (noindex)."
