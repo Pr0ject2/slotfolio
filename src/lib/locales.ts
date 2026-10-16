@@ -5,6 +5,8 @@ export type SiteLocale = "ru" | "en";
 export const englishReadyPaths = [
   "/",
   "/about",
+  "/slots",
+  "/search",
   "/editorial-policy",
   "/privacy",
   "/disclosure",
