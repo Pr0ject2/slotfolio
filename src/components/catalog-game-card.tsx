@@ -4,9 +4,7 @@ import { GameImage } from "./editorial-client";
 import type { CatalogItem } from "@/lib/catalog-query";
 import { getCatalogArtwork } from "@/lib/catalog-artwork";
 import styles from "./catalog-game-card.module.css";
-import { englishDossierBatch } from "@/lib/english-dossier-batch-20261016";
-import { englishDossierBatch25 } from "@/lib/english-dossier-batch25-20261016";
-import { englishDossierBatch25B } from "@/lib/english-dossier-batch25b-20261016";
+import { hasEnglishDossier } from "@/lib/english-dossier-routes";
 
 function displayRelease(value: string) {
   if (!value) return "";
@@ -51,7 +49,7 @@ function displayFacts(item: CatalogItem, locale: "ru" | "en"): DisplayFact[] {
 
 export function CatalogGameCard({ item, number, locale = "ru" }: { item: CatalogItem; number: number; locale?: "ru" | "en" }) {
   const href = item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
-  const englishDossier = locale === "en" && (item.slug === "gates-of-olympus" || Object.prototype.hasOwnProperty.call(englishDossierBatch, item.slug) || Object.prototype.hasOwnProperty.call(englishDossierBatch25, item.slug) || Object.prototype.hasOwnProperty.call(englishDossierBatch25B, item.slug));
+  const englishDossier = locale === "en" && hasEnglishDossier(item.slug);
   const destination = englishDossier ? `/en/slots/${item.slug}` : href;
   const year = displayYear(item);
   const facts = displayFacts(item, locale);
