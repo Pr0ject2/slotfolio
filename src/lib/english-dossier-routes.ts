@@ -1,4 +1,4 @@
-/** Reviewed English dossier routes. Compact registry avoids shipping editorial copy in navigation. */
+/** Source-backed English dossier route registry, used by locale switch and metadata. */
 export const englishDossierSlugs = [
   "gates-of-olympus",
   "sweet-bonanza",
@@ -80,7 +80,26 @@ export const englishDossierSlugs = [
   "wolf-hunt-claw-and-win",
   "claw-bonanza-gold-rush",
   "double-triple-burning-wilds",
-  "clawbass-bonanza"
+  "clawbass-bonanza",
+  "clawbass-bonanza-free-rush",
+  "3-claws-of-aztec-fire",
+  "great-clawsby-deluxe",
+  "fruit-train-express-hold-win",
+  "hot-and-spicy-jackpot",
+  "wild-west-girls",
+  "caramelo-jackpot",
+  "coin-flynn",
+  "coin-craze-jackpot",
+  "caishen-gold-infinity-dragon",
+  "money-booster",
+  "midas-hand-of-fortune",
+  "mustang-rush",
+  "power-of-zeus-mancala",
+  "life-and-death",
+  "rad-maxx",
+  "777-coins",
+  "3-hot-chillies",
+  "egypt-fire"
 ] as const;
 const readyDossiers = new Set<string>(englishDossierSlugs);
 export function hasEnglishDossier(slug: string): boolean {
