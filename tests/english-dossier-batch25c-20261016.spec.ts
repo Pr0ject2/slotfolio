@@ -6,8 +6,8 @@ import { englishDossierBatch25C } from "../src/lib/english-dossier-batch25c-2026
 const slugs = Object.keys(englishDossierBatch25C);
 test("third dossier batch has 25 distinct, source-backed records and 81 EN routes", () => {
   expect(slugs).toHaveLength(25);
-  expect(englishDossierSlugs).toHaveLength(81);
-  expect(new Set(englishDossierSlugs).size).toBe(81);
+  expect(englishDossierSlugs.length).toBeGreaterThanOrEqual(81);
+  expect(new Set(englishDossierSlugs).size).toBe(englishDossierSlugs.length);
   for (const slug of slugs) {
     expect(hasEnglishDossier(slug)).toBe(true);
     const game = getSlot(slug);

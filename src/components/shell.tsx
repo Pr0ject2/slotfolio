@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import styles from "./shell.module.css";
 import { isEnglishPath, languageHref, translatedCounterpart } from "@/lib/locales";
+import { withBasePath } from "@/lib/base-path";
 export function Header() {
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
@@ -28,7 +29,7 @@ export function Header() {
     const target = languageHref(path, targetLocale);
     const current = path.replace(/\/$/, "") || "/";
     if (target !== current) {
-      window.location.replace(target + window.location.search + window.location.hash);
+      window.location.replace(withBasePath(target) + window.location.search + window.location.hash);
     }
   }, [path]);
   function chooseLanguage(locale: "ru" | "en") {
@@ -115,6 +116,7 @@ export function Header() {
             {english ? "Safer gambling" : "Сравнить игры"} <span>↗</span>
           </Link>
           <Link href={languageHref(path, english ? "ru" : "en")} hrefLang={english ? "ru" : "en"} lang={english ? "ru" : "en"}
+            data-language-choice={english ? "ru" : "en"}
             className={styles.languageSwitch} onClick={() => chooseLanguage(english ? "ru" : "en")}>
             {english ? "RU" : "EN"}
           </Link>

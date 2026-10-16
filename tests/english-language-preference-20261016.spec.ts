@@ -1,5 +1,30 @@
 import { test, expect } from "@playwright/test";
 
+test.use({ baseURL: process.env.AUDIT_BASE_URL || "http://localhost:3000" });
+
+test("a manual language choice is saved even before React hydrates", async ({ browser }) => {
+  const context = await browser.newContext({ locale: "en-GB" });
+  await context.route("**/_next/static/chunks/**", route => route.abort());
+  const page = await context.newPage();
+  await page.goto("/en/");
+  await page.getByRole("link", { name: "RU", exact: true }).click();
+  await expect(page).toHaveURL(/\/$/);
+  expect(await page.evaluate(() => localStorage.getItem("slotfolio-language"))).toBe("ru");
+  await context.close();
+});
+
+test("automatic language selection preserves the hosting mount, query and fragment", async ({ browser }) => {
+  const context = await browser.newContext({ locale: "en-GB" });
+  const page = await context.newPage();
+  const mount = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  await page.goto(`${mount}/?locale-check=1#main`);
+  await expect.poll(() => new URL(page.url()).pathname.replace(/\/$/, "")).toBe(`${mount}/en`);
+  expect(new URL(page.url()).search).toBe("?locale-check=1");
+  expect(new URL(page.url()).hash).toBe("#main");
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  await context.close();
+});
+
 test("uses the browser language on first visit and keeps a manual choice", async ({ browser }) => {
   const context = await browser.newContext({ locale: "en-GB" });
   const page = await context.newPage();
