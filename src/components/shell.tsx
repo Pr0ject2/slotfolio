@@ -19,9 +19,7 @@ export function Header() {
       if (stored === "ru" || stored === "en") preference = stored;
     } catch { /* Storage may be disabled; browser language still works. */ }
     const browserLanguages = navigator.languages?.length ? navigator.languages : [navigator.language];
-    const browserLocale = browserLanguages.some((value) => /^ru(?:-|$)/i.test(value)) &&
-      !browserLanguages.some((value, index) => index === 0 && !/^ru(?:-|$)/i.test(value))
-      ? "ru" : "en";
+    const browserLocale = /^ru(?:-|$)/i.test(browserLanguages[0] || "") ? "ru" : "en";
     // Direct /en links are intentional; do not override them on first visit.
     const targetLocale = preference ?? (isEnglishPath(path) ? "en" : browserLocale);
     const target = languageHref(path, targetLocale);
