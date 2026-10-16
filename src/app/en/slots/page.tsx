@@ -8,7 +8,6 @@ export const metadata = pageMetadata({
   title: "Slot game catalogue | Slotfolio",
   description: "Browse 1,000 slot games by publisher, mechanic, volatility and RTP. Game reviews are currently in Russian.",
   path: "/en/slots",
-  locale: "en",
   noIndex: true,
 });
 
