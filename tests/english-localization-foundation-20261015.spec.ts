@@ -13,12 +13,18 @@ const englishUrls = [
   "/en/journal/understanding-rtp",
 ];
 
-test("only fully translated paths are exposed by the language selector", () => {
-  expect(englishReadyPaths).toHaveLength(7);
+test("the language selector includes reviewed English pages and catalogue entry points", () => {
+  expect(englishReadyPaths).toEqual([
+    "/", "/about", "/slots", "/search", "/editorial-policy", "/privacy",
+    "/disclosure", "/responsible-gaming", "/journal/understanding-rtp",
+  ]);
   expect(languageHref("/about", "en")).toBe("/en/about");
   expect(languageHref("/en/about", "ru")).toBe("/about");
   expect(languageHref("/en/journal/understanding-rtp", "ru")).toBe("/journal/understanding-rtp");
-  expect(languageHref("/slots/gates-of-olympus", "en")).toBe("/en");
+  expect(languageHref("/slots", "en")).toBe("/en/slots");
+  expect(languageHref("/search", "en")).toBe("/en/search");
+  expect(languageHref("/slots/gates-of-olympus", "en")).toBe("/en/slots/gates-of-olympus");
+  expect(languageHref("/slots/catalog/no-such-entry", "en")).toBe("/en");
   expect(languageHref("/en", "ru")).toBe("/");
 });
 
