@@ -6,6 +6,7 @@ import { getCatalogArtwork } from "@/lib/catalog-artwork";
 import styles from "./catalog-game-card.module.css";
 import { hasEnglishDossier } from "@/lib/english-dossier-routes";
 import { hasEnglishCatalogRecord } from "@/lib/english-catalog-record-routes";
+import { englishCatalogFact } from "@/lib/english-catalog-facts";
 
 function displayRelease(value: string) {
   if (!value) return "";
@@ -34,11 +35,6 @@ const englishVolatility: Record<string, string> = {
   "Низкая": "Low", "Средняя": "Medium", "Высокая": "High",
   "Очень высокая": "Very high", "Экстремальная": "Extreme",
 };
-const englishMechanics: Record<string, string> = {
-  "Каскады": "Cascades", "Кластеры": "Cluster pays",
-  "Линии": "Paylines", "Сбор символов": "Symbol collection",
-  "Способы": "Ways to win",
-};
 const englishTags: Record<string, string> = {
   "Свободные вращения": "Free spins", "Множители": "Multipliers",
   "Каскады": "Cascades", "Шкала прогресса": "Progress meter",
@@ -62,7 +58,8 @@ function displayFacts(item: CatalogItem, locale: "ru" | "en"): DisplayFact[] {
     { label: locale === "en" ? "Release" : "Релиз", value: item.releaseDate ? displayRelease(item.releaseDate) : "" },
   ];
 
-  return facts.filter((fact) => Boolean(fact.value));
+  return facts.filter((fact) => Boolean(fact.value)).map(fact =>
+    locale === "en" ? { ...fact, value: englishCatalogFact(fact.value) } : fact);
 }
 
 export function CatalogGameCard({ item, number, locale = "ru" }: { item: CatalogItem; number: number; locale?: "ru" | "en" }) {
@@ -95,7 +92,7 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
         </div>
 
         <h2><Link href={destination}>{item.name}</Link></h2>
-        {locale === "en" && !englishDossier ? <span className="eyebrow" lang="en">Detailed review in Russian</span> : null}
+        {locale === "en" && !englishDossier ? <span className="eyebrow" lang="en">{englishCatalogRecord ? "Technical record in English" : "Game record in Russian"}</span> : null}
 
         {item.coverage === "dossier" && (
           locale === "en" && englishDossier
@@ -105,7 +102,10 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
 
         {item.mechanics.length ? (
           <div className={styles.mechanics} aria-label={locale === "en" ? "Mechanics" : "Механики"}>
-            {item.mechanics.map((mechanic) => <span key={mechanic} lang={locale === "en" && !englishMechanics[mechanic] ? "ru" : undefined}>{locale === "en" ? (englishMechanics[mechanic] ?? mechanic) : mechanic}</span>)}
+            {item.mechanics.map((mechanic) => {
+              const label = locale === "en" ? englishCatalogFact(mechanic) : mechanic;
+              return <span key={mechanic} lang={locale === "en" && /[А-Яа-яЁё]/.test(label) ? "ru" : undefined}>{label}</span>;
+            })}
           </div>
         ) : null}
 

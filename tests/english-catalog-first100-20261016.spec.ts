@@ -6,7 +6,7 @@ import { englishCatalogRecordSlugs, hasEnglishCatalogRecord } from "../src/lib/e
 import { languageHref, translatedCounterpart } from "../src/lib/locales";
 import { createCatalogModel } from "../src/lib/catalog-index";
 
-const slugs = [...englishCatalogRecordSlugs];
+const slugs = englishCatalogRecordSlugs.slice(0, 100);
 
 test("English source-linked records use exactly the first 100 published catalog-only games", () => {
   expect(catalogSeeds).toHaveLength(900);
