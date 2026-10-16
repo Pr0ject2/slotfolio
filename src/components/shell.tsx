@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import styles from "./shell.module.css";
-import { isEnglishPath, languageHref } from "@/lib/locales";
+import { isEnglishPath, languageHref, translatedCounterpart } from "@/lib/locales";
 export function Header() {
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
@@ -22,6 +22,8 @@ export function Header() {
     const browserLocale = /^ru(?:-|$)/i.test(browserLanguages[0] || "") ? "ru" : "en";
     // Direct /en links are intentional; do not override them on first visit.
     const targetLocale = preference ?? (isEnglishPath(path) ? "en" : browserLocale);
+    // Preserve deep links to pages that do not yet have an English counterpart.
+    if (targetLocale === "en" && !isEnglishPath(path) && !translatedCounterpart(path)) return;
     const target = languageHref(path, targetLocale);
     const current = path.replace(/\/$/, "") || "/";
     if (target !== current) {
