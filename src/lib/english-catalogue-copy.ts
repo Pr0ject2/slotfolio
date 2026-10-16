@@ -40,7 +40,7 @@ export const englishCatalogueCopy = {
   next: "Next",
   previous: "Previous",
   of: "of",
-  gameDescriptionsNotice: "The game descriptions and detailed reviews are currently available in Russian.",
+  gameDescriptionsNotice: "English game guides are being added in batches. Some game details are still available only in Russian.",
   russian: "Russian",
   compareInRussian: "Compare games (Russian)",
   guideInRussian: "Read the editorial selection (Russian)",
