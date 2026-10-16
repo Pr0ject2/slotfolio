@@ -1,4 +1,4 @@
-/** Reviewed English dossier routes. Kept compact to avoid shipping article copy in the language switch. */
+/** Reviewed English dossier routes. Compact list avoids bundling article copy in the language switch. */
 export const englishDossierSlugs = [
   "gates-of-olympus",
   "sweet-bonanza",
@@ -22,6 +22,9 @@ export const englishDossierSlugs = [
   "retro-tapes",
   "chaos-crew",
   "chaos-crew-2",
+  "deadwood",
+  "mental",
+  "starburst",
   "gonzos-quest",
   "dead-or-alive-2",
   "money-train-2",
