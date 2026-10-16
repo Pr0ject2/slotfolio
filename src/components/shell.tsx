@@ -18,7 +18,7 @@ export function Header() {
     return () => desktop.removeEventListener("change", reset);
   }, []);
   const links = english
-    ? [["/en", "Home"], ["/en/journal/understanding-rtp", "RTP guide"], ["/en/about", "About"], ["/en/editorial-policy", "Editorial policy"]]
+    ? [["/en", "Home"], ["/en/slots", "Catalogue"], ["/en/search", "Search"], ["/en/journal/understanding-rtp", "RTP guide"], ["/en/about", "About"], ["/en/editorial-policy", "Editorial policy"]]
     : [["/slots", "Слоты"], ["/mechanics", "Механики"], ["/journal", "Разборы"], ["/collections", "Подборки"]];
   return (
     <header lang={english ? "en" : "ru"} className={`header ${styles.header}`} onKeyDown={(event) => {
@@ -39,7 +39,7 @@ export function Header() {
         <span className="header-edition">
           {english ? "GAME RULES · GUIDES · RTP" : "КАТАЛОГ · РАЗБОРЫ · СРАВНЕНИЕ"} <span>18+</span>
         </span>
-        <Link className="header-search" href="/search" aria-label={english ? "Game search (Russian)" : "Найти игру"}>
+        <Link className="header-search" href={english ? "/en/search" : "/search"} aria-label={english ? "Find a game" : "Найти игру"}>
           <svg
             width="19"
             height="19"
@@ -52,7 +52,7 @@ export function Header() {
             <circle cx="10.5" cy="10.5" r="6.5" />
             <path d="m16 16 5 5" />
           </svg>
-          <span>{english ? "Search (RU)" : "Найти игру"}</span>
+          <span>{english ? "Search" : "Найти игру"}</span>
         </Link>
         <button
           ref={menuButton}
@@ -82,8 +82,8 @@ export function Header() {
           ))}
         </nav>
         <div className="secondary-nav">
-          <Link href={english ? "/slots" : "/providers"} onClick={() => setOpen(false)}>
-            {english ? "Catalogue (RU)" : "Провайдеры"}
+          <Link href={english ? "/en/slots" : "/providers"} onClick={() => setOpen(false)}>
+            {english ? "Catalogue" : "Провайдеры"}
           </Link>
           <Link href={english ? "/en/responsible-gaming" : "/compare"} onClick={() => setOpen(false)}>
             {english ? "Safer gambling" : "Сравнить игры"} <span>↗</span>
@@ -110,7 +110,7 @@ export function Footer() {
           <span className="eyebrow">Read</span>
           <Link href="/en">Home</Link>
           <Link href="/en/journal/understanding-rtp">Understanding RTP</Link>
-          <Link href="/slots">Game catalogue (Russian)</Link>
+          <Link href="/en/slots">Game catalogue</Link>
         </div>
         <div>
           <span className="eyebrow">About Slotfolio</span>
