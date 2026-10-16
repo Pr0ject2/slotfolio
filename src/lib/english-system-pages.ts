@@ -68,7 +68,11 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
           "To share a clean link, use the game's page or the catalogue address without anything after the question mark.",
           "Clearing the comparison list does not remove browser history; delete individual visits separately if necessary.",
         ],
-        links: [{ label: "Browse the catalogue (Russian interface)", href: "/slots" }],
+        links: [{ label: "Browse the catalogue", href: "/en/slots" }],
+      },
+      {
+        title: "Your language choice",
+        text: "The RU/EN switch saves your choice in this browser on this device. A saved choice takes priority over the browser language. You can change it with the switch or remove it by clearing Slotfolio's site data in your browser settings.",
       },
       {
         title: "Loading pages and following other websites",

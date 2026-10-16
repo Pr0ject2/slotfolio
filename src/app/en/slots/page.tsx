@@ -6,7 +6,7 @@ import { englishCatalogueCopy as en } from "@/lib/english-catalogue-copy";
 
 export const metadata = pageMetadata({
   title: "Slot game catalogue | Slotfolio",
-  description: "Browse 1,000 slot games by publisher, mechanic, volatility and RTP. Game reviews are currently in Russian.",
+  description: "Browse 1,000 slot games by publisher and mechanic. Open reviewed English guides and source-linked catalogue facts, with Russian originals clearly marked.",
   path: "/en/slots",
   noIndex: true,
 });

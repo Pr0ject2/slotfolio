@@ -1,5 +1,6 @@
+import { englishCatalogBatch03Slugs } from "./english-catalog-batch03";
 import { englishCatalogBatch02Slugs } from "./english-catalog-batch02";
-/** First 100 published catalogue-only English technical records. This registry
+/** Reviewed published catalogue-only English technical records. This registry
  * mirrors the approved provider-round-robin selection from catalogSeeds.
  */
 const first100Slugs = [
@@ -104,7 +105,7 @@ const first100Slugs = [
   "hacksaw-gaming-chaos-crew-3",
   "playn-go-alice-cooper-and-the-tome-of-madness"
 ] as const;
-export const englishCatalogRecordSlugs = [...first100Slugs, ...englishCatalogBatch02Slugs] as const;
+export const englishCatalogRecordSlugs = [...first100Slugs, ...englishCatalogBatch02Slugs, ...englishCatalogBatch03Slugs] as const;
 const ready = new Set<string>(englishCatalogRecordSlugs);
 export function hasEnglishCatalogRecord(slug: string): boolean {
   return ready.has(slug);
