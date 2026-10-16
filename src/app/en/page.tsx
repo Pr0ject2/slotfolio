@@ -23,32 +23,32 @@ export default function EnglishHome() {
       </div>
       <section className="front-lead">
         <article className="cover-story">
-          <Link href={`/slots/${featured.slug}`} className="cover-art" aria-label="Gates of Olympus game dossier, Russian language">
+          <Link href={`/en/slots/${featured.slug}`} className="cover-art" aria-label="Gates of Olympus English game guide">
             <SlotArtwork
               className="game-image"
               src={withBasePath(featured.featureImage || featured.image)}
               alt="Gates of Olympus game artwork"
               width={500} height={280} loading="eager" decoding="async"
             />
-            <span className="image-caption">GAME DOSSIER (RU) ↗</span>
+            <span className="image-caption">GAME GUIDE (EN) ↗</span>
           </Link>
           <div className="cover-copy">
             <span className="eyebrow accent">Game rules / Pragmatic Play</span>
-            <h1><Link href={`/slots/${featured.slug}`}>Gates of Olympus <span className="eyebrow">(RU)</span></Link></h1>
+            <h1><Link href={`/en/slots/${featured.slug}`}>Gates of Olympus</Link></h1>
             <p>Cascading wins and multipliers can make a single spin more involved than it first appears. We explain the rules behind those features, not what your next spin will pay.</p>
-            <Link className="text-link" href={`/slots/${featured.slug}`}>Read dossier (Russian) ↗</Link>
+            <Link className="text-link" href={`/en/slots/${featured.slug}`}>Read English game guide ↗</Link>
           </div>
         </article>
         <aside className="front-aside">
           <article className="side-story">
-            <Link href={`/slots/${secondary.slug}`} aria-label="Reactoonz game dossier, Russian language">
+            <Link href={`/en/slots/${secondary.slug}`} aria-label="Reactoonz English game guide">
               <SlotArtwork className="game-image" src={withBasePath(secondary.image)}
                 alt="Reactoonz game artwork" width={500} height={280} loading="lazy" decoding="async" />
             </Link>
             <span className="eyebrow accent">Different rules for forming wins</span>
-            <h2><Link href={`/slots/${secondary.slug}`}>Reactoonz: beyond paylines (RU)</Link></h2>
+            <h2><Link href={`/en/slots/${secondary.slug}`}>Reactoonz: beyond paylines</Link></h2>
             <p>Reactoonz rewards groups of adjacent symbols rather than combinations along traditional paylines. Learn why that distinction matters.</p>
-            <Link className="text-link" href={`/slots/${secondary.slug}`}>Original dossier (Russian) ↗</Link>
+            <Link className="text-link" href={`/en/slots/${secondary.slug}`}>Read English game guide ↗</Link>
           </article>
           <div className="reading-note">
             <span className="eyebrow">Before you play</span>
@@ -87,9 +87,9 @@ export default function EnglishHome() {
       <div className="editorial-signoff">
         <span className="brand-small">s.</span>
         <p>Our English-language coverage is expanding.
-          <br /><span>The 1,000-game catalogue and individual game dossiers are currently in Russian.</span>
+          <br /><span>You can now browse the catalogue in English. More English game guides are being added; some detailed records remain in Russian.</span>
         </p>
-        <Link href="/slots">Open Russian catalogue ↗</Link>
+        <Link href="/en/slots">Browse the catalogue ↗</Link>
       </div>
     </>
   );

@@ -87,8 +87,9 @@ for (const width of [320, 390, 768, 1024, 1440]) {
         expect(
           await first.evaluate((node) => getComputedStyle(node).outlineStyle),
         ).not.toBe("none");
+        const expectedHash = await first.getAttribute("href");
         await page.keyboard.press("Enter");
-        expect(new URL(page.url()).hash).toBe(await first.getAttribute("href"));
+        await expect.poll(() => new URL(page.url()).hash).toBe(expectedHash);
       }
       await page.evaluate(() =>
         window.scrollTo({ top: 0, behavior: "instant" }),
