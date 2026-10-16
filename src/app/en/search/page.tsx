@@ -7,7 +7,6 @@ export const metadata = pageMetadata({
   title: "Find a slot game | Slotfolio",
   description: "Search 1,000 games by title, publisher and mechanics. Detailed game reviews are currently in Russian.",
   path: "/en/search",
-  locale: "en",
   noIndex: true,
 });
 
