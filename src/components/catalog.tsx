@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { CatalogGameCard } from "./catalog-game-card";
+import { englishCatalogueCopy as en } from "@/lib/english-catalogue-copy";
 import {
   filterCatalogItems,
   sortCatalogItems,
@@ -42,10 +43,11 @@ function useUrlFilter(name: string, initial: string) {
   return [value, update] as const;
 }
 
-export function CatalogFromUrl({ model }: { model: CatalogModel }) {
+export function CatalogFromUrl({ model, locale = "ru" }: { model: CatalogModel; locale?: "ru" | "en" }) {
   const params = useSearchParams();
   return (
     <Catalog
+      locale={locale}
       model={model}
       initialQ={params.get("q") || ""}
       initialProvider={params.get("provider") || ""}
@@ -62,6 +64,7 @@ export function CatalogFromUrl({ model }: { model: CatalogModel }) {
 
 export function Catalog({
   model,
+  locale = "ru",
   initialQ = "",
   initialProvider = "",
   initialMechanic = "",
@@ -73,6 +76,7 @@ export function Catalog({
   initialView = "list",
 }: {
   model: CatalogModel;
+  locale?: "ru" | "en";
   initialQ?: string;
   initialProvider?: string;
   initialMechanic?: string;
@@ -148,19 +152,20 @@ export function Catalog({
   return (
     <div className="catalog">
       <form className="catalog-search" onSubmit={(e) => e.preventDefault()} role="search">
-        <label htmlFor="catalog-q">Найти игру</label>
+        <label htmlFor="catalog-q">{locale === "en" ? en.search : "Найти игру"}</label>
         <div>
           <input
             type="search"
             id="catalog-q"
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="Название, провайдер, механика или особенность"
+            placeholder={locale === "en" ? en.searchPlaceholder : "Название, провайдер, механика или особенность"}
           />
           <span aria-hidden="true">↗</span>
         </div>
       </form>
 
+      {locale === "en" && <p lang="en" role="note">{en.gameDescriptionsNotice}</p>}
       <div className="catalog-layout">
         <aside className="filter-panel">
           <button
@@ -169,14 +174,14 @@ export function Catalog({
             aria-controls="catalog-filters"
             onClick={() => setFiltersOpen(!filtersOpen)}
           >
-            Фильтры {hasFilters ? "· активны" : ""}
+            {locale === "en" ? en.filters : "Фильтры"} {hasFilters ? (locale === "en" ? "· active" : "· активны") : ""}
             <span>{filtersOpen ? "−" : "+"}</span>
           </button>
           <div id="catalog-filters" className={filtersOpen ? "filters open" : "filters"}>
-            <div className="filter-heading">Уточнить выбор</div>
-            <label htmlFor="provider">Провайдер</label>
+            <div className="filter-heading">{locale === "en" ? en.refine : "Уточнить выбор"}</div>
+            <label htmlFor="provider">{locale === "en" ? en.publisher : "Провайдер"}</label>
             <select id="provider" value={provider} onChange={(e) => setProvider(e.target.value)}>
-              <option value="">Все провайдеры · {model.facets.total}</option>
+              <option value="">{locale === "en" ? en.allPublishers : "Все провайдеры"} · {model.facets.total}</option>
               {model.facets.providers.map((item) => (
                 <option key={item.slug} value={item.slug}>
                   {item.name} · {item.count}
@@ -185,10 +190,10 @@ export function Catalog({
             </select>
 
             <fieldset>
-              <legend>Механика</legend>
+              <legend>{locale === "en" ? en.mechanics : "Механика"}</legend>
               <label>
                 <input type="radio" name="mechanic" checked={!mechanic} onChange={() => setMechanic("")} />
-                Все механики
+                {locale === "en" ? en.allMechanics : "Все механики"}
               </label>
               {model.facets.mechanics.map((item) => (
                 <label key={item.slug}>
@@ -205,9 +210,9 @@ export function Catalog({
             </fieldset>
 
             <div className="filter-select-group">
-              <label htmlFor="volatility">Волатильность</label>
+              <label htmlFor="volatility">{locale === "en" ? en.volatility : "Волатильность"}</label>
               <select id="volatility" value={volatility} onChange={(e) => setVolatility(e.target.value)}>
-                <option value="">Любая</option>
+                <option value="">{locale === "en" ? en.any : "Любая"}</option>
                 {model.facets.volatility.map((item) => (
                   <option key={item.name} value={item.name}>
                     {item.name} · {item.count}
@@ -217,17 +222,17 @@ export function Catalog({
             </div>
 
             <div className="filter-select-group">
-              <label htmlFor="rtp">RTP, справочно</label>
+              <label htmlFor="rtp">{locale === "en" ? en.rtp : "RTP, справочно"}</label>
               <select id="rtp" value={rtp} onChange={(e) => setRtp(e.target.value)}>
-                <option value="">Любой</option>
-                <option value="96">Не ниже 96,00%</option>
-                <option value="96.5">Не ниже 96,50%</option>
-                <option value="97">Не ниже 97,00%</option>
+                <option value="">{locale === "en" ? en.any : "Любой"}</option>
+                <option value="96">{locale === "en" ? "At least 96.00%" : "Не ниже 96,00%"}</option>
+                <option value="96.5">{locale === "en" ? "At least 96.50%" : "Не ниже 96,50%"}</option>
+                <option value="97">{locale === "en" ? "At least 97.00%" : "Не ниже 97,00%"}</option>
               </select>
             </div>
 
             <div className="filter-select-group">
-              <label htmlFor="feature">Особенность</label>
+              <label htmlFor="feature">{locale === "en" ? en.feature : "Особенность"}</label>
               <select id="feature" value={feature} onChange={(e) => setFeature(e.target.value)}>
                 <option value="">Любая</option>
                 {model.facets.features.map((item) => (
@@ -239,17 +244,17 @@ export function Catalog({
             </div>
 
             <button className="reset-link" onClick={reset} disabled={!hasFilters && sort === "editorial"}>
-              Сбросить фильтры ↺
+              {locale === "en" ? en.reset : "Сбросить фильтры"} ↺
             </button>
             <p className="filter-note">
-              Не знаете, с чего начать?
+              {locale === "en" ? "Not sure where to start?" : "Не знаете, с чего начать?"}
               <br />
-              <Link href="/collections/beyond-lines">Посмотрите подборку редакции ↗</Link>
+              <Link href="/collections/beyond-lines">{locale === "en" ? en.guideInRussian : "Посмотрите подборку редакции ↗"}</Link>
             </p>
             <button className="filter-apply" onClick={() => {
               scrollAfterCollapse.current = true;
               setFiltersOpen(false);
-            }}>К результатам · {results.length} ↗</button>
+            }}>{locale === "en" ? en.showResults : "К результатам"} · {results.length} ↗</button>
           </div>
         </aside>
 
@@ -258,73 +263,73 @@ export function Catalog({
             <div className="results-summary">
             <span className="results-count" role="status" aria-live="polite">
               {results.length === model.facets.total
-                ? `${model.facets.total} игр`
-                : `Найдено ${results.length} из ${model.facets.total}`}
+                ? locale === "en" ? `${model.facets.total} games` : `${model.facets.total} игр`
+                : locale === "en" ? `Found ${results.length} of ${model.facets.total}` : `Найдено ${results.length} из ${model.facets.total}`}
             </span>
             </div>
             <label>
-              <span className="sr-only">Сортировка</span>
-              <select aria-label="Сортировка" value={sort} onChange={(e) => setSort(e.target.value)}>
-                <option value="editorial">Выбор редакции</option>
-                <option value="name">По названию</option>
-                <option value="new">Сначала новые</option>
-                <option value="rtp">RTP: выше сначала</option>
+              <span className="sr-only">{locale === "en" ? en.sort : "Сортировка"}</span>
+              <select aria-label={locale === "en" ? en.sort : "Сортировка"} value={sort} onChange={(e) => setSort(e.target.value)}>
+                <option value="editorial">{locale === "en" ? en.editorial : "Выбор редакции"}</option>
+                <option value="name">{locale === "en" ? en.byName : "По названию"}</option>
+                <option value="new">{locale === "en" ? en.newest : "Сначала новые"}</option>
+                <option value="rtp">{locale === "en" ? en.highestRtp : "RTP: выше сначала"}</option>
               </select>
             </label>
             <div className="view-controls">
-              <button aria-label="Список" aria-pressed={view === "list"} onClick={() => setView("list")}>
+              <button aria-label={locale === "en" ? en.list : "Список"} aria-pressed={view === "list"} onClick={() => setView("list")}>
                 ☷
               </button>
-              <button aria-label="Обложки" aria-pressed={view === "covers"} onClick={() => setView("covers")}>
+              <button aria-label={locale === "en" ? en.covers : "Обложки"} aria-pressed={view === "covers"} onClick={() => setView("covers")}>
                 ▦
               </button>
             </div>
           </div>
 
           {hasFilters && (
-            <div className="active-filters" aria-label="Активные фильтры">
-              <span>Отбор:</span>
+            <div className="active-filters" aria-label={locale === "en" ? en.active : "Активные фильтры"}>
+              <span>{locale === "en" ? en.active : "Отбор:"}</span>
               {q.trim() && <button onClick={() => setQ("")}>«{q.trim()}» <b>×</b></button>}
               {selectedProvider && <button onClick={() => setProvider("")}>{selectedProvider.name} <b>×</b></button>}
               {mechanic && <button onClick={() => setMechanic("")}>{mechanic} <b>×</b></button>}
               {volatility && <button onClick={() => setVolatility("")}>{volatility} <b>×</b></button>}
               {rtp && <button onClick={() => setRtp("")}>RTP ≥ {rtp.replace(".", ",")}% <b>×</b></button>}
               {feature && <button onClick={() => setFeature("")}>{feature} <b>×</b></button>}
-              <button className="clear-all" onClick={reset}>Сбросить всё</button>
+              <button className="clear-all" onClick={reset}>{locale === "en" ? en.resetAll : "Сбросить всё"}</button>
             </div>
           )}
 
           {!results.length ? (
             <div className="empty-state">
-              <span className="eyebrow">Ничего не найдено</span>
-              <h2>Такой игры пока нет<br />в нашем указателе.</h2>
-              <p>Попробуйте часть названия или снимите один из фильтров.</p>
-              <button className="button" onClick={reset}>Показать все игры</button>
+              <span className="eyebrow">{locale === "en" ? en.noneFound : "Ничего не найдено"}</span>
+              <h2>{locale === "en" ? en.noneFound : <>Такой игры пока нет<br />в нашем указателе.</>}</h2>
+              <p>{locale === "en" ? en.noneFoundDescription : "Попробуйте часть названия или снимите один из фильтров."}</p>
+              <button className="button" onClick={reset}>{locale === "en" ? en.showAll : "Показать все игры"}</button>
             </div>
           ) : (
             <>
               <div className={"catalog-results " + view}>
-                {visibleResults.map((item) => <CatalogGameCard item={item} number={catalogNumbers.get(item.slug) || 0} key={item.slug} />)}
+                {visibleResults.map((item) => <span key={item.slug} lang={locale === "en" ? "ru" : undefined}><CatalogGameCard item={item} number={catalogNumbers.get(item.slug) || 0} /></span>)}
               </div>
 
               {pageCount > 1 && (
-                <nav className="catalog-pagination" aria-label="Страницы каталога">
-                  <span className="catalog-range">{offset + 1}–{offset + visibleResults.length} из {results.length}</span>
+                <nav className="catalog-pagination" aria-label={locale === "en" ? en.pages : "Страницы каталога"}>
+                  <span className="catalog-range">{offset + 1}–{offset + visibleResults.length} {locale === "en" ? "of" : "из"} {results.length}</span>
                   <div className="catalog-page-controls">
-                    <button className="catalog-page-previous" disabled={page === 1} onClick={() => showPage(page - 1)} aria-label="Предыдущая страница"><span aria-hidden="true">←</span><span className="catalog-page-nav-label"> Назад</span></button>
-                    <div className="catalog-page-numbers" aria-label="Выбор страницы">
+                    <button className="catalog-page-previous" disabled={page === 1} onClick={() => showPage(page - 1)} aria-label={locale === "en" ? en.previous : "Предыдущая страница"}><span aria-hidden="true">←</span><span className="catalog-page-nav-label"> {locale === "en" ? en.previous : "Назад"}</span></button>
+                    <div className="catalog-page-numbers" aria-label={locale === "en" ? "Choose page" : "Выбор страницы"}>
                       {paginationWindow(page, pageCount).map((number, index) =>
                         number === null ? (
                           <span key={`gap-${index}`} className="catalog-page-gap" aria-hidden="true">…</span>
                         ) : number === page ? (
-                          <span key={number} className="catalog-page-current" aria-label={`Страница ${number}`} aria-current="page">{number}</span>
+                          <span key={number} className="catalog-page-current" aria-label={`${locale === "en" ? en.page : "Страница"} ${number}`} aria-current="page">{number}</span>
                         ) : (
-                          <button key={number} onClick={() => showPage(number)} aria-label={`Перейти на страницу ${number}`}>{number}</button>
+                          <button key={number} onClick={() => showPage(number)} aria-label={`${locale === "en" ? en.goToPage : "Перейти на страницу"} ${number}`}>{number}</button>
                         ),
                       )}
                     </div>
-                    <span className="catalog-page-status" aria-live="polite">Страница {page} из {pageCount}</span>
-                    <button className="catalog-page-next" disabled={page === pageCount} onClick={() => showPage(page + 1)} aria-label="Следующая страница"><span className="catalog-page-nav-label">Далее </span><span aria-hidden="true">→</span></button>
+                    <span className="catalog-page-status" aria-live="polite">{locale === "en" ? en.page : "Страница"} {page} {locale === "en" ? "of" : "из"} {pageCount}</span>
+                    <button className="catalog-page-next" disabled={page === pageCount} onClick={() => showPage(page + 1)} aria-label={locale === "en" ? en.next : "Следующая страница"}><span className="catalog-page-nav-label">{locale === "en" ? en.next : "Далее"} </span><span aria-hidden="true">→</span></button>
                   </div>
                 </nav>
               )}
@@ -332,7 +337,7 @@ export function Catalog({
           )}
 
           <div className="catalog-end">
-            <Link href="/compare">Перейти к сравнению ↗</Link>
+            <Link href="/compare">{locale === "en" ? en.compareInRussian : "Перейти к сравнению ↗"}</Link>
           </div>
         </div>
       </div>
