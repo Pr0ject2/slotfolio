@@ -33,23 +33,23 @@ type DisplayFact = {
   value: string;
 };
 
-function displayFacts(item: CatalogItem): DisplayFact[] {
+function displayFacts(item: CatalogItem, locale: "ru" | "en"): DisplayFact[] {
   const facts: DisplayFact[] = [
-    { label: "Тип", value: russianGameType(item.gameType) },
-    { label: "Поле", value: item.field },
+    { label: locale === "en" ? "Type" : "Тип", value: locale === "en" ? item.gameType : russianGameType(item.gameType) },
+    { label: locale === "en" ? "Grid" : "Поле", value: item.field },
     { label: "RTP", value: item.verifiedRtp },
-    { label: "Макс.", value: item.maxWin },
-    { label: "Волат.", value: item.verifiedVolatility },
-    { label: "Релиз", value: item.releaseDate ? displayRelease(item.releaseDate) : "" },
+    { label: locale === "en" ? "Max. win" : "Макс.", value: item.maxWin },
+    { label: locale === "en" ? "Volatility" : "Волат.", value: item.verifiedVolatility },
+    { label: locale === "en" ? "Release" : "Релиз", value: item.releaseDate ? displayRelease(item.releaseDate) : "" },
   ];
 
   return facts.filter((fact) => Boolean(fact.value));
 }
 
-export function CatalogGameCard({ item, number }: { item: CatalogItem; number: number }) {
+export function CatalogGameCard({ item, number, locale = "ru" }: { item: CatalogItem; number: number; locale?: "ru" | "en" }) {
   const href = item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
   const year = displayYear(item);
-  const facts = displayFacts(item);
+  const facts = displayFacts(item, locale);
   const mappedArtwork = item.coverage === "catalog" ? getCatalogArtwork(item.slug) : null;
   const resolvedImage = mappedArtwork ?? item.image;
   const hasArtwork = item.coverage === "dossier" || resolvedImage !== "/images/unavailable.svg";
@@ -62,27 +62,28 @@ export function CatalogGameCard({ item, number }: { item: CatalogItem; number: n
       data-coverage={item.coverage}
       data-verified-facts={item.verifiedFacts}
     >
-      {hasArtwork ? <Link className={`catalog-game-art ${styles.art}`} href={href} aria-label={`Открыть ${item.name}`}><GameImage slot={{ ...item, image: resolvedImage }} /></Link> : null}
+      {hasArtwork ? <Link className={`catalog-game-art ${styles.art}`} href={href} aria-label={locale === "en" ? `Open ${item.name} (Russian)` : `Открыть ${item.name}`}><GameImage slot={{ ...item, image: resolvedImage }} /></Link> : null}
 
       <div className="catalog-game-copy">
         <div className={styles.metaRow}>
-          <span className={styles.number} aria-label={`Номер карточки ${number}`}>№ {number}</span>
+          <span className={styles.number} aria-label={locale === "en" ? `Catalogue entry ${number}` : `Номер карточки ${number}`}>№ {number}</span>
           <span className="eyebrow">
             {item.provider}{year ? ` / ${year}` : ""}
           </span>
         </div>
 
         <h2><Link href={href}>{item.name}</Link></h2>
+        {locale === "en" ? <span className="eyebrow" lang="en">Detailed review in Russian</span> : null}
 
-        {item.coverage === "dossier" ? <p>{item.description}</p> : null}
+        {item.coverage === "dossier" ? <p lang={locale === "en" ? "ru" : undefined}>{item.description}</p> : null}
 
         {item.mechanics.length ? (
-          <div className={styles.mechanics} aria-label="Механики">
+          <div className={styles.mechanics} aria-label={locale === "en" ? "Mechanics (original terminology)" : "Механики"}>
             {item.mechanics.map((mechanic) => <span key={mechanic}>{mechanic}</span>)}
           </div>
         ) : null}
 
-        {facts.length > 0 && <dl className={styles.facts} aria-label="Характеристики">
+        {facts.length > 0 && <dl className={styles.facts} aria-label={locale === "en" ? "Game details" : "Характеристики"}>
           {facts.map((fact) => (
             <div className={styles.fact} key={fact.label}>
               <dt>{fact.label}</dt>
@@ -92,16 +93,16 @@ export function CatalogGameCard({ item, number }: { item: CatalogItem; number: n
         </dl>}
 
         {item.coverage === "dossier" && item.tags.length ? (
-          <div className={`catalog-game-tags ${styles.tags}`} aria-label="Особенности игры">
+          <div className={`catalog-game-tags ${styles.tags}`} aria-label={locale === "en" ? "Game features (Russian)" : "Особенности игры"}>
             {item.tags.slice(0, 3).map((tag) => <span key={tag}>{tag}</span>)}
           </div>
         ) : null}
 
         <div className={`catalog-game-data ${styles.actions}`}>
           {item.coverage === "dossier" ? (
-            <CompareButton slug={item.slug} name={item.name} />
+            locale === "en" ? <Link className={styles.openRecord} href="/compare">Compare games (Russian) ↗</Link> : <CompareButton slug={item.slug} name={item.name} />
           ) : (
-            <Link className={styles.openRecord} href={href}>Подробнее об игре ↗</Link>
+            <Link className={styles.openRecord} href={href}>{locale === "en" ? "Game details (Russian) ↗" : "Подробнее об игре ↗"}</Link>
           )}
         </div>
       </div>
