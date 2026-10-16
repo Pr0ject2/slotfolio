@@ -8,7 +8,7 @@ test("English catalogue links reviewed dossiers and labels untranslated records"
   const untranslated = page.locator('.catalog-game').filter({ hasText: "Detailed review in Russian" }).first();
   await expect(untranslated).toBeVisible();
   await expect(untranslated.locator("dl")).toHaveAttribute("aria-label", "Game details");
-  await expect(page.getByText("The game descriptions and detailed reviews are currently available in Russian.")).toBeVisible();
+  await expect(page.getByText("English game guides are being added in batches. Some game details are still available only in Russian.")).toBeVisible();
 });
 
 test("Gates of Olympus has a source-backed English game guide", async ({ page }) => {
