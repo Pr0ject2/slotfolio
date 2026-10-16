@@ -16,4 +16,5 @@ test("all 25 new dossiers have static English routes, checked-in copy and noinde
 test("English catalogue still preserves the original 1000-game selection", async ({ page }) => {
   await page.goto("/en/slots/");
   await expect(page.getByRole("status").first()).toContainText("1000 games");
+  // Page size is 18: other routes are checked individually above.
 });
