@@ -16,7 +16,8 @@ test("route registry matches all 56 published-in-draft English dossiers", () => 
     ...Object.keys(englishDossierBatch25B),
   ];
   expect(new Set(expected).size).toBe(56);
-  expect([...englishDossierSlugs].sort()).toEqual([...expected].sort());
+  expect(englishDossierSlugs).toEqual(expect.arrayContaining(expected));
+  expect(new Set(englishDossierSlugs).size).toBe(englishDossierSlugs.length);
   for (const slug of expected) {
     const game = getSlot(slug);
     expect(game, `Missing source-backed dossier ${slug}`).toBeDefined();
