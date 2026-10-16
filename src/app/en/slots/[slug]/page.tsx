@@ -3,19 +3,21 @@ import { notFound } from "next/navigation";
 import { getSlot } from "@/lib/data";
 import { GameImage } from "@/components/editorial";
 import { pageMetadata } from "@/lib/seo";
-import { englishDossierBatch, type EnglishDossierSlug } from "@/lib/english-dossier-batch-20261016";
+import { englishDossierBatch } from "@/lib/english-dossier-batch-20261016";
+import { englishDossierBatch25 } from "@/lib/english-dossier-batch25-20261016";
+const englishDossiers: Record<string, { introduction?: string; rules: string; feature: string; perspective: string }> = { ...englishDossierBatch, ...englishDossierBatch25 };
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return Object.keys(englishDossierBatch).map((slug) => ({ slug }));
+  return Object.keys(englishDossiers).map((slug) => ({ slug }));
 }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const game = getSlot(slug);
-  const copy = englishDossierBatch[slug as EnglishDossierSlug];
+  const copy = englishDossiers[slug];
   return pageMetadata({
     title: game && copy ? `${game.name}: rules, features and RTP explained` : "Game unavailable",
-    description: game && copy ? copy.introduction : "No English guide is available for this game.",
+    description: game && copy ? (copy.introduction ?? copy.rules) : "No English guide is available for this game.",
     path: `/en/slots/${slug}`,
     openGraphType: "article",
     noIndex: true,
@@ -23,8 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 export default async function EnglishGameDossier({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const copy = Object.prototype.hasOwnProperty.call(englishDossierBatch, slug)
-    ? englishDossierBatch[slug as EnglishDossierSlug] : undefined;
+  const copy = englishDossiers[slug];
   const game = getSlot(slug);
   if (!copy || !game) notFound();
   return (
@@ -41,13 +42,13 @@ export default async function EnglishGameDossier({ params }: { params: Promise<{
         <figure className="slot-figure"><GameImage slot={game} priority /><figcaption>Game artwork · {game.provider} · {game.name}</figcaption></figure>
         <div className="slot-summary">
           <span className="eyebrow">At a glance</span>
-          <p className="slot-deck">{copy.introduction}</p>
+          <p className="slot-deck">{copy.introduction ?? copy.rules}</p>
           <dl className="facts">
             <div><dt>Publisher</dt><dd>{game.provider}</dd></div>
             <div><dt>Release year</dt><dd>{game.year}</dd></div>
             <div><dt>Grid</dt><dd>{game.field}</dd></div>
             <div><dt>Published RTP in Slotfolio</dt><dd>{game.rtp}</dd></div>
-            <div><dt>Volatility</dt><dd>High</dd></div>
+            <div><dt>Volatility</dt><dd>{({ "Низкая": "Low", "Средняя": "Medium", "Высокая": "High", "Очень высокая": "Very high", "Экстремальная": "Extreme" } as Record<string, string>)[game.volatility] ?? game.volatility}</dd></div>
           </dl>
           <p className="data-note">These figures describe the documented game version, not a guaranteed return. RTP may vary by configuration or operator. Check the rules and paytable of the version available to you.</p>
         </div>
