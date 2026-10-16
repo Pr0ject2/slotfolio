@@ -7,6 +7,9 @@ export default defineConfig({
   reporter: "list",
   use: {
     baseURL: "http://localhost:3000",
+    // Existing Russian-site regressions run in their original language.
+    // English browser detection is exercised separately with en-GB contexts.
+    locale: "ru-RU",
     headless: true,
     launchOptions: {
       executablePath:
