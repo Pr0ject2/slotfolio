@@ -5,6 +5,7 @@ import type { CatalogItem } from "@/lib/catalog-query";
 import { getCatalogArtwork } from "@/lib/catalog-artwork";
 import styles from "./catalog-game-card.module.css";
 import { hasEnglishDossier } from "@/lib/english-dossier-routes";
+import { hasEnglishCatalogRecord } from "@/lib/english-catalog-record-routes";
 
 function displayRelease(value: string) {
   if (!value) return "";
@@ -67,7 +68,8 @@ function displayFacts(item: CatalogItem, locale: "ru" | "en"): DisplayFact[] {
 export function CatalogGameCard({ item, number, locale = "ru" }: { item: CatalogItem; number: number; locale?: "ru" | "en" }) {
   const href = item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
   const englishDossier = locale === "en" && hasEnglishDossier(item.slug);
-  const destination = englishDossier ? `/en/slots/${item.slug}` : href;
+  const englishCatalogRecord = locale === "en" && item.coverage === "catalog" && hasEnglishCatalogRecord(item.slug);
+  const destination = englishDossier ? `/en/slots/${item.slug}` : englishCatalogRecord ? `/en/slots/catalog/${item.slug}` : href;
   const year = displayYear(item);
   const facts = displayFacts(item, locale);
   const mappedArtwork = item.coverage === "catalog" ? getCatalogArtwork(item.slug) : null;
@@ -82,7 +84,7 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
       data-coverage={item.coverage}
       data-verified-facts={item.verifiedFacts}
     >
-      {hasArtwork ? <Link className={`catalog-game-art ${styles.art}`} href={destination} aria-label={locale === "en" ? `Open ${item.name}${englishDossier ? "" : " (Russian)"}` : `Открыть ${item.name}`}><GameImage slot={{ ...item, image: resolvedImage }} /></Link> : null}
+      {hasArtwork ? <Link className={`catalog-game-art ${styles.art}`} href={destination} aria-label={locale === "en" ? `Open ${item.name}${(englishDossier || englishCatalogRecord) ? "" : " (Russian)"}` : `Открыть ${item.name}`}><GameImage slot={{ ...item, image: resolvedImage }} /></Link> : null}
 
       <div className="catalog-game-copy">
         <div className={styles.metaRow}>
@@ -126,7 +128,7 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
           {item.coverage === "dossier" ? (
             locale === "en" ? <Link className={styles.openRecord} href="/compare">Compare games (Russian) ↗</Link> : <CompareButton slug={item.slug} name={item.name} />
           ) : (
-            <Link className={styles.openRecord} href={destination}>{locale === "en" ? "Game details (Russian) ↗" : "Подробнее об игре ↗"}</Link>
+            <Link className={styles.openRecord} href={destination}>{locale === "en" ? (englishCatalogRecord ? "View English facts ↗" : "Game details (Russian) ↗") : "Подробнее об игре ↗"}</Link>
           )}
         </div>
       </div>
