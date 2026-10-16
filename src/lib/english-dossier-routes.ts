@@ -1,4 +1,4 @@
-/** Reviewed English dossier routes. Compact list avoids bundling article copy in the language switch. */
+/** Reviewed English dossier routes. Compact registry avoids shipping editorial copy in navigation. */
 export const englishDossierSlugs = [
   "gates-of-olympus",
   "sweet-bonanza",
@@ -55,7 +55,32 @@ export const englishDossierSlugs = [
   "chance-machine-20",
   "81-burning-ways",
   "burning-coins-20",
-  "dia-de-los-muertos-2"
+  "dia-de-los-muertos-2",
+  "bear-crazy",
+  "the-big-dog-house",
+  "fury-of-anubis",
+  "nitro-nights",
+  "dork-unit",
+  "crypto-genesys",
+  "max-win-machine",
+  "power-of-ten",
+  "gemhalla",
+  "house-of-sins",
+  "scarab-temple",
+  "jungle-volcano",
+  "mighty-hot-amazonia",
+  "mummyland-treasures",
+  "troy-superways",
+  "gates-of-1win",
+  "1win-bonanza",
+  "black-friday-shady-lady",
+  "devils-finger",
+  "zeus-claws",
+  "panda-claw-jackpot",
+  "wolf-hunt-claw-and-win",
+  "claw-bonanza-gold-rush",
+  "double-triple-burning-wilds",
+  "clawbass-bonanza"
 ] as const;
 const readyDossiers = new Set<string>(englishDossierSlugs);
 export function hasEnglishDossier(slug: string): boolean {
