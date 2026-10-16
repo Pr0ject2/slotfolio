@@ -234,7 +234,7 @@ export function Catalog({
             <div className="filter-select-group">
               <label htmlFor="feature">{locale === "en" ? en.feature : "Особенность"}</label>
               <select id="feature" value={feature} onChange={(e) => setFeature(e.target.value)}>
-                <option value="">Любая</option>
+                <option value="">{locale === "en" ? en.any : "Любая"}</option>
                 {model.facets.features.map((item) => (
                   <option key={item.name} value={item.name}>
                     {item.name} · {item.count}
@@ -308,8 +308,8 @@ export function Catalog({
             </div>
           ) : (
             <>
-              <div className={"catalog-results " + view}>
-                {visibleResults.map((item) => <span key={item.slug} lang={locale === "en" ? "ru" : undefined}><CatalogGameCard item={item} number={catalogNumbers.get(item.slug) || 0} /></span>)}
+              <div className={"catalog-results " + view} lang={locale === "en" ? "ru" : undefined}>
+                {visibleResults.map((item) => <CatalogGameCard item={item} number={catalogNumbers.get(item.slug) || 0} key={item.slug} />)}
               </div>
 
               {pageCount > 1 && (
