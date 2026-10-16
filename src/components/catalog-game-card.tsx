@@ -29,6 +29,23 @@ function russianGameType(gameType: string) {
   return translations[gameType] ?? gameType;
 }
 
+const englishVolatility: Record<string, string> = {
+  "Низкая": "Low", "Средняя": "Medium", "Высокая": "High",
+  "Очень высокая": "Very high", "Экстремальная": "Extreme",
+};
+const englishMechanics: Record<string, string> = {
+  "Каскады": "Cascades", "Кластеры": "Cluster pays",
+  "Линии": "Paylines", "Сбор символов": "Symbol collection",
+  "Способы": "Ways to win",
+};
+const englishTags: Record<string, string> = {
+  "Свободные вращения": "Free spins", "Множители": "Multipliers",
+  "Каскады": "Cascades", "Шкала прогресса": "Progress meter",
+  "Преобразование символов": "Symbol transformations",
+  "Расширяющийся символ": "Expanding symbol", "Book-бонус": "Book bonus",
+  "Закрепляющийся wild": "Sticky wild", "Сбор значений": "Value collection",
+  "Золотые клетки": "Golden positions",
+};
 type DisplayFact = {
   label: string;
   value: string;
@@ -40,7 +57,7 @@ function displayFacts(item: CatalogItem, locale: "ru" | "en"): DisplayFact[] {
     { label: locale === "en" ? "Grid" : "Поле", value: item.field },
     { label: "RTP", value: item.verifiedRtp },
     { label: locale === "en" ? "Max. win" : "Макс.", value: item.maxWin },
-    { label: locale === "en" ? "Volatility" : "Волат.", value: item.verifiedVolatility },
+    { label: locale === "en" ? "Volatility" : "Волат.", value: locale === "en" ? (englishVolatility[item.verifiedVolatility] ?? item.verifiedVolatility) : item.verifiedVolatility },
     { label: locale === "en" ? "Release" : "Релиз", value: item.releaseDate ? displayRelease(item.releaseDate) : "" },
   ];
 
@@ -78,11 +95,15 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
         <h2><Link href={destination}>{item.name}</Link></h2>
         {locale === "en" && !englishDossier ? <span className="eyebrow" lang="en">Detailed review in Russian</span> : null}
 
-        {item.coverage === "dossier" ? <p lang={locale === "en" ? "ru" : undefined}>{item.description}</p> : null}
+        {item.coverage === "dossier" && (
+          locale === "en" && englishDossier
+            ? <p lang="en">Read our English guide to the rules, bonus features and game information.</p>
+            : <p lang={locale === "en" ? "ru" : undefined}>{item.description}</p>
+        )}
 
         {item.mechanics.length ? (
-          <div className={styles.mechanics} aria-label={locale === "en" ? "Mechanics (original terminology)" : "Механики"}>
-            {item.mechanics.map((mechanic) => <span key={mechanic}>{mechanic}</span>)}
+          <div className={styles.mechanics} aria-label={locale === "en" ? "Mechanics" : "Механики"}>
+            {item.mechanics.map((mechanic) => <span key={mechanic} lang={locale === "en" && !englishMechanics[mechanic] ? "ru" : undefined}>{locale === "en" ? (englishMechanics[mechanic] ?? mechanic) : mechanic}</span>)}
           </div>
         ) : null}
 
@@ -96,8 +117,8 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
         </dl>}
 
         {item.coverage === "dossier" && item.tags.length ? (
-          <div className={`catalog-game-tags ${styles.tags}`} aria-label={locale === "en" ? "Game features (Russian)" : "Особенности игры"}>
-            {item.tags.slice(0, 3).map((tag) => <span key={tag}>{tag}</span>)}
+          <div className={`catalog-game-tags ${styles.tags}`} aria-label={locale === "en" ? "Game features" : "Особенности игры"}>
+            {item.tags.slice(0, 3).map((tag) => <span key={tag} lang={locale === "en" && !englishTags[tag] ? "ru" : undefined}>{locale === "en" ? (englishTags[tag] ?? tag) : tag}</span>)}
           </div>
         ) : null}
 
@@ -110,7 +131,7 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
         </div>
       </div>
 
-      <Link className="catalog-open" href={destination} aria-label={`Открыть ${item.name}`}>↗</Link>
+      <Link className="catalog-open" href={destination} aria-label={locale === "en" ? `Open ${item.name}${englishDossier ? "" : " (Russian)"}` : `Открыть ${item.name}`}>↗</Link>
     </article>
   );
 }
