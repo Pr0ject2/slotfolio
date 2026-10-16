@@ -87,9 +87,9 @@ export default function EnglishHome() {
       <div className="editorial-signoff">
         <span className="brand-small">s.</span>
         <p>Our English-language coverage is expanding.
-          <br /><span>The 1,000-game catalogue and individual game dossiers are currently in Russian.</span>
+          <br /><span>You can now browse the catalogue in English. Individual game dossiers are currently in Russian.</span>
         </p>
-        <Link href="/slots">Open Russian catalogue ↗</Link>
+        <Link href="/en/slots">Browse the catalogue ↗</Link>
       </div>
     </>
   );
