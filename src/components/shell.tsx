@@ -20,8 +20,9 @@ export function Header() {
     } catch { /* Storage may be disabled; browser language still works. */ }
     const browserLanguages = navigator.languages?.length ? navigator.languages : [navigator.language];
     const browserLocale = /^ru(?:-|$)/i.test(browserLanguages[0] || "") ? "ru" : "en";
-    // Direct /en links are intentional; do not override them on first visit.
-    const targetLocale = preference ?? (isEnglishPath(path) ? "en" : browserLocale);
+    // Treat an explicit deep-link language as intentional. Auto-detect on the
+    // entry homepage; a previously saved manual choice still takes priority.
+    const targetLocale = preference ?? (isEnglishPath(path) ? "en" : path === "/" ? browserLocale : "ru");
     // Preserve deep links to pages that do not yet have an English counterpart.
     if (targetLocale === "en" && !isEnglishPath(path) && !translatedCounterpart(path)) return;
     const target = languageHref(path, targetLocale);
