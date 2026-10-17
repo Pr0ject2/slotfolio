@@ -71,6 +71,7 @@ test("English comparison preserves all 100 identities, factual values, configura
   expect(translated).toHaveLength(100);
   for (const original of source) {
     const game = translated.find((g) => g.slug === original.slug)!;
+    expect(game.providerQualification).toBe(englishFullDossiers[game.slug].attributionNote);
     for (const key of [
       "name",
       "provider",
@@ -173,6 +174,7 @@ test("English comparison supports picker, presets, removal, seed and RU/EN persi
     "stated potential",
   );
   await expect(page.locator(".comparison-table")).toContainText("6 × 5");
+  await expect(page.locator('.comparison-table tbody tr').first()).toContainText('still requires verification');
   await expect(page.locator(".comparison-table")).toContainText("5×6");
   await expect(page.locator(".comparison-table")).toContainText(
     "not yet been verified",

@@ -187,7 +187,7 @@ export function Comparison({ items, locale = "ru" }: { items: ComparisonItem[]; 
               <caption className="sr-only">{t("Сравнение выбранных игр")}</caption>
               <thead><tr><th>{t("Параметр")}</th>{games.map((game) => <th key={game.slug}><Link href={`${root}/slots/${game.slug}`}>{game.name}</Link></th>)}</tr></thead>
               <tbody>
-                <tr><th scope="row">{t("Провайдер")}</th>{games.map((game) => <td key={game.slug}><Link className="comparison-cell-link" href={`${root}/providers/${game.providerSlug}`}>{game.provider} ↗</Link></td>)}</tr>
+                <tr><th scope="row">{t("Провайдер")}</th>{games.map((game) => <td key={game.slug}><Link className="comparison-cell-link" href={`${root}/providers/${game.providerSlug}`}>{game.provider} ↗</Link>{english && game.providerQualification && <p className="data-note">{game.providerQualification}</p>}</td>)}</tr>
                 <tr><th scope="row">{t("Механики")}</th>{games.map((game) => <td key={game.slug}><div className="comparison-mechanics">{game.mechanics.map((mechanic) => mechanic.slug ? <Link key={mechanic.name} className="comparison-cell-link" href={`${root}/mechanics/${mechanic.slug}`}>{mechanic.name} ↗</Link> : <span key={mechanic.name}>{mechanic.name}</span>)}</div></td>)}</tr>
                 <tr><th scope="row">{t("Ключевые особенности")}</th>{games.map((game) => <td key={game.slug}>{game.tags.join(" · ")}</td>)}</tr>
                 <tr><th scope="row">{t("Варианты RTP")}</th>{games.map((game) => <td key={game.slug}>{game.metrics?.rtpVariants?.length ? game.metrics.rtpVariants.join(" · ") : english ? `${game.rtp} · other configurations not recorded` : `${game.rtp} · другие варианты не указаны`}</td>)}</tr>

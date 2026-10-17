@@ -159,6 +159,7 @@ export function createCatalogModel(): CatalogModel {
 }
 
 export type ComparisonItem = {
+  providerQualification?: string;
   slug: string;
   name: string;
   provider: string;

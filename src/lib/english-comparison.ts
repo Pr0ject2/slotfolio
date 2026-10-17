@@ -10,6 +10,7 @@ export function createEnglishComparisonIndex(): ComparisonItem[] {
     if (!copy) throw new Error(`Missing comparison translation: ${game.slug}`);
     return {
       ...game,
+      providerQualification: copy.attributionNote,
       mechanics: game.mechanics.map((item) => ({
         ...item,
         name: englishCatalogFact(item.name),
