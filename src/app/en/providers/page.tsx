@@ -72,7 +72,7 @@ export default function Page() {
                 <span>
                   {stats.count} {stats.count === 1 ? "guide" : "guides"}
                 </span>
-                <span>{stats.mechanics.length} mechanics</span>
+                <span>{stats.mechanics.length} {stats.mechanics.length === 1 ? "mechanic" : "mechanics"}</span>
               </div>
               <b aria-hidden="true">↗</b>
             </Link>

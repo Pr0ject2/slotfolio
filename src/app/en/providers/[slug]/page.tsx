@@ -82,9 +82,9 @@ export default async function Page({
           <p className="entity-editorial-note">{p.signoff}</p>
         </div>
       </section>
-      <SectionTitle title="Two examples to compare" />
+      <SectionTitle title={games.length === 1 ? "A game example" : "Two examples to compare"} />
       <p className="entity-section-note">
-        Use these games to identify differences in payout rules and bonuses.
+        {games.length === 1 ? "Open the guide to check payout rules, features and source qualifications." : "Use these games to identify differences in payout rules and bonuses."}
       </p>
       <EnglishFeaturedGames games={representativeGames(games)} />
       {p.reading && (

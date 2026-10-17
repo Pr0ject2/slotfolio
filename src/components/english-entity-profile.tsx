@@ -228,7 +228,7 @@ export function EnglishEntityStats({
           <div>
             <dt>RTP recorded for</dt>
             <dd>
-              {stats.rtp.count} of {stats.count} games
+              {stats.rtp.count} of {stats.count} {stats.count === 1 ? "game" : "games"}
             </dd>
           </div>
         </dl>

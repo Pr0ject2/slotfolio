@@ -122,6 +122,10 @@ for (const { route, games, heading } of routes) {
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
     await expect(page.locator("main")).not.toContainText(/[А-Яа-яЁё]/);
     expect(await page.locator("#games .game-row").count()).toBe(games.length);
+    if (route.startsWith("providers/")) {
+      await expect(page.locator('.entity-featured article')).toHaveCount(Math.min(2, games.length));
+      await expect(page.getByRole('heading', {level: 2, name: games.length === 1 ? 'A game example' : 'Two examples to compare', exact: true})).toBeVisible();
+    }
     expect(
       await page
         .locator("#games .row-main h3 a")
