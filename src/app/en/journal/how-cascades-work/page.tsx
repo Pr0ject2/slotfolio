@@ -298,7 +298,7 @@ export default function EnglishCascadesArticle() {
         label="View three game examples"
       />
       <div className="hub-list">
-        {[sweet, reactoonz].filter((slot): slot is NonNullable<typeof slot> => Boolean(slot)).map(slot => (
+        {[sweet, reactoonz].flatMap(slot => slot ? [slot] : []).map(slot => (
           <Link href={`/en/slots/${slot.slug}`} key={slot.slug}>
             <span className="number">Game</span>
             <h2>{slot.name}</h2>
