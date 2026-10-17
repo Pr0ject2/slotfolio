@@ -1,0 +1,57 @@
+{
+  "gates-of-olympus-1000": {
+    "description":"A higher-multiplier version of Gates of Olympus with the same Pay Anywhere and cascades. Random multipliers now reach 1 000x.",
+    "feature":"During free spins, multiplier symbols add to the round's accumulated value and apply to subsequent winning cascades.",
+    "note":"Compare it with the original by the specific multiplier limits and maximum payout, rather than just the familiar theme and grid."
+  },
+  "sugar-rush-1000": {
+    "description":"A 7 × 7 cluster grid with cascades and marked positions, where multipliers can double up to 1 024x.",
+    "feature":"During the bonus, marked positions and their accumulated multipliers persist between free spins.",
+    "note":"The main difference from ordinary Sugar Rush is the multiplier ceiling. The underlying cluster and cascade rules remain familiar."
+  },
+  "gates-of-olympus-super-scatter": {
+    "description":"A version of Gates of Olympus adding Super Scatters with fixed prizes on the bonus trigger to the familiar cascades and multipliers.",
+    "feature":"One to four Super Scatters award a separate instant payout when the bonus activates. Four of these symbols correspond to the maximum win of 50 000x.",
+    "note":"Super Scatter changes the bonus-entry conditions and potential instant payout, while retaining the game's underlying cascade rules."
+  },
+  "sweet-bonanza-super-scatter": {
+    "description":"Sweet Bonanza with Super Scatter: pays anywhere on the grid, cascades and separate instant prizes on triggering the bonus round.",
+    "feature":"During free spins, multipliers up to 100x remain on the grid until the bonus ends. Super Scatters can award a fixed payout of up to 50 000x.",
+    "note":"Keep the two layers separate in this version: persistent bonus multipliers, and the distinct Super Scatter award on entering the feature."
+  },
+  "mahjong-wins-super-scatter": {
+    "description":"Up to 2 000 ways on a 5 × 5 grid combine with tumbles. Consecutive wins raise the multiplier trail up to 5x in the base game.",
+    "feature":"Gold symbols on the central reels leave Wilds after a winning tumble. Free spins raise the multiplier trail up to 10x, while Super Scatter can award up to 100 000x.",
+    "note":"Pragmatic Play confirms the release on 29 May 2025 and a maximum of 100 000x. RTP depends on the operator's configuration; the catalogue lists the upper commonly available version, 96.5%."
+  },
+  "hand-of-anubis": {
+    "description":"A 5 × 6 cluster grid with cascades: winning groups disappear, while Soul Orbs can turn the grid's subsequent state into a sequence of multipliers.",
+    "feature":"Soul multipliers accumulate strength through a cascade sequence. Bonus features build on the same rules rather than switching to conventional paylines.",
+    "note":"Hacksaw Gaming's catalogue rates Hand of Anubis volatility as 5 out of 5, while its release dated 30 April 2022 calls the game high volatility. The category shown here is Extreme; the publisher's descriptions differ.",
+    "metricsNote":"Hacksaw Gaming's current official catalogue shows Hand of Anubis with a fully filled volatility meter, 5/5, so Slotfolio's public category remains Extreme. At the same time, the official release dated 30.04.2022 describes it as high volatility and confirms a 5 × 6 grid and maximum of 10 000x. This conflict is explicitly retained. The release does not publish RTP configurations, so the previously stored list is not displayed as a verified metric.",
+    "additionalSourceLabels":["Current Hacksaw Gaming catalogue with volatility meter 5/5"]
+  },
+  "rip-city": {
+    "description":"Five reels, five rows and 19 paylines. Wild Cat can expand across a whole reel and absorb ordinary Wilds, turning them into multipliers.",
+    "feature":"Ro$$ Bonus increases the frequency of Wild Cat. Maxx Bonus gradually activates reels for further cat Wilds during the remaining free spins.",
+    "note":"Hacksaw publishes volatility 3/5, a maximum of 12 500x and several RTP configurations. The catalogue stores the upper version, 96.22%."
+  },
+  "hell-hot-100": {
+    "description":"A conventional 5 × 4 fruit grid with 100 fixed paylines, stacked Wilds and a separate card-based Risk Game.",
+    "feature":"After a win, a conventional Risk Game is available. It offers an attempt to double the result by choosing a card against the dealer.",
+    "note":"A useful comparison with modern multilayer bonuses: the main structure is straightforward, and the risk game is a separate action after a payout.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.07%, low volatility, a 5 × 4 grid and 100 fixed paylines. Wilds can appear stacked, while Risk Game can increase an individual payout up to 10 times. The publisher does not publish an overall maximum win, so Slotfolio does not present the separate 500x scatter payout as the game's maximum."
+  },
+  "joker-stoker": {
+    "description":"A fruit slot with 40 fixed paylines, a Joker Wild, Scatters and a direct free-spins trigger.",
+    "feature":"Three, four or five Scatters award 10, 20 or 30 free spins. Wilds can appear stacked and substitute for ordinary symbols.",
+    "note":"Joker Stoker illustrates the conventional structure: paylines remain the foundation, and the bonus does not change how the base grid is read.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.07%, Medium-Low volatility, a 5 × 4 grid and 40 fixed paylines. Three, four or five Scatters award 10, 20 or 30 Free Games; Bonus Pop depends on operator availability. The publisher does not publish an overall maximum win."
+  },
+  "lucky-streak-1": {
+    "description":"Forty paylines, fruit symbols and a minimal set of special rules. A conventional Risk Game is available after a payout.",
+    "feature":"Wilds help form payline combinations, Scatters pay independently of a payline, and Risk Game offers a separate chance to risk an existing win.",
+    "note":"A useful reference for comparing modern slots: almost all the logic is visible in the payline and symbol tables.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.09%, medium volatility, a 5 × 4 grid and 40 paylines. Wilds can appear stacked, and Risk Game is separate from the base game. The publisher does not publish an overall maximum win."
+  }
+}

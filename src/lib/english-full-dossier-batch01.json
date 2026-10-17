@@ -1,0 +1,64 @@
+{
+  "gates-of-olympus": {
+    "description": "An ancient-world setting, cascading symbols and multipliers that change the course of the bonus round. A look at the rules behind the spectacle.",
+    "feature": "Multipliers accumulate during free spins and apply to subsequent wins in the round.",
+    "note": "The game revolves around waiting for a multiplier. Its spectacle does not mean frequent payouts: the gaps between winning rounds can be long.",
+    "releaseDate": "24 February 2021",
+    "cards": [
+      {"title":"Pays anywhere on the grid","text":"In the original Gates of Olympus, a win forms when 8 to 30 matching symbols appear on the grid. After a payout, the winning symbols disappear, and the cascade can continue within the same spin."},
+      {"title":"Multipliers up to 500x","text":"Multiplier symbols can appear in both the base game and free spins. The official page for the original version lists values up to 500x."},
+      {"title":"15 free spins","text":"Four or more Scatters trigger the bonus game with 15 free spins. This is a separate mode, rather than a continuation of an ordinary cascade."},
+      {"title":"Accumulating bonus multiplier","text":"During free spins, multipliers appearing on a winning spin are added to the accumulated value and applied to the corresponding win."}
+    ]
+  },
+  "sweet-bonanza": {
+    "description":"Behind the fruit and sweets is a payout system without conventional paylines. Matching symbols are counted across the whole grid.",
+    "feature":"After a payout, symbols disappear to make room for new ones. Multipliers appear in the bonus round.",
+    "note":"A clear example of why presentation and the mathematical model are separate things. Light-hearted animation sits alongside high volatility.",
+    "releaseDate":"25 June 2019",
+    "metricsNote":"This figure applies to the original Sweet Bonanza, rather than the 1000 or Super Scatter versions.",
+    "cards":[
+      {"title":"Pay Anywhere and tumbles","text":"Sweet Bonanza pays for 8–12 or more matching symbols anywhere on the grid. After a win, the symbols disappear and new ones drop from above, continuing the tumble sequence."},
+      {"title":"10 free spins","text":"Four to six Scatters trigger the bonus game with 10 free spins. The number of Scatters affects the separate scatter payout, but the starting number of spins remains ten."},
+      {"title":"Candy Bomb 2x–100x","text":"Multiplier symbols with values from 2x to 100x can appear in the bonus game. They do not substitute for ordinary symbols and are counted after a winning sequence."},
+      {"title":"Adding the multipliers","text":"At the end of a winning tumble, the values of all the multipliers that appeared are added together and applied to that sequence's win. The relevant figure is their total, rather than an individual symbol."}
+    ]
+  },
+  "book-of-dead": {
+    "description":"An Egyptian adventure with ten paylines and an expanding symbol. A straightforward base game and a distinctive bonus.",
+    "feature":"During free spins, the selected symbol can expand across an entire reel.",
+    "note":"The mechanic becomes understandable after a few rounds. Most of the variety is concentrated in the bonus game, rather than the base spins.",
+    "releaseDate":"14 January 2016",
+    "cards":[
+      {"title":"5 × 3 and 10 paylines","text":"Book of Dead uses a conventional 5 × 3 grid and ten paylines. Read the base game as a payline slot, rather than a modern cascading system."},
+      {"title":"The book is both Wild and Scatter","text":"The book symbol has two roles: it substitutes for ordinary symbols as a Wild and also counts as a Scatter for triggering free spins."},
+      {"title":"10 free spins","text":"Three Scatters activate the Free Spins feature and award 10 spins. The bonus changes the role of the selected special symbol, rather than the grid."},
+      {"title":"Special expanding symbol","text":"One ordinary symbol is selected at random before free spins. During the bonus, it can expand on reels when that expansion creates an additional payout on the active paylines."}
+    ]
+  },
+  "reactoonz": {
+    "description":"Chain reactions on a grid of one-eyed creatures. Neighbouring groups replace paylines, alongside energy accumulation and symbol transformations.",
+    "feature":"Cluster wins charge a meter that activates a sequence of game effects.",
+    "note":"The most rule-intensive game in this selection. Start by understanding the energy meter: without it, the action can look like an arbitrary sequence of effects.",
+    "releaseDate":"23 October 2017",
+    "cards":[
+      {"title":"Clusters on a 7 × 7 grid","text":"In Reactoonz, a win begins with a cluster of five or more matching neighbouring creatures. Read groups across the entire 7 × 7 grid, rather than paylines running from left to right."},
+      {"title":"A cascade after a cluster","text":"The symbols in a winning cluster disappear, and new ones drop from above. One paid round can therefore contain several consecutive clusters."},
+      {"title":"Energy for Gargantoon","text":"Each winning cluster contributes energy to the Gargantoon progress system. Follow the meter separately from the current win amount."},
+      {"title":"Quantum Leap","text":"Once fully charged, Gargantoon moves to the centre of the grid and starts a chain reaction of special features. The official description of the original game specifies a sequence of up to five effects."}
+    ]
+  },
+  "the-dog-house": {
+    "description":"Dogs, kennels and sticky Wild symbols. A conventional grid with an emphasis on combinations of multipliers.",
+    "feature":"During the bonus round, Wild symbols stay fixed on the reels until it ends.",
+    "note":"Persistent Wilds make the bonus progression easy to follow. Accumulating symbols does not, however, guarantee the final outcome.",
+    "releaseDate":"9 May 2019",
+    "metricsNote":"This figure applies to the original The Dog House, rather than Megaways, Multihold or other sequels.",
+    "cards":[
+      {"title":"5 × 3 and 20 paylines","text":"The original The Dog House is a payline slot with a 5 × 3 grid and 20 paylines. Distinguish it from the series' later Megaways and Multihold versions."},
+      {"title":"Wilds with multipliers","text":"Wild symbols appear on the central reels and carry multipliers. Their value depends on whether they participate in a particular winning payline."},
+      {"title":"Sticky Wilds","text":"During free spins, Wilds become sticky and remain in their positions. This is an accumulating part of the bonus, but does not guarantee a final payout on its own."},
+      {"title":"The original bonus and potential","text":"Three bonus paw symbols trigger Free Spins mode. In the original game's release, Pragmatic Play stated potential wins of up to 6 750x the stake, separately from the specifications of later versions in the series."}
+    ]
+  }
+}

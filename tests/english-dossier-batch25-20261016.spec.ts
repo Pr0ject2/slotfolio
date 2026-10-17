@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { englishDossierBatch25 } from "../src/lib/english-dossier-batch25-20261016";
 import { getSlot } from "../src/lib/data-v128";
+import { englishCatalogFact } from "../src/lib/english-catalog-facts";
 
 const slugs = Object.keys(englishDossierBatch25);
 test("first 25-dossier batch has source-backed records", () => {
@@ -20,8 +21,8 @@ for (const slug of slugs) {
     await expect(page.getByRole("heading", { name: game!.name, exact: true })).toBeVisible();
     await expect(page.getByRole("heading", { name: "How wins work" })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Editorial perspective" })).toBeVisible();
-    await expect(page.locator(".slot-summary dl")).toContainText(game!.rtp);
-    await expect(page.locator(".slot-summary dl")).toContainText(game!.field);
+    await expect(page.locator(".slot-summary dl")).toContainText(englishCatalogFact(game!.rtp));
+    await expect(page.locator(".slot-summary dl")).toContainText(englishCatalogFact(game!.field));
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", new RegExp(`/en/slots/${slug}/?$`));
   });

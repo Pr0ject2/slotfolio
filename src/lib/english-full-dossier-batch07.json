@@ -1,0 +1,61 @@
+{
+  "burning-coins-40": {
+    "description":"Forty paylines and stacked Wild Fire sit alongside several Hot Hold Bonus variants. Coins, Collector and Payer symbols form a separate bonus grid.",
+    "feature":"Burning Coins can open different Hold modes. Special symbols carry values up to 25x, while expanded variants add column prizes and jackpots up to 2 000x.",
+    "note":"The main game retains paylines, while the bonus acts as a separate value-accumulation system. This matters when filtering by several mechanics.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.12%, high volatility, a 5×4 grid and 40 fixed paylines. Jackpots in expanded Hot Hold Bonus variants reach 2 000x the total bet. This is bonus potential, rather than an overall fixed maximum win."
+  },
+  "ultra-fresh": {
+    "description":"Five paylines on a 3 × 3 grid and an almost entirely conventional fruit-slot structure. Additional rules do not obscure the base paytable.",
+    "feature":"A full screen of matching symbols doubles the corresponding win. Classic Risk Game offers a separate chance to risk an existing payout.",
+    "note":"Ultra Fresh shows how small a slot's feature set can be. A useful comparison with modern games featuring multiple additional systems.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.01%, low volatility, a 3 × 3 grid and five paylines. A full screen of matching symbols multiplies the win by 2x, but this is not an overall maximum win. The publisher does not publish an overall cap."
+  },
+  "chance-machine-20": {
+    "description":"Twenty fixed paylines with an expanding Wild on the central reels and two Scatter symbols that pay outside ordinary paylines.",
+    "feature":"Wild can expand vertically on reels 2, 3 and 4. Classic Risk Game remains a separate action after an eligible payout.",
+    "note":"Despite the additional symbols, ordinary combinations still use a conventional payout method that is easy to compare with other payline games.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.01%, low volatility, a 5 × 3 grid and 20 fixed paylines. Wild expands on reels 2, 3 and 4, while two Scatter types pay outside ordinary paylines. The publisher does not publish an overall maximum win on this page, so Slotfolio does not substitute individual symbol payouts for it."
+  },
+  "81-burning-ways": {
+    "description":"Four reels, three rows and 81 fixed ways to win. Wild both substitutes for ordinary symbols and carries a 2x multiplier.",
+    "feature":"When several Wilds participate in one winning combination, their values are multiplied together before being applied to the payout.",
+    "note":"The 81 ways may look similar to a conventional fruit slot, but combinations form through ways rather than fixed paylines.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.05%, high volatility, a 4 × 3 grid and 81 fixed ways to win. Wild becomes a 2x multiplier, and several Wilds multiply together. This is a mechanic for individual combinations, rather than an overall maximum win. The publisher does not publish an overall cap."
+  },
+  "burning-coins-20": {
+    "description":"Twenty fixed paylines and stacked Wild Fire are supplemented by Fiery Fortune, where Burning Coins transfer to a separate grid and retain their values.",
+    "feature":"Six or more coins trigger the bonus. Values range from 1x–25x, Collect totals the visible coins, and filled columns open prizes up to 1 000x.",
+    "note":"Value collection occurs only within a separate feature, so paylines still correctly describe the base payout method.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.01%, medium volatility, a 5 × 3 grid and 20 fixed paylines. In Fiery Fortune, six or more Burning Coins trigger a separate bonus grid whose payouts can reach 1 000x the total bet. This figure is retained as the stated bonus potential, rather than an unverified overall fixed maximum win."
+  },
+  "dia-de-los-muertos-2": {
+    "description":"A cascading 6 × 5 grid with scatter pays: eight or more matching symbols anywhere on the grid form a win and make room for the next cascade.",
+    "feature":"Four or more Bonus symbols award 15 Free Games. Multipliers of 2x–500x activate after a winning cascade and add to an overall accumulated multiplier during the bonus.",
+    "note":"An example in which cascades define the rhythm of the base spin itself, rather than simply naming a separate bonus.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.05%, high volatility, a 6 × 5 grid and scatter payouts. Eight or more matching symbols anywhere on the grid trigger cascades; 4+ Bonus symbols award 15 Free Games with multiplier accumulation up to 500x. The multiplier is not stated as an overall maximum win, so Slotfolio does not present it as one."
+  },
+  "bear-crazy": {
+    "description":"Twenty paylines and three free-spins modifications: large bear symbols, multiplier Wilds or expanding Wilds are selected before the bonus.",
+    "feature":"Three to five Scatters award 10–20 free spins. Pawprint Meter adds another 10 spins after every seventh collected pawprint.",
+    "note":"Compare Bear Crazy by the selected bonus type as well as RTP and volatility: the same trigger can lead to a different round structure."
+  },
+  "the-big-dog-house": {
+    "description":"Dog House returns with twenty paylines. Wilds carry 2x/3x multipliers and can appear as ordinary symbols, expanded 1 × 3 symbols or large 3 × 3 blocks.",
+    "feature":"Three paw Scatters trigger the bonus, where mini-reels determine up to 27 free spins. Sticky multiplier Wilds combine with Ghost Wild and the Biggie / Ghost Out modifiers.",
+    "note":"Medium volatility does not make the bonus straightforward: the main differences lie in Wild sizes and the modifiers active in a particular round."
+  },
+  "fury-of-anubis": {
+    "description":"A 6 × 5 grid paying for eight or more matching symbols anywhere. After a win, symbols disappear and the tumble multiplier grows through the sequence.",
+    "feature":"The multiplier for consecutive cascades doubles up to 1 024x. Scatters trigger free spins with a higher starting multiplier and a separate gamble option.",
+    "note":"Pragmatic Play's official Fury of Anubis materials use two grid descriptions: 6 × 5 on the campaign page and in the release, but 5 × 6 on the game page. The grid shown here is 6 × 5. The campaign page also states RTP 96.52% and a maximum multiplier of 10 000×.",
+    "metricsNote":"Pragmatic Play's structured campaign page publishes Reels x Rows 6 x 5, RTP 96.52% and Max Multiplier 10 000x. The official release also describes the game as 6 × 5 with win potential up to 10 000x. At the same time, the ordinary current game page states 5×6. Slotfolio explicitly retains this first-party conflict and uses 6 × 5 as the grid supported by two agreeing sources.",
+    "additionalSourceLabels":["Current Pragmatic Play game page with the conflicting 5×6 grid","Official Pragmatic Play release with 6×5 and potential of 10 000x"]
+  },
+  "nitro-nights": {
+    "description":"A payline slot with Burnout Mode: Nudge movements, Wilds and position multipliers can retain the grid's state within one event.",
+    "feature":"Three or more FS symbols open one of three bonus scenarios. Tokyo uses a growing global multiplier, while Fukushima centres on a long Nudge sequence.",
+    "note":"Several RTP configurations are published. The catalogue uses the upper reference value of 96.31%, so check the particular version in the game itself.",
+    "metricsNote":"Hacksaw Gaming's current page publishes volatility 4/5, maximum win 15 000x and four RTP configurations. The upper value, 96.31%, matches the dossier's reference RTP."
+  }
+}

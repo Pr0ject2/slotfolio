@@ -1,0 +1,91 @@
+{
+  "san-quentin-xways": {
+    "description":"A 5 × 3 base grid is supplemented by enhancer positions, split symbols and xWays. The number of possible routes can increase sharply within a spin.",
+    "feature":"xWays reveals a stack of matching symbols, while split mechanics divide positions and increase the number of possible combinations.",
+    "note":"This is no longer a game to read as a single static grid. Think of it as a system in which position sizes and the number of routes change during the round."
+  },
+  "fire-in-the-hole": {
+    "description":"The mine starts with three active rows and opens up to six. The number of ways grows with the grid, while xBomb starts further collapses and multipliers.",
+    "feature":"Each new collapse can open another row, increasing the grid from 64 to 46 656 ways to form a combination.",
+    "note":"Follow the state of the whole grid rather than an individual symbol: how many rows have opened, and which multiplier carries into the next collapse?"
+  },
+  "starlight-princess": {
+    "description":"Matching symbols anywhere on the grid combine with cascades and multipliers. Its structure is closely related to Gates of Olympus, with a different visual presentation.",
+    "feature":"After a winning combination, symbols disappear. Multipliers appearing in the same sequence are added together before being applied to the win.",
+    "note":"A useful direct comparison with Gates of Olympus: the same underlying logic shows particularly clearly how presentation changes the perception of a shared structure.",
+    "cards":[
+      {"title":"Pay Anywhere: from 8 symbols","text":"Starlight Princess pays for 8–30 matching symbols anywhere on the grid. A winning combination triggers a tumble, so one spin can continue through further sequences."},
+      {"title":"Multipliers 2x–500x","text":"Multiplier symbols can appear in both the base game and the bonus. Their values range from 2x to 500x and are added together at the end of a winning tumble sequence."},
+      {"title":"15 free spins","text":"Four or more Scatters trigger the bonus game with 15 free spins. The underlying Pay Anywhere and tumble rules remain, with additional multiplier accumulation."},
+      {"title":"Overall bonus multiplier","text":"During Free Spins, a multiplier appearing in a winning tumble sequence is added to the accumulated overall multiplier and increases subsequent bonus-round wins."}
+    ]
+  },
+  "sugar-rush": {
+    "description":"A 7 × 7 cluster grid, cascades and multiplier positions. Repeated wins in the same position gradually increase its value.",
+    "feature":"A cluster of five or more neighbouring symbols triggers a cascade. Winning positions are marked and can receive growing multipliers.",
+    "note":"Watch the history of individual positions as well as the clusters themselves: a location where wins have already occurred becomes significant.",
+    "cards":[
+      {"title":"Clusters from 5 symbols","text":"Sugar Rush uses a 7 × 7 grid: a winning cluster consists of 5–15 or more matching neighbouring symbols. After a payout, the symbols disappear and the cascade continues."},
+      {"title":"Marked positions","text":"After a winning cluster, its positions are marked. If a new winning combination passes through a marked position again during the same spin, a multiplier appears there."},
+      {"title":"Multiplier up to 128x","text":"The first repeat win on a marked position gives 2x. Subsequent wins on that same position double its value up to 128x."},
+      {"title":"10–30 free spins","text":"Three, four, five, six or seven Scatters award 10, 12, 15, 20 or 30 Free Spins. In the bonus, marked positions and their multipliers persist between spins until the round ends."}
+    ]
+  },
+  "fruit-party": {
+    "description":"A large fruit grid, cluster pays and tumble sequences. During the bonus, winning groups can receive random multipliers.",
+    "feature":"After a cluster, symbols are removed and new ones drop from above. During free spins, individual winning blocks receive multipliers.",
+    "note":"A straightforward example of clusters without a complex accumulation system. Read the symbol group first, then the additional multipliers.",
+    "cards":[
+      {"title":"Clusters on a 7 × 7 grid","text":"The original Fruit Party uses cluster pays on a 7 × 7 grid. After a winning combination, new fruit symbols cascade into the empty positions."},
+      {"title":"Golden Fruit — Scatter","text":"Golden Fruit acts as the Scatter. Three or more of these symbols trigger the Free Spins bonus mode."},
+      {"title":"Random bonus multipliers","text":"During Free Spins, each winning block can randomly receive a 2x or 4x multiplier. A single cluster can therefore receive multipliers in several of its parts."},
+      {"title":"Combined multipliers up to 256x","text":"If several blocks in one winning combination receive random multipliers, their effects can combine. The official release for the original Fruit Party states a limit of up to 256x the initial win."}
+    ]
+  },
+  "legacy-of-dead": {
+    "description":"A conventional Egyptian-themed grid with ten paylines and an expanding symbol during free spins. The base game deliberately remains straightforward.",
+    "feature":"During the bonus round, a special symbol is selected at random. When enough appear, it can expand to cover an entire reel.",
+    "note":"Compare it with Book of Dead: their similar structures show how small changes to a bonus can affect the experience of a game.",
+    "cards":[
+      {"title":"Tomb — Wild and Scatter","text":"The tomb symbol both substitutes for ordinary symbols as a Wild and acts as a Scatter. The same icon therefore affects ordinary paylines and the bonus trigger."},
+      {"title":"Free Spins from three Scatters","text":"Three or more Tomb Scatters trigger free spins. During the bonus, Tomb can appear again and award further spins."},
+      {"title":"Random special symbol","text":"A Special Expanding Symbol is selected at random on entering Free Spins. It becomes the central bonus mechanic, distinct from the ordinary Tomb Wild/Scatter role."},
+      {"title":"Expanding across reels","text":"When it appears, the selected special symbol can expand to cover reels, creating further opportunities to form a payout. Assess it by its actual position and the current version's paytable."}
+    ]
+  },
+  "fire-joker": {
+    "description":"A compact 3 × 3 slot with five paylines, a respin and a multiplier wheel. One of the most concise examples of the conventional structure.",
+    "feature":"Matching stacks on two reels can stay fixed and award a respin of the third. A full screen of matching symbols triggers a multiplier.",
+    "note":"Minimal visual noise makes Fire Joker a useful reference: the ordinary payline payout is particularly easy to distinguish from an additional feature.",
+    "cards":[
+      {"title":"Compact 3 × 3 structure","text":"Fire Joker retains a conventional structure: three matching symbols on an active payline form an ordinary win. The small grid makes the additional features particularly easy to follow."},
+      {"title":"Fire Joker — Wild","text":"The Joker itself acts as a Wild and can appear in any position on all three reels, substituting for other symbols when forming a winning combination."},
+      {"title":"Respin of Fire","text":"If matching full stacks appear on two reels without a winning payline, those stacks stay fixed and the third reel receives one free respin."},
+      {"title":"Wheel of Multipliers up to x10","text":"When the same symbol fills all nine positions, the multiplier wheel starts. In the original Fire Joker, it can increase the total win up to x10."}
+    ]
+  },
+  "rise-of-olympus": {
+    "description":"A 5 × 5 grid slot with removal of winning groups, a shared meter and interventions by three gods. Read the round as a sequence of changes to the grid.",
+    "feature":"Winning groups clear the grid and charge the gods' features. Clearing the whole grid becomes a separate objective within the sequence.",
+    "note":"Unlike a payline slot, it is useful to follow the whole grid and the charge of the features, rather than one route from left to right.",
+    "cards":[
+      {"title":"Round Multiplier within one spin","text":"In Rise of Olympus, the round multiplier accumulates within one paid spin. Distinguish it from persistent progress between separate spins."},
+      {"title":"Hand of God","text":"Hand of God is linked to the god present on the grid. Each character changes the grid according to its own rules."},
+      {"title":"Wrath of God through the meter","text":"Filling the charge meter triggers Wrath of God, in which Zeus, Poseidon and Hades combine to help clear the grid. The meter is a separate source of progress within the round."},
+      {"title":"Choosing a god in Free Spins","text":"Before free spins, one god is selected to help on every non-winning spin. According to the official description of the original game, clearing the whole grid in this mode awards an x100-stake bonus."}
+    ]
+  },
+  "fat-rabbit": {
+    "description":"Five reels, five rows and fifty paylines. During the bonus, the rabbit collects carrots, grows and changes the course of the round.",
+    "feature":"Wild carrots contribute to the rabbit's counter. Filling the meter makes the character grow and can award free spins.",
+    "note":"The base game uses paylines, while the main visual progression takes place in a separate meter. An example of a feature layered over a conventional grid.",
+    "metricsNote":"Push Gaming publishes 3 844x as the Highest Observed Win. This is an observed result, rather than a confirmed fixed maximum-win cap."
+  },
+  "retro-tapes": {
+    "description":"A wide 9 × 6 grid, Cluster Links, cascades and multiplier tapes. A winning group can grow through connecting special symbols.",
+    "feature":"Clusters of five or more tapes disappear. Wild tapes can connect groups and increase their multiplier after participating in a win.",
+    "note":"With 54 positions, the action can be difficult to follow. Start with the boundary of one cluster, then identify which Wilds actually connected the groups.",
+    "metricsNote":"The current Push Gaming game page publishes RTP 96.47% and Highest Observed Win 10 000x. A separate official Push Gaming article dated 04.04.2023 confirms an RTP range of 94.46%–96.47%, so Slotfolio retains both verified RTP configurations and does not treat the observed win as a fixed maximum-win cap.",
+    "additionalSourceLabels":["Official Push Gaming article with RTP 94.46%–96.47%"]
+  }
+}

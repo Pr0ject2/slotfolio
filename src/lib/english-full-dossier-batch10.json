@@ -1,0 +1,54 @@
+{
+  "clawbass-bonanza": {
+    "description":"A fishing-themed 6 × 5 grid with pays anywhere and cascades. A progress mechanic gradually opens fishing claws that increase wins.",
+    "feature":"During free spins, opened fishing lines persist and can pull in multipliers. Bonus Buy offers different numbers of active claws at the start of the bonus.",
+    "note":"Clawbuster's official page lists RTP 95% and very high volatility. Float Multipliers can reach 100×, while a win can reach 6 000 stakes. The developer describes this amount as a possible result, rather than a separately established maximum win.",
+    "metricsNote":"Clawbuster publishes RTP 95% and Very High volatility. In the Float Multipliers description, the publisher separately states that the result can reach 6 000x the original bet. Slotfolio stores this figure as stated potential, rather than a separately announced fixed maximum-win cap."
+  },
+  "clawbass-bonanza-free-rush": {
+    "description":"A ClawBass sequel on a 6 × 5 grid. Cascades combine with bait symbols and the progress of six fishing lines, each able to pull in a multiplier.",
+    "feature":"Treasure multipliers reach 100x per line. Free Spins Purchase allows the bonus to continue with already opened fishing lines, without a new Scatter trigger.",
+    "note":"Clawbuster's official page lists RTP 94.97% and very high volatility. Treasure Multipliers can reach 100×, while a win can reach 6 000 stakes. The developer describes this amount as a possible result, rather than a separately established maximum win.",
+    "metricsNote":"Clawbuster publishes RTP 94.97% and Very High volatility. Its Treasure Multipliers description states that the total win can reach 6 000x the original bet. Slotfolio stores 6 000x as stated potential, rather than a separately stated fixed cap."
+  },
+  "3-claws-of-aztec-fire": {
+    "description":"A 5 × 3 grid leads into Hold & Win with three claw types: one doubles values, another becomes a jackpot coin, and the third collects all visible coins.",
+    "feature":"Five coins trigger three respins. New bonus symbols return the counter to three, while filling all 15 positions opens Grand 10 000x.",
+    "note":"Clawbuster's official game page lists RTP 95% and high volatility."
+  },
+  "great-clawsby-deluxe": {
+    "description":"Five reels and 50 paylines combine stacked Wilds with Hold & Win. The Claw system collects multipliers, increases respins and can add new Scatters.",
+    "feature":"Mystery Box changes the bonus state through a multiplier upgrade, extra respins or a Scatter drop. Progress develops within one Hold & Win session.",
+    "note":"The game's public technical listing reports RTP 95%, low volatility and maximum win 6 992x. Check the active operator configuration separately."
+  },
+  "fruit-train-express-hold-win": {
+    "description":"A 5 × 3 fruit grid leads into Hold & Win with coin symbols and jackpot levels. The base remains straightforward, while most state progression moves into the bonus.",
+    "feature":"Coin symbols stay fixed in Hold & Win. New coins maintain the respin sequence, while buy/ante options change the route into the feature.",
+    "note":"Industry catalogues report RTP 97%, high volatility and maximum win of around 4 500x for the published version. Check the operator's configuration in the game."
+  },
+  "hot-and-spicy-jackpot": {
+    "description":"An ordinary 5 × 3 fruit grid is supplemented by a separate 1 × 3 Chilly Mini Slot, which determines the current spin's multiplier.",
+    "feature":"Three pepper reels spin above the main grid. A separate Spicy Jackpots system contains five local prize levels from Minor to Grand.",
+    "note":"Onlyplay publishes RTP 96.06% and medium volatility. The mini-slot modifies the payout, rather than constituting a second independent bet."
+  },
+  "wild-west-girls": {
+    "description":"A Western theme on a conventional 5 × 3 grid with twenty paylines. The main rhythm does not change the grid's geometry; special symbols increase individual wins and the bonus.",
+    "feature":"Wilds help form payline combinations, Scatters open free spins, and random multipliers add variation over the fixed grid.",
+    "note":"The public release listing reports RTP 95.36% and medium volatility. Check the operator configuration before playing for money."
+  },
+  "caramelo-jackpot": {
+    "description":"A Brazilian-themed 5 × 3 game with a separate mini-slot above the main grid. The upper section sets multipliers without changing the base payline payout method.",
+    "feature":"Sticky Wilds start a sequence of extra spins. A separate jackpot game uses several prize levels and its own trigger.",
+    "note":"Onlyplay's game page publishes RTP 96.14%, medium volatility and maximum win 10 000x."
+  },
+  "coin-flynn": {
+    "description":"Two compact grids work together: the ordinary section forms payline wins, while coin symbols transfer to a separate accumulation grid.",
+    "feature":"Five fixed paylines combine with Coin Reel, multiplier Wilds and free spins. Coin accumulation changes the neighbouring grid's state between events.",
+    "note":"Onlyplay publishes RTP 97% and high volatility. The game page lists maximum win 5 831x."
+  },
+  "coin-craze-jackpot": {
+    "description":"A 5 × 3 payline grid moves into a coin-respin state. Special coins stay fixed, while four jackpot levels and Claim Win change when the bonus ends.",
+    "feature":"Sticky coins remain on the grid during respins, and new coins maintain the bonus. Claim Win allows the accumulated result to be collected within the feature.",
+    "note":"Public catalogues list RTP 95% for the release. Check the specific maximum and configuration in the operator's help menu."
+  }
+}
