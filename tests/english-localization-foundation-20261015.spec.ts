@@ -13,19 +13,23 @@ const englishUrls = [
   "/en/privacy",
   "/en/disclosure",
   "/en/responsible-gaming",
+  "/en/journal",
   "/en/journal/understanding-rtp",
 ];
 
 test("the language selector includes reviewed English pages and catalogue entry points", () => {
   expect(englishReadyPaths).toEqual([
     "/", "/about", "/slots", "/search", "/providers", "/mechanics", "/compare", "/editorial-policy", "/privacy",
-    "/disclosure", "/responsible-gaming", "/journal/understanding-rtp",
+    "/disclosure", "/responsible-gaming", "/journal", "/journal/understanding-rtp",
   ]);
   expect(languageHref("/about", "en")).toBe("/en/about");
   expect(languageHref("/en/about", "ru")).toBe("/about");
   expect(languageHref("/en/journal/understanding-rtp", "ru")).toBe("/journal/understanding-rtp");
   expect(languageHref("/slots", "en")).toBe("/en/slots");
   expect(languageHref("/search", "en")).toBe("/en/search");
+  expect(languageHref("/journal", "en")).toBe("/en/journal");
+  expect(languageHref("/journal/payout-systems", "en")).toBe("/en/journal/payout-systems");
+  expect(languageHref("/journal/wild-and-scatter", "en")).toBe("/en");
   expect(languageHref("/slots/gates-of-olympus", "en")).toBe("/en/slots/gates-of-olympus");
   expect(languageHref("/slots/catalog/no-such-entry", "en")).toBe("/en");
   expect(languageHref("/en", "ru")).toBe("/");
