@@ -86,8 +86,8 @@ export default function EnglishHome() {
       </section>
       <div className="editorial-signoff">
         <span className="brand-small">s.</span>
-        <p>Our English-language coverage is expanding.
-          <br /><span>You can now browse the catalogue in English. More English game guides are being added; some detailed records remain in Russian.</span>
+        <p>All 1,000 catalogue entries are available in English.
+          <br /><span>Explore 900 source-linked technical records and 100 full game guides. Technical records report only the characteristics we can verify.</span>
         </p>
         <Link href="/en/slots">Browse the catalogue ↗</Link>
       </div>
