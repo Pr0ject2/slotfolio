@@ -89,3 +89,14 @@ test("worked examples preserve their numbers and remain clearly hypothetical", a
     for (const phrase of phrases) await expect(page.locator("main")).toContainText(phrase);
   }
 });
+
+test("reviewed English journal routes coexist with published collections and region guides", () => {
+  for (const [ru, en] of [
+    ["/collections/beyond-lines", "/en/collections/beyond-lines"],
+    ["/bonuses", "/en/bonuses"],
+    ["/regions/great-britain", "/en/regions/great-britain"],
+  ]) {
+    expect(languageHref(ru, "en")).toBe(en);
+    expect(translatedCounterpart(en)).toBe(ru);
+  }
+});
