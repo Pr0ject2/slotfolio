@@ -33,7 +33,7 @@ test("bonus terms identify illustrative figures and link to safer gambling", asy
   await expect(page.getByRole("heading", { name: "Read the terms before the headline" })).toBeVisible();
   await expect(page.locator("#wager")).toContainText("1,000 units");
   await expect(page.locator("#wager")).toContainText("not a live offer");
-  await expect(page.getByRole("link", { name: "Read our safer gambling guidance" })).toHaveAttribute("href", "/en/responsible-gaming");
+  await expect(page.getByRole("link", { name: "Read our safer gambling guidance" })).toHaveAttribute("href", "/en/responsible-gaming/");
 });
 
 test("Great Britain guide links the official regulator and excludes Northern Ireland", async ({ page }) => {
@@ -66,5 +66,5 @@ test("English home reflects the completed catalogue without outdated pilot wordi
 
 test("English privacy page links to the reviewed comparison page", async ({ page }) => {
   await page.goto("/en/privacy/");
-  await expect(page.getByRole("link", { name: "Open the English comparison" })).toHaveAttribute("href", "/en/compare");
+  await expect(page.getByRole("link", { name: "Open the English comparison" })).toHaveAttribute("href", "/en/compare/");
 });
