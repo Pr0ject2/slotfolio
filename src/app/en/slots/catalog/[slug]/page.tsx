@@ -6,27 +6,13 @@ import { createCatalogModel } from "@/lib/catalog-index";
 import { pageMetadata } from "@/lib/seo";
 import { englishCatalogRecordSlugs, hasEnglishCatalogRecord } from "@/lib/english-catalog-record-routes";
 import type { CatalogItem } from "@/lib/catalog-query";
+import { englishCatalogFact } from "@/lib/english-catalog-facts";
+import styles from "../record.module.css";
 
 export const dynamicParams = false;
 
 const catalog = createCatalogModel();
 const published = new Map(catalog.items.filter((item) => item.coverage === "catalog").map((item) => [item.slug, item]));
-
-const mechanicsInEnglish: Record<string, string> = {
-  "Каскады": "Cascades",
-  "Кластеры": "Cluster pays",
-  "Линии": "Paylines",
-  "Способы": "Ways to win",
-  "Сбор символов": "Symbol collection",
-};
-const volatilityInEnglish: Record<string, string> = {
-  "Низкая": "Low",
-  "Средняя": "Medium",
-  "Высокая": "High",
-  "Очень высокая": "Very high",
-  "Экстремальная": "Extreme",
-  "Настраиваемая": "Configurable",
-};
 
 export function generateStaticParams() {
   return englishCatalogRecordSlugs.map((slug) => ({ slug }));
@@ -58,15 +44,15 @@ export default async function EnglishCatalogRecord({ params }: { params: Promise
   const facts = [
     ["Publisher", item.provider],
     ["Game type", item.gameType],
-    ["Grid", item.field],
-    ["Published RTP (where verified)", item.verifiedRtp],
-    ["Published maximum win (where verified)", item.maxWin],
-    ["Volatility (where verified)", volatilityInEnglish[item.verifiedVolatility] ?? item.verifiedVolatility],
-    ["Release date (where verified)", item.releaseDate],
+    ["Grid", englishCatalogFact(item.field)],
+    ["RTP", englishCatalogFact(item.verifiedRtp)],
+    ["Maximum win", englishCatalogFact(item.maxWin)],
+    ["Volatility", englishCatalogFact(item.verifiedVolatility)],
+    ["Release date", item.releaseDate],
   ].filter(([, value]) => Boolean(value));
 
   return (
-    <>
+    <div className={styles.record}>
       <nav aria-label="Breadcrumbs" className="breadcrumbs" lang="en">
         <Link href="/en">Home</Link> / <Link href="/en/slots">Catalogue</Link> / <span aria-current="page">{item.name}</span>
       </nav>
@@ -85,8 +71,7 @@ export default async function EnglishCatalogRecord({ params }: { params: Promise
         <div className="slot-summary">
           <span className="eyebrow">Documented details only</span>
           <p className="slot-deck">
-            {item.name} is a game listed by {item.provider}. This English record includes only characteristics
-            supported by the existing Slotfolio research. Blank fields are not estimates.
+            Use the linked publisher reference to check this game's configuration. Only documented values are listed.
           </p>
           {facts.length > 0 ? (
             <dl className="facts">
@@ -98,8 +83,8 @@ export default async function EnglishCatalogRecord({ params }: { params: Promise
               <h2>Documented mechanics</h2>
               <ul>
                 {item.mechanics.map((mechanic) => {
-                  const translated = mechanicsInEnglish[mechanic];
-                  return <li key={mechanic} lang={translated ? "en" : "ru"}>{translated ?? mechanic}</li>;
+                  const translated = englishCatalogFact(mechanic);
+                  return <li key={mechanic} lang={/[А-Яа-яЁё]/.test(translated) ? "ru" : "en"}>{translated}</li>;
                 })}
               </ul>
             </div>
@@ -114,8 +99,7 @@ export default async function EnglishCatalogRecord({ params }: { params: Promise
         <article className="prose">
           <section>
             <h2>What this record covers</h2>
-            <p>This is an English technical summary, not a translated full review. No bonus rules, RTP options,
-              release dates or maximum wins are inferred where source-backed information is missing.</p>
+            <p>This page contains verified catalogue facts, not a full review. Missing characteristics have not been estimated.</p>
             <p><Link href={`/slots/catalog/${slug}`} hrefLang="ru">Read the extended original record (Russian) ↗</Link></p>
           </section>
           <section>
@@ -127,6 +111,6 @@ export default async function EnglishCatalogRecord({ params }: { params: Promise
           </section>
         </article>
       </div>
-    </>
+    </div>
   );
 }

@@ -101,6 +101,7 @@ export function Header() {
             <Link
               key={href}
               href={href}
+              className={english && ["/en/about", "/en/editorial-policy"].includes(href) ? styles.englishSecondaryLink : undefined}
               aria-current={path === href || (href !== "/en" && path.startsWith(href + "/")) ? "page" : undefined}
               onClick={() => setOpen(false)}
             >
@@ -128,7 +129,7 @@ export function Header() {
 export function Footer() {
   const english = isEnglishPath(usePathname());
   if (english) return (
-    <footer className="footer" lang="en">
+    <footer className={`footer ${styles.englishFooter}`} lang="en">
       <div className="footer-main">
         <div>
           <Link href="/en" className="brand">slotfolio<span className="brand-dot">.</span></Link>
