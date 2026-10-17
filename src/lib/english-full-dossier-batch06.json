@@ -1,0 +1,63 @@
+{
+  "3-coin-towers": {
+    "description":"Thirty paylines and three pagodas that grow through matching coins and lead to three different bonus modes.",
+    "feature":"The green pagoda opens Free Games, the red one opens Coin Hold Bonus with jackpots, and the blue one opens a separate Pick’em Bonus.",
+    "note":"This is more than a payline slot with several bonus buttons: collecting the appropriate coins determines which system develops next.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.08%, high volatility, a 5×3 grid and 30 fixed paylines. The 1 000x figure specifically refers to the ULTRA Jackpot in Coin Hold Bonus when all 15 symbols are collected. It is not a stated overall maximum win for the game."
+  },
+  "hell-hot-40": {
+    "description":"A conventional fruit slot with 40 paylines and a 5 × 4 grid. Special rules are kept to a minimum, making the payout structure easy to read from the grid.",
+    "feature":"Wilds help form payline combinations. After an ordinary win, a separate Risk Game offers an attempt to increase the existing payout.",
+    "note":"Hell Hot 40 is a useful straightforward reference: low volatility and conventional paylines do not mean a guaranteed result in a short session.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.04%, low volatility, a 5 × 4 grid and 40 fixed paylines. Stacked Wilds and Scatters do not change the underlying payline mechanic, and Risk Game applies to a separate payout. The publisher does not publish an overall maximum win."
+  },
+  "crown-coins": {
+    "description":"A compact 3 × 3 grid and five fixed paylines combine with prize coins, four jackpots and a separate Royal Treasury Bonus.",
+    "feature":"Special coins carry their own values. The bonus system and four jackpots add a layer over a straightforward payline base.",
+    "note":"The official volatility is Medium-High. Slotfolio's broader scale places the game in the High category.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.06%, Medium-High volatility, a 3 × 3 grid and five fixed paylines. Royal Treasury Bonus contains four jackpot prizes up to 1 000x the total bet. This is the bonus potential, rather than a separately published overall fixed maximum win."
+  },
+  "2026-hit-slot": {
+    "description":"Five reels, four rows and 50 paylines form the base for seven Hit Hold Bonus variants with Bonus, Collector and Payer symbols.",
+    "feature":"Special Diamond symbols open different Hit Hold combinations. Expanded modes add jackpots up to 2 000x the total bet.",
+    "note":"Separate ordinary payline payouts from the independent Hold and Win system: most of the complexity is in the bonus.",
+    "metricsNote":"Endorphina's current official game page lists Volatility: High, so Slotfolio retains the High category. At the same time, the official release dated 03.03.2026 calls the same game Ultra-High volatility. This discrepancy between sources is explicitly retained, rather than reduced to one unverified interpretation.",
+    "additionalSourceLabels":["Endorphina release dated 03.03.2026 describing Ultra-High volatility"]
+  },
+  "2021-hit-slot": {
+    "description":"A minimalist fruit slot on a 3 × 3 grid with five fixed paylines and almost no additional systems over the base game.",
+    "feature":"After an eligible win, a conventional Risk Game offers an attempt to increase the existing payout separately from the main spin.",
+    "note":"One of the catalogue's simplest examples: a way to examine the payline structure without numerous parallel features.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.02%, low volatility, a 3×3 grid and 5 fixed paylines. The publisher does not publish an overall maximum win, so none is listed."
+  },
+  "2023-hit-slot": {
+    "description":"Six reels, four rows and 4 096 ways to win instead of fixed paylines. The bonus adds multipliers to Wild symbols.",
+    "feature":"Three or more Scatters trigger free spins. Wilds receive values of 2x, 3x or 5x, and several multipliers can apply to one combination.",
+    "note":"The name looks conventional, but the payout method is different: combinations are counted across adjacent reels, rather than predefined paylines.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.01%, high volatility, a 6×4 grid and 4 096 ways to win. The publisher does not state an overall fixed maximum win, so no value is invented."
+  },
+  "2025-hit-slot": {
+    "description":"One hundred fixed paylines and stacked Wilds are supplemented by Gold Scatter Coins, which can move the round into a separate Coin Cascade and jackpot system.",
+    "feature":"In Hit Win Jackpots Bonus, coins stay fixed on a 5 × 3 grid. Five ULTRA Coins correspond to the Ultra Jackpot of 2 025x; additional coins increase the payout through a multiplier.",
+    "note":"Coin Cascade is the name of a bonus transition here, rather than an ordinary base-grid cascade mechanic. The game therefore remains in the payline category.",
+    "metricsNote":"Endorphina's official materials confirm RTP 96.05%, medium volatility, a 5×4 grid and 100 fixed paylines. The game's stated maximum payout is 2 025x the total bet."
+  },
+  "prestige-crown": {
+    "description":"A 6 × 5 grid with scatter pays and cascades. Multipliers appear directly on the grid and behave differently in the base game and free spins.",
+    "feature":"Four or more Bonus symbols trigger 15 Free Games. Activated multipliers accumulate between winning cascades, and individual values can reach 1 000x.",
+    "note":"The round is defined by the cascade sequence and whether an overall bonus multiplier accumulates, rather than one large figure on screen.",
+    "metricsNote":"Endorphina's official materials confirm RTP 96.08%, high volatility, a 6×5 grid and scatter pays. Multipliers up to 1 000x refer to the accumulation mechanic in the game and Free Games. The publisher does not state an overall fixed maximum win."
+  },
+  "lucky-streak-3": {
+    "description":"Three reels, three rows and five paylines: a compact fruit slot without a long sequence of additional rules.",
+    "feature":"The main additional feature follows a payout in Classic Risk Game. The grid itself remains conventional.",
+    "note":"Lucky Streak 3 is a useful base reference for comparing more complex games from the same publisher.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.01%, low volatility, a 3 × 3 grid and five paylines. A full screen of matching symbols multiplies the win by 2x, but this is not a stated overall maximum win. The publisher does not publish an overall cap."
+  },
+  "lucky-streak-1000": {
+    "description":"Five paylines on a conventional 3 × 3 grid are supplemented by Diamond Mystery Bonus, four jackpots and a separate Risk Game.",
+    "feature":"The diamond bonus adds choices and fixed prize levels over the base grid. Filling the screen with matching symbols doubles the corresponding payout.",
+    "note":"Official Medium-High volatility is grouped into Slotfolio's High category to avoid dividing the catalogue into closely overlapping levels.",
+    "metricsNote":"Endorphina's official game page confirms RTP 96.07%, Medium-High volatility, a 3 × 3 grid and five paylines. Diamond Mystery Bonus pays a jackpot up to 1 000x the total bet. This is the stated potential of a particular bonus, rather than a separately published overall fixed maximum win."
+  }
+}

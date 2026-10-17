@@ -1,0 +1,17 @@
+.dossier :global(.slot-intro) {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 48px);
+}
+.dossier :global(.slot-figure), .dossier :global(.slot-summary) { min-width: 0; }
+.dossier :global(.slot-figure img) { width: 100%; max-width: 100%; height: auto; }
+.dossier :global(.slot-deck) { font-family: var(--sans); font-size: 17px; line-height: 1.7; }
+.dossier :global(.facts > div) { display: grid; grid-template-columns: minmax(90px, 1fr) minmax(0, 1.5fr); gap: 18px; }
+.dossier :global(.slot-summary .facts dt), .dossier :global(.slot-summary .facts dd) { font-size: 14px; line-height: 1.55; min-width: 0; max-width: none; width: auto; }
+.dossier :global(.article-toc > a) { display: flex; align-items: center; min-height: 44px; font-size: 14px; line-height: 1.5; }
+.dossier :global(.article-toc .eyebrow) { font-size: 11px; }
+.dossier :global(.slot-tag-list a) { display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; line-height: 1.5; }
+.dossier :global(.source-list) { overflow-wrap: anywhere; }
+.relatedRow { display: grid; grid-template-columns: minmax(0, 1fr) 44px; gap: 24px; border-top: 1px solid var(--line); padding: 24px 0; }
+.relatedRow h3 { font-family: var(--serif); font-size: 30px; line-height: 1.2; margin: 8px 0 12px; }
+.relatedRow p { max-width: 65ch; font-size: 16px; line-height: 1.7; margin: 0; }
+.relatedRow > a { display: flex; align-items: center; justify-content: center; min-height: 44px; }

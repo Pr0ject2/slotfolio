@@ -1,0 +1,40 @@
+{
+  "big-bass-bonanza": {
+    "description":"Fishing as a game mechanic: the fisherman collects cash-symbol values during free spins.",
+    "feature":"Further fisherman appearances advance the bonus round towards extra spins and multipliers.",
+    "note":"It is easier to follow symbol collection here than paylines. This is a distinct type of bonus progression, worth comparing with cascades.",
+    "cards":[
+      {"title":"10–20 free spins","text":"Three, four or five Scatters trigger the bonus with 10, 15 or 20 free spins respectively. The starting number of spins is determined by the number of Scatters."},
+      {"title":"The fisherman collects cash values","text":"During the bonus, the fisherman Wild collects the values of all visible cash symbols. Cash symbols do not collect themselves: a Wild must appear on the same spin."},
+      {"title":"A retrigger for every fourth Wild","text":"Every fourth collected Wild adds another 10 free spins. The Wild counter therefore has more influence on bonus progression than the number of cash symbols in an individual spin."},
+      {"title":"Multipliers 2x → 3x → 10x","text":"The first, second and third retriggers move collection into stages with 2x, 3x and 10x multipliers. This progression belongs to the original Big Bass Bonanza bonus round."}
+    ]
+  },
+  "jammin-jars": {
+    "description":"A large 8 × 8 grid, cluster pays and cascades. Wild jars move across the grid and increase their multiplier after participating in a win.",
+    "feature":"A payout requires a cluster of five or more matching fruit symbols. The symbols then disappear and start another cascade.",
+    "note":"The animation can be difficult to follow on a large grid. Focus on the positions of the Wild jars and the clusters in which they actually participate.",
+    "metricsNote":"Push Gaming states a fixed maximum of 20 000x for the original Jammin’ Jars; the current game page separately lists a Highest Observed Win of 19 998.5x.",
+    "additionalSourceLabels":["Push Gaming interview about Jammin’ Jars 2"]
+  },
+  "razor-shark": {
+    "description":"Twenty paylines, mystery stacks and a separate golden shark reveal feature. The bonus centres on shifting stacks and a growing multiplier.",
+    "feature":"Mystery stacks can reveal symbols and trigger Razor Reveal with instant multipliers and scatter symbols.",
+    "note":"The base grid is conventional; the complexity comes from the features layered over it. Understand the mystery stacks before moving on to the bonus multipliers.",
+    "metricsNote":"The original Razor Shark has no fixed maximum-win cap: Push Gaming confirms an actual win of 85 475.4x and explains that games without a cap show an observed reference figure, rather than an artificial ceiling.",
+    "additionalSourceLabels":["Push Gaming Q&A about Razor Shark"]
+  },
+  "wanted-dead-or-a-wild": {
+    "description":"Fifteen paylines and three markedly different bonus scenarios. VS symbols reveal entire Wild reels and add multipliers to paylines.",
+    "feature":"DuelReels turn VS symbols into expanded Wild reels. Their multipliers are added together for a shared winning payline.",
+    "note":"The game deliberately puts much of the attention on infrequent bonus situations. The number of effects on screen is not a useful measure of its pace.",
+    "metricsNote":"The current detailed Hacksaw Gaming page lists Volatility: 4 / 5, so Slotfolio's public category remains High. At the same time, Hacksaw Gaming's general catalogue shows Wanted Dead Or a Wild with all five segments filled on its volatility meter, 5/5. The conflict between these two first-party pages is explicitly retained without raising the public category.",
+    "additionalSourceLabels":["Current Hacksaw Gaming catalogue with the conflicting volatility meter 5/5"]
+  },
+  "le-bandit": {
+    "description":"Cluster pays, super cascades and golden positions that retain a trace of winning locations. Coins, clovers and pots of gold add further layers.",
+    "feature":"After a win, both the participating symbols and other matching symbols of the same type disappear from the grid, continuing the super cascade.",
+    "note":"Le Bandit has several layers of rules, but the basic question is straightforward: where did the cluster form, and which positions turned golden afterwards?",
+    "passportSourceLabel":"Official Hacksaw Gaming August release wrap dated 01.09.2023: Ronin Stackways on 10.08.2023, followed by Le Bandit two weeks later"
+  }
+}
