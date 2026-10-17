@@ -19,7 +19,7 @@ test("English catalogue links reviewed dossiers and all 900 technical records in
   await expect(technical.locator("h2 a")).toHaveAttribute("href", new RegExp(`/en/slots/catalog/${record.slug}/?$`));
   await expect(technical.locator(".catalog-open")).toHaveAttribute("aria-label", `Open ${record.name}`);
   await expect(page.locator("main")).not.toContainText("Game record in Russian");
-  await expect(page.getByText("All 1,000 games have English pages: 900 technical records and 100 concise game guides. The full editorial dossiers are available in Russian; English guides are adaptations, not complete translations.")).toBeVisible();
+  await expect(page.getByText("All 1,000 games have English pages: 900 technical records and 100 game guides. Technical records list sourced facts; game guides explain rules, features and source qualifications.")).toBeVisible();
 });
 
 test("Gates of Olympus has a source-backed English game guide", async ({ page }) => {

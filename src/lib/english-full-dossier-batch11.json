@@ -1,0 +1,53 @@
+{
+  "caishen-gold-infinity-dragon": {
+    "description":"A 5 × 3 grid retains twenty paylines, but triggers cascades after a win. Multipliers increase the next payout as the sequence develops.",
+    "feature":"Cascades continue one spin, free spins increase the value of a long sequence, and Bonus Buy offers an alternative route into the bonus.",
+    "note":"Mancala describes the game as a high-volatility cascade slot. Public release listings report RTP 95%."
+  },
+  "money-booster": {
+    "description":"A compact 4 × 4 grid without a conventional payline layout. Payouts are read through matches across the grid, while special Booster symbols change the resulting values.",
+    "feature":"Coin Booster increases individual cash values. Free spins make more extensive use of multipliers and the special symbol set.",
+    "note":"The public version lists RTP 95%. Very High variance is grouped into High in the catalogue."
+  },
+  "midas-hand-of-fortune": {
+    "description":"Forty paylines on a 5 × 3 grid with a golden-touch theme. The ordinary payline base is gradually enhanced by multiplier Wilds and free spins.",
+    "feature":"Multiplier Wilds increase payline payouts. The bonus retains its emphasis on these symbols rather than switching to a different method of counting wins.",
+    "note":"Public technical release catalogues report RTP 95% and high volatility."
+  },
+  "mustang-rush": {
+    "description":"Twenty paylines on a 5 × 3 grid combine with a respin scenario, multiplier Wilds and fixed jackpot levels.",
+    "feature":"Special symbols retain the bonus state between respins. Multipliers and jackpot values determine the result after the ordinary payline trigger.",
+    "note":"Industry listings report RTP 95% and high volatility for the public version."
+  },
+  "power-of-zeus-mancala": {
+    "description":"Twenty paylines and stacked multiplier Wilds lead into Hold & Earn, where coin symbols and jackpot levels persist on a separate bonus grid.",
+    "feature":"Hold & Earn retains valuable positions between respins. Stacked multiplier Wilds increase ordinary payline combinations in the base game.",
+    "note":"The published version lists RTP 95%. Distinguish this game from Hacksaw's Power of Ten and the Gates of Olympus series."
+  },
+  "life-and-death": {
+    "description":"Six reels, five rows and 19 paylines centre on four Horsemen Wild Multipliers with values from 2x to 200x.",
+    "feature":"Devastation and Reckoning develop expanding Wild reels. In Reckoning, activated Death Reels retain the ability to expand the associated multiplier on subsequent free spins.",
+    "note":"Several RTP configurations exist. Slotfolio uses the upper public value of 96.36%, so check the active variant with the operator."
+  },
+  "rad-maxx": {
+    "description":"A 5 × 5 grid uses payline direction as a changing state. Arrows around the grid determine the directions in which current wins are counted.",
+    "feature":"Crazy Cat Wilds carry 2x–20x multipliers. Wild Plus opens additional pay-direction arrows, and three bonus modes retain sticky Wilds.",
+    "note":"Official 1win material confirms 360 directions and maximum win 12 500x. The upper RTP of 96.32% comes from current technical catalogues and requires verification against the specific build."
+  },
+  "777-coins": {
+    "description":"A compact 3 × 3 grid and five fixed paylines lead into Hold & Win. A central Collect symbol gathers coin values, while new symbols reset the respin counter.",
+    "feature":"Two Bonus symbols together with Collect trigger three respins. During the bonus, Collect stays in place and gathers values, while jackpot coins add Mini, Minor, Major and Grand levels.",
+    "note":"3 Oaks' official page confirms the grid, five paylines, Hold & Win and Grand 2 000x with the possibility of tripling it to 6 000x. RTP 95.75% is a commonly listed reference configuration. Check the operator version in the game itself.",
+    "metricsNote":"3 Oaks Gaming lists GRAND JACKPOT x2 000 and separately states that combining three COLLECT SYMBOLS with a GRAND JACKPOT SYMBOL can potentially triple the Grand Prize to x6 000. Slotfolio stores 6 000x as stated bonus-prize potential, rather than an independently published fixed maximum-win cap for the whole game."
+  },
+  "3-hot-chillies": {
+    "description":"Twenty-five paylines and three coloured Chilli meters above the reels. Each pepper type is linked to its own Hold & Win modification and gradually charges the corresponding scenario.",
+    "feature":"During the bonus, sticky symbols remain between respins. Activated peppers can add multipliers, a fourth respin or a second grid. All three modifiers can operate together.",
+    "note":"3 Oaks' official game page confirms a 5 × 3 grid, 25 paylines and three bonus modifiers. RTP 95.59% and medium volatility are used as a published reference configuration, rather than a guaranteed 1win setting."
+  },
+  "egypt-fire": {
+    "description":"A 5 × 4 grid and twenty paylines lead into Hold & Win with Bonus and Mystery symbols. During the bonus, the grid can expand with additional rows as symbols accumulate.",
+    "feature":"Six Bonus and/or Mystery symbols trigger respins. Mystery symbols fill jackpot meters, new Bonus symbols stay on the grid, and a fully opened grid can raise Royal Jackpot to 10 000x.",
+    "note":"3 Oaks officially describes a 5 × 4 grid, 20 paylines, expansion into additional rows, Free Spins and Royal Jackpot 10 000x. RTP 95.50% and high volatility are reference values from specialist catalogues. Check the operator configuration separately."
+  }
+}

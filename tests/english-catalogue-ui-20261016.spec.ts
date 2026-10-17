@@ -5,7 +5,7 @@ test("English catalogue and search preserve the 1,000-game index", async ({ page
   await expect(page.getByRole("heading", { name: /Explore the slot catalogue/ })).toBeVisible();
   await expect(page.getByRole("searchbox", { name: "Find a game" })).toBeVisible();
   await expect(page.getByRole("status").first()).toContainText("1000 games");
-  await expect(page.getByText("All 1,000 games have English pages: 900 technical records and 100 concise game guides. The full editorial dossiers are available in Russian; English guides are adaptations, not complete translations.")).toBeVisible();
+  await expect(page.getByText("All 1,000 games have English pages: 900 technical records and 100 game guides. Technical records list sourced facts; game guides explain rules, features and source qualifications.")).toBeVisible();
   await expect(page.locator(".catalog-results")).toHaveAttribute("lang", "en");
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
   await page.goto("/en/search/");

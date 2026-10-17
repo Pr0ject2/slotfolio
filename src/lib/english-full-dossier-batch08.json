@@ -1,0 +1,61 @@
+{
+  "dork-unit": {
+    "description":"Sixteen fixed paylines and two different bonus directions: Gift Bonanza develops gift-box multiplier Wilds, while Dork Spins changes the behaviour of Wild reels.",
+    "feature":"Gift Boxes can stay fixed and accumulate multipliers, while Dork Spins centres on an expanding sticky Dork Reel.",
+    "note":"Dork Unit lists RTP 96.28%. Hacksaw Gaming's release states medium volatility, 3 out of 5, alongside 16 paylines and a maximum win of 10 000×. That material does not list other RTP variants.",
+    "metricsNote":"Hacksaw Gaming's official release dated 31.07.2022 describes Dork Unit as medium 3/5 volatility with 16 paylines and maximum win 10 000x. The release does not publish RTP configurations, so the verified profile does not add any."
+  },
+  "crypto-genesys": {
+    "description":"A neon version of Pragmatic Play's scatter-pays structure: matches are counted across the whole grid, and winning symbols make room for the next cascade.",
+    "feature":"During free spins, multiplier symbols increase cascade wins. The published upper payout limit for the game is 15 000x.",
+    "note":"Check the operator version's RTP in the game's own help menu: modern releases can have alternative configurations."
+  },
+  "max-win-machine": {
+    "description":"A compact Hacksaw Gaming game with three reels and one payline. The spin's entire structure is reduced to Lucky Seven symbols and infrequent large outcomes.",
+    "feature":"One, two or three Lucky Sevens from left to right award fixed payouts of 1x, 10x and 10 000x respectively. Hacksaw Gaming's current official page does not substantiate extra FeatureSpins or multiplier features for the game.",
+    "note":"A useful comparison with complex modern grids: the presentation is minimal, but official volatility is listed at the maximum level, 5/5.",
+    "metricsNote":"Hacksaw Gaming's current page describes only Lucky Seven: one, two or three symbols from left to right award 1x, 10x and 10 000x. The page does not state FeatureSpins or a separate multiplier mechanic."
+  },
+  "power-of-ten": {
+    "description":"A 5 × 5 grid with 19 fixed paylines, where ordinary payouts sit alongside Power Wheels and several different bonus modes.",
+    "feature":"Power Wheel can show 10x, 100x, 1 000x or MAX WIN. Deck of Fortune and Whopping Wheels develop these wheels differently during the bonus.",
+    "note":"Power of Ten lists RTP 96.23%. Hacksaw Gaming's game page describes Power Wheels and states a maximum of 10 000×. The studio's catalogue rates volatility as 5 out of 5, so the category here is Extreme. The game page does not provide other RTP variants or a separate written volatility description.",
+    "metricsNote":"Hacksaw Gaming's current dedicated page confirms Power Wheels and maximum win 10 000x, but does not publish RTP configurations or a separate written volatility field. Its current official catalogue shows a full volatility meter of 5/5 for Power of Ten, so Slotfolio's public category is Extreme. RTP variants are not added as a verified metric.",
+    "additionalSourceLabels":["Current Hacksaw Gaming catalogue with volatility meter 5/5"]
+  },
+  "gemhalla": {
+    "description":"A BGaming Pay Anywhere slot with refilling reels: the grid refills after a payout, while multiplier symbols can increase the result in both the base game and the bonus.",
+    "feature":"Several multipliers add together within one base-game spin. During Free Spins, Thor accumulates the values that appear for application to the win.",
+    "note":"BGaming's official page lists RTP 97.17% and a maximum multiplier of 5 000x for the published configuration.",
+    "metricsNote":"BGaming's current official game page and official June release overview publish Very-high volatility, so Slotfolio uses the current Very high category. A separate official BGaming Players Hub page simultaneously uses High for the same game. This conflict is retained in the provenance rather than reduced to the lower category.",
+    "additionalSourceLabels":["Official BGaming overview describing very high volatility","BGaming Players Hub with the conflicting Volatility: High description"]
+  },
+  "house-of-sins": {
+    "description":"A BGaming game exclusive to 1win on a 6 × 8 grid: winning clusters are removed, and replacement symbols continue the cascade sequence.",
+    "feature":"Growing multipliers and special symbols continue the round's progression during Free Spins. The published maximum is 10 000x.",
+    "note":"A separate official 1win promotional page confirms a 6 × 8 grid, cluster wins with cascades, growing cell multipliers, sticky Wilds, Free Spins, Buy Free Spins, Sins Spin and maximum win 10 000x. That page does not publish RTP, so the card's 96.00% remains a reference figure and is not presented as a verified metric."
+  },
+  "scarab-temple": {
+    "description":"Twenty-five paylines and two independent bonus directions: Hold & Win with Scarab values, and separate Free Spins with low-value symbols removed.",
+    "feature":"Six bonus Scarabs trigger three respins. New coins stay fixed and reset the counter, while a filled grid can award GRAND 1 000x.",
+    "note":"The game shows the distinction between the payline base, value collection in Hold & Win and a separate set of free spins."
+  },
+  "jungle-volcano": {
+    "description":"A twenty-payline 3 Oaks Gaming slot whose base grid leads to Hold & Win with opening rows, Power Feature and fixed jackpots.",
+    "feature":"The bonus grid can expand. Power Feature and jackpot levels create a separate progression system over ordinary paylines.",
+    "note":"3 Oaks' official release confirms a 5 × 4 grid, 20 paylines and the key features. RTP can differ between operator configurations."
+  },
+  "mighty-hot-amazonia": {
+    "description":"A conventional 5 × 3 grid in which Wazdan connects reels filled with matching symbols to a separate Fortune Wheel and configurable volatility.",
+    "feature":"Wall of Symbols fills reels with matching symbols, while Fortune Wheel can add multipliers up to 15x. Volatility Levels changes the game's profile.",
+    "note":"Wazdan's current game page publishes RTP 96.22%, maximum win 1 500x and a Low-Medium base profile. Volatility Levels™ allows the risk level to change, so Slotfolio's public category remains Configurable.",
+    "metricsNote":"Wazdan's current game page publishes maximum win 1 500x, RTP 96.22% and a base profile of Volatility: Low-Medium. The same game uses Volatility Levels™, which Wazdan describes as allowing players to select a volatility level. Slotfolio therefore retains the published base profile in the provenance while showing Configurable as the public category.",
+    "additionalSourceLabels":["Official Mighty Hot Amazonia page describing volatility selection","Official Wazdan Volatility Levels™ description"]
+  },
+  "mummyland-treasures": {
+    "description":"A 7 × 7 grid with 823 543 ways and cascading stone destruction. The geometry opens up gradually, and the bonus adds an accumulating multiplier.",
+    "feature":"Destroyed stones do not return during Free Games. Scarab Beetles and Mummy increase the overall multiplier, while Craft Bonus offers a choice of how to enter the feature.",
+    "note":"Belatra's official game page lists RTP 96.37%, high volatility and maximum win 25 000x for the published version.",
+    "metricsNote":"Belatra Games' current game page publishes RTP 96.37%, maximum win 25 000x and High volatility. These values match the full dossier's reference profile."
+  }
+}

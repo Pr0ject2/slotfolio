@@ -1,0 +1,58 @@
+{
+  "troy-superways": {
+    "description":"A dynamic SuperWays slot with cascades: Fire Pot explodes neighbouring positions and helps expand the grid as the sequence develops.",
+    "feature":"Three or more BONUS symbols trigger up to 18 Super Spins. Features start with at least 1 024 ways, and expansion can raise the number of combinations to 387 420 489.",
+    "note":"Yggdrasil's official page lists the upper RTP configuration of 96%, high volatility and maximum win 35 336x.",
+    "metricsNote":"Yggdrasil Gaming's current page publishes maximum multiplier 35 336x, High volatility and three RTP configurations: 96%, 94% and 90.5%. The upper value matches the dossier's reference RTP."
+  },
+  "gates-of-1win": {
+    "description":"A branded 1win version based on Pay Anywhere: eight or more matching symbols across the grid form a payout and start the next cascade.",
+    "feature":"Gifts of Zeus adds multipliers up to 500x. During free spins, cascades retain the same underlying rules.",
+    "note":"An official 1win post identifies Pragmatic Play as the developer and lists RTP 96.5%. Still check the active configuration in the game's help menu."
+  },
+  "1win-bonanza": {
+    "description":"A gold-themed Megaways version from the 1win Only section: variable symbol counts form up to 117 649 ways, and winning positions trigger cascades.",
+    "feature":"During Free Spins, cascades are accompanied by a growing multiplier. The length of the event sequence therefore matters alongside the starting grid.",
+    "note":"An official 1win post associates the game with Big Time Gaming's Megaways mechanic and lists RTP 96%. The recorded publisher attribution has not yet been verified against the live lobby.",
+    "attributionNote":"The cited post identifies the Megaways mechanic. The recorded publisher attribution still requires verification."
+  },
+  "black-friday-shady-lady": {
+    "description":"Thirty paylines on a 5 × 4 grid with a deliberately chaotic sale theme. Special characters trigger respins and change the state of the reels.",
+    "feature":"Road Rage Re-Spins turns individual reels into Wild states. The bonus develops characters, values and multipliers through a longer sequence.",
+    "note":"1win's official publisher overview separately identifies Black Friday, 30 paylines and RTP 96.35%. Operator builds can differ."
+  },
+  "devils-finger": {
+    "description":"A six-reel Shady Lady game with an expanding structure and ways pays. Its main progression involves symbol destruction and growing multipliers.",
+    "feature":"The distributor's official game page lists up to 20 736 ways and maximum win 20 000x. Bonus scenarios continue increasing multipliers.",
+    "note":"1win explicitly lists the game in its official Spotlight on Shady Lady. Microgaming's game page confirms RTP 96.40% and very high volatility."
+  },
+  "zeus-claws": {
+    "description":"A conventional reel base combines with Hold & Win. Coins remain in the bonus, while a mechanical claw can increase their values and turn individual coins into jackpot symbols.",
+    "feature":"Three coins in the second row trigger Hold & Win with three attempts. A new coin resets the counter, while Collector and Mystery coins change the accumulated grid.",
+    "note":"Clawbuster publishes RTP 95% and medium volatility. The bonus structure matters more than one jackpot value: its state persists between respins."
+  },
+  "panda-claw-jackpot": {
+    "description":"Five reels and a separate Claw system: several Claw symbols first award a cash payout, while a larger group moves the game into a bonus horizontal reel.",
+    "feature":"In Bonus Claw Game, the claw collects cash prizes, extra spins and five jackpot levels. More Claw symbols in the trigger mean a longer starting bonus.",
+    "note":"Clawbuster's official game page lists RTP 95% and medium volatility. Jackpot Collection belongs to the bonus state, rather than ordinary paylines.",
+    "metricsNote":"Clawbuster's official game iframe explicitly displays Win up to 5 000x. The main Panda Claw Jackpot page separately publishes RTP 95%, Medium volatility and Extreme Jackpot 2 500x. The jackpot figure is kept separate from the game's overall stated maximum.",
+    "additionalSourceLabels":["Main Clawbuster game page with Extreme Jackpot 2 500x"]
+  },
+  "wolf-hunt-claw-and-win": {
+    "description":"Stacked Wilds in the base game combine with a Claw & Win bonus. Separate claw reels collect multipliers, mystery awards and new Scatters.",
+    "feature":"The bonus starts with three respins. New Scatters or a collected prize reset the counter, while neighbouring claws can combine and increase the overall multiplier.",
+    "note":"Clawbuster lists RTP 95%, low volatility and maximum win 6 992x. A Low category does not mean a smooth short session.",
+    "metricsNote":"Clawbuster's current page explicitly publishes Max Win Potential 6 992x, RTP 95% and Low volatility. These values match the full dossier's reference profile."
+  },
+  "claw-bonanza-gold-rush": {
+    "description":"A cascade structure with mechanical claws: booster symbols open additional claws, while winning groups make room for the next drop.",
+    "feature":"Claws can collect bomb multipliers up to 2 000x. Three Scatters open a route to free spins, while Gamble Feature changes the starting number of spins.",
+    "note":"Clawbuster's official game page lists RTP 95%, high volatility and maximum win 10 000x.",
+    "metricsNote":"Clawbuster's current page explicitly states Max Win 10 000x and Max Multiplier x10 000, alongside RTP 95% and High volatility."
+  },
+  "double-triple-burning-wilds": {
+    "description":"A fruit-themed payline base with expanding Wilds: a Wild on the central reels can fill a whole reel, while Claw clears neighbouring positions within the event.",
+    "feature":"Three, four or five Scatters award 10, 20 or 50 free spins respectively. A separate Super Bonus guarantees expanding Wilds during the bonus.",
+    "note":"Clawbuster publishes RTP 95% and Medium-High volatility. Slotfolio groups the latter into the High category."
+  }
+}

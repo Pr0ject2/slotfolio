@@ -1,0 +1,60 @@
+{
+  "chaos-crew": {
+    "description":"An unusual 5 × 5 grid with nineteen paylines and characters acting as multiplier Wilds. Most accumulation moves into the bonus round.",
+    "feature":"Cranky Cat multiplies the payline in which it participates. During the bonus, multiplier values accumulate separately above the reels until the round ends.",
+    "note":"Despite the noisy presentation, the underlying rule is conventional. A useful example of complex presentation layered over ordinary paylines."
+  },
+  "chaos-crew-2": {
+    "description":"The sequel retains the 5 × 5 grid and nineteen paylines, adding new multiplier scenarios and several bonus-game variants.",
+    "feature":"Character multipliers participate in paylines, while separate bonus modes change how they accumulate and are reused.",
+    "note":"Comparison with the first game is useful because the geometry barely changes. The differences lie in the layers of features over it."
+  },
+  "deadwood": {
+    "description":"A Western setting, 576 ways and xNudge Wilds. Tall Wild symbols nudge until fully visible and increase their own multiplier.",
+    "feature":"Hunter xNudge Wild occupies several positions. Each required nudge increases the multiplier that participates in the corresponding wins.",
+    "note":"Focus on the position of the tall Wild and its number of nudges, rather than a payline. The symbol's geometry directly affects the course of the round."
+  },
+  "mental": {
+    "description":"An uneven grid starting with 108 ways, alongside xWays, xNudge and xSplit. The number of available combinations can increase sharply within one event.",
+    "feature":"xWays reveals additional matching symbols, xSplit divides positions, and xNudge moves tall Wilds and increases their multiplier.",
+    "note":"A particularly clear example of a dynamic grid: one fixed number of ways is not enough to describe it, because the positions themselves keep changing."
+  },
+  "starburst": {
+    "description":"Ten paylines, a straightforward set of symbols and expanding Wilds with respins. A particularly clear example of a conventional interface.",
+    "feature":"Starburst Wild expands across the whole reel and triggers a respin. A new Wild during the respin can continue the sequence.",
+    "note":"Almost all the game's distinctive behaviour is concentrated in one symbol. Starburst is therefore a useful reference before exploring more feature-intensive modern slots.",
+    "metricsNote":"The current canonical NetEnt page publishes RTP 96.08%, Max payout 800x bet, a 5 × 3 grid and 10 paylines. Evolution's current page for the same original Starburst simultaneously publishes RTP 96.09%. Slotfolio retains 96.08% as the primary publisher value and explicitly shows this first-party conflict.",
+    "additionalSourceLabels":["Evolution / NetEnt page with the conflicting RTP 96.09%"]
+  },
+  "gonzos-quest": {
+    "description":"Avalanche replaces ordinary grid changes: winning symbols disappear, new ones drop from above, and the multiplier grows within the sequence.",
+    "feature":"Each further Avalanche in the same sequence raises the multiplier. When wins stop, the grid and multiplier return to their initial state.",
+    "note":"Gonzo’s Quest is a useful historical reference for cascades: their structure is clear without numerous additional systems layered over it.",
+    "metricsNote":"The current canonical NetEnt page publishes Max payout 2 200x bet and RTP 95.97%. Evolution's current page for the same original Gonzo’s Quest simultaneously lists a maximum win of 2 500x the original bet at the same RTP 95.97%. Slotfolio retains 2 200x as the primary publisher value and explicitly shows the first-party conflict.",
+    "additionalSourceLabels":["Evolution / NetEnt page with the conflicting maximum of 2 500x"]
+  },
+  "dead-or-alive-2": {
+    "description":"Nine paylines and three markedly different free-spins modes. The base grid remains straightforward, while the player chooses the type of bonus.",
+    "feature":"Three bonus scenarios use sticky Wilds and multipliers differently while retaining the same nine-payline base.",
+    "note":"This shows how volatility and the experience of a bonus can change without altering the underlying geometry. Read the selected mode's rules before the figures.",
+    "metricsNote":"Evolution's official NetEnt page repeatedly states potential wins of up to 100 000x the original bet. A separate netent.com page simultaneously contains a conflicting metadata field, Max payout 1 600x. Slotfolio retains this provenance conflict and does not combine the two figures.",
+    "additionalSourceLabels":["NetEnt game page with the conflicting metadata field"]
+  },
+  "money-train-2": {
+    "description":"Forty paylines in the base game and a separate Money Cart Bonus, where symbols with values and persistent functions replace ordinary combinations.",
+    "feature":"During the bonus, Collector, Payer, Sniper and other characters change the values of special symbols. A filled reel can expand the grid.",
+    "note":"An example of a game with two almost separate ways of reading the action: paylines in the base game, and the state of a group of special symbols during the bonus.",
+    "metricsNote":"Relax Gaming's current official page confirms a maximum of 50 000x and separately publishes German RTP 90%. The dossier retains 96.40% as reference RTP, but the current page does not publish it as a separately verified configuration. Slotfolio therefore does not construct a verified RTP configuration list from these values."
+  },
+  "snake-arena": {
+    "description":"Thirty fixed paylines and a bonus built around a snake chasing a knight. The snake's length becomes part of the state of the grid.",
+    "feature":"During free spins, the snake grows after capturing each knight and occupies more positions until its own body blocks its movement.",
+    "note":"Relax Gaming's official material describes Snake Arena as having maximum volatility, but later in the same text calls it high volatility. The category shown here is Extreme; note the discrepancy in the publisher's description.",
+    "metricsNote":"Relax Gaming's current official page publishes main RTP 96.25%, separate German RTP 90%, and wins up to 2 758.8x the stake. Slotfolio retains 90.00% as a separate verified RTP variant without replacing the main reference RTP 96.25%."
+  },
+  "book-of-99": {
+    "description":"Ten paylines and a familiar book structure, with an unusually high reference RTP. The bonus retains the idea of a selected expanding symbol.",
+    "feature":"Three books trigger free spins. An additional route to the bonus involves collecting 99 book symbols in the base game.",
+    "note":"A high RTP does not make a short session predictable. This game is particularly useful for explaining the difference between long-run theory and an individual result."
+  }
+}
