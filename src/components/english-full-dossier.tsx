@@ -53,7 +53,7 @@ export function EnglishFullDossier({ game }: { game: Slot }) {
       <span className="eyebrow accent">Game guide / {game.year}</span>
       <h1>{game.name}</h1>
       <p>{game.provider}{copy.attributionNote ? " · recorded attribution" : ""}</p>
-      <Link className="text-link" href={`/providers/${providerSlug(game.provider)}`}>Publisher profile (Russian) ↗</Link>
+      <Link className="text-link" href={`/en/providers/${providerSlug(game.provider)}`}>Publisher profile ↗</Link>
     </div></div>
     <div className="slot-intro">
       <figure className="slot-figure"><GameImage slot={game} priority /><figcaption>Game artwork · {game.provider} · {game.name}</figcaption></figure>
@@ -82,14 +82,14 @@ export function EnglishFullDossier({ game }: { game: Slot }) {
         <a href="#math-profile">RTP and other figures</a><a href="#perspective">Editorial perspective</a>
         <a href="#catalog-context">Comparing games</a><a href="#source">{isGates ? "Sources and limitations" : "Sources and risks"}</a>
         <a href="#faq">Game questions</a><a href="#related">Related games</a>
-        <Link href={`/compare?seed=${game.slug}`}>Open comparison (Russian) ↗</Link>
+        <Link href={`/en/compare?seed=${game.slug}`}>Open comparison ↗</Link>
       </aside>
       <article className="prose">
         <section id="rules"><h2>{isGates ? "How wins are formed" : "How wins work"}</h2>
           <p>{copy.feature} This feature determines what to follow during the round.</p>
           {mechanicList.map(name => <p key={name}>{englishMechanicExplanations[name]}</p>)}
           <p>Open the paytable before playing. It explains Wild and Scatter roles, feature triggers and the maximum-payout limits for the particular version.</p>
-          {primaryMechanic && <Link className="text-link" href={`/mechanics/${primaryMechanic.slug}`}>Read about {englishCatalogFact(primaryMechanic.name).toLowerCase()} (Russian) ↗</Link>}
+          {primaryMechanic && <Link className="text-link" href={`/en/mechanics/${primaryMechanic.slug}`}>Read about {englishCatalogFact(primaryMechanic.name).toLowerCase()} ↗</Link>}
         </section>
         <section id="feature"><span className="eyebrow accent">Features and bonuses</span><h2>{isGates ? "Multipliers and free spins" : "Key feature"}</h2>
           <div className="dossier-feature-grid">{cards.map((card,index) => <article className={`dossier-feature-card ${card.kind === "primary" ? "is-primary" : ""}`} key={`${card.title}-${index}`}><span>{String(index+1).padStart(2,"0")}</span><h3>{card.title}</h3><p>{card.text}</p></article>)}</div>
@@ -114,7 +114,7 @@ export function EnglishFullDossier({ game }: { game: Slot }) {
             <div><span>Volatility</span><strong>{englishCatalogFact(game.volatility)}</strong><small>{volatilitySummary}</small></div>
             <div><span>Closest in structure</span><strong>{related.map(item=>item.name).join(" · ")}</strong><small>Games with similar rules and features</small></div>
           </div>
-          <Link className="text-link" href={`/compare?seed=${game.slug}`}>Open comparison table (Russian) ↗</Link>
+          <Link className="text-link" href={`/en/compare?seed=${game.slug}`}>Open comparison table ↗</Link>
         </section>
         <section id="source"><h2>{isGates ? "Sources and limitations" : "Sources and risks"}</h2>
           <p>RTP describes a theoretical return over a large number of bets. It does not show how much will return during one session. Volatility describes the spread of results, but cannot predict the next round.</p>
@@ -127,7 +127,7 @@ export function EnglishFullDossier({ game }: { game: Slot }) {
         <section id="faq"><h2>Game questions</h2>
           <details><summary>Can the next result be predicted?</summary><p>No. Earlier results do not provide a way to calculate the next outcome. A losing sequence does not make a win due.</p></details>
           <details><summary>Why does another site show a different RTP?</summary><p>A game can have several mathematical configurations. Sources also sometimes mix up the original game and its sequels. Check the title and help menu of the version you have opened.</p></details>
-          <details><summary>What should I compare before choosing?</summary><p>Payout mechanics, grid dimensions, bonus features and how understandable the interface is. The <Link href={`/compare?seed=${game.slug}`}>comparison table (Russian)</Link> helps show the differences.</p></details>
+          <details><summary>What should I compare before choosing?</summary><p>Payout mechanics, grid dimensions, bonus features and how understandable the interface is. The <Link href={`/en/compare?seed=${game.slug}`}>comparison table</Link> helps show the differences.</p></details>
         </section>
       </article>
     </div>

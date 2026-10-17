@@ -337,7 +337,7 @@ export function Catalog({
           )}
 
           <div className="catalog-end">
-            <Link href="/compare">{locale === "en" ? en.compareInRussian : "Перейти к сравнению ↗"}</Link>
+            <Link href={locale === "en" ? "/en/compare" : "/compare"}>{locale === "en" ? en.compareInRussian : "Перейти к сравнению ↗"}</Link>
           </div>
         </div>
       </div>

@@ -1,0 +1,28 @@
+.profile :global(.entity-jump a),
+.profile :global(.entity-reading-links a),
+.profile :global(.article-toc > a) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.profile :global(.entity-frequency small) {
+  font-size: 13px;
+}
+@media (max-width: 600px) {
+  .profile :global(.section-title) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .profile :global(.editorial-signoff) {
+    display: block;
+  }
+  .profile :global(.editorial-signoff p) {
+    max-width: none;
+  }
+  .profile :global(.editorial-signoff > a) {
+    display: inline-block;
+    margin-top: 16px;
+    margin-left: 0;
+  }
+}

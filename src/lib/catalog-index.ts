@@ -174,6 +174,7 @@ export type ComparisonItem = {
   feature: string;
   note: string;
   metrics?: {
+    note?: string;
     maxWin?: string;
     maxWinLabel?: string;
     rtpVariants?: string[];

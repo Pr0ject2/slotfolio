@@ -140,6 +140,9 @@ export function Footer() {
           <Link href="/en">Home</Link>
           <Link href="/en/journal/understanding-rtp">Understanding RTP</Link>
           <Link href="/en/slots">Game catalogue</Link>
+          <Link href="/en/providers">Publishers</Link>
+          <Link href="/en/mechanics">Mechanics</Link>
+          <Link href="/en/compare">Compare games</Link>
         </div>
         <div>
           <span className="eyebrow">About Slotfolio</span>

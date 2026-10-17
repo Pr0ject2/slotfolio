@@ -6,6 +6,9 @@ test.use({ baseURL: process.env.AUDIT_BASE_URL || "http://localhost:3000" });
 const englishUrls = [
   "/en",
   "/en/about",
+  "/en/providers",
+  "/en/mechanics",
+  "/en/compare",
   "/en/editorial-policy",
   "/en/privacy",
   "/en/disclosure",
@@ -15,7 +18,7 @@ const englishUrls = [
 
 test("the language selector includes reviewed English pages and catalogue entry points", () => {
   expect(englishReadyPaths).toEqual([
-    "/", "/about", "/slots", "/search", "/editorial-policy", "/privacy",
+    "/", "/about", "/slots", "/search", "/providers", "/mechanics", "/compare", "/editorial-policy", "/privacy",
     "/disclosure", "/responsible-gaming", "/journal/understanding-rtp",
   ]);
   expect(languageHref("/about", "en")).toBe("/en/about");

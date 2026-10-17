@@ -129,7 +129,7 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
 
         <div className={`catalog-game-data ${styles.actions}`}>
           {item.coverage === "dossier" ? (
-            locale === "en" ? <Link className={styles.openRecord} href="/compare">Compare games (Russian) ↗</Link> : <CompareButton slug={item.slug} name={item.name} />
+            <CompareButton slug={item.slug} name={item.name} locale={locale} />
           ) : (
             <Link className={styles.openRecord} href={destination}>{locale === "en" ? (englishCatalogRecord ? "View English facts ↗" : "Game details (Russian) ↗") : "Подробнее об игре ↗"}</Link>
           )}
