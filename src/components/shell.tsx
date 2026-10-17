@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState, type MouseEvent } from "react";
 import styles from "./shell.module.css";
 import { isEnglishPath, languageHref, translatedCounterpart } from "@/lib/locales";
@@ -9,6 +9,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
   const path = usePathname();
+  const router = useRouter();
   const english = isEnglishPath(path);
   useEffect(() => { document.documentElement.lang = english ? "en" : "ru"; }, [english]);
   useEffect(() => {
@@ -38,7 +39,7 @@ export function Header() {
     setOpen(false);
     if (event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
       event.preventDefault();
-      window.location.assign(withBasePath(languageHref(path, locale)) + window.location.search + window.location.hash);
+      router.push(languageHref(path, locale) + window.location.search + window.location.hash);
     }
   }
   const to = (route: string) => english ? languageHref(route, "en") : route;

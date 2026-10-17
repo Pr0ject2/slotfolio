@@ -92,14 +92,14 @@ test("manual language changes preserve query and anchors before and after hydrat
     await page.getByRole("link", { name: "RU", exact: true }).click();
     await expect
       .poll(() => new URL(page.url()).pathname)
-      .toMatch(/\/providers\/pragmatic-play\/?$/);
+      .toMatch(/^\/providers\/pragmatic-play\/?$/);
     expect(new URL(page.url()).searchParams.get("audit")).toBe("locale");
     expect(new URL(page.url()).hash).toBe("#games");
     await expect(page.locator("html")).toHaveAttribute("lang", "ru");
     await page.getByRole("link", { name: "EN", exact: true }).click();
     await expect
       .poll(() => new URL(page.url()).pathname)
-      .toMatch(/\/en\/providers\/pragmatic-play\/?$/);
+      .toMatch(/^\/en\/providers\/pragmatic-play\/?$/);
     expect(new URL(page.url()).searchParams.get("audit")).toBe("locale");
     expect(new URL(page.url()).hash).toBe("#games");
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
@@ -120,4 +120,35 @@ test("translated dossiers expose a direct language counterpart", async ({
   await expect(page).toHaveURL(/\/en\/slots\/sugar-rush-1000\/?$/);
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
   await context.close();
+});
+
+test("language changes retain in-tab comparison when storage is unavailable", async ({
+  page,
+}) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(window, "localStorage", {
+      get() {
+        throw new Error("blocked");
+      },
+    });
+  });
+  await page.goto("/en/compare/");
+  await page.locator(".comparison-presets button").first().click();
+  await expect(page.locator(".comparison-selection article")).toHaveCount(2);
+  await page
+    .locator("header")
+    .getByRole("link", { name: "RU", exact: true })
+    .click();
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Сравнить игры",
+  );
+  await expect(page.locator(".comparison-selection article")).toHaveCount(2);
+  await page
+    .locator("header")
+    .getByRole("link", { name: "EN", exact: true })
+    .click();
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Compare games",
+  );
+  await expect(page.locator(".comparison-selection article")).toHaveCount(2);
 });
