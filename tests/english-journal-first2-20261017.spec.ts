@@ -10,8 +10,8 @@ test("all five English journal guides preserve complete sections and documented 
     const original = journalGuides.find(item => item.slug === guide.slug)!;
     expect(guide.sections.map(section => section.id)).toEqual(original.sections.map(section => section.id));
     expect(guide.sections).toHaveLength(original.sections.length);
-    expect(guide.sources.map(source => source.href.replace(/^\\/en(?=\\/)/, "").replace(/\\/$/, "")).sort())
-      .toEqual(original.sources.map(source => source.href.replace(/\\/$/, "")).sort());
+    expect(guide.sources.map(source => source.href.replace(/^\/en(?=\/)/, "").replace(/\/$/, "")).sort())
+      .toEqual(original.sources.map(source => source.href.replace(/\/$/, "")).sort());
     for (let i = 0; i < original.sections.length; i++) {
       const source = original.sections[i];
       const english = guide.sections[i];
@@ -48,7 +48,7 @@ for (const guide of englishJournalGuides) {
       await expect(page.locator(`section#${section.id} h2`)).toHaveText(section.title);
     }
     const actualSources = await page.locator('section#sources ul').first().locator("a").evaluateAll(nodes => nodes.map(n => n.getAttribute("href")));
-    const normaliseInternal = (url: string | null) => url?.startsWith("/") ? url.replace(/\\/$/, "") : url;
+    const normaliseInternal = (url: string | null) => url?.startsWith("/") ? url.replace(/\/$/, "") : url;
     expect(actualSources.map(normaliseInternal).sort()).toEqual(guide.sources.map(source => normaliseInternal(source.href)).sort());
     await expect(page.locator("main")).not.toContainText(/[А-Яа-яЁё]{3,}/);
     await expect(page.getByRole("link", { name: "All journal guides" })).toHaveAttribute("href", /\/en\/journal\/?$/);
