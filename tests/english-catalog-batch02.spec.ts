@@ -65,6 +65,8 @@ for (const width of [320, 390, 768, 1024, 1440]) {
       await page.evaluate(() => document.fonts.ready);
       expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width + 1);
       expect((await page.locator("main h1").boundingBox())!.height).toBeLessThan(210);
+      expect((await page.locator(".prose").boundingBox())!.width).toBeGreaterThanOrEqual(Math.min(700, width - 48));
+      expect((await page.locator(".prose").boundingBox())!.width).toBeLessThanOrEqual(700);
       await page.screenshot({path:testInfo.outputPath(`${item.slug}-${width}.png`), fullPage:true});
     }
     if (width <= 600) {

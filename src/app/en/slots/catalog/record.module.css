@@ -24,3 +24,7 @@
   max-width: none;
   width: auto;
 }
+
+/* Technical records have no contents sidebar. Keep prose out of its column. */
+.record :global(.article-layout) { display: block; }
+.record :global(.slot-body .prose) { max-width: 700px; }
