@@ -13,6 +13,7 @@ const englishUrls = [
   "/en/bonuses",
   "/en/regions",
   "/en/regions/great-britain",
+  "/en/journal",
   "/en/editorial-policy",
   "/en/privacy",
   "/en/disclosure",
@@ -22,7 +23,7 @@ const englishUrls = [
 
 test("the language selector includes reviewed English pages and catalogue entry points", () => {
   expect(englishReadyPaths).toEqual([
-    "/", "/about", "/slots", "/search", "/providers", "/mechanics", "/compare", "/collections", "/bonuses", "/regions", "/regions/great-britain", "/editorial-policy", "/privacy",
+    "/", "/about", "/slots", "/search", "/providers", "/mechanics", "/compare", "/collections", "/bonuses", "/regions", "/regions/great-britain", "/journal", "/editorial-policy", "/privacy",
     "/disclosure", "/responsible-gaming", "/journal/understanding-rtp",
   ]);
   expect(languageHref("/about", "en")).toBe("/en/about");
@@ -35,6 +36,9 @@ test("the language selector includes reviewed English pages and catalogue entry 
   expect(languageHref("/collections/not-a-collection", "en")).toBe("/en");
   expect(languageHref("/bonuses", "en")).toBe("/en/bonuses");
   expect(languageHref("/regions/great-britain", "en")).toBe("/en/regions/great-britain");
+  expect(languageHref("/journal", "en")).toBe("/en/journal");
+  expect(languageHref("/journal/payout-systems", "en")).toBe("/en/journal/payout-systems");
+  expect(languageHref("/journal/wild-and-scatter", "en")).toBe("/en");
   expect(languageHref("/slots/gates-of-olympus", "en")).toBe("/en/slots/gates-of-olympus");
   expect(languageHref("/slots/catalog/no-such-entry", "en")).toBe("/en");
   expect(languageHref("/en", "ru")).toBe("/");

@@ -149,6 +149,7 @@ export function Footer() {
           <Link href="/en/mechanics">Mechanics</Link>
           <Link href="/en/compare">Compare games</Link>
           <Link href="/en/collections">Game collections</Link>
+          <Link href="/en/journal">Journal and guides</Link>
         </div>
         <div>
           <span className="eyebrow">About Slotfolio</span>
