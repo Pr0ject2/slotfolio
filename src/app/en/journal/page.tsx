@@ -25,9 +25,9 @@ export default function EnglishJournal() {
       <section className="feature-band" style={{ marginTop: 0 }}>
         <div className="feature-band-title">
           <span className="eyebrow">Featured explanation</span>
-          <h2><Link href="/en/journal/understanding-rtp">A percentage.<br /><em>Not a promise.</em></Link></h2>
-          <p>Why 96% theoretical RTP says nothing certain about a particular session or your next spin.</p>
-          <Link className="text-link" href="/en/journal/understanding-rtp">Understand RTP ↗</Link>
+          <h2><Link href="/en/journal/how-cascades-work">One spin.<br /><em>Several events.</em></Link></h2>
+          <p>What happens when matching symbols are removed and one paid round continues through cascades.</p>
+          <Link className="text-link" href="/en/journal/how-cascades-work">Read the cascades feature ↗</Link>
         </div>
         <div className="cascade-art" aria-hidden="true">
           {[0, 1, 2].map((i) => (
@@ -65,7 +65,7 @@ export default function EnglishJournal() {
           <b aria-hidden="true">↗</b>
         </Link>
       </div>
-      <p className="data-note">All five practical journal guides are now available in English, alongside the RTP explainer. The separate in-depth cascades feature story is still awaiting its English adaptation.</p>
+      <p className="data-note">All five practical journal guides, the RTP explainer and the in-depth cascades feature are now available in English.</p>
     </>
   );
 }
