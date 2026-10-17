@@ -100,3 +100,16 @@ test("reviewed English journal routes coexist with published collections and reg
     expect(translatedCounterpart(en)).toBe(ru);
   }
 });
+
+test("all English journal cross-references stay in the reviewed English locale", () => {
+  for (const guide of englishJournalGuides) {
+    const destinations = [...guide.related, ...guide.sources];
+    for (const link of destinations) {
+      if (link.href.startsWith("/")) {
+        expect(link.href, `${guide.slug}: ${link.label}`).toMatch(/^\/en\//);
+        expect(link.href).not.toContain("/en/en/");
+      }
+    }
+    expect(new Set(destinations.map(link => link.href)).size).toBe(destinations.length);
+  }
+});
