@@ -56,3 +56,15 @@ test("all three guides avoid mobile overflow", async ({ page }) => {
     }
   }
 });
+
+test("English home reflects the completed catalogue without outdated pilot wording", async ({ page }) => {
+  await page.goto("/en/");
+  await expect(page.getByText(/All 1,000 catalogue entries are available in English/)).toBeVisible();
+  await expect(page.getByText(/900 source-linked technical records and 100 full game guides/)).toBeVisible();
+  await expect(page.locator("main")).not.toContainText(/More English game guides are being added/);
+});
+
+test("English privacy page links to the reviewed comparison page", async ({ page }) => {
+  await page.goto("/en/privacy/");
+  await expect(page.getByRole("link", { name: "Open the English comparison" })).toHaveAttribute("href", "/en/compare");
+});
