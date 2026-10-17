@@ -40,7 +40,7 @@ test("the language selector includes reviewed English pages and catalogue entry 
   expect(languageHref("/journal", "en")).toBe("/en/journal");
   expect(languageHref("/journal/how-cascades-work", "en")).toBe("/en/journal/how-cascades-work");
   expect(languageHref("/journal/payout-systems", "en")).toBe("/en/journal/payout-systems");
-  expect(languageHref("/journal/wild-and-scatter", "en")).toBe("/en");
+  expect(languageHref("/journal/wild-and-scatter", "en")).toBe("/en/journal/wild-and-scatter");
   expect(languageHref("/slots/gates-of-olympus", "en")).toBe("/en/slots/gates-of-olympus");
   expect(languageHref("/slots/catalog/no-such-entry", "en")).toBe("/en");
   expect(languageHref("/en", "ru")).toBe("/");
