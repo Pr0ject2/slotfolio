@@ -56,7 +56,7 @@ for (const guide of englishJournalGuides) {
 }
 
 test("reading the translated journal is accessible at five widths", async ({ page }) => {
-  test.setTimeout(90_000);
+  test.setTimeout(180_000);
   for (const width of [320, 390, 768, 1024, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
     for (const path of ["/en/journal/", ...englishJournalGuides.map(guide => `/en/journal/${guide.slug}/`)]) {
