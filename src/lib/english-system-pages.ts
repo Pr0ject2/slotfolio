@@ -58,7 +58,7 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
           "To remove other local site data, find Slotfolio under your browser's site-data settings and delete its entry.",
           "Private browsing or blocked storage can cause the comparison list to disappear when the window closes.",
         ],
-        links: [{ label: "Open comparison (Russian interface)", href: "/compare" }],
+        links: [{ label: "Open the English comparison", href: "/en/compare" }],
       },
       {
         title: "Search, filters, and browsing history",
