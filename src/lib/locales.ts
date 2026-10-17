@@ -1,4 +1,5 @@
 import { hasEnglishDossier } from "./english-dossier-routes";
+import { hasEnglishCatalogRecord } from "./english-catalog-record-routes";
 export type SiteLocale = "ru" | "en";
 
 // Include only pages that have complete reviewed English copy.
@@ -18,6 +19,7 @@ export const englishReadyPaths = [
 const ready = new Set<string>(englishReadyPaths);
 function isReviewedRoute(path: string): boolean {
   if (ready.has(path)) return true;
+  if (path.startsWith("/slots/catalog/")) return hasEnglishCatalogRecord(path.slice("/slots/catalog/".length));
   return path.startsWith("/slots/") && hasEnglishDossier(path.slice("/slots/".length));
 }
 
