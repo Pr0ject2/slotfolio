@@ -120,7 +120,10 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
 
         {item.coverage === "dossier" && item.tags.length ? (
           <div className={`catalog-game-tags ${styles.tags}`} aria-label={locale === "en" ? "Game features" : "Особенности игры"}>
-            {item.tags.slice(0, 3).map((tag) => <span key={tag} lang={locale === "en" && !englishTags[tag] ? "ru" : undefined}>{locale === "en" ? (englishTags[tag] ?? tag) : tag}</span>)}
+            {item.tags.slice(0, 3).map((tag) => {
+              const label = locale === "en" ? (englishTags[tag] ?? englishCatalogFact(tag)) : tag;
+              return <span key={tag} lang={locale === "en" && /[А-Яа-яЁё]/.test(label) ? "ru" : undefined}>{label}</span>;
+            })}
           </div>
         ) : null}
 
@@ -133,7 +136,7 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
         </div>
       </div>
 
-      <Link className="catalog-open" href={destination} aria-label={locale === "en" ? `Open ${item.name}${englishDossier ? "" : " (Russian)"}` : `Открыть ${item.name}`}>↗</Link>
+      <Link className="catalog-open" href={destination} aria-label={locale === "en" ? `Open ${item.name}${englishDossier || englishCatalogRecord ? "" : " (Russian)"}` : `Открыть ${item.name}`}>↗</Link>
     </article>
   );
 }
