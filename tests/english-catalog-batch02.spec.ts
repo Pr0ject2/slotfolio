@@ -38,6 +38,7 @@ test("English fact labels preserve every number and remove Russian technical wor
   expect(englishCatalogFact("1 000–5 000x (источники расходятся)")).toBe("1 000–5 000x (sources disagree)");
   expect(englishCatalogFact("94–96% (зависит от версии)")).toBe("94–96% (varies by version)");
   expect(englishCatalogFact("")).toBe("");
+  expect(englishCatalogFact("сетка +1 ряд в Free Spins")).toBe("Grid +1 row in Free Spins");
 });
 
 test("all 100 batch 02 records are exported", () => {

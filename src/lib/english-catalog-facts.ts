@@ -1,6 +1,23 @@
 /** Translate documented labels only. Numbers, ranges, scales and feature names
  * remain source values; this function never supplies a missing characteristic. */
 const labels: [string, string][] = [
+  ["7-барабанная шестиугольная сетка", "7-reel hexagonal grid"],
+  ["Динамические 2–7 символов на барабан", "Dynamic 2–7 symbols per reel"],
+  ["3 позиции на барабане", "3 positions per reel"],
+  ["выплаты по соседним барабанам", "pays on adjacent reels"],
+  ["Без традиционных барабанов и линий", "No traditional reels or paylines"],
+  ["Поле 5×5 и каскадные выигрыши", "5×5 grid and cascading wins"],
+  ["выплаты способами", "ways pays"],
+  ["силы трёх богов", "powers of three gods"],
+  ["бонусный множитель", "bonus multiplier"],
+  ["Нарастающий множитель", "Growing multiplier"],
+  ["сетка +1 ряд", "Grid +1 row"],
+  ["динамических линий", "dynamic paylines"],
+  ["Шестиугольная сетка", "Hexagonal grid"],
+  ["Вулканическая сетка", "Volcanic grid"],
+  ["направления выплат", "payout directions"],
+  ["по Game Info", "according to Game Info"],
+  ["при Wild", "with Wild"],
   // The publisher describes expanded symbols paying without adjacency in Book of Dead:
   // https://www.playngo.com/games/book-of-dead (Game features).
   ["Неснятые соседством выплаты", "Non-adjacent expanded-symbol wins"],
@@ -38,6 +55,7 @@ const labels: [string, string][] = [
   ["линий", "paylines"], ["линии", "paylines"],
   ["монет", "coins"], ["старт", "starts at"], ["до ", "up to "],
   ["ячеек", "positions"], ["позиций", "positions"], ["рядов", "rows"],
+  ["ряды", "rows"], ["кольца", "rings"], ["способ", "way"], ["символов", "symbols"],
   ["сетка", "grid"], ["линия", "payline"], ["Бонус:", "Bonus:"],
   [" и ", " and "], [" в ", " in "],
 ];
@@ -45,7 +63,8 @@ const labels: [string, string][] = [
 export function englishCatalogFact(value: string): string {
   let translated = value;
   for (const [original, english] of labels) {
-    translated = translated.replace(new RegExp(original, "giu"), english);
+    const literal = original.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    translated = translated.replace(new RegExp(literal, "giu"), english);
   }
   // Russian decimal commas have one or two fractional digits in these records.
   // Leave comma-separated thousands and all original ranges intact.
