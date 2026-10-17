@@ -71,7 +71,9 @@ test("English comparison preserves all 100 identities, factual values, configura
   expect(translated).toHaveLength(100);
   for (const original of source) {
     const game = translated.find((g) => g.slug === original.slug)!;
-    expect(game.providerQualification).toBe(englishFullDossiers[game.slug].attributionNote);
+    expect(game.providerQualification).toBe(
+      englishFullDossiers[game.slug].attributionNote,
+    );
     for (const key of [
       "name",
       "provider",
@@ -123,8 +125,17 @@ for (const { route, games, heading } of routes) {
     await expect(page.locator("main")).not.toContainText(/[А-Яа-яЁё]/);
     expect(await page.locator("#games .game-row").count()).toBe(games.length);
     if (route.startsWith("providers/")) {
-      await expect(page.locator('.entity-featured article')).toHaveCount(Math.min(2, games.length));
-      await expect(page.getByRole('heading', {level: 2, name: games.length === 1 ? 'A game example' : 'Two examples to compare', exact: true})).toBeVisible();
+      await expect(page.locator(".entity-featured article")).toHaveCount(
+        Math.min(2, games.length),
+      );
+      await expect(
+        page.getByRole("heading", {
+          level: 2,
+          name:
+            games.length === 1 ? "A game example" : "Two examples to compare",
+          exact: true,
+        }),
+      ).toBeVisible();
     }
     expect(
       await page
@@ -178,7 +189,9 @@ test("English comparison supports picker, presets, removal, seed and RU/EN persi
     "stated potential",
   );
   await expect(page.locator(".comparison-table")).toContainText("6 × 5");
-  await expect(page.locator('.comparison-table tbody tr').first()).toContainText('still requires verification');
+  await expect(
+    page.locator(".comparison-table tbody tr").first(),
+  ).toContainText("still requires verification");
   await expect(page.locator(".comparison-table")).toContainText("5×6");
   await expect(page.locator(".comparison-table")).toContainText(
     "not yet been verified",
@@ -211,6 +224,39 @@ test("English comparison supports picker, presets, removal, seed and RU/EN persi
   await expect(page.locator(".comparison-selection")).toBeFocused();
   await expect(page.locator(".comparison-table")).toContainText("Book of Dead");
   await expect(page.locator(".comparison-table")).toContainText("Reactoonz");
+});
+test("English mechanic links keep raw filters while rendering English choices and chips", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 1000 });
+  await page.goto("/en/mechanics/clusters/");
+  await page.locator("#games .section-title a").click();
+  await expect
+    .poll(() => new URL(page.url()).searchParams.get("mechanic"))
+    .toBe("Кластеры");
+  await page.locator(".filter-toggle").click();
+  await expect(
+    page.getByRole("radio", { name: /^Cluster pays/ }),
+  ).toBeChecked();
+  await expect(page.locator("#catalog-filters")).not.toContainText(
+    /[А-Яа-яЁё]/,
+  );
+  await expect(page.locator(".active-filters")).toContainText("Cluster pays");
+  await page.locator("#volatility").selectOption("Высокая");
+  await page.locator("#feature").selectOption("Каскады");
+  await expect
+    .poll(() => new URL(page.url()).searchParams.get("volatility"))
+    .toBe("Высокая");
+  await expect
+    .poll(() => new URL(page.url()).searchParams.get("feature"))
+    .toBe("Каскады");
+  await expect(page.locator(".active-filters")).toContainText("High");
+  await expect(page.locator(".active-filters")).toContainText("Cascades");
+  await expect(page.locator("main")).not.toContainText(/[А-Яа-яЁё]/);
+  await expect(page.locator('[data-slot="reactoonz"]')).toBeVisible();
+  expect(
+    await page.evaluate(() => document.documentElement.scrollWidth),
+  ).toBeLessThanOrEqual(391);
 });
 for (const width of [320, 390, 768, 1024, 1440]) {
   test(`English profiles and comparison remain usable with keyboard at ${width}px`, async ({
@@ -261,10 +307,16 @@ for (const width of [320, 390, 768, 1024, 1440]) {
     await jump.focus();
     expect((await jump.boundingBox())!.height).toBeGreaterThanOrEqual(44);
     if (width <= 390) {
-      const heading = (await page.locator('#games .section-title h2').boundingBox())!;
-      const catalogueLink = (await page.locator('#games .section-title .text-link').boundingBox())!;
+      const heading = (await page
+        .locator("#games .section-title h2")
+        .boundingBox())!;
+      const catalogueLink = (await page
+        .locator("#games .section-title .text-link")
+        .boundingBox())!;
       expect(heading.y + heading.height).toBeLessThanOrEqual(catalogueLink.y);
-      expect((await page.locator('.editorial-signoff p').boundingBox())!.width).toBeGreaterThanOrEqual(width - 49);
+      expect(
+        (await page.locator(".editorial-signoff p").boundingBox())!.width,
+      ).toBeGreaterThanOrEqual(width - 49);
     }
     expect(
       await jump.evaluate((e) => getComputedStyle(e).outlineStyle),

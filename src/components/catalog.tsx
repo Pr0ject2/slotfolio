@@ -5,6 +5,7 @@ import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { CatalogGameCard } from "./catalog-game-card";
 import { englishCatalogueCopy as en } from "@/lib/english-catalogue-copy";
+import { englishCatalogFact } from "@/lib/english-catalog-facts";
 import {
   filterCatalogItems,
   sortCatalogItems,
@@ -203,7 +204,7 @@ export function Catalog({
                     checked={mechanic === item.name}
                     onChange={() => setMechanic(item.name)}
                   />
-                  {item.name}
+                  {locale === "en" ? englishCatalogFact(item.name) : item.name}
                   <span>{item.count}</span>
                 </label>
               ))}
@@ -215,7 +216,7 @@ export function Catalog({
                 <option value="">{locale === "en" ? en.any : "Любая"}</option>
                 {model.facets.volatility.map((item) => (
                   <option key={item.name} value={item.name}>
-                    {item.name} · {item.count}
+                    {locale === "en" ? englishCatalogFact(item.name) : item.name} · {item.count}
                   </option>
                 ))}
               </select>
@@ -237,7 +238,7 @@ export function Catalog({
                 <option value="">{locale === "en" ? en.any : "Любая"}</option>
                 {model.facets.features.map((item) => (
                   <option key={item.name} value={item.name}>
-                    {item.name} · {item.count}
+                    {locale === "en" ? englishCatalogFact(item.name) : item.name} · {item.count}
                   </option>
                 ))}
               </select>
@@ -291,10 +292,10 @@ export function Catalog({
               <span>{locale === "en" ? en.active : "Отбор:"}</span>
               {q.trim() && <button onClick={() => setQ("")}>«{q.trim()}» <b>×</b></button>}
               {selectedProvider && <button onClick={() => setProvider("")}>{selectedProvider.name} <b>×</b></button>}
-              {mechanic && <button onClick={() => setMechanic("")}>{mechanic} <b>×</b></button>}
-              {volatility && <button onClick={() => setVolatility("")}>{volatility} <b>×</b></button>}
-              {rtp && <button onClick={() => setRtp("")}>RTP ≥ {rtp.replace(".", ",")}% <b>×</b></button>}
-              {feature && <button onClick={() => setFeature("")}>{feature} <b>×</b></button>}
+              {mechanic && <button onClick={() => setMechanic("")}>{locale === "en" ? englishCatalogFact(mechanic) : mechanic} <b>×</b></button>}
+              {volatility && <button onClick={() => setVolatility("")}>{locale === "en" ? englishCatalogFact(volatility) : volatility} <b>×</b></button>}
+              {rtp && <button onClick={() => setRtp("")}>RTP ≥ {locale === "en" ? rtp : rtp.replace(".", ",")}% <b>×</b></button>}
+              {feature && <button onClick={() => setFeature("")}>{locale === "en" ? englishCatalogFact(feature) : feature} <b>×</b></button>}
               <button className="clear-all" onClick={reset}>{locale === "en" ? en.resetAll : "Сбросить всё"}</button>
             </div>
           )}
