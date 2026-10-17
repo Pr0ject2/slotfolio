@@ -95,6 +95,8 @@ for (const width of [320,390,768,1024,1440]) {
     await page.setViewportSize({width,height:1000});
     for (const slug of ["reactoonz","fury-of-anubis","1win-bonanza"]) {
       await page.goto(`/en/slots/${slug}/`);
+      await expect(page.locator("main")).not.toContainText("Открываем материал");
+      await expect(page.locator(".slot-summary")).toBeVisible();
       await page.evaluate(()=>document.fonts.ready);
       expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width+1);
       expect((await page.locator(".slot-summary").boundingBox())!.width).toBeGreaterThanOrEqual(Math.min(260,width-48));
