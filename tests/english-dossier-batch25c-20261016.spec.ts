@@ -36,5 +36,5 @@ for (const slug of slugs) {
 
 test("Max Win Machine does not invent a bonus feature unsupported by its publisher", async ({ page }) => {
   await page.goto("/en/slots/max-win-machine/");
-  await expect(page.getByText(/does not substantiate extra FeatureSpins/)).toBeVisible();
+  await expect(page.locator("#rules").getByText(/does not substantiate extra FeatureSpins/)).toBeVisible();
 });
