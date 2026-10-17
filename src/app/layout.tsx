@@ -61,6 +61,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           var locale = link && link.getAttribute('data-language-choice');
           if (locale === 'ru' || locale === 'en') {
             try { localStorage.setItem('slotfolio-language', locale); } catch {}
+            var destination = new URL(link.href, location.href);
+            if (destination.origin === location.origin) {
+              destination.search = location.search;
+              destination.hash = location.hash;
+              link.href = destination.toString();
+            }
           }
         }, true);` }} />
         <JsonLd

@@ -1,0 +1,15 @@
+# English publisher profiles, mechanics and comparison
+
+Adds counterparts for all 18 existing publisher profiles, five mechanic guides, their two indexes and comparison: 26 routes. Uses the existing selected 100 dossiers, their original memberships, examples, related mechanics, statistics and sources. The 900 technical-only records remain separate from the comparison picker and editorial profile statistics. No game facts or artwork change.
+
+Publisher copy explains concrete differences between existing games. Profiles explicitly describe the selected full guides rather than the publisher's entire output or all 1,000 catalogue entries. The recorded Big Time Gaming attribution for 1win Bonanza remains unverified and is qualified on the profile as on the full dossier.
+
+Comparison keeps one shared implementation and the existing two-game localStorage selection for RU/EN. English items reuse the reviewed full-dossier feature descriptions, editorial notes and metric caveats. Documented maxima retain their individual labels, including stated potential, and a source-qualification row preserves conflicting first-party figures. Picker, presets, seed handling, remove/clear, keyboard scrolling and English links are localised. Russian rendering remains the default.
+
+English game guides and catalogue actions now link to the English comparison and corresponding publisher/mechanic profiles. The footer exposes the new indexes. Locale counterpart registration adds reciprocal hreflang and language navigation. Existing noindex behaviour remains in force.
+
+Real browser screenshots at 320/390/768/1024/1440 revealed compressed list headings and signoff paragraphs on narrow publisher profiles. A scoped English-only stylesheet stacks these links below their text at mobile widths and gives profile navigation links 44px targets. No global CSS cleanup or redesign is included.
+
+English catalogue filters and active chips use the existing factual translation helper for their visible labels while retaining the original stored values and URL parameters. This makes the new mechanic/profile-to-catalogue transitions usable in English. Manual language changes preserve query parameters and section anchors both before and after React hydration; the pre-hydration handler only changes same-origin language links. Hydrated navigation remains client-side, retaining the existing in-tab comparison fallback when browser storage is unavailable.
+
+34 new regressions (32 entity/comparison tests and two manual-language tests) cover exact profile/guide membership, unchanged comparison identities and factual values for 100 games, source qualifications, locale metadata/noindex/JSON-LD, persistent RU/EN selection, seed/picker/presets, five-width layouts, English filter labels with unchanged raw values, keyboard focus/scrolling and retained language-change context. Existing language-foundation assertions are extended with the three new index paths; no checks are removed or relaxed. TypeScript and static export of 2,090 routes are required in addition to full CI on the final head.

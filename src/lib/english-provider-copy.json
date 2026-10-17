@@ -1,0 +1,132 @@
+{
+  "pragmatic-play": {
+    "catalogSummary": "Pay Anywhere, clusters and payline bonuses: the selected Pragmatic Play games show several generations and approaches.",
+    "profileIntro": "Slotfolio includes the Gates of Olympus, Sweet Bonanza and Sugar Rush families alongside newer titles such as Bear Crazy, The Big Dog House and Fury of Anubis.",
+    "profileBody": "Gates of Olympus and Fury of Anubis build rounds around matching symbols anywhere on the grid, cascades and growing multipliers. Sugar Rush and Fruit Party focus on cluster geometry. The Dog House, The Big Dog House and Bear Crazy use fixed paylines but differ in their Wild and free-spin rules. Big Bass Bonanza centres its bonus on collecting values. Use this profile to navigate the selection; games with the same logo do not necessarily share the same mathematics.",
+    "signoff": "Compare the individual payout rule, RTP configuration and bonus rather than relying on the publisher's name.",
+    "readingTitle": "Start with the payout rule",
+    "readingText": "Put Gates of Olympus beside Sugar Rush. In the first, matching symbols can appear in different positions; in the second, they must form a connected group. Compare the multipliers afterwards: similar cascades can conceal different grid rules."
+  },
+  "play-n-go": {
+    "catalogSummary": "Paylines, a compact 3 × 3 grid and cluster games: different ways Play’n GO structures a round.",
+    "profileIntro": "Book of Dead, Legacy of Dead and Fire Joker use more traditional reel layouts, while Reactoonz and Rise of Olympus require you to read the whole grid.",
+    "profileBody": "The payline games focus on expanding symbols, Wilds and respins. Reactoonz and Rise of Olympus build rounds around groups of symbols, removal from the grid and accumulating features. Games from the same studio can therefore play very differently.",
+    "signoff": "A studio can work with both traditional reels and grid mechanics. Check the rules of each game.",
+    "readingTitle": "From individual reels to the whole grid",
+    "readingText": "Book of Dead and Reactoonz differ in more than grid size. In Book of Dead, distinguish the payline base from the expanding symbol in the bonus. In Reactoonz, follow groups and accumulated features. Fire Joker provides another reference: a compact grid can still include respins."
+  },
+  "push-gaming": {
+    "catalogSummary": "Large cluster grids and payline games with accumulating features, explained through individual Push Gaming titles.",
+    "profileIntro": "Jammin’ Jars and Retro Tapes develop cluster mechanics, while Razor Shark and Fat Rabbit layer features onto ordinary paylines.",
+    "profileBody": "Jammin’ Jars uses a square 8 × 8 grid with moving Wilds; Retro Tapes extends Cluster Links to 9 × 6. Razor Shark uses twenty paylines and mystery stacks, while Fat Rabbit has fifty paylines and a collection meter. Their common ground is often the changing state of features rather than the underlying payout system.",
+    "signoff": "Identify how wins form, then follow which feature retains its state between events.",
+    "readingTitle": "What remains after a payout?",
+    "readingText": "Follow moving Wilds and their multipliers in Jammin’ Jars, and links and the magnetic feature in Retro Tapes. Compare how the grid changes. In the payline game Razor Shark, mystery symbols need separate attention: their appearance does not reveal their final role."
+  },
+  "hacksaw-gaming": {
+    "catalogSummary": "Paylines, clusters, nudges and multiplier Wilds: different round structures within Hacksaw Gaming's selection.",
+    "profileIntro": "Wanted Dead or a Wild, Chaos Crew, RIP City, Dork Unit and Nitro Nights stay closer to paylines. Hand of Anubis and Le Bandit ask you to follow the whole grid and its state.",
+    "profileBody": "Wanted and Chaos Crew add multiplier Wilds and several bonus scenarios to fixed paylines. RIP City uses an expanding Wild Cat, and Dork Unit has sticky Gift Boxes and a separate Dork Reel. Nitro Nights adds nudge chains and position multipliers. Hand of Anubis combines cascades, clusters and Soul Orbs; Le Bandit develops golden positions. A recognisable visual style does not imply the same payout rules or volatility.",
+    "signoff": "Identify what forms a payout and which state carries between events before comparing effects and bonuses.",
+    "readingTitle": "Separate the Wild from the position",
+    "readingText": "Wanted builds rounds around special Wilds and bonus scenarios. In Le Bandit, the history of golden positions matters separately from the current symbols. The pair shows the difference between changing a symbol and retaining the state of a position."
+  },
+  "nolimit-city": {
+    "catalogSummary": "Dynamic grids: how xWays, xNudge and revealing rows change rounds in Nolimit City games.",
+    "profileIntro": "San Quentin xWays, Fire in the Hole, Deadwood and Mental are examples where a static grid description is not enough.",
+    "profileBody": "Deadwood demonstrates xNudge on a relatively straightforward grid. San Quentin adds xWays and split positions; Fire in the Hole reveals new rows. Mental combines several x-mechanics on an uneven grid. Follow how the structure changes between events.",
+    "signoff": "For a dynamic grid, asking how positions change is often more useful than remembering a single number of paylines or ways.",
+    "readingTitle": "Describe the grid as it changes",
+    "readingText": "Compare San Quentin xWays and Fire in the Hole: splitting positions and revealing rows are different changes to geometry. Then look at Mental's uneven starting grid. The word ways does not explain the order in which features activate."
+  },
+  "netent": {
+    "catalogSummary": "Starburst's paylines, Gonzo’s Quest's cascades and Dead or Alive 2's bonus scenarios in the Slotfolio selection.",
+    "profileIntro": "These NetEnt games trace different approaches, from a single Wild feature to cascade sequences and several free-spin modes.",
+    "profileBody": "Starburst keeps its base grid relatively simple and centres on an expanding Wild. Gonzo’s Quest makes Avalanche the main continuation of a round. Dead or Alive 2 returns to nine paylines but adds a choice of three bonus scenarios.",
+    "signoff": "A simple base makes it easier to identify the particular feature that changes a round.",
+    "readingTitle": "What triggers the next event?",
+    "readingText": "In Starburst, an expanding Wild triggers a respin. Gonzo’s Quest continues through Avalanche and replacement symbols after a payout. Compare why the grid is checked again rather than just their similar 5 × 3 sizes. Dead or Alive 2 also shows how the choice of bonus scenario matters."
+  },
+  "relax-gaming": {
+    "catalogSummary": "Money Train 2, Snake Arena and Book of 99: payline foundations with different bonus systems.",
+    "profileIntro": "Money Train 2, Snake Arena and Book of 99 start with familiar paylines but turn the bonus into a separate system with its own state.",
+    "profileBody": "Money Train 2 switches to special characters and values, Snake Arena turns the grid into a chase, and Book of 99 stays closer to an expanding-symbol bonus. Compare them to see how different features can sit above the same basic payout principle.",
+    "signoff": "Shared paylines do not make games alike when their bonuses work differently.",
+    "readingTitle": "Read the bonus separately from the base",
+    "readingText": "Money Train 2 uses values and characters in a separate bonus system. Book of 99 uses collected books as an additional free-spin trigger. Compare the relationship between progress and payout, even though both games have a payline base."
+  },
+  "endorphina": {
+    "catalogSummary": "From compact 3 × 3 fruit games to Hold and Win, scatter pays and cascades: different Endorphina round structures.",
+    "profileIntro": "Hell Hot, Lucky Streak and earlier Hit Slot games provide a payline reference. Burning Coins, Crown Coins and 2026 Hit Slot add accumulating bonuses, while Prestige Crown and Dia De Los Muertos 2 use cascades.",
+    "profileBody": "Hell Hot 40, Ultra Fresh, 2021 Hit Slot and Lucky Streak 3 can largely be read through the grid and payline table. 2023 Hit Slot and 81 Burning Ways replace paylines with ways. Burning Coins 20/40, Crown Coins and 2026 Hit Slot put more complexity into value collection, Hold and Win and jackpot features. Prestige Crown and Dia De Los Muertos 2 use scatter pays and cascades. The publisher's logo does not replace the rules of a particular game.",
+    "signoff": "Compare the round structure: a traditional-looking grid can support a more complex bonus system.",
+    "readingTitle": "From paylines to bonus states",
+    "readingText": "Compare Hell Hot 100 and 3 Coin Towers. The first is largely explained by fixed paylines, Wilds and a separate Risk Game. In the second, collected coins lead towards one of three bonus modes. A familiar payline base can support different layers of features."
+  },
+  "bgaming": {
+    "catalogSummary": "Gemhalla and House of Sins use different grids: Pay Anywhere and large cluster cascades.",
+    "profileIntro": "The selected BGaming dossiers pair Gemhalla's Pay Anywhere rules with House of Sins' 6 × 8 cluster grid.",
+    "profileBody": "Gemhalla builds its sequence around refilling reels and multiplier symbols. House of Sins combines clusters, cascades and growing multipliers. The pair provides a contrast between ways of counting a payout.",
+    "signoff": "Identify the payout rule first, then compare accumulated multipliers and bonus states."
+  },
+  "3-oaks-gaming": {
+    "catalogSummary": "Several Hold & Win variants above a payline base, from a compact 3 × 3 grid to expanding bonus grids and multiple jackpot meters.",
+    "profileIntro": "Scarab Temple and Jungle Volcano provide an initial reference. 777 Coins, 3 Hot Chillies and Egypt Fire add three more ways to develop a Hold & Win bonus state.",
+    "profileBody": "777 Coins uses a central Collect symbol on a 3 × 3 grid and centres on collecting values. 3 Hot Chillies uses three progress meters and modifiers: multipliers, an extra respin and a second grid. Egypt Fire starts with 5 × 4 / 20 paylines, but reveals additional rows and separate jackpot meters inside Hold & Win. Scarab Temple and Jungle Volcano provide other combinations of sticky positions, respins and grid expansion.",
+    "signoff": "Compare what persists between respins: positions, values, progress meters, rows or additional grids."
+  },
+  "wazdan": {
+    "catalogSummary": "Mighty Hot Amazonia combines a traditional grid with reel-filling features and configurable volatility.",
+    "profileIntro": "The full-dossier selection includes one Wazdan game, useful as an example of traditional geometry with configurable settings. Other technical records are available in the catalogue.",
+    "profileBody": "Wall of Symbols and Fortune Wheel add events above the ordinary 5 × 3 grid. Volatility Levels changes the payout profile, so read the volatility category alongside the selected setting.",
+    "signoff": "For configurable volatility, record the active setting alongside RTP and other figures."
+  },
+  "belatra-games": {
+    "catalogSummary": "Mummyland Treasures combines a large grid, cascades, 823 543 ways and a bonus with an accumulating multiplier.",
+    "profileIntro": "Mummyland Treasures is the selected Belatra Games dossier. It combines ways pays with a grid that changes as stones disappear.",
+    "profileBody": "Stones on the 7 × 7 grid gradually disappear, while the bonus retains grid changes and accumulates a multiplier. Craft Bonus also shows how entry into a feature can form part of a game's structure.",
+    "signoff": "On a large grid, separate geometry, payout rules and bonus state. A single number does not describe all three."
+  },
+  "yggdrasil-gaming": {
+    "catalogSummary": "Troy SuperWays expands its grid during cascades, changing the number of ways within the round.",
+    "profileIntro": "Troy SuperWays is the selected Yggdrasil Gaming dossier. Its number of ways grows as the grid opens.",
+    "profileBody": "Fire Pot changes neighbouring positions, SuperWays expands the geometry, and Super Spins starts the bonus with at least 1 024 ways. Follow the sequence of changes rather than only the highest number of combinations.",
+    "signoff": "The maximum number of ways describes the limit of the geometry, not the probability of a payout."
+  },
+  "shady-lady": {
+    "catalogSummary": "Black Friday and Devil’s Finger use two different foundations: fixed paylines and expanding ways.",
+    "profileIntro": "Shady Lady uses unusual themes, but the useful distinction here is between the mechanics of Black Friday and Devil’s Finger.",
+    "profileBody": "Black Friday starts with 30 paylines and develops respins around characters. Devil’s Finger uses six reels, ways and an expanding structure. Shared high volatility does not make their rounds work alike.",
+    "signoff": "Separate the base payout rule from the bonus state, regardless of the theme."
+  },
+  "big-time-gaming": {
+    "catalogSummary": "The recorded 1win Bonanza dossier demonstrates variable Megaways and cascades; its publisher attribution remains unverified.",
+    "profileIntro": "This profile groups 1win Bonanza from the official 1win Only section under its recorded Big Time Gaming attribution. The attribution has not yet been verified against the live lobby.",
+    "profileBody": "Up to 117 649 ways form from a variable reel layout. Cascades replace symbols, and a multiplier grows in Free Spins. Compare this grid with fixed-ways examples from Nolimit City. The Megaways mechanic alone does not verify the game's publisher.",
+    "signoff": "The number of Megaways changes between spins and is not a constant probability of winning."
+  },
+  "clawbuster": {
+    "catalogSummary": "A recurring claw feature changes values, opens positions, collects multipliers and supports different Hold & Win bonuses.",
+    "profileIntro": "The selection includes payline Hold & Win games Zeus Claws, Panda Claw Jackpot and 3 Claws of Aztec Fire alongside cascading ClawBass Bonanza and Claw Bonanza: Gold Rush.",
+    "profileBody": "In Zeus Claws and Wolf Hunt, coins and respins retain the bonus state. Panda Claw Jackpot moves reward collection to a separate horizontal reel. 3 Claws of Aztec Fire splits functions between Double, Mystery and Collect Claw. ClawBass Bonanza and Free Rush replace paylines with a cascading 6 × 5 grid and fishing-line progress. A recurring claw animation does not imply the same mathematics.",
+    "signoff": "Compare what the claw changes: a position, multiplier, respin count or bonus-grid state.",
+    "readingTitle": "What does the claw actually do?",
+    "readingText": "Compare Zeus Claws and Claw Bonanza: Gold Rush. In the first, the claw affects Hold & Win and coin values; in the second, it affects the cascade sequence and multipliers. The same visual device leads to a different round state."
+  },
+  "onlyplay": {
+    "catalogSummary": "Payline grids with separate mini-slots, jackpot modules and collection grids alongside the main game.",
+    "profileIntro": "Hot And Spicy Jackpot and Caramelo Jackpot add a mini-slot above the main reels. Fruit Train Express uses Hold & Win, while Coin Flynn connects two separate grids.",
+    "profileBody": "Hot And Spicy Jackpot uses Chilly Mini Slot as a source of multipliers. Caramelo Jackpot develops a similar idea with sticky Wilds and a separate jackpot game. Coin Flynn transfers coin symbols between two grids, retaining state between events. Fruit Train Express keeps accumulation inside Hold & Win, while Wild West Girls provides a more traditional payline reference.",
+    "signoff": "Read the main grid and additional module separately: the mini-slot, coin field or Hold & Win bonus can have its own rules.",
+    "readingTitle": "Separate the base grid from the second module",
+    "readingText": "Hot And Spicy Jackpot uses a separate mini-slot to supply a multiplier. Coin Flynn links two grids by transferring coins. These are different ways to retain state above a simple payline base."
+  },
+  "mancala-gaming": {
+    "catalogSummary": "Paylines, cascades and bonuses that retain coins, jackpot values and multipliers between events.",
+    "profileIntro": "Coin Craze Jackpot, Mustang Rush and Power of Zeus develop coin-and-respin bonuses. Caishen Gold adds cascades, while Midas: Hand of Fortune stays closer to a payline base.",
+    "profileBody": "Coin Craze Jackpot and Mustang Rush put most complexity into respins and retained values. Power of Zeus combines Hold & Earn with stacked multiplier Wilds. Caishen Gold: Infinity Dragon retains twenty paylines but links them through cascades. Money Booster is more compact and pays on matching symbols anywhere on the grid. Midas: Hand of Fortune provides a 5 × 3 / 40-line reference.",
+    "signoff": "Identify the base payout rule, then check whether state carries into a coin bonus, cascade or free spins.",
+    "readingTitle": "Different continuations from a payline base",
+    "readingText": "Put Power of Zeus beside Caishen Gold: Infinity Dragon. The first switches from paylines to Hold & Earn; the second continues a win with a cascade on the same grid. Compare a separate bonus state with the continuation of one spin."
+  }
+}

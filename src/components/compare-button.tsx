@@ -46,7 +46,8 @@ export function useSelection() {
   return selected;
 }
 
-export function CompareButton({ slug, name }: { slug: string; name?: string }) {
+export function CompareButton({ slug, name, locale = "ru" }: { slug: string; name?: string; locale?: "ru" | "en" }) {
+  const english = locale === "en";
   const selected = useSelection();
   const [message, setMessage] = useState("");
   const included = selected.includes(slug);
@@ -57,7 +58,7 @@ export function CompareButton({ slug, name }: { slug: string; name?: string }) {
     if (previous.includes(slug)) saveSelection(previous.filter((item) => item !== slug));
     else if (previous.length < MAX_COMPARE) saveSelection([...previous, slug]);
     else {
-      setMessage("В сравнении уже 2 игры. Удалите одну.");
+      setMessage(english ? "Two games are already selected. Remove one first." : "В сравнении уже 2 игры. Удалите одну.");
       return;
     }
     setMessage("");
@@ -69,13 +70,13 @@ export function CompareButton({ slug, name }: { slug: string; name?: string }) {
         type="button"
         className={`compare-button ${included ? "selected" : ""}`}
         aria-pressed={included}
-        aria-label={`${included ? "Убрать" : "Добавить"} ${label} ${included ? "из сравнения" : "в сравнение"}`}
+        aria-label={english ? `${included ? "Remove" : "Add"} ${label} ${included ? "from" : "to"} comparison` : `${included ? "Убрать" : "Добавить"} ${label} ${included ? "из сравнения" : "в сравнение"}`}
         onClick={toggle}
       >
-        {included ? "✓ В сравнении" : "+ Сравнить"}
+        {english ? included ? "✓ Selected" : "+ Compare" : included ? "✓ В сравнении" : "+ Сравнить"}
       </button>
       {message && selected.length >= MAX_COMPARE && (
-        <small role="status">{message} <Link href="/compare">Открыть</Link></small>
+        <small role="status">{message} <Link href={english ? "/en/compare" : "/compare"}>{english ? "Open comparison" : "Открыть"}</Link></small>
       )}
     </div>
   );

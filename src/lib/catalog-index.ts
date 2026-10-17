@@ -159,6 +159,7 @@ export function createCatalogModel(): CatalogModel {
 }
 
 export type ComparisonItem = {
+  providerQualification?: string;
   slug: string;
   name: string;
   provider: string;
@@ -174,6 +175,7 @@ export type ComparisonItem = {
   feature: string;
   note: string;
   metrics?: {
+    note?: string;
     maxWin?: string;
     maxWinLabel?: string;
     rtpVariants?: string[];

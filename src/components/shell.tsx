@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useRef, useState, type MouseEvent } from "react";
 import styles from "./shell.module.css";
 import { isEnglishPath, languageHref, translatedCounterpart } from "@/lib/locales";
 import { withBasePath } from "@/lib/base-path";
@@ -9,6 +9,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
   const path = usePathname();
+  const router = useRouter();
   const english = isEnglishPath(path);
   useEffect(() => { document.documentElement.lang = english ? "en" : "ru"; }, [english]);
   useEffect(() => {
@@ -32,10 +33,14 @@ export function Header() {
       window.location.replace(withBasePath(target) + window.location.search + window.location.hash);
     }
   }, [path]);
-  function chooseLanguage(locale: "ru" | "en") {
+  function chooseLanguage(locale: "ru" | "en", event: MouseEvent<HTMLAnchorElement>) {
     try { window.localStorage.setItem("slotfolio-language", locale); }
     catch { /* Keep navigation functional when persistence is unavailable. */ }
     setOpen(false);
+    if (event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
+      event.preventDefault();
+      router.push(languageHref(path, locale) + window.location.search + window.location.hash);
+    }
   }
   const to = (route: string) => english ? languageHref(route, "en") : route;
   useEffect(() => {
@@ -118,7 +123,7 @@ export function Header() {
           </Link>
           <Link href={languageHref(path, english ? "ru" : "en")} hrefLang={english ? "ru" : "en"} lang={english ? "ru" : "en"}
             data-language-choice={english ? "ru" : "en"}
-            className={styles.languageSwitch} onClick={() => chooseLanguage(english ? "ru" : "en")}>
+            className={styles.languageSwitch} onClick={(event) => chooseLanguage(english ? "ru" : "en", event)}>
             {english ? "RU" : "EN"}
           </Link>
         </div>
@@ -140,6 +145,9 @@ export function Footer() {
           <Link href="/en">Home</Link>
           <Link href="/en/journal/understanding-rtp">Understanding RTP</Link>
           <Link href="/en/slots">Game catalogue</Link>
+          <Link href="/en/providers">Publishers</Link>
+          <Link href="/en/mechanics">Mechanics</Link>
+          <Link href="/en/compare">Compare games</Link>
         </div>
         <div>
           <span className="eyebrow">About Slotfolio</span>

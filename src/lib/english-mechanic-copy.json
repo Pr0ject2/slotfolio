@@ -1,0 +1,117 @@
+{
+  "cascades": {
+    "name": "Cascades",
+    "text": "A round continues while new winning combinations form.",
+    "subtitle": "A spin with a continuation",
+    "principle": [
+      "After a payout, the whole grid does not necessarily disappear. Winning symbols are removed, remaining symbols move, and new ones fill the gaps. If another paying combination forms, the next cascade begins within the same round.",
+      "Cascades describe how the grid refreshes. Wins may be counted on paylines, in neighbouring clusters or by matching symbols anywhere on the grid. Gates of Olympus and Reactoonz therefore share moving symbols but require different ways of reading combinations."
+    ],
+    "sequence": [
+      "The game checks the grid using its payout rules.",
+      "Paying symbols disappear and new ones fill their positions.",
+      "Checks repeat until the chain stops. Multipliers and other accumulated states reset according to the particular game's rules."
+    ],
+    "contrast": "In a traditional payline game, a spin usually ends after its payout is calculated. Cascades add a sequence of events, but the player does not choose when the next drop occurs.",
+    "appeal": "You can follow the history of the grid within one round: one combination makes room for another. In games with an accumulating multiplier, this helps explain the total.",
+    "tradeoff": "A long animation does not mean many separate chances purchased with new stakes. The length of the chain is not its value, and a growing multiplier does not guarantee the next match.",
+    "watch": [
+      "Are only symbols participating in a payout removed, or all symbols of that type?",
+      "Does the multiplier apply to one combination, one cascade or the round total?",
+      "Does state carry between free spins?"
+    ],
+    "exampleNote": "Here, matching symbols anywhere on the grid matter rather than their adjacency. Compare Reactoonz: both games cascade, but only the second uses cluster pays."
+  },
+  "clusters": {
+    "name": "Clusters",
+    "text": "Matching symbols form neighbouring groups instead of paylines.",
+    "subtitle": "Read adjacency rather than a route",
+    "principle": [
+      "A connected group of matching symbols forms a win once it reaches the minimum size in the rules. Neighbours usually share a side; do not count diagonals unless the game explicitly allows them.",
+      "The grid size and the size of a paying group are different measurements. A larger grid gives you more positions to observe, but does not reveal payout probability. Each game has its own symbol distribution and paytable."
+    ],
+    "sequence": [
+      "Groups of matching neighbouring symbols appear on the grid.",
+      "The game checks each group's minimum size and paytable value.",
+      "If the game uses cascades, paying groups are removed and the new adjacency is checked again."
+    ],
+    "contrast": "A payline requires matches along a predefined route. A cluster can grow in several directions. Paying on matching symbols anywhere on the grid is a different rule: separated symbols do not become a cluster just because there are enough of them.",
+    "appeal": "You can read the result as a shape on the grid. Cascades, moving Wilds and marked positions add visible changes without dozens of drawn paylines.",
+    "tradeoff": "On a large grid, group boundaries and the order of features can be difficult to follow. Similar animations can conceal different thresholds and counting rules.",
+    "watch": [
+      "How many symbols are needed for the first payout?",
+      "How does a Wild count at the boundary between different groups?",
+      "Which positions retain multipliers after symbols are removed?"
+    ],
+    "exampleNote": "An 8 × 8 grid and moving Wilds make Jammin’ Jars an example of changing adjacency. Compare Sugar Rush, where positions on the grid have an additional role."
+  },
+  "lines": {
+    "name": "Paylines",
+    "text": "Predefined routes through reel positions determine matching combinations.",
+    "subtitle": "Routes across the reels",
+    "principle": [
+      "A payline defines a particular route through reel positions. Matching symbols on that route pay according to the paytable. Reading often starts on the left, but the game determines direction and exceptions.",
+      "Scatters, expanding symbols and separate bonuses can be calculated differently. Paylines describe the game's foundation rather than every event. A diagram of paylines alone does not fully explain Book of Dead or Money Train 2."
+    ],
+    "sequence": [
+      "The reels stop to form a grid.",
+      "The game checks active routes and handles special symbols separately.",
+      "Payouts are added together. Wilds, respins or bonuses may extend the event under additional rules."
+    ],
+    "contrast": "Paylines are a traditional way to organise a reel slot. Unlike ways pays, eligible positions are not combined into every possible route. Unlike clusters, adjacency alone does not form a payout.",
+    "appeal": "A compact grid makes it easier to follow one combination and the role of a Wild. A payline base helps separate an ordinary payout from a feature that changes it.",
+    "tradeoff": "Many paylines are difficult to check visually. Their number is often mistaken for generosity, but without the symbol distribution it does not reveal RTP or win frequency.",
+    "watch": [
+      "Is the stake specified for the whole round or per payline?",
+      "Where does a combination start and in which direction is it read?",
+      "Does the bonus change the normal rules for expanding symbols?"
+    ],
+    "exampleNote": "Starburst has a compact 5 × 3 grid and a prominent expanding Wild. Compare Book of Dead: similar geometry does not mean the same bonus rules."
+  },
+  "collect": {
+    "name": "Symbol collection",
+    "text": "Symbols collect values on the grid or fill a meter that triggers a feature.",
+    "subtitle": "Values and accumulation",
+    "principle": [
+      "In some games, a special symbol collects other symbols' values. In others, items fill a meter that triggers a bonus. These functions work alongside the base payout rules.",
+      "In Big Bass Bonanza, the fisherman collects fish values during the bonus. In Book of 99, collected books provide another route to free spins. Keep the events separate: progress towards a trigger is not an awarded win."
+    ],
+    "sequence": [
+      "Symbols with values or items for a meter appear.",
+      "The collection condition is checked: the required character, position or threshold.",
+      "A value is awarded or a feature activates. Further accumulation depends on retention and reset rules."
+    ],
+    "contrast": "An ordinary combination depends on matching symbols. Collection also depends on values, counters and the order of actions. The base game can still use paylines or clusters.",
+    "appeal": "The round has a visible sequence: an item appears, collection occurs and state changes. Different characters and meters make functions worth comparing even on similar reels.",
+    "tradeoff": "A partly filled meter can make a result seem close. Without the rules, do not treat visible values as a payout or assume that progress will remain after leaving the game.",
+    "watch": [
+      "Are you collecting cash values or progress towards a feature?",
+      "Is the item enough, or is a separate collector needed?",
+      "When does the meter reset, and what happens after changing the stake?"
+    ],
+    "exampleNote": "Fish with values require the fisherman collector during free spins. Compare Book of 99, where collecting books triggers a round rather than adding up values on the grid."
+  },
+  "ways": {
+    "name": "Ways to win",
+    "text": "Without fixed paylines, eligible positions on adjacent reels combine into ways; the number can change.",
+    "subtitle": "Combinations without a fixed payline",
+    "principle": [
+      "In a ways system, matching symbols on adjacent reels can combine across several positions at once. There is no predefined payline. A payout still requires the specified symbol, reel sequence and minimum match length.",
+      "The grid can be fixed or dynamic. Extra rows, split positions and other transformations change the number of combinations within a round. Nolimit City games provide different examples of changing grids."
+    ],
+    "sequence": [
+      "The game determines the available positions on each reel.",
+      "Matching symbols on consecutive reels form paying ways.",
+      "If a feature changes the grid or triggers a cascade, positions and combinations are recalculated under the game's rules."
+    ],
+    "contrast": "Paylines check a predefined set of routes. Ways pays combines eligible positions without that layout. Matching symbols anywhere do not necessarily pay: the requirement for adjacent reels usually remains.",
+    "appeal": "Follow dynamic geometry alongside the events of a round: which feature opened a row or changed a symbol? Differences between games become visible through their grids.",
+    "tradeoff": "A large number of ways is difficult to judge visually. It is not a payout probability and does not offset high volatility. Features can change the grid so much that its starting size no longer describes the current state.",
+    "watch": [
+      "How many rows are available at the start and after expansion?",
+      "Does splitting a symbol add positions or change a multiplier?",
+      "When does the grid return to its original shape?"
+    ],
+    "exampleNote": "The grid expands from 6 × 3 to 6 × 6, making available rows more useful to follow than one ways count. Open Mental for a different grid structure."
+  }
+}
