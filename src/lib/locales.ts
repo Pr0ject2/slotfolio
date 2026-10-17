@@ -1,4 +1,5 @@
 import { hasEnglishDossier } from "./english-dossier-routes";
+import { englishGameCollections } from "./english-game-collections";
 import { englishJournalGuides } from "./english-journal-guides";
 import { hasEnglishCatalogRecord } from "./english-catalog-record-routes";
 export type SiteLocale = "ru" | "en";
@@ -13,11 +14,15 @@ export const englishReadyPaths = [
   "/providers",
   "/mechanics",
   "/compare",
+  "/collections",
+  "/bonuses",
+  "/regions",
+  "/regions/great-britain",
+  "/journal",
   "/editorial-policy",
   "/privacy",
   "/disclosure",
   "/responsible-gaming",
-  "/journal",
   "/journal/understanding-rtp",
 ] as const;
 
@@ -25,6 +30,7 @@ const ready = new Set<string>(englishReadyPaths);
 function isReviewedRoute(path: string): boolean {
   if (ready.has(path)) return true;
   if (path.startsWith("/journal/")) return englishJournalGuides.some(item => item.slug === path.slice("/journal/".length));
+  if (path.startsWith("/collections/")) return englishGameCollections.some(item => item.slug === path.slice("/collections/".length));
   if (path.startsWith("/mechanics/")) return ["cascades", "clusters", "lines", "collect", "ways"].includes(path.slice(11));
   if (path.startsWith("/providers/")) return ["pragmatic-play", "play-n-go", "push-gaming", "hacksaw-gaming", "nolimit-city", "netent", "relax-gaming", "endorphina", "bgaming", "3-oaks-gaming", "wazdan", "belatra-games", "yggdrasil-gaming", "shady-lady", "big-time-gaming", "clawbuster", "onlyplay", "mancala-gaming"].includes(path.slice(11));
   if (path.startsWith("/slots/catalog/")) return hasEnglishCatalogRecord(path.slice("/slots/catalog/".length));
