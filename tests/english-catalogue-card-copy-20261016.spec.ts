@@ -1,15 +1,17 @@
 import { test, expect } from "@playwright/test";
+import { catalogSeeds } from "../src/lib/catalog-seeds";
+import { hasEnglishCatalogRecord } from "../src/lib/english-catalog-record-routes";
 
 test("English catalogue links reviewed dossiers and labels untranslated records", async ({ page }) => {
   await page.goto("/en/slots/");
   const translated = page.locator('[data-slot="gates-of-olympus"]');
   await expect(translated).toBeVisible();
   await expect(translated.locator('h2 a')).toHaveAttribute("href", /\/en\/slots\/gates-of-olympus/);
-  // The first 100 full dossiers and first 100 catalogue records now have English pages.
-  // A later page still contains catalog-only records whose reviews remain in Russian.
-  await page.goto("/en/slots/?page=15");
-  const untranslated = page.locator('.catalog-game.catalog-only').filter({ hasText: "Detailed review in Russian" }).first();
+  const record = catalogSeeds.find(game => !hasEnglishCatalogRecord(game.slug))!;
+  await page.goto(`/en/slots/?q=${encodeURIComponent(record.name)}`);
+  const untranslated = page.locator(`[data-slot="${record.slug}"]`);
   await expect(untranslated).toBeVisible();
+  await expect(untranslated).toContainText("Game record in Russian");
   await expect(untranslated.locator("dl")).toHaveAttribute("aria-label", "Game details");
   await expect(page.getByText("English game guides are being added in batches. Some game details are still available only in Russian.")).toBeVisible();
 });

@@ -1,0 +1,26 @@
+.record :global(.slot-intro) {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 48px);
+}
+.record :global(.slot-figure),
+.record :global(.slot-summary) { min-width: 0; }
+.record :global(.slot-figure img) { width: 100%; max-width: 100%; height: auto; }
+.record :global(.slot-deck) {
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 65ch;
+}
+.record :global(.facts > div) {
+  display: grid;
+  grid-template-columns: minmax(90px, 1fr) minmax(0, 1.5fr);
+  gap: 18px;
+}
+.record :global(.slot-summary .facts dt),
+.record :global(.slot-summary .facts dd) {
+  font-size: 14px;
+  line-height: 1.55;
+  min-width: 0;
+  max-width: none;
+  width: auto;
+}
