@@ -65,7 +65,7 @@ export default function EnglishJournal() {
           <b aria-hidden="true">↗</b>
         </Link>
       </div>
-      <p className="data-note">More editorial guides are being adapted for English readers. This index includes only the articles already available in English.</p>
+      <p className="data-note">All five practical journal guides are now available in English, alongside the RTP explainer. The separate in-depth cascades feature story is still awaiting its English adaptation.</p>
     </>
   );
 }
