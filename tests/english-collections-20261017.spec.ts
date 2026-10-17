@@ -30,7 +30,7 @@ test("English collection index links every reviewed topic", async ({ page }) => 
   await expect(page.getByRole("heading", { name: "Understand the rules by comparing games" })).toBeVisible();
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
   for (const collection of englishGameCollections) {
-    await expect(page.locator(`article#${collection.slug} h2 a`)).toHaveAttribute("href", `/en/collections/${collection.slug}`);
+    await expect(page.locator(`article#${collection.slug} h2 a`)).toHaveAttribute("href", `/en/collections/${collection.slug}/`);
   }
   await expect(page.locator('link[rel="alternate"][hreflang="ru"]')).toHaveAttribute("href", /\/collections\/?$/);
   await expect(page.locator("main")).not.toContainText("Тематические подборки");
@@ -47,9 +47,9 @@ for (const collection of englishGameCollections) {
     await expect(page.locator('link[rel="alternate"][hreflang="ru"]')).toHaveAttribute("href", new RegExp(`/collections/${collection.slug}/?$`));
     for (const game of collection.games) {
       await expect(page.getByRole("heading", { name: getSlot(game.slug)!.name, exact: true }).locator("a"))
-        .toHaveAttribute("href", `/en/slots/${game.slug}`);
+        .toHaveAttribute("href", `/en/slots/${game.slug}/`);
     }
-    await expect(page.getByRole("link", { name: "side-by-side table" })).toHaveAttribute("href", "/en/compare");
+    await expect(page.getByRole("link", { name: "side-by-side table" })).toHaveAttribute("href", "/en/compare/");
     await expect(page.locator(".compare-button")).toHaveCount(3);
   });
 }
