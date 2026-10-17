@@ -168,5 +168,255 @@ export const englishJournalGuides: JournalGuide[] = [
         "label": "Pragmatic Play: 5 Rabbit Megaways rules (PDF)"
       }
     ]
+  },
+  {
+    "slug": "wild-and-scatter",
+    "title": "Wild and scatter symbols: what the rules really say",
+    "category": "Symbols and features",
+    "description": "Substitutions, free-spin triggers, sticky wilds and multipliers: how to tell one symbol's functions from another.",
+    "sections": [
+      {
+        "id": "wild",
+        "title": "Wilds: first find out what they can replace",
+        "paragraphs": [
+          "A wild usually helps form a winning combination by standing in for an ordinary symbol. Which symbols it may replace—and which it cannot—is determined by the game. Never assume that a wild can substitute for a scatter, cash symbol or another special icon.",
+          "The payout system matters too. On a payline, a wild must contribute to a valid combination along that line. In a cluster-pays game, its position and neighbouring symbols matter. The word WILD on a symbol does not make those rules interchangeable."
+        ],
+        "checks": [
+          "Which symbols can this wild replace?",
+          "Does it have an award for a combination of wilds themselves?",
+          "On which reels is it allowed to appear?"
+        ]
+      },
+      {
+        "id": "scatter",
+        "title": "Scatters: distinguish a payout from a feature trigger",
+        "paragraphs": [
+          "Scatter symbols often activate free spins or another feature. Check the paytable for the exact number needed, which positions are eligible and the conditions that start the feature. The name 'scatter' cannot tell you those details on its own.",
+          "A single special symbol can serve more than one purpose. Ordinary prizes, feature triggers and extra spins during an active bonus may have separate rules. Do not assume that a trigger threshold in the base game remains the same during free spins."
+        ],
+        "example": {
+          "title": "A distinction in Sweet Bonanza",
+          "text": "Pragmatic Play describes scatter symbols and bonus multipliers as separate features. The arrival of a special symbol does not mean that every multiplier automatically applies to every win."
+        }
+      },
+      {
+        "id": "variants",
+        "title": "Sticky, expanding and moving wilds add different rules",
+        "paragraphs": [
+          "A sticky wild stays in a position for the period specified in the game rules. An expanding wild fills additional positions or a reel. A moving wild changes position when a specified event occurs. Check these behaviours separately from the wild's basic substitution role.",
+          "The Dog House is an example of sticky wilds during free spins, while Jammin’ Jars features wild jars that can move and increase their multipliers after participating in wins. These examples help clarify the differences, but the paytable of the actual game version remains authoritative."
+        ],
+        "checks": [
+          "What activates the additional behaviour?",
+          "How many spins or cascades can it remain active?",
+          "Which accumulated features reset when the bonus ends?"
+        ]
+      },
+      {
+        "id": "multiplier",
+        "title": "Multipliers: find out what the number modifies",
+        "paragraphs": [
+          "A label such as 3× could apply to a symbol, a line, a cluster or a cascade result. The treatment of multiple multipliers also varies: some games add their values, while others apply different rules. There is no universal formula for every slot.",
+          "Write down four points: what triggers the multiplier, which win it affects, how long it lasts and what resets it. If one answer is missing, consult that part of the paytable instead of trying to infer the rule from the animation."
+        ],
+        "example": {
+          "title": "A paytable-checking template",
+          "text": "'The wild becomes sticky when …; it substitutes for …; it stays until …; its multiplier applies to …'. Fill in each blank from the game's rules. If the details are not documented, leave the question open."
+        }
+      }
+    ],
+    "related": [
+      {
+        "href": "/en/slots/the-dog-house",
+        "label": "The Dog House guide: sticky wilds"
+      },
+      {
+        "href": "/en/slots/jammin-jars",
+        "label": "Jammin’ Jars guide: moving wild jars"
+      },
+      {
+        "href": "/en/journal/reading-paytables",
+        "label": "How to read a paytable"
+      }
+    ],
+    "sources": [
+      {
+        "href": "https://www.pragmaticplay.com/en/games/sweet-bonanza-slot/",
+        "label": "Pragmatic Play: Sweet Bonanza"
+      },
+      {
+        "href": "https://www.pragmaticplay.com/en/games/the-dog-house/",
+        "label": "Pragmatic Play: The Dog House"
+      },
+      {
+        "href": "https://www.pushgaming.com/games/jammin-jars.html",
+        "label": "Push Gaming: Jammin’ Jars"
+      }
+    ]
+  },
+  {
+    "slug": "volatility-and-hit-frequency",
+    "title": "Volatility, hit frequency and RTP are not the same thing",
+    "category": "Game figures",
+    "description": "Why similar RTP figures need not produce similar payouts, and why a frequent payout does not necessarily mean a growing balance.",
+    "sections": [
+      {
+        "id": "three-metrics",
+        "title": "Three measures, three different questions",
+        "paragraphs": [
+          "Return to player (RTP) is the theoretical proportion of total stakes returned as payouts across a very large number of plays. Volatility describes the spread of possible outcomes. Hit frequency describes how often a defined winning event occurs. Before comparing hit-frequency figures, find out what each source counts as an event.",
+          "Labels such as 'high' and 'low' are not a universal numeric scale. One publisher's volatility descriptions cannot automatically be equated with another's. If a source does not explain its method, keep that uncertainty visible instead of turning a label into a precise forecast."
+        ]
+      },
+      {
+        "id": "example",
+        "title": "The same total payout can look completely different",
+        "paragraphs": [
+          "A deliberately artificial example shows the difference between the total returned and the distribution of results. It is not the mathematical model of an existing slot, and a short play history cannot establish a real game's underlying characteristics."
+        ],
+        "example": {
+          "title": "Ten hypothetical rounds, staking 1 unit each",
+          "text": "Scenario A pays 1 unit on nine rounds and zero on one: 9 units returned. Scenario B pays 9 units on one round and zero on the other nine: also 9 units returned. Stakes and total payouts are identical, but the number and distribution of paying events differ. Ten observations cannot establish a game's theoretical RTP."
+        },
+        "checks": [
+          "Do not confuse total money paid out with the number of paying events.",
+          "Do not attempt to calculate a game's volatility from one video or short session.",
+          "Do not interpret 'high volatility' as the probability of any particular result."
+        ]
+      },
+      {
+        "id": "balance",
+        "title": "A payout need not mean a profitable round",
+        "paragraphs": [
+          "If a spin costs 10 units and awards 4, your balance falls by 6 units for that round. The game may still celebrate the event as a payout even though the award did not cover the original stake.",
+          "A hit-frequency figure is difficult to interpret without its definition. Does it count every non-zero award, only awards larger than the stake, bonus triggers or another event? Do not treat differently defined rates as comparable."
+        ]
+      },
+      {
+        "id": "limits",
+        "title": "What these numbers cannot tell you",
+        "paragraphs": [
+          "Neither RTP nor volatility tells you how many spins remain before a bonus. In games with independent random outcomes, earlier losses create no obligation for the next spin to compensate them. Some games do have progressive in-game features; their particular rules must be read separately.",
+          "An unverified figure in the catalogue is missing information, not a zero hit rate or an indication of low risk. When comparing games, use figures that refer to the same relevant game versions and keep gaps in the evidence explicit."
+        ],
+        "checks": [
+          "Find the source of each figure and how it is defined.",
+          "Check the RTP setting of the version actually available.",
+          "Never use a run of previous results as a reason to increase your stake."
+        ]
+      }
+    ],
+    "related": [
+      {
+        "href": "/en/journal/understanding-rtp",
+        "label": "What RTP actually means"
+      },
+      {
+        "href": "/en/journal/comparing-games",
+        "label": "How to compare two games"
+      },
+      {
+        "href": "/en/responsible-gaming",
+        "label": "Safer gambling and limits"
+      }
+    ],
+    "sources": [
+      {
+        "href": "https://www.gamblingcommission.gov.uk/public-and-players/guide/return-to-player-how-much-gaming-machines-payout",
+        "label": "Gambling Commission: return to player and random outcomes"
+      },
+      {
+        "href": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/guide/live-return-to-player-performance-monitoring-of-games-of-chance",
+        "label": "Gambling Commission: RTP performance, volatility and results"
+      }
+    ]
+  },
+  {
+    "slug": "comparing-games",
+    "title": "How to compare two games without declaring a winner",
+    "category": "Using the catalogue",
+    "description": "A practical approach to comparing rules, features and verified details—without guessing missing figures or mixing incompatible RTP settings.",
+    "sections": [
+      {
+        "id": "question",
+        "title": "Start with a question you can actually answer",
+        "paragraphs": [
+          "Which game is 'better' is too broad a question. Try something specific: must winning symbols touch, what happens to the board after a payout, when can a multiplier apply, or how do two bonuses differ despite using the same grid?",
+          "Choose two games with a shared element. Sweet Bonanza and Reactoonz both use cascades, for example, but have different rules for what qualifies as a winning combination. Comparing them separates board updates from payout conditions."
+        ],
+        "example": {
+          "title": "Write down a comparison question",
+          "text": "'Both games use cascades. I want to know whether symbols must touch and which additional effects may occur after a win.' The answer can be checked against concrete sections of each game guide."
+        }
+      },
+      {
+        "id": "open",
+        "title": "Open Slotfolio's comparison table",
+        "paragraphs": [
+          "Select Compare on two games with full editorial guides, then open the side-by-side table. It holds two games at a time; remove one before adding a third. On narrower screens, the table may need horizontal scrolling.",
+          "A brief catalogue record may not include a Compare button because it does not carry the same depth of researched information as a full guide. That does not say anything about the quality of the game: the available, verified facts can still be read on its own page."
+        ],
+        "checks": [
+          "Confirm the exact game titles and publishers.",
+          "Compare winning-combination rules and the grid.",
+          "Separate features available in the base game from those exclusive to the bonus."
+        ]
+      },
+      {
+        "id": "unknown",
+        "title": "Do not turn an unknown into an estimate",
+        "paragraphs": [
+          "A missing value is not zero. If a maximum win or bonus frequency is not supported by a source, that comparison remains unresolved. A large number printed on promotional artwork does not tell you the probability of achieving it.",
+          "For RTP, compare configurations carefully: a single title may come with several settings. Keep the original source's volatility scale and wording. The same descriptive label used by different publishers may not represent the same measurement."
+        ],
+        "example": {
+          "title": "A precise way to record uncertainty",
+          "text": "'Game A has two confirmed RTP variants; Game B has one setting documented in the available source. The versions offered by the operators have not yet been matched.' That is more accurate than calling one game more profitable based on incompatible figures."
+        }
+      },
+      {
+        "id": "conclusion",
+        "title": "Finish with a distinction in the rules",
+        "paragraphs": [
+          "A useful conclusion is concrete: 'one game requires adjacent clusters, while another counts matches anywhere on the board', or 'one bonus keeps wilds in place, while another moves them after a win'.",
+          "That conclusion helps explain how a game works. It cannot predict what a playing session will return and is not a reason to stake more. If the answer depends on an unknown setting or version, say so beside the comparison."
+        ],
+        "checks": [
+          "What do the games genuinely have in common?",
+          "Which one rule differs?",
+          "Which source supports that finding?",
+          "What remains unknown?"
+        ]
+      }
+    ],
+    "related": [
+      {
+        "href": "/en/compare",
+        "label": "Open the comparison table"
+      },
+      {
+        "href": "/en/slots",
+        "label": "Choose two games from the catalogue"
+      },
+      {
+        "href": "/en/journal/volatility-and-hit-frequency",
+        "label": "RTP, volatility and hit frequency explained"
+      }
+    ],
+    "sources": [
+      {
+        "href": "/en/editorial-policy",
+        "label": "How Slotfolio checks facts and handles conflicting sources"
+      },
+      {
+        "href": "/en/slots/sweet-bonanza",
+        "label": "Sweet Bonanza full guide and source references"
+      },
+      {
+        "href": "/en/slots/reactoonz",
+        "label": "Reactoonz full guide and source references"
+      }
+    ]
   }
 ];
