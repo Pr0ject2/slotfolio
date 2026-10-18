@@ -8,6 +8,8 @@ import { englishCatalogRecordSlugs, hasEnglishCatalogRecord } from "@/lib/englis
 import type { CatalogItem } from "@/lib/catalog-query";
 import { englishCatalogFact } from "@/lib/english-catalog-facts";
 import styles from "../record.module.css";
+import { englishCatalogComplete } from "@/lib/english-catalog-complete";
+import { EnglishCatalogProfile } from "@/components/english-catalog-profile";
 
 export const dynamicParams = false;
 
@@ -40,6 +42,8 @@ export default async function EnglishCatalogRecord({ params }: { params: Promise
   const { slug } = await params;
   const item = getRecord(slug);
   if (!item) notFound();
+  const complete = englishCatalogComplete[slug];
+  if (complete) return <EnglishCatalogProfile item={item} copy={complete} />;
 
   const facts = [
     ["Publisher", item.provider],

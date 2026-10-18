@@ -1,0 +1,2186 @@
+{
+  "3-oaks-gaming-15-dragon-pearls": {
+    "intro": [
+      "In 15 Dragon Pearls, two separate bonus modes revolve around golden pearls: Hold & Win locks them onto the grid, while Scatter symbols open free spins.",
+      "Every new pearl that lands in Hold & Win stays until the sequence ends. The mode therefore centres on filling positions and collecting accumulated values rather than on an individual payline."
+    ],
+    "editorial": "The key distinction in 15 Dragon Pearls is between green and blue pearls: green pearls collect golden values, while blue pearls count the entire visible grid, including other blue pearls.",
+    "features": [
+      {
+        "title": "Six Hold & Win respins",
+        "description": "Six golden pearls trigger Hold & Win with six respins. The triggering symbols lock in place, as does every new pearl that lands during the bonus."
+      },
+      {
+        "title": "Green and blue pearls",
+        "description": "A green pearl collects the values of all golden pearls. A blue pearl collects every visible value, including the values of other blue pearls."
+      },
+      {
+        "title": "Eight free spins",
+        "description": "The separate mode awards eight free spins using only high-paying symbols and can be retriggered."
+      },
+      {
+        "title": "Paylines",
+        "description": "The 5×3 grid uses 25 fixed paylines."
+      }
+    ]
+  },
+  "bgaming-3-lucky-monkeys-hold-and-win": {
+    "intro": [
+      "3 Lucky Monkeys Hold & Win is a 5×3 slot in which special coins charge three pots above the grid: Expand, Collect and Boost.",
+      "Six coins trigger Hold & Win with three respins; Expand increases the grid to 5×5, and filling the standard or expanded grid unlocks different jackpots."
+    ],
+    "editorial": "Grand and Royal have an important distinction: Grand is linked to filling the original 5×3 grid, whereas Royal requires Expand to activate and the resulting 5×5 grid to be filled. Collect gathers values without removing the coins from the grid.",
+    "features": [
+      {
+        "title": "Coins and three pots",
+        "description": "Special coins charge Expand, Collect and Boost separately; the pots can activate before or during Hold & Win."
+      },
+      {
+        "title": "Expand, Collect, Boost",
+        "description": "Expand increases the grid from 5×3 to 5×5; Collect adds up all visible coins without removing them; Boost increases ordinary coin values, excluding Jackpot Coins."
+      },
+      {
+        "title": "Three respins and a resetting counter",
+        "description": "Six or more coins trigger Hold & Win directly, while two or more offer a lower chance of triggering it. Any new coin resets the counter to three attempts."
+      },
+      {
+        "title": "Five jackpot levels",
+        "description": "Mini, Minor and Major appear on Jackpot Coins; Grand pays for filling 5×3, while Royal requires the fully expanded 5×5 grid to be filled."
+      }
+    ]
+  },
+  "endorphina-3-golden-chests": {
+    "intro": [
+      "3 Golden Chests combines Hold & Win with a Pile Feature involving Boost, Mystery and Collect chests.",
+      "In Hold & Win, Collect gathers Bonus Symbol values, Boost increases them, and Mystery can reveal a fixed reward."
+    ],
+    "editorial": "The bonus revolves around three different chests: one collects values, another increases them, and the third reveals a separate reward.",
+    "features": [
+      {
+        "title": "Boost, Mystery and Collect chests",
+        "description": "Three chest types affect Hold & Win and the collected Bonus Symbols in different ways. 3 Golden Chests combines Hold & Win with a Pile Feature involving Boost, Mystery and Collect chests."
+      },
+      {
+        "title": "Boost and Mystery Chest",
+        "description": "The red Boost adds values from x1 to x10 the total bet to Bonus Symbol prizes in Hold & Win; the green Mystery can reveal an ordinary payout or the MIN, MID or MAX Jackpot levels."
+      },
+      {
+        "title": "Collect and the three chests",
+        "description": "The purple Collect gathers the values of all visible Bonus Symbols and activates once. The three chests correspond to different Pile Feature effects; Boost, Mystery and Collect can affect the same Hold & Win round."
+      }
+    ]
+  },
+  "hacksaw-gaming-2-wild-2-die": {
+    "intro": [
+      "Silver and Golden Revolvers shoot at random grid positions, turning them into Wilds and Wild Multipliers.",
+      "Hitting a position again adds a random multiplier to its Wild, while a Golden Revolver creates a Wild Multiplier immediately."
+    ],
+    "editorial": "The core mechanic of 2 Wild 2 Die revolves around shots from Revolver Symbols: what matters is not just where a symbol lands, but which positions it shoots and how many times they are enhanced.",
+    "features": [
+      {
+        "title": "Silver and Golden Revolvers",
+        "description": "Revolvers carry between one and six bullets and shoot random positions. The first Silver shot turns a position into a Wild, another adds a multiplier, and Golden creates a Wild Multiplier immediately."
+      },
+      {
+        "title": "Most Wanted! and Wanted Posters",
+        "description": "Three FS Scatter symbols trigger Most Wanted! with three replenishable lives. Revolvers shoot Wanted Posters and accumulate additive or multiplying values, while Reload reloads the Silver Revolvers."
+      },
+      {
+        "title": "Shootin’ Wild! and Best of Bonus",
+        "description": "Four FS symbols trigger ten Shootin’ Wild! Free Spins with sticky Wild Multipliers. Best of Bonus plays three complete bonus rounds of the same type and keeps the highest result."
+      }
+    ]
+  },
+  "playn-go-reactoonz-100": {
+    "intro": [
+      "Reactoonz 100 is a separate Play’n GO game with cascading cluster wins: groups of five or more matching creatures disappear, making room for new symbols and continuing the cascade sequence.",
+      "Wins charge Quantum Meters; filling five meters triggers Gargantoon's three-stage arrival. Alongside this, Fluctuating Symbols create Wilds, while the Energized Toon builds its own multiplier."
+    ],
+    "editorial": "This entry in the series distributes energy across several independent mechanisms. Quantum Features change the grid, Gargantoon gradually fills it with Wilds, and the Energized Toon rewards longer sequences only when the selected character participates.",
+    "features": [
+      {
+        "title": "Cascading Clusters and Quantum Meters",
+        "description": "Five or more matching symbols form winning clusters: they disappear and new symbols fall into their places. Each winning symbol charges Quantum Meters and brings additional effects closer."
+      },
+      {
+        "title": "Implosion, Alteration, Demolition and Incision",
+        "description": "Filling individual Quantum Meters queues four effects: Implosion turns 3–6 symbols into Wilds, Alteration changes one-eyed creatures, Demolition removes those symbols, and Incision splits a Wild into two diagonal lines."
+      },
+      {
+        "title": "Gargantoon's three stages",
+        "description": "After all five Quantum Meters are filled, Gargantoon appears in three stages: first eight 1×1 Wilds, then two 2×2 Wilds, and finally one 3×3 Wild. New symbols are added between stages."
+      },
+      {
+        "title": "Fluctuating Symbol and Energized Toon",
+        "description": "The selected one-eyed symbol turns into two Wilds when it wins. A separate Energized Toon increases wins involving that character on each cascade: the multiplier rises by +1 or +3 depending on the cluster type, up to x100."
+      }
+    ]
+  },
+  "playn-go-nsync-pop": {
+    "intro": [
+      "The base grid has a 2-3-4-3-2 shape. The main progression takes place in Free Spins: Pop Symbols appear above and below the reels, and each Pop reveals a Mystery symbol.",
+      "The bonus objective is to clear the grid of Pop Symbols. This unlocks Encore Spin, where the reels expand. The *NSYNC members on the reels are combined into a single Wild symbol."
+    ],
+    "editorial": "*NSYNC Pop uses Pop Symbols to track progress towards a change in grid geometry: first the player clears the special grid during Free Spins, then Encore Spin expands the reels. It is a transition between two grid states rather than an ordinary static free-spin format.",
+    "features": [
+      {
+        "title": "Pop Symbols and Encore Spin",
+        "description": "Pop Symbols reveal Mystery symbols during Free Spins; clearing the grid moves the game into Encore Spin with expanded reels, while the band members act as a Wild symbol."
+      },
+      {
+        "title": "Pop Symbols in Free Spins",
+        "description": "Pop Symbols appear in the top and bottom rows; revealing each one produces a Mystery Symbol."
+      },
+      {
+        "title": "Encore Spin changes the grid",
+        "description": "Once all Pop Symbols have been cleared, Encore Spin begins with expanded reels; the ordinary grid has a 2–3–4–3–2 shape."
+      }
+    ]
+  },
+  "push-gaming-10-cash-bisons": {
+    "intro": [
+      "10 Cash Bisons combines instant prizes based on the number of bisons with a separate Cash Collect feature. Four or more Bison Symbols pay regardless of where they land.",
+      "Collector appears only on the outer reels, 1 and 5, gathering Cash Bison and Jackpot Bison values. Scatter symbols trigger expanding Free Spins, where collected symbols unlock additional rows."
+    ],
+    "editorial": "This version differs from 10 Flaming Bisons through its additional Bison Cash Collect sequence and different jackpot values. Scatter Pays and Collect are separate functions and should not be confused.",
+    "features": [
+      {
+        "title": "Bison Cash Collect",
+        "description": "A Collector on the first or fifth reel gathers the visible Cash and Jackpot Bison values."
+      },
+      {
+        "title": "Bison Scatter Pays",
+        "description": "Four or more Bison Symbols award a separate instant prize based on the group size."
+      },
+      {
+        "title": "Progressive Free Spins",
+        "description": "Three, four or five Scatter symbols award 8, 10 or 12 spins; collecting Scatter symbols opens additional rows."
+      }
+    ]
+  },
+  "wazdan-12-bells": {
+    "intro": [
+      "12 Bells differs from the Coins series through a second, separate mode called 12 Bells Bonus Game: the player chooses three of twelve gates concealing prizes.",
+      "The other route leads to Hold the Jackpot with Cash Infinity; One Click 2 Grand can award Grand Jackpot with a single choice."
+    ],
+    "editorial": "The two bonuses in 12 Bells should not both be treated as ordinary Hold the Jackpot: choosing gates and One Click 2 Grand create a separate game scenario.",
+    "features": [
+      {
+        "title": "12 Bells Bonus Game",
+        "description": "Three of twelve gates can be opened, including a chance of Grand Jackpot through One Click 2 Grand."
+      },
+      {
+        "title": "Hold the Jackpot",
+        "description": "The separate bonus collects cash symbols and works with Sticky Cash Infinity."
+      },
+      {
+        "title": "Chance Level",
+        "description": "Changes the likelihood of entering bonus modes; the provider reports a maximum of 750x specifically as the game's prize."
+      }
+    ]
+  },
+  "3-oaks-gaming-3-african-drums": {
+    "intro": [
+      "In 3 African Drums, the base game leads towards Hold & Win through three coloured drum meters. Each meter controls its own set of bonus enhancements.",
+      "When the respin sequence begins, Bonus Symbols stay on the grid, while COLLECT and MULTI change their values. This is the game's central mechanic."
+    ],
+    "editorial": "In 3 African Drums, it matters which drums are activated before Hold & Win: their combination determines whether value collection, a second grid or multipliers will appear.",
+    "features": [
+      {
+        "title": "Three drum meters",
+        "description": "Green, red and yellow progress symbols fill their corresponding drum meters and activate Hold & Win."
+      },
+      {
+        "title": "Jackpots in Hold & Win",
+        "description": "MINI, MINOR and MAJOR can appear during the respin sequence. Filling the entire grid awards Grand Jackpot worth 2,000x the bet."
+      },
+      {
+        "title": "Collect, Double and Multi",
+        "description": "Collect gathers current values, Double opens a second grid, and Multi adds multipliers to random positions. All three functions can activate together."
+      },
+      {
+        "title": "Paylines",
+        "description": "The 5×3 grid uses 25 fixed paylines."
+      }
+    ]
+  },
+  "bgaming-alien-fruits-3": {
+    "intro": [
+      "Alien Fruits 3 uses Cluster Pays: winning groups disappear and the grid then refills.",
+      "Spin Modifiers are linked to coloured markers, while filling the Progress Bar triggers Cosmo Frenzy."
+    ],
+    "editorial": "The main cycle revolves around clusters and grid refills, with Spin Modifiers providing the main changes within a cascade sequence.",
+    "features": [
+      {
+        "title": "Clusters and Spin Modifiers",
+        "description": "Winning clusters free up positions, the Progress Bar leads towards Cosmo Frenzy, and coloured markers activate different modifiers."
+      },
+      {
+        "title": "Coloured Spin Modifiers",
+        "description": "Markers in winning clusters trigger five effects: blue clears the grid, purple turns symbols into Wilds, yellow adds 2×2 blocks, orange adds a giant symbol, and green adds between 5 and 15 Wilds."
+      },
+      {
+        "title": "Cosmo Frenzy: five levels",
+        "description": "A full Progress Bar opens Cosmo Frenzy. All modifiers activate in each of its five levels, and the multiplier increases through x2, x4, x6, x8 and x10; new clusters advance the meter."
+      }
+    ]
+  },
+  "endorphina-burning-coins-100": {
+    "intro": [
+      "Different-coloured Token Symbols can activate different Burning Coin bonus games.",
+      "The game combines Hold & Win, Hot Hold Boost, Jackpot Collecting, Collector Bonus Games and a separate Extended Bonus Game."
+    ],
+    "editorial": "Burning Coins 100 extends classic Hold & Win with several coin bonuses: a token's colour determines a separate scenario, while Hot Hold Boost and Collector mechanics change values already collected.",
+    "features": [
+      {
+        "title": "Coloured Tokens and Hot Hold Boost",
+        "description": "Token Symbols can trigger different bonus games, while Hot Hold Boost works on top of Hold & Win and Coin values."
+      },
+      {
+        "title": "Collector and Boost by colour",
+        "description": "A blue Burning Coin opens Hot Hold Collector, while green opens Hot Hold Boost. If both colours are active, the combined Collector Boost begins; Token Symbols can randomly activate the corresponding Burning Coins."
+      },
+      {
+        "title": "Extended Bonus and columns",
+        "description": "A red Burning Coin opens Extended Bonus, where prize-filled columns award additional jackpot rewards. Red together with blue activates Extended & Collector, while collecting 24 special symbols is linked to Ultra Jackpot."
+      }
+    ]
+  },
+  "hacksaw-gaming-3-cursed-chests-hold-and-win": {
+    "intro": [
+      "Green, Red and Blue Pot Symbols charge three Cursed Chests, each of which triggers a different scenario.",
+      "Red Chest opens Cursed Coins Hold & Win with three refilling lives, Green opens Cursed Wilds Respin, and Blue opens Cursed FS Respin."
+    ],
+    "editorial": "The three chests represent three different bonus branches: a Wild respin, Hold & Win with Coins, and an FS respin that can lead into Treasure Cove or Ghostly Gallows.",
+    "features": [
+      {
+        "title": "Pot Symbols and three chests",
+        "description": "Green, Red and Blue Pot Symbols charge the corresponding Cursed Chests. A charged chest can activate after wins are calculated and triggers its own bonus mode."
+      },
+      {
+        "title": "Green Wilds and Red Coins",
+        "description": "Green Chest opens Cursed Wilds Respin; Red Chest triggers Cursed Coins Hold & Win with three replenishable lives, where new Coins lock in place until the sequence ends."
+      },
+      {
+        "title": "Blue Chest, Treasure Cove and Gallows",
+        "description": "Blue Chest triggers Cursed FS Respin. Seven FS Symbols lead into Treasure Cove, while six FS plus FS Upgrade award Ghostly Gallows; both modes use 7–15 Free Spins."
+      }
+    ]
+  },
+  "nolimit-city-ding-dong-death": {
+    "intro": [
+      "Every third avalanche opens the next level of the five-stage Death Meter and turns the selected character symbol type into a Wild for the remainder of the current round.",
+      "At the fifth level, a global win multiplier activates and Mental Patient, xSplit Wild or xNudge Wild can occur. xNudge moves down, gains a multiplier as it moves, then expands to cover the reel."
+    ],
+    "editorial": "Ding Dong Death uses its avalanche counter as the main driver of progression: repeated cascades do more than form new wins, gradually changing the grid's composition and increasing the global multiplier after the top Death Meter level is reached.",
+    "features": [
+      {
+        "title": "Death Meter, xNudge and xSplit",
+        "description": "Avalanches open Death Meter levels, turn symbols into Wilds and, at the fifth level, trigger special xMechanics alongside a growing global multiplier."
+      },
+      {
+        "title": "Five Death Meter levels",
+        "description": "Every third avalanche opens the next Death Meter level and turns the selected character type into Wilds. The fifth level activates a global win multiplier of x2, and subsequent unlocks increase it by +1."
+      },
+      {
+        "title": "xNudge and xSplit Wilds",
+        "description": "xNudge Wild fills the reel with Wild positions, increasing its multiplier as it moves up or down. xSplit Wild doubles symbol positions in a row; both effects can occur after the fifth level is reached."
+      }
+    ]
+  },
+  "playn-go-1001-mystery-genie-fortunes": {
+    "intro": [
+      "Mystery Symbols can reveal ordinary symbols, Wilds or Magic Lamps. A Magic Lamp summons a Genie that expands across the reel as a Wild and starts a re-spin streak.",
+      "Consecutive re-spins increase the Wild multiplier up to x5. Free Spins introduce Locks and Keys: keys open Locks and award Instant Prizes, while a Mystery Chest can award a separate instant reward."
+    ],
+    "editorial": "1001 Mystery Genie Fortunes links Mystery Reveal to a growing re-spin sequence: a Magic Lamp both creates an Expanding Wild and extends the chain, while the bonus adds a second layer through Locks, Keys and Instant Prizes.",
+    "features": [
+      {
+        "title": "Magic Lamp, Re-Spins and Locks & Keys",
+        "description": "Mystery Symbols reveal Lamps and Wilds, the Genie triggers Expanding Wild re-spins with a multiplier up to x5, and Free Spins add Locks, Keys and Instant Prizes."
+      },
+      {
+        "title": "Magic Lamp and Expanding Wild",
+        "description": "The lamp summons a Genie as a full-reel Wild and triggers a Re-Spin sequence with a multiplier up to x5."
+      },
+      {
+        "title": "Locks and keys in Free Spins",
+        "description": "Keys remove Locks containing Instant Prizes, while a Mystery Chest can award a separate instant reward."
+      }
+    ]
+  },
+  "push-gaming-10-flaming-bisons": {
+    "intro": [
+      "10 Flaming Bisons pays for four or more Bison Symbols on the grid and features special Jackpot Bison Symbols that add a fixed prize when enough ordinary bisons are present.",
+      "Three or more Totems open Free Spins, where the grid develops as new Totems are collected. Push-Up expands the base grid for an additional cost, and unlocked rows carry into the bonus."
+    ],
+    "editorial": "Here a Jackpot Bison activates alongside a group of bisons, rather than through the Cash Collector in 10 Cash Bisons. These are two different ways of handling an instant prize.",
+    "features": [
+      {
+        "title": "Bison Instant Prize",
+        "description": "Groups of 4–10 bisons award increasing fixed wins regardless of paylines."
+      },
+      {
+        "title": "Jackpot Bison",
+        "description": "A special Bison alongside at least three others can award Mini, Minor, Major or Mega."
+      },
+      {
+        "title": "Totem Free Spins",
+        "description": "Between three and five Totems trigger 8–12 spins with progressively unlocked grid rows."
+      }
+    ]
+  },
+  "wazdan-12-coins": {
+    "intro": [
+      "12 Coins uses twelve independent reels without ordinary paylines: the base game does not award standard line wins, but builds towards Hold the Jackpot.",
+      "Four Bonus Symbols in the middle row award three respins; a new bonus symbol resets the counter, while Cash Infinity remains on its reel until the next bonus ends."
+    ],
+    "editorial": "12 Coins should be distinguished from Gold and Diamond: the original has a Grand Jackpot of 750x, and the higher limits in later releases do not apply to it.",
+    "features": [
+      {
+        "title": "Four Bonus Symbols",
+        "description": "Four symbols in the middle row trigger Hold the Jackpot with three respins and a resetting counter."
+      },
+      {
+        "title": "Cash Infinity",
+        "description": "Symbols can lock in place during the base game and then pay within the next bonus."
+      },
+      {
+        "title": "Guaranteed collection at the end",
+        "description": "Only the bonus sequence pays the values; filling all 12 positions awards Grand Jackpot of 750x."
+      }
+    ]
+  },
+  "3-oaks-gaming-3-aztec-temples": {
+    "intro": [
+      "In 3 Aztec Temples, six bonus coins trigger Hold & Win with respins. New coins landing during the mode remain on the grid until the sequence ends.",
+      "Three temple meters fill through coloured symbols in the base game. They add Boost, Collect and Multi to the bonus, so the triggering conditions matter more than an individual line win."
+    ],
+    "editorial": "The main reference point in 3 Aztec Temples is the state of the three temple meters: they determine which enhancements will be active when Hold & Win begins.",
+    "features": [
+      {
+        "title": "Six bonus coins",
+        "description": "Six golden coins trigger Hold & Win with respins. MINI, MINOR and MAJOR can appear in the bonus, while a full grid can award Grand Jackpot."
+      },
+      {
+        "title": "Three temple meters",
+        "description": "Red, blue and green symbols fill meters above the reels. A full meter adds one feature to Hold & Win: Boost, Collect or Multi."
+      },
+      {
+        "title": "Mystery Symbol and Lucky Spin",
+        "description": "A mystery symbol in the bonus can reveal an extra feature or jackpot. Lucky Spin triggers the bonus with an active feature; Super Bonus activates all three features."
+      },
+      {
+        "title": "Paylines",
+        "description": "The 5×3 grid uses 25 fixed paylines."
+      }
+    ]
+  },
+  "bgaming-bonanza-billion-merge-uptm": {
+    "intro": [
+      "Bonanza Billion Merge Up™+ combines the fruit series with the Merge Up™+ cluster system: winning groups of four adjacent symbols disappear and create new random symbols.",
+      "Free Spins introduce separate multipliers from x2 to x100, added together at the end of the spin; additional Scatters can extend the bonus."
+    ],
+    "editorial": "Multipliers in this version are available specifically during Free Spins, not in the base game. Merge Up™+ does not guarantee another win: after a payout, a new symbol is chosen randomly from those present on the screen.",
+    "features": [
+      {
+        "title": "Merge Up™+ and clusters",
+        "description": "Four or more adjacent matching symbols form a payout. The winning positions then disappear and turn into a random symbol already present on the grid."
+      },
+      {
+        "title": "Free Spins trigger",
+        "description": "Four, five or six Scatters trigger 10, 20 or 30 free spins respectively."
+      },
+      {
+        "title": "Retriggers and multipliers",
+        "description": "Three or more Scatters during Free Spins add another five spins; separate x2–x100 multipliers are added together when the spin ends and applied to the win."
+      },
+      {
+        "title": "Chance x2 and bonus purchase",
+        "description": "Chance x2 increases the chance of a bonus round, while Buy Bonus allows direct entry; these options should not be conflated with ordinary cascade mechanics."
+      }
+    ]
+  },
+  "endorphina-burning-coins-20-dice": {
+    "intro": [
+      "Six or more Burning Dice trigger Fiery Fortune Bonus Game.",
+      "The game combines Hold & Win, Jackpot Collecting and Pile Feature, while Wild and Scatter symbols operate in the base game."
+    ],
+    "editorial": "Burning Coins 20 Dice brings Hold & Win into a dice theme: the main bonus trigger is a collection of Burning Dice, after which the game moves into Fiery Fortune.",
+    "features": [
+      {
+        "title": "Fiery Fortune Bonus Game",
+        "description": "Burning Dice trigger a bonus round that combines Hold & Win with jackpot and pile mechanics."
+      },
+      {
+        "title": "Burning Dice and Collector",
+        "description": "Six or more Burning Dice trigger Fiery Fortune Bonus Game. Each new Collector receives the sum of all visible Burning Dice values, while the original Dice retain their prizes for further collection."
+      },
+      {
+        "title": "Scatter, Wild and Risk Game",
+        "description": "The red Scatter awards separate payouts for three, four or five symbols. Wild substitutes for ordinary symbols but not Scatter, while the card-based Risk Game separately allows an already won payout to be risked after a spin."
+      }
+    ]
+  },
+  "hacksaw-gaming-aiko-and-the-wind-spirit": {
+    "intro": [
+      "Spirit Symbols in winning combinations become full-reel Expanding Wild Spirits with multipliers.",
+      "Zephyr Crest triggers a Respin, moves Wild Spirits one reel to the left and gives them new multipliers."
+    ],
+    "editorial": "Aiko and the Wind Spirit develops a positional Wild mechanic: Spirit expands upwards, Crest moves it left, and bonuses add Memory to retain multipliers.",
+    "features": [
+      {
+        "title": "Expanding Wild Spirits",
+        "description": "A Spirit in a winning combination becomes a Wild expanding upwards along its reel. It carries a multiplier from x2 to x100; multiple Wild Spirits in the same win add their multipliers together."
+      },
+      {
+        "title": "Zephyr Crest Respin",
+        "description": "Zephyr Crest alongside an Expanded Wild Spirit awards a Respin and moves all Wild Spirits one reel to the left. Each Spirit receives a new multiplier when it moves."
+      },
+      {
+        "title": "Spirited Spins, Whispering Winds and Midnight Magic",
+        "description": "Three FS symbols award ten Spins with a higher Spirit frequency, four add Memory for Wild Spirit Multipliers, and five award Hidden Epic with Memory and at least two Wild Spirits per spin."
+      }
+    ]
+  },
+  "nolimit-city-duck-hunters-2": {
+    "intro": [
+      "A scatter win involving 8+ matching symbols removes the winning positions and triggers a new drop. Each cleared position receives an x2 multiplier, and another win on an already marked position doubles its value up to x16,384.",
+      "A Bomb activates after ordinary wins have finished, clearing part of its reel and increasing position multipliers with distance from the blast point. Infectious xWays can expand every visible instance of the revealed symbol."
+    ],
+    "editorial": "Duck Hunters 2 turns each winning position into a multiplier resource lasting through the cascade sequence. Bombs and Infectious xWays matter because they help bring enhanced positions back into use.",
+    "features": [
+      {
+        "title": "Position Multipliers, Bombs and Infectious xWays",
+        "description": "Scatter wins create and double position multipliers, Bombs change the grid and enhance positions, and Infectious xWays expands matching symbols."
+      },
+      {
+        "title": "Position Multipliers",
+        "description": "A win involving eight or more matching symbols triggers a new drop. The cleared position receives an x2 multiplier, which doubles with another win on that position up to x16,384."
+      },
+      {
+        "title": "Bomb and Infectious xWays",
+        "description": "After ordinary wins, a Bomb clears part of its reel and increases position multipliers. Infectious xWays spreads the revealed symbol to other visible instances of the same type, increasing the chance of reusing enhanced positions."
+      }
+    ]
+  },
+  "playn-go-13th-trial-hercules-abyssways": {
+    "intro": [
+      "Will of Zeus can turn Wilds involved in a win into full-reel Expanding Wilds. If Zeus does not activate, new Wilds gradually charge a persistent state and increase the chance of a later activation.",
+      "Three or more Scatters trigger Hera’s Wrath Free Spins with Abyssways: after each spin Hera removes some lower rows, new ones drop from above and the grid's shape changes. Pegasus can summon additional Hercules symbols and move them above the destruction zone."
+    ],
+    "editorial": "13th Trial Hercules Abyssways builds its bonus around changing grid geometry: Abyssways removes and adds rows, while Hercules and Pegasus move within that unstable grid. The base game instead uses the accumulating Will of Zeus system.",
+    "features": [
+      {
+        "title": "Will of Zeus and Abyssways",
+        "description": "Zeus expands Wilds across an entire reel and accumulates charge after unsuccessful activations, while Free Spins use a dynamic Abyssways grid and Pegasus Respawns."
+      },
+      {
+        "title": "Will of Zeus",
+        "description": "Zeus turns a winning Wild into a full-reel Wild; accumulating new Wilds increases the chance of a later activation."
+      },
+      {
+        "title": "Pegasus and the changing grid",
+        "description": "Hera removes lower rows during Free Spins, while Pegasus can add Hercules symbols and move them above the destruction zone."
+      }
+    ]
+  },
+  "push-gaming-10-pharaohs": {
+    "intro": [
+      "10 Pharaohs brings scatter pays into an Egyptian tomb. Four or more Pharaoh Symbols award an instant prize, while a separate Jackpot Pharaoh can add its own reward.",
+      "Three or more Scarabs trigger Progressive Free Spins. Collected Scarabs unlock new rows, while the paid Push-Up option lets a round begin with an already expanded grid."
+    ],
+    "editorial": "Replacing pharaohs with bisons in the description would change the rules: this bonus is specifically built through Scarab Symbols, and the jackpot pays alongside the main Pharaoh group.",
+    "features": [
+      {
+        "title": "Pharaoh Scatter Pays",
+        "description": "Four or more Pharaohs pay according to the number of symbols, from a small group up to ten."
+      },
+      {
+        "title": "Jackpot Pharaoh",
+        "description": "Adds an instant payout at a fixed level when at least three other Pharaoh symbols are present."
+      },
+      {
+        "title": "Scarab and Push-Up",
+        "description": "Scarabs trigger free spins and unlock rows; Push-Up carries previously opened rows into the bonus."
+      }
+    ]
+  },
+  "wazdan-12-coins-grand-diamond-edition": {
+    "intro": [
+      "12 Coins Grand Diamond Edition retains twelve reels but adds enhanced Cash Out to the base game and raises the Grand Jackpot limit to 5000x.",
+      "Hold the Jackpot and Cash Infinity remain separate systems, while Chance Level changes the likelihood of entering the bonus through game settings."
+    ],
+    "editorial": "Diamond is more than a different image for 12 Coins: its highest stated prize is 5000x, and it has a stronger Cash Out feature absent from the original configuration.",
+    "features": [
+      {
+        "title": "Enhanced Cash Out",
+        "description": "In Diamond Edition, Cash Out is enhanced to provide additional payouts outside Hold the Jackpot."
+      },
+      {
+        "title": "Hold the Jackpot",
+        "description": "The bonus locks cash values in place and supports Grand Jackpot up to 5000x the bet."
+      },
+      {
+        "title": "Cash Infinity and Chance Level",
+        "description": "Cash Infinity carries values towards the bonus, while Chance Level affects how often it is triggered."
+      }
+    ]
+  },
+  "3-oaks-gaming-3-china-pots": {
+    "intro": [
+      "In 3 China Pots, coloured coins fill three pots above the reels and prepare the corresponding Pot Features for Hold & Win.",
+      "When the bonus starts, Bonus Symbols lock in place, while Extra, Multi and Double change the number of respins, symbol values and grid size."
+    ],
+    "editorial": "In 3 China Pots, look beyond whether Hold & Win triggers to which pots are already full: these determine whether the sequence lasts longer, multipliers appear or a second grid opens.",
+    "features": [
+      {
+        "title": "Coins and three pots",
+        "description": "Blue, red and purple coins fill three pot meters and trigger Hold & Win with the corresponding Pot Features."
+      },
+      {
+        "title": "Extra, Multi and Double",
+        "description": "Extra awards four respins instead of three, Multi adds multipliers to bonus symbols, and Double opens a second grid. Two or all three features can activate."
+      },
+      {
+        "title": "The end of Hold & Win",
+        "description": "The bonus starts with three respins and bonus symbols lock in place. MINI, MINOR and MAJOR can appear in the sequence, while a full grid awards Grand Jackpot of 2,000x the bet."
+      },
+      {
+        "title": "Paylines",
+        "description": "The 5×3 grid uses 25 fixed paylines."
+      }
+    ]
+  },
+  "bgaming-book-of-hidden-tombs": {
+    "intro": [
+      "Book of Hidden Tombs reworks the Egyptian Book bonus across ten paylines: the book acts as both Scatter and Wild.",
+      "Three or more books trigger ten Free Spins with a selected Golden Expanding Symbol. A separate Super Free Spins mode uses a progressive multiplier up to x512."
+    ],
+    "editorial": "The game has two distinct bonus scenarios: ordinary Free Spins centre on a golden expanding symbol, while Super Free Spins centre on a multiplier that doubles after a non-winning spin and resets after a payout.",
+    "features": [
+      {
+        "title": "The book as Scatter and Wild",
+        "description": "Book substitutes for symbols in winning paylines and also triggers the bonus when three or more books appear."
+      },
+      {
+        "title": "Golden Expanding Symbol",
+        "description": "Before ordinary Free Spins begin, one symbol other than the book is selected. Two or three instances can expand across their reels and pay across ten paylines."
+      },
+      {
+        "title": "Super Free Spins progressive multiplier",
+        "description": "The multiplier starts at x1 and doubles after a non-winning spin, up to x512; after a winning spin, its value is applied and reset."
+      },
+      {
+        "title": "Additional spins and bonus purchase",
+        "description": "Three new books in the bonus add ten spins. Super Free Spins requires three or more Golden Scatters; both bonus versions are also available through Buy Feature."
+      }
+    ]
+  },
+  "endorphina-chance-machine-90s": {
+    "intro": [
+      "Bonus Symbols appear on the outer reels, while Collector Symbols appear only on the middle reel.",
+      "The game combines Hold & Win, Pile Feature, Free Games and Bonus Pop around these Special Symbols."
+    ],
+    "editorial": "Chance Machine 90s assigns separate roles to Special Symbols: the outer reels provide Bonus values, while the central Collector gathers them.",
+    "features": [
+      {
+        "title": "Bonus and Collector Symbols",
+        "description": "Bonus Symbols occupy the outer reels and Collector the middle reel, forming the basis of Hold & Win."
+      },
+      {
+        "title": "Bonus at the edges, Collector in the centre",
+        "description": "Bonus Symbols appear only on reels 1 and 3 and carry cash prizes or the Ultra, Max, Mid and Min jackpot levels. Collector appears on reel 2 and gathers those values."
+      },
+      {
+        "title": "Pile, Free Games and Bonus Pop",
+        "description": "Besides Bonus and Collector, the developer separately confirms Pile Feature, Free Games and Bonus Pop. These are different features on a compact 3×3 grid; a separate card risk round is available after a win."
+      }
+    ]
+  },
+  "hacksaw-gaming-arizona-james-and-the-lost-relics": {
+    "intro": [
+      "A Wild in a winning cluster becomes a Pistol Cylinder, firing up to six shots and revealing Coins, Amulets, Relics and Reload.",
+      "Reload Symbol reloads every Pistol Cylinder with another 2–6 shots, allowing already revealed symbols to be enhanced again."
+    ],
+    "editorial": "Arizona James builds win sequences through Pistol Reveals: a Wild first becomes a cylinder, its shots then reveal new rewards, and Reload extends the sequence.",
+    "features": [
+      {
+        "title": "Pistol Cylinder Reveals",
+        "description": "A Wild within a win becomes a Pistol Cylinder and shoots grid positions, revealing Coins, Amulets, Sacred Relic or Reload. One cylinder can fire up to six times."
+      },
+      {
+        "title": "Reload and upgrading discoveries",
+        "description": "Reload restores between two and six bullets to every Pistol Cylinder. Another shot upgrades a Coin to its next level, while an Emerald Amulet can become a Gold Amulet."
+      },
+      {
+        "title": "Three FS Scatter adventures",
+        "description": "Three FS symbols open Cursed Temple with Pistol Cylinders, four open Tomb of Gold with Bullet Collector, and five open Hidden Epic Crystal Cavern with a progressive Collector starting at five."
+      }
+    ]
+  },
+  "playn-go-rich-wilde-and-the-book-of-dead": {
+    "intro": [
+      "Rich Wilde and the Book of Dead is a classic Play’n GO slot about an Egyptian expedition. Three Tomb Scatters trigger ten Free Spins, before which the game randomly selects an ordinary symbol for special expansion.",
+      "During the bonus, this Special Expanding Symbol can cover all three positions on its reel when an additional payout is available. Expanded symbols do not have to be adjacent; new Scatters can award Free Spins again."
+    ],
+    "editorial": "Book of Dead centres on one clear mechanic: the symbol selected before the bonus remains for the round and expands only when it creates additional winning combinations. Ordinary paylines, free spins and the expanded symbols' special payouts should be distinguished.",
+    "features": [
+      {
+        "title": "Tomb Scatter and ten Free Spins",
+        "description": "Three Tomb Scatters in the base game award ten free spins. Tomb can also act as a Wild, replacing ordinary game symbols in line wins; this is a separate role from triggering the bonus."
+      },
+      {
+        "title": "Special Expanding Symbol",
+        "description": "An ordinary symbol is randomly selected before the first Free Spin. If expanding it creates additional winning combinations after standard payouts are calculated, it covers all three positions on each qualifying reel."
+      },
+      {
+        "title": "Payouts without adjacent reels",
+        "description": "Special expanded symbols can pay a combination across active paylines even when the expanded reels are not adjacent. Expansion occurs only when a new paying combination is available."
+      },
+      {
+        "title": "Retriggering the bonus",
+        "description": "If three or more Scatter Symbols appear again during Free Spins, the game adds another ten free spins. The expanding symbol selected before the round continues to apply within that bonus cycle."
+      }
+    ]
+  },
+  "playn-go-15-crystal-roses-a-tale-of-love": {
+    "intro": [
+      "Crystal Rose acts as a Scatter and is marked on the Quest Map. A random Stacked Scatter activation turns every Crystal Rose into a three-position stack, increasing the chance of opening Free Spins.",
+      "The Love symbol is a Wild and can appear as a Multiplier Wild worth x2, x3, x5, x10 or x100. The Quest Map appears before and after Free Spins and reflects collected Crystal Roses."
+    ],
+    "editorial": "15 Crystal Roses makes progression part of the bonus presentation: the Quest Map does not directly change a spin's mathematics, but links each Scatter found to the overall story. Multiplier Wilds and the random Stacked Scatter provide the main win enhancements.",
+    "features": [
+      {
+        "title": "Crystal Roses, Quest Map and Multiplier Wild",
+        "description": "Scatters are marked on the Quest Map, Stacked Scatter turns Roses into three-position stacks, and Love Wild can carry a multiplier up to x100."
+      },
+      {
+        "title": "Crystal Rose and Quest Map",
+        "description": "The Crystal Rose Scatter is marked on the journey map. A random Stacked Scatter increases every Rose to three positions in height."
+      },
+      {
+        "title": "Love Multiplier Wild",
+        "description": "The love symbol acts as a Wild and can receive a multiplier of x2, x3, x5, x10 or x100."
+      }
+    ]
+  },
+  "push-gaming-10-santas-reindeers": {
+    "intro": [
+      "10 Santa's Reindeers uses festive Reindeer Symbols rather than traditional paylines for instant payouts. Four or more reindeer create an Instant Win, while Jackpot Reindeer can add a fixed bonus.",
+      "Three or more Bell Symbols award 8–12 Free Spins. New Bells fill the locked-row meter, open more reel positions and extend the sequence."
+    ],
+    "editorial": "The main bonus counter here uses bells, rather than the Totems or Scarabs in neighbouring games. Push-Up conditions also depend on the initial grid height.",
+    "features": [
+      {
+        "title": "Reindeer Instant Win",
+        "description": "Between four and ten reindeer award increasing payouts regardless of their positions."
+      },
+      {
+        "title": "Jackpot Reindeer",
+        "description": "A special reindeer alongside three others can add a separate prize at one of four levels."
+      },
+      {
+        "title": "Bell Free Spins",
+        "description": "Three, four or five Bells trigger 8, 10 or 12 spins; additional Bells unlock rows."
+      }
+    ]
+  },
+  "wazdan-12-coins-grand-gold-edition": {
+    "intro": [
+      "12 Coins Grand Gold Edition extends the original combination of Hold the Jackpot and Cash Infinity with Chance Level.",
+      "In this version, Grand Jackpot reaches up to 1500x the bet: above the original 750x but below the stated Platinum and Diamond limits."
+    ],
+    "editorial": "Gold Edition should be compared through its actual differences: Chance Level and a 1500x prize, without automatically borrowing Cash Out from the later Platinum and Diamond versions.",
+    "features": [
+      {
+        "title": "Chance Level",
+        "description": "This setting allows the chance of entering Hold the Jackpot to be increased."
+      },
+      {
+        "title": "Hold the Jackpot",
+        "description": "The bonus sequence retains cash-symbol collection and jackpot tiers, with Grand Jackpot up to 1500x."
+      },
+      {
+        "title": "Cash Infinity",
+        "description": "Locked values build anticipation for the next Hold the Jackpot and are collected within it."
+      }
+    ]
+  },
+  "3-oaks-gaming-3-clover-pots": {
+    "intro": [
+      "3 Clover Pots has two different bonus routes: golden clovers trigger Hold & Win, while three Scatters open free spins.",
+      "Hold & Win centres on three Magic Pot Features: Double changes values, Mystery reveals a valuable symbol or jackpot, and Collect gathers visible values."
+    ],
+    "editorial": "3 Clover Pots has two independent modes with different Wild roles: in free spins it multiplies a line win by x2, while Hold & Win works through clovers and pots.",
+    "features": [
+      {
+        "title": "Clover Hold & Win",
+        "description": "Golden clovers carrying different values trigger Hold & Win. MINI, MINOR and MAJOR can appear in the bonus, while a full grid awards Grand Jackpot of 5,000x the bet."
+      },
+      {
+        "title": "Three Magic Pot Features",
+        "description": "Red, green and purple clovers activate their respective enhancements: Double doubles values, Mystery becomes a valuable bonus symbol or jackpot, and Collect gathers all visible values."
+      },
+      {
+        "title": "Free spins with x2 Wild",
+        "description": "Wild carries an x2 multiplier in the free-spin mode."
+      },
+      {
+        "title": "Paylines",
+        "description": "The 5×3 grid uses 25 fixed paylines."
+      }
+    ]
+  },
+  "bgaming-cats-love-yummy": {
+    "intro": [
+      "Cats Love Yummy takes place in a cat café, where combinations of five matching symbols are linked to a separate Cats Jackpot system.",
+      "Three, four and five Bonus Symbols trigger 10, 15 or 25 Free Spins respectively; Wilds are restricted to the fifth reel during the bonus, while an additional Bonus extends the sequence."
+    ],
+    "editorial": "In Cats Love Yummy, ordinary Wilds appear on reels 3–5 but only on the fifth reel during Free Spins. Cats Jackpot is linked to a separate active position on the sixth reel, not to any cat symbol on the grid.",
+    "features": [
+      {
+        "title": "Free Spins triggers",
+        "description": "Three, four or five Bonus Symbols trigger 10, 15 or 25 spins with bonus multipliers; two or more Bonus symbols during the round add five spins."
+      },
+      {
+        "title": "Wilds in the base game and bonus",
+        "description": "Wilds can appear on reels 3–5 in the base game; during Free Spins, Wilds are restricted to the fifth reel."
+      },
+      {
+        "title": "Cats Jackpot on the sixth reel",
+        "description": "The jackpot symbol appears only on the sixth reel and counts in the central active position; Mini, Minor, Major and Grand are linked to particular groups of five cats or toys."
+      },
+      {
+        "title": "Buy Feature and Fast 100 Spins",
+        "description": "Direct entry into Free Spins costs 100 bets. Fast 100 Spins automates a sequence of one hundred spins and can be stopped before it finishes."
+      }
+    ]
+  },
+  "endorphina-druids-fortune": {
+    "intro": [
+      "Druid’s Fortune combines Jackpot Collecting, Pile Feature, Pick ’Em Game and Hold & Win.",
+      "The separate Heart of Harmony Bonus Game revolves around coloured crystals that fill a pot."
+    ],
+    "editorial": "The main bonus offering is divided into several separate mechanics: Pick ’Em, Hold & Win and Heart of Harmony with its accumulating crystals.",
+    "features": [
+      {
+        "title": "Heart of Harmony and Pick ’Em",
+        "description": "Coloured crystals fill the pot in Heart of Harmony, while a separate Pick ’Em complements Hold & Win and Pile Feature."
+      },
+      {
+        "title": "Heart of Harmony and crystals",
+        "description": "In the separate Heart of Harmony Bonus Game, coloured crystals gradually fill a magical pot. Pick ’Em and Hold & Win exist separately, and the developer confirms the Min, Mid, Max and Ultra jackpot levels."
+      },
+      {
+        "title": "Two expanding Wilds",
+        "description": "The druid and priestess land on reels 2–4 in the base game, substitute for symbols other than Tokens and expand vertically to create winning combinations. This is a different mechanic, unrelated to crystal collection."
+      }
+    ]
+  },
+  "hacksaw-gaming-army-of-ares": {
+    "intro": [
+      "Wrath Scatter expands into a Wild Wrath Reel and receives a multiplier applied to the entire reel.",
+      "In the Wrath and Ruin bonus, Disc Symbols gradually change Reel Multipliers, while Battle Horse adds a final multiplier to its reel."
+    ],
+    "editorial": "Army of Ares divides enhancement between two systems: in the base game a Wrath Reel immediately turns a reel into a multiplier Wild, while Wrath and Ruin gradually builds Reel Multipliers through Discs and Battle Horses.",
+    "features": [
+      {
+        "title": "Wrath Reels and additive multipliers",
+        "description": "Wrath Scatter expands across the entire reel, turning it into a Wild Wrath Reel with its own multiplier. Multipliers from several participating Wrath Reels are added together first."
+      },
+      {
+        "title": "Fear and Flame",
+        "description": "Three FS symbols trigger ten Free Spins, each guaranteeing at least one Wrath Reel. Wilds added by that reel can be Wild Multipliers and enhance payouts alongside the main reel."
+      },
+      {
+        "title": "Wrath and Ruin / Ares Ascends",
+        "description": "Four FS symbols award three refilling lives with Green and Red Discs increasing Reel Multipliers, alongside Battle Horses. Five FS symbols trigger Ares Ascends with a filled grid from the first step."
+      }
+    ]
+  },
+  "nolimit-city-gator-hunters-2": {
+    "intro": [
+      "At the start of each spin, a Fire Zone measuring between 2x2 and 5x6 appears randomly. Special symbols within it are upgraded: Wild gains a multiplier, Eater becomes Super Eater, and Bonus becomes Super Bonus.",
+      "Revolver activates after wins and Eater effects have finished: its cylinder selects a bullet or an empty position, and a bullet adds a value to the total win multiplier. Super Revolver can spin again, while Super Fire Revolver makes other loaded Revolvers spin once more."
+    ],
+    "editorial": "Gator Hunters 2 links the random Fire Zone to a subsequent chain of special-symbol upgrades. The strongest interaction occurs when upgraded Revolvers repeatedly activate one another, increasing the current round's overall multiplier.",
+    "features": [
+      {
+        "title": "Fire Zone, Eaters and Revolvers",
+        "description": "Fire Zone upgrades specials, Eater reshapes the grid, and Revolvers sequentially add bullets to the total win multiplier and can reactivate one another."
+      },
+      {
+        "title": "Fire Zone and upgrades",
+        "description": "Before a spin, a random Fire Zone measuring between 2×2 and 5×6 upgrades special symbols within it. Wild becomes a multiplier Wild, Eater becomes Super Eater, and Bonus becomes Super Bonus."
+      },
+      {
+        "title": "Revolver and repeated shots",
+        "description": "Revolver activates after wins and Eater effects are calculated: a bullet adds a value to the overall win multiplier. Super Revolver can repeat its spin, while Super Fire Revolver activates other loaded Revolvers."
+      }
+    ]
+  },
+  "playn-go-24k-dragon": {
+    "intro": [
+      "The base game uses 1024 ways. Golden Dragon Head triggers a respin with extra rows, increasing the number of ways; during Free Spins, collected Dragon Heads progressively expand the central reels up to 8192 ways.",
+      "Treasure Wild substitutes for ordinary symbols and can appear on the three central reels with an x2 or x4 multiplier. Every Wild landing during Free Spins carries a multiplier."
+    ],
+    "editorial": "24k Dragon increases its potential by extending the height of the central reels rather than using a separate feature grid. Golden Dragon Heads gradually open more ways, while Wild multipliers scale combinations already formed.",
+    "features": [
+      {
+        "title": "Golden Dragon Heads and Expanding Reels",
+        "description": "Dragon Head triggers a respin or expands the central reels during Free Spins, while Treasure Wilds provide x2/x4 multipliers and operate only on the central reels."
+      },
+      {
+        "title": "1024 Ways and Dragon Head",
+        "description": "The base game has 1024 ways, and Golden Dragon Head can award a Re-Spin with additional reel positions."
+      },
+      {
+        "title": "Treasures Wild and expansion to 8192",
+        "description": "The central reels expand during Free Spins up to 8192 ways, and Wilds can carry x2 or x4."
+      }
+    ]
+  },
+  "push-gaming-10-swords": {
+    "intro": [
+      "10 Swords revolves around a progressive sword meter: four or more Sword Symbols on the same spin award an Instant Prize. Eagle Wild substitutes for ordinary symbols but not Shield or Sword.",
+      "Three or more Shields trigger Free Spins. During the bonus, Shields gradually turn low-paying symbols into Sword Symbols and add extra spins."
+    ],
+    "editorial": "Unlike 10 Pharaohs, its central progression involves converting low-paying symbols into swords rather than opening new rows.",
+    "features": [
+      {
+        "title": "Sword Meter",
+        "description": "Between four and ten Sword Symbols award different Instant Prize tiers."
+      },
+      {
+        "title": "Shield Free Spins",
+        "description": "Three, four or five shields open 8–12 spins; more shields immediately convert some low-paying symbols."
+      },
+      {
+        "title": "Gradual conversion",
+        "description": "Shields accumulate during the bonus and turn low-paying symbols into Swords, extending the sequence at the same time."
+      }
+    ]
+  },
+  "wazdan-12-coins-grand-platinum-edition": {
+    "intro": [
+      "12 Coins Grand Platinum Edition adds a separate Cash Out to Cash Infinity and Hold the Jackpot, allowing prizes to be awarded in the base game.",
+      "A higher Chance Level and Grand Jackpot up to 2500x distinguish Platinum from Gold Edition and its 1500x limit."
+    ],
+    "editorial": "Platinum has its own place in the series: Cash Out is already present, and the stated win limit is 2500x. These parameters must not be used for Gold Edition.",
+    "features": [
+      {
+        "title": "Cash Out",
+        "description": "The feature enables payouts outside the bonus sequence, which the original version did not offer."
+      },
+      {
+        "title": "Chance Level",
+        "description": "The enhanced setting increases the likelihood of entering Hold the Jackpot."
+      },
+      {
+        "title": "Grand Jackpot 2500x",
+        "description": "The provider states a maximum Hold the Jackpot prize of 2500x the bet."
+      }
+    ]
+  },
+  "3-oaks-gaming-3-clover-pots-extra": {
+    "intro": [
+      "In 3 Clover Pots Extra, held clovers trigger Hold & Win, while a Rainbow Coin can unlock an extra pot feature during the respins.",
+      "The three coloured clovers control Boost, Mystery and Collect. Separate free spins use a Wild with a x2 multiplier."
+    ],
+    "editorial": "The main difference between 3 Clover Pots Extra and the original version is the 5×4 grid with 30 paylines. The choice still centres on the combination of three pot features and the random Rainbow Coin.",
+    "features": [
+      {
+        "title": "Rainbow Coin in Hold & Win",
+        "description": "Golden clovers trigger Hold & Win with MINI, MINOR and MAJOR. During respins, a Rainbow Coin can unlock another pot feature by turning into a special bonus symbol."
+      },
+      {
+        "title": "Three Magic Pot Features",
+        "description": "Green, red and purple clovers activate their respective pots: Boost adds its value to every symbol, Mystery reveals a high-value bonus symbol or jackpot, and Collect gathers the visible values."
+      },
+      {
+        "title": "5×4 grid and Wild x2",
+        "description": "This version expands the grid to 5×4 with 30 paylines. Filling the Hold & Win grid can award the Grand Jackpot of 5,000x the stake, while the Wild carries a x2 multiplier in free spins."
+      }
+    ]
+  },
+  "bgaming-chicken-fire": {
+    "intro": [
+      "Chicken Fire is a vertical 3×3 fruit slot with five paylines: coins land on the outer reels, while Collect occupies the second reel.",
+      "A Coin on the first and third reels together with a central Collect triggers Hold & Win. In the bonus, sticky Collect symbols gather values, while Chicken Multipliers (Chicken’s Multipliers) leave multipliers in individual cells."
+    ],
+    "editorial": "In Chicken Fire, the chicken changes roles between the base game and respins: the ordinary Wild substitutes for symbols, but the bonus Chicken’s Multiplier boosts a specific cell. Pile of Gold offers a separate random way to enter the bonus.",
+    "features": [
+      {
+        "title": "Coin and Collect by reel",
+        "description": "Coins worth x1 to x15 appear on reels 1 and 3; the central Collect on reel 2 gathers their values."
+      },
+      {
+        "title": "Hold & Win and Pile of Gold",
+        "description": "Coins on the outer reels together with a central Collect trigger three respins. Pile of Gold can randomly add these symbols and also trigger the bonus."
+      },
+      {
+        "title": "Chicken’s Multipliers",
+        "description": "In the bonus, the chicken leaves x2 on a cell; each subsequent chicken adds one to that cell’s multiplier. New Coins reset the three attempts."
+      },
+      {
+        "title": "Three purchases and jackpots",
+        "description": "Standard, Super and Ultra Bonus purchases are available, each with a different Collect starting setup. Mini, Minor, Major and Grand have their own jackpot symbols."
+      }
+    ]
+  },
+  "endorphina-fortune-bankers": {
+    "intro": [
+      "Fortune Bankers uses Cascading Reels: winning symbols disappear and the grid continues to refill.",
+      "Free Games use a multiplier accumulator, while the Pile Feature gradually strengthens as the bonus progresses."
+    ],
+    "editorial": "Fortune Bankers centres on cascades and an accumulating multiplier: winning sequences keep the grid moving, while Free Games channel progress into the multiplier accumulator.",
+    "features": [
+      {
+        "title": "Cascading Reels and multiplier accumulator",
+        "description": "Cascades create new combinations, while Free Games accumulate a multiplier within the bonus mode."
+      },
+      {
+        "title": "Token and hidden symbols",
+        "description": "Token Symbols cover positions in the base game and Free Games. When a Token disappears, the symbol revealed underneath may complete a combination; this reveal works alongside Cascading Reels and the refilling grid."
+      },
+      {
+        "title": "Pile, Bonus Pop and Risk Game",
+        "description": "The Pile Feature shows the banker characters progressing from simple outfits to expensive suits. Bonus Pop provides a separate route to the bonus, while the card-based Risk Game lets players risk a win already received."
+      }
+    ]
+  },
+  "hacksaw-gaming-bash-bros": {
+    "intro": [
+      "A Cash Symbol expands upwards into a Cash Stack and reveals a multiplier; the values of multiple stacks are added together.",
+      "Oskar can replace a reel’s symbols with a new Cash Stack, while Fred compresses existing stacks and adds doubled multipliers to them."
+    ],
+    "editorial": "Bash Bros revolves around vertical Cash Stacks: one character creates new stacks, while the other compresses existing ones and increases their combined value.",
+    "features": [
+      {
+        "title": "Cash Stacks",
+        "description": "A Cash Symbol expands upwards into a Cash Stack, revealing a multiplier of up to x10000 the stake. Multiple Cash Stacks add their values together, increasing the payout of the current spin."
+      },
+      {
+        "title": "Oskar bash and Fred smash",
+        "description": "Oskar can remove symbols from a reel and replace them with a Cash Stack. Fred compresses existing Stacks and adds doubled multipliers to them: these are different effects."
+      },
+      {
+        "title": "Three Free Spins levels",
+        "description": "Three FS symbols award Bros Before Blows with frequent Cash Stacks; four award Cash Me Outside with a guaranteed action from Oskar or Fred; five award Reactor Riot, where every spin activates both characters."
+      }
+    ]
+  },
+  "nolimit-city-six-feet-under": {
+    "intro": [
+      "On the 6x6 grid, the lower positions are partly filled with dirt, which may conceal Bonus symbols, Bombs or Gems. Cascades remove winning symbols and allow new positions to fall down.",
+      "Different Bombs clear the grid in their own geometric patterns. Shovel adds Gems to empty dirt positions on its reel and increases existing Gem multipliers, while Toolbox does the same across all reels."
+    ],
+    "editorial": "Six Feet Under combines ordinary cascades with gradually uncovering dirt. Bombs determine the shape of the excavation, while Shovel and Toolbox turn cleared dirt positions into a network of growing Gem multipliers.",
+    "features": [
+      {
+        "title": "6×6 grid, Dirt and Cascading Reels",
+        "description": "Each spin takes place on a grid of six reels and six rows. Dirt appears randomly in the lower positions, hiding Bonus symbols, Bombs or Gems; winning symbols disappear and trigger the next cascade."
+      },
+      {
+        "title": "Six Bomb explosion patterns",
+        "description": "Small Box clears a 3×3 square, Big Box clears 5×5, and Teddy Bear acts in a cross extending up to two cells. Glass Can clears three rows, Gasoline clears three columns, and Cake Bomb affects rows, columns and both diagonals."
+      },
+      {
+        "title": "Gem Values, Shovel and Toolbox",
+        "description": "Each Gem beneath Dirt has its own cash value, which increases by its base value with each new avalanche. An explosion frees the Gem and pays its value; Shovel adds and boosts Gems on its reel, while Toolbox does so on all reels."
+      },
+      {
+        "title": "The Descent and Sticky Dirt",
+        "description": "Three visible Bonus symbols trigger The Descent: the grid starts empty, Dirt remains Sticky on every drop, and the round ends when Dirt fills the whole grid. Each additional Bonus at the trigger removes the lowest Gem type from the mode."
+      }
+    ]
+  },
+  "playn-go-3-blades-and-blessings": {
+    "intro": [
+      "Green, Purple and Red Coins visually collect in three matching chests above the reels. This is perceived collection without an accumulated cash value: filling them provides a visual sense of anticipation for the random activation of one of three Free Spins features.",
+      "Collect Free Spins gather Instant Prize Coins. Boost Free Spins expand the grid to 5x5 with 40 paylines and double ordinary line wins. Bonus Free Spins use Bonus Coins with additional spins and Minor, Major and Grand prizes."
+    ],
+    "editorial": "3 Blades & Blessings clearly separates visual progress from the actual mechanic: Coins fill the chests only as an anticipation indicator, and their value emerges after one of three different Free Spins models is randomly triggered.",
+    "features": [
+      {
+        "title": "Collect, Boost and Bonus Free Spins",
+        "description": "The three chests can randomly unlock different bonuses: collecting Prize Coins, a 5x5/40-payline mode with doubled wins, or Bonus Coins with extra spins and fixed prizes."
+      },
+      {
+        "title": "Collect and Boost Free Spins",
+        "description": "Collect gathers Instant Prize Coins, while Boost expands the grid to 5×5 and 40 paylines with doubled ordinary payouts."
+      },
+      {
+        "title": "Bonus Free Spins and coloured chests",
+        "description": "The Bonus branch uses Bonus Coins and additional spins; filling the chests in the base game is a visual indicator, not a cash balance."
+      }
+    ]
+  },
+  "push-gaming-3-liberty-eagles": {
+    "intro": [
+      "3 Liberty Eagles uses three collecting Eagle Pots above six reels. The red, green and blue eagles determine different Free Spins types; activating several eagles together combines their features.",
+      "A Collector on the outer reels gathers visible Instant Prizes and fixed jackpots. In Freedom Reels, the grid expands to six rows and 46,656 ways to win."
+    ],
+    "editorial": "Its three-collection principle is related to 3 Magic Pots, but the specific characters and the Justice Collector, Patriotic Cash and Freedom Reels modes belong to 3 Liberty Eagles itself.",
+    "features": [
+      {
+        "title": "Justice Collector",
+        "description": "The red eagle opens a bonus with a Collector that moves along the reel after each spin."
+      },
+      {
+        "title": "Patriotic Cash and Freedom Reels",
+        "description": "The green eagle adds Instant Prizes, while the blue eagle increases the reels to six rows."
+      },
+      {
+        "title": "Max Liberty",
+        "description": "All three eagles can trigger ten Free Spins, activating all three modes together."
+      }
+    ]
+  },
+  "wazdan-15-coins": {
+    "intro": [
+      "15 Coins extends the Coins formula to fifteen reels. The ordinary base game does not award standard payouts, shifting the focus to Hold the Jackpot.",
+      "Five bonus symbols trigger the bonus; filling all three rows is linked to the Grand Jackpot, while Cash Infinity can persist until a future bonus."
+    ],
+    "editorial": "The original 15 Coins has a 1000x limit, separate from 12 Coins and Grand Diamond Edition. More reels do not automatically mean inheriting higher jackpots.",
+    "features": [
+      {
+        "title": "Fifteen reels",
+        "description": "The fifteen-position grid is designed for collection within the bonus rather than ordinary payline combinations."
+      },
+      {
+        "title": "Five symbols",
+        "description": "Five Bonus Symbols provide entry to Hold the Jackpot with respins."
+      },
+      {
+        "title": "Cash Infinity",
+        "description": "Sticky symbols remain until the next bonus and then contribute to the final collection."
+      }
+    ]
+  },
+  "3-oaks-gaming-3-coin-volcanoes": {
+    "intro": [
+      "In 3 Coin Volcanoes, the bonus starts with three respins, while coloured Bonus Symbols in the base game light the corresponding volcanoes above the reels.",
+      "The volcanoes add Life, Multi and Grow: they restore respins, combine multipliers and expand the grid by two rows."
+    ],
+    "editorial": "The active volcano combination matters most in 3 Coin Volcanoes. Grow changes the size of the grid itself and opens a route to the Royal Jackpot, while filling the ordinary grid is linked to the Grand Jackpot.",
+    "features": [
+      {
+        "title": "Three volcanoes and respins",
+        "description": "Four symbols on an active payline trigger three respins in the bonus game. Bonus symbols on paylines in the base game light the green, red and blue volcanoes above the reels."
+      },
+      {
+        "title": "Life, Multi and Grow",
+        "description": "Active volcanoes add enhancements: Life restores the respin counter, Multi combines multipliers in one cell, and Grow opens two additional rows."
+      },
+      {
+        "title": "Two top jackpots",
+        "description": "Boost collects all current values, while Mystery can reveal a jackpot. Filling the ordinary grid awards the Grand Jackpot of 500x; filling the expanded grid with Grow awards the Royal Jackpot of 2,000x the stake."
+      }
+    ]
+  },
+  "bgaming-divine-queen-power-of-sun": {
+    "intro": [
+      "Divine Queen: Power of Sun pays for matching symbols in any positions, after which Refilling removes winning symbols and adds new ones.",
+      "Individual Cell Multipliers can grow to x128. They do not carry over to the next ordinary spin, but in Free Spins they remain until the entire bonus series ends."
+    ],
+    "editorial": "This Divine Queen instalment should not be confused with Heart of Ice. Accumulated Cell Multipliers and cascades are central here; Booster with an initial x32 and Bonus Rebuy are separate options, not requirements for the base game.",
+    "features": [
+      {
+        "title": "Pay Anywhere and Refilling",
+        "description": "Payouts do not depend on traditional paylines. Winning symbols disappear, the remaining symbols fall down, and empty positions refill from above."
+      },
+      {
+        "title": "Cell Multipliers up to x128",
+        "description": "Multipliers increase with wins and, in the bonus, remain in their positions until Free Spins end."
+      },
+      {
+        "title": "Free Spins and additional attempts",
+        "description": "Four or more Scatters trigger Free Spins; three or more Scatters within the round add five spins."
+      },
+      {
+        "title": "Booster and Super Free Spins",
+        "description": "Booster can start spins with random multipliers or x32. Purchased Super Free Spins start with x2 in every cell, while Bonus Rebuy repeats the last purchased option."
+      }
+    ]
+  },
+  "endorphina-fortune-chests-dice": {
+    "intro": [
+      "Three Fortune Chests are linked to three separate bonuses: Pick Me, Hold & Win and Jackpot Collecting.",
+      "The game uses the Pile Feature so that accumulation around the chests gradually unlocks the corresponding bonus games."
+    ],
+    "editorial": "Fortune Chests Dice does not combine every bonus into one mode: each chest has its own mechanic, so progress towards them leads to different scenarios.",
+    "features": [
+      {
+        "title": "Three chests, three bonuses",
+        "description": "Pick Me, Hold & Win and Jackpot Collecting are attached to separate Fortune Chests. Three Fortune Chests are linked to three separate bonuses: Pick Me, Hold & Win and Jackpot Collecting."
+      },
+      {
+        "title": "Pick Me and Hold & Win",
+        "description": "Two of the three Fortune Chests have independent Pick Me and Hold & Win Bonus Games. Pile Feature progress is linked to opening the chests, so these bonuses should not be treated as one universal mode."
+      },
+      {
+        "title": "Jackpot Collecting and Wild",
+        "description": "The third chest leads to a separate Jackpot Collecting Bonus Game. On the ordinary 3×3 grid, Wild substitutes for symbols except Tokens, while the card-based Risk Game offers a chance to increase a win by risking it."
+      }
+    ]
+  },
+  "hacksaw-gaming-beam-boys": {
+    "intro": [
+      "Wild Laser Cat fires a laser to the left across the entire row, turning covered cells into Wild Symbols.",
+      "Volatility Switch lets players choose Low or Extreme mode, while FS Scatters unlock Free Spins with different spin counts."
+    ],
+    "editorial": "Beam Boys combines a horizontal Wild Rows mechanic with manual volatility selection: a single Laser Cat can turn a whole section of a row into Wilds.",
+    "features": [
+      {
+        "title": "Wild Laser Cat and Wild Rows",
+        "description": "Wild Laser Cat appears on reels 2–6 and fires a beam to the left across the whole row. Every cell covered by the beam becomes Wild, regardless of its original symbol."
+      },
+      {
+        "title": "Volatility Switch",
+        "description": "The switch allows Low or Extreme volatility: Low focuses on more frequent small wins, while Extreme focuses on less frequent large outcomes."
+      },
+      {
+        "title": "FS Scatter and extra spins",
+        "description": "Three, four, five and six FS Scatters trigger 5, 10, 20 or 40 Free Spins respectively. Two FS symbols in the bonus add two spins; three add four."
+      }
+    ]
+  },
+  "playn-go-3-clown-monty": {
+    "intro": [
+      "When the Multiplier Meter is active, Wilds can become Multiplier Wilds worth x2, x3, x4, x5, x10 or x25. Multiple Multiplier Wilds on a winning payline multiply the win by their values.",
+      "Two Scatters trigger Dealers Choice, which adds a Scatter or 2–6 Wilds; three or more trigger Free Spins. All Wilds become Multiplier Wilds during Free Spins, and additional Scatters can unlock Monty Spins, where these Wilds become Sticky."
+    ],
+    "editorial": "3 Clown Monty builds a two-level bonus progression: Dealers Choice or Free Spins first, then Monty Spins with Sticky Multiplier Wilds. The Multiplier Meter connects both modes and determines the strength of the Wilds.",
+    "features": [
+      {
+        "title": "Multiplier Meter, Dealers Choice and Monty Spins",
+        "description": "The Meter turns Wilds into multipliers, Dealers Choice adds a Scatter or Wilds, and Monty Spins holds Multiplier Wilds on the grid."
+      },
+      {
+        "title": "Dealers Choice",
+        "description": "Two Scatters trigger a choice: an additional Scatter or between two and six Wild Symbols, which can unlock the next bonus."
+      },
+      {
+        "title": "Monty Spins and Sticky Wild",
+        "description": "Wilds receive multipliers in standard Free Spins, while an additional Scatter can unlock Monty Spins with held Multiplier Wilds."
+      }
+    ]
+  },
+  "push-gaming-3-magic-pots": {
+    "intro": [
+      "3 Magic Pots revolves around three coloured pots and collecting Token Symbols. Each pot triggers its own Free Spins branch, and new Tokens can activate another feature within the bonus.",
+      "A Collector on the first or sixth reel gathers Instant Prizes and Jackpots. The blue pot unlocks Magic Reels with 46,656 ways, the pink pot boosts the Collector, and the green pot increases the number of cash symbols."
+    ],
+    "editorial": "Do not mix up the pot colours with the eagles in 3 Liberty Eagles: this game has its own Magic Reels, Enchanted Collector and Cash Frenzy modes, whose combinations produce Max Magic.",
+    "features": [
+      {
+        "title": "Magic Reels",
+        "description": "The blue pot expands the grid to six rows and 46,656 ways."
+      },
+      {
+        "title": "Enchanted Collector",
+        "description": "The pink pot activates a nudging Collector on reels 1 and 6."
+      },
+      {
+        "title": "Cash Frenzy and Combo",
+        "description": "The green pot adds Instant Prizes; up to seven combinations of bonus features are available simultaneously."
+      }
+    ]
+  },
+  "wazdan-15-coins-grand-diamond-edition": {
+    "intro": [
+      "15 Coins Grand Diamond Edition brings back 15 positions and Hold the Jackpot, but enhances Cash Out: prize labels can remain on a reel for up to twenty spins.",
+      "The Cash Out payout depends on collected bonus values and a variable percentage of up to 300%; this version’s stated maximum win is 5000x the stake."
+    ],
+    "editorial": "Diamond Edition should not be confused with ordinary 15 Coins: it has separate Cash Out labels and a 5000x ceiling, while the original publishes 1000x.",
+    "features": [
+      {
+        "title": "Cash Out for twenty spins",
+        "description": "A label stays on a reel for up to 20 spins, collects Bonus values and pays a percentage of them."
+      },
+      {
+        "title": "Up to 300% Cash Out",
+        "description": "The enhanced feature can apply a variable percentage to the collected values."
+      },
+      {
+        "title": "Hold the Jackpot",
+        "description": "The main bonus and Cash Infinity are retained; the stated maximum prize is 5000x."
+      }
+    ]
+  },
+  "3-oaks-gaming-3-coins": {
+    "intro": [
+      "In 3 Coins, Hold & Win triggers only when silver and gold coins fill the entire middle reel.",
+      "The middle column stays fixed, while each new coin adds its own value together with all visible values and resets the respin counter."
+    ],
+    "editorial": "The key condition in this game is a full central stack. Once it is held, the outer reels clear, allowing new coins and a diamond with a x100–x500 multiplier to appear.",
+    "features": [
+      {
+        "title": "Full central stack",
+        "description": "Hold & Win activates when silver and gold coins completely fill the middle reel. Their values immediately add to the win counter, followed by four respins."
+      },
+      {
+        "title": "Fixed middle column",
+        "description": "Coins on the middle reel remain in place. Each new coin adds its value together with all visible values and restarts the respin counter."
+      },
+      {
+        "title": "Diamond x100–x500",
+        "description": "After their values are collected, coins on the first and third reels clear their positions for new symbols. A diamond with a multiplier from x100 to x500 can appear in the bonus."
+      }
+    ]
+  },
+  "bgaming-dusty-duel": {
+    "intro": [
+      "Dusty Duel brings Pay Anywhere and Refilling to the Wild West, where VS Symbols trigger duels for Wilds or an additional multiplier.",
+      "Wild or Dead Duel has two outcomes: Wild fills a reel with Wild Symbols, while Dead temporarily clears it until the spin ends."
+    ],
+    "editorial": "The key risk in Dusty Duel is that winning a duel can boost the multiplier, but a Dead outcome can remove an entire reel from the current sequence. The reel multiplier resets in ordinary play and accumulates in Free Spins.",
+    "features": [
+      {
+        "title": "Wild or Dead Duel",
+        "description": "After a Wild outcome, the entire reel becomes Wild until Refilling ends. A Dead outcome clears the reel and removes it from play until the spin finishes."
+      },
+      {
+        "title": "Multiplier Duel and top reel",
+        "description": "VS Symbols trigger a multiplier duel. Random values of x2–x170 on the grid and won duels increase the final Multiplier Reel."
+      },
+      {
+        "title": "Scatter and Free Spins",
+        "description": "Four, five or six Scatters unlock 10, 12 or 14 Free Spins; three or more in the bonus add another five."
+      },
+      {
+        "title": "Three Buy Bonus options",
+        "description": "First Blood provides the ordinary mode; Dead or Alive guarantees a duel every spin; No Mercy starts at x50 and also guarantees a duel."
+      }
+    ]
+  },
+  "endorphina-gift-of-midas": {
+    "intro": [
+      "Gift of Midas offers three Free Games variants and a separate Bonus Pop.",
+      "Token Symbols can cover other symbols; after a Token leaves, the revealed symbol may complete a winning combination."
+    ],
+    "editorial": "Gift of Midas combines a straightforward payline base game with three Free Games modes; the Token mechanic adds another symbol reveal between ordinary spins.",
+    "features": [
+      {
+        "title": "Three Free Games and Tokens",
+        "description": "Free Games are split into several variants, while Token Symbols hide and then reveal the symbols beneath them."
+      },
+      {
+        "title": "Token and second reveal",
+        "description": "Token Symbols temporarily cover other symbols in the base game and Free Games. When a Token flies away, the hidden symbol is revealed again and may complete a combination; this is not equivalent to a Wild."
+      },
+      {
+        "title": "Golden Temple and three Free Games",
+        "description": "Golden Temple Wild substitutes for ordinary symbols. The three coloured Free Games variants are separate bonus scenarios; Bonus Pop Buy provides another entry to the bonus only where that option is available."
+      }
+    ]
+  },
+  "hacksaw-gaming-beast-below": {
+    "intro": [
+      "Yellow Sirens expand upwards when they contribute to a win and carry multipliers applied to paylines passing through them.",
+      "Sirens’ Call introduces semi-persistent Pink Sirens, while Down Below uses Expanding Wild Divers with Oxygen Charges."
+    ],
+    "editorial": "Beast Below develops one idea in two directions: Sirens provide expanding Wild multipliers, while Divers in a separate bonus survive for several spins through Oxygen Charges and can move between reels.",
+    "features": [
+      {
+        "title": "Expanding Yellow Sirens",
+        "description": "A winning Yellow Siren expands upwards along its reel and carries a multiplier of up to x200. Multipliers from several Sirens on one payline are added together before being applied."
+      },
+      {
+        "title": "Sirens’ Call and Pink Sirens",
+        "description": "Three FS symbols award ten Sirens’ Call Spins. Pink Sirens remain after expanding and then move down one row at a time; new FS symbols can extend the bonus."
+      },
+      {
+        "title": "Down Below and Oxygen Charges",
+        "description": "Four FS symbols award ten Spins with Expanding Wild Divers. Each Diver has three Oxygen Charges; moving to a neighbouring reel uses one, and running out removes the Diver."
+      }
+    ]
+  },
+  "playn-go-3-clown-monty-ii": {
+    "intro": [
+      "In the base game, Wilds can randomly receive x2, x3 or x5 multipliers. Three or more Scatters trigger Free Spins; before they begin, the player chooses one of three cards and receives 1–3 guaranteed Walking Wilds.",
+      "Walking Wilds move between reels 2–4 on each free spin. Separately, the overlay letters B.O.N.U.S can form the complete word on the grid and unlock Bonus Prize Pick with a multiplier prize, which can reach x500 in Free Spins."
+    ],
+    "editorial": "3 Clown Monty II simplifies the first game’s multiplier component but adds a choice determining the number of Walking Wilds before the bonus. A second independent element is the B.O.N.U.S overlay, which can unlock a separate Prize Pick.",
+    "features": [
+      {
+        "title": "Walking Wilds and Bonus Prize Pick",
+        "description": "Free Spins provide the chosen number of Walking Wilds, while the complete B.O.N.U.S word triggers Prize Pick with a multiplier reward."
+      },
+      {
+        "title": "Walking Wilds from the card choice",
+        "description": "Before Free Spins, one of three cards is chosen, setting between one and three Wilds that move on reels 2–4."
+      },
+      {
+        "title": "B.O.N.U.S Prize Pick",
+        "description": "The B.O.N.U.S letters collect over the reels and unlock a separate multiplier pick; its value can reach x500 in the bonus."
+      }
+    ]
+  },
+  "push-gaming-bait-n-bank": {
+    "intro": [
+      "Bait 'n' Bank uses compact 3×3 reels. Cash Coin and Jackpot Symbols appear on the first and third reels, while a Chest Collector on the second gathers their values.",
+      "The chest above the grid accumulates coins and can randomly open to trigger the bonus. In the bonus, each new cash symbol resets the three attempts, while the upper Enhancer Reels add to or multiply prizes."
+    ],
+    "editorial": "Here the Collector must land in the middle, between the cash-bearing outer reels. This is a different mechanic from the six reels of 3 Magic Pots.",
+    "features": [
+      {
+        "title": "Chest Collector",
+        "description": "The Collector on the second reel gathers Coin and Jackpot Symbols from the first and third reels."
+      },
+      {
+        "title": "Chest Feature",
+        "description": "Coins accumulate in a chest that can open and trigger a separate bonus."
+      },
+      {
+        "title": "Bonus and Enhancer Reels",
+        "description": "New prizes reset the three remaining spins; the upper reels change cash values through addition or multiplication."
+      }
+    ]
+  },
+  "wazdan-15-coins-grand-gold-edition": {
+    "intro": [
+      "15 Coins Grand Gold Edition retains fifteen independent reels, with the main winning scenario centred on Hold the Jackpot rather than ordinary paylines.",
+      "Cash Infinity holds cash symbols until the bonus round. Chance Level can increase the chance of entering it by up to ten times; this version’s maximum Grand Jackpot is 2000x the stake."
+    ],
+    "editorial": "Grand Gold differs from the original 15 Coins in its Grand Jackpot limit and enhanced Chance Level. Platinum’s Cash Out feature should not be attributed to this version by analogy.",
+    "features": [
+      {
+        "title": "Hold the Jackpot",
+        "description": "Cash symbols are held during the bonus series; this version’s stated Grand Jackpot is 2000x the stake."
+      },
+      {
+        "title": "Cash Infinity",
+        "description": "Special cash symbols can remain in the base game until the bonus and contribute to the collection."
+      },
+      {
+        "title": "Chance Level",
+        "description": "Choosing a higher stake level changes the probability of triggering the bonus without making it a guaranteed trigger."
+      }
+    ]
+  },
+  "3-oaks-gaming-3-egypt-chests": {
+    "intro": [
+      "In 3 Egypt Chests, coloured coins progressively fill three chest meters. One full meter is enough to start Hold & Win.",
+      "The colours of the coins that trigger the mode determine the combination of Multi, Extra and Double: multipliers, four respins and a second grid can work together."
+    ],
+    "editorial": "In 3 Egypt Chests, the value of a trigger depends on the filled chests as well as the bonus itself: Double expands the grid and makes two Grand Jackpots possible.",
+    "features": [
+      {
+        "title": "Three progress chests",
+        "description": "Blue, green and yellow coins fill their matching chest meters above the reels. Filling at least one meter triggers Hold & Win, where the coins become bonus symbols."
+      },
+      {
+        "title": "Multi, Extra and Double",
+        "description": "The colour of the coin triggering the bonus determines the enhancements: Multi adds multipliers, Extra increases respins to four, and Double doubles the playing grid. All three can activate in a single spin."
+      },
+      {
+        "title": "Two Grand Jackpots",
+        "description": "MINI, MINOR and MAJOR can appear during respins, while Boost collects all visible values. Filling the grid awards the Grand Jackpot of 5,000x the stake; Double makes two Grand Jackpots possible."
+      }
+    ]
+  },
+  "bgaming-fortune-trio-minions-of-fu": {
+    "intro": [
+      "Fortune Trio: Minions Of Fu splits its bonus system into three scenarios: Giant Symbol Free Spins, High Symbols Free Spins and Hold & Win with gold coins.",
+      "Three or more Yin-Yang Symbols trigger free spins, while six Gold Coins activate Hold & Win, where a separate Collect Coin gathers values without removing them."
+    ],
+    "editorial": "An important distinction between Fortune Trio jackpots is that Mini, Major and Mega depend on the number of filled horizontal rows and do not add together. Switching bonus scenarios is possible within a round already in progress.",
+    "features": [
+      {
+        "title": "Giant Symbols and High Symbols",
+        "description": "Three or more Yin-Yang symbols award either five spins with a giant symbol on reels 2–4 or eight spins featuring only high-paying symbols."
+      },
+      {
+        "title": "Hold & Win with six coins",
+        "description": "Six or more Gold Coins unlock respins; a new coin resets the counter to three, while a Collect Coin gathers coin values without making the coins disappear."
+      },
+      {
+        "title": "Jackpots for filled rows",
+        "description": "One completely filled horizontal row awards Mini x20, two award Major x100, and three award Mega x1000. These rewards are not added together."
+      },
+      {
+        "title": "Switching between three bonuses",
+        "description": "Yin-Yang symbols or six Gold Coins can land in bonus rounds and extend or switch the scenario. A purchase allows a specific entry to be chosen."
+      }
+    ]
+  },
+  "endorphina-groovin-tiger": {
+    "intro": [
+      "Groovin’ Tiger uses three coloured bucket hats, each linked to its own bonus.",
+      "Tiger Wild triggers Re-Spins: the tiger stays on its reel while the other reels keep spinning until a win."
+    ],
+    "editorial": "Groovin’ Tiger’s key mechanic is Wild-driven Re-Spins: a Tiger landing holds one reel and makes the others continue trying until a winning combination appears.",
+    "features": [
+      {
+        "title": "Tiger Wild Re-Spins",
+        "description": "Tiger Wild holds its reel while the others spin again until a win forms."
+      },
+      {
+        "title": "Three hats and Pile Feature",
+        "description": "Three differently coloured bucket hats sit above the reels, each linked to its own bonus. The Pile Feature handles accumulating progress, separately from the Wild-driven respins with a held Tiger."
+      },
+      {
+        "title": "Token Coins and Bonus Pop",
+        "description": "Token Coins cover other symbols in the base game and can reveal a win when they disappear. Bonus Pop provides a separate route to the bonus game, while Risk Game uses a payout already received."
+      }
+    ]
+  },
+  "hacksaw-gaming-benny-the-beer": {
+    "intro": [
+      "Stackways Symbols cover a reel with identical symbols, while Revealing Stackways can fill it entirely.",
+      "Book of Stackways selects two Special Symbols, while Super Book of Stackways selects four; when they land on multiple reels, they reveal vertical stacks."
+    ],
+    "editorial": "Benny the Beer combines Stackways with a book mechanic: base spins build stacks, while the bonuses establish a set of Special Symbols that can reveal across the full height of a reel.",
+    "features": [
+      {
+        "title": "Normal and Revealing Stackways",
+        "description": "Normal Stackways creates a stack of identical symbols up to four rows high. Revealing Stackways can fill an entire reel of up to ten positions with identical symbols."
+      },
+      {
+        "title": "Book of Stackways",
+        "description": "Two Special Symbols are selected for ten Free Spins. When they land on three or more reels, they expand into vertical stacks, while additional FS symbols extend the series."
+      },
+      {
+        "title": "Super Book of Stackways",
+        "description": "Four FS symbols in the base game unlock Super Book with four Special Symbols. If the ordinary Book receives four FS symbols, it upgrades to Super and adds four bonus spins."
+      }
+    ]
+  },
+  "playn-go-5x-magic": {
+    "intro": [
+      "The 5x symbol is Wild and substitutes for ordinary symbols in winning combinations. One 5x Wild multiplies the ordinary combination payout by five, while two such Wilds multiply it by 25, except for a combination of three 5x symbols.",
+      "The game also uses Scatter: two or more Scatters anywhere on the reels produce a separate win. The official page does not state a separate Free Spins or respin mechanic."
+    ],
+    "editorial": "5x Magic is a compact classic setup with its entire mechanic concentrated in one Wild. Its value depends on the number of 5x symbols within a combination rather than a separate bonus.",
+    "features": [
+      {
+        "title": "5x Wild and Scatter",
+        "description": "One 5x Wild applies x5 to the ordinary payout, two apply x25, while two or more Scatters produce a separate scatter win."
+      },
+      {
+        "title": "Wild x5 and x25",
+        "description": "One 5x Wild multiplies the ordinary payline win by five; two such Wilds in a combination multiply it by twenty-five."
+      },
+      {
+        "title": "Scatter without a separate bonus",
+        "description": "Two or more Scatters award a separate payout; the official game does not state independent Free Spins or Re-Spins."
+      }
+    ]
+  },
+  "push-gaming-bamboo-ways": {
+    "intro": [
+      "Bamboo Ways starts with only the bottom three rows open. Each winning cascade or Instant Prize opens another row until the grid has expanded; a new ordinary spin starts this progression again.",
+      "Mystery Symbols can reveal an Expanding Wild, a Wild converter or Golden Bamboo. In Free Spins, collecting Scatters increases the bonus level and boosts Golden Bamboo payouts."
+    ],
+    "editorial": "The main difference from Big Bamboo is that Bamboo Ways expands the grid one row at a time through cascades, rather than building the entire bonus around Mystery Stacks and a wheel.",
+    "features": [
+      {
+        "title": "Opening new rows",
+        "description": "Each cascade or instant prize unlocks an additional row, starting from the bottom three."
+      },
+      {
+        "title": "Wild Converter",
+        "description": "Every ordinary symbol of a selected type turns into Wild, together with the converter."
+      },
+      {
+        "title": "Golden Bamboo and Free Spins",
+        "description": "Mystery symbols reveal Golden Bamboo; Scatters in the bonus raise the multiplier level and change the set of low-paying symbols."
+      }
+    ]
+  },
+  "wazdan-15-coins-grand-platinum-edition": {
+    "intro": [
+      "15 Coins Grand Platinum Edition adds a separate Cash Out to the familiar Hold the Jackpot and Cash Infinity combination. Cash labels allow payouts in the base game rather than only at the end of the bonus series.",
+      "Values are still collected across fifteen reels for a bonus with a Grand Jackpot of up to 2500x. Chance Level controls how often it appears but does not replace the separate Cash Out mechanic."
+    ],
+    "editorial": "Compared with Gold Edition, Platinum is distinguished by the addition of Cash Out and a higher verified Grand Jackpot limit, rather than simply a change in symbol colours.",
+    "features": [
+      {
+        "title": "Cash Out",
+        "description": "Accumulating labels offer a way to receive cash values while still in the base mode."
+      },
+      {
+        "title": "Hold the Jackpot",
+        "description": "The bonus series collects cash symbols on 15 reels with a Grand Jackpot of up to 2500x."
+      },
+      {
+        "title": "Cash Infinity and Chance Level",
+        "description": "Persistent symbols strengthen a future bonus, while the Chance Level setting changes the chance of entering it."
+      }
+    ]
+  },
+  "3-oaks-gaming-3-hot-teapots": {
+    "intro": [
+      "In 3 Hot Teapots, three teapots fill with progress symbols and unlock Hold & Win.",
+      "Each meter activates its own enhancement."
+    ],
+    "editorial": "When all teapots are filled, Super Bonus starts with all three features.",
+    "features": [
+      {
+        "title": "Three teapots",
+        "description": "Red, blue and purple teapots trigger Hold & Win."
+      },
+      {
+        "title": "Boost, Double and Multi",
+        "description": "Boost increases values, Double opens a second grid, and Multi places multipliers."
+      },
+      {
+        "title": "Super Bonus",
+        "description": "All three filled meters activate the features together."
+      }
+    ]
+  },
+  "bgaming-frenzy-clusters": {
+    "intro": [
+      "Frenzy Clusters is a cluster slot where a win starts with four adjacent matching symbols, while Rocket, Book and Sphere clear different parts of the grid.",
+      "Stone cells can open during cascades, and the two bonuses differ in their available playing area and accumulating multipliers above the grid."
+    ],
+    "editorial": "Frenzy Clusters does not link its mathematics to the chosen hero: the character changes the game’s presentation. Symbol removal, opening stones and the difference between Free Spins and purchased Mega Free Spins matter more to the outcome.",
+    "features": [
+      {
+        "title": "Rocket, Book and Sphere",
+        "description": "Rocket removes a horizontal or vertical line, Book clears a 3×3 square, and Sphere removes all copies of a randomly selected symbol type."
+      },
+      {
+        "title": "Stones and clusters",
+        "description": "Groups of four symbols pay; wins can open stone cells, expanding the grid and revealing hidden multipliers."
+      },
+      {
+        "title": "Free Spins with a growing multiplier",
+        "description": "Three or more Scatters trigger the bonus: each Scatter adds x1 to the overall multiplier, while three multipliers beneath stones are revealed as play progresses."
+      },
+      {
+        "title": "Mega Free Spins and Mystery Buy",
+        "description": "Purchased Mega Free Spins open the entire grid immediately and start with three additional multipliers; Mystery Buy selects a random bonus through one of five portals."
+      }
+    ]
+  },
+  "endorphina-hell-hot-1000": {
+    "intro": [
+      "Hell Hot 1000 adds Pick ’Em Game, Pile Feature and Jackpot Collecting to a classic fruit base game.",
+      "Wild can appear stacked, while a separate Pick ’Em provides the main bonus departure from the base payline game."
+    ],
+    "editorial": "Hell Hot 1000 retains the classic fruit-slot structure but adds accumulation through the Pile Feature and a separate Pick ’Em instead of a complex multi-stage Hold & Win.",
+    "features": [
+      {
+        "title": "Pick ’Em, Pile and Jackpot Collecting",
+        "description": "Three bonus mechanics work on top of a classic fruit slot without changing its underlying payline structure."
+      },
+      {
+        "title": "Stacked Wild and Scatter",
+        "description": "Wild can land in stacks in the base game and substitutes for ordinary symbols, but not Scatter. Five winning Scatters award a special payout according to the paytable; this does not represent the slot’s overall maximum win."
+      },
+      {
+        "title": "Pick ’Em and Pile Feature",
+        "description": "Pick ’Em Game offers an independent pick mechanic, while the Pile Feature handles accumulating progress. The developer adds Jackpot Collecting separately on top of the ordinary fruit payline game."
+      }
+    ]
+  },
+  "hacksaw-gaming-booze-bash": {
+    "intro": [
+      "Match-2-Win requires the left and right halves of a symbol to match on linked reel pairs.",
+      "A complete Multiplier Pair becomes a Global Multiplier, while Top-Shelf Trouble adds a Bash Bar capable of creating new matching pairs."
+    ],
+    "editorial": "Booze Bash centres on assembling pairs from symbol halves rather than ordinary paylines; in the bonuses, the Bash Bar intervenes in the grid and creates additional matches.",
+    "features": [
+      {
+        "title": "Match-2-Win on reel pairs",
+        "description": "A winning Pair consists of the left and right halves of the same symbol on one row. Halves can connect only between reels 1–2, 3–4 and 5–6."
+      },
+      {
+        "title": "Multiplier Pairs",
+        "description": "An x half and a number half create a Global Multiplier of up to x20, applying to every win in the spin. This multiplier requires a complete pair, just like ordinary prize symbols."
+      },
+      {
+        "title": "Bash Bar and three bonus variants",
+        "description": "One FS Pair awards Guilty as Gin; two award Top-Shelf Trouble with a Bash Bar that completes pairs; three award Hell’s Happy Hour, where the Bash Bar can also reveal Special Symbols."
+      }
+    ]
+  },
+  "playn-go-7-sins": {
+    "intro": [
+      "Lucky 7 Wild appears on reels 1, 3 and 5, while Double Lucky 7 Wild on reels 2 and 4 occupies two adjacent positions. Two Double Wilds make combinations of up to seven matching symbols possible.",
+      "Three Pandora’s Box Scatters on reels 1, 3 and 5 trigger 7 Free Spins. On each spin, one of the seven sins becomes a Sticky Expanded Sin on the central reel, while the overall multiplier grows from x1 to x7."
+    ],
+    "editorial": "7 Sins uses a fixed seven-spin structure as a stepped progression: each spin changes the Sticky Expanded Sin and increases the multiplier at the same time. With two Scatters, Second Chance offers an attempt to find the third or receive an instant prize.",
+    "features": [
+      {
+        "title": "Double Lucky 7 and Sticky Expanded Sins",
+        "description": "Double Wild occupies two positions, Pandora’s Box triggers 7 Free Spins, and each spin brings a Sticky Expanded Sin and a growing x1–x7 multiplier."
+      },
+      {
+        "title": "Pandora and seven Free Spins",
+        "description": "Three Pandora Scatters on reels 1, 3 and 5 award seven spins; a Sticky Expanded Sin appears in the central area."
+      },
+      {
+        "title": "x1–x7 progression and Second Chance",
+        "description": "The overall multiplier increases on every Free Spin, while two Scatters in the base game can unlock Second Chance for a third symbol."
+      }
+    ]
+  },
+  "push-gaming-big-bam-book": {
+    "intro": [
+      "Big Bam-book uses Mystery Bamboo Symbols that reveal ordinary payouts or a golden Mystery variant. Golden Mystery Bamboo provides a separate route to instant prizes and bonus Scatters.",
+      "Three, four or five Scatters trigger 8, 12 or 15 Free Spins. Additional Scatters in the bonus fill the Golden Mystery multiplier meter, but that multiplier applies only to Instant Prizes, not to all payline wins."
+    ],
+    "editorial": "Big Bam-book’s key distinction is its targeted instant-prize multiplier. It is different from the Lucky Bamboo with bronze and diamond frames in Big Bamboo 2.",
+    "features": [
+      {
+        "title": "Mystery Reveal",
+        "description": "Bamboo Symbols reveal an ordinary symbol or Golden Mystery Bamboo."
+      },
+      {
+        "title": "Golden Mystery Bamboo",
+        "description": "In the special mode, golden Mystery symbols can reveal additional Scatters and Instant Prizes."
+      },
+      {
+        "title": "Progressive Free Spins",
+        "description": "3/4/5 Scatters award 8/12/15 spins and different starting levels on the bonus meter."
+      }
+    ]
+  },
+  "wazdan-16-coins": {
+    "intro": [
+      "16 Coins moves the series to a square 4×4 layout: it has sixteen separate reels and no conventional payline win calculation.",
+      "Wins come from collecting cash values in Hold the Jackpot. Cash Infinity preserves certain symbols between the base game and bonus, while the original 16 Coins Grand Jackpot is limited to a verified 1000x."
+    ],
+    "editorial": "This is the original version of the sixteen-reel branch: Cash Out and a 5000x Grand Jackpot belong to the later x5000 version, not to 16 Coins itself.",
+    "features": [
+      {
+        "title": "Square 4×4 grid",
+        "description": "Sixteen reels form positions for collecting cash in the bonus, rather than sixteen payline columns."
+      },
+      {
+        "title": "Cash Infinity",
+        "description": "Cash symbols remain until the next bonus and boost the final values."
+      },
+      {
+        "title": "Hold the Jackpot",
+        "description": "The main game outcome is linked to held bonus symbols; the stated maximum is 1000x."
+      }
+    ]
+  },
+  "3-oaks-gaming-3-jewel-crowns": {
+    "intro": [
+      "In 3 Jewel Crowns, three crown colours fill their own meters. Full meters unlock seven free spins with the corresponding enhancements.",
+      "Extra Spins adds another seven spins, Jackpot opens a jackpot mode, and Double Reels activates a second grid; all features can combine."
+    ],
+    "editorial": "In 3 Jewel Crowns, the main reference is the set of filled meters rather than an individual crown: it determines whether extra spins, jackpots and a second grid are added.",
+    "features": [
+      {
+        "title": "Crowns unlock seven free spins",
+        "description": "Green, red and blue crowns fill their own meters. Filled meters trigger seven free spins and activate the matching enhancements."
+      },
+      {
+        "title": "Extra Spins, Jackpot and Double Reels",
+        "description": "Extra Spins adds another seven free spins, Jackpot unlocks MINI, MAJOR and GRAND, and Double Reels activates a second playing grid. All three features can work together."
+      },
+      {
+        "title": "Growing jackpots",
+        "description": "Each crown that lands increases a random jackpot by the current stake, up to its limit. In Jackpot Prize mode, the values grow: Minor up to 50x, Major up to 250x, and Grand up to 5,000x the stake."
+      }
+    ]
+  },
+  "bgaming-fruit-million-respin": {
+    "intro": [
+      "Fruit Million Respin retains the fruit slot’s hundred paylines, but an Expanding Wild on reels 2–4 can expand, pay combinations and trigger an extra spin.",
+      "New Wilds during respins extend the series, and their x1, x2, x3 and x5 multipliers add together until the whole sequence ends."
+    ],
+    "editorial": "These are not conventional Free Spins: the expanded Wild remains on its reel specifically during respins. BGaming’s page gives conflicting overall maximum wins (x3000 in the table and x5000 in the FAQ), so the disputed value is not asserted here.",
+    "features": [
+      {
+        "title": "Expanding Wild on reels 2–4",
+        "description": "Each Wild on the central reels expands to cover its entire reel and can create winning combinations."
+      },
+      {
+        "title": "Sequence of up to three respins",
+        "description": "A Wild expansion triggers one Respin. A new Wild during the series extends it; up to three consecutive respins are possible."
+      },
+      {
+        "title": "Additive Wild multipliers",
+        "description": "Each expanded Wild brings a random x1, x2, x3 or x5; the values add together and apply to the respin sequence’s win."
+      },
+      {
+        "title": "Stacked Symbols and two Scatters",
+        "description": "Stacks of matching symbols occupy part or all of a reel. The first Scatter can land on any reel; the second can land only on 1, 3 or 5."
+      }
+    ]
+  },
+  "endorphina-moofo": {
+    "intro": [
+      "MooFo combines three separate bonus mechanics: Milk ’Em, Moo Hold and MooFo UFO.",
+      "Coloured cow Tokens cover other symbols, and after they leave, the revealed positions may complete a winning combination."
+    ],
+    "editorial": "MooFo does not reduce its bonuses to one mode: Milk ’Em, Moo Hold and the UFO round work as different branches, while the Token mechanic changes the base spins between them.",
+    "features": [
+      {
+        "title": "Milk ’Em, Moo Hold and MooFo UFO",
+        "description": "Three bonus games complement Token Symbols, Wild and a separate Risk Game. MooFo combines three separate bonus mechanics: Milk ’Em, Moo Hold and MooFo UFO."
+      },
+      {
+        "title": "Cow Tokens and Dog Wild",
+        "description": "Green, red and purple Cow Tokens cover positions in the base game and Free Games, revealing symbols when they disappear. The dog Wild appears on reels 2–5 and substitutes for ordinary symbols."
+      },
+      {
+        "title": "Milk ’Em, Moo Hold and UFO",
+        "description": "Milk ’Em, Moo Hold and MooFo UFO are three different bonus games, not names for one Hold & Win mode. The developer also separately notes a classic card-based Risk Game and Free Games."
+      }
+    ]
+  },
+  "hacksaw-gaming-bouncy-bombs": {
+    "intro": [
+      "All wins from a spin collect in the Total Win Bar, after which Bomb Multipliers add together and apply to the total.",
+      "Cascading Dynamite Bomb increases its value with each new cascade, while Bombastic Fantastic guarantees a Bomb Multiplier on every Free Spin."
+    ],
+    "editorial": "Bouncy Bombs separates the win itself from its enhancement: the Total Win Bar is formed first, then the whole amount is multiplied by a set of Bomb Multipliers that can grow during cascades.",
+    "features": [
+      {
+        "title": "Total Win Bar and combined Bombs",
+        "description": "Cascade payouts collect in the Total Win Bar. If the spin has a win, all Bomb Multiplier values are added together first and then multiply the total amount."
+      },
+      {
+        "title": "Three bomb types",
+        "description": "Normal Bomb immediately shows x2–x4, Revealing Bomb reveals a random value when it explodes, and Cascading Dynamite Bomb doubles its own multiplier with each new cascade."
+      },
+      {
+        "title": "Bombastic and Bombastic Fantastic",
+        "description": "Three FS symbols trigger ten Bombastic Spins with more frequent effects. Four FS symbols award ten Bombastic Fantastic Spins, with a guaranteed Bomb Multiplier on every spin."
+      }
+    ]
+  },
+  "playn-go-ace-of-spades": {
+    "intro": [
+      "Ace of Spades is a classic three-reel slot with one central payline. Only a combination on that line produces a win; blank positions do not pay.",
+      "The Ace of Spades symbol acts as Wild and substitutes for other symbols. One Ace in a winning combination doubles the coin count; two Aces multiply it by four; three Aces award the maximum combination stated by the provider."
+    ],
+    "editorial": "Ace of Spades has almost none of the modern feature layers: its mathematics centres on one payline and a Wild multiplier. This makes the profile a useful contrast to later Play’n GO games with bonus grids and progression.",
+    "features": [
+      {
+        "title": "Single Payline and Ace Wild",
+        "description": "The game uses one central payline; Ace substitutes for ordinary symbols and multiplies winning coins by x2 with one Ace or x4 with two."
+      },
+      {
+        "title": "Central Payline",
+        "description": "This classic three-reel slot pays only on the central line, without bonus cascades."
+      },
+      {
+        "title": "Ace Wild x2 and x4",
+        "description": "Ace substitutes for other symbols; one in a combination doubles the coin win, two quadruple it, and three have a special payout."
+      }
+    ]
+  },
+  "push-gaming-big-bamboo": {
+    "intro": [
+      "The original Big Bamboo centres on Mystery Stacks. They reveal ordinary symbols, Wild or Golden Bamboo; the golden variant triggers a separate respin with Instant Prizes, multipliers and a Collector.",
+      "In Free Spins, the player can accept the offered spins or use the Gamble Wheel to seek a stronger setup. Additional symbol transformations change the payout composition before the series starts."
+    ],
+    "editorial": "This version should be distinguished from Big Bamboo 2: the original relies on Mystery Stacks, Golden Bamboo Respin and a gamble wheel, rather than multi-level Persistent Frames.",
+    "features": [
+      {
+        "title": "Mystery Stack",
+        "description": "Mystery stacks reveal ordinary symbols, Wild or Golden Bamboo."
+      },
+      {
+        "title": "Golden Bamboo",
+        "description": "The special respin can award an Instant Prize, Multiplier, Collector and Scatter."
+      },
+      {
+        "title": "Gamble Wheel",
+        "description": "Before Free Spins, the current bonus setup can be given up for a gamble on an improved one."
+      }
+    ]
+  },
+  "wazdan-16-coins-grand-gold-edition": {
+    "intro": [
+      "16 Coins Grand Gold Edition retains the original’s sixteen independent reels but increases the Hold the Jackpot win potential to 2000x the stake.",
+      "Cash Infinity accumulates cash values, Sticky to Infinity can hold Mystery Symbols until the bonus, and Chance Level increases the chance of entering Hold the Jackpot."
+    ],
+    "editorial": "The main difference from Platinum and x5000 is that Gold focuses on enhanced Hold the Jackpot and symbol accumulation, without those versions’ separate Cash Out.",
+    "features": [
+      {
+        "title": "Grand Jackpot 2000x",
+        "description": "Hold the Jackpot in this version has its own prize limit, different from the original."
+      },
+      {
+        "title": "Sticky to Infinity",
+        "description": "Mystery and Jackpot Mystery symbols can stay in their positions until the next bonus ends."
+      },
+      {
+        "title": "Cash Infinity and Chance Level",
+        "description": "Cash symbols carry into the bonus, while an additional setting affects the probability of triggering it."
+      }
+    ]
+  },
+  "3-oaks-gaming-3-lucky-sparks": {
+    "intro": [
+      "In 3 Lucky Sparks, Dragon Collect gathers Coin Symbol values.",
+      "Three firework meters unlock eight free spins."
+    ],
+    "editorial": "Rise expands the grid, while Boost allows Collect to appear on the first and fifth reels.",
+    "features": [
+      {
+        "title": "Dragon Collect",
+        "description": "The symbol on the fifth reel gathers visible coin values."
+      },
+      {
+        "title": "Extra, Rise and Boost",
+        "description": "Extra adds free spins, Rise opens two rows, and Boost expands the Collect positions."
+      },
+      {
+        "title": "Super Free Spins",
+        "description": "The purchased Super mode guarantees all three features."
+      }
+    ]
+  },
+  "bgaming-johnny-vs-chicken": {
+    "intro": [
+      "Johnny vs Chicken brings the heroes of Wild West and Chicken Rush together in a Multiplier Duel: a VS Symbol becomes an Expanding Wild after one fighter randomly wins.",
+      "Duel multipliers reach x500; three Scatters unlock ten Free Spins with the possibility of adding further sets of ten spins."
+    ],
+    "editorial": "In Johnny vs Chicken, the duel winner is selected randomly, so the x500 multiplier does not promise that payout in every bonus. Purchased Flaming Shot and Inferno Shot differ through Sticky Expanding Wilds, which the base game does not trigger.",
+    "features": [
+      {
+        "title": "Multiplier Duel from a VS Symbol",
+        "description": "Both characters receive random multipliers from the x2–x500 range; after the fight, the winner becomes an Expanding Wild on the corresponding reel."
+      },
+      {
+        "title": "Adding Wild multipliers",
+        "description": "When several Expanding Wilds contribute to one winning combination, their multipliers add together."
+      },
+      {
+        "title": "Ten Free Spins and retrigger",
+        "description": "Three Scatters trigger ten free spins; each new set of three Scatters within the mode adds another ten."
+      },
+      {
+        "title": "Hot Shot, Flaming Shot, Inferno Shot",
+        "description": "Purchased Hot Shot provides ordinary Free Spins; Flaming Shot adds random Sticky Wilds, while Inferno Shot guarantees one from the first spin."
+      }
+    ]
+  },
+  "endorphina-zalatar": {
+    "intro": [
+      "Zalatar combines Hold & Win, Jackpot Collecting, Multipliers and a Pile Feature with three different piles.",
+      "Three Question Mark Scatters can trigger Mystery Pick ’Em, while each pile leads to its own Hold & Win variant."
+    ],
+    "editorial": "Zalatar’s main structure revolves around three piles: their progress unlocks different Hold & Win scenarios, while Mystery Pick ’Em adds a separate route through Scatter Symbols.",
+    "features": [
+      {
+        "title": "Three piles and Mystery Pick ’Em",
+        "description": "The Pile Feature splits Hold & Win into three variants, while three Question Mark Scatters unlock Mystery Pick ’Em."
+      },
+      {
+        "title": "Three Piles and Hold & Win",
+        "description": "Three independent Pile accumulators unlock different Hold & Win variants. The bonus triggered depends on the activated pile; Collect and Multipliers complement the cash-value mechanic."
+      },
+      {
+        "title": "Mystery Pick ’Em and Token Coins",
+        "description": "Three Question Mark Scatters on reels 1, 3 and 5 can unlock Mystery Pick ’Em. Coloured Token Coins hide symbols, then reveal them and may complete a combination, independently of Hold & Win."
+      }
+    ]
+  },
+  "hacksaw-gaming-bullets-and-bounty": {
+    "intro": [
+      "A winning VS Symbol expands across its entire reel and turns it into a Wild DuelReel, followed by a duel for a multiplier.",
+      "Bounty DuelReel allows the Bounty Hunter to continue duelling after a victory and add several won multipliers together for one reel."
+    ],
+    "editorial": "Bullets and Bounty makes the duel part of the reel itself: VS first turns it Wild, and the fight’s outcome then determines the multiplier for all wins on that reel.",
+    "features": [
+      {
+        "title": "Outlaw and Bounty DuelReels",
+        "description": "A winning VS expands the reel into a Wild DuelReel and triggers a multiplier duel. The Bounty Hunter can win up to three consecutive duels, adding the values together on one reel."
+      },
+      {
+        "title": "True Grit and progressive bounty",
+        "description": "Three FS symbols lead to a choice of True Grit or Gamble. In True Grit, the last multiplier won by the Bounty Hunter becomes the starting value for the next duel."
+      },
+      {
+        "title": "Four Shots to Freedom",
+        "description": "Four FS symbols unlock ten Spins with a Bullets & Bounty meter: duel victories add DuelSpins and new VS symbols. Five FS symbols award an enhanced version from the first level."
+      }
+    ]
+  },
+  "playn-go-agent-destiny": {
+    "intro": [
+      "Linked Reels can activate on any spin, making neighbouring reels show identical symbols. This happens on either reels 4–5 or all of 3–5, followed by one Free Spin.",
+      "On this Free Spin, the matching symbol set from the right-hand reels moves left, and a new linked group forms on the right. Character symbols and Safe Wild can appear as Mega Symbols or merge into them from neighbouring stacks."
+    ],
+    "editorial": "Agent Destiny builds its feature around a linked group moving across the grid: the winning structure is not simply copied, but shifts left on the next spin and forms again on the right. Free Spins separately support the continued appearance of matching symbols.",
+    "features": [
+      {
+        "title": "Linked Reels and Mega Symbols",
+        "description": "Linked reels show matching symbols and trigger a Free Spin that shifts the group, while characters and Safe Wild can form Mega Symbols."
+      },
+      {
+        "title": "Linked reels 3–5 or 4–5",
+        "description": "On a random spin, Linked Reels show identical symbols and trigger a separate Free Spin."
+      },
+      {
+        "title": "Shifting and Mega Symbols",
+        "description": "The linked group moves left during the Free Spin, a new group forms on the right, and Character and Safe Wild symbols can become Mega Symbols."
+      }
+    ]
+  },
+  "push-gaming-big-bamboo-2": {
+    "intro": [
+      "Big Bamboo 2 retains Mystery Bamboo but introduces Lucky Bamboo with Bronze, Silver, Gold and Diamond frames. During the special series, a new Golden Bamboo resets the three remaining spins.",
+      "In Free Spins, frames remain on the grid, while Bonus and Extra Spin Symbols fill a meter that replaces low-paying symbols with Mystery symbols and increases rewards."
+    ],
+    "editorial": "The sequel should not be described as a copy of Big Bamboo: persistent Lucky Bamboo frames and their upgrade thresholds form a new accumulation mechanic absent from the original.",
+    "features": [
+      {
+        "title": "Lucky Bamboo Frames",
+        "description": "Golden Bamboo upgrades frames from Bronze to Diamond, with each level unlocking its own Instant Prize range."
+      },
+      {
+        "title": "Free Spins Progression",
+        "description": "New Bonus and Extra Spin Symbols fill the meter for replacing low-paying symbols with Mystery Bamboo."
+      },
+      {
+        "title": "Persistent Frames",
+        "description": "Frames earned in Free Spins remain on the grid until the bonus ends."
+      }
+    ]
+  },
+  "wazdan-16-coins-grand-platinum-edition": {
+    "intro": [
+      "16 Coins Grand Platinum Edition uses the same sixteen-position grid but adds Cash Out to Hold the Jackpot and Cash Infinity.",
+      "Cash Out produces results outside the main bonus, while the Grand Jackpot of up to 2500x belongs specifically to Platinum Edition. Changing Chance Level remains a separate way to control bonus frequency."
+    ],
+    "editorial": "Platinum sits between Gold at 2000x and x5000 at 5000x, but the new Cash Out branch matters more than the numbers: it is more than an extra Hold the Jackpot symbol.",
+    "features": [
+      {
+        "title": "Cash Out in the base game",
+        "description": "Separate cash labels collect prizes before the bonus respins begin."
+      },
+      {
+        "title": "Hold the Jackpot 2500x",
+        "description": "The 16-reel grid is used for held cash positions with a verified maximum of 2500x."
+      },
+      {
+        "title": "Cash Infinity and Chance Level",
+        "description": "Persistent values add to the bonus; Chance Level changes the probability of it starting."
+      }
+    ]
+  },
+  "3-oaks-gaming-3-olymp-fortunes": {
+    "intro": [
+      "In 3 Olymp Fortunes, filled pots unlock Hold & Win. Before each bonus game, Super Wheel guarantees an additional reward.",
+      "During respins, Extra adds attempts, Multi works with multipliers, and Double opens a second grid."
+    ],
+    "editorial": "In 3 Olymp Fortunes, the trigger outcome depends on both the pots and Super Wheel: the wheel can immediately add bonus symbols, a new feature or a jackpot.",
+    "features": [
+      {
+        "title": "Three Olympian pots",
+        "description": "One or more filled pots trigger Hold & Win. MINI, MINOR and MAJOR are available in the bonus, while filling the grid awards the Grand Jackpot of 1,000x the stake."
+      },
+      {
+        "title": "Extra, Multi and Double",
+        "description": "Extra increases respins to four, Multi adds multipliers to random symbols that multiply together within one cell, and Double opens a second grid and the chance of two Grand Jackpots."
+      },
+      {
+        "title": "Super Wheel before the bonus",
+        "description": "Before every bonus game, Super Wheel guarantees a reward: extra bonus symbols, another feature or an instant jackpot."
+      }
+    ]
+  },
+  "bgaming-miss-cherry-wild-frames": {
+    "intro": [
+      "Miss Cherry Wild Frames revolves around a ten-spin cycle: Special Symbols leave golden Wild Frames that turn into Wilds only on the tenth spin.",
+      "Another Special Symbol landing in an existing frame raises the cycle multiplier, but Free Spins use a different mechanic: Sticky Wilds instead of Wild Frames."
+    ],
+    "editorial": "Miss Cherry Wild Frames does not carry its ten-spin cycle into the bonus as ready-made frames: no new frames are created in Free Spins. The base mode accumulates Wild Frames until the tenth spin; the bonus holds sticky Wilds.",
+    "features": [
+      {
+        "title": "Wild Frames for ten spins",
+        "description": "Special Symbols create frames that remain until the tenth spin, when they turn into Wild Symbols."
+      },
+      {
+        "title": "Current-cycle multiplier",
+        "description": "An additional Special inside a frame increases the multiplier by +1; it affects wins until the current ten-spin cycle ends."
+      },
+      {
+        "title": "Free Spins with Sticky Wilds",
+        "description": "Three Scatters on reels 1, 3 and 5 award ten Free Spins. Every Wild that lands stays until the round ends; no new Wild Frames are created."
+      },
+      {
+        "title": "Three purchases and Chance x2",
+        "description": "Purchased modes include Free Spins with guaranteed 2×2 or 3×3 Wilds. Chance x2 increases the probability of the ordinary bonus at a higher stake."
+      }
+    ]
+  },
+  "hacksaw-gaming-cash-crew": {
+    "intro": [
+      "Grab ’em collects Cash Symbols, while neighbouring Wild Multiplier Symbols multiply the Cash values in the area around them.",
+      "In The Vault and High-Security Vault, positions where Multiplier Symbols land stay active and receive new random multipliers on subsequent Free Spins."
+    ],
+    "editorial": "Cash Crew links Cash collection to positional multipliers: a coin’s value depends on the Multiplier Symbols nearby, while the bonus keeps activated positions until the series ends.",
+    "features": [
+      {
+        "title": "Grab ’em and Cash Symbols",
+        "description": "Cash pays only when Grab ’em appears. Neighbouring Wild Multipliers boost Cash within a 3×3 area; multiple multipliers multiply together for the affected Cash."
+      },
+      {
+        "title": "The Vault: active positions",
+        "description": "Three FS symbols trigger six Spins: each cell where a Multiplier lands stays active and receives a new random multiplier on subsequent Spins. Stopwatch adds 1–6 Spins."
+      },
+      {
+        "title": "High-Security Vault",
+        "description": "Four FS symbols unlock nine Spins with the same active multiplier positions, but Cash Symbols here have a minimum value of x5. Stopwatch can also extend the series."
+      }
+    ]
+  },
+  "playn-go-agent-of-hearts": {
+    "intro": [
+      "Wins form from clusters of five or more matching symbols. After a cluster pays, it is removed, new symbols fall from above, and cascades continue until no new wins remain.",
+      "Agent symbols contributing to wins accumulate: six unlock the corresponding Agent Feature. White Rabbit can unlock it immediately. Three Keys in one spin trigger Queen’s Heart Free Spin, where all four Agent Features work in sequence and a 3x2 Mega Wild appears at the end."
+    ],
+    "editorial": "Agent of Hearts uses cascades both for repeat wins and to charge four different Agent Features. Queen’s Heart Free Spin combines them into one guaranteed scenario and ends the round with a large Mega Wild.",
+    "features": [
+      {
+        "title": "Agent Features and Queen’s Heart",
+        "description": "Cluster wins charge four Agent Features, White Rabbit can unlock a feature immediately, and three Keys trigger a single Free Spin with all four features and a 3x2 Mega Wild."
+      },
+      {
+        "title": "Clusters and four agents",
+        "description": "Five adjacent matching symbols trigger a cascade, while six Agent Symbols that contributed to wins charge a separate ability."
+      },
+      {
+        "title": "White Rabbit and Queen’s Heart",
+        "description": "White Rabbit can activate an Agent Feature immediately, while three Keys trigger a Free Spin with all four abilities and a final 3×2 Mega Wild."
+      }
+    ]
+  },
+  "push-gaming-big-bite": {
+    "intro": [
+      "Big Bite revolves around two orcas at the edges of the grid. Orcas on the first and fifth reels collect Fish and Jackpot prizes from the three central reels when the corresponding symbols land together.",
+      "Three Bonus Symbols unlock ten Free Spins; four provide an initial x3 multiplier, and five provide x10. In the bonus, the grid changes to 5×6, while the Orca meter rises after every four orcas caught."
+    ],
+    "editorial": "The original Big Bite focuses on collecting Fish and Jackpots across five reels. It has none of the dividing Hot Zones from the Push Ways version, whose grid and jackpots should not be transferred to the original.",
+    "features": [
+      {
+        "title": "Orca collection",
+        "description": "Orcas on reels 1 and 5 collect Fish and Jackpot values on reels 2–4 when they land together."
+      },
+      {
+        "title": "Three entry variants",
+        "description": "Three, four and five Bonus Symbols each award ten Free Spins, but with different starting multipliers."
+      },
+      {
+        "title": "Orca meter",
+        "description": "Four orca appearances raise the multiplier level and add bonus spins."
+      }
+    ]
+  },
+  "wazdan-16-coins-x5000": {
+    "intro": [
+      "16 Coins x5000 starts Hold the Jackpot with three respins, and each new cash symbol resets the counter to three. Filling the entire grid can award the Grand Jackpot of 5000x the stake.",
+      "This version adds Cash Out labels with a countdown: they collect Bonus Symbol values and finally pay the accumulated amount with a percentage boost, which the provider limits to 300 percent."
+    ],
+    "editorial": "The x5000 formula does not apply to 16 Coins Gold and Platinum: it has its own jackpot limit, a four-level jackpot system and Cash Out with a countdown.",
+    "features": [
+      {
+        "title": "Three resetting respins",
+        "description": "In Hold the Jackpot, each new symbol resets the counter to three attempts."
+      },
+      {
+        "title": "Cash Out with a timer",
+        "description": "A label collects values and pays them with the specified percentage boost when its countdown expires."
+      },
+      {
+        "title": "Grand Jackpot 5000x",
+        "description": "Filling all 16 positions can award the maximum verified Grand Jackpot of 5000x."
+      }
+    ]
+  },
+  "3-oaks-gaming-3-pots-of-egypt": {
+    "intro": [
+      "In 3 Pots of Egypt, six gold coins trigger Hold & Win, while coloured special coins fill three pot meters alongside them.",
+      "These meters activate Collect, Boost and Multi, so the combination of coins that land changes the bonus scenario itself."
+    ],
+    "editorial": "In 3 Pots of Egypt, which pots have filled before the trigger matters: Collect gathers values, Boost adds values to every symbol, and Multi multiplies values by up to x5.",
+    "features": [
+      {
+        "title": "Six gold coins",
+        "description": "Six or more gold coins trigger Hold & Win with respins. MINI, MINOR and MAJOR can land within it."
+      },
+      {
+        "title": "Collect, Boost and Multi",
+        "description": "Blue, red and green special coins fill the pot meters: Collect gathers values, Boost adds a random value to all symbols, and Multi multiplies all values by up to x5."
+      },
+      {
+        "title": "Mystery Symbol and Lucky Spin",
+        "description": "During respins, Mystery can reveal one of three enhancements or a jackpot. Lucky Spin also triggers Hold & Win; filling the grid can award the Grand Jackpot of 2,000x the stake."
+      }
+    ]
+  },
+  "bgaming-money-maker": {
+    "intro": [
+      "Money Maker is a three-reel stepper with just one horizontal payline. A complete banknote made from matching parts is required for a payout.",
+      "The highest-denomination banknote on the visible grid awards x1000; after a win, the amount can be risked separately in Gamble Round (Heads or Tails)."
+    ],
+    "editorial": "Money Maker has no described Free Spins, cascades or Bonus Buy. It is deliberately simple, with one payline and an optional Gamble after a payout as its actual additional mechanic.",
+    "features": [
+      {
+        "title": "One payline and a complete banknote",
+        "description": "Three reels assemble coloured banknotes on the central line. Only a matching banknote pays; the most valuable awards x1000."
+      },
+      {
+        "title": "Heads or Tails Gamble",
+        "description": "After a base win, guessing a coin side is available. Success doubles the current amount, which can be collected or wagered again."
+      },
+      {
+        "title": "Gamble limit",
+        "description": "Repeated guesses are allowed until the win reaches a quarter of the maximum possible payout; this limit is not RTP."
+      },
+      {
+        "title": "Autoplay and Quick Spin",
+        "description": "Automatic series are set by the number of spins, while Quick Spin speeds up the animation without changing the payline count or payout mechanic."
+      }
+    ]
+  },
+  "hacksaw-gaming-chaos-crew-3": {
+    "intro": [
+      "A horizontal CHAOS word formed by five low-paying symbols triggers EPIC DROP™, turning them into Glitch Dogs and adding Crazy Multipliers to the Reel Multiplier.",
+      "The Korrupted K9 introduces Chaos Upgrade, which boosts nearby Crazy Multipliers and Glitch Dogs before they add to the Reel Multiplier."
+    ],
+    "editorial": "The third instalment shifts the mechanic’s centre to the overall Reel Multiplier: Glitch Dogs and Crazy Multipliers increase it directly, while Chaos Upgrade can first enhance a whole group of symbols.",
+    "features": [
+      {
+        "title": "CHAOS and Epic Drop",
+        "description": "Five low-paying symbols spelling CHAOS horizontally trigger EPIC DROP: Glitch Dogs move around the grid and turn into Crazy Multipliers for the Reel Multiplier."
+      },
+      {
+        "title": "Ctrl + Alt + Chaos",
+        "description": "Three FS symbols trigger a bonus with three refilling lives. A new Glitch Dog or Crazy Multiplier increases the Reel Multiplier and resets the life count."
+      },
+      {
+        "title": "The Korrupted K9 and Epic Glitch",
+        "description": "Four FS symbols provide Chaos Upgrade, boosting multipliers in a 3×3 area; five FS symbols award Hidden Epic with a full grid of Crazy Multipliers, an Upgrade and a Glitch Dog at the start."
+      }
+    ]
+  },
+  "playn-go-alice-cooper-and-the-tome-of-madness": {
+    "intro": [
+      "A cluster of four or more matching symbols creates a win. Winning symbols are removed, the grid refills, and cascades continue until a spin produces no new cluster win.",
+      "On a non-winning spin, one of four realities can randomly open: Insane Asylum unifies high-paying symbols, Dungeon turns low-paying symbols into high-paying ones, Chamber of Horrors leaves Wilds after destroying symbols, and Temptation Room adds a Wild and unifies symbols. The Charge Meter leads to extra Wilds and Free Spins."
+    ],
+    "editorial": "Alice Cooper and the Tome of Madness combines ordinary cluster cascades with four different ways to rescue a non-winning spin. The Charge Meter connects these episodes into a longer progression towards Free Spins and extra Wilds.",
+    "features": [
+      {
+        "title": "Four Realities and Charge Meter",
+        "description": "Four random realities reshape the grid in different ways on a non-win, while the Charge Meter unlocks extra Wilds, Free Spins and an overcharge multiplier."
+      },
+      {
+        "title": "Four alternative realities",
+        "description": "Insane Asylum and Dungeon change ordinary symbols; Chamber of Horrors and Temptation Room offer ways to enhance Wilds."
+      },
+      {
+        "title": "Charge Meter and cascades",
+        "description": "A cluster of four symbols pays with a cascade, while a special meter brings Free Spins and additional Wilds closer."
+      }
+    ]
+  }
+}
