@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { EnglishBreadcrumbs } from "@/components/english-breadcrumbs";
 import { pageMetadata } from "@/lib/seo";
+import reading from "@/app/journal/reading.module.css";
 
 export const metadata = pageMetadata({
   title: "What RTP means in slot games",
@@ -11,7 +12,7 @@ export const metadata = pageMetadata({
 
 export default function EnglishRtpGuide() {
   return (
-    <>
+    <div className={reading.reading}>
       <EnglishBreadcrumbs items={[{ label: "Understanding RTP" }]} />
       <header className="article-heading">
         <span className="eyebrow accent">Explainer / RTP and volatility</span>
@@ -50,6 +51,6 @@ export default function EnglishRtpGuide() {
           </section>
         </article>
       </div>
-    </>
+    </div>
   );
 }

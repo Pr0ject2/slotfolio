@@ -2,6 +2,7 @@ import { ArticleJsonLd } from "@/components/article-json-ld";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/editorial";
 import { pageMetadata } from "@/lib/seo";
+import reading from "../reading.module.css";
 
 export const metadata = pageMetadata({
   title: "Что означает RTP",
@@ -12,7 +13,7 @@ export const metadata = pageMetadata({
 
 export default function Page() {
   return (
-    <>
+    <div className={reading.reading}>
       <ArticleJsonLd title="Что означает RTP" description="Что означает RTP в слотах, почему 96% не обещают возврат за одну сессию и почему показатель нужно читать вместе с правилами игры." path="/journal/understanding-rtp" />
       <Breadcrumbs
         items={[
@@ -37,7 +38,7 @@ export default function Page() {
         </div>
       </header>
       <div className="article-layout">
-        <nav className="article-toc">
+        <nav className="article-toc" aria-label="Оглавление статьи">
           <span className="eyebrow">В материале</span>
           <a href="#meaning">Значение показателя</a>
           <a href="#session">Отдельная сессия</a>
@@ -107,6 +108,6 @@ export default function Page() {
           </section>
         </article>
       </div>
-    </>
+    </div>
   );
 }

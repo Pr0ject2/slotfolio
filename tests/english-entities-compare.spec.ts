@@ -303,8 +303,12 @@ for (const width of [320, 390, 768, 1024, 1440]) {
     }
     await page.goto("/en/providers/pragmatic-play/");
     const jump = page.locator('.entity-jump a[href="#games"]');
+    await expect(page.locator(".entity-profile")).toBeVisible();
+    await expect(jump).toBeVisible();
+    await page.evaluate(() => document.fonts.ready);
     await page.keyboard.press("Tab");
     await jump.focus();
+    await expect(jump).toBeFocused();
     expect((await jump.boundingBox())!.height).toBeGreaterThanOrEqual(44);
     if (width <= 390) {
       const heading = (await page

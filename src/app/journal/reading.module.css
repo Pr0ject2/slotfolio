@@ -1,0 +1,37 @@
+/* Shared by the two feature articles in both languages; catalogue and dossiers
+   keep their own typography. Specificity wins over legacy .site overrides. */
+.reading :global(.article-toc) > a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 15px;
+  line-height: 1.5;
+  padding-block: 10px;
+}
+
+.reading :global(.article-figure figcaption) {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .reading :global(.article-toc) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .reading :global(.section-title) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .reading :global(.section-title .text-link),
+  .reading :global(.prose .text-link) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 14px;
+    white-space: normal;
+  }
+}
