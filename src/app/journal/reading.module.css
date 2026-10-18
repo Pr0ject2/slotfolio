@@ -1,5 +1,11 @@
 /* Shared by the two feature articles in both languages; catalogue and dossiers
-   keep their own typography. Specificity wins over legacy .site overrides. */
+   keep their own typography. */
+:global(html):has(.reading) {
+  /* Native keyboard focus and fragment navigation must not compete while
+     separate smooth scrolls are still running. */
+  scroll-behavior: auto;
+}
+
 .reading :global(.article-toc) > a {
   display: flex;
   align-items: center;

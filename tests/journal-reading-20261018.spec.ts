@@ -44,7 +44,11 @@ for (const route of [
           const heading = related.locator("h2"), link = related.locator(".text-link");
           await expect(heading).toBeVisible();
           await expect(link).toBeVisible();
-          const h = (await heading.boundingBox())!, a = (await link.boundingBox())!;
+          const { h, a } = await related.evaluate(node => {
+            const h = node.querySelector("h2")!.getBoundingClientRect();
+            const a = node.querySelector(".text-link")!.getBoundingClientRect();
+            return { h: { width: h.width, y: h.y, height: h.height }, a: { x: a.x, y: a.y, width: a.width, height: a.height } };
+          });
           expect(h.width).toBeGreaterThanOrEqual(200);
           expect(h.y + h.height).toBeLessThanOrEqual(a.y);
           expect(a.height).toBeGreaterThanOrEqual(44);
