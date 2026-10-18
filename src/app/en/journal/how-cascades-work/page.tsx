@@ -7,6 +7,7 @@ import { withBasePath } from "@/lib/base-path";
 import { getSlot } from "@/lib/data";
 import { pageMetadata } from "@/lib/seo";
 import styles from "./article.module.css";
+import reading from "@/app/journal/reading.module.css";
 
 const path = "/en/journal/how-cascades-work";
 const title = "One spin, several events: how cascades work";
@@ -25,7 +26,7 @@ export default function EnglishCascadesArticle() {
   const reactoonz = getSlot("reactoonz");
 
   return (
-    <div className={styles.article}>
+    <div className={`${styles.article} ${reading.reading}`}>
       <ArticleJsonLd
         title={title}
         description={description}

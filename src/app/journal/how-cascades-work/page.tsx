@@ -8,6 +8,7 @@ import {
   GameRow,
 } from "@/components/editorial";
 import { pageMetadata } from "@/lib/seo";
+import reading from "../reading.module.css";
 
 export const metadata = pageMetadata({
   title: "Один спин — несколько событий. Как работают каскады",
@@ -18,7 +19,7 @@ export const metadata = pageMetadata({
 
 export default function Page() {
   return (
-    <>
+    <div className={reading.reading}>
       <ArticleJsonLd title="Один спин — несколько событий. Как работают каскады" description="Большой разбор каскадной механики: почему символы исчезают, как продолжается вращение и что меняется от игры к игре." path="/journal/how-cascades-work" datePublished="2026-09-07" />
       <Breadcrumbs
         items={[
@@ -315,6 +316,6 @@ export default function Page() {
       {[slots[1], slots[3]].map((s) => (
         <GameRow key={s.slug} slot={s} />
       ))}
-    </>
+    </div>
   );
 }
