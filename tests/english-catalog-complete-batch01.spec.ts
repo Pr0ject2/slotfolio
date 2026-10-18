@@ -61,6 +61,9 @@ for (const width of [320, 390, 768, 1024, 1440]) {
     await expect(main).not.toContainText(/[А-Яа-яЁё]/);
     await expect(page.locator("#functions .dossier-feature-card")).toHaveCount(entries[0][1].features.length);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+    const prose = await page.locator(".prose").boundingBox();
+    expect(prose!.width).toBeGreaterThanOrEqual(Math.min(700, width - 48));
+    expect(prose!.width).toBeLessThanOrEqual(700);
     const toc = page.getByRole("navigation", { name: "On this page" });
     const link = toc.getByRole("link", { name: "Facts and sources", exact: true });
     await link.focus();
