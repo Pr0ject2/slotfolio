@@ -2,6 +2,7 @@ import batch01 from "./english-catalog-complete-batch01.json" with { type: "json
 import batch02 from "./english-catalog-complete-batch02.json" with { type: "json" };
 import batch03 from "./english-catalog-complete-batch03.json" with { type: "json" };
 import batch04 from "./english-catalog-complete-batch04.json" with { type: "json" };
+import batch05 from "./english-catalog-complete-batch05.json" with { type: "json" };
 
 export type EnglishCatalogContent = {
   intro?: string[];
@@ -10,4 +11,4 @@ export type EnglishCatalogContent = {
 };
 
 /** Full existing catalogue content, translated without changing coverage or facts. */
-export const englishCatalogComplete: Record<string, EnglishCatalogContent> = { ...batch01, ...batch02, ...batch03, ...batch04 };
+export const englishCatalogComplete: Record<string, EnglishCatalogContent> = { ...batch01, ...batch02, ...batch03, ...batch04, ...batch05 };
