@@ -6,6 +6,7 @@ import { SlotArtwork } from "@/components/slot-artwork";
 import { withBasePath } from "@/lib/base-path";
 import { getSlot } from "@/lib/data";
 import { pageMetadata } from "@/lib/seo";
+import styles from "./article.module.css";
 
 const path = "/en/journal/how-cascades-work";
 const title = "One spin, several events: how cascades work";
@@ -24,7 +25,7 @@ export default function EnglishCascadesArticle() {
   const reactoonz = getSlot("reactoonz");
 
   return (
-    <>
+    <div className={styles.article}>
       <ArticleJsonLd
         title={title}
         description={description}
@@ -119,7 +120,8 @@ export default function EnglishCascadesArticle() {
               performs another cascade. If it does not, the paid round ends.
               The next spin is a new round with its own stake.
             </p>
-            <div className="table-wrap">
+            <p className={styles.tableHint}>Scroll right to read all three columns. Keyboard: focus the table and use the arrow keys.</p>
+            <div className={`table-wrap ${styles.sequence}`} role="region" aria-label="Cascade sequence, scrolls horizontally" tabIndex={0}>
               <table>
                 <caption className="sr-only">Typical sequence inside a cascading round</caption>
                 <thead>
@@ -307,6 +309,6 @@ export default function EnglishCascadesArticle() {
           </Link>
         ))}
       </div>
-    </>
+    </div>
   );
 }

@@ -55,6 +55,7 @@ test("English cascades editorial stays readable and keyboard-navigable", async (
   for (const width of [320, 390, 768, 1024, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto(route);
+    await expect(page.getByRole("heading", { name: /One spin/ })).toBeVisible();
     await page.evaluate(() => document.fonts.ready);
     expect(await page.evaluate(() => document.documentElement.scrollWidth), `horizontal overflow at ${width}px`).toBeLessThanOrEqual(width + 1);
     const toc = page.getByRole("navigation", { name: "On this page" });
@@ -64,5 +65,19 @@ test("English cascades editorial stays readable and keyboard-navigable", async (
     await expect(first).toBeFocused();
     await page.keyboard.press("Enter");
     await expect.poll(() => new URL(page.url()).hash).toBe("#one-spin");
+    const sequence = page.getByRole("region", { name: "Cascade sequence, scrolls horizontally" });
+    await sequence.focus();
+    await expect(sequence).toBeFocused();
+    expect(await sequence.evaluate(node => getComputedStyle(node).outlineStyle)).not.toBe("none");
+    expect(await sequence.locator("td, th").evaluateAll(nodes => Math.min(...nodes.map(node => parseFloat(getComputedStyle(node).fontSize))))).toBeGreaterThanOrEqual(14);
+    if (width <= 390) {
+      await page.keyboard.press("ArrowRight");
+      await expect.poll(() => sequence.evaluate(node => node.scrollLeft)).toBeGreaterThan(0);
+      const examples = page.getByRole("link", { name: "View three game examples" });
+      const box = await examples.boundingBox();
+      expect(box).not.toBeNull();
+      expect(box!.x + box!.width).toBeLessThanOrEqual(width);
+      expect(box!.height).toBeGreaterThanOrEqual(44);
+    }
   }
 });
