@@ -23,7 +23,7 @@ test("odd final metric fills a desktop row without changing the data", async ({ 
       await expect(metric).toBeVisible();
       const values = await metric.evaluate((grid) => {
         const tiles = Array.from(grid.children) as HTMLElement[];
-        const last = tiles.at(-1)!.getBoundingClientRect();
+        const last = tiles[tiles.length - 1].getBoundingClientRect();
         const region = grid.getBoundingClientRect();
         const columns = getComputedStyle(grid).gridTemplateColumns.split(" ").filter(Boolean).length;
         return { count: tiles.length, columns, lastWidth: last.width, regionWidth: region.width, lastRight: last.right, regionRight: region.right };
@@ -36,48 +36,58 @@ test("odd final metric fills a desktop row without changing the data", async ({ 
   }
 });
 
-test("technical passport fills both desktop columns when the last fact is unpaired", async ({ page }, testInfo) => {
-  await page.setViewportSize({ width: 1440, height: 950 });
-  await page.goto("/slots/catalog/playn-go-reactoonz-100/");
-  const grid = page.locator(".catalog-record-facts");
-  await expect(grid).toBeVisible();
-
-  async function measure() {
-    return grid.evaluate((root) => {
-      const tiles = Array.from(root.children) as HTMLElement[];
-      const lastNormal = tiles.findLast((node) => !node.classList.contains("facts-wide"))!;
-      const rect = lastNormal.getBoundingClientRect();
-      const parent = root.getBoundingClientRect();
-      const tracks = getComputedStyle(root).gridTemplateColumns.split(" ").filter(Boolean).length;
-      return { count: tiles.length, tracks, width: rect.width, parentWidth: parent.width, right: rect.right, parentRight: parent.right };
-    });
+test("two- and three-track passports have no empty last-row cell", async ({ page }, testInfo) => {
+  // Work with the real page's DOM and CSS. Duplicating an existing fact only
+  // inside the browser yields deterministic cardinalities; repo facts stay intact.
+  for (const width of [390, 1024, 1440]) {
+    await page.setViewportSize({ width, height: 950 });
+    await page.goto("/slots/catalog/playn-go-reactoonz-100/");
+    const grid = page.locator(".catalog-record-facts");
+    await expect(grid).toBeVisible();
+    for (const count of [4, 5, 6, 7]) {
+      for (const mechanics of [false, true]) {
+        await grid.evaluate((root, { count, mechanics }) => {
+          const model = Array.from(root.children).find((x) => !x.classList.contains("facts-wide"))!;
+          const elements = Array.from({ length: count }, () => model.cloneNode(true));
+          if (mechanics) {
+            const wide = model.cloneNode(true) as HTMLElement;
+            wide.classList.add("facts-wide");
+            elements.push(wide);
+          }
+          root.replaceChildren(...elements);
+        }, { count, mechanics });
+        const positions = await grid.evaluate((root) => {
+          const region = root.getBoundingClientRect();
+          const tracks = getComputedStyle(root).gridTemplateColumns.split(" ").filter(Boolean).length;
+          const cells = Array.from(root.children).map((node) => {
+            const rect = node.getBoundingClientRect();
+            return { top: Math.round(rect.top), left: rect.left, right: rect.right };
+          });
+          const groups = new Map<number, { left: number, right: number }[]>();
+          for (const cell of cells) {
+            const row = groups.get(cell.top) ?? [];
+            row.push(cell);
+            groups.set(cell.top, row);
+          }
+          return { tracks, left: region.left, right: region.right, rows: Array.from(groups.values()) };
+        });
+        expect(positions.tracks, `expected responsive track count at ${width}px`).toBeGreaterThanOrEqual(1);
+        expect(positions.tracks).toBeLessThanOrEqual(3);
+        for (const [index, row] of positions.rows.entries()) {
+          row.sort((a, b) => a.left - b.left);
+          expect(row[0].left, `row ${index} at ${width}px`).toBeLessThanOrEqual(positions.left + 3);
+          expect(row[row.length - 1].right, `no blank grid cell in row ${index}, count ${count}, mechanics ${mechanics}, width ${width}`).toBeGreaterThanOrEqual(positions.right - 3);
+          for (let i = 1; i < row.length; i++) {
+            expect(row[i].left - row[i - 1].right).toBeLessThanOrEqual(3);
+          }
+        }
+        expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width + 1);
+        if (count === 5 && mechanics && width === 1440) {
+          await grid.screenshot({ path: testInfo.outputPath("ux09-odd-fact-plus-mechanics-1440.png") });
+        }
+      }
+    }
   }
-
-  // Use real DOM and computed production styles; only vary the test fixture's
-  // cardinality. No game data or published HTML is modified by this test.
-  await grid.evaluate((root) => {
-    const model = Array.from(root.children).find((x) => !x.classList.contains("facts-wide"))!;
-    root.replaceChildren(...Array.from({ length: 5 }, () => model.cloneNode(true)));
-  });
-  let result = await measure();
-  expect(result.tracks).toBe(2);
-  expect(result.count).toBe(5);
-  expect(result.width).toBeGreaterThanOrEqual(result.parentWidth - 4);
-  expect(result.right).toBeLessThanOrEqual(result.parentRight + 1);
-  await grid.screenshot({ path: testInfo.outputPath("ux09-last-odd-fact.png") });
-
-  // A full-width mechanics row must not leave a grey hole in the row before it.
-  await grid.evaluate((root) => {
-    const model = root.firstElementChild!;
-    const wide = model.cloneNode(true) as HTMLElement;
-    wide.classList.add("facts-wide");
-    root.appendChild(wide);
-  });
-  result = await measure();
-  expect(result.count).toBe(6);
-  expect(result.tracks).toBe(2);
-  expect(result.width).toBeGreaterThanOrEqual(result.parentWidth - 4);
-  await grid.screenshot({ path: testInfo.outputPath("ux09-odd-fact-plus-mechanics.png") });
 });
 
 test("actual technical passport remains readable on narrow screens", async ({ page }) => {
