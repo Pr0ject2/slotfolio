@@ -19,6 +19,7 @@ export const englishReadyPaths = [
   "/regions",
   "/regions/great-britain",
   "/journal",
+  "/journal/how-cascades-work",
   "/editorial-policy",
   "/privacy",
   "/disclosure",

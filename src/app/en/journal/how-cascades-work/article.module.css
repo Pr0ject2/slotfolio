@@ -1,0 +1,35 @@
+.article .sequence {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.article .sequence th,
+.article .sequence td {
+  font-size: 14px;
+  line-height: 1.6;
+  min-width: 150px;
+}
+
+.tableHint {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .article :global(.section-title) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .article :global(.section-title .text-link) {
+    font-size: 14px;
+    min-height: 44px;
+    white-space: normal;
+  }
+
+  .article .tableHint {
+    display: block;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
