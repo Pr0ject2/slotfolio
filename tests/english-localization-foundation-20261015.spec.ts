@@ -38,7 +38,7 @@ test("the language selector includes reviewed English pages and catalogue entry 
   expect(languageHref("/regions/great-britain", "en")).toBe("/en/regions/great-britain");
   expect(languageHref("/journal", "en")).toBe("/en/journal");
   expect(languageHref("/journal/payout-systems", "en")).toBe("/en/journal/payout-systems");
-  expect(languageHref("/journal/wild-and-scatter", "en")).toBe("/en");
+  expect(languageHref("/journal/wild-and-scatter", "en")).toBe("/en/journal/wild-and-scatter");
   expect(languageHref("/slots/gates-of-olympus", "en")).toBe("/en/slots/gates-of-olympus");
   expect(languageHref("/slots/catalog/no-such-entry", "en")).toBe("/en");
   expect(languageHref("/en", "ru")).toBe("/");
