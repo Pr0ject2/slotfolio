@@ -73,3 +73,14 @@
     grid-column: 1 / -1;
   }
 }
+
+/* UX-09: variable, source-backed metric counts can leave one item in the
+   final row. Span that item across the two desktop tracks instead of
+   leaving a visually empty half-cell. Mobile is already one column. */
+@media (min-width: 601px) {
+  .dossier-metric-grid > div:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    padding-left: 0;
+    border-left: 0;
+  }
+}
