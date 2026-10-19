@@ -14,12 +14,13 @@ test("English catalogue links reviewed dossiers and all 900 technical records in
   await page.goto(`/en/slots/?q=${encodeURIComponent(record.name)}`);
   const technical = page.locator(`[data-slot="${record.slug}"]`);
   await expect(technical).toBeVisible();
-  await expect(technical).toContainText("Technical record in English");
+  await expect(technical).not.toContainText("Technical record in English");
+  await expect(technical.getByRole("link", { name: "Game details ↗", exact: true })).toHaveAttribute("href", new RegExp(`/en/slots/catalog/${record.slug}/?$`));
   await expect(technical.locator("dl")).toHaveAttribute("aria-label", "Game details");
   await expect(technical.locator("h2 a")).toHaveAttribute("href", new RegExp(`/en/slots/catalog/${record.slug}/?$`));
   await expect(technical.locator(".catalog-open")).toHaveAttribute("aria-label", `Open ${record.name}`);
   await expect(page.locator("main")).not.toContainText("Game record in Russian");
-  await expect(page.getByText("All 1,000 games have English pages: 900 technical records and 100 game guides. Technical records list sourced facts; game guides explain rules, features and source qualifications.")).toBeVisible();
+  await expect(page.locator("main")).not.toContainText(/technical records|100 game guides|All 1,000 games have English pages/i);
 });
 
 test("Gates of Olympus has a source-backed English game guide", async ({ page }) => {
