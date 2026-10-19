@@ -1,0 +1,2102 @@
+{
+  "wazdan-hot-slot-platinum-coins": {
+    "intro": [
+      "Platinum Coins uses fifteen positions with two ways to win according to official Game Info. Cash Infinity retains special symbols, bringing Hold the Jackpot closer to triggering.",
+      "It differs from Gold Coins through its stated Grand of 2500x versus 750x, and from Diamond Coins through its mathematical profile and payout-method designation."
+    ],
+    "editorial": "The provider writes ‘15 / 2 Ways to Win’ in the official field, so these two ways should not be turned into twenty standard lines without qualification.",
+    "features": [
+      {
+        "title": "Hold the Jackpot",
+        "description": "The bonus collects accumulated values and allows a Grand Jackpot worth 2500x."
+      },
+      {
+        "title": "Cash Infinity",
+        "description": "Special symbols can remain on the grid until bonus entry, helping accumulate the required number."
+      },
+      {
+        "title": "Chance Level and Buy Feature",
+        "description": "Increasing the bet raises bonus probability, while Buy Feature offers separate entry under the game's conditions."
+      }
+    ]
+  },
+  "playn-go-fortune-teller": {
+    "intro": [
+      "The Crystal Ball acts as a Wild and substitutes for regular symbols. The Black Cat is a Scatter: three, four and five Cats award 14, 20 and 25 Free Spins respectively, while the Black Cat itself becomes a Wild within the bonus.",
+      "Three Bonus symbols trigger a separate pick-and-click feature. The player selects and reveals one of four face-down cards three times, trying to collect matching cards and increase the final award."
+    ],
+    "editorial": "Fortune Teller separates two classic bonuses by symbol: the Black Cat handles a long Free Spins sequence, while the Bonus symbol leads to a separate card pick. During Free Spins, the Cat changes from Scatter to Wild, directly changing the makeup of winning combinations.",
+    "features": [
+      {
+        "title": "Crystal Ball Wild",
+        "description": "The Crystal Ball acts as a Wild and substitutes for regular symbols."
+      },
+      {
+        "title": "Black Cat Free Spins",
+        "description": "The Black Cat is a Scatter: three, four and five Cats award 14, 20 and 25 Free Spins respectively, while the Black Cat itself becomes a Wild within the bonus."
+      },
+      {
+        "title": "Card bonus",
+        "description": "Three Bonus symbols trigger a separate pick-and-click feature. The player selects and reveals one of four face-down cards three times, trying to collect matching cards and increase the final award."
+      }
+    ]
+  },
+  "wazdan-hungry-shark": {
+    "intro": [
+      "Hungry Shark is an underwater slot with five reels and twenty lines, featuring a separate Free Spins bonus and a selected expanding symbol.",
+      "The Wild substitutes for regular symbols, while the Scatter handles the bonus event. Unlike Magic Pearls, no Hold the Jackpot is stated here."
+    ],
+    "editorial": "In Hungry Shark, the expanding bonus symbol operates specifically during Free Spins rather than replacing any match on a regular spin. The technical record confirms 5150x.",
+    "features": [
+      {
+        "title": "Free Spins with Expanding Bonus Symbol",
+        "description": "During free spins, a special bonus symbol expands across a reel, creating additional winning combinations."
+      },
+      {
+        "title": "Scatter",
+        "description": "The Scatter provides entry into the bonus mode and is not equivalent to a permanent Wild."
+      },
+      {
+        "title": "Wild and Gamble",
+        "description": "The Wild substitutes for regular symbols in the twenty-line base game; a risk game is available separately after a win."
+      }
+    ]
+  },
+  "playn-go-fortunes-of-ali-baba": {
+    "intro": [
+      "Ali Baba is a Wild and Morgiana a Scatter. Two Scatters on the first and fifth reels trigger Den of Thieves Bonus: the player breaks pots, moving through up to five levels containing Instant Prizes, entry into Free Spins or thieves that end the feature.",
+      "If the Bonus leads to Free Spins, 8 spins start with an Ali Baba Wild on every spin. A Thieves Wild triggers a re-spin and moves towards Ali Baba, leaving Wilds in its path; two Scatters during the bonus add 2 spins and increase the multiplier for subsequent spins."
+    ],
+    "editorial": "Fortunes of Ali Baba makes Den of Thieves an intermediate risk stage: instant rewards can be collected, Free Spins can be reached, or thieves can stop further progress. The Free Spins mode then turns the Thieves Wild chase after Ali Baba into a source of new Wild positions.",
+    "features": [
+      {
+        "title": "Den of Thieves",
+        "description": "Ali Baba is a Wild and Morgiana a Scatter."
+      },
+      {
+        "title": "Ali Baba Free Spins",
+        "description": "Two Scatters on the first and fifth reels trigger Den of Thieves Bonus: the player breaks pots, moving through up to five levels containing Instant Prizes, entry into Free Spins or thieves that end the feature."
+      },
+      {
+        "title": "Thieves Wild",
+        "description": "If the Bonus leads to Free Spins, 8 spins start with an Ali Baba Wild on every spin. A Thieves Wild triggers a re-spin and moves towards Ali Baba, leaving Wilds in its path; two Scatters during the bonus add 2 spins and increase the multiplier for subsequent spins."
+      }
+    ]
+  },
+  "wazdan-in-the-forest": {
+    "intro": [
+      "In The Forest builds its eerie woodland theme across five reels and twenty lines. Its special feature is Free Spins with an x2 Multiplier Symbol.",
+      "The Wild substitutes for regular symbols, while the Scatter activates free spins. The x2 applies under the bonus rules but does not represent the whole slot's maximum."
+    ],
+    "editorial": "With RTP of 96.63% and low volatility, In The Forest should not be described as an extreme slot simply because of its horror presentation. The official top payout is 1250x.",
+    "features": [
+      {
+        "title": "Free Spins with an x2 symbol",
+        "description": "During free spins, a special multiplier can double qualifying payouts."
+      },
+      {
+        "title": "Woodland Wild",
+        "description": "The Wild helps form combinations across the regular twenty lines."
+      },
+      {
+        "title": "Scatter and volatility levels",
+        "description": "The Scatter is tied to the bonus, while Wazdan lists Volatility Levels as an adjustable option."
+      }
+    ]
+  },
+  "playn-go-fox-mayhem": {
+    "intro": [
+      "Fox Mayhem runs on 5×3 reels with 20 paylines. Three, four or five Scatters award 10, 12 or 15 Free Spins; before the round, a combined multiplier of x2, x5, x10 or x20 is selected randomly and applied to the final bonus payout.",
+      "Three or more food symbols trigger the lock-and-spin-style Prize Collection Feature. The round starts with three lives: an empty spin removes one, while a new food symbol enters the bucket, increases the Prize Collection pot and completely restores all three lives."
+    ],
+    "editorial": "Fox Mayhem uses two entirely different bonus paths: Free Spins fixes one combined multiplier in advance, while Prize Collection centres on retaining lives and accumulating food values. These modes are not two stages of one bonus.",
+    "features": [
+      {
+        "title": "Scatter Free Spins",
+        "description": "Fox Mayhem runs on 5×3 reels with 20 paylines."
+      },
+      {
+        "title": "Prize multiplier",
+        "description": "Three, four or five Scatters award 10, 12 or 15 Free Spins; before the round, a combined multiplier of x2, x5, x10 or x20 is selected randomly and applied to the final bonus payout."
+      },
+      {
+        "title": "Prize Collection",
+        "description": "Three or more food symbols trigger the lock-and-spin-style Prize Collection Feature. The round starts with three lives: an empty spin removes one, while a new food symbol enters the bucket, increases the Prize Collection pot and completely restores all three lives."
+      }
+    ]
+  },
+  "wazdan-infinity-hero": {
+    "intro": [
+      "Infinity Hero presents six reels and twenty lines as a superhero comic. Three Scatters open 10 free spins, during which a growing Infinite Multiplier applies.",
+      "During Free Spins, the multiplier starts at x1 and increases after every winning combination. Additional symbols can add another 3, 5 or 7 spins."
+    ],
+    "editorial": "The ‘infinite multiplier’ slogan does not mean an infinite win: the official maximum result is capped at 13,000x the bet. Multiplier growth along the sequence is what distinguishes this game from regular fruit slots.",
+    "features": [
+      {
+        "title": "Three Scatters award 10 spins",
+        "description": "Three Scatters on the main grid trigger ten Free Spins, while special symbols extend the sequence by 3, 5 or 7 spins."
+      },
+      {
+        "title": "Infinite Multiplier from x1",
+        "description": "During Free Spins, the multiplier starts at one and grows after every win; its value should not be confused with the overall maximum win."
+      },
+      {
+        "title": "Wild and Gamble",
+        "description": "The Wild helps form payouts on 20 lines, while a separate risk round is available after a prize."
+      }
+    ]
+  },
+  "playn-go-free-reelin-joker": {
+    "intro": [
+      "Free Reelin’ Joker and Golden Joker act as Wilds, but the Golden Joker additionally doubles a win when it belongs to the winning line and can appear only once per game round.",
+      "Free Reelin’ Fun triggers when a win contains at least one Joker and is not a mixed win. Another reel is added to the original three; if it increases the win size, the next reel is added, up to three additional reels."
+    ],
+    "editorial": "The original Free Reelin’ Joker builds expansion around an already formed Joker win: each new reel must actually improve the combination or the feature ends. The Golden Joker does not expand the grid itself here; it doubles a winning line.",
+    "features": [
+      {
+        "title": "Golden Joker",
+        "description": "Free Reelin’ Joker and Golden Joker act as Wilds, but the Golden Joker additionally doubles a win when it belongs to the winning line and can appear only once per game round."
+      },
+      {
+        "title": "Free Reelin’ Fun",
+        "description": "Free Reelin’ Fun triggers when a win contains at least one Joker and is not a mixed win."
+      },
+      {
+        "title": "Expansion to six reels",
+        "description": "Another reel is added to the original three; if it increases the win size, the next reel is added, up to three additional reels."
+      }
+    ]
+  },
+  "wazdan-jack-on-hold": {
+    "intro": [
+      "Jack On Hold returns to a retro fruit format on three reels and five lines but introduces Respin: reels can receive another attempt to complete a combination.",
+      "Another distinction is the x2 Wall Multiplier, which doubles the prize for a qualifying symbol wall. The Wild substitutes for regular symbols in a winning line."
+    ],
+    "editorial": "Respin in this game is different from Hold the Jackpot: the ‘On Hold’ title should not automatically turn a classic retro slot into a jackpot collector. The stated maximum is 500x.",
+    "features": [
+      {
+        "title": "Respin",
+        "description": "An extra spin offers a chance to complete a winning combination without a separate Free Spins round."
+      },
+      {
+        "title": "Wild",
+        "description": "The special symbol substitutes for basic fruit symbols, helping form a line payout."
+      },
+      {
+        "title": "Wall x2",
+        "description": "The x2 Wall Multiplier doubles a qualifying win; the wall multiplier should not be treated as the whole game's maximum award."
+      }
+    ]
+  },
+  "playn-go-free-reelin-joker-1000": {
+    "intro": [
+      "In Free Reelin’ Joker 1000, the payout is formed by the number on the reels themselves: symbols 0, 1, 2 and 5 build a number from left to right. For example, the sequence 5-2-0 corresponds to a payout of 520 coins.",
+      "A Joker triggers Expanding Reels and adds a fourth reel on the left, whose first position always shows 1 while the others can be blank or 0. Three zeros in the base game separately trigger a Free Re-Spin."
+    ],
+    "editorial": "Free Reelin’ Joker 1000 uses the same horizontal expansion idea but completely changes the win mathematics: instead of fruit combinations, the reels literally form a numerical prize. It therefore should not be described as merely a stronger version of the first Free Reelin’ Joker's mechanic.",
+    "features": [
+      {
+        "title": "Numerical wins",
+        "description": "In Free Reelin’ Joker 1000, the payout is formed by the number on the reels themselves: symbols 0, 1, 2 and 5 build a number from left to right."
+      },
+      {
+        "title": "Joker Expanding Reels",
+        "description": "For example, the sequence 5-2-0 corresponds to a payout of 520 coins."
+      },
+      {
+        "title": "Free Re-Spin",
+        "description": "A Joker triggers Expanding Reels and adds a fourth reel on the left, whose first position always shows 1 while the others can be blank or 0. Three zeros in the base game separately trigger a Free Re-Spin."
+      }
+    ]
+  },
+  "wazdan-jacks-ride": {
+    "intro": [
+      "Jack’s Ride takes a three-reel slot onto Route 66. It has 27 lines, and the Nudge Feature can roll a reel backwards to turn a non-winning spin into a paying combination.",
+      "Unlike Jack On Hold, Jack’s Ride has no stated x2 Wall Multiplier: its main effect is reverse reel movement, with a separate Gamble available after a win."
+    ],
+    "editorial": "The game has a modest official maximum of 81x and a retro 3×3 structure. That figure should not be replaced with a potential sequence of seven doubles in the risk game.",
+    "features": [
+      {
+        "title": "Nudge reverses the reels",
+        "description": "After an unsuccessful spin, the reels can shift backwards to form a winning combination."
+      },
+      {
+        "title": "27 lines on 3×3",
+        "description": "The small grid supports twenty-seven line payout patterns rather than the traditional five."
+      },
+      {
+        "title": "Hitchhiker Gamble",
+        "description": "After a win, up to seven attempts can be made to double the amount in a separate round, risking the original prize."
+      }
+    ]
+  },
+  "playn-go-frozen-gems": {
+    "intro": [
+      "Frozen Gems uses cascades with a multiplier increasing by +1 after every additional cascade and resetting only on a new base spin. Frozen Bonus Symbols sit above the reels: Bonus Wilds and x2/x3 Splitting Scatters, whose distribution is randomised before every spin.",
+      "To thaw a Bonus Symbol, three winning symbols or Scatters must collect on its reel. A Bonus Wild turns every symbol on the reel Wild, while a Splitting Scatter divides symbols into 2 or 3 and increases the number of ways."
+    ],
+    "editorial": "Frozen Gems ties its bonus layer directly to particular reels: a cascade must first ‘thaw’ the upper symbol before it changes the grid. Three Scatters trigger 9 Frozen Spins; the multiplier carries over from the triggering spin and continues growing without a stated limit, while every Scatter adds another spin.",
+    "features": [
+      {
+        "title": "Cascades",
+        "description": "Frozen Gems uses cascades with a multiplier increasing by +1 after every additional cascade and resetting only on a new base spin."
+      },
+      {
+        "title": "Frozen Bonus Symbols",
+        "description": "Frozen Bonus Symbols sit above the reels: Bonus Wilds and x2/x3 Splitting Scatters, whose distribution is randomised before every spin."
+      },
+      {
+        "title": "Frozen Spins",
+        "description": "To thaw a Bonus Symbol, three winning symbols or Scatters must collect on its reel. A Bonus Wild turns every symbol on the reel Wild, while a Splitting Scatter divides symbols into 2 or 3 and increases the number of ways."
+      }
+    ]
+  },
+  "wazdan-jackpot-builders": {
+    "intro": [
+      "Jackpot Builders uses four reels with nine lines and a construction theme: paid symbols disappear in Cascading Reels, allowing another combination to form.",
+      "Four Scatters can extend the sequence to 30 Free Spins, while Mystery Bonus and Wild x2 are separate events. Wazdan's list additionally includes an x2 Wall Multiplier."
+    ],
+    "editorial": "This slot has two different doubling effects: Wild x2 participates in winning combinations, while the Wall Multiplier applies to a special grid fill. They should not be combined into an invented maximum-win value.",
+    "features": [
+      {
+        "title": "Cascading Reels",
+        "description": "After a win, paid symbols give way to new ones, allowing another payout within the same spin."
+      },
+      {
+        "title": "Scatter and Free Spins",
+        "description": "The official page states the possibility of up to 30 free spins through Scatters."
+      },
+      {
+        "title": "Mystery Bonus and two x2 effects",
+        "description": "A Mystery symbol provides a separate draw, while Wild x2 and x2 Wall Multiplier represent different ways to increase a payout."
+      }
+    ]
+  },
+  "playn-go-fu-er-dai": {
+    "intro": [
+      "FU ER DAI runs on five reels and ten paylines. A Red-eyed Dragon Wild on an inner reel becomes a Wild Dragon Girl, expands across the entire reel and helps both on the current spin and the following free re-spin.",
+      "Two or more Wild Dragon Girls trigger five Win Spins. Every Win Spin guarantees at least one winning combination, while new Wild Dragon Girls can extend the sequence up to 20 consecutive Win Spins."
+    ],
+    "editorial": "FU ER DAI builds its bonus around Dragon Wild evolution rather than a regular Scatter: first full-reel expansion and a re-spin, then multiple Dragon Girls move the game into a guaranteed winning sequence.",
+    "features": [
+      {
+        "title": "Dragon Wild",
+        "description": "FU ER DAI runs on five reels and ten paylines."
+      },
+      {
+        "title": "Wild Dragon Girl",
+        "description": "A Red-eyed Dragon Wild on an inner reel becomes a Wild Dragon Girl, expands across the entire reel and helps both on the current spin and the following free re-spin."
+      },
+      {
+        "title": "Win Spins",
+        "description": "Two or more Wild Dragon Girls trigger five Win Spins. Every Win Spin guarantees at least one winning combination, while new Wild Dragon Girls can extend the sequence up to 20 consecutive Win Spins."
+      }
+    ]
+  },
+  "wazdan-jelly-reels": {
+    "intro": [
+      "Jelly Reels uses eight reels and 16,777,216 ways to win, explicitly stated in Wazdan's detailed description. Mega Symbols sized 2×2 and 3×3 combine with Cascading Wins.",
+      "Six Bonus symbols start Hold the Jackpot on 40 positions. New symbols replenish the respin sequence, and filling the grid leads to Grand 2500x."
+    ],
+    "editorial": "Wazdan's short Game Info displays ‘8 / 8 Ways’, but the editorial record clarifies 16,777,216 ways from the detailed primary source. Thirty, forty and other bonus counts should not be presented as standard line counts.",
+    "features": [
+      {
+        "title": "Mega Symbols and Cascading Wins",
+        "description": "Large symbols occupy 2×2 or 3×3 cells, while winning ones disappear to make room for new symbols."
+      },
+      {
+        "title": "Six Bonus symbols for Hold the Jackpot",
+        "description": "Three to five Bonus symbols trigger a paid respin with symbols locked; six move into a separate 40-position bonus."
+      },
+      {
+        "title": "Grand 2500x for a full grid",
+        "description": "In Hold the Jackpot, new symbols replenish three respins, while filling every position awards Grand 2500x."
+      }
+    ]
+  },
+  "playn-go-fulong-88": {
+    "intro": [
+      "In Fulong 88, five high-paying symbols can be activated as Golden Symbols: matching symbols on the reels become golden versions with enhanced payouts. Each activated Golden Symbol also opens an additional Instant Prize for Fulong’s Fortune.",
+      "A Gold Coin Scatter can randomly open Fulong’s Fortune, where hidden prizes reveal until three match. Three regular Scatters trigger 10 Free Spins; low-paying symbols are removed, and Wilds always split in this round."
+    ],
+    "editorial": "Fulong 88 connects Golden Symbols activated beforehand with the Fulong’s Fortune prize pool, but Free Spins follow a different logic: Gold Coin guarantees Fortune entry, low pays disappear, and Wilds always split.",
+    "features": [
+      {
+        "title": "Golden Symbols",
+        "description": "In Fulong 88, five high-paying symbols can be activated as Golden Symbols: matching symbols on the reels become golden versions with enhanced payouts."
+      },
+      {
+        "title": "Fulong’s Fortune",
+        "description": "Each activated Golden Symbol also opens an additional Instant Prize for Fulong’s Fortune."
+      },
+      {
+        "title": "Free Spins",
+        "description": "A Gold Coin Scatter can randomly open Fulong’s Fortune, where hidden prizes reveal until three match. Three regular Scatters trigger 10 Free Spins; low-paying symbols are removed, and Wilds always split in this round."
+      }
+    ]
+  },
+  "wazdan-joker-explosion": {
+    "intro": [
+      "Joker Explosion uses four reels and seven lines with dynamite symbols. Three Scatters award Free Spins, while the Joker Wild can substitute for regular symbols except explosives.",
+      "Wazdan's Features also lists Respin. On the same official page, the text mentions 2300x while technical Game Info states 2350x: the record should preserve this conflict."
+    ],
+    "editorial": "Game Info's 2350x is selected as the main maximum-win value, with the conflicting promotional text's 2300x noted. An arbitrary ‘average’ figure should not be entered, nor should the discrepancy be hidden.",
+    "features": [
+      {
+        "title": "Dynamite Scatter",
+        "description": "Three or more Scatter symbols open Free Spins; Game Info does not specify their exact number."
+      },
+      {
+        "title": "Joker Wild",
+        "description": "The Joker substitutes for regular symbols except dynamite and helps form lines."
+      },
+      {
+        "title": "Respin and maximum-win discrepancy",
+        "description": "A separate Respin appears in the feature list. Game Info gives 2350x, while another part of the page text mentions 2300x."
+      }
+    ]
+  },
+  "playn-go-game-of-gladiators": {
+    "intro": [
+      "Game of Gladiators uses 20 paylines and a set of random Primus Attack features. Fame selects a Gladiator for a separate battle-table payout, Spear Attack turns 3–6 hits into Wilds, Sword Attack copies the first reel onto subsequent reels, Net Attack holds one Gladiator type for a re-spin, and Enraged adds two full Tiger Wild reels.",
+      "The main Enter the Arena bonus allows a choice of Spartacus or Amazonia and sends the selected champion into battle against gladiators on the reels. Free Spins continue until the battle ends in victory or defeat."
+    ],
+    "editorial": "The original Game of Gladiators focuses on independent Primus Attacks and a separate arena battle. This is not Uprising's fighter-power system: Spear, Sword, Net, Fame and Enraged are independent random base-game attacks here.",
+    "features": [
+      {
+        "title": "Primus Attacks",
+        "description": "Game of Gladiators uses 20 paylines and a set of random Primus Attack features."
+      },
+      {
+        "title": "Enter the Arena",
+        "description": "Fame selects a Gladiator for a separate battle-table payout, Spear Attack turns 3–6 hits into Wilds, Sword Attack copies the first reel onto subsequent reels, Net Attack holds one Gladiator type for a re-spin, and Enraged adds two full Tiger Wild reels."
+      },
+      {
+        "title": "Gladiator Battles",
+        "description": "The main Enter the Arena bonus allows a choice of Spartacus or Amazonia and sends the selected champion into battle against gladiators on the reels. Free Spins continue until the battle ends in victory or defeat."
+      }
+    ]
+  },
+  "wazdan-juicy-reels": {
+    "intro": [
+      "Juicy Reels places fruit classics on six reels and twenty lines. The bell is a Wild with its own payout, substituting for regular symbols except bonus symbols.",
+      "Three, four, five or six Scatters award 15, 20, 25 or 30 Free Spins respectively; every win in the round is tripled."
+    ],
+    "editorial": "Here, x3 is a constant Free Spins bonus multiplier rather than the whole game's stated limit of 750x. Despite six reels, the official volatility is listed as low.",
+    "features": [
+      {
+        "title": "Bell Wild",
+        "description": "Substitutes for regular symbols and can itself participate in a high-paying combination."
+      },
+      {
+        "title": "15/20/25/30 spins",
+        "description": "Three to six Scatters open the specified free-spin count according to the number of symbols."
+      },
+      {
+        "title": "Bonus x3",
+        "description": "All winning combinations during Free Spins receive a tripled result."
+      }
+    ]
+  },
+  "playn-go-game-of-gladiators-uprising": {
+    "intro": [
+      "Gladiators Oath triggers when a Scatter or Wild appears on the reels and can produce Re-Spins with the corresponding fighter. Each hero has a power: Spartacus adds 3–5 Wilds, Bellica turns 2–3 reels entirely Wild, and Emperor Gaius adds 2–3 Multiplier Wilds.",
+      "Two or more gladiators trigger Free Spins, whose duration is determined by a health bar and capped at 100 spins. Guess the Victor allows a choice of the battle winner; a correct prediction can multiply the net prize by x5."
+    ],
+    "editorial": "Uprising replaces the original's Primus Attacks with fighter-specific powers and health-based Free Spins. The character appearing on the reels matters: Spartacus, Bellica and Emperor Gaius produce fundamentally different grid changes.",
+    "features": [
+      {
+        "title": "Gladiators Oath",
+        "description": "Gladiators Oath triggers when a Scatter or Wild appears on the reels and can produce Re-Spins with the corresponding fighter."
+      },
+      {
+        "title": "Fighter Powers",
+        "description": "Each hero has a power: Spartacus adds 3–5 Wilds, Bellica turns 2–3 reels entirely Wild, and Emperor Gaius adds 2–3 Multiplier Wilds."
+      },
+      {
+        "title": "Guess the Victor",
+        "description": "Two or more gladiators trigger Free Spins, whose duration is determined by a health bar and capped at 100 spins. Guess the Victor allows a choice of the battle winner; a correct prediction can multiply the net prize by x5."
+      }
+    ]
+  },
+  "wazdan-jumping-fruits": {
+    "intro": [
+      "Jumping Fruits resembles a three-reel machine with cheerful fruit and 27 lines. After a non-winning result, Nudge can move the reels backwards to complete a combination.",
+      "Its main feature is not tied to Free Spins: the official description highlights only Nudge and a two-leaf risk game, where one leaf hides a reward and the other loses the prize."
+    ],
+    "editorial": "Jumping Fruits has the same maximum of 81x as Jack’s Ride but a different theme and Gamble presentation. Wilds or Scatters from other games should not be carried over without confirmation.",
+    "features": [
+      {
+        "title": "Nudge after an empty spin",
+        "description": "Reversing the reels can turn an unsuccessful spin into a win."
+      },
+      {
+        "title": "Three reels and 27 lines",
+        "description": "The compact 3×3 grid provides 27 paying combinations."
+      },
+      {
+        "title": "Gamble beneath leaves",
+        "description": "After a payout, seven attempts can be made to choose the leaf hiding a fruit; an incorrect choice loses the prize being risked."
+      }
+    ]
+  },
+  "playn-go-gargantoonz": {
+    "intro": [
+      "Gargantoonz runs on a 7×7 cascading grid, where clusters of 5+ symbols form wins. Each round, one symbol becomes Fluctuating; if it participates in a win, 1–2 Quantum Wilds can appear in its place after removal, while on non-winning rounds the game can randomly add 4–8 Quantum Wilds.",
+      "Winning symbols charge the Experiment Charger; collecting 20 symbols triggers one of three experiments. Gamma Ray Burst adds 7–9 Wilds, Black Hole adds 4–6 Wilds with a collection effect around them, and Supernova adds 3–5 Wilds that remain after a winning cluster and move between cascades."
+    ],
+    "editorial": "Gargantoonz uses the Experiment Charger as a separate progression system rather than Dr. Toonz's Quantumeter. Its three experiments handle Wilds differently, while successful experiments develop Gargantoon itself and its multiplier state.",
+    "features": [
+      {
+        "title": "Fluctuating Symbol",
+        "description": "Gargantoonz runs on a 7×7 cascading grid, where clusters of 5+ symbols form wins."
+      },
+      {
+        "title": "Experiment Charger",
+        "description": "Each round, one symbol becomes Fluctuating; if it participates in a win, 1–2 Quantum Wilds can appear in its place after removal, while on non-winning rounds the game can randomly add 4–8 Quantum Wilds."
+      },
+      {
+        "title": "Three experiments",
+        "description": "Winning symbols charge the Experiment Charger; collecting 20 symbols triggers one of three experiments. Gamma Ray Burst adds 7–9 Wilds, Black Hole adds 4–6 Wilds with a collection effect around them, and Supernova adds 3–5 Wilds that remain after a winning cluster and move between cascades."
+      }
+    ]
+  },
+  "wazdan-kick-off": {
+    "intro": [
+      "Kick Off uses no regular reels or lines: three footballers kick balls simultaneously, and three matching balls award a payout.",
+      "Golden balls fill the Matrix Table. A horizontal group of three opens one penalty kick, while a vertical group of five opens five kicks; both events can coincide in one spin."
+    ],
+    "editorial": "Calling Kick Off a ‘three-reel’ game because of its footballer count is incorrect. The official record specifies no standard reels/lines, and the maximum win of 440x is not an award for every penalty kick.",
+    "features": [
+      {
+        "title": "Three balls instead of reels",
+        "description": "Three footballers each kick a ball; three matching types form a base payout."
+      },
+      {
+        "title": "Matrix Table 3 and 5",
+        "description": "Three golden balls horizontally award one penalty kick, five vertically award five; six kicks can be awarded simultaneously."
+      },
+      {
+        "title": "Wild except for the golden ball",
+        "description": "The Wild substitutes for regular balls but not the golden bonus symbol; penalty outcomes are determined separately."
+      }
+    ]
+  },
+  "playn-go-gates-of-troy": {
+    "intro": [
+      "Three Scatters open Free Spins and move the action behind Troy's walls. Wilds appearing during Free Spins are marked with a fiery frame and saved for the feature's final part.",
+      "The Trojan Horse above the reels tracks bonus progression. On the tenth Free Spin, Wilds collected throughout the round are added back onto the reels, creating a distinct finale to the sequence."
+    ],
+    "editorial": "Gates of Troy makes Wild accumulation the central purpose of Free Spins: new Wild positions do more than help the current spin—they are saved until the tenth, when the collected stock returns to the grid simultaneously.",
+    "features": [
+      {
+        "title": "Scatter Free Spins",
+        "description": "Three Scatters open Free Spins and move the action behind Troy's walls."
+      },
+      {
+        "title": "Fiery Wilds",
+        "description": "Wilds appearing during Free Spins are marked with a fiery frame and saved for the feature's final part."
+      },
+      {
+        "title": "Trojan Horse",
+        "description": "The Trojan Horse above the reels tracks bonus progression. On the tenth Free Spin, Wilds collected throughout the round are added back onto the reels, creating a distinct finale to the sequence."
+      }
+    ]
+  },
+  "wazdan-larry-the-leprechaun": {
+    "intro": [
+      "Larry the Leprechaun uses 16 separate positions without lines. Eight matching symbols anywhere are enough for a base payout; Block Symbols Mode locks selected symbols.",
+      "This game has three different bonus systems: gold coins lead to Leprechaun’s Spins, silver coins to Free Spins, and Magic Sack opens another spin type with Wilds."
+    ],
+    "editorial": "Slots named Leprechaun are easy to confuse with regular Irish-themed line games, but this one has a distinctive 4×4 layout and three collection tables. Magic Sack should not be assigned Hold the Jackpot rules.",
+    "features": [
+      {
+        "title": "16 positions and eight matches",
+        "description": "Payouts come from matching symbols anywhere on the grid, without fixed lines."
+      },
+      {
+        "title": "Gold and silver coins",
+        "description": "Gold advances Leprechaun’s Spins, while silver activates a standalone Free Spins bonus."
+      },
+      {
+        "title": "Magic Sack and locking",
+        "description": "The sack triggers a separate bonus with special Wilds, while Block Symbols Mode allows symbols to be held."
+      }
+    ]
+  },
+  "playn-go-gemix": {
+    "intro": [
+      "The original Gemix is a 7×7 cascading grid: a cluster of 5+ touching symbols pays, winning symbols are removed, and new ones fall from above until the cascade chain ends. All winning symbols charge the Crystal Charge Meter.",
+      "A full Crystal Charge triggers one of four effects: Chain Lightning, Light Beam, Crystal Warp or Nova Blast. If the meter reaches Super Charge before cascades finish, both existing and subsequent wins in that round receive x3."
+    ],
+    "editorial": "Gemix combines two progression layers: Crystal Charge operates within one round, while world patterns last longer. Three cleared patterns in a world move the game onwards and award a World Bonus; Miner, Princess and Wizard use different World Wilds.",
+    "features": [
+      {
+        "title": "Cluster Cascades",
+        "description": "The original Gemix is a 7×7 cascading grid: a cluster of 5+ touching symbols pays, winning symbols are removed, and new ones fall from above until the cascade chain ends."
+      },
+      {
+        "title": "Crystal Charge",
+        "description": "All winning symbols charge the Crystal Charge Meter."
+      },
+      {
+        "title": "World Patterns",
+        "description": "A full Crystal Charge triggers one of four effects: Chain Lightning, Light Beam, Crystal Warp or Nova Blast. If the meter reaches Super Charge before cascades finish, both existing and subsequent wins in that round receive x3."
+      }
+    ]
+  },
+  "wazdan-los-muertos": {
+    "intro": [
+      "Los Muertos unfolds across five reels and four rows with forty lines. Its main feature is Giant Symbols sized 2×2 or 3×3.",
+      "A Giant Bonus Symbol opens a separate Bonus Slot with x1/x3/x5 multiplier icons and Free Spins. Three Free Spins symbols award six spins, while the 3×3 Giant Wild appears only within the bonus."
+    ],
+    "editorial": "This is the original Los Muertos with huge symbols and Bonus Slot rather than Los Muertos II: the sequel has three reels and a completely different Special Symbol. The original's stated maximum is 850x.",
+    "features": [
+      {
+        "title": "Giant Symbols 2×2 and 3×3",
+        "description": "Large blocks occupy several cells; a special Giant Wild 3×3 is available during the bonus round."
+      },
+      {
+        "title": "Bonus Slot from Giant Bonus",
+        "description": "A separate draw can award an instant x1/x3/x5 prize or collect symbols for Free Spins."
+      },
+      {
+        "title": "Six Free Spins from three icons",
+        "description": "Three Free Spins icons open six spins, while each additional icon adds one more."
+      }
+    ]
+  },
+  "playn-go-gemix-100": {
+    "intro": [
+      "Gemix 100 retains the 7×7 cluster grid, but every win increases the Win Multiplier by +1 within the current round, up to x100. Collecting 25 winning symbols in the Crystal Charge Meter triggers Nova Blast, Crystal Warp, Light Beam or Chain Lightning.",
+      "If the Charge Meter reaches 35 before the effect activates, the round becomes Supercharged and the multiplier doubles. Pattern Clear separately adds +5 to the multiplier and moves the game into a new world."
+    ],
+    "editorial": "Gemix 100 is more than a copy of the first Gemix with a larger cap: Crystal Charge has 25/35 thresholds, Pattern Clear directly advances the multiplier, and World Wilds are reworked for Miner, Princess and Wizard. The number 100 specifically refers to the Win Multiplier's upper limit.",
+    "features": [
+      {
+        "title": "Win Multiplier",
+        "description": "Gemix 100 retains the 7×7 cluster grid, but every win increases the Win Multiplier by +1 within the current round, up to x100."
+      },
+      {
+        "title": "Crystal Charge",
+        "description": "Collecting 25 winning symbols in the Crystal Charge Meter triggers Nova Blast, Crystal Warp, Light Beam or Chain Lightning."
+      },
+      {
+        "title": "Pattern Clear",
+        "description": "If the Charge Meter reaches 35 before the effect activates, the round becomes Supercharged and the multiplier doubles. Pattern Clear separately adds +5 to the multiplier and moves the game into a new world."
+      }
+    ]
+  },
+  "wazdan-los-muertos-ii": {
+    "intro": [
+      "Los Muertos II uses three reels and five lines rather than the original's five-reel matrix. Instead of Giant Symbols, Wazdan highlights a Special Symbol on low-paying symbols.",
+      "The Special Symbol appears only over low-paying symbols, while Gamble allows attempts to double a payout up to seven consecutive times."
+    ],
+    "editorial": "The sequel does not inherit Los Muertos' 40 lines, Bonus Slot or Giant Wild. Its official maximum win is just 40x, so the two versions should remain separate technical records.",
+    "features": [
+      {
+        "title": "Special Symbol on low-paying symbols",
+        "description": "The special symbol appears exclusively over low-paying symbols, changing payouts specifically in this category."
+      },
+      {
+        "title": "Five lines instead of forty",
+        "description": "The grid is reduced to three reels and five lines despite the shared Day of the Dead theme."
+      },
+      {
+        "title": "Gamble up to seven attempts",
+        "description": "After a prize, a separate risk round offers successive doubling on successful attempts."
+      }
+    ]
+  },
+  "playn-go-gemix-2": {
+    "intro": [
+      "Gemix 2 again uses 7×7 cluster cascades, but Crystal Charge is split into two levels. The first 25 winning symbols trigger one of four effects: Chain Lightning, Light Beam, Crystal Warp or Nova Blast.",
+      "Collecting 50 symbols activates Super Charge: all four Crystal Charge effects trigger simultaneously alongside an x2 Multiplier. Every subsequent group of 50 symbols can retrigger Super Charge and double the multiplier again, up to x20."
+    ],
+    "editorial": "Gemix 2 differs from both the original and Gemix 100: its key jump occurs at 50 symbols, when four effects combine into one Super Charge. Worlds also use two patterns each rather than the first game's three.",
+    "features": [
+      {
+        "title": "Crystal Charge",
+        "description": "Gemix 2 again uses 7×7 cluster cascades, but Crystal Charge is split into two levels."
+      },
+      {
+        "title": "Super Charge",
+        "description": "The first 25 winning symbols trigger one of four effects: Chain Lightning, Light Beam, Crystal Warp or Nova Blast."
+      },
+      {
+        "title": "World Patterns",
+        "description": "Collecting 50 symbols activates Super Charge: all four Crystal Charge effects trigger simultaneously alongside an x2 Multiplier. Every subsequent group of 50 symbols can retrigger Super Charge and double the multiplier again, up to x20."
+      }
+    ]
+  },
+  "wazdan-lost-treasure": {
+    "intro": [
+      "Lost Treasure presents a treasure hunt on five reels and twenty lines. The treasure hunter acts as a Wild x2 and doubles combinations in which it substitutes for a regular symbol.",
+      "The Scatter opens fifteen Free Spins, and an x3 multiplier applies to every bonus-round win; this is a separate rule from Wild x2."
+    ],
+    "editorial": "When comparing it with Lucky Fortune, which also has Wild x2 and Free Spins x3, presentation, bonus frequency and dates should not be carried over. Lost Treasure has a confirmed maximum of 3500x.",
+    "features": [
+      {
+        "title": "Hunter Wild x2",
+        "description": "The character substitutes for any regular symbol except Scatter and doubles the winning result in which it participates."
+      },
+      {
+        "title": "Fifteen Free Spins",
+        "description": "The stated bonus round consists of fifteen spins following the required Scatters."
+      },
+      {
+        "title": "Constant bonus multiplier x3",
+        "description": "Free Spins wins multiply by three, without guaranteeing three times the maximum payouts."
+      }
+    ]
+  },
+  "playn-go-gerards-gambit": {
+    "intro": [
+      "Gerard’s Gambit starts with a 3×1 reel and one payline, developing through ten levels. The grid expands every two levels: 3×2 at Level 3, 3×3 at Level 5, 4×3 at Level 7 and 5×3 at Level 9; new levels also add symbols, objectives and features.",
+      "From Level 3, two Wilds trigger a Re-Spin with sticky Wilds; from Level 4, it can retrigger. At Levels 6, 8 and 10, Free Spin Scatters open 5 Free Spins, requiring 1, 2 or 3 Scatters respectively; Wilds become sticky in the bonus, and an additional Scatter adds another spin."
+    ],
+    "editorial": "Gerard’s Gambit uses progression as the game mechanic itself: layout, paylines and bonus tools unlock gradually rather than being available immediately. Levels 5/7/9 additionally introduce Bonus Scatters with bet multipliers up to x100, while every winning spin can enter one of three Gamble modes.",
+    "features": [
+      {
+        "title": "Grid development",
+        "description": "Gerard’s Gambit starts with a 3×1 reel and one payline, developing through ten levels."
+      },
+      {
+        "title": "Sticky Re-Spins",
+        "description": "The grid expands every two levels: 3×2 at Level 3, 3×3 at Level 5, 4×3 at Level 7 and 5×3 at Level 9; new levels also add symbols, objectives and features."
+      },
+      {
+        "title": "Free Spins",
+        "description": "From Level 3, two Wilds trigger a Re-Spin with sticky Wilds; from Level 4, it can retrigger. At Levels 6, 8 and 10, Free Spin Scatters open 5 Free Spins, requiring 1, 2 or 3 Scatters respectively; Wilds become sticky in the bonus, and an additional Scatter adds another spin."
+      }
+    ]
+  },
+  "wazdan-lucky-9": {
+    "intro": [
+      "Lucky 9 combines six reels and twenty lines with pixel-art fruit styling. Its feature is a Variable Win Multiplier that can increase up to x9.",
+      "The game has separate Lucky Spins combining free spins with a ninefold multiplier, as well as regular Free Spins. These are different events even if both use Scatters."
+    ],
+    "editorial": "The nine in the title relates to the bonus multiplier rather than line count or maximum payout. The official limit is 1300x with medium volatility.",
+    "features": [
+      {
+        "title": "Variable Win Multiplier up to x9",
+        "description": "The winning-combination multiplier changes under game conditions; its value is not the overall maximum win."
+      },
+      {
+        "title": "Lucky Spins x9",
+        "description": "A separate bonus combines special spins with ninefold payouts."
+      },
+      {
+        "title": "Free Spins, Scatter and Wild",
+        "description": "There is a regular free-spin sequence triggered by Scatters and a separate Wild for line combinations."
+      }
+    ]
+  },
+  "playn-go-ghost-of-dead": {
+    "intro": [
+      "Ghost of Dead uses a Canopus Scatter that can appear randomly on a spin and sometimes turns into a Spectral Canopus Scatter. Both versions act as Wilds, while Ghost Spin selects a Special Expanding Symbol and expands it only when doing so creates a winning combination.",
+      "Three regular Canopus Scatters trigger Free Spins with a player-selected Expanding Symbol. Three Spectral Scatters open Awakened Free Spins: the player again chooses a symbol, while the Ghost additionally selects a new expanding symbol on every spin."
+    ],
+    "editorial": "Ghost of Dead separates two versions of one bonus through Scatter type. Regular Free Spins fixes the selected Expanding Symbol, while the Awakened version adds a second one that changes from spin to spin.",
+    "features": [
+      {
+        "title": "Canopus Wild",
+        "description": "Ghost of Dead uses a Canopus Scatter that can appear randomly on a spin and sometimes turns into a Spectral Canopus Scatter."
+      },
+      {
+        "title": "Ghost Spin",
+        "description": "Both versions act as Wilds, while Ghost Spin selects a Special Expanding Symbol and expands it only when doing so creates a winning combination."
+      },
+      {
+        "title": "Awakened Free Spins",
+        "description": "Three regular Canopus Scatters trigger Free Spins with a player-selected Expanding Symbol. Three Spectral Scatters open Awakened Free Spins: the player again chooses a symbol, while the Ghost additionally selects a new expanding symbol on every spin."
+      }
+    ]
+  },
+  "wazdan-lucky-fish": {
+    "intro": [
+      "Lucky Fish runs on five reels with 243 ways to win. After each cascade, the multiplier rises progressively up to x5 until the winning sequence breaks.",
+      "Goldfish Wild Bonus can turn four random positions into Wilds, while three, four or five chest Scatters trigger 10, 20 or 30 Free Spins."
+    ],
+    "editorial": "Mystery Bonus is tied to shells here rather than free spins: three or more shells award a separate payout that Wazdan describes as reaching 1000x, while overall Game Info shows a maximum win of 350x. This is an inconsistency in official wording, not a reason to invent a new overall value.",
+    "features": [
+      {
+        "title": "Cascades and multiplier x5",
+        "description": "Winning symbols disappear, allowing subsequent combinations and gradually increasing the multiplier up to x5."
+      },
+      {
+        "title": "Goldfish turns four symbols Wild",
+        "description": "If the goldfish did not participate in a payout, it can release four bubbles that turn other symbols Wild."
+      },
+      {
+        "title": "Chest Scatters and Mystery shells",
+        "description": "Three/four/five chests award 10/20/30 spins; shells open a separate Mystery Bonus."
+      }
+    ]
+  },
+  "playn-go-gigantoonz": {
+    "intro": [
+      "Gigantoonz centres on Mega Symbols and the Quantumeter. A Mega Symbol counts as one symbol but has an increased cluster value; if a large symbol cannot fit after a cascade, it splits into individual symbols filling the empty cells.",
+      "The Quantumeter passes four thresholds: 25 charges trigger Disintegrations, 50 Metamorphosis, 75 Radiation, and 100 awaken Gargantoonz. On non-winning rounds, the game can also add 5–10 Quantum Wilds."
+    ],
+    "editorial": "Gigantoonz does not copy Gargantoonz's Experiment Charger. Its progression is explicitly tied to Quantumeter thresholds of 25/50/75/100 and gradually enhances Mega Symbols, culminating in their transformation into Mega Gargantoonz.",
+    "features": [
+      {
+        "title": "Mega Symbols",
+        "description": "Gigantoonz centres on Mega Symbols and the Quantumeter."
+      },
+      {
+        "title": "Quantumeter",
+        "description": "A Mega Symbol counts as one symbol but has an increased cluster value; if a large symbol cannot fit after a cascade, it splits into individual symbols filling the empty cells."
+      },
+      {
+        "title": "Quantum Wilds",
+        "description": "The Quantumeter passes four thresholds: 25 charges trigger Disintegrations, 50 Metamorphosis, 75 Radiation, and 100 awaken Gargantoonz. On non-winning rounds, the game can also add 5–10 Quantum Wilds."
+      }
+    ]
+  },
+  "wazdan-lucky-fortune": {
+    "intro": [
+      "Lucky Fortune uses five reels and twenty lines in a magical theme. A fortune teller with a crystal ball acts as a Wild x2, helping form a win and doubling it.",
+      "Free Spins additionally triple bonus payouts. The official technical block provides no release date, although a separate Wazdan news publication already indicates an early release."
+    ],
+    "editorial": "Wild x2 and the x3 free-spin multiplier are different rules; they should not be reduced to one figure and presented as the maximum of 4650x without a source reference.",
+    "features": [
+      {
+        "title": "Fortune teller Wild x2",
+        "description": "Substitutes for regular symbols except Scatter and doubles winning combinations in which it participates."
+      },
+      {
+        "title": "Free Spins with x3",
+        "description": "Bonus-sequence payouts are tripled, separately from the Wild x2 effect."
+      },
+      {
+        "title": "Scatter and Gamble",
+        "description": "The Scatter handles bonus entry, while Gamble allows a separate risk with a win already awarded."
+      }
+    ]
+  },
+  "playn-go-gnawn-gold": {
+    "intro": [
+      "Gnaw’n Gold uses a Persistent Trail in the Base Game itself. Every landed Collector advances the trail by one segment; progress permanently unlocks new Collector types, with five different Instant Prize Collectors in total.",
+      "Three Scatters trigger 10 Beaver Spins with all unlocked Collectors. Three Collectors within the bonus increase its level, add another 5 spins and enhance the Multiplier. After completing the Persistent Trail, two Scatters together with a Mega Beaver Spins symbol can open a separate 5 Mega Beaver Spins."
+    ],
+    "editorial": "Gnaw’n Gold retains progression between regular spins through its Persistent Trail. Beaver Spins therefore depends on Collectors already unlocked, while Mega Beaver Spins becomes available only after completing the trail.",
+    "features": [
+      {
+        "title": "Persistent Trail",
+        "description": "Gnaw’n Gold uses a Persistent Trail in the Base Game itself."
+      },
+      {
+        "title": "Beaver Spins",
+        "description": "Every landed Collector advances the trail by one segment; progress permanently unlocks new Collector types, with five different Instant Prize Collectors in total."
+      },
+      {
+        "title": "Mega Beaver Spins",
+        "description": "Three Scatters trigger 10 Beaver Spins with all unlocked Collectors. Three Collectors within the bonus increase its level, add another 5 spins and enhance the Multiplier. After completing the Persistent Trail, two Scatters together with a Mega Beaver Spins symbol can open a separate 5 Mega Beaver Spins."
+      }
+    ]
+  },
+  "wazdan-lucky-queen": {
+    "intro": [
+      "Lucky Queen centres on a lost temple in the Amazon jungle. Five reels and twenty lines feature a queen Wild and palace Scatters.",
+      "The main bonus is Free Spins with Increasing Multiplier: the multiplier starts at x2 and can be enhanced by special symbols during the spins."
+    ],
+    "editorial": "Lucky Queen's multiplier grows within Free Spins, unlike Lucky Fortune's constant x3. The maximum win of 4500x describes the whole game rather than a guaranteed award when the queen Wild appears.",
+    "features": [
+      {
+        "title": "Queen Wild",
+        "description": "The special heroine substitutes for paying symbols in regular line combinations."
+      },
+      {
+        "title": "Palace Scatter",
+        "description": "The Scatter is represented by a palace and tied to triggering bonus spins."
+      },
+      {
+        "title": "Free Spins with growing x2",
+        "description": "The bonus starts with an x2 multiplier, which additional symbols can increase further."
+      }
+    ]
+  },
+  "playn-go-gold-king": {
+    "intro": [
+      "Gold King runs on 20 paylines and uses Super Stack on every spin: each reel receives a stack of a random regular symbol. The Rose acts as a Wild and helps form combinations.",
+      "Three Gold King symbols in any scattered positions trigger 10 Free Super Spins. During the bonus, Super Stacks of Wilds and one low-paying symbol load onto each reel, while crowns, amulets and gold bars can expand across a whole reel if they create a win."
+    ],
+    "editorial": "Gold King combines the base game's persistent Super Stack with a more aggressive version in Free Super Spins. The bonus both increases stacked-symbol frequency and introduces full-reel expansion for three high-paying symbols.",
+    "features": [
+      {
+        "title": "Super Stack",
+        "description": "Gold King runs on 20 paylines and uses Super Stack on every spin: each reel receives a stack of a random regular symbol."
+      },
+      {
+        "title": "Free Super Spins",
+        "description": "The Rose acts as a Wild and helps form combinations."
+      },
+      {
+        "title": "Expanded Symbols",
+        "description": "Three Gold King symbols in any scattered positions trigger 10 Free Super Spins. During the bonus, Super Stacks of Wilds and one low-paying symbol load onto each reel, while crowns, amulets and gold bars can expand across a whole reel if they create a win."
+      }
+    ]
+  },
+  "wazdan-lucky-reels": {
+    "intro": [
+      "Lucky Reels resembles a fruit machine but uses six reels and twenty lines. Its Variable Win Multiplier stays active until a new multiplier appears.",
+      "The four possible values are x1, x2, x4 and x8. Three or more diamond Scatters award Free Spins, with Wazdan stating up to thirty spins."
+    ],
+    "editorial": "The x8 does not restart after every spin here: the selected multiplier remains until replaced. This distinguishes Lucky Reels from Lucky 9 and its bonus x9.",
+    "features": [
+      {
+        "title": "Persistent x1/x2/x4/x8",
+        "description": "A new multiplier sets its value and remains active until the next multiplier symbol lands."
+      },
+      {
+        "title": "Diamond Scatter and up to 30 Free Spins",
+        "description": "Three or more Scatters activate the bonus, with up to thirty spins available."
+      },
+      {
+        "title": "Wild and Buy Feature",
+        "description": "The Wild substitutes for regular symbols, while Buy Feature offers a separate route to the bonus under game conditions."
+      }
+    ]
+  },
+  "playn-go-gold-of-fortune-god": {
+    "intro": [
+      "Gold of Fortune God is a 5×3 video slot with the Dragon’s Fortune Multiplier Wheel. Three, four or five Scatters can award up to three wheel spins, and selected multipliers carry into Kingdom’s Treasure Bonus.",
+      "Kingdom’s Treasure is a Hold & Spin with cash prizes. Two Golden Rings shift between spins and can award Mini rewards; stated prizes include x20 and x500, while filling the screen with 15 prizes awards Grand x5000."
+    ],
+    "editorial": "Gold of Fortune God connects an entry Multiplier Wheel with the subsequent Hold & Spin: its value does not exist independently but determines Kingdom’s Treasure potential. Grand x5000 is tied to filling all 15 positions.",
+    "features": [
+      {
+        "title": "Multiplier Wheel",
+        "description": "Gold of Fortune God is a 5×3 video slot with the Dragon’s Fortune Multiplier Wheel."
+      },
+      {
+        "title": "Kingdom’s Treasure",
+        "description": "Three, four or five Scatters can award up to three wheel spins, and selected multipliers carry into Kingdom’s Treasure Bonus."
+      },
+      {
+        "title": "Golden Rings",
+        "description": "Kingdom’s Treasure is a Hold & Spin with cash prizes. Two Golden Rings shift between spins and can award Mini rewards; stated prizes include x20 and x500, while filling the screen with 15 prizes awards Grand x5000."
+      }
+    ]
+  },
+  "wazdan-magic-eggs": {
+    "intro": [
+      "Magic Eggs uses an Easter-themed grid with three reels and five lines. The rabbit acts as a Special Symbol only over four low-paying painted-egg symbols.",
+      "Three qualifying symbols with the rabbit must land on a paying line to award the corresponding payout. The official feature list has no Free Spins."
+    ],
+    "editorial": "Magic Eggs' ceiling is only 40x despite its colourful bonus rabbit. Eggs of Fortune's Hold the Jackpot mechanic should not be carried over simply because of a similar Easter theme.",
+    "features": [
+      {
+        "title": "Rabbit Special Symbol",
+        "description": "The special rabbit appears only over four low-paying Easter symbols."
+      },
+      {
+        "title": "Three eggs on a line",
+        "description": "The prize depends on three qualifying rabbit-marked symbols matching on one of five lines."
+      },
+      {
+        "title": "Gamble up to seven doubles",
+        "description": "After a payout, the amount can be risked by choosing an Easter egg, with up to seven successive doubles possible."
+      }
+    ]
+  },
+  "playn-go-gold-trophy-2": {
+    "intro": [
+      "Gold Trophy 2 uses a 5×3 grid and up to 20 paylines. A Gold Trophy Wild participating in a regular winning combination multiplies it by x2; an all-Wild combination is the exception.",
+      "Three or more Prize Cheque Scatters trigger 15 Free Spins and apply x3 to all bonus wins. During Free Spins, a win with a Gold Trophy Wild receives x6 instead of the regular x2."
+    ],
+    "editorial": "Gold Trophy 2 combines two different multiplier layers during Free Spins: the bonus's overall x3 and the Wild's separate enhancement to x6. This is the game's specific golf mechanic rather than a generic Free Spins template.",
+    "features": [
+      {
+        "title": "Gold Trophy Wild",
+        "description": "Gold Trophy 2 uses a 5×3 grid and up to 20 paylines."
+      },
+      {
+        "title": "Prize Cheque",
+        "description": "A Gold Trophy Wild participating in a regular winning combination multiplies it by x2; an all-Wild combination is the exception."
+      },
+      {
+        "title": "Free Spins Multipliers",
+        "description": "Three or more Prize Cheque Scatters trigger 15 Free Spins and apply x3 to all bonus wins. During Free Spins, a win with a Gold Trophy Wild receives x6 instead of the regular x2."
+      }
+    ]
+  },
+  "wazdan-magic-fruit-cherries": {
+    "intro": [
+      "Magic Fruit$: Cherries uses sixteen positions without familiar lines. Cash Out can appear on a random column and stay for up to fifteen spins before collecting its prize values.",
+      "Cash Infinity persists until Hold the Jackpot ends, while Chance Level increases bonus probability for a more expensive bet. This is not Magic Fruit$: Oranges, which has a different layout."
+    ],
+    "editorial": "Cherries has a maximum payout of 500x and medium volatility, while Cash Out is an accumulation mechanism lasting up to 15 spins rather than a constant multiplier. It should not be described as a regular Wild.",
+    "features": [
+      {
+        "title": "Cash Out for up to 15 spins",
+        "description": "The collector can remain in a random column and then pay its own prize together with the values of symbols in that column."
+      },
+      {
+        "title": "Cash Infinity until the bonus ends",
+        "description": "Cash Infinity locks on the grid and remains until Hold the Jackpot finishes."
+      },
+      {
+        "title": "Chance Level and Buy Feature",
+        "description": "A higher bet increases bonus probability, while Buy Feature provides a separate route to Hold the Jackpot."
+      }
+    ]
+  },
+  "playn-go-gold-volcano": {
+    "intro": [
+      "Gold Volcano is a cascading grid slot in which a cluster of 4+ adjacent symbols creates a win. After winning symbols are removed, new symbols rise from below with the lava, while successive cascades build pressure.",
+      "After six consecutive cascades and the end of the chain, Eruption triggers: 5 Free Spins take place on an enlarged 8×8 grid. Every subsequent six cascades within the feature add another Free Spin."
+    ],
+    "editorial": "Gold Volcano reverses the usual cascade direction: symbols rise from the volcano, and progression is measured by chain length. Eruption is not random—it opens at a specific threshold of six cascades.",
+    "features": [
+      {
+        "title": "Rising Cascades",
+        "description": "Gold Volcano is a cascading grid slot in which a cluster of 4+ adjacent symbols creates a win."
+      },
+      {
+        "title": "Eruption",
+        "description": "After winning symbols are removed, new symbols rise from below with the lava, while successive cascades build pressure."
+      },
+      {
+        "title": "Expanded Grid",
+        "description": "After six consecutive cascades and the end of the chain, Eruption triggers: 5 Free Spins take place on an enlarged 8×8 grid. Every subsequent six cascades within the feature add another Free Spin."
+      }
+    ]
+  },
+  "wazdan-magic-fruit-oranges": {
+    "intro": [
+      "Magic Fruit$: Oranges uses nine independent positions without lines. In the base game, Cash Out can lock at a random position for five spins and then collect its money symbol.",
+      "Cash Infinity remains on the grid until Hold the Jackpot ends, while Chance Level offers bet-cost multipliers of x2, x4 and x6 for more frequent bonus entry. This is not Magic Fruit$: Cherries, where Cash Out can last up to fifteen spins."
+    ],
+    "editorial": "Oranges' technical record lists RTP of 96.14% and a maximum of 100x. Both belong specifically to this game rather than neighbouring Cherries with 500x. Five spins is Cash Out's duration, not a promised free-spin count.",
+    "features": [
+      {
+        "title": "Cash Out for five spins",
+        "description": "The marker can remain on a random reel for five spins and pay the bonus-symbol value at its position when the countdown ends."
+      },
+      {
+        "title": "Cash Infinity and Hold the Jackpot",
+        "description": "Cash Infinity locks on the grid until the bonus with held prize values finishes."
+      },
+      {
+        "title": "Chance Level x2/x4/x6",
+        "description": "Increasing the bet raises bonus probability but guarantees no jackpot. Buy Feature is separately listed."
+      }
+    ]
+  },
+  "playn-go-golden-caravan": {
+    "intro": [
+      "Golden Caravan uses a Caravan Master Wild that substitutes for regular reel symbols except Scatters. Three Camel Scatters on reels 1, 3 and 5 trigger 10 Free Spins.",
+      "During Free Spins, the overall multiplier starts at x2. Every new set of three Camels increases the multiplier by +1 and restarts the Free Spins counter; Camels themselves become Wilds in the bonus."
+    ],
+    "editorial": "Golden Caravan turns a retrigger into a double enhancement: three Camels simultaneously restore the full spin allowance and raise the multiplier. The sequence therefore develops in stages rather than simply getting longer.",
+    "features": [
+      {
+        "title": "Caravan Master",
+        "description": "Golden Caravan uses a Caravan Master Wild that substitutes for regular reel symbols except Scatters."
+      },
+      {
+        "title": "Camel Scatter",
+        "description": "Three Camel Scatters on reels 1, 3 and 5 trigger 10 Free Spins."
+      },
+      {
+        "title": "Progressive Free Spins",
+        "description": "During Free Spins, the overall multiplier starts at x2. Every new set of three Camels increases the multiplier by +1 and restarts the Free Spins counter; Camels themselves become Wilds in the bonus."
+      }
+    ]
+  },
+  "wazdan-magic-fruits": {
+    "intro": [
+      "Magic Fruits is the original three-reel fruit machine with five lines. A Joker appears as a small mark in a regular symbol's corner and turns it into a Bonus Symbol with the highest value.",
+      "The game promises neither Free Spins nor Hold the Jackpot: after a line payout, a standalone Gamble is available, with the win eligible for up to seven doubles."
+    ],
+    "editorial": "Magic Fruits 27's Wild and wall multiplier should not be carried over. For base Magic Fruits, Wazdan confirms RTP of 96.41% and a maximum of 40x with standard volatility.",
+    "features": [
+      {
+        "title": "Corner Joker mark",
+        "description": "When a small jester image appears on a symbol, it becomes a bonus symbol with the highest payout."
+      },
+      {
+        "title": "Five fixed lines",
+        "description": "Regular retro combinations pay on three reels; the bonus mark changes symbol value rather than line count."
+      },
+      {
+        "title": "Gamble up to seven doubles",
+        "description": "After a win, the prize can be risked separately through up to seven successive attempts to increase it."
+      }
+    ]
+  },
+  "playn-go-golden-colts": {
+    "intro": [
+      "Golden Colts opens its Bonus Game with three Scatters. In the saloon, a cylinder selects one of seven separate features: Ace High Gang, Wild Bull, Law of the Wild, Gunslingers, Poker Play, Furies or Most Wanted.",
+      "The mechanics differ: Ace High Gang uses a 4×4 Mega Symbol on reels 2–5, Wild Bull turns 1–2 reels Wild, Gunslingers awards a multiplier from x5 to x30, and Most Wanted allows posters to be opened for cash prizes and entry into other bonus features."
+    ],
+    "editorial": "Golden Colts has no single standard Free Spins mode. Its central mechanic is the seven-sector Bonus Game, where different outcomes change symbol size, Wild reels, sticky behaviour or the prize-selection format.",
+    "features": [
+      {
+        "title": "Seven bonus features",
+        "description": "Golden Colts opens its Bonus Game with three Scatters."
+      },
+      {
+        "title": "Seven outcomes",
+        "description": "In the saloon, a cylinder selects one of seven separate features: Ace High Gang, Wild Bull, Law of the Wild, Gunslingers, Poker Play, Furies or Most Wanted."
+      },
+      {
+        "title": "Most Wanted",
+        "description": "The mechanics differ: Ace High Gang uses a 4×4 Mega Symbol on reels 2–5, Wild Bull turns 1–2 reels Wild, Gunslingers awards a multiplier from x5 to x30, and Most Wanted allows posters to be opened for cash prizes and entry into other bonus features."
+      }
+    ]
+  },
+  "wazdan-magic-fruits-27": {
+    "intro": [
+      "Magic Fruits 27 retains three reels but expands the line count to 27. Instead of a small Joker on each fruit, it uses a separate Joker Wild that substitutes for other regular symbols.",
+      "A qualifying 3×3 symbol wall triggers an x3 Wall Multiplier. This is the sequel's own combination rather than the mechanic of older Magic Fruits or Magic Fruits 81."
+    ],
+    "editorial": "Wazdan confirms RTP of 96.37%, high risk and a maximum of 1104x. The x3 is a local wall multiplier rather than the overall potential win or a promise of free spins.",
+    "features": [
+      {
+        "title": "Joker Wild",
+        "description": "The Wild substitutes for standard symbols, helping form payouts across twenty-seven lines."
+      },
+      {
+        "title": "3×3 wall with x3",
+        "description": "A complete qualifying grid fill activates the Wall Multiplier, tripling the prize."
+      },
+      {
+        "title": "Separate Gamble",
+        "description": "After a line payout, the win can be risked in a mini-game; the provider lists no Free Spins."
+      }
+    ]
+  },
+  "playn-go-golden-legend": {
+    "intro": [
+      "Golden Legend uses a Golden Sycee Wild on reels 2–5. Three Dragon Scatters trigger Free Spins.",
+      "Each Free Spin adds two extra Wild symbols to reels 2–5, arranged as a stack that grows as the bonus continues. Free Spins can retrigger once for another 10 spins, up to 20 in total."
+    ],
+    "editorial": "Golden Legend makes Wild-stack accumulation a linear Free Spins progression: a longer sequence creates a denser Wild layer on the inner reels. The retrigger is limited to once.",
+    "features": [
+      {
+        "title": "Golden Sycee Wild",
+        "description": "Golden Sycee substitutes for regular symbols except Dragon Scatter and appears only on reels 2–5."
+      },
+      {
+        "title": "Dragon Free Spins",
+        "description": "Three Dragons trigger Free Spins. Every bonus spin adds two Wilds on reels 2–5, forming growing stacks."
+      },
+      {
+        "title": "Retrigger",
+        "description": "Dragons can add another 10 Free Spins once, for no more than 20 spins in one sequence."
+      }
+    ]
+  },
+  "wazdan-magic-fruits-4": {
+    "intro": [
+      "Magic Fruits 4 changes the classic three-reel structure to four reels and ten lines. A Joker appears as a small symbol mark and increases the payout of qualifying combinations.",
+      "The official version from 2014 retains retro fruit icons, Gamble up to seven doubles and straightforward line payouts. No Free Spins are stated."
+    ],
+    "editorial": "With RTP of 96.10% and a maximum of 260x, this is a separate mathematical profile that should not be mixed with Magic Fruits (3/5, 40x) or Magic Fruits 4 Deluxe, even when its figures match.",
+    "features": [
+      {
+        "title": "Four reels and ten lines",
+        "description": "Base combinations pay on ten lines rather than the original slot's five."
+      },
+      {
+        "title": "Bonus Symbol with a Joker",
+        "description": "A small mark turns a regular symbol into a higher-value symbol participating in a prize combination."
+      },
+      {
+        "title": "Gamble after a win",
+        "description": "The risk game can successively double an awarded payout up to seven times."
+      }
+    ]
+  },
+  "playn-go-golden-osiris": {
+    "intro": [
+      "Golden Osiris hides Wilds with x2, x3, x4, x5, x7 or x10 multipliers beneath highlighted symbols. If several multiplier Wilds participate in one combination, only the highest applies.",
+      "The Pyramid charges after 25 winning symbols and selects a symbol that spreads to neighbouring positions. Retriggering the Pyramid activates an Expansion Win Multiplier of x3, which can continue growing up to x30."
+    ],
+    "editorial": "Golden Osiris connects two independent multiplier mechanics: hidden Wilds use only the highest value in a particular win, while Pyramid progression grows through repeated charges. During Free Spins, the Pyramid starts fully charged on every spin.",
+    "features": [
+      {
+        "title": "Hidden Multiplier Wilds",
+        "description": "Wilds with x2, x3, x4, x5, x7 or x10 hide beneath highlighted symbols; when several multipliers participate in a win, the highest applies."
+      },
+      {
+        "title": "Pyramid charged by symbols",
+        "description": "25 winning symbols charge the Pyramid: a selected symbol spreads to neighbouring positions, while repeated charges increase the Expansion Multiplier from x3 up to x30."
+      },
+      {
+        "title": "Pyramid in the bonus",
+        "description": "Three Scatters open five Free Spins. The Pyramid starts each one fully charged, without collecting 25 symbols again."
+      }
+    ]
+  },
+  "wazdan-magic-fruits-4-deluxe": {
+    "intro": [
+      "Magic Fruits 4 Deluxe updates the fourth game's presentation without adding a fifth reel: four reels and ten lines remain. A small Joker image in a corner identifies the value-enhancing Bonus Symbol.",
+      "Three or four symbols carrying this mark on a horizontal winning line count as matching even if their illustrated fruits differ. After the payout, a Gamble box choice is available."
+    ],
+    "editorial": "Wazdan confirms the same 96.10% and 260x as Magic Fruits 4, but Deluxe's date is December 1, 2017. Updated graphics should not be presented as new bonus mathematics.",
+    "features": [
+      {
+        "title": "Three to four Joker marks",
+        "description": "Joker-marked fruits can count as matching when a horizontal winning combination pays."
+      },
+      {
+        "title": "Updated Deluxe presentation",
+        "description": "The fruit background graphics and animations change, while the base 4×10 structure remains."
+      },
+      {
+        "title": "Two-box Gamble",
+        "description": "One box holds a fruit prize and the other a loss; successful attempts can double the win up to seven times in succession."
+      }
+    ]
+  },
+  "playn-go-golden-ticket": {
+    "intro": [
+      "The original Golden Ticket runs on a 5×5 grid. A win forms from 3+ matching symbols in a horizontal or vertical row; winning symbols disappear, remaining ones fall down, and the drop multiplier increases with every new cascade.",
+      "When a three-symbol combination is removed, a Golden Ticket Wild appears in its centre. Clearing a whole BONUS column triggers Free Game: wins there form from 5+ matching symbols anywhere on the grid, and the number of cleared BONUS columns sets the multiplier."
+    ],
+    "editorial": "Golden Ticket changes how wins are counted on entering the bonus: the base game uses horizontal/vertical lines on 5×5, while Free Game uses scatter-style matches of 5+ anywhere. This differs fundamentally from Golden Ticket 2.",
+    "features": [
+      {
+        "title": "Wins on the 5×5 grid",
+        "description": "Three matching symbols horizontally or vertically award a win; after removal, remaining symbols fall down."
+      },
+      {
+        "title": "Cascades and Golden Ticket Wild",
+        "description": "Successive cascades increase the drop multiplier, while a three-symbol win can create a Golden Ticket Wild in the centre."
+      },
+      {
+        "title": "BONUS columns",
+        "description": "A cleared BONUS column triggers Free Game, where wins count five or more matching symbols anywhere, unlike Golden Ticket 2."
+      }
+    ]
+  },
+  "wazdan-magic-fruits-81": {
+    "intro": [
+      "Magic Fruits 81 uses four reels; Wazdan's description mentions seven initial lines that the Joker Wild can expand to 81. Game Info separately lists 4 / 81.",
+      "The slot remains a retro game without standalone Hold the Jackpot: the Wild substitutes for regular symbols, while the maximum payout reaches 2240x."
+    ],
+    "editorial": "The official page contains two line-count formulations: ‘7 (or 81)’ in the text and ‘81’ in Game Info. The record retains the explanation that the increase is tied to the Wild rather than incorrectly implying a static count.",
+    "features": [
+      {
+        "title": "Wild increases line count",
+        "description": "The Joker substitutes for base symbols and, according to the official description, opens up to 81 lines."
+      },
+      {
+        "title": "Four retro-format reels",
+        "description": "The grid differs from the 3×27 layout in Magic Fruits 27 despite the shared fruit theme."
+      },
+      {
+        "title": "Gamble and maximum 2240x",
+        "description": "A separate risk game is available; 2240x is the stated overall ceiling rather than one Wild's multiplier."
+      }
+    ]
+  },
+  "playn-go-golden-ticket-2": {
+    "intro": [
+      "Golden Ticket 2 also uses a 5×5 cascading grid but adds Standard Wilds and x2/x3 Multiplier Wilds. The Wild Meter charges through character-symbol combinations: matches of 3, 4 or 5 fill 1, 2 or 3 sections respectively.",
+      "Each round, one row becomes the Bonus Row. Clearing it completely opens a choice: 5 Free Spins with an x3 Multiplier Wild, 7 with x2 or 9 with x1. A filled meter during the bonus awards a Win Spin with a 2×2 Wild."
+    ],
+    "editorial": "Golden Ticket 2 retains the grid/cascade foundation but completely rewrites the original's bonus. The old 5+ anywhere mode is absent: the key elements are a character-linked Wild Meter, Bonus Row and a choice between Free Spins duration and Wild strength.",
+    "features": [
+      {
+        "title": "Wild Meter and Multiplier Wilds",
+        "description": "Standard Wilds and x2/x3 Wilds participate in 5×5 matches. Three, four or five character symbols fill one, two or three Wild Meter sections."
+      },
+      {
+        "title": "Bonus Row and sequence choice",
+        "description": "A completely cleared Bonus Row opens a choice of 5 Free Spins with an x3 Wild, 7 with x2 or 9 with x1."
+      },
+      {
+        "title": "2×2 Wild Win Spin",
+        "description": "Filling the Wild Meter during Free Spins opens a Win Spin with a 2×2 Wild. This is a separate bonus from the first game's Free Game."
+      }
+    ]
+  },
+  "wazdan-magic-fruits-deluxe": {
+    "intro": [
+      "Magic Fruits Deluxe updates the three-reel Magic Fruits visuals while retaining five lines and a small Joker mark on regular symbols. This Bonus Symbol has the highest value.",
+      "Unlike version 27, it has no Wall Multiplier or extra lines, and its only separate risk mechanic is Gamble after a winning combination."
+    ],
+    "editorial": "The release on September 15, 2017 confirms a separate Deluxe presentation, but the mathematical profile remains RTP of 96.41% and 40x. Free Spins should not be added for artificial variety.",
+    "features": [
+      {
+        "title": "Bonus Joker mark",
+        "description": "A miniature jester appears over regular symbols and turns them into the highest-paying ones."
+      },
+      {
+        "title": "Three reels and five lines",
+        "description": "The simple fruit grid does not gain 27 lines or additional reels."
+      },
+      {
+        "title": "Colour-prediction Gamble",
+        "description": "After a win, the player can risk the amount in a separate choice to try doubling it."
+      }
+    ]
+  },
+  "playn-go-grannys-wild": {
+    "intro": [
+      "Granny’s Wild collects Coin symbols in a Coin Collection Jar. Each collected Coin can award a Scratch’n Win ticket; in the mini-game, the first three matching symbols determine the reward.",
+      "Scratch’n Win can open a Turbo Scooter re-spin with sticky Coins or Granny’s Wild, which turns all Coins on the reels into Wilds. Six Coins trigger HOLD’N WIN with three respins, and every new Coin or ticket resets the counter to three."
+    ],
+    "editorial": "Granny’s Wild connects collection, scratch cards and Hold’n Win into one chain. GO ULTRA specifically changes the HOLD’N WIN entry condition, reducing the threshold from six Coin symbols to five.",
+    "features": [
+      {
+        "title": "Coin Jar and Scratch’n Win",
+        "description": "Collected Coins enter the Jar and can award a Scratch’n Win ticket; the first three matching ticket symbols determine the prize."
+      },
+      {
+        "title": "Turbo Scooter and Granny’s Wild",
+        "description": "A scratch ticket can open a Turbo Scooter re-spin with sticky Coins or an effect turning all Coins on the grid Wild."
+      },
+      {
+        "title": "HOLD’N WIN",
+        "description": "Six Coins trigger HOLD’N WIN with three respins replenished by a new Coin or ticket. GO ULTRA reduces the entry threshold to five."
+      }
+    ]
+  },
+  "wazdan-magic-fruits-dice": {
+    "intro": [
+      "Magic Fruits Dice is a separate 2026 release with three reels and five lines. Instead of a Joker Wild, it uses a Special Symbol appearing beside low-paying symbols.",
+      "When three qualifying jester-marked symbols land on one line, the combination pays as the highest symbol. Official Game Info has neither Free Spins nor a separate jackpot."
+    ],
+    "editorial": "Dice has the same top payout of 40x and RTP of 96.41% as base Magic Fruits, but its separate date of March 12, 2026 and Special Symbol mechanic require its own record.",
+    "features": [
+      {
+        "title": "Special Symbol on low-paying symbols",
+        "description": "A jester appears on a low-paying symbol, making it special for a line payout."
+      },
+      {
+        "title": "Three special symbols on a line",
+        "description": "Three qualifying symbols can award the highest payout without a standalone bonus round."
+      },
+      {
+        "title": "Volatility Levels",
+        "description": "The provider confirms an adjustable volatility profile but does not list Free Spins."
+      }
+    ]
+  },
+  "playn-go-grim-muerto": {
+    "intro": [
+      "Grim Muerto uses Marco Siniestro: highlighted reels can expand a Guitar Wild and thereby increase winning combinations. Second Chance offers a choice of a Mariachi Band member to reveal a prize.",
+      "Three Book symbols trigger El Libro de los Muertos Free Spins. Within the bonus, two to five reels can be highlighted, and a separate outcome can add an Extra Wild."
+    ],
+    "editorial": "Grim Muerto builds its bonuses around Mariachi imagery but separates their mechanics: Marco Siniestro handles expanding Guitar Wilds, Second Chance handles a pick selection, and Books open a separate Free Spins mode.",
+    "features": [
+      {
+        "title": "Marco Siniestro",
+        "description": "A Guitar Wild can expand on highlighted reels, creating additional winning combinations."
+      },
+      {
+        "title": "Second Chance Mariachi",
+        "description": "In Second Chance, the player selects a Mariachi Band member and reveals a prize instead of a standard spin."
+      },
+      {
+        "title": "El Libro de los Muertos",
+        "description": "Three Book symbols trigger Free Spins with two to five highlighted reels and a chance of an Extra Wild."
+      }
+    ]
+  },
+  "wazdan-magic-hot": {
+    "intro": [
+      "Magic Hot is a simple three-reel machine with five lines and retro fruit icons. Its main cycle consists of regular line payouts, without a permanent Wild or Hold the Jackpot.",
+      "Wazdan's only highlighted additional round is Gamble: the player predicts a card symbol and can try doubling a win seven times in succession."
+    ],
+    "editorial": "Game Info lists a maximum win of 1000x and RTP of 96.35%, very different from the maximum of 260x in Magic Hot 4. The sequel's reel count should not be carried into the original.",
+    "features": [
+      {
+        "title": "Classic five lines",
+        "description": "Three reels and five lines without extra bonus grids determine all base payouts."
+      },
+      {
+        "title": "Card-prediction Gamble",
+        "description": "After a payout, the correct card symbol can be selected, risking the prize for a double."
+      },
+      {
+        "title": "Seven successive attempts",
+        "description": "The official Gamble permits up to seven successful doubles, but this is not a separately stated single-spin maximum win."
+      }
+    ]
+  },
+  "playn-go-hammerfall": {
+    "intro": [
+      "HammerFall is a cascading grid slot with cluster wins of 5+ symbols. Super Tiles are marked randomly behind the grid; a win at such a position creates a Lightning Wild that stays on the grid and can have a Win Multiplier up to x3.",
+      "Winning symbols charge the Hammer Meter. At 25 symbols, a Song Feature from one of the Worlds triggers, while the meter can overcharge to 50 for Hammer High—a separate free round in which Song Features run sequentially before moving into the next World."
+    ],
+    "editorial": "HammerFall uses its meter as a route through Worlds rather than simply a counter to one bonus. Song Features change the grid differently: a Mega Wild, transformation of high pays or destruction of low pays.",
+    "features": [
+      {
+        "title": "Super Tiles and clusters",
+        "description": "Five or more matching symbols form a cluster; a win on a Super Tile creates a persistent Lightning Wild with a multiplier up to x3."
+      },
+      {
+        "title": "Hammer Meter",
+        "description": "25 winning symbols charge the Hammer Meter to a Song Feature; 50 symbols award the separate Hammer High mode."
+      },
+      {
+        "title": "Song Features and Worlds",
+        "description": "Each World uses its own effects: a Mega Wild, transformation of high-paying symbols or removal of low-paying ones. Hammer High runs several Song Features sequentially."
+      }
+    ]
+  },
+  "wazdan-magic-hot-4": {
+    "intro": [
+      "Magic Hot 4 expands the older Magic Hot to four reels and ten lines. A small wizard Bonus Symbol appears on fruit icons, increasing their prize value.",
+      "Official Game Info retains a retro structure and post-win Gamble but confirms neither Scatter Free Spins nor a wall multiplier from other Wazdan releases."
+    ],
+    "editorial": "With RTP of 96.10% and a maximum of 260x, this version differs substantially from three-reel Magic Hot (1000x). The original's high payout should not automatically carry into the fourth version.",
+    "features": [
+      {
+        "title": "Four reels",
+        "description": "Ten lines form combinations instead of the original Magic Hot's five lines."
+      },
+      {
+        "title": "Wizard Bonus Symbol",
+        "description": "A small wizard on a regular fruit icon turns it into a special higher-value symbol."
+      },
+      {
+        "title": "Gamble separate from lines",
+        "description": "Attempts to double a win follow a regular spin and do not imply Free Spins."
+      }
+    ]
+  },
+  "playn-go-happy-halloween": {
+    "intro": [
+      "Happy Halloween uses five reels and up to 50 paylines. A Phantom can stack on any reel, while Jacky the Wild Jack o’ Lantern substitutes for symbols in winning combinations.",
+      "Three or more Witch Scatters award x4 the total bet and trigger 10 Free Spins. Each Free Spin adds another two Wild Pumpkins to reels 2–5; a new Scatter set can award an additional 10 spins."
+    ],
+    "editorial": "Happy Halloween strengthens its bonus through a fixed Wild inflow: every Free Spin adds two Pumpkin Wilds to the inner reels. A retrigger awards another complete block of ten spins.",
+    "features": [
+      {
+        "title": "Phantom and Jacky Wild",
+        "description": "A Phantom can appear stacked on any reel; Jacky the Wild Jack o’ Lantern substitutes for regular symbols in combinations."
+      },
+      {
+        "title": "Witch Scatter",
+        "description": "Three or more Witch Scatters award x4 the total bet and trigger ten Free Spins."
+      },
+      {
+        "title": "Pumpkin Wild and retrigger",
+        "description": "Every Free Spin adds another two Pumpkin Wilds to reels 2–5. New Witch Scatters can award an additional ten spins."
+      }
+    ]
+  },
+  "wazdan-magic-hot-4-deluxe": {
+    "intro": [
+      "Magic Hot 4 Deluxe moves four reels and ten lines into a dark castle. A small wizard can appear in regular symbols' corners and make them equivalent for a high-paying combination.",
+      "Four marked icons on a horizontal line open the maximum bonus prize; the provider also counts a qualifying group of three from such a combination. After a win, a two-box Gamble is available."
+    ],
+    "editorial": "Deluxe retains RTP of 96.10% and a ceiling of 260x. Its main differences are castle graphics and the specific Wizard Bonus Symbol rule rather than new Free Spins.",
+    "features": [
+      {
+        "title": "Small Wizard Bonus",
+        "description": "The wizard mark increases a regular fruit symbol's value without becoming a standalone reel."
+      },
+      {
+        "title": "Four marked symbols",
+        "description": "A combination of four wizard icons along a line raises the award; a group of three also counts under the relevant conditions."
+      },
+      {
+        "title": "Two-box Gamble",
+        "description": "One box hides a fruit and the other a beetle; successful choices can double a win up to seven times."
+      }
+    ]
+  },
+  "playn-go-helloween": {
+    "intro": [
+      "Helloween uses 10 paylines and Keeper of the Seven Keys. Three Scatters on reels 1, 3 and 5 trigger a feature wheel with seven outcomes, each tied to a separate band song.",
+      "I’m Alive makes Wilds sticky and expanding, Future World turns them into full-reel Wilds, Eagle Fly Free adds a moving Wild, Dr Stein transforms a selected royal symbol, March of Time moves held Wilds leftwards, and I Want Out expands them to 2×2. A separate Helloween outcome awards 7 Free Spins instead of the usual 5."
+    ],
+    "editorial": "Helloween has seven song-specific modes rather than one Free Spins template. After a feature ends, a Helloween Multiplier can additionally activate with a random value up to x10 on the accumulated bonus win.",
+    "features": [
+      {
+        "title": "Keeper of the Seven Keys",
+        "description": "Scatters on reels 1, 3 and 5 trigger a wheel of seven song features; most award five Free Spins, while the separate Helloween feature awards seven."
+      },
+      {
+        "title": "Song-based Wild modes",
+        "description": "I’m Alive locks and expands Wilds, Future World turns a reel Wild, Eagle Fly Free provides a moving Wild, and I Want Out expands a Wild to 2×2."
+      },
+      {
+        "title": "Transformations and multiplier",
+        "description": "Dr Stein changes a royal symbol, while March of Time moves held Wilds leftwards. A Helloween Multiplier up to x10 is possible after the bonus."
+      }
+    ]
+  },
+  "wazdan-magic-of-the-ring": {
+    "intro": [
+      "Magic Of The Ring uses five reels and twenty lines, while the magical ring Scatter additionally pays combinations outside regular lines.",
+      "Three or more rings trigger 10 Free Spins with a randomly selected Expanding Bonus Symbol that can occupy a whole reel and pay matches anywhere."
+    ],
+    "editorial": "The main distinction is avoiding confusion between the ring Scatter and a standard Wild: the official text also describes ring substitution in combinations. The maximum win of 5150x applies to the whole game.",
+    "features": [
+      {
+        "title": "Ring Scatter",
+        "description": "Rings pay independently of lines and can help regular combinations under a special rule."
+      },
+      {
+        "title": "Ten Free Spins",
+        "description": "Three or more Scatters activate the bonus; a special bonus symbol is determined before the round."
+      },
+      {
+        "title": "Expanding Bonus Symbol",
+        "description": "The selected symbol expands across its entire reel during Free Spins, creating separate payouts."
+      }
+    ]
+  },
+  "playn-go-highway-legends": {
+    "intro": [
+      "Highway Legends uses several Wild forms. Rider on Horseback acts as a Stacked Wild, Lady Pearl as a Sticky Wild, and Gold Plaque as a Standard Wild. Money Bag symbols on reels 1–4 carry cash values, and a collector landing on reel 5 takes their sum.",
+      "Three Golden Pistol Scatters trigger Free Spins. If only two land, reel 5 receives a Re-Spin to try for the third. Lady Pearl Wilds can remain on the reels throughout the feature, while Swift Rick can stack up to four Wilds on one reel."
+    ],
+    "editorial": "Highway Legends assigns characters distinct Wild roles: Pearl handles sticky accumulation, while Rick handles stacked Wilds. Cash Bags form a separate collection layer independent of Free Spins.",
+    "features": [
+      {
+        "title": "Different Wild roles",
+        "description": "Rider on Horseback is a Stacked Wild, Lady Pearl a Sticky Wild, and Gold Plaque a Standard Wild. Swift Rick can stack up to four Wilds on one reel."
+      },
+      {
+        "title": "Money Bags and Collector",
+        "description": "Money Bags on reels 1–4 carry money values, and a Collector landing on the fifth reel collects the sum."
+      },
+      {
+        "title": "Golden Pistol Free Spins",
+        "description": "Three Golden Pistol Scatters trigger Free Spins; with two Scatters, the fifth reel receives an extra Re-Spin for the third."
+      }
+    ]
+  },
+  "wazdan-magic-of-the-ring-deluxe": {
+    "intro": [
+      "Magic of the Ring Deluxe reworks the original slot into a magical forest. Five reels and twenty lines accompany the same central round of 10 Free Spins opened by three rings.",
+      "During free spins, a preselected Expanding Bonus Symbol covers entire reels; the ring Scatter additionally acts as a Wild, and Free Spins can retrigger."
+    ],
+    "editorial": "Deluxe has the same RTP of 96.47% and maximum of 5150x as the original but its own release date of June 13, 2018. Deluxe's long official text incorrectly mentions 10 lines while Game Info and the record give 20; the source discrepancy is noted.",
+    "features": [
+      {
+        "title": "Three ring Scatters",
+        "description": "Three Scatters anywhere award 10 free spins."
+      },
+      {
+        "title": "Ring Wild during Free Spins",
+        "description": "During the bonus, the ring can also substitute for other symbols, and the bonus allows retriggers."
+      },
+      {
+        "title": "Expanding Bonus Symbol",
+        "description": "Before Free Spins begin, a symbol is selected that can spread across an entire reel."
+      }
+    ]
+  },
+  "playn-go-holiday-season": {
+    "intro": [
+      "Holiday Season uses a Gift Wild occupying all three reel positions and substituting for regular symbols. A Gamble round predicting a card's colour or suit is also available.",
+      "Three or more Champagne Scatters trigger 5 Win Spins. Each guarantees at least one winning combination; new Scatters can extend the sequence up to 20 consecutive Win Spins."
+    ],
+    "editorial": "Holiday Season specifically uses Win Spins rather than regular Free Spins: every bonus spin guarantees a win. Retriggers extend the sequence, but the provider caps it at twenty spins.",
+    "features": [
+      {
+        "title": "Gift Wild",
+        "description": "The Wild gift covers all three reel positions and helps form line wins."
+      },
+      {
+        "title": "Champagne Win Spins",
+        "description": "Three or more Champagne Scatters trigger five Win Spins, each with a guaranteed combination; new Scatters can extend the sequence to 20."
+      },
+      {
+        "title": "Card Gamble Round",
+        "description": "After a win, a face-down card's colour or suit can be predicted to increase the prize in a separate Gamble game."
+      }
+    ]
+  },
+  "wazdan-magic-stars": {
+    "intro": [
+      "Magic Stars is the original three-reel space-themed retro game with five lines. Unlike Magic Stars 3, its main additional symbol is a Bonus Symbol rather than a separate full Wild.",
+      "After a win, the player can activate Gamble and attempt to increase the prize through successive doubles; no Free Spins are stated for the original version."
+    ],
+    "editorial": "With RTP of 96.25%, maximum win of 40x and low–medium volatility, the original should not be confused with Magic Stars 9, which already has nine reels and two bonus rounds.",
+    "features": [
+      {
+        "title": "Bonus star symbol",
+        "description": "The Bonus Symbol changes the value of a qualifying symbol on the small retro grid."
+      },
+      {
+        "title": "Three reels and five lines",
+        "description": "Regular line matches form the payout foundation without complex jackpot collectors."
+      },
+      {
+        "title": "Gamble up to seven attempts",
+        "description": "After a win, the prize can be risked for a double; the mechanic is different from Free Spins."
+      }
+    ]
+  },
+  "playn-go-holiday-spirits": {
+    "intro": [
+      "Holiday Spirits centres on five lines, a Scrooge Wild and a multiplier system. On a random spin, Ebenezer’s Clock can assign x2, x3, x4, x5 or x10, while Ebenezer’s Gift doubles the awarded multiplier.",
+      "Win Spins activate when a non-winning spin lands two stacked reels of one symbol and a multiplier is assigned simultaneously. Christmas Past decreases it to a minimum of x2, Present retains its value, and Future increases it to a maximum of x10 until a win is obtained."
+    ],
+    "editorial": "Holiday Spirits uses three versions of a guaranteed Win Spin rather than a regular Free Spins package. The key difference between spirits is multiplier behaviour during re-spins, while Ebenezer’s Gift can additionally double it.",
+    "features": [
+      {
+        "title": "Ebenezer’s Clock",
+        "description": "Scrooge Wild helps on five lines; Ebenezer’s Clock can assign an x2, x3, x4, x5 or x10 multiplier."
+      },
+      {
+        "title": "Ebenezer’s Gift",
+        "description": "The Gift doubles the awarded multiplier, including multipliers during Win Spins."
+      },
+      {
+        "title": "Past, Present and Future",
+        "description": "During Win Spins, Past decreases the multiplier to a minimum of x2, Present retains it, and Future increases it to a maximum of x10 until the guaranteed win."
+      }
+    ]
+  },
+  "wazdan-magic-stars-3": {
+    "intro": [
+      "Magic Stars 3 retains three reels and five lines but replaces the original Bonus Symbol with a rainbow star Wild. It substitutes for regular symbols in line wins.",
+      "A separate Gamble offers a star choice after a prize. A correct choice doubles the amount; an error turns the star to dust and loses the current win."
+    ],
+    "editorial": "Magic Stars 3 has a maximum of 200x and RTP of 96.50%, a different technical profile from original Magic Stars (40x, 96.25%). Free Spins are also unconfirmed here.",
+    "features": [
+      {
+        "title": "Rainbow star Wild",
+        "description": "Substitutes for regular symbols, allowing a line prize across five lines."
+      },
+      {
+        "title": "Star-choice Gamble",
+        "description": "If the star is a winner, the award doubles; failure loses the prize being risked."
+      },
+      {
+        "title": "Up to seven doubles",
+        "description": "The risk game can continue for up to seven successful attempts, separately from the main spin."
+      }
+    ]
+  },
+  "playn-go-holy-moo-extreme-power": {
+    "intro": [
+      "Holy Moo! Extreme Power runs on a 6×6 grid with cluster pays: five or more adjacent symbols award a win, winning positions clear, and new symbols cascade from above. After a cluster win, the corresponding positions receive persistent frames.",
+      "Divine Moo-ment turns marked frames into coin values when Moo-ighty Zeus appears as a Collector. The Collector Path gradually unlocks new Collector types, while separate Scatters/Super Scatters lead to six Free Spins or the enhanced Olympian Spins mode."
+    ],
+    "editorial": "Progression is functional here: the Collector Path changes the available Collector set as accumulation advances, and the same persistent frames can be collected repeatedly by several Collectors within one cascade sequence.",
+    "features": [
+      {
+        "title": "Cluster Frames",
+        "description": "On a 6×6 grid, five or more adjacent symbols create a cluster win and cascade, while winning positions leave persistent frames."
+      },
+      {
+        "title": "Divine Moo-ment and Collectors",
+        "description": "Moo-ighty Zeus turns frames into coin values and collects them; the Collector Path unlocks additional Collector types."
+      },
+      {
+        "title": "Olympian Spins",
+        "description": "Regular Scatters award six Free Spins, while Super Scatters open enhanced Olympian Spins. Frames can be collected again within the cascade chain."
+      }
+    ]
+  },
+  "wazdan-magic-stars-5": {
+    "intro": [
+      "Magic Stars 5 expands the series to five reels and twenty lines without adding Free Spins. Its main bonus symbol is a star Scatter paying for three or more symbols anywhere.",
+      "Gamble allows attempts to double a win up to seven times. The technical record lists low–medium volatility and a maximum of 305x."
+    ],
+    "editorial": "Wazdan explicitly describes the Scatter here as a money payout without new bonus modes. Free Spins x3 from Magic Stars 6 or Infinite Multiplier from Magic Stars 9 should not be copied over.",
+    "features": [
+      {
+        "title": "Three Scatters anywhere",
+        "description": "Three or more Scatters award a direct money prize without triggering free spins."
+      },
+      {
+        "title": "Five reels and twenty lines",
+        "description": "Regular combinations pay on twenty lines without changing the Scatter's nature."
+      },
+      {
+        "title": "Gamble up to seven doubles",
+        "description": "The additional risk game operates only after a win has already been awarded."
+      }
+    ]
+  },
+  "playn-go-honey-rush": {
+    "intro": [
+      "Honey Rush uses a hexagonal cascading grid of 37 positions. A cluster of five or more adjacent matching symbols forms a win; after paying, the cluster disappears and new symbols fall into the empty positions.",
+      "The Rush Meter fills with the number of symbols in winning clusters. Its levels introduce sticky Honeypot Wilds with x1/x2/x3, a Drone Colony and, at the fourth level, a Queen Colony capable of creating a cluster of at least 20 symbols."
+    ],
+    "editorial": "The original Honey Rush builds its bonus around four Rush Meter levels and Honeypot Wild accumulation. Worker/Drone/Queen Colonies are continuations of the current cascade sequence rather than separate Free Spins.",
+    "features": [
+      {
+        "title": "37 hexagonal positions",
+        "description": "Five or more adjacent matching symbols on a hexagonal grid of 37 cells create a cluster win and start a cascade."
+      },
+      {
+        "title": "Rush Meter and Honeypot Wilds",
+        "description": "Wins fill four Rush Meter levels, adding sticky Honeypot Wilds with x1, x2 and x3 multipliers."
+      },
+      {
+        "title": "Drone and Queen Colony",
+        "description": "Drone Colony and Queen Colony unlock at later levels; Queen Colony can create a cluster of at least 20 symbols."
+      }
+    ]
+  },
+  "wazdan-magic-stars-6": {
+    "intro": [
+      "Magic Stars 6 moves its space symbols onto six reels and twenty lines. Unlike the fifth instalment, its Scatter opens Free Spins rather than only a direct reward.",
+      "Three or more Scatters trigger up to thirty free spins with an x3 multiplier on every win. Scatters can retrigger the bonus during the sequence."
+    ],
+    "editorial": "The sixth instalment has RTP of 96.49%, low volatility and a maximum of 750x. The triple bonus multiplier is not equivalent to 750x, while round duration depends on Scatters.",
+    "features": [
+      {
+        "title": "Three Scatters trigger Free Spins",
+        "description": "Three or more special symbols open a bonus of up to 30 spins."
+      },
+      {
+        "title": "Multiplier x3 on all Free Spins",
+        "description": "Bonus-round wins are tripled under a special rule."
+      },
+      {
+        "title": "Wild and bonus retrigger",
+        "description": "The Wild substitutes for regular symbols, while Scatters can add another bonus round."
+      }
+    ]
+  },
+  "playn-go-honey-rush-100": {
+    "intro": [
+      "Honey Rush 100 retains the hexagonal cluster grid but rebuilds progression around Sticky Wilds and the Overcharge Meter. Random Wild can add two to four Wilds at random positions.",
+      "A Sticky Wild participating in a winning cluster moves towards the lowest free position and stays in play until it reaches the bottom cells. Entering the Honey Pot increases the Multiplier; Overcharge units upgrade the central symbol and award additional multiplier bonuses."
+    ],
+    "editorial": "Honey Rush 100's main difference from the first game goes beyond the number 100 in its title. Wilds physically move down the grid towards the Honey Pot, while the Overcharge Meter turns their journey into separate multiplier progression.",
+    "features": [
+      {
+        "title": "Random Wild",
+        "description": "Random Wild adds two to four Wilds to different hexagonal grid cells, unlike the first game's Rush Meter."
+      },
+      {
+        "title": "Sticky Wild in the Honey Pot",
+        "description": "After a winning cluster, a Sticky Wild moves towards the lowest free position; entering the Honey Pot increases the Multiplier."
+      },
+      {
+        "title": "Overcharge Meter",
+        "description": "Overcharge units enhance the central symbol and add multiplier bonuses without repeating the original's Colony mechanic."
+      }
+    ]
+  },
+  "wazdan-magic-stars-9": {
+    "intro": [
+      "Magic Stars 9 uses nine separate positions on a 3×3 grid without traditional lines. Three Free Bonus Symbols across the central horizontal row award nine spins with an Infinite Multiplier.",
+      "A separate set of three Star Bonus Symbols across that same central row opens Star Spins: starting and new stars lock, and their values collect at the end of nine spins."
+    ],
+    "editorial": "This is different from the nine in Lucky 9's title: there are two separate bonuses and a top result of 10,500x with high risk. The Infinite Multiplier starts at x1 and grows through winning spins.",
+    "features": [
+      {
+        "title": "Infinite Multiplier Free Spins",
+        "description": "Three Free Bonus symbols across the middle award nine spins; the multiplier starts at x1, increases by one after a win, and a +3FS symbol extends the sequence."
+      },
+      {
+        "title": "Star Spins with holding",
+        "description": "Three Star Bonus symbols open nine spins, while additional stars remain on the grid until prizes are summed."
+      },
+      {
+        "title": "Block Symbols Mode",
+        "description": "Symbols can be locked for the next spin; the game offers automatic locking with manual adjustment available."
+      }
+    ]
+  },
+  "playn-go-honey-rush-black-and-yellow": {
+    "intro": [
+      "Honey Rush Black and Yellow uses a seven-reel hexagonal grid with cluster pays and cascades. Winning symbols charge the Rush Meter, which sequentially opens Drone, Worker and Queen Colonies to create new clusters.",
+      "Walking Wilds stay on the grid, move to a new free position after a winning cascade and gain strength. Cash Symbols reveal multipliers; if they did not join a cluster, the Bee collects them and can randomly award an instant bonus as they accumulate."
+    ],
+    "editorial": "This version does not copy Honey Rush 100's Overcharge Meter. Its distinct combination is Rush Meter + Walking Wilds + Bee Cash Collect, so Wild movement and collection of unused Cash Symbols form their own cycle.",
+    "features": [
+      {
+        "title": "Rush Meter and Colony",
+        "description": "Cluster wins on the hexagonal grid charge the Rush Meter and open Drone, Worker and Queen Colonies."
+      },
+      {
+        "title": "Walking Wilds",
+        "description": "A Walking Wild stays on the grid after a winning cascade, moves to a free position and gradually gains strength."
+      },
+      {
+        "title": "Bee Cash Collect",
+        "description": "Cash Symbols reveal multipliers, while the Bee collects non-winning Cash Symbols and can randomly award an instant bonus."
+      }
+    ]
+  },
+  "wazdan-magic-target": {
+    "intro": [
+      "Magic Target brings a retro fruit grid to five reels and twenty lines. The Joker Wild can substitute for regular symbols, while the bomb Scatter handles bonus spins.",
+      "Free Spins have a special x2 Multiplier Symbol: it doubles qualifying bonus payouts rather than being a standalone maximum win of 1250x."
+    ],
+    "editorial": "The original Magic Target released in 2014 and differs from Deluxe in presentation rather than official RTP or maximum win. The bonus x2 should not be confused with a regular Wild.",
+    "features": [
+      {
+        "title": "Bomb Scatter",
+        "description": "Three or more Scatters trigger Free Spins with an additional multiplier."
+      },
+      {
+        "title": "Special x2 Multiplier",
+        "description": "During the bonus round, a separate symbol can double a qualifying payout."
+      },
+      {
+        "title": "Joker Wild",
+        "description": "Substitutes for standard symbols on five reels and twenty lines."
+      }
+    ]
+  },
+  "playn-go-hooligan-hustle": {
+    "intro": [
+      "Hooligan Hustle uses Dynamic Payways: symbols can split, while reel payway multipliers increase the number of ways to form a win. A Rumble Row above the reels activates on selected spins.",
+      "Rumble Row can award an x2 Multiplier, Wild Reel or Double Trouble. The three Free Spin modes are Lairy!, Riot! and Anarchy!, so the bonus is divided into several scenarios rather than one general mode."
+    ],
+    "editorial": "Hooligan Hustle's key mechanic is payway growth through split symbols and reel multipliers. Rumble Row changes a particular spin, while three named Free Spin modes develop that Dynamic Payways layer within the bonus.",
+    "features": [
+      {
+        "title": "Dynamic Payways",
+        "description": "Split symbols and reel multipliers expand the number of ways to win instead of fixed paylines."
+      },
+      {
+        "title": "Rumble Row",
+        "description": "The Rumble Row above the reels can award an x2 Multiplier, Wild Reel or Double Trouble on an individual spin."
+      },
+      {
+        "title": "Lairy!, Riot! and Anarchy!",
+        "description": "The game has three separate Free Spins modes—Lairy!, Riot! and Anarchy!—developing Dynamic Payways through different scenarios."
+      }
+    ]
+  },
+  "wazdan-magic-target-deluxe": {
+    "intro": [
+      "Magic Target Deluxe completely updates the circus slot's audiovisual presentation while retaining five reels, twenty lines and the original bonus rules.",
+      "Three bomb Scatters trigger free spins with an x2 multiplier symbol, while a cheerful Joker Wild substitutes for other regular symbols."
+    ],
+    "editorial": "Deluxe's RTP of 96.63% and maximum of 1250x match the original. Its separate date of June 9, 2017 marks a new visual release rather than a Free Spins mechanic change.",
+    "features": [
+      {
+        "title": "Three bomb Scatters",
+        "description": "Three or more bomb-shaped Scatters activate free spins."
+      },
+      {
+        "title": "Free Spins with x2 Multiplier",
+        "description": "A separate special symbol doubles qualifying bonus wins."
+      },
+      {
+        "title": "Joker Wild and updated circus",
+        "description": "The Wild substitutes for regular symbols; Deluxe differs from the original through reworked presentation and effects."
+      }
+    ]
+  },
+  "playn-go-hope-unleashed-fortune-rises": {
+    "intro": [
+      "Hope Unleashed Fortune Rises uses Mystery Symbols that can reveal a Magic Circle. After wins are calculated, the Magic Circle summons Pandora as an Expanding Wild and triggers a Re-Spin; another Circle continues the chain and can raise the Wild Multiplier up to x5.",
+      "Souls attach to regular symbols, while Mystery reveals during Free Spins can create Spirit Orbs. If Souls are already present, Orbs can activate an Instant Bonus; a separate Pandora’s Box also depends on the number of Souls on the reels."
+    ],
+    "editorial": "The game combines two parallel systems: Magic Circle Re-Spins with a growing Expanding Wild and Soul-based instant prizes. A Re-Spin chain is capped at 30, making this a distinct progression mechanic rather than endless respins.",
+    "features": [
+      {
+        "title": "Magic Circle",
+        "description": "Mystery Symbols can reveal a Magic Circle, which summons Pandora Expanding Wild and triggers a Re-Spin."
+      },
+      {
+        "title": "Wild Multiplier and Re-Spins",
+        "description": "Another Magic Circle continues the Re-Spins chain and can raise the Wild Multiplier up to x5; one chain is limited to 30 respins."
+      },
+      {
+        "title": "Souls and Spirit Orbs",
+        "description": "Souls attach to symbols; Spirit Orbs during Free Spins can activate an Instant Bonus, while Pandora’s Box depends on the Soul count."
+      }
+    ]
+  },
+  "wazdan-mayan-ritual": {
+    "intro": [
+      "Mayan Ritual unfolds among Mayan temples: five reels with forty lines accommodate Giant Symbols sized 2×2 and 3×3, occupying several positions at once.",
+      "A Giant Bonus Symbol replaces its occupied area with a Bonus Slot mini-slot producing multipliers and Free Spins. A pyramid Giant Wild substitutes for regular symbols."
+    ],
+    "editorial": "Mayan Ritual differs from Los Muertos through its symbol theme and 40-line grid rather than feature names. Game Info's maximum win of 850x is not an individual mini-slot multiplier.",
+    "features": [
+      {
+        "title": "Giant Symbols 2×2 and 3×3",
+        "description": "Large symbols can occupy four or nine cells; placement on the first reel can immediately create a combination."
+      },
+      {
+        "title": "Bonus Slot",
+        "description": "A Giant Bonus opens an additional mini-slot in its occupied area, awarding multipliers or Free Spins."
+      },
+      {
+        "title": "Pyramid Giant Wild",
+        "description": "The large Wild substitutes for regular symbols except bonus symbols; a tomb-themed Gamble operates separately after a prize."
+      }
+    ]
+  },
+  "playn-go-hot-dog-heist": {
+    "intro": [
+      "Hot Dog Heist is a 5×3 slot with 40 paylines and seven different Free Spin modes. Individual dogs change the scenario: Golden Retriever awards Wild Reels, Rough Collie uses a sticky block, Labrador supplies an x5–x30 multiplier, and Border Collie provides Wilds and Re-Spins.",
+      "Pack Attack uses giant 4×4 Mega Symbols, while Bulldog holds two 2×2 symbols for additional Re-Spins. Who’s a Good Doggie is a pick-and-click bonus on 20 tiles, where cash prizes or one or more Free Spin modes can be found."
+    ],
+    "editorial": "Hot Dog Heist cannot be reduced to one Free Spins template: its seven dog modes provide different Wild types, Mega Symbols, multipliers and re-spins. The pick bonus offers another way to combine several modes in one round.",
+    "features": [
+      {
+        "title": "Pack Attack and Golden Retriever",
+        "description": "Pack Attack awards 4×4 Mega Symbols, while Golden Retriever turns reels into Wild Reels. These are different bonus scenarios."
+      },
+      {
+        "title": "Collie and Labrador",
+        "description": "Rough Collie adds a sticky block, Labrador an x5–x30 multiplier, and Border Collie Wilds with Re-Spins."
+      },
+      {
+        "title": "Bulldog and Who’s a Good Doggie",
+        "description": "Bulldog holds two 2×2 symbols for respins; the Who’s a Good Doggie pick bonus uses 20 tiles with cash prizes and bonus modes."
+      }
+    ]
+  },
+  "wazdan-miami-beach": {
+    "intro": [
+      "Miami Beach uses five reels and twenty lines in a beach theme. The regular Wild has an x2 multiplier and helps complete winning combinations.",
+      "The Free Spins sequence combines Expanding Wilds with an Increasing Multiplier: during the bonus, a Wild can expand while the multiplier changes under the winning rules."
+    ],
+    "editorial": "Max Win 7200x refers to Miami Beach's whole mathematical model. Any Wild x2 appearance should not be treated as a guarantee of that result, nor should this bonus be transferred to Wazdan's fruit versions.",
+    "features": [
+      {
+        "title": "Beach Wild x2",
+        "description": "The special symbol substitutes for regular symbols and doubles a win in which it participates."
+      },
+      {
+        "title": "Free Spins",
+        "description": "The Scatter activates free spins, which the provider lists as a separate feature."
+      },
+      {
+        "title": "Growing multiplier and Expanding Wild",
+        "description": "During the bonus, expanding Wilds combine with an Increasing Multiplier that is different from the fixed maximum win."
+      }
+    ]
+  },
+  "playn-go-hotel-yeti-way": {
+    "intro": [
+      "Hotel Yeti-Way uses Dynamic Payways: the base 4,096 ways can grow to 262,144 when symbols split. Payway Multipliers are additionally active during Free Spins.",
+      "The bonus offers three themed functions: Bungee Jumping increases the chance of four Stacked Wilds, Surfing adds up to eight Wilds to the grid, and Scuba Diving makes Shark symbols sticky and awards additional Re-Spins."
+    ],
+    "editorial": "Hotel Yeti-Way grows its potential through Dynamic Payways geometry rather than fixed paylines. Its three Free Spins functions change Wild/Sticky states differently and should not be combined into one universal mechanic.",
+    "features": [
+      {
+        "title": "Dynamic Payways",
+        "description": "Splitting symbols expand the base 4,096 ways to win to 262,144; Free Spins also use Payway Multipliers."
+      },
+      {
+        "title": "Bungee Jumping and Surfing",
+        "description": "Bungee Jumping increases the chance of four Stacked Wilds, while Surfing adds up to eight Wild symbols to the grid."
+      },
+      {
+        "title": "Scuba Diving",
+        "description": "Shark symbols become sticky and Scuba Diving adds Re-Spins—a different scenario from Stacked Wilds and Surfing."
+      }
+    ]
+  },
+  "wazdan-midnight-in-tokyo": {
+    "intro": [
+      "Midnight in Tokyo sends five reels with 243 ways to win into a neon Tokyo populated by samurai cats. Wild Splitters change the possibilities for forming combinations.",
+      "A separate Hold the Jackpot collects money values; Wild Splitters increase the number of ways rather than replacing the bonus round. The description mentions 243+ ways, while Game Info reports 243."
+    ],
+    "editorial": "The plus sign in the marketing phrase ‘243+’ should not be equated with an infinite number of ways. The technical record fixes the count at 243, while the maximum win of 3000x refers to the full game.",
+    "features": [
+      {
+        "title": "Wild Splitters",
+        "description": "Splitting Wilds expand combinations and the number of available paying ways."
+      },
+      {
+        "title": "Hold the Jackpot",
+        "description": "The bonus mode separately accumulates Cash and jackpot values."
+      },
+      {
+        "title": "Buy Feature and Gamble",
+        "description": "Wazdan lists bonus-feature purchase and a post-payout risk game; these are different interaction paths."
+      }
+    ]
+  },
+  "playn-go-house-of-doom": {
+    "intro": [
+      "House of Doom uses Hellgate: each spin highlights a random reel, and a Wild landing there expands across the whole reel. The House acts as a Scatter on reels 1, 3 and 5.",
+      "Three House Scatters trigger 10 Free Doom Spins; during the bonus, the House becomes a Wild House and can add extra spins. Separate Skulls of Abyss on reels 2–4 open a pick bonus with cash prizes or entry into Free Spins."
+    ],
+    "editorial": "The first House of Doom ties its expanding Wild to one selected Hellgate reel, while its bonus branches are separate: Doom Spins operate through House Scatters, and Skulls of Abyss through a pick mechanic. These rules should not be carried into the sequel.",
+    "features": [
+      {
+        "title": "Hellgate and Expanding Wild",
+        "description": "On every regular spin, a random reel becomes Hellgate. A Wild Seer landing there expands across the reel's full height."
+      },
+      {
+        "title": "House Scatters and Doom Spins",
+        "description": "Three House Scatters on reels 1, 3 and 5 trigger ten Free Doom Spins. During the bonus, a Wild House can add new spins."
+      },
+      {
+        "title": "Skulls of Abyss",
+        "description": "Three Skulls of Abyss on reels 2–4 open a separate pick game with money prizes or entry into Free Spins. This is not the Hellgate effect."
+      }
+    ]
+  },
+  "wazdan-mighty-crown-empire-of-gold": {
+    "intro": [
+      "Mighty Crown: Empire of Gold uses three reels and five lines. Three Bonus Symbols open Empire Bonus, where each bonus symbol becomes a Wild.",
+      "When Wilds occupy every position, individual values from x1 to x5 can add into a combined bonus multiplier up to x15. This differs from the whole game's maximum win of 1500x."
+    ],
+    "editorial": "Empire of Gold focuses on Wild transformation during Empire Bonus, unlike Legacy of Mars, where the targets are crown Scatters and a full grid of sevens. Empire officially has very high volatility.",
+    "features": [
+      {
+        "title": "Three Bonus Symbols",
+        "description": "Three special symbols trigger Empire Bonus and turn into Wilds."
+      },
+      {
+        "title": "Wilds in Empire Bonus",
+        "description": "Every Bonus becomes a substituting symbol, changing the makeup of prize lines."
+      },
+      {
+        "title": "Up to x15 combined",
+        "description": "When filling positions, Wilds award x1–x5 multipliers, totalling up to x15; Chance Level and Buy Feature affect the route to the bonus."
+      }
+    ]
+  },
+  "playn-go-house-of-doom-2-the-crypt": {
+    "intro": [
+      "House of Doom 2: The Crypt uses Spirit Gate. A random reel receives a special frame; a Wild inside becomes an Expanded Wild, covers the reel and triggers a Re-Spin.",
+      "Three spirits change these Re-Spins: Fire Mistress adds x2/x3/x5/x10 to wins, Metal Priestess upgrades symbols to Knives, and Queen of the Damned activates Spirit Gates on every reel. Three Scatters award 8 Free Spins, while upgraded Scatters open 8 Crypt Spins."
+    ],
+    "editorial": "The sequel completely rebuilds its central mechanic around Spirit Gate. Crypt Spins adds a Spirit of Unity Wild and combines the three spirits' effects, so it is not a repeat of the first game's Hellgate/Doom Spins.",
+    "features": [
+      {
+        "title": "Spirit Gate and Re-Spin",
+        "description": "A random reel is highlighted as Spirit Gate. A Wild within the frame expands across the reel's full height and triggers a re-spin."
+      },
+      {
+        "title": "Three spirits in Spirit Gate",
+        "description": "Fire Mistress adds x2, x3, x5 or x10 multipliers; Metal Priestess turns symbols into Knives, while Queen of the Damned activates Spirit Gates on all reels at once."
+      },
+      {
+        "title": "Free Spins and Crypt Spins",
+        "description": "Three Scatters trigger eight Free Spins; upgraded Scatters award eight Crypt Spins with a Spirit of Unity Wild and spirit effects. These rules are separate from original House of Doom."
+      }
+    ]
+  },
+  "wazdan-mighty-crown-legacy-of-mars": {
+    "intro": [
+      "Legacy of Mars is a space-themed Mighty Crown version with five reels and ten lines. Scatter Respin holds a landed crown for the next spin.",
+      "Five crown Scatters or fifteen sevens across the whole grid trigger the Grand Jackpot worth 3000x. Two, three or four crowns award lower jackpot tiers."
+    ],
+    "editorial": "Legacy of Mars does not use Empire Bonus from three Wilds: its independent mechanic is a Scatter ladder and an alternative Grand route through all fifteen sevens.",
+    "features": [
+      {
+        "title": "Scatter Respin",
+        "description": "A crown can lock for the next spin, increasing the chance of collecting the remaining Scatters."
+      },
+      {
+        "title": "Grand through two different conditions",
+        "description": "Five crowns or a full grid of fifteen sevens open the top jackpot worth 3000x."
+      },
+      {
+        "title": "Chance Level x2/x5/x10",
+        "description": "These multipliers increase bet cost for bonus probability rather than multiplying a prize already awarded."
+      }
+    ]
+  },
+  "playn-go-hugo": {
+    "intro": [
+      "The original Hugo is a five-reel slot with up to 10 active lines. Treasure Chest Scatters on reels 1, 3 and 5 trigger Treasure bonus, where the player chooses mine doors and tries to reach the treasure chamber while avoiding Don Croco.",
+      "Three or more Afskylia Scatters trigger Free Spins with a choice of 5, 10 or 15 spins. Hugoline Extra Scatter pays x3, x2 or x1 the total bet respectively, while Hugo Wild doubles wins unless the combination consists only of Wilds."
+    ],
+    "editorial": "In Hugo, choosing Free Spins duration directly changes Extra Scatter value: fewer spins mean a higher multiplier. Treasure bonus remains a separate risk/pick branch rather than part of Free Spins.",
+    "features": [
+      {
+        "title": "Treasure Chests and mine doors",
+        "description": "Treasure Chest Scatters on reels 1, 3 and 5 open a mine bonus: the player chooses doors on the way to treasure, trying to avoid Don Croco."
+      },
+      {
+        "title": "Afskylia Free Spins choice",
+        "description": "Three or more Afskylia Scatters allow a choice of five, ten or fifteen Free Spins. The duration changes Hugoline Extra Scatter payout conditions."
+      },
+      {
+        "title": "Hugoline and Hugo Wild",
+        "description": "Hugoline Extra Scatter pays x3, x2 or x1 the total bet with a choice of 5, 10 or 15 spins. Hugo Wild doubles wins unless the combination contains only Wilds."
+      }
+    ]
+  },
+  "wazdan-mighty-fish-blue-marlin": {
+    "intro": [
+      "Mighty Fish: Blue Marlin builds its bonus around a fishing Cash Out rather than classic lines: Game Info lists five reels and zero lines.",
+      "Alongside regular Cash Out, Trawler Cash Out participates in value collection, while Collect to Infinity and Free Spins add separate accumulation methods."
+    ],
+    "editorial": "Blue Marlin differs from Mighty Wild: Gorilla through more than its character: it has two Cash Out varieties. RTP of 96.18%, very high volatility and a maximum of 2500x are confirmed directly by Wazdan.",
+    "features": [
+      {
+        "title": "Two Cash Outs",
+        "description": "Regular Cash Out and Trawler Cash Out act as different ways to collect visible Cash values."
+      },
+      {
+        "title": "Collect to Infinity",
+        "description": "Collectors retain a role in the accumulation bonus, affecting final collected amounts."
+      },
+      {
+        "title": "Free Spins and Chance Level",
+        "description": "The Scatter opens a free-spin sequence, while Chance Level allows bonus chances to change through the bet."
+      }
+    ]
+  },
+  "playn-go-hugo-2": {
+    "intro": [
+      "Hugo 2 takes the hero on a railway journey with 10 lines. Three Beaver symbols trigger a sequence of 10 Free Spins, while Beaver Cleaver allows retriggers up to a maximum of 20 consecutive spins.",
+      "During the journey, bags and coins can create extra Wilds and special symbols with additional multipliers. The bonus finale involves selecting a key to open a chest of gold."
+    ],
+    "editorial": "Hugo 2 does not repeat the original's 5/10/15-spin choice. Its bonus centres on Beaver Cleaver with a maximum of 20 Free Spins and a separate collectible track changing the Wild/special-symbol state.",
+    "features": [
+      {
+        "title": "Beaver Cleaver Free Spins",
+        "description": "Three Beaver symbols trigger ten Free Spins. A retrigger can extend the sequence but never beyond twenty consecutive spins."
+      },
+      {
+        "title": "Journey items and Wilds",
+        "description": "Along the railway, bags and coins can add extra Wilds and special symbols with additional bonus multipliers."
+      },
+      {
+        "title": "Choosing a chest key",
+        "description": "A separate final adventure stage involves choosing a key to open a chest of gold. This is not the 5/10/15-spin duration choice from the first Hugo."
+      }
+    ]
+  },
+  "wazdan-mighty-hot-777": {
+    "intro": [
+      "Mighty Hot: 777 retains a retro fruit atmosphere on five reels, but Game Info lists ten ways to win rather than familiar lines.",
+      "The Scatter pays for three, four or five special symbols independently of lines. Filling the reels with matching-symbol walls makes the grid the main target for large payouts."
+    ],
+    "editorial": "Mighty Hot has no confirmed Hold the Jackpot from Mighty Symbols: Sevens. The maximum payout of 2500x applies to the whole game, while a matching-symbol wall is not stated as a separate x2500 multiplier.",
+    "features": [
+      {
+        "title": "Five reels and ten ways",
+        "description": "The official technical record says 5 / 10 Ways to Win rather than ten fixed lines."
+      },
+      {
+        "title": "Scatter 3/4/5",
+        "description": "Three, four or five Scatters pay independently of regular combinations."
+      },
+      {
+        "title": "Seven and fruit walls",
+        "description": "Large combinations form by filling whole reels with matching symbols; Gamble is available separately."
+      }
+    ]
+  },
+  "playn-go-hugo-carts": {
+    "intro": [
+      "Hugo Carts divides base-game functions among characters: Hugo on reel 3 adds 2–5 golden nugget Wilds, Scylla on reel 4 creates 5–9 Mystery Symbols, and other characters can add symbol multipliers up to x10.",
+      "Three, four or five Dynamite Scatters award 7, 9 or 11 Free Spins. A random character is chosen at the start, whose feature operates on every spin; retriggering through 3+ Scatters selects a new character until all three have been used."
+    ],
+    "editorial": "Hugo Carts builds its bonus around changing character powers. A retrigger does more than add spins—it introduces another character, so progression is limited to a set of three different Free Spin features.",
+    "features": [
+      {
+        "title": "Hugo, Scylla and character powers",
+        "description": "Hugo on the third reel adds two to five golden nugget Wilds. Scylla on the fourth creates five to nine Mystery Symbols; another character feature supplies symbol multipliers up to x10."
+      },
+      {
+        "title": "Dynamite Scatter and Free Spins",
+        "description": "Three, four or five Dynamite Scatters trigger seven, nine or eleven free spins respectively. Don Croco can add Dynamite Scatters in the base game."
+      },
+      {
+        "title": "New characters on a retrigger",
+        "description": "One random character is chosen when Free Spins starts. Three or more new Scatters select the next one until all three character features have been used."
+      }
+    ]
+  }
+}
