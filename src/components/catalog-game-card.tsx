@@ -92,11 +92,11 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
         </div>
 
         <h2><Link href={destination}>{item.name}</Link></h2>
-        {locale === "en" && !englishDossier ? <span className="eyebrow" lang="en">{englishCatalogRecord ? "Technical record in English" : "Game record in Russian"}</span> : null}
+        {locale === "en" && !englishDossier && !englishCatalogRecord ? <span className="eyebrow" lang="en">Game details in Russian</span> : null}
 
         {item.coverage === "dossier" && (
           locale === "en" && englishDossier
-            ? <p lang="en">Read our English guide to the rules, bonus features and game information.</p>
+            ? <p lang="en">Read about the rules, bonus features and game information.</p>
             : <p lang={locale === "en" ? "ru" : undefined}>{item.description}</p>
         )}
 
@@ -131,7 +131,7 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
           {item.coverage === "dossier" ? (
             <CompareButton slug={item.slug} name={item.name} locale={locale} />
           ) : (
-            <Link className={styles.openRecord} href={destination}>{locale === "en" ? (englishCatalogRecord ? "View English facts ↗" : "Game details (Russian) ↗") : "Подробнее об игре ↗"}</Link>
+            <Link className={styles.openRecord} href={destination}>{locale === "en" ? (englishCatalogRecord ? "Game details ↗" : "Game details (Russian) ↗") : "Подробнее об игре ↗"}</Link>
           )}
         </div>
       </div>

@@ -40,7 +40,6 @@ export const englishCatalogueCopy = {
   next: "Next",
   previous: "Previous",
   of: "of",
-  gameDescriptionsNotice: "All 1,000 games have English pages: 900 technical records and 100 game guides. Technical records list sourced facts; game guides explain rules, features and source qualifications.",
   russian: "Russian",
   compareInRussian: "Compare games",
   guideInRussian: "Read the editorial selection (Russian)",

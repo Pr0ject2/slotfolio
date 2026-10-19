@@ -166,7 +166,6 @@ export function Catalog({
         </div>
       </form>
 
-      {locale === "en" && <p lang="en" role="note">{en.gameDescriptionsNotice}</p>}
       <div className="catalog-layout">
         <aside className="filter-panel">
           <button

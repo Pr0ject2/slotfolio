@@ -57,10 +57,12 @@ test("all three guides avoid mobile overflow", async ({ page }) => {
   }
 });
 
-test("English home reflects the completed catalogue without outdated pilot wording", async ({ page }) => {
+test("English home helps visitors browse without translation progress wording", async ({ page }) => {
   await page.goto("/en/");
-  await expect(page.getByText(/All 1,000 catalogue entries are available in English/)).toBeVisible();
-  await expect(page.getByText(/900 source-linked technical records and 100 full game guides/)).toBeVisible();
+  await expect(page.getByText("Look up the rules before you play.", { exact: false })).toBeVisible();
+  await expect(page.getByText("Search by title, publisher or mechanic.")).toBeVisible();
+  await expect(page.getByRole("link", { name: "Browse the catalogue ↗" })).toHaveAttribute("href", "/en/slots/");
+  await expect(page.locator("main")).not.toContainText(/technical records|100 full game guides|All 1,000 catalogue entries are available in English/i);
   await expect(page.locator("main")).not.toContainText(/More English game guides are being added/);
 });
 

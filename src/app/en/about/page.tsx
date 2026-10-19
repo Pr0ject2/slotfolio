@@ -37,7 +37,7 @@ export default function AboutEnglish() {
           </section>
           <section id="compare">
             <h2>Compare games</h2>
-            <p>You can add two games with full dossiers to the comparison table. If a record has no Compare button, its details can still be viewed individually.</p>
+            <p>Use the Compare buttons to add two games to the comparison table. Games without this button can still be viewed individually.</p>
             <p>Compare pay rules, features and RTP configurations. Different studios may use different volatility scales, and a stated maximum win does not indicate how often it happens.</p>
             <p><Link href="/compare">Open comparison (Russian)</Link></p>
           </section>

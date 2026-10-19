@@ -36,9 +36,8 @@ export default function Page() {
         </p>
         <div>
           <p>
-            Profiles cover the 100 selected full game guides. Their counts
-            describe this editorial selection; the wider catalogue also includes
-            technical records.
+            Open a studio profile for its recurring mechanics and featured
+            games. The guide counts refer to the games featured in each profile.
           </p>
           <Link href="/en/compare" className="text-link">
             Compare games from different studios ↗

@@ -13,7 +13,7 @@ export const englishComparisonCopy: Record<string, string> = {
   "Ваш набор": "Your selection",
   "Выберите игры для таблицы": "Choose games for the table",
   "Сравните две игры рядом: так проще увидеть различия в правилах, бонусах и характеристиках.":
-    "Compare two game guides side by side to see differences in rules, bonuses and documented figures. The picker covers the 100 full guides; technical-only records are not included.",
+    "Select two games from the picker to compare their rules, bonuses and documented figures side by side.",
   "Добавить игру": "Add a game",
   "Лимит — две игры": "Limit: two games",
   "Выберите из каталога": "Choose a game guide",
@@ -57,6 +57,6 @@ export const englishComparisonCopy: Record<string, string> = {
     "Each pair contrasts a specific payout rule, grid or bonus feature.",
   "Готовые сравнения": "Example comparisons",
   "Не нашли нужную игру? Попробуйте поискать её в каталоге.":
-    "Looking for a game outside these 100 guides? Search the wider catalogue for technical records.",
+    "Can't find the game you want to compare? Look it up in the catalogue to read its details.",
   "Открыть каталог ↗": "Open catalogue ↗",
 };
