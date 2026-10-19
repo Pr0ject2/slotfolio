@@ -22,10 +22,10 @@
 .extended :global(.slot-tag-list a) { display: inline-flex; align-items: center; min-height: 44px; }
 @media (max-width: 1023px) {
   .extended .features, .extended .metrics { grid-template-columns: minmax(0, 1fr); }
-}
-@media (max-width: 767px) {
   .extended :global(.article-layout.slot-body) { display: block; }
   .extended :global(.article-toc) { display: flex; flex-direction: column; align-items: stretch; }
+}
+@media (max-width: 767px) {
   .extended :global(.section-title) { flex-direction: column; align-items: flex-start; gap: 12px; }
   .extended :global(.section-title .text-link) { display: inline-flex; align-items: center; min-height: 44px; white-space: normal; font-size: 14px; }
 }
