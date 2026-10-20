@@ -1,17 +1,16 @@
 import styles from "./slot-casino-link.module.css";
+import { PromoCodeCopy } from "./promo-code-copy";
 
 const copy = {
   ru: {
     heading: "Где поиграть в этот слот?",
-    description: "Посмотрите список казино и проверьте наличие игры в вашем регионе.",
+    description: "Проверьте наличие игры в вашем регионе и условия дополнительных бонусов по ссылке.",
     action: "Выбрать казино ↗",
-    disclosure: "Партнёрская ссылка · 18+",
   },
   en: {
     heading: "Where can you play this slot?",
-    description: "Browse the casino list and check whether the game is available in your region.",
+    description: "Check game availability in your region and the terms of additional bonuses via the link.",
     action: "Choose a casino ↗",
-    disclosure: "Affiliate link · 18+",
   },
 } as const;
 
@@ -26,7 +25,7 @@ export function SlotCasinoLink({ locale = "ru" }: { locale?: "ru" | "en" }) {
       <a className={styles.action} href="https://viazento.link/slotfolio" target="_blank" rel="sponsored nofollow noopener noreferrer">
         {text.action}
       </a>
-      <p className={styles.disclosure}>{text.disclosure}</p>
+      <PromoCodeCopy locale={locale} />
     </aside>
   );
 }

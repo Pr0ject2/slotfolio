@@ -12,12 +12,13 @@ const examples = [
   { route: "/en/slots/catalog/3-oaks-gaming-15-dragon-pearls/", locale: "en", name: "Where can you play this slot?", action: "Choose a casino ↗" },
 ] as const;
 
-test("every published game export contains one casino block in each language", () => {
+test("every published game export contains one casino block in each language", async () => {
   const games = createCatalogModel().items;
   expect(games).toHaveLength(1000);
   expect(games.filter(game => game.coverage === "dossier")).toHaveLength(100);
   expect(games.filter(game => game.coverage === "catalog")).toHaveLength(900);
   expect(new Set(games.map(game => game.slug)).size).toBe(1000);
+  let checked = 0;
   for (const locale of ["ru", "en"] as const) {
     for (const game of games) {
       const route = `${locale === "en" ? "en/" : ""}slots/${game.coverage === "catalog" ? "catalog/" : ""}${game.slug}`;
@@ -27,6 +28,11 @@ test("every published game export contains one casino block in each language", (
       const blockStart = html.indexOf(`data-slot-casino-link="${locale}"`);
       const factsStart = html.indexOf('<dl class="facts');
       assert.ok(blockStart > 0 && factsStart > blockStart, route);
+      const block = html.slice(blockStart, html.indexOf("</aside>", blockStart));
+      assert.equal((block.match(/data-promo-code="3DDD"/g) ?? []).length, 1, route);
+      assert.ok(!block.includes("Партнёрская ссылка · 18+") && !block.includes("Affiliate link · 18+"), route);
+      // Keep the worker responsive while checking all 2,000 exported files.
+      if (++checked % 100 === 0) await new Promise<void>(resolve => setImmediate(resolve));
     }
   }
 });
@@ -48,6 +54,14 @@ for (const example of examples) {
       await expect(link).toHaveAttribute("rel", "sponsored nofollow noopener noreferrer");
       await expect(link.locator("a")).toHaveCount(0);
       expect((await link.boundingBox())!.height).toBeGreaterThanOrEqual(44);
+      const code = block.getByRole("textbox", { name: example.locale === "ru" ? "Промокод" : "Promo code", exact: true });
+      await expect(code).toHaveValue("3DDD");
+      await expect(code).toHaveAttribute("readonly", "");
+      const copyButton = block.getByRole("button", { name: example.locale === "ru" ? "Скопировать промокод 3DDD" : "Copy promo code 3DDD", exact: true });
+      await expect(copyButton).toBeVisible();
+      expect((await copyButton.boundingBox())!.height).toBeGreaterThanOrEqual(44);
+      await expect(block).toContainText(example.locale === "ru" ? "условия дополнительных бонусов" : "terms of additional bonuses");
+      await expect(block).not.toContainText(example.locale === "ru" ? "Партнёрская ссылка · 18+" : "Affiliate link · 18+");
       expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width + 1);
       expect(await block.evaluate(el => el.scrollWidth <= el.clientWidth)).toBe(true);
       const shot = testInfo.outputPath(`casino-${example.locale}-${width}.png`);
@@ -57,7 +71,25 @@ for (const example of examples) {
   }
 
   test(`casino link supports keyboard, hover and a safe new tab on ${example.route}`, async ({ page, context }) => {
+    await context.addInitScript(() => {
+      Object.defineProperty(navigator, "clipboard", { configurable: true, value: {
+        writeText: async (value: string) => { (window as Window & { copiedPromo?: string }).copiedPromo = value; },
+      } });
+    });
     await page.goto(example.route);
+    const block = page.locator("[data-slot-casino-link]");
+    const code = block.getByRole("textbox");
+    await code.focus();
+    await page.keyboard.press("Tab");
+    const button = block.getByRole("button");
+    await expect(button).toBeFocused();
+    expect(await button.evaluate(el => getComputedStyle(el).outlineWidth)).toBe("3px");
+    const buttonColor = await button.evaluate(el => getComputedStyle(el).color);
+    await button.hover();
+    expect(await button.evaluate(el => getComputedStyle(el).color)).not.toBe(buttonColor);
+    await button.press("Enter");
+    await expect(block.getByRole("status")).toHaveText(example.locale === "ru" ? "Промокод 3DDD скопирован." : "Promo code 3DDD copied.");
+    expect(await page.evaluate(() => (window as Window & { copiedPromo?: string }).copiedPromo)).toBe("3DDD");
     const link = page.locator("[data-slot-casino-link]").getByRole("link", { name: example.action });
     await link.focus();
     await page.keyboard.press("Shift+Tab");
@@ -80,5 +112,24 @@ for (const example of examples) {
     expect(popup.url()).toBe(destination);
     expect(await popup.evaluate(() => window.opener === null)).toBe(true);
     await popup.close();
+  });
+
+  test(`promo code remains manually copyable when clipboard is denied on ${example.route}`, async ({ page, context }) => {
+    await context.addInitScript(() => {
+      Object.defineProperty(navigator, "clipboard", { configurable: true, value: {
+        writeText: async () => { throw new DOMException("Clipboard denied", "NotAllowedError"); },
+      } });
+    });
+    await page.goto(example.route);
+    const block = page.locator("[data-slot-casino-link]");
+    await block.getByRole("button").click();
+    await expect(block.getByRole("status")).toHaveText(example.locale === "ru"
+      ? "Не удалось скопировать. Выделите 3DDD и скопируйте вручную."
+      : "Could not copy. Select 3DDD and copy it manually.");
+    const code = block.getByRole("textbox");
+    await code.focus();
+    expect(await code.evaluate(el => ({ start: (el as HTMLInputElement).selectionStart, end: (el as HTMLInputElement).selectionEnd }))).toEqual({ start: 0, end: 4 });
+    await expect(code).toHaveValue("3DDD");
+    await expect(block.getByRole("button")).toBeEnabled();
   });
 }
