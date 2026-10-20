@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SlotCasinoLink } from "@/components/slot-casino-link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/editorial";
 import { SlotArtwork } from "@/components/slot-artwork";
@@ -10210,6 +10211,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
           <span className="eyebrow">Суть игры</span>
           <p className="slot-deck">{summary}</p>
           <h2 className="catalog-facts-heading">Характеристики</h2>
+          <SlotCasinoLink />
           <dl className="facts catalog-record-facts">
             <div><dt>Провайдер</dt><dd><Link href={`/slots?provider=${providerSlug(slot.provider)}`}>{slot.provider}</Link></dd></div>
             {gameType ? <div><dt>Тип игры</dt><dd>{russianGameType(gameType.gameType)}</dd></div> : null}

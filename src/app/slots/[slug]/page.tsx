@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SlotCasinoLink } from "@/components/slot-casino-link";
 import { formatRtp } from "@/lib/catalog-stats";
 import { notFound } from "next/navigation";
 import {
@@ -168,6 +169,7 @@ export default async function Page({
         <div className="slot-summary">
           <span className="eyebrow">Суть игры</span>
           <p className="slot-deck">{s.description}</p>
+          <SlotCasinoLink />
           <dl className="facts">
             <div>
               <dt>Механики</dt>

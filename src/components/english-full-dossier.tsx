@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SlotCasinoLink } from "./slot-casino-link";
 import type { Slot } from "@/lib/data";
 import { mechanics, providerSlug, relatedSlots, slotMechanics } from "@/lib/data";
 import { GameImage, SectionTitle } from "./editorial";
@@ -60,6 +61,7 @@ export function EnglishFullDossier({ game }: { game: Slot }) {
       <div className="slot-summary">
         <span className="eyebrow">At a glance</span><p className="slot-deck">{copy.description}</p>
         {copy.attributionNote && <p className="data-note">{copy.attributionNote}</p>}
+        <SlotCasinoLink locale="en" />
         <dl className="facts">
           <div><dt>{copy.attributionNote ? "Recorded publisher attribution" : "Publisher"}</dt><dd>{game.provider}</dd></div>
           <div><dt>Release year</dt><dd>{game.year}</dd></div>
