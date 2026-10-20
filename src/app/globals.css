@@ -4796,3 +4796,7 @@ summary {
 /* The keyboard skip link uses the actual page language, including static /en pages. */
 html[lang="ru"] .skip-link[data-locale="en"],
 html[lang="en"] .skip-link[data-locale="ru"] { display: none; }
+
+/* When no genuine artwork is verified, give the textual dossier the full width. */
+.slot-intro-without-artwork { grid-template-columns: minmax(0, 1fr); }
+.slot-intro-without-artwork .slot-summary { max-width: 920px; }
