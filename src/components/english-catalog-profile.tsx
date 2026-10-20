@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SlotCasinoLink } from "./slot-casino-link";
 import { SlotArtwork } from "./slot-artwork";
 import { withBasePath } from "@/lib/base-path";
 import { providerSlug } from "@/lib/data";
@@ -88,6 +89,7 @@ export function EnglishCatalogProfile({ item, copy }: { item: CatalogItem; copy:
       <figure className="slot-figure"><SlotArtwork src={withBasePath(item.image)} alt={`${item.name} game artwork`} width={600} height={420} loading="lazy" /><figcaption>Game artwork · {item.provider} · {item.name}</figcaption></figure>
       <div className="slot-summary"><span className="eyebrow">Documented details only</span><p className="slot-deck">{copy.intro?.[0] ?? copy.editorial ?? copy.features[0]?.description}</p>
         <h2 className="catalog-facts-heading">Game characteristics</h2>
+        <SlotCasinoLink locale="en" />
         <dl className="facts">{facts.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}
           {mechanics.length > 0 && <div className="facts-wide"><dt>Documented mechanics</dt><dd className="slot-tag-list">{mechanics.map(mechanic => <Link key={mechanic} href={`/en/slots?mechanic=${encodeURIComponent(mechanic)}`}>{englishCatalogFact(mechanic)}</Link>)}</dd></div>}
         </dl>
