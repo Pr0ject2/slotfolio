@@ -4,6 +4,7 @@ import { affiliateUrl, affiliateHref, operators } from "@/lib/affiliate";
 import { withBasePath } from "@/lib/base-path";
 import { CompareButton } from "./compare-button";
 import { SlotArtwork } from "./slot-artwork";
+import { hasReviewedGameArtwork } from "@/lib/artwork-availability";
 import { JsonLd } from "./json-ld";
 import { absoluteUrl } from "@/lib/seo";
 export function Breadcrumbs({
@@ -82,9 +83,9 @@ export function GameRow({ slot, index, compare = false }: { slot: Slot; index?: 
       {index !== undefined && (
         <span className="row-index">{String(index + 1).padStart(2, "0")}</span>
       )}
-      <Link className="row-image" href={"/slots/" + slot.slug}>
+      {hasReviewedGameArtwork(slot.image) && <Link className="row-image" href={"/slots/" + slot.slug}>
         <GameImage slot={slot} />
-      </Link>
+      </Link>}
       <div className="row-main">
         <Link
           href={"/providers/" + providerSlug(slot.provider)}
