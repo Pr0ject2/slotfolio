@@ -81,9 +81,9 @@ export function EnglishEntityJsonLd({
     />
   );
 }
-export function EnglishGameRow({ game, index }: { game: Slot; index: number }) {
+export function EnglishGameRow({ game, index, compare = true }: { game: Slot; index: number; compare?: boolean }) {
   return (
-    <article className="game-row game-row-comparable">
+    <article className={`game-row${compare ? " game-row-comparable" : ""}`}>
       <span className="row-index">{String(index + 1).padStart(2, "0")}</span>
       <Link className="row-image" href={`/en/slots/${game.slug}`}>
         <EnglishGameImage game={game} />
@@ -107,7 +107,7 @@ export function EnglishGameRow({ game, index }: { game: Slot; index: number }) {
         <small>RTP</small>
         {englishCatalogFact(game.rtp)}
       </span>
-      <CompareButton slug={game.slug} name={game.name} locale="en" />
+      {compare && <CompareButton slug={game.slug} name={game.name} locale="en" />}
       <Link
         className="row-arrow"
         href={`/en/slots/${game.slug}`}
