@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SlotCasinoLink } from "./slot-casino-link";
+import { hasReviewedGameArtwork } from "@/lib/artwork-availability";
 import type { Slot } from "@/lib/data";
 import { mechanics, providerSlug, relatedSlots, slotMechanics } from "@/lib/data";
 import { GameImage, SectionTitle } from "./editorial";
@@ -56,8 +57,8 @@ export function EnglishFullDossier({ game }: { game: Slot }) {
       <p>{game.provider}{copy.attributionNote ? " · recorded attribution" : ""}</p>
       <Link className="text-link" href={`/en/providers/${providerSlug(game.provider)}`}>Publisher profile ↗</Link>
     </div></div>
-    <div className="slot-intro">
-      <figure className="slot-figure"><GameImage slot={game} priority /><figcaption>Game artwork · {game.provider} · {game.name}</figcaption></figure>
+    <div className={hasReviewedGameArtwork(game.featureImage || game.image) ? "slot-intro" : "slot-intro slot-intro-without-artwork"}>
+      {hasReviewedGameArtwork(game.featureImage || game.image) && <figure className="slot-figure"><GameImage slot={game} priority /><figcaption>Game artwork · {game.provider} · {game.name}</figcaption></figure>}
       <div className="slot-summary">
         <span className="eyebrow">At a glance</span><p className="slot-deck">{copy.description}</p>
         {copy.attributionNote && <p className="data-note">{copy.attributionNote}</p>}
