@@ -183,7 +183,7 @@ test("English comparison supports picker, presets, removal, seed and RU/EN persi
   await page.getByRole("button", { name: "Add", exact: true }).click();
   await page
     .getByLabel("Add a game", { exact: true })
-    .selectOption("1win-bonanza");
+    .selectOption("sweet-bonanza-1000");
   await page.getByRole("button", { name: "Add", exact: true }).click();
   await expect(page.locator(".comparison-table")).toContainText(
     "stated potential",
@@ -191,10 +191,10 @@ test("English comparison supports picker, presets, removal, seed and RU/EN persi
   await expect(page.locator(".comparison-table")).toContainText("6 × 5");
   await expect(
     page.locator(".comparison-table tbody tr").first(),
-  ).toContainText("still requires verification");
+  ).toContainText("Pragmatic Play");
   await expect(page.locator(".comparison-table")).toContainText("5×6");
   await expect(page.locator(".comparison-table")).toContainText(
-    "not yet been verified",
+    "do not publish RTP or volatility values",
   );
   await expect(page.locator("main")).not.toContainText(/[А-Яа-яЁё]/);
   await expect(page.getByLabel("Add a game", { exact: true })).toBeDisabled();
@@ -206,7 +206,7 @@ test("English comparison supports picker, presets, removal, seed and RU/EN persi
   await page.goto("/en/compare/");
   await page
     .getByRole("button", {
-      name: "Remove 1win Bonanza from comparison",
+      name: "Remove Sweet Bonanza 1000 from comparison",
       exact: true,
     })
     .click();

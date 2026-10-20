@@ -93,7 +93,7 @@ for (const game of slots) {
 for (const width of [320,390,768,1024,1440]) {
   test(`Full English dossiers preserve readable facts and keyboard navigation at ${width}px`, async ({page},testInfo) => {
     await page.setViewportSize({width,height:1000});
-    for (const slug of ["reactoonz","fury-of-anubis","1win-bonanza"]) {
+    for (const slug of ["reactoonz","fury-of-anubis","sweet-bonanza-1000"]) {
       await page.goto(`/en/slots/${slug}/`);
       await expect(page.locator("main")).not.toContainText("Открываем материал");
       await expect(page.locator(".slot-summary")).toBeVisible();

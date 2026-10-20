@@ -269,14 +269,15 @@ for (const file of manifestFiles) {
 const warnings = [];
 
 if (!verifyOnly) {
+  // Restored artwork caches can still contain retired, formerly tracked SVGs.
+  for (const slug of ["gates-of-1win", "1win-bonanza", "house-of-sins"]) {
+    await unlink(path.join(projectRoot, "public", "images", "slots", `${slug}.svg`)).catch((error) => {
+      if (error?.code !== "ENOENT") throw error;
+    });
+  }
   for (const entry of manifest) {
     const output = outputFor(entry);
     const cache = path.join(cacheDir, `${entry.slug}.source`);
-
-    if (entry.localize === "checked-in-placeholder" && (await exists(output))) {
-      console.log(`✓ ${entry.slug}: checked-in editorial placeholder present`);
-      continue;
-    }
 
     if (!force && (await exists(output))) {
       console.log(`✓ ${entry.slug}: local asset already present`);

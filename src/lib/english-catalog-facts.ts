@@ -1,6 +1,7 @@
 /** Translate documented labels only. Numbers, ranges, scales and feature names
  * remain source values; this function never supplies a missing characteristic. */
 const labels: [string, string][] = [
+  ["Не опубликовано", "Not published"], ["Не указан", "Not recorded"],
   ["две сетки", "two grids"],
   ["Свободные вращения", "Free spins"],
   ["Расширяющийся символ", "Expanding symbol"],

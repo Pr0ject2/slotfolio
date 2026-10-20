@@ -22,12 +22,18 @@ test("fourth legacy dossier batch keeps auditable 1win availability evidence", (
   }
 });
 
-test("legacy 1win provenance residual falls to eleven dossiers", () => {
+test("legacy provenance gaps remain exact after the approved two-game replacement", () => {
   const missing = slots
     .filter((slot) => !slot.availability?.some((item) => item.operator === "1win"))
     .map((slot) => slot.slug)
     .sort();
 
-  expect(missing).toHaveLength(11);
+  // The original eleven gaps remain unchanged. The new 2500 edition does not
+  // inherit Gates of 1win's operator evidence; Sweet Bonanza 1000 has its own.
+  expect(missing).toEqual([
+    "deadwood", "fire-joker", "gates-of-olympus-2500", "jammin-jars", "le-bandit",
+    "legacy-of-dead", "reactoonz", "retro-tapes", "rise-of-olympus",
+    "san-quentin-xways", "snake-arena", "starlight-princess",
+  ]);
   for (const slug of Object.keys(expectedSources)) expect(missing).not.toContain(slug);
 });
