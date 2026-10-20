@@ -194,7 +194,7 @@ test("English comparison supports picker, presets, removal, seed and RU/EN persi
   ).toContainText("Pragmatic Play");
   await expect(page.locator(".comparison-table")).toContainText("5×6");
   await expect(page.locator(".comparison-table")).toContainText(
-    "do not publish RTP or volatility values",
+    "96.53% for normal play",
   );
   await expect(page.locator("main")).not.toContainText(/[А-Яа-яЁё]/);
   await expect(page.getByLabel("Add a game", { exact: true })).toBeDisabled();

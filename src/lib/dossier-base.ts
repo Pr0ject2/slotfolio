@@ -28,7 +28,8 @@ const verifiedMetrics: Record<string, VerifiedSlotMetrics> = {
   "sweet-bonanza-1000": {
     "maxWin": "25 000x",
     "maxWinLabel": "Заявленный потенциал",
-    "source": "https://www.pragmaticplay.com/en/news/pragmatic-play-sweetens-up-candyland-in-sweet-bonanza-1000/"
+    "rtpVariants": ["96,53%"],
+    "source": "https://cdn-sp.kertn.net/assets/cms/App_Data/20e8c524-e223-48de-9382-7401c87cd065/PDFs/GameRules/Pragmatic/GamerulesRO/SweetBonanza1000%2896.53%25%29_RO.pdf"
   },
   "the-dog-house": {
     maxWin: "6 750x",

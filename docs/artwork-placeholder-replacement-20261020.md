@@ -43,10 +43,12 @@ The two retired records and their SVGs are removed rather than relabelled with u
 - Visually inspected artwork has the exact Sweet Bonanza 1000 title and game screenshot. The generic file name is pinned only because the exact image is embedded in this game-specific official release.
 - Source SHA-256: `d7a7a0bc8c16685a76ea12a16fcf7739aee9e1d73ccd1a0fb76adf3c3e9ff07b`.
 - Local WebP: 960 x 504, 67,196 bytes; SHA-256 `d575e940324ca8a393fd6c7f8489c7af176829cfd66c0de2a018dca77bd5ac04`.
-- RTP and volatility are not supplied on the cited game and release pages, so they are explicitly marked as not published. Values are not inherited from another Sweet Bonanza edition.
+- The operator-published Pragmatic Play rules document https://cdn-sp.kertn.net/assets/cms/App_Data/20e8c524-e223-48de-9382-7401c87cd065/PDFs/GameRules/Pragmatic/GamerulesRO/SweetBonanza1000%2896.53%25%29_RO.pdf states normal-play RTP 96.53%, special-bet RTP 96.50%, buy-free-spins RTP 96.52% and buy-super-free-spins RTP 96.55%. The reference value belongs to this documented configuration; it is not an operator-wide setting guarantee. Values are not inherited from another Sweet Bonanza edition. The game/release pages do not state volatility.
 - Separate historical operator reference: <https://t.me/s/reg_official_1win/3159>, post dated 27 February 2026, naming Sweet Bonanza 1000. This existing project source channel is not used to infer current availability everywhere.
 
 ## Pipeline and regression policy
+
+On 20 October 2026 the user explicitly approved two limited changes to the post-v123 operator-evidence policy: Gates of Olympus 2500 may be published without a 1win availability claim, and Sweet Bonanza 1000 may cite only the exact historical official-channel post `https://t.me/s/reg_official_1win/3159`. The general site regression enforces Gates' exact publisher URL and absent availability, pins Sweet's full post URL/date/game-specific evidence, and retains the existing 1win.com/forum.1win.com requirement for the other 68 post-v123 dossiers. No general Telegram-domain allowance or other exception is introduced. The numerical RTP requirement remains intact and is satisfied using the documented Sweet Bonanza 1000 game rules above.
 
 All three images use the existing non-cropping WebP profile (maximum 960 x 540, no enlargement, quality 76/72/68, hard limit 220 KiB). All three source entries in `image-sources-v128.json` are explicit `build-time` sources with `requireExplicitImage: true`; placeholder flags are removed.
 
