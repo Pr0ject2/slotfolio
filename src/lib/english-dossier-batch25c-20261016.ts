@@ -100,7 +100,7 @@ export const englishDossierBatch25C = {
     "introduction": "Fruit and candy symbols count across a 6 × 5 grid: eight or more matching symbols award a win and start another tumble.",
     "rules": "Fruit and candy symbols count across a 6 × 5 grid: eight or more matching symbols award a win and start another tumble.",
     "feature": "Four lollipops unlock 10 free spins. Multiplier bombs reach 1 000x and stay on the grid until the tumble sequence ends, when their values are added together. Three lollipops during the bonus add 5 spins.",
-    "perspective": "Pragmatic Play’s game rules published by an operator list RTP of 96.53% for normal play, 96.50% for the special bet mode, 96.52% for buying free spins and 96.55% for buying Super Free Spins. These figures describe one game configuration and do not guarantee the settings at every casino. The official release states win potential of 25 000x; check the active rules in the game."
+    "perspective": "The Basic Game Info section on Pragmatic Play’s official page lists reference RTP of 96.53%, while the game description states win potential of 25 000x. RTP does not describe the outcome of an individual session or guarantee identical settings at every casino. Check the active configuration in the game rules."
   },
   "black-friday-shady-lady": {
     introduction: "Black Friday combines fixed paylines with special character-led respin effects.",

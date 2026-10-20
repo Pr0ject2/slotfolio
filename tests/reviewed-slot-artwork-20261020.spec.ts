@@ -63,7 +63,7 @@ test("all approved covers are real WebP assets; only the two approved games chan
   expect(getSlot("sweet-bonanza-1000")?.availability?.[0].source).toBe("https://t.me/s/reg_official_1win/3159");
   expect(getSlot("sweet-bonanza-1000")?.rtp).toBe("96,53%");
   expect(getVerifiedSlotMetrics("sweet-bonanza-1000")?.rtpVariants).toEqual(["96,53%"]);
-  expect(getVerifiedSlotMetrics("sweet-bonanza-1000")?.source).toBe("https://cdn-sp.kertn.net/assets/cms/App_Data/20e8c524-e223-48de-9382-7401c87cd065/PDFs/GameRules/Pragmatic/GamerulesRO/SweetBonanza1000%2896.53%25%29_RO.pdf");
+  expect(getVerifiedSlotMetrics("sweet-bonanza-1000")?.source).toBe("https://www.pragmaticplay.com/en/games/sweet-bonanza-1000/");
 });
 
 for (const locale of ["ru", "en"] as const) {
