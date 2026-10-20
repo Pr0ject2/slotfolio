@@ -168,7 +168,7 @@ export const slotAdditions3: Slot[] = [
       field: "6 × 8",
       rtp: "96,00%",
       volatility: "Высокая",
-      image: "/images/slots/house-of-sins.webp",
+      image: "/images/slots/house-of-sins.svg",
       description:
         "Эксклюзивная для 1win игра BGaming на поле 6 × 8: выигрышные кластеры удаляются, а новые символы продолжают цепочку каскадов.",
       feature:
