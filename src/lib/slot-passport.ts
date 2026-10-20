@@ -6,6 +6,18 @@ export type VerifiedSlotPassport = {
 };
 
 const verifiedSlotPassports: Record<string, VerifiedSlotPassport> = {
+  "gates-of-olympus-2500": {
+    "releaseDate": "28 сентября 2026",
+    "gameType": "Slot",
+    "source": "https://www.pragmaticplay.com/en/news/pragmatic-play-supercharges-iconic-series-in-gates-of-olympus-2500/",
+    "sourceLabel": "официальный релиз Pragmatic Play от 28.09.2026"
+  },
+  "sweet-bonanza-1000": {
+    "releaseDate": "3 июня 2024",
+    "gameType": "Slot",
+    "source": "https://www.pragmaticplay.com/en/news/pragmatic-play-sweetens-up-candyland-in-sweet-bonanza-1000/",
+    "sourceLabel": "официальный релиз Pragmatic Play от 03.06.2024"
+  },
   "lucky-streak-1": {
     releaseDate: "8 ноября 2018",
     gameType: "Fruit Slot",

@@ -1,6 +1,6 @@
 import { isIP } from "node:net";
 
-const assetPath = /^\/images\/(?:catalog|slots)\/[a-z0-9][a-z0-9_-]*\.(?:webp|svg)$/;
+const assetPath = /^\/images\/(?:catalog|slots)\/[a-z0-9][a-z0-9_-]*\.webp$/;
 const slugPattern = /^[a-z0-9][a-z0-9-]*$/;
 const localHostSuffixes = [".localhost", ".local", ".internal", ".test", ".invalid"];
 
@@ -24,8 +24,8 @@ export function validAssetLocal(entry) {
   if (typeof entry.local !== "string" || !assetPath.test(entry.local)) {
     throw new Error("Asset destination must be an approved local image path");
   }
-  if (entry.local.endsWith(".svg") && entry.localize !== "checked-in-placeholder") {
-    throw new Error("Only checked-in editorial placeholders may use SVG");
+  if (entry.placeholder || entry.localize === "checked-in-placeholder") {
+    throw new Error("Editorial placeholders are not approved game artwork");
   }
   return entry.local.slice(1);
 }

@@ -239,11 +239,12 @@
     "slug": "house-of-sins",
     "title": "House of Sins",
     "provider": "BGaming",
-    "page": "https://forum.1win.com/topic/964-%F0%9F%8E%B0-3-favorite-1win-slots-play-by-your-rules/",
-    "note": "Temporary checked-in editorial placeholder. No reviewed game-specific official artwork is currently available; do not replace it with page OG metadata or unverified third-party art.",
-    "local": "/images/slots/house-of-sins.svg",
-    "localize": "checked-in-placeholder",
-    "placeholder": true
+    "page": "https://forum.1win.com/topic/359-%E2%80%8B%F0%9F%96%A4%E2%80%8B-up-to-x10000-in-house-of-sins/",
+    "note": "Game-specific House of Sins promotion from the official 1win forum, visually reviewed 2026-10-20. Original banner includes the game title, BGaming attribution and game graphics on the phone. Full source image preserved, resized without cropping through the existing WebP profile.",
+    "local": "/images/slots/house-of-sins.webp",
+    "localize": "build-time",
+    "requireExplicitImage": true,
+    "image": "https://web-k8s-forum-prod.s3.eu-central-1.amazonaws.com/uploads/monthly_2025_09/Frame37.png.46d05802f7c6d537f3ea861abe6fd44e.png"
   },
   {
     "slug": "scarab-temple",
@@ -296,24 +297,26 @@
     "image": "https://yggdrasilgaming.com/w/files/2026/05/SuperWays_Troy.jpg"
   },
   {
-    "slug": "gates-of-1win",
-    "title": "Gates of 1win",
+    "slug": "gates-of-olympus-2500",
+    "title": "Gates of Olympus 2500",
     "provider": "Pragmatic Play",
-    "page": "https://forum.1win.com/topic/964-%F0%9F%8E%B0-3-favorite-1win-slots-play-by-your-rules/",
-    "note": "Temporary checked-in editorial placeholder. No reviewed game-specific official artwork is currently available; do not replace it with page OG metadata or unverified third-party art.",
-    "local": "/images/slots/gates-of-1win.svg",
-    "localize": "checked-in-placeholder",
-    "placeholder": true
+    "page": "https://www.pragmaticplay.com/en/news/pragmatic-play-supercharges-iconic-series-in-gates-of-olympus-2500/",
+    "note": "Game-specific official Pragmatic Play release artwork, visually reviewed 2026-10-20. The title and edition are visible in the image. Full image preserved without cropping, using the existing WebP profile.",
+    "local": "/images/slots/gates-of-olympus-2500.webp",
+    "localize": "build-time",
+    "requireExplicitImage": true,
+    "image": "https://www.pragmaticplay.com/wp-content/uploads/2026/09/Gates-of-Olympus-2500_1200x630_EN.jpg"
   },
   {
-    "slug": "1win-bonanza",
-    "title": "1win Bonanza",
-    "provider": "Big Time Gaming",
-    "page": "https://forum.1win.com/topic/964-%F0%9F%8E%B0-3-favorite-1win-slots-play-by-your-rules/",
-    "note": "Temporary checked-in editorial placeholder. No reviewed game-specific official artwork is currently available; do not replace it with page OG metadata or unverified third-party art.",
-    "local": "/images/slots/1win-bonanza.svg",
-    "localize": "checked-in-placeholder",
-    "placeholder": true
+    "slug": "sweet-bonanza-1000",
+    "title": "Sweet Bonanza 1000",
+    "provider": "Pragmatic Play",
+    "page": "https://www.pragmaticplay.com/en/news/pragmatic-play-sweetens-up-candyland-in-sweet-bonanza-1000/",
+    "note": "Game-specific official Pragmatic Play release artwork, visually reviewed 2026-10-20. The title and edition are visible in the image. Full image preserved without cropping, using the existing WebP profile.",
+    "local": "/images/slots/sweet-bonanza-1000.webp",
+    "localize": "build-time",
+    "requireExplicitImage": true,
+    "image": "https://www.pragmaticplay.com/wp-content/uploads/2024/06/1200x630_EN.jpg"
   },
   {
     "slug": "black-friday-shady-lady",

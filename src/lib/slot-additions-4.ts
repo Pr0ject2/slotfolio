@@ -80,57 +80,62 @@ export const slotAdditions4: Slot[] = [
       }],
     },
   {
-      slug: "gates-of-1win",
-      name: "Gates of 1win",
-      provider: "Pragmatic Play",
-      year: 2024,
-      mechanic: "Каскады",
-      mechanics: ["Каскады"],
-      tags: ["Pay Anywhere", "Каскады", "Множители", "Свободные вращения"],
-      field: "6 × 5",
-      rtp: "96,50%",
-      volatility: "Высокая",
-      image: "/images/slots/gates-of-1win.svg",
-      description:
-        "Фирменная версия для 1win на базе Pay Anywhere: восемь и более одинаковых символов по всему полю создают выплату и запускают следующий каскад.",
-      feature:
-        "Gifts of Zeus добавляют множители до 500x, а в свободных вращениях каскады продолжают работать по той же базовой логике.",
-      note:
-        "Официальная публикация 1win указывает Pragmatic Play как разработчика и RTP 96,5%; перед игрой всё равно стоит сверять активную конфигурацию в справке.",
-      source: "https://forum.1win.com/topic/964-%F0%9F%8E%B0-3-favorite-1win-slots-play-by-your-rules/",
-      availability: [{
-        operator: "1win",
-        verifiedAt: "2026-09-07",
-        source: "https://forum.1win.com/topic/964-%F0%9F%8E%B0-3-favorite-1win-slots-play-by-your-rules/",
-        evidence: "Официальный форум 1win включает Gates of 1win в раздел 1win Only и прямо называет разработчиком Pragmatic Play.",
-      }],
-    },
+    slug: "gates-of-olympus-2500",
+    name: "Gates of Olympus 2500",
+    provider: "Pragmatic Play",
+    year: 2026,
+    mechanic: "Каскады",
+    mechanics: [
+      "Каскады"
+    ],
+    tags: [
+      "Pay Anywhere",
+      "Каскады",
+      "Множители",
+      "Свободные вращения",
+      "Бонусное колесо"
+    ],
+    field: "6 × 5",
+    rtp: "96,52%",
+    volatility: "Высокая",
+    image: "/images/slots/gates-of-olympus-2500.webp",
+    description: "Поле 6 × 5 с выплатами за восемь и более одинаковых символов в любых позициях. Выигрышные символы исчезают, а новые продолжают каскад.",
+    feature: "Множители достигают 2 500x. Четыре Scatter запускают 15 свободных вращений, а колесо выбирает один из четырёх бонусных режимов. Три Scatter добавляют 5 вращений; в Super Free Spins минимальный множитель равен 10x.",
+    note: "Промо-страница Pragmatic Play указывает RTP 96,52%, высокую волатильность и потенциал 25 000x. Это отдельная версия: её бонусные режимы и пределы множителей отличаются от оригинала и издания 1000. Конфигурацию RTP проверяйте в справке игры.",
+    source: "https://www.pragmaticplay.com/en/games/gates-of-olympus-2500/"
+  },
   {
-      slug: "1win-bonanza",
-      name: "1win Bonanza",
-      provider: "Big Time Gaming",
-      year: 2026,
-      mechanic: "Способы",
-      mechanics: ["Способы", "Каскады"],
-      tags: ["Megaways", "Каскады", "Свободные вращения", "Растущий множитель"],
-      field: "до 117 649 способов",
-      rtp: "96,00%",
-      volatility: "Высокая",
-      image: "/images/slots/1win-bonanza.svg",
-      description:
-        "Золотая Megaways-версия из раздела 1win Only: переменное число символов формирует до 117 649 способов, а выигрышные позиции запускают каскады.",
-      feature:
-        "В Free Spins каскады сопровождаются растущим множителем, поэтому важна длина последовательности событий, а не только исходная сетка.",
-      note:
-        "Официальная публикация 1win связывает игру с Megaways-механикой Big Time Gaming и указывает RTP 96%; подпись провайдера стоит сверить в живом лобби перед публикацией.",
-      source: "https://forum.1win.com/topic/964-%F0%9F%8E%B0-3-favorite-1win-slots-play-by-your-rules/",
-      availability: [{
+    slug: "sweet-bonanza-1000",
+    name: "Sweet Bonanza 1000",
+    provider: "Pragmatic Play",
+    year: 2024,
+    mechanic: "Каскады",
+    mechanics: [
+      "Каскады"
+    ],
+    tags: [
+      "Pay Anywhere",
+      "Каскады",
+      "Множители",
+      "Свободные вращения"
+    ],
+    field: "6 × 5",
+    rtp: "96,53%",
+    volatility: "Не опубликовано",
+    image: "/images/slots/sweet-bonanza-1000.webp",
+    description: "Фрукты и конфеты считаются по всему полю 6 × 5: восемь и более одинаковых символов дают выплату и запускают следующий каскад.",
+    feature: "Четыре леденца открывают 10 свободных вращений. Бомбы-множители достигают 1 000x и остаются на поле до конца каскадов, после чего их значения суммируются. Три леденца в бонусе добавляют 5 вращений.",
+    note: "В блоке Basic Game Info на официальной странице Pragmatic Play указан справочный RTP 96,53%, а в описании игры — потенциал 25 000x. RTP не описывает результат отдельной сессии и не гарантирует одинаковые настройки во всех казино. Активную конфигурацию проверяйте в правилах игры.",
+    source: "https://www.pragmaticplay.com/en/games/sweet-bonanza-1000/",
+    availability: [
+      {
         operator: "1win",
-        verifiedAt: "2026-09-07",
-        source: "https://forum.1win.com/topic/964-%F0%9F%8E%B0-3-favorite-1win-slots-play-by-your-rules/",
-        evidence: "Официальный форум 1win включает 1win Bonanza в раздел 1win Only и описывает её как слот на Megaways-механике от Big Time Gaming.",
-      }],
-    },
+        verifiedAt: "2026-10-20",
+        source: "https://t.me/s/reg_official_1win/3159",
+        evidence: "Официальный канал 1win включил Sweet Bonanza 1000 в публикацию «Три выигрыша недели» от 27 февраля 2026 года. Это историческое подтверждение публикации у оператора, а не гарантия доступности в каждом регионе."
+      }
+    ]
+  },
   {
       slug: "black-friday-shady-lady",
       name: "Black Friday",

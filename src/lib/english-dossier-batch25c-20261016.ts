@@ -90,17 +90,17 @@ export const englishDossierBatch25C = {
     feature: "Super Spins start under their own conditions; the expanding layout can change the number of ways as the feature develops.",
     perspective: "A very large maximum number of ways is a structural limit, not a probability of winning or the amount a spin will return.",
   },
-  "gates-of-1win": {
-    introduction: "Gates of 1win is an operator-branded version of a pay-anywhere tumble game.",
-    rules: "Groups of matching symbols can pay across the grid. Winning symbols are removed and replaced, so one paid spin can contain several linked combinations.",
-    feature: "Zeus-themed multiplier symbols add another layer during qualifying wins and free spins. The exact operator version and its settings should be verified within the game.",
-    perspective: "Branding similarities are not evidence that every rule or RTP option is identical to the standard Gates of Olympus release.",
+  "gates-of-olympus-2500": {
+    "introduction": "A 6 × 5 grid pays for eight or more matching symbols anywhere. Winning symbols disappear and replacements continue the tumble sequence.",
+    "rules": "A 6 × 5 grid pays for eight or more matching symbols anywhere. Winning symbols disappear and replacements continue the tumble sequence.",
+    "feature": "Multipliers reach 2 500x. Four Scatters trigger 15 free spins, and a wheel selects one of four bonus modes. Three Scatters add 5 spins; the minimum multiplier in Super Free Spins is 10x.",
+    "perspective": "Pragmatic Play’s campaign page lists RTP 96.52%, high volatility and win potential of 25 000x. This is a separate version: its bonus modes and multiplier limits differ from the original and the 1000 edition. Check the active RTP configuration in the game’s help."
   },
-  "1win-bonanza": {
-    introduction: "1win Bonanza uses a variable-reel ways-to-win system associated with the Megaways family.",
-    rules: "The number of active symbol positions can change between outcomes, which alters how many possible matching routes exist. Cascades can extend a winning sequence.",
-    feature: "During free spins, consecutive tumbles can affect the feature multiplier under the game's rules.",
-    perspective: "The provider and configuration should be checked against the actual game lobby: the operator's promotional material alone does not resolve every licensing or distribution detail.",
+  "sweet-bonanza-1000": {
+    "introduction": "Fruit and candy symbols count across a 6 × 5 grid: eight or more matching symbols award a win and start another tumble.",
+    "rules": "Fruit and candy symbols count across a 6 × 5 grid: eight or more matching symbols award a win and start another tumble.",
+    "feature": "Four lollipops unlock 10 free spins. Multiplier bombs reach 1 000x and stay on the grid until the tumble sequence ends, when their values are added together. Three lollipops during the bonus add 5 spins.",
+    "perspective": "The Basic Game Info section on Pragmatic Play’s official page lists reference RTP of 96.53%, while the game description states win potential of 25 000x. RTP does not describe the outcome of an individual session or guarantee identical settings at every casino. Check the active configuration in the game rules."
   },
   "black-friday-shady-lady": {
     introduction: "Black Friday combines fixed paylines with special character-led respin effects.",

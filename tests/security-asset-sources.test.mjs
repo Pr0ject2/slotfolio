@@ -9,7 +9,9 @@ test("approved published local image paths and HTTPS sources", () => {
   assert.equal(validAssetLocal(good), "images/catalog/playn-go-reactoonz-100.webp");
   assert.equal(validateAssetManifestEntry(good), good);
   assert.equal(safeHttpsUrl("/media/image.webp", "https://www.playngo.com/games/foo"), "https://www.playngo.com/media/image.webp");
-  assert.equal(validAssetLocal({ slug:"house-of-sins", local:"/images/slots/house-of-sins.svg", localize:"checked-in-placeholder" }), "images/slots/house-of-sins.svg");
+  assert.throws(() => validAssetLocal({ slug:"house-of-sins", local:"/images/slots/house-of-sins.svg", localize:"checked-in-placeholder" }));
+  assert.throws(() => validAssetLocal({ ...good, placeholder:true }));
+  assert.throws(() => validAssetLocal({ ...good, localize:"checked-in-placeholder" }));
 });
 
 test("traversal, path escapes and external file types are rejected", () => {

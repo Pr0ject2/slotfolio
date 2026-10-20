@@ -17,6 +17,20 @@ export type VerifiedSlotMetrics = {
 };
 
 const verifiedMetrics: Record<string, VerifiedSlotMetrics> = {
+  "gates-of-olympus-2500": {
+    "maxWin": "25 000x",
+    "maxWinLabel": "Заявленный потенциал",
+    "rtpVariants": [
+      "96,52%"
+    ],
+    "source": "https://www.pragmaticplay.com/ru/%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F/gates-of-olympus-2500/"
+  },
+  "sweet-bonanza-1000": {
+    "maxWin": "25 000x",
+    "maxWinLabel": "Заявленный потенциал",
+    "rtpVariants": ["96,53%"],
+    "source": "https://www.pragmaticplay.com/en/games/sweet-bonanza-1000/"
+  },
   "the-dog-house": {
     maxWin: "6 750x",
     maxWinLabel: "Заявленный потенциал",

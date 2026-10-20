@@ -130,16 +130,32 @@ test("100 full dossiers remain rich while the public catalog scales to 1000", ()
   expect(new Set(related.map((slot) => slot.slug)).size).toBe(3);
 });
 
-test("every researched slot added after v123 keeps auditable 1win evidence", () => {
+test("post-v123 dossiers keep auditable 1win evidence and the two explicitly approved exceptions", () => {
   const additions = slots.filter((slot) => !pre1winPolicySlugs.has(slot.slug));
   expect(additions).toHaveLength(70);
+  let operatorPageRecords = 0;
   for (const slot of additions) {
+    // Explicitly approved on 2026-10-20: this edition makes no operator claim.
+    if (slot.slug === "gates-of-olympus-2500") {
+      expect(slot.source).toBe("https://www.pragmaticplay.com/en/games/gates-of-olympus-2500/");
+      expect(slot.availability).toBeUndefined();
+      continue;
+    }
     const evidence = slot.availability?.find((item) => item.operator === "1win");
     expect(evidence, `${slot.slug} 1win evidence`).toBeTruthy();
     expect(evidence!.verifiedAt).toMatch(/^20\d{2}-\d{2}-\d{2}$/);
-    expect(evidence!.source).toMatch(/^https:\/\/(?:www\.)?(?:1win\.com|forum\.1win\.com)\//);
     expect(evidence!.evidence.length).toBeGreaterThan(20);
+    if (slot.slug === "sweet-bonanza-1000") {
+      // Only this exact historical official-channel post is approved.
+      expect(evidence!.source).toBe("https://t.me/s/reg_official_1win/3159");
+      expect(evidence!.verifiedAt).toBe("2026-10-20");
+      expect(evidence!.evidence).toContain("Sweet Bonanza 1000");
+    } else {
+      expect(evidence!.source).toMatch(/^https:\/\/(?:www\.)?(?:1win\.com|forum\.1win\.com)\//);
+      operatorPageRecords++;
+    }
   }
+  expect(operatorPageRecords).toBe(68);
 });
 
 test("dossier enrichment and local media stay intact", () => {
