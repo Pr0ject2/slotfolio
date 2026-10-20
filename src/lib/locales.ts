@@ -2,6 +2,7 @@ import { hasEnglishDossier } from "./english-dossier-routes";
 import { englishGameCollections } from "./english-game-collections";
 import { englishJournalGuides } from "./english-journal-guides";
 import { hasEnglishCatalogRecord } from "./english-catalog-record-routes";
+import { retiredSlotLinks } from "./retired-slot-links";
 export type SiteLocale = "ru" | "en";
 
 // Include only pages that have complete reviewed English copy.
@@ -35,7 +36,10 @@ function isReviewedRoute(path: string): boolean {
   if (path.startsWith("/mechanics/")) return ["cascades", "clusters", "lines", "collect", "ways"].includes(path.slice(11));
   if (path.startsWith("/providers/")) return ["pragmatic-play", "play-n-go", "push-gaming", "hacksaw-gaming", "nolimit-city", "netent", "relax-gaming", "endorphina", "bgaming", "3-oaks-gaming", "wazdan", "belatra-games", "yggdrasil-gaming", "shady-lady", "big-time-gaming", "clawbuster", "onlyplay", "mancala-gaming"].includes(path.slice(11));
   if (path.startsWith("/slots/catalog/")) return hasEnglishCatalogRecord(path.slice("/slots/catalog/".length));
-  return path.startsWith("/slots/") && hasEnglishDossier(path.slice("/slots/".length));
+  return path.startsWith("/slots/") && (
+    hasEnglishDossier(path.slice("/slots/".length)) ||
+    Object.prototype.hasOwnProperty.call(retiredSlotLinks, path.slice("/slots/".length))
+  );
 }
 
 export function isEnglishPath(path: string): boolean {
