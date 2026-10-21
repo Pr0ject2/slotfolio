@@ -52,14 +52,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ru" suppressHydrationWarning className={golos.variable}>
       <body>
-        {/* Sync the top-level document language for static /en pages without
+        {/* Sync the top-level document language for static /en and /es pages without
             request headers, middleware or runtime locale negotiation. */}
-        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang = /^\\/en(?:\\/|$)/.test(location.pathname.replace(/^\\/slotfolio(?=\\/|$)/, '')) ? 'en' : 'ru';" }} />
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang = /^\\/en(?:\\/|$)/.test(location.pathname.replace(/^\\/slotfolio(?=\\/|$)/, '')) ? 'en' : /^\\/es(?:\\/|$)/.test(location.pathname.replace(/^\\/slotfolio(?=\\/|$)/, '')) ? 'es' : 'ru';" }} />
         {/* Save an explicit language click even before React has hydrated the header. */}
         <script dangerouslySetInnerHTML={{ __html: `document.addEventListener('click', function(event) {
           var link = event.target instanceof Element ? event.target.closest('a[data-language-choice]') : null;
           var locale = link && link.getAttribute('data-language-choice');
-          if (locale === 'ru' || locale === 'en') {
+          if (locale === 'ru' || locale === 'en' || locale === 'es') {
             try { localStorage.setItem('slotfolio-language', locale); } catch {}
             var destination = new URL(link.href, location.href);
             if (destination.origin === location.origin) {
@@ -76,7 +76,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             name: SITE_NAME,
             url: siteUrl(),
             description: SITE_DESCRIPTION,
-            inLanguage: ["ru", "en"],
+            inLanguage: ["ru", "en", "es"],
             publisher: {
               "@type": "Organization",
               name: SITE_NAME,
@@ -90,6 +90,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <a href="#main" className="skip-link" data-locale="en" lang="en">
           Skip to content
         </a>
+        <a href="#main" className="skip-link" data-locale="es" lang="es">Saltar al contenido</a>
         <div className="site">
           <Header />
           <main id="main">{children}</main>

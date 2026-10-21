@@ -4794,5 +4794,9 @@ summary {
 }
 
 /* The keyboard skip link uses the actual page language, including static /en pages. */
-html[lang="ru"] .skip-link[data-locale="en"],
-html[lang="en"] .skip-link[data-locale="ru"] { display: none; }
+html[lang="ru"] .skip-link:not([data-locale="ru"]),
+html[lang="en"] .skip-link:not([data-locale="en"]),
+html[lang="es"] .skip-link:not([data-locale="es"]) { display: none; }
+/* The static language boundary also selects the right skip link without JS. */
+body:has(main > [lang="es"]) .skip-link:not([data-locale="es"]) { display: none; }
+body:has(main > [lang="es"]) .skip-link[data-locale="es"] { display: block; }

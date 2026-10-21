@@ -3,37 +3,41 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState, type MouseEvent } from "react";
 import styles from "./shell.module.css";
-import { isEnglishPath, languageHref, translatedCounterpart } from "@/lib/locales";
+import { hasTranslation, languageHref, siteLocale, type SiteLocale } from "@/lib/locales";
 import { withBasePath } from "@/lib/base-path";
+import { SpanishFooter } from "./spanish-footer";
 export function Header() {
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
   const path = usePathname();
   const router = useRouter();
-  const english = isEnglishPath(path);
-  useEffect(() => { document.documentElement.lang = english ? "en" : "ru"; }, [english]);
+  const locale = siteLocale(path);
+  const english = locale === "en";
+  const spanish = locale === "es";
+  useEffect(() => { document.documentElement.lang = locale; }, [locale]);
   useEffect(() => {
     // Static hosting: language negotiation happens in the browser, not at the edge.
     // An explicit saved choice always wins over browser settings.
-    let preference: "ru" | "en" | null = null;
+    let preference: SiteLocale | null = null;
     try {
       const stored = window.localStorage.getItem("slotfolio-language");
-      if (stored === "ru" || stored === "en") preference = stored;
+      if (stored === "ru" || stored === "en" || stored === "es") preference = stored;
     } catch { /* Storage may be disabled; browser language still works. */ }
     const browserLanguages = navigator.languages?.length ? navigator.languages : [navigator.language];
-    const browserLocale = /^ru(?:-|$)/i.test(browserLanguages[0] || "") ? "ru" : "en";
+    const firstLanguage = browserLanguages[0] || "";
+    const browserLocale: SiteLocale = /^ru(?:-|$)/i.test(firstLanguage) ? "ru" : /^es(?:-|$)/i.test(firstLanguage) ? "es" : "en";
     // Treat an explicit deep-link language as intentional. Auto-detect on the
     // entry homepage; a previously saved manual choice still takes priority.
-    const targetLocale = preference ?? (isEnglishPath(path) ? "en" : path === "/" ? browserLocale : "ru");
-    // Preserve deep links to pages that do not yet have an English counterpart.
-    if (targetLocale === "en" && !isEnglishPath(path) && !translatedCounterpart(path)) return;
+    const targetLocale = preference ?? (path === "/" ? browserLocale : siteLocale(path));
+    // Keep a direct link when its requested translation is not available yet.
+    if (!hasTranslation(path, targetLocale)) return;
     const target = languageHref(path, targetLocale);
     const current = path.replace(/\/$/, "") || "/";
     if (target !== current) {
       window.location.replace(withBasePath(target) + window.location.search + window.location.hash);
     }
   }, [path]);
-  function chooseLanguage(locale: "ru" | "en", event: MouseEvent<HTMLAnchorElement>) {
+  function chooseLanguage(locale: SiteLocale, event: MouseEvent<HTMLAnchorElement>) {
     try { window.localStorage.setItem("slotfolio-language", locale); }
     catch { /* Keep navigation functional when persistence is unavailable. */ }
     setOpen(false);
@@ -42,18 +46,20 @@ export function Header() {
       router.push(languageHref(path, locale) + window.location.search + window.location.hash);
     }
   }
-  const to = (route: string) => english ? languageHref(route, "en") : route;
+  const to = (route: string) => languageHref(route, locale);
   useEffect(() => {
     const desktop = window.matchMedia("(min-width: 601px)");
     const reset = () => { if (desktop.matches) setOpen(false); };
     desktop.addEventListener("change", reset);
     return () => desktop.removeEventListener("change", reset);
   }, []);
-  const links = english
+  const links = spanish
+    ? [["/es", "Inicio"], ["/es/journal/understanding-rtp", "Guía del RTP"], ["/es/about", "Acerca de"], ["/es/editorial-policy", "Criterios editoriales"]]
+    : english
     ? [["/en", "Home"], ["/en/slots", "Catalogue"], ["/en/search", "Search"], ["/en/journal/understanding-rtp", "RTP guide"], ["/en/about", "About"], ["/en/editorial-policy", "Editorial policy"]]
     : [["/slots", "Слоты"], ["/mechanics", "Механики"], ["/journal", "Разборы"], ["/collections", "Подборки"]];
   return (
-    <header lang={english ? "en" : "ru"} className={`header ${styles.header}`} onKeyDown={(event) => {
+    <header lang={locale} className={`header ${styles.header}`} onKeyDown={(event) => {
       if (event.key === "Escape" && open) {
         event.preventDefault();
         setOpen(false);
@@ -61,17 +67,17 @@ export function Header() {
       }
     }}>
       <div className="masthead">
-        <Link href={to("/")} className="brand" aria-label={english ? "Slotfolio home" : "Slotfolio — главная"}>
+        <Link href={to("/")} className="brand" aria-label={spanish ? "Slotfolio — inicio" : english ? "Slotfolio home" : "Slotfolio — главная"}>
           slotfolio<span className="brand-dot">.</span>
         </Link>
         <span className="tagline">
-          {english ? "Game rules, guides" : "Каталог, разборы"}
-          <br />{english ? "and mechanics" : "и механики игр"}
+          {spanish ? "Reglas, guías" : english ? "Game rules, guides" : "Каталог, разборы"}
+          <br />{spanish ? "y mecánicas de juego" : english ? "and mechanics" : "и механики игр"}
         </span>
         <span className="header-edition">
-          {english ? "GAME RULES · GUIDES · RTP" : "КАТАЛОГ · РАЗБОРЫ · СРАВНЕНИЕ"} <span>18+</span>
+          {spanish ? "REGLAS · GUÍAS · RTP" : english ? "GAME RULES · GUIDES · RTP" : "КАТАЛОГ · РАЗБОРЫ · СРАВНЕНИЕ"} <span>18+</span>
         </span>
-        <Link className="header-search" href={english ? "/en/search" : "/search"} aria-label={english ? "Find a game" : "Найти игру"}>
+        <Link className="header-search" href={spanish || english ? "/en/search" : "/search"} aria-label={spanish ? "Buscar juegos (en inglés)" : english ? "Find a game" : "Найти игру"}>
           <svg
             width="19"
             height="19"
@@ -84,7 +90,7 @@ export function Header() {
             <circle cx="10.5" cy="10.5" r="6.5" />
             <path d="m16 16 5 5" />
           </svg>
-          <span>{english ? "Search" : "Найти игру"}</span>
+          <span>{spanish ? "Buscar (EN)" : english ? "Search" : "Найти игру"}</span>
         </Link>
         <button
           ref={menuButton}
@@ -94,20 +100,20 @@ export function Header() {
           aria-controls="main-navigation"
           onClick={() => setOpen(!open)}
         >
-          {open ? (english ? "Close" : "Закрыть") : (english ? "Menu" : "Меню")} <span>{open ? "×" : "☰"}</span>
+          {open ? (spanish ? "Cerrar" : english ? "Close" : "Закрыть") : (spanish ? "Menú" : english ? "Menu" : "Меню")} <span>{open ? "×" : "☰"}</span>
         </button>
       </div>
       <div
         className={"nav-line " + (open ? "is-open" : "")}
         id="main-navigation"
       >
-        <nav aria-label={english ? "Main navigation" : "Основная навигация"}>
+        <nav aria-label={spanish ? "Navegación principal" : english ? "Main navigation" : "Основная навигация"}>
           {links.map(([href, label]) => (
             <Link
               key={href}
               href={href}
-              className={english && ["/en/about", "/en/editorial-policy"].includes(href) ? styles.englishSecondaryLink : undefined}
-              aria-current={path === href || (href !== "/en" && path.startsWith(href + "/")) ? "page" : undefined}
+              className={(english && ["/en/about", "/en/editorial-policy"].includes(href) || spanish && href === "/es/editorial-policy") ? styles.englishSecondaryLink : undefined}
+              aria-current={path === href || (!(["/en", "/es"].includes(href)) && path.startsWith(href + "/")) ? "page" : undefined}
               onClick={() => setOpen(false)}
             >
               {label}
@@ -115,24 +121,30 @@ export function Header() {
           ))}
         </nav>
         <div className="secondary-nav">
-          <Link href={english ? "/en/slots" : "/providers"} onClick={() => setOpen(false)}>
-            {english ? "Catalogue" : "Провайдеры"}
+          <Link href={spanish || english ? "/en/slots" : "/providers"} onClick={() => setOpen(false)}>
+            {spanish ? "Catálogo (EN)" : english ? "Catalogue" : "Провайдеры"}
           </Link>
-          <Link href={english ? "/en/responsible-gaming" : "/compare"} onClick={() => setOpen(false)}>
-            {english ? "Safer gambling" : "Сравнить игры"} <span>↗</span>
+          <Link href={spanish ? "/es/responsible-gaming" : english ? "/en/responsible-gaming" : "/compare"} onClick={() => setOpen(false)}>
+            {spanish ? "Juego responsable" : english ? "Safer gambling" : "Сравнить игры"} <span>↗</span>
           </Link>
-          <Link href={languageHref(path, english ? "ru" : "en")} hrefLang={english ? "ru" : "en"} lang={english ? "ru" : "en"}
-            data-language-choice={english ? "ru" : "en"}
-            className={styles.languageSwitch} onClick={(event) => chooseLanguage(english ? "ru" : "en", event)}>
-            {english ? "RU" : "EN"}
-          </Link>
+          <div className={styles.languageChoices} role="group" aria-label={spanish ? "Idioma" : english ? "Language" : "Язык"}>
+            {(["ru", "en", "es"] as const).filter(target => target !== locale).map(target => (
+              <Link key={target} href={languageHref(path, target)} hrefLang={target} lang={target}
+                data-language-choice={target} title={hasTranslation(path, target) ? undefined : target === "es" ? "Español: inicio" : target === "en" ? "English: home" : "Русский: главная"}
+                className={styles.languageSwitch} onClick={event => chooseLanguage(target, event)}>
+                {target.toUpperCase()}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </header>
   );
 }
 export function Footer() {
-  const english = isEnglishPath(usePathname());
+  const locale = siteLocale(usePathname());
+  const english = locale === "en";
+  if (locale === "es") return <SpanishFooter />;
   if (english) return (
     <footer className={`footer ${styles.englishFooter}`} lang="en">
       <div className="footer-main">
