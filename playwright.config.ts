@@ -3,7 +3,9 @@ export default defineConfig({
   testDir: "./tests",
   timeout: 30000,
   fullyParallel: false,
-  workers: 1,
+  // Keep the complete suite within the existing CI job budget as coverage grows.
+  // Files use isolated browser contexts and read the same immutable export.
+  workers: process.env.CI ? 2 : 1,
   reporter: "list",
   use: {
     baseURL: "http://localhost:3000",
@@ -18,3 +20,4 @@ export default defineConfig({
     },
   },
 });
+
