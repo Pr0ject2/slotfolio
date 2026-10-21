@@ -112,6 +112,16 @@ nine batch regressions check the full export, original sources, language routes,
 real images and six responsive widths. After this batch, 500 catalogue profiles
 and 100 game guides remain, plus the remaining site sections.
 
+## Stage 7: catalogue profiles 401–500
+
+The fifth existing catalogue batch receives complete Spanish content. All 100
+profiles preserve every source paragraph, feature and editorial qualification,
+including the distinction between theoretical limits, feature values and
+conditional awards. Readiness and source fingerprints extend to 500 profiles.
+The same nine regressions cover complete HTML, original sources, language routes,
+real artwork and six responsive widths. After this batch, 400 catalogue profiles
+and 100 game guides remain, plus the remaining site sections.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;
