@@ -91,6 +91,16 @@ game characteristic, source record, artwork, published selection or CI rule is
 changed. There are 700 catalogue profiles and 100 game guides left to translate
 after this batch, alongside the remaining site sections.
 
+## Stage 5: catalogue profiles 201–300
+
+The third existing catalogue batch receives complete Spanish introductions,
+feature explanations and editorial notes. Readiness and source fingerprints
+extend to 300 profiles, with no changes to the shared renderer or source facts.
+Edition differences, conditional awards, risk descriptions and missing-data
+qualifications remain explicit. The same nine batch regressions cover complete
+exported content and responsive browser behavior. After this batch, 600 catalogue
+profiles and 100 game guides remain, plus the remaining site sections.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;
