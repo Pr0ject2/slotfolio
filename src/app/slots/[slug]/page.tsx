@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SlotCasinoLink } from "@/components/slot-casino-link";
+import { hasReviewedGameArtwork } from "@/lib/artwork-availability";
 import { formatRtp } from "@/lib/catalog-stats";
 import { notFound } from "next/navigation";
 import {
@@ -50,7 +51,7 @@ export async function generateMetadata({
     title: `${s.name}: механика, RTP и устройство игры`,
     description: s.description,
     path: `/slots/${s.slug}`,
-    image: s.featureImage || s.image,
+    image: hasReviewedGameArtwork(s.featureImage || s.image) ? (s.featureImage || s.image) : undefined,
     openGraphType: "article",
   });
 }
@@ -81,7 +82,7 @@ export default async function Page({
   };
 
   const dossierUrl = absoluteUrl(`/slots/${s.slug}`);
-  const imageUrl = absoluteMediaUrl(s.featureImage || s.image);
+  const imageUrl = hasReviewedGameArtwork(s.featureImage || s.image) ? absoluteMediaUrl(s.featureImage || s.image) : null;
   const structuredData = [
     {
       "@context": "https://schema.org",
@@ -90,7 +91,7 @@ export default async function Page({
       description: s.description,
       url: dossierUrl,
       mainEntityOfPage: dossierUrl,
-      image: [imageUrl],
+      image: imageUrl ? [imageUrl] : [],
       inLanguage: "ru",
       publisher: {
         "@type": "Organization",
@@ -159,13 +160,11 @@ export default async function Page({
         </div>
         <CompareButton slug={s.slug} name={s.name} />
       </div>
-      <div className="slot-intro">
-        <figure className="slot-figure">
+      <div className={hasReviewedGameArtwork(s.featureImage || s.image) ? "slot-intro" : "slot-intro slot-intro-without-artwork"}>
+        {hasReviewedGameArtwork(s.featureImage || s.image) && <figure className="slot-figure">
           <GameImage slot={s} priority />
-          <figcaption>
-            Игровая графика · {s.provider} · {s.name}
-          </figcaption>
-        </figure>
+          <figcaption>Игровая графика · {s.provider} · {s.name}</figcaption>
+        </figure>}
         <div className="slot-summary">
           <span className="eyebrow">Суть игры</span>
           <p className="slot-deck">{s.description}</p>
