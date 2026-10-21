@@ -53,6 +53,30 @@ URL/history state, pagination, empty results, reload persistence and keyboard
 comparison selection. No artwork manifest, game facts, source, published set,
 indexing policy, CI configuration or existing test requirement is changed.
 
+## Stage 3: first 100 complete game profiles
+
+The first 100 entries in the existing catalogue selection receive full Spanish
+profiles. Every existing introductory paragraph, editorial explanation and
+feature description is translated; no profile is shortened to a passport.
+The Spanish renderer preserves the English renderer's calculations, related-game
+selection, source URLs and missing-data rules. It reuses the existing local
+artwork and styles. The shared casino link and promo-code controls gain Spanish
+copy while retaining their URL, code, safe link attributes and clipboard fallback.
+
+Readiness for dynamic game routes uses a separate lightweight slug registry,
+without shipping the full translated content to the language selector. Catalogue
+cards and related rows choose Spanish destinations only for complete profiles;
+remaining English destinations remain labelled. The static foundation route list
+stays limited to static pages, as in the existing English registry.
+
+The new source hashes identify the exact existing English content used for each
+translation. Tests compare all 100 entries, paragraph/feature counts, numerical
+values, source links, complete exported HTML and reciprocal language routes.
+Browser checks cover 320, 375, 390, 768, 1024 and 1440 px, including the first,
+middle and last profile, real artwork, safe outbound navigation, keyboard focus,
+copy success and manual copying after a denied clipboard request. Existing
+RU/EN tests and CI timeout settings remain unchanged.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;

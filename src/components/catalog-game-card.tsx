@@ -11,6 +11,7 @@ import { spanishCatalogFact } from "@/lib/spanish-catalog-facts";
 import type { SiteLocale } from "@/lib/locales";
 import { SlotArtwork } from "./slot-artwork";
 import { withBasePath } from "@/lib/base-path";
+import { hasSpanishCatalogRecord } from "@/lib/spanish-catalog-record-routes";
 
 function displayRelease(value: string) {
   if (!value) return "";
@@ -74,9 +75,10 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
   const href = item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
   const englishDossier = locale !== "ru" && hasEnglishDossier(item.slug);
   const englishCatalogRecord = locale !== "ru" && item.coverage === "catalog" && hasEnglishCatalogRecord(item.slug);
-  const destination = englishDossier ? `/en/slots/${item.slug}` : englishCatalogRecord ? `/en/slots/catalog/${item.slug}` : href;
   const spanish = locale === "es";
-  const openLabel = spanish ? `Abrir ${item.name} (en inglés)` : locale === "en" ? `Open ${item.name}${englishDossier || englishCatalogRecord ? "" : " (Russian)"}` : `Открыть ${item.name}`;
+  const spanishRecord = spanish && item.coverage === "catalog" && hasSpanishCatalogRecord(item.slug);
+  const destination = spanishRecord ? `/es/slots/catalog/${item.slug}` : englishDossier ? `/en/slots/${item.slug}` : englishCatalogRecord ? `/en/slots/catalog/${item.slug}` : href;
+  const openLabel = spanish ? `Abrir ${item.name}${spanishRecord ? "" : " (en inglés)"}` : locale === "en" ? `Open ${item.name}${englishDossier || englishCatalogRecord ? "" : " (Russian)"}` : `Открыть ${item.name}`;
   const year = displayYear(item);
   const facts = displayFacts(item, locale);
   const mappedArtwork = item.coverage === "catalog" ? getCatalogArtwork(item.slug) : null;
@@ -102,7 +104,7 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
         </div>
 
         <h2><Link href={destination} aria-label={spanish ? openLabel : undefined}>{item.name}</Link></h2>
-        {spanish && <span className="eyebrow" lang="es">Ficha del juego en inglés</span>}
+        {spanish && !spanishRecord && <span className="eyebrow" lang="es">Ficha del juego en inglés</span>}
         {locale === "en" && !englishDossier && !englishCatalogRecord ? <span className="eyebrow" lang="en">Game details in Russian</span> : null}
 
         {item.coverage === "dossier" && (
@@ -142,7 +144,7 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
           {item.coverage === "dossier" ? (
             <CompareButton slug={item.slug} name={item.name} locale={locale} />
           ) : (
-            <Link className={styles.openRecord} href={destination}>{spanish ? "Ver juego (en inglés) ↗" : locale === "en" ? (englishCatalogRecord ? "Game details ↗" : "Game details (Russian) ↗") : "Подробнее об игре ↗"}</Link>
+            <Link className={styles.openRecord} href={destination}>{spanish ? spanishRecord ? "Ver juego ↗" : "Ver juego (en inglés) ↗" : locale === "en" ? (englishCatalogRecord ? "Game details ↗" : "Game details (Russian) ↗") : "Подробнее об игре ↗"}</Link>
           )}
         </div>
       </div>

@@ -21,9 +21,17 @@ const copy = {
     success: "Promo code 3DDD copied.",
     error: "Could not copy. Select 3DDD and copy it manually.",
   },
+  es: {
+    label: "Código promocional",
+    action: "Copiar",
+    actionLabel: "Copiar el código promocional 3DDD",
+    copied: "Copiado",
+    success: "Código promocional 3DDD copiado.",
+    error: "No se pudo copiar. Selecciona 3DDD y cópialo manualmente.",
+  },
 } as const;
 
-export function PromoCodeCopy({ locale }: { locale: "ru" | "en" }) {
+export function PromoCodeCopy({ locale }: { locale: "ru" | "en" | "es" }) {
   const id = useId();
   const text = copy[locale];
   const [status, setStatus] = useState<"idle" | "copying" | "copied" | "error">("idle");
