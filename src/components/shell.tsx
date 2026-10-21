@@ -54,7 +54,7 @@ export function Header() {
     return () => desktop.removeEventListener("change", reset);
   }, []);
   const links = spanish
-    ? [["/es", "Inicio"], ["/es/journal/understanding-rtp", "Guía del RTP"], ["/es/about", "Acerca de"], ["/es/editorial-policy", "Criterios editoriales"]]
+    ? [["/es", "Inicio"], ["/es/slots", "Catálogo"], ["/es/search", "Buscar"], ["/es/journal/understanding-rtp", "Guía del RTP"], ["/es/about", "Acerca de"], ["/es/editorial-policy", "Criterios editoriales"]]
     : english
     ? [["/en", "Home"], ["/en/slots", "Catalogue"], ["/en/search", "Search"], ["/en/journal/understanding-rtp", "RTP guide"], ["/en/about", "About"], ["/en/editorial-policy", "Editorial policy"]]
     : [["/slots", "Слоты"], ["/mechanics", "Механики"], ["/journal", "Разборы"], ["/collections", "Подборки"]];
@@ -77,7 +77,7 @@ export function Header() {
         <span className="header-edition">
           {spanish ? "REGLAS · GUÍAS · RTP" : english ? "GAME RULES · GUIDES · RTP" : "КАТАЛОГ · РАЗБОРЫ · СРАВНЕНИЕ"} <span>18+</span>
         </span>
-        <Link className="header-search" href={spanish || english ? "/en/search" : "/search"} aria-label={spanish ? "Buscar juegos (en inglés)" : english ? "Find a game" : "Найти игру"}>
+        <Link className="header-search" href={spanish ? "/es/search" : english ? "/en/search" : "/search"} aria-label={spanish ? "Buscar un juego" : english ? "Find a game" : "Найти игру"}>
           <svg
             width="19"
             height="19"
@@ -90,7 +90,7 @@ export function Header() {
             <circle cx="10.5" cy="10.5" r="6.5" />
             <path d="m16 16 5 5" />
           </svg>
-          <span>{spanish ? "Buscar (EN)" : english ? "Search" : "Найти игру"}</span>
+          <span>{spanish ? "Buscar" : english ? "Search" : "Найти игру"}</span>
         </Link>
         <button
           ref={menuButton}
@@ -112,7 +112,7 @@ export function Header() {
             <Link
               key={href}
               href={href}
-              className={(english && ["/en/about", "/en/editorial-policy"].includes(href) || spanish && href === "/es/editorial-policy") ? styles.englishSecondaryLink : undefined}
+              className={(english && ["/en/about", "/en/editorial-policy"].includes(href) || spanish && ["/es/about", "/es/editorial-policy"].includes(href)) ? styles.englishSecondaryLink : undefined}
               aria-current={path === href || (!(["/en", "/es"].includes(href)) && path.startsWith(href + "/")) ? "page" : undefined}
               onClick={() => setOpen(false)}
             >
@@ -121,8 +121,8 @@ export function Header() {
           ))}
         </nav>
         <div className="secondary-nav">
-          <Link href={spanish || english ? "/en/slots" : "/providers"} onClick={() => setOpen(false)}>
-            {spanish ? "Catálogo (EN)" : english ? "Catalogue" : "Провайдеры"}
+          <Link href={spanish ? "/es/slots" : english ? "/en/slots" : "/providers"} onClick={() => setOpen(false)}>
+            {spanish ? "Catálogo" : english ? "Catalogue" : "Провайдеры"}
           </Link>
           <Link href={spanish ? "/es/responsible-gaming" : english ? "/en/responsible-gaming" : "/compare"} onClick={() => setOpen(false)}>
             {spanish ? "Juego responsable" : english ? "Safer gambling" : "Сравнить игры"} <span>↗</span>

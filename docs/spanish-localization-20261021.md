@@ -34,6 +34,25 @@ tests also cover plain HTML without JavaScript, keyboard menu/focus, persistence
 before hydration, browser detection, complete policy sections, real reciprocal
 alternates and absence of falsely advertised Spanish game routes.
 
+## Stage 2: catalogue and search interface
+
+Based on published main `468036fe3a09f48246f3b13c6f1ba6857d6ede04` (#529).
+Adds `/es/slots` and `/es/search`, using the existing 1000-game model and shared
+catalogue controls. Filters, result counts, sorting, pagination, list/cover views,
+empty results and comparison selection have Spanish copy. Label formatting
+preserves empty values, dates, digits, ranges and branded feature names.
+Whole Spanish search phrases resolve to existing English aliases; isolated words
+such as `de` do not broaden unrelated searches. Accents are accepted without
+altering Russian normalization. Both game types retain their current English
+destinations, explicitly labelled `en inglés`; individual Spanish profiles will
+be registered only after their complete translation.
+
+New regressions cover all 1000 records, alias equivalence, dates and unknown
+values, real loaded artwork, both routes and views at all five widths, filters,
+URL/history state, pagination, empty results, reload persistence and keyboard
+comparison selection. No artwork manifest, game facts, source, published set,
+indexing policy, CI configuration or existing test requirement is changed.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;
@@ -56,6 +75,8 @@ alternates and absence of falsely advertised Spanish game routes.
    (1000 games) and complete route inventory, not merely the current ready list.
 
 Each stage requires a separate PR, exact-final-SHA CI success and a verified
-preview. Publication authorization for earlier English batches is not silently
-extended to new Spanish PRs. Do not merge CI-only branches, relax guards or
-publish a partial profile as a complete translation.
+preview. The user explicitly authorized #529 and all subsequent Spanish stages
+after these checks on 2026-10-21. Verify mergeability and both GitHub Pages and
+Cloudflare production for each merged SHA before merging the next stage.
+Do not merge CI-only branches, relax guards or publish a partial profile as a
+complete translation.
