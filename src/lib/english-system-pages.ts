@@ -72,7 +72,7 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
       },
       {
         title: "Your language choice",
-        text: "The RU/EN switch saves your choice in this browser on this device. A saved choice takes priority over the browser language. You can change it with the switch or remove it by clearing Slotfolio's site data in your browser settings.",
+        text: "The RU/EN/ES switch saves your choice in this browser on this device. A saved choice takes priority over the browser language. You can change it with the switch or remove it by clearing Slotfolio's site data in your browser settings.",
       },
       {
         title: "Loading pages and following other websites",

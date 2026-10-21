@@ -3,7 +3,8 @@ import { englishGameCollections } from "./english-game-collections";
 import { englishJournalGuides } from "./english-journal-guides";
 import { hasEnglishCatalogRecord } from "./english-catalog-record-routes";
 import { retiredSlotLinks } from "./retired-slot-links";
-export type SiteLocale = "ru" | "en";
+import { spanishReadyPaths } from "./spanish-routes";
+export type SiteLocale = "ru" | "en" | "es";
 
 // Include only pages that have complete reviewed English copy.
 // Adding a route here exposes it in the language switcher and hreflang.
@@ -47,18 +48,34 @@ export function isEnglishPath(path: string): boolean {
 }
 
 export function russianPath(path: string): string {
-  if (!isEnglishPath(path)) return path;
-  return path.replace(/^\/en(?=\/|$)/, "") || "/";
+  return path.replace(/^\/(?:en|es)(?=\/|$)/, "") || "/";
+}
+
+export function siteLocale(path: string): SiteLocale {
+  return /^\/es(?:\/|$)/.test(path) ? "es" : isEnglishPath(path) ? "en" : "ru";
+}
+
+export function hasTranslation(path: string, locale: SiteLocale): boolean {
+  const normalized = russianPath(path).replace(/\/$/, "") || "/";
+  if (locale === "ru") return true;
+  return locale === "en" ? isReviewedRoute(normalized) : (spanishReadyPaths as readonly string[]).includes(normalized);
+}
+
+export function languageAlternates(path: string): Partial<Record<SiteLocale, string>> {
+  return Object.fromEntries((["ru", "en", "es"] as const)
+    .filter(locale => hasTranslation(path, locale))
+    .map(locale => [locale, languageHref(path, locale)]));
 }
 
 export function languageHref(path: string, target: SiteLocale): string {
   const normalized = russianPath(path).replace(/\/$/, "") || "/";
   if (target === "ru") return normalized;
-  return isReviewedRoute(normalized)
-    ? normalized === "/" ? "/en" : `/en${normalized}`
-    : "/en";
+  return hasTranslation(normalized, target)
+    ? normalized === "/" ? `/${target}` : `/${target}${normalized}`
+    : `/${target}`;
 }
 
+// Legacy RU/EN pair; new multilingual callers should use languageAlternates.
 export function translatedCounterpart(path: string): string | undefined {
   const normalized = russianPath(path).replace(/\/$/, "") || "/";
   if (!isReviewedRoute(normalized)) return undefined;

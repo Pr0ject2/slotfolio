@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { isEnglishPath, russianPath, translatedCounterpart } from "./locales";
+import { languageAlternates, siteLocale } from "./locales";
 
 export const SITE_NAME = "Slotfolio";
 export const SITE_DESCRIPTION =
@@ -88,11 +88,8 @@ export function pageMetadata({
     description,
     alternates: {
       canonical: absoluteUrl(path),
-      ...(translatedCounterpart(path) ? {
-        languages: {
-          ru: absoluteUrl(russianPath(path)),
-          en: absoluteUrl(isEnglishPath(path) ? path : translatedCounterpart(path)!),
-        },
+      ...(Object.keys(languageAlternates(path)).length > 1 ? {
+        languages: Object.fromEntries(Object.entries(languageAlternates(path)).map(([locale, route]) => [locale, absoluteUrl(route!)])),
       } : {}),
     },
     ...(noIndex ? { robots: { index: false, follow: true } } : {}),
@@ -101,7 +98,7 @@ export function pageMetadata({
       description,
       url: absoluteUrl(path),
       siteName: SITE_NAME,
-      locale: isEnglishPath(path) ? "en_GB" : "ru_RU",
+      locale: { ru: "ru_RU", en: "en_GB", es: "es_ES" }[siteLocale(path)],
       type: openGraphType,
       images: [{ url: absoluteMediaUrl(image), alt: `${SITE_NAME}: ${title}` }],
     },
