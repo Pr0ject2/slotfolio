@@ -77,6 +77,20 @@ middle and last profile, real artwork, safe outbound navigation, keyboard focus,
 copy success and manual copying after a denied clipboard request. Existing
 RU/EN tests and CI timeout settings remain unchanged.
 
+## Stage 4: catalogue profiles 101–200
+
+The next 100 entries from the existing second catalogue batch receive complete
+Spanish translations of every introductory paragraph, feature and editorial
+explanation. The shared renderer and data selection are unchanged. This batch
+extends the lightweight route registry and source fingerprints to 200 profiles;
+the remaining English game destinations keep their explicit language labels.
+
+The batch reuses the same completeness, numerical-value, source-fingerprint,
+exported-content, reciprocal-language and responsive-browser regressions. No
+game characteristic, source record, artwork, published selection or CI rule is
+changed. There are 700 catalogue profiles and 100 game guides left to translate
+after this batch, alongside the remaining site sections.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;
