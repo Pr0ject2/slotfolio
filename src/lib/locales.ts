@@ -4,6 +4,7 @@ import { englishJournalGuides } from "./english-journal-guides";
 import { hasEnglishCatalogRecord } from "./english-catalog-record-routes";
 import { retiredSlotLinks } from "./retired-slot-links";
 import { spanishReadyPaths } from "./spanish-routes";
+import { hasSpanishCatalogRecord } from "./spanish-catalog-record-routes";
 export type SiteLocale = "ru" | "en" | "es";
 
 // Include only pages that have complete reviewed English copy.
@@ -58,7 +59,10 @@ export function siteLocale(path: string): SiteLocale {
 export function hasTranslation(path: string, locale: SiteLocale): boolean {
   const normalized = russianPath(path).replace(/\/$/, "") || "/";
   if (locale === "ru") return true;
-  return locale === "en" ? isReviewedRoute(normalized) : (spanishReadyPaths as readonly string[]).includes(normalized);
+  return locale === "en" ? isReviewedRoute(normalized) : (
+    (spanishReadyPaths as readonly string[]).includes(normalized) ||
+    (normalized.startsWith("/slots/catalog/") && hasSpanishCatalogRecord(normalized.slice("/slots/catalog/".length)))
+  );
 }
 
 export function languageAlternates(path: string): Partial<Record<SiteLocale, string>> {

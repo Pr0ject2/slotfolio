@@ -12,9 +12,14 @@ const copy = {
     description: "Check game availability in your region and the terms of additional bonuses via the link.",
     action: "Choose a casino ↗",
   },
+  es: {
+    heading: "¿Dónde jugar a esta tragamonedas?",
+    description: "Comprueba la disponibilidad del juego en tu región y las condiciones de los bonos adicionales en el enlace.",
+    action: "Elegir casino ↗",
+  },
 } as const;
 
-export function SlotCasinoLink({ locale = "ru" }: { locale?: "ru" | "en" }) {
+export function SlotCasinoLink({ locale = "ru" }: { locale?: "ru" | "en" | "es" }) {
   const text = copy[locale];
   return (
     <aside className={styles.block} data-slot-casino-link={locale} aria-label={text.heading}>
