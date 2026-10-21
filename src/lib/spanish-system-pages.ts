@@ -21,7 +21,7 @@ export const spanishSystemPages: Record<string, SpanishInformationPage> = {
           "Busca el RTP, las fechas de lanzamiento y el premio máximo en los documentos correspondientes. Pueden publicarse por separado.",
           "La fecha de última comprobación indica cuándo revisamos un dato, no que vaya a permanecer igual para siempre.",
         ],
-        links: [{ label: "Consultar el catálogo (en inglés)", href: "/en/slots" }],
+        links: [{ label: "Consultar el catálogo", href: "/es/slots" }],
       },
       {
         title: "Cuando las cifras no coinciden",
@@ -66,7 +66,7 @@ export const spanishSystemPages: Record<string, SpanishInformationPage> = {
           "Para compartir un enlace sin filtros, usa la página del juego o la dirección del catálogo sin lo que aparece después del signo de interrogación.",
           "Borrar la lista de comparación no borra el historial. Si lo necesitas, elimina esas visitas por separado.",
         ],
-        links: [{ label: "Consultar el catálogo (en inglés)", href: "/en/slots" }],
+        links: [{ label: "Consultar el catálogo", href: "/es/slots" }],
       },
       {
         title: "Tu elección de idioma",

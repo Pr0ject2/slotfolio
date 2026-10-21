@@ -2,4 +2,5 @@
 export const spanishReadyPaths = [
   "/", "/about", "/editorial-policy", "/privacy", "/disclosure",
   "/responsible-gaming", "/journal/understanding-rtp",
+  "/slots", "/search",
 ] as const;

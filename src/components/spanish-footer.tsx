@@ -13,8 +13,8 @@ export function SpanishFooter() {
           <span className="eyebrow">Leer</span>
           <Link href="/es">Inicio</Link>
           <Link href="/es/journal/understanding-rtp">Qué significa el RTP</Link>
-          <Link href="/en/slots" hrefLang="en">Catálogo de juegos (en inglés)</Link>
-          <Link href="/en/search" hrefLang="en">Buscar juegos (en inglés)</Link>
+          <Link href="/es/slots">Catálogo de juegos</Link>
+          <Link href="/es/search">Buscar juegos</Link>
         </div>
         <div>
           <span className="eyebrow">Acerca de Slotfolio</span>

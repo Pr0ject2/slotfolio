@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import type { SiteLocale } from "@/lib/locales";
 import { useEffect, useState } from "react";
 
 export const MAX_COMPARE = 2;
@@ -46,8 +47,9 @@ export function useSelection() {
   return selected;
 }
 
-export function CompareButton({ slug, name, locale = "ru" }: { slug: string; name?: string; locale?: "ru" | "en" }) {
+export function CompareButton({ slug, name, locale = "ru" }: { slug: string; name?: string; locale?: SiteLocale }) {
   const english = locale === "en";
+  const spanish = locale === "es";
   const selected = useSelection();
   const [message, setMessage] = useState("");
   const included = selected.includes(slug);
@@ -58,7 +60,7 @@ export function CompareButton({ slug, name, locale = "ru" }: { slug: string; nam
     if (previous.includes(slug)) saveSelection(previous.filter((item) => item !== slug));
     else if (previous.length < MAX_COMPARE) saveSelection([...previous, slug]);
     else {
-      setMessage(english ? "Two games are already selected. Remove one first." : "В сравнении уже 2 игры. Удалите одну.");
+      setMessage(spanish ? "Ya hay dos juegos seleccionados. Quita uno antes de añadir otro." : english ? "Two games are already selected. Remove one first." : "В сравнении уже 2 игры. Удалите одну.");
       return;
     }
     setMessage("");
@@ -70,13 +72,13 @@ export function CompareButton({ slug, name, locale = "ru" }: { slug: string; nam
         type="button"
         className={`compare-button ${included ? "selected" : ""}`}
         aria-pressed={included}
-        aria-label={english ? `${included ? "Remove" : "Add"} ${label} ${included ? "from" : "to"} comparison` : `${included ? "Убрать" : "Добавить"} ${label} ${included ? "из сравнения" : "в сравнение"}`}
+        aria-label={spanish ? `${included ? "Quitar" : "Añadir"} ${label} ${included ? "de" : "a"} la comparación` : english ? `${included ? "Remove" : "Add"} ${label} ${included ? "from" : "to"} comparison` : `${included ? "Убрать" : "Добавить"} ${label} ${included ? "из сравнения" : "в сравнение"}`}
         onClick={toggle}
       >
-        {english ? included ? "✓ Selected" : "+ Compare" : included ? "✓ В сравнении" : "+ Сравнить"}
+        {spanish ? included ? "✓ Seleccionado" : "+ Comparar" : english ? included ? "✓ Selected" : "+ Compare" : included ? "✓ В сравнении" : "+ Сравнить"}
       </button>
       {message && selected.length >= MAX_COMPARE && (
-        <small role="status">{message} <Link href={english ? "/en/compare" : "/compare"}>{english ? "Open comparison" : "Открыть"}</Link></small>
+        <small role="status">{message} <Link href={english || spanish ? "/en/compare" : "/compare"}>{spanish ? "Ver comparación (en inglés)" : english ? "Open comparison" : "Открыть"}</Link></small>
       )}
     </div>
   );

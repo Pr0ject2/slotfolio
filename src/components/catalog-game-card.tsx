@@ -7,6 +7,10 @@ import styles from "./catalog-game-card.module.css";
 import { hasEnglishDossier } from "@/lib/english-dossier-routes";
 import { hasEnglishCatalogRecord } from "@/lib/english-catalog-record-routes";
 import { englishCatalogFact } from "@/lib/english-catalog-facts";
+import { spanishCatalogFact } from "@/lib/spanish-catalog-facts";
+import type { SiteLocale } from "@/lib/locales";
+import { SlotArtwork } from "./slot-artwork";
+import { withBasePath } from "@/lib/base-path";
 
 function displayRelease(value: string) {
   if (!value) return "";
@@ -48,7 +52,11 @@ type DisplayFact = {
   value: string;
 };
 
-function displayFacts(item: CatalogItem, locale: "ru" | "en"): DisplayFact[] {
+function displayFacts(item: CatalogItem, locale: SiteLocale): DisplayFact[] {
+  if (locale === "es") {
+    const labels: Record<string, string> = { Type: "Tipo", Grid: "Tablero", RTP: "RTP", "Max. win": "Premio máx.", Volatility: "Volatilidad", Release: "Lanzamiento" };
+    return displayFacts(item, "en").map(fact => ({ label: labels[fact.label], value: spanishCatalogFact(fact.value) }));
+  }
   const facts: DisplayFact[] = [
     { label: locale === "en" ? "Type" : "Тип", value: locale === "en" ? item.gameType : russianGameType(item.gameType) },
     { label: locale === "en" ? "Grid" : "Поле", value: item.field },
@@ -62,11 +70,13 @@ function displayFacts(item: CatalogItem, locale: "ru" | "en"): DisplayFact[] {
     locale === "en" ? { ...fact, value: englishCatalogFact(fact.value) } : fact);
 }
 
-export function CatalogGameCard({ item, number, locale = "ru" }: { item: CatalogItem; number: number; locale?: "ru" | "en" }) {
+export function CatalogGameCard({ item, number, locale = "ru" }: { item: CatalogItem; number: number; locale?: SiteLocale }) {
   const href = item.coverage === "dossier" ? `/slots/${item.slug}` : `/slots/catalog/${item.slug}`;
-  const englishDossier = locale === "en" && hasEnglishDossier(item.slug);
-  const englishCatalogRecord = locale === "en" && item.coverage === "catalog" && hasEnglishCatalogRecord(item.slug);
+  const englishDossier = locale !== "ru" && hasEnglishDossier(item.slug);
+  const englishCatalogRecord = locale !== "ru" && item.coverage === "catalog" && hasEnglishCatalogRecord(item.slug);
   const destination = englishDossier ? `/en/slots/${item.slug}` : englishCatalogRecord ? `/en/slots/catalog/${item.slug}` : href;
+  const spanish = locale === "es";
+  const openLabel = spanish ? `Abrir ${item.name} (en inglés)` : locale === "en" ? `Open ${item.name}${englishDossier || englishCatalogRecord ? "" : " (Russian)"}` : `Открыть ${item.name}`;
   const year = displayYear(item);
   const facts = displayFacts(item, locale);
   const mappedArtwork = item.coverage === "catalog" ? getCatalogArtwork(item.slug) : null;
@@ -81,35 +91,36 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
       data-coverage={item.coverage}
       data-verified-facts={item.verifiedFacts}
     >
-      {hasArtwork ? <Link className={`catalog-game-art ${styles.art}`} href={destination} aria-label={locale === "en" ? `Open ${item.name}${(englishDossier || englishCatalogRecord) ? "" : " (Russian)"}` : `Открыть ${item.name}`}><GameImage slot={{ ...item, image: resolvedImage }} /></Link> : null}
+      {hasArtwork ? <Link className={`catalog-game-art ${styles.art}`} href={destination} aria-label={openLabel}>{spanish ? <SlotArtwork className="game-image" src={withBasePath(resolvedImage)} alt={`Imagen de ${item.name}`} width={500} height={280} loading="lazy" decoding="async" /> : <GameImage slot={{ ...item, image: resolvedImage }} />}</Link> : null}
 
       <div className="catalog-game-copy">
         <div className={styles.metaRow}>
-          <span className={styles.number} aria-label={locale === "en" ? `Catalogue entry ${number}` : `Номер карточки ${number}`}>№ {number}</span>
+          <span className={styles.number} aria-label={spanish ? `Juego ${number}` : locale === "en" ? `Catalogue entry ${number}` : `Номер карточки ${number}`}>№ {number}</span>
           <span className="eyebrow">
             {item.provider}{year ? ` / ${year}` : ""}
           </span>
         </div>
 
-        <h2><Link href={destination}>{item.name}</Link></h2>
+        <h2><Link href={destination} aria-label={spanish ? openLabel : undefined}>{item.name}</Link></h2>
+        {spanish && <span className="eyebrow" lang="es">Ficha del juego en inglés</span>}
         {locale === "en" && !englishDossier && !englishCatalogRecord ? <span className="eyebrow" lang="en">Game details in Russian</span> : null}
 
         {item.coverage === "dossier" && (
-          locale === "en" && englishDossier
+          spanish ? <p lang="es">Consulta las reglas, los bonos y la información del juego en la ficha en inglés.</p> : locale === "en" && englishDossier
             ? <p lang="en">Read about the rules, bonus features and game information.</p>
             : <p lang={locale === "en" ? "ru" : undefined}>{item.description}</p>
         )}
 
         {item.mechanics.length ? (
-          <div className={styles.mechanics} aria-label={locale === "en" ? "Mechanics" : "Механики"}>
+          <div className={styles.mechanics} aria-label={spanish ? "Mecánicas" : locale === "en" ? "Mechanics" : "Механики"}>
             {item.mechanics.map((mechanic) => {
-              const label = locale === "en" ? englishCatalogFact(mechanic) : mechanic;
+              const label = spanish ? spanishCatalogFact(mechanic) : locale === "en" ? englishCatalogFact(mechanic) : mechanic;
               return <span key={mechanic} lang={locale === "en" && /[А-Яа-яЁё]/.test(label) ? "ru" : undefined}>{label}</span>;
             })}
           </div>
         ) : null}
 
-        {facts.length > 0 && <dl className={styles.facts} aria-label={locale === "en" ? "Game details" : "Характеристики"}>
+        {facts.length > 0 && <dl className={styles.facts} aria-label={spanish ? "Características" : locale === "en" ? "Game details" : "Характеристики"}>
           {facts.map((fact) => (
             <div className={styles.fact} key={fact.label}>
               <dt>{fact.label}</dt>
@@ -119,9 +130,9 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
         </dl>}
 
         {item.coverage === "dossier" && item.tags.length ? (
-          <div className={`catalog-game-tags ${styles.tags}`} aria-label={locale === "en" ? "Game features" : "Особенности игры"}>
+          <div className={`catalog-game-tags ${styles.tags}`} aria-label={spanish ? "Funciones del juego" : locale === "en" ? "Game features" : "Особенности игры"}>
             {item.tags.slice(0, 3).map((tag) => {
-              const label = locale === "en" ? (englishTags[tag] ?? englishCatalogFact(tag)) : tag;
+              const label = spanish ? spanishCatalogFact(tag) : locale === "en" ? (englishTags[tag] ?? englishCatalogFact(tag)) : tag;
               return <span key={tag} lang={locale === "en" && /[А-Яа-яЁё]/.test(label) ? "ru" : undefined}>{label}</span>;
             })}
           </div>
@@ -131,12 +142,12 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
           {item.coverage === "dossier" ? (
             <CompareButton slug={item.slug} name={item.name} locale={locale} />
           ) : (
-            <Link className={styles.openRecord} href={destination}>{locale === "en" ? (englishCatalogRecord ? "Game details ↗" : "Game details (Russian) ↗") : "Подробнее об игре ↗"}</Link>
+            <Link className={styles.openRecord} href={destination}>{spanish ? "Ver juego (en inglés) ↗" : locale === "en" ? (englishCatalogRecord ? "Game details ↗" : "Game details (Russian) ↗") : "Подробнее об игре ↗"}</Link>
           )}
         </div>
       </div>
 
-      <Link className="catalog-open" href={destination} aria-label={locale === "en" ? `Open ${item.name}${englishDossier || englishCatalogRecord ? "" : " (Russian)"}` : `Открыть ${item.name}`}>↗</Link>
+      <Link className="catalog-open" href={destination} aria-label={openLabel}>↗</Link>
     </article>
   );
 }

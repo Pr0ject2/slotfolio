@@ -66,7 +66,7 @@ export default function SpanishHome() {
       </section>
       <div className="editorial-signoff">
         <span className="brand-small">s.</span><p>Consulta las reglas antes de jugar.<br /><span>Busca por título, proveedor o mecánica.</span></p>
-        <Link href="/en/slots" hrefLang="en">Ver el catálogo (en inglés) ↗</Link>
+        <Link href="/es/slots">Ver el catálogo ↗</Link>
       </div>
     </>
   );

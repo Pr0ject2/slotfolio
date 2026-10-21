@@ -66,10 +66,23 @@ const searchAliasGroups = [
   ["bonus pop", "бонус поп"],
 ];
 
+// Resolve whole Spanish phrases before the existing token matcher. Adding
+// individual words such as "de" to alias groups would broaden unrelated searches.
+const spanishSearchAliases: [RegExp, string][] = [
+  [/\b(?:giros gratis|tiradas gratis)\b/g, "free spins"],
+  [/\bformas de ganar\b/g, "ways"],
+  [/\b(?:comodin|comodines)\b/g, "wild"],
+  [/\bcascadas\b/g, "cascades"],
+  [/\b(?:grupos|agrupaciones)\b/g, "clusters"],
+  [/\b(?:bote|botes)\b/g, "jackpot"],
+];
+
 export function normalizeCatalogSearch(value: string) {
   return value
     .normalize("NFKC")
     .toLowerCase()
+    // Fold Spanish accents without changing Russian й or ё normalization.
+    .replace(/[áéíóúüñ]/g, character => character.normalize("NFD").replace(/\p{Diacritic}/gu, ""))
     .replace(/ё/g, "е")
     .replace(/(\d),(?=\d)/g, "$1.")
     .replace(/[’']/g, "")
@@ -114,7 +127,8 @@ export function buildCatalogSearchText(input: {
 }
 
 export function catalogItemMatchesSearch(item: CatalogItem, query: string) {
-  const normalizedQuery = normalizeCatalogSearch(query);
+  let normalizedQuery = normalizeCatalogSearch(query);
+  for (const [pattern, alias] of spanishSearchAliases) normalizedQuery = normalizedQuery.replace(pattern, alias);
   if (!normalizedQuery) return true;
   const tokens = normalizedQuery.split(" ").filter(Boolean);
   return tokens.every((token) => {

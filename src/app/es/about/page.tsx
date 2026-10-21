@@ -32,7 +32,7 @@ export default function SpanishAbout() {
             <h2>Encontrar un juego</h2>
             <p>Slotfolio reúne 1000 juegos de tragamonedas. Busca por nombre o elige un desarrollador. Si no conoces el título, los filtros de mecánicas y funciones permiten acotar la búsqueda.</p>
             <p>Fíjate en cómo se forman los premios: en líneas de pago, en rodillos consecutivos o en grupos de símbolos. Después, comprueba cómo se activa el bono y qué cambia durante esa función.</p>
-            <p><Link href="/en/slots" hrefLang="en">Abrir el catálogo (en inglés)</Link></p>
+            <p><Link href="/es/slots">Abrir el catálogo</Link></p>
           </section>
           <section id="compare">
             <h2>Comparar juegos</h2>
