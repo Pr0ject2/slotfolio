@@ -225,6 +225,15 @@ Readiness and full-source fingerprints cover thirty guides. Passport dates with
 written months use conventional Spanish day/month/year phrasing; stored dates
 are unchanged. Seventy guides and the remaining site sections still require work.
 
+## Stage 16: complete game guides 31–40
+
+gates-of-olympus-1000, sugar-rush-1000, gates-of-olympus-super-scatter, sweet-bonanza-super-scatter, mahjong-wins-super-scatter, hand-of-anubis, rip-city, hell-hot-100, joker-stoker, lucky-streak-1 receive complete Spanish
+copy, feature cards, editorial notes, numerical caveats and source labels.
+No existing content is shortened. Game records, calculations, artwork and sources
+remain unchanged. Readiness and complete-source fingerprints cover 40 guides.
+The existing browser and export regressions include every added guide;
+60 guides and the remaining site sections still require translation.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;
