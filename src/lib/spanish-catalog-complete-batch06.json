@@ -1,0 +1,962 @@
+{
+  "3-oaks-gaming-super-hot-chilli": {
+    "intro": [
+      "Seis símbolos de bonificación Chilli Pepper o un medidor lleno activan Hold & Win con tres regiros.",
+      "Una fila adicional sobre el tablero de bonificación contiene símbolos Multiplier, Upgrade y Boost, mientras que los giros gratis utilizan Nudging Wilds."
+    ],
+    "editorial": "En Super Hot Chilli, el Hold & Win habitual se complementa con una fila superior independiente de símbolos Booster que modifica las posiciones ya recogidas.",
+    "features": [
+      {"title": "Seis Chilli Peppers", "description": "Seis símbolos de bonificación o un medidor lleno activan Hold & Win con tres regiros. Los nuevos Chilli Peppers quedan fijados y pueden incluir valores de jackpot."},
+      {"title": "Fila de potenciadores", "description": "La fila superior adicional de Hold & Win contiene símbolos Multiplier, Upgrade y Boost que modifican los valores de las posiciones recogidas."},
+      {"title": "Nudging Wilds", "description": "Tres Scatters activan diez giros gratis con Nudging Wilds; otros tres Scatters añaden cinco giros. Este modo es independiente de Hold & Win."}
+    ]
+  },
+  "hacksaw-gaming-shaolin-master": {
+    "intro": [
+      "Tras un premio por grupos, las cascadas eliminan los símbolos ganadores. Los Chi Orbs azules y rojos permanecen hasta terminar la ronda: el azul aumenta en +1 cada vez que participa en un premio, mientras que el rojo aumenta según el número de símbolos del grupo ganador.",
+      "Durante el bonus, un Chi Orb verde activa el multiplicador de un rodillo concreto como multiplicador global; todos los valores de los rodillos activados se suman y se aplican a cada premio posterior por grupos."
+    ],
+    "editorial": "Shaolin Master convierte los Chi Orbs en varias capas de progresión: los azules y rojos crecen dentro de una cadena normal de cascadas, los verdes habilitan multiplicadores globales de rodillo y The Master sustituye toda la dinámica por bloques multiplicadores que caen.",
+    "features": [
+      {"title": "Chi Orbs azules, rojos y Balance", "description": "Un Chi Orb azul aumenta en uno tras participar en un grupo ganador, mientras que el rojo aumenta según el número de símbolos del grupo. Un Balance Orb aparece en una cascada y revela el producto de los multiplicadores azul y rojo activos."},
+      {"title": "The Student y Chi Orbs verdes", "description": "Tres o cuatro FS activan The Student con diez o doce giros. Un Chi Orb verde activa el multiplicador de un rodillo para todos los grupos, y los valores de varios rodillos activos se suman."},
+      {"title": "The Master y bloques multiplicadores", "description": "Cinco FS activan The Master con tres vidas que se reponen. Los Stone Blocks sustituyen a los símbolos normales, los Modifier Blocks mejoran los rodillos y el Crusher rompe bloques y recoge sus valores."}
+    ]
+  },
+  "playn-go-derby-wheel": {
+    "intro": [
+      "Tres símbolos Wheel llevan el juego a la rueda de bonificación. La rueda contiene multiplicadores directos y una función independiente de carreras de caballos, Horse Racing Bonus.",
+      "Si la rueda se detiene en Horse Racing, se elige entre cuatro opciones: No Bet concede x40, Win permite pronosticar el ganador para obtener hasta x800, Exacta exige acertar el primer y segundo puesto para obtener hasta x1800, y Trifecta exige los tres primeros puestos en orden exacto para obtener hasta x2800."
+    ],
+    "editorial": "Derby Wheel integra la elección del riesgo en el propio bonus: al llegar a Horse Racing, se decide entre recibir un x40 fijo o cambiar esa garantía por un pronóstico más exigente con un multiplicador potencial mayor.",
+    "features": [
+      {"title": "Rueda de bonificación", "description": "Tres símbolos Wheel dan acceso a la rueda de bonificación, con premios individuales de multiplicador o entrada a un bonus de carreras de caballos en tres dimensiones. El resultado de la rueda y la apuesta hípica son etapas distintas."},
+      {"title": "No Bet y Win", "description": "En la carrera, No Bet garantiza x40 sin pronóstico. Win exige elegir al ganador entre los caballos mecánicos y puede conceder hasta x800 la apuesta total."},
+      {"title": "Exacta y Trifecta", "description": "Exacta exige acertar el primer y segundo puesto en orden exacto para obtener x1800. Trifecta exige nombrar a los tres primeros caballos en orden para obtener x2800, una elección de mayor riesgo."}
+    ]
+  },
+  "wazdan-great-book-of-magic-deluxe": {
+    "intro": [
+      "Great Book of Magic Deluxe mantiene la estructura de 20 líneas, pero renueva la presentación del castillo y del libro mágico; tres libros Scatter activan 10 giros gratis.",
+      "Antes de la ronda, las páginas del libro revelan un símbolo expansivo aleatorio. Un Scatter que aparece durante los giros gratis también se convierte en comodín."
+    ],
+    "editorial": "Para Deluxe, el desarrollador confirma el mismo RTP del 96.47% y premio máximo de 5150x que en el original, pero los detalles específicos del bonus deben consultarse en la propia página de Deluxe.",
+    "features": [
+      {"title": "Tres libros, diez giros", "description": "Tres Scatters en cualquier posición abren una ronda de 10 giros gratis."},
+      {"title": "Símbolo expansivo del bonus", "description": "El libro especial elige un símbolo que puede expandirse por un rodillo completo durante el bonus."},
+      {"title": "Scatter convertido en comodín", "description": "Durante los giros gratis, el símbolo del libro también sustituye a los símbolos normales."}
+    ]
+  },
+  "3-oaks-gaming-super-hot-teapots": {
+    "intro": [
+      "Los símbolos de progreso llenan tres medidores Teapot y activan Hold & Win.",
+      "Boost aumenta los valores, Extra amplía el tablero en dos filas, Multi añade multiplicadores y Master Teapot deja caer símbolos de bonificación."
+    ],
+    "editorial": "El bonus se basa en combinar tres funciones Teapot; durante la ronda pueden desbloquearse funciones adicionales, mientras que Master Teapot añade nuevos símbolos.",
+    "features": [
+      {"title": "Medidores de las teteras", "description": "Tres medidores de progreso de colores activan gradualmente Hold & Win y sus funciones de bonificación correspondientes. Una tetera inactiva puede activarse durante el propio bonus."},
+      {"title": "Boost, Extra y Multi", "description": "Boost aumenta los valores visibles, Extra abre dos filas con un multiplicador x2 que puede crecer y Multi asigna multiplicadores a casillas aleatorias. Las tres funciones pueden operar simultáneamente."},
+      {"title": "La tetera Master Teapot", "description": "Master Teapot añade aleatoriamente hasta tres símbolos de bonificación. En el Super Bonus mejorado, las tres funciones están activas y su efecto resulta más favorable."}
+    ]
+  },
+  "hacksaw-gaming-sixsixsix": {
+    "intro": [
+      "Un símbolo 6 azul o rojo en los rodillos 1, 3 y 5 se transforma en una Wicked Wheel. Las ruedas contienen multiplicadores que se suman o se multiplican, un sector de premio máximo y, en la versión azul, la posibilidad de abrir un bonus mediante otro 6.",
+      "Si se activan varias Wicked Wheels a la vez, sus resultados se recogen de izquierda a derecha. Antes de los dos bonus inferiores, Deal with the Devil puede cambiar el número de giros gratis o mejorar el modo al siguiente nivel."
+    ],
+    "editorial": "SixSixSix organiza el cálculo en torno a una secuencia de Wicked Wheels: el orden importa porque los valores se procesan de izquierda a derecha. Deal with the Devil añade un riesgo independiente antes del bonus y permite cambiar los 10 giros iniciales por otra cantidad o una mejora.",
+    "features": [
+      {"title": "Wicked Wheels azules y rojas", "description": "Los seises de los rodillos 1, 3 y 5 activan Wicked Wheels con multiplicadores que se suman o se multiplican. En el juego base solo aparecen ruedas azules, mientras que las versiones rojas más potentes están disponibles en los bonus."},
+      {"title": "Speak of the Devil y Let Hell Break Loose", "description": "Un seis de bonus ganador en una rueda abre diez giros Speak of the Devil; dos simultáneos abren Let Hell Break Loose, con mayor probabilidad de Wicked Wheels rojas y sin ruedas azules."},
+      {"title": "What the Hell y Deal with the Devil", "description": "Tres seises de bonus simultáneos activan What the Hell, con una rueda roja garantizada en cada giro. Antes de los dos bonus inferiores, Deal Wheel puede cambiar el número de giros o mejorar el nivel del bonus."}
+    ]
+  },
+  "playn-go-diamond-vortex": {
+    "intro": [
+      "Diamond Vortex utiliza un tablero hexagonal con tres anillos concéntricos alrededor de un vórtice central. Un grupo de 6+ cristales iguales paga y desaparece; los anillos recolocan los símbolos y después comienza una cascada.",
+      "Los comodines persistentes son atraídos al vórtice central y aumentan su multiplicador. Un Spot dentro de su propia Zone transforma todo el anillo correspondiente en un mismo símbolo; si los tres Spots coinciden a la vez, transforman todos los anillos simultáneamente."
+    ],
+    "editorial": "Diamond Vortex combina las cascadas con la rotación del tablero: tras un premio por grupos, no se limita a rellenarse desde arriba, sino que primero se reorganiza mediante tres anillos. El Core Wild central siempre participa y crece al absorber comodines.",
+    "features": [
+      {"title": "Anillos hexagonales y grupos", "description": "Pagan los grupos de seis o más cristales iguales adyacentes. Tras retirar un grupo, tres anillos desplazan los símbolos y solo entonces comienza una cascada."},
+      {"title": "Core Wild y cristales comodín", "description": "Core Wild permanece siempre en el centro del tablero. Los cristales comodín persistentes se mueven hacia él durante los premios, y cada comodín absorbido añade +1 al multiplicador de Core Wild para ese giro."},
+      {"title": "Zones, Spots y giros gratis", "description": "Un Spot que coincide con su Zone convierte todos los símbolos del anillo en un mismo tipo. Un símbolo Bonus en una Zone concede cinco giros gratis por anillo, hasta quince; durante el bonus, Core Wild y los Spots conservan su progreso."}
+    ]
+  },
+  "wazdan-haunted-coins-x1000": {
+    "intro": [
+      "Haunted Coins x1000 utiliza 16 posiciones independientes sin líneas e incorpora Cash Infinity a un Hold the Jackpot ambientado en Halloween.",
+      "Chance Level ofrece específicamente x2, x4 y x6 para aumentar la probabilidad del bonus. El x1000 del título y el premio máximo oficial de 1000x se refieren al juego completo, no a una moneda individual."
+    ],
+    "editorial": "En Haunted Coins, la distinción clave está entre la acumulación de Cash Infinity y el propio Hold the Jackpot; elegir un Chance Level cambia el coste de la apuesta, pero no promete un pago fijo.",
+    "features": [
+      {"title": "Bonus Hold the Jackpot", "description": "Los símbolos monetarios se recogen en una mecánica de bonificación independiente; Wazdan indica 1000x como premio máximo."},
+      {"title": "Acumulación Cash Infinity", "description": "El componente monetario refuerza el camino hacia un evento de bonificación sin convertirse en pagos normales por líneas."},
+      {"title": "Chance Level x2/x4/x6", "description": "La apuesta puede aumentarse para elevar la probabilidad del bonus; las opciones oficiales también incluyen Buy Feature."}
+    ]
+  },
+  "3-oaks-gaming-super-hotfire-diamonds": {
+    "intro": [
+      "El Yellow Diamond Collect recoge los valores de los símbolos de bonificación Silver Diamond.",
+      "En Hold & Win, pueden quedar fijados hasta tres símbolos Collect en el rodillo central, mientras que una Super Wheel concede una mejora adicional antes del bonus."
+    ],
+    "editorial": "Super Hotfire Diamonds se basa en símbolos Collect persistentes, en lugar de retener cada moneda: los símbolos de bonificación recogidos liberan posiciones para otros nuevos.",
+    "features": [
+      {"title": "El Collect amarillo", "description": "El Yellow Diamond Collect del rodillo central recoge los símbolos de bonificación Silver Diamond visibles y libera casillas para nuevos valores."},
+      {"title": "Tres Collect persistentes", "description": "En Hold & Win, pueden quedar fijados hasta tres símbolos Collect en el rodillo central para recoger símbolos de bonificación y jackpots fijos Mini, Minor, Major y Grand."},
+      {"title": "La rueda Super Wheel", "description": "Antes del bonus, Super Wheel puede añadir un Collect, una mejora Diamond Boost o un jackpot. La entrada al bonus es posible mediante un Collect con un Bonus o a través del medidor Diamond."}
+    ]
+  },
+  "hacksaw-gaming-slayers-inc": {
+    "intro": [
+      "Un símbolo VS se expande hasta formar un DuelReel comodín completo si, tras expandirse, participa en un premio. Dos multiplicadores Slayer compiten en un duelo y el del ganador se aplica a todo el rodillo.",
+      "En Wild Slayers, la aparición de un VS puede activar Slicer, que convierte una fila horizontal aleatoria entera en comodín. En One Slayer to Slay Them All, DuelReels y Slicer están garantizados en cada giro."
+    ],
+    "editorial": "Slayers Inc conecta la mecánica vertical DuelReel con la horizontal Slicer. Un VS puede aportar simultáneamente un rodillo comodín multiplicador y abrir una fila completa de comodines; el bonus superior garantiza ambas mecánicas en cada giro.",
+    "features": [
+      {"title": "Slayer DuelReels y multiplicadores", "description": "VS se expande hasta formar un DuelReel comodín completo si crea un premio. Dos personajes Slayer se enfrentan con sus multiplicadores y el valor del ganador se aplica a todas las líneas que pasan por el rodillo ocupado."},
+      {"title": "Slicer añade una fila de comodines", "description": "En Wild Slayers, Slicer puede activarse tras aparecer un VS y convertir en comodín toda una fila horizontal aleatoria. Mejora el tablero de forma independiente al DuelReel comodín vertical."},
+      {"title": "One Slayer to Slay Them All y Best of Bonus", "description": "Cinco FS abren diez giros con DuelReel y Slicer garantizados en cada uno. Best of Bonus ejecuta tres rondas completas del bonus elegido y paga el resultado más alto."}
+    ]
+  },
+  "playn-go-diamonds-of-the-realm": {
+    "intro": [
+      "En cualquier giro puede activarse un multiplicador aleatorio del premio de x2, x5, x10 o x100. Si ese giro produce un premio, el multiplicador activo se aplica al pago final.",
+      "Tres o más Diamond Scatters activan 5 giros gratis. En el bonus, el multiplicador siempre empieza en x2; recoger 6, 12 y 18 diamantes lo aumenta a x5, x10 y x100, respectivamente, y cada umbral también concede otros 5 giros."
+    ],
+    "editorial": "Diamonds of the Realm convierte los Scatters en un medidor de progreso interno de los giros gratis. Además de activar el bonus, aumentan el multiplicador por etapas y prolongan la secuencia.",
+    "features": [
+      {"title": "Multiplicador aleatorio", "description": "En un giro del juego base puede activarse un multiplicador del premio de x2, x5, x10 o x100. Se aplica a los pagos de las combinaciones ganadoras formadas en ese giro."},
+      {"title": "El Diamond Scatter", "description": "Tres o más Diamond Scatters conceden cinco giros gratis. Durante la secuencia, el multiplicador está activo en cada giro y comienza en x2."},
+      {"title": "Medidor de diamantes del bonus", "description": "Recoger 6, 12 y 18 diamantes aumenta el multiplicador a x5, x10 y x100, respectivamente. Cada uno de estos tres umbrales añade otros cinco giros gratis."}
+    ]
+  },
+  "wazdan-haunted-hospital": {
+    "intro": [
+      "Haunted Hospital combina un tablero compacto de tres rodillos y 27 líneas con eventos independientes de Mystery Bonus y giros gratis.",
+      "El comodín ayuda a formar combinaciones en esta ambientación de terror, pero Mystery Bonus no debe considerarse automáticamente un tipo de giros gratis: la página enumera ambas funciones por separado."
+    ],
+    "editorial": "Con solo tres rodillos, sus 27 líneas distinguen claramente Haunted Hospital de las tragaperras clásicas de tres rodillos y cinco líneas. Los dos bonus deben considerarse por separado.",
+    "features": [
+      {"title": "27 líneas en tres rodillos", "description": "La ficha técnica de Wazdan indica 3 rodillos y 27 líneas."},
+      {"title": "El Mystery Bonus", "description": "El proveedor enumera esta función misteriosa independiente por separado de los giros gratis."},
+      {"title": "Scatter, comodín y giros gratis", "description": "El Scatter participa en los eventos de bonificación, el comodín completa combinaciones por líneas y los giros gratis se enumeran por separado."}
+    ]
+  },
+  "3-oaks-gaming-super-sticky-piggy": {
+    "intro": [
+      "Piggy Wild aparece con multiplicadores x2 y x3 y permanece fijado durante los giros gratis.",
+      "Super Free Spins se activa mediante un medidor de símbolos Scatter; Jumping Piggy Wild se mueve por el tablero y gana fuerza a través de niveles."
+    ],
+    "editorial": "El ritmo principal de Super Sticky Piggy procede de los comodines persistentes y del avance del medidor: los símbolos Scatter hacen progresar los niveles y añaden giros gratis.",
+    "features": [
+      {"title": "Piggy Wild con x2/x3", "description": "En el juego base, Wild Piggy puede recibir un multiplicador x2 o x3. Tres Safe Scatters activan los giros gratis normales, en los que Piggy Wild permanece fijado."},
+      {"title": "Bonus Super Free Spins", "description": "Llenar el medidor principal de Scatters activa Super Free Spins con hasta tres Piggy Wilds persistentes al inicio."},
+      {"title": "El Jumping Piggy", "description": "Los Scatters durante los giros gratis hacen avanzar el Super Progress Meter y añaden dos giros cada vez y un Jumping Piggy Wild. Su multiplicador puede aumentar hasta x10."}
+    ]
+  },
+  "hacksaw-gaming-smoking-dragon": {
+    "intro": [
+      "Tras un premio, Row Cascade elimina toda la fila inferior, desplaza los símbolos restantes hacia abajo y rellena la fila superior con otros nuevos. Si el premio anterior se mantiene, aumenta o se forma uno nuevo, comienza otra Row Cascade.",
+      "Los símbolos Wild y Epic Wild pueden llevar multiplicadores aditivos. Un Epic Wild duplica su multiplicador en cada Row Cascade en la que participa, mientras que los valores de varios comodines en una combinación se suman primero."
+    ],
+    "editorial": "Smoking Dragon hace caer filas enteras en lugar de símbolos ganadores individuales. Esto es especialmente importante para Epic Wild: mientras continúe la cadena de Row Cascades, su multiplicador puede duplicarse repetidamente.",
+    "features": [
+      {"title": "Row Cascades desplaza todo el tablero", "description": "Tras una combinación ganadora, se retira toda la fila inferior, los demás símbolos bajan una fila y llegan otros nuevos por arriba. Solo comienza otra Row Cascade si se mantiene o aparece un premio."},
+      {"title": "Epic Wild y huevos de dragón", "description": "Un Epic Wild duplica su multiplicador en cada Row Cascade en la que participa. Tres Dragon Eggs simultáneos conceden un premio monetario instantáneo independiente y después quedan inactivos hasta ser eliminados."},
+      {"title": "Puff of Luck, Smoldering Riches y Fire and Fortune", "description": "Tres FS conceden diez giros con mayor probabilidad de comodines y huevos; cuatro abren una Multiplier Bar progresiva impulsada por las cascadas. Cinco FS conceden Fire and Fortune con un premio y un comodín garantizados en cada giro."}
+    ]
+  },
+  "playn-go-dio-killing-the-dragon": {
+    "intro": [
+      "Los Wild Wolves participan en Lock Up the Wolves: un comodín capturado queda fijado en una jaula y aparece otra jaula abierta en el siguiente rodillo. Capturar nuevos lobos consecutivamente prolonga los regiros, y los orbes mágicos pueden convertir los comodines en comodines multiplicadores.",
+      "Dentro de los giros gratis del castillo, los comodines persistentes pueden permanecer hasta terminar la ronda. Un símbolo Special abre distintas puertas: Fallen Angel añade un comodín que cae sobre el rodillo 1, Wild Multipliers mejora un comodín persistente y Symbol Upgrade eleva los símbolos de pago alto al de mayor valor."
+    ],
+    "editorial": "Dio Killing the Dragon separa la persecución de jaulas del juego base del castillo del bonus con varias puertas. Durante los giros gratis, el avance de Dio por el rodillo superior está vinculado a mejoras concretas y no a una única función aleatoria genérica.",
+    "features": [
+      {"title": "Función Lock Up the Wolves", "description": "Un nuevo Wolf Wild queda encerrado en una jaula y aparece otra jaula abierta en el siguiente rodillo. Los lobos consecutivos conceden regiros y los orbes mágicos pueden convertirlos en comodines multiplicadores."},
+      {"title": "Murray Scatter y Wild One", "description": "Tres dragones Murray Scatter activan los giros gratis del castillo. Wild One hace que los Wolf Wilds permanezcan fijados hasta terminar la secuencia de bonificación."},
+      {"title": "Tres puertas del castillo", "description": "Un símbolo Special puede activar Fallen Angel, con un comodín que cae sobre el rodillo 1; Wild Multipliers, para los comodines persistentes; o Symbol Upgrade, que eleva los símbolos de pago alto al más valioso."}
+    ]
+  },
+  "wazdan-highschool-manga": {
+    "intro": [
+      "Highschool Manga es una tragaperras de tres rodillos y cinco líneas en la que cuatro tipos de símbolos pueden formar un muro de 3×3 para una duplicación especial.",
+      "El Wall Multiplier x2 se aplica únicamente a un muro válido de nueve símbolos iguales, no a una secuencia ganadora normal; la volatilidad es ajustable."
+    ],
+    "editorial": "Este juego no enumera giros gratis independientes. Su bonus principal es un muro de 3×3 con x2, y la ficha técnica refleja volatilidad ajustable en lugar de una volatilidad alta fija.",
+    "features": [
+      {"title": "Muro de 3×3", "description": "Cuatro tipos de símbolos especificados pueden llenar nueve casillas y activar el bonus."},
+      {"title": "Multiplicador de muro x2", "description": "Duplica el premio de un muro válido, pero no establece el premio máximo."},
+      {"title": "Niveles de volatilidad", "description": "Wazdan enumera expresamente modos bajo, estándar y alto; Gamble Feature está disponible por separado."}
+    ]
+  },
+  "3-oaks-gaming-supreme-diamond-xxl": {
+    "intro": [
+      "Supreme Diamond XXL utiliza 15 líneas y Hold & Win con regiros.",
+      "Los símbolos Collect permanecen fijados y recogen repetidamente los valores visibles de los símbolos de bonificación."
+    ],
+    "editorial": "La principal diferencia del bonus son los símbolos Collect persistentes: permanecen en el tablero y continúan recogiendo valores de los nuevos símbolos de bonificación.",
+    "features": [
+      {"title": "Recolector Black Diamond", "description": "El recolector Black Diamond recoge los valores visibles de los símbolos de bonificación; tras recogerse, estos desaparecen y liberan posiciones para nuevos símbolos."},
+      {"title": "Hasta cinco Collect", "description": "En Hold & Win, pueden quedar fijados hasta cinco símbolos Collect en el segundo rodillo; recogen Mini, Minor, Major y Grand cada vez que aparecen símbolos de bonificación."},
+      {"title": "Lucky Spin y Super Bonus", "description": "El bonus se abre mediante una combinación de Bonus y Collect, un medidor Diamond lleno o Lucky Spin. Super Bonus garantiza de inmediato al menos tres símbolos Collect."}
+    ]
+  },
+  "hacksaw-gaming-snow-slingers": {
+    "intro": [
+      "Los símbolos Snow-volver normales y Epic lanzan 1–6 bolas de nieve a posiciones aleatorias. La primera bola normal convierte una casilla en Wild Snow y un impacto repetido añade un multiplicador; una bola Epic crea inmediatamente un Snow Multiplier.",
+      "En Throw Snow!, los Snow-volvers disparan a Gift Boxes con valores que se suman o se multiplican, en lugar de hacerlo al tablero. Los Snow-volvers normales persistentes acumulan estos valores, mientras que un símbolo Reload los recoge por rodillo y recarga 1–6 bolas de nieve."
+    ],
+    "editorial": "Snow Slingers utiliza impactos repetidos para desarrollar una casilla concreta: la nieve normal crea primero un comodín y después aumenta su multiplicador. En Throw Snow!, la misma idea pasa de las casillas a Snow-volvers persistentes que recogen valores de Gift Boxes.",
+    "features": [
+      {"title": "Snow-volvers normales y Epic", "description": "Un Snow-volver dispara entre una y seis bolas de nieve. El normal crea Wild Snow y solo añade un multiplicador con un impacto repetido; Epic convierte inmediatamente la casilla alcanzada en un Snow Multiplier."},
+      {"title": "Gift Boxes y revólveres persistentes", "description": "En el bonus Throw Snow!, los Snow-volvers disparan a Gift Boxes con valores aditivos o multiplicativos en lugar de a símbolos normales. Un Snow-volver normal persistente conserva los valores recogidos entre disparos repetidos."},
+      {"title": "Reload y la siguiente descarga", "description": "Reload recoge los valores del rodillo, recarga los Snow-volvers persistentes con entre uno y seis disparos e inicia otra revelación de Gift Boxes. La nueva descarga se distingue de un impacto normal sobre Wild Snow."}
+    ]
+  },
+  "playn-go-disco-diamonds": {
+    "intro": [
+      "Un Disco Wild en cualquier rodillo activa un Disco Re-Spin. Todos los comodines se convierten en Special Wilds y permanecen fijados durante un regiro, cuyos premios reciben x2.",
+      "Un nuevo Special Wild durante un regiro activa otro Disco Re-Spin y aumenta el multiplicador en +1. Tres Bonus Scatters en los rodillos 1, 3 y 5 abren la Bonus Wheel, con un premio instantáneo o 5, 7, 10 o 20 giros gratis."
+    ],
+    "editorial": "Disco Diamonds conecta los regiros con comodines persistentes y una rueda de bonificación: una cadena de Disco Re-Spins aumenta su propio multiplicador, mientras que durante los giros gratis el multiplicador alcanzado se conserva para la siguiente cadena de ese tipo dentro de la misma ronda.",
+    "features": [
+      {"title": "Los Disco Re-Spins", "description": "Un Disco Wild convierte los demás comodines en Special Wilds persistentes durante un regiro con multiplicador x2. Cada nuevo Special Wild prolonga la cadena y aumenta el multiplicador en +1."},
+      {"title": "Rueda de bonificación", "description": "Tres Bonus Scatters en los rodillos 1, 3, 5 activan una rueda con un premio instantáneo o cinco, siete, diez o veinte giros gratis. El propio bonus de giros gratis no puede reactivarse."},
+      {"title": "Multiplicador conservado", "description": "Los Disco Re-Spins funcionan dentro de los giros gratis. El multiplicador alcanzado se conserva para la siguiente cadena de Disco Re-Spins en el mismo modo de bonificación."}
+    ]
+  },
+  "wazdan-highway-to-hell": {
+    "intro": [
+      "Highway To Hell utiliza un camión como comodín expansivo: el símbolo puede ocupar un rodillo completo cuando eso forma combinaciones ganadoras.",
+      "Wall Multiplier se aplica a un muro que ocupa los tres, cuatro o cinco primeros rodillos y aumenta el pago 3, 4 o 5 veces, respectivamente."
+    ],
+    "editorial": "El original indica un RTP del 96.18% y un máximo de 2500x con volatilidad baja–media. Deluxe tiene cifras distintas, por lo que su 1000x no debe trasladarse aquí.",
+    "features": [
+      {"title": "Camión comodín expansivo", "description": "Sustituye a los símbolos normales y se expande por un rodillo cuando se forman las combinaciones ganadoras correspondientes."},
+      {"title": "Tres, cuatro o cinco muros", "description": "Los muros coincidentes en los primeros 3/4/5 rodillos activan multiplicadores x3/x4/x5."},
+      {"title": "Cinco líneas fijas", "description": "A pesar de la variedad de mejoras, las combinaciones del juego base pagan en cinco líneas repartidas por cinco rodillos."}
+    ]
+  },
+  "3-oaks-gaming-thunder-tiger": {
+    "intro": ["Thunder Tiger organiza su bonus en torno a símbolos Linear Bonus, Collect y Mystery.", "Los multiplicadores del bonus mejoran los pagos por líneas y los valores de los símbolos de jackpot."],
+    "editorial": "Aquí importa la combinación de Collect, Mystery y multiplicadores: el bonus no se limita a retener símbolos, sino que aumenta gradualmente su valor.",
+    "features": [
+      {"title": "Bonus Hold & Win", "description": "Seis símbolos de bonificación activan el Hold & Win normal con Mini, Minor, Major, Mystery y un Collect que recoge los valores monetarios del tablero."},
+      {"title": "Modo Linear Bonus", "description": "Seis símbolos Linear Bonus abren un modo independiente de diez líneas. Pagan de dos a cinco símbolos en una línea, también mediante Linear Jackpot."},
+      {"title": "Multiplicadores Thunder", "description": "El tigre puede activar multiplicadores aleatoriamente en ambos bonus. En Linear Bonus, aumentan el pago por línea y los valores de los símbolos de jackpot en las posiciones correspondientes."}
+    ]
+  },
+  "hacksaw-gaming-spear-of-athena": {
+    "intro": ["Un premio activa un Goddess Respin: las posiciones participantes quedan marcadas con Flaming Frames. Los regiros continúan mientras se amplíe un premio existente o aparezca uno nuevo.", "Si al terminar un Goddess Respin hay un símbolo Fortune en el tablero, todos los Flaming Frames se activan y revelan monedas, ánforas o escudos. Las monedas conceden premios monetarios, los escudos mejoran las monedas y un ánfora recoge los valores visibles de monedas y otras ánforas."],
+    "editorial": "Spear of Athena acumula primero casillas marcadas por premios y después utiliza un activador Fortune independiente para convertirlas en una fase monetaria. Por ello, el valor de una secuencia de regiros depende tanto de las combinaciones como del número de Flaming Frames que permanezcan en el tablero.",
+    "features": [
+      {"title": "Goddess Respins y Flaming Frames", "description": "Tras un premio, las casillas se marcan con Flaming Frames y un nuevo Goddess Respin ofrece la posibilidad de ampliar la combinación actual. Los regiros continúan mientras crezca un premio existente o aparezca otro."},
+      {"title": "Fortune revela los marcos recogidos", "description": "Si hay un símbolo Fortune al terminar un Goddess Respin, los Flaming Frames revelan monedas, escudos y ánforas. Las monedas contienen valores monetarios, los escudos las mejoran y un ánfora recoge valores del tablero."},
+      {"title": "Goddess Respins del bonus", "description": "Durante los giros gratis, los Flaming Frames marcados por premios pueden acumularse y conservarse hasta una revelación Fortune, por lo que la fase monetaria depende del número de marcos retenidos y no solo de la combinación original."}
+    ]
+  },
+  "playn-go-divina-commedia-i-nove-cerchi": {
+    "intro": ["Tres o más Scatters abren los giros gratis. Antes de comenzar la función, una Modifier Wheel selecciona una opción: Win Multiplier, Soul Modifier o Lantern Modifier.", "Las linternas mejoran los símbolos Soul y ayudan a desarrollar los modificadores. Si aparecen almas sin una linterna, Lucifer puede llevárselas y activar Hold & Win con 3 regiros; cada nueva alma reinicia el contador a tres."],
+    "editorial": "Divina Commedia I Nove Cerchi basa la progresión en linternas y almas: durante los giros gratis desarrollan el modificador seleccionado, mientras que fuera de esa combinación las almas pueden entrar en un Lucifer Hold & Win independiente. Llenar por completo el tablero de Hold & Win con almas concede un gran premio adicional.",
+    "features": [
+      {"title": "Rueda previa a los giros gratis", "description": "Tres o más Scatters abren los giros gratis y la Modifier Wheel. Esta elige un multiplicador del premio, una mejora del símbolo Soul o una mayor frecuencia de linternas."},
+      {"title": "Linterna y almas", "description": "Las linternas mejoran las almas a formas más valiosas y, durante los giros gratis, ayudan a desarrollar el modificador asignado y a prolongar la secuencia."},
+      {"title": "El Lucifer Hold & Win", "description": "Las almas sin una linterna pueden activar un Hold & Win independiente con tres regiros. Las nuevas almas reinician el contador y llenar el tablero concede un premio adicional."}
+    ]
+  },
+  "wazdan-highway-to-hell-deluxe": {
+    "intro": ["Highway to Hell Deluxe renueva la presentación del camino al infierno, pero mantiene cinco rodillos, cinco líneas y un camión comodín expansivo.", "Un muro independiente de nueves, dieces, jotas o reinas a lo largo de tres, cuatro o cinco rodillos concede multiplicadores x3, x4 o x5."],
+    "editorial": "Las cifras técnicas de Deluxe difieren notablemente de las del original: RTP del 96.56%, volatilidad alta y premio máximo de 1000x frente a los 2500x del juego original. Las fichas no deben mezclarse.",
+    "features": [
+      {"title": "Camión comodín expansivo", "description": "Cubre un rodillo completo cuando eso ayuda a formar una combinación que paga."},
+      {"title": "Wall Multiplier para 9, 10, J, Q", "description": "Los muros de símbolos iguales en los primeros 3/4/5 rodillos mejoran el pago en x3/x4/x5."},
+      {"title": "Gamble y niveles de volatilidad", "description": "Tras un premio hay disponible un juego de riesgo independiente; la lista oficial de funciones menciona el ajuste de volatilidad."}
+    ]
+  },
+  "3-oaks-gaming-tiger-gems": {
+    "intro": ["Hold & Win en Tiger Gems empieza con tres regiros que se reponen con nuevos símbolos.", "Boost recoge los valores visibles de los símbolos de bonificación, mientras que los símbolos Mystery llegan desde la cola Fortune Slide."],
+    "editorial": "Tiger Gems combina el Hold & Win clásico con una cola Fortune Slide independiente que puede introducir símbolos Mystery en la ronda.",
+    "features": [
+      {"title": "Seis gemas de bonificación", "description": "Seis gemas verdes conceden Hold & Win con tres regiros, que se reinician tras cada nueva gema. Algunos símbolos de bonificación contienen Mini, Minor o Major."},
+      {"title": "Símbolo Boost", "description": "En Hold & Win, Boost recoge todos los valores de gemas visibles; un tablero lleno también puede abrir el Grand Jackpot."},
+      {"title": "La cola Fortune Slide", "description": "Un símbolo Mystery revela el primer elemento de la cola Fortune Slide, que contiene Bonus, Jackpot o Boost. Los símbolos Bonus y Boost aparecen con mayor frecuencia durante los giros gratis."}
+    ]
+  },
+  "hacksaw-gaming-spinman": {
+    "intro": ["Un símbolo Spinman se expande hasta formar un Justice Reel comodín completo si la expansión crea al menos una combinación ganadora.", "La expansión inicia una Booster Wheel con uno de seis multiplicadores o un MAX WIN instantáneo. Si varios Justice Reels participan en un premio, sus multiplicadores se combinan primero y después se aplican al pago."],
+    "editorial": "Spinman vincula la propia expansión del rodillo comodín a una Booster Wheel independiente: un Justice Reel tiene valor como conjunto de comodines y como fuente de multiplicadores. Varios de estos rodillos en una combinación pueden mejorar el mismo pago.",
+    "features": [
+      {"title": "Spinman crea un Justice Reel", "description": "Spinman se expande hasta formar un Justice Reel comodín completo solo si la expansión crea al menos una combinación ganadora. Además de sustituir a los símbolos normales, inicia una fase de mejora independiente."},
+      {"title": "Booster Wheel tras la expansión", "description": "Después de aparecer un Justice Reel, la rueda revela un multiplicador disponible o un MAX WIN instantáneo. La rueda se activa específicamente en relación con una expansión ganadora y no en cada giro aleatorio."},
+      {"title": "Varios Justice Reels en un pago", "description": "Si dos o más Justice Reels participan en una línea ganadora, los valores de sus ruedas se combinan primero y solo después se aplican al pago final de la línea, a diferencia de un único rodillo."}
+    ]
+  },
+  "playn-go-divine-showdown": {
+    "intro": ["En giros aleatorios, Multiplier Reel puede conceder un multiplicador de hasta x10. También puede aparecer uno de cuatro dioses: Wukong añade rodillos comodín, Anubis convierte 1–2 símbolos en comodines, Athena sincroniza 3 rodillos y Thor convierte los símbolos de dioses en Thor.", "Tres Scatters activan los giros gratis. Se reciben 3 vidas y un dios seleccionado cuya Power Feature funciona en los giros normales del bonus; Battle Reel decide entre un giro normal y una batalla contra otro dios."],
+    "editorial": "Divine Showdown convierte los giros gratis en una secuencia de batallas con una reserva de vidas. Ganar una batalla concede un giro con el poder seleccionado; perder resta una vida y hace que el siguiente giro utilice el poder del adversario.",
+    "features": [
+      {"title": "Poderes de cuatro dioses", "description": "Wukong añade rodillos comodín, Anubis convierte de uno a dos símbolos en comodines, Athena sincroniza tres rodillos y Thor sustituye los símbolos de dioses por Thor; un Multiplier Reel independiente concede hasta x10."},
+      {"title": "Giros gratis y Battle Reel", "description": "Tres Scatters inician los giros gratis con tres vidas. El dios seleccionado aporta su poder en los giros normales, mientras que Battle Reel determina un giro o una batalla con otro dios."},
+      {"title": "Resultado de la batalla", "description": "Gana el bando con más símbolos Power. La victoria conserva el poder del dios seleccionado, mientras que la derrota resta una vida y aplica el poder del adversario en el siguiente giro."}
+    ]
+  },
+  "wazdan-hot-777": {
+    "intro": ["Hot 777 es un clásico de tres rodillos y cinco líneas con dos bonus independientes basados en sietes: Golden Seven y Hot Seven.", "Según la descripción de Wazdan, el primero concede 30 giros gratis y un multiplicador x3, mientras que el segundo concede 45 giros gratis con pagos triplicados. Esto es distinto de los Hot Spins de la versión Deluxe."],
+    "editorial": "Hot 777 declara un máximo de 3100x, mientras que Hot 777 Deluxe indica solo 200x. Sus nombres parecidos pueden confundirse fácilmente: las estructuras de sus bonus también son completamente distintas.",
+    "features": [
+      {"title": "Bonus Golden Seven", "description": "Abre 30 giros gratis con pagos de bonificación triplicados."},
+      {"title": "Bonus Hot Seven", "description": "Un modo independiente ofrece 45 giros y un multiplicador x3 para las combinaciones ganadoras."},
+      {"title": "Coin Bonus y Scatter", "description": "Además de los dos bonus basados en sietes, el proveedor enumera Coin Bonus y Scatter como elementos independientes."}
+    ]
+  },
+  "3-oaks-gaming-tiger-jungle": {
+    "intro": ["Tiger Jungle combina Hold & Win con un símbolo Collect y una ronda de giros gratis independiente.", "Los giros gratis utilizan comodines persistentes, mientras que Hold & Win permite recoger valores y símbolos de jackpot fijo."],
+    "editorial": "El juego reparte el protagonismo entre dos bonus: Hold & Win se encarga de recoger valores, mientras que los giros gratis se centran en comodines persistentes.",
+    "features": [
+      {"title": "Hold & Win con símbolos de jackpot", "description": "En esta rama de bonificación pueden aparecer símbolos de bonificación y de jackpot fijo; la ronda se centra en acumular valores de premio en lugar de premios normales por líneas."},
+      {"title": "Collect recoge valores", "description": "Durante Hold & Win, el símbolo Collect recoge los valores visibles de los símbolos de bonificación. La recogida funciona de forma independiente a los comodines persistentes disponibles en la otra rama del bonus."},
+      {"title": "Giros gratis con comodines persistentes", "description": "En la secuencia independiente de giros gratis, los comodines que aparecen quedan fijados en los rodillos y siguen participando en combinaciones ganadoras en los siguientes giros del bonus."}
+    ]
+  },
+  "hacksaw-gaming-steamrunners": {
+    "intro": ["Un Green Gas Canister se convierte a sí mismo y a los símbolos vecinos de pago bajo o comodines en comodines, y puede seguir extendiéndose por posiciones conectadas.", "Un Purple Gas Canister que participa en un premio convierte todos los símbolos de pago bajo y comodines del tablero en comodines; los comodines transformados pueden recibir multiplicadores de hasta x200."],
+    "editorial": "Steamrunners utiliza dos escalas de la misma mecánica: el depósito verde extiende comodines localmente por casillas adyacentes, mientras que la versión morada puede remodelar casi todo el tablero. Durante los bonus, los multiplicadores de comodín se vuelven persistentes, por lo que los efectos de los depósitos se conservan entre giros.",
+    "features": [
+      {"title": "Green Gas Canister y cadena local", "description": "Un depósito verde se convierte a sí mismo y a los símbolos vecinos de pago bajo o comodines en comodines. La propagación puede continuar por posiciones conectadas válidas y cubrir gradualmente parte del tablero."},
+      {"title": "Purple Gas Canister de alcance global", "description": "Un depósito morado en una activación ganadora convierte todos los símbolos disponibles de pago bajo y comodines del tablero en comodines. Los comodines creados pueden recibir multiplicadores, por lo que el efecto abarca más de un grupo."},
+      {"title": "Comodines multiplicadores persistentes en bonus", "description": "En los modos de bonificación, los comodines multiplicadores creados por Gas Canisters pueden permanecer fijados entre giros, conservar sus posiciones y mejorar nuevas combinaciones sin reiniciar toda la cadena."}
+    ]
+  },
+  "playn-go-doom-of-egypt": {
+    "intro": ["El Sacred Scarab actúa como comodín y como Scatter. Tres escarabajos activan 10 giros gratis, tras lo cual se selecciona aleatoriamente uno de nueve símbolos normales como símbolo expansivo especial.", "El símbolo especial se expande por su rodillo si aparecen suficientes unidades para una combinación ganadora normal; la expansión sucede después de pagar los premios normales. Otros tres escarabajos durante los giros gratis reactivan la ronda hasta alcanzar el límite total de premios."],
+    "editorial": "Doom of Egypt sigue la fórmula clásica del símbolo expansivo de Dead Series, pero su activador específico es el escarabajo, que funciona simultáneamente como comodín y Scatter. El símbolo seleccionado conserva su carácter especial durante todo el bonus.",
+    "features": [
+      {"title": "El Sacred Scarab", "description": "El escarabajo es un comodín para las líneas y un Scatter para el bonus. Tres de estos escarabajos activan diez giros gratis."},
+      {"title": "Símbolo expansivo especial", "description": "Antes de los giros gratis, se elige uno de nueve símbolos normales. Si aparecen suficientes unidades para una combinación normal, se expande por su rodillo después de calcular los premios originales."},
+      {"title": "Reactivación con escarabajos", "description": "Otros tres escarabajos durante los giros gratis conceden nuevos giros. El símbolo expansivo seleccionado no cambia durante todo el bonus, y las reactivaciones están limitadas por el tope total de premios."}
+    ]
+  },
+  "wazdan-hot-777-deluxe": {
+    "intro": ["Hot 777 Deluxe cambia la estructura del bonus respecto al original: cada Hot 7 que aparece concede una bala para un medidor de progreso independiente.", "Diez balas y otro siete caliente abren 10 Hot Spins; los símbolos Hot 7 permanecen en los rodillos durante estos giros."],
+    "editorial": "Golden Seven y los 45 giros gratis de Hot 777 no deben trasladarse a Deluxe: el modo central Hot Spins de esta versión se activa recogiendo balas, mientras que el premio máximo es de solo 200x.",
+    "features": [
+      {"title": "Recogida de diez balas", "description": "Cada Hot 7 concede una bala; recoger diez y obtener el siguiente Hot 7 activa el bonus."},
+      {"title": "Diez Hot Spins", "description": "La secuencia consta de diez giros especiales después de llenar el medidor."},
+      {"title": "Sietes calientes fijados", "description": "Durante Hot Spins, cada nuevo Hot 7 permanece en los rodillos hasta terminar el evento de bonificación."}
+    ]
+  },
+  "3-oaks-gaming-wolf-night": {
+    "intro": ["Wolf Night activa Hold & Win con tres regiros y símbolos que quedan fijados.", "Los símbolos Mystery funcionan dentro de Hold & Win, mientras que los comodines multiplicadores aparecen en los giros gratis."],
+    "editorial": "Wolf Night añade símbolos Mystery al Hold & Win estándar, mientras que una ronda independiente de giros gratis se centra en comodines mejorados.",
+    "features": [
+      {"title": "Bonus de luna llena", "description": "Los símbolos Full Moon conceden Hold & Win con tres regiros. Los símbolos de bonificación iniciales quedan fijados y un nuevo símbolo reinicia el contador a tres."},
+      {"title": "Mystery y jackpot", "description": "En Hold & Win pueden aparecer Mini, Minor o Major, y un símbolo Mystery puede revelar uno de ellos. Llenar todo el tablero puede conceder Grand."},
+      {"title": "El Wolf Wild x2", "description": "Los giros gratis independientes utilizan Wolf Wild x2 y permiten reactivaciones. Este bonus funciona de forma independiente de Full Moon Hold & Win."}
+    ]
+  },
+  "hacksaw-gaming-stormborn": {
+    "intro": ["Cinco o más símbolos Coin activan Thunder Respins. Las monedas y los cofres Collector Chest permanecen en su sitio durante el modo, y cada nueva moneda o cofre prolonga la secuencia de regiros.", "Un Collector Chest recoge todos los valores de monedas del tablero; si el cofre tiene multiplicador, mejora el total combinado antes de recogerlo. Varios cofres pueden recoger por separado el mismo grupo de monedas."],
+    "editorial": "Stormborn organiza Thunder Respins en torno a recogidas repetidas en el mismo tablero: las monedas forman el valor de base, mientras que cada Collector Chest puede sumarlo de nuevo y aumentar aún más el resultado con su propio multiplicador.",
+    "features": [
+      {"title": "Thunder Respins con cinco monedas", "description": "Cinco o más símbolos Coin activan Thunder Respins. Las monedas y los Collector Chests permanecen fijados, mientras que una nueva moneda o cofre prolonga la secuencia de regiros."},
+      {"title": "Collector Chest recoge todo el valor de las monedas", "description": "Un Collector Chest recoge los valores de todas las monedas visibles. Su propio multiplicador se aplica al valor total recogido, y varios cofres pueden recoger por separado el mismo grupo."},
+      {"title": "Acumulación de cofres y recogida repetida", "description": "Cuantos más Collector Chests quedan fijados en el tablero durante los regiros, más recogidas individuales de monedas son posibles. Una nueva moneda prolonga el juego y aumenta la base total de recogida."}
+    ]
+  },
+  "playn-go-dr-toonz": {
+    "intro": ["Dr. Toonz es una tragaperras de tablero con cascadas y Dynamic Payways de hasta 262,144 formas de ganar. Los grupos ganadores se eliminan, nuevos símbolos caen en las posiciones vacías y cada nueva cascada ganadora carga Quantumeter un paso hacia sus tres cargas.", "Un Quantumeter completamente cargado activa aleatoriamente uno de tres poderes: BLUE añade 2–6 comodines, YELLOW transforma 5–8 símbolos en un mismo símbolo y RED elimina todos los símbolos de un ojo y añade 2 comodines. Tres, cuatro, cinco y seis Scatters conceden 10, 15, 20 y 25 giros gratis."],
+    "editorial": "Dr. Toonz conecta las cascadas y su bonus mediante Quantumeter, con tres efectos aleatorios en lugar de un único medidor fijo. Durante los giros gratis, cada giro recibe un multiplicador x2 en rodillos aleatorios; hasta seis de estos multiplicadores pueden elevar el resultado combinado a x64.",
+    "features": [
+      {"title": "Cascadas y Dynamic Payways", "description": "Las cascadas forman nuevos premios en un tablero con un máximo de 262,144 formas de ganar."},
+      {"title": "El Quantumeter", "description": "Tres cargas de cascadas activan uno de los poderes BLUE, YELLOW o RED, que modifican símbolos y comodines."},
+      {"title": "Giros gratis", "description": "De tres a seis Scatters conceden 10–25 giros con multiplicadores de rodillo aleatorios que se combinan hasta x64."}
+    ]
+  },
+  "wazdan-hot-party": {
+    "intro": ["Hot Party es una tragaperras de temática playera con cinco rodillos y veinte líneas, en la que el Scatter concede premios directos independientemente de las líneas.", "Tras un premio normal, puede activarse una Gamble Feature independiente para intentar duplicar el premio hasta siete veces consecutivas; la página oficial no confirma giros gratis."],
+    "editorial": "El Hot Party original indica un RTP del 96.48% y un máximo de 305x. Deluxe comparte ese límite, pero tiene otro RTP, del 96.42%, por lo que las versiones no deben combinarse en una sola ficha.",
+    "features": [
+      {"title": "Scatter playero", "description": "El Scatter participa en los pagos sin estar vinculado a líneas concretas."},
+      {"title": "Juego de riesgo con hasta siete duplicaciones", "description": "Tras un premio, una Gamble Feature independiente permite arriesgarlo en una secuencia de intentos."},
+      {"title": "Veinte líneas", "description": "Los cinco rodillos utilizan 20 líneas; no se declaran funciones adicionales de jackpot complejas."}
+    ]
+  },
+  "hacksaw-gaming-strength-of-hercules": {
+    "intro": ["RotoGrid gira todo el tablero un cuarto de vuelta en sentido horario; tras cada rotación, se calculan los nuevos premios antes de la siguiente activación.", "Tras cada rotación, los comodines del mismo rodillo se conectan y llenan todas las posiciones intermedias con comodines adicionales. Might of Hercules también puede sustituir por comodines un tipo aleatorio de símbolo de pago bajo en todo el tablero."],
+    "editorial": "Strength of Hercules convierte la propia rotación del tablero en parte del cálculo: RotoGrid cambia las posiciones de los símbolos y después Connecting Wilds puede ampliar las posiciones comodín ya creadas. Bonus Choice se divide entonces entre Labors, con mecánicas base mejoradas, y Labyrinth, con una recogida de monedas independiente.",
+    "features": [
+      {"title": "RotoGrid gira el juego 90°", "description": "RotoGrid gira todo el tablero un cuarto de vuelta en sentido horario. Tras cada giro se comprueban nuevas combinaciones antes de que sea posible otra rotación del tablero y un premio adicional."},
+      {"title": "Connecting Wilds y Might of Hercules", "description": "Tras la rotación, los comodines del mismo rodillo se conectan y llenan el espacio intermedio con nuevos comodines. Might of Hercules puede convertir todas las apariciones de un símbolo aleatorio de pago bajo en comodines en todo el tablero."},
+      {"title": "The Labors y Labyrinth", "description": "Bonus Choice ofrece The Labors, con mecánicas mejoradas de RotoGrid y Connecting Wilds, o el Labyrinth independiente, donde la recogida de monedas es central. Son escenarios de bonus distintos dentro del mismo juego."}
+    ]
+  },
+  "playn-go-dragon-maiden": {
+    "intro": ["Dos Dragon Scatters en cualquier rodillo quedan fijados y activan regiros; la secuencia continúa mientras sigan apareciendo nuevos símbolos Dragon. Recoger tres o más dragones durante la secuencia de regiros lleva el juego a 8 giros gratis.", "Durante los giros gratis, cada nuevo Dragon Scatter amplía su rodillo en un símbolo, hasta una altura de 6. Cada rodillo que alcanza la altura máxima añade un Golden Free Spin después de la secuencia normal, en un tablero totalmente ampliado de 5×6."],
+    "editorial": "Dragon Maiden construye su bonus mediante una expansión gradual de los rodillos: los regiros ayudan primero a reunir el número necesario de dragones y después los giros gratis convierten los nuevos Scatters en crecimiento vertical. Los Golden Free Spins aparecen solo como recompensa por los rodillos que alcanzan su altura completa.",
+    "features": [
+      {"title": "Regiros Dragon Re-Spins", "description": "Dos Dragon Scatters quedan fijados y activan regiros hasta que dejan de aparecer nuevos dragones."},
+      {"title": "Rodillos expansivos", "description": "Tres o más dragones abren ocho giros gratis, en los que los nuevos Scatters aumentan la altura de los rodillos hasta seis."},
+      {"title": "Giros Golden Free Spins", "description": "Cada rodillo completamente ampliado añade un giro especial en el tablero totalmente expandido de 5×6."}
+    ]
+  },
+  "wazdan-hot-party-deluxe": {
+    "intro": ["Hot Party Deluxe mantiene cinco rodillos y veinte líneas, pero renueva la temática playera; aquí el Scatter es una pelota de playa.", "Tres pelotas en cualquier posición conceden un pago, tras el cual puede jugarse un Gamble independiente buscando una bebida debajo de una de dos hojas."],
+    "editorial": "Pese a compartir el máximo de 305x, Deluxe tiene un RTP del 96.42%, frente al 96.48% del original. El Scatter paga una combinación en lugar de activar giros de bonificación.",
+    "features": [
+      {"title": "Tres pelotas de playa", "description": "Tres o más Scatters en cualquier posición conceden un pago monetario sin necesidad de una línea."},
+      {"title": "Gamble de la bebida", "description": "Se selecciona una de dos hojas y, si se acierta, se duplica el premio recibido anteriormente."},
+      {"title": "Formato retro veraniego", "description": "Cinco rodillos, 20 líneas y una presentación renovada mantienen la estructura sencilla del juego base."}
+    ]
+  },
+  "hacksaw-gaming-sun-princess": {
+    "intro": ["Un Sun Ray Frame aparece en un símbolo de pago o comodín y, tras los pagos, extiende ese símbolo en líneas rectas verticales, horizontales o en las cuatro direcciones.", "Si un rayo atraviesa el mismo tipo de símbolo, inicia una Chain Reaction con un nuevo Sun Ray Frame. Un rayo que alcanza un comodín añade +2x y los impactos repetidos siguen aumentando ese multiplicador."],
+    "editorial": "Sun Princess convierte una posición en el origen de una cadena geométrica: la dirección de Sun Ray determina qué casillas se reescriben, mientras que coincidir con el mismo símbolo puede generar otro marco. En los bonus superiores, los comodines mejorados se vuelven persistentes.",
+    "features": [
+      {"title": "Sun Ray Frames y reacción en cadena", "description": "Los Sun Rays extienden un símbolo a lo largo de líneas, las coincidencias generan nuevos marcos y los comodines afectados reciben un multiplicador aditivo creciente."},
+      {"title": "Solaris Grove y Sunfire Palace", "description": "Tres FS activan diez giros Solaris Grove con Sun Ray Frames más frecuentes; cuatro FS abren Sunfire Palace, donde los comodines mejorados por rayos permanecen fijados hasta terminar el bonus."},
+      {"title": "El Golden Eclipse", "description": "Cinco FS activan el bonus oculto Golden Eclipse durante diez giros. Cada giro garantiza al menos un Sun Ray Frame, mientras que los multiplicadores de comodín siguen creciendo con impactos repetidos de los rayos."}
+    ]
+  },
+  "playn-go-dragon-ship": {
+    "intro": ["Rodillos 1 y 5 completamente llenos de comodines a la vez activan los giros gratis. Ambos rodillos exteriores permanecen enteramente comodín e inmóviles durante toda la ronda; este modo no concede giros gratis adicionales.", "Tres símbolos de bonificación en cualquier posición activan Pick-a-Prize: se elige un símbolo de bonificación y se recibe inmediatamente el premio oculto. Tras un premio normal también hay una ronda Gamble disponible, en la que debe pronosticarse el color o el palo de una carta."],
+    "editorial": "Dragon Ship utiliza una estructura de bonus antigua y sencilla: los giros gratis se activan con rodillos comodín completos simultáneos en ambos extremos, en lugar de una combinación de Scatters. Pick-a-Prize y Gamble son modos independientes y no se mezclan con los rodillos comodín fijados.",
+    "features": [
+      {"title": "Comodines en los extremos", "description": "Los rodillos 1 y 5 completamente llenos de comodines a la vez activan los giros gratis."},
+      {"title": "Rodillos comodín fijados", "description": "Durante el bonus, ambos rodillos exteriores permanecen enteramente comodín e inmóviles."},
+      {"title": "Elección Pick-a-Prize", "description": "Tres símbolos de bonificación abren una elección independiente de premio oculto; después de los premios normales hay un Gamble de cartas disponible."}
+    ]
+  },
+  "wazdan-hot-slot-777-cash-out-extremely-light": {
+    "intro": ["Hot Slot: 777 Cash Out Extremely Light mantiene las mecánicas originales de Cash Out, pero utiliza gráficos más ligeros para dispositivos móviles.", "Cash Out recoge los valores Cash y Jackpot que aparecen junto a él; quince símbolos Cash/Jackpot en los rodillos abren el Grand Jackpot de 1500x la apuesta."],
+    "editorial": "Extremely Light es principalmente una adaptación técnica y no un nuevo modelo matemático: su RTP del 96.12% y su máximo de 1500x coinciden con los declarados para el 777 Cash Out base.",
+    "features": [
+      {"title": "Cash Out recoge monedas", "description": "El símbolo recoge los valores Cash y Jackpot que aparecen con él en el tablero. Sin Cash Out, los símbolos Jackpot no pagan por sí solos."},
+      {"title": "Quince símbolos Cash/Jackpot", "description": "Llenar las 15 posiciones de premio abre el Grand Jackpot de 1500x."},
+      {"title": "Chance Level duplica la apuesta", "description": "La función duplica la apuesta para aumentar la probabilidad de símbolos Jackpot, sin prometer el propio jackpot."}
+    ]
+  },
+  "hacksaw-gaming-superstar-sevens": {
+    "intro": ["Un símbolo Lightning junto a un premio activa Cascade Counter. Los símbolos no ganadores eliminados durante Super Cascades se convierten en un multiplicador y cada uno de ellos aumenta el valor aditivo.", "Una vez terminados todos los premios y cascadas, el Cascade Counter acumulado se aplica a Total Win. Epic Lightning activa además otro multiplicador si Total Win Bar ya contiene un premio."],
+    "editorial": "Superstar Sevens da valor tanto a los símbolos ganadores como al número de posiciones adicionales eliminadas durante las cascadas. Lightning convierte esas eliminaciones en un multiplicador independiente que se aplica al Total Win final.",
+    "features": [
+      {"title": "Cascade Counter y símbolos Lightning", "description": "Lightning activa como multiplicador un contador de símbolos eliminados, mientras que Epic Lightning puede añadir otra mejora al Total Win acumulado."},
+      {"title": "El modo Reel Charge", "description": "Tres FS Scatters activan diez giros gratis Reel Charge. Los símbolos Lightning aparecen con mayor frecuencia durante el bonus, lo que aumenta las oportunidades de activar Cascade Counter."},
+      {"title": "Lucky Strike y Juicy Joltz", "description": "Cuatro FS abren Lucky Strike con un Lightning obligatorio en cada uno de diez giros; cinco FS conceden Juicy Joltz con Total Win Bar progresiva y Lightning garantizado."}
+    ]
+  },
+  "playn-go-dragonfates-favor": {
+    "intro": ["Goldar actúa como un Walking Wild y se desplaza por los rodillos tras aparecer, conservando su capacidad de participar en premios. Cuando Goldar está completamente sobre los rodillos, comienza un regiro con continuación garantizada de la mecánica de comodín.", "Tres o más Scatters activan los giros gratis. En este modo aparecen Hatchling Wilds con multiplicadores x2 o x3; permanecen fijados y mejoran los pagos mientras Goldar sigue actuando como Walking Wild."],
+    "editorial": "Dragonfate's Favor se centra en dos tipos distintos de dragones comodín: Goldar se ocupa del movimiento y los regiros, mientras que los Hatchlings aportan multiplicadores persistentes durante los giros gratis. Son dos funciones separadas y no una mecánica de comodín universal.",
+    "features": [
+      {"title": "Goldar, comodín caminante", "description": "Goldar se desplaza por los rodillos y participa en combinaciones ganadoras."},
+      {"title": "Regiro de Goldar", "description": "Cuando Goldar está completamente sobre los rodillos, comienza un giro adicional."},
+      {"title": "Comodines Hatchling", "description": "Tres o más Scatters conceden giros gratis con Hatchling Wilds persistentes que multiplican los pagos por x2 o x3."}
+    ]
+  },
+  "wazdan-hot-slot-777-cash-out-grand-diamond-edition": {
+    "intro": ["Grand Diamond Edition eleva el premio máximo de Hot Slot: 777 Cash Out a 3500x y convierte el Sticky Cash Out mejorado en su función central.", "La ficha oficial incluye Jackpot Coins y Chance Level, pero no giros gratis independientes. Este no es el perfil de bonus de las anteriores versiones Grand Gold o Platinum."],
+    "editorial": "El límite de 3500x y el RTP del 96.15% pertenecen específicamente a Diamond. Sticky Cash Out no debe considerarse un multiplicador garantizado: retiene el recolector bajo las condiciones de la función descrita.",
+    "features": [
+      {"title": "Sticky Cash Out mejorado", "description": "Un Cash Out especial permanece activo cuando se cumplen sus condiciones y permite recoger valores a lo largo de varios eventos."},
+      {"title": "Monedas Jackpot Coins", "description": "Las monedas de premio y los símbolos de jackpot forman un sistema de valores independiente junto a las veinte líneas normales."},
+      {"title": "Chance Level y Gamble", "description": "Chance Level cambia la frecuencia de los eventos objetivo mediante el importe de la apuesta, mientras que Gamble añade un riesgo después de un premio."}
+    ]
+  },
+  "hacksaw-gaming-supreme-zeus": {
+    "intro": ["Las CoinWays se forman cuando monedas de bronce, plata y oro ocupan una de las combinaciones de vías predefinidas. Los valores de monedas de cada rodillo se suman primero en un total de rodillo.", "Después, esos totales de rodillo se multiplican de izquierda a derecha y forman el premio monetario final. Coin Bar muestra y acumula los valores de las monedas participantes para el cálculo."],
+    "editorial": "Supreme Zeus utiliza una aritmética por rodillos: varias monedas del mismo rodillo se combinan primero por suma y después se multiplican los totales de los distintos rodillos. Por ello, la estructura CoinWays importa más que el valor de una moneda individual.",
+    "features": [
+      {"title": "CoinWays y Coin Bar", "description": "Las monedas forman vías especiales, los valores dentro de cada rodillo se suman y después los totales de rodillo se multiplican de izquierda a derecha."},
+      {"title": "Thunder Reign y Wrath of Olympus", "description": "Tres FS activan diez giros Thunder Reign con posibilidad de formar CoinWays. Cuatro FS conceden Wrath of Olympus, que garantiza al menos un símbolo Coin en cada giro."},
+      {"title": "Hot 100: Last Ascension", "description": "Tres símbolos especiales Hot 100 activan el modo independiente Last Ascension durante cien giros gratis. Coin Bar sigue participando en los cálculos de las CoinWays formadas."}
+    ]
+  },
+  "playn-go-easter-eggs": {
+    "intro": ["El Golden Egg actúa como comodín y ayuda a formar combinaciones ganadoras normales. Tras cualquier premio hay una ronda Gamble independiente disponible, en la que debe pronosticarse el color o el palo de una carta boca abajo.", "Tres Egg Scatters llenos de dulces activan los giros gratis, con una elección previa a la secuencia entre premios duplicados, triplicados o multiplicados por seis. Tres símbolos Easter Basket abren por separado un juego de bonificación con recompensas instantáneas de hasta x500 la apuesta."],
+    "editorial": "Easter Eggs separa dos activadores festivos de bonus: los huevos se encargan de los giros gratis con una intensidad de pago seleccionada previamente, mientras que las cestas llevan a un bonus independiente de premios instantáneos. Golden Egg sigue siendo un comodín normal y no sustituye a esos activadores.",
+    "features": [
+      {"title": "Huevo dorado comodín", "description": "El huevo dorado sustituye a los símbolos normales; tras un premio hay un Gamble de cartas independiente disponible."},
+      {"title": "Giros gratis de huevos", "description": "Tres Egg Scatters conceden un bonus con elección de mejora de premios x2, x3 o x6."},
+      {"title": "La cesta Easter Basket", "description": "Tres cestas activan un juego de bonificación independiente con recompensas instantáneas de hasta x500 la apuesta."}
+    ]
+  },
+  "wazdan-hot-slot-777-cash-out-grand-gold-edition": {
+    "intro": ["Grand Gold Edition eleva el Grand Jackpot del Cash Out original a 2500x y combina el Cash Out normal con un Sticky Cash Out independiente.", "El proveedor enumera cuatro Chance Levels seleccionables, mientras que llenar los rodillos con símbolos Bonus lleva al premio principal de la serie."],
+    "editorial": "Gold es una versión intermedia: su máximo de 2500x supera los 1500x del juego base, pero queda por debajo de los 3000x de Platinum y los 3500x de Diamond. Las mecánicas no deben mezclarse entre entregas.",
+    "features": [
+      {"title": "Cash Out y Sticky Cash Out", "description": "El recolector normal y su versión retenida aumentan el protagonismo de los símbolos de premio en el juego base."},
+      {"title": "El Grand Jackpot de 2500x", "description": "Llenar el tablero con símbolos de bonificación lleva a un pago de 2500x la apuesta; es el premio superior, no el resultado de cada Cash Out."},
+      {"title": "Cuatro Chance Levels", "description": "Se puede seleccionar uno de cuatro modos de mejora de probabilidad cambiando el importe de la apuesta."}
+    ]
+  },
+  "hacksaw-gaming-tai-the-toad": {
+    "intro": ["Prosperity Pot activa todos los símbolos Toad y predetermina un resultado de revelación compartido: cada sapo se convierte en un comodín o en una moneda de oro; el propio bote se convierte en el mismo símbolo.", "Una Coin Bag puede aparecer en lugar de una de las monedas reveladas y multiplicar de una a cinco monedas de oro por su valor. La misma moneda puede recibir varias multiplicaciones sucesivas."],
+    "editorial": "Tai the Toad plantea la revelación como un evento masivo: un Prosperity Pot establece el mismo tipo de resultado para todos los sapos a la vez. Si aparecen Coin Bags, mejoran después las monedas de oro seleccionadas, a veces repetidamente.",
+    "features": [
+      {"title": "Prosperity Pot, sapos y Coin Bags", "description": "El bote revela simultáneamente todos los sapos como comodines o monedas de oro, mientras que Coin Bags multiplica valores de monedas seleccionadas; los bonus añaden Toad Points progresivos."},
+      {"title": "Toad Bonus y puntos del dragón", "description": "Tres FS activan diez giros gratis. Un dragón añade de uno a cinco Toad Points a su rodillo, mientras que Double Dragon los añade a todos; Prosperity Pot convierte los puntos acumulados en nuevos sapos."},
+      {"title": "Golden Toad: progreso conservado", "description": "Cuatro FS activan Golden Toad Bonus con diez giros. A diferencia del Toad Bonus normal, los Toad Points acumulados no se reinician después de activar Prosperity Pot."}
+    ]
+  },
+  "playn-go-easter-eggspedition": {
+    "intro": ["En cada giro pueden aparecer Scatters garantizados, lo que aumenta la posibilidad de alcanzar la función de bonificación. Tres Easter Egg Baskets activan el bonus con 3 giros gratis iniciales.", "Durante la ronda de bonificación, los premios instantáneos llenan Cash Pot. Super Bunny paga el bote acumulado, Fox lo reinicia y, cuando aparecen juntos, Bunny repele a Fox, paga Cash Pot y reinicia el contador de giros a tres."],
+    "editorial": "Easter Eggspedition construye su bonus en torno a la disputa entre Bunny y Fox, en lugar de un Hold & Spin normal con símbolos iguales. El contador gira en torno a tres giros y el principal riesgo es conservar Cash Pot acumulado hasta que aparezca Super Bunny sin perderlo ante Fox.",
+    "features": [
+      {"title": "Scatters garantizados", "description": "En giros normales pueden aparecer Scatters garantizados, acercando la activación del bonus."},
+      {"title": "El bote Cash Pot", "description": "Tres cestas activan tres giros gratis; los premios instantáneos se acumulan en un Cash Pot compartido."},
+      {"title": "Super Bunny y Fox", "description": "Bunny paga el importe acumulado y Fox lo reinicia; juntos, Bunny salva Cash Pot y restablece tres giros."}
+    ]
+  },
+  "wazdan-hot-slot-777-cash-out-grand-platinum-edition": {
+    "intro": ["Grand Platinum Edition amplía la conocida mecánica Cash Out mediante Sticky Multiplier y Sticky to Infinity: dos funciones independientes ausentes en el sencillo original.", "El máximo oficial de Platinum es de 3000x con un RTP del 96.19%; ni el propio multiplicador ni Chance Level equivalen a un pago garantizado de 3000x."],
+    "editorial": "La distinción más útil al comparar versiones es la combinación Sticky Multiplier + Sticky to Infinity propia de Platinum. Diamond declara otro premio máximo y describe de forma distinta su mejora de Sticky Cash Out.",
+    "features": [
+      {"title": "Multiplicador persistente", "description": "Un multiplicador retenido mejora los eventos de premio correspondientes, sin constituir por sí mismo un premio máximo total independiente."},
+      {"title": "Cash Out y Sticky Cash Out", "description": "Están presentes tanto la recogida normal de valores monetarios como la que permanece activa."},
+      {"title": "Sticky to Infinity y Chance Level", "description": "Sticky to Infinity fija los elementos objetivo, mientras que Chance Level modifica mediante la apuesta la probabilidad de los eventos de bonificación."}
+    ]
+  },
+  "hacksaw-gaming-temple-of-torment": {
+    "intro": ["Un Golden Scarab que participa en una línea ganadora tras la expansión expande todos los escarabajos visibles hacia arriba o hacia abajo según el dios ganador y crea áreas comodín.", "Si la expansión de un escarabajo atraviesa un comodín normal, toda el área comodín correspondiente recibe un multiplicador de hasta x200. Varios multiplicadores en una combinación ganadora se suman primero."],
+    "editorial": "Temple of Torment hace depender la dirección de expansión de los escarabajos del resultado de un enfrentamiento entre dioses. Los comodines ya presentes en el tablero se convierten en puntos de mejora: un área expandida que los atraviesa se transforma en un área multiplicadora.",
+    "features": [
+      {"title": "Golden Scarabs expansivos y comodines multiplicadores", "description": "Los escarabajos se expanden hacia arriba o abajo para formar áreas comodín, mientras que cruzar un comodín añade un multiplicador a toda el área; varios valores se suman."},
+      {"title": "El Anguish of Anubis", "description": "De tres a cinco FS correspondientes activan Anguish of Anubis: Golden Scarabs y comodines aparecen con mayor frecuencia, y cada comodín que aparece queda fijado durante el bonus, hasta tres por rodillo."},
+      {"title": "Reign of Ra y multiplicador combinado", "description": "Tres o más Ra FS abren Reign of Ra durante hasta catorce giros. Los comodines multiplicadores activados se suman sobre los rodillos en un multiplicador combinado que se aplica en una nueva mejora."}
+    ]
+  },
+  "playn-go-enchanted-crystals": {
+    "intro": ["Un Crystal Wild en los rodillos 2, 3 o 4 se expande por todo el rodillo y activa inmediatamente un regiro. El comodín expandido permanece fijado durante toda la secuencia de regiros; cada nuevo comodín expansivo añade otro regiro.", "Tres símbolos Goblin King activan el bonus Find the Crystal, mientras que tres símbolos Butterfly abren los giros gratis. Durante los giros gratis, Butterfly se convierte en comodín y hasta cinco de estas mariposas pueden aparecer aleatoriamente en los rodillos y convertir posiciones en comodines."],
+    "editorial": "Enchanted Crystals tiene tres mecánicas especiales distintas: el Crystal Wild expansivo se ocupa de los regiros, Goblin King del bonus de selección Find the Crystal y Butterfly de los giros gratis. Los giros gratis pueden reactivarse hasta un límite total de 50 giros.",
+    "features": [
+      {"title": "Regiros con Crystal Wild", "description": "Un comodín en los rodillos 2–4 se expande y queda fijado, mientras que cada nuevo comodín añade un regiro."},
+      {"title": "Bonus Find the Crystal", "description": "Tres Goblin Kings abren un bonus independiente que consiste en elegir un cristal oculto."},
+      {"title": "Giros gratis Butterfly", "description": "Tres mariposas activan los giros gratis, donde se convierten en comodines y aparecen aleatoriamente en los rodillos."}
+    ]
+  },
+  "wazdan-hot-slot-777-coins": {
+    "intro": ["Hot Slot: 777 Coins combina veinte líneas de tragaperras retro con recogida de símbolos Cash. Cash Out recoge los valores de los símbolos monetarios que aparecen, mientras que nueve monedas forman un medidor de bonus independiente.", "El proveedor exige seis, siete, ocho y nueve símbolos Cash para Mini, Minor, Major y Grand Jackpot, respectivamente. No se trata de nueve giros adicionales."],
+    "editorial": "La distinción importante en este juego está entre el pago monetario de Cash Out y los umbrales de 9 Coins Jackpot. El máximo de 635x no debe considerarse el valor de una moneda individual.",
+    "features": [
+      {"title": "Cash Out recoge valores", "description": "Cuando aparece Cash Out, suma los valores de los símbolos Cash del tablero actual y paga el importe recogido."},
+      {"title": "Umbrales de 6, 7, 8 y 9 monedas", "description": "Seis símbolos Cash conceden Mini, siete Minor, ocho Major y nueve Grand Jackpot: una tabla de umbrales independiente."},
+      {"title": "Chance Level y niveles de volatilidad", "description": "Chance Level ofrece mayor probabilidad de jackpot a cambio de una apuesta más cara, mientras que los niveles de volatilidad cambian el perfil de riesgo."}
+    ]
+  },
+  "hacksaw-gaming-the-count": {
+    "intro": ["Un símbolo Blood se expande hacia abajo hasta convertirse en un Bloody Wild si la expansión crea un premio. Un Bloody Wild expandido puede actuar como comodín o revelar un multiplicador de hasta x500.", "Un Wild Bat también aporta un comodín o un multiplicador de hasta x500, mientras que un Epic Wild Bat extiende su propio valor a todos los Bloody Wilds expandidos y otros Wild Bats del tablero."],
+    "editorial": "The Count conecta la expansión vertical de los símbolos Blood con una red independiente de multiplicadores Bat. Epic Wild Bat es especialmente importante: un símbolo puede aumentar varias posiciones comodín ya activas al mismo tiempo.",
+    "features": [
+      {"title": "Bloody Wilds y murciélagos Wild Bats", "description": "Los símbolos Blood se expanden hacia abajo como comodines, los Wild Bats revelan multiplicadores y un Epic Bat extiende su valor a otros Bloody Wilds y murciélagos."},
+      {"title": "El Bat to the Bone", "description": "Tres FS Scatters activan Bat to the Bone: diez giros gratis con mayor probabilidad de Wild Bats. Es una rama de bonus independiente sin contador obligatorio de símbolos."},
+      {"title": "Rest in Pieces y Count on Blood", "description": "Cuatro FS conceden Rest in Pieces con un contador que convierte símbolos de pago bajo en Wild Bats; cinco FS activan Count on Blood con al menos cinco Wild Bats en cada uno de diez giros."}
+    ]
+  },
+  "playn-go-enchanted-meadow": {
+    "intro": ["El Tree Wild del rodillo 3 se expande por todo el rodillo. Si aparecen simultáneamente partes del medallón en los rodillos 2 y 4, comienza una secuencia de giros con el comodín expandido central inmóvil durante toda la función.", "Tres símbolos de bonificación abren Hide-and-Seek: se buscan hadas ocultas y se reciben monedas o giros gratis hasta encontrar una avispa. Después del juego de bonificación comienza una secuencia de giros gratis con multiplicador inicial x2."],
+    "editorial": "Enchanted Meadow utiliza dos vías distintas para acceder a los giros: los medallones funcionan únicamente con un comodín expandido central, mientras que tres símbolos de bonificación llevan a Hide-and-Seek. Durante los giros gratis, Fairy Queen aumenta el multiplicador hasta x5 y puede ayudar a prolongar la ronda hasta 50 giros.",
+    "features": [
+      {"title": "El árbol Tree Wild", "description": "En el tercer rodillo, Tree Wild se expande por todo el rodillo."},
+      {"title": "Regiros del medallón", "description": "Las partes del medallón en los rodillos 2 y 4, junto con el Tree Wild central, abren una secuencia con un comodín fijado."},
+      {"title": "El Hide-and-Seek", "description": "Tres símbolos de bonificación abren una búsqueda de hadas, seguida de giros gratis con un multiplicador inicial x2 que aumenta hasta x5."}
+    ]
+  },
+  "wazdan-hot-slot-777-coins-extremely-light": {
+    "intro": ["Extremely Light mantiene la mecánica de 777 Coins, pero aligera la animación y el uso de datos móviles. Los cinco rodillos siguen funcionando con veinte líneas.", "Cash Out suma los valores de las monedas, mientras que 9 Coins Jackpot exige seis, siete, ocho o nueve símbolos Cash para sus cuatro niveles. La nueva versión no incorpora Hold the Jackpot."],
+    "editorial": "La principal diferencia entre Extremely Light y Coins es la presentación técnica y no el premio máximo: ambas versiones tienen cifras confirmadas de 635x y RTP del 96.16%.",
+    "features": [
+      {"title": "Presentación más ligera", "description": "Wazdan declara efectos simplificados, menor consumo de energía y uso reducido de datos sin cambiar las reglas principales."},
+      {"title": "Cash Out", "description": "El símbolo recoge los importes de los símbolos Cash de la jugada actual."},
+      {"title": "9 Coins Jackpot y Chance Level", "description": "Los umbrales de 6/7/8/9 monedas abren Mini/Minor/Major/Grand; Chance Level aumenta las probabilidades con una apuesta mayor."}
+    ]
+  },
+  "hacksaw-gaming-the-luxe": {
+    "intro": ["Los Golden Frames revelan un multiplicador o un jackpot cuando se detiene el tablero. Un marco solo cuenta si el símbolo de su posición participa en una línea ganadora; varios multiplicadores en un premio se suman.", "Clover Crystal recoge los valores de todos los Golden Frames del giro actual, aunque no hayan participado en un premio. Los marcos se vuelven persistentes en los bonus y, en Golden Hits, los multiplicadores ganadores se duplican después de pagar."],
+    "editorial": "The Luxe convierte la posición bajo un Golden Frame en una fuente de valor independiente: un premio normal activa localmente un multiplicador o jackpot, mientras que Clover Crystal puede recoger incluso los marcos no utilizados. En los bonus superiores, el tablero se convierte gradualmente en un campo persistente de mejoras.",
+    "features": [
+      {"title": "Golden Frames y Clover Crystal", "description": "Los marcos revelan multiplicadores/jackpots, Clover Crystal los recoge independientemente de las líneas de pago y los bonus hacen que los marcos permanezcan fijados y permiten duplicar multiplicadores."},
+      {"title": "El Black and Gold", "description": "Tres FS activan Black and Gold durante diez giros: hay un Golden Frame desde el inicio y todos los marcos permanecen fijados y revelan un nuevo multiplicador o jackpot después de cada giro."},
+      {"title": "Golden Hits y Velvet Nights", "description": "Cuatro FS conceden Golden Hits con tres marcos persistentes iniciales y duplicación de los multiplicadores aplicados; cinco FS activan Velvet Nights, donde cada posición comienza la ronda con un Golden Frame."}
+    ]
+  },
+  "playn-go-energoonz": {
+    "intro": ["Energoonz utiliza un tablero con cascadas: tres o más símbolos iguales en horizontal o vertical conceden un premio, los símbolos ganadores se retiran y caen otros nuevos desde arriba. El multiplicador del premio aumenta después de cada nueva caída.", "Vaciar todo el tablero concede x1000 la apuesta total. Vaciar por completo una columna marcada BONUS activa un juego de bonificación; el multiplicador inicial depende del número de columnas BONUS vaciadas."],
+    "editorial": "Energoonz convierte el vaciado del propio tablero en una forma de progresión: las cascadas normales aumentan continuamente el multiplicador, mientras que vaciar por completo una columna BONUS lleva a un modo independiente. En el juego de bonificación, la condición ganadora cambia a 5+ símbolos iguales en cualquier parte del tablero.",
+    "features": [
+      {"title": "Las cascadas", "description": "Tres o más símbolos iguales en horizontal o vertical conceden un premio; el multiplicador crece después de caer nuevos símbolos."},
+      {"title": "Columnas BONUS", "description": "Vaciar por completo una columna marcada activa el Bonus Game con su condición especial de 5+ símbolos iguales."},
+      {"title": "Vaciado de todo el tablero", "description": "Eliminar todos los símbolos del tablero de juego concede x1000 la apuesta total."}
+    ]
+  },
+  "wazdan-hot-slot-777-crown-extremely-light": {
+    "intro": ["Hot Slot: 777 Crown Extremely Light ofrece cinco rodillos y veinte líneas con frutas retro y una corona Scatter. Es una versión más ligera de Crown y no un nuevo juego de monedas con jackpot.", "El proveedor destaca el ahorro de batería, el menor uso de datos y la carga más rápida, manteniendo el Scatter con pagos directos."],
+    "editorial": "Crown Extremely Light no tiene giros gratis confirmados: su símbolo adicional central es un Scatter y no un bonus de giros gratis.",
+    "features": [
+      {"title": "Corona Scatter", "description": "El Scatter concede un premio independientemente de la línea de pago; no se añaden los umbrales exactos del original principal sin confirmación específica."},
+      {"title": "20 líneas", "description": "El tablero principal utiliza cinco rodillos con veinte líneas fijas."},
+      {"title": "Modo Extremely Light y Gamble", "description": "Los efectos simplificados reducen la carga del dispositivo, mientras que Unique Gamble Feature permite un riesgo independiente con un pago ya concedido."}
+    ]
+  },
+  "hacksaw-gaming-the-wildwood-curse": {
+    "intro": ["Los comodines se vuelven persistentes y activan Nightmare Respins. Cada nuevo comodín prolonga la secuencia hasta agotar las posiciones nuevas o hasta que los regiros dejan de recibir una extensión.", "Cuatro comodines en un cuadrado de 2x2 forman uno de tres tipos de Cursed Cluster: Psycho recibe un nuevo multiplicador en cada regiro, Monster dispersa multiplicadores por el tablero y Twins duplica su propio multiplicador después de cada regiro."],
+    "editorial": "The Wildwood Curse convierte un regiro con retención normal en la búsqueda de cuadrados exactos de 2x2. Cada Cursed Cluster utiliza su propia progresión de multiplicador, por lo que varios grupos en un tablero pueden mejorar un premio de formas totalmente distintas.",
+    "features": [
+      {"title": "Nightmare Respins y Cursed Clusters", "description": "Los comodines persistentes prolongan los regiros, mientras que un cuadrado de 2x2 se convierte en un grupo Psycho, Monster o Twins con su propia mecánica de multiplicador."},
+      {"title": "Psycho, Monster y Twins", "description": "Un grupo Psycho cambia su multiplicador en cada regiro; Monster dispersa multiplicadores por las posiciones, mientras que Twins duplica el suyo en los Nightmare Respins posteriores. Son tres modelos de mejora distintos."},
+      {"title": "The Swamp, Playground y No Escape", "description": "Tres FS conceden ocho giros The Swamp con mayor probabilidad de comodines; cuatro FS activan The Playground con grupos más frecuentes; cinco FS garantizan un Cursed Cluster en cada giro No Escape."}
+    ]
+  },
+  "playn-go-eye-of-atum": {
+    "intro": ["Atum actúa como comodín y se expande por todo su rodillo en los rodillos 2–4. Tres Scatters activan giros gratis progresivos; antes de entrar en la ronda, 3, 4 y 5 Scatters pagan por separado x2, x20 y x500 la apuesta total.", "Durante los giros gratis, cada nuevo comodín expandido aumenta el nivel de mejora de símbolos. En niveles superiores, los símbolos mejorados reaparecen con mayor frecuencia; los propios comodines expansivos siguen funcionando durante el bonus."],
+    "editorial": "Eye of Atum conecta los comodines expansivos con una progresión de mejora de símbolos: un comodín no solo ayuda a formar premios, sino que hace avanzar el estado del bonus. Los comodines adicionales durante los giros gratis también añaden 1, 3 o 5 giros según su número.",
+    "features": [
+      {"title": "Atum comodín", "description": "Atum actúa como comodín y se expande por todo su rodillo en los rodillos 2–4."},
+      {"title": "Giros gratis por Scatter", "description": "Tres Scatters activan giros gratis progresivos; antes de entrar en la ronda, 3, 4 y 5 Scatters pagan por separado x2, x20 y x500 la apuesta total."},
+      {"title": "Mejoras de símbolos", "description": "Durante los giros gratis, cada nuevo comodín expandido aumenta el nivel de mejora de símbolos. En niveles superiores, los símbolos mejorados reaparecen con mayor frecuencia; los propios comodines expansivos siguen funcionando durante el bonus."}
+    ]
+  },
+  "wazdan-hot-slot-777-diamond-crown": {
+    "intro": ["Diamond Crown tiene cinco rodillos y diez líneas. Las coronas Scatter forman una escalera de cuatro niveles de jackpots Mini, Minor, Major y Grand.", "El Grand Jackpot de 5000x tiene dos vías de activación independientes: quince sietes o cinco coronas Scatter. Chance Level aumenta la probabilidad de eventos de jackpot a cambio de una apuesta mayor."],
+    "editorial": "Diamond Crown no debe equipararse a Gold o Platinum Crown: 5000x, volatilidad media–alta y la condición de quince sietes pertenecen específicamente a la ficha técnica de Diamond.",
+    "features": [
+      {"title": "15 sietes conceden Grand", "description": "Un tablero lleno de quince símbolos Seven abre el Grand Jackpot de 5000x."},
+      {"title": "Cinco Scatters también conceden Grand", "description": "Cinco coronas Scatter llevan al mismo Grand Jackpot; conjuntos menores corresponden a niveles inferiores de jackpot."},
+      {"title": "Chance Level hasta x10 la apuesta", "description": "Se aumenta la apuesta para obtener mayor probabilidad de jackpot; aquí x10 es el coste de la selección y no un premio máximo adicional."}
+    ]
+  },
+  "hacksaw-gaming-tiger-legends": {
+    "intro": ["Un Legendary Frame en un Warrior de pago alto puede expandirse hacia arriba como Legendary Frame Warrior si la expansión participa en una combinación ganadora.", "En el juego base, la expansión aumenta el número de símbolos Warrior iguales. En el bonus superior, cuando se expande un Legendary Frame Warrior, también se expanden todos los símbolos de ese tipo del tablero."],
+    "editorial": "Tiger Legends basa su mecánica en la expansión vertical dirigida de Warriors de pago alto. Una mayor frecuencia de Legendary Frames en símbolos válidos ofrece más oportunidades de convertir una línea normal en una secuencia de figuras grandes iguales.",
+    "features": [
+      {"title": "Los Legendary Frame Warriors", "description": "Un Legendary Frame expande hacia arriba un Warrior ganador, mientras que el bonus superior también hace que se expandan simultáneamente todos los símbolos iguales."},
+      {"title": "El Claws of Destiny", "description": "Tres FS Scatters activan diez giros gratis Claws of Destiny. Los Legendary Frame Warriors aparecen con mayor probabilidad en este modo y siguen expandiéndose hacia arriba cuando hay premios."},
+      {"title": "El Battle of the Beasts", "description": "Cuatro FS activan Battle of the Beasts durante diez giros. Cuando se expande un Legendary Frame Warrior, todos los demás símbolos Warrior válidos del mismo tipo del tablero se expanden a la vez."}
+    ]
+  },
+  "playn-go-eye-of-the-kraken": {
+    "intro": ["En un giro aleatorio, el Kraken puede envolver los rodillos con sus tentáculos y dejar comodines. Cinco Diver Helmets recogidos durante una ronda activan Dive Mode con 9 giros gratis; dentro de él, los Treasure Chest Scatters conceden distintos valores según su número, mientras que Eye of the Kraken actúa como comodín.", "Los torpedos se acumulan por separado. Tras 50 torpedos se abre una ronda de bonificación: el Kraken protege cinco cofres del tesoro, se dispara contra ellos y solo tres de los cinco contienen un premio; la descripción oficial de Play’n GO indica un potencial del bonus de hasta x500 la apuesta total."],
+    "editorial": "Eye of the Kraken divide el progreso en dos vías: los cascos llevan a Dive Mode de 9 giros, mientras que los torpedos se acumulan hacia una batalla independiente contra el Kraken. Los Tentacle Wilds aleatorios siguen siendo una función independiente del juego base y no sustituyen a ninguno de los activadores.",
+    "features": [
+      {"title": "Tentáculos comodín", "description": "En un giro aleatorio, el Kraken puede envolver los rodillos con sus tentáculos y dejar comodines."},
+      {"title": "El modo Dive Mode", "description": "Cinco Diver Helmets recogidos durante una ronda activan Dive Mode con 9 giros gratis; dentro de él, los Treasure Chest Scatters conceden distintos valores según su número, mientras que Eye of the Kraken actúa como comodín."},
+      {"title": "Bonus de torpedos", "description": "Tras 50 torpedos se abre una ronda de bonificación: el Kraken protege cinco cofres del tesoro, se dispara contra ellos y solo tres de los cinco contienen un premio; la descripción oficial de Play’n GO indica un potencial del bonus de hasta x500 la apuesta total."}
+    ]
+  },
+  "wazdan-hot-slot-777-gold-crown": {
+    "intro": ["Gold Crown sitúa una corona Scatter en el centro de una tragaperras retro de diez líneas. De dos a cinco coronas pagan cuatro jackpots distintos.", "Grand de 1500x se activa con cinco Scatters o las quince casillas llenas de sietes. Frente a Diamond Crown, esta versión tiene un máximo inferior y una configuración de RTP diferente."],
+    "editorial": "La diferencia entre las ramas Crown importa más que el nombre compartido: Gold Crown tiene un RTP del 96.14% y un límite de 1500x. Los 5000x de Diamond Crown no deben trasladarse aquí.",
+    "features": [
+      {"title": "De dos a cinco coronas Scatter", "description": "Dos, tres, cuatro o cinco Scatters abren Mini, Minor, Major y Grand Jackpot, respectivamente."},
+      {"title": "15 sietes", "description": "Un tablero lleno de quince sietes garantiza el Grand Jackpot de 1500x como alternativa a cinco Scatters."},
+      {"title": "Tres modos Chance Level", "description": "Puede elevarse el coste de la apuesta para obtener un evento de jackpot más frecuente seleccionando uno de tres niveles."}
+    ]
+  },
+  "hacksaw-gaming-toshi-ways-club": {
+    "intro": ["Tras un premio, las posiciones se marcan con Flash Frames y se revelan de nuevo los símbolos ganadores dentro de esos marcos. Los nuevos premios crean nuevos marcos y el ciclo continúa hasta un giro sin un nuevo premio.", "Cuando hay Flash Frames, un símbolo Swap revela un símbolo de pago y lo coloca en todas las posiciones enmarcadas. En Suckr Punch, Slicing Swap también corta cada una de esas posiciones al tamaño mínimo y crea más símbolos ganadores individuales."],
+    "editorial": "Toshi Ways Club acumula primero Flash Frames a través de una cadena ganadora y después Swap convierte todo el conjunto marcado en un mismo tipo de símbolo. Slicing Swap refuerza la misma idea mediante el número de piezas separadas y no con un nuevo multiplicador.",
+    "features": [
+      {"title": "Flash Frames y símbolos Swap", "description": "Los premios dejan Flash Frames y revelan de nuevo los símbolos, Swap sustituye cada marco por un mismo símbolo de pago y Slicing Swap también los subdivide."},
+      {"title": "El Retro Reboot", "description": "Tres FS Scatters conceden diez giros Retro Reboot con mayor probabilidad de símbolos Swap. Durante el bonus, Swap sustituye los Flash Frames acumulados por un mismo símbolo de pago."},
+      {"title": "Suckr Punch y Tokyo Data Drift", "description": "Cuatro FS abren Suckr Punch con Slicing Swap, que divide las casillas marcadas en símbolos pequeños. Cinco FS activan Tokyo Data Drift con un Swap o Slicing Swap garantizado en cada giro."}
+    ]
+  },
+  "playn-go-fangs-and-fire": {
+    "intro": ["Los Golden Gongs de Link’n GO se activan cuando dos o más gongs forman una línea horizontal continua: cada gong revela un número o una flecha y los gongs vecinos combinan sus valores y pagan una recompensa de inmediato. Si hay al menos un gong pero la función no se ha activado, un Celestial Gong puede añadir aleatoriamente otros 3–10 gongs.", "Tres Prowler Scatters activan 3 regiros en un tablero de 5×3 y el contador se reinicia con un nuevo gong. Tres Serpent Scatters amplían el tablero a 5×7. Cinco Scatters cualesquiera que incluyan a ambos guardianes abren Serpent & Prowler Bonus: comienzan 3 regiros, se abren filas al llegar nuevos gongs y llenar 34 gongs activa el Mythical Prize."],
+    "editorial": "Fangs & Fire construye cuatro escenarios de bonus en torno a un mismo sistema de gongs, pero Prowler y Serpent lo modifican de forma distinta: el primero mantiene regiros de 5×3, el segundo abre 5×7 y el activador conjunto convierte el llenado del tablero en un desbloqueo gradual de filas.",
+    "features": [
+      {"title": "Los Golden Gongs", "description": "Los Golden Gongs de Link’n GO se activan cuando dos o más gongs forman una línea horizontal continua: cada gong revela un número o una flecha y los gongs vecinos combinan sus valores y pagan una recompensa de inmediato."},
+      {"title": "Prowler y Serpent", "description": "Si hay al menos un gong pero la función no se ha activado, un Celestial Gong puede añadir aleatoriamente otros 3–10 gongs."},
+      {"title": "Bonus conjunto de los guardianes", "description": "Tres Prowler Scatters activan 3 regiros en un tablero de 5×3 y el contador se reinicia con un nuevo gong. Tres Serpent Scatters amplían el tablero a 5×7. Cinco Scatters cualesquiera que incluyan a ambos guardianes abren Serpent & Prowler Bonus: comienzan 3 regiros, se abren filas al llegar nuevos gongs y llenar 34 gongs activa el Mythical Prize."}
+    ]
+  },
+  "wazdan-hot-slot-777-hold-the-jackpot": {
+    "intro": ["Hot Slot: 777 Hold the Jackpot combina diez líneas con un Hold the Jackpot independiente, en el que los símbolos Bonus llevan valores de premio.", "Cash Infinity fija símbolos rojos en el tablero para ayudar a llegar al bonus, mientras que Chance Level ofrece mayor probabilidad de activación a cambio de una apuesta más alta."],
+    "editorial": "El Grand Jackpot de 1500x se refiere a completar el escenario de jackpot y no a cualquier combinación de sietes. No es el Coin Bonus de 777 Coins.",
+    "features": [
+      {"title": "Modo Hold the Jackpot", "description": "El modo de bonificación acumula valores monetarios y símbolos de jackpot independientes, incluido Grand de 1500x."},
+      {"title": "Función Cash Infinity", "description": "Los símbolos rojos retenidos permanecen según las reglas de Cash Infinity y ayudan a acercarse al bonus."},
+      {"title": "Chance Level y Buy Feature", "description": "Las probabilidades del bonus pueden aumentarse mediante Chance Level; la lista oficial también incluye una compra independiente de la función de bonificación."}
+    ]
+  },
+  "hacksaw-gaming-twisted-lab": {
+    "intro": ["RotoGrid se carga con 1–4 rotaciones de 90° y gira secuencialmente todo el tablero después de calcular la caída original. Cada giro puede formar nuevas líneas de pago.", "Durante la rotación, los Oozing Beakers se rompen y Ooze fluye hacia abajo, convirtiendo las posiciones cubiertas en comodines. Blue Ooze lleva multiplicadores aditivos y Pink multiplicativos; los valores superpuestos se combinan y Green Ooze, resultado de la mezcla, se vuelve multiplicativo."],
+    "editorial": "Twisted Lab conecta la rotación del tablero con el «flujo» físico de multiplicadores hacia abajo por los rodillos: RotoGrid cambia la geometría de las líneas de pago, mientras que los Beakers crean simultáneamente zonas comodín y acumulan valores Ooze en las mismas posiciones.",
+    "features": [
+      {"title": "RotoGrid y Oozing Beakers", "description": "RotoGrid gira el tablero 90°, los Beakers vierten Wild Ooze hacia abajo y los valores Blue/Pink superpuestos se combinan en multiplicadores de rodillo más potentes."},
+      {"title": "Bonus Unleash the Ooze!", "description": "Tres FS Scatters conceden diez giros gratis Unleash the Ooze! Durante el bonus aparecen con mayor frecuencia RotoGrid, símbolos FS y Oozing Beakers, lo que permite posiciones comodín y nuevos multiplicadores después de las rotaciones."},
+      {"title": "El Twist of the Twisted", "description": "En un modo independiente, Twisters y Collectors permanecen en el tablero: la rotación del tablero cambia el lado activo de un Twister. Tres vidas que se reponen se prolongan con nuevos Twisters o símbolos Collector."}
+    ]
+  },
+  "playn-go-fat-frankies": {
+    "intro": ["Play’n GO describe cuatro funciones de bonificación independientes. En Burger Bonanza, las hamburguesas que aparecen permanecen fijadas y conceden un regiro; la secuencia continúa mientras sigan apareciendo nuevas hamburguesas y después se paga el valor del premio recogido.", "Flip the Tip comienza con tres monedas y aumenta el multiplicador por lanzamientos acertados a un bote de propinas; Greasy Wilds convierte de 1 a 5 rodillos en rodillos comodín. Five Star Free Spins utiliza un símbolo Five Star: cada uno aumenta el multiplicador del premio y añade 2 giros, mientras que el multiplicador crece de x2 a x6."],
+    "editorial": "Fat Frankies no lo reduce todo a una estructura de bonus: sus cuatro modos utilizan acciones completamente distintas, con hamburguesas persistentes, riesgo con monedas de propina, un número aleatorio de rodillos comodín y giros gratis progresivos. La descripción pública del proveedor no detalla las condiciones exactas de entrada de cada ronda de bonus, por lo que Slotfolio no las inventa.",
+    "features": [
+      {"title": "El Burger Bonanza", "description": "Play’n GO describe cuatro funciones de bonificación independientes."},
+      {"title": "Flip the Tip y Greasy Wilds", "description": "En Burger Bonanza, las hamburguesas que aparecen permanecen fijadas y conceden un regiro; la secuencia continúa mientras sigan apareciendo nuevas hamburguesas y después se paga el valor del premio recogido."},
+      {"title": "Giros Five Star Free Spins", "description": "Flip the Tip comienza con tres monedas y aumenta el multiplicador por lanzamientos acertados a un bote de propinas; Greasy Wilds convierte de 1 a 5 rodillos en rodillos comodín. Five Star Free Spins utiliza un símbolo Five Star: cada uno aumenta el multiplicador del premio y añade 2 giros, mientras que el multiplicador crece de x2 a x6."}
+    ]
+  },
+  "wazdan-hot-slot-777-platinum-crown": {
+    "intro": ["Platinum Crown mantiene cinco rodillos y diez líneas, pero convierte el Grand Jackpot de 2500x en su objetivo principal. Puede alcanzarse de dos maneras.", "Cinco coronas Scatter abren Grand, al igual que quince sietes en todo el tablero; dos, tres o cuatro coronas conceden niveles de premio inferiores."],
+    "editorial": "Platinum Crown se distingue de los 1500x de Gold y los 5000x de Diamond en algo más que el color del logotipo. Su RTP de referencia del 96.17% y su volatilidad media están confirmados por separado.",
+    "features": [
+      {"title": "Dos vías hacia 2500x", "description": "Grand puede concederse por cinco coronas Scatter o por las quince posiciones llenas de sietes."},
+      {"title": "Escalera de Scatters", "description": "Dos, tres, cuatro y cinco Scatters conceden premios sucesivos en una escala independiente."},
+      {"title": "Chance Level y niveles de volatilidad", "description": "Tres opciones Chance Level cambian el coste de apuesta y la probabilidad de jackpot; los niveles de volatilidad se enumeran por separado en la ficha técnica."}
+    ]
+  },
+  "hacksaw-gaming-ultimate-slot-of-america": {
+    "intro": ["Una Liberty Gem actúa como comodín multiplicador y activa un Freedom Respin, permaneciendo fijada. Cada nueva gema prolonga la secuencia, mientras que los multiplicadores de varias gemas en un premio se suman.", "Cuatro o más Liberty Gems en un cuadrado de 2x2, 3x3, 4x4 o 5x5 forman un Gem Cluster. Un Classic Cluster suma los valores de las gemas, mientras que un Epic Cluster multiplica además su suma por un multiplicador independiente."],
+    "editorial": "Ultimate Slot of America convierte las gemas persistentes en una progresión espacial: recoger muchas no basta, formar un cuadrado exacto resulta beneficioso. Un Epic Cluster añade una segunda capa de multiplicador sobre los valores de gemas ya sumados.",
+    "features": [
+      {"title": "Freedom Respins y Gem Clusters", "description": "Las Liberty Gems conceden regiros persistentes, los grupos cuadrados se fusionan en un Classic o Epic Cluster y la versión Epic multiplica además el multiplicador combinado de las gemas."},
+      {"title": "El Spin-dependence Day", "description": "Tres FS activan diez giros Spin-dependence Day con mayor probabilidad de Liberty Gems. Cada nueva gema de la mecánica base puede prolongar una secuencia de Freedom Respins."},
+      {"title": "Red, White, Bling y Pursuit of Riches", "description": "Cuatro FS conceden Red, White, Bling con gemas y grupos persistentes, pero sin Freedom Respins; cinco FS abren Pursuit of Riches con al menos cinco Liberty Gems en cada giro."}
+    ]
+  },
+  "playn-go-fate-of-dead-blitzways": {
+    "intro": ["Blitzways Dynamic Reels cambia la altura de cada rodillo de 2 a 7 símbolos y ofrece hasta 16,807 formas de ganar. Los premios se forman como grupos que conectan símbolos iguales a través de tres o más rodillos adyacentes; tras pagar, los símbolos ganadores desaparecen e inician una cascada.", "Los comodines se crean después de los premios. Si el siguiente premio utiliza un comodín, su sustituto se convierte en un comodín multiplicador que permite mejorar los grupos posteriores. Tres Scatters activan los giros gratis: un comodín aparece en una posición aleatoria y permanece fijado toda la ronda, mientras que cada Scatter adicional añade otro giro."],
+    "editorial": "Fate of Dead Blitzways no traslada el símbolo expansivo clásico de los antiguos juegos Dead. Sus mecánicas centrales son la altura dinámica de rodillos, las cascadas por grupos y la evolución de comodín a comodín multiplicador, mientras que los giros gratis fijan un comodín inicial.",
+    "features": [
+      {"title": "Rodillos dinámicos Blitzways", "description": "Blitzways Dynamic Reels cambia la altura de cada rodillo de 2 a 7 símbolos y ofrece hasta 16,807 formas de ganar."},
+      {"title": "Cascadas por grupos", "description": "Los premios se forman como grupos que conectan símbolos iguales a través de tres o más rodillos adyacentes; tras pagar, los símbolos ganadores desaparecen e inician una cascada."},
+      {"title": "Giros gratis persistentes", "description": "Si el siguiente premio utiliza un comodín, su sustituto se convierte en un comodín multiplicador que permite mejorar los grupos posteriores. Tres Scatters activan los giros gratis: un comodín aparece en una posición aleatoria y permanece fijado toda la ronda, mientras que cada Scatter adicional añade otro giro."}
+    ]
+  },
+  "wazdan-hot-slot-777-rubies": {
+    "intro": ["777 Rubies sustituye las monedas de bonificación por rubíes: recoger cinco rubíes abre el Grand Jackpot de 500x, mientras que conjuntos menores corresponden a premios inferiores.", "Magic Respin ayuda a retener rodillos para una combinación de jackpot. No es 9 Coins Jackpot, aunque los pagos base siguen utilizando veinte líneas."],
+    "editorial": "Rubies tiene un máximo de 500x, ajustes de volatilidad bajo/estándar/alto y un Magic Respin independiente. Las matemáticas de la versión más ligera no deben trasladarse automáticamente.",
+    "features": [
+      {"title": "Cinco rubíes", "description": "Cinco símbolos Ruby abren el Grand Jackpot de 500x la apuesta."},
+      {"title": "El Magic Respin", "description": "Permite fijar rodillos y continuar los intentos de recoger rubíes de bonificación."},
+      {"title": "Niveles de volatilidad", "description": "Se enumeran oficialmente tres perfiles: bajo, estándar y alto. Gamble es un juego de riesgo independiente posterior al pago."}
+    ]
+  },
+  "hacksaw-gaming-vending-machine": {
+    "intro": ["Un Lightning Bolt activa la Multiplier Light de su fila. Cuando aparece un premio en una fila activa, su multiplicador aumenta en +1 por cada símbolo ganador y se aplica al pago.", "Multiplier Boost duplica el multiplicador de una fila concreta, Epic Boost duplica el de todas las filas y Blackout Skull desactiva una fila hasta el siguiente Lightning Bolt. En un premio que atraviesa varias filas activas, sus multiplicadores se suman."],
+    "editorial": "Vending Machine convierte cada fila horizontal en un multiplicador creciente independiente. La clave está tanto en activar las Multiplier Lights como en mantenerlas activas mientras los Boosts y los premios repetidos aumentan sus valores.",
+    "features": [
+      {"title": "Multiplier Lights y Boosts", "description": "Lightning activa un multiplicador de fila, los premios lo aumentan, los Boosts duplican una o todas las filas y Blackout desactiva temporalmente la luz correspondiente."},
+      {"title": "Función Remove & Cascade", "description": "Si no se forma un premio al detenerse los rodillos, puede activarse un Remove & Cascade adicional: se eliminan todos los símbolos de pago bajo y aparecen otros nuevos en sus lugares."},
+      {"title": "Lo-Fi Spins y Spin & Chill", "description": "Tres FS activan Lo-Fi Spins con tres filas Multiplier Light activas; cuatro FS abren Spin & Chill, donde las cinco filas están iluminadas desde el inicio. Ambos bonus terminan cuando sus luces se desactivan."}
+    ]
+  },
+  "playn-go-fates-fortune": {
+    "intro": ["Cada símbolo Ulysses del juego base llena un contador de escudo. En el giro 20, los símbolos recogidos se convierten en flechas para Barrage Bonus: las flechas alcanzan posiciones aleatorias y pueden convertirlas en comodines o comodines expansivos.", "Poseidon’s Wrath recoge Scatters que no han activado una función por sí mismos y puede activar la rueda. Tres Scatters activan la rueda desde el nivel uno, cuatro empiezan una etapa más arriba y cinco abren inmediatamente Mythical Free Spins. En los giros gratis normales, Barrage se activa en giros en los que el contador de escudo tiene valor; el modo Mythical también puede crear comodines expansivos persistentes."],
+    "editorial": "Fate’s Fortune conecta un contador de escudo a largo plazo con Barrage Bonus y desarrolla por separado Poseidon’s Wrath mediante Scatters. Cinco Scatters omiten la progresión normal de la rueda y llevan directamente a Mythical Free Spins, donde las transformaciones comodín disponibles se vuelven más potentes.",
+    "features": [
+      {"title": "El Barrage Bonus", "description": "Cada símbolo Ulysses del juego base llena un contador de escudo."},
+      {"title": "La Poseidon’s Wrath", "description": "En el giro 20, los símbolos recogidos se convierten en flechas para Barrage Bonus: las flechas alcanzan posiciones aleatorias y pueden convertirlas en comodines o comodines expansivos."},
+      {"title": "Giros Mythical Free Spins", "description": "Poseidon’s Wrath recoge Scatters que no han activado una función por sí mismos y puede activar la rueda. Tres Scatters activan la rueda desde el nivel uno, cuatro empiezan una etapa más arriba y cinco abren inmediatamente Mythical Free Spins. En los giros gratis normales, Barrage se activa en giros en los que el contador de escudo tiene valor; el modo Mythical también puede crear comodines expansivos persistentes."}
+    ]
+  },
+  "wazdan-hot-slot-777-rubies-extremely-light": {
+    "intro": ["777 Rubies Extremely Light lleva Magic Respin y 5 Rubies Jackpot a una presentación más ligera. Se reducen la carga y el consumo energético, mientras se mantienen veinte líneas.", "Grand Jackpot sigue vinculado a cinco rubíes; la ficha técnica oficial de esta versión enumera por separado volatilidad alta."],
+    "editorial": "La versión más ligera tiene el mismo pago superior de 500x y RTP del 96.14%, pero su categoría declarada de volatilidad alta no debe sustituir automáticamente los niveles ajustables originales de Rubies normal.",
+    "features": [
+      {"title": "El Magic Respin", "description": "El modo de retención de rodillos ayuda a llevar el número de rubíes al umbral del bonus."},
+      {"title": "El 5 Rubies Jackpot", "description": "Cinco símbolos Ruby abren el Grand Jackpot de 500x; los jackpots inferiores siguen siendo premios independientes."},
+      {"title": "Modo Extremely Light", "description": "Los efectos están optimizados para una carga más rápida y menor consumo de batería y datos móviles."}
+    ]
+  },
+  "hacksaw-gaming-wings-of-horus": {
+    "intro": ["Un Orb of the Moon selecciona un tipo de símbolo aleatorio y sustituye todas sus apariciones, incluida la propia, por un símbolo de pago más alto o un comodín. Un Orb of the Sun hace lo mismo con dos tipos a la vez.", "Si los símbolos de pago bajo forman HORUS horizontalmente, el juego paga un premio monetario fijo. Durante los bonus, una barra de progresión Orb independiente acumula niveles mediante nuevos premios y determina el número de orbes garantizados antes de la caída final."],
+    "editorial": "Wings of Horus utiliza la sustitución masiva de símbolos iguales como vía principal para remodelar el tablero. Durante el bonus, cada nuevo premio también carga la caída final de orbes, de modo que las primeras combinaciones refuerzan directamente el último giro del modo.",
+    "features": [
+      {"title": "Orbes y barra de progresión", "description": "El orbe lunar sustituye un tipo de símbolo, el solar dos, mientras que el medidor del bonus acumula niveles y los convierte en orbes adicionales antes de la caída final."},
+      {"title": "Escritura sagrada: HORUS", "description": "Cuando los símbolos de pago bajo forman HORUS horizontalmente en el tablero, se activa un pago fijo independiente de 500x la apuesta actual. No es el premio máximo total."},
+      {"title": "Revenge of the Pharaoh y Rise of the Falcon", "description": "Tres FS conceden diez giros Revenge con Orb Meter empezando en el primer nivel; cuatro FS activan Rise of the Falcon con la misma progresión, pero con un segundo nivel inicial."}
+    ]
+  },
+  "playn-go-feline-fury": {
+    "intro": ["Los Feline Wilds se activan aleatoriamente en el juego base y convierten uno o más símbolos de gato en comodines durante el giro actual. Al mismo tiempo pueden activarse Fury Reels: de 1 a 5 rodillos se designan Fury y un Feline Wild en uno de ellos se expande por él; dos Feline Wilds conceden x2 y tres conceden x3.", "Tres Holy Grail of Cat Food Scatters activan 5 giros gratis. Los escudos se recogen durante el bonus: cada 12 escudos convierten el símbolo de gato correspondiente en un Feline Wild para el resto de la ronda y añaden otros 3 giros. Un Scatter adicional añade un giro más."],
+    "editorial": "Feline Fury convierte a los gatos en comodines progresivos: en el juego base su fuerza es aleatoria y breve, mientras que la recogida de escudos durante los giros gratis fija a un gato concreto como comodín hasta terminar la ronda. Un Fury Reel puede convertir después ese comodín en un evento multiplicador de rodillo completo.",
+    "features": [
+      {"title": "Los Feline Wilds", "description": "Los Feline Wilds se activan aleatoriamente en el juego base y convierten uno o más símbolos de gato en comodines durante el giro actual."},
+      {"title": "Los Fury Reels", "description": "Al mismo tiempo pueden activarse Fury Reels: de 1 a 5 rodillos se designan Fury y un Feline Wild en uno de ellos se expande por él; dos Feline Wilds conceden x2 y tres conceden x3."},
+      {"title": "Giros gratis de escudos", "description": "Tres Holy Grail of Cat Food Scatters activan 5 giros gratis. Los escudos se recogen durante el bonus: cada 12 escudos convierten el símbolo de gato correspondiente en un Feline Wild para el resto de la ronda y añaden otros 3 giros. Un Scatter adicional añade un giro más."}
+    ]
+  },
+  "wazdan-hot-slot-777-stars": {
+    "intro": ["Hot Slot: 777 Stars se basa en estrellas rojas Scatter y el sistema 9 Stars Jackpot. Los niveles de premio del bonus exigen combinaciones de estrellas y no monedas o rubíes.", "Cinco rodillos con veinte líneas y símbolos de frutas mantienen una base clásica; el proveedor no enumera giros gratis independientes."],
+    "editorial": "Aquí la estrella Scatter se encarga de los pagos directos de jackpot. El máximo de 500x no debe interpretarse como un premio por cualquier Scatter que aparezca.",
+    "features": [
+      {"title": "Sistema 9 Stars Jackpot", "description": "Las estrellas Scatter forman combinaciones ganadoras de jackpot independientes; no deben confundirse con los umbrales de 9 Coins Jackpot."},
+      {"title": "Estrella roja Scatter", "description": "El símbolo especial concede un premio según la tabla de bonificación, sin iniciar necesariamente una secuencia de giros."},
+      {"title": "Gamble y niveles de volatilidad", "description": "Tras un premio hay una opción de riesgo independiente y Wazdan publica niveles de volatilidad ajustables."}
+    ]
+  },
+  "hacksaw-gaming-wishbringer": {
+    "intro": ["Un símbolo Genie aparece en los rodillos 2–6 y sopla nubes hacia la izquierda por toda su fila hasta el borde del tablero.", "Todas las posiciones ocupadas por el genio o las nubes cuentan como comodines. Los FS siguen activos incluso bajo Wild Clouds si participan en un premio."],
+    "editorial": "Wishbringer utiliza una geometría sencilla pero direccional: un genio convierte todo el tramo de fila a su izquierda en una Wild Cloud Row. Por ello, su valor depende directamente de lo lejos a la derecha que aparezca.",
+    "features": [
+      {"title": "Filas de nubes comodín", "description": "Un genio sopla Wild Clouds hacia la izquierda por una fila y convierte las posiciones cubiertas en comodines; los bonus aumentan la frecuencia de símbolos Genie garantizados."},
+      {"title": "Giros gratis Arabian Nights", "description": "Tres, cuatro, cinco y seis FS Scatters activan 5, 10, 20 y 40 giros Arabian Nights, respectivamente. Dos FS adicionales durante el bonus conceden otros dos giros y tres conceden cuatro."},
+      {"title": "Las Genie FeatureSpins", "description": "Donde esté permitido, Genie’s Wish FeatureSpins garantiza al menos un genio en los rodillos 2–6, mientras que Genie’s Magic garantiza uno en los rodillos 4–6. Son opciones de pago y no reglas del juego base."}
+    ]
+  },
+  "playn-go-fire-joker-100": {
+    "intro": ["Re-Spin of Fire se activa si dos rodillos están completamente llenos del mismo símbolo apilado, pero no se forma un premio: esas pilas quedan fijadas y el tercer rodillo recibe un regiro. Si hay dos parejas posibles válidas, el juego retiene la del símbolo de mayor pago.", "Si los tres rodillos están completamente llenos del mismo símbolo, se activa Wheel of Fire. La rueda aplica un multiplicador al premio; en Fire Joker 100, el máximo oficial de la rueda alcanza x100."],
+    "editorial": "Fire Joker 100 mantiene deliberadamente la sencillez de tres rodillos del original, pero eleva el límite de la rueda y aclara la selección de la pareja apilada para un regiro. No tiene mecánicas Coin Collect o Ice de otros juegos Fire Joker.",
+    "features": [
+      {"title": "El Re-Spin of Fire", "description": "Re-Spin of Fire se activa si dos rodillos están completamente llenos del mismo símbolo apilado, pero no se forma un premio: esas pilas quedan fijadas y el tercer rodillo recibe un regiro."},
+      {"title": "Selección de una pareja apilada", "description": "Si hay dos parejas posibles válidas, el juego retiene la del símbolo de mayor pago."},
+      {"title": "La Wheel of Fire", "description": "Si los tres rodillos están completamente llenos del mismo símbolo, se activa Wheel of Fire. La rueda aplica un multiplicador al premio; en Fire Joker 100, el máximo oficial de la rueda alcanza x100."}
+    ]
+  },
+  "wazdan-hot-slot-777-stars-extremely-light": {
+    "intro": ["777 Stars Extremely Light mantiene la estructura de cinco rodillos y el sistema 9 Stars Jackpot de Stars, pero reduce las exigencias gráficas y energéticas.", "Las estrellas Scatter conceden premios según una tabla de jackpot independiente. No es una reedición de 777 Rubies ni un modo Hold the Jackpot."],
+    "editorial": "Al comparar Stars con Stars Extremely Light se observan idénticos RTP del 96.10% y 500x. La diferencia documentada es la optimización de carga y no un nuevo bonus.",
+    "features": [
+      {"title": "Sistema 9 Stars Jackpot", "description": "Las combinaciones de estrellas Scatter abren niveles de premio sin necesidad de un recolector Cash Out."},
+      {"title": "Versión rápida y ligera", "description": "Los gráficos y animaciones simplificados ahorran datos y batería del dispositivo."},
+      {"title": "20 líneas y Gamble", "description": "Los premios base pagan en veinte líneas, mientras que el juego de riesgo solo está disponible por separado después de un premio."}
+    ]
+  },
+  "hacksaw-gaming-xmas-drop": {
+    "intro": ["Un Wild Santa se expande hacia abajo si la expansión participa en una combinación ganadora. Todas las posiciones cubiertas se vuelven comodín, mientras que un Santa que no se expande permanece como comodín individual.", "Si un Santa en expansión atraviesa un Wild Gift, el regalo se convierte en un multiplicador de x2 a x200. Si varios Santas expandidos con multiplicadores participan en una combinación, sus valores se suman."],
+    "editorial": "Xmas Drop basa su mecánica en el recorrido vertical de Santa: atravesar más símbolos útiles durante la expansión puede reforzar el multiplicador de rodillo resultante. En el bonus superior, los rodillos activados garantizan después un Santa hasta terminar los giros gratis.",
+    "features": [
+      {"title": "Wild Santa y regalos Wild Gifts", "description": "Santa se expande hacia abajo como rodillo comodín, los regalos se convierten en multiplicadores al ser atravesados y varios multiplicadores de Santa en un premio se suman."},
+      {"title": "El Night Before Christmas", "description": "Tres FS Scatters activan diez giros Night Before Christmas con mayor probabilidad de Wild Santa y Wild Gift. Cuatro FS durante este bonus llevan el juego al modo Santa superior."},
+      {"title": "Santa Claus Is Coming To Town", "description": "Cuatro FS activan diez giros Santa Claus Is Coming To Town. Un rodillo donde aparece Wild Santa se activa y garantiza un nuevo Santa hasta terminar el bonus."}
+    ]
+  },
+  "playn-go-fire-joker-blitz": {
+    "intro": ["Los Coin Scatters llevan valores de multiplicador y un símbolo Pig Collect los recoge cuando aparecen juntos. Dos símbolos Collect sin Coin Scatters activan Re-Spin Chance. Las monedas también pueden acumularse visualmente en el Golden Joker sobre los rodillos, pero Play’n GO lo describe expresamente como un estado de persistencia percibida y no como un medidor oculto con pago garantizado.", "Fire Blitz Mode garantiza un Fire Joker Collector en cada giro y solo en este modo puede aparecer un raro símbolo dorado con pago x150. Los giros gratis utilizan un medidor de progreso vinculado a Feature Scatters: nuevas etapas abren multiplicadores más potentes y giros adicionales."],
+    "editorial": "Fire Joker Blitz va mucho más allá del Fire Joker clásico de rodillos apilados: su ciclo principal combina Coin Collect, símbolos Collector y giros gratis por etapas. Golden Joker no debe considerarse un jackpot acumulativo real: el proveedor lo denomina expresamente un estado visual de persistencia percibida.",
+    "features": [
+      {"title": "Recogida de monedas", "description": "Los Coin Scatters llevan valores de multiplicador y un símbolo Pig Collect los recoge cuando aparecen juntos."},
+      {"title": "El Re-Spin Chance", "description": "Dos símbolos Collect sin Coin Scatters activan Re-Spin Chance."},
+      {"title": "Fire Blitz y giros gratis", "description": "Las monedas también pueden acumularse visualmente en el Golden Joker sobre los rodillos, pero Play’n GO lo describe expresamente como un estado de persistencia percibida y no como un medidor oculto con pago garantizado. Fire Blitz Mode garantiza un Fire Joker Collector en cada giro y solo en este modo puede aparecer un raro símbolo dorado con pago x150. Los giros gratis utilizan un medidor de progreso vinculado a Feature Scatters: nuevas etapas abren multiplicadores más potentes y giros adicionales."}
+    ]
+  },
+  "wazdan-hot-slot-diamond-coins": {
+    "intro": ["Diamond Coins combina quince posiciones independientes con dos líneas Hot Slot y Hold the Jackpot. Fuera del bonus, los símbolos Hot Slot adicionales proporcionan pagos normales.", "Los símbolos rojos Cash Infinity pueden quedar fijados en el tablero y ayudar a activar el modo de bonificación. Aquí el Grand Jackpot es de 3000x, frente a los 750x de Gold Coins."],
+    "editorial": "Las dos líneas de la ficha técnica de Diamond Coins pertenecen a los símbolos Hot Slot del juego base; un sistema de acumulación de premios funciona por separado. Estos dos tipos de pago no deben mezclarse.",
+    "features": [
+      {"title": "Función Cash Infinity", "description": "Las posiciones rojas permanecen y aumentan la posibilidad de acumular símbolos para Hold the Jackpot."},
+      {"title": "Hold the Jackpot con Grand de 3000x", "description": "Los valores monetarios y de jackpot se recogen en el bonus; el máximo total declarado es de 3000x."},
+      {"title": "Dos líneas Hot Slot adicionales", "description": "Los símbolos especiales en dos líneas añaden pagos base sin cambiar las condiciones del bonus con retención."}
+    ]
+  },
+  "hacksaw-gaming-ze-zeus": {
+    "intro": ["Super Cascades elimina todos los símbolos normales del tipo ganador y las posiciones bajo los símbolos ganadores se convierten en Divine Squares.", "Tras terminar los premios, Hand of Zeus activa las Divine Squares: revelan monedas, Zap of Zeus o Vessel of Wealth. Los Zaps multiplican los valores monetarios vecinos, mientras que los Vessels recogen secuencialmente monedas y valores de Vessels anteriores."],
+    "editorial": "Ze Zeus convierte las cascadas en preparación para una fase monetaria: los premios marcan primero Divine Squares y Hand of Zeus inicia después una cadena de revelaciones, multiplicaciones y recogida secuencial de valores.",
+    "features": [
+      {"title": "Divine Squares, Zaps y Vessels", "description": "Super Cascades crea Divine Squares, Hand of Zeus las activa, los Zaps mejoran valores vecinos y los Vessels recogen premios monetarios en cadena."},
+      {"title": "What if Zeus Was One of Us?", "description": "Tres FS activan un bonus en el que las Divine Squares permanecen entre giros hasta que Hand of Zeus las activa. Cuatro FS pueden mejorar este modo a Ze Zeus Take the Wheel."},
+      {"title": "Take the Wheel y Might Superstar", "description": "Con cuatro FS, las Divine Squares permanecen incluso después de activar Hand of Zeus; cinco FS abren Might Superstar con Hand of Zeus obligatorio en cada giro y sin monedas de bronce."}
+    ]
+  },
+  "playn-go-fire-joker-freeze": {
+    "intro": ["Un Ice Joker en un giro sin premio activa Re-Spins of Ice: el Joker queda fijado, se convierte en una pila de rodillo completo y los demás rodillos vuelven a girar. Re-Spins of Fire funciona de otro modo: se activa cuando dos rodillos ya están llenos de símbolos apilados iguales.", "Una pantalla completa de un mismo símbolo, incluidos los comodines Fire/Ice Joker, activa Wheel of Fire and Ice. La rueda utiliza cuatro efectos secuenciales con sumas Ice y multiplicadores; la cuarta versión, la más potente, contiene x6, x10 y x20."],
+    "editorial": "Fire Joker Freeze contrapone deliberadamente dos mecánicas opuestas: Ice crea un rodillo apilado tras un giro sin premio, mientras que Fire fija pilas iguales ya presentes. La rueda une ambas vías solo cuando toda la pantalla se convierte en un mismo símbolo.",
+    "features": [
+      {"title": "Los Re-Spins of Ice", "description": "Un Ice Joker en un giro sin premio activa Re-Spins of Ice: el Joker queda fijado, se convierte en una pila de rodillo completo y los demás rodillos vuelven a girar."},
+      {"title": "Los Re-Spins of Fire", "description": "Re-Spins of Fire funciona de otro modo: se activa cuando dos rodillos ya están llenos de símbolos apilados iguales."},
+      {"title": "Wheel of Fire and Ice", "description": "Una pantalla completa de un mismo símbolo, incluidos los comodines Fire/Ice Joker, activa Wheel of Fire and Ice. La rueda utiliza cuatro efectos secuenciales con sumas Ice y multiplicadores; la cuarta versión, la más potente, contiene x6, x10 y x20."}
+    ]
+  },
+  "wazdan-hot-slot-gold-coins": {
+    "intro": ["Gold Coins combina quince posiciones de monedas con diez líneas Hot Slot. Cash Infinity ayuda a acercarse a Hold the Jackpot, mientras que los símbolos clásicos se encargan de los premios normales.", "El Grand Jackpot de esta versión dorada es de 750x. Es sustancialmente inferior a los 2500x de Platinum Coins y los 3000x de Diamond Coins."],
+    "editorial": "Gold Coins tiene dos partes independientes importantes: líneas retro de juego base y símbolos Cash Infinity retenidos en el camino hacia el bonus. El premio máximo declarado de 750x se aplica al juego completo.",
+    "features": [
+      {"title": "Función Cash Infinity", "description": "Fija símbolos rojos especiales y prepara el tablero para activar Hold the Jackpot."},
+      {"title": "Hold the Jackpot con Grand de 750x", "description": "Recoge valores de premio durante el bonus; el premio superior de la versión dorada es de 750x la apuesta."},
+      {"title": "Símbolos Hot Slot y Chance Level", "description": "Los símbolos retro permiten pagos base frecuentes, mientras que Chance Level aumenta la probabilidad de activar el bonus a cambio de una apuesta más cara."}
+    ]
+  },
+  "hacksaw-gaming-zeus-ze-zecond": {
+    "intro": ["Los símbolos Wonder aparecen verticalmente en los rodillos 2–5 y revelan símbolos de pago alto, comodines o Wonder Reels completos. Un premio tras la revelación activa regiros con retención hasta que dejan de aparecer nuevos premios o aparece un Wonder Reel.", "Los Wonder Reels revelan monedas, diamantes, tréboles y Pots of Olympus. Las monedas y los diamantes conceden premios monetarios, los tréboles los multiplican y los botes recogen todos los valores en un total."],
+    "editorial": "Zeus Ze Zecond conecta una revelación de tipo Mystery con regiros con retención: los símbolos Wonder normales mantienen la cadena ganadora, mientras que un Wonder Reel lleva la ronda a una fase monetaria independiente. Godly Ascension añade un Wonder Meter progresivo.",
+    "features": [
+      {"title": "Símbolos Wonder y Wonder Reels", "description": "Los símbolos Wonder revelan símbolos de pago/comodines o un Wonder Reel completo, un premio activa regiros con retención y los Wonder Reels recogen valores monetarios mediante monedas, tréboles y botes."},
+      {"title": "El Gates of Hades", "description": "En Gates of Hades, todos los símbolos Wonder que aparecen quedan fijados y conservan sus posiciones hasta terminar la secuencia de bonificación, manteniendo la mecánica Wonder Reveal del juego base."},
+      {"title": "Godly Ascension y Zeus Unleashed", "description": "Godly Ascension acumula Wonder Meter y activa giros de premio con un tablero lleno de símbolos Wonder; Zeus Unleashed llena inmediatamente los rodillos 2–5 de símbolos Wonder y excluye los símbolos de pago bajo."}
+    ]
+  },
+  "playn-go-fire-toad": {
+    "intro": ["El Firefly Scatter también actúa como comodín. Exactamente dos Scatters en el juego base seleccionan aleatoriamente un nivel de sapo y convierten todos los símbolos Toad inferiores en ese nivel seleccionado; el premio se calcula después de la mejora.", "Tres, cuatro o cinco Scatters conceden 9, 12 o 15 giros gratis. El bonus comienza con una mejora automática del sapo más pequeño; las reactivaciones con 3/4/5 Scatters añaden 3/4/5 giros y vuelven a mejorar el nivel de sapo más bajo que quede. Play’n GO indica que las reactivaciones son ilimitadas."],
+    "editorial": "Fire Toad basa toda su mecánica en la evolución de una familia de símbolos: dos Scatters cambian la tabla de pagos dentro del propio giro base, mientras que los giros gratis eliminan gradualmente las formas de sapo más débiles del conjunto. No es el sistema Golden Lilypad/Inferno de Fire Toad 2.",
+    "features": [
+      {"title": "Mejora de sapos en el juego base", "description": "El Firefly Scatter también actúa como comodín."},
+      {"title": "Giros gratis", "description": "Exactamente dos Scatters en el juego base seleccionan aleatoriamente un nivel de sapo y convierten todos los símbolos Toad inferiores en ese nivel seleccionado; el premio se calcula después de la mejora."},
+      {"title": "Mejora por reactivación", "description": "Tres, cuatro o cinco Scatters conceden 9, 12 o 15 giros gratis. El bonus comienza con una mejora automática del sapo más pequeño; las reactivaciones con 3/4/5 Scatters añaden 3/4/5 giros y vuelven a mejorar el nivel de sapo más bajo que quede. Play’n GO indica que las reactivaciones son ilimitadas."}
+    ]
+  },
+  "wazdan-hot-slot-great-book-of-magic": {
+    "intro": ["Hot Slot: Great Book of Magic conecta un bonus de libro con Collect to Infinity y Sticky to Infinity. Tres Scatters abren 10 giros gratis, mientras que los Collectors retenidos pueden aumentar su número.", "Antes de los giros gratis se selecciona un símbolo de bonificación expansivo que se expande por un rodillo durante el bonus. No es el Deluxe del antiguo Great Book of Magic: Hot Slot tiene su propio premio máximo de 6000x."],
+    "editorial": "La diferencia clave de Hot Slot frente al libro normal es la cadena Sticky to Infinity → Collect to Infinity → giros gratis adicionales, además de niveles Buy Feature independientes.",
+    "features": [
+      {"title": "Tres Scatters, diez giros", "description": "Tres libros Scatter en cualquier posición activan 10 giros gratis; la acumulación mediante un Collector puede aumentar su número."},
+      {"title": "Sticky y Collect to Infinity", "description": "Los Scatters quedan fijados hasta la activación, mientras que un Collector recoge nuevos libros y aumenta la futura secuencia."},
+      {"title": "El libro elige un símbolo expansivo", "description": "El símbolo de bonificación expansivo se determina al comenzar el bonus; Buy Feature incluye seis niveles, incluido Triple Extreme."}
+    ]
+  },
+  "playn-go-fire-toad-2": {
+    "intro": ["Fire Toad 2 mantiene Toad Upgrade, pero lo desarrolla de forma independiente al primer juego: exactamente dos Scatters en el juego base mejoran todos los símbolos Toad más débiles a la forma seleccionada. Un Golden Lilypad puede aparecer en el rodillo 3 y dividir en dos símbolos un sapo situado sobre él cuando se forma una combinación ganadora de sapos.", "Tres o más Scatters activan los giros gratis con una elección entre Normal Upgrade Trail y Best Upgrade Trail. El primero proporciona más giros y comienza la evolución desde el nivel inferior; el segundo tiene menos giros, pero empieza solo con los sapos más fuertes en los rodillos. El rodillo 3 permanece cubierto de Golden Lilypads activos durante todos los giros gratis."],
+    "editorial": "Fire Toad 2 hace más que repetir la mecánica de mejora del original: Golden Lilypads añade división de símbolos y los giros gratis ofrecen una elección del ritmo de progresión. Cinco Inferno Scatters durante el bonus abren 3 regiros Inferno finales con sapos fijados y división posterior sobre Golden Lilypads.",
+    "features": [
+      {"title": "El Golden Lilypad", "description": "Fire Toad 2 mantiene Toad Upgrade, pero lo desarrolla de forma independiente al primer juego: exactamente dos Scatters en el juego base mejoran todos los símbolos Toad más débiles a la forma seleccionada."},
+      {"title": "Dos rutas de giros gratis", "description": "Un Golden Lilypad puede aparecer en el rodillo 3 y dividir en dos símbolos un sapo situado sobre él cuando se forma una combinación ganadora de sapos."},
+      {"title": "Regiros Inferno", "description": "Tres o más Scatters activan los giros gratis con una elección entre Normal Upgrade Trail y Best Upgrade Trail. El primero proporciona más giros y comienza la evolución desde el nivel inferior; el segundo tiene menos giros, pero empieza solo con los sapos más fuertes en los rodillos. El rodillo 3 permanece cubierto de Golden Lilypads activos durante todos los giros gratis."}
+    ]
+  },
+  "wazdan-hot-slot-magic-bombs": {
+    "intro": ["Magic Bombs utiliza diez líneas con frutas y comodines en el juego base, pero su principal interés está en la preparación de los giros gratis mediante Sticky to Infinity y Collect to Infinity.", "Los Scatters persistentes permanecen hasta activar el bonus, mientras que un Collector ayuda a aumentar el número de giros gratis. Estas funciones son distintas de un multiplicador comodín normal."],
+    "editorial": "Magic Bombs tiene un máximo de 6000x y volatilidad alta. Su distinción está en la preparación del bonus y no en el número de líneas: Collectors y símbolos persistentes cambian la entrada a los giros gratis.",
+    "features": [
+      {"title": "Función Sticky to Infinity", "description": "Retiene Scatters especiales hasta activar los giros gratis y aumenta la probabilidad de eventos de bonificación."},
+      {"title": "Función Collect to Infinity", "description": "Un Collector queda fijado y recoge símbolos de bonificación adicionales, aumentando el número de futuros giros gratis."},
+      {"title": "Comodín, giros gratis y Buy Feature", "description": "El comodín sustituye a los símbolos normales salvo Scatters, mientras que el bonus puede obtenerse mediante una activación natural o una compra independiente."}
+    ]
+  },
+  "playn-go-firefly-frenzy": {
+    "intro": ["Los Firefly Wilds sustituyen a los símbolos normales y pueden llevar un multiplicador x2 o x3. Si varios comodines multiplicadores participan en una línea ganadora, sus valores se multiplican entre sí.", "El Moon Scatter no activa el bonus por sí solo: Frenzy Spins comienza cuando un Firefly Wild aparece sobre la luna. La ronda concede 8 giros gratis y la calidad de los comodines depende de la luciérnaga activadora: una normal permite x1/x2/x3, una x2 deja x2/x3 y una x3 hace que todos los comodines sean x3."],
+    "editorial": "Firefly Frenzy vincula la fuerza del bonus al comodín concreto que aparece sobre la luna y no al número de Scatters. Una luciérnaga que vuelve a aparecer en la luna reactiva los giros y puede mejorar el nivel de comodín si la nueva es más fuerte que la primera.",
+    "features": [
+      {"title": "Luciérnagas multiplicadoras", "description": "Los Firefly Wilds sustituyen a los símbolos normales y pueden llevar un multiplicador x2 o x3."},
+      {"title": "Activación lunar", "description": "Si varios comodines multiplicadores participan en una línea ganadora, sus valores se multiplican entre sí."},
+      {"title": "Los Frenzy Spins", "description": "El Moon Scatter no activa el bonus por sí solo: Frenzy Spins comienza cuando un Firefly Wild aparece sobre la luna. La ronda concede 8 giros gratis y la calidad de los comodines depende de la luciérnaga activadora: una normal permite x1/x2/x3, una x2 deja x2/x3 y una x3 hace que todos los comodines sean x3."}
+    ]
+  },
+  "wazdan-hot-slot-magic-pearls": {
+    "intro": ["Magic Pearls lleva Hot Slot a un sistema de veinticinco posiciones sin líneas tradicionales. En lugar de combinaciones ganadoras normales, la vía principal lleva a Hold the Jackpot.", "Buy Feature permite acceder más rápido al bonus bajo condiciones especificadas, mientras que un comodín del tablero base se enumera por separado. El máximo de este juego es de 2500x y no los 6000x del juego del libro."],
+    "editorial": "Magic Pearls no debe clasificarse como una tragaperras de diez líneas solo por el nombre Hot Slot: Game Info oficial muestra 25 rodillos y cero líneas.",
+    "features": [
+      {"title": "Hold the Jackpot en 25 posiciones", "description": "Los símbolos de premio permanecen en el tablero del bonus, mientras que el premio superior del juego alcanza 2500x."},
+      {"title": "Compra Buy Feature", "description": "Una compra independiente permite entrar en el bonus sin esperar una activación natural."},
+      {"title": "Comodín y volatilidad ajustable", "description": "El comodín ayuda en el juego principal, mientras que los niveles de volatilidad permiten ajustar el perfil según la lista oficial de funciones."}
+    ]
+  },
+  "playn-go-forge-of-fortunes": {
+    "intro": ["Forge of Fortunes utiliza un tablero inusual de 3×1. El objetivo es recoger tres símbolos dorados consecutivos; alcanzar la combinación dorada necesaria activa Forging Re-Spins y hace avanzar por una cinta transportadora de valores monetarios.", "Durante Forging Re-Spins, una luz roja intermitente actúa como vida adicional y reinicia el contador de regiros. Un giro sin premio no siempre termina la función: el juego puede ofrecer otra oportunidad, pero bajar la posición en la cinta transportadora."],
+    "editorial": "Forge of Fortunes evita deliberadamente un gran conjunto de rodillos: toda la mecánica se centra en un tablero de 3×1 y el movimiento por una escala de recompensas. El proveedor declara un potencial de la función de hasta x2500 la apuesta total, alcanzado mediante aciertos dorados consecutivos y Forging Re-Spins.",
+    "features": [
+      {"title": "Símbolos dorados", "description": "Forge of Fortunes utiliza un tablero inusual de 3×1."},
+      {"title": "Los Forging Re-Spins", "description": "El objetivo es recoger tres símbolos dorados consecutivos; alcanzar la combinación dorada necesaria activa Forging Re-Spins y hace avanzar por una cinta transportadora de valores monetarios."},
+      {"title": "Cinta transportadora", "description": "Durante Forging Re-Spins, una luz roja intermitente actúa como vida adicional y reinicia el contador de regiros. Un giro sin premio no siempre termina la función: el juego puede ofrecer otra oportunidad, pero bajar la posición en la cinta transportadora."}
+    ]
+  },
+  "wazdan-hot-slot-mystery-jackpot-joker": {
+    "intro": ["Mystery Jackpot Joker parece un juego sencillo de tres rodillos y cinco líneas, pero su bonus central es Mystery Joker Jackpot Game.", "Magic Respin ayuda a llegar al minijuego de jackpot, mientras que el comodín de sombrero de bufón y la estrella Scatter funcionan en el juego base. No es el Magic Respin de Rubies con cinco rubíes."],
+    "editorial": "El pago superior declarado de Mystery Jackpot Joker es de 1000x. No deben atribuírsele nueve símbolos Coin ni giros gratis de entregas Hot Slot vecinas.",
+    "features": [
+      {"title": "El Mystery Joker Jackpot Game", "description": "Un juego de premios independiente con jackpots misteriosos; el proveedor lo confirma como función principal de bonificación."},
+      {"title": "El Magic Respin", "description": "Ayuda a fijar los rodillos necesarios y a acercarse a la entrada en Mystery Joker Jackpot."},
+      {"title": "Joker comodín y estrella Scatter", "description": "El comodín sustituye a los símbolos normales, mientras que el Scatter participa en pagos adicionales del juego base."}
+    ]
+  },
+  "playn-go-forge-of-gems": {
+    "intro": ["Forge of Gems utiliza un tablero de 5×3 con un Forge Reel independiente sobre el tablero principal. Sus símbolos especiales pueden dividir símbolos normales, conceder multiplicadores universales y crear comodines apilados; la división puede elevar el número de Dynamic Payways a 36,288.", "Tres o más Scatters activan Gem Box. Puede conceder un premio instantáneo, distintas cantidades de giros gratis o una combinación de ambos; durante los giros gratis, el multiplicador acumulado no se reinicia entre giros."],
+    "editorial": "Forge of Gems convierte el Forge Reel superior en una capa mecánica completa: no solo añade un comodín, sino que cambia la propia estructura de los símbolos y el número de formas de ganar. Gem Box determina por separado si el premio es instantáneo, mediante giros o mixto.",
+    "features": [
+      {"title": "El Forge Reel", "description": "Forge of Gems utiliza un tablero de 5×3 con un Forge Reel independiente sobre el tablero principal."},
+      {"title": "Las Dynamic Payways", "description": "Sus símbolos especiales pueden dividir símbolos normales, conceder multiplicadores universales y crear comodines apilados; la división puede elevar el número de Dynamic Payways a 36,288."},
+      {"title": "La Gem Box", "description": "Tres o más Scatters activan Gem Box. Puede conceder un premio instantáneo, distintas cantidades de giros gratis o una combinación de ambos; durante los giros gratis, el multiplicador acumulado no se reinicia entre giros."}
+    ]
+  }
+}

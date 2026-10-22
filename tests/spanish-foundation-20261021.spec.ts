@@ -39,6 +39,9 @@ for (const width of [320, 390, 768, 1024, 1440]) {
       await expect(page.locator("header").first()).toHaveAttribute("lang", "es");
       await expect(page.locator("footer")).toHaveAttribute("lang", "es");
       await expect(page.locator("main h1")).toHaveCount(1);
+      // Catalogue/search hydrate their results after the shared shell appears.
+      // Keep the same completeness threshold, but wait for that content first.
+      await expect.poll(async () => (await page.locator("main").innerText()).split(/\s+/).length).toBeGreaterThan(100);
       const text = await page.locator("main").innerText();
       expect(text).not.toMatch(/[А-Яа-яЁё]{3,}/);
       expect(text.split(/\s+/).length).toBeGreaterThan(100);
