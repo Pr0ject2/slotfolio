@@ -35,6 +35,16 @@ function paginationWindow(current: number, total: number): (number | null)[] {
 function useUrlFilter(name: string, initial: string) {
   const [value, setValue] = useState(initial);
   useEffect(() => setValue(initial), [initial]);
+  useEffect(() => {
+    // The local page updates before the router's search params can commit.
+    // A quick Back may restore the same initial prop, so also read popstate.
+    const restore = () => {
+      const fallback = name === "page" ? "1" : name === "sort" ? "editorial" : name === "view" ? "list" : "";
+      setValue(new URL(window.location.href).searchParams.get(name) ?? fallback);
+    };
+    window.addEventListener("popstate", restore);
+    return () => window.removeEventListener("popstate", restore);
+  }, [name]);
   function update(next: string) {
     setValue(next);
     const url = new URL(window.location.href);
