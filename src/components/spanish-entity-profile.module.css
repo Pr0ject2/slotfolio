@@ -1,0 +1,5 @@
+/* Keep each desktop contents entry on its own row. The shared entity module
+   makes anchors inline-flex; the phone contents keeps its existing flex wrap. */
+.profile :global(aside.article-toc > a) {
+  display: flex;
+}

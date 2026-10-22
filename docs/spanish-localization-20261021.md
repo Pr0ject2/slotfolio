@@ -306,6 +306,35 @@ last guide, Egypt Fire, and Sweet Bonanza 1000. These are local results;
 publication still requires exact-head CI and preview, then both production
 hosts for every preceding stage in order.
 
+## Stage 23: complete mechanics reference
+
+Adds the Spanish mechanics index and all five complete explanations. Each
+retains both principle paragraphs, the three-step sequence, contrast, appeal,
+limitations, three rule questions and the existing game example. Original
+example identities, related mechanics, game membership and calculated
+statistics remain unchanged. Shared entity classes and the existing profile
+CSS module preserve the editorial design. A Spanish-scoped contents rule keeps
+short desktop links on separate rows; a real screenshot exposed the inherited
+inline-flex collision, and a geometry regression checks all six 44px rows.
+Individual Spanish game guides now
+link directly to their Spanish mechanic explanation. The secondary navigation
+replaces its duplicate catalogue entry with the mechanics index.
+
+Regression coverage checks exact copy fields, paragraph counts, numbers,
+rendered content and reciprocal language links; all five profiles receive
+browser checks at 320/375/390/768/1024/1440. Keyboard navigation reaches the
+rules from a game guide, follows contents anchors and persists comparison
+selection. Untranslated provider, comparison and reading links remain labelled
+as English. No game records, source lists, artwork, noindex or CI gates change.
+
+Local validation: TypeScript PASS; final production export 3124 pages. All 234
+existing scenarios passed in the combined regression run. After correcting two
+new test-harness assumptions (scroll to lazy images and locate the comparison
+button across its changing accessible name), all 32 new mechanics scenarios
+passed. The final scoped contents fix passed those 32 scenarios plus the five
+foundation width sweeps: 37/37 PASS. Desktop before/after screenshots confirm
+separate contents rows; mobile screenshots include the loaded game artwork.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;

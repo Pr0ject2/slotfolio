@@ -82,7 +82,7 @@ export function SpanishFullDossier({ game }: { game: Slot }) {
         <section id="rules"><h2>Cómo se forman los premios</h2><p>{copy.feature} Esta función determina qué conviene seguir durante la ronda.</p>
           {mechanicList.map(name => <p key={name}>{spanishMechanicExplanations[name]}</p>)}
           <p>Abre la tabla de pagos antes de jugar. Explica las funciones de Wild y Scatter, las condiciones de activación y los límites de pago máximo de la versión concreta.</p>
-          {primaryMechanic && <Link className="text-link" href={`/en/mechanics/${primaryMechanic.slug}`} lang="en">Más sobre {spanishCatalogFact(primaryMechanic.name).toLowerCase()} (en inglés) ↗</Link>}
+          {primaryMechanic && <Link className="text-link" href={`/es/mechanics/${primaryMechanic.slug}`}>Más sobre {spanishCatalogFact(primaryMechanic.name).toLowerCase()} ↗</Link>}
         </section>
         <section id="feature"><span className="eyebrow accent">Funciones y bonus</span><h2>{isGates ? "Multiplicadores y giros gratis" : "Función principal"}</h2>
           <div className="dossier-feature-grid">{cards.map((card,index) => <article className={`dossier-feature-card ${card.kind === "primary" ? "is-primary" : ""}`} key={`${card.title}-${index}`}><span>{String(index+1).padStart(2,"0")}</span><h3>{card.title}</h3><p>{card.text}</p></article>)}</div>
