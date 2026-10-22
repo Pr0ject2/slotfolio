@@ -155,6 +155,17 @@ regressions cover complete export content, original sources, reciprocal language
 routes, real artwork and six responsive widths. After this batch, 100 catalogue
 profiles and 100 game guides remain, plus the remaining site sections.
 
+## Stage 11: catalogue profiles 801–900
+
+The next existing catalogue batch receives 100 complete Spanish translations.
+All introductory paragraphs, features, editorial notes, numerical values and
+source qualifications are preserved, including differences between editions and
+conditional bonus behavior. The shared renderer and source records are unchanged.
+Readiness and source fingerprints extend to 900 profiles. The same nine
+regressions cover complete export content, original sources, reciprocal language
+routes, real artwork and six responsive widths. After this batch, 0 catalogue
+profiles and 100 game guides remain, plus the remaining site sections.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;
