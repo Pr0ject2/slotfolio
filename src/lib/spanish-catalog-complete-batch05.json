@@ -1,0 +1,1217 @@
+{
+  "playn-go-chronos-joker": {
+    "intro":[
+      "Chronos Joker utiliza tres rodillos y 10 líneas de pago. Joker actúa como Wild y puede activar un multiplicador normal x2, x4, x5 o x10 en un giro aleatorio, mientras que Super Multiplier eleva los valores disponibles a x4, x6, x8 o x20.",
+      "Dos pilas de símbolos iguales que ocupan dos rodillos pueden mantenerse fijas mientras el tercero vuelve a girar. Según el multiplicador activo, esto se convierte en Second Chance, Spins of the Future, Spins of the Present o Spins of the Past, cada uno de los cuales modifica el multiplicador de forma distinta."
+    ],
+    "editorial":"Chronos Joker convierte el multiplicador en un cambio entre modos de regiros temporales, no simplemente en un factor adicional de un premio. Por eso la misma situación de dos pilas iguales puede desarrollarse de forma distinta según el multiplicador activo del giro.",
+    "features":[
+      {"title":"Joker Wild","description":"Joker sustituye a los símbolos y puede activar multiplicadores x2, x4, x5 o x10."},
+      {"title":"Super Multiplier","description":"La variante mejorada utiliza x4, x6, x8 o x20."},
+      {"title":"Time Re-Spins","description":"Dos pilas iguales pueden permanecer en sus rodillos mientras el tercero vuelve a girar en uno de los modos temporales."}
+    ]
+  },
+  "push-gaming-sea-of-spirits": {
+    "intro":[
+      "Sea of Spirits deja Bronze Frames después de los giros: los marcos bajan en el juego base y quedan fijos en Free Spins. Los Activator Symbols pueden convertir los marcos en monedas, Wilds o símbolos sincronizados.",
+      "Tres Bonus Symbols activan cinco Bonus Spins; dos símbolos Bonus normales con un Super Bonus conceden ocho giros con marcos de distintos niveles."
+    ],
+    "editorial":"Aquí el premio lo crean un marco y un activador, no solo el símbolo del rodillo: el progreso de Bonus normal y de Super Bonus no debe confundirse.",
+    "features":[
+      {"title":"Frames","description":"Los marcos permanecen entre giros base y se convierten en Sticky durante el bono."},
+      {"title":"Activator Symbols","description":"Symbol Sync, Coin y Wild Activators revelan los marcos correspondientes como recompensas."},
+      {"title":"Bonus / Super Bonus","description":"Tres símbolos Bonus normales conceden cinco giros; dos símbolos Bonus más Super Bonus conceden ocho giros mejorados."}
+    ]
+  },
+  "wazdan-draculas-castle": {
+    "intro":[
+      "En Dracula`s Castle, el propio Dracula actúa como un Wild expansivo: después de contribuir a un premio, puede extenderse por la pantalla.",
+      "La segunda regla es una pared de símbolos iguales en los tres, cuatro o cinco primeros rodillos, que concede x3, x4 o x5, respectivamente."
+    ],
+    "editorial":"En esta tragamonedas de cinco líneas, la interacción de Dracula expansivo con la pared de símbolos importa más que la cantidad de líneas activas. El multiplicador x5 de la pared difiere del premio máximo global declarado de 1000x.",
+    "features":[
+      {"title":"Dracula expansivo","description":"Wild sustituye a los símbolos normales y puede expandirse por gran parte de la pantalla con un premio."},
+      {"title":"Tres niveles de pared","description":"Una pared de iconos iguales en los tres, cuatro o cinco primeros rodillos concede x3, x4 o x5, respectivamente."},
+      {"title":"Elección de una copa en Gamble","description":"Después de un premio puede arriesgarse en un minijuego de copas; el texto oficial permite hasta siete duplicaciones consecutivas."}
+    ]
+  },
+  "3-oaks-gaming-lucky-penny-3-pots-super-wheel": {
+    "intro":[
+      "Lucky Penny 3 Pots: Super Wheel cambia el formato de la serie: cinco rodillos, tres filas y 25 líneas de pago con tres ollas de colores sustituyen a Scatter Pays.",
+      "Las Penny Coins llenan los acumuladores DOUBLE, MULTI y EXTRA y Super Wheel gira antes de Hold & Win para conceder una mejora inicial o un premio adicional."
+    ],
+    "editorial":"Dos Grands son posibles con DOUBLE activo y ambos tableros de bono llenos. Super Wheel concede Mini, Minor o Major por separado y no sustituye la condición de Grand.",
+    "features":[
+      {"title":"Tres ollas","description":"DOUBLE añade un segundo tablero, MULTI potencia los valores y EXTRA aumenta los regiros a cuatro."},
+      {"title":"SUPER WHEEL","description":"Antes del bono, la rueda añade símbolos, uno de los efectos o un pago Mini, Minor o Major."},
+      {"title":"Grand 1000x","description":"Llenar el tablero concede Grand; DOUBLE permite dos tableros completos y dos Grands dentro de un bono."}
+    ]
+  },
+  "hacksaw-gaming-marlin-masters": {
+    "intro":[
+      "Los símbolos Marlin llevan valores monetarios y pagan mediante una LootLine de tres o más Marlins o la recogida de Fisherman. Fisherman recoge todos los premios monetarios Marlin del tablero y puede aplicar un multiplicador de hasta x20 a la recogida combinada.",
+      "Cada aparición de Fisherman en Reel It In y Off the Hook hace avanzar Marlin Progress Bar. Los niveles de la barra conceden giros gratis adicionales y elevan el multiplicador mínimo de los próximos símbolos Fisherman."
+    ],
+    "editorial":"Marlin Masters convierte a Fisherman en recolector y activador del progreso: transforma todos los Marlins en un pago del juego base y cada aparición en el bono también hace avanzar Progress Bar hacia multiplicadores mínimos mayores.",
+    "features":[
+      {"title":"Marlin LootLines y valores monetarios","description":"Cada Marlin lleva su propio valor monetario y paga mediante una LootLine de al menos tres Marlins en una línea o la recogida de Fisherman. Estos métodos de pago existen por separado de las líneas normales."},
+      {"title":"Fisherman Collect y multiplicadores","description":"Fisherman recoge todos los valores monetarios Marlin del tablero y puede multiplicar el importe recogido hasta x20. Varios Fishermen realizan recogidas independientes sin incluir los valores de otros Fishermen."},
+      {"title":"Reel It In y Off the Hook","description":"Tres símbolos FS conceden diez Reel It In Spins y cuatro conceden quince Off the Hook Spins. Fisherman hace avanzar Marlin Progress Bar y los nuevos niveles añaden giros y elevan el multiplicador mínimo de los Fishermen futuros."}
+    ]
+  },
+  "playn-go-city-of-sound": {
+    "intro":[
+      "Seis o más Gold Records activan Gold Re-Spins. Los discos quedan fijos, cada nuevo Record restablece el contador de regiros y una pantalla completa desbloquea Golden Prize; Gold Record Case suma por separado los valores de los discos recogidos.",
+      "Tres Scatters activan 5 Mega Free Spins. Cada giro tiene un Mega Symbol de 3×3 colocado aleatoriamente; Mega Scatter puede prolongar la ronda hasta 45 giros y Mega Gold Record se divide en nueve Records normales y activa Gold Re-Spins dentro del propio bono."
+    ],
+    "editorial":"City of Sound conecta dos sistemas de bono mediante Gold Records: los Records normales llevan a Gold Re-Spins con fijación y Mega Gold Record puede activar ese mismo modo dentro de Mega Free Spins. Un Gold Record Stack independiente acumula discos y puede conceder un pago sorpresa fuera del bono.",
+    "features":[
+      {"title":"Gold Re-Spins","description":"Seis Gold Records activan un modo de fijación cuyo contador se restablece con un nuevo Record."},
+      {"title":"Gold Record Case","description":"Case acumula valores de discos y una pantalla completa está vinculada a Golden Prize."},
+      {"title":"Mega Free Spins","description":"Tres Scatters conceden cinco giros con un Mega Symbol aleatorio de 3×3."},
+      {"title":"Mega Gold Record","description":"Mega Record se convierte en nueve Records y puede desbloquear Gold Re-Spins dentro del bono."}
+    ]
+  },
+  "push-gaming-shamrock-saints": {
+    "intro":[
+      "Shamrock Saints recoge Tokens en Golden Pot: en el quinto nivel, las nuevas fichas pueden hacer estallar la olla y desbloquear Shamrock Mode.",
+      "Las pilas de Mystery Symbol se desplazan en cada giro; revelar Golden Leprechaun activa una cadena de premios y el multiplicador crece con cada desplazamiento en los giros gratis."
+    ],
+    "editorial":"Este juego tiene dos vías de mejora: un Golden Pot acumulado desbloquea Shamrock Mode y los Mystery Symbols conceden revelaciones de premios antes de activarse la olla.",
+    "features":[
+      {"title":"Golden Pot","description":"Los Tokens llenan el medidor hasta el quinto nivel y después las nuevas fichas pueden provocar un estallido y Shamrock Mode."},
+      {"title":"Nudge & Reveal","description":"Las pilas de cuatro Mystery Symbols revelan Wilds, símbolos de premio o Golden Leprechauns."},
+      {"title":"Free Spins y Shamrock Mode","description":"Las pilas Mystery se desplazan y elevan el multiplicador global en Free Spins; Shamrock Mode lo inicia en x10."}
+    ]
+  },
+  "wazdan-dragons-lucky-8": {
+    "intro":[
+      "Dragons Lucky 8 se distingue por un Variable Win Multiplier persistente: x1, x2, x4 y x8 permanecen activos hasta que un nuevo símbolo sustituye el valor.",
+      "Los Tiger Scatters desbloquean Free Spins y el dragón Wild sustituye a los símbolos normales. El texto oficial promete 30 giros gratis por seis Scatters."
+    ],
+    "editorial":"Aquí importa la duración de x8: permanece activo hasta sustituirse y no garantiza el resultado de cada giro. Seis rodillos distinguen la tragamonedas de los clásicos de tres rodillos.",
+    "features":[
+      {"title":"Multiplicador persistente","description":"Variable Win Multiplier toma x1, x2, x4 o x8 y mantiene su valor activo hasta que aparece el siguiente multiplicador."},
+      {"title":"Tiger Scatter","description":"Tres o más Scatters activan giros gratis; seis Scatters conceden 30 giros."},
+      {"title":"Dragon Wild","description":"El dragón sustituye a los símbolos estándar excepto Scatter y contribuye a premios por líneas."}
+    ]
+  },
+  "3-oaks-gaming-lucky-penny-power-scatter": {
+    "intro":[
+      "Lucky Penny Power Scatter vuelve a una estructura de cascadas de 6×5, donde ocho o más símbolos iguales conceden un premio y caen nuevos símbolos.",
+      "Las monedas Penny conceden x2–x1000 y los Power Scatters desbloquean premios instantáneos alternativos. Cuatro Power Scatters pagan 50000x sin activar Free Spins."
+    ],
+    "editorial":"Power Scatter no debe confundirse con el Mystery Multiplier de Lucky Penny 2: su mecánica especial cambia la propia entrada a Free Spins y puede sustituir el bono por un pago fijo grande.",
+    "features":[
+      {"title":"Cascadas y Penny Coins","description":"Ocho símbolos iguales pagan, las monedas añaden x2–x1000 y nuevos símbolos llenan las casillas vacías."},
+      {"title":"Free Spins acumulativos","description":"Los multiplicadores de los giros ganadores aumentan el Total Multiplier global hasta que termina el bono."},
+      {"title":"Cuatro Power Scatters","description":"La combinación especial concede un premio instantáneo de 50000x; menos Power Scatters conceden premios menores al entrar en el bono."}
+    ]
+  },
+  "hacksaw-gaming-marlin-masters-atlantis": {
+    "intro":[
+      "Los símbolos Marlin llevan valores monetarios y pagan dentro de una LootLine o mediante la recogida de Fisherman. Los Jackpot Marlins revelan uno de cuatro premios de bote en lugar de un valor normal cuando se incluyen en una LootLine o Fisherman los recoge.",
+      "Fisherman recoge todos los símbolos Marlin y Jackpot Marlin del tablero y puede llevar un multiplicador de hasta x20, que se aplica a los valores monetarios recogidos."
+    ],
+    "editorial":"Marlin Masters Atlantis conserva LootLine y Fisherman como base, pero añade Jackpot Marlins. Un Fisherman puede así recoger valores monetarios normales y desbloquear una recompensa de bote a la vez y los bonos lo desarrollan mediante una Trident Bar progresiva.",
+    "features":[
+      {"title":"Marlin y Jackpot Marlin","description":"En Atlantis, los Marlins normales muestran valores monetarios y los Jackpot Marlins contribuyen a las mismas LootLines o recogidas Fisherman, revelando uno de cuatro premios de bote en lugar de un valor normal."},
+      {"title":"Fisherman y recogida en todo el tablero","description":"Fisherman recoge Marlins normales y Jackpot Marlins del tablero y aplica su propio multiplicador de hasta x20 a los valores monetarios recogidos. Jackpot Marlin sigue siendo un tipo de premio independiente."},
+      {"title":"Sunken Empire y Pose for Poseidon","description":"Tres símbolos FS activan diez Sunken Empire Spins con Trident Bar progresiva y niveles de mejora. Cuatro conceden quince Pose for Poseidon Spins con mayor probabilidad de alcanzar los siguientes niveles del medidor."}
+    ]
+  },
+  "playn-go-clash-of-camelot": {
+    "intro":[
+      "Arthur y Mordred actúan como símbolos Wild independientes. Al aparecer en un rodillo concreto, cualquiera se convierte en Expanded Wild y los Wild Multipliers pueden potenciar los pagos hasta x100.",
+      "En Free Spins, el jugador elige el equilibrio entre cantidad de giros y multiplicador. Los Sticky Wilds aparecen cuando Arthur y Mordred entran en el enfrentamiento directo Clash of Camelot."
+    ],
+    "editorial":"Clash of Camelot organiza el bono en torno a una elección de riesgo: más giros y un multiplicador más fuerte no se conceden juntos como un paquete fijo. Arthur y Mordred son elementos Wild distintos, no personajes decorativos, y pueden expandirse y participar en un Clash con Sticky Wilds.",
+    "features":[
+      {"title":"Arthur y Mordred","description":"Ambos personajes actúan como Wild y pueden expandirse en el rodillo correspondiente."},
+      {"title":"Elección de bono","description":"El equilibrio entre cantidad de giros y multiplicador se selecciona antes de Free Spins."},
+      {"title":"Clash","description":"Los Sticky Wilds aparecen durante el enfrentamiento entre Arthur y Mordred."},
+      {"title":"Wild Multipliers","description":"Los Wild Multipliers individuales pueden alcanzar x100."}
+    ]
+  },
+  "push-gaming-tarot-treasures": {
+    "intro":[
+      "Tarot Treasures divide símbolos en Hot Zones móviles: cada símbolo que aparece allí se divide por la mitad y abre posibilidades ganadoras adicionales.",
+      "Tres cascadas consecutivas del juego base desbloquean una elección de carta de mejora; los giros gratis requieren en cambio llenar cinco segmentos del medidor."
+    ],
+    "editorial":"En Tarot Treasures, el aumento de formas de ganar y las recompensas de cartas de bono avanzan en paralelo: Hot Zones modifica el tablero y el medidor de cascadas añade mejoras.",
+    "features":[
+      {"title":"Hot Zones","description":"Las pilas de cuatro zonas calientes bajan en cada giro y dividen los símbolos que entran en ellas."},
+      {"title":"Carta de mejora","description":"Después de tres cascadas consecutivas se elige una mejora: Wilds adicionales, Hot Zones, un multiplicador o Scatter."},
+      {"title":"Free Spins","description":"Tres Scatters conceden ocho giros y los nuevos Scatters añaden uno cada uno; las Hot Zones ocupan los rodillos 2 y 5."}
+    ]
+  },
+  "wazdan-dwarfs-fortune": {
+    "intro":[
+      "La vía principal de Dwarfs Fortune lleva a Hold the Jackpot: seis símbolos de bono activan una serie de regiros y llenar veinte posiciones concede Grand 2500x.",
+      "Los símbolos Increasing Value Sticky Bonus permanecen hasta nueve regiros y aumentan sus propios valores. En la franja superior aparecen monedas especiales, Mystery y multiplicadores."
+    ],
+    "editorial":"Veinte posiciones de bono ocupadas son la condición del Grand Jackpot, no la cantidad de líneas del juego base. Varios tipos de acumuladores lo hacen más complejo que las sencillas tragamonedas Hot de Wazdan.",
+    "features":[
+      {"title":"Seis símbolos para Hold the Jackpot","description":"Cualquier conjunto de seis símbolos Bonus activa la acumulación de valores de premio; llenar las 20 posiciones puede conceder Grand 2500x."},
+      {"title":"Símbolos Sticky Bonus crecientes","description":"Los símbolos permanecen hasta nueve regiros y aumentan su valor, ayudando a alcanzar el modo de bono."},
+      {"title":"Collector y franja superior","description":"Collector recoge valores Cash de abajo; Mystery y los multiplicadores de la fila superior añaden efectos independientes."}
+    ]
+  },
+  "3-oaks-gaming-magic-apple": {
+    "intro":[
+      "Magic Apple es un juego de cuento en un tablero de 5×4 con treinta líneas de pago, donde seis manzanas rojas activan Hold & Win.",
+      "Tres castillos Scatter conceden ocho Free Spins, donde Mirror Wild duplica un premio. Tres Scatters nuevos pueden prolongar el bono en ocho giros."
+    ],
+    "editorial":"Grand 2000x está vinculado a llenar veinte posiciones de bono, no a la aparición de seis manzanas. Magic Apple 2 cambia tanto la cantidad de líneas como las reglas Wild.",
+    "features":[
+      {"title":"Hold & Win con seis manzanas","description":"La serie comienza con tres regiros; las nuevas manzanas quedan fijas y restablecen el contador."},
+      {"title":"Grand 2000x","description":"Llenar las veinte casillas de bono puede conceder el Grand Jackpot."},
+      {"title":"Free Spins con Mirror Wild x2","description":"Tres Scatters conceden ocho giros, Wild duplica los pagos correspondientes y los Scatters repetidos prolongan el bono."}
+    ]
+  },
+  "hacksaw-gaming-marlin-masters-og": {
+    "intro":[
+      "Una LootLine se forma con tres o más símbolos Marlin en una línea ganadora; su pago equivale al total de los valores de los Marlins que contribuyen. Fisherman recoge todos los Marlins del tablero y después aplica su propio multiplicador de hasta x20.",
+      "Reel It In y Off the Hook conceden giros gratis con Marlin Progress Bar y el modo oculto Plenty of Fish in the Sea garantiza al menos 5x en cada Marlin y un Marlin y Fisherman por giro."
+    ],
+    "editorial":"Marlin Masters OG mantiene una mecánica directa: los Marlins proporcionan un pago LootLine o la recogida combinada de Fisherman. El progreso del bono refuerza específicamente los multiplicadores de Fisherman y la frecuencia garantizada de símbolos clave.",
+    "features":[
+      {"title":"Las LootLines suman Marlins","description":"Una LootLine ganadora OG consta de al menos tres Marlin Symbols. Cada uno lleva su propio valor monetario; los valores de los Marlins que contribuyen se suman para esa línea."},
+      {"title":"Fisherman recoge y multiplica","description":"Fisherman recibe todos los valores Marlin del tablero y aplica al total su multiplicador de hasta x20. No es el Golden Fisherman de The Big Haul: OG no incorpora las recogidas de otros Fishermen."},
+      {"title":"Reel It In, Off the Hook y Plenty of Fish","description":"Tres símbolos FS desbloquean diez Reel It In Spins con Marlin Progress Bar y cuatro conceden quince Off the Hook Spins. Cinco símbolos FS conceden Plenty of Fish in the Sea, con Marlin y Fisherman garantizados en cada giro y Marlin de al menos 5x."}
+    ]
+  },
+  "playn-go-cloud-quest": {
+    "intro":[
+      "Cloud Quest utiliza un tablero donde los símbolos desaparecen después de los premios y se rellenan. Antes de cada ronda se designa una fila como BONUS; despejar sus cinco símbolos activa una Bonus Round independiente y vaciar las 25 posiciones concede una recompensa especial.",
+      "Los símbolos Super Power activan sectores de Super Power Wheel. Una rueda exitosa concede un regiro gratis con uno de cuatro poderes: Five of Fortune x5, Emblem of Endurance con Wilds duraderos, Mark of Multitude con Wilds adicionales o Scatter of Success, donde los símbolos actúan como Scatters."
+    ],
+    "editorial":"Cloud Quest conecta el vaciado normal del tablero con dos niveles de objetivo: la fila BONUS local y el vaciado de todo el tablero de 5×5. Super Power Wheel actúa por separado y cambia las reglas de un regiro concreto y Bonus Round lleva el juego a una batalla de tres rodillos con cinco monstruos sucesivos.",
+    "features":[
+      {"title":"Fila BONUS","description":"Se asigna una fila antes de la ronda; despejar sus cinco casillas desbloquea Bonus Round."},
+      {"title":"Vaciado del tablero completo","description":"Eliminar los 25 símbolos concede una recompensa especial independiente."},
+      {"title":"Super Power Wheel","description":"Super Power abre una oportunidad de regiro mediante los sectores activos de la rueda."},
+      {"title":"Cuatro poderes","description":"Five of Fortune concede x5 y Endurance, Multitude y Success modifican Wilds o Scatters de forma distinta."}
+    ]
+  },
+  "push-gaming-the-grand-show": {
+    "intro":[
+      "The Grand Show vincula Collector del primer rodillo con los premios instantáneos y botes que aparecen a su derecha.",
+      "Dos Top Hats en el primer y quinto rodillo desbloquean un bono de 5×8: la fila inferior empuja los valores hacia arriba y un quinto rodillo independiente se ocupa de las mejoras."
+    ],
+    "editorial":"The Grand Show difiere del Hold & Win normal principalmente por el movimiento de la fila inferior y las funciones independientes de los rodillos de bono; aquí Grand se refiere a un nivel de bote concreto.",
+    "features":[
+      {"title":"Collector","description":"En el primer rodillo recoge Instant Prizes y Jackpot Symbols de su posición y de los rodillos posteriores."},
+      {"title":"Top Hat Bonus","description":"Los Top Hats en el primer y quinto rodillo activan un tablero de 5×8 con premios que se desplazan hacia arriba desde abajo."},
+      {"title":"Mejoras del bono","description":"El quinto rodillo de bono puede llevar Nudge All, Boost y Re-trigger y los demás llevan Cash, Jackpot y Nudge Up."}
+    ]
+  },
+  "wazdan-easter-coins": {
+    "intro":[
+      "En Easter Coins, las monedas de Pascua llenan un tablero de 25 posiciones independientes y Hold the Jackpot conserva los valores de premio aparecidos.",
+      "La lista oficial de funciones incluye por separado Cash Infinity, Sticky to Infinity y Cluster Collector: no es una tragamonedas clásica de líneas de pago con Free Spins normales."
+    ],
+    "editorial":"En esta versión de Pascua, el máximo de 2000x no debe confundirse con el premio de cada moneda. La recogida y fijación de símbolos funciona dentro de un tablero de bono independiente.",
+    "features":[
+      {"title":"Hold the Jackpot","description":"Los símbolos de premio permanecen en el tablero durante el bono y las nuevas incorporaciones aumentan el importe acumulado."},
+      {"title":"Cash Infinity y Sticky to Infinity","description":"Ambas funciones aparecen en la lista oficial de Wazdan y se relacionan con acumular y conservar posiciones de premio."},
+      {"title":"Cluster Collector","description":"Un recolector especial agrupa los valores monetarios visibles; Chance Level y Buy Feature son opciones de entrada al bono independientes."}
+    ]
+  },
+  "3-oaks-gaming-magic-apple-2": {
+    "intro":[
+      "Magic Apple 2 difiere del original por veinte líneas de pago en un tablero de 5×4 y un nuevo Grand máximo de 5000x.",
+      "Seis Bonus Apples desbloquean Hold & Win con tres regiros. Los Mirror Wilds permanecen fijos en Free Spins y aparecer en todos los rodillos puede añadir cinco giros."
+    ],
+    "editorial":"La secuela tiene Sticky Mirror Wilds y Grand 5000x y Magic Apple tiene Mirror Wild x2 normal y Grand 2000x. Trasladar reglas entre versiones distorsionaría la explicación del bono.",
+    "features":[
+      {"title":"Hold & Win y Grand 5000x","description":"Seis Bonus Apples activan tres regiros; los nuevos símbolos restablecen el contador y llenar todo el tablero concede Grand."},
+      {"title":"Ocho Free Spins","description":"Tres Scatters desbloquean un bono donde los Mirror Wilds permanecen en su sitio hasta que termina."},
+      {"title":"Cinco giros adicionales","description":"Los Sticky Mirror Wilds en cada uno de los cinco rodillos pueden añadir cinco Free Spins."}
+    ]
+  },
+  "hacksaw-gaming-marlin-masters-the-big-haul": {
+    "intro":[
+      "Los Marlins normales y dorados llevan valores monetarios y forman LootLines. Un Golden Marlin que contribuye a una LootLine extiende su valor a todos los Marlins normales antes de calcular el premio.",
+      "Fisherman recoge todos los Marlins; Golden Fisherman se activa después de los Fishermen normales y además recoge Marlins y los valores acumulados por otros Fishermen. Los Sticky Fishermen permanecen durante todo Hooked on Paradise."
+    ],
+    "editorial":"The Big Haul amplía la estructura Marlin básica con dos capas de transferencia de valor: Golden Marlin copia su valor a otros Marlins y Golden Fisherman puede recoger valores ya recogidos por Fishermen. El bono superior mantiene a esos recolectores fijos en el tablero.",
+    "features":[
+      {"title":"Marlin normal y Golden Marlin","description":"Los Marlins normales y dorados llevan valores monetarios y conceden una LootLine. Un Golden Marlin en una LootLine ganadora copia su valor a los Marlins normales antes del pago y de la recogida de Fisherman."},
+      {"title":"Fisherman normal y Golden Fisherman","description":"Un Fisherman normal recoge todos los Marlins con un multiplicador de hasta x20. El único Golden Fisherman posible se activa después de los normales y también toma sus valores recogidos, lo que distingue The Big Haul de OG."},
+      {"title":"Free Spins y Sticky Fishermen","description":"Los modos de bono amplían la estructura Marlin/LootLine base. En Hooked on Paradise, los Fishermen se convierten en Sticky durante los giros de bono restantes y mantienen los recolectores de valores monetarios en el tablero."}
+    ]
+  },
+  "playn-go-coils-of-cash": {
+    "intro":[
+      "Coils of Cash utiliza 2304 Dynamic Payways: seis rodillos verticales se complementan con un Power Coil horizontal independiente. Las combinaciones ganadoras se eliminan, nuevos símbolos caen en las posiciones despejadas y las cascadas continúan mientras aparecen premios nuevos.",
+      "Wild solo aparece en el Power Coil horizontal y sustituye a los símbolos normales excepto Scatter. El propio Power Coil está vinculado a la mejora de multiplicador acumulativa y, según Play’n GO, puede cargar un premio hasta x625."
+    ],
+    "editorial":"Coils of Cash destaca por su séptimo rodillo horizontal, no simplemente por la cantidad de cascadas: Power Coil existe por separado de los seis principales y afecta a los premios mediante Wild y la carga de multiplicadores. Esto convierte el rodillo superior en una parte funcional de cada cadena de cascadas.",
+    "features":[
+      {"title":"Power Coil","description":"Seis rodillos verticales se complementan con Power Coil horizontal y suman 2304 Dynamic Payways."},
+      {"title":"Cascadas","description":"Los símbolos ganadores se eliminan y otros nuevos caen en sus posiciones y prolongan la secuencia."},
+      {"title":"Wild especial","description":"Wild solo aparece en Power Coil horizontal y no sustituye a Scatter."},
+      {"title":"Multiplicador","description":"Power Coil contribuye a la acumulación de multiplicadores y no actúa como un rodillo vertical normal."}
+    ]
+  },
+  "push-gaming-the-great-banker": {
+    "intro":[
+      "The Great Banker sitúa a Banker Collector solo en el quinto rodillo, donde recoge los valores Coin visibles.",
+      "Las Coins también entran en la Wheel situada sobre el tablero; puede conceder un bote o distintos Free Spins y los nuevos símbolos restablecen el contador de tres giros durante el bono."
+    ],
+    "editorial":"El juego base de The Great Banker hace avanzar dos contadores independientes: la recogida inmediata de monedas mediante Banker y la carga de la Wheel. No deben confundirse con la reactivación Safe final.",
+    "features":[
+      {"title":"Banker Collector","description":"Banker en el quinto rodillo recoge los valores Coin Symbol presentes."},
+      {"title":"Wheel Feature","description":"Las Coins pueden activar una rueda con niveles de bote y variantes Free Spins, incluidas The Great Banker y Fat Money."},
+      {"title":"Multiplicador y Safe","description":"Un multiplicador x2–x4 afecta a los valores vecinos en 3×3 y Great Multiplier afecta a todos los valores; Safe puede conceder una repetición completa de Free Spins."}
+    ]
+  },
+  "wazdan-eggs-of-fortune": {
+    "intro":[
+      "Eggs of Fortune combina dos métodos Cash Out distintos del juego base con un modo Free Spins independiente que incluye Countdown Boosters y Collector.",
+      "Chance Level modifica el coste de la apuesta para obtener eventos de bono más frecuentes; el sitio de Wazdan enumera niveles x2, x5 y x10."
+    ],
+    "editorial":"Dos variantes Cash Out distinguen Eggs of Fortune. No deben presentarse como un único Hold the Jackpot basado en botes de otros juegos de la serie; el perfil oficial declara aquí volatilidad extrema.",
+    "features":[
+      {"title":"Dos métodos Cash Out","description":"El fabricante destaca expresamente dos métodos Cash Out en el juego base."},
+      {"title":"Free Spins y Collector","description":"Los Countdown Boosters interactúan con el recolector de valores monetarios en los giros de bono."},
+      {"title":"Chance Level x2/x5/x10","description":"Los modos adicionales aumentan la apuesta para elevar la probabilidad de bono y Collect to Infinity se enumera como una función independiente."}
+    ]
+  },
+  "3-oaks-gaming-magic-clovers": {
+    "intro":[
+      "Magic Clovers utiliza cinco rodillos, tres filas y cinco líneas de pago, donde seis monedas de trébol dorado activan Hold & Win.",
+      "Los tréboles especiales rojos, azules y verdes activan las ollas BOOST, COLLECT y MULTI. Mystery puede revelar un nuevo efecto o bote durante el bono."
+    ],
+    "editorial":"No incorpora Super Wheel de Lucky Penny 3 Pots. Clover Metre ofrece una activación de bono adicional y Grand 2000x está vinculado a llenar el tablero del bono.",
+    "features":[
+      {"title":"Seis monedas de trébol dorado","description":"Los Gold Clovers desbloquean Hold & Win con valores monetarios fijos."},
+      {"title":"BOOST, COLLECT y MULTI","description":"Los símbolos de bono de colores activan efectos de aumento de premios, recogida y multiplicación."},
+      {"title":"Clover Metre y Mystery","description":"Un contador completo desbloquea el bono y Mystery puede añadir una olla activa o un bote."}
+    ]
+  },
+  "hacksaw-gaming-mayan-stackways": {
+    "intro":[
+      "Stackways puede apilar hasta 10 símbolos en cada uno de cinco rodillos y aumentar las formas de ganar posibles hasta 100000.",
+      "Los símbolos especiales de Stack Spins mejoran rodillos individuales y garantizan en ellos un símbolo Stackways hasta que termina la función. Mayan Gold se centra en cambio en Ancient Coins que deben apilarse y recogerse."
+    ],
+    "editorial":"Mayan Stackways cambia la cantidad de formas de ganar dentro del giro: la altura de las pilas de cada rodillo determina cuántas combinaciones son posibles. Stack Spins lo convierte en progreso de rodillos y las posiciones activadas conservan Stackways hasta terminar el modo.",
+    "features":[
+      {"title":"Stackways aumenta las Ways","description":"Stackways apila hasta diez símbolos en un rodillo en lugar de uno y permite hasta 100000 formas de ganar en cinco rodillos. La cantidad de combinaciones depende de las pilas formadas."},
+      {"title":"Stack Spins activa rodillos","description":"Un símbolo especial que aparece en Stack Spins activa un rodillo individual y garantiza Stackways allí hasta que termina el bono. Los distintos rodillos reciben la mejora de forma independiente."},
+      {"title":"Mayan Gold y Golden Opportunity","description":"Mayan Gold utiliza una estructura Ancient Coin independiente que requiere apilar y recoger. Golden Opportunity es su variante mejorada con una recompensa mínima declarada de al menos 500x la apuesta."}
+    ]
+  },
+  "playn-go-colt-lightning": {
+    "intro":[
+      "Colt Strike puede añadir aleatoriamente más símbolos Colt a los rodillos. Horseshoe en el tercer rodillo activa Colt Re-spin y aumenta la altura de los rodillos en una fila; otra Horseshoe continúa el proceso hasta tres ampliaciones.",
+      "Tres Scatters activan Super Colt Spins. Colt cambia de color y paga el doble en Free Spins y tanto Colt Strike como Colt Re-spins pueden activarse de nuevo dentro de la ronda de bono."
+    ],
+    "editorial":"El Colt Lightning original se centra en la ampliación vertical gradual del tablero mediante Horseshoe, no en los Fire Frames de las secuelas. Super Colt Spins combina dos funciones base y duplica por separado el valor del símbolo Colt.",
+    "features":[
+      {"title":"Colt Strike","description":"Colt Strike añade nuevos símbolos Colt a los rodillos."},
+      {"title":"Horseshoe Re-Spins","description":"Horseshoe en el tercer rodillo activa un regiro con ampliación de altura hasta tres veces."},
+      {"title":"Super Colt Spins","description":"Tres Scatters desbloquean una serie con premios Colt duplicados."},
+      {"title":"Efectos base en el bono","description":"Colt Strike y Re-Spins siguen disponibles en Free Spins."}
+    ]
+  },
+  "push-gaming-tiki-tumble": {
+    "intro":[
+      "Tiki Tumble utiliza un tablero de 5×4 con veinte líneas de pago y pilas Wild que descienden por los rodillos después de aparecer en posiciones superiores.",
+      "Tres máscaras doradas activan Free Games con desplazamientos Wild repetidos y un multiplicador creciente; Tiki Bonus comienza la serie con pilas completas en el segundo y cuarto rodillo."
+    ],
+    "editorial":"La posición vertical de Wild antes de un giro importa en Tiki Tumble: los desplazamientos posteriores de la pila determinan la secuencia de regiros, no solo el resultado de una combinación.",
+    "features":[
+      {"title":"Nudging Wilds","description":"Los Wilds en las tres posiciones superiores activan un desplazamiento hacia abajo con nuevas oportunidades de combinación."},
+      {"title":"Tiki Bonus","description":"Las máscaras doradas llevan el juego a un bono con pilas Wild completas en los rodillos 2 y 4."},
+      {"title":"Free Games","description":"Tres o más máscaras desbloquean regiros donde los Wilds siguen moviéndose y aumentan el multiplicador."}
+    ]
+  },
+  "wazdan-fenix-play": {
+    "intro":[
+      "Fenix aparece en el catálogo de Wazdan con su nombre oficial Fenix Play: la versión original de tres rodillos tiene cinco líneas de pago y símbolos retro.",
+      "Extra Drawings y Gamble Feature se enumeran para este juego concreto y el multiplicador de pared x3 pertenece a las variantes Fenix Play 27."
+    ],
+    "editorial":"El Fenix Play original tiene un máximo declarado de solo 75x. Las 27 líneas y 748x de la secuela no deben trasladarse pese al estilo de fuego compartido.",
+    "features":[
+      {"title":"Tres rodillos y cinco líneas de pago","description":"El diseño original está pensado para combinaciones clásicas breves."},
+      {"title":"Extra Drawings","description":"Los sorteos adicionales aparecen en la lista oficial de funciones de Fenix Play."},
+      {"title":"Gamble Feature","description":"Después de un premio puede hacerse un intento independiente de aumentar el importe ya recibido; no forma parte del RTP base de un giro."}
+    ]
+  },
+  "3-oaks-gaming-moon-sisters": {
+    "intro":[
+      "Moon Sisters ofrece un tablero de 5×3 con 25 líneas de pago y Hold & Win, al que se entra mediante seis Moon Symbols con valores monetarios.",
+      "Los tres regiros iniciales se restablecen después de cada nuevo Moon Symbol, que permanece en su sitio hasta que termina la serie."
+    ],
+    "editorial":"Moon Sisters no tiene un árbol complejo de potenciadores: la tensión procede de llenar quince casillas con símbolos de luna fijos. Mini y Major pueden aparecer por separado en el bono y Grand x1000 está vinculado a un tablero completo.",
+    "features":[
+      {"title":"Seis Moon Symbols","description":"Seis símbolos de bono Moon en un giro activan Hold & Win y los valores iniciales permanecen fijos."},
+      {"title":"Tres regiros que se restablecen","description":"Después de la activación solo quedan disponibles las casillas vacías; los nuevos Moon Symbols también quedan fijos y restablecen el contador a tres intentos."},
+      {"title":"Mini y Major Moon Jackpots","description":"Los Moon Symbols individuales de Hold & Win pueden llevar valores Mini o Major fijos."},
+      {"title":"Grand por un tablero completo","description":"Llenar las quince casillas con símbolos de luna hace posible un Grand Jackpot de x1000 la apuesta."}
+    ]
+  },
+  "hacksaw-gaming-miami-mayhem": {
+    "intro":[
+      "Un símbolo Crew que contribuye a un premio se expande en un Crew Reel completo y se convierte en Wild en cada posición cubierta. El rodillo puede revelar un multiplicador de x2 a x100 y varios Crew Reels activos suman sus multiplicadores.",
+      "Wanted activa una Mission con tres regiros y un símbolo Target. Un premio Target completa la Mission, comienza la siguiente y eleva Wanted Level, aumentando los multiplicadores mínimos garantizados de Crew Reel."
+    ],
+    "editorial":"Miami Mayhem vincula rodillos Wild con un progreso Wanted Level independiente: Crew Reel proporciona el multiplicador actual y las Missions aumentan gradualmente los multiplicadores mínimos futuros. En We Split, los Crew Reels ganadores también se acumulan en Mayhem Bar para una reactivación final.",
+    "features":[
+      {"title":"Crew Reel con multiplicador","description":"Un Crew Symbol que contribuye a un premio se expande en un Wild Reel completo con uno de cinco miembros del equipo. El rodillo puede revelar un multiplicador x2–x100 y varios valores Crew Reel de un pago se suman."},
+      {"title":"Mission y Wanted Level","description":"Wanted activa una Mission con tres Respins y un Target Symbol. Un premio Target completa la misión, inicia la siguiente y eleva Wanted Level, aumentando los multiplicadores mínimos garantizados de los Crew Reels futuros."},
+      {"title":"The Hit, We Split y Get Lit","description":"Tres símbolos FS conceden The Hit con una Mission inicial garantizada. Cuatro desbloquean We Split, donde los Crew Reels se acumulan en Mayhem Bar para el giro final; cinco conceden Get Lit con Wanted Level 5 y un Crew Symbol garantizado."}
+    ]
+  },
+  "playn-go-colt-lightning-firestorm": {
+    "intro":[
+      "Horseshoe en el tercer rodillo activa Wild Lightning Blaze y coloca entre 3 y 20 Fire Frames, convirtiendo símbolos normales en variantes de premio alto. Es una mecánica Firestorm independiente, no una repetición de la ampliación de rodillos del primer Colt Lightning.",
+      "Blazing Fire Free Spins amplía el tablero a 5×5. Los símbolos Fire Colt duplican las recompensas, cada nuevo Scatter añade giros, las Horseshoes pueden crear hasta cuatro Fire Frames y todos los marcos acumulados se encienden juntos en el último giro."
+    ],
+    "editorial":"Firestorm lleva el desarrollo del tablero de la altura de los rodillos a los Fire Frames. Su Horseshoe hace más que conceder un regiro: crea posiciones transformadoras y Free Spins lleva los marcos acumulados hacia un encendido final conjunto.",
+    "features":[
+      {"title":"Wild Lightning Blaze","description":"Horseshoe en el tercer rodillo crea 3–20 Fire Frames y convierte símbolos en variantes de premio alto."},
+      {"title":"Blazing Fire Free Spins","description":"El bono amplía el tablero a 5×5 y Fire Colt duplica las recompensas."},
+      {"title":"Final de Fire Frames","description":"Los marcos se acumulan en el bono y se activan juntos en el último giro."},
+      {"title":"Instant Prize","description":"Tres Scatters también pueden conceder un Instant Prize independiente."}
+    ]
+  },
+  "push-gaming-tricky-treats": {
+    "intro":[
+      "Tricky Treats forma grupos con Wild, que también actúa como Scatter y eleva su multiplicador en +1 después de contribuir a un premio.",
+      "Un Multiplier Wild independiente transfiere su multiplicador a todos los Wilds visibles y después se convierte en un Instant Prize. Collector reúne los símbolos que faltan en el tablero para formar un grupo."
+    ],
+    "editorial":"Wild e Instant Prize tienen aquí reglas de multiplicador independientes: uno potencia los grupos Wild y el otro multiplica valores monetarios del tablero.",
+    "features":[
+      {"title":"Wild y Scatter","description":"Tres Wilds desbloquean Free Spins; cada Wild ganador aumenta su propio multiplicador en +1."},
+      {"title":"Multiplier Wild","description":"Transfiere x1, x2, x3 o x5 a todos los Wilds y después se convierte en un Instant Prize."},
+      {"title":"Collector","description":"Reúne entre cuatro y nueve símbolos de un tipo a su alrededor y puede atraer Wilds y premios monetarios."}
+    ]
+  },
+  "wazdan-fenix-play-27": {
+    "intro":[
+      "Fenix Play 27 no es una copia del Fenix original: sus mismos tres rodillos utilizan 27 líneas de pago y un fénix Wild.",
+      "Una pared llena de símbolos iguales concede x3 Wall Multiplier. El máximo oficial de esta versión es de 748x; el Game Info actual no declara una fecha de lanzamiento."
+    ],
+    "editorial":"La variante 27 difiere considerablemente del original de cinco líneas: un máximo de 748x en lugar de 75x y volatilidad alta en lugar de media. No se añade una fecha sin fuente.",
+    "features":[
+      {"title":"Veintisiete líneas de pago","description":"Un diseño de pagos ampliado conserva tres rodillos principales."},
+      {"title":"Phoenix Wild","description":"El ave de fuego sustituye a otros símbolos normales en las combinaciones de líneas de pago."},
+      {"title":"Multiplicador de pared x3","description":"La ocupación correspondiente de los rodillos activa Wall Multiplier, que difiere del premio máximo global."}
+    ]
+  },
+  "3-oaks-gaming-more-magic-apple": {
+    "intro":[
+      "More Magic Apple utiliza un tablero de 5×4 con 25 líneas de pago: seis manzanas rojas o doradas desbloquean tres regiros Hold & Win.",
+      "Las manzanas quedan fijas en el bono, Collect recoge importes y una fila superior independiente añade Plus, Multiplier y Gold Symbols."
+    ],
+    "editorial":"More Magic Apple difiere de los juegos Magic Apple próximos por una escala de manzanas doradas más detallada: entre dos y cinco Bonus Gold Symbols están vinculados a Mini, Minor, Major y Grand y un tablero completo también duplica el pago.",
+    "features":[
+      {"title":"Seis manzanas y tres regiros","description":"Cualquier mezcla de seis Bonus Symbols rojos y dorados activa Hold & Win con nuevas manzanas fijas y Collect que recoge sus valores."},
+      {"title":"Plus, Multiplier y Gold Symbols superiores","description":"Una fila superior adicional modifica los importes de las manzanas aparecidas y puede convertir los símbolos de bono en dorados."},
+      {"title":"Escala de manzanas doradas","description":"Dos, tres, cuatro y cinco Bonus Gold Symbols corresponden a Mini, Minor, Major y Grand x5000. Un tablero totalmente ocupado duplica el total."},
+      {"title":"Free Spins y Bonus Accum","description":"Los multiplicadores Wild aparecen en Free Spins; Bonus Accum aumenta la probabilidad de Hold & Win sin sustituir la activación normal del bono."}
+    ]
+  },
+  "hacksaw-gaming-mighty-masks": {
+    "intro":[
+      "Mystery Mask revela un símbolo que paga o Wild. Los símbolos Mask en al menos tres rodillos se extienden hasta el borde inferior de cada rodillo antes de revelarse.",
+      "Nudge Wild activa Multiplier Wheel, que añade un multiplicador global al premio total actual; los desplazamientos adicionales aumentan gradualmente su valor."
+    ],
+    "editorial":"Mighty Masks conecta las revelaciones grupales de Mystery Mask con una mejora global independiente. Más rodillos ocupados por Masks significan revelaciones más amplias y Nudge Wild puede convertir un premio normal en una serie de aumentos de Multiplier Wheel.",
+    "features":[
+      {"title":"Las Mystery Masks se revelan hacia abajo","description":"Mystery Mask se convierte en un símbolo que paga o Wild. Las Masks en al menos tres rodillos se expanden hacia abajo hasta el borde inferior y después revelan el resultado en las posiciones llenas."},
+      {"title":"Nudge Wild y Multiplier Wheel","description":"Nudge Wild activa una rueda que fija un multiplicador global para el resultado del giro actual. La rueda puede realizar hasta cincuenta Nudges consecutivos y aumentar gradualmente el multiplicador."},
+      {"title":"Serengeti Sunset y Masked FeatureSpins","description":"Tres o más símbolos FS desbloquean Serengeti Sunset con Mystery Masks y Nudge Wild más frecuentes. Masked FeatureSpins independiente garantiza al menos tres Mystery Masks en un giro donde esté disponible según las reglas del mercado."}
+    ]
+  },
+  "playn-go-colt-lightning-inferno": {
+    "intro":[
+      "Horseshoe en el rodillo 3 activa Lightning Blaze: entre 3 y 20 Fire Frames convierten posiciones en un único símbolo animal. Estos Frames permanecen fijos hasta que termina Fire Free Spins y después se transforman juntos.",
+      "Tres Fire Ball Scatters en los rodillos 2–4 conceden 8 Fire Free Spins y añaden una fila a la altura de los rodillos. Las Fire Balls adicionales añaden un giro cada una hasta un límite total de 47; las Bonus Inferno Coins también cargan Inferno Core y pueden desbloquear Hold N’ Load en un tablero creciente de hasta 5×8."
+    ],
+    "editorial":"Inferno desarrolla los Fire Frames más allá de Firestorm: los Frames se vuelven persistentes dentro de Free Spins y un Inferno Core independiente desbloquea una segunda vía de bono con Coins y Hold N’ Load. Las Coins nuevas en ese modo restablecen el contador a tres regiros y abren gradualmente filas adicionales.",
+    "features":[
+      {"title":"Lightning Blaze","description":"Horseshoe en el tercer rodillo crea entre 3 y 20 Fire Frames."},
+      {"title":"Fire Free Spins","description":"Tres Fire Ball Scatters en los rodillos 2–4 desbloquean ocho giros con ampliación del tablero."},
+      {"title":"Fire Frames fijos","description":"Los Frames del bono permanecen hasta el último giro y se transforman juntos."},
+      {"title":"Inferno Core","description":"Las Bonus Inferno Coins llenan el Core y pueden activar Hold N’ Load."}
+    ]
+  },
+  "push-gaming-triple-rampage": {
+    "intro":[
+      "Triple Rampage sitúa tres Kaiju sobre el tablero, cada uno con su propio medidor Token y escenario Free Spins.",
+      "El Kaiju azul amplía el tablero a seis filas y 46656 formas de ganar, el rojo potencia Collector y el verde añade Instant Prizes; los bonos pueden combinarse."
+    ],
+    "editorial":"El nombre Triple Rampage describe tres vías Kaiju independientes, no una función universal: Mega Reels, Power Collector y Kaiju Cash modifican aspectos distintos del giro.",
+    "features":[
+      {"title":"Tres medidores Kaiju","description":"Los Tokens correspondientes cargan monstruos individuales y pueden activar sus Free Spins."},
+      {"title":"Mega Reels","description":"El monstruo azul amplía a seis filas y eleva las formas de ganar a 46656."},
+      {"title":"Power Collector y Kaiju Cash","description":"El Kaiju rojo hace que Collector baje y el verde añade Instant Prizes; los Collectors de los rodillos 1 y 6 recogen valores."}
+    ]
+  },
+  "wazdan-fenix-play-27-deluxe": {
+    "intro":[
+      "Fenix Play 27 Deluxe conserva tres rodillos y 27 líneas de pago cruzadas, pero recibe gráficos actualizados respecto a Fenix Play 27.",
+      "Phoenix Wild ayuda a formar líneas, la pared proporciona un multiplicador x3 y un Gamble Game independiente ofrece adivinar resultados relacionados con los huevos del ave."
+    ],
+    "editorial":"Deluxe no debe tratarse como una mecánica Hold the Jackpot independiente: actualiza la presentación de la variante de 27 líneas. Ambas versiones comparten cifras de RTP y premio máximo, pero la fecha está confirmada específicamente para Deluxe.",
+    "features":[
+      {"title":"27 líneas cruzadas","description":"Tres rodillos conservan 27 patrones de pago declarados expresamente en la descripción oficial detallada."},
+      {"title":"Wild y pared x3","description":"Phoenix Wild sustituye a los símbolos y una pared uniforme activa un premio triple."},
+      {"title":"Egg Gamble","description":"Después de un premio, el jugador elige un huevo de fénix y puede repetir intentos de duplicación en un juego de riesgo independiente."}
+    ]
+  },
+  "3-oaks-gaming-power-sun": {
+    "intro":[
+      "Power Sun es una tragamonedas de frutas de 3×3 con cinco líneas de pago, donde Burning Sun Collect del segundo rodillo recoge los símbolos Coin Bonus visibles.",
+      "Collect con monedas de bono en el primer y tercer rodillo activa un modo de regiros independiente; el centro fijo vuelve a recoger los valores del tablero."
+    ],
+    "editorial":"El Power Sun original tiene solo tres filas y Power Sun XXL tiene cinco. El Collect central elimina aquí las monedas recogidas y Coin Metre proporciona una vía independiente de activación de bono.",
+    "features":[
+      {"title":"Burning Sun Collect en el segundo rodillo","description":"Collector solo aparece en el rodillo central y suma los valores monetarios de todos los Coin Bonus Symbols visibles."},
+      {"title":"Combinación de bono 1–2–3","description":"Hold & Win se activa con Collect en el segundo rodillo y al menos un Bonus en cada uno del primero y tercero."},
+      {"title":"Collect repetido y monedas nuevas","description":"El Collect central queda fijo en el bono; las monedas recogidas desaparecen y dejan espacio a nuevos símbolos Bonus y a posibles Mini, Minor y Major."},
+      {"title":"Coin Metre y mejora de Grand","description":"Coin Metre puede activar el bono por separado. El proveedor describe una posible triplicación de Grand x1000 a x3000 con un tablero completo y tres símbolos Collect."}
+    ]
+  },
+  "hacksaw-gaming-munchy-milo": {
+    "intro":[
+      "Jolt Frame puede aparecer sobre un símbolo de premio bajo, alto o Wild. Después de calcular los premios, el Frame se extiende por líneas rectas y convierte las posiciones afectadas en el tipo de símbolo sobre el que apareció.",
+      "Si la extensión atraviesa el mismo tipo de símbolo, comienza Chain Reaction: aparece allí un nuevo Jolt Frame e inicia su propia extensión. La cadena puede continuar hasta llenar el tablero."
+    ],
+    "editorial":"Munchy Milo se centra en la geometría de Jolt Frame: un Frame exitoso puede cambiar varias líneas y los símbolos iguales crean una reacción en cadena. Los bonos superiores añaden multiplicadores Sticky Wild y un Jolt Frame garantizado.",
+    "features":[
+      {"title":"Los Jolt Frames cambian símbolos en líneas","description":"Jolt Frame aparece sobre un Low, High o Wild Symbol. Después de los premios normales extiende el tipo seleccionado por líneas rectas y convierte los símbolos afectados en ese mismo tipo."},
+      {"title":"Chain Reaction inicia un nuevo Jolt","description":"Si la onda Jolt cruza un símbolo igual, puede aparecer otro Jolt Frame con su propia onda siguiente. La cadena puede cubrir gran parte del tablero antes del próximo cálculo."},
+      {"title":"Lift Off Luck, Gravity Groove, Going Bananas","description":"Lift Off Luck aumenta las probabilidades de Jolt Frame. Gravity Groove también mantiene los Wild Multipliers como Sticky hasta que termina el bono; Going Bananas conserva esas reglas y garantiza un Jolt Frame en cada giro."}
+    ]
+  },
+  "playn-go-contact": {
+    "intro":[
+      "Contact utiliza un tablero de grupos con una lógica inversa a muchos juegos de cascadas: los símbolos ganadores permanecen fijos en lugar de eliminarse. Los símbolos sin premio desaparecen y otros nuevos caen alrededor de los grupos existentes y pueden ampliarlos.",
+      "Llenar la fila 2, 4 o 6 concede un multiplicador x2, x3 o x4. Alcanzar la fila superior activa Bonus Round con 3 giros gratis y llenar todo el tablero activa Super Bonus Round con 6; los grupos ganadores persisten entre todos los giros de bono."
+    ],
+    "editorial":"Contact convierte un grupo ganador en una estructura persistente del tablero: un buen grupo permanece como base de la siguiente caída, en lugar de desaparecer. Bonus y Super Bonus conservan este principio entre giros y las filas llenas añaden multiplicadores o efectos especiales como Block Destroyer y Symbol Upgrade.",
+    "features":[
+      {"title":"Grupos fijos","description":"Los grupos ganadores permanecen y los símbolos sin premio desaparecen."},
+      {"title":"Multiplicadores de fila","description":"Llenar las filas 2, 4 o 6 concede x2, x3 o x4."},
+      {"title":"Bonus Round","description":"Alcanzar la fila superior activa tres giros con los grupos conservados."},
+      {"title":"Super Bonus Round","description":"Llenar todo el tablero desbloquea seis giros con los grupos ganadores conservados."}
+    ]
+  },
+  "push-gaming-vegas-vault": {
+    "intro":[
+      "Vegas Vault activa Bonus Game cuando los símbolos Cash o Jackpot ocupan la fila central de los rodillos exteriores y Vault está en el segundo rodillo.",
+      "Los tres giros iniciales se restablecen con nuevos premios o llaves. Los Bonus Enhancer Reels añaden un multiplicador o dividen posiciones en dos antes de que Vault recoja el resultado."
+    ],
+    "editorial":"La activación de Vegas Vault es estrictamente posicional y Second Chance puede desplazar aleatoriamente el símbolo requerido. Difiere de Viva Lock Vegas y su recogida de seis símbolos monetarios.",
+    "features":[
+      {"title":"Second Chance","description":"Un desplazamiento aleatorio de un símbolo hacia arriba o abajo puede completar la combinación de entrada al bono."},
+      {"title":"Bonus Game","description":"La fila central necesita Instant Prize o Jackpot en los rodillos 1 y 3 y Vault en el rodillo 2."},
+      {"title":"Enhancer Reels","description":"Split divide las posiciones de premio del bono y Multiplier eleva sus valores antes de la recogida final de Vault."}
+    ]
+  },
+  "wazdan-fenix-play-deluxe": {
+    "intro":[
+      "Fenix Play Deluxe renueva la presentación del Fenix Play original, pero conserva un tablero compacto de tres rodillos con cinco líneas de pago.",
+      "Su principal función adicional es Unique Gamble Feature con intentos de duplicar premios. El multiplicador de pared x3 pertenece a 27 Deluxe, no a esta versión."
+    ],
+    "editorial":"Aquí Deluxe significa un aspecto retro actualizado, no un aumento automático del premio máximo. El perfil oficial conserva 75x y volatilidad media.",
+    "features":[
+      {"title":"Cinco líneas de pago clásicas","description":"Los símbolos de frutas siguen formando combinaciones en tres rodillos y cinco líneas de pago."},
+      {"title":"Unique Gamble Feature","description":"Un premio recibido puede arriesgarse por separado en hasta siete intentos de duplicación consecutivos."},
+      {"title":"Volatility Levels","description":"La lista oficial de funciones de Deluxe incluye niveles de volatilidad ajustables junto con un modo más rápido."}
+    ]
+  },
+  "3-oaks-gaming-power-sun-xxl": {
+    "intro":[
+      "Power Sun XXL amplía la serie original a un tablero de 3×5 con 15 líneas de pago: Collect en el segundo rodillo recoge los Coin Bonus Symbols monetarios.",
+      "En Hold & Win, el segundo rodillo mantiene hasta cinco símbolos Collect fijos que recogen y despejan las posiciones de monedas de bote."
+    ],
+    "editorial":"Hasta cinco símbolos Collect centrales hacen de XXL una versión independiente, no simplemente un Power Sun de 3×3 agrandado. El juego tiene entradas Sun Metre y Lucky Spin independientes y las compras de bono se describen solo para determinados mercados.",
+    "features":[
+      {"title":"Tablero de 3×5 y Collect central","description":"El juego base utiliza quince líneas de pago; Burning Sun Collect recoge valores Coin Bonus de ambos rodillos exteriores."},
+      {"title":"Hasta cinco símbolos Collect fijos","description":"Hold & Win reserva el segundo rodillo para Collect Symbols. Los valores Bonus desaparecen tras recogerse; las nuevas monedas pueden llevar Mini, Minor, Major o Grand."},
+      {"title":"Sun Metre y Lucky Spin","description":"Además de Collect central con símbolos Bonus en los extremos, el bono puede activarse mediante un Sun Metre completo o Lucky Spin."},
+      {"title":"Super Bonus comprado","description":"Determinadas regiones ofrecen compras de Hold & Win o Super Bonus y Super Bonus puede comenzar con cinco símbolos Collect en el segundo rodillo."}
+    ]
+  },
+  "hacksaw-gaming-octo-attack": {
+    "intro":[
+      "Los símbolos ganadores se eliminan y otros nuevos caen desde arriba, mientras que las posiciones ganadoras permanecen marcadas con Ink Stains hasta que Tenta-Grab las utiliza.",
+      "Eye of Otto activa Tenta-Grab: un símbolo aleatorio del tablero se copia en todas las posiciones Ink Stained y en la propia posición del Eye. Si se selecciona Wild o Wild Multiplier, algunos símbolos sustituidos también pueden recibir un multiplicador."
+    ],
+    "editorial":"Octo Attack utiliza las casillas ganadoras anteriores como recurso para la siguiente transformación: las cascadas dejan Ink Stains y Eye of Otto sustituye después esas posiciones a la vez por un símbolo seleccionado aleatoriamente.",
+    "features":[
+      {"title":"Ink Stains después de una cascada","description":"Los símbolos implicados en un premio desaparecen, otros nuevos caen desde arriba y las posiciones despejadas reciben Ink Stains. Las marcas del juego base desaparecen después de Tenta-Grab y se reinician entre giros."},
+      {"title":"Eye of Otto y Tenta-Grab","description":"Eye of Otto en un tablero con Ink Stains toma un símbolo aleatorio y lo copia en todas las casillas marcadas y en sí mismo. Seleccionar Wild o Wild Multiplier también puede dar multiplicadores a algunas copias."},
+      {"title":"Eighth Arm Is the Charm y Sticky Ink","description":"Tres o más símbolos FS normales desbloquean un bono que conserva Ink Stains entre giros hasta Tenta-Grab. La cantidad inicial de giros equivale al número de FS y cada tres nuevos símbolos FS en el bono añaden uno más."}
+    ]
+  },
+  "playn-go-cops-n-robbers": {
+    "intro":[
+      "Bank Vault actúa como Wild y duplica una combinación ganadora en la que participa. Después de un premio normal, la ronda Gamble ofrece adivinar el color o palo de una carta oculta para aumentar el pago hasta 2500 monedas.",
+      "Dos símbolos Squad Car ya conceden un premio Scatter y tres activan Bonus Car Chase con Free Spins. En la persecución deben evitarse bloqueos de carretera; una fuga exitosa duplica el pago final del bono."
+    ],
+    "editorial":"Cops ’n’ Robbers distingue el riesgo en dos niveles: los premios normales pueden llevarse a Gamble con cartas y tres coches de policía desbloquean una Car Chase narrativa. Vault Wild potencia combinaciones ganadoras normales, no activa el bono.",
+    "features":[
+      {"title":"Bank Vault Wild","description":"El símbolo de cámara bancaria sustituye a los símbolos normales y duplica los premios en los que participa."},
+      {"title":"Gamble con cartas","description":"Después de un premio, adivinar el color o palo de una carta puede aumentar el pago, pero pone en riesgo el resultado."},
+      {"title":"Bonus Car Chase","description":"Tres Squad Cars activan una persecución con Free Spins; una fuga exitosa sin bloqueo de carretera duplica el premio del bono."}
+    ]
+  },
+  "push-gaming-viva-lock-vegas": {
+    "intro":[
+      "Viva Lock Vegas introduce Instant Prizes en Mega Money Pot, que puede desbloquear aleatoriamente Hold & Win y añadir al bono los valores recogidos.",
+      "Tres Jackpot Scatters desbloquean por separado una selección de bote y tres Scatters en los rodillos 1, 3 y 5 activan una serie Free Spins hasta que se activa Hold & Win."
+    ],
+    "editorial":"Viva Lock Vegas tiene tres vías para entrar en Hold & Win: seis premios en el juego base, seis en Free Spins o la activación de Mega Money Pot.",
+    "features":[
+      {"title":"Mega Money Pot","description":"Los Instant Prizes acumulados pueden activar Hold & Win y mejorar su conjunto de premios inicial."},
+      {"title":"Jackpot Pick","description":"Tres Jackpot Scatters o Jackpot Picker en Hold & Win activa selecciones de fichas hasta encontrar tres de un color."},
+      {"title":"Hold & Win","description":"Seis Instant Prizes activan un tablero de 5×3 con tres vidas que se restablecen con cada premio nuevo; llenar el tablero concede Mega Jackpot."}
+    ]
+  },
+  "wazdan-fire-bird": {
+    "intro":[
+      "Fire Bird es un juego retro compacto independiente con tres rodillos y cinco líneas de pago, no otra versión de Fenix Play.",
+      "Su lista oficial de funciones incluye Bonus Symbol y Unique Gamble Feature; el perfil actual no tiene una fecha de lanzamiento confirmada."
+    ],
+    "editorial":"Pese a su similitud visual con Fenix, Fire Bird tiene sus propias cifras: RTP del 96,05%, máximo de 72x y volatilidad estándar. La mecánica Wall x3 del juego vecino no debe trasladarse.",
+    "features":[
+      {"title":"Símbolo de bono","description":"El desarrollador enumera un Bonus Symbol independiente como fuente de pagos adicionales; no se declara un multiplicador exacto."},
+      {"title":"Cinco líneas de pago fijas","description":"Tres rodillos y cinco líneas definen el ritmo de las combinaciones base."},
+      {"title":"Gamble después de un premio","description":"Un juego de riesgo adicional ofrece intentos de aumentar un premio mediante duplicaciones consecutivas."}
+    ]
+  },
+  "3-oaks-gaming-purple-diamond": {
+    "intro":[
+      "Purple Diamond desarrolla una tragamonedas clásica de 5×3 con 20 líneas de pago: seis símbolos Bonus y/o Collect activan cuatro giros de bono.",
+      "Tres filas adicionales están cerradas al comenzar Hold & Win. Cada Collect recogido hace avanzar el medidor, revela el tablero y añade un intento."
+    ],
+    "editorial":"El objetivo principal de Purple Diamond es abrir la fila Super Collect, no simplemente recoger monedas: el Diamond dorado solo actúa arriba, añade dos intentos y recoge todo lo que está debajo.",
+    "features":[
+      {"title":"Seis símbolos y cuatro intentos","description":"Seis símbolos Bonus azules y/o Collect morados activan Hold & Win con cuatro giros iniciales."},
+      {"title":"Tres filas cerradas","description":"Tres Progress Metres abren filas adicionales de abajo arriba en secuencia; los símbolos de las filas cerradas aún no están activos."},
+      {"title":"Collect añade un giro","description":"Cada Collect morado recoge los valores Bonus Symbol de debajo y añade un giro de bono."},
+      {"title":"Super Collect de la fila superior","description":"Después de abrirse la parte superior, Super Collect amarillo añade dos giros y recoge todos los símbolos de debajo; Grand puede aparecer como Super Collect."}
+    ]
+  },
+  "hacksaw-gaming-orb-of-destiny": {
+    "intro":[
+      "Lady Fortune revela un Wild Multiplier Reel expandido con varios multiplicadores en su parte inferior. Un premio utiliza el multiplicador inferior y después lo elimina; los valores restantes de Lady Fortune activan un regiro con ella fija.",
+      "Orb of Destiny muestra un número de 1 a 3 al aparecer y añade esa cantidad de multiplicadores aleatorios a todas las Lady Fortune del tablero, prolongando su cadena de regiros."
+    ],
+    "editorial":"Orb of Destiny convierte un Wild Reel en una reserva limitada de mejoras futuras: cada multiplicador es un valor de premio y combustible para el siguiente regiro. Orb repone esta reserva en todas las Lady Fortunes activas a la vez.",
+    "features":[
+      {"title":"Lady Fortune Wild Reels y colas de multiplicadores","description":"Lady Fortune revela un Wild Reel completo con entre uno y tres multiplicadores debajo. Un premio utiliza el valor inferior, varias Lady Fortunes se suman y después se elimina el multiplicador inferior."},
+      {"title":"Orb of Destiny repone la cola","description":"Orb revela un número de uno a tres y añade esa cantidad de multiplicadores aleatorios a todas las Lady Fortune del tablero, hasta cinco por rodillo. Los Sticky Respins continúan mientras al menos una Fortune conserve valores."},
+      {"title":"Lady Luck Free Spins","description":"Tres símbolos FS activan diez Lady Luck Spins: cada Lady Fortune comienza con al menos dos multiplicadores. Los símbolos FS adicionales pueden añadir giros y el fin de las colas Fortune determina el número de Respins relacionados."}
+    ]
+  },
+  "playn-go-count-jokula": {
+    "intro":[
+      "Count Jokula se centra en dos mecánicas independientes. En un giro perdedor, Shapeshifter puede convertir símbolos en Wilds de murciélagos y crear una nueva línea ganadora.",
+      "Una combinación ganadora que pasa por Joker en el centro de los rodillos activa Re-Spins of Evil. La serie puede alcanzar siete regiros y su multiplicador aumenta en cada regiro posterior."
+    ],
+    "editorial":"Count Jokula no tiene un bono Free Spins convencional independiente: su principal acción procede de revivir giros perdedores mediante Shapeshifter y de una cadena de regiros creciente alrededor del Joker central.",
+    "features":[
+      {"title":"Shapeshifter","description":"En un giro sin premio convierte algunos símbolos en Wilds de murciélagos y crea una oportunidad de nueva línea ganadora."},
+      {"title":"Joker central","description":"Una línea ganadora que pasa por Joker en el centro de los rodillos activa Re-Spins of Evil."},
+      {"title":"Re-Spins of Evil","description":"La serie puede incluir hasta siete regiros con un multiplicador creciente."}
+    ]
+  },
+  "push-gaming-wild-swarm": {
+    "intro":[
+      "El Wild Swarm original utiliza un tablero de 5×4 con veinte líneas de pago y recoge abejas en una colmena, acercándose gradualmente a Swarm Mode.",
+      "Tres Hive Symbols pueden activar hasta quince giros gratis con Sticky Wilds y un cofre abre una selección de Instant Prizes, giros de bono o Swarm Mode inmediato."
+    ],
+    "editorial":"El original no debe describirse mediante las reglas de Wild Swarm 2: el primer juego destaca la recogida compartida de abejas y Swarm Mode sin tres huevos o colmenas independientes.",
+    "features":[
+      {"title":"Recogida de abejas","description":"Las abejas refuerzan gradualmente la colmena y proporcionan una oportunidad de activar Swarm Mode."},
+      {"title":"Free Games","description":"Tres o más Hive Symbols conceden hasta quince Free Spins con Sticky Wilds."},
+      {"title":"Chest Pick","description":"El cofre ofrece premios ocultos, giros de bono, una mejora Swarm o una entrada directa al modo."}
+    ]
+  },
+  "wazdan-fishermans-luck": {
+    "intro":[
+      "En Fisherman`s Luck, Gainer recoge los valores Cash y Jackpot que aparecen en los rodillos situados debajo y puede permanecer hasta diez giros.",
+      "Los Gain Boosters en Free Spins prolongan la actividad de Gainer y Gain to Infinity lo mantiene hasta el final del bono. Un Cash Out independiente de la fila superior recoge la captura de abajo."
+    ],
+    "editorial":"La acumulación de este juego de pesca se centra en la duración de Gainer y su ampliación. No debe equipararse a un Collector normal de Hold the Jackpot: las condiciones Free Spins se nombran por separado.",
+    "features":[
+      {"title":"Gainer durante hasta diez giros","description":"Gainer recoge valores monetarios bajo su columna y puede sobrevivir varios giros consecutivos."},
+      {"title":"Gain to Infinity en Free Spins","description":"Los Boosters prolongan la duración de Gainer en giros gratis y un efecto especial lo conserva hasta que termina el bono."},
+      {"title":"Cash Out y Chance Level","description":"Cash Out del rodillo superior recoge valores de abajo; Chance Level ofrece escalones x2/x5/x10."}
+    ]
+  },
+  "3-oaks-gaming-rio-gems": {
+    "intro":[
+      "Rio Gems lleva Hold & Win a un tablero de carnaval de 5×3 con 25 líneas de pago: seis gemas azules o verdes desbloquean tres regiros.",
+      "Un Super Symbol blanco puede activar Super Bonus con cinco Gems normales. Los valores de los nuevos símbolos de bono son mayores en este modo."
+    ],
+    "editorial":"Rio Gems distingue Grand de Royal: Hold & Win normal tiene cuatro botes posibles y un tablero completo lleva a un Royal x10000 independiente. Super Bonus con una Gem blanca difiere del bono normal.",
+    "features":[
+      {"title":"Seis Gem Symbols para Hold & Win","description":"Seis Bonus Gems azules o verdes activan tres regiros; Mystery puede revelar un bote o Super Bonus Symbol."},
+      {"title":"Super Bonus con una gema blanca","description":"Cinco Gems normales con un Super Symbol blanco activan inmediatamente un Hold & Win mejorado; un bono normal también puede convertirse en Super a mitad de su desarrollo."},
+      {"title":"Royal Jackpot por llenar el tablero","description":"Mini, Minor, Major y Grand son posibles en Hold & Win; llenar todas las posiciones puede llevar al Royal Jackpot de x10000 la apuesta."},
+      {"title":"Free Spins con símbolos de premio alto","description":"Los Free Spins independientes utilizan solo símbolos de mayor premio, en lugar del conjunto normal completo."}
+    ]
+  },
+  "hacksaw-gaming-phoenix-duelreels": {
+    "intro":[
+      "El símbolo VS se expande en un Wild DuelReel completo si crea o contribuye a un premio. Phoenix y Water Dragon se enfrentan por dos multiplicadores del rodillo y el valor del ganador se aplica a todas las combinaciones que pasan por él.",
+      "La derrota de Phoenix en al menos un DuelReel activa Resurrection Spin con un símbolo VS garantizado; los regiros continúan hasta que no quedan DuelReels donde Phoenix haya perdido."
+    ],
+    "editorial":"Phoenix DuelReels añade una condición de continuación al duelo conocido: que Phoenix pierda determina el multiplicador y también activa una nueva oportunidad garantizada mediante Resurrection Spin.",
+    "features":[
+      {"title":"VS y Phoenix frente a Water Dragon","description":"VS se expande en un Wild DuelReel con un premio potencial. Phoenix y Water Dragon se enfrentan por dos multiplicadores; el ganador determina el valor del rodillo y varios DuelReels suman multiplicadores dentro de una línea."},
+      {"title":"Resurrection Spin cuando pierde Phoenix","description":"La derrota de Phoenix en cualquier DuelReel activa Resurrection Spin con un nuevo VS garantizado. La cadena continúa hasta que los nuevos duelos no dejan rodillos donde Phoenix haya perdido."},
+      {"title":"Fire and Water, Rise of the Phoenix y Gamble","description":"Tres símbolos FS conceden diez Fire and Water Spins con VS más frecuente. Bonus Gamble ofrece selecciones Phoenix Egg para giros adicionales o entrada a Rise of the Phoenix con diez giros."}
+    ]
+  },
+  "playn-go-coywolf-cash": {
+    "intro":[
+      "Mask Scatter en el tercer rodillo activa Wild Reel sobre el tablero principal. Los símbolos Alpha Coywolf de este rodillo horizontal se expanden hacia abajo por los rodillos correspondientes después de detenerse y contribuyen a líneas de pago.",
+      "Tres, cuatro o cinco Totem Scatters activan Prey Spins con 8, 11 o 15 giros. Mask entra en Wild Reel durante el bono y puede desbloquear un segundo nivel con Multiplier Coywolf Wilds x2, x4 o x7 y recompensas Totem de +2 o +4 giros."
+    ],
+    "editorial":"Coywolf Cash da funciones distintas a dos tipos de Scatter: Mask activa Wild Reel horizontal y Totem se ocupa de Prey Spins. Aparecer juntos antes del bono puede activar Wild Reel por adelantado y Mask desbloquea un segundo nivel más fuerte dentro de Free Spins.",
+    "features":[
+      {"title":"Mask y Wild Reel","description":"Mask Scatter en el tercer rodillo activa un Wild Reel horizontal sobre el tablero principal."},
+      {"title":"Prey Spins","description":"Tres, cuatro o cinco Totem Scatters conceden 8, 11 o 15 giros de bono, respectivamente."},
+      {"title":"Segundo nivel de bono","description":"Mask en Free Spins puede desbloquear un nivel con Multiplier Coywolf Wilds x2, x4 o x7 y giros adicionales."}
+    ]
+  },
+  "push-gaming-wild-swarm-2": {
+    "intro":[
+      "Wild Swarm 2 cuenta Worker Bee como un segmento del medidor y Queen Bee como cinco; después de llenarse el quinto nivel, las nuevas abejas pueden hacer estallar la colmena.",
+      "A diferencia del original, la versión 2 introduce por separado Wild Honey y una Chest Feature ampliada capaz de llenar todo un rodillo de Sticky Wilds durante el bono."
+    ],
+    "editorial":"El principal riesgo de confundir Wild Swarm 2 con el primer juego está en la velocidad de acumulación: Queen Bee concede cinco segmentos de una vez y Chest puede llenar todo un rodillo de Wilds.",
+    "features":[
+      {"title":"Worker y Queen Bees","description":"Worker Bee añade una sección Hive y Queen Bee añade cinco; recoger nuevas abejas después del quinto nivel puede activar Swarm Mode."},
+      {"title":"Wild Honey","description":"Las abejas del juego base dejan Wild Honey que sustituye a los símbolos que pagan."},
+      {"title":"Chest y Sticky Wild Reel","description":"El cofre puede añadir Extra Spins, un multiplicador o llenar un rodillo de Sticky Wilds en Free Games y Swarm Mode."}
+    ]
+  },
+  "wazdan-football-mania": {
+    "intro":[
+      "Football Mania se centra en nueve rodillos y dos eventos de fútbol: Football Bonus concede giros gratis y Football Lottery proporciona un sorteo de premio independiente.",
+      "Block Symbols Mode conserva símbolos del juego y cambia la secuencia de giros habitual. No es una tragamonedas con veinte líneas de pago fijas."
+    ],
+    "editorial":"Football Mania distingue Football Bonus de Football Lottery: uno implica giros y el otro un premio independiente. El fabricante no da una fecha de lanzamiento en el Game Info actual.",
+    "features":[
+      {"title":"Block Symbols Mode","description":"Los símbolos quedan fijos en el tablero y afectan a la formación posterior de combinaciones."},
+      {"title":"Football Bonus","description":"El bono de fútbol activa una serie de giros gratis, como declara Wazdan por separado."},
+      {"title":"Football Lottery Bonus","description":"Un sorteo independiente añade un premio que no es un pago normal por líneas."}
+    ]
+  },
+  "3-oaks-gaming-rush-for-gold": {
+    "intro":[
+      "Miner actúa como Wild y Collect y recoge valores Gold Nugget Bonus Symbol.",
+      "Llenar las vagonetas activa giros gratis con funciones Extra, Rise y Multi."
+    ],
+    "editorial":"Llenar las vagonetas activa giros gratis con funciones Extra, Rise y Multi.",
+    "features":[
+      {"title":"Miner como Wild y Collect","description":"Miner en Rush for Gold sustituye a los símbolos normales y recoge los valores Gold Nugget Bonus Symbol visibles en el tablero base de 5×3."},
+      {"title":"Tres vagonetas desbloquean funciones","description":"Los símbolos de progreso llenan tres Cart Metres sobre los rodillos y desbloquean Free Spins con Extra, Rise y Multi. Extra añade Bonus Symbols o giros; Rise amplía el tablero a 5×5 con 40 líneas de pago."},
+      {"title":"Multi Collect y giros adicionales","description":"Multi da a Miner Collect un multiplicador x2, x3 o x5 y puede aumentarlo. Desbloquear otra función en Free Spins concede cuatro giros adicionales."}
+    ]
+  },
+  "hacksaw-gaming-pray-for-six": {
+    "intro":[
+      "Todos los premios y cascadas del giro actual se recogen en Total Win Bar. Un símbolo 6 activado inicia Wailing Wheel en su posición después de que terminan las cascadas.",
+      "Wailing Wheel puede conceder Cash Prize, Additive Multiplier o Multiplicative Multiplier. Los multiplicadores resultantes se recogen junto a Total Win Bar y se aplican al premio acumulado después de activarse todos los seises."
+    ],
+    "editorial":"Pray for Six distingue la acumulación de premios de la mejora final: las cascadas primero llenan Total Win Bar y después cada 6 activo hace girar Wailing Wheel y modifica el multiplicador global cuando termina la secuencia del tablero.",
+    "features":[
+      {"title":"Total Win Bar y Super Cascades","description":"Los premios del giro actual se suman en Total Win Bar y una nueva cadena de cascadas puede aumentar el importe antes de calcular las Wailing Wheels. El resultado acumulado solo se paga después de terminar todas las cascadas."},
+      {"title":"Wailing Wheels y símbolos 6","description":"Un seis se activa cuando hay un premio e inicia su propia Wailing Wheel al terminar las cascadas. Puede revelar Cash Prize, un multiplicador aditivo o multiplicativo o MAX WIN instantáneo; los multiplicadores se combinan en secuencia."},
+      {"title":"Unholy Offspring, Cradle of Chaos, Playtime in Purgatory","description":"Tres símbolos FS conceden diez Unholy Offspring Spins con seises más frecuentes. Cuatro desbloquean Cradle of Chaos con Total Win Bar progresiva y cinco desbloquean el modo oculto Playtime in Purgatory con dos símbolos 6 garantizados en cada giro."}
+    ]
+  },
+  "playn-go-crabbys-gold": {
+    "intro":[
+      "Un Coin Pouch Scatter en los rodillos 1 o 6 recoge los símbolos Coin visibles con valores multiplicadores. Las Coins sin Pouch van al Treasure Chest; cuando el cofre se llena, puede abrir aleatoriamente Treasure Chest Hold’n Spin con tres regiros, que se restablecen a tres con cada nueva Coin.",
+      "Las Rum Bottles llenan Rum Barrel Meter. Cada seis botellas desbloquean una nueva etapa Wild persistente: de Standard Wild a Multiplier Wilds x2/x3/x5, después Expanding, Sticky con Re-Spins, Expanding Walking y, en la sexta etapa, un Mega Wild de 2×2."
+    ],
+    "editorial":"Crabby’s Gold conecta el progreso a largo plazo con dos recolectores: Treasure Chest se ocupa de Hold’n Spin y Rum Barrel mejora permanentemente el tipo de Wild disponible. Después de Hold’n Spin aún puede arriesgarse el resultado hasta cuatro veces para duplicarlo mediante Doubloon or Nothing.",
+    "features":[
+      {"title":"Coin Pouch","description":"Una bolsa en el primer o sexto rodillo recoge las monedas multiplicadoras visibles."},
+      {"title":"Treasure Chest","description":"Las monedas no recogidas entran en el cofre, que puede abrir Hold’n Spin con tres regiros que se restablecen."},
+      {"title":"Rum Barrel Meter","description":"Cada seis botellas desbloquean el siguiente de seis niveles Wild persistentes, hasta un Mega Wild de 2×2."}
+    ]
+  },
+  "push-gaming-wild-swarm-3-chocolate-eggs": {
+    "intro":[
+      "Wild Swarm 3 Chocolate Eggs sustituye una única colmena por tres Easter Eggs: la Bunny Bee roja carga Jackpot Egg, la verde Multiplier Egg y la amarilla Sticky Egg.",
+      "Queen Bunny Bee puede entrar en un huevo aleatorio y un cofre inicia la Wheel, que ofrece premios y combinaciones de dos o tres Egg Features."
+    ],
+    "editorial":"En esta entrega de Wild Swarm, la recogida está vinculada a tres huevos de Pascua que pueden activarse juntos. Las reglas del medidor Worker/Queen de Wild Swarm 2 no deben trasladarse.",
+    "features":[
+      {"title":"Tres huevos","description":"Las Bunny Bees rojas, verdes y amarillas corresponden a Jackpot, Multiplier y Sticky Eggs, respectivamente."},
+      {"title":"Queen Bunny Bee","description":"La abeja reina selecciona un huevo aleatorio y tiene mayor probabilidad de activar su función."},
+      {"title":"Chest Wheel","description":"El cofre puede conceder un multiplicador de apuesta, un bote o una combinación de Egg Features."}
+    ]
+  },
+  "wazdan-football-mania-deluxe": {
+    "intro":[
+      "Football Mania Deluxe cambia la presentación y la disposición de los rodillos, pero conserva nueve rodillos, Football Bonus y Football Lottery Bonus.",
+      "En Football Lottery, el jugador elige una cesta en un sorteo cuyo premio mencionado oficialmente alcanza 1000x. Es el límite superior del juego, no una recompensa garantizada de la cesta."
+    ],
+    "editorial":"Deluxe y el Football Mania original tienen los mismos RTP y premio máximo declarados, pero solo Deluxe tiene confirmada una fecha de lanzamiento independiente. La presentación de campo de fútbol importa aquí más que cualquier promesa de mecánica nueva.",
+    "features":[
+      {"title":"Estadio actualizado","description":"La versión Deluxe renueva los rodillos y los gráficos del estadio y conserva los eventos de bono de fútbol."},
+      {"title":"Football Bonus","description":"Recoger balones abre una ronda adicional con giros de bono."},
+      {"title":"Football Lottery","description":"Elegir una cesta en un evento independiente revela un premio de hasta 1000x; no procede de una coincidencia normal de línea."}
+    ]
+  },
+  "3-oaks-gaming-sky-pearls": {
+    "intro":[
+      "Seis Bonus Pearls activan Hold & Win con tres regiros y perlas fijas.",
+      "Golden Pearl actúa como Mystery Symbol y llenar las 16 posiciones concede el Grand Jackpot."
+    ],
+    "editorial":"Golden Pearl actúa como Mystery Symbol y llenar las 16 posiciones concede el Grand Jackpot.",
+    "features":[
+      {"title":"Scatter Pays en 4×4","description":"Sky Pearls utiliza un tablero de 4×4 que paga por ocho o más símbolos iguales en cualquier lugar. Dragon Wild sustituye a los símbolos normales en las combinaciones."},
+      {"title":"Hold & Win y Pearl of Wisdom","description":"Seis Bonus Pearls activan tres regiros; las nuevas perlas quedan fijas y restablecen el contador. Pearl of Wisdom recoge Pearls en el juego base y también abre el bono al llenarse."},
+      {"title":"Golden Pearl y Grand","description":"Golden Pearl es un Mystery Symbol que puede revelar un bote. Llenar las dieciséis posiciones de Hold & Win da una oportunidad de obtener el Grand Jackpot de x1000 la apuesta."}
+    ]
+  },
+  "hacksaw-gaming-pray-for-three": {
+    "intro":[
+      "Total Win Bar recoge todos los premios del giro actual. Una Prayer Hand que aparece durante un premio activa entre uno y tres sectores de Wheel of Sin y Divine Prayer Hand siempre activa los tres.",
+      "Los sectores Wheel of Sin contienen valores de suma y multiplicación. Cuando hay varios sectores activos, sus valores se combinan secuencialmente de izquierda a derecha y el multiplicador resultante se aplica a Total Win Bar."
+    ],
+    "editorial":"Pray for Three construye el pago final como una expresión secuencial que utiliza tres sectores de Wheel of Sin. Una Prayer Hand normal solo abre una parte de la rueda y la versión Divine habilita inmediatamente las tres operaciones.",
+    "features":[
+      {"title":"Prayer Hand y tres sectores Wheel of Sin","description":"Una Prayer Hand durante un premio abre entre uno y tres sectores de Wheel of Sin; Divine Prayer Hand siempre activa los tres. Los valores de los sectores pueden sumar y multiplicar y el cálculo va estrictamente de izquierda a derecha."},
+      {"title":"Total Win Bar y multiplicador secuencial","description":"Todos los premios del giro se guardan en Total Win Bar. Si Wheel of Sin abre varios sectores, sus valores se combinan primero en orden y después el multiplicador final se aplica a todo el importe recogido."},
+      {"title":"Wicked Ways, Living on a Prayer, Flames of Fortune","description":"Tres FS activan diez giros Wicked Ways con mayor probabilidad de ambas Prayer Hands. Cuatro conceden Living on a Prayer con solo Divine Hand y cinco abren Flames of Fortune con una Divine Prayer Hand garantizada en cada giro."}
+    ]
+  },
+  "playn-go-crabbys-gold-ii": {
+    "intro":[
+      "Los Coin Pouch Scatters en los rodillos 1 y 6 recogen todos los Coin Scatters visibles; si aparecen ambas bolsas, las Coins se recogen dos veces. Las Coins no recogidas van al Treasure Chest y llevan gradualmente a Hold’n Spin.",
+      "Los Compass Scatters llenan cinco posiciones Treasure Trail. Un recorrido completo garantiza un Special Wild Re-Spin con uno de tres efectos: Expanding Sticky Wild, Expanding Walking Wild o Mega Wild de 2×2."
+    ],
+    "editorial":"Crabby’s Gold II no repite Rum Barrel Meter del primer juego. Aquí el progreso persistente se organiza alrededor de Treasure Trail y los símbolos Compass y Treasure Chest sigue siendo una vía independiente para entrar en Hold’n Spin. Doubloon or Nothing opcional vuelve a estar disponible después de Hold’n Spin.",
+    "features":[
+      {"title":"Coin Pouch Scatter","description":"Las bolsas del primer y sexto rodillo recogen monedas visibles; dos bolsas las recogen dos veces."},
+      {"title":"Treasure Trail","description":"Cinco Compass Scatters llenan el recorrido hasta un Special Wild Re-Spin con uno de tres efectos Wild."},
+      {"title":"Treasure Chest","description":"Las monedas no recogidas llenan el cofre y llevan a un Hold’n Spin independiente con tres regiros."}
+    ]
+  },
+  "push-gaming-wild-swarm-triple-hive": {
+    "intro":[
+      "Wild Swarm Triple Hive utiliza tres colmenas independientes en lugar de huevos de Pascua: Jackpot Hive, Multiplier Hive y Sticky Hive reciben abejas de sus colores respectivos.",
+      "La Wheel de un Chest puede activar una colmena o una combinación de varias; los giros gratis ofrecen giros adicionales y un rodillo Sticky Wild completo."
+    ],
+    "editorial":"Triple Hive conserva tres vías de recogida, como Chocolate Eggs, pero el progreso procede ahora de Knight Bees y tres colmenas, por lo que no deben llamarse Bunny Eggs.",
+    "features":[
+      {"title":"Knight Bees","description":"Red Knight alimenta Jackpot Hive, Green Knight Multiplier Hive y Yellow Knight Sticky Hive; Queen Bee selecciona una colmena aleatoria."},
+      {"title":"Wheel Feature","description":"La Chest Wheel selecciona botes, multiplicadores y combinaciones de funciones hasta las tres colmenas."},
+      {"title":"Mejoras de Free Spins","description":"La rueda del bono puede añadir de dos a cinco giros o llenar todo un rodillo de Sticky Wilds."}
+    ]
+  },
+  "wazdan-fortune-reels": {
+    "intro":[
+      "Fortune Reels combina 46656 formas de ganar con Cascading Reels: los símbolos premiados desaparecen y permiten formar nuevas combinaciones.",
+      "En el juego base, Sack Symbol recoge valores de hasta cinco símbolos Bonus y la función Hold the Jackpot independiente recoge símbolos de premio. Un Wild puede expandirse hacia arriba por un rodillo."
+    ],
+    "editorial":"El campo oficial Reels / Ways to Win muestra 6 / 6 y la descripción confirma expresamente 46656 formas. Por eso la ficha utiliza la aclaración del texto oficial, no una interpretación literal de «seis formas».",
+    "features":[
+      {"title":"Cascadas y 46656 formas de ganar","description":"Seis rodillos y la eliminación sucesiva de símbolos ganadores forman la base de los pagos."},
+      {"title":"Sack Symbol","description":"El saco puede recoger valores de premio de hasta cinco símbolos Bonus en el juego base."},
+      {"title":"Hold the Jackpot","description":"Un bono independiente fija símbolos monetarios y valores de bote; el Wild expansivo se utiliza en el tablero principal."}
+    ]
+  },
+  "3-oaks-gaming-space-coins": {
+    "intro":[
+      "Los Coin Bonus Symbols de los rodillos exteriores junto con un Collect en el central activan un bono con tres regiros.",
+      "Collect permanece fijo y recoge valores Bonus Symbol."
+    ],
+    "editorial":"Collect permanece fijo y recoge valores Bonus Symbol.",
+    "features":[
+      {"title":"Activación en rodillos exteriores","description":"Hold & Win se activa con un Coin Bonus Symbol en el primer y tercer rodillo y un Collect en el centro. El tablero principal consta de casillas de 3×3 y cinco líneas."},
+      {"title":"Sticky Collect en regiros","description":"El bono comienza con tres regiros: cada símbolo nuevo restablece el contador y Blue Orb Collect permanece en el rodillo central y recoge valores Coin."},
+      {"title":"Botes y tres Collects","description":"Durante el bono son posibles los botes fijos Mini, Minor, Major y Grand. Un Grand x1000 combinado con tres Collects puede triplicarlo a x3000 la apuesta."}
+    ]
+  },
+  "hacksaw-gaming-rainbow-princess": {
+    "intro":[
+      "Super Cascades elimina todos los símbolos normales del tipo ganador. Los Magic Frame Multipliers aparecen en posiciones aleatorias, permanecen en su sitio durante las cascadas y se activan si su casilla pertenece a un grupo ganador.",
+      "Después de cada premio nuevo, un Magic Frame activado duplica su valor para la siguiente cascada. Una Aurora Gem multiplica además todos los Magic Frame Multipliers del tablero antes de calcular el premio."
+    ],
+    "editorial":"Rainbow Princess conecta cascadas por grupos con progreso posicional: los Magic Frames no se mueven con los símbolos, pero cada premio repetido en la misma casilla duplica el multiplicador. Una Aurora Gem puede potenciar toda la red de Frames a la vez.",
+    "features":[
+      {"title":"Super Cascades y Magic Frames","description":"Un grupo ganador elimina todos los símbolos normales de su tipo y otros nuevos caen desde arriba. Un Magic Frame permanece ligado a una casilla concreta y solo multiplica un premio en el que participa esa posición."},
+      {"title":"Aurora Gems y multiplicadores que se duplican","description":"Un Magic Frame implicado en un nuevo premio duplica su valor para la siguiente cascada. Una Aurora Gem multiplica además todos los Frames del tablero, incluidos los que no participan en el premio actual."},
+      {"title":"Tiara Treasure, Make It Rainbow, Throne of Starlight","description":"Tres FS conceden Sticky Progressive Magic Frames durante diez giros. Cuatro añaden Rainbow Rush Bar con Wilds y cinco abren Throne of Starlight, donde cada posición tiene un Frame de al menos 4x desde el inicio."}
+    ]
+  },
+  "playn-go-crazy-cows": {
+    "intro":[
+      "Bull Wild sustituye a los símbolos normales y se expande por todo el rodillo 3. Un Expanded Wild en el rodillo 3 junto con símbolos Heart Necklace en los rodillos 2 y 4 activa una secuencia de regiros/giros gratis en la que el Wild expandido permanece fijo durante todo el desarrollo.",
+      "Tres Barn Scatters de bono activan High-Dive Bonus. Elegir una vaca concede monedas y Free Spins; en la secuencia posterior, el multiplicador de premios comienza en x2 y aumenta mediante Dog Scatters hasta un máximo de x5 y el número total de Free Spins puede alcanzar 50."
+    ],
+    "editorial":"Crazy Cows utiliza dos combinaciones de bono distintas: Heart Necklace trabaja específicamente con un Wild expandido en el rodillo central y los Barn Scatters llevan a un High-Dive Bonus independiente. Durante Free Spins, Dog Scatter desarrolla el multiplicador, no inicia otro modo independiente.",
+    "features":[
+      {"title":"Bull Wild","description":"Bull Wild sustituye a los símbolos normales y se expande por completo en el tercer rodillo."},
+      {"title":"Heart Necklace","description":"Un Wild expandido en el centro junto con collares en los rodillos 2 y 4 inicia una secuencia con un Wild fijo."},
+      {"title":"High-Dive Bonus","description":"Tres Barn Scatters abren una selección de vaca y Free Spins; Dog Scatter aumenta el multiplicador de x2 a x5."}
+    ]
+  },
+  "wazdan-fruit-fiesta": {
+    "intro":[
+      "En Fruit Fiesta, una orquesta mexicana de frutas toca en cinco rodillos con veinte líneas; el pimiento picante actúa como Wild.",
+      "La estrella del sheriff es un Scatter independiente: tres de estos símbolos en cualquier lugar conceden un pago sin necesidad de formar una línea."
+    ],
+    "editorial":"Aquí Scatter no se describe como activador de Free Spins: paga directamente por coincidencias en cualquier lugar de la pantalla. No deben añadirse giros gratis solo porque los Scatters funcionen de otra manera en otras tragamonedas.",
+    "features":[
+      {"title":"Pimiento Wild","description":"Sustituye a otros símbolos normales y ayuda a formar una combinación ganadora en las veinte líneas."},
+      {"title":"Estrella Scatter","description":"Tres o más Scatters pagan independientemente de las líneas."},
+      {"title":"Piñata Gamble","description":"Después de un premio se puede elegir una piñata para intentar duplicar el importe ya concedido."}
+    ]
+  },
+  "3-oaks-gaming-sun-of-egypt": {
+    "intro":[
+      "Sun of Egypt combina 25 líneas con un Hold & Win de tres regiros.",
+      "Los símbolos Bonus quedan fijos en Hold & Win y Free Spins puede reactivarse."
+    ],
+    "editorial":"Los símbolos Bonus quedan fijos en Hold & Win y Free Spins puede reactivarse.",
+    "features":[
+      {"title":"Seis Suns activan Hold & Win","description":"En el Sun of Egypt original, seis Bonus Suns abren tres regiros. Los símbolos permanecen fijos y un nuevo Sun restablece el contador a tres."},
+      {"title":"Botes del primer juego","description":"Los botes fijos Mini y Major aparecen en Hold & Win; llenar las quince posiciones puede conceder el Grand Jackpot de x1000 la apuesta."},
+      {"title":"Scatter Free Spins","description":"Tres Scatters activan Free Spins con solo símbolos de premio alto. Otros tres Scatters durante la función añaden diez giros."}
+    ]
+  },
+  "hacksaw-gaming-red-rascal": {
+    "intro":[
+      "Tres o más símbolos Rascal activan Rascal Respins: quedan fijos, los nuevos Rascals prolongan la secuencia y los grupos llenos pueden fusionarse en símbolos Colossal.",
+      "El Pendulum alterna entre los modos Coin y Wild y determina la transformación final de todos los Rascals: en Coin Mode se convierten en Coins/Colossal Coins y en Wild Mode en Wilds/Colossal Wilds y conceden un giro adicional."
+    ],
+    "editorial":"Red Rascal hace que el resultado de una secuencia de regiros dependa tanto del número de Rascals recogidos como de la posición actual del Pendulum. El mismo tablero lleno puede terminar así con una fase monetaria o una fase Wild.",
+    "features":[
+      {"title":"Rascal Respins y Colossal Symbols","description":"Tres o más Rascal Symbols quedan fijos y activan Respins. Los Rascals nuevos pueden prolongar la secuencia y los personajes adyacentes se fusionan en Colossal Rascals mayores que ocupan varias casillas."},
+      {"title":"Pendulum Coin Mode y Wild Mode","description":"Pendulum alterna el modo de resultado de Respins: Coin Mode convierte Rascals en Coins y Colossal Coins y Wild Mode crea Wilds y Colossal Wilds e inicia un giro adicional."},
+      {"title":"Ready to Riot, After Dark, Ignite the Night","description":"Tres FS abren ocho Ready to Riot Spins con Rascals frecuentes; cuatro conceden diez giros After Dark con recogida de Rascals inactivos. Cinco FS activan Ignite the Night con al menos cuatro Rascals y un cambio de Pendulum en cada giro."}
+    ]
+  },
+  "playn-go-crystal-hall": {
+    "intro":[
+      "Un símbolo Poker Chip en el tercer rodillo activa Lightning Blaze. Los Neon Frames aparecen en el tablero, convierten las posiciones interiores en símbolos de premio alto y crean una capa de progreso independiente dentro del giro.",
+      "La página oficial describe por separado dos funciones Scatter en los rodillos 2–4: Fortune Roll revela un Instant Prize de hasta x200 la apuesta total y Crystal Free Spins concede 8 giros en un tablero más alto. Los símbolos Crystal de Free Spins añaden Neon Frames fijos, que se convierten todos en el mismo símbolo de premio alto en el último giro."
+    ],
+    "editorial":"Crystal Hall organiza su mecánica especial del juego base en torno a Neon Frames y la ronda de bono mantiene esas posiciones hasta el encendido final. Los dos escenarios Scatter descritos oficialmente deben distinguirse: Fortune Roll se ocupa de un premio instantáneo y Crystal Free Spins proporciona un tablero ampliado y Frames acumulados.",
+    "features":[
+      {"title":"Lightning Blaze","description":"Un Poker Chip en el tercer rodillo activa Neon Frames que pueden convertir posiciones en símbolos de premio alto."},
+      {"title":"Fortune Roll","description":"Una de las mecánicas Scatter independientes concede un Instant Prize de hasta x200 la apuesta total."},
+      {"title":"Crystal Free Spins","description":"Ocho giros tienen lugar en un tablero ampliado; los Neon Frames fijos permanecen hasta la transformación final."}
+    ]
+  },
+  "wazdan-fruit-mania": {
+    "intro":[
+      "Fruit Mania difiere de Fruit Fiesta por nueve rodillos independientes y una matriz Diamond Bonus: una tabla llena abre nueve Bonus Spins.",
+      "Los diamantes que aparecen en el bono quedan fijos hasta que termina la secuencia. Lotto Bonus, en cambio, se activa con tres símbolos de lotería en los tres rodillos centrales."
+    ],
+    "editorial":"Compartir la palabra Fruit en los títulos no significa compartir mecánicas: este juego tiene Diamond Bonus y Lotto Bonus, no el pimiento Wild y la estrella Scatter de Fruit Fiesta.",
+    "features":[
+      {"title":"Nueve Diamond Bonus Spins","description":"Una tabla completamente llena de diamantes concede nueve giros de bono; los nuevos diamantes quedan fijos hasta que termina la ronda."},
+      {"title":"Block Symbols Mode","description":"Fijar símbolos en el tablero permite que cuenten en los giros posteriores."},
+      {"title":"Lotto Bonus en el centro","description":"Tres símbolos Lotto en los tres rodillos centrales abren una elección de uno de tres boletos con premio."}
+    ]
+  },
+  "3-oaks-gaming-sun-of-egypt-2": {
+    "intro":[
+      "Seis Bonus Symbols activan Hold & Win con tres regiros.",
+      "Los nuevos Bonus Symbols quedan fijos y restablecen el contador a tres y un Mystery Symbol puede revelar un bote."
+    ],
+    "editorial":"La diferencia principal de la ronda es Mystery Symbol dentro de Hold & Win, que añade un resultado independiente a la recogida de Bonus Symbols fijos.",
+    "features":[
+      {"title":"Hold & Win con seis Suns","description":"En la segunda entrega, seis Bonus Symbols inician tres regiros. Cada símbolo nuevo queda fijo y restablece el contador a tres, siguiendo la estructura básica de la serie."},
+      {"title":"Mystery y Grand x5000","description":"Un Mystery Symbol puede revelar Mini, Minor o Major fijo; llenar todo el tablero da una oportunidad de obtener el Grand Jackpot de x5000 la apuesta, no el x1000 del original."},
+      {"title":"Ocho Free Spins","description":"Tres Scatters abren ocho Free Spins con los símbolos de premio bajo eliminados. Tres Scatters adicionales pueden reactivar el bono."}
+    ]
+  },
+  "hacksaw-gaming-reign-of-rome": {
+    "intro":[
+      "Los símbolos Tribute llevan valores de suma o multiplicación y forman una LootLine cuando ocupan una línea ganadora. Sus valores se combinan secuencialmente de izquierda a derecha y el resultado se multiplica por la apuesta.",
+      "En This Is Rome, los símbolos Tribute sin premio de un giro con un premio Tribute se guardan en LootBar según sus rodillos. Cuando se llenan cinco posiciones de LootBar, sus valores se pagan con las mismas reglas que una LootLine."
+    ],
+    "editorial":"Reign of Rome convierte una línea de pago en una secuencia aritmética: el orden de los símbolos Tribute importa porque las operaciones de suma y multiplicación se aplican de izquierda a derecha. LootBar del bono guarda por separado Tributes no utilizados y después los combina en una LootLine adicional.",
+    "features":[
+      {"title":"Tribute LootLines y aritmética","description":"Los Adding y Multiplying Tribute Symbols forman una LootLine a lo largo de una línea ganadora. Los valores se calculan en secuencia de izquierda a derecha, de modo que suma y multiplicación dependen de la posición de cada Tribute."},
+      {"title":"Path to Power y Tributes más fuertes","description":"Tres FS abren diez Path to Power Spins, con Tribute Symbols de valor alto más frecuentes. Los FS adicionales durante el bono pueden aumentar la cantidad de giros restantes."},
+      {"title":"This Is Rome y LootBar","description":"En This Is Rome, los Tribute Symbols no utilizados después de un premio se guardan en LootBar según sus rodillos. Cinco valores recogidos forman un pago independiente calculado con la aritmética LootLine."}
+    ]
+  },
+  "playn-go-crystal-sun": {
+    "intro":[
+      "Crystal Sun utiliza 10 líneas de pago fijas que pagan combinaciones en ambas direcciones: de izquierda a derecha y de derecha a izquierda. Un Expanding Wild aparece en los rodillos 2–4 y lleva un multiplicador x1, x2 o x3.",
+      "Cada Expanding Wild se expande automáticamente y activa un regiro. Los regiros continúan mientras aparecen Wilds nuevos en los rodillos; los multiplicadores de todos los Wilds que participan en una línea ganadora se suman."
+    ],
+    "editorial":"Crystal Sun hace que los regiros dependan por completo de apariciones repetidas de Expanding Wild: no se requiere una activación Scatter independiente para la secuencia. Su característica distintiva son multiplicadores Wild aditivos que se suman en una línea ganadora, no se multiplican entre sí.",
+    "features":[
+      {"title":"Líneas en dos direcciones","description":"Diez líneas fijas pagan de izquierda a derecha y de derecha a izquierda."},
+      {"title":"Expanding Wild","description":"Un Wild en los rodillos 2–4 se expande por todo el rodillo y activa un regiro."},
+      {"title":"Suma de multiplicadores","description":"Wild lleva x1, x2 o x3; los multiplicadores de una línea ganadora se suman, no se multiplican."}
+    ]
+  },
+  "wazdan-fruit-mania-deluxe": {
+    "intro":[
+      "En Fruit Mania Deluxe, nueve rodillos independientes forman un tablero de 3×3 sin líneas tradicionales: pagan las coincidencias de frutas en horizontal o vertical.",
+      "A diferencia del Fruit Mania de 2014, Deluxe recibió un estilo visual actualizado; Diamond Bonus sigue concediendo nueve giros adicionales al llenarse la tabla de diamantes."
+    ],
+    "editorial":"Esta versión Deluxe tiene su propio lanzamiento confirmado el 20 de junio de 2018; compartir con el original un RTP del 96,59% y un premio máximo de 1000x no hace idénticas las dos fichas.",
+    "features":[
+      {"title":"Diamond Bonus de nueve giros","description":"Llenar la matriz de diamantes concede nueve giros adicionales; esta recompensa no procede de una simple combinación de tres frutas."},
+      {"title":"Lotto Bonus con elección de caja","description":"Tres símbolos Lotto abren un bono con tres cajas de regalo ocultas, de las que se elige una para obtener un premio."},
+      {"title":"Block Symbols Mode","description":"El jugador puede mantener fijos símbolos seleccionados durante un giro y aumentar la probabilidad de formar una combinación en el tablero de nueve posiciones."}
+    ]
+  },
+  "3-oaks-gaming-sun-of-egypt-3": {
+    "intro":[
+      "Seis Bonus Symbols activan Hold & Win con símbolos fijos.",
+      "Un Mystery Symbol puede revelar un bote o un Super Symbol que lleva a Super Bonus."
+    ],
+    "editorial":"En la tercera entrega, Hold & Win se amplía mediante la combinación de Mystery y Super Symbols y permite que el bono pase a Super Bonus.",
+    "features":[
+      {"title":"Hold & Win y Royal x10000","description":"Seis Bonus Suns activan Hold & Win con símbolos fijos; Mystery puede revelar Mini, Minor, Major, Grand o un Super Symbol. Las quince posiciones llenas pueden conceder Royal x10000."},
+      {"title":"Super Bonus con valores mayores","description":"Super Bonus puede abrirse con cinco Bonus Symbols junto con un Super Symbol o cuando aparece un Super Symbol en Hold & Win normal. Los valores Sun son mayores en esta función."},
+      {"title":"Free Spins con símbolos de premio alto","description":"Un modo Free Spins independiente utiliza solo símbolos de premio alto y permite giros adicionales. No debe confundirse con Super Bonus."}
+    ]
+  },
+  "hacksaw-gaming-rise-of-fortuna": {
+    "intro":[
+      "Un símbolo Fortuna activa una Fortuna Wheel Regular, Super o Epic. La rueda selecciona uno de 12 sectores con multiplicadores de suma/multiplicación o premios de bote y Cash Prize Bar recoge todos los resultados como un premio monetario.",
+      "Los bonos mejoran específicamente las Fortuna Wheels: 3 FS conceden 10 giros gratis con mayor probabilidad de ruedas, 4 FS dejan solo versiones Super/Epic y 5 FS garantizan tres Fortuna Wheels en cada giro."
+    ],
+    "editorial":"Rise of Fortuna distingue la aparición de símbolos especiales del cálculo final: cada rueda primero forma su propio valor y después Cash Prize Bar combina los resultados de todas las Fortuna Wheels activas en un único pago.",
+    "features":[
+      {"title":"Tres tipos de Fortuna Wheels","description":"Un símbolo Fortuna activa una Wheel Regular, Super o Epic con doce sectores. La rueda revela un multiplicador de suma, uno de multiplicación o un premio de bote; varias ruedas aparecidas se activan por separado."},
+      {"title":"Cash Prize Bar y orden de cálculo","description":"Todos los resultados de Fortuna Wheel se combinan en Cash Prize Bar, incluidos valores monetarios y de multiplicador. Un premio de un sector individual no garantiza el máximo global del juego."},
+      {"title":"Wheel of Fortune, Fortunate Fate y Fortune Favours the Bold","description":"Tres FS conceden diez Free Spins con mayor probabilidad de Fortuna Wheels y cuatro permiten solo Super o Epic Wheels. Cinco FS abren el bono superior con tres Fortuna Wheels garantizadas en cada giro."}
+    ]
+  },
+  "playn-go-cursed-moon-power-collection": {
+    "intro":[
+      "Los símbolos Coin con valores aparecen en los rodillos 2–4 y Slay Collector en los rodillos exteriores recoge todas las Coins y los símbolos Instant Win visibles. Los símbolos Soul Fire Multiplier del rodillo 5 aumentan un medidor de multiplicador persistente en +1; este multiplicador se aplica a los valores de recogida, no a los premios por formas de ganar.",
+      "Los símbolos Level Up hacen avanzar un sistema de progreso de cinco niveles en el juego base y Free Spins. Los niveles superiores añaden eventos de doble recogida, símbolos monetarios apilados en los rodillos centrales y un Instant Win garantizado en el nivel máximo; Level Lock durante Free Spins puede conservar el nivel alcanzado para un bono futuro."
+    ],
+    "editorial":"Cursed Moon Power Collection se organiza en torno a tres capas conectadas: recogida, un Soul Fire Multiplier persistente y progreso de cinco niveles. En el momento de la revisión, la página oficial de Play’n GO no había revelado los detalles exactos de activación de Free Spins, por lo que Slotfolio no proporciona una cantidad inventada de Scatters o giros.",
+    "features":[
+      {"title":"Slay Collector","description":"Un recolector de un rodillo exterior recoge monedas y símbolos Instant Win visibles."},
+      {"title":"Soul Fire Multiplier","description":"Un símbolo del quinto rodillo aumenta en uno el multiplicador de recogida persistente sin afectar a los premios normales por formas de ganar."},
+      {"title":"Level Up","description":"El progreso de cinco etapas añade dobles recogidas, símbolos monetarios apilados e Instant Win; Level Lock puede conservar el nivel."}
+    ]
+  },
+  "wazdan-fruits-go-bananas": {
+    "intro":[
+      "Fruits Go Bananas lleva cinco rodillos y cinco líneas fijas a la cubierta de un crucero, donde una piña sustituye símbolos y duplica premios.",
+      "El plátano Scatter se ocupa de Free Spins: tres plátanos conceden 10 giros, cuatro conceden 20 y cinco conceden 30. Junto al Wild de piña normal, el juego incluye Random Wilds."
+    ],
+    "editorial":"La piña x2 no debe confundirse con el máximo global de 850x: la primera solo duplica una combinación en la que participa y el segundo corresponde a todo el juego.",
+    "features":[
+      {"title":"Piña Wild x2","description":"Sustituye a los símbolos normales excepto Scatters y duplica una combinación ganadora en la que participa."},
+      {"title":"Plátanos para 10, 20 y 30 giros","description":"Tres, cuatro o cinco Scatters en cualquier lugar activan 10, 20 o 30 giros gratis, respectivamente."},
+      {"title":"Random Wilds","description":"Los símbolos Wild aleatorios pueden añadirse al tablero de forma independiente del Wild de piña normal."}
+    ]
+  },
+  "3-oaks-gaming-sun-of-egypt-4": {
+    "intro":[
+      "Seis símbolos Bonus, Jackpot o Mystery activan Hold & Win con tres regiros.",
+      "Boost recoge valores Bonus Symbol y puede multiplicarlos y Sun Meter abre otra vía para entrar en el bono."
+    ],
+    "editorial":"Sun of Egypt 4 conecta Hold & Win con Boost y Bonus Accum: el bono puede activarse directamente mediante símbolos o llenando el medidor.",
+    "features":[
+      {"title":"Boost x3–x5","description":"Boost Symbol recoge los valores Sun Bonus Symbol visibles y puede multiplicarlos por x3, x4 o x5. Esta función distingue la cuarta entrega de las anteriores."},
+      {"title":"Hold & Win y Mystery","description":"Seis símbolos Bonus, Jackpot o Mystery conceden tres regiros con restablecimiento del contador. Mystery puede convertirse en Bonus, Boost, Super o uno de los Jackpot Symbols fijos."},
+      {"title":"Bonus Accum y Free Spins","description":"Cada Sun Symbol llena Sun Meter para una entrada adicional a Hold & Win. Los símbolos Bonus y Boost aparecen con más frecuencia durante Free Spins y el medidor permanece activo."}
+    ]
+  },
+  "hacksaw-gaming-rise-of-ymir": {
+    "intro":[
+      "Ymir actúa como un Wild Multiplier fijo: al aparecer recibe un multiplicador, permanece en su sitio y activa un regiro. Los Ymir nuevos prolongan la cadena y cuatro Ymir en un rodillo se combinan en un Giant Ymir con la suma de sus valores.",
+      "Megamultiplier suma los valores de todos los Ymir del tablero en un multiplicador global y él mismo activa un regiro; los Ymir nuevos durante los regiros posteriores aumentan ese valor global."
+    ],
+    "editorial":"Rise of Ymir organiza su progreso principal en torno a multiplicadores Ymir fijos: cada símbolo nuevo prolonga la secuencia de regiros y puede reforzar el Megamultiplier global. En Fury of Ymir, el multiplicador global activado persiste entre giros de bono.",
+    "features":[
+      {"title":"Sticky Ymir y Giant Ymir","description":"Un Ymir Wild Multiplier queda fijo en su posición y activa un Respin. Los Ymir nuevos prolongan la cadena y cuatro Ymir en un rodillo se combinan en un Giant Ymir que suma sus multiplicadores."},
+      {"title":"Megamultiplier de todos los Ymir","description":"El símbolo Megamultiplier recoge los valores de todos los Ymir existentes en el tablero en un multiplicador global y activa un nuevo Respin. Los Ymir posteriores pueden aumentar aún más el valor recogido."},
+      {"title":"Ymir’s Conquest y Fury of Ymir","description":"En los bonos, Ymir aparece con más frecuencia y prolonga Sticky Respins; Fury of Ymir conserva el Megamultiplier global activado entre los giros individuales de bono, en lugar de reiniciarlo después de cada uno."}
+    ]
+  },
+  "playn-go-dansband-pa-turne": {
+    "intro":[
+      "Los Full Reel Wilds siempre ocupan un rodillo entero. Además, cada giro normal recibe su propio multiplicador de premios aleatorio, por lo que el multiplicador cambia de giro a giro incluso antes del bono.",
+      "Un conjunto de símbolos Scatter especiales de gira activa Progressive Free Spins y concede aleatoriamente de 5 a 15 giros. El multiplicador del giro base que activa el bono se traslada a él y después sigue aumentando progresivamente durante Free Spins."
+    ],
+    "editorial":"Dansband På Turné utiliza un progreso breve pero claro: el giro base fija aleatoriamente el multiplicador inicial y Free Spins sigue aumentándolo en lugar de reiniciarlo. Los Full Reel Wilds funcionan igual durante todo el juego y no necesitan una activación de función independiente.",
+    "features":[
+      {"title":"Full Reel Wild","description":"Wild ocupa un rodillo entero, no una única posición."},
+      {"title":"Multiplicador base aleatorio","description":"Cada giro normal recibe un multiplicador de premios aleatorio independiente."},
+      {"title":"Progressive Free Spins","description":"Los Tour Scatters conceden 5–15 giros aleatorios: el multiplicador del giro que los activa se traslada al bono y después aumenta."}
+    ]
+  },
+  "wazdan-gem-splitter": {
+    "intro":[
+      "Gem Splitter utiliza cinco rodillos y 243 formas de ganar; el símbolo Splitter puede dividir un símbolo seleccionado y reorganizar la combinación dentro del mismo giro.",
+      "El proveedor destaca cinco resultados de división posibles, junto con Scatter, Free Spins, Wild y Buy Feature. «Cinco formas de dividir» no debe tratarse como la cantidad de formas de ganar."
+    ],
+    "editorial":"El elemento distintivo no son simplemente 243 formas de ganar, sino un Symbol Splitter aleatorio con cinco resultados. El máximo declarado de 9000x corresponde a todo el juego, no a la división de un único símbolo.",
+    "features":[
+      {"title":"Symbol Splitter con cinco resultados","description":"Durante un giro, un símbolo aleatorio se divide según uno de cinco escenarios y modifica las combinaciones disponibles."},
+      {"title":"243 vías de pago","description":"Las combinaciones pagan en 243 formas sin un conjunto fijo de líneas tradicionales."},
+      {"title":"Free Spins y Buy Feature","description":"Los giros gratis están disponibles mediante la activación Scatter del juego; Wazdan también enumera por separado una opción de compra de bono."}
+    ]
+  },
+  "3-oaks-gaming-sun-of-egypt-5": {
+    "intro":[
+      "Seis símbolos Bonus y/o Power activan Hold & Win.",
+      "Power Symbol activa Jackpot, Boost o Multi y la recogida de símbolos abre gradualmente filas adicionales."
+    ],
+    "editorial":"La mecánica clave de la quinta entrega es Power Symbol: modifica posiciones individuales del bono y funciona junto con la ampliación del tablero.",
+    "features":[
+      {"title":"Power: Jackpot, Boost y Multi","description":"Un Power Symbol en Hold & Win puede asignar un Jackpot, aumentar valores de monedas o añadir un Multiplier de hasta x10 a varios símbolos a la vez. Es una nueva capa de la quinta entrega."},
+      {"title":"Ampliación de hasta tres filas","description":"Seis Bonus o Power Suns activan Hold & Win. Recoger símbolos abre hasta tres filas adicionales; llenar el tablero ampliado puede conceder el Royal Jackpot de x5000."},
+      {"title":"Sun Meter y Free Spins","description":"Un Sun Meter completo activa Bonus Game con un Power Symbol garantizado. Free Spins conserva símbolos de premio alto y los símbolos Bonus y Power aparecen con más frecuencia."}
+    ]
+  },
+  "hacksaw-gaming-ronin-stackways": {
+    "intro":[
+      "Los símbolos Stackways Normal y Revealing llenan su rodillo con 2–10 símbolos iguales si esa expansión crea un premio. Normal produce pilas de 2–4 y Revealing Stackways produce 5–10 símbolos.",
+      "Stack Spins concede 10 giros gratis con mayor probabilidad de Stackways y Super Stack Spins solo permite Revealing Stackways, aumentando el tamaño mínimo de las pilas creadas."
+    ],
+    "editorial":"Ronin Stackways cambia la altura de las pilas ganadoras durante el giro: la mecánica solo se activa cuando la expansión crea realmente una combinación, por lo que Stackways no solo añade símbolos, sino que selecciona el premio más largo disponible.",
+    "features":[
+      {"title":"Normal Stackways y revelación de símbolos","description":"Normal Stackways revela una pila de dos a cuatro símbolos iguales que pagan en su rodillo, solo si esa expansión crea un premio. La altura cambia directamente la cantidad de combinaciones posibles."},
+      {"title":"Revealing Stackways aumenta la altura","description":"Revealing Stackways crea pilas más altas de cinco a diez símbolos. A diferencia de la versión normal, aumenta el mínimo de símbolos revelados, pero sigue requiriendo una combinación ganadora."},
+      {"title":"Stack Spins y Super Stack Spins","description":"Tres FS conceden Stack Spins con Stackways Symbols especiales más frecuentes. Cuatro FS activan Super Stack Spins, donde solo puede aparecer Revealing Stackways en los rodillos, con Normal excluido."}
+    ]
+  },
+  "playn-go-dawn-of-egypt": {
+    "intro":[
+      "Tres o más Pyramid Scatters activan Free Spins y después Wheel of God determina la cantidad de giros, hasta 15. En cada Free Spin, Ra selecciona aleatoriamente un símbolo de imagen y lo mejora temporalmente a uno más fuerte.",
+      "Durante Free Spins, Pyramid se convierte en Wild Pyramid. Dos o más Wild Pyramids activan Pyramid Spins: cada una revela una cantidad de giros, los valores se suman y los símbolos de imagen mejorados conservan su estado hasta que termina esta secuencia; 2+ Scatters pueden reactivar Pyramid Spins sin un límite estricto declarado."
+    ],
+    "editorial":"Dawn of Egypt utiliza un sistema de bono de dos etapas: primero Wheel of God fija los Free Spins normales y después Wild Pyramids puede llevar el juego a un modo Pyramid Spins más persistente, donde las mejoras de símbolos ya no se reinician después de cada giro.",
+    "features":[
+      {"title":"Wheel of God","description":"Tres o más Pyramid Scatters abren Free Spins; la rueda determina la cantidad, hasta 15."},
+      {"title":"Mejora de Ra","description":"En cada Free Spin, un símbolo de imagen seleccionado se sustituye temporalmente por uno de mayor premio."},
+      {"title":"Pyramid Spins","description":"Dos o más Wild Pyramids conceden una secuencia independiente en la que las mejoras de símbolos persisten hasta su final."}
+    ]
+  },
+  "wazdan-golden-sphinx": {
+    "intro":[
+      "Golden Sphinx se organiza en torno a veinte líneas y dos mejoras distintas: la esfinge Wild sustituye a los símbolos normales y duplica premios y el cofre Scatter abre giros gratis.",
+      "Para la ronda de bono, Wazdan describe 15 Free Spins con un multiplicador x3 en todos los premios; difiere del Wild x2 del juego base."
+    ],
+    "editorial":"Deben distinguirse los dos multiplicadores: el x2 de la esfinge se aplica al sustituir símbolos y x3 durante Free Spins. Ninguno sustituye al máximo global de 4650x.",
+    "features":[
+      {"title":"Esfinge Wild x2","description":"Cuando un Wild ayuda a formar una combinación ganadora, esa combinación paga el doble."},
+      {"title":"Cofre Scatter y 15 giros","description":"El cofre puede activar un bono de quince giros gratis."},
+      {"title":"Multiplicador Free Spins x3","description":"Todas las combinaciones ganadoras se triplican durante los giros de bono."}
+    ]
+  },
+  "3-oaks-gaming-sunlight-princess": {
+    "intro":[
+      "Seis Bonus Symbols activan Hold & Win con tres regiros y símbolos fijos.",
+      "Un Mystery Symbol puede convertirse en un bote o un Super Symbol y un Sun Meter completo también activa Hold & Win."
+    ],
+    "editorial":"Sunlight Princess ofrece dos vías para entrar en su bono principal: una combinación Bonus Symbol o un Sun Meter completo.",
+    "features":[
+      {"title":"Hold & Win con seis Suns","description":"Seis Bonus Suns inician Hold & Win con tres regiros. Los nuevos símbolos quedan fijos y restablecen el contador y Mystery puede revelar un bote o un Super Symbol."},
+      {"title":"Sun Meter y Super Bonus","description":"Llenar Sun Meter proporciona una entrada alternativa a Hold & Win. Un Super Symbol puede llevar el juego a Super Bonus, donde aumentan los valores de los símbolos de premio."},
+      {"title":"Free Spins y bonos distintos","description":"Tres Temple Scatters abren Free Spins independientes; no es Hold & Win. El modo incluye símbolos Wild de premio y los nuevos Scatters pueden añadir giros."}
+    ]
+  },
+  "hacksaw-gaming-rusty-and-curly": {
+    "intro":[
+      "Los Wild Posters pueden tener hasta tres Hearts y su propio multiplicador. Mientras queda al menos un Heart, un Poster permanece en el tablero y activa un regiro; se pierde un Heart después de cada regiro.",
+      "En Who Shot the Sheriff?, el bono se divide en fases Collect y Payout: Rusty y Curly se expanden en Wild Reels fijos, disparan multiplicadores y trasladan el valor recogido a tres giros de pago posteriores."
+    ],
+    "editorial":"Rusty & Curly utiliza Hearts como duración de un Wild Poster: más corazones mantienen el símbolo en su posición más tiempo y proporcionan regiros. El bono superior cambia la mecánica a ciclos de recogida y pago con Wild Reels fijos.",
+    "features":[
+      {"title":"Wild Posters con Hearts","description":"Un Wild Poster mantiene un multiplicador y hasta tres Hearts. Mientras quedan corazones, conserva su casilla y activa otro Respin; cada repetición consume un Heart y acerca gradualmente el final de la secuencia."},
+      {"title":"Rusty y Curly crean Wild Reels","description":"En el bono Who Shot the Sheriff?, Rusty y Curly se expanden en rodillos Wild fijos. Disparan símbolos multiplicadores, que se recogen en los rodillos correspondientes."},
+      {"title":"Ciclos Collect y Payout","description":"El bono tiene una fase Collect independiente que acumula multiplicadores de rodillo y una fase Payout que los utiliza en tres giros ganadores posteriores. Difiere de la mecánica Hearts del Wild Poster base."}
+    ]
+  },
+  "playn-go-rise-of-olympus-100": {
+    "intro":[
+      "Rise of Olympus 100 es una tragamonedas por grupos independiente de Play’n GO en un tablero de 5×5. Las combinaciones ganadoras de tres o más símbolos iguales desaparecen en cascadas y Hand of God puede activarse aleatoriamente en un giro sin premio.",
+      "Los premios con símbolos de dioses llenan un medidor y activan Wrath of Olympus. Vaciar todo el tablero en este modo abre Free Spins; el bono permite hasta 100 giros y un multiplicador de hasta x100."
+    ],
+    "editorial":"Los poderes de Hades, Poseidon y Zeus cumplen aquí funciones distintas. Hand of God no se activa al llenar el medidor: es un efecto aleatorio en un turno sin premio. El medidor activa Wrath of Olympus y la recompensa Clear the Grid independiente se calcula como 50 apuestas con el multiplicador actual aplicado, no añadiendo x50 al multiplicador.",
+    "features":[
+      {"title":"Tablero de 5×5 y premios en cascada","description":"Tres o más símbolos iguales forman una combinación ganadora en vertical u horizontal. Los símbolos ganadores desaparecen, otros nuevos caen desde arriba y una única apuesta de pago puede producir varias cascadas sucesivas."},
+      {"title":"Hand of God y poderes de tres dioses","description":"Hand of God aleatorio puede producirse en un giro sin premio. Hades transforma símbolos aleatorios en un único tipo; Poseidon añade Wilds; Zeus elimina dos tipos de símbolos de premio bajo y los sustituye. El dios activo cambia durante el juego."},
+      {"title":"Wrath of Olympus y Free Spins","description":"Los premios con símbolos de dioses cargan el medidor para Wrath of Olympus: los tres poderes se aplican en este modo y vaciar todo el tablero puede abrir Free Spins. Según el dios elegido, el bono comienza con cuatro, cinco u ocho giros; pueden obtenerse giros adicionales, hasta 100 en total."},
+      {"title":"Clear the Grid y multiplicador de bono","description":"Vaciar el tablero normal concede un premio independiente de 50 apuestas multiplicadas por el multiplicador actual; no añade x50 al medidor. Durante Free Spins, el multiplicador aumenta según las reglas del bono y se limita a x100."}
+    ]
+  },
+  "wazdan-good-luck-40": {
+    "intro":[
+      "Good Luck 40 destaca por cuarenta líneas en cinco rodillos y símbolos de Oriente Medio, con Wilds y Scatters que acompañan las combinaciones normales.",
+      "La página oficial enumera Free Spins y Risk Game por separado, pero el proveedor no declara la cantidad exacta de giros gratis en su descripción actual."
+    ],
+    "editorial":"La tragamonedas tiene volatilidad baja junto con un premio máximo declarado de 2000x. No debe inventarse una cantidad de Free Spins: Wazdan confirma el modo, pero no su duración.",
+    "features":[
+      {"title":"Cuarenta líneas","description":"El juego base utiliza 5 rodillos y 40 líneas activas, no 40 formas de ganar sin líneas."},
+      {"title":"Wild y Scatter","description":"Wild ayuda a formar pagos por líneas y Scatter participa en activar el modo de bono."},
+      {"title":"Free Spins y Gamble","description":"El proveedor confirma giros gratis y una ronda de riesgo posterior al pago independiente sin especificar la cantidad de giros."}
+    ]
+  },
+  "3-oaks-gaming-super-china-pots": {
+    "intro":[
+      "Los Coin Symbols verdes, rojos y morados llenan Pot Metres y activan Bonus Game.",
+      "Las Pots activadas habilitan Boost, Double y Multi y White Pot abre Super Bonus."
+    ],
+    "editorial":"Super China Pots se centra en la combinación de Pot Features: el bono cambia según los medidores de colores llenos y White Pot refuerza el modo.",
+    "features":[
+      {"title":"Pot Metres","description":"Los Coin Symbols de colores llenan medidores y abren Hold & Win con funciones Boost, Double y Multi. Distintos medidores activados permiten combinar varios efectos."},
+      {"title":"Boost, Double y Multi","description":"Boost aumenta valores aleatorios hasta x10 y puede mejorar un nivel de bote, Double abre un segundo tablero de bono y Multi añade multiplicadores a Bonus Symbols."},
+      {"title":"White Pot y Super Bonus","description":"La nueva White Pot lleva el juego a Super Bonus, con valores mayores y hasta tres funciones activas. Esto pertenece a Super China Pots, no al 3 China Pots original."}
+    ]
+  },
+  "hacksaw-gaming-sand-and-ashes": {
+    "intro":[
+      "Un Wild Scarab Multiplier activa un regiro al aparecer, permanece en el tablero y aplica su multiplicador a cada línea en la que participa. Los Scarabs nuevos continúan la secuencia de regiros.",
+      "Durante los regiros, Sandstorm desplaza todos los símbolos un rodillo a la izquierda y Firestorm aumenta el multiplicador de cada Wild Scarab del tablero."
+    ],
+    "editorial":"Sand and Ashes organiza su cadena en torno al movimiento de Wild Scarabs existentes: Sandstorm cambia su posición respecto a las líneas y Firestorm aumenta sus valores. En Storming Sphinx, los Scarabs se vuelven persistentes durante todo el bono.",
+    "features":[
+      {"title":"Wild Scarab y Sticky Respins","description":"Un Wild Scarab actúa como multiplicador en las líneas donde participa y permanece en su sitio para un regiro. Los Scarabs nuevos prolongan la cadena y permiten acumular varias posiciones mejoradas."},
+      {"title":"Sandstorm frente a Firestorm","description":"Sandstorm desplaza los símbolos un rodillo a la izquierda y cambia las posiciones Wild Scarab respecto a las líneas ganadoras. En lugar de mover símbolos, Firestorm aumenta los multiplicadores de todos los Scarabs del tablero."},
+      {"title":"Storming Sphinx y Scarabs persistentes","description":"En el bono Storming Sphinx, los Wild Scarabs pueden permanecer en su sitio durante todo el conjunto de Free Spins, de modo que sus multiplicadores y posiciones se trasladan entre giros y no duran solo una secuencia Respin."}
+    ]
+  },
+  "playn-go-demon": {
+    "intro":[
+      "Wild Mask solo aparece en el rodillo 3. Si Mask cae en la posición central, todos los símbolos Dave Hill de los rodillos se convierten en Wilds; Wild Amulet aparece en los rodillos 1 y 5.",
+      "Wild Amulets simultáneos en los rodillos 1 y 5 junto con Wild Mask en el rodillo 3 activan One Helluva Night. El bono concede 6 Free Spins y una Mask central eleva el inicio a 11; cada giro aplica aleatoriamente un multiplicador x2, x3, x5 o x8."
+    ],
+    "editorial":"Demon organiza el bono en torno a la geometría precisa de tres posiciones Wild. Dentro de One Helluva Night, dos Wild Amulets pueden abrir la función anidada Depths of Hell, donde el multiplicador activo se mantiene durante toda la secuencia anidada y puede duplicarse con una Mask central.",
+    "features":[
+      {"title":"Wild Mask y Dave Hill","description":"Mask solo aparece en el rodillo 3. Si cae en el centro, los símbolos Dave Hill de otros rodillos se convierten en Wilds y pueden crear nuevas líneas ganadoras."},
+      {"title":"One Helluva Night","description":"Los Amulet Wilds de los rodillos 1 y 5 junto con una Mask en el tercero activan seis Free Spins u once con una Mask central. Cada giro de bono recibe un multiplicador aleatorio x2, x3, x5 o x8."},
+      {"title":"Depths of Hell","description":"Dos Amulets en One Helluva Night abren Free Spins anidados que conservan el multiplicador actual. Una Mask adicional puede prolongar la secuencia y una Mask central puede duplicar el multiplicador una vez."}
+    ]
+  },
+  "wazdan-great-book-of-magic": {
+    "intro":[
+      "Great Book of Magic combina veinte líneas con un libro Scatter que activa Free Spins y revela un símbolo expansivo especial para los giros de bono.",
+      "Expanding Bonus Symbol se selecciona antes de la ronda, por lo que esta mecánica difiere de un Wild permanente en todos los giros normales."
+    ],
+    "editorial":"El libro importa más allá de su función Scatter: proporciona la transición a una ronda con un símbolo especial expansivo. La ficha del juego original enumera un máximo de 5150x.",
+    "features":[
+      {"title":"Libro Scatter","description":"El símbolo especial abre giros gratis; Wazdan también enumera Scatter por separado."},
+      {"title":"Selección de Expanding Bonus Symbol","description":"Antes de los giros se selecciona un símbolo que puede expandirse por un rodillo durante el bono."},
+      {"title":"Cinco rodillos y veinte líneas","description":"Los pagos base discurren por 20 líneas, por lo que la expansión del bono no debe confundirse con la cantidad de líneas."}
+    ]
+  }
+}
