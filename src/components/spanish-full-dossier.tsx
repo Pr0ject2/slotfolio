@@ -51,7 +51,7 @@ export function SpanishFullDossier({ game }: { game: Slot }) {
     <nav aria-label="Ruta de navegación" className="breadcrumbs"><Link href="/es">Inicio</Link> / <Link href="/es/slots">Catálogo</Link> / <span aria-current="page">{game.name}</span></nav>
     <div className="slot-heading"><div><span className="eyebrow accent">Guía del juego / {game.year}</span><h1>{game.name}</h1>
       <p>{game.provider}{copy.attributionNote ? " · atribución registrada" : ""}</p>
-      <Link className="text-link" href={`/en/providers/${providerSlug(game.provider)}`} lang="en">Perfil del proveedor (en inglés) ↗</Link>
+      <Link className="text-link" href={`/es/providers/${providerSlug(game.provider)}`}>Perfil del proveedor ↗</Link>
     </div></div>
     <div className="slot-intro">
       <figure className="slot-figure"><SlotArtwork className="game-image" src={withBasePath(game.featureImage || game.image)} alt={`Imagen de ${game.name}`} width={900} height={560} loading="eager" fetchPriority="high" /><figcaption>Imagen del juego · {game.provider} · {game.name}</figcaption></figure>

@@ -15,6 +15,8 @@ export function SpanishFooter() {
           <Link href="/es/journal/understanding-rtp">Qué significa el RTP</Link>
           <Link href="/es/slots">Catálogo de juegos</Link>
           <Link href="/es/search">Buscar juegos</Link>
+          <Link href="/es/providers">Proveedores</Link>
+          <Link href="/es/mechanics">Mecánicas</Link>
         </div>
         <div>
           <span className="eyebrow">Acerca de Slotfolio</span>

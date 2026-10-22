@@ -1,0 +1,132 @@
+{
+  "pragmatic-play": {
+    "catalogSummary": "Pay Anywhere, grupos y bonus sobre líneas de pago: los juegos seleccionados de Pragmatic Play muestran varias generaciones y enfoques.",
+    "profileIntro": "Slotfolio incluye las familias Gates of Olympus, Sweet Bonanza y Sugar Rush junto a títulos más recientes como Bear Crazy, The Big Dog House y Fury of Anubis.",
+    "profileBody": "Gates of Olympus y Fury of Anubis construyen las rondas con símbolos iguales en cualquier posición, cascadas y multiplicadores crecientes. Sugar Rush y Fruit Party se centran en la geometría de los grupos. The Dog House, The Big Dog House y Bear Crazy utilizan líneas de pago fijas, pero difieren en sus reglas de comodines y giros gratis. Big Bass Bonanza centra su bonus en recoger valores. Usa este perfil para orientarte por la selección; compartir un logotipo no implica compartir el mismo modelo matemático.",
+    "signoff": "Compara la regla de pago, la configuración de RTP y el bonus de cada juego, en lugar de guiarte por el nombre del proveedor.",
+    "readingTitle": "Empieza por la regla de pago",
+    "readingText": "Pon Gates of Olympus junto a Sugar Rush. En el primero, los símbolos iguales pueden aparecer en posiciones distintas; en el segundo, deben formar un grupo conectado. Compara después los multiplicadores: cascadas parecidas pueden ocultar reglas de tablero diferentes."
+  },
+  "play-n-go": {
+    "catalogSummary": "Líneas de pago, un tablero compacto de 3 × 3 y juegos por grupos: distintas formas de estructurar una ronda en Play’n GO.",
+    "profileIntro": "Book of Dead, Legacy of Dead y Fire Joker utilizan rodillos más tradicionales, mientras que Reactoonz y Rise of Olympus exigen leer todo el tablero.",
+    "profileBody": "Los juegos de líneas de pago se centran en símbolos expansivos, comodines y regiros. Reactoonz y Rise of Olympus construyen sus rondas con grupos de símbolos, su retirada del tablero y funciones acumulativas. Por eso, los juegos de un mismo estudio pueden funcionar de forma muy distinta.",
+    "signoff": "Un estudio puede trabajar tanto con rodillos tradicionales como con mecánicas de tablero. Comprueba las reglas de cada juego.",
+    "readingTitle": "De cada rodillo al tablero completo",
+    "readingText": "Book of Dead y Reactoonz difieren en algo más que el tamaño del tablero. En Book of Dead, distingue la base de líneas de pago del símbolo expansivo del bonus. En Reactoonz, sigue los grupos y las funciones acumuladas. Fire Joker ofrece otra referencia: un tablero compacto también puede incluir regiros."
+  },
+  "push-gaming": {
+    "catalogSummary": "Grandes tableros de grupos y juegos de líneas con funciones acumulativas, explicados a través de títulos concretos de Push Gaming.",
+    "profileIntro": "Jammin’ Jars y Retro Tapes desarrollan mecánicas de grupos, mientras que Razor Shark y Fat Rabbit añaden funciones sobre líneas de pago normales.",
+    "profileBody": "Jammin’ Jars utiliza un tablero cuadrado de 8 × 8 con comodines móviles; Retro Tapes lleva Cluster Links a 9 × 6. Razor Shark utiliza veinte líneas de pago y pilas de símbolos misteriosos, mientras que Fat Rabbit tiene cincuenta líneas y un medidor de recogida. Su punto en común suele ser el estado cambiante de las funciones, más que el sistema de pago de base.",
+    "signoff": "Identifica cómo se forman los premios y sigue después qué función conserva su estado entre eventos.",
+    "readingTitle": "¿Qué queda después de un premio?",
+    "readingText": "Sigue los comodines móviles y sus multiplicadores en Jammin’ Jars, y los enlaces y la función magnética en Retro Tapes. Compara cómo cambia el tablero. En Razor Shark, un juego de líneas de pago, los símbolos misteriosos requieren atención aparte: su aspecto no revela su función final."
+  },
+  "hacksaw-gaming": {
+    "catalogSummary": "Líneas, grupos, desplazamientos y comodines multiplicadores: distintas estructuras de ronda en la selección de Hacksaw Gaming.",
+    "profileIntro": "Wanted Dead or a Wild, Chaos Crew, RIP City, Dork Unit y Nitro Nights se acercan más a las líneas de pago. Hand of Anubis y Le Bandit exigen seguir todo el tablero y su estado.",
+    "profileBody": "Wanted y Chaos Crew añaden comodines multiplicadores y varios escenarios de bonus a líneas de pago fijas. RIP City utiliza un Wild Cat expansivo y Dork Unit tiene Gift Boxes fijas y un Dork Reel independiente. Nitro Nights añade cadenas de desplazamientos y multiplicadores de posición. Hand of Anubis combina cascadas, grupos y Soul Orbs; Le Bandit desarrolla posiciones doradas. Un estilo visual reconocible no implica las mismas reglas de pago ni volatilidad.",
+    "signoff": "Identifica qué forma un premio y qué estado se conserva entre eventos antes de comparar efectos y bonus.",
+    "readingTitle": "Separa el comodín de la posición",
+    "readingText": "Wanted construye sus rondas con comodines especiales y escenarios de bonus. En Le Bandit, el historial de las posiciones doradas importa por separado de los símbolos actuales. Esta pareja muestra la diferencia entre modificar un símbolo y conservar el estado de una posición."
+  },
+  "nolimit-city": {
+    "catalogSummary": "Tableros dinámicos: cómo xWays, xNudge y la apertura de filas cambian las rondas en los juegos de Nolimit City.",
+    "profileIntro": "San Quentin xWays, Fire in the Hole, Deadwood y Mental son ejemplos en los que una descripción estática del tablero no basta.",
+    "profileBody": "Deadwood muestra xNudge en un tablero relativamente sencillo. San Quentin añade xWays y posiciones divididas; Fire in the Hole abre nuevas filas. Mental combina varias mecánicas x en un tablero desigual. Sigue cómo cambia la estructura entre eventos.",
+    "signoff": "En un tablero dinámico, preguntar cómo cambian las posiciones suele ser más útil que recordar una única cifra de líneas o vías.",
+    "readingTitle": "Describe el tablero mientras cambia",
+    "readingText": "Compara San Quentin xWays y Fire in the Hole: dividir posiciones y abrir filas son cambios geométricos distintos. Mira después el tablero inicial desigual de Mental. La palabra ways no explica el orden en que se activan las funciones."
+  },
+  "netent": {
+    "catalogSummary": "Las líneas de Starburst, las cascadas de Gonzo’s Quest y los escenarios de bonus de Dead or Alive 2 en la selección de Slotfolio.",
+    "profileIntro": "Estos juegos de NetEnt muestran enfoques distintos, desde una sola función de comodín hasta secuencias de cascadas y varios modos de giros gratis.",
+    "profileBody": "Starburst mantiene una base de tablero relativamente sencilla y se centra en un comodín expansivo. Gonzo’s Quest convierte Avalanche en la principal continuación de la ronda. Dead or Alive 2 vuelve a nueve líneas de pago, pero añade la elección entre tres escenarios de bonus.",
+    "signoff": "Una base sencilla facilita identificar la función concreta que cambia una ronda.",
+    "readingTitle": "¿Qué activa el siguiente evento?",
+    "readingText": "En Starburst, un comodín expansivo activa un regiro. Gonzo’s Quest continúa mediante Avalanche y símbolos de sustitución después de un premio. Compara por qué se vuelve a comprobar el tablero, en lugar de fijarte solo en sus dimensiones similares de 5 × 3. Dead or Alive 2 también muestra la importancia de elegir el escenario de bonus."
+  },
+  "relax-gaming": {
+    "catalogSummary": "Money Train 2, Snake Arena y Book of 99: bases de líneas de pago con sistemas de bonus distintos.",
+    "profileIntro": "Money Train 2, Snake Arena y Book of 99 parten de líneas conocidas, pero convierten el bonus en un sistema independiente con su propio estado.",
+    "profileBody": "Money Train 2 pasa a personajes especiales y valores, Snake Arena convierte el tablero en una persecución y Book of 99 se acerca más al bonus de símbolos expansivos. Compáralos para ver cómo funciones distintas pueden situarse sobre un mismo principio de pago básico.",
+    "signoff": "Compartir líneas de pago no hace que los juegos se parezcan cuando sus bonus funcionan de forma distinta.",
+    "readingTitle": "Lee el bonus por separado de la base",
+    "readingText": "Money Train 2 utiliza valores y personajes en un sistema de bonus independiente. Book of 99 utiliza libros recogidos como activador adicional de giros gratis. Compara la relación entre progreso y premio, aunque ambos juegos tengan una base de líneas de pago."
+  },
+  "endorphina": {
+    "catalogSummary": "De juegos de frutas compactos de 3 × 3 a Hold and Win, pagos scatter y cascadas: distintas estructuras de ronda de Endorphina.",
+    "profileIntro": "Hell Hot, Lucky Streak y los primeros Hit Slot ofrecen una referencia de líneas de pago. Burning Coins, Crown Coins y 2026 Hit Slot añaden bonus acumulativos, mientras que Prestige Crown y Dia De Los Muertos 2 utilizan cascadas.",
+    "profileBody": "Hell Hot 40, Ultra Fresh, 2021 Hit Slot y Lucky Streak 3 pueden leerse en gran medida mediante el tablero y la tabla de líneas de pago. 2023 Hit Slot y 81 Burning Ways sustituyen las líneas por vías. Burning Coins 20/40, Crown Coins y 2026 Hit Slot concentran más complejidad en la recogida de valores, Hold and Win y los botes. Prestige Crown y Dia De Los Muertos 2 utilizan pagos scatter y cascadas. El logotipo del proveedor no sustituye las reglas de un juego concreto.",
+    "signoff": "Compara la estructura de la ronda: un tablero de aspecto tradicional puede sostener un sistema de bonus más complejo.",
+    "readingTitle": "De las líneas al estado del bonus",
+    "readingText": "Compara Hell Hot 100 y 3 Coin Towers. El primero se explica sobre todo por líneas de pago fijas, comodines y un Risk Game independiente. En el segundo, las monedas recogidas conducen hacia uno de tres modos de bonus. Una base de líneas conocida puede sostener capas de funciones distintas."
+  },
+  "bgaming": {
+    "catalogSummary": "Gemhalla y House of Sins utilizan tableros distintos: Pay Anywhere y grandes cascadas por grupos.",
+    "profileIntro": "Las guías seleccionadas de BGaming contrastan las reglas Pay Anywhere de Gemhalla con el tablero de grupos de 6 × 8 de House of Sins.",
+    "profileBody": "Gemhalla construye su secuencia con rodillos que se rellenan y símbolos multiplicadores. House of Sins combina grupos, cascadas y multiplicadores crecientes. La pareja permite contrastar formas distintas de calcular un premio.",
+    "signoff": "Identifica primero la regla de pago y compara después los multiplicadores acumulados y los estados del bonus."
+  },
+  "3-oaks-gaming": {
+    "catalogSummary": "Variantes de Hold & Win sobre una base de líneas, desde un tablero compacto de 3 × 3 hasta tableros de bonus expansivos y varios medidores de botes.",
+    "profileIntro": "Scarab Temple y Jungle Volcano ofrecen una referencia inicial. 777 Coins, 3 Hot Chillies y Egypt Fire añaden tres formas más de desarrollar el estado de un bonus Hold & Win.",
+    "profileBody": "777 Coins utiliza un símbolo Collect central en un tablero de 3 × 3 y se centra en recoger valores. 3 Hot Chillies utiliza tres medidores de progreso y modificadores: multiplicadores, un regiro extra y un segundo tablero. Egypt Fire empieza con 5 × 4 / 20 líneas, pero abre filas adicionales y medidores de botes independientes dentro de Hold & Win. Scarab Temple y Jungle Volcano ofrecen otras combinaciones de posiciones fijas, regiros y expansión del tablero.",
+    "signoff": "Compara qué se conserva entre regiros: posiciones, valores, medidores de progreso, filas o tableros adicionales."
+  },
+  "wazdan": {
+    "catalogSummary": "Mighty Hot Amazonia combina un tablero tradicional con funciones que llenan rodillos y volatilidad configurable.",
+    "profileIntro": "El juego destacado de Wazdan ilustra una geometría tradicional con ajustes configurables. Explora más juegos de Wazdan en el catálogo.",
+    "profileBody": "Wall of Symbols y Fortune Wheel añaden eventos sobre el tablero normal de 5 × 3. Volatility Levels cambia el perfil de pagos; lee la categoría de volatilidad junto al ajuste seleccionado.",
+    "signoff": "Si la volatilidad es configurable, registra el ajuste activo junto al RTP y las demás cifras."
+  },
+  "belatra-games": {
+    "catalogSummary": "Mummyland Treasures combina un tablero grande, cascadas, 823 543 vías y un bonus con multiplicador acumulativo.",
+    "profileIntro": "Mummyland Treasures es la guía seleccionada de Belatra Games. Combina pagos por vías con un tablero que cambia al desaparecer las piedras.",
+    "profileBody": "Las piedras del tablero de 7 × 7 desaparecen gradualmente, mientras que el bonus conserva los cambios del tablero y acumula un multiplicador. Craft Bonus también muestra cómo la entrada a una función puede formar parte de la estructura del juego.",
+    "signoff": "En un tablero grande, separa geometría, reglas de pago y estado del bonus. Una sola cifra no describe las tres cosas."
+  },
+  "yggdrasil-gaming": {
+    "catalogSummary": "Troy SuperWays amplía su tablero durante las cascadas y cambia el número de vías dentro de la ronda.",
+    "profileIntro": "Troy SuperWays es la guía seleccionada de Yggdrasil Gaming. Su número de vías crece a medida que se abre el tablero.",
+    "profileBody": "Fire Pot modifica posiciones vecinas, SuperWays amplía la geometría y Super Spins inicia el bonus con al menos 1 024 vías. Sigue la secuencia de cambios, no solo la cifra máxima de combinaciones.",
+    "signoff": "El número máximo de vías describe el límite de la geometría, no la probabilidad de obtener un premio."
+  },
+  "shady-lady": {
+    "catalogSummary": "Black Friday y Devil’s Finger utilizan dos bases distintas: líneas de pago fijas y vías expansivas.",
+    "profileIntro": "Shady Lady utiliza temas poco habituales, pero aquí la distinción útil está entre las mecánicas de Black Friday y Devil’s Finger.",
+    "profileBody": "Black Friday empieza con 30 líneas y desarrolla regiros alrededor de personajes. Devil’s Finger utiliza seis rodillos, vías y una estructura expansiva. Compartir una volatilidad alta no hace que sus rondas funcionen igual.",
+    "signoff": "Separa la regla de pago de la base y el estado del bonus, independientemente del tema."
+  },
+  "big-time-gaming": {
+    "catalogSummary": "La guía registrada de 1win Bonanza muestra Megaways variables y cascadas; la atribución del proveedor sigue sin verificarse.",
+    "profileIntro": "Este perfil agrupa 1win Bonanza, de la sección oficial 1win Only, bajo su atribución registrada a Big Time Gaming. La atribución todavía no se ha verificado en el catálogo en vivo.",
+    "profileBody": "Una disposición variable de rodillos forma hasta 117 649 vías. Las cascadas sustituyen símbolos y un multiplicador crece en Free Spins. Compara este tablero con ejemplos de vías fijas de Nolimit City. La mecánica Megaways por sí sola no verifica el proveedor del juego.",
+    "signoff": "El número de Megaways cambia entre giros y no es una probabilidad constante de ganar."
+  },
+  "clawbuster": {
+    "catalogSummary": "Una garra recurrente cambia valores, abre posiciones, recoge multiplicadores y acompaña distintos bonus Hold & Win.",
+    "profileIntro": "La selección incluye juegos Hold & Win de líneas como Zeus Claws, Panda Claw Jackpot y 3 Claws of Aztec Fire, junto a ClawBass Bonanza y Claw Bonanza: Gold Rush, que utilizan cascadas.",
+    "profileBody": "En Zeus Claws y Wolf Hunt, las monedas y los regiros conservan el estado del bonus. Panda Claw Jackpot lleva la recogida de premios a un rodillo horizontal independiente. 3 Claws of Aztec Fire reparte funciones entre Double, Mystery y Collect Claw. ClawBass Bonanza y Free Rush sustituyen las líneas por un tablero de cascadas de 6 × 5 y progreso mediante líneas de pesca. Una animación recurrente de garra no implica el mismo modelo matemático.",
+    "signoff": "Compara qué cambia la garra: una posición, un multiplicador, el número de regiros o el estado del tablero del bonus.",
+    "readingTitle": "¿Qué hace realmente la garra?",
+    "readingText": "Compara Zeus Claws y Claw Bonanza: Gold Rush. En el primero, la garra afecta a Hold & Win y a los valores de las monedas; en el segundo, a la secuencia de cascadas y a los multiplicadores. El mismo recurso visual lleva a un estado de ronda distinto."
+  },
+  "onlyplay": {
+    "catalogSummary": "Tableros de líneas con mini tragamonedas independientes, módulos de botes y tableros de recogida junto al juego principal.",
+    "profileIntro": "Hot And Spicy Jackpot y Caramelo Jackpot añaden una mini tragamonedas sobre los rodillos principales. Fruit Train Express utiliza Hold & Win, mientras que Coin Flynn conecta dos tableros independientes.",
+    "profileBody": "Hot And Spicy Jackpot utiliza Chilly Mini Slot como fuente de multiplicadores. Caramelo Jackpot desarrolla una idea similar con comodines fijos y un juego de botes independiente. Coin Flynn transfiere símbolos de moneda entre dos tableros y conserva el estado entre eventos. Fruit Train Express mantiene la acumulación dentro de Hold & Win, mientras que Wild West Girls ofrece una referencia de líneas más tradicional.",
+    "signoff": "Lee por separado el tablero principal y el módulo adicional: la mini tragamonedas, el campo de monedas o el bonus Hold & Win pueden tener sus propias reglas.",
+    "readingTitle": "Separa el tablero base del segundo módulo",
+    "readingText": "Hot And Spicy Jackpot utiliza una mini tragamonedas independiente para proporcionar un multiplicador. Coin Flynn enlaza dos tableros mediante la transferencia de monedas. Son formas distintas de conservar un estado sobre una base sencilla de líneas de pago."
+  },
+  "mancala-gaming": {
+    "catalogSummary": "Líneas, cascadas y bonus que conservan monedas, valores de botes y multiplicadores entre eventos.",
+    "profileIntro": "Coin Craze Jackpot, Mustang Rush y Power of Zeus desarrollan bonus de monedas y regiros. Caishen Gold añade cascadas, mientras que Midas: Hand of Fortune se acerca más a una base de líneas de pago.",
+    "profileBody": "Coin Craze Jackpot y Mustang Rush concentran la mayor complejidad en los regiros y los valores conservados. Power of Zeus combina Hold & Earn con comodines apilados multiplicadores. Caishen Gold: Infinity Dragon conserva veinte líneas de pago, pero las enlaza mediante cascadas. Money Booster es más compacto y paga por símbolos iguales en cualquier posición del tablero. Midas: Hand of Fortune ofrece una referencia de 5 × 3 / 40 líneas.",
+    "signoff": "Identifica la regla de pago de la base y comprueba después si el estado se conserva en un bonus de monedas, una cascada o giros gratis.",
+    "readingTitle": "Distintas continuaciones de una base de líneas",
+    "readingText": "Pon Power of Zeus junto a Caishen Gold: Infinity Dragon. El primero pasa de líneas de pago a Hold & Earn; el segundo continúa un premio con una cascada en el mismo tablero. Compara un estado de bonus independiente con la continuación de un solo giro."
+  }
+}

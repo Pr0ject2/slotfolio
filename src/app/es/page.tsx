@@ -21,26 +21,26 @@ export default function SpanishHome() {
       </div>
       <section className="front-lead">
         <article className="cover-story">
-          <Link href={`/en/slots/${featured.slug}`} hrefLang="en" className="cover-art" aria-label="Guía de Gates of Olympus (en inglés)">
+          <Link href={`/es/slots/${featured.slug}`} className="cover-art" aria-label="Guía de Gates of Olympus">
             <SlotArtwork className="game-image" src={withBasePath(featured.featureImage || featured.image)} alt="Imagen del juego Gates of Olympus" width={500} height={280} loading="eager" decoding="async" />
-            <span className="image-caption">GUÍA DEL JUEGO (EN INGLÉS) ↗</span>
+            <span className="image-caption">GUÍA DEL JUEGO ↗</span>
           </Link>
           <div className="cover-copy">
             <span className="eyebrow accent">Reglas del juego / Pragmatic Play</span>
-            <h1><Link href={`/en/slots/${featured.slug}`} hrefLang="en" aria-label="Gates of Olympus (en inglés)">Gates of Olympus</Link></h1>
+            <h1><Link href={`/es/slots/${featured.slug}`} aria-label="Gates of Olympus">Gates of Olympus</Link></h1>
             <p>Las cascadas y los multiplicadores pueden convertir una sola tirada en una secuencia de eventos. Explicamos sus reglas, sin pretender predecir el resultado de la próxima tirada.</p>
-            <Link className="text-link" href={`/en/slots/${featured.slug}`} hrefLang="en">Leer la guía (en inglés) ↗</Link>
+            <Link className="text-link" href={`/es/slots/${featured.slug}`}>Leer la guía ↗</Link>
           </div>
         </article>
         <aside className="front-aside">
           <article className="side-story">
-            <Link href={`/en/slots/${secondary.slug}`} hrefLang="en" aria-label="Guía de Reactoonz (en inglés)">
+            <Link href={`/es/slots/${secondary.slug}`} aria-label="Guía de Reactoonz">
               <SlotArtwork className="game-image" src={withBasePath(secondary.image)} alt="Imagen del juego Reactoonz" width={500} height={280} loading="lazy" decoding="async" />
             </Link>
             <span className="eyebrow accent">Otra forma de formar premios</span>
-            <h2><Link href={`/en/slots/${secondary.slug}`} hrefLang="en" aria-label="Reactoonz: más allá de las líneas (en inglés)">Reactoonz: más allá de las líneas</Link></h2>
+            <h2><Link href={`/es/slots/${secondary.slug}`} aria-label="Reactoonz: más allá de las líneas">Reactoonz: más allá de las líneas</Link></h2>
             <p>Reactoonz paga por grupos de símbolos vecinos, en lugar de combinaciones sobre líneas de pago tradicionales. Esta diferencia cambia la forma de leer el tablero.</p>
-            <Link className="text-link" href={`/en/slots/${secondary.slug}`} hrefLang="en">Leer la guía (en inglés) ↗</Link>
+            <Link className="text-link" href={`/es/slots/${secondary.slug}`}>Leer la guía ↗</Link>
           </article>
           <div className="reading-note">
             <span className="eyebrow">Antes de jugar</span>

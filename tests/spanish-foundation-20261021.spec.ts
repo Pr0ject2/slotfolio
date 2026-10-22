@@ -102,10 +102,10 @@ test("Spanish browser detection respects direct untranslated section links", asy
   await page.goto("/");
   await expect(page).toHaveURL(/\/es\/?$/);
   await page.evaluate(() => localStorage.setItem("slotfolio-language", "es"));
-  expect(hasTranslation("/providers/pragmatic-play", "es")).toBe(false);
-  await page.goto("/en/providers/pragmatic-play/");
-  await expect(page.locator("h1")).toHaveText("Pragmatic Play");
-  await expect(page).toHaveURL(/\/en\/providers\/pragmatic-play\/?$/);
+  expect(hasTranslation("/slots/gates-of-1win", "es")).toBe(false);
+  await page.goto("/en/slots/gates-of-1win/");
+  await expect(page.locator("h1")).toHaveText("Choose a game edition");
+  await expect(page).toHaveURL(/\/en\/slots\/gates-of-1win\/?$/);
   await expect(page.locator('link[hreflang="es"]')).toHaveCount(0);
   await expect(page.getByRole("link", { name: "ES", exact: true })).toHaveAttribute("href", /\/es\/?$/);
   await page.goto("/en/slots/gates-of-olympus/");
