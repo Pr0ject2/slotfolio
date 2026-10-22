@@ -1,0 +1,115 @@
+{
+  "san-quentin-xways": {
+    "description": "Un tablero base de 5 × 3 se complementa con posiciones de mejora, símbolos divididos y xWays. El número de rutas posibles puede aumentar bruscamente dentro de un giro.",
+    "feature": "xWays revela una pila de símbolos iguales, mientras las mecánicas de división separan posiciones y aumentan el número de combinaciones posibles.",
+    "note": "Ya no es un juego que deba leerse como un único tablero estático. Entiéndelo como un sistema donde el tamaño de las posiciones y el número de rutas cambian durante la ronda.",
+    "cards": [
+      {"title": "Función principal", "text": "xWays revela una pila de símbolos iguales, mientras las mecánicas de división separan posiciones y aumentan el número de combinaciones posibles."},
+      {"title": "xWays", "text": "Un símbolo especial revela posiciones adicionales y aumenta el número de vías para formar un premio. El número final de vías depende del estado actual de los rodillos."},
+      {"title": "Símbolos divididos", "text": "Una posición se divide en varias partes y aumenta el número de símbolos de un rodillo y las rutas de pago posibles."},
+      {"title": "Tablero dinámico", "text": "El tamaño o el área activa del tablero cambia durante el evento. Lee una descripción como 5 × 3+ junto con las reglas de expansión."}
+    ]
+  },
+  "fire-in-the-hole": {
+    "description": "La mina empieza con tres filas activas y abre hasta seis. El número de vías crece con el tablero, mientras xBomb inicia nuevos derrumbes y multiplicadores.",
+    "feature": "Cada nuevo derrumbe puede abrir otra fila y aumentar el tablero de 64 a 46 656 vías para formar una combinación.",
+    "note": "Sigue el estado de todo el tablero, no un símbolo aislado: ¿cuántas filas se han abierto y qué multiplicador pasa al siguiente derrumbe?",
+    "cards": [
+      {"title": "Función principal", "text": "Cada nuevo derrumbe puede abrir otra fila y aumentar el tablero de 64 a 46 656 vías para formar una combinación."},
+      {"title": "Cascadas", "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."},
+      {"title": "xBomb", "text": "Un comodín explosivo elimina posiciones vecinas y puede aumentar el multiplicador de la siguiente cascada. Lee su efecto junto con el orden de las explosiones y los derrumbes."},
+      {"title": "Tablero dinámico", "text": "El tamaño o el área activa del tablero cambia durante el evento. Lee una descripción como 5 × 3+ junto con las reglas de expansión."}
+    ]
+  },
+  "starlight-princess": {
+    "description": "Los símbolos iguales en cualquier parte del tablero se combinan con cascadas y multiplicadores. Su estructura está estrechamente relacionada con Gates of Olympus, con otra presentación visual.",
+    "feature": "Después de una combinación ganadora, los símbolos desaparecen. Los multiplicadores que aparecen en la misma secuencia se suman antes de aplicarse al premio.",
+    "note": "Una comparación directa útil con Gates of Olympus: la misma lógica de fondo permite ver con claridad cómo la presentación cambia la percepción de una estructura compartida.",
+    "cards": [
+      {"title": "Pay Anywhere: desde 8 símbolos", "text": "Starlight Princess paga por 8–30 símbolos iguales en cualquier parte del tablero. Una combinación ganadora activa una cascada, por lo que un giro puede continuar con nuevas secuencias."},
+      {"title": "Multiplicadores 2x–500x", "text": "Los símbolos multiplicadores pueden aparecer tanto en el juego base como en el bonus. Sus valores van de 2x a 500x y se suman al final de una secuencia de cascadas ganadora."},
+      {"title": "15 giros gratis", "text": "Cuatro o más Scatters activan el juego de bonus con 15 giros gratis. Se mantienen las reglas básicas de Pay Anywhere y cascadas, con acumulación adicional de multiplicadores."},
+      {"title": "Multiplicador general del bonus", "text": "Durante Free Spins, un multiplicador que aparece en una secuencia de cascadas ganadora se suma al multiplicador general acumulado y aumenta los premios posteriores del bonus."}
+    ]
+  },
+  "sugar-rush": {
+    "description": "Un tablero de grupos de 7 × 7, cascadas y posiciones multiplicadoras. Los premios repetidos en una misma posición aumentan gradualmente su valor.",
+    "feature": "Un grupo de cinco o más símbolos vecinos activa una cascada. Las posiciones ganadoras se marcan y pueden recibir multiplicadores crecientes.",
+    "note": "Observa la historia de cada posición además de los propios grupos: una ubicación donde ya se han formado premios adquiere importancia.",
+    "cards": [
+      {"title": "Grupos desde 5 símbolos", "text": "Sugar Rush utiliza un tablero de 7 × 7: un grupo ganador consta de 5–15 o más símbolos iguales vecinos. Después de un pago, los símbolos desaparecen y la cascada continúa."},
+      {"title": "Posiciones marcadas", "text": "Después de un grupo ganador se marcan sus posiciones. Si otra combinación ganadora vuelve a pasar por una posición marcada durante el mismo giro, aparece allí un multiplicador."},
+      {"title": "Multiplicador de hasta 128x", "text": "El primer premio repetido en una posición marcada concede 2x. Los premios posteriores en esa misma posición duplican su valor hasta 128x."},
+      {"title": "10–30 giros gratis", "text": "Tres, cuatro, cinco, seis o siete Scatters conceden 10, 12, 15, 20 o 30 Free Spins. En el bonus, las posiciones marcadas y sus multiplicadores se conservan entre giros hasta que termina la ronda."}
+    ]
+  },
+  "fruit-party": {
+    "description": "Un gran tablero de frutas, premios por grupos y secuencias de cascadas. Durante el bonus, los grupos ganadores pueden recibir multiplicadores aleatorios.",
+    "feature": "Después de un grupo, los símbolos desaparecen y otros nuevos caen desde arriba. Durante los giros gratis, los bloques ganadores individuales reciben multiplicadores.",
+    "note": "Un ejemplo sencillo de grupos sin un sistema complejo de acumulación. Lee primero el grupo de símbolos y después los multiplicadores adicionales.",
+    "cards": [
+      {"title": "Grupos en un tablero de 7 × 7", "text": "El Fruit Party original utiliza premios por grupos en un tablero de 7 × 7. Después de una combinación ganadora, nuevos símbolos de frutas caen en las posiciones vacías."},
+      {"title": "Golden Fruit — Scatter", "text": "Golden Fruit actúa como Scatter. Tres o más de estos símbolos activan el modo de bonus Free Spins."},
+      {"title": "Multiplicadores aleatorios del bonus", "text": "Durante Free Spins, cada bloque ganador puede recibir aleatoriamente un multiplicador 2x o 4x. Por tanto, un mismo grupo puede recibir multiplicadores en varias de sus partes."},
+      {"title": "Multiplicadores combinados hasta 256x", "text": "Si varios bloques de una combinación ganadora reciben multiplicadores aleatorios, sus efectos pueden combinarse. El lanzamiento oficial del Fruit Party original indica un límite de hasta 256x el premio inicial."}
+    ]
+  },
+  "legacy-of-dead": {
+    "description": "Un tablero convencional de temática egipcia con diez líneas de pago y un símbolo expansivo durante los giros gratis. El juego base se mantiene sencillo de forma deliberada.",
+    "feature": "Durante el bonus se elige aleatoriamente un símbolo especial. Cuando aparecen suficientes, puede expandirse y cubrir todo un rodillo.",
+    "note": "Compáralo con Book of Dead: sus estructuras parecidas muestran cómo pequeños cambios en un bonus pueden influir en la experiencia del juego.",
+    "cards": [
+      {"title": "Tumba — comodín y Scatter", "text": "El símbolo de tumba sustituye a los símbolos normales como comodín y también actúa como Scatter. Por tanto, el mismo icono afecta a las líneas de pago normales y a la activación del bonus."},
+      {"title": "Free Spins desde tres Scatters", "text": "Tres o más Tomb Scatters activan giros gratis. Durante el bonus, Tomb puede volver a aparecer y conceder más giros."},
+      {"title": "Símbolo especial aleatorio", "text": "Al entrar en Free Spins se selecciona aleatoriamente un Special Expanding Symbol. Se convierte en la mecánica central del bonus, distinta de la función normal de Tomb como comodín y Scatter."},
+      {"title": "Expansión por los rodillos", "text": "Al aparecer, el símbolo especial elegido puede expandirse y cubrir rodillos, creando más oportunidades de formar un pago. Valóralo según su posición real y la tabla de pagos de la versión actual."}
+    ]
+  },
+  "fire-joker": {
+    "description": "Una tragaperras compacta de 3 × 3 con cinco líneas de pago, un regiro y una rueda de multiplicadores. Uno de los ejemplos más concisos de la estructura convencional.",
+    "feature": "Las pilas iguales en dos rodillos pueden quedar fijas y conceder un regiro del tercero. Una pantalla completa de símbolos iguales activa un multiplicador.",
+    "note": "El escaso ruido visual convierte a Fire Joker en una referencia útil: el pago normal de una línea se distingue con especial claridad de una función adicional.",
+    "cards": [
+      {"title": "Estructura compacta de 3 × 3", "text": "Fire Joker conserva una estructura convencional: tres símbolos iguales en una línea activa forman un premio normal. El tablero pequeño facilita especialmente seguir las funciones adicionales."},
+      {"title": "Fire Joker — comodín", "text": "El propio Joker actúa como comodín y puede aparecer en cualquier posición de los tres rodillos, sustituyendo a otros símbolos al formar una combinación ganadora."},
+      {"title": "Respin of Fire", "text": "Si aparecen pilas completas iguales en dos rodillos sin una línea ganadora, esas pilas quedan fijas y el tercer rodillo recibe un regiro gratuito."},
+      {"title": "Wheel of Multipliers hasta x10", "text": "Cuando el mismo símbolo ocupa las nueve posiciones, se inicia la rueda de multiplicadores. En el Fire Joker original puede aumentar el premio total hasta x10."}
+    ]
+  },
+  "rise-of-olympus": {
+    "description": "Una tragaperras de tablero de 5 × 5 con eliminación de grupos ganadores, un medidor compartido e intervenciones de tres dioses. Lee la ronda como una secuencia de cambios del tablero.",
+    "feature": "Los grupos ganadores despejan el tablero y cargan las funciones de los dioses. Vaciar todo el tablero se convierte en un objetivo independiente dentro de la secuencia.",
+    "note": "A diferencia de una tragaperras de líneas, conviene seguir todo el tablero y la carga de las funciones, no una única ruta de izquierda a derecha.",
+    "cards": [
+      {"title": "Round Multiplier dentro de un giro", "text": "En Rise of Olympus, el multiplicador de ronda se acumula dentro de un giro pagado. Debe distinguirse del progreso persistente entre giros separados."},
+      {"title": "Hand of God", "text": "Hand of God está vinculado al dios presente en el tablero. Cada personaje modifica el tablero según sus propias reglas."},
+      {"title": "Wrath of God mediante el medidor", "text": "Llenar el medidor de carga activa Wrath of God, donde Zeus, Poseidon y Hades se unen para ayudar a vaciar el tablero. El medidor es una fuente independiente de progreso dentro de la ronda."},
+      {"title": "Elección de dios en Free Spins", "text": "Antes de los giros gratis se elige un dios que ayuda en cada giro sin premio. Según la descripción oficial del juego original, vaciar todo el tablero en este modo concede un bonus de x100 la apuesta."}
+    ]
+  },
+  "fat-rabbit": {
+    "description": "Cinco rodillos, cinco filas y cincuenta líneas de pago. Durante el bonus, el conejo recoge zanahorias, crece y cambia el desarrollo de la ronda.",
+    "feature": "Las zanahorias comodín contribuyen al contador del conejo. Llenar el medidor hace crecer al personaje y puede conceder giros gratis.",
+    "note": "El juego base utiliza líneas de pago, mientras la progresión visual principal ocurre en un medidor separado. Un ejemplo de una función superpuesta a un tablero convencional.",
+    "metricsNote": "Push Gaming publica 3 844x como mayor premio observado. Es un resultado observado, no un límite fijo confirmado de premio máximo.",
+    "cards": [
+      {"title": "Función principal", "text": "Las zanahorias comodín contribuyen al contador del conejo. Llenar el medidor hace crecer al personaje y puede conceder giros gratis."},
+      {"title": "Recogida de valores", "text": "Un símbolo especial recoge valores monetarios o multiplicadores de otras posiciones. Comprueba si la recogida se realiza una vez o se repite durante el bonus."},
+      {"title": "Medidor de progreso", "text": "Determinados eventos cargan un contador o medidor. Comprueba si el progreso se reinicia después de un giro y qué ocurre al llenarse el medidor."},
+      {"title": "Giros gratis", "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."}
+    ]
+  },
+  "retro-tapes": {
+    "description": "Un amplio tablero de 9 × 6, Cluster Links, cascadas y cintas multiplicadoras. Un grupo ganador puede crecer mediante símbolos especiales de conexión.",
+    "feature": "Los grupos de cinco o más cintas desaparecen. Las cintas comodín pueden conectar grupos y aumentar su multiplicador después de participar en un premio.",
+    "note": "Con 54 posiciones, la acción puede resultar difícil de seguir. Empieza por los límites de un grupo y después identifica qué comodines conectaron realmente los grupos.",
+    "metricsNote": "La página actual de Push Gaming publica un RTP de 96.47% y un mayor premio observado de 10 000x. Un artículo oficial independiente de Push Gaming fechado el 04.04.2023 confirma un intervalo de RTP de 94.46%–96.47%, por lo que Slotfolio conserva ambas configuraciones verificadas de RTP y no trata el premio observado como un límite fijo de premio máximo.",
+    "additionalSourceLabels": ["Artículo oficial de Push Gaming con RTP 94.46%–96.47%"],
+    "cards": [
+      {"title": "Función principal", "text": "Los grupos de cinco o más cintas desaparecen. Las cintas comodín pueden conectar grupos y aumentar su multiplicador después de participar en un premio."},
+      {"title": "Cascadas", "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."},
+      {"title": "Comodín", "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."},
+      {"title": "Multiplicadores", "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."}
+    ]
+  }
+}
