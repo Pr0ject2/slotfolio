@@ -16,6 +16,8 @@ const numbers = (text: string) => text.replace(/(\d)[ ,\u00a0](?=\d{3}(?:\D|$))/
 const escapeHtml = (text: string) => text.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#x27;");
 
 test("Spanish game passports translate every existing category without changing source records", () => {
+  expect(spanishReleaseDate("23 ноября 2022")).toBe("23 de noviembre de 2022");
+  expect(spanishReleaseDate("01.09.2023")).toBe("01.09.2023");
   const categories: Record<string,string> = {
     "Cascading Cluster Pays":"Premios por grupos con cascadas",
     "Cascading Cluster-based Slot":"Tragamonedas de grupos con cascadas",

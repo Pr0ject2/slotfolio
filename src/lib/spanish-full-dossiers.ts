@@ -1,13 +1,14 @@
 import batch01 from "./spanish-full-dossier-batch01.json" with { type: "json" };
 import batch02 from "./spanish-full-dossier-batch02.json" with { type: "json" };
 import batch03 from "./spanish-full-dossier-batch03.json" with { type: "json" };
+import batch04 from "./spanish-full-dossier-batch04.json" with { type: "json" };
 import type { EnglishFullDossierCopy } from "./english-full-dossiers";
 import type { Slot } from "./data";
 import { slotFeatureCards } from "./dossier";
 import { spanishCatalogFact } from "./spanish-catalog-facts";
 
 export type SpanishFullDossierCopy = EnglishFullDossierCopy & { cards: { title: string; text: string }[] };
-export const spanishFullDossiers: Record<string, SpanishFullDossierCopy> = { ...batch01, ...batch02, ...batch03 };
+export const spanishFullDossiers: Record<string, SpanishFullDossierCopy> = { ...batch01, ...batch02, ...batch03, ...batch04 };
 
 export function spanishDossierFeatureCards(game: Slot) {
   const copy = spanishFullDossiers[game.slug];
@@ -29,6 +30,8 @@ const months: Record<string, string> = {
   июля:"julio", августа:"agosto", сентября:"septiembre", октября:"octubre", ноября:"noviembre", декабря:"diciembre",
 };
 export function spanishReleaseDate(value: string) {
+  const date=value.match(/^(\d{1,2})\s+([А-Яа-яЁё]+)\s+(\d{4})$/);
+  if(date&&months[date[2].toLowerCase()])return `${date[1]} de ${months[date[2].toLowerCase()]} de ${date[3]}`;
   return value.replace(/[А-Яа-яЁё]+/g, word => months[word.toLowerCase()] ?? word);
 }
 const metricLabels: Record<string, string> = {

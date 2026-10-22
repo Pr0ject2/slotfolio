@@ -1,0 +1,246 @@
+{
+  "chaos-crew": {
+    "description": "Un tablero poco habitual de 5 × 5 con diecinueve líneas de pago y personajes que actúan como comodines multiplicadores. La mayor parte de la acumulación pasa al bonus.",
+    "feature": "Cranky Cat multiplica la línea de pago en la que participa. Durante el bonus, los valores multiplicadores se acumulan por separado sobre los rodillos hasta que termina la ronda.",
+    "note": "A pesar de su presentación ruidosa, la regla de fondo es convencional. Un ejemplo útil de una presentación compleja superpuesta a líneas de pago normales.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Cranky Cat multiplica la línea de pago en la que participa. Durante el bonus, los valores multiplicadores se acumulan por separado sobre los rodillos hasta que termina la ronda."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      }
+    ]
+  },
+  "chaos-crew-2": {
+    "description": "La secuela conserva el tablero de 5 × 5 y diecinueve líneas de pago, y añade nuevos escenarios de multiplicadores y varias variantes de bonus.",
+    "feature": "Los multiplicadores de los personajes participan en líneas de pago, mientras los distintos modos de bonus cambian cómo se acumulan y reutilizan.",
+    "note": "Compararlo con el primer juego resulta útil porque la geometría apenas cambia. Las diferencias están en las capas de funciones que se añaden sobre ella.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los multiplicadores de los personajes participan en líneas de pago, mientras los distintos modos de bonus cambian cómo se acumulan y reutilizan."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Varios bonus",
+        "text": "El juego tiene más de un escenario de bonus. Compara sus reglas además de sus nombres: el mismo número de giros gratis puede producir una estructura de ronda diferente."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      }
+    ]
+  },
+  "deadwood": {
+    "description": "Una ambientación del Oeste, 576 vías y comodines xNudge. Los comodines altos se desplazan hasta quedar completamente visibles y aumentan su propio multiplicador.",
+    "feature": "Hunter xNudge Wild ocupa varias posiciones. Cada desplazamiento necesario aumenta el multiplicador que participa en los premios correspondientes.",
+    "note": "Céntrate en la posición del comodín alto y en su número de desplazamientos, no en una línea de pago. La geometría del símbolo influye directamente en el desarrollo de la ronda.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Hunter xNudge Wild ocupa varias posiciones. Cada desplazamiento necesario aumenta el multiplicador que participa en los premios correspondientes."
+      },
+      {
+        "title": "xNudge",
+        "text": "Un comodín se desplaza hasta quedar completamente visible en un rodillo y cada paso puede aumentar su multiplicador. Varios de estos comodines pueden interactuar en un mismo pago."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "mental": {
+    "description": "Un tablero irregular que empieza con 108 vías, junto con xWays, xNudge y xSplit. El número de combinaciones disponibles puede aumentar bruscamente dentro de un mismo evento.",
+    "feature": "xWays revela símbolos iguales adicionales, xSplit divide posiciones y xNudge mueve comodines altos y aumenta su multiplicador.",
+    "note": "Un ejemplo especialmente claro de tablero dinámico: una cifra fija de vías no basta para describirlo, porque las propias posiciones siguen cambiando.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "xWays revela símbolos iguales adicionales, xSplit divide posiciones y xNudge mueve comodines altos y aumenta su multiplicador."
+      },
+      {
+        "title": "xWays",
+        "text": "Un símbolo especial revela posiciones adicionales y aumenta el número de vías para formar un premio. El número final de vías depende del estado actual de los rodillos."
+      },
+      {
+        "title": "xSplit",
+        "text": "La mecánica divide símbolos o posiciones y aumenta el número de elementos de un rodillo. Destaca especialmente en juegos con un número dinámico de vías de pago."
+      },
+      {
+        "title": "xNudge",
+        "text": "Un comodín se desplaza hasta quedar completamente visible en un rodillo y cada paso puede aumentar su multiplicador. Varios de estos comodines pueden interactuar en un mismo pago."
+      }
+    ]
+  },
+  "starburst": {
+    "description": "Diez líneas de pago, un conjunto sencillo de símbolos y comodines expansivos con regiros. Un ejemplo especialmente claro de una interfaz convencional.",
+    "feature": "Starburst Wild se expande por todo el rodillo y activa un regiro. Un comodín nuevo durante el regiro puede continuar la secuencia.",
+    "note": "Casi todo el comportamiento distintivo del juego se concentra en un símbolo. Por eso, Starburst es una referencia útil antes de explorar tragaperras modernas con más funciones.",
+    "metricsNote": "La página canónica actual de NetEnt publica un RTP del 96.08%, un pago máximo de 800x la apuesta, un tablero de 5 × 3 y 10 líneas de pago. La página actual de Evolution para el mismo Starburst original publica a la vez un RTP del 96.09%. Slotfolio conserva el 96.08% como valor principal del proveedor y muestra expresamente este conflicto entre fuentes oficiales.",
+    "additionalSourceLabels": [
+      "Página de Evolution / NetEnt con el RTP discrepante del 96.09%"
+    ],
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Starburst Wild se expande por todo el rodillo y activa un regiro. Un comodín nuevo durante el regiro puede continuar la secuencia."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Regiro",
+        "text": "Un evento concreto activa un regiro que a veces conserva parte del tablero. Es un ciclo independiente dentro de la ronda base, no un bonus garantizado."
+      },
+      {
+        "title": "Símbolo expansivo",
+        "text": "Un símbolo especial puede ocupar todo un rodillo o una parte importante de él. La animación llama la atención, pero su valor depende de la tabla de pagos y de las condiciones de activación."
+      }
+    ]
+  },
+  "gonzos-quest": {
+    "description": "Avalanche sustituye los cambios normales del tablero: los símbolos ganadores desaparecen, otros nuevos caen desde arriba y el multiplicador crece dentro de la secuencia.",
+    "feature": "Cada nueva Avalanche de la misma secuencia eleva el multiplicador. Cuando cesan los premios, el tablero y el multiplicador vuelven a su estado inicial.",
+    "note": "Gonzo’s Quest es una referencia histórica útil para las cascadas: su estructura se entiende sin numerosos sistemas adicionales superpuestos.",
+    "metricsNote": "La página canónica actual de NetEnt publica un pago máximo de 2 200x la apuesta y un RTP del 95.97%. La página actual de Evolution para el mismo Gonzo’s Quest original indica a la vez un premio máximo de 2 500x la apuesta original con el mismo RTP del 95.97%. Slotfolio conserva 2 200x como valor principal del proveedor y muestra expresamente el conflicto entre fuentes oficiales.",
+    "additionalSourceLabels": [
+      "Página de Evolution / NetEnt con el máximo discrepante de 2 500x"
+    ],
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Cada nueva Avalanche de la misma secuencia eleva el multiplicador. Cuando cesan los premios, el tablero y el multiplicador vuelven a su estado inicial."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      }
+    ]
+  },
+  "dead-or-alive-2": {
+    "description": "Nueve líneas de pago y tres modos de giros gratis claramente diferentes. El tablero base sigue siendo sencillo, mientras el jugador elige el tipo de bonus.",
+    "feature": "Tres escenarios de bonus utilizan de forma distinta los comodines fijos y los multiplicadores, conservando la misma base de nueve líneas de pago.",
+    "note": "Muestra cómo pueden cambiar la volatilidad y la experiencia de un bonus sin alterar la geometría de fondo. Lee las reglas del modo elegido antes que las cifras.",
+    "metricsNote": "La página oficial de NetEnt en Evolution declara repetidamente un potencial de hasta 100 000x la apuesta original. Una página independiente de netent.com contiene a la vez un campo de metadatos discrepante: Max payout 1 600x. Slotfolio conserva este conflicto de procedencia y no combina las dos cifras.",
+    "additionalSourceLabels": [
+      "Página del juego en NetEnt con el campo de metadatos discrepante"
+    ],
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Tres escenarios de bonus utilizan de forma distinta los comodines fijos y los multiplicadores, conservando la misma base de nueve líneas de pago."
+      },
+      {
+        "title": "Comodín fijo",
+        "text": "Un comodín puede permanecer en una posición durante más de un giro, sobre todo durante el bonus. El efecto se ve con facilidad, pero el número de giros restantes sigue importando."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Varios bonus",
+        "text": "El juego tiene más de un escenario de bonus. Compara sus reglas además de sus nombres: el mismo número de giros gratis puede producir una estructura de ronda diferente."
+      }
+    ]
+  },
+  "money-train-2": {
+    "description": "Cuarenta líneas de pago en el juego base y un Money Cart Bonus independiente, donde símbolos con valores y funciones persistentes sustituyen a las combinaciones normales.",
+    "feature": "Durante el bonus, Collector, Payer, Sniper y otros personajes cambian los valores de los símbolos especiales. Un rodillo lleno puede expandir el tablero.",
+    "note": "Un ejemplo de juego con dos formas casi independientes de leer la acción: líneas de pago en el juego base y el estado de un grupo de símbolos especiales durante el bonus.",
+    "metricsNote": "La página oficial actual de Relax Gaming confirma un máximo de 50 000x y publica por separado un RTP alemán del 90%. La guía conserva el 96.40% como RTP orientativo, pero la página actual no lo publica como una configuración verificada por separado. Por eso, Slotfolio no construye una lista de configuraciones verificadas de RTP a partir de esos valores.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Durante el bonus, Collector, Payer, Sniper y otros personajes cambian los valores de los símbolos especiales. Un rodillo lleno puede expandir el tablero."
+      },
+      {
+        "title": "Recogida de valores",
+        "text": "Un símbolo especial recoge valores monetarios o multiplicadores de otras posiciones. Comprueba si la recogida se realiza una vez o se repite durante el bonus."
+      },
+      {
+        "title": "Tablero dinámico",
+        "text": "El tamaño o el área activa del tablero cambia durante el evento. Lee una descripción como 5 × 3+ junto con las reglas de expansión."
+      },
+      {
+        "title": "Personajes con funciones",
+        "text": "Los personajes especiales realizan acciones distintas: recoger valores, multiplicar, añadir símbolos o cambiar el estado del tablero. Lee sus efectos por separado."
+      }
+    ]
+  },
+  "snake-arena": {
+    "description": "Treinta líneas de pago fijas y un bonus en torno a una serpiente que persigue a un caballero. La longitud de la serpiente pasa a formar parte del estado del tablero.",
+    "feature": "Durante los giros gratis, la serpiente crece después de capturar a cada caballero y ocupa más posiciones hasta que su propio cuerpo bloquea el movimiento.",
+    "note": "Los materiales oficiales de Relax Gaming describen Snake Arena con volatilidad máxima, pero más adelante en el mismo texto la llaman alta. La categoría que se muestra aquí es Extrema; ten en cuenta la discrepancia en la descripción del proveedor.",
+    "metricsNote": "La página oficial actual de Relax Gaming publica un RTP principal del 96.25%, un RTP alemán independiente del 90% y premios de hasta 2 758.8x la apuesta. Slotfolio conserva el 90.00% como una variante de RTP verificada por separado sin sustituir el RTP orientativo principal del 96.25%.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Durante los giros gratis, la serpiente crece después de capturar a cada caballero y ocupa más posiciones hasta que su propio cuerpo bloquea el movimiento."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Tablero dinámico",
+        "text": "El tamaño o el área activa del tablero cambia durante el evento. Lee una descripción como 5 × 3+ junto con las reglas de expansión."
+      },
+      {
+        "title": "Medidor de progreso",
+        "text": "Determinados eventos cargan un contador o medidor. Comprueba si el progreso se reinicia después de un giro y qué ocurre al llenarse el medidor."
+      }
+    ]
+  },
+  "book-of-99": {
+    "description": "Diez líneas de pago y una estructura conocida de libros, con un RTP orientativo inusualmente alto. El bonus conserva la idea de un símbolo expansivo elegido.",
+    "feature": "Tres libros activan giros gratis. Otra vía de acceso al bonus consiste en recoger 99 símbolos de libro en el juego base.",
+    "note": "Un RTP alto no hace previsible una sesión corta. Este juego resulta especialmente útil para explicar la diferencia entre la teoría a largo plazo y un resultado individual.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Tres libros activan giros gratis. Otra vía de acceso al bonus consiste en recoger 99 símbolos de libro en el juego base."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Símbolo expansivo",
+        "text": "Un símbolo especial puede ocupar todo un rodillo o una parte importante de él. La animación llama la atención, pero su valor depende de la tabla de pagos y de las condiciones de activación."
+      },
+      {
+        "title": "Recogida de símbolos",
+        "text": "El juego cuenta determinados símbolos o eventos. La acumulación puede abrir otro nivel de una función, giros adicionales u otro efecto."
+      }
+    ]
+  }
+}
