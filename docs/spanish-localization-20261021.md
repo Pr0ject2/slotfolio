@@ -234,6 +234,78 @@ remain unchanged. Readiness and complete-source fingerprints cover 40 guides.
 The existing browser and export regressions include every added guide;
 60 guides and the remaining site sections still require translation.
 
+## Stage 17: complete game guides 41–50
+
+3-coin-towers, hell-hot-40, crown-coins, 2026-hit-slot, 2021-hit-slot, 2023-hit-slot, 2025-hit-slot, prestige-crown, lucky-streak-3, lucky-streak-1000 receive complete Spanish
+copy, feature cards, editorial notes, numerical caveats and source labels.
+No existing content is shortened. Game records, calculations, artwork and sources
+remain unchanged. Readiness and complete-source fingerprints cover 50 guides.
+The existing browser and export regressions include every added guide;
+50 guides and the remaining site sections still require translation.
+
+## Stage 18: complete game guides 51–60
+
+burning-coins-40, ultra-fresh, chance-machine-20, 81-burning-ways, burning-coins-20, dia-de-los-muertos-2, bear-crazy, the-big-dog-house, fury-of-anubis, nitro-nights receive complete Spanish
+copy, feature cards, editorial notes, numerical caveats and source labels.
+No existing content is shortened. Game records, calculations, artwork and sources
+remain unchanged. Readiness and complete-source fingerprints cover 60 guides.
+The existing browser and export regressions include every added guide;
+40 guides and the remaining site sections still require translation.
+
+## Stage 19: complete game guides 61–70
+
+dork-unit, crypto-genesys, max-win-machine, power-of-ten, gemhalla, house-of-sins, scarab-temple, jungle-volcano, mighty-hot-amazonia, mummyland-treasures receive complete Spanish
+copy, feature cards, editorial notes, numerical caveats and source labels.
+No existing content is shortened. Game records, calculations, artwork and sources
+remain unchanged. Readiness and complete-source fingerprints cover 70 guides.
+The existing browser and export regressions include every added guide;
+30 guides and the remaining site sections still require translation.
+
+## Stage 20: complete game guides 71–80
+
+troy-superways, gates-of-olympus-2500, sweet-bonanza-1000, black-friday-shady-lady, devils-finger, zeus-claws, panda-claw-jackpot, wolf-hunt-claw-and-win, claw-bonanza-gold-rush, double-triple-burning-wilds receive complete Spanish
+copy, feature cards, editorial notes, numerical caveats and source labels.
+No existing content is shortened. Game records, calculations, artwork and sources
+remain unchanged. Readiness and complete-source fingerprints cover 80 guides.
+The existing browser and export regressions include every added guide;
+20 guides and the remaining site sections still require translation.
+
+## Stage 21: complete game guides 81–90
+
+clawbass-bonanza, clawbass-bonanza-free-rush, 3-claws-of-aztec-fire, great-clawsby-deluxe, fruit-train-express-hold-win, hot-and-spicy-jackpot, wild-west-girls, caramelo-jackpot, coin-flynn, coin-craze-jackpot receive complete Spanish
+copy, feature cards, editorial notes, numerical caveats and source labels.
+No existing content is shortened. Game records, calculations, artwork and sources
+remain unchanged. Readiness and complete-source fingerprints cover 90 guides.
+The existing browser and export regressions include every added guide;
+10 guides and the remaining site sections still require translation.
+
+## Stage 22: complete game guides 91–100
+
+caishen-gold-infinity-dragon, money-booster, midas-hand-of-fortune, mustang-rush, power-of-zeus-mancala, life-and-death, rad-maxx, 777-coins, 3-hot-chillies, egypt-fire receive complete Spanish
+copy, feature cards, editorial notes, numerical caveats and source labels.
+No existing content is shortened. Game records, calculations, artwork and sources
+remain unchanged. Readiness and complete-source fingerprints cover 100 guides.
+The existing browser and export regressions include every added guide;
+0 guides and the remaining site sections still require translation.
+
+## Complete game coverage validation
+
+The final six copy batches (guides 41–100) are submitted together after guide
+40. All 100 complete guides and 900 catalogue profiles now have Spanish copy.
+An exact-set regression compares all 1000 ready slugs against the published
+catalogue, rejects extra routes and verifies Spanish language counterparts.
+The untranslated-route browser test now uses an untranslated provider profile;
+there are no untranslated published game pages left in this prepared tree.
+
+Validation on Next.js 16.4.2: TypeScript PASS, production export 3118 pages,
+234 Playwright tests PASS, 1008 local artwork assets verified, and four asset
+security tests PASS. Existing six-width guide coverage remains unchanged;
+every further guide receives a 390px browser check and full static-content,
+number, source and reciprocal-language checks. Real screenshots include the
+last guide, Egypt Fire, and Sweet Bonanza 1000. These are local results;
+publication still requires exact-head CI and preview, then both production
+hosts for every preceding stage in order.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;

@@ -3,13 +3,19 @@ import batch02 from "./spanish-full-dossier-batch02.json" with { type: "json" };
 import batch03 from "./spanish-full-dossier-batch03.json" with { type: "json" };
 import batch04 from "./spanish-full-dossier-batch04.json" with { type: "json" };
 import batch05 from "./spanish-full-dossier-batch05.json" with { type: "json" };
+import batch06 from "./spanish-full-dossier-batch06.json" with { type: "json" };
+import batch07 from "./spanish-full-dossier-batch07.json" with { type: "json" };
+import batch08 from "./spanish-full-dossier-batch08.json" with { type: "json" };
+import batch09 from "./spanish-full-dossier-batch09.json" with { type: "json" };
+import batch10 from "./spanish-full-dossier-batch10.json" with { type: "json" };
+import batch11 from "./spanish-full-dossier-batch11.json" with { type: "json" };
 import type { EnglishFullDossierCopy } from "./english-full-dossiers";
 import type { Slot } from "./data";
 import { slotFeatureCards } from "./dossier";
 import { spanishCatalogFact } from "./spanish-catalog-facts";
 
 export type SpanishFullDossierCopy = EnglishFullDossierCopy & { cards: { title: string; text: string }[] };
-export const spanishFullDossiers: Record<string, SpanishFullDossierCopy> = { ...batch01, ...batch02, ...batch03, ...batch04, ...batch05 };
+export const spanishFullDossiers: Record<string, SpanishFullDossierCopy> = { ...batch01, ...batch02, ...batch03, ...batch04, ...batch05, ...batch06, ...batch07, ...batch08, ...batch09, ...batch10, ...batch11 };
 
 export function spanishDossierFeatureCards(game: Slot) {
   const copy = spanishFullDossiers[game.slug];

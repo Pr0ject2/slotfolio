@@ -1,0 +1,237 @@
+{
+  "dork-unit": {
+    "description": "Dieciséis líneas de pago fijas y dos direcciones de bonus diferentes: Gift Bonanza desarrolla comodines multiplicadores de cajas de regalo, mientras Dork Spins cambia el comportamiento de los rodillos comodín.",
+    "feature": "Las Gift Boxes pueden quedar fijas y acumular multiplicadores, mientras Dork Spins se centra en un Dork Reel expansivo y fijo.",
+    "note": "Dork Unit indica un RTP del 96.28%. El lanzamiento de Hacksaw Gaming declara volatilidad media, 3 sobre 5, junto con 16 líneas de pago y un premio máximo de 10 000×. Ese material no enumera otras variantes de RTP.",
+    "metricsNote": "El lanzamiento oficial de Hacksaw Gaming fechado el 31.07.2022 describe Dork Unit con volatilidad media 3/5, 16 líneas de pago y un premio máximo de 10 000x. El lanzamiento no publica configuraciones de RTP, por lo que el perfil verificado no añade ninguna.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Las Gift Boxes pueden quedar fijas y acumular multiplicadores, mientras Dork Spins se centra en un Dork Reel expansivo y fijo."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      }
+    ]
+  },
+  "crypto-genesys": {
+    "description": "Una versión de neón de la estructura de pagos Scatter de Pragmatic Play: las coincidencias se cuentan en todo el tablero y los símbolos ganadores dejan sitio a la siguiente cascada.",
+    "feature": "Durante los giros gratis, los símbolos multiplicadores aumentan los premios de cascadas. El límite superior de pago publicado para el juego es de 15 000x.",
+    "note": "Comprueba el RTP de la versión del operador en el menú de ayuda del propio juego: los lanzamientos modernos pueden tener configuraciones alternativas.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Durante los giros gratis, los símbolos multiplicadores aumentan los premios de cascadas. El límite superior de pago publicado para el juego es de 15 000x."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      }
+    ]
+  },
+  "max-win-machine": {
+    "description": "Un juego compacto de Hacksaw Gaming con tres rodillos y una línea de pago. Toda la estructura del giro se reduce a símbolos Lucky Seven y resultados grandes poco frecuentes.",
+    "feature": "Uno, dos o tres Lucky Sevens de izquierda a derecha conceden pagos fijos de 1x, 10x y 10 000x respectivamente. La página oficial actual de Hacksaw Gaming no respalda funciones adicionales de FeatureSpins ni de multiplicadores para el juego.",
+    "note": "Una comparación útil con los tableros modernos complejos: la presentación es mínima, pero la volatilidad oficial se indica en el nivel máximo, 5/5.",
+    "metricsNote": "La página actual de Hacksaw Gaming describe solo Lucky Seven: uno, dos o tres símbolos de izquierda a derecha conceden 1x, 10x y 10 000x. La página no indica FeatureSpins ni una mecánica independiente de multiplicadores.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Uno, dos o tres Lucky Sevens de izquierda a derecha conceden pagos fijos de 1x, 10x y 10 000x respectivamente. La página oficial actual de Hacksaw Gaming no respalda funciones adicionales de FeatureSpins ni de multiplicadores para el juego."
+      }
+    ]
+  },
+  "power-of-ten": {
+    "description": "Un tablero de 5 × 5 con 19 líneas de pago fijas, donde los pagos normales conviven con Power Wheels y varios modos de bonus diferentes.",
+    "feature": "Power Wheel puede mostrar 10x, 100x, 1 000x o MAX WIN. Deck of Fortune y Whopping Wheels desarrollan estas ruedas de forma distinta durante el bonus.",
+    "note": "Power of Ten indica un RTP del 96.23%. La página del juego de Hacksaw Gaming describe Power Wheels y declara un máximo de 10 000×. El catálogo del estudio valora la volatilidad con 5 sobre 5, por lo que aquí la categoría es Extrema. La página del juego no ofrece otras variantes de RTP ni una descripción escrita independiente de la volatilidad.",
+    "metricsNote": "La página específica actual de Hacksaw Gaming confirma Power Wheels y un premio máximo de 10 000x, pero no publica configuraciones de RTP ni un campo escrito independiente de volatilidad. Su catálogo oficial actual muestra un medidor de volatilidad completo de 5/5 para Power of Ten, por lo que la categoría pública de Slotfolio es Extrema. No se añaden variantes de RTP como dato verificado.",
+    "additionalSourceLabels": [
+      "Catálogo actual de Hacksaw Gaming con medidor de volatilidad 5/5"
+    ],
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Power Wheel puede mostrar 10x, 100x, 1 000x o MAX WIN. Deck of Fortune y Whopping Wheels desarrollan estas ruedas de forma distinta durante el bonus."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Power Wheels",
+        "text": "La función Power Wheels figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  },
+  "gemhalla": {
+    "description": "Una tragaperras Pay Anywhere de BGaming con rodillos que se rellenan: el tablero vuelve a llenarse después de un pago y los símbolos multiplicadores pueden aumentar el resultado tanto en el juego base como en el bonus.",
+    "feature": "Varios multiplicadores se suman dentro de un giro del juego base. Durante Free Spins, Thor acumula los valores que aparecen para aplicarlos al premio.",
+    "note": "La página oficial de BGaming indica un RTP del 97.17% y un multiplicador máximo de 5 000x para la configuración publicada.",
+    "metricsNote": "La página oficial actual del juego de BGaming y el resumen oficial de lanzamientos de junio publican volatilidad muy alta, por lo que Slotfolio utiliza la categoría actual Muy alta. Una página oficial independiente de BGaming Players Hub utiliza a la vez Alta para el mismo juego. Este conflicto se conserva en la procedencia, en lugar de reducirse a la categoría inferior.",
+    "additionalSourceLabels": [
+      "Resumen oficial de BGaming que describe volatilidad muy alta",
+      "BGaming Players Hub con la descripción discrepante Volatility: High"
+    ],
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Varios multiplicadores se suman dentro de un giro del juego base. Durante Free Spins, Thor acumula los valores que aparecen para aplicarlos al premio."
+      },
+      {
+        "title": "Pay Anywhere",
+        "text": "El pago depende del número de símbolos iguales del tablero, no de una línea fija. Esto cambia cómo se lee un resultado, pero por sí solo no hace más probable un premio."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "house-of-sins": {
+    "description": "Un juego de BGaming exclusivo de 1win en un tablero de 6 × 8: los grupos ganadores desaparecen y los símbolos que los sustituyen continúan la secuencia de cascadas.",
+    "feature": "Los multiplicadores crecientes y los símbolos especiales continúan la progresión de la ronda durante Free Spins. El máximo publicado es de 10 000x.",
+    "note": "Una página promocional oficial independiente de 1win confirma un tablero de 6 × 8, premios por grupos con cascadas, multiplicadores crecientes de casilla, comodines fijos, Free Spins, Buy Free Spins, Sins Spin y un premio máximo de 10 000x. Esa página no publica el RTP, por lo que el 96.00% de la ficha sigue siendo una cifra orientativa y no se presenta como un dato verificado.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los multiplicadores crecientes y los símbolos especiales continúan la progresión de la ronda durante Free Spins. El máximo publicado es de 10 000x."
+      },
+      {
+        "title": "Premios por grupos",
+        "text": "La función de premios por grupos figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "scarab-temple": {
+    "description": "Veinticinco líneas de pago y dos direcciones de bonus independientes: Hold & Win con valores Scarab y Free Spins separados que eliminan los símbolos de valor bajo.",
+    "feature": "Seis Scarabs de bonus activan tres regiros. Las monedas nuevas quedan fijas y reinician el contador, mientras completar el tablero puede conceder GRAND 1 000x.",
+    "note": "El juego muestra la diferencia entre la base de líneas de pago, la recogida de valores en Hold & Win y un conjunto independiente de giros gratis.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Seis Scarabs de bonus activan tres regiros. Las monedas nuevas quedan fijas y reinician el contador, mientras completar el tablero puede conceder GRAND 1 000x."
+      },
+      {
+        "title": "Hold & Win",
+        "text": "La función Hold & Win figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Botes",
+        "text": "El juego tiene niveles independientes de premios fijos o progresivos. La presencia de un bote no indica por sí sola con qué frecuencia puede ganarse."
+      }
+    ]
+  },
+  "jungle-volcano": {
+    "description": "Una tragaperras de 3 Oaks Gaming de veinte líneas de pago cuyo tablero base lleva a Hold & Win con filas que se abren, Power Feature y botes fijos.",
+    "feature": "El tablero del bonus puede expandirse. Power Feature y los niveles de botes crean un sistema de progresión independiente sobre las líneas de pago normales.",
+    "note": "El lanzamiento oficial de 3 Oaks confirma un tablero de 5 × 4, 20 líneas de pago y las funciones principales. El RTP puede variar entre configuraciones de operadores.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "El tablero del bonus puede expandirse. Power Feature y los niveles de botes crean un sistema de progresión independiente sobre las líneas de pago normales."
+      },
+      {
+        "title": "Hold & Win",
+        "text": "La función Hold & Win figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Botes",
+        "text": "El juego tiene niveles independientes de premios fijos o progresivos. La presencia de un bote no indica por sí sola con qué frecuencia puede ganarse."
+      }
+    ]
+  },
+  "mighty-hot-amazonia": {
+    "description": "Un tablero convencional de 5 × 3 donde Wazdan conecta rodillos llenos de símbolos iguales con una Fortune Wheel independiente y volatilidad configurable.",
+    "feature": "Wall of Symbols llena rodillos con símbolos iguales, mientras Fortune Wheel puede añadir multiplicadores de hasta 15x. Volatility Levels cambia el perfil del juego.",
+    "note": "La página actual de Wazdan publica un RTP del 96.22%, un premio máximo de 1 500x y un perfil base bajo-medio. Volatility Levels™ permite cambiar el nivel de riesgo, por lo que la categoría pública de Slotfolio sigue siendo Configurable.",
+    "metricsNote": "La página actual de Wazdan publica un premio máximo de 1 500x, un RTP del 96.22% y un perfil base de Volatility: Low-Medium. El mismo juego utiliza Volatility Levels™, que Wazdan describe como una función que permite elegir un nivel de volatilidad. Por eso, Slotfolio conserva el perfil base publicado en la procedencia y muestra Configurable como categoría pública.",
+    "additionalSourceLabels": [
+      "Página oficial de Mighty Hot Amazonia que describe la selección de volatilidad",
+      "Descripción oficial de Volatility Levels™ de Wazdan"
+    ],
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Wall of Symbols llena rodillos con símbolos iguales, mientras Fortune Wheel puede añadir multiplicadores de hasta 15x. Volatility Levels cambia el perfil del juego."
+      },
+      {
+        "title": "Wall of Symbols",
+        "text": "La función Wall of Symbols figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Fortune Wheel",
+        "text": "La función Fortune Wheel figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  },
+  "mummyland-treasures": {
+    "description": "Un tablero de 7 × 7 con 823 543 vías y destrucción de piedras en cascada. La geometría se abre gradualmente y el bonus añade un multiplicador acumulativo.",
+    "feature": "Las piedras destruidas no vuelven durante Free Games. Scarab Beetles y Mummy aumentan el multiplicador general, mientras Craft Bonus permite elegir cómo entrar en la función.",
+    "note": "La página oficial de Belatra indica un RTP del 96.37%, volatilidad alta y un premio máximo de 25 000x para la versión publicada.",
+    "metricsNote": "La página actual de Belatra Games publica un RTP del 96.37%, un premio máximo de 25 000x y volatilidad alta. Estos valores coinciden con el perfil orientativo de la guía completa.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Las piedras destruidas no vuelven durante Free Games. Scarab Beetles y Mummy aumentan el multiplicador general, mientras Craft Bonus permite elegir cómo entrar en la función."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Multiplicador acumulativo",
+        "text": "La función de multiplicador acumulativo figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  }
+}

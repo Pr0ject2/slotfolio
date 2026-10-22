@@ -5,7 +5,8 @@ import { spanishSystemPages } from "../src/lib/spanish-system-pages";
 import { hasTranslation, languageAlternates, languageHref, siteLocale } from "../src/lib/locales";
 import { createCatalogModel } from "../src/lib/catalog-index";
 import { slots } from "../src/lib/data";
-import { hasSpanishDossier } from "../src/lib/spanish-dossier-routes";
+import { spanishDossierSlugs } from "../src/lib/spanish-dossier-routes";
+import { spanishCatalogRecordSlugs } from "../src/lib/spanish-catalog-record-routes";
 
 test("Spanish readiness exposes complete translations and preserves the published game set", () => {
   expect(slots).toHaveLength(100);
@@ -19,15 +20,29 @@ test("Spanish readiness exposes complete translations and preserves the publishe
   expect(hasTranslation("/slots/gates-of-olympus", "es")).toBe(true);
   expect(languageAlternates("/slots/gates-of-olympus")).toHaveProperty("es", "/es/slots/gates-of-olympus");
   expect(languageHref("/slots/gates-of-olympus", "es")).toBe("/es/slots/gates-of-olympus");
-  expect(hasTranslation("/slots/sweet-bonanza-1000", "es")).toBe(false);
-  expect(languageAlternates("/slots/sweet-bonanza-1000")).not.toHaveProperty("es");
-  expect(languageHref("/slots/sweet-bonanza-1000", "es")).toBe("/es");
+  expect(hasTranslation("/slots/not-published", "es")).toBe(false);
+  expect(languageAlternates("/slots/not-published")).not.toHaveProperty("es");
+  expect(languageHref("/slots/not-published", "es")).toBe("/es");
   for (const [slug, data] of Object.entries(spanishSystemPages)) {
     expect(data.sections).toHaveLength(englishSystemPages[slug].sections.length);
     data.sections.forEach((section, index) => {
       expect(section.text.length).toBeGreaterThan(90);
       expect(section.steps?.length ?? 0).toBe(englishSystemPages[slug].sections[index].steps?.length ?? 0);
     });
+  }
+});
+
+test("Spanish game coverage matches all 1000 published games without extra routes", () => {
+  const items = createCatalogModel().items;
+  expect(spanishDossierSlugs).toHaveLength(100);
+  expect(spanishCatalogRecordSlugs).toHaveLength(900);
+  expect([...spanishDossierSlugs].sort()).toEqual(slots.map(game => game.slug).sort());
+  expect([...spanishCatalogRecordSlugs].sort()).toEqual(items.filter(game => game.coverage === "catalog").map(game => game.slug).sort());
+  expect(new Set([...spanishDossierSlugs, ...spanishCatalogRecordSlugs]).size).toBe(1000);
+  for (const game of items) {
+    const path = `/slots/${game.coverage === "catalog" ? "catalog/" : ""}${game.slug}`;
+    expect(hasTranslation(path, "es"), path).toBe(true);
+    expect(languageAlternates(path), path).toHaveProperty("es", `/es${path}`);
   }
 });
 
@@ -81,17 +96,16 @@ test("Spanish, English and Russian switch between real counterparts and retain q
   await expect(page.locator("h1")).toHaveText("How to use Slotfolio");
 });
 
-test("Spanish browser detection respects direct untranslated game links", async ({ browser }) => {
+test("Spanish browser detection respects direct untranslated section links", async ({ browser }) => {
   const context = await browser.newContext({ locale: "es-MX" });
   const page = await context.newPage();
   await page.goto("/");
   await expect(page).toHaveURL(/\/es\/?$/);
   await page.evaluate(() => localStorage.setItem("slotfolio-language", "es"));
-  const untranslated = slots.find(game => !hasSpanishDossier(game.slug))!;
-  expect(untranslated).toBeTruthy();
-  await page.goto(`/en/slots/${untranslated.slug}/`);
-  await expect(page.locator("h1")).toHaveText(untranslated.name);
-  await expect(page).toHaveURL(new RegExp(`/en/slots/${untranslated.slug}/?$`));
+  expect(hasTranslation("/providers/pragmatic-play", "es")).toBe(false);
+  await page.goto("/en/providers/pragmatic-play/");
+  await expect(page.locator("h1")).toHaveText("Pragmatic Play");
+  await expect(page).toHaveURL(/\/en\/providers\/pragmatic-play\/?$/);
   await expect(page.locator('link[hreflang="es"]')).toHaveCount(0);
   await expect(page.getByRole("link", { name: "ES", exact: true })).toHaveAttribute("href", /\/es\/?$/);
   await page.goto("/en/slots/gates-of-olympus/");

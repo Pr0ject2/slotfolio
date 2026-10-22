@@ -1,0 +1,234 @@
+{
+  "clawbass-bonanza": {
+    "description": "Un tablero de 6 × 5 con temática de pesca, premios en cualquier posición y cascadas. Una mecánica de progreso abre gradualmente garras de pesca que aumentan los premios.",
+    "feature": "Durante los giros gratis, las líneas de pesca abiertas se conservan y pueden recoger multiplicadores. Bonus Buy ofrece distintos números de garras activas al comenzar el bonus.",
+    "note": "La página oficial de Clawbuster indica un RTP del 95% y volatilidad muy alta. Float Multipliers puede alcanzar 100× y un premio puede llegar a 6 000 apuestas. El desarrollador describe este importe como un resultado posible, no como un premio máximo establecido por separado.",
+    "metricsNote": "Clawbuster publica un RTP del 95% y volatilidad muy alta. En la descripción de Float Multipliers, el proveedor indica por separado que el resultado puede alcanzar 6 000x la apuesta original. Slotfolio guarda esta cifra como potencial declarado, no como un límite fijo de premio máximo anunciado por separado.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Durante los giros gratis, las líneas de pesca abiertas se conservan y pueden recoger multiplicadores. Bonus Buy ofrece distintos números de garras activas al comenzar el bonus."
+      },
+      {
+        "title": "Pay Anywhere",
+        "text": "El pago depende del número de símbolos iguales del tablero, no de una línea fija. Esto cambia cómo se lee un resultado, pero por sí solo no hace más probable un premio."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "clawbass-bonanza-free-rush": {
+    "description": "Una secuela de ClawBass en un tablero de 6 × 5. Las cascadas se combinan con símbolos de cebo y el progreso de seis líneas de pesca, cada una capaz de recoger un multiplicador.",
+    "feature": "Los multiplicadores de tesoro alcanzan 100x por línea. Free Spins Purchase permite continuar el bonus con las líneas de pesca ya abiertas, sin una nueva activación de Scatter.",
+    "note": "La página oficial de Clawbuster indica un RTP del 94.97% y volatilidad muy alta. Treasure Multipliers puede alcanzar 100× y un premio puede llegar a 6 000 apuestas. El desarrollador describe este importe como un resultado posible, no como un premio máximo establecido por separado.",
+    "metricsNote": "Clawbuster publica un RTP del 94.97% y volatilidad muy alta. Su descripción de Treasure Multipliers indica que el premio total puede alcanzar 6 000x la apuesta original. Slotfolio guarda 6 000x como potencial declarado, no como un límite fijo indicado por separado.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los multiplicadores de tesoro alcanzan 100x por línea. Free Spins Purchase permite continuar el bonus con las líneas de pesca ya abiertas, sin una nueva activación de Scatter."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "3-claws-of-aztec-fire": {
+    "description": "Un tablero de 5 × 3 lleva a Hold & Win con tres tipos de garras: una duplica valores, otra se convierte en una moneda de bote y la tercera recoge todas las monedas visibles.",
+    "feature": "Cinco monedas activan tres regiros. Los símbolos de bonus nuevos devuelven el contador a tres y llenar las 15 posiciones abre Grand 10 000x.",
+    "note": "La página oficial de Clawbuster indica un RTP del 95% y volatilidad alta.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Cinco monedas activan tres regiros. Los símbolos de bonus nuevos devuelven el contador a tres y llenar las 15 posiciones abre Grand 10 000x."
+      },
+      {
+        "title": "Hold & Win",
+        "text": "La función Hold & Win figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Regiros",
+        "text": "La función de regiros figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Recolector",
+        "text": "La función de recolector figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  },
+  "great-clawsby-deluxe": {
+    "description": "Cinco rodillos y 50 líneas de pago combinan comodines apilados con Hold & Win. El sistema Claw recoge multiplicadores, aumenta los regiros y puede añadir Scatters nuevos.",
+    "feature": "Mystery Box modifica el estado del bonus mediante una mejora de multiplicador, regiros adicionales o una caída de Scatter. El progreso se desarrolla dentro de una sesión de Hold & Win.",
+    "note": "La ficha técnica pública del juego indica un RTP del 95%, volatilidad baja y un premio máximo de 6 992x. Comprueba por separado la configuración activa del operador.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Mystery Box modifica el estado del bonus mediante una mejora de multiplicador, regiros adicionales o una caída de Scatter. El progreso se desarrolla dentro de una sesión de Hold & Win."
+      },
+      {
+        "title": "Hold & Win",
+        "text": "La función Hold & Win figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Comodín apilado",
+        "text": "La función de comodín apilado figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Claw",
+        "text": "La función Claw figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  },
+  "fruit-train-express-hold-win": {
+    "description": "Un tablero de frutas de 5 × 3 lleva a Hold & Win con símbolos de monedas y niveles de botes. La base sigue siendo sencilla y la mayor parte de la progresión de estado pasa al bonus.",
+    "feature": "Los símbolos de monedas quedan fijos en Hold & Win. Las monedas nuevas mantienen la secuencia de regiros, mientras las opciones de compra y ante cambian la vía de entrada a la función.",
+    "note": "Los catálogos del sector indican un RTP del 97%, volatilidad alta y un premio máximo de alrededor de 4 500x para la versión publicada. Comprueba la configuración del operador dentro del juego.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los símbolos de monedas quedan fijos en Hold & Win. Las monedas nuevas mantienen la secuencia de regiros, mientras las opciones de compra y ante cambian la vía de entrada a la función."
+      },
+      {
+        "title": "Hold & Win",
+        "text": "La función Hold & Win figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Botes",
+        "text": "El juego tiene niveles independientes de premios fijos o progresivos. La presencia de un bote no indica por sí sola con qué frecuencia puede ganarse."
+      },
+      {
+        "title": "Recogida de valores",
+        "text": "Un símbolo especial recoge valores monetarios o multiplicadores de otras posiciones. Comprueba si la recogida se realiza una vez o se repite durante el bonus."
+      }
+    ]
+  },
+  "hot-and-spicy-jackpot": {
+    "description": "Un tablero normal de frutas de 5 × 3 se complementa con un Chilly Mini Slot independiente de 1 × 3 que determina el multiplicador del giro actual.",
+    "feature": "Tres rodillos de pimientos giran sobre el tablero principal. Un sistema independiente de Spicy Jackpots contiene cinco niveles de premios locales, de Minor a Grand.",
+    "note": "Onlyplay publica un RTP del 96.06% y volatilidad media. La minitragamonedas modifica el pago, no constituye una segunda apuesta independiente.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Tres rodillos de pimientos giran sobre el tablero principal. Un sistema independiente de Spicy Jackpots contiene cinco niveles de premios locales, de Minor a Grand."
+      },
+      {
+        "title": "Botes",
+        "text": "El juego tiene niveles independientes de premios fijos o progresivos. La presencia de un bote no indica por sí sola con qué frecuencia puede ganarse."
+      },
+      {
+        "title": "Minitragamonedas",
+        "text": "La función de minitragamonedas figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "wild-west-girls": {
+    "description": "Una temática del Oeste sobre un tablero convencional de 5 × 3 con veinte líneas de pago. El ritmo principal no cambia la geometría del tablero; los símbolos especiales aumentan premios individuales y el bonus.",
+    "feature": "Los comodines ayudan a formar combinaciones de líneas, los Scatters abren giros gratis y los multiplicadores aleatorios añaden variedad sobre el tablero fijo.",
+    "note": "La ficha pública de lanzamiento indica un RTP del 95.36% y volatilidad media. Comprueba la configuración del operador antes de jugar con dinero.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los comodines ayudan a formar combinaciones de líneas, los Scatters abren giros gratis y los multiplicadores aleatorios añaden variedad sobre el tablero fijo."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Scatter",
+        "text": "Scatter suele contar sin depender de las líneas de pago fijas y puede activar un bonus. Comprueba el número y las posiciones exactas en la tabla de pagos del juego concreto."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "caramelo-jackpot": {
+    "description": "Un juego de temática brasileña de 5 × 3 con una minitragamonedas independiente sobre el tablero principal. La sección superior establece multiplicadores sin cambiar el método base de pago por líneas.",
+    "feature": "Los comodines fijos inician una secuencia de giros adicionales. Un juego de botes independiente utiliza varios niveles de premios y su propia activación.",
+    "note": "La página de Onlyplay publica un RTP del 96.14%, volatilidad media y un premio máximo de 10 000x.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los comodines fijos inician una secuencia de giros adicionales. Un juego de botes independiente utiliza varios niveles de premios y su propia activación."
+      },
+      {
+        "title": "Botes",
+        "text": "El juego tiene niveles independientes de premios fijos o progresivos. La presencia de un bote no indica por sí sola con qué frecuencia puede ganarse."
+      },
+      {
+        "title": "Minitragamonedas",
+        "text": "La función de minitragamonedas figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "coin-flynn": {
+    "description": "Dos tableros compactos trabajan juntos: la sección normal forma premios de líneas de pago, mientras los símbolos de monedas se trasladan a un tablero de acumulación independiente.",
+    "feature": "Cinco líneas de pago fijas se combinan con Coin Reel, comodines multiplicadores y giros gratis. La acumulación de monedas modifica el estado del tablero vecino entre eventos.",
+    "note": "Onlyplay publica un RTP del 97% y volatilidad alta. La página del juego indica un premio máximo de 5 831x.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Cinco líneas de pago fijas se combinan con Coin Reel, comodines multiplicadores y giros gratis. La acumulación de monedas modifica el estado del tablero vecino entre eventos."
+      },
+      {
+        "title": "Recogida de monedas",
+        "text": "La función de recogida de monedas figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "coin-craze-jackpot": {
+    "description": "Un tablero de líneas de pago de 5 × 3 pasa a un estado de regiros de monedas. Las monedas especiales quedan fijas, mientras cuatro niveles de botes y Claim Win cambian cuándo termina el bonus.",
+    "feature": "Las monedas fijas permanecen en el tablero durante los regiros y las nuevas mantienen el bonus. Claim Win permite recoger el resultado acumulado dentro de la función.",
+    "note": "Los catálogos públicos indican un RTP del 95% para el lanzamiento. Comprueba el máximo concreto y la configuración en el menú de ayuda del operador.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Las monedas fijas permanecen en el tablero durante los regiros y las nuevas mantienen el bonus. Claim Win permite recoger el resultado acumulado dentro de la función."
+      },
+      {
+        "title": "Fijación",
+        "text": "La función de fijación figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Regiros",
+        "text": "La función de regiros figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Botes",
+        "text": "El juego tiene niveles independientes de premios fijos o progresivos. La presencia de un bote no indica por sí sola con qué frecuencia puede ganarse."
+      }
+    ]
+  }
+}
