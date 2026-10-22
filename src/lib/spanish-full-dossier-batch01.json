@@ -1,0 +1,64 @@
+{
+  "gates-of-olympus": {
+    "description": "Una ambientación de la Antigüedad, símbolos en cascada y multiplicadores que cambian el desarrollo del bonus. Un recorrido por las reglas que hay detrás del espectáculo.",
+    "feature": "Los multiplicadores se acumulan durante los giros gratis y se aplican a los premios posteriores de la ronda.",
+    "note": "El juego gira en torno a la espera de un multiplicador. Su espectáculo no significa pagos frecuentes: los intervalos entre rondas ganadoras pueden ser largos.",
+    "releaseDate": "24 de febrero de 2021",
+    "cards": [
+      {"title": "Premios en cualquier parte del tablero", "text": "En el Gates of Olympus original se forma un premio cuando aparecen entre 8 y 30 símbolos iguales en el tablero. Después de un pago, los símbolos ganadores desaparecen y la cascada puede continuar dentro del mismo giro."},
+      {"title": "Multiplicadores de hasta 500x", "text": "Los símbolos multiplicadores pueden aparecer tanto en el juego base como en los giros gratis. La página oficial de la versión original indica valores de hasta 500x."},
+      {"title": "15 giros gratis", "text": "Cuatro o más Scatters activan el juego de bonus con 15 giros gratis. Es un modo independiente, no la continuación de una cascada normal."},
+      {"title": "Multiplicador acumulativo del bonus", "text": "Durante los giros gratis, los multiplicadores que aparecen en un giro ganador se suman al valor acumulado y se aplican al premio correspondiente."}
+    ]
+  },
+  "sweet-bonanza": {
+    "description": "Detrás de las frutas y los dulces hay un sistema de premios sin líneas de pago convencionales. Los símbolos iguales se cuentan en todo el tablero.",
+    "feature": "Después de un pago, los símbolos desaparecen para dejar sitio a otros nuevos. Los multiplicadores aparecen en el bonus.",
+    "note": "Un ejemplo claro de por qué la presentación y el modelo matemático son cosas distintas. Una animación desenfadada convive con una volatilidad alta.",
+    "releaseDate": "25 de junio de 2019",
+    "metricsNote": "Esta cifra corresponde al Sweet Bonanza original, no a las versiones 1000 o Super Scatter.",
+    "cards": [
+      {"title": "Pay Anywhere y cascadas", "text": "Sweet Bonanza paga por 8–12 o más símbolos iguales en cualquier parte del tablero. Después de un premio, los símbolos desaparecen y otros nuevos caen desde arriba para continuar la secuencia de cascadas."},
+      {"title": "10 giros gratis", "text": "Entre cuatro y seis Scatters activan el juego de bonus con 10 giros gratis. El número de Scatters afecta al pago independiente de Scatter, pero el número inicial de giros sigue siendo diez."},
+      {"title": "Candy Bomb 2x–100x", "text": "En el juego de bonus pueden aparecer símbolos multiplicadores con valores de 2x a 100x. No sustituyen a los símbolos normales y se cuentan después de una secuencia ganadora."},
+      {"title": "Suma de multiplicadores", "text": "Al final de una cascada ganadora se suman los valores de todos los multiplicadores que han aparecido y se aplican al premio de esa secuencia. La cifra relevante es su suma, no un símbolo individual."}
+    ]
+  },
+  "book-of-dead": {
+    "description": "Una aventura egipcia con diez líneas de pago y un símbolo expansivo. Un juego base sencillo y un bonus característico.",
+    "feature": "Durante los giros gratis, el símbolo elegido puede expandirse por todo un rodillo.",
+    "note": "La mecánica se entiende después de unas pocas rondas. La mayor parte de la variedad se concentra en el bonus, no en los giros base.",
+    "releaseDate": "14 de enero de 2016",
+    "cards": [
+      {"title": "5 × 3 y 10 líneas de pago", "text": "Book of Dead utiliza un tablero convencional de 5 × 3 y diez líneas de pago. El juego base debe leerse como una tragaperras de líneas, no como un sistema moderno de cascadas."},
+      {"title": "El libro es comodín y Scatter", "text": "El símbolo del libro tiene dos funciones: sustituye a los símbolos normales como comodín y también cuenta como Scatter para activar giros gratis."},
+      {"title": "10 giros gratis", "text": "Tres Scatters activan la función Free Spins y conceden 10 giros. El bonus cambia el papel del símbolo especial elegido, no el tablero."},
+      {"title": "Símbolo expansivo especial", "text": "Antes de los giros gratis se elige aleatoriamente un símbolo normal. Durante el bonus puede expandirse en los rodillos cuando esa expansión crea un pago adicional en las líneas activas."}
+    ]
+  },
+  "reactoonz": {
+    "description": "Reacciones en cadena en un tablero de criaturas de un solo ojo. Los grupos vecinos sustituyen a las líneas de pago, junto con acumulación de energía y transformaciones de símbolos.",
+    "feature": "Los premios por grupos cargan un medidor que activa una secuencia de efectos del juego.",
+    "note": "Es el juego con más reglas de esta selección. Empieza por entender el medidor de energía: sin él, la acción puede parecer una sucesión arbitraria de efectos.",
+    "releaseDate": "23 de octubre de 2017",
+    "cards": [
+      {"title": "Grupos en un tablero de 7 × 7", "text": "En Reactoonz, un premio empieza con un grupo de cinco o más criaturas iguales vecinas. Hay que leer los grupos en todo el tablero de 7 × 7, no líneas de pago de izquierda a derecha."},
+      {"title": "Una cascada después de un grupo", "text": "Los símbolos de un grupo ganador desaparecen y otros nuevos caen desde arriba. Por eso, una ronda pagada puede contener varios grupos consecutivos."},
+      {"title": "Energía para Gargantoon", "text": "Cada grupo ganador aporta energía al sistema de progreso de Gargantoon. Sigue el medidor por separado del importe del premio actual."},
+      {"title": "Quantum Leap", "text": "Al cargarse por completo, Gargantoon se mueve al centro del tablero e inicia una reacción en cadena de funciones especiales. La descripción oficial del juego original indica una secuencia de hasta cinco efectos."}
+    ]
+  },
+  "the-dog-house": {
+    "description": "Perros, casetas y comodines fijos. Un tablero convencional centrado en combinaciones de multiplicadores.",
+    "feature": "Durante el bonus, los comodines permanecen fijos en los rodillos hasta que termina.",
+    "note": "Los comodines persistentes facilitan seguir la progresión del bonus. Sin embargo, acumular símbolos no garantiza el resultado final.",
+    "releaseDate": "9 de mayo de 2019",
+    "metricsNote": "Esta cifra corresponde al The Dog House original, no a Megaways, Multihold ni otras secuelas.",
+    "cards": [
+      {"title": "5 × 3 y 20 líneas de pago", "text": "El The Dog House original es una tragaperras de líneas con un tablero de 5 × 3 y 20 líneas de pago. Debe distinguirse de las versiones posteriores Megaways y Multihold de la serie."},
+      {"title": "Comodines con multiplicadores", "text": "Los comodines aparecen en los rodillos centrales y llevan multiplicadores. Su valor depende de si participan en una línea ganadora concreta."},
+      {"title": "Comodines fijos", "text": "Durante los giros gratis, los comodines se fijan y permanecen en sus posiciones. Es una parte acumulativa del bonus, pero por sí sola no garantiza un pago final."},
+      {"title": "El bonus original y su potencial", "text": "Tres símbolos de patas de bonus activan el modo Free Spins. En el lanzamiento del juego original, Pragmatic Play declaró un potencial de hasta 6 750x la apuesta, por separado de las especificaciones de versiones posteriores de la serie."}
+    ]
+  }
+}

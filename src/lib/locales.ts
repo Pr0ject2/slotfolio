@@ -5,6 +5,7 @@ import { hasEnglishCatalogRecord } from "./english-catalog-record-routes";
 import { retiredSlotLinks } from "./retired-slot-links";
 import { spanishReadyPaths } from "./spanish-routes";
 import { hasSpanishCatalogRecord } from "./spanish-catalog-record-routes";
+import { hasSpanishDossier } from "./spanish-dossier-routes";
 export type SiteLocale = "ru" | "en" | "es";
 
 // Include only pages that have complete reviewed English copy.
@@ -61,7 +62,8 @@ export function hasTranslation(path: string, locale: SiteLocale): boolean {
   if (locale === "ru") return true;
   return locale === "en" ? isReviewedRoute(normalized) : (
     (spanishReadyPaths as readonly string[]).includes(normalized) ||
-    (normalized.startsWith("/slots/catalog/") && hasSpanishCatalogRecord(normalized.slice("/slots/catalog/".length)))
+    (normalized.startsWith("/slots/catalog/") && hasSpanishCatalogRecord(normalized.slice("/slots/catalog/".length))) ||
+    (normalized.startsWith("/slots/") && hasSpanishDossier(normalized.slice("/slots/".length)))
   );
 }
 
