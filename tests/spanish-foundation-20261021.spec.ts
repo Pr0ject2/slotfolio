@@ -5,6 +5,7 @@ import { spanishSystemPages } from "../src/lib/spanish-system-pages";
 import { hasTranslation, languageAlternates, languageHref, siteLocale } from "../src/lib/locales";
 import { createCatalogModel } from "../src/lib/catalog-index";
 import { slots } from "../src/lib/data";
+import { hasSpanishDossier } from "../src/lib/spanish-dossier-routes";
 
 test("Spanish readiness exposes complete translations and preserves the published game set", () => {
   expect(slots).toHaveLength(100);
@@ -86,9 +87,11 @@ test("Spanish browser detection respects direct untranslated game links", async 
   await page.goto("/");
   await expect(page).toHaveURL(/\/es\/?$/);
   await page.evaluate(() => localStorage.setItem("slotfolio-language", "es"));
-  await page.goto("/en/slots/wanted-dead-or-a-wild/");
-  await expect(page.locator("h1")).toHaveText("Wanted Dead or a Wild");
-  await expect(page).toHaveURL(/\/en\/slots\/wanted-dead-or-a-wild\/?$/);
+  const untranslated = slots.find(game => !hasSpanishDossier(game.slug))!;
+  expect(untranslated).toBeTruthy();
+  await page.goto(`/en/slots/${untranslated.slug}/`);
+  await expect(page.locator("h1")).toHaveText(untranslated.name);
+  await expect(page).toHaveURL(new RegExp(`/en/slots/${untranslated.slug}/?$`));
   await expect(page.locator('link[hreflang="es"]')).toHaveCount(0);
   await expect(page.getByRole("link", { name: "ES", exact: true })).toHaveAttribute("href", /\/es\/?$/);
   await page.goto("/en/slots/gates-of-olympus/");

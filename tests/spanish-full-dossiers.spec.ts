@@ -6,7 +6,7 @@ import { slots, relatedSlots, slotMechanics } from "../src/lib/data";
 import { getVerifiedSlotMetrics, slotFeatureCards } from "../src/lib/dossier";
 import { getVerifiedSlotPassport } from "../src/lib/slot-passport";
 import { englishFullDossiers, englishDossierFeatureCards } from "../src/lib/english-full-dossiers";
-import { spanishFullDossiers, spanishDossierFeatureCards, spanishMechanicExplanations, spanishMetricLabel } from "../src/lib/spanish-full-dossiers";
+import { spanishFullDossiers, spanishDossierFeatureCards, spanishMechanicExplanations, spanishMetricLabel, spanishReleaseDate } from "../src/lib/spanish-full-dossiers";
 import { spanishDossierSlugs, hasSpanishDossier } from "../src/lib/spanish-dossier-routes";
 import { spanishCatalogFact } from "../src/lib/spanish-catalog-facts";
 import { hasTranslation, languageAlternates } from "../src/lib/locales";
@@ -23,8 +23,9 @@ test("complete Spanish dossiers preserve all existing content, numbers, caveats 
     const game = slots.find(game => game.slug === slug)!;
     expect(game, slug).toBeTruthy();
     const source = englishFullDossiers[slug], copy = spanishFullDossiers[slug];
-    expect(createHash("sha256").update(JSON.stringify(source)).digest("hex"), slug).toBe((hashes as Record<string,string>)[slug]);
     const enCards = englishDossierFeatureCards(game), esCards = spanishDossierFeatureCards(game);
+    const completeSource = {...source, cards: enCards.map(({title,text})=>({title,text}))};
+    expect(createHash("sha256").update(JSON.stringify(completeSource)).digest("hex"), slug).toBe((hashes as Record<string,string>)[slug]);
     expect(esCards).toHaveLength(slotFeatureCards(game).length);
     expect(Boolean(copy.metricsNote)).toBe(Boolean(source.metricsNote));
     expect(Boolean(copy.attributionNote)).toBe(Boolean(source.attributionNote));
@@ -53,7 +54,9 @@ test("complete Spanish dossiers preserve all existing content, numbers, caveats 
   }
 });
 
-for (const slug of spanishDossierSlugs) for (const width of [320,375,390,768,1024,1440]) {
+// Preserve the original six-width matrix for all five template representatives.
+// Further copy-only records each get a browser check at 390px and full export checks.
+for (const [index,slug] of spanishDossierSlugs.entries()) for (const width of index<5 ? [320,375,390,768,1024,1440] : [390]) {
   test(`complete ES dossier ${slug} at ${width}px`, async ({page},testInfo) => {
     const game=slots.find(game=>game.slug===slug)!, copy=spanishFullDossiers[slug];
     const verified=getVerifiedSlotMetrics(slug), passport=getVerifiedSlotPassport(slug);
@@ -68,7 +71,7 @@ for (const slug of spanishDossierSlugs) for (const width of [320,375,390,768,102
     await expect(page.locator("#perspective blockquote")).toHaveText(copy.note);
     await expect(page.locator("#feature .dossier-feature-card p")).toHaveText(copy.cards.map(card=>card.text));
     for (const value of [game.field,game.rtp,game.volatility,verified?.maxWin,verified?.observedWin].filter(Boolean)) await expect(page.locator(".facts")).toContainText(spanishCatalogFact(value!));
-    if (passport) { await expect(page.locator(".facts")).toContainText(copy.releaseDate!); await expect(page.locator(".facts")).toContainText(spanishCatalogFact(passport.gameType)); }
+    if (passport) { await expect(page.locator(".facts")).toContainText(copy.releaseDate ?? spanishReleaseDate(passport.releaseDate)); await expect(page.locator(".facts")).toContainText(spanishCatalogFact(passport.gameType)); }
     if (verified?.maxWin) await expect(page.locator(".facts dt").filter({hasText:spanishMetricLabel(verified.maxWinLabel,"Máximo documentado")})).toHaveCount(1);
     if (verified?.observedWin) await expect(page.locator(".facts dt").filter({hasText:spanishMetricLabel(verified.observedWinLabel,"Premio observado")})).toHaveCount(1);
     if (verified?.note) await expect(page.locator(".metric-caveat")).toHaveText(copy.metricsNote!);

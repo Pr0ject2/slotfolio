@@ -1,0 +1,64 @@
+{
+  "big-bass-bonanza": {
+    "description": "La pesca como mecánica de juego: el pescador recoge los valores de los símbolos monetarios durante los giros gratis.",
+    "feature": "Las nuevas apariciones del pescador hacen avanzar el bonus hacia giros adicionales y multiplicadores.",
+    "note": "Aquí es más fácil seguir la recogida de símbolos que las líneas de pago. Es un tipo distinto de progresión del bonus que conviene comparar con las cascadas.",
+    "cards": [
+      {"title": "10–20 giros gratis", "text": "Tres, cuatro o cinco Scatters activan el bonus con 10, 15 o 20 giros gratis respectivamente. El número inicial de giros depende del número de Scatters."},
+      {"title": "El pescador recoge valores monetarios", "text": "Durante el bonus, el pescador Wild recoge los valores de todos los símbolos monetarios visibles. Estos símbolos no se recogen solos: debe aparecer un comodín en el mismo giro."},
+      {"title": "Reactivación cada cuarto comodín", "text": "Cada cuarto comodín recogido añade otros 10 giros gratis. Por eso, el contador de comodines influye más en la progresión del bonus que el número de símbolos monetarios en un giro concreto."},
+      {"title": "Multiplicadores 2x → 3x → 10x", "text": "La primera, segunda y tercera reactivación llevan la recogida a etapas con multiplicadores 2x, 3x y 10x. Esta progresión pertenece al bonus del Big Bass Bonanza original."}
+    ]
+  },
+  "jammin-jars": {
+    "description": "Un gran tablero de 8 × 8, premios por grupos y cascadas. Los tarros comodín se mueven por el tablero y aumentan su multiplicador después de participar en un premio.",
+    "feature": "Un pago requiere un grupo de cinco o más símbolos de fruta iguales. Después, los símbolos desaparecen e inician otra cascada.",
+    "note": "La animación puede resultar difícil de seguir en un tablero grande. Céntrate en las posiciones de los tarros comodín y en los grupos en los que realmente participan.",
+    "metricsNote": "Push Gaming declara un máximo fijo de 20 000x para el Jammin’ Jars original; la página actual del juego indica por separado un mayor premio observado de 19 998.5x.",
+    "additionalSourceLabels": ["Entrevista de Push Gaming sobre Jammin’ Jars 2"],
+    "cards": [
+      {"title": "Función principal", "text": "Un pago requiere un grupo de cinco o más símbolos de fruta iguales. Después, los símbolos desaparecen e inician otra cascada."},
+      {"title": "Cascadas", "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."},
+      {"title": "Comodín", "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."},
+      {"title": "Multiplicadores", "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."}
+    ]
+  },
+  "razor-shark": {
+    "description": "Veinte líneas de pago, pilas misteriosas y una función independiente de revelación de tiburones dorados. El bonus se centra en pilas móviles y un multiplicador creciente.",
+    "feature": "Las pilas misteriosas pueden revelar símbolos y activar Razor Reveal con multiplicadores instantáneos y símbolos Scatter.",
+    "note": "El tablero base es convencional; la complejidad procede de las funciones superpuestas. Entiende las pilas misteriosas antes de pasar a los multiplicadores del bonus.",
+    "metricsNote": "El Razor Shark original no tiene un límite fijo de premio máximo: Push Gaming confirma un premio real de 85 475.4x y explica que los juegos sin límite muestran una cifra observada de referencia, no un techo artificial.",
+    "additionalSourceLabels": ["Preguntas y respuestas de Push Gaming sobre Razor Shark"],
+    "cards": [
+      {"title": "Función principal", "text": "Las pilas misteriosas pueden revelar símbolos y activar Razor Reveal con multiplicadores instantáneos y símbolos Scatter."},
+      {"title": "Símbolos misteriosos", "text": "Los símbolos ocultos revelan un mismo tipo de símbolo o un conjunto de valores. La combinación final no puede leerse visualmente antes de revelarse; por eso, sigue las reglas de la función."},
+      {"title": "Multiplicadores", "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."},
+      {"title": "Giros gratis", "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."}
+    ]
+  },
+  "wanted-dead-or-a-wild": {
+    "description": "Quince líneas de pago y tres escenarios de bonus claramente distintos. Los símbolos VS revelan rodillos comodín completos y añaden multiplicadores a las líneas de pago.",
+    "feature": "DuelReels convierte los símbolos VS en rodillos comodín expandidos. Sus multiplicadores se suman para una misma línea ganadora.",
+    "note": "El juego concentra deliberadamente gran parte de la atención en situaciones de bonus poco frecuentes. La cantidad de efectos en pantalla no es una medida útil de su ritmo.",
+    "metricsNote": "La página detallada actual de Hacksaw Gaming indica Volatility: 4 / 5, por lo que la categoría pública de Slotfolio sigue siendo Alta. Al mismo tiempo, el catálogo general de Hacksaw Gaming muestra Wanted Dead Or a Wild con los cinco segmentos del medidor de volatilidad llenos, 5/5. El conflicto entre estas dos páginas oficiales se conserva expresamente sin elevar la categoría pública.",
+    "additionalSourceLabels": ["Catálogo actual de Hacksaw Gaming con el medidor de volatilidad discrepante 5/5"],
+    "cards": [
+      {"title": "Función principal", "text": "DuelReels convierte los símbolos VS en rodillos comodín expandidos. Sus multiplicadores se suman para una misma línea ganadora."},
+      {"title": "Comodín", "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."},
+      {"title": "Multiplicadores", "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."},
+      {"title": "Varios bonus", "text": "El juego tiene más de un escenario de bonus. Compara sus reglas además de sus nombres: el mismo número de giros gratis puede producir una estructura de ronda diferente."}
+    ]
+  },
+  "le-bandit": {
+    "description": "Premios por grupos, supercascadas y posiciones doradas que conservan el rastro de las ubicaciones ganadoras. Monedas, tréboles y ollas de oro añaden otras capas.",
+    "feature": "Después de un premio desaparecen del tablero tanto los símbolos participantes como otros símbolos iguales del mismo tipo, lo que continúa la supercascada.",
+    "note": "Le Bandit tiene varias capas de reglas, pero la pregunta básica es sencilla: ¿dónde se formó el grupo y qué posiciones se volvieron doradas después?",
+    "passportSourceLabel": "Resumen oficial de lanzamientos de agosto de Hacksaw Gaming fechado el 01.09.2023: Ronin Stackways el 10.08.2023, seguido de Le Bandit dos semanas después",
+    "cards": [
+      {"title": "Función principal", "text": "Después de un premio desaparecen del tablero tanto los símbolos participantes como otros símbolos iguales del mismo tipo, lo que continúa la supercascada."},
+      {"title": "Cascadas", "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."},
+      {"title": "Posiciones doradas", "text": "Las posiciones marcadas conservan su estado y pueden mejorar cascadas o eventos de bonus posteriores. La historia del tablero importa junto con la combinación de símbolos."},
+      {"title": "Recogida de valores", "text": "Un símbolo especial recoge valores monetarios o multiplicadores de otras posiciones. Comprueba si la recogida se realiza una vez o se repite durante el bonus."}
+    ]
+  }
+}
