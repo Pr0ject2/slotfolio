@@ -76,7 +76,7 @@ export function SpanishFullDossier({ game }: { game: Slot }) {
         <a href="#rules">Cómo se forman los premios</a><a href="#feature">{isGates ? "Multiplicadores y giros gratis" : "Función principal"}</a>
         <a href="#math-profile">RTP y otras cifras</a><a href="#perspective">Perspectiva editorial</a><a href="#catalog-context">Comparación de juegos</a>
         <a href="#source">{isGates ? "Fuentes y limitaciones" : "Fuentes y riesgos"}</a><a href="#faq">Preguntas sobre el juego</a><a href="#related">Juegos relacionados</a>
-        <Link href={`/en/compare?seed=${game.slug}`} lang="en">Abrir comparación (en inglés) ↗</Link>
+        <Link href={`/es/compare?seed=${game.slug}`}>Abrir comparación ↗</Link>
       </aside>
       <article className="prose">
         <section id="rules"><h2>Cómo se forman los premios</h2><p>{copy.feature} Esta función determina qué conviene seguir durante la ronda.</p>
@@ -105,7 +105,7 @@ export function SpanishFullDossier({ game }: { game: Slot }) {
             <div><span>RTP frente al catálogo</span><strong>{spanishRtpContext(rtpContext.label)}</strong><small>Mediana del RTP de {rtpContext.count} juegos: {spanishCatalogFact(formatRtp(rtpContext.median))}</small></div>
             <div><span>Volatilidad</span><strong>{spanishCatalogFact(game.volatility)}</strong><small>{volatilitySummary}</small></div>
             <div><span>Juegos de estructura similar</span><strong>{related.map(item=>item.name).join(" · ")}</strong><small>Juegos con reglas y funciones parecidas</small></div>
-          </div><Link className="text-link" href={`/en/compare?seed=${game.slug}`} lang="en">Abrir tabla comparativa (en inglés) ↗</Link>
+          </div><Link className="text-link" href={`/es/compare?seed=${game.slug}`}>Abrir tabla comparativa ↗</Link>
         </section>
         <section id="source"><h2>{isGates ? "Fuentes y limitaciones" : "Fuentes y riesgos"}</h2>
           <p>El RTP describe un retorno teórico sobre un gran número de apuestas. No indica cuánto se devolverá durante una sesión. La volatilidad describe la dispersión de los resultados, pero no permite predecir la próxima ronda.</p>
@@ -118,7 +118,7 @@ export function SpanishFullDossier({ game }: { game: Slot }) {
         <section id="faq"><h2>Preguntas sobre el juego</h2>
           <details><summary>¿Se puede predecir el próximo resultado?</summary><p>No. Los resultados anteriores no permiten calcular el siguiente. Una racha de pérdidas no hace que un premio esté pendiente.</p></details>
           <details><summary>¿Por qué otro sitio muestra un RTP diferente?</summary><p>Un juego puede tener varias configuraciones matemáticas. A veces las fuentes también confunden el original con sus secuelas. Comprueba el título y el menú de ayuda de la versión que has abierto.</p></details>
-          <details><summary>¿Qué conviene comparar antes de elegir?</summary><p>Las mecánicas de pago, las dimensiones del tablero, las funciones del bonus y la claridad de la interfaz. La <Link href={`/en/compare?seed=${game.slug}`} lang="en">tabla comparativa (en inglés)</Link> ayuda a ver las diferencias.</p></details>
+          <details><summary>¿Qué conviene comparar antes de elegir?</summary><p>Las mecánicas de pago, las dimensiones del tablero, las funciones del bonus y la claridad de la interfaz. La <Link href={`/es/compare?seed=${game.slug}`}>tabla comparativa</Link> ayuda a ver las diferencias.</p></details>
         </section>
       </article>
     </div>

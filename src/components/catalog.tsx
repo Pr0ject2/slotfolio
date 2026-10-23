@@ -352,7 +352,7 @@ export function Catalog({
           )}
 
           <div className="catalog-end">
-            <Link href={locale !== "ru" ? "/en/compare" : "/compare"}>{locale !== "ru" ? copy.compareInRussian : "Перейти к сравнению ↗"}</Link>
+            <Link href={locale === "es" ? "/es/compare" : locale === "en" ? "/en/compare" : "/compare"}>{locale !== "ru" ? copy.compareInRussian : "Перейти к сравнению ↗"}</Link>
           </div>
         </div>
       </div>

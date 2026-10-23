@@ -13,6 +13,8 @@ import {
 import type { ComparisonItem } from "@/lib/catalog-index";
 import styles from "./comparison.module.css";
 import {englishComparisonCopy} from "@/lib/english-comparison-copy";
+import spanishComparisonCopy from "@/lib/spanish-comparison-copy.json" with {type:"json"};
+import type { SiteLocale } from "@/lib/locales";
 
 function ruPlural(count: number, one: string, few: string, many: string) {
   const mod100 = count % 100;
@@ -23,19 +25,21 @@ function ruPlural(count: number, one: string, few: string, many: string) {
   return many;
 }
 
-function formatRange(values: Array<number | null>, english = false) {
+function formatRange(values: Array<number | null>, locale: SiteLocale = "ru") {
+  const english=locale==="en";
   const finite = values.filter((value): value is number => value !== null && Number.isFinite(value));
-  if (!finite.length) return english ? "Not recorded" : "Не указан";
+  if (!finite.length) return locale==="es" ? "Sin dato confirmado" : english ? "Not recorded" : "Не указан";
   const min = Math.min(...finite);
   const max = Math.max(...finite);
   const format = (value: number) => `${english ? value.toFixed(2) : value.toFixed(2).replace(".", ",")}%`;
   return min === max ? format(min) : `${format(min)}–${format(max)}`;
 }
 
-export function Comparison({ items, locale = "ru" }: { items: ComparisonItem[]; locale?: "ru" | "en" }) {
+export function Comparison({ items, locale = "ru" }: { items: ComparisonItem[]; locale?: SiteLocale }) {
   const english = locale === "en";
-  const root = english ? "/en" : "";
-  const t = (value: string) => { if (!english) return value; const copy=englishComparisonCopy[value]; if (!copy) throw new Error(`Missing comparison copy: ${value}`); return copy; };
+  const spanish = locale === "es";
+  const root = spanish ? "/es" : english ? "/en" : "";
+  const t = (value: string) => { if (locale==="ru") return value; const dictionary:Record<string,string>=spanish?spanishComparisonCopy:englishComparisonCopy;const copy=dictionary[value]; if (!copy) throw new Error(`Missing ${locale} comparison copy: ${value}`); return copy; };
   const selected = useSelection();
   const [seedMessage, setSeedMessage] = useState("");
   const [picker, setPicker] = useState("");
@@ -109,7 +113,7 @@ export function Comparison({ items, locale = "ru" }: { items: ComparisonItem[]; 
       <section className="comparison-builder" aria-label={t("Выбор игр для сравнения")}>
         <div className="comparison-builder-copy">
           <span className="eyebrow">{t("Ваш набор")}</span>
-          <h2>{games.length ? english ? `${games.length} of ${MAX_COMPARE} positions filled` : `${games.length} из ${MAX_COMPARE} мест занято` : t("Выберите игры для таблицы")}</h2>
+          <h2>{games.length ? spanish ? `${games.length} de ${MAX_COMPARE} posiciones ocupadas` : english ? `${games.length} of ${MAX_COMPARE} positions filled` : `${games.length} из ${MAX_COMPARE} мест занято` : t("Выберите игры для таблицы")}</h2>
           <p>{t("Сравните две игры рядом: так проще увидеть различия в правилах, бонусах и характеристиках.")}</p>
         </div>
 
@@ -148,7 +152,7 @@ export function Comparison({ items, locale = "ru" }: { items: ComparisonItem[]; 
                 <h3><Link href={`${root}/slots/${game.slug}`}>{game.name}</Link></h3>
                 <p>{game.mechanics.map((item) => item.name).join(" · ")} · {game.rtp}</p>
               </div>
-              <button type="button" onClick={() => remove(game.slug)} aria-label={english ? `Remove ${game.name} from comparison` : `Удалить ${game.name} из сравнения`}>×</button>
+              <button type="button" onClick={() => remove(game.slug)} aria-label={spanish ? `Quitar ${game.name} de la comparación` : english ? `Remove ${game.name} from comparison` : `Удалить ${game.name} из сравнения`}>×</button>
             </article>
           ))}
           {Array.from({ length: MAX_COMPARE - games.length }).map((_, index) => (
@@ -163,17 +167,17 @@ export function Comparison({ items, locale = "ru" }: { items: ComparisonItem[]; 
         <section className="comparison-summary" aria-label={t("Короткая сводка")}>
           <div>
             <span className="eyebrow">{t("Механика")}</span>
-            <strong>{selectedMechanics.size === 1 ? t("Одинаковая") : `${selectedMechanics.size} ${ruPlural(selectedMechanics.size, t("механика"), t("механики"), t("механик"))}`}</strong>
+            <strong>{selectedMechanics.size === 1 ? t("Одинаковая") : `${selectedMechanics.size} ${locale==="ru"?ruPlural(selectedMechanics.size, t("механика"), t("механики"), t("механик")):t(selectedMechanics.size===1?"механика":"механики")}`}</strong>
             <small>{Array.from(selectedMechanics).join(" · ")}</small>
           </div>
           <div>
             <span className="eyebrow">{t("Игровое поле")}</span>
-            <strong>{fields.size === 1 ? t("Одинаковое") : english ? `${fields.size} layouts` : `${fields.size} варианта`}</strong>
+            <strong>{fields.size === 1 ? t("Одинаковое") : spanish ? `${fields.size} tableros` : english ? `${fields.size} layouts` : `${fields.size} варианта`}</strong>
             <small>{Array.from(fields).join(" · ")}</small>
           </div>
           <div>
             <span className="eyebrow">RTP</span>
-            <strong>{formatRange(games.map((game) => game.rtpValue), english)}</strong>
+            <strong>{formatRange(games.map((game) => game.rtpValue), locale)}</strong>
             <small>{t("Справочные версии игр")}</small>
           </div>
         </section>
@@ -187,17 +191,17 @@ export function Comparison({ items, locale = "ru" }: { items: ComparisonItem[]; 
               <caption className="sr-only">{t("Сравнение выбранных игр")}</caption>
               <thead><tr><th>{t("Параметр")}</th>{games.map((game) => <th key={game.slug}><Link href={`${root}/slots/${game.slug}`}>{game.name}</Link></th>)}</tr></thead>
               <tbody>
-                <tr><th scope="row">{t("Провайдер")}</th>{games.map((game) => <td key={game.slug}><Link className="comparison-cell-link" href={`${root}/providers/${game.providerSlug}`}>{game.provider} ↗</Link>{english && game.providerQualification && <p className="data-note">{game.providerQualification}</p>}</td>)}</tr>
+                <tr><th scope="row">{t("Провайдер")}</th>{games.map((game) => <td key={game.slug}><Link className="comparison-cell-link" href={`${root}/providers/${game.providerSlug}`}>{game.provider} ↗</Link>{(english||spanish) && game.providerQualification && <p className="data-note">{game.providerQualification}</p>}</td>)}</tr>
                 <tr><th scope="row">{t("Механики")}</th>{games.map((game) => <td key={game.slug}><div className="comparison-mechanics">{game.mechanics.map((mechanic) => mechanic.slug ? <Link key={mechanic.name} className="comparison-cell-link" href={`${root}/mechanics/${mechanic.slug}`}>{mechanic.name} ↗</Link> : <span key={mechanic.name}>{mechanic.name}</span>)}</div></td>)}</tr>
                 <tr><th scope="row">{t("Ключевые особенности")}</th>{games.map((game) => <td key={game.slug}>{game.tags.join(" · ")}</td>)}</tr>
-                <tr><th scope="row">{t("Варианты RTP")}</th>{games.map((game) => <td key={game.slug}>{game.metrics?.rtpVariants?.length ? game.metrics.rtpVariants.join(" · ") : english ? `${game.rtp} · other configurations not recorded` : `${game.rtp} · другие варианты не указаны`}</td>)}</tr>
+                <tr><th scope="row">{t("Варианты RTP")}</th>{games.map((game) => <td key={game.slug}>{game.metrics?.rtpVariants?.length ? game.metrics.rtpVariants.join(" · ") : spanish ? `${game.rtp} · otras configuraciones no registradas` : english ? `${game.rtp} · other configurations not recorded` : `${game.rtp} · другие варианты не указаны`}</td>)}</tr>
                 <tr><th scope="row">{t("Подтверждённый максимум")}</th>{games.map((game) => <td key={game.slug}>{game.metrics?.maxWin ? `${game.metrics.maxWin} · ${(game.metrics.maxWinLabel || t("максимум")).toLowerCase()}` : t("Нет подтверждённого значения")}</td>)}</tr>
                 {[
                   [t("Поле"), "field"], ["RTP", "rtp"], [t("Волатильность"), "volatility"], [t("Год"), "year"], [t("Особенность"), "feature"], [t("Взгляд редакции"), "note"],
                 ].map(([label, key]) => (
                   <tr key={key}><th scope="row">{label}</th>{games.map((game) => <td key={game.slug}>{String(game[key as keyof ComparisonItem] ?? "")}</td>)}</tr>
                 ))}
-                {english && <tr><th scope="row">Source qualifications</th>{games.map(game=><td key={game.slug}>{game.metrics?.note || "No additional metric caveat recorded. Read the game guide for its references."}</td>)}</tr>}
+                {(english||spanish) && <tr><th scope="row">{spanish?"Notas de las fuentes":"Source qualifications"}</th>{games.map(game=><td key={game.slug}>{game.metrics?.note || (spanish?"No hay una nota adicional sobre estas cifras. Consulta las referencias en la guía del juego.":"No additional metric caveat recorded. Read the game guide for its references.")}</td>)}</tr>}
               </tbody>
             </table>
           </div>

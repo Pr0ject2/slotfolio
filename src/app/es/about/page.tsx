@@ -38,7 +38,7 @@ export default function SpanishAbout() {
             <h2>Comparar juegos</h2>
             <p>Utiliza los botones de comparación para añadir dos juegos a la tabla. Los juegos que no tienen ese botón se pueden consultar por separado.</p>
             <p>Compara las reglas de pago, las funciones y las configuraciones de RTP. Los estudios pueden utilizar escalas distintas de volatilidad. Un premio máximo publicado tampoco indica con qué frecuencia se alcanza.</p>
-            <p><Link href="/en/compare" hrefLang="en">Abrir la comparación (en inglés)</Link></p>
+            <p><Link href="/es/compare">Abrir la comparación</Link></p>
           </section>
           <section id="verify">
             <h2>Comprobar las cifras del juego</h2>

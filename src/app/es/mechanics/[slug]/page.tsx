@@ -33,7 +33,7 @@ export default async function Page({params}:{params:Promise<{slug:string}>}){
     <SpanishEntityStats games={games} filter={{mechanic:original.name}} mechanicName={original.name} />
     <SectionTitle title="Compara los principios de pago" /><SpanishMechanicLinks names={m.related} />
     <section id="games"><SectionTitle title={`Guías de juegos: ${m.name}`} href={`/es/slots?mechanic=${encodeURIComponent(original.name)}`} label="Todos los juegos del catálogo" /><div className="entity-games">{games.map((game,index)=><SpanishGameRow key={game.slug} game={game} index={index} />)}</div></section>
-    <div className="editorial-signoff"><p>Elige dos juegos para comparar sus mecánicas, funciones y cifras documentadas.</p><Link href="/en/compare" lang="en">Abrir comparación (en inglés) ↗</Link></div>
+    <div className="editorial-signoff"><p>Elige dos juegos para comparar sus mecánicas, funciones y cifras documentadas.</p><Link href="/es/compare">Abrir comparación ↗</Link></div>
     <div className="entity-reading-links"><Link href="/en/journal/how-cascades-work" lang="en">Guía detallada de cascadas (en inglés) ↗</Link><Link href="/en/collections/beyond-lines" lang="en">Selección más allá de las líneas de pago (en inglés) ↗</Link></div>
   </div>;
 }

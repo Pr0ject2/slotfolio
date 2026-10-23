@@ -61,5 +61,5 @@ test("Spanish mechanics remain reachable by keyboard and retain comparison selec
   const contents=page.locator('aside a[href="#watch"]');await contents.focus();await contents.press("Enter");await expect(page).toHaveURL(/#watch$/);
   const button=page.locator("#example .compare-button");await expect(button).toHaveAccessibleName(/^Añadir/);await button.focus();expect(await button.evaluate(el=>getComputedStyle(el).outlineStyle)).not.toBe("none");await button.press("Enter");await expect(button).toHaveAttribute("aria-pressed","true");await expect(button).toHaveAccessibleName(/^Quitar/);
   expect(await page.evaluate(()=>JSON.parse(localStorage.getItem("slotfolio-compare")??"[]"))).toContain("gates-of-olympus");
-  await page.goto("/en/compare/");await expect(page.locator(".comparison-selection")).toContainText("Gates of Olympus");
+  await page.goto("/es/compare/");await expect(page.locator("h1")).toHaveText("Comparar juegos");await expect(page.locator(".comparison-selection")).toContainText("Gates of Olympus");
 });

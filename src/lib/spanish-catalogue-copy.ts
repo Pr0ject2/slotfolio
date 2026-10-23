@@ -17,6 +17,6 @@ export const spanishCatalogueCopy = {
   noneFoundDescription: "Prueba con parte del título o elimina un filtro.",
   showAll: "Ver todos los juegos", pages: "Páginas del catálogo", page: "Página",
   goToPage: "Ir a la página", next: "Siguiente", previous: "Anterior", of: "de",
-  russian: "Ruso", compareInRussian: "Comparar juegos (en inglés)",
+  russian: "Ruso", compareInRussian: "Comparar juegos",
   guideInRussian: "Ver la selección editorial (en inglés)",
 } satisfies Record<keyof typeof import("./english-catalogue-copy").englishCatalogueCopy, string>;
