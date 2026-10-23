@@ -1,0 +1,239 @@
+{
+  "gates-of-olympus-1000": {
+    "description": "Una versión de Gates of Olympus con multiplicadores más altos y las mismas reglas de Pay Anywhere y cascadas. Los multiplicadores aleatorios llegan ahora a 1 000x.",
+    "feature": "Durante los giros gratis, los símbolos multiplicadores se suman al valor acumulado de la ronda y se aplican a las cascadas ganadoras posteriores.",
+    "note": "Compárala con el original por los límites concretos de los multiplicadores y el pago máximo, no solo por la temática y el tablero conocidos.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Durante los giros gratis, los símbolos multiplicadores se suman al valor acumulado de la ronda y se aplican a las cascadas ganadoras posteriores."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Pay Anywhere",
+        "text": "El pago depende del número de símbolos iguales del tablero, no de una línea fija. Esto cambia cómo se lee un resultado, pero por sí solo no hace más probable un premio."
+      }
+    ]
+  },
+  "sugar-rush-1000": {
+    "description": "Un tablero de grupos de 7 × 7 con cascadas y posiciones marcadas, donde los multiplicadores pueden duplicarse hasta 1 024x.",
+    "feature": "Durante el bonus, las posiciones marcadas y sus multiplicadores acumulados se conservan entre giros gratis.",
+    "note": "La diferencia principal respecto al Sugar Rush normal es el límite del multiplicador. Las reglas básicas de grupos y cascadas siguen siendo conocidas.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Durante el bonus, las posiciones marcadas y sus multiplicadores acumulados se conservan entre giros gratis."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Posiciones doradas",
+        "text": "Las posiciones marcadas conservan su estado y pueden mejorar cascadas o eventos de bonus posteriores. La historia del tablero importa junto con la combinación de símbolos."
+      }
+    ]
+  },
+  "gates-of-olympus-super-scatter": {
+    "description": "Una versión de Gates of Olympus que añade Super Scatters con premios fijos al activarse el bonus, junto a las conocidas cascadas y multiplicadores.",
+    "feature": "Entre uno y cuatro Super Scatters conceden un pago instantáneo independiente cuando se activa el bonus. Cuatro de estos símbolos corresponden al premio máximo de 50 000x.",
+    "note": "Super Scatter cambia las condiciones de entrada al bonus y el posible pago instantáneo, pero conserva las reglas básicas de cascadas del juego.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Entre uno y cuatro Super Scatters conceden un pago instantáneo independiente cuando se activa el bonus. Cuatro de estos símbolos corresponden al premio máximo de 50 000x."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Pay Anywhere",
+        "text": "El pago depende del número de símbolos iguales del tablero, no de una línea fija. Esto cambia cómo se lee un resultado, pero por sí solo no hace más probable un premio."
+      }
+    ]
+  },
+  "sweet-bonanza-super-scatter": {
+    "description": "Sweet Bonanza con Super Scatter: premios en cualquier parte del tablero, cascadas y premios instantáneos independientes al activarse el bonus.",
+    "feature": "Durante los giros gratis, los multiplicadores de hasta 100x permanecen en el tablero hasta que termina el bonus. Los Super Scatters pueden conceder un pago fijo de hasta 50 000x.",
+    "note": "Mantén separadas las dos capas de esta versión: los multiplicadores persistentes del bonus y el premio independiente de Super Scatter al entrar en la función.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Durante los giros gratis, los multiplicadores de hasta 100x permanecen en el tablero hasta que termina el bonus. Los Super Scatters pueden conceder un pago fijo de hasta 50 000x."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Pay Anywhere",
+        "text": "El pago depende del número de símbolos iguales del tablero, no de una línea fija. Esto cambia cómo se lee un resultado, pero por sí solo no hace más probable un premio."
+      }
+    ]
+  },
+  "mahjong-wins-super-scatter": {
+    "description": "Hasta 2 000 vías en un tablero de 5 × 5 se combinan con cascadas. Los premios consecutivos elevan el recorrido multiplicador hasta 5x en el juego base.",
+    "feature": "Los símbolos dorados de los rodillos centrales dejan comodines después de una cascada ganadora. Los giros gratis elevan el recorrido multiplicador hasta 10x, mientras Super Scatter puede conceder hasta 100 000x.",
+    "note": "Pragmatic Play confirma el lanzamiento el 29 de mayo de 2025 y un máximo de 100 000x. El RTP depende de la configuración del operador; el catálogo indica la versión superior habitualmente disponible, 96.5%.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los símbolos dorados de los rodillos centrales dejan comodines después de una cascada ganadora. Los giros gratis elevan el recorrido multiplicador hasta 10x, mientras Super Scatter puede conceder hasta 100 000x."
+      },
+      {
+        "title": "Super Scatter",
+        "text": "Un Scatter especial concede un premio fijo independiente cuando se cumplen las condiciones de activación del bonus. Cuéntalo por separado de los Scatters normales y de los premios dentro de los giros gratis."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "hand-of-anubis": {
+    "description": "Un tablero de grupos de 5 × 6 con cascadas: los grupos ganadores desaparecen y los Soul Orbs pueden convertir el estado posterior del tablero en una secuencia de multiplicadores.",
+    "feature": "Los multiplicadores de almas acumulan fuerza a lo largo de una secuencia de cascadas. Las funciones de bonus se basan en las mismas reglas, sin pasar a líneas de pago convencionales.",
+    "note": "El catálogo de Hacksaw Gaming valora la volatilidad de Hand of Anubis con 5 sobre 5, mientras su lanzamiento fechado el 30 de abril de 2022 describe el juego con volatilidad alta. La categoría mostrada aquí es Extrema; las descripciones del proveedor difieren.",
+    "metricsNote": "El catálogo oficial actual de Hacksaw Gaming muestra Hand of Anubis con el medidor de volatilidad completamente lleno, 5/5, por lo que la categoría pública de Slotfolio sigue siendo Extrema. Al mismo tiempo, el lanzamiento oficial fechado el 30.04.2022 la describe como alta y confirma un tablero de 5 × 6 y un máximo de 10 000x. Este conflicto se conserva expresamente. El lanzamiento no publica configuraciones de RTP, por lo que la lista guardada anteriormente no se muestra como un dato verificado.",
+    "additionalSourceLabels": [
+      "Catálogo actual de Hacksaw Gaming con medidor de volatilidad 5/5"
+    ],
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los multiplicadores de almas acumulan fuerza a lo largo de una secuencia de cascadas. Las funciones de bonus se basan en las mismas reglas, sin pasar a líneas de pago convencionales."
+      },
+      {
+        "title": "Premios por grupos",
+        "text": "La función de premios por grupos figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Soul Orbs",
+        "text": "Los orbes especiales participan en la acumulación de multiplicadores y otros estados de las funciones. Sigue qué orbe ha cambiado y si su valor se conserva después de una cascada."
+      }
+    ]
+  },
+  "rip-city": {
+    "description": "Cinco rodillos, cinco filas y 19 líneas de pago. Wild Cat puede expandirse por todo un rodillo y absorber comodines normales para convertirlos en multiplicadores.",
+    "feature": "Ro$$ Bonus aumenta la frecuencia de Wild Cat. Maxx Bonus activa gradualmente rodillos para nuevos gatos comodín durante los giros gratis restantes.",
+    "note": "Hacksaw publica una volatilidad de 3/5, un máximo de 12 500x y varias configuraciones de RTP. El catálogo conserva la versión superior, 96.22%.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Ro$$ Bonus aumenta la frecuencia de Wild Cat. Maxx Bonus activa gradualmente rodillos para nuevos gatos comodín durante los giros gratis restantes."
+      },
+      {
+        "title": "Comodín expansivo",
+        "text": "La función de comodín expansivo figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      }
+    ]
+  },
+  "hell-hot-100": {
+    "description": "Un tablero convencional de frutas de 5 × 4 con 100 líneas de pago fijas, comodines apilados y un Risk Game de cartas independiente.",
+    "feature": "Después de un premio está disponible un Risk Game convencional. Permite intentar duplicar el resultado eligiendo una carta frente al crupier.",
+    "note": "Una comparación útil con los bonus modernos de varias capas: la estructura principal es sencilla y el juego de riesgo es una acción independiente después de un pago.",
+    "metricsNote": "La página oficial de Endorphina confirma un RTP del 96.07%, volatilidad baja, un tablero de 5 × 4 y 100 líneas de pago fijas. Los comodines pueden aparecer apilados, mientras Risk Game puede aumentar un pago individual hasta 10 veces. El proveedor no publica un premio máximo general, por lo que Slotfolio no presenta el pago Scatter independiente de 500x como máximo del juego.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Después de un premio está disponible un Risk Game convencional. Permite intentar duplicar el resultado eligiendo una carta frente al crupier."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Juego de riesgo",
+        "text": "Después de un premio normal, el juego ofrece una oportunidad independiente de arriesgar el importe ya ganado. No cambia el RTP del giro base ni es una continuación del pago de la línea principal."
+      },
+      {
+        "title": "Scatter",
+        "text": "Scatter suele contar sin depender de las líneas de pago fijas y puede activar un bonus. Comprueba el número y las posiciones exactas en la tabla de pagos del juego concreto."
+      }
+    ]
+  },
+  "joker-stoker": {
+    "description": "Una tragaperras de frutas con 40 líneas de pago fijas, un Joker comodín, Scatters y una activación directa de giros gratis.",
+    "feature": "Tres, cuatro o cinco Scatters conceden 10, 20 o 30 giros gratis. Los comodines pueden aparecer apilados y sustituir a los símbolos normales.",
+    "note": "Joker Stoker ilustra la estructura convencional: las líneas de pago siguen siendo la base y el bonus no cambia cómo se lee el tablero base.",
+    "metricsNote": "La página oficial de Endorphina confirma un RTP del 96.07%, volatilidad media-baja, un tablero de 5 × 4 y 40 líneas de pago fijas. Tres, cuatro o cinco Scatters conceden 10, 20 o 30 Free Games; Bonus Pop depende de la disponibilidad en el operador. El proveedor no publica un premio máximo general.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Tres, cuatro o cinco Scatters conceden 10, 20 o 30 giros gratis. Los comodines pueden aparecer apilados y sustituir a los símbolos normales."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Bonus Pop",
+        "text": "Una función adicional puede acelerar la entrada a un evento de bonus. Su disponibilidad puede depender de la versión del juego, el operador y la jurisdicción."
+      }
+    ]
+  },
+  "lucky-streak-1": {
+    "description": "Cuarenta líneas de pago, símbolos de frutas y un conjunto mínimo de reglas especiales. Después de un pago está disponible un Risk Game convencional.",
+    "feature": "Los comodines ayudan a formar combinaciones en líneas de pago, los Scatters pagan sin depender de una línea y Risk Game ofrece una oportunidad independiente de arriesgar un premio ya obtenido.",
+    "note": "Una referencia útil para comparar tragaperras modernas: casi toda la lógica es visible en las tablas de líneas y símbolos.",
+    "metricsNote": "La página oficial de Endorphina confirma un RTP del 96.09%, volatilidad media, un tablero de 5 × 4 y 40 líneas de pago. Los comodines pueden aparecer apilados y Risk Game es independiente del juego base. El proveedor no publica un premio máximo general.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los comodines ayudan a formar combinaciones en líneas de pago, los Scatters pagan sin depender de una línea y Risk Game ofrece una oportunidad independiente de arriesgar un premio ya obtenido."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Juego de riesgo",
+        "text": "Después de un premio normal, el juego ofrece una oportunidad independiente de arriesgar el importe ya ganado. No cambia el RTP del giro base ni es una continuación del pago de la línea principal."
+      },
+      {
+        "title": "Scatter",
+        "text": "Scatter suele contar sin depender de las líneas de pago fijas y puede activar un bonus. Comprueba el número y las posiciones exactas en la tabla de pagos del juego concreto."
+      }
+    ]
+  }
+}
