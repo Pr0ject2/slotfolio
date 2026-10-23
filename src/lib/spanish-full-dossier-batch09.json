@@ -1,0 +1,239 @@
+{
+  "troy-superways": {
+    "description": "Una tragaperras dinámica SuperWays con cascadas: Fire Pot hace explotar posiciones vecinas y ayuda a expandir el tablero a medida que avanza la secuencia.",
+    "feature": "Tres o más símbolos BONUS activan hasta 18 Super Spins. Las funciones empiezan con al menos 1 024 vías y la expansión puede elevar el número de combinaciones a 387 420 489.",
+    "note": "La página oficial de Yggdrasil indica una configuración superior de RTP del 96%, volatilidad alta y un premio máximo de 35 336x.",
+    "metricsNote": "La página actual de Yggdrasil Gaming publica un multiplicador máximo de 35 336x, volatilidad alta y tres configuraciones de RTP: 96%, 94% y 90.5%. El valor superior coincide con el RTP orientativo de la guía.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Tres o más símbolos BONUS activan hasta 18 Super Spins. Las funciones empiezan con al menos 1 024 vías y la expansión puede elevar el número de combinaciones a 387 420 489."
+      },
+      {
+        "title": "SuperWays",
+        "text": "La función SuperWays figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      }
+    ]
+  },
+  "gates-of-olympus-2500": {
+    "description": "Un tablero de 6 × 5 paga por ocho o más símbolos iguales en cualquier posición. Los símbolos ganadores desaparecen y sus sustitutos continúan la secuencia de cascadas.",
+    "feature": "Los multiplicadores alcanzan 2 500x. Cuatro Scatters activan 15 giros gratis y una rueda elige uno de cuatro modos de bonus. Tres Scatters añaden 5 giros; el multiplicador mínimo en Super Free Spins es de 10x.",
+    "note": "La página de campaña de Pragmatic Play indica un RTP del 96.52%, volatilidad alta y un potencial de premio de 25 000x. Es una versión independiente: sus modos de bonus y límites de multiplicador difieren del original y de la edición 1000. Comprueba la configuración activa de RTP en la ayuda del juego.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los multiplicadores alcanzan 2 500x. Cuatro Scatters activan 15 giros gratis y una rueda elige uno de cuatro modos de bonus. Tres Scatters añaden 5 giros; el multiplicador mínimo en Super Free Spins es de 10x."
+      },
+      {
+        "title": "Pay Anywhere",
+        "text": "El pago depende del número de símbolos iguales del tablero, no de una línea fija. Esto cambia cómo se lee un resultado, pero por sí solo no hace más probable un premio."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "sweet-bonanza-1000": {
+    "description": "Los símbolos de frutas y dulces se cuentan en un tablero de 6 × 5: ocho o más símbolos iguales conceden un premio e inician otra cascada.",
+    "feature": "Cuatro piruletas desbloquean 10 giros gratis. Las bombas multiplicadoras alcanzan 1 000x y permanecen en el tablero hasta que termina la secuencia de cascadas, cuando sus valores se suman. Tres piruletas durante el bonus añaden 5 giros.",
+    "note": "La sección Basic Game Info de la página oficial de Pragmatic Play indica un RTP orientativo del 96.53%, mientras la descripción declara un potencial de premio de 25 000x. El RTP no describe el resultado de una sesión individual ni garantiza ajustes idénticos en todos los casinos. Comprueba la configuración activa en las reglas del juego.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Cuatro piruletas desbloquean 10 giros gratis. Las bombas multiplicadoras alcanzan 1 000x y permanecen en el tablero hasta que termina la secuencia de cascadas, cuando sus valores se suman. Tres piruletas durante el bonus añaden 5 giros."
+      },
+      {
+        "title": "Pay Anywhere",
+        "text": "El pago depende del número de símbolos iguales del tablero, no de una línea fija. Esto cambia cómo se lee un resultado, pero por sí solo no hace más probable un premio."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "black-friday-shady-lady": {
+    "description": "Treinta líneas de pago en un tablero de 5 × 4 con una temática de rebajas deliberadamente caótica. Los personajes especiales activan regiros y cambian el estado de los rodillos.",
+    "feature": "Road Rage Re-Spins convierte rodillos individuales en estados comodín. El bonus desarrolla personajes, valores y multiplicadores a lo largo de una secuencia más larga.",
+    "note": "El resumen oficial del proveedor en 1win identifica por separado Black Friday, 30 líneas de pago y un RTP del 96.35%. Las versiones de operadores pueden variar.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Road Rage Re-Spins convierte rodillos individuales en estados comodín. El bonus desarrolla personajes, valores y multiplicadores a lo largo de una secuencia más larga."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Regiros",
+        "text": "La función de regiros figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "devils-finger": {
+    "description": "Un juego de Shady Lady de seis rodillos con estructura expansiva y pagos por vías. Su progresión principal incluye destrucción de símbolos y multiplicadores crecientes.",
+    "feature": "La página oficial del distribuidor indica hasta 20 736 vías y un premio máximo de 20 000x. Los escenarios de bonus siguen aumentando los multiplicadores.",
+    "note": "1win enumera expresamente el juego en su Spotlight on Shady Lady oficial. La página de Microgaming confirma un RTP del 96.40% y volatilidad muy alta.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "La página oficial del distribuidor indica hasta 20 736 vías y un premio máximo de 20 000x. Los escenarios de bonus siguen aumentando los multiplicadores."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Tablero ampliable",
+        "text": "La función de tablero ampliable figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  },
+  "zeus-claws": {
+    "description": "Una base convencional de rodillos se combina con Hold & Win. Las monedas permanecen en el bonus y una garra mecánica puede aumentar sus valores y convertir monedas individuales en símbolos de bote.",
+    "feature": "Tres monedas en la segunda fila activan Hold & Win con tres intentos. Una moneda nueva reinicia el contador, mientras las monedas Collector y Mystery modifican el tablero acumulado.",
+    "note": "Clawbuster publica un RTP del 95% y volatilidad media. La estructura del bonus importa más que una cifra de bote aislada: su estado se conserva entre regiros.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Tres monedas en la segunda fila activan Hold & Win con tres intentos. Una moneda nueva reinicia el contador, mientras las monedas Collector y Mystery modifican el tablero acumulado."
+      },
+      {
+        "title": "Hold & Win",
+        "text": "La función Hold & Win figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Recogida de valores",
+        "text": "Un símbolo especial recoge valores monetarios o multiplicadores de otras posiciones. Comprueba si la recogida se realiza una vez o se repite durante el bonus."
+      },
+      {
+        "title": "Botes",
+        "text": "El juego tiene niveles independientes de premios fijos o progresivos. La presencia de un bote no indica por sí sola con qué frecuencia puede ganarse."
+      }
+    ]
+  },
+  "panda-claw-jackpot": {
+    "description": "Cinco rodillos y un sistema Claw independiente: varios símbolos Claw conceden primero un pago monetario, mientras un grupo mayor lleva el juego a un rodillo horizontal de bonus.",
+    "feature": "En Bonus Claw Game, la garra recoge premios monetarios, giros adicionales y cinco niveles de botes. Más símbolos Claw en la activación significan un bonus inicial más largo.",
+    "note": "La página oficial de Clawbuster indica un RTP del 95% y volatilidad media. Jackpot Collection pertenece al estado del bonus, no a las líneas de pago normales.",
+    "metricsNote": "El iframe oficial del juego de Clawbuster muestra expresamente Win up to 5 000x. La página principal de Panda Claw Jackpot publica por separado un RTP del 95%, volatilidad media y Extreme Jackpot 2 500x. La cifra del bote se mantiene separada del máximo general declarado del juego.",
+    "additionalSourceLabels": [
+      "Página principal del juego en Clawbuster con Extreme Jackpot 2 500x"
+    ],
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "En Bonus Claw Game, la garra recoge premios monetarios, giros adicionales y cinco niveles de botes. Más símbolos Claw en la activación significan un bonus inicial más largo."
+      },
+      {
+        "title": "Claw",
+        "text": "La función Claw figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Botes",
+        "text": "El juego tiene niveles independientes de premios fijos o progresivos. La presencia de un bote no indica por sí sola con qué frecuencia puede ganarse."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      }
+    ]
+  },
+  "wolf-hunt-claw-and-win": {
+    "description": "Los comodines apilados del juego base se combinan con un bonus Claw & Win. Los rodillos de garras independientes recogen multiplicadores, premios misteriosos y nuevos Scatters.",
+    "feature": "El bonus empieza con tres regiros. Los Scatters nuevos o un premio recogido reinician el contador, mientras las garras vecinas pueden combinarse y aumentar el multiplicador general.",
+    "note": "Clawbuster indica un RTP del 95%, volatilidad baja y un premio máximo de 6 992x. Una categoría Baja no implica una sesión corta uniforme.",
+    "metricsNote": "La página actual de Clawbuster publica expresamente Max Win Potential 6 992x, RTP 95% y volatilidad baja. Estos valores coinciden con el perfil orientativo de la guía completa.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "El bonus empieza con tres regiros. Los Scatters nuevos o un premio recogido reinician el contador, mientras las garras vecinas pueden combinarse y aumentar el multiplicador general."
+      },
+      {
+        "title": "Comodín apilado",
+        "text": "La función de comodín apilado figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Hold & Win",
+        "text": "La función Hold & Win figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Claw",
+        "text": "La función Claw figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  },
+  "claw-bonanza-gold-rush": {
+    "description": "Una estructura de cascadas con garras mecánicas: los símbolos potenciadores abren garras adicionales y los grupos ganadores dejan sitio a la siguiente caída.",
+    "feature": "Las garras pueden recoger bombas multiplicadoras de hasta 2 000x. Tres Scatters abren una vía a los giros gratis, mientras Gamble Feature cambia su número inicial.",
+    "note": "La página oficial de Clawbuster indica un RTP del 95%, volatilidad alta y un premio máximo de 10 000x.",
+    "metricsNote": "La página actual de Clawbuster declara expresamente Max Win 10 000x y Max Multiplier x10 000, junto con RTP 95% y volatilidad alta.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Las garras pueden recoger bombas multiplicadoras de hasta 2 000x. Tres Scatters abren una vía a los giros gratis, mientras Gamble Feature cambia su número inicial."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      }
+    ]
+  },
+  "double-triple-burning-wilds": {
+    "description": "Una base de líneas de pago con temática de frutas y comodines expansivos: un comodín en los rodillos centrales puede llenar todo un rodillo, mientras Claw despeja posiciones vecinas dentro del evento.",
+    "feature": "Tres, cuatro o cinco Scatters conceden 10, 20 o 50 giros gratis respectivamente. Un Super Bonus independiente garantiza comodines expansivos durante el bonus.",
+    "note": "Clawbuster publica un RTP del 95% y volatilidad media-alta. Slotfolio agrupa esta última en la categoría Alta.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Tres, cuatro o cinco Scatters conceden 10, 20 o 50 giros gratis respectivamente. Un Super Bonus independiente garantiza comodines expansivos durante el bonus."
+      },
+      {
+        "title": "Comodín expansivo",
+        "text": "La función de comodín expansivo figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Claw",
+        "text": "La función Claw figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  }
+}

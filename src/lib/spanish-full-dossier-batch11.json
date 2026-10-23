@@ -1,0 +1,233 @@
+{
+  "caishen-gold-infinity-dragon": {
+    "description": "Un tablero de 5 × 3 conserva veinte líneas de pago, pero activa cascadas después de un premio. Los multiplicadores aumentan el siguiente pago a medida que avanza la secuencia.",
+    "feature": "Las cascadas prolongan un giro, los giros gratis aumentan el valor de una secuencia larga y Bonus Buy ofrece una vía alternativa de entrada al bonus.",
+    "note": "Mancala describe el juego como una tragaperras de cascadas de volatilidad alta. Las fichas públicas de lanzamiento indican un RTP del 95%.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Las cascadas prolongan un giro, los giros gratis aumentan el valor de una secuencia larga y Bonus Buy ofrece una vía alternativa de entrada al bonus."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      }
+    ]
+  },
+  "money-booster": {
+    "description": "Un tablero compacto de 4 × 4 sin una disposición convencional de líneas de pago. Los pagos se leen mediante coincidencias en todo el tablero y los símbolos Booster especiales modifican los valores resultantes.",
+    "feature": "Coin Booster aumenta los valores monetarios individuales. Los giros gratis hacen un uso más amplio de los multiplicadores y del conjunto de símbolos especiales.",
+    "note": "La versión pública indica un RTP del 95%. La varianza Muy alta se agrupa en la categoría Alta del catálogo.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Coin Booster aumenta los valores monetarios individuales. Los giros gratis hacen un uso más amplio de los multiplicadores y del conjunto de símbolos especiales."
+      },
+      {
+        "title": "Pay Anywhere",
+        "text": "El pago depende del número de símbolos iguales del tablero, no de una línea fija. Esto cambia cómo se lee un resultado, pero por sí solo no hace más probable un premio."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Coin Booster",
+        "text": "La función Coin Booster figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  },
+  "midas-hand-of-fortune": {
+    "description": "Cuarenta líneas de pago en un tablero de 5 × 3 con la temática del toque de oro. La base normal de líneas se mejora gradualmente con comodines multiplicadores y giros gratis.",
+    "feature": "Los comodines multiplicadores aumentan los pagos de líneas. El bonus mantiene su énfasis en estos símbolos, sin pasar a otro método de contar los premios.",
+    "note": "Los catálogos técnicos públicos de lanzamientos indican un RTP del 95% y volatilidad alta.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los comodines multiplicadores aumentan los pagos de líneas. El bonus mantiene su énfasis en estos símbolos, sin pasar a otro método de contar los premios."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      }
+    ]
+  },
+  "mustang-rush": {
+    "description": "Veinte líneas de pago en un tablero de 5 × 3 se combinan con un escenario de regiros, comodines multiplicadores y niveles de botes fijos.",
+    "feature": "Los símbolos especiales conservan el estado del bonus entre regiros. Los multiplicadores y los valores de botes determinan el resultado después de la activación normal por líneas de pago.",
+    "note": "Las fichas del sector indican un RTP del 95% y volatilidad alta para la versión pública.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los símbolos especiales conservan el estado del bonus entre regiros. Los multiplicadores y los valores de botes determinan el resultado después de la activación normal por líneas de pago."
+      },
+      {
+        "title": "Regiros",
+        "text": "La función de regiros figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      }
+    ]
+  },
+  "power-of-zeus-mancala": {
+    "description": "Veinte líneas de pago y comodines multiplicadores apilados llevan a Hold & Earn, donde los símbolos de monedas y los niveles de botes se conservan en un tablero de bonus independiente.",
+    "feature": "Hold & Earn mantiene las posiciones valiosas entre regiros. Los comodines multiplicadores apilados aumentan las combinaciones normales de líneas en el juego base.",
+    "note": "La versión publicada indica un RTP del 95%. Distingue este juego de Power of Ten de Hacksaw y de la serie Gates of Olympus.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Hold & Earn mantiene las posiciones valiosas entre regiros. Los comodines multiplicadores apilados aumentan las combinaciones normales de líneas en el juego base."
+      },
+      {
+        "title": "Hold & Earn",
+        "text": "La función Hold & Earn figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Comodín apilado",
+        "text": "La función de comodín apilado figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "life-and-death": {
+    "description": "Seis rodillos, cinco filas y 19 líneas de pago se centran en cuatro Horsemen Wild Multipliers con valores de 2x a 200x.",
+    "feature": "Devastation y Reckoning desarrollan rodillos comodín expansivos. En Reckoning, los Death Reels activados conservan la capacidad de expandir el multiplicador asociado en giros gratis posteriores.",
+    "note": "Existen varias configuraciones de RTP. Slotfolio utiliza el valor público superior del 96.36%; comprueba la variante activa con el operador.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Devastation y Reckoning desarrollan rodillos comodín expansivos. En Reckoning, los Death Reels activados conservan la capacidad de expandir el multiplicador asociado en giros gratis posteriores."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Comodín expansivo",
+        "text": "La función de comodín expansivo figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  },
+  "rad-maxx": {
+    "description": "Un tablero de 5 × 5 utiliza la dirección de pago como un estado cambiante. Las flechas alrededor del tablero determinan en qué direcciones se cuentan los premios actuales.",
+    "feature": "Los Crazy Cat Wilds llevan multiplicadores de 2x–20x. Wild Plus abre flechas adicionales de dirección de pago y tres modos de bonus mantienen comodines fijos.",
+    "note": "Los materiales oficiales de 1win confirman 360 direcciones y un premio máximo de 12 500x. El RTP superior del 96.32% procede de catálogos técnicos actuales y requiere comprobarse en la versión concreta.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los Crazy Cat Wilds llevan multiplicadores de 2x–20x. Wild Plus abre flechas adicionales de dirección de pago y tres modos de bonus mantienen comodines fijos."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      },
+      {
+        "title": "Varias direcciones",
+        "text": "La función de varias direcciones figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  },
+  "777-coins": {
+    "description": "Un tablero compacto de 3 × 3 y cinco líneas de pago fijas llevan a Hold & Win. Un símbolo Collect central recoge valores de monedas y los símbolos nuevos reinician el contador de regiros.",
+    "feature": "Dos símbolos Bonus junto con Collect activan tres regiros. Durante el bonus, Collect permanece en su sitio y recoge valores, mientras las monedas de bote añaden niveles Mini, Minor, Major y Grand.",
+    "note": "La página oficial de 3 Oaks confirma el tablero, cinco líneas de pago, Hold & Win y Grand 2 000x, con la posibilidad de triplicarlo a 6 000x. El RTP del 95.75% es una configuración orientativa citada habitualmente. Comprueba la versión del operador dentro del propio juego.",
+    "metricsNote": "3 Oaks Gaming indica GRAND JACKPOT x2 000 y declara por separado que combinar tres COLLECT SYMBOLS con un GRAND JACKPOT SYMBOL puede triplicar potencialmente el Grand Prize hasta x6 000. Slotfolio guarda 6 000x como potencial declarado de premio del bonus, no como un límite fijo de premio máximo publicado de forma independiente para todo el juego.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Dos símbolos Bonus junto con Collect activan tres regiros. Durante el bonus, Collect permanece en su sitio y recoge valores, mientras las monedas de bote añaden niveles Mini, Minor, Major y Grand."
+      },
+      {
+        "title": "Hold & Win",
+        "text": "La función Hold & Win figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Regiros",
+        "text": "La función de regiros figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Recolector",
+        "text": "La función de recolector figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  },
+  "3-hot-chillies": {
+    "description": "Veinticinco líneas de pago y tres medidores Chilli de colores sobre los rodillos. Cada tipo de pimiento está vinculado a su propia modificación de Hold & Win y carga gradualmente el escenario correspondiente.",
+    "feature": "Durante el bonus, los símbolos fijos permanecen entre regiros. Los pimientos activados pueden añadir multiplicadores, un cuarto regiro o un segundo tablero. Los tres modificadores pueden actuar juntos.",
+    "note": "La página oficial de 3 Oaks confirma un tablero de 5 × 3, 25 líneas de pago y tres modificadores de bonus. El RTP del 95.59% y la volatilidad media se utilizan como una configuración orientativa publicada, no como un ajuste garantizado de 1win.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Durante el bonus, los símbolos fijos permanecen entre regiros. Los pimientos activados pueden añadir multiplicadores, un cuarto regiro o un segundo tablero. Los tres modificadores pueden actuar juntos."
+      },
+      {
+        "title": "Hold & Win",
+        "text": "La función Hold & Win figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Regiros",
+        "text": "La función de regiros figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "egypt-fire": {
+    "description": "Un tablero de 5 × 4 y veinte líneas de pago llevan a Hold & Win con símbolos Bonus y Mystery. Durante el bonus, el tablero puede expandirse con filas adicionales a medida que se acumulan símbolos.",
+    "feature": "Seis símbolos Bonus y/o Mystery activan regiros. Los símbolos Mystery llenan medidores de botes, los Bonus nuevos quedan en el tablero y abrirlo por completo puede elevar Royal Jackpot a 10 000x.",
+    "note": "3 Oaks describe oficialmente un tablero de 5 × 4, 20 líneas de pago, expansión con filas adicionales, Free Spins y Royal Jackpot 10 000x. El RTP del 95.50% y la volatilidad alta son valores orientativos de catálogos especializados. Comprueba por separado la configuración del operador.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Seis símbolos Bonus y/o Mystery activan regiros. Los símbolos Mystery llenan medidores de botes, los Bonus nuevos quedan en el tablero y abrirlo por completo puede elevar Royal Jackpot a 10 000x."
+      },
+      {
+        "title": "Hold & Win",
+        "text": "La función Hold & Win figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Regiros",
+        "text": "La función de regiros figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Misterio",
+        "text": "La función de símbolos misteriosos figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  }
+}

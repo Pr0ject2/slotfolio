@@ -1,0 +1,245 @@
+{
+  "3-coin-towers": {
+    "description": "Treinta líneas de pago y tres pagodas que crecen mediante las monedas correspondientes y llevan a tres modos de bonus diferentes.",
+    "feature": "La pagoda verde abre Free Games, la roja abre Coin Hold Bonus con botes y la azul abre un Pick’em Bonus independiente.",
+    "note": "Es más que una tragaperras de líneas con varios botones de bonus: recoger las monedas correspondientes determina qué sistema se desarrolla a continuación.",
+    "metricsNote": "La página oficial de Endorphina confirma un RTP del 96.08%, volatilidad alta, un tablero de 5×3 y 30 líneas de pago fijas. La cifra de 1 000x se refiere específicamente al ULTRA Jackpot de Coin Hold Bonus al recoger los 15 símbolos. No es un premio máximo general declarado para el juego.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "La pagoda verde abre Free Games, la roja abre Coin Hold Bonus con botes y la azul abre un Pick’em Bonus independiente."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Hold and Win",
+        "text": "El bonus mantiene símbolos especiales en el tablero y concede un número limitado de intentos adicionales para llenar las posiciones restantes. El estado del bonus se conserva entre regiros."
+      },
+      {
+        "title": "Botes",
+        "text": "El juego tiene niveles independientes de premios fijos o progresivos. La presencia de un bote no indica por sí sola con qué frecuencia puede ganarse."
+      }
+    ]
+  },
+  "hell-hot-40": {
+    "description": "Una tragaperras convencional de frutas con 40 líneas de pago y un tablero de 5 × 4. Las reglas especiales se reducen al mínimo y la estructura de pagos se lee fácilmente en el tablero.",
+    "feature": "Los comodines ayudan a formar combinaciones en líneas de pago. Después de un premio normal, un Risk Game independiente permite intentar aumentar el pago ya obtenido.",
+    "note": "Hell Hot 40 es una referencia sencilla útil: la volatilidad baja y las líneas convencionales no implican un resultado garantizado en una sesión corta.",
+    "metricsNote": "La página oficial de Endorphina confirma un RTP del 96.04%, volatilidad baja, un tablero de 5 × 4 y 40 líneas de pago fijas. Los comodines apilados y Scatters no cambian la mecánica básica de líneas, y Risk Game se aplica a un pago independiente. El proveedor no publica un premio máximo general.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los comodines ayudan a formar combinaciones en líneas de pago. Después de un premio normal, un Risk Game independiente permite intentar aumentar el pago ya obtenido."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Juego de riesgo",
+        "text": "Después de un premio normal, el juego ofrece una oportunidad independiente de arriesgar el importe ya ganado. No cambia el RTP del giro base ni es una continuación del pago de la línea principal."
+      },
+      {
+        "title": "Scatter",
+        "text": "Scatter suele contar sin depender de las líneas de pago fijas y puede activar un bonus. Comprueba el número y las posiciones exactas en la tabla de pagos del juego concreto."
+      }
+    ]
+  },
+  "crown-coins": {
+    "description": "Un tablero compacto de 3 × 3 y cinco líneas de pago fijas se combinan con monedas de premio, cuatro botes y un Royal Treasury Bonus independiente.",
+    "feature": "Las monedas especiales llevan valores propios. El sistema de bonus y los cuatro botes añaden una capa sobre una base sencilla de líneas de pago.",
+    "note": "La volatilidad oficial es media-alta. La escala más amplia de Slotfolio sitúa el juego en la categoría Alta.",
+    "metricsNote": "La página oficial de Endorphina confirma un RTP del 96.06%, volatilidad media-alta, un tablero de 3 × 3 y cinco líneas de pago fijas. Royal Treasury Bonus contiene cuatro premios de bote de hasta 1 000x la apuesta total. Es el potencial del bonus, no un premio máximo fijo general publicado por separado.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Las monedas especiales llevan valores propios. El sistema de bonus y los cuatro botes añaden una capa sobre una base sencilla de líneas de pago."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Juego de riesgo",
+        "text": "Después de un premio normal, el juego ofrece una oportunidad independiente de arriesgar el importe ya ganado. No cambia el RTP del giro base ni es una continuación del pago de la línea principal."
+      },
+      {
+        "title": "Recogida de valores",
+        "text": "Un símbolo especial recoge valores monetarios o multiplicadores de otras posiciones. Comprueba si la recogida se realiza una vez o se repite durante el bonus."
+      }
+    ]
+  },
+  "2026-hit-slot": {
+    "description": "Cinco rodillos, cuatro filas y 50 líneas de pago forman la base de siete variantes de Hit Hold Bonus con símbolos Bonus, Collector y Payer.",
+    "feature": "Los símbolos Diamond especiales abren distintas combinaciones de Hit Hold. Los modos ampliados añaden botes de hasta 2 000x la apuesta total.",
+    "note": "Separa los pagos normales de líneas del sistema independiente Hold and Win: la mayor parte de la complejidad está en el bonus.",
+    "metricsNote": "La página oficial actual de Endorphina indica Volatility: High, por lo que Slotfolio conserva la categoría Alta. Al mismo tiempo, el lanzamiento oficial fechado el 03.03.2026 describe el mismo juego con volatilidad ultraalta. Esta discrepancia entre fuentes se conserva expresamente, sin reducirla a una interpretación no verificada.",
+    "additionalSourceLabels": [
+      "Lanzamiento de Endorphina fechado el 03.03.2026 que describe volatilidad ultraalta"
+    ],
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Los símbolos Diamond especiales abren distintas combinaciones de Hit Hold. Los modos ampliados añaden botes de hasta 2 000x la apuesta total."
+      },
+      {
+        "title": "Hold and Win",
+        "text": "El bonus mantiene símbolos especiales en el tablero y concede un número limitado de intentos adicionales para llenar las posiciones restantes. El estado del bonus se conserva entre regiros."
+      },
+      {
+        "title": "Bonus Pop",
+        "text": "Una función adicional puede acelerar la entrada a un evento de bonus. Su disponibilidad puede depender de la versión del juego, el operador y la jurisdicción."
+      },
+      {
+        "title": "Recogida de valores",
+        "text": "Un símbolo especial recoge valores monetarios o multiplicadores de otras posiciones. Comprueba si la recogida se realiza una vez o se repite durante el bonus."
+      }
+    ]
+  },
+  "2021-hit-slot": {
+    "description": "Una tragaperras minimalista de frutas sobre un tablero de 3 × 3, con cinco líneas de pago fijas y casi ningún sistema adicional sobre el juego base.",
+    "feature": "Después de un premio válido, un Risk Game convencional permite intentar aumentar el pago ya obtenido por separado del giro principal.",
+    "note": "Uno de los ejemplos más sencillos del catálogo: una forma de examinar la estructura de líneas de pago sin numerosas funciones paralelas.",
+    "metricsNote": "La página oficial de Endorphina confirma un RTP del 96.02%, volatilidad baja, un tablero de 3×3 y 5 líneas de pago fijas. El proveedor no publica un premio máximo general, por lo que no se indica ninguno.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Después de un premio válido, un Risk Game convencional permite intentar aumentar el pago ya obtenido por separado del giro principal."
+      },
+      {
+        "title": "Juego de riesgo",
+        "text": "Después de un premio normal, el juego ofrece una oportunidad independiente de arriesgar el importe ya ganado. No cambia el RTP del giro base ni es una continuación del pago de la línea principal."
+      },
+      {
+        "title": "Líneas de pago fijas",
+        "text": "La función de líneas de pago fijas figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Tablero clásico",
+        "text": "La función de tablero clásico figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  },
+  "2023-hit-slot": {
+    "description": "Seis rodillos, cuatro filas y 4 096 vías de pago en lugar de líneas fijas. El bonus añade multiplicadores a los comodines.",
+    "feature": "Tres o más Scatters activan giros gratis. Los comodines reciben valores de 2x, 3x o 5x y varios multiplicadores pueden aplicarse a una combinación.",
+    "note": "El nombre parece convencional, pero el método de pago es distinto: las combinaciones se cuentan en rodillos vecinos, no en líneas predefinidas.",
+    "metricsNote": "La página oficial de Endorphina confirma un RTP del 96.01%, volatilidad alta, un tablero de 6×4 y 4 096 vías de pago. El proveedor no declara un premio máximo fijo general, por lo que no se inventa ningún valor.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Tres o más Scatters activan giros gratis. Los comodines reciben valores de 2x, 3x o 5x y varios multiplicadores pueden aplicarse a una combinación."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "2025-hit-slot": {
+    "description": "Cien líneas de pago fijas y comodines apilados se complementan con Gold Scatter Coins, que pueden llevar la ronda a un sistema independiente de Coin Cascade y botes.",
+    "feature": "En Hit Win Jackpots Bonus, las monedas quedan fijas en un tablero de 5 × 3. Cinco ULTRA Coins corresponden al Ultra Jackpot de 2 025x; las monedas adicionales aumentan el pago mediante un multiplicador.",
+    "note": "Coin Cascade es aquí el nombre de una transición de bonus, no una mecánica normal de cascadas del tablero base. Por eso, el juego permanece en la categoría de líneas de pago.",
+    "metricsNote": "Los materiales oficiales de Endorphina confirman un RTP del 96.05%, volatilidad media, un tablero de 5×4 y 100 líneas de pago fijas. El pago máximo declarado del juego es de 2 025x la apuesta total.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "En Hit Win Jackpots Bonus, las monedas quedan fijas en un tablero de 5 × 3. Cinco ULTRA Coins corresponden al Ultra Jackpot de 2 025x; las monedas adicionales aumentan el pago mediante un multiplicador."
+      },
+      {
+        "title": "Comodín",
+        "text": "El comodín sustituye a algunos símbolos normales. En ciertos juegos también lleva un multiplicador, se mueve o permanece en el tablero. Por tanto, la etiqueta Wild por sí sola no basta para explicar la mecánica."
+      },
+      {
+        "title": "Juego de riesgo",
+        "text": "Después de un premio normal, el juego ofrece una oportunidad independiente de arriesgar el importe ya ganado. No cambia el RTP del giro base ni es una continuación del pago de la línea principal."
+      },
+      {
+        "title": "Scatter",
+        "text": "Scatter suele contar sin depender de las líneas de pago fijas y puede activar un bonus. Comprueba el número y las posiciones exactas en la tabla de pagos del juego concreto."
+      }
+    ]
+  },
+  "prestige-crown": {
+    "description": "Un tablero de 6 × 5 con pagos Scatter y cascadas. Los multiplicadores aparecen directamente en el tablero y se comportan de forma distinta en el juego base y los giros gratis.",
+    "feature": "Cuatro o más símbolos Bonus activan 15 Free Games. Los multiplicadores activados se acumulan entre cascadas ganadoras y los valores individuales pueden alcanzar 1 000x.",
+    "note": "La ronda se define por la secuencia de cascadas y por si se acumula un multiplicador general del bonus, no por una cifra grande aislada en pantalla.",
+    "metricsNote": "Los materiales oficiales de Endorphina confirman un RTP del 96.08%, volatilidad alta, un tablero de 6×5 y pagos Scatter. Los multiplicadores de hasta 1 000x se refieren a la mecánica de acumulación del juego y de Free Games. El proveedor no declara un premio máximo fijo general.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "Cuatro o más símbolos Bonus activan 15 Free Games. Los multiplicadores activados se acumulan entre cascadas ganadoras y los valores individuales pueden alcanzar 1 000x."
+      },
+      {
+        "title": "Cascadas",
+        "text": "Después de un pago, los símbolos participantes desaparecen y el tablero se rellena. Por eso, una ronda pagada puede contener varios eventos consecutivos."
+      },
+      {
+        "title": "Giros gratis",
+        "text": "El juego tiene un bonus independiente con sus propias reglas. Importa qué mecánicas pasan a los giros gratis y qué se acumula en ellos, no simplemente la existencia de giros gratis."
+      },
+      {
+        "title": "Multiplicadores",
+        "text": "Un multiplicador puede aumentar algunos premios. Comprueba si los valores se suman, se conservan entre giros y se aplican a un premio concreto."
+      }
+    ]
+  },
+  "lucky-streak-3": {
+    "description": "Tres rodillos, tres filas y cinco líneas de pago: una tragaperras compacta de frutas sin una larga secuencia de reglas adicionales.",
+    "feature": "La función adicional principal llega después de un pago en Classic Risk Game. El propio tablero sigue siendo convencional.",
+    "note": "Lucky Streak 3 es una referencia básica útil para comparar juegos más complejos del mismo proveedor.",
+    "metricsNote": "La página oficial de Endorphina confirma un RTP del 96.01%, volatilidad baja, un tablero de 3 × 3 y cinco líneas de pago. Una pantalla completa de símbolos iguales multiplica el premio por 2x, pero no es un premio máximo general declarado. El proveedor no publica un límite general.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "La función adicional principal llega después de un pago en Classic Risk Game. El propio tablero sigue siendo convencional."
+      },
+      {
+        "title": "Juego de riesgo",
+        "text": "Después de un premio normal, el juego ofrece una oportunidad independiente de arriesgar el importe ya ganado. No cambia el RTP del giro base ni es una continuación del pago de la línea principal."
+      },
+      {
+        "title": "Líneas de pago fijas",
+        "text": "La función de líneas de pago fijas figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      },
+      {
+        "title": "Tablero clásico",
+        "text": "La función de tablero clásico figura en las reglas de este juego. Antes de jugar, comprueba cuándo se activa y si su efecto se conserva entre eventos."
+      }
+    ]
+  },
+  "lucky-streak-1000": {
+    "description": "Cinco líneas de pago en un tablero convencional de 3 × 3 se complementan con Diamond Mystery Bonus, cuatro botes y un Risk Game independiente.",
+    "feature": "El bonus de diamantes añade elecciones y niveles de premios fijos sobre el tablero base. Llenar la pantalla con símbolos iguales duplica el pago correspondiente.",
+    "note": "La volatilidad oficial media-alta se agrupa en la categoría Alta de Slotfolio para evitar dividir el catálogo en niveles muy próximos y superpuestos.",
+    "metricsNote": "La página oficial de Endorphina confirma un RTP del 96.07%, volatilidad media-alta, un tablero de 3 × 3 y cinco líneas de pago. Diamond Mystery Bonus paga un bote de hasta 1 000x la apuesta total. Es el potencial declarado de un bonus concreto, no un premio máximo fijo general publicado por separado.",
+    "cards": [
+      {
+        "title": "Función principal",
+        "text": "El bonus de diamantes añade elecciones y niveles de premios fijos sobre el tablero base. Llenar la pantalla con símbolos iguales duplica el pago correspondiente."
+      },
+      {
+        "title": "Juego de riesgo",
+        "text": "Después de un premio normal, el juego ofrece una oportunidad independiente de arriesgar el importe ya ganado. No cambia el RTP del giro base ni es una continuación del pago de la línea principal."
+      },
+      {
+        "title": "Bonus de elección",
+        "text": "El bonus permite elegir objetos ocultos con premios o efectos predeterminados. Se distingue de un giro normal por una secuencia independiente de elecciones dentro de la función."
+      },
+      {
+        "title": "Botes",
+        "text": "El juego tiene niveles independientes de premios fijos o progresivos. La presencia de un bote no indica por sí sola con qué frecuencia puede ganarse."
+      }
+    ]
+  }
+}
