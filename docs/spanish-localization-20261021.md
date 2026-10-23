@@ -382,26 +382,41 @@ metrics, six viewport widths, loaded artwork, keyboard scrolling, all eight
 presets, limits, seeds and three-language persistence. Real 320px and 1440px
 screenshots were reviewed. Exact-head CI and preview remain required.
 
+## Stage 26: complete journal and article navigation
+
+Adds the journal index, all five complete practical guides and the long-form
+cascades article. The existing Spanish RTP article remains available. Every
+source paragraph, example, checklist, numerical illustration, table row,
+caption, reference and publication date is retained. Only internal language
+destinations change; official external source URLs stay identical. The existing
+editorial layouts and article CSS are reused. A Spanish locale option for
+article structured data preserves the default behaviour of existing callers.
+The Spanish navigation now opens the full journal, and mechanic reading links
+reach the Spanish cascade article. Collections still awaiting their Spanish
+stage are explicitly labelled as English.
+
+Validation: TypeScript PASS; production export 3151 pages; 62 targeted local
+checks PASS, comprising 51 new journal checks and 11 existing foundation checks.
+All eight journal routes were checked at 320/375/390/768/1024/1440. Tests verify
+full copy and numerical parity, internal destinations, external source URLs,
+the seven feature-article sections and their paragraph counts, four table rows,
+Spanish metadata and language counterparts, keyboard anchors and horizontal
+table scrolling. Real mobile and desktop screenshots were reviewed. Local
+inventory: 1042 Spanish routes, no extra routes; 10 content routes and 404 remain
+against 1052 Russian content routes plus the shared 404.
+
 ## Remaining stages
 
-1. Catalogue, search and filters, with Spanish formatting and feature labels;
-   complete translations of the 900 existing catalogue profiles in batches of
-   100. Register each game only when its full page is translated, including
-   mechanics, bonuses, explanations, provenance and caveats.
-2. Complete translations of all 100 existing game guides, including the casino
-   link and promo-code interaction. Reuse the same verified local artwork and
-   source records. Preserve all factual differences between editions.
-3. The 18 provider profiles, five mechanics and comparison, including controls,
-   presets and persistence across all three languages.
-4. Journal, collections, bonuses and regions. The exported English inventory has
-   seven journal articles, four collections, and a Great Britain regional page;
-   check Russian content too so that a missing English translation cannot omit
-   an existing Russian page from the Spanish scope. Translate full content,
-   tables, captions, controls and meaningful image descriptions.
-5. The two retired-link chooser pages and all remaining loading/error/help
-   states. Replace temporary English-labelled destinations only when the Spanish
-   destination exists. Audit parity against the published Russian catalogue
-   (1000 games) and complete route inventory, not merely the current ready list.
+1. Four complete collections and their index, retaining every selected game,
+   explanation and checklist.
+2. Bonuses, the regional index and the Great Britain guide, preserving existing
+   official references and qualifications.
+3. The two retired-link edition choosers, localized loading/error/help states
+   and 404. Replace temporary English-labelled links only as counterparts become
+   available.
+4. Final parity against all 1052 original Russian content routes plus 404 and
+   all 1000 published games. Prepared translations above still require their
+   sequential exact-head CI, preview and production publication gates.
 
 Each stage requires a separate PR, exact-final-SHA CI success and a verified
 preview. The user explicitly authorized #529 and all subsequent Spanish stages
