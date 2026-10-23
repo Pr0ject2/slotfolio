@@ -1,0 +1,902 @@
+{
+  "wazdan-mighty-symbols-crowns": {
+    "intro": ["Mighty Symbols: Crowns se centra en una Giant Crown en cinco rodillos y diez líneas. La corona enorme sustituye a símbolos y puede permanecer fijada durante los giros gratis.", "La ronda de bonificación puede incluir una Walking Giant Crown que se mueve entre posiciones después de los giros, mientras que un multiplicador aleatorio del bonus mejora el premio."],
+    "editorial": "Crowns no debe mezclarse con Diamonds: Giant Crown tiene su propio modo Walking, aunque ambas versiones tienen RTP y premios máximos similares. El máximo oficial de Crowns es de 2500x.",
+    "features": [
+      {"title": "Corona gigante comodín", "description": "La corona enorme sustituye a otros símbolos normales en combinaciones de diez líneas."},
+      {"title": "Corona persistente y caminante", "description": "Durante los giros gratis, la corona puede quedar fijada o moverse en nuevos giros."},
+      {"title": "Multiplicador aleatorio del bonus", "description": "Un multiplicador independiente funciona dentro de los giros gratis; tres Chance Levels pueden aumentar la probabilidad de entrada."}
+    ]
+  },
+  "playn-go-hugo-goal": {
+    "intro": ["Hugo Goal es una tragaperras compacta de 3 rodillos. En un giro sin premio, dos símbolos de personaje iguales pueden activar Free Kick: un regiro gratis se repite hasta que aparece un premio o coinciden los tres símbolos.", "Si las nueve posiciones se llenan de símbolos iguales, con o sin comodines, se activa Penalty Shoot-Out. Se defiende la portería durante cinco lanzamientos; cinco paradas conceden un Golden Trophy y multiplican el premio final del bonus por x10."],
+    "editorial": "Hugo Goal vincula su bonus a símbolos iguales repetidos en un tablero pequeño y no a Scatters estándar. Free Kick puede evolucionar a Penalty Shoot-Out y una coincidencia completa de 3×3 lleva específicamente al bonus de cinco lanzamientos.",
+    "features": [
+      {"title": "Hugo comodín en el campo de fútbol", "description": "Hugo sustituye a los símbolos normales en el tablero compacto de tres rodillos. El bonus no se basa en Scatters estándar."},
+      {"title": "Free Kick tras un giro sin premio", "description": "Dos símbolos de personaje iguales en un giro sin premio pueden activar un regiro gratis; los intentos continúan hasta un premio o una coincidencia completa."},
+      {"title": "El Penalty Shoot-Out", "description": "Los nueve símbolos iguales, usando comodines si es necesario, activan cinco penaltis. Cinco paradas acertadas conceden Golden Trophy y x10 sobre el premio del bonus."}
+    ]
+  },
+  "wazdan-mighty-symbols-diamonds": {
+    "intro": ["Mighty Symbols: Diamonds sustituye la corona por un Giant Diamond Wild y mantiene cinco rodillos y diez líneas.", "Durante los giros gratis, el diamante enorme puede moverse por el tablero como Walking Giant Diamond, mientras que los multiplicadores del bonus alcanzan x5."],
+    "editorial": "Diamonds tiene un RTP del 96.13% frente al 96.15% de Crowns, pese al máximo compartido de 2500x. El x5 dentro de los giros gratis no debe equipararse al pago máximo total.",
+    "features": [
+      {"title": "Diamond y Giant Diamond Wild", "description": "Los diamantes comodín sustituyen a los símbolos normales y forman combinaciones por líneas."},
+      {"title": "El Walking Giant Diamond", "description": "Durante los giros gratis, el símbolo grande puede moverse y crear nuevos premios."},
+      {"title": "Multiplicadores de bonus hasta x5", "description": "Un multiplicador especial mejora los pagos válidos de giros gratis; Chance Level aumenta la probabilidad de activación."}
+    ]
+  },
+  "playn-go-hugo-legacy": {
+    "intro": ["Hugo Legacy es un tablero de 7×7 donde los grupos ganadores eliminan símbolos y cargan Overcharge Meter. Cuando Hugo recoge 15 cargas, se activa aleatoriamente una de cinco funciones de personajes.", "Los efectos de personajes añaden 5–8 comodines, mejoran 2–5 símbolos de pago bajo, protegen 1–2 comodines, convierten un tipo de símbolo en comodín o duplican símbolos capturados para nuevos grupos. Por separado, 35–50 símbolos Scylla/Don Croco abren cinco niveles de giros gratis."],
+    "editorial": "Hugo Legacy reúne su elenco de aniversario mediante una progresión de cargas compartida: cada personaje cambia el tablero de forma distinta. Los giros gratis tienen su propia escala de 35–50 símbolos recogidos, por lo que Overcharge y la progresión del bonus son dos sistemas separados.",
+    "features": [
+      {"title": "Tablero de 7×7 y Overcharge Meter", "description": "Los grupos ganadores del tablero de 7×7 desaparecen y cargan Overcharge Meter. Quince cargas activan una función de personaje aleatoria."},
+      {"title": "Cinco efectos de personajes distintos", "description": "Los personajes pueden añadir 5–8 comodines, mejorar 2–5 símbolos de pago bajo, proteger comodines, convertir un tipo de símbolo seleccionado en comodín o duplicar símbolos capturados."},
+      {"title": "Cinco niveles de giros gratis", "description": "La recogida independiente de símbolos Scylla y Don Croco abre cinco niveles de giros gratis a los 35–50 símbolos; no es el mismo medidor de 15 cargas."}
+    ]
+  },
+  "wazdan-mighty-symbols-jokers": {
+    "intro": ["Mighty Symbols: Jokers se aleja de las líneas: quince posiciones y cero líneas proporcionan un Hold the Jackpot independiente, mientras que Joker Rampage crea un escenario alternativo de bonus.", "Cash Infinity y Sticky to Infinity ayudan a retener valores monetarios hasta el evento de bonificación. Mystery Multiplier se aplica dentro de su propia función y no es un premio máximo universal."],
+    "editorial": "Jokers se distingue por completo de Crowns y Diamonds: en lugar de giros gratis con un comodín caminante, tiene Hold the Jackpot y Jokers Rampage. Su límite de 750x es notablemente inferior a los 2500x de aquellos.",
+    "features": [
+      {"title": "Modo Hold the Jackpot", "description": "Los símbolos monetarios y de jackpot permanecen en el tablero de acumulación."},
+      {"title": "El Jokers Rampage", "description": "Un modo de bonificación independiente con Joker Wild, distinto de Walking Crown."},
+      {"title": "Cash y Sticky to Infinity", "description": "Los símbolos especiales pueden permanecer en el tablero; Mystery Multiplier y Chance Level se aplican bajo condiciones independientes."}
+    ]
+  },
+  "playn-go-hugos-adventure": {
+    "intro": ["Hugo’s Adventure funciona en cinco rodillos y 10 líneas de pago, con Hugo como comodín. Tres Plane Scatters activan Air Race: 20 giros gratis con una vida, donde las minas aéreas de Don Croco pueden terminar el vuelo y los globos añaden vidas adicionales.", "Air Race incluye multiplicadores aleatorios y Flying Wilds que permanecen fijados y se mueven por los rodillos. Completar los giros gratis con éxito lleva a Underwater Adventure, donde Hugo busca tesoros de camino a Skull Castle."],
+    "editorial": "Hugo’s Adventure conecta dos etapas de bonus secuencialmente: primero Air Race, de supervivencia con vidas y comodines persistentes móviles, y después Underwater Adventure. Es independiente de las mecánicas de Hugo/Hugo 2/Carts.",
+    "features": [
+      {"title": "Hugo comodín y aviones Scatter", "description": "Hugo sustituye a los símbolos normales en cinco rodillos y diez líneas. Tres Plane Scatters llevan el juego a Air Race."},
+      {"title": "Air Race: vidas y Flying Wilds", "description": "Air Race concede veinte giros gratis y una vida inicial: las minas de Don Croco pueden interrumpir el vuelo, mientras que los globos añaden vidas. Los Flying Wilds permanecen fijados y se mueven."},
+      {"title": "La Underwater Adventure", "description": "Si Hugo completa Air Race con éxito, se abre una segunda etapa Underwater Adventure con búsqueda de tesoros de camino a Skull Castle."}
+    ]
+  },
+  "wazdan-mighty-symbols-sevens": {
+    "intro": ["Mighty Symbols: Sevens utiliza cinco rodillos y diez líneas, con sietes enormes que actúan como comodines y sustituyen a los símbolos normales salvo Scatters.", "También enumera Hold the Jackpot con un premio superior de 2000x: una estructura matemática distinta del bonus Walking Crown de Crowns."],
+    "editorial": "El máximo de 2000x de Sevens no debe considerarse el valor de cada Giant Seven Wild. La tragaperras se distingue por combinar líneas clásicas con recogida de jackpots y su propia variante Mighty Sevens.",
+    "features": [
+      {"title": "Sietes gigantes comodín", "description": "Los Mighty Sevens sustituyen a los símbolos estándar, pero no a los Scatters."},
+      {"title": "Modo Hold the Jackpot", "description": "Un bonus independiente recoge valores de premio, con el máximo oficial del juego de 2000x."},
+      {"title": "Buy Feature y Chance Level", "description": "Dos vías al bonus son la compra según sus reglas y el cambio de probabilidad a cambio de una apuesta más cara."}
+    ]
+  },
+  "playn-go-ice-joker": {
+    "intro": ["Ice Joker utiliza a Icelia como comodín especial. Cuando aparece en un rodillo, este se congela y se activan tres Frozen Re-Spins; durante la secuencia, Icelia se expande hasta llenar el rodillo y después desaparece.", "Los copos de nieve en los rodillos 1, 3 y 5 abren Winter’s Wheel. La rueda puede recoger 2–7 Ice Jokers; si no aparece el siguiente Joker, se añade uno ya recogido a un rodillo y activa Frozen Re-Spins de nuevo. La secuencia total puede alcanzar 50 regiros."],
+    "editorial": "Ice Joker convierte un comodín expansivo en un contador de regiros: cada nueva Icelia vuelve a conceder tres regiros, mientras que Winter’s Wheel forma una reserva de futuros Ice Jokers. El termómetro muestra los recursos restantes de la secuencia.",
+    "features": [
+      {"title": "Icelia y Frozen Re-Spins", "description": "Un Icelia Wild congela el rodillo y activa tres Frozen Re-Spins. En cada giro, el comodín se expande hasta llenar el rodillo y después desaparece."},
+      {"title": "Winter’s Wheel y copos de nieve", "description": "Los copos de nieve en los rodillos 1, 3 y 5 activan Winter’s Wheel con una reserva de dos a siete Ice Jokers. Un Joker no utilizado puede pasar a los rodillos y activar Frozen Re-Spins de nuevo."},
+      {"title": "Termómetro y límite de secuencia", "description": "Cada nuevo Ice Joker prolonga la serie de tres regiros; el termómetro muestra sus recursos. La secuencia total puede alcanzar cincuenta regiros."}
+    ]
+  },
+  "wazdan-mighty-wild-gorilla": {
+    "intro": ["Mighty Wild: Gorilla utiliza ocho posiciones base sin líneas y símbolos Collector que siguen los valores Cash.", "Hold the Jackpot se desarrolla en un tablero de bonus de dieciséis posiciones con tres regiros que se reponen con nuevos símbolos. Durante los giros gratis, Collector permanece, mientras que Collect to Infinity lo retiene hasta terminar la secuencia."],
+    "editorial": "En la descripción de Gorilla, los ocho rodillos de Game Info y las dieciséis posiciones del bonus se refieren a etapas distintas del juego. No deben mezclarse en un campo de la ficha técnica.",
+    "features": [
+      {"title": "Hold the Jackpot en 16 posiciones", "description": "El bonus concede tres regiros y los nuevos símbolos reinician el contador; el Grand Jackpot de 2500x está vinculado a un llenado completo."},
+      {"title": "Diez giros gratis y Collect to Infinity", "description": "Collector no desaparece durante los giros gratis; Countdown Boosters y Collect to Infinity prolongan su funcionamiento."},
+      {"title": "Cash Out bajo el Collector", "description": "Un Cash Out aleatorio paga valores recogidos, mientras que Chance Level x2/x5/x10 aumenta la apuesta para la probabilidad del bonus."}
+    ]
+  },
+  "playn-go-idol-of-fortune": {
+    "intro": ["Idol of Fortune utiliza un Gold Reel: si está activo, un comodín que aparece en él activa el minijuego Wild Prize. Se elige entre 12 símbolos hasta recoger tres iguales que determinan Wild Prize.", "Durante los giros gratis, se elige una combinación de número de giros y Mystery Reels. Mystery Pick puede conceder hasta 88 símbolos Mystery con la opción de 20 giros gratis, por lo que la duración del bonus y la densidad de su mecánica misteriosa se configuran juntas."],
+    "editorial": "Idol of Fortune ofrece dos elecciones distintas: un Wild Prize de tres coincidencias fuera de los giros gratis y una configuración de giros/Mystery Reels dentro del bonus. Esto convierte Mystery Pick en parte de la configuración de la función y no en un modificador fijo aleatorio.",
+    "features": [
+      {"title": "Gold Reel y Wild Prize", "description": "Un comodín en un Gold Reel activo activa el minijuego Wild Prize: deben recogerse tres símbolos iguales entre doce ocultos."},
+      {"title": "Elección de giros gratis y Mystery Reels", "description": "Durante el bonus, se selecciona una combinación de cantidad de giros gratis y Mystery Reels. Son parámetros vinculados y no un número fijo de posiciones misteriosas."},
+      {"title": "El Mystery Pick", "description": "Con la opción de veinte giros gratis, Mystery Pick puede proporcionar hasta ochenta y ocho símbolos Mystery. Es un escenario declarado del bonus y no el premio máximo total."}
+    ]
+  },
+  "wazdan-mighty-wild-jaguar": {
+    "intro": ["Mighty Wild: Jaguar utiliza quince posiciones sin líneas y dos bonus independientes: Hold the Jackpot y Wild Rampage.", "Cash Infinity y Sticky to Infinity retienen valores monetarios, mientras que Mystery Multiplier añade una capa independiente de transformación de premios."],
+    "editorial": "Jaguar tiene un máximo de 750x, como Mighty Symbols: Jokers, pero su Wild Rampage no debe sustituirse por Jokers Rampage. Su combinación distintiva son dos modos de jackpot y un comodín de aspecto felino.",
+    "features": [
+      {"title": "Modo Wild Rampage", "description": "Un bonus independiente con el comodín, distinto de la recogida normal de Hold the Jackpot."},
+      {"title": "Cash Infinity y Sticky to Infinity", "description": "Los símbolos monetarios retenidos ayudan a acercarse al evento de jackpot."},
+      {"title": "Hold the Jackpot y Mystery Multiplier", "description": "Un bonus independiente recoge valores Cash, con multiplicadores bajo sus propias condiciones; Chance Level aumenta la probabilidad de activación."}
+    ]
+  },
+  "playn-go-immortails-of-egypt": {
+    "intro": ["ImmorTails of Egypt utiliza tres medidores de personajes para Bastet, Mafdet y Sekhmet. Al llenarse, los gatitos de los rodillos se convierten en comodines expansivos y estos pueden ocupar los cinco rodillos en una secuencia válida.", "Durante los giros gratis, la disposición se amplía de 5×3 a 5×4. Junto a ella funciona un multiplicador, presentado visualmente como un cofre del tesoro cerrado: los premios lo abren para revelar el valor acumulado."],
+    "editorial": "La progresión se ve directamente sobre los rodillos: los medidores muestran lo cerca que están los gatitos de convertirse en dioses gato. Los giros gratis mejoran este sistema de dos maneras a la vez: una fila adicional y un cofre multiplicador independiente.",
+    "features": [
+      {"title": "Bastet, Mafdet y Sekhmet", "description": "Tres medidores de personajes se cargan por separado y convierten a los gatitos de los rodillos en comodines expansivos, extendiendo gradualmente la cobertura a cinco rodillos."},
+      {"title": "Tablero ampliado de giros gratis", "description": "Durante los giros gratis, el tablero se amplía de 5×3 a 5×4. La fila adicional mejora los símbolos comodín en lugar de sustituir a los medidores de personajes."},
+      {"title": "Multiplicador del tesoro cerrado", "description": "Durante los giros gratis, un multiplicador independiente aparece como un cofre del tesoro cerrado: los premios revelan su valor acumulado."}
+    ]
+  },
+  "wazdan-mighty-wild-panther-grand-diamond-edition": {
+    "intro": ["Mighty Wild: Panther Grand Diamond Edition utiliza un tablero de 5×3 con dos bonus distintos: Hold the Jackpot y Wild Rampage. Cash Out del juego base puede permanecer en su rodillo hasta veinte giros recogiendo valores monetarios.", "Cada bonus exige seis símbolos correspondientes. Ambos modos pueden llevar al Grand Jackpot de 5000x, pero las reglas de Hold the Jackpot y Wild Rampage no deben mezclarse."],
+    "editorial": "Esta versión se distingue de Gold y Platinum por su propio Cash Out y un premio superior de 5000x. La insignia Top Performing del catálogo original se ha corregido por el título oficial del juego.",
+    "features": [
+      {"title": "Cash Out durante hasta 20 giros", "description": "El recolector retenido recoge valores Cash, Cash Infinity y de jackpots inferiores que aparecen en su rodillo."},
+      {"title": "Dos bonus independientes", "description": "Seis símbolos Hold the Jackpot o seis Wild Rampage abren el modo correspondiente; ambos incluyen Grand de 5000x."},
+      {"title": "Chance Level x2, x5 y x10", "description": "Un pago adicional de apuesta aumenta la probabilidad del bonus correspondiente sin convertirse en un premio garantizado."}
+    ]
+  },
+  "playn-go-imperial-opera": {
+    "intro": ["Imperial Opera es una tragaperras de cinco rodillos y 20 líneas de pago donde Showcase añade una pila de símbolos aleatoria en cada giro. Crescendo convierte aleatoriamente uno o dos rodillos completamente en comodines, mientras que Harmony sincroniza dos o tres rodillos.", "Si Harmony abarca tres rodillos, puede aparecer sobre ellos un Golden Gong Mega Scatter de 3×3. Activa 10 giros gratis con los rodillos 2–4 girando sincronizados; otro Mega Scatter añade 10 giros adicionales."],
+    "editorial": "Imperial Opera basa su bonus en tres capas distintas de sincronización de rodillos y no en una sustitución aleatoria de símbolos. Showcase funciona constantemente, Crescendo mejora giros individuales y Harmony abre una vía al Mega Scatter y los giros gratis.",
+    "features": [
+      {"title": "Showcase en cada giro", "description": "Showcase añade una pila de símbolos aleatoria en cada giro de los cinco rodillos y veinte líneas."},
+      {"title": "Crescendo y Harmony", "description": "Crescendo convierte aleatoriamente de uno a dos rodillos completamente en comodines, mientras que Harmony sincroniza dos o tres rodillos."},
+      {"title": "Giros gratis Golden Gong", "description": "Harmony en tres rodillos puede crear un Golden Gong Mega Scatter de 3×3. Concede diez giros gratis con los rodillos 2–4 sincronizados; otra aparición añade diez más."}
+    ]
+  },
+  "wazdan-mighty-wild-panther-grand-gold-edition": {
+    "intro": ["Panther Grand Gold Edition funciona en un tablero de quince posiciones y combina Hold the Jackpot con Wild Rampage.", "Durante Wild Rampage, los Panther Mystery Symbols pueden mejorar los premios de jackpot, mientras que Cash Infinity aumenta la posibilidad de recoger los símbolos necesarios para Hold the Jackpot."],
+    "editorial": "Grand Gold Edition confirma un máximo de 1500x con un RTP del 96.15%. Platinum tiene un límite de 2500x e incorpora además Cash Out en el juego base: es más que una diferencia de color.",
+    "features": [
+      {"title": "Wild Rampage y Panther Mystery", "description": "La función de bonificación puede multiplicar premios individuales de jackpot procedentes de Panther Mystery Symbols."},
+      {"title": "Modo Hold the Jackpot", "description": "Los valores monetarios y de jackpot se retienen en un evento de premios independiente con Grand de hasta 1500x."},
+      {"title": "Cash Infinity y Chance Level", "description": "Los símbolos retenidos ayudan a acercarse al bonus; Chance Level aumenta la probabilidad mediante la apuesta."}
+    ]
+  },
+  "playn-go-infernal-trinity-go-guaranteed": {
+    "intro": ["Infernal Trinity GO Guaranteed utiliza tres colores de Phoenix Tear Scatter. Recoger lágrimas despierta a los fénix azul, rojo y morado, cada uno de los cuales activa su propio modificador Hold and Spin; varios fénix pueden activarse simultáneamente.", "El azul amplía los rodillos, el rojo aumenta los valores de monedas y el morado garantiza una moneda de jackpot. Una escalera GO Guaranteed independiente sube cuando los tres colores de lágrimas aparecen en un giro: los pasos fijos van de x10 a x100, mientras que GO Ultra amplía la escalera a x120."],
+    "editorial": "Aquí Hold and Spin no es igual en cada activación: el resultado depende de qué fénix despierten juntos. GO Guaranteed funciona como progresión independiente y se reinicia cuando las tres funciones de fénix se combinan en un Hold and Spin.",
+    "features": [
+      {"title": "Tres colores de Phoenix Tear", "description": "Los Phoenix Tear Scatters azules, rojos y morados despiertan tres funciones de fénix independientes. Varias aves pueden activarse simultáneamente en un Hold and Spin."},
+      {"title": "Mejoras azul, roja y morada", "description": "El fénix azul amplía rodillos, el rojo aumenta valores de monedas y el morado garantiza una moneda de jackpot durante Hold and Spin. El bonus depende de los colores activos concretos."},
+      {"title": "Escalera GO Guaranteed", "description": "Los tres colores de lágrimas en un giro elevan una escalera garantizada independiente de x10 a x100; el paso más alto de GO Ultra es x120. Combinar las tres funciones de fénix reinicia la escalera."}
+    ]
+  },
+  "wazdan-mighty-wild-panther-grand-platinum-edition": {
+    "intro": ["Panther Grand Platinum Edition eleva el máximo a 2500x y añade Cash Out al juego base, ausente en la lista de Gold Edition.", "El sistema de bonus sigue dividido entre Hold the Jackpot y Wild Rampage, mientras que Cash Infinity prepara los símbolos de bonificación antes de entrar en el modo jackpot."],
+    "editorial": "No debe trasladarse el RTP del 96.15% de Gold: Wazdan indica 96.12% para Platinum. Cash Out es un cambio independiente de versión y no un sinónimo de su Wild Rampage.",
+    "features": [
+      {"title": "Cash Out en el juego base", "description": "El recolector, nuevo en Platinum, permite pagar valores Cash antes del bonus Hold the Jackpot."},
+      {"title": "Modo Wild Rampage", "description": "Un modo adicional proporciona sus propios escenarios de jackpot, distintos de la recogida normal."},
+      {"title": "Hold the Jackpot y Cash Infinity", "description": "Cash Infinity retiene símbolos de premio, mientras que Chance Level y Buy Feature afectan al acceso al bonus."}
+    ]
+  },
+  "playn-go-inferno-joker": {
+    "intro": ["Inferno Joker utiliza un Wild Joker para las líneas de pago normales y un Joker Scatter independiente que aparece solo en el rodillo 3. Su aparición activa inmediatamente Inferno Joker Re-Spins.", "Durante los regiros, todos los Inferno Jokers se convierten en Scatters. Un rodillo con un nuevo Scatter queda retenido mientras los demás vuelven a girar; la secuencia termina cuando no aparece un nuevo Joker o cuando los Scatters ocupan los cinco rodillos. Un llenado completo concede x2500 la apuesta original."],
+    "editorial": "Inferno Joker convierte un regiro en una retención sucesiva de rodillos. El factor importante es llenar gradualmente los cinco rodillos mediante giros repetidos y no el número de Scatters en una sola imagen.",
+    "features": [
+      {"title": "Comodín y Joker Scatter central", "description": "Wild Joker participa en premios normales por líneas, mientras que el Joker Scatter especial aparece solo en el tercer rodillo y activa regiros."},
+      {"title": "Retención de rodillos", "description": "Durante el bonus, Inferno Joker se convierte en Scatter: un rodillo con un nuevo Scatter queda retenido mientras los demás vuelven a girar hasta que dejan de aparecer nuevos."},
+      {"title": "Cinco rodillos llenos", "description": "La secuencia termina sin un nuevo Joker o después de que Scatters llenen los cinco rodillos. Un llenado completo paga x2500 la apuesta original."}
+    ]
+  },
+  "wazdan-moon-of-fortune": {
+    "intro": ["Moon of Fortune utiliza dieciséis posiciones sin líneas estándar. Sticky to Infinity fija símbolos de bonificación y ayuda a alcanzar Hold the Jackpot.", "Si se llenan las dieciséis posiciones del bonus, Wazdan indica un Grand Jackpot de 1500x. Chance Level x2/x4/x6 aumenta la probabilidad del bonus y no el propio premio."],
+    "editorial": "Su temática lunar asiática no convierte Moon of Fortune en una tragaperras clásica de líneas. El máximo de 1500x está relacionado con llenar por completo el tablero del bonus y no con un comodín individual.",
+    "features": [
+      {"title": "Función Sticky to Infinity", "description": "Los símbolos de premio pueden permanecer retenidos hasta que se activa el evento de jackpot."},
+      {"title": "Grand por 16 posiciones llenas", "description": "Un tablero de bonus completo concede el Grand Jackpot de 1500x la apuesta."},
+      {"title": "Collector y Chance Level", "description": "Collector participa en la recogida de valores, mientras que los niveles x2/x4/x6 aumentan el coste de apuesta para una mayor probabilidad del bonus."}
+    ]
+  },
+  "playn-go-inferno-star": {
+    "intro": ["Inferno Star funciona en 5×3 y cinco líneas de pago. Un Raging Sun Scatter aparece en el tercer rodillo y activa Raging Suns Re-Spin.", "Todos los símbolos Sun que aparecen durante la función se convierten en Raging Suns; un rodillo con uno de esos símbolos queda retenido mientras los demás vuelven a girar. La secuencia continúa hasta que dejan de aparecer nuevos soles o se retienen todos los rodillos. También hay un Gamble disponible tras un premio normal, con x2 por color y x4 por palo."],
+    "editorial": "Inferno Star utiliza el mismo principio de acumulación y retención de rodillos mediante símbolos Sun. La función termina de forma natural cuando la cadena se detiene, por lo que cada nuevo sol prolonga el intento actual.",
+    "features": [
+      {"title": "Raging Sun en el tercer rodillo", "description": "Inferno Star funciona en un tablero de 5×3 con cinco líneas; un Raging Sun Scatter en el tercer rodillo activa Raging Suns Re-Spin."},
+      {"title": "Raging Suns y retención", "description": "Los nuevos símbolos Sun se convierten en Raging Suns y retienen sus rodillos. Los demás vuelven a girar hasta que dejan de aparecer soles o se retienen todos los rodillos."},
+      {"title": "Gamble tras un premio", "description": "Después de un pago normal, un juego de cartas independiente ofrece intentar aumentar el premio: x2 por pronosticar el color y x4 por pronosticar el palo."}
+    ]
+  },
+  "wazdan-mystery-jack": {
+    "intro": ["Mystery Jack lleva el Lejano Oeste a tres rodillos con 27 líneas. El comodín ayuda a formar premios por líneas, mientras que el Scatter está vinculado a activar los giros gratis.", "El desarrollador destaca por separado Mystery Bonus como función de bonificación independiente; no debe presentarse como esos mismos giros gratis ni como una mecánica Hold the Jackpot."],
+    "editorial": "El Mystery Jack original tiene un RTP del 96.79% y un máximo de 710x. Deluxe reduce el RTP a 96.49% y eleva el máximo a 820x; son perfiles matemáticos distintos.",
+    "features": [
+      {"title": "Giros gratis mediante Scatters", "description": "El Scatter participa en la activación de giros gratis; su número exacto no debe inventarse sin una fuente."},
+      {"title": "El Mystery Bonus", "description": "Un sorteo independiente de premios de bonificación en una ambientación de vaqueros."},
+      {"title": "Comodín y Gamble", "description": "El comodín sustituye a símbolos estándar en 27 líneas, mientras que Gamble ofrece un intento independiente de aumentar un pago."}
+    ]
+  },
+  "playn-go-invading-vegas": {
+    "intro": ["Invading Vegas combina giros gratis, Lock On Re-Spin, comodines caminantes y expansivos. Tres Flying Saucer Scatters activan 12 giros gratis con reactivaciones disponibles.", "Lock On Re-Spin se activa cuando los rodillos 1 y 2 están completamente llenos de símbolos apilados iguales o comodines, pero el rodillo 3 no completa la combinación. En este modo, el rodillo 3 recibe una segunda oportunidad y un comodín apilado puede convertirse en un Walking Wild. Se mueve a la izquierda durante los giros gratis y a la derecha durante Lock On."],
+    "editorial": "El Invading Vegas original cambia la dirección del Walking Wild según el modo. Sus reglas difieren de Revenge on Mars o Las Christmas: aquí la idea central es la inversión de rodillos y la segunda oportunidad de Lock On Re-Spin.",
+    "features": [
+      {"title": "Giros gratis Flying Saucer", "description": "Tres Flying Saucer Scatters conceden doce giros gratis con posibles reactivaciones. Es la rama de bonus estándar del original."},
+      {"title": "El Lock On Re-Spin", "description": "Si los rodillos 1 y 2 están completamente llenos de símbolos apilados iguales o comodines, pero el tercero no completa la combinación, el tercer rodillo recibe un regiro adicional."},
+      {"title": "Walking Wild cambia de dirección", "description": "Un comodín apilado puede convertirse en Walking Wild. Se mueve a la izquierda durante los giros gratis y a la derecha durante Lock On Re-Spin; las reglas del original no deben trasladarse a Revenge on Mars."}
+    ]
+  },
+  "wazdan-mystery-jack-deluxe": {
+    "intro": ["Mystery Jack Deluxe mantiene tres rodillos y 27 líneas, pero redibuja los gráficos de vaqueros. El propio Jack actúa como comodín, sustituye a los símbolos normales y tiene su propio pago.", "Los giros gratis y Mystery Bonus siguen siendo funciones distintas. Wazdan destaca por separado que un símbolo Mystery puede revelar un premio en una sola acción."],
+    "editorial": "Deluxe tiene un RTP verificado del 96.49% y un máximo de 820x frente al 96.79% y 710x del original. La imagen renovada no debe hacer que estas fichas cuenten como idénticas.",
+    "features": [
+      {"title": "Jack comodín con pago propio", "description": "El protagonista sustituye a los símbolos normales en 27 líneas y puede ser un símbolo de premio por sí mismo."},
+      {"title": "El Mystery Bonus", "description": "Un símbolo Mystery independiente revela un premio sin una cadena obligatoria de giros gratis."},
+      {"title": "Giros gratis y Gamble", "description": "El proveedor enumera por separado giros gratis y un juego de riesgo posterior al premio."}
+    ]
+  },
+  "playn-go-invading-vegas-revenge-on-mars": {
+    "intro": ["Revenge on Mars es una secuela de cinco rodillos y 20 líneas de pago con Walking Wilds y símbolos Mystery. Los Walking Wilds se activan cuando aparecen pilas completas en los rodillos 1–2 o 4–5 sin una línea ganadora.", "Un Walking Wild recorre los rodillos dejando símbolos Mystery; los multiplicadores pueden alcanzar x10 y se suman. Tres Space Car Scatters conceden 12 giros gratis que pueden reactivarse hasta 120 giros."],
+    "editorial": "Revenge on Mars reconstruye la mecánica en torno a parejas de rodillos exteriores y un rastro de símbolos Mystery. A diferencia del original, su progresión clave es Walking Wilds + multiplicadores y no la inversión de rodillos en modo Lock On.",
+    "features": [
+      {"title": "Pilas emparejadas y Walking Wild", "description": "Pilas completas en los rodillos 1–2 o 4–5 sin premio por línea pueden activar un Walking Wild, en lugar del Lock On del tercer rodillo del original."},
+      {"title": "Rastro Mystery y multiplicadores", "description": "El comodín móvil deja símbolos Mystery a su paso. Los multiplicadores pueden alcanzar x10 y sumarse en el resultado final."},
+      {"title": "Giros gratis Space Car", "description": "Tres Space Car Scatters conceden doce giros gratis; nuevos Scatters pueden prolongar la secuencia hasta ciento veinte giros."}
+    ]
+  },
+  "wazdan-mystery-kingdom-mystery-bells": {
+    "intro": ["Mystery Kingdom: Mystery Bells utiliza doce posiciones sin líneas. El proveedor declara expresamente una estructura matemática inusual: los premios se pagan solo en el juego de bonificación.", "Cash Infinity ayuda a activar Hold the Jackpot, mientras que One Click to the Grand Jackpot ofrece una posibilidad independiente de abrir de inmediato el premio superior."],
+    "editorial": "Este juego no debe describirse como una tragaperras normal con pagos por líneas: Game Info da 12/0 y Wazdan destaca pagos solo en el bonus. Grand de 750x no debe prometerse en cada clic.",
+    "features": [
+      {"title": "One Click to the Grand Jackpot", "description": "Una función especial ofrece la posibilidad de abrir Grand Jackpot en una acción, pero no garantiza un premio."},
+      {"title": "Función Cash Infinity", "description": "Los símbolos retenidos facilitan la entrada a un bonus independiente."},
+      {"title": "Modo Hold the Jackpot", "description": "Los valores de jackpot pagan durante el bonus; el juego base no tiene líneas de pago normales."}
+    ]
+  },
+  "playn-go-invading-vegas-las-christmas": {
+    "intro": ["Las Christmas utiliza un tablero de 5×3. Los símbolos Mystery pueden revelar un comodín con multiplicador x2, x3, x5 o x10; tres Scatters conceden 12 giros gratis.", "Lock On Re-Spin se activa cuando los dos primeros rodillos coinciden por completo, pero el tercero no completa un premio. Un comodín apilado en el rodillo 3 se convierte en Walking Wild: se mueve a la derecha en Lock On y a la izquierda durante los giros gratis."],
+    "editorial": "Las Christmas mantiene la conocida base de Invading Vegas, pero ahora los símbolos Mystery pueden conceder directamente comodines multiplicadores de hasta x10. Por ello, es más que una renovación navideña de la imagen del original.",
+    "features": [
+      {"title": "Regalos Mystery y comodines multiplicadores", "description": "Los símbolos Mystery pueden revelar un comodín con x2, x3, x5 o x10, una función específica de la versión festiva de Invading Vegas."},
+      {"title": "Giros gratis navideños", "description": "Tres Scatters en el juego base activan doce giros gratis. En esta secuencia hay disponibles Lock On Re-Spins y Walking Wilds adicionales."},
+      {"title": "Lock On y comodines caminantes", "description": "Si los dos primeros rodillos están llenos de pilas iguales, pero el tercero no produce un premio, se activa Lock On Re-Spin; un Walking Wild se mueve entonces a la derecha, frente a la izquierda durante los giros gratis."}
+    ]
+  },
+  "wazdan-neon-city": {
+    "intro": ["Neon City sitúa frutas retro entre luces urbanas futuristas en cinco rodillos y veinte líneas. El comodín sustituye a los símbolos normales y el Scatter abre un bonus.", "Además de giros gratis con multiplicador creciente, la tragaperras tiene Mega Spins, un evento independiente y no otro nombre para giros gratis."],
+    "editorial": "Neon City tiene un RTP confirmado del 96.25%, un máximo de 1250x y volatilidad baja–media. Su multiplicador creciente no debe interpretarse como el premio máximo total.",
+    "features": [
+      {"title": "Giros gratis con multiplicador creciente", "description": "Los giros de bonus utilizan un multiplicador creciente bajo sus propias condiciones de Wazdan."},
+      {"title": "Los Mega Spins", "description": "Un modo de juego adicional independiente enumerado por separado de los giros gratis normales."},
+      {"title": "Scatter y comodín", "description": "El Scatter activa los bonus, mientras que el comodín sustituye a los símbolos estándar en pagos de 20 líneas."}
+    ]
+  },
+  "playn-go-irish-gold": {
+    "intro": ["Irish Gold es una tragaperras clásica de líneas en la que Pot of Gold actúa como comodín y sustituye a los símbolos normales salvo Scatter.", "Un Pot of Gold multiplica el pago de una combinación ganadora por x5 y dos por x25, salvo una combinación de tres botes. Su mecánica se centra en un multiplicador comodín y no en un modo de bonus complejo independiente."],
+    "editorial": "Irish Gold es un ejemplo temprano y muy sencillo de comodín multiplicador. El valor de Pot of Gold depende del número de comodines dentro de una línea ganadora concreta, por lo que x5/x25 es la distinción principal y no un bonus de varias etapas.",
+    "features": [
+      {"title": "Bote de oro comodín", "description": "Pot of Gold sustituye a los símbolos normales en una línea activa, pero no a Scatter. Esto forma la base de la mecánica clásica de líneas de Irish Gold."},
+      {"title": "Multiplicador de un bote", "description": "Un Pot of Gold en una combinación ganadora multiplica su pago por x5. El multiplicador se aplica a la línea concreta y no a toda la apuesta."},
+      {"title": "Dos botes y la excepción", "description": "Dos Pots of Gold en una combinación aumentan su pago a x25; una combinación independiente de tres botes no entra en esta regla."}
+    ]
+  },
+  "wazdan-night-club-81": {
+    "intro": ["Night Club 81 utiliza cuatro rodillos y símbolos retro en un escenario de neón. Sus 81 líneas declaradas están vinculadas al comodín, que ayuda a producir más líneas que un tablero pequeño normal de frutas.", "A diferencia de los nuevos juegos de jackpot de Wazdan, la lista oficial incluye comodín con 81 líneas de pago y Gamble, pero no un Hold the Jackpot independiente."],
+    "editorial": "Game Info confirma un RTP del 95.91% y un máximo de 2240x. Night Club 81 no debe confundirse con Magic Fruits 81: sus temáticas y perfiles matemáticos difieren.",
+    "features": [
+      {"title": "Comodín y 81 líneas", "description": "El comodín aumenta el número de líneas ganadoras disponibles en el tablero de cuatro rodillos."},
+      {"title": "Tablero retro de neón", "description": "Cuatro rodillos combinan símbolos clásicos con una temática visual de discoteca."},
+      {"title": "El Gamble", "description": "Un importe concedido puede arriesgarse por separado tras un premio, pero el proveedor no enumera giros gratis."}
+    ]
+  },
+  "playn-go-iron-girl": {
+    "intro": ["Iron Girl se centra en Sticky Villains y regiros. Capturar un villano o comodín activa un regiro; si se añade un nuevo villano igual o comodín, la secuencia continúa.", "Villain Collection Meter mejora el final de la cadena: 8 Sticky Villains añaden dos Iron Girl Wilds, 10 conceden x2 al premio final, 12 conceden x3 y 14 conceden x5. Por separado, Iron Armour puede sustituir aleatoriamente hasta cinco símbolos por comodines en un giro sin premio y sin comodín."],
+    "editorial": "Iron Girl convierte el número de villanos capturados en parte de la progresión del multiplicador. Los regiros no se limitan a repetir los rodillos: el medidor cambia el efecto final según el número de objetivos persistentes recogidos.",
+    "features": [
+      {"title": "Villanos persistentes y regiros", "description": "Capturar un villano o comodín activa regiros. Un nuevo villano válido o comodín permanece en el tablero y prolonga la cadena."},
+      {"title": "El Villain Collection Meter", "description": "Ocho Sticky Villains recogidos añaden dos Iron Girl Wilds. Los umbrales de diez, doce y catorce conceden x2, x3 y x5 al premio final, respectivamente."},
+      {"title": "La Iron Armour", "description": "En un giro sin premio y sin comodín, Iron Armour puede convertir aleatoriamente hasta cinco símbolos en comodines, por separado de la cadena de Sticky Villains."}
+    ]
+  },
+  "wazdan-one-coin": {
+    "intro": ["One Coin se distingue de los conocidos juegos Hold the Jackpot por un único rodillo: tanto la estructura base como el bonus se centran en una posición.", "Durante el bonus, Mystery Multiplier puede mejorar el premio hasta x10, mientras que Grand Jackpot alcanza 500x la apuesta. El multiplicador x10 no debe considerarse el límite total del juego."],
+    "editorial": "La estructura inusual de tablero 1/0 de One Coin importa más que su nombre llamativo. Su bonus y Mystery Multiplier difieren de Magic Coin y el tablero expansivo de Ox Coin.",
+    "features": [
+      {"title": "Un rodillo", "description": "En lugar de los cinco rodillos estándar, la tragaperras utiliza una única posición de premio."},
+      {"title": "Modo Hold the Jackpot", "description": "Un bonus independiente recoge resultados de premio; Grand Jackpot está limitado a 500x la apuesta."},
+      {"title": "Mystery Multiplier x10", "description": "Un multiplicador especial funciona en el bonus; Chance Level y Buy Feature ofrecen formas distintas de alcanzarlo más rápido."}
+    ]
+  },
+  "playn-go-jade-magician": {
+    "intro": ["Jade Magician es una tragaperras de 5×3 con 15 líneas de pago. Wild x2 sustituye a los símbolos normales y duplica el premio válido.", "Dos símbolos Jade Magician pueden activar Second Chance con elección de uno de cuatro elementos y posibilidad de un premio instantáneo o giros adicionales. Tres Jade Magician Scatters conceden 5 giros gratis; durante el bonus, el mago puede añadir 1, 2 o 5 giros, hasta 50 consecutivos."],
+    "editorial": "Jade Magician conecta Second Chance y los giros gratis mediante un símbolo de personaje, pero sus funciones difieren: dos símbolos ofrecen una elección y tres activan la secuencia principal. La extensión del bonus se limita a 50 giros.",
+    "features": [
+      {"title": "Wild x2 en el tablero base", "description": "En un tablero de 5×3 con quince líneas, Wild x2 sustituye a símbolos normales en premios y duplica su valor. Este efecto funciona por separado de las dos ramas de bonus."},
+      {"title": "Second Chance de cuatro elementos", "description": "Dos símbolos Jade Magician pueden abrir Second Chance: se selecciona uno de cuatro elementos para tener la posibilidad de un premio instantáneo o giros adicionales."},
+      {"title": "Giros gratis y extensión hasta 50", "description": "Tres Jade Magician Scatters activan cinco giros gratis. Otra aparición del mago puede añadir uno, dos o cinco giros, pero la secuencia se limita a cincuenta."}
+    ]
+  },
+  "wazdan-ox-coin": {
+    "intro": ["En Ox Coin, la acción principal comienza desde una posición central, mientras que una Magic Coin puede abrir rodillos adicionales en las esquinas hasta un tablero ampliado de 17 posiciones.", "Ox Bonus lleva la recogida a un tablero de 25 posiciones. Si se agotan los regiros, Extra Lives puede añadir hasta tres intentos más."],
+    "editorial": "Aquí 17 y 25 describen estados distintos del juego y no fichas técnicas contradictorias. Chance Level tiene tres ajustes, pero no promete Grand de 2500x con cada compra de apuesta.",
+    "features": [
+      {"title": "Magic Coin amplía el tablero", "description": "Una moneda de esquina activa posiciones adicionales alrededor del tablero original."},
+      {"title": "Ox Bonus en 25 posiciones", "description": "Un tablero independiente recoge símbolos de premio y permite un Grand Jackpot de 2500x."},
+      {"title": "Extra Lives tras los regiros", "description": "Una vez agotados los intentos normales, pueden concederse hasta tres giros de bonus adicionales."}
+    ]
+  },
+  "playn-go-jewel-box": {
+    "intro": ["Jewel Box utiliza un comodín multiplicador aleatorio de x2 a x5. La propia Jewel Box actúa como Scatter.", "Tres Jewel Box Scatters activan un bonus de selección: se elige una de tres cajas con valores de premio únicos y después puede cobrarse el premio o entrar en un juego de riesgo para intentar aumentarlo."],
+    "editorial": "El comodín multiplicador y el bonus de selección de Jewel Box son independientes. El bonus no son giros gratis: es una elección entre tres valores seguida de una decisión entre cobrar o arriesgar.",
+    "features": [
+      {"title": "Comodín multiplicador aleatorio", "description": "En un giro base, el comodín sustituye a los símbolos normales y puede aparecer con un multiplicador de x2 a x5. La propia Jewel Box tiene otra función como Scatter."},
+      {"title": "Bonus de selección de tres cajas", "description": "Tres Jewel Box Scatters abren la selección: se elige una de tres cajas que ocultan distintos valores de premio."},
+      {"title": "Cobrar el premio o Gamble", "description": "Tras elegir, el premio seleccionado se muestra junto a los otros dos. Puede cobrarse de inmediato o arriesgarse en un intento Gamble independiente; no son giros gratis."}
+    ]
+  },
+  "wazdan-power-of-gods-egypt": {
+    "intro": ["Power of Gods: Egypt utiliza cinco rodillos y 243 formas de ganar, con dioses egipcios que ayudan a entrar en distintas secuencias de bonus.", "Los bonus de Ra, Sobek, Isis y Bastet difieren en condiciones y eventos. La página de Wazdan enumera por separado Ra Spins y tres variantes de giros gratis, por lo que no deben reducirse a una ronda Scatter."],
+    "editorial": "Esta tragaperras tiene un límite total de 8000x y volatilidad alta, con mecánicas basadas en personajes específicos y no en Hold the Jackpot de Hades.",
+    "features": [
+      {"title": "Los Ra Spins", "description": "Ra abre una ronda de bonus independiente distinta de los giros gratis normales de los otros dioses."},
+      {"title": "Giros gratis de tres dioses", "description": "Sobek, Isis y Bastet se presentan como variantes de bonus distintas en el mismo tablero de 243 formas de ganar."},
+      {"title": "Scatter y Buy Feature", "description": "El Scatter participa en la apertura de eventos especiales; la compra de bonus es una opción de pago independiente."}
+    ]
+  },
+  "playn-go-joker-flip": {
+    "intro": ["Joker Flip utiliza rodillos de 5×3 y hasta 20 líneas de pago. Una pila completa de comodines en el rodillo central se convierte en Walking Wild y concede tres regiros.", "Walking Wild se mueve de izquierda a derecha en el juego base y de derecha a izquierda en Casino Free Spins. Tres Scatters conceden 12 giros gratis. Los símbolos Mystery pueden revelar símbolos normales o comodines multiplicadores de hasta x10."],
+    "editorial": "Joker Flip basa su bonus en invertir la dirección del mismo Walking Wild. Casino Free Spins no se limita a añadir giros: invierte el movimiento del comodín y mantiene símbolos Mystery con potencial x10.",
+    "features": [
+      {"title": "Pila de comodines activa regiros", "description": "Una pila completa de comodines en el rodillo central se convierte en Walking Wild y activa tres regiros. En el juego normal, este comodín se mueve de izquierda a derecha."},
+      {"title": "Casino Free Spins y dirección", "description": "Tres Scatters abren doce Casino Free Spins, donde Walking Wild se mueve de derecha a izquierda, en sentido opuesto al juego base."},
+      {"title": "Símbolos Mystery y comodín x10", "description": "Los símbolos Mystery pueden revelar símbolos normales o un comodín con multiplicador de hasta x10; esta capa funciona por separado de la regla de dirección de Walking Wild."}
+    ]
+  },
+  "wazdan-power-of-gods-hades": {
+    "intro": ["Power of Gods: Hades recorre el inframundo en cinco rodillos con 243 formas de ganar y Cascading Reels. Los símbolos desaparecen tras un premio y abren nuevas combinaciones.", "Los símbolos Sticky Bonus permanecen en los rodillos durante cinco regiros y ayudan a abrir Hold the Jackpot. Hades, de la mitología griega, actúa como comodín y sustituye a los símbolos normales salvo los de bonificación."],
+    "editorial": "La mecánica de Hades difiere de los bonus de Egypt: los símbolos Sticky Bonus y la acumulación de premios de hasta 5000x son decisivos y no los giros gratis de distintos dioses.",
+    "features": [
+      {"title": "Rodillos con cascadas", "description": "Tras una combinación pagada, los símbolos desaparecen y ofrecen la posibilidad de más pagos dentro del mismo giro."},
+      {"title": "Cinco regiros de Sticky Bonus", "description": "Un Bonus que aparece queda fijado hasta cinco regiros para acumular la entrada a Hold the Jackpot."},
+      {"title": "Hades comodín y jackpot", "description": "Hades sustituye a los símbolos normales, mientras que Hold the Jackpot recoge valores monetarios hasta el máximo declarado de 5000x."}
+    ]
+  },
+  "playn-go-jolly-roger": {
+    "intro": ["El Jolly Roger original utiliza un comodín que duplica el pago de una combinación ganadora. Dos o más Scatters en cualquier posición ya conceden un premio Scatter.", "Tres o más símbolos Chest en una línea activa activan Treasure Chest Bonus, mientras que tres o más símbolos Map activan un Treasure Map Bonus independiente. Map aparece solo en los rodillos 1–3."],
+    "editorial": "El primer Jolly Roger separa dos bonus mediante símbolos distintos y no utiliza las mecánicas de las secuelas. Aquí no hay Cannon Free Spins ni Kraken: Chest y Map activan dos ramas de bonus independientes.",
+    "features": [
+      {"title": "Comodín x2 y Scatter", "description": "En el Jolly Roger original, el comodín duplica el pago de una combinación ganadora. Dos o más Scatters en cualquier posición ya forman un pago Scatter independiente."},
+      {"title": "Bonus Treasure Chest", "description": "Tres o más símbolos Chest en una línea activa activan un Treasure Chest Bonus independiente. Su entrada no depende de las posiciones de símbolos Map."},
+      {"title": "Bonus Treasure Map", "description": "Tres o más símbolos Map en una línea activa llevan a Treasure Map Bonus. Map aparece solo en los rodillos 1–3; ni Kraken ni Cannon Free Spins pertenecen al primer juego."}
+    ]
+  },
+  "wazdan-power-of-gods-medusa": {
+    "intro": ["Power of Gods: Medusa sitúa personajes mitológicos en cinco rodillos con diez líneas. Medusa actúa como comodín y ayuda a formar combinaciones ganadoras normales.", "Sticky Bonus aumenta la probabilidad de entrada a Hold the Jackpot, donde símbolos monetarios independientes llevan al resultado máximo de 2500x."],
+    "editorial": "A diferencia de Hades, Medusa paga combinaciones normales de diez líneas y no 243 formas con cascadas. Son ciclos base distintos dentro de la serie, pese al nombre de bonus similar.",
+    "features": [
+      {"title": "Medusa comodín", "description": "Medusa sustituye a los símbolos normales y participa en los pagos por líneas."},
+      {"title": "El Sticky Bonus", "description": "Los símbolos de bonificación permanecen en el tablero y ayudan a formar la combinación necesaria para Hold the Jackpot."},
+      {"title": "Modo Hold the Jackpot", "description": "Un modo independiente retiene valores de premio y permite un máximo total de 2500x."}
+    ]
+  },
+  "playn-go-jolly-roger-2": {
+    "intro": ["Jolly Roger 2 es una secuela de 5×3 con premios instantáneos y dos vías distintas de giros gratis abiertas mediante progresión de selección.", "Treasure Map Hunt se activa con tres símbolos Map y concede 10 giros gratis. Durante la secuencia deben recogerse cuatro piezas de mapa; un mapa completo concede un modificador, una rueda multiplicadora Sea Compass o mejora de símbolos, y giros adicionales. Un modo de batalla independiente utiliza distintos modificadores de armada, incluido Dutch Armada con tres rodillos sincronizados."],
+    "editorial": "Jolly Roger 2 no repite los dos bonus sencillos del original. Sus giros gratis se desarrollan mediante recogida de mapas y modificadores acumulados, mientras que el modo de batalla utiliza reglas independientes de armadas.",
+    "features": [
+      {"title": "La Treasure Map Hunt", "description": "Tres símbolos Map activan diez giros gratis. Las piezas de mapa se recogen durante el modo; cada cuatro elementos permiten abrir otro modificador de bonus."},
+      {"title": "Sea Compass y mejora de símbolos", "description": "Un mapa completo puede abrir la rueda multiplicadora Sea Compass o una mejora de símbolos de juego. El modificador viene acompañado de giros adicionales, por lo que la secuencia se desarrolla por etapas."},
+      {"title": "Batalla de armadas", "description": "Un modo de batalla independiente utiliza sus propios modificadores de armada. Dutch Armada, por ejemplo, sincroniza tres rodillos; no es el Treasure Map Bonus del primer Jolly Roger."}
+    ]
+  },
+  "wazdan-power-of-gods-medusa-extremely-light": {
+    "intro": ["Medusa Extremely Light mantiene cinco rodillos, diez líneas y la historia de la gorgona, pero simplifica las animaciones y reduce la carga al funcionar en dispositivos móviles.", "Los símbolos Sticky Bonus pueden permanecer aquí hasta nueve regiros y llevar a Hold the Jackpot con un máximo declarado de 2500x."],
+    "editorial": "El lanzamiento más ligero no debe describirse como un nuevo tipo de jackpot. Su distinción es una presentación que ahorra recursos y no giros gratis adicionales trasladados de otros juegos mitológicos.",
+    "features": [
+      {"title": "Sticky Bonus hasta nueve regiros", "description": "Los símbolos de bonus pueden permanecer en el tablero hasta nueve intentos y aumentar la posibilidad de entrar en modo jackpot."},
+      {"title": "Hold the Jackpot de 2500x", "description": "El bonus acumula símbolos monetarios; el pago superior se declara para todo el juego."},
+      {"title": "Modo Extremely Light", "description": "Los efectos más ligeros reducen la carga y el consumo energético sin cambiar las diez líneas principales."}
+    ]
+  },
+  "playn-go-jolly-roger-wild-kraken": {
+    "intro": ["Wild Kraken utiliza un tablero de cinco rodillos con cascadas. En el juego base, un Chest en el rodillo 1 junto a una Key en el rodillo 5 puede abrir Instant Treasure de hasta x50 la apuesta total.", "Seis o más balas de cañón activan Cannon Free Spins. Un Kraken Wild se mueve entre los rodillos 2–4, mientras que los multiplicadores Cannonball se aplican a giros ganadores. Tras seis impactos en el Kraken se abre Super Cannon Free Spins, con balas de cañón en llamas que llevan multiplicadores de hasta x100."],
+    "editorial": "Wild Kraken va más allá de la estructura de líneas/selección de los dos primeros Jolly Roger. Su ciclo central son las cascadas, las balas de cañón y la progresión de daño al Kraken hacia un modo Super mejorado.",
+    "features": [
+      {"title": "Cascadas y tesoro instantáneo", "description": "Wild Kraken utiliza cascadas en cinco rodillos. Un Chest en el primer rodillo y una Key en el quinto pueden abrir un premio Instant Treasure independiente de hasta x50 la apuesta total."},
+      {"title": "Cannon Free Spins y Kraken Wild", "description": "Seis o más balas de cañón activan Cannon Free Spins. Kraken Wild se mueve entre los rodillos 2–4, mientras que los multiplicadores Cannonball mejoran los giros ganadores correspondientes."},
+      {"title": "Super Cannon tras seis impactos", "description": "Seis impactos en el Kraken llevan el bonus a Super Cannon Free Spins, donde las balas de cañón en llamas pueden conceder multiplicadores de hasta x100. No es el antiguo bonus de selección de Jolly Roger."}
+    ]
+  },
+  "wazdan-power-of-gods-the-pantheon": {
+    "intro": ["The Pantheon combina veinte líneas con tres bonus distintos de dioses griegos. Tres Poseidon Scatters activan Kraken Free Spins con rodillos que se desplazan.", "Los rayos se recogen hacia Zeus Spins con comodines adicionales, mientras que las rosas abren Aphrodite Spins con cascadas y un multiplicador creciente."],
+    "editorial": "El x7 de esta tragaperras se refiere al potencial del multiplicador dentro de bonus concretos y no al premio superior de todo el juego de 1450x. Sus tres bonus no deben mezclarse en un modo.",
+    "features": [
+      {"title": "Giros Kraken Free Spins", "description": "Tres Scatters activan 10 giros con rodillos que se desplazan y un multiplicador de hasta x7."},
+      {"title": "Los Zeus Spins", "description": "Los rayos recogidos abren 5 giros durante los que se añaden comodines a los rodillos."},
+      {"title": "Los Aphrodite Spins", "description": "Las rosas activan giros con cascadas y un multiplicador creciente de hasta x7."}
+    ]
+  },
+  "playn-go-journey-to-paris": {
+    "intro": ["Journey to Paris funciona en un tablero de 5×5: grupos de 3+ símbolos iguales en contacto horizontal o vertical forman premios. Los símbolos ganadores desaparecen, caen otros nuevos desde arriba y el multiplicador crece durante la secuencia de cascadas de x1 a x12.", "Bonus Game se activa cuando los símbolos eliminados revelan por completo la palabra «Bonus» oculta bajo el tablero; su posición cambia en cada giro. La función concede 10 rondas gratis donde 5+ símbolos iguales pagan en cualquier posición mediante Scatter Pays, el multiplicador del bonus puede crecer hasta x5 y 5+ símbolos Bonus en un giro añaden otras 5 rondas."],
+    "editorial": "Journey to Paris vincula el activador del bonus directamente al vaciado del tablero: deben vaciarse posiciones sobre una palabra «Bonus» oculta, en lugar de recoger Scatters normales. La función también cambia cómo se cuentan los premios: 5+ símbolos iguales en cualquier posición sustituyen a los grupos.",
+    "features": [
+      {"title": "Grupos en tablero de 5×5", "description": "Al menos tres símbolos iguales adyacentes en horizontal o vertical forman un grupo ganador en el juego base. Tras retirar símbolos, el multiplicador de cascadas puede crecer de x1 a x12."},
+      {"title": "Palabra Bonus oculta", "description": "Bonus Game se abre cuando se vacían por completo las casillas sobre la palabra Bonus oculta bajo el tablero. La posición de la palabra cambia en cada giro base."},
+      {"title": "Rondas gratis y Scatter Pays", "description": "El bonus concede diez rondas gratis: cinco o más símbolos iguales pagan en cualquier posición, el multiplicador puede alcanzar x5 y cinco símbolos Bonus nuevos añaden otras cinco rondas."}
+    ]
+  },
+  "wazdan-power-of-gods-valhalla": {
+    "intro": ["Power of Gods: Valhalla lleva Hold the Jackpot a los dioses nórdicos. De tres a cinco símbolos Bonus pueden quedar fijados en el tablero y ayudar a alcanzar un bonus independiente.", "El lanzamiento incluye a Thor, Odin y Freya, mientras que el resultado principal Grand está vinculado a llenar posiciones monetarias y a un máximo total de 2145x."],
+    "editorial": "Aunque Extremely Light tiene el mismo máximo declarado, su presentación y fecha difieren. No debe trasladarse aquí la mecánica de nueve regiros de Medusa.",
+    "features": [
+      {"title": "Sticky Bonus desde tres símbolos", "description": "Cuando aparecen de tres a cinco símbolos Bonus, fijarlos acerca la entrada a un modo independiente."},
+      {"title": "Modo Hold the Jackpot", "description": "El bonus recoge valores monetarios de temática nórdica, con un resultado máximo de 2145x."},
+      {"title": "Compra Buy Feature", "description": "Una opción de pago independiente de entrada al bonus no debe confundirse con la aparición natural de símbolos Bonus."}
+    ]
+  },
+  "playn-go-king-of-sweets": {
+    "intro": ["King of Sweets es una tragaperras de tablero de 5×5 con cascadas. Los grupos ganadores cargan Sweet-o-meter, que activa efectos comodín y minieventos como Delicious y Candy Craze en distintos umbrales.", "El tablero utiliza Sweet King Wilds, un Flavour Unicorn Wild de 2×2 y comodines multiplicadores. Un Sweet-o-meter completamente cargado activa un Flavour Frenzy Free Spin; el medidor puede sobrecargarse para activar hasta siete efectos adicionales dentro de una secuencia de cascadas."],
+    "editorial": "King of Sweets utiliza un giro gratis mejorado en lugar de una secuencia larga. Toda la progresión sucede mediante Sweet-o-meter: los premios normales por grupos desbloquean gradualmente efectos y la carga máxima lleva el juego a Flavour Frenzy.",
+    "features": [
+      {"title": "Sweet Tiles y tres tipos de comodín", "description": "Sweet Tiles puede conceder un Sweet King Wild tras un premio en una casilla marcada. También hay un Flavour Unicorn Wild de 2×2 y un comodín multiplicador con mejora de hasta x10 durante el bonus."},
+      {"title": "Sweet-o-meter y minieventos", "description": "Los grupos ganadores llenan Sweet-o-meter. Sus niveles desbloquean nuevos efectos comodín y minieventos Delicious y Candy Craze con cascadas adicionales."},
+      {"title": "Un Flavour Frenzy Free Spin", "description": "Un medidor lleno activa un Flavour Frenzy Free Spin y no una secuencia larga. El medidor se reinicia durante él y puede sobrecargarse para siete efectos adicionales."}
+    ]
+  },
+  "wazdan-power-of-gods-valhalla-extremely-light": {
+    "intro": ["Valhalla Extremely Light presenta Hold the Jackpot nórdico con efectos simplificados e inicio móvil más rápido. Game Info técnico muestra dieciséis posiciones sin líneas normales.", "Sticky Bonus ayuda a alcanzar la ronda de jackpot, mientras que la ficha oficial menciona tanto Grand de 1000x en un bloque promocional como Max Win de 2145x en la ficha técnica: estas cifras tienen denominaciones distintas."],
+    "editorial": "Para la versión más ligera, la cifra promocional de un Grand independiente no debe presentarse como límite total: se utiliza 2145x de Game Info oficial y se conserva el origen de 1000x en la descripción de funciones.",
+    "features": [
+      {"title": "Dieciséis posiciones de premio", "description": "Game Info registra 16 posiciones y ninguna línea tradicional."},
+      {"title": "Sticky Bonus y Hold the Jackpot", "description": "Los símbolos de bonus retenidos aumentan la posibilidad de entrar en la ronda de jackpot."},
+      {"title": "Versión móvil más ligera", "description": "Extremely Light reduce la carga del dispositivo; la descripción promocional Grand de 1000x no sustituye al Max Win total de 2145x."}
+    ]
+  },
+  "playn-go-kings-mask": {
+    "intro": ["King’s Mask ofrece tres opciones de giros gratis para elegir. Las cantidades disponibles son 15, 10 o 5 giros, con un multiplicador independiente para cada opción.", "La elección intercambia cantidad de giros por fuerza del multiplicador, mientras que el premio máximo declarado alcanza x10,000 la apuesta total."],
+    "editorial": "El King’s Mask original se centra en un intercambio claro: más giros o un multiplicador más fuerte. No es la rueda de funciones ni el modificador aleatorio de eclipse de la secuela.",
+    "features": [
+      {"title": "Tres opciones de giros gratis", "description": "El King's Mask original permite elegir quince, diez o cinco giros gratis antes de comenzar la secuencia del bonus."},
+      {"title": "Cantidad frente a multiplicador", "description": "Cada una de las tres opciones tiene su propio multiplicador de bonus: la diferencia está en el equilibrio entre cantidad de giros y fuerza de la mejora."},
+      {"title": "El potencial no es una garantía", "description": "El desarrollador declara un potencial de hasta x10,000 la apuesta total. Es el potencial máximo declarado del juego y no un pago garantizado después de elegir un bonus."}
+    ]
+  },
+  "wazdan-power-of-sun-svarog": {
+    "intro": ["Power of Sun: Svarog está dedicado al dios eslavo del fuego y funciona en cinco rodillos con 243 vías de pago en lugar de líneas fijas.", "Cash Infinity y Sticky to Infinity retienen símbolos monetarios y ayudan a abrir Hold the Jackpot, donde las mejoras del herrero Svarog proporcionan la posibilidad de hasta 5000x la apuesta."],
+    "editorial": "En Svarog, la distinción entre Cash Infinity y Sticky to Infinity importa más que la temática de fragua: apoyan la entrada a un bonus, pero no actúan como comodines idénticos. Su perfil de volatilidad alta corresponde a los 5000x declarados.",
+    "features": [
+      {"title": "Función Cash Infinity", "description": "Fija símbolos de premio en el tablero y ayuda a formar las condiciones de entrada a Hold the Jackpot."},
+      {"title": "Función Sticky to Infinity", "description": "Los símbolos retenidos especiales permanecen activos hasta el evento de bonificación bajo sus propias reglas."},
+      {"title": "Hold the Jackpot y Buy Feature", "description": "El modo recoge valores monetarios, mientras que Buy Feature permite comprar por separado el acceso al bonus donde esté disponible la opción."}
+    ]
+  },
+  "playn-go-kings-mask-eclipse-of-gods": {
+    "intro": ["King’s Mask Eclipse of Gods funciona en rodillos de 5×3 y activa aleatoriamente funciones de eclipse, incluidos Walking Wilds, directamente en el juego base.", "Tres Scatters activan los giros gratis. Antes de comenzar la función se elige una función de eclipse disponible y el efecto elegido permanece activo durante toda la secuencia del bonus."],
+    "editorial": "La secuela no repite la elección de 15/10/5 giros del original. Aquí la decisión se refiere a un modificador de eclipse persistente que funciona en cada giro gratis y no a la duración de la secuencia.",
+    "features": [
+      {"title": "Eclipse en el juego base", "description": "Las funciones de eclipse, incluidos Walking Wilds, se activan aleatoriamente en el tablero de 5×3. Estos modificadores pueden aparecer antes de cualquier entrada a giros gratis."},
+      {"title": "Tres Scatters y elección de eclipse", "description": "Tres Scatters activan giros gratis y antes se elige una función Eclipse disponible. La elección afecta al comportamiento del bonus."},
+      {"title": "Modificador persistente durante la secuencia", "description": "El efecto Eclipse seleccionado permanece activo durante toda la secuencia de giros gratis. Es distinto de elegir 15, 10 o 5 giros en el King's Mask original."}
+    ]
+  },
+  "wazdan-prosperity-pearls": {
+    "intro": ["Prosperity Pearls utiliza 25 posiciones separadas sin líneas. Seis perlas blancas abren Hold the Jackpot, mientras que de tres a cinco perlas del juego base quedan fijadas para un regiro de pago.", "El bonus tiene perlas blancas, doradas, negras y Mystery: las doradas recogen valores blancos y las negras suman y duplican los valores acumulados."],
+    "editorial": "Grand de 1000x por llenar 25 posiciones debe distinguirse del pago máximo total de 4000x de Game Info. Estas cifras describen límites distintos y no deben sustituirse entre sí.",
+    "features": [
+      {"title": "Seis perlas para activar", "description": "De tres a cinco White Pearls conceden un regiro de pago; seis activan Hold the Jackpot con tres regiros que se reponen."},
+      {"title": "Perlas doradas y negras", "description": "Las perlas doradas recogen valores blancos, mientras que las negras recogen valores blancos, dorados y negros y los duplican."},
+      {"title": "Mystery y Grand", "description": "Mystery se convierte en uno de los tipos de perla; llenar las 25 posiciones concede Grand de 1000x junto a un premio máximo total de 4000x."}
+    ]
+  },
+  "playn-go-kingdom-below": {
+    "intro": ["Kingdom Below utiliza un tablero de 5×4 y símbolos Grab. La bestia recoge valores Grab del rodillo situado debajo y a veces puede tomar un símbolo Grab o Scatter adicional.", "Slide n Grab mueve a la bestia por los rodillos, recoge símbolos Grab y multiplica el total por el número de rodillos de los que ha recogido. Tres o más Scatters conceden 10 giros gratis: Pick a Fire selecciona modificadores antes de empezar y cada dos pasos del sendero de fuego conceden otra elección de modificador."],
+    "editorial": "Kingdom Below comparte las mecánicas Grab entre el juego base y los giros gratis. Durante el bonus, los modificadores elegidos previamente y las elecciones posteriores las refuerzan, por lo que la progresión sigue el sendero de fuego y no solo el número de giros restantes.",
+    "features": [
+      {"title": "Bestia y símbolos Grab", "description": "Kingdom Below funciona en un tablero de 5×4. La bestia recoge valores Grab del rodillo inmediatamente inferior y a veces captura un Grab o Scatter adicional."},
+      {"title": "El Slide n Grab", "description": "En Slide n Grab, la bestia cruza varios rodillos y recoge sus símbolos Grab; el valor acumulado se multiplica por el número de rodillos de los que se ha recogido."},
+      {"title": "Pick a Fire durante los giros gratis", "description": "Tres o más Scatters conceden diez giros gratis. Pick a Fire asigna un modificador antes del bonus y cada dos pasos del sendero de fuego abren otra elección de mejora."}
+    ]
+  },
+  "wazdan-prosperity-reels": {
+    "intro": ["Prosperity Reels ofrece seis rodillos con 46,656 formas de ganar y combina símbolos orientales con un Sack Symbol para recoger valores de premio.", "Cash Rain y Expanding Wild complementan un Hold the Jackpot independiente. Estas funciones no deben confundirse con Prosperity Pearls: este juego tiene un Sack Symbol y una gran cantidad de formas de ganar."],
+    "editorial": "El máximo de 2100x de Game Info se aplica a toda la tragaperras; Sack Symbol es un recolector intermedio y no un jackpot garantizado independiente.",
+    "features": [
+      {"title": "46,656 formas de ganar", "description": "Seis rodillos forman pagos mediante vías y no un conjunto de líneas fijas."},
+      {"title": "Sack Symbol y Cash Rain", "description": "El saco recoge valores de símbolos monetarios, mientras que Cash Rain añade eventos monetarios independientes."},
+      {"title": "Expanding Wild y Hold the Jackpot", "description": "El comodín expansivo funciona en el ciclo base, mientras que la recogida de jackpot sucede mediante un bonus independiente."}
+    ]
+  },
+  "playn-go-kiss-reels-of-rock": {
+    "intro": ["Kiss Reels of Rock funciona en un tablero de 6×4 con forma de diamante y cambia la estructura del bonus según la parada de concierto seleccionada. Cinco escenarios principales de giros gratis difieren en nivel de riesgo y Encore abre un modo final independiente.", "Durante Encore Free Spin, el tablero se amplía y las formas de ganar alcanzan 4096. Por ello, la distinción clave del juego es la transición entre distintas configuraciones de una gira de conciertos y no solo un conjunto de comodines y multiplicadores."],
+    "editorial": "Kiss Reels of Rock se distingue de las tragaperras musicales normales: la propia geometría del tablero forma parte del bonus y las ciudades definen escenarios de giros gratis distintos.",
+    "features": [
+      {"title": "Cinco giros gratis de concierto", "description": "Johannesburgo, Sídney, Londres, Río de Janeiro y Tokio proporcionan variantes distintas de giros gratis con sus propios perfiles de riesgo."},
+      {"title": "Encore y ampliación del tablero", "description": "Encore Free Spin está vinculado a Nueva York y amplía el tablero, abriendo hasta 4096 formas de ganar."},
+      {"title": "Comodines y multiplicadores", "description": "La estructura base utiliza comodines aleatorios y multiplicadores que funcionan junto a los bonus de conciertos."}
+    ]
+  },
+  "wazdan-reel-hero": {
+    "intro": ["Reel Hero utiliza cinco rodillos y veinte líneas: cuatro superhéroes abren sus propios bonus al recoger cinco símbolos del personaje correspondiente.", "Durante los giros gratis se eligen aleatoriamente dos efectos de héroe que funcionan juntos, mientras que el comodín ayuda a crear combinaciones normales."],
+    "editorial": "La identidad de Reel Hero procede de combinar las habilidades de Rich, Victoria, Altiera y Jax. No es Infinity Hero con un multiplicador que crece constantemente: Wazdan utiliza activadores y reglas de bonus distintos.",
+    "features": [
+      {"title": "Rich y Victoria", "description": "Rich expande un comodín por un rodillo con un regiro gratis, mientras que Victoria desplaza rodillos a la derecha tras un premio y revela nuevos símbolos."},
+      {"title": "Altiera y Jax", "description": "Altiera añade comodines, mientras que Jax elimina símbolos ganadores para nuevas combinaciones. Dos efectos de héroe pueden funcionar simultáneamente."},
+      {"title": "Giros gratis por tres Scatters", "description": "De tres a cinco Scatters activan diez giros con dos bonus de héroes activos; los símbolos especiales añaden tres giros cada vez."}
+    ]
+  },
+  "playn-go-lab-of-madness-its-a-wild": {
+    "intro": ["Lab of Madness It's A-Wild! basa la progresión en orbes luminosos y bombillas. Los orbes correspondientes cargan bombillas y el nivel de carga determina la complejidad del comportamiento de Monster Wild.", "Un Monster Wild puede expandirse por todo un rodillo, caminar por el tablero con un regiro, llevar un multiplicador x2, x3 o x5 o combinar varios efectos. Un símbolo Power Up independiente puede abrir uno de cuatro niveles de premio."],
+    "editorial": "Sus funciones comodín independientes no deben confundirse: los comodines expansivos, caminantes y multiplicadores pueden existir individualmente o combinarse en un Hybrid Wild al cargarse las bombillas.",
+    "features": [
+      {"title": "Carga de bombillas", "description": "Los orbes luminosos llevan gradualmente las bombillas correspondientes de descargadas a totalmente cargadas y mejoran los efectos comodín disponibles."},
+      {"title": "Comodines especiales e híbridos", "description": "Un Monster Wild puede ser expansivo, caminante o multiplicador; una carga suficiente puede combinar los efectos."},
+      {"title": "Giros gratis y Power Up", "description": "Los orbes pueden activar giros gratis, con un conjunto de comodines especiales que depende de su número; Power Up ofrece por separado la posibilidad de uno de cuatro niveles de premio."}
+    ]
+  },
+  "wazdan-reel-joke": {
+    "intro": ["Reel Joke presenta seis rodillos y veinte líneas con símbolos Joker retro, pero su bonus principal va más allá de un Gamble sencillo: tres Scatters abren 10 giros gratis.", "Tras un premio durante los giros gratis se activa Moving Reels: los rodillos se desplazan a la derecha para revelar nuevos símbolos. Un Infinite Multiplier recibe su valor inicial de uno de cuatro Initial Multiplier Symbols."],
+    "editorial": "El Joker no es motivo para simplificar la ficha técnica: el máximo oficial de Reel Joke es de 9500x y el evento principal combina Moving Reels e Infinite Multiplier. No es Joker Explosion ni una secuencia estándar sin modificadores.",
+    "features": [
+      {"title": "Moving Reels durante los giros gratis", "description": "Tras una combinación ganadora, los rodillos se desplazan a la derecha y aparecen cuatro símbolos nuevos en el tablero para el siguiente cálculo."},
+      {"title": "Infinite Multiplier con valor inicial", "description": "Uno de cuatro Initial Multiplier Symbols determina el multiplicador inicial, que puede crecer durante el bonus."},
+      {"title": "Scatter y extensión de ronda", "description": "Tres Scatters activan 10 giros gratis, mientras que los símbolos especiales añaden 3, 4 o 5 giros adicionales."}
+    ]
+  },
+  "playn-go-lady-of-fortune": {
+    "intro": ["La Lady of Fortune original utiliza líneas seleccionadas y una regla inusual de inicio de combinación: un premio puede comenzar en el primer, segundo o tercer rodillo. Solo paga la combinación más alta de una línea.", "Cuatro comodines llevan multiplicadores x2, x3, x4 y x5 y aparecen solo en el tercer rodillo. Tres símbolos Lady of Fortune activan Pick-a-Prize y después el premio puede entrar por separado en Gamble."],
+    "editorial": "El original se distingue de Remastered y Destiny Spins porque su núcleo son comodines multiplicadores en el tercer rodillo y un Pick-a-Prize independiente, sin importar mecánicas de versiones posteriores.",
+    "features": [
+      {"title": "Comodín multiplicador en el tercer rodillo", "description": "El comodín sustituye a los símbolos normales y multiplica un premio válido por x2, x3, x4 o x5; aparece solo en el rodillo 3."},
+      {"title": "Elección Pick-a-Prize", "description": "Tres símbolos Lady of Fortune en posiciones dispersas abren una elección de premio oculto."},
+      {"title": "El Gamble", "description": "Tras un premio, puede pronosticarse el color o el palo de una carta: acertar el color duplica el premio y acertar el palo lo multiplica por cuatro."}
+    ]
+  },
+  "wazdan-relic-hunters-and-the-book-of-faith": {
+    "intro": ["Relic Hunters and the Book of Faith utiliza seis rodillos, tres filas y veinte líneas que pagan en ambas direcciones. Sarah y Will actúan como dos comodines y la pirámide Scatter activa 10 giros gratis.", "Los giros de bonus incluyen un símbolo expansivo de bonificación y Walking Wilds, mientras que la recogida de brújulas y estatuas de gato abre Pyramid Exploration y Bastet Spins independientes."],
+    "editorial": "No es un Great Book simplificado: los contadores de dos bonus independientes y los Walking Wilds se desarrollan simultáneamente. La ficha técnica de Wazdan confirma un máximo de 750x y no los 5150x del juego del libro.",
+    "features": [
+      {"title": "Comodines caminantes y símbolo expansivo", "description": "Tres Scatters conceden diez giros gratis: un símbolo seleccionado se expande, los comodines se mueven en ambas direcciones y su encuentro añade tres giros."},
+      {"title": "La Pyramid Exploration", "description": "Un contador de mapa y brújula lleva a un juego interactivo de selección de premios de cuatro niveles."},
+      {"title": "Los Bastet Spins", "description": "Las estatuas de gato activan cinco giros durante los que aparecen cada vez cinco comodines adicionales en los rodillos."}
+    ]
+  },
+  "playn-go-lady-of-fortune-destiny-spins": {
+    "intro": ["Lady of Fortune Destiny Spins conecta rondas sin premio con una bola de cristal persistente: cada giro sin premio la carga y un estado completamente cargado puede abrir Pick Prize.", "Los premios cuentan en tres direcciones: de izquierda a derecha, de derecha a izquierda y por el centro. Los Scatters activan giros gratis reactivables y los comodines pueden aparecer con multiplicadores."],
+    "editorial": "Destiny Spins es más que una remasterización del original: la bola de cristal acumulativa convierte los giros sin premio en una progresión independiente, mientras que Pays 3 Ways cambia cómo se leen las combinaciones.",
+    "features": [
+      {"title": "Bola de cristal persistente", "description": "Los giros sin premio cargan la bola de cristal; al cargarse por completo, puede abrir Pick Prize con una elección de recompensa oculta."},
+      {"title": "Pagos en 3 direcciones", "description": "Las combinaciones pueden contar de izquierda a derecha, de derecha a izquierda y por la dirección central."},
+      {"title": "Giros gratis y comodines multiplicadores", "description": "Los Scatters abren giros gratis reactivables y los comodines pueden mejorar combinaciones con multiplicadores."}
+    ]
+  },
+  "wazdan-santas-gifts-frenzy": {
+    "intro": ["Santa’s Gifts Frenzy es un juego festivo con cinco rodillos y veinte líneas. Su función principal es Cash Out, que recoge valores de regalos de premio sin activar un Hold the Jackpot inexistente.", "Llenar todo el tablero de regalos hace disponible el Grand Jackpot de 1500x la apuesta. Chance Level en esta versión duplica el coste del giro y aumenta la probabilidad de regalos de mayor valor."],
+    "editorial": "No es el Hold the Jackpot de Christmas Coins: el proveedor enumera expresamente Cash Out y Grand por llenar el tablero de regalos. El RTP del 96.12% y máximo de 1500x pertenecen por separado a Santa’s Gifts Frenzy.",
+    "features": [
+      {"title": "Cash Out", "description": "Un símbolo especial paga los valores monetarios de los regalos cuando se cumplen las condiciones de recogida."},
+      {"title": "Grand por todos los regalos", "description": "Un tablero de regalos lleno concede el Grand Jackpot de 1500x; una caja individual no equivale a ese premio."},
+      {"title": "Chance Level x2", "description": "Una apuesta duplicada aumenta la posibilidad de que aparezcan jackpots en regalos sin garantizar Grand."}
+    ]
+  },
+  "playn-go-lady-of-fortune-remastered": {
+    "intro": ["Lady of Fortune Remastered vuelve a una base de líneas en un tablero de 5×3 con 15 líneas de pago. En el juego base, el comodín sustituye a los símbolos normales y puede mejorar el premio válido hasta x5.", "Tres Ouija Planchette Scatters activan Pick-a-Prize con tres cartas del tarot. Un Gamble independiente con elección de color o palo de carta está disponible tras un premio normal."],
+    "editorial": "Remastered mantiene la estructura compacta del original, pero presenta los bonus como elementos independientes más claros: comodín multiplicador, Pick-a-Prize de tarot y Gamble de cartas.",
+    "features": [
+      {"title": "Comodín multiplicador hasta x5", "description": "El comodín sustituye a los símbolos normales salvo Scatter y puede multiplicar una combinación ganadora hasta x5."},
+      {"title": "Pick-a-Prize de tarot", "description": "Tres Ouija Planchette Scatters abren tres cartas del tarot y se selecciona una que contiene un premio predeterminado."},
+      {"title": "Ronda Gamble", "description": "Tras una ronda ganadora, puede pronosticarse el color o el palo de la siguiente carta para aumentar el premio actual."}
+    ]
+  },
+  "wazdan-sizzling-777": {
+    "intro": ["Sizzling 777 utiliza cinco rodillos y veinte líneas con presentación clásica de frutas. La estrella roja Scatter concede pagos monetarios adicionales sin convertir la tragaperras en Hold the Jackpot.", "A diferencia de Hot 777, el proveedor no enumera aquí giros gratis de 30 o 45 giros. Su base son líneas directas, Scatter y un Gamble independiente."],
+    "editorial": "El original tiene un RTP del 96.42% y un máximo de 305x. Su Scatter no debe llamarse incorrectamente activador de giros de bonus solo porque las estrellas funcionen de otro modo en otras tragaperras.",
+    "features": [
+      {"title": "Estrella roja Scatter", "description": "El Scatter especial concede un premio por coincidencias válidas fuera de las líneas normales."},
+      {"title": "Veinte líneas", "description": "Las combinaciones de frutas pagan en cinco rodillos con veinte líneas."},
+      {"title": "Gamble tras un pago", "description": "Un juego de riesgo independiente ofrece un intento de aumentar un premio ya concedido."}
+    ]
+  },
+  "playn-go-lawn-n-disorder": {
+    "intro": ["Lawn n' Disorder utiliza 5×3 y 243 formas de ganar, mientras que los símbolos Coin llevan tanto a Wheel of Rewards como a Hold & Spin. La rueda puede abrir un premio instantáneo, Bonus Spins o Super Bonus Spins.", "Seis monedas activan Hold & Spin: las monedas quedan fijadas y una nueva moneda reinicia el contador de regiros. Durante Bonus y Super Bonus Spins pueden aparecer multiplicadores en los rodillos 2 y 4 que crecen con los premios."],
+    "editorial": "Lawn n' Disorder tiene dos vías de bonus conectadas pero distintas: una moneda individual puede despertar Wheel of Rewards, mientras que seis monedas llevan el juego a un Hold & Spin completo.",
+    "features": [
+      {"title": "La Wheel of Rewards", "description": "Una moneda puede activar la rueda con premios instantáneos, Bonus Spins o Super Bonus Spins."},
+      {"title": "Modo Hold & Spin", "description": "Seis monedas activan un modo de retención de valores; cada nueva moneda repone los regiros restantes."},
+      {"title": "Multiplicadores crecientes", "description": "Durante Bonus y Super Bonus Spins, los multiplicadores de los rodillos 2 y 4 se refuerzan al participar en premios y pueden sumarse."}
+    ]
+  },
+  "wazdan-sizzling-777-deluxe": {
+    "intro": ["Sizzling 777 Deluxe renueva la presentación del juego original y mantiene cinco rodillos y veinte líneas. No se añaden modos de jackpot ampliados.", "La estrella roja Scatter paga por tres o más símbolos en cualquier posición. Gamble sigue siendo una oportunidad independiente de arriesgar un premio concedido."],
+    "editorial": "Deluxe y el original comparten RTP del 96.42% y premio máximo de 305x, pero la fecha del 28 de junio de 2018 pertenece solo a Deluxe. Las principales distinciones son gráficos y versión, no nuevos bonus inventados.",
+    "features": [
+      {"title": "Tres estrellas Scatter", "description": "Tres o más estrellas rojas pagan un premio independientemente de las líneas."},
+      {"title": "Efectos visuales renovados", "description": "Deluxe cambia las imágenes y el sonido de los rodillos de frutas y mantiene el número de líneas."},
+      {"title": "Gamble y niveles de volatilidad", "description": "Wazdan enumera por separado el juego de riesgo y las opciones de ajuste del ritmo; la lista oficial no incluye giros gratis."}
+    ]
+  },
+  "playn-go-legacy-of-dynasties": {
+    "intro": ["Legacy of Dynasties funciona en 5×3 y utiliza símbolos expansivos dentro del propio juego base. Un símbolo seleccionado aleatoriamente se expande si se reúnen suficientes coincidencias y los símbolos expandidos pueden pagar en rodillos no consecutivos.", "Tres Scatters activan los giros gratis, cuya cantidad determina una rueda. Los símbolos expansivos están garantizados en cada giro del bonus y dos Scatters activan Nested Spins y fijan temporalmente los símbolos expandidos actuales."],
+    "editorial": "Nested Spins no sustituye a la ronda principal de giros gratis, sino que está dentro de ella. La distinción importante es que la secuencia actual se pausa, los símbolos especiales quedan fijados y después el juego vuelve a los giros restantes.",
+    "features": [
+      {"title": "Símbolos expansivos", "description": "Los símbolos seleccionados aleatoriamente pueden expandirse y pagar combinaciones incluso en rodillos no adyacentes; varias expansiones se calculan secuencialmente."},
+      {"title": "Rueda de giros gratis", "description": "Tres Scatters activan el bonus y una rueda independiente selecciona la cantidad de giros gratis; los símbolos expansivos aparecen en cada giro."},
+      {"title": "Los Nested Spins", "description": "Dos Scatters durante los giros gratis activan una secuencia anidada y fijan los símbolos expansivos ya activos hasta que termina."}
+    ]
+  },
+  "wazdan-sizzling-bells": {
+    "intro": ["Sizzling Bells utiliza cinco rodillos y cinco líneas con una mecánica Hold the Jackpot independiente. Los símbolos especiales Sticky Bonus quedan fijados en los rodillos y aumentan la posibilidad de alcanzar una ronda de acumulación de premios.", "El comodín sustituye a los símbolos normales, mientras que Scatter y Gamble siguen siendo funciones independientes. El proveedor indica volatilidad alta y un máximo de 15000x la apuesta."],
+    "editorial": "Cinco líneas distinguen Sizzling Bells de Sizzling 777 y Sizzling 777 Deluxe de veinte líneas. Su pago máximo de 15000x se aplica al juego completo y no a cualquier símbolo de bonus fijado.",
+    "features": [
+      {"title": "Símbolos Sticky Bonus", "description": "Los símbolos de bonus pueden permanecer en el tablero y acercar la activación de Hold the Jackpot."},
+      {"title": "Modo Hold the Jackpot", "description": "Una ronda de bonus independiente fija valores de premio y concede jackpots; el máximo de Game Info oficial es de 15000x."},
+      {"title": "Comodín, Scatter y Gamble", "description": "El comodín ayuda a combinaciones por líneas; Scatter se enumera como tipo de símbolo independiente y Gamble permite arriesgar un premio concedido."}
+    ]
+  },
+  "playn-go-legacy-of-egypt": {
+    "intro": ["Legacy of Egypt utiliza cinco rodillos y 30 líneas de pago. El escarabajo actúa como comodín y la pirámide es un Scatter de giros gratis.", "Tres o más Pyramid Scatters activan Wheel of the Gods, que determina una cantidad de giros gratis de hasta 20. Por ello, el bonus comienza con una etapa de rueda independiente y no con una cantidad fija de giros."],
+    "editorial": "Legacy of Egypt no debe mezclarse con Legacy of Dead o Legacy of Inca: el activador central de giros gratis de esta versión combina específicamente Pyramid Scatter y Wheel of the Gods.",
+    "features": [
+      {"title": "La Wheel of the Gods", "description": "Tres o más Pyramid Scatters activan una rueda que puede asignar hasta 20 giros gratis."},
+      {"title": "Escarabajo comodín", "description": "El escarabajo sustituye a los símbolos normales y ayuda a formar combinaciones en 30 líneas de pago."},
+      {"title": "Pirámide Scatter", "description": "La pirámide es un activador Scatter independiente del bonus y no sustituye a la función del comodín."}
+    ]
+  },
+  "wazdan-sizzling-eggs": {
+    "intro": ["En Sizzling Eggs, cinco rodillos y cinco líneas se complementan con una fila Collector independiente sobre el tablero principal. Durante los giros gratis, los recolectores acumulan valores de símbolos Bonus y Countdown Boosters.", "Collect to Infinity prolonga la vida de un Collector hasta terminar el bonus. La aparición de un huevo normal no significa un pago inmediato de 2500x: ese es el límite oficial de todo el juego."],
+    "editorial": "A diferencia de la versión Platinum, Sizzling Eggs original no tiene un Cash Out independiente en el juego base. Su énfasis principal es la recogida de premios y las cuentas atrás de Collectors durante los giros gratis.",
+    "features": [
+      {"title": "Collector en la fila de bonus", "description": "Los Collectors recogen valores monetarios de los símbolos de bonus situados debajo durante los giros gratis."},
+      {"title": "Función Collect to Infinity", "description": "Un símbolo especial permite que Collector siga recogiendo premios hasta terminar la ronda de bonus."},
+      {"title": "Giros gratis y Buy Feature", "description": "El Scatter abre giros gratis y Buy Feature proporciona una vía independiente de entrada al bonus."}
+    ]
+  },
+  "playn-go-legacy-of-gems-blitzways": {
+    "intro": ["Legacy of Gems Blitzways combina alturas dinámicas de rodillo, pagos por grupos y Cascading Wins. Tras un grupo ganador, los símbolos desaparecen y caen nuevas gemas desde arriba, prolongando la cadena hasta un giro sin una nueva combinación.", "Los grupos crean un comodín o comodín multiplicador y tres Scatters conceden ocho giros gratis. Un comodín persistente aleatorio aparece en el bonus, todos los nuevos comodines permanecen en su sitio y Scatters adicionales añaden giros."],
+    "editorial": "Blitzways cambia las matemáticas de colocación y no solo la imagen: las alturas de los rodillos varían entre giros, haciendo dinámico el número de vías disponibles, que puede alcanzar 16,807.",
+    "features": [
+      {"title": "Blitzways y rodillos dinámicos", "description": "Las alturas de los rodillos cambian entre giros y combinan vías de pago dinámicas y pagos por grupos con un máximo de 16,807 formas."},
+      {"title": "Cascading Wins y comodines multiplicadores", "description": "Los grupos ganadores desaparecen y nuevos símbolos caen desde arriba, mientras que las cascadas pueden crear comodines normales y multiplicadores."},
+      {"title": "Giros gratis con comodines persistentes", "description": "Tres Scatters conceden 8 giros gratis; un comodín aleatorio se vuelve persistente, todos los nuevos comodines permanecen y un Scatter añade otro giro."}
+    ]
+  },
+  "wazdan-sizzling-eggs-extremely-light": {
+    "intro": ["Sizzling Eggs Extremely Light mantiene cinco rodillos, cinco líneas y giros gratis con Collector, Countdown Booster y Collect to Infinity, pero utiliza animaciones más ligeras para cargar más rápido.", "Sus matemáticas coinciden con el original: RTP del 96.12% y premio máximo de 2500x. El menor consumo energético no significa que aparezca otro modo de bonus."],
+    "editorial": "Esta versión debe describirse como una adaptación técnica de una tragaperras existente y no como un nuevo integrante de jackpots de Coins o Hold the Jackpot.",
+    "features": [
+      {"title": "Gráficos más ligeros", "description": "Los efectos visuales están optimizados para velocidad de carga, datos móviles y duración de batería."},
+      {"title": "Collectors y Countdown", "description": "Los símbolos de premio alimentan al Collector, mientras que Countdown establece el periodo de acumulación del bonus."},
+      {"title": "Collect to Infinity y giros gratis", "description": "La mecánica retiene al recolector hasta terminar los giros gratis y no garantiza un premio de 2500x."}
+    ]
+  },
+  "playn-go-legacy-of-inca": {
+    "intro": ["Legacy of Inca vuelve a Wheel of the Gods, pero añade una barra de comodines independiente sobre los rodillos. La rueda asigna de 1 a 20 giros gratis y la barra superior determina cuántos comodines se añaden en cada ronda.", "Los comodines se limitan a los tres rodillos centrales, donde pueden aparecer hasta nueve simultáneamente. Los Temple Scatters durante los giros gratis activan Temple Spins con una rueda independiente de 1–6 giros adicionales."],
+    "editorial": "El principal cambio frente a Legacy of Egypt está en la progresión del bonus y no en la temática: una barra independiente establece el número de comodines y Temple Spins puede añadirse repetidamente sin un límite fijo de activaciones.",
+    "features": [
+      {"title": "La Wheel of the Gods", "description": "La rueda determina una secuencia inicial de 1 a 20 giros gratis."},
+      {"title": "Barra Wild", "description": "Una barra independiente establece el número de comodines por ronda; ocupan los tres rodillos centrales, hasta nueve a la vez."},
+      {"title": "Los Temple Spins", "description": "Los Temple Scatters dentro del bonus abren una rueda de 1–6 giros gratis adicionales y pueden activarse repetidamente."}
+    ]
+  },
+  "wazdan-sizzling-eggs-grand-gold-edition": {
+    "intro": ["Grand Gold Edition eleva el premio superior de Sizzling Eggs a 3000x con volatilidad extrema. Collector recoge valores Bonus durante los giros gratis y paga el importe acumulado al terminar la secuencia.", "Collect to Infinity mantiene activos determinados recolectores hasta el final del bonus, mientras que Chance Level permite aumentar la apuesta hasta x10 para giros gratis más frecuentes."],
+    "editorial": "Gold Edition no debe recibir el Cash Out de Platinum: la página oficial de la entrega dorada enumera Collector, Collect to Infinity y giros gratis, pero no menciona Cash Out por separado.",
+    "features": [
+      {"title": "Collector paga al terminar el bonus", "description": "Los valores de símbolos Bonus se recogen durante todos los giros gratis y no se pagan necesariamente en cada giro."},
+      {"title": "Función Collect to Infinity", "description": "Prolonga la recogida de valores de premio por el Collector correspondiente hasta terminar el bonus."},
+      {"title": "Chance Level hasta x10", "description": "Pagar por un bonus más probable cuesta más y no garantiza 3000x."}
+    ]
+  },
+  "playn-go-legacy-of-undead-dragon-abyssways": {
+    "intro": ["Legacy of Undead Dragon ABYSSWAYS empieza en un tablero de 6×4. Los Haunted Gold Coins pueden despertar al dragón y conceder un premio instantáneo, mientras que Dragon's Wrath en una ronda sin premio activa un regiro completo y amplía el tablero a 6×6.", "Durante los giros gratis, los Fire Wilds creados por el dragón permanecen fijados y aumentan su multiplicador de premio en +1 después de cada giro. Abyssways cambia la altura de los rodillos: desaparecen símbolos inferiores marcados y después se añade una fila completa nueva arriba."],
+    "editorial": "La ampliación de 6×4 → 6×6 y Abyssways funcionan bajo reglas distintas: Dragon's Wrath aumenta el tablero, mientras que Abyssways durante los giros gratis elimina cíclicamente símbolos inferiores y añade una nueva fila.",
+    "features": [
+      {"title": "La Dragon's Wrath", "description": "En una ronda sin premio, el dragón puede conceder un regiro completo, ampliar el tablero de 6×4 a 6×6 y añadir Fire Wilds aleatorios."},
+      {"title": "Fire Wilds persistentes", "description": "Durante los giros gratis, los Fire Wilds creados por el dragón quedan fijados y reciben +1 a su multiplicador de premio después de cada giro."},
+      {"title": "Mecánica Abyssways", "description": "Los símbolos inferiores marcados desaparecen tras un giro y reducen la altura de los rodillos; después se añade una fila completa nueva arriba."}
+    ]
+  },
+  "wazdan-sizzling-eggs-grand-platinum-edition": {
+    "intro": ["Grand Platinum Edition eleva el premio máximo a 4000x e incorpora por primera vez Cash Out de juego base en esta rama. Los cinco rodillos y cinco líneas se mantienen.", "Durante los giros gratis, Collector sigue recogiendo valores Cash y Jackpot, mientras que Collect to Infinity lo retiene hasta terminar el bonus."],
+    "editorial": "La versión Platinum debe separarse de Gold: Cash Out aparece fuera del bonus, el RTP difiere (96.11% frente a 96.16%) y el premio máximo total aumenta a 4000x.",
+    "features": [
+      {"title": "Cash Out en el juego base", "description": "Los valores monetarios de premio pueden recogerse antes de entrar en los giros gratis."},
+      {"title": "Collector con duración limitada", "description": "Un Collector que aparece funciona durante un Countdown especificado y después se pagan los valores monetarios acumulados."},
+      {"title": "Función Collect to Infinity", "description": "Mejora al Collector durante todo el bonus sin convertir 4000x en un resultado garantizado."}
+    ]
+  },
+  "playn-go-legend-of-the-ice-dragon": {
+    "intro": ["Legend of the Ice Dragon es una tragaperras de tablero con cascadas: las cadenas ganadoras continúan mediante nuevos símbolos que caen y no mediante un reinicio completo del tablero tras cada resultado.", "Sus tres funciones de congelación con nombre son Hailstorm, Avalanche y Blizzard. Proporcionan formas distintas de mejorar la ronda actual y los ataques de Ice Dragon añaden eventos independientes sobre la estructura de cascadas."],
+    "editorial": "Este juego se entiende mejor como una ficha de tablero/cascadas y no como una tragaperras normal de líneas: Hailstorm, Avalanche y Blizzard están integrados en cambios sucesivos de un tablero.",
+    "features": [
+      {"title": "Tablero con cascadas", "description": "Tras eventos ganadores, el tablero sigue cambiando mediante cascadas en lugar de comenzar cada resultado con una disposición independiente completamente nueva."},
+      {"title": "Hailstorm, Avalanche y Blizzard", "description": "Tres funciones de congelación con nombre intervienen de forma distinta en el tablero y mejoran la cadena actual."},
+      {"title": "Eventos del dragón de hielo", "description": "Tail Lash, Ice Scorch, Destruction y Dragon Blast actúan como eventos independientes del dragón durante el juego."}
+    ]
+  },
+  "wazdan-sizzling-kingdom-bison": {
+    "intro": ["Sizzling Kingdom: Bison presenta seis rodillos y diez líneas como un mundo animal, donde cuatro tamaños de bisonte comodín pueden cubrir hasta cuatro posiciones. Además de pagos normales, tiene tres ramas de bonus.", "Hold the Jackpot, giros gratis con Collect to Infinity y Wild Rampage con Hold & Collect difieren en sus mecánicas de acumulación. No deben describirse como un bonus general."],
+    "editorial": "La distinción de Sizzling Kingdom: Bison es la elección entre distintos bonus, incluido el nuevo Wild Rampage. Los 5000x declarados son el límite del juego y no un multiplicador de bisonte comodín confirmado por separado.",
+    "features": [
+      {"title": "Bisonte comodín de cuatro tamaños", "description": "Sustituye a los símbolos estándar y puede ocupar hasta cuatro casillas verticales."},
+      {"title": "Wild Rampage + Hold & Collect", "description": "Un bonus independiente retiene y acumula valores de premio bajo sus propias reglas."},
+      {"title": "Giros gratis y Hold the Jackpot", "description": "Las otras dos ramas utilizan Collect to Infinity; Buy Feature permite varios niveles de entrada."}
+    ]
+  },
+  "playn-go-legion-gold": {
+    "intro": ["El Legion Gold original conecta Mega Free Spins y Gold Re-Spins mediante una Mega Coin. Tres o más Lion Scatters activan Mega Free Spins, donde puede aparecer un Mega Symbol grande en los rodillos.", "Seis monedas o una Mega Coin activan Gold Re-Spins. La secuencia comienza con tres vidas: un giro sin una nueva moneda resta una vida y una nueva moneda ayuda a continuar la recogida."],
+    "editorial": "El primer Legion Gold utiliza tres vidas como contador de presión dentro de Gold Re-Spins. Las versiones posteriores cambian detalles de recogida, por lo que esta mecánica no debe trasladarse automáticamente a las secuelas.",
+    "features": [
+      {"title": "Los Mega Free Spins", "description": "Tres o más Lion Scatters activan giros gratis con un Mega Symbol que puede aparecer en los rodillos."},
+      {"title": "Los Gold Re-Spins", "description": "Seis monedas o una Mega Coin activan un modo de recogida de Multiplying Wild Coins."},
+      {"title": "Tres vidas", "description": "Gold Re-Spins comienza con tres vidas; un giro sin moneda reduce su número y acerca el final de la función."}
+    ]
+  },
+  "wazdan-sizzling-moon": {
+    "intro": ["Sizzling Moon tiene dieciséis posiciones sin líneas tradicionales. Seis símbolos Bonus activan Hold the Jackpot; antes, los símbolos Sticky Bonus pueden permanecer en el tablero hasta nueve regiros.", "Llenar todo el tablero concede Grand Jackpot de 1000x, mientras que un raro Moon Mystery Symbol puede abrir Moon Jackpot de 2500x. Son premios distintos aunque ambos suceden dentro de un bonus."],
+    "editorial": "El premio máximo de 2500x no debe sustituirse por el importe del Grand estándar ni por una suma: 1000x es solo el premio por tablero lleno y 2500x se refiere al Moon Jackpot especial.",
+    "features": [
+      {"title": "Seis símbolos Bonus activan Hold the Jackpot", "description": "Antes de activarse, los símbolos Sticky Bonus permanecen en el tablero hasta nueve regiros y ayudan a recoger seis símbolos."},
+      {"title": "Grand de 1000x por tablero lleno", "description": "Llenar las dieciséis posiciones concede un Grand independiente además de los otros valores monetarios."},
+      {"title": "Moon Mystery y 2500x", "description": "Un Mystery Symbol especial está vinculado a Moon Jackpot; Buy Feature permite seleccionar volatilidad extrema del bonus."}
+    ]
+  },
+  "playn-go-legion-gold-and-the-sphinx-of-dead": {
+    "intro": ["Legion Gold and the Sphinx of Dead activa Gold Re-Spins tras seis monedas de oro. Las monedas permanecen fijadas, una nueva moneda reinicia el contador y un tablero lleno está vinculado a un multiplicador de 1000x.", "Tres o más Scatters abren Mega Free Spins con un Mega Symbol móvil de 3×3. Si se convierte en una Gold Coin de 3×3, Gold Re-Spins comienza de inmediato con nueve monedas."],
+    "editorial": "La versión egipcia se distingue de los juegos Legion Gold vecinos en algo más que la decoración: una Mega Coin de 3×3 puede llevar directamente de Mega Free Spins a Gold Re-Spins con nueve monedas iniciales.",
+    "features": [
+      {"title": "Los Gold Re-Spins", "description": "Seis monedas de oro activan retención y regiros; las monedas quedan fijadas, una nueva moneda reinicia el contador y un tablero lleno concede 1000x."},
+      {"title": "Los Mega Free Spins", "description": "Tres Scatters conceden un bonus con un Mega Symbol móvil de 3×3; una Mega Gold Coin puede convertirse en nueve monedas y activar Gold Re-Spins."},
+      {"title": "La Gold Bag", "description": "En el juego base y Mega Free Spins, Gold Bag recoge todos los valores de monedas de oro visibles y paga inmediatamente su suma."}
+    ]
+  },
+  "wazdan-slot-jam": {
+    "intro": ["Slot Jam utiliza cuatro rodillos y nueve líneas y activa Cascading Reels tras combinaciones ganadoras. El comodín de mermelada sustituye a frutas normales y puede duplicar el premio válido.", "Mystery Basket de tres o más cestas concede un premio aleatorio de hasta 200x, mientras que Scatter Cake activa 15 o 30 giros gratis; un muro de frutas iguales concede un x2 independiente."],
+    "editorial": "Slot Jam no debe reducirse a «frutas + comodín»: Mystery, las cascadas y el muro x2 forman tres fuentes de pago distintas. El premio máximo de todo el juego es de 570x.",
+    "features": [
+      {"title": "Rodillos con cascadas", "description": "Los símbolos ganadores desaparecen y caen otros nuevos desde arriba, pudiendo prolongar la cadena dentro del mismo giro."},
+      {"title": "Mystery Basket hasta 200x", "description": "Tres o más cestas abren un premio monetario aleatorio independiente."},
+      {"title": "Scatter Cake y muro x2", "description": "Los pasteles activan 15/30 giros gratis, mientras que un muro de frutas iguales duplica su pago."}
+    ]
+  },
+  "playn-go-legion-gold-and-the-throne-of-dead": {
+    "intro": ["Legion Gold and the Throne of Dead añade un Coin Chest a la serie: las monedas de oro que no activan Gold Re-Spins ni Golden Scales entran en un recolector independiente.", "Cuando Coin Chest se abre por completo, comienza un Picker Game con un premio instantáneo. Tres Scatters activan Mega Spins, con un Mega Symbol en cada giro y una Mega Gold Coin capaz de abrir Gold Re-Spins de nuevo."],
+    "editorial": "Throne of Dead debe separarse de Sphinx of Dead: Coin Chest con su Picker Game se convierte aquí en una progresión independiente, mientras que Mega Spins conserva la entrada a Gold Re-Spins mediante una Mega Gold Coin.",
+    "features": [
+      {"title": "Picker Game de Coin Chest", "description": "Las monedas de oro fuera de los activadores principales se acumulan en Coin Chest; un cofre abierto inicia la selección hasta coincidir un premio instantáneo."},
+      {"title": "Los Mega Spins", "description": "Tres Scatters activan Mega Spins con un Mega Symbol en una posición aleatoria en cada giro y posibles reactivaciones."},
+      {"title": "La Mega Gold Coin", "description": "Durante Mega Spins, una moneda de oro grande puede dividirse en monedas y llevar el juego a Gold Re-Spins."}
+    ]
+  },
+  "wazdan-sonic-reels": {
+    "intro": ["Sonic Reels ofrece seis rodillos y 729 formas de ganar. Tres, cuatro, cinco o seis Scatters conceden 10, 15, 20 y 25 giros gratis, respectivamente.", "Sus dos bonus de altavoces funcionan de forma distinta: Right Speaker puede desplazar 1–3 rodillos a la izquierda tras un giro vacío, mientras que Left Speaker desplaza el tablero a la derecha después de un premio y aumenta el multiplicador hasta x5."],
+    "editorial": "El nombre Speaker no debe ocultar sus algoritmos distintos. Ambos bonus pueden activarse juntos e incluso durante los giros gratis, pero x5 pertenece al altavoz izquierdo y no al pago máximo total de 5400x.",
+    "features": [
+      {"title": "Right Speaker desplaza tras un giro vacío", "description": "Cinco símbolos de altavoz derecho activan la posibilidad de desplazar 1–3 rodillos a la izquierda y revelar símbolos adicionales."},
+      {"title": "Left Speaker desarrolla x5", "description": "Tras un premio, el tablero se desplaza a la derecha, aparecen nuevos símbolos y el multiplicador crece hasta x5."},
+      {"title": "Giros gratis 10/15/20/25", "description": "De tres a seis Scatters conceden las secuencias correspondientes; ambos bonus de altavoces pueden seguir funcionando."}
+    ]
+  },
+  "playn-go-legion-gold-reckoning": {
+    "intro": ["Legion Gold Reckoning mantiene la recogida de seis monedas de oro para Gold Re-Spins, pero añade Coin Chest y Picker Game. Las monedas fuera del modo de regiros se acumulan en el cofre y un cofre completamente abierto inicia la selección hasta que coinciden tres monedas de premio.", "Tres Scatters conceden cinco Mega Spins con un Mega Symbol en cada giro. Un interruptor GO Ultra independiente cambia la frecuencia de Animal Symbols y añade mejoras al inicio de Mega Spins y Gold Re-Spins."],
+    "editorial": "Reckoning se distingue de los juegos anteriores mediante GO Ultra y una progresión completa de Coin Chest. Es más que una variante de Gold Bag: las monedas acumuladas pueden llevar a un Picker Game independiente.",
+    "features": [
+      {"title": "Los Gold Re-Spins", "description": "Seis monedas de oro activan un modo donde las monedas quedan fijadas y una nueva moneda reinicia el contador de regiros; una Gold Coin Bag recoge los valores actuales."},
+      {"title": "Coin Chest y Picker Game", "description": "Las monedas fuera de Gold Re-Spins llenan el cofre; tras abrirse, se elige hasta que coinciden tres monedas y se recibe un nivel de premio instantáneo."},
+      {"title": "Mega Spins y GO Ultra", "description": "Tres Scatters conceden cinco Mega Spins con posibles reactivaciones y GO Ultra añade mejoras independientes al juego base y los inicios del bonus."}
+    ]
+  },
+  "wazdan-space-gem": {
+    "intro": ["Space Gem utiliza seis rodillos y diez líneas con gemas espaciales. Su comodín sustituye a los símbolos normales y se expande por todo un rodillo.", "El comodín expansivo activa un regiro en el que su rodillo completamente ocupado permanece fijado. La página de Wazdan no enumera giros gratis por Scatter."],
+    "editorial": "La combinación principal de Space Gem es un comodín expansivo más un regiro gratis con retención. No deben trasladarse Space Pile ni UFO Scatter del juego independiente Space Spins.",
+    "features": [
+      {"title": "El comodín se expande por todo un rodillo", "description": "Un comodín que aparece puede cubrir toda una columna y participar en combinaciones por líneas."},
+      {"title": "Regiro con retención", "description": "El rodillo con un comodín expandido permanece en su sitio durante un giro adicional."},
+      {"title": "Volatilidad ajustable y Gamble", "description": "Wazdan enumera por separado la selección de perfil de riesgo y una oportunidad de arriesgar un importe ya ganado."}
+    ]
+  },
+  "playn-go-legion-gold-unleashed": {
+    "intro": ["Legion Gold Unleashed activa Gold Re-Spins con seis monedas de oro: las seis primeras permanecen en su sitio, la secuencia recibe tres regiros iniciales y cada nueva moneda añade otro intento.", "Tres Scatters abren Mega Free Spins con un Mega Symbol móvil de 3×3. Gold Bag recoge instantáneamente todos los valores Instant Win visibles en el juego base y los giros gratis."],
+    "editorial": "Unleashed cambia el enfoque del sistema de vidas del original a reinicios/regiros adicionales clásicos y Gold Bag. Un tablero lleno en Gold Re-Spins está vinculado a un multiplicador de 1000x, pero el premio máximo total confirmado en la referencia es mayor y se guarda por separado.",
+    "features": [
+      {"title": "Los Gold Re-Spins", "description": "Seis monedas de oro activan tres regiros iniciales; las monedas permanecen retenidas y cada nueva aparición añade otro intento."},
+      {"title": "Los Mega Free Spins", "description": "Tres o más Scatters activan un bonus con un Mega Symbol de 3×3; una Mega Gold Coin puede abrir Gold Re-Spins inmediatamente con nueve monedas."},
+      {"title": "La Gold Bag", "description": "Gold Bag recoge todos los valores Instant Win visibles en el juego base o Mega Free Spins y paga de inmediato su suma."}
+    ]
+  },
+  "wazdan-space-spins": {
+    "intro": ["Space Spins lleva seis rodillos y cuarenta líneas a una batalla espacial. Tres UFO Scatters activan 10 giros gratis y más Scatters pueden elevar la secuencia a 25.", "Durante los giros gratis, Space Pile selecciona aleatoriamente un símbolo que puede cubrir rodillos completos. La estrella comodín sustituye a símbolos estándar salvo Scatter."],
+    "editorial": "Game Info técnico de Space Spins indica un máximo de 1650x, aunque un texto promocional redondea el premio a 1600x. La ficha utiliza la cifra específica de 1650x.",
+    "features": [
+      {"title": "UFO Scatter abre 10–25 giros", "description": "Tres ovnis inician diez giros gratis; una cantidad mayor aumenta su número hasta 25."},
+      {"title": "El Space Pile", "description": "Un símbolo seleccionado se expande por todo un rodillo durante el bonus y aumenta las coincidencias válidas."},
+      {"title": "Estrella comodín", "description": "Sustituye a otros símbolos normales en cuarenta líneas, pero no es un Scatter."}
+    ]
+  },
+  "playn-go-legion-gold-victory": {
+    "intro": ["Legion Gold Victory! combina Gold Re-Spins, Mega Free Spins e Instant Prize Coins. Gold Re-Spins retiene monedas y actualiza el tablero a medida que avanza la recogida, mientras que un tablero lleno está vinculado a un premio de 1000x.", "Durante Mega Free Spins, Mega Symbols de 3×3 se mueven por los rodillos. Las Instant Prize Coins llevan sus propios valores y Gold Bag los recoge en el resultado combinado."],
+    "editorial": "Victory! reúne elementos conocidos de la serie en una ficha, pero su capa específica son Instant Prize Coins. Deben separarse de las monedas de oro normales porque Gold Bag actúa específicamente como mecanismo de recogida de valores.",
+    "features": [
+      {"title": "Los Gold Re-Spins", "description": "Las monedas activan una mecánica de retención y giros; nuevas apariciones prolongan la recogida y un tablero lleno está vinculado a un premio de 1000x."},
+      {"title": "Los Mega Free Spins", "description": "Mega Symbols grandes de 3×3 se mueven por los rodillos durante los giros gratis y forman un escenario de bonus independiente."},
+      {"title": "Instant Prize Coins y Gold Bag", "description": "Las Instant Prize Coins llevan valores predeterminados y Gold Bag los recoge y añade al pago final."}
+    ]
+  },
+  "wazdan-spectrum": {
+    "intro": ["En Spectrum, las gemas aparecen en cinco rodillos con diez líneas. Un comodín puede expandirse por toda una columna y la expansión abre un regiro adicional.", "Durante el regiro, el comodín expandido conserva su posición y crea la posibilidad de nuevas combinaciones; esta mecánica no debe confundirse con la acumulación de jackpots."],
+    "editorial": "Spectrum y Space Gem comparten similitudes de comodín expansivo + regiro, pero utilizan tableros distintos: cinco rodillos y diez líneas frente a seis. El límite oficial de Spectrum es de 500x.",
+    "features": [
+      {"title": "Comodín expansivo", "description": "El comodín sustituye a los símbolos estándar de gemas y se expande por todo un rodillo."},
+      {"title": "Regiro que conserva el comodín", "description": "Un giro adicional retiene el comodín expandido correspondiente en su rodillo original."},
+      {"title": "Gamble de hasta siete intentos", "description": "Una oportunidad independiente de duplicar un premio concedido está disponible tras un premio."}
+    ]
+  },
+  "playn-go-leprechaun-goes-egypt": {
+    "intro": ["Leprechaun goes Egypt utiliza hasta 20 líneas de pago y separa las funciones de tres símbolos especiales. El duende actúa como comodín, sustituye a los símbolos normales y duplica los premios en los que participa.", "Tres Cleopatra Scatters activan giros gratis con elección de perfil de multiplicador, mientras que tres símbolos Pyramid abren una ronda de bonus independiente con elección de puertas y búsqueda de urnas."],
+    "editorial": "Los dos bonus deben mantenerse separados: Cleopatra lleva a los giros gratis, Pyramid a una rama de selección independiente por pasillos de pirámide y el duende sigue siendo un comodín multiplicador.",
+    "features": [
+      {"title": "Duende comodín x2", "description": "El comodín sustituye a símbolos normales salvo Bonus y Scatter y duplica una línea ganadora que ayuda a formar."},
+      {"title": "Giros gratis de Cleopatra", "description": "Tres símbolos Cleopatra en posiciones dispersas abren giros gratis con una elección de mejora del premio."},
+      {"title": "Bonus de pirámide", "description": "Tres pirámides activan un bonus independiente con elección de puertas, recogida de urnas y riesgo de terminar el recorrido al encontrarse con una momia."}
+    ]
+  },
+  "wazdan-sun-of-fortune": {
+    "intro": ["Sun of Fortune utiliza dieciséis posiciones en lugar de líneas clásicas: ocho símbolos iguales conceden un pago base. El comodín sustituye a cualquier símbolo normal salvo Bonus.", "De tres a cinco símbolos Bonus dorados pueden quedar fijados para un regiro adicional y seis activan Hold the Jackpot. Un llenado completo concede Grand de 1000x, mientras que el máximo total de Game Info es de 1450x."],
+    "editorial": "La distinción entre Grand de 1000x y premio máximo total de 1450x es esencial: el primero paga por llenar el tablero y el segundo describe el límite teórico de todo el juego.",
+    "features": [
+      {"title": "Ocho símbolos iguales", "description": "Una combinación monetaria se forma en cualquier parte de la matriz y no a lo largo de una línea."},
+      {"title": "Seis símbolos Bonus activan Hold the Jackpot", "description": "De tres a cinco símbolos Bonus quedan fijados para un regiro y seis abren la ronda de acumulación."},
+      {"title": "Grand de 1000x por llenado completo", "description": "Una matriz de bonus llena concede Grand junto a valores acumulados y otros jackpots."}
+    ]
+  },
+  "playn-go-leprechaun-goes-wild": {
+    "intro": ["Leprechaun Goes Wild utiliza 20 líneas de pago y asigna a cada rodillo su propio Leprechaun Wild. El comodín sustituye a los símbolos normales solo en su columna.", "Dos Clover Scatters activan Luck of the Irish: la función añade un comodín a cada rodillo o crea un tercer Scatter y lleva a los giros gratis. Los Leprechaun Wilds permanecen fijados durante los giros gratis."],
+    "editorial": "Esta entrega se centra en cinco duendes específicos de rodillo y no en un comodín que recorre el tablero. Luck of the Irish sirve de puente entre dos Scatters y la activación completa de los giros gratis.",
+    "features": [
+      {"title": "Cinco comodines por rodillo", "description": "Cada duende se encarga de su propio rodillo y sustituye a los símbolos normales para formar combinaciones en 20 líneas de pago."},
+      {"title": "La Luck of the Irish", "description": "Dos Clover Scatters conceden cinco comodines adicionales, uno por rodillo, o un tercer Scatter para activar los giros gratis."},
+      {"title": "Giros gratis con comodines persistentes", "description": "Tres Scatters activan giros gratis; los Leprechaun Wilds que aparecen quedan fijados hasta terminar la secuencia y el bonus puede reactivarse una vez."}
+    ]
+  },
+  "wazdan-super-hot": {
+    "intro": ["Super Hot vuelve a una máquina de frutas de tres rodillos y cinco líneas con una mecánica destacada: Wall Multiplier x2. Duplica un premio procedente de un llenado válido del tablero.", "Una Unique Gamble Feature independiente permite arriesgar hasta siete veces un premio concedido para duplicarlo, sin cambiar la estructura del giro base."],
+    "editorial": "Super Hot no pertenece a Hold the Jackpot pese a su presentación de fuego. Wazdan indica un máximo de 340x y volatilidad media, mientras que x2 es solo el multiplicador de muro.",
+    "features": [
+      {"title": "Muro con multiplicador x2", "description": "Un muro válido de símbolos iguales duplica el premio según una regla especial."},
+      {"title": "Tres rodillos y cinco líneas", "description": "Las combinaciones normales pagan en cinco líneas clásicas sin giros gratis."},
+      {"title": "Gamble con hasta siete duplicaciones", "description": "Un juego de riesgo independiente sigue a un premio; el premio arriesgado puede perderse."}
+    ]
+  },
+  "playn-go-leprechauns-diamond-dig": {
+    "intro": ["Leprechaun's Diamond Dig basa su ronda en dos vagonetas sobre los rodillos. Cuando aparece un duende, se activa la Lucky Minecart correspondiente y recoge los valores de símbolos Diamond situados debajo.", "Si ambas vagonetas activas se encuentran sobre un rodillo, se activa Mega Blast y recoge diamantes de los cinco rodillos. Tres o más Leprechaun Scatters conceden 10 giros gratis, con ambas vagonetas permanentemente activas."],
+    "editorial": "La progresión principal de Diamond Dig está dentro de los giros gratis: Lucky Clovers carga el medidor Mega Blast y añade giros, por lo que el multiplicador y la duración del bonus crecen mediante un sistema.",
+    "features": [
+      {"title": "Vagonetas Lucky Minecarts", "description": "Dos vagonetas se mueven sobre los rodillos; la aparición de un duende activa una vagoneta, que recoge valores Diamond bajo su posición."},
+      {"title": "El Mega Blast", "description": "Dos vagonetas activas que se encuentran sobre un rodillo recogen diamantes de los cinco rodillos a la vez."},
+      {"title": "Medidor Mega Blast", "description": "Durante los giros gratis, Lucky Clovers eleva el multiplicador Mega Blast por x2, x5, x10 y x25 y añade giros adicionales, hasta 30 en total."}
+    ]
+  },
+  "wazdan-telly-reels": {
+    "intro": ["Telly Reels utiliza cinco rodillos y veinte líneas con una presentación de televisión antigua. Tres o más Scatters inician 10 giros gratis y una rueda selecciona una función extra antes de empezar.", "Por separado, puede llenarse una tabla de estrellas del bonus para Telly Bonus Spins con cinco comodines fijados, mientras que alinear cinco deslizadores concede Mini Telly Bonus de hasta 10x."],
+    "editorial": "La rueda de giros gratis, la tabla de estrellas y el bonus de deslizadores son tres eventos independientes. El límite del juego de 1400x no debe sustituirse por multiplicadores de rueda x2/x3/x5.",
+    "features": [
+      {"title": "Rueda de la fortuna antes de los giros gratis", "description": "La rueda puede añadir 5/10 giros, x2/x3/x5, 3–5 comodines aleatorios o un Infinite Multiplier."},
+      {"title": "Telly Bonus Spins con cinco comodines", "description": "Una tabla de estrellas llena abre 10 giros de bonus con comodines fijados en las posiciones de los deslizadores."},
+      {"title": "Mini Telly Bonus hasta 10x", "description": "Alinear los cinco deslizadores concede un pago aleatorio independiente."}
+    ]
+  },
+  "playn-go-leprechauns-vault": {
+    "intro": ["Leprechaun's Vault utiliza un tablero clásico de 5×3, pero su cantidad de giros gratis no se fija de antemano. Los dígitos individuales del código de la puerta de la cámara se suman para determinar la duración de la secuencia del bonus.", "Dentro de la cámara, los tres rodillos centrales se vuelven dorados. Los comodines que aparecen en ellos se vuelven persistentes y permanecen hasta terminar los giros gratis, mientras que comodines individuales pueden llevar multiplicadores."],
+    "editorial": "El momento clave es la configuración del código inicial y no la propia entrada al bonus: establece la cantidad de giros y después los comodines persistentes cambian gradualmente los tres rodillos centrales.",
+    "features": [
+      {"title": "Código de la cámara", "description": "Los números de la puerta se suman en la cantidad total de giros gratis, por lo que la secuencia puede comenzar con distintas duraciones."},
+      {"title": "Comodín persistente", "description": "Los comodines en los tres rodillos centrales dorados quedan fijados en sus posiciones hasta terminar el bonus."},
+      {"title": "Comodines multiplicadores", "description": "Durante la secuencia de bonus, los comodines pueden aparecer con multiplicadores y mejorar las combinaciones ganadoras en las que participan."}
+    ]
+  },
+  "wazdan-throne-of-elements-platinum": {
+    "intro": ["Throne of Elements: Platinum basa su bonus en una matriz de 25 posiciones con doce casillas adicionales que se abren gradualmente. Los símbolos Guardian de la fila central activan nuevos rodillos.", "Hold the Jackpot se activa mediante un símbolo en el rodillo central o al revelar por completo Guardian. Cash Infinity retiene valores y Cash Out paga Mystery Cash al terminar una cuenta atrás."],
+    "editorial": "Las dos vías de activación de Hold the Jackpot no deben confundirse con la compra de bonus. Grand de 2500x se refiere al jackpot completo y Chance Level x10 significa importe de apuesta.",
+    "features": [
+      {"title": "Guardian abre casillas adicionales", "description": "Los símbolos de la fila central amplían la matriz y activan gradualmente doce posiciones."},
+      {"title": "Dos vías de entrada a Hold the Jackpot", "description": "El modo puede comenzar mediante un símbolo central o un número suficiente de Guardians activados."},
+      {"title": "Cash Out y Cash Infinity", "description": "Algunos símbolos permanecen hasta terminar el bonus y otros se convierten en un pago tras una cuenta atrás."}
+    ]
+  },
+  "playn-go-lion-saga-odyssey": {
+    "intro": ["Lion Saga Odyssey funciona en un tablero de 5×3 con 10 líneas. Tres o más Scatters activan 8 giros gratis y los Scatters adicionales pueden prolongar repetidamente la secuencia hasta el límite total de premios.", "Antes del bonus se selecciona un símbolo normal como símbolo expansivo especial. Durante los giros gratis se expande por todo un rodillo si hay suficientes símbolos para una combinación ganadora estándar."],
+    "editorial": "Lion Saga Odyssey utiliza una fórmula conocida de símbolo expansivo, pero el símbolo especial seleccionado permanece igual durante toda la secuencia del bonus. Esto importa más que las similitudes visuales con otras tragaperras de aventuras.",
+    "features": [
+      {"title": "8 giros gratis", "description": "Tres o más Scatters activan ocho giros gratis; nuevos Scatters pueden prolongar el bonus."},
+      {"title": "Símbolo expansivo especial", "description": "Antes del bonus se selecciona un símbolo normal que se expande por todo un rodillo cuando hay suficientes unidades para una combinación ganadora."},
+      {"title": "Reactivación", "description": "Los Scatters adicionales durante los giros gratis añaden giros hasta alcanzar el límite total de premios del juego."}
+    ]
+  },
+  "wazdan-triple-star": {
+    "intro": ["Triple Star utiliza cinco rodillos y veinte líneas, con un símbolo especial de tres estrellas que aparece solo en el segundo, tercer y cuarto rodillo.", "Al aparecer, este comodín se expande por toda la columna y activa un regiro gratis con el comodín expandido fijado, ofreciendo la posibilidad de completar una combinación."],
+    "editorial": "El Triple Star Wild no aparece en el primer ni quinto rodillo. Esto importa más que la temática general retroespacial: expansión y regiro se limitan estrictamente a las columnas centrales.",
+    "features": [
+      {"title": "Comodín en rodillos 2–4", "description": "El símbolo de tres estrellas sustituye a los símbolos normales solo en los rodillos centrales permitidos."},
+      {"title": "Expansión de rodillo completo", "description": "Un comodín que aparece puede cubrir toda la columna y aumentar las líneas válidas."},
+      {"title": "Un regiro gratis", "description": "La columna expandida permanece fijada durante el giro adicional."}
+    ]
+  },
+  "playn-go-loot-and-labyrinths": {
+    "intro": ["Loot & Labyrinths añade Random Encounter al juego base: un símbolo especial en el primer rodillo activa uno de tres eventos y los símbolos de la misma fila forman los parámetros del encuentro.", "En Monster Attack, Treasure Lair y Tavern Night, una tirada de dado determina el resultado y el multiplicador. Un resultado crítico de 20 mejora el premio, mientras que tres Scatters abren Dungeon Free Spins independientes."],
+    "editorial": "Los minijuegos del juego base y Dungeon Free Spins utilizan sistemas distintos. Random Encounter depende de la fila y la tirada de dado, mientras que el bonus se centra en mejoras seleccionadas previamente y acumulación de Attack Icons.",
+    "features": [
+      {"title": "Encuentro aleatorio", "description": "Un símbolo especial en el primer rodillo activa Monster Attack, Treasure Lair o Tavern Night, cada uno con reglas independientes de riesgo y recompensa."},
+      {"title": "Tirada crítica", "description": "Un resultado de 20 cuenta como crítico y puede aumentar el multiplicador de premio de x2 hasta x5."},
+      {"title": "Giros Dungeon Free Spins", "description": "Tres Scatters abren el bonus: se seleccionan tres mejoras antes de empezar y los Attack Icons durante la secuencia hacen avanzar el multiplicador general por x2, x5, x20 y x100."}
+    ]
+  }
+}
