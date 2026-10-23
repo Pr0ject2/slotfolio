@@ -213,6 +213,18 @@ checks cover every new text and source; each new guide has a 390px browser check
 in addition to the unchanged six-width representative matrix. Eighty guides and
 the remaining site sections still require translation.
 
+## Stage 15: complete game guides 21–30
+
+Chaos Crew, Chaos Crew 2, Deadwood, Mental, Starburst, Gonzo’s Quest, Dead or Alive 2,
+Money Train 2, Snake Arena and Book of 99 receive complete Spanish content.
+Conflicting publisher figures, regional RTP qualifications and distinctions
+between bonus modes remain explicit. Identical shared feature paragraphs reuse
+reviewed literal Spanish translations; no missing paragraph is generated or
+shortened. All original cards and notes remain present.
+Readiness and full-source fingerprints cover thirty guides. Passport dates with
+written months use conventional Spanish day/month/year phrasing; stored dates
+are unchanged. Seventy guides and the remaining site sections still require work.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;
