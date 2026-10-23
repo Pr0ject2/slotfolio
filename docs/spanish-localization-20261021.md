@@ -405,16 +405,31 @@ table scrolling. Real mobile and desktop screenshots were reviewed. Local
 inventory: 1042 Spanish routes, no extra routes; 10 content routes and 404 remain
 against 1052 Russian content routes plus the shared 404.
 
+## Stage 27 — complete Spanish collections
+
+Added all four selections and their index at `/es/collections`: beyond paylines,
+cluster features, wild symbols and 5 × 3 bonuses. Every selected game, its order,
+explanation, rule check and comparison checklist is retained. Reused the existing
+collection layout and local images. Spanish guides, comparison and related
+selections are linked directly; the mechanics and journal links now point to
+their complete Spanish counterparts.
+
+Validation: TypeScript PASS; production export 3156 pages; 50 targeted checks
+PASS, including 32 new Spanish checks, 11 foundation checks and seven existing
+English collection checks. All five routes were checked at
+320/375/390/768/1024/1440, including loaded artwork, complete copy, exact game
+selection and numbers, no horizontal document overflow, Spanish metadata,
+keyboard focus and adding two games to the comparison. Real mobile and desktop
+screenshots were reviewed. Data, artwork, noindex and CI requirements unchanged.
+
 ## Remaining stages
 
-1. Four complete collections and their index, retaining every selected game,
-   explanation and checklist.
-2. Bonuses, the regional index and the Great Britain guide, preserving existing
+1. Bonuses, the regional index and the Great Britain guide, preserving existing
    official references and qualifications.
-3. The two retired-link edition choosers, localized loading/error/help states
+2. The two retired-link edition choosers, localized loading/error/help states
    and 404. Replace temporary English-labelled links only as counterparts become
    available.
-4. Final parity against all 1052 original Russian content routes plus 404 and
+3. Final parity against all 1052 original Russian content routes plus 404 and
    all 1000 published games. Prepared translations above still require their
    sequential exact-head CI, preview and production publication gates.
 
