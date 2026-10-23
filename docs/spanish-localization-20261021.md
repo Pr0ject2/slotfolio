@@ -478,6 +478,26 @@ policy or CI/security requirements changed. Wave 88 was not started.
 
 ## Remaining publication gates
 
+The first #552 Cloudflare preview built successfully but exceeded Pages' 20000
+file limit. With explicit user authorization on 2026-10-23, the Cloudflare-only
+packaging reuses exactly 900 byte-identical full RSC payloads under
+`/es/slots/catalog/` through one internal 200 rule targeting their retained
+`index.txt`. All HTML, artwork, other RSC segments and GitHub Pages output are
+retained. Count, target existence, byte equality and the final file budget are
+validated before any generated copy is removed. Local inventory falls from
+20100 to 19201 files including the rule. Strict regressions cover unchanged
+assets/locales, differing or missing payloads, count/budget failures, existing
+rules and real keyboard navigation at 320/375/390/1440.
+Updated TypeScript and production build PASS (3162 pages); all nine new packing
+and browser checks PASS on that export. The earlier 474 combined checks and
+four local Linux-protocol simulation checks remain recorded above.
+
+The previous CI #2085 reached approximately 1540 passing cases without reported
+test failures, then exhausted the existing 25-minute job budget. CI Playwright
+now uses up to three available workers. Every test, assertion and security/
+artwork gate remains; the job time limit remains 25 minutes. Both superseded
+checks must be replaced by successful checks on the new final SHA.
+
 All Spanish content is prepared. Each pending PR still requires its exact-head
 CI and preview checks and sequential publication verification on both hosts;
 prepared content must not be reported as production content before those gates.

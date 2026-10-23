@@ -29,6 +29,10 @@ rm -f 'src/app/go/[operator]/route.ts'
 
 npm run build
 
+# Preserve full RSC URLs with one internal 200 rule, after verifying all 900
+# Spanish catalogue copies are byte-identical to their retained index.txt.
+node scripts/prepare-cloudflare-assets.mjs out
+
 # Fail closed: never publish a root-domain artifact with broken URLs or indexing.
 test -s out/index.html
 test -s out/slots/index.html
