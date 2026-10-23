@@ -182,6 +182,22 @@ content and original references, and exercise every guide at six widths.
 The total remains 1000 games; the remaining translation scope is 95 game guides
 and other site sections, including full parity with all 1052 original RU routes.
 
+## Stage 13: complete game guides 6–10
+
+Big Bass Bonanza, Jammin’ Jars, Razor Shark, Wanted Dead or a Wild and Le Bandit
+receive complete existing content in Spanish, including their feature cards and
+source qualifications. Maximum and observed figures remain distinct. Wanted's
+conflicting first-party volatility scales and Le Bandit's indirect release-date
+reference are retained explicitly. Dates not overridden by editorial copy use
+the existing passport's translated month, without changing the source date.
+
+Source fingerprints now include resolved English feature cards as well as the
+per-game copy, covering explanatory cards supplied by the shared English helper.
+The original thirty responsive checks for five template representatives remain;
+each additional copy-only guide receives its own 390px browser scenario and
+complete export/content/source checks. No existing scenario or timeout is removed.
+Readiness covers ten guides; 90 guides and the other site sections remain.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;
