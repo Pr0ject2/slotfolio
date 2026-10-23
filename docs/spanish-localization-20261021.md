@@ -198,6 +198,21 @@ each additional copy-only guide receives its own 390px browser scenario and
 complete export/content/source checks. No existing scenario or timeout is removed.
 Readiness covers ten guides; 90 guides and the other site sections remain.
 
+## Stage 14: complete game guides 11–20
+
+San Quentin xWays, Fire in the Hole, Starlight Princess, Sugar Rush, Fruit Party,
+Legacy of Dead, Fire Joker, Rise of Olympus, Fat Rabbit and Retro Tapes receive
+complete Spanish descriptions, feature explanations, editorial notes and cards.
+Fat Rabbit's observed-win qualification and both sourced RTP configurations in
+Retro Tapes remain explicit. No source records or numerical values change.
+Visual review also found an English passport category in Retro Tapes. The
+display formatter now translates all fifteen existing passport categories;
+a regression checks every source passport and keeps its stored value unchanged.
+Readiness and complete-source fingerprints cover twenty guides. Existing export
+checks cover every new text and source; each new guide has a 390px browser check,
+in addition to the unchanged six-width representative matrix. Eighty guides and
+the remaining site sections still require translation.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;

@@ -15,6 +15,26 @@ import hashes from "../src/lib/spanish-full-dossier-source-hashes.json" with { t
 const numbers = (text: string) => text.replace(/(\d)[ ,\u00a0](?=\d{3}(?:\D|$))/g, "$1").match(/\d+(?:[.,]\d+)?/g)?.map(n => n.replace(",", ".")) ?? [];
 const escapeHtml = (text: string) => text.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#x27;");
 
+test("Spanish game passports translate every existing category without changing source records", () => {
+  const categories: Record<string,string> = {
+    "Cascading Cluster Pays":"Premios por grupos con cascadas",
+    "Cascading Cluster-based Slot":"Tragamonedas de grupos con cascadas",
+    "Cascading Slot":"Tragamonedas con cascadas", "Classic Slot":"Tragamonedas clásica",
+    "Classic Slot Game":"Tragamonedas clásica", "Cluster Paying Slot":"Tragamonedas de premios por grupos",
+    "Cluster Pays":"Premios por grupos", "Fruit Game":"Juego de frutas", "Fruit Slot":"Tragamonedas de frutas",
+    "Grid Slot":"Tragamonedas de tablero", "Oriental Slot":"Tragamonedas oriental",
+    "Slot":"Tragamonedas", "Slots":"Tragamonedas", "Video Slot":"Tragamonedas de vídeo", "Video Slots":"Tragamonedas de vídeo",
+  };
+  for (const game of slots) {
+    const passport=getVerifiedSlotPassport(game.slug);
+    if (!passport) continue;
+    const original=passport.gameType;
+    expect(categories[original],`${game.slug}: review any new category`).toBeTruthy();
+    expect(spanishCatalogFact(original),game.slug).toBe(categories[original]);
+    expect(getVerifiedSlotPassport(game.slug)?.gameType,game.slug).toBe(original);
+  }
+});
+
 test("complete Spanish dossiers preserve all existing content, numbers, caveats and source fingerprints", () => {
   expect(slots).toHaveLength(100);
   expect(Object.keys(spanishFullDossiers).sort()).toEqual([...spanishDossierSlugs].sort());
