@@ -80,6 +80,7 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
   const spanishRecord = spanish && item.coverage === "catalog" && hasSpanishCatalogRecord(item.slug);
   const spanishDossier = spanish && item.coverage === "dossier" && hasSpanishDossier(item.slug);
   const spanishReady = spanishRecord || spanishDossier;
+  if (spanish && !spanishReady) throw new Error(`Missing complete Spanish game: ${item.slug}`);
   const destination = spanishDossier ? `/es/slots/${item.slug}` : spanishRecord ? `/es/slots/catalog/${item.slug}` : englishDossier ? `/en/slots/${item.slug}` : englishCatalogRecord ? `/en/slots/catalog/${item.slug}` : href;
   const openLabel = spanish ? `Abrir ${item.name}${spanishReady ? "" : " (en inglés)"}` : locale === "en" ? `Open ${item.name}${englishDossier || englishCatalogRecord ? "" : " (Russian)"}` : `Открыть ${item.name}`;
   const year = displayYear(item);
@@ -111,7 +112,7 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
         {locale === "en" && !englishDossier && !englishCatalogRecord ? <span className="eyebrow" lang="en">Game details in Russian</span> : null}
 
         {item.coverage === "dossier" && (
-          spanish ? <p lang="es">{spanishDossier ? "Consulta las reglas, las funciones del bonus y la información del juego." : "Consulta las reglas, los bonos y la información del juego en la ficha en inglés."}</p> : locale === "en" && englishDossier
+          spanish ? <p lang="es">Consulta las reglas, las funciones del bonus y la información del juego.</p> : locale === "en" && englishDossier
             ? <p lang="en">Read about the rules, bonus features and game information.</p>
             : <p lang={locale === "en" ? "ru" : undefined}>{item.description}</p>
         )}

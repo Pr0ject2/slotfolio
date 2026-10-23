@@ -56,7 +56,7 @@ export const spanishSystemPages: Record<string, SpanishInformationPage> = {
           "Para eliminar otros datos locales, busca Slotfolio en los ajustes de datos de sitios web de tu navegador y borra su entrada.",
           "La navegación privada o el bloqueo del almacenamiento pueden hacer que la selección desaparezca al cerrar la ventana.",
         ],
-        links: [{ label: "Abrir la comparación (en inglés)", href: "/en/compare" }],
+        links: [{ label: "Abrir la comparación", href: "/es/compare" }],
       },
       {
         title: "Búsquedas, filtros e historial",
@@ -103,7 +103,7 @@ export const spanishSystemPages: Record<string, SpanishInformationPage> = {
         ],
         links: [
           { label: "Juego responsable", href: "/es/responsible-gaming" },
-          { label: "Entender las condiciones de los bonos (en inglés)", href: "/en/bonuses" },
+          { label: "Entender las condiciones de los bonos", href: "/es/bonuses" },
         ],
       },
     ],

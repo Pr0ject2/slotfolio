@@ -264,7 +264,7 @@ export function Catalog({
             <p className="filter-note">
               {locale === "es" ? "¿No sabes por dónde empezar?" : locale === "en" ? "Not sure where to start?" : "Не знаете, с чего начать?"}
               <br />
-              <Link href={locale === "es" ? "/en/collections/beyond-lines" : "/collections/beyond-lines"}>{locale !== "ru" ? copy.guideInRussian : "Посмотрите подборку редакции ↗"}</Link>
+              <Link href={locale === "es" ? "/es/collections/beyond-lines" : "/collections/beyond-lines"}>{locale !== "ru" ? copy.guideInRussian : "Посмотрите подборку редакции ↗"}</Link>
             </p>
             <button className="filter-apply" onClick={() => {
               scrollAfterCollapse.current = true;

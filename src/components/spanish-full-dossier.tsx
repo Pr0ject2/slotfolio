@@ -11,12 +11,10 @@ import { formatRtp } from "@/lib/catalog-stats";
 import { catalogRtpContext, getVerifiedSlotMetrics, volatilityContext } from "@/lib/dossier";
 import { getVerifiedSlotPassport } from "@/lib/slot-passport";
 import { spanishCatalogFact } from "@/lib/spanish-catalog-facts";
-import { hasSpanishDossier } from "@/lib/spanish-dossier-routes";
 import {
   spanishFullDossiers, spanishDossierFeatureCards, spanishMechanicExplanations,
   spanishMetricLabel, spanishReleaseDate, spanishRtpContext, spanishVolatilityContext,
 } from "@/lib/spanish-full-dossiers";
-import { englishFullDossiers } from "@/lib/english-full-dossiers";
 import styles from "./english-full-dossier.module.css";
 
 export function SpanishFullDossier({ game }: { game: Slot }) {
@@ -114,7 +112,7 @@ export function SpanishFullDossier({ game }: { game: Slot }) {
           <ul className="source-list">{references.map((reference,index)=><li key={`${reference.url}-${index}`}><a href={reference.url} target="_blank" rel="noopener noreferrer">{reference.label} ↗</a></li>)}</ul>
           <p>Puedes perder el dinero que apuestas. <Link href="/es/responsible-gaming">Información sobre juego responsable</Link> · <Link href="/es/editorial-policy">Criterios editoriales</Link> · <Link href="/es/disclosure">Información sobre afiliación</Link></p>
         </section>
-        <aside className="affiliate"><span className="eyebrow">Condiciones del operador · 18+</span><h3>De las reglas del juego a las condiciones del operador</h3><p>Antes de seguir un enlace a un operador, comprueba la disponibilidad en tu país, la versión del juego, los límites y las reglas de retirada.</p><Link className="text-link" href="/regions" lang="ru">Consultar países y condiciones (en ruso) ↗</Link></aside>
+        <aside className="affiliate"><span className="eyebrow">Condiciones del operador · 18+</span><h3>De las reglas del juego a las condiciones del operador</h3><p>Antes de seguir un enlace a un operador, comprueba la disponibilidad en tu país, la versión del juego, los límites y las reglas de retirada.</p><Link className="text-link" href="/es/regions">Consultar países y condiciones ↗</Link></aside>
         <section id="faq"><h2>Preguntas sobre el juego</h2>
           <details><summary>¿Se puede predecir el próximo resultado?</summary><p>No. Los resultados anteriores no permiten calcular el siguiente. Una racha de pérdidas no hace que un premio esté pendiente.</p></details>
           <details><summary>¿Por qué otro sitio muestra un RTP diferente?</summary><p>Un juego puede tener varias configuraciones matemáticas. A veces las fuentes también confunden el original con sus secuelas. Comprueba el título y el menú de ayuda de la versión que has abierto.</p></details>
@@ -123,7 +121,7 @@ export function SpanishFullDossier({ game }: { game: Slot }) {
       </article>
     </div>
     <section id="related"><SectionTitle title="Sigue explorando" href="/es/slots" label="Volver al catálogo" />
-      {related.map(item=>{const ready=hasSpanishDossier(item.slug); const href=`/${ready ? "es" : "en"}/slots/${item.slug}`; return <article className={styles.relatedRow} key={item.slug}><div><span className="eyebrow">{item.provider} / {item.year}</span><h3><Link href={href}>{item.name}{ready ? "" : " (en inglés)"}</Link></h3>{ready ? <p>{spanishFullDossiers[item.slug].description}</p> : <p lang="en">{englishFullDossiers[item.slug].description}</p>}</div><Link href={href} aria-label={`Abrir ${item.name}${ready ? "" : " (en inglés)"}`}>↗</Link></article>;})}
+      {related.map(item=>{const copy=spanishFullDossiers[item.slug];if(!copy)throw new Error(`Missing complete Spanish related guide: ${item.slug}`);const href=`/es/slots/${item.slug}`;return <article className={styles.relatedRow} key={item.slug}><div><span className="eyebrow">{item.provider} / {item.year}</span><h3><Link href={href}>{item.name}</Link></h3><p>{copy.description}</p></div><Link href={href} aria-label={`Abrir ${item.name}`}>↗</Link></article>;})}
     </section>
   </div>;
 }

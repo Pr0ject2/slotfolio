@@ -35,13 +35,14 @@ function volatilityNote(value?: string) {
   return "Esta categoría orientativa describe la dispersión de los resultados a lo largo del tiempo, no la probabilidad de ganar en la próxima ronda.";
 }
 function itemHref(item: CatalogItem) {
-  return item.coverage === "dossier" && hasSpanishDossier(item.slug) ? `/es/slots/${item.slug}` : item.coverage === "catalog" && hasSpanishCatalogRecord(item.slug) ? `/es/slots/catalog/${item.slug}` : item.coverage === "dossier" ? `/en/slots/${item.slug}` : `/en/slots/catalog/${item.slug}`;
+  if (!itemReady(item)) throw new Error(`Missing complete Spanish related game: ${item.slug}`);
+  return item.coverage === "dossier" ? `/es/slots/${item.slug}` : `/es/slots/catalog/${item.slug}`;
 }
 function itemReady(item: CatalogItem) { return item.coverage === "dossier" ? hasSpanishDossier(item.slug) : hasSpanishCatalogRecord(item.slug); }
 function RelatedRows({ items }: { items: CatalogItem[] }) {
-  return <div>{items.map((item, index) => <Link className="game-row" href={itemHref(item)} key={item.slug} aria-label={`${item.name}${itemReady(item) ? "" : " (en inglés)"}`}>
+  return <div>{items.map((item, index) => <Link className="game-row" href={itemHref(item)} key={item.slug} aria-label={item.name}>
     <span className="row-index">{String(index + 1).padStart(2, "0")}</span>
-    <div className="row-main"><h3>{item.name}</h3><p>{item.provider}{itemReady(item) ? "" : " · Ficha en inglés"}</p></div>
+    <div className="row-main"><h3>{item.name}</h3><p>{item.provider}</p></div>
     <span className="row-arrow" aria-hidden="true">↗</span>
   </Link>)}</div>;
 }
@@ -128,7 +129,6 @@ export function SpanishCatalogProfile({ item, copy }: { item: CatalogItem; copy:
           <div><span>Proveedor</span><strong>{item.provider}</strong><small>Compara otros juegos del estudio para distinguir sus recursos habituales de las funciones propias de esta versión.</small></div>
         </div>{mechanics[0] ? <Link className="text-link" href={`/es/slots?mechanic=${encodeURIComponent(mechanics[0])}`}>Juegos con {spanishCatalogFact(mechanics[0])} ↗</Link> : <Link className="text-link" href={`/es/slots?provider=${providerSlug(item.provider)}`}>Todos los juegos de {item.provider} ↗</Link>}</section>
         <section id="facts"><h2>Datos y fuentes</h2><p>El RTP describe la proporción teórica de las apuestas que se devuelve a largo plazo. La volatilidad describe la dispersión de los resultados, pero no permite predecir la próxima ronda.</p>{[...sources].map(([url, labels]) => <p className="source-note" key={url}>{labels.join(" · ")}: <a href={url} target="_blank" rel="noopener noreferrer">{url === item.source ? "Abrir la fuente del proveedor registrada ↗" : `Abrir la referencia de ${new URL(url).hostname.replace(/^www\./, "")} ↗`}</a>.</p>)}
-          <p><Link href={`/slots/catalog/${item.slug}`} hrefLang="ru">Leer la ficha original completa (en ruso) ↗</Link></p>
           <p className="data-note">El RTP y otros valores pueden variar según la configuración del juego y el operador. Consulta la tabla de pagos dentro del juego. Las cifras publicadas no permiten predecir una sesión.</p>
           <p><Link href="/es/editorial-policy">Criterios editoriales</Link> · <Link href="/es/responsible-gaming">Juego responsable</Link></p>
         </section>
