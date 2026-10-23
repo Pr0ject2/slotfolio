@@ -11,6 +11,7 @@ import { getVerifiedCatalogGameType } from "@/lib/catalog-verified-game-type";
 import { spanishCatalogFact } from "@/lib/spanish-catalog-facts";
 import type { SpanishCatalogContent } from "@/lib/spanish-catalog-complete";
 import { hasSpanishCatalogRecord } from "@/lib/spanish-catalog-record-routes";
+import { hasSpanishDossier } from "@/lib/spanish-dossier-routes";
 import type { CatalogItem } from "@/lib/catalog-query";
 import recordStyles from "@/app/en/slots/catalog/record.module.css";
 import styles from "./english-catalog-profile.module.css";
@@ -34,12 +35,13 @@ function volatilityNote(value?: string) {
   return "Esta categoría orientativa describe la dispersión de los resultados a lo largo del tiempo, no la probabilidad de ganar en la próxima ronda.";
 }
 function itemHref(item: CatalogItem) {
-  return item.coverage === "catalog" && hasSpanishCatalogRecord(item.slug) ? `/es/slots/catalog/${item.slug}` : item.coverage === "dossier" ? `/en/slots/${item.slug}` : `/en/slots/catalog/${item.slug}`;
+  return item.coverage === "dossier" && hasSpanishDossier(item.slug) ? `/es/slots/${item.slug}` : item.coverage === "catalog" && hasSpanishCatalogRecord(item.slug) ? `/es/slots/catalog/${item.slug}` : item.coverage === "dossier" ? `/en/slots/${item.slug}` : `/en/slots/catalog/${item.slug}`;
 }
+function itemReady(item: CatalogItem) { return item.coverage === "dossier" ? hasSpanishDossier(item.slug) : hasSpanishCatalogRecord(item.slug); }
 function RelatedRows({ items }: { items: CatalogItem[] }) {
-  return <div>{items.map((item, index) => <Link className="game-row" href={itemHref(item)} key={item.slug} aria-label={`${item.name}${hasSpanishCatalogRecord(item.slug) ? "" : " (en inglés)"}`}>
+  return <div>{items.map((item, index) => <Link className="game-row" href={itemHref(item)} key={item.slug} aria-label={`${item.name}${itemReady(item) ? "" : " (en inglés)"}`}>
     <span className="row-index">{String(index + 1).padStart(2, "0")}</span>
-    <div className="row-main"><h3>{item.name}</h3><p>{item.provider}{hasSpanishCatalogRecord(item.slug) ? "" : " · Ficha en inglés"}</p></div>
+    <div className="row-main"><h3>{item.name}</h3><p>{item.provider}{itemReady(item) ? "" : " · Ficha en inglés"}</p></div>
     <span className="row-arrow" aria-hidden="true">↗</span>
   </Link>)}</div>;
 }

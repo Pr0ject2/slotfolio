@@ -15,9 +15,12 @@ test("Spanish readiness exposes complete translations and preserves the publishe
   expect(languageHref("/es/about", "en")).toBe("/en/about");
   expect(languageHref("/es/about", "ru")).toBe("/about");
   expect(languageAlternates("/es/about")).toEqual({ ru: "/about", en: "/en/about", es: "/es/about" });
-  expect(hasTranslation("/slots/gates-of-olympus", "es")).toBe(false);
-  expect(languageAlternates("/slots/gates-of-olympus")).not.toHaveProperty("es");
-  expect(languageHref("/slots/gates-of-olympus", "es")).toBe("/es");
+  expect(hasTranslation("/slots/gates-of-olympus", "es")).toBe(true);
+  expect(languageAlternates("/slots/gates-of-olympus")).toHaveProperty("es", "/es/slots/gates-of-olympus");
+  expect(languageHref("/slots/gates-of-olympus", "es")).toBe("/es/slots/gates-of-olympus");
+  expect(hasTranslation("/slots/sweet-bonanza-1000", "es")).toBe(false);
+  expect(languageAlternates("/slots/sweet-bonanza-1000")).not.toHaveProperty("es");
+  expect(languageHref("/slots/sweet-bonanza-1000", "es")).toBe("/es");
   for (const [slug, data] of Object.entries(spanishSystemPages)) {
     expect(data.sections).toHaveLength(englishSystemPages[slug].sections.length);
     data.sections.forEach((section, index) => {
@@ -83,11 +86,17 @@ test("Spanish browser detection respects direct untranslated game links", async 
   await page.goto("/");
   await expect(page).toHaveURL(/\/es\/?$/);
   await page.evaluate(() => localStorage.setItem("slotfolio-language", "es"));
-  await page.goto("/en/slots/gates-of-olympus/");
-  await expect(page.locator("h1")).toHaveText("Gates of Olympus");
-  await expect(page).toHaveURL(/\/en\/slots\/gates-of-olympus\/?$/);
+  await page.goto("/en/slots/wanted-dead-or-a-wild/");
+  await expect(page.locator("h1")).toHaveText("Wanted Dead or a Wild");
+  await expect(page).toHaveURL(/\/en\/slots\/wanted-dead-or-a-wild\/?$/);
   await expect(page.locator('link[hreflang="es"]')).toHaveCount(0);
   await expect(page.getByRole("link", { name: "ES", exact: true })).toHaveAttribute("href", /\/es\/?$/);
+  await page.goto("/en/slots/gates-of-olympus/");
+  await expect(page).toHaveURL(/\/es\/slots\/gates-of-olympus\/?$/);
+  await expect(page.locator("h1")).toHaveText("Gates of Olympus");
+  await page.getByRole("link", { name: "EN", exact: true }).click();
+  await expect(page).toHaveURL(/\/en\/slots\/gates-of-olympus\/?$/);
+  expect(await page.evaluate(() => localStorage.getItem("slotfolio-language"))).toBe("en");
   await context.close();
 });
 

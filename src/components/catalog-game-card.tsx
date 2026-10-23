@@ -12,6 +12,7 @@ import type { SiteLocale } from "@/lib/locales";
 import { SlotArtwork } from "./slot-artwork";
 import { withBasePath } from "@/lib/base-path";
 import { hasSpanishCatalogRecord } from "@/lib/spanish-catalog-record-routes";
+import { hasSpanishDossier } from "@/lib/spanish-dossier-routes";
 
 function displayRelease(value: string) {
   if (!value) return "";
@@ -77,8 +78,10 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
   const englishCatalogRecord = locale !== "ru" && item.coverage === "catalog" && hasEnglishCatalogRecord(item.slug);
   const spanish = locale === "es";
   const spanishRecord = spanish && item.coverage === "catalog" && hasSpanishCatalogRecord(item.slug);
-  const destination = spanishRecord ? `/es/slots/catalog/${item.slug}` : englishDossier ? `/en/slots/${item.slug}` : englishCatalogRecord ? `/en/slots/catalog/${item.slug}` : href;
-  const openLabel = spanish ? `Abrir ${item.name}${spanishRecord ? "" : " (en inglés)"}` : locale === "en" ? `Open ${item.name}${englishDossier || englishCatalogRecord ? "" : " (Russian)"}` : `Открыть ${item.name}`;
+  const spanishDossier = spanish && item.coverage === "dossier" && hasSpanishDossier(item.slug);
+  const spanishReady = spanishRecord || spanishDossier;
+  const destination = spanishDossier ? `/es/slots/${item.slug}` : spanishRecord ? `/es/slots/catalog/${item.slug}` : englishDossier ? `/en/slots/${item.slug}` : englishCatalogRecord ? `/en/slots/catalog/${item.slug}` : href;
+  const openLabel = spanish ? `Abrir ${item.name}${spanishReady ? "" : " (en inglés)"}` : locale === "en" ? `Open ${item.name}${englishDossier || englishCatalogRecord ? "" : " (Russian)"}` : `Открыть ${item.name}`;
   const year = displayYear(item);
   const facts = displayFacts(item, locale);
   const mappedArtwork = item.coverage === "catalog" ? getCatalogArtwork(item.slug) : null;
@@ -104,11 +107,11 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
         </div>
 
         <h2><Link href={destination} aria-label={spanish ? openLabel : undefined}>{item.name}</Link></h2>
-        {spanish && !spanishRecord && <span className="eyebrow" lang="es">Ficha del juego en inglés</span>}
+        {spanish && !spanishReady && <span className="eyebrow" lang="es">Ficha del juego en inglés</span>}
         {locale === "en" && !englishDossier && !englishCatalogRecord ? <span className="eyebrow" lang="en">Game details in Russian</span> : null}
 
         {item.coverage === "dossier" && (
-          spanish ? <p lang="es">Consulta las reglas, los bonos y la información del juego en la ficha en inglés.</p> : locale === "en" && englishDossier
+          spanish ? <p lang="es">{spanishDossier ? "Consulta las reglas, las funciones del bonus y la información del juego." : "Consulta las reglas, los bonos y la información del juego en la ficha en inglés."}</p> : locale === "en" && englishDossier
             ? <p lang="en">Read about the rules, bonus features and game information.</p>
             : <p lang={locale === "en" ? "ru" : undefined}>{item.description}</p>
         )}

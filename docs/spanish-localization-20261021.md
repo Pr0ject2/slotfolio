@@ -166,6 +166,22 @@ regressions cover complete export content, original sources, reciprocal language
 routes, real artwork and six responsive widths. After this batch, 0 catalogue
 profiles and 100 game guides remain, plus the remaining site sections.
 
+## Stage 12: first five complete game guides
+
+Gates of Olympus, Sweet Bonanza, Book of Dead, Reactoonz and The Dog House receive
+complete Spanish guides. Descriptions, rule explanations, every feature card,
+editorial notes, metric caveats, release dates, source qualifications and shared
+FAQ are translated. Game records, calculations, source URLs and artwork remain
+unchanged. A separate server renderer reuses the existing dossier styles.
+
+Only the five complete routes enter readiness, language links and reciprocal
+alternates. Catalogue cards and related rows link to those Spanish guides;
+untranslated destinations remain explicitly labelled. Tests fingerprint English
+source copy, preserve numerical sequences and caveats, check complete export
+content and original references, and exercise every guide at six widths.
+The total remains 1000 games; the remaining translation scope is 95 game guides
+and other site sections, including full parity with all 1052 original RU routes.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;
