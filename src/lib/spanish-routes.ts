@@ -12,4 +12,5 @@ export const spanishReadyPaths = [
   "/journal/volatility-and-hit-frequency", "/journal/comparing-games",
   "/collections", "/collections/beyond-lines", "/collections/cluster-features",
   "/collections/wild-symbols", "/collections/five-by-three-bonuses",
+  "/bonuses", "/regions", "/regions/great-britain",
 ] as const;

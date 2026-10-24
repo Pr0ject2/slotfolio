@@ -422,14 +422,30 @@ selection and numbers, no horizontal document overflow, Spanish metadata,
 keyboard focus and adding two games to the comparison. Real mobile and desktop
 screenshots were reviewed. Data, artwork, noindex and CI requirements unchanged.
 
+## Stage 28 — bonus terms and country guidance
+
+Added complete Spanish counterparts of `/bonuses`, `/regions` and
+`/regions/great-britain`, including every original section, paragraph, worked
+example, table row, restriction and qualification. Preserved the distinction
+between Great Britain and Northern Ireland and the exact official source URLs.
+The Gambling Commission register and public information pages were checked on
+2026-10-23. The five-row operator table is labelled and keyboard focusable.
+The footer now exposes both practical guides.
+
+Validation: TypeScript PASS; production export 3159 pages; 31 targeted checks
+PASS (20 new practical-guide checks and 11 foundation checks). All three routes
+checked at 320/375/390/768/1024/1440. Tests cover source structure and reference
+parity, the illustrative 100 / 10× / 1,000 calculation and its qualifications,
+language counterparts, noindex, no document overflow, anchor navigation and
+table focus. Real mobile and desktop screenshots reviewed. No game data,
+artwork, dependency, indexing policy or CI requirements changed.
+
 ## Remaining stages
 
-1. Bonuses, the regional index and the Great Britain guide, preserving existing
-   official references and qualifications.
-2. The two retired-link edition choosers, localized loading/error/help states
+1. The two retired-link edition choosers, localized loading/error/help states
    and 404. Replace temporary English-labelled links only as counterparts become
    available.
-3. Final parity against all 1052 original Russian content routes plus 404 and
+2. Final parity against all 1052 original Russian content routes plus 404 and
    all 1000 published games. Prepared translations above still require their
    sequential exact-head CI, preview and production publication gates.
 
