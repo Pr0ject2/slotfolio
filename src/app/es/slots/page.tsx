@@ -8,7 +8,7 @@ export const metadata = pageMetadata({
   title: "Catálogo de tragamonedas | Slotfolio",
   description: "Busca entre 1000 juegos por nombre, proveedor y mecánica. Consulta los datos verificados y abre las reglas de cada título.",
   path: "/es/slots",
-  noIndex: true,
+  previewOnly: true,
 });
 
 export default function SpanishCatalogue() {

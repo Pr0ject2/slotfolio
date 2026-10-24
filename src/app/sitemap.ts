@@ -4,6 +4,7 @@ import type { MetadataRoute } from "next";
 import { mechanics, providerProfiles, slots } from "@/lib/data";
 import { systemPages } from "@/lib/system-pages";
 import { absoluteUrl } from "@/lib/seo";
+import { languageAlternates } from "@/lib/locales";
 
 export const dynamic = "force-static";
 
@@ -26,14 +27,25 @@ const staticRoutes = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     ...staticRoutes,
-    ...journalGuides.map(guide => `/journal/${guide.slug}`),
-    ...gameCollections.map(collection => `/collections/${collection.slug}`),
+    ...journalGuides.map((guide) => `/journal/${guide.slug}`),
+    ...gameCollections.map((collection) => `/collections/${collection.slug}`),
     ...slots.map((slot) => `/slots/${slot.slug}`),
     ...mechanics.map((mechanic) => `/mechanics/${mechanic.slug}`),
     ...providerProfiles.map((provider) => `/providers/${provider.slug}`),
     ...Object.keys(systemPages).map((page) => `/${page}`),
   ];
 
-  return routes.map((route) => ({ url: absoluteUrl(route) }));
+  return [...new Set(routes)].flatMap((route) => {
+    const translations = languageAlternates(route);
+    const languages = Object.fromEntries(
+      Object.entries(translations).map(([locale, path]) => [
+        locale,
+        absoluteUrl(path!),
+      ]),
+    );
+    return Object.values(translations).map((path) => ({
+      url: absoluteUrl(path!),
+      alternates: { languages },
+    }));
+  });
 }
-

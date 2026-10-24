@@ -7,7 +7,7 @@ export const metadata = pageMetadata({
   description: "Read wagering requirements, expiry dates, maximum bets, game exclusions and withdrawal restrictions before considering a casino bonus.",
   path: "/en/bonuses",
   openGraphType: "article",
-  noIndex: true,
+  previewOnly: true,
 });
 
 export default function EnglishBonusTerms() {

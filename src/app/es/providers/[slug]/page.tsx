@@ -11,7 +11,7 @@ import { spanishCatalogFact } from "@/lib/spanish-catalog-facts";
 import { pageMetadata } from "@/lib/seo";
 export const dynamicParams=false;
 export function generateStaticParams(){return spanishProviderSlugs.map(slug=>({slug}));}
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const p=spanishProvider(slug);return pageMetadata({title:p?`${p.name}: juegos y mecánicas`:"Proveedor no encontrado",description:p?.catalogSummary??"Perfiles de proveedores de Slotfolio.",path:`/es/providers/${slug}`,noIndex:true});}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const p=spanishProvider(slug);return pageMetadata({title:p?`${p.name}: juegos y mecánicas`:"Proveedor no encontrado",description:p?.catalogSummary??"Perfiles de proveedores de Slotfolio.",path:`/es/providers/${slug}`,previewOnly: true});}
 export default async function Page({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params;const p=spanishProvider(slug);if(!p)notFound();const games=slots.filter(game=>providerSlug(game.provider)===slug);const stats=catalogStats(games);
   return <div className={`entity-profile provider-dossier ${styles.profile}`}>

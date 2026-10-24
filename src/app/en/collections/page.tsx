@@ -10,7 +10,7 @@ export const metadata = pageMetadata({
   title: "Explore slot mechanics through real game examples",
   description: "Four focused comparisons of paylines, clusters, wild symbols and free-spins bonuses using twelve source-backed game guides.",
   path: "/en/collections",
-  noIndex: true,
+  previewOnly: true,
 });
 
 export default function EnglishCollections() {

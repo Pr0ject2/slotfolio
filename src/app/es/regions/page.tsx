@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SpanishBreadcrumbs } from "@/components/spanish-breadcrumbs";
 import { pageMetadata } from "@/lib/seo";
-export const metadata=pageMetadata({title:"Disponibilidad de los juegos y normas de cada país",description:"Que un juego figure en un catálogo no demuestra que esté disponible en tu país. Comprueba las licencias del operador, las condiciones de acceso y los registros oficiales.",path:"/es/regions",noIndex:true});
+export const metadata=pageMetadata({title:"Disponibilidad de los juegos y normas de cada país",description:"Que un juego figure en un catálogo no demuestra que esté disponible en tu país. Comprueba las licencias del operador, las condiciones de acceso y los registros oficiales.",path:"/es/regions",previewOnly: true});
 export default function SpanishRegions(){return <>
   <SpanishBreadcrumbs items={[{label:"Países y disponibilidad"}]} />
   <div className="simple-heading"><span className="eyebrow accent">Las normas varían según el país</span><h1>El mismo juego.<br />Distintas reglas de acceso.</h1><p>Que un juego aparezca en Slotfolio no significa que se ofrezca legalmente donde vives. Consulta al regulador correspondiente, la licencia del operador y sus condiciones antes de tomar una decisión.</p></div>

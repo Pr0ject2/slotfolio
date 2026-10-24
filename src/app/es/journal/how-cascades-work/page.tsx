@@ -11,7 +11,7 @@ import { pageMetadata } from "@/lib/seo";
 const path="/es/journal/how-cascades-work";
 const title="Un giro, varios eventos: cómo funcionan las cascadas";
 const description="Cómo los símbolos en cascada pueden prolongar una sola ronda pagada, por qué grupos y cascadas son distintos y qué dicen realmente las reglas del juego.";
-export const metadata=pageMetadata({title,description,path,openGraphType:"article",noIndex:true});
+export const metadata=pageMetadata({title,description,path,openGraphType:"article",previewOnly: true});
 export default function SpanishCascadesArticle(){const sweet=getSlot("sweet-bonanza"),reactoonz=getSlot("reactoonz");return <div className={`${styles.article} ${reading.reading}`}>
   <ArticleJsonLd title={title} description={description} path={path} datePublished="2026-09-07" locale="es" />
   <SpanishBreadcrumbs items={[{label:"Revista y guías",href:"/es/journal"},{label:"Cómo funcionan las cascadas"}]} />

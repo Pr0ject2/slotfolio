@@ -6,7 +6,7 @@ export const metadata = pageMetadata({
   title: "Great Britain: checking an operator's gambling licence",
   description: "How to consult the Gambling Commission's register for a business operating in England, Scotland or Wales, and what else to confirm before registering.",
   path: "/en/regions/great-britain",
-  noIndex: true,
+  previewOnly: true,
 });
 
 export default function EnglishGreatBritain() {

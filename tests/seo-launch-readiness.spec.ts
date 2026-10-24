@@ -32,7 +32,7 @@ test("SEO URLs support a future root domain and the Pages subpath without duplic
     const urls = sitemap().map((item) => item.url);
     expect(new Set(urls).size).toBe(urls.length);
     expect(urls.filter((url) => /\/slots\/[^/]+\/$/.test(url))).toHaveLength(
-      100,
+      300,
     );
     expect(
       urls.every((url) => url.startsWith("https://www.example.com/")),

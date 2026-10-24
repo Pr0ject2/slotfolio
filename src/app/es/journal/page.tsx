@@ -3,7 +3,7 @@ import { SpanishBreadcrumbs } from "@/components/spanish-breadcrumbs";
 import { spanishJournalGuides } from "@/lib/spanish-journal-guides";
 import { pageMetadata } from "@/lib/seo";
 import styles from "@/app/journal/guides.module.css";
-export const metadata=pageMetadata({title:"Revista Slotfolio: reglas de juego y guías prácticas",description:"Explicaciones prácticas sobre tablas de pago, sistemas de premios y RTP, con ejemplos respaldados por fuentes y sin promesas de futuros premios.",path:"/es/journal",noIndex:true});
+export const metadata=pageMetadata({title:"Revista Slotfolio: reglas de juego y guías prácticas",description:"Explicaciones prácticas sobre tablas de pago, sistemas de premios y RTP, con ejemplos respaldados por fuentes y sin promesas de futuros premios.",path:"/es/journal",previewOnly: true});
 export default function SpanishJournal(){return <>
   <SpanishBreadcrumbs items={[{label:"Revista y guías"}]} />
   <div className="page-heading"><div><span className="eyebrow accent">Mecánicas, tablas de pagos y RTP</span><h1>Revista y guías</h1></div><p>Entiende cómo funcionan las tragamonedas, qué puede y qué no puede decirte el RTP y qué reglas conviene comprobar.</p></div>
