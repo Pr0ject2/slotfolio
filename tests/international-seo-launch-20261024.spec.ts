@@ -132,4 +132,3 @@ for (const locale of ["ru", "en", "es"])
       indexingEnabled() ? /^index, follow$/ : /noindex/,
     );
   });
-
