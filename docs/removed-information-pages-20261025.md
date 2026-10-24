@@ -27,5 +27,12 @@ Existing tests now inspect only retained routes; their retained assertions stay
 in force. Artwork, security, TypeScript, production build and SEO validation
 must pass before review.
 
+The CI static server uses the standard Python HTTP handler with directory
+listings disabled. Without this, `/regions/` exposes an index-less directory
+listing (200) because the Great Britain child remains, unlike production Pages
+(404). The HTTP 404 assertions stay strict. All existing workflow checks,
+permissions, action pins, timeouts and test commands are retained. The Spanish
+export completeness assertion now expects 1051 retained routes instead of 1053.
+
 Open PR #556 edits disclosure content on the old base. It needs reconciliation
 after this removal; it must not restore these pages or their navigation links.
