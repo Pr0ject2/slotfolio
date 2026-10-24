@@ -8,6 +8,6 @@ export async function GET(
   if (operator !== "1win")
     return new NextResponse("Оператор не найден", { status: 404 });
   const url = affiliateUrl();
-  if (!url) return NextResponse.redirect(new URL("/disclosure", request.url));
+  if (!url) return NextResponse.redirect(new URL("/about", request.url));
   return NextResponse.redirect(url, 302);
 }

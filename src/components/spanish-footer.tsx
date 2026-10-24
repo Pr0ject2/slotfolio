@@ -21,14 +21,14 @@ export function SpanishFooter() {
           <Link href="/es/journal">Revista y guías</Link>
           <Link href="/es/collections">Selecciones de juegos</Link>
           <Link href="/es/bonuses">Condiciones de los bonus</Link>
-          <Link href="/es/regions">Países y disponibilidad</Link>
+
         </div>
         <div>
           <span className="eyebrow">Acerca de Slotfolio</span>
           <Link href="/es/about">Cómo usar Slotfolio</Link>
           <Link href="/es/editorial-policy">Criterios editoriales</Link>
           <Link href="/es/privacy">Privacidad</Link>
-          <Link href="/es/disclosure">Enlaces de afiliación</Link>
+
         </div>
         <div className="footer-responsibility">
           <span className="age">18+</span>
@@ -39,7 +39,7 @@ export function SpanishFooter() {
       <div className="footer-bottom">
         <span>© 2026 Slotfolio</span>
         <Link href="/es/privacy">Privacidad</Link>
-        <Link href="/es/disclosure">Afiliación</Link>
+
       </div>
     </footer>
   );

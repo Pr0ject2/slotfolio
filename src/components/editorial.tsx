@@ -124,7 +124,7 @@ export function Affiliate({ context = "game" }: { context?: string }) {
         Перед переходом проверьте доступность в своей стране, версию игры,
         лимиты и правила вывода средств.
       </p>
-      {url ? (
+      {url && (
         <a
           className="button"
           href={affiliateHref(context)}
@@ -132,10 +132,6 @@ export function Affiliate({ context = "game" }: { context?: string }) {
         >
           Перейти в {operators["1win"].name} ↗
         </a>
-      ) : (
-        <Link className="text-link" href="/regions">
-          Проверить страну и условия ↗
-        </Link>
       )}
       {url && <small>{operators["1win"].disclosure}</small>}
     </aside>

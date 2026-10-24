@@ -13,7 +13,6 @@ export default function Page() {
     <>
       <Breadcrumbs
         items={[
-          { label: "Страны", href: "/regions" },
           { label: "Великобритания" },
         ]}
       />

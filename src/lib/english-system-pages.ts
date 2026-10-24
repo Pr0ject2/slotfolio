@@ -39,7 +39,6 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
         title: "Facts, explanations, and limitations",
         text: "Pay rules, game layout, and bonus conditions can be checked against documentation. When we describe a game's pace or complexity, we are interpreting its documented rules. It is not a claim about profitability or a verification of any casino's payment practices.",
         links: [
-          { label: "Affiliate disclosure", href: "/en/disclosure" },
           { label: "Safer gambling", href: "/en/responsible-gaming" },
         ],
       },
@@ -77,34 +76,6 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
       {
         title: "Loading pages and following other websites",
         text: "Your browser makes requests to the hosting provider when you visit the site. Site images and fonts are served alongside its pages. Following a link to a publisher, help service, or operator opens a separate website with its own privacy practices. Deleting Slotfolio data will not remove data stored there.",
-        links: [{ label: "Affiliate disclosure", href: "/en/disclosure" }],
-      },
-    ],
-  },
-  disclosure: {
-    title: "Affiliate links and our editorial approach",
-    eyebrow: "Affiliate disclosure",
-    intro: "How we distinguish reference material from commercial links, and what to check before using another website.",
-    sections: [
-      {
-        title: "Reference material is not an offer",
-        text: "Game rules and publisher information are used to check a game's characteristics. They do not establish that real-money play is available. Slotfolio does not currently display any active casino affiliate offers.",
-        links: [{ label: "How we verify game information", href: "/en/editorial-policy" }],
-      },
-      {
-        title: "What an affiliate label means",
-        text: "If we display an affiliate link, Slotfolio may earn a commission when someone follows it or takes an eligible action. That label discloses a commercial relationship. It is not an endorsement of the casino, a guarantee about the bonus or a claim that you are more likely to win. A game listed here may not be available from your operator.",
-      },
-      {
-        title: "Before joining another website",
-        text: "Check the destination's current conditions for yourself, even when you arrived via a familiar catalogue.",
-        steps: [
-          "Compare the site's domain and company name with the relevant regulator's public register.",
-          "Check whether the operator accepts players in your country and what identity verification is required.",
-          "Before claiming a bonus, check withdrawal rules, wagering requirements, expiry dates, maximum bets and excluded games.",
-        ],
-        links: [{ label: "Safer gambling advice", href: "/en/responsible-gaming" },
-          { label: "Understanding bonus terms", href: "/en/bonuses" }],
       },
     ],
   },

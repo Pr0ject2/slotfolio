@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Breadcrumbs } from "@/components/editorial";
 import { pageMetadata } from "@/lib/seo";
 
@@ -80,9 +79,7 @@ export default function Page() {
               детали часто находятся в полных условиях: ограничениях по
               ставкам, сроках и требованиях к выводу денег.
             </p>
-            <Link href="/disclosure" className="text-link">
-              Как устроены партнёрские материалы ↗
-            </Link>
+
           </section>
         </article>
       </div>

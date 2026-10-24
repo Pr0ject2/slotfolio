@@ -36,12 +36,10 @@ const routes = [
   "/journal",
   "/journal/how-cascades-work",
   "/journal/understanding-rtp",
-  "/regions",
   "/regions/great-britain",
   "/about",
   "/bonuses",
   "/privacy",
-  "/disclosure",
   "/editorial-policy",
   "/responsible-gaming",
   ...slots.map((slot) => "/slots/" + slot.slug),
@@ -369,7 +367,7 @@ test("unknown pages and safe unconfigured affiliate route", async ({ request }) 
     expect(response.status()).toBe(404);
   } else {
     expect(response.status()).toBe(307);
-    expect(response.headers().location).toContain("/disclosure");
+    expect(response.headers().location).toContain("/about");
   }
 });
 

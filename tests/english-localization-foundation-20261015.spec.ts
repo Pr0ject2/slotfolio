@@ -12,21 +12,19 @@ const englishUrls = [
   "/en/compare",
   "/en/collections",
   "/en/bonuses",
-  "/en/regions",
   "/en/regions/great-britain",
   "/en/journal",
   "/en/journal/how-cascades-work",
   "/en/editorial-policy",
   "/en/privacy",
-  "/en/disclosure",
   "/en/responsible-gaming",
   "/en/journal/understanding-rtp",
 ];
 
 test("the language selector includes reviewed English pages and catalogue entry points", () => {
   expect(englishReadyPaths).toEqual([
-    "/", "/about", "/slots", "/search", "/providers", "/mechanics", "/compare", "/collections", "/bonuses", "/regions", "/regions/great-britain", "/journal", "/journal/how-cascades-work", "/editorial-policy", "/privacy",
-    "/disclosure", "/responsible-gaming", "/journal/understanding-rtp",
+    "/", "/about", "/slots", "/search", "/providers", "/mechanics", "/compare", "/collections", "/bonuses", "/regions/great-britain", "/journal", "/journal/how-cascades-work", "/editorial-policy", "/privacy",
+    "/responsible-gaming", "/journal/understanding-rtp",
   ]);
   expect(languageHref("/about", "en")).toBe("/en/about");
   expect(languageHref("/en/about", "ru")).toBe("/about");

@@ -56,7 +56,7 @@ export default function AboutEnglish() {
           <section id="links">
             <h2>External websites</h2>
             <p>Publishers' rules help verify information, but other sites have their own terms. Check the operator's domain, license and local restrictions before creating an account.</p>
-            <p><Link href="/en/disclosure">Affiliate disclosure</Link> · <Link href="/en/privacy">Privacy and browser data</Link></p>
+            <p><Link href="/en/privacy">Privacy and browser data</Link></p>
           </section>
         </article>
       </div>

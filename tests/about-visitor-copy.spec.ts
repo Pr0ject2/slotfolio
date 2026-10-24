@@ -36,8 +36,7 @@ test("about page explains Slotfolio to readers without development notes", async
     "/compare",
     "/responsible-gaming",
     "/editorial-policy",
-    "/disclosure",
-  ]) {
+    ]) {
     // GitHub Pages serves /slotfolio/*; Cloudflare serves the same pages at /*.
     await expect(page.locator(`a[href$="${path}"], a[href$="${path}/"]`).first()).toBeVisible();
   }

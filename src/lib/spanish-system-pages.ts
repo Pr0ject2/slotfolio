@@ -37,7 +37,6 @@ export const spanishSystemPages: Record<string, SpanishInformationPage> = {
         title: "Datos, explicaciones y limitaciones",
         text: "Las reglas de pago, la distribución del tablero y las condiciones de los bonos se pueden contrastar con la documentación. Cuando explicamos el ritmo o la complejidad de un juego, interpretamos sus reglas documentadas. Esa explicación no afirma que sea rentable ni verifica cómo paga un casino.",
         links: [
-          { label: "Enlaces de afiliación", href: "/es/disclosure" },
           { label: "Juego responsable", href: "/es/responsible-gaming" },
         ],
       },
@@ -75,36 +74,6 @@ export const spanishSystemPages: Record<string, SpanishInformationPage> = {
       {
         title: "Al cargar páginas y visitar otros sitios",
         text: "Tu navegador envía solicitudes al proveedor de alojamiento cuando visitas el sitio. Las imágenes y las fuentes se sirven junto con las páginas. Los enlaces a proveedores de juegos, servicios de ayuda u operadores llevan a sitios independientes con sus propias prácticas de privacidad. Borrar los datos de Slotfolio no elimina los datos guardados allí.",
-        links: [{ label: "Enlaces de afiliación", href: "/es/disclosure" }],
-      },
-    ],
-  },
-  disclosure: {
-    title: "Enlaces de afiliación y criterio editorial",
-    eyebrow: "Afiliación",
-    intro: "Cómo distinguimos las fuentes de información de los enlaces comerciales y qué conviene comprobar antes de utilizar otro sitio.",
-    sections: [
-      {
-        title: "Una fuente no es una oferta",
-        text: "Las reglas y los materiales del proveedor permiten comprobar las características de un juego. No demuestran que puedas jugar con dinero real en tu país. Los enlaces para elegir un casino llevan a una selección general; no garantizan que un título concreto esté disponible en cada operador o región.",
-        links: [{ label: "Cómo verificamos los datos", href: "/es/editorial-policy" }],
-      },
-      {
-        title: "Qué implica un enlace de afiliación",
-        text: "Slotfolio puede recibir una comisión cuando sigues un enlace de afiliación o realizas una acción que cumpla sus condiciones. Esta relación comercial no garantiza la fiabilidad del casino, la concesión de un bono ni una mayor probabilidad de ganar. Un juego del catálogo puede no estar disponible en el operador de destino.",
-      },
-      {
-        title: "Antes de registrarte en otro sitio",
-        text: "Comprueba por tu cuenta las condiciones vigentes del destino, aunque hayas llegado desde un catálogo conocido.",
-        steps: [
-          "Contrasta el dominio y la empresa con el registro público del regulador que corresponda.",
-          "Comprueba si el operador acepta jugadores de tu país y qué verificación de identidad exige.",
-          "Antes de aceptar un bono, revisa las reglas de retirada, los requisitos de apuesta, la caducidad, la apuesta máxima y los juegos excluidos.",
-        ],
-        links: [
-          { label: "Juego responsable", href: "/es/responsible-gaming" },
-          { label: "Entender las condiciones de los bonos", href: "/es/bonuses" },
-        ],
       },
     ],
   },

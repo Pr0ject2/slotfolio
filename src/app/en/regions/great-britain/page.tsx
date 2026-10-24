@@ -13,7 +13,6 @@ export default function EnglishGreatBritain() {
   return (
     <>
       <EnglishBreadcrumbs items={[
-        { label: "Countries", href: "/en/regions" },
         { label: "Great Britain" },
       ]} />
       <div className="simple-heading geo-heading">

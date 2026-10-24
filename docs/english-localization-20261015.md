@@ -1,14 +1,13 @@
 # Slotfolio English localization — staged rollout (2026-10-15)
 
 ## Status / scope
-The first English edition is a **seven-page editorial pilot**, not an English translation of all 1,000 game records. Do not announce the entire site as English-language yet. All existing Russian routes, dossiers, catalog-only descriptions, source citations, checked-in images, and search/filter behavior remain unchanged.
+The first English edition is a **initial editorial pilot**, not an English translation of all 1,000 game records. Do not announce the entire site as English-language yet. All existing Russian routes, dossiers, catalog-only descriptions, source citations, checked-in images, and search/filter behavior remain unchanged.
 
 Translated routes:
 - `/en`
 - `/en/about`
 - `/en/editorial-policy`
 - `/en/privacy`
-- `/en/disclosure`
 - `/en/responsible-gaming`
 - `/en/journal/understanding-rtp`
 

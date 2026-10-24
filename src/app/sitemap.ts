@@ -19,7 +19,6 @@ const staticRoutes = [
   "/bonuses",
   "/collections",
 
-  "/regions",
   "/regions/great-britain",
   "/about",
 ];

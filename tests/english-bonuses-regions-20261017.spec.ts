@@ -3,7 +3,6 @@ import { languageHref, translatedCounterpart } from "../src/lib/locales";
 
 const pairs = [
   ["/bonuses", "/en/bonuses"],
-  ["/regions", "/en/regions"],
   ["/regions/great-britain", "/en/regions/great-britain"],
 ] as const;
 
@@ -44,7 +43,7 @@ test("Great Britain guide links the official regulator and excludes Northern Ire
   await expect(page.locator("#conditions tbody tr")).toHaveCount(5);
 });
 
-test("all three guides avoid mobile overflow", async ({ page }) => {
+test("practical guides avoid mobile overflow", async ({ page }) => {
   test.setTimeout(90_000);
   for (const width of [320, 390, 768, 1024, 1440]) {
     await page.setViewportSize({ width, height: 900 });

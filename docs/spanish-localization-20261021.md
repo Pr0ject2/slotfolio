@@ -6,8 +6,8 @@ new research claims, replacement artwork, indexing change, or Wave 88.
 
 ## Stage 1: foundation
 
-Seven complete pages: `/es`, `/es/about`, `/es/editorial-policy`, `/es/privacy`,
-`/es/disclosure`, `/es/responsible-gaming`, `/es/journal/understanding-rtp`.
+Initial complete pages: `/es`, `/es/about`, `/es/editorial-policy`, `/es/privacy`,
+`/es/responsible-gaming`, `/es/journal/understanding-rtp`.
 The existing navigation, language storage and static document-language script now
 support RU/EN/ES. Manual selection retains the current query and anchor; a saved
 Spanish preference cannot discard an untranslated direct game link.
@@ -16,8 +16,7 @@ Only complete routes belong in `spanishReadyPaths`. Canonical and reciprocal
 hreflang use real translations. Global noindex and the existing sitemap policy
 remain unchanged. Until a destination has its complete Spanish translation,
 visitor-facing links explicitly say "en inglés" rather than presenting English
-content as Spanish. The affiliate disclosure reflects the actual outbound casino
-selection link without promising any game's regional availability or a bonus.
+content as Spanish.
 Existing RU/EN privacy copy now names the three-language selector.
 
 Spanish uses neutral, direct wording: `tragamonedas`, `tirada`, `proveedor`,

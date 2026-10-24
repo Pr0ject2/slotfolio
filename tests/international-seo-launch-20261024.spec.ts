@@ -7,16 +7,16 @@ import { readFileSync } from "node:fs";
 
 test("international sitemap contains reciprocal indexable RU EN ES pages and 100 guides per language", () => {
   const entries = sitemap();
-  expect(entries).toHaveLength(444);
-  expect(new Set(entries.map((e) => e.url)).size).toBe(444);
+  expect(entries).toHaveLength(438);
+  expect(new Set(entries.map((e) => e.url)).size).toBe(438);
   for (const locale of ["ru", "en", "es"]) {
     const localized = entries.filter((e) => {
       const path = new URL(e.url).pathname.replace(/^\/slotfolio(?=\/|$)/, "");
       return locale === "ru"
         ? !/^\/(en|es)(\/|$)/.test(path)
-        : path.startsWith("/" + locale + "/");
+        : path === "/" + locale || path.startsWith("/" + locale + "/");
     });
-    expect(localized).toHaveLength(148);
+    expect(localized).toHaveLength(146);
     expect(
       localized.filter((e) => /\/slots\/[^/]+\/?$/.test(e.url)),
     ).toHaveLength(100);
@@ -97,7 +97,7 @@ test("actual export has matching canonical hreflang and crawl controls without o
     origin: process.env.CI ? "https://example.invalid" : siteUrl(),
     indexable: indexingEnabled(),
   });
-  expect(result.urls).toBe(444);
+  expect(result.urls).toBe(438);
   expect(result.catalogNoindex).toBe(2700);
   expect(result.dossiers).toEqual({ ru: 100, en: 100, es: 100 });
 });
@@ -132,3 +132,4 @@ for (const locale of ["ru", "en", "es"])
       indexingEnabled() ? /^index, follow$/ : /noindex/,
     );
   });
+

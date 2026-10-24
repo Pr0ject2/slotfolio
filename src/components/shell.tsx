@@ -195,7 +195,7 @@ export function Footer() {
           <Link href="/en/about">About</Link>
           <Link href="/en/editorial-policy">Editorial policy</Link>
           <Link href="/en/privacy">Privacy</Link>
-          <Link href="/en/disclosure">Affiliate disclosure</Link>
+
         </div>
         <div className="footer-responsibility">
           <span className="age">18+</span>
@@ -206,7 +206,7 @@ export function Footer() {
       <div className="footer-bottom">
         <span>© 2026 Slotfolio</span>
         <Link href="/en/privacy">Privacy</Link>
-        <Link href="/en/disclosure">Disclosure</Link>
+
       </div>
     </footer>
   );
@@ -232,7 +232,7 @@ export function Footer() {
         </div>
         <div>
           <span className="eyebrow">Ориентироваться</span>
-          <Link href="/regions">Страны и доступность</Link>
+
           <Link href="/bonuses">Как устроены бонусы</Link>
           <Link href="/about">О проекте</Link>
           <Link href="/editorial-policy">Редакционная политика</Link>
@@ -249,7 +249,7 @@ export function Footer() {
       <div className="footer-bottom">
         <span>© 2026 Slotfolio</span>
         <Link href="/privacy">Конфиденциальность</Link>
-        <Link href="/disclosure">Партнёрские отношения</Link>
+
       </div>
     </footer>
   );

@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test.use({ baseURL: process.env.AUDIT_BASE_URL || "http://localhost:3000" });
-const routes = ["/about", "/editorial-policy", "/privacy", "/disclosure", "/responsible-gaming"];
+const routes = ["/about", "/editorial-policy", "/privacy", "/responsible-gaming"];
 
 test("information pages provide working contents and useful destination links", async ({ page, request }) => {
   for (const route of routes) {
