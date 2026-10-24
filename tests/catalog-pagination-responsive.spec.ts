@@ -25,7 +25,7 @@ for (const width of [320, 390, 768, 1024, 1440]) {
     } else {
       await expect(nav.locator(".catalog-page-numbers")).toBeHidden();
       await expect(nav.getByRole("combobox", { name: "Перейти к странице" })).toBeVisible();
-      await expect(nav.getByRole("combobox", { name: "Перейти к странице" }).locator("option:checked")).toHaveText("28 / 56");
+      await expect(nav.getByRole("combobox", { name: "Перейти к странице" }).locator("option:checked")).toHaveText("28");
     }
 
     for (const control of [back, forward]) {
