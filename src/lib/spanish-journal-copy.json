@@ -1,0 +1,416 @@
+[
+  {
+    "slug": "reading-paytables",
+    "title": "Cómo leer la tabla de pagos de un juego",
+    "category": "Reglas del juego",
+    "description": "Dónde encontrar las reglas de las combinaciones ganadoras, cómo interpretar los multiplicadores de la apuesta y qué condiciones comprobar antes de girar.",
+    "sections": [
+      {
+        "id": "open-help",
+        "title": "Empieza por las reglas del juego exacto",
+        "paragraphs": [
+          "Abre el menú de información del juego. Puede llamarse Help, Paytable o Rules, o estar señalado con un icono de información. Mira más allá de las imágenes con premios por símbolo: también necesitas las reglas de la base, las condiciones del bonus y las explicaciones de las funciones especiales.",
+          "Confirma el título completo y el proveedor. Las secuelas con nombres como 1000, Megaways o Super Scatter pueden parecer conocidas y utilizar reglas distintas. La documentación del juego original no demuestra cómo funciona una secuela. Si el operador muestra una versión de RTP, registra ese ajuste por separado de la cifra de un catálogo."
+        ]
+      },
+      {
+        "id": "combination",
+        "title": "Comprueba qué cuenta realmente como premio",
+        "paragraphs": [
+          "Junto a cada símbolo, la tabla de pagos suele indicar cuántas coincidencias hacen falta y el premio correspondiente. Identifica después la regla de posición: una línea de pago, rodillos consecutivos, grupos adyacentes o coincidencias en cualquier parte del tablero. Que aparezcan tres símbolos iguales en pantalla no significa necesariamente que generen un premio.",
+          "Comprueba la dirección de recuento, el número mínimo de símbolos y las excepciones. Lee por separado las reglas de scatter y comodines: los símbolos especiales pueden activar una función, sustituir a otros o desempeñar más de una función."
+        ],
+        "example": {
+          "title": "Un ejemplo de un juego concreto",
+          "text": "Sweet Bonanza cuenta los símbolos iguales en todo el tablero, por lo que no hace falta trazar una línea de pago entre ellos. Es una regla de ese juego, no una propiedad compartida por todas las tragamonedas con cascadas."
+        }
+      },
+      {
+        "id": "units",
+        "title": "Averigua sobre qué apuesta se calcula el premio",
+        "paragraphs": [
+          "La indicación 10× está incompleta hasta que sabes qué multiplica. Puede referirse a la apuesta total, a la apuesta por línea o a otra unidad definida en la tabla de pagos. No traslades el método de cálculo de un juego a otro sin comprobarlo.",
+          "El premio mostrado y el cambio de tu saldo son cantidades distintas. Si una ronda cuesta 20 unidades y paga 10, el cambio neto es −10. Una animación que celebre el premio no cambia esa cuenta."
+        ],
+        "example": {
+          "title": "Cálculo ilustrativo, no parámetros de un juego real",
+          "text": "Si la tabla de pagos especifica expresamente 5× la apuesta total y apuestas 20 unidades, el premio es de 100 unidades. El cambio neto de esa ronda es 100 − 20 = +80. El cálculo sería distinto si el multiplicador se basara en la apuesta por línea."
+        }
+      },
+      {
+        "id": "check",
+        "title": "Cinco preguntas para una tabla de pagos",
+        "paragraphs": [
+          "Lee por separado las condiciones de los multiplicadores y las restricciones de premio máximo: pueden aplicarse a una combinación de símbolos, a una cascada o a toda la ronda. Una tabla de pagos indica cuánto paga un resultado válido; no revela la probabilidad de cada combinación."
+        ],
+        "checks": [
+          "¿Qué posiciones de símbolos forman un premio válido?",
+          "¿Qué unidad de apuesta se usa para calcular los premios indicados?",
+          "¿Qué símbolos no puede sustituir un comodín?",
+          "¿Cuándo se aplica un multiplicador y cuándo se reinicia?",
+          "¿Dónde se encuentra el ajuste real de RTP y los límites de la ronda?"
+        ]
+      }
+    ],
+    "related": [
+      {
+        "href": "/es/journal/payout-systems",
+        "label": "Líneas, formas de ganar y grupos explicados"
+      },
+      {
+        "href": "/es/mechanics",
+        "label": "Explora las mecánicas de juego"
+      },
+      {
+        "href": "/es/slots/sweet-bonanza",
+        "label": "Guía del juego Sweet Bonanza"
+      }
+    ],
+    "sources": [
+      {
+        "href": "https://www.pragmaticplay.com/en/games/sweet-bonanza-slot/",
+        "label": "Pragmatic Play: descripción de Sweet Bonanza"
+      },
+      {
+        "href": "https://www.gamblingcommission.gov.uk/public-and-players/guide/return-to-player-how-much-gaming-machines-payout",
+        "label": "Gambling Commission: qué significa el RTP"
+      }
+    ]
+  },
+  {
+    "slug": "payout-systems",
+    "title": "Líneas, formas de ganar y grupos: cómo se forman los premios",
+    "category": "Mecánicas del juego",
+    "description": "Cuatro sistemas para formar combinaciones ganadoras y por qué las cascadas son una regla distinta de la que determina qué símbolos pagan.",
+    "sections": [
+      {
+        "id": "lines",
+        "title": "Las líneas de pago siguen rutas definidas",
+        "paragraphs": [
+          "En un juego de líneas de pago, los símbolos válidos deben seguir una de las rutas entre rodillos indicadas en las reglas. Una ruta puede ser recta o en zigzag. Comprueba tanto su forma como la dirección en que se cuentan las combinaciones: una cadena visible de símbolos iguales no es automáticamente una línea válida.",
+          "El número de líneas de pago describe cómo se organiza un juego. Por sí solo no indica cuál de dos juegos ofrece mayor probabilidad de ganar, mejor RTP o un premio futuro más grande. La geometría del tablero no basta para establecer esas cifras."
+        ],
+        "checks": [
+          "¿Las líneas de pago son fijas o seleccionables?",
+          "¿En qué rodillo empieza una combinación premiada?",
+          "¿Cuál es el número mínimo de coincidencias para cada símbolo?"
+        ]
+      },
+      {
+        "id": "ways",
+        "title": "Las formas de ganar cuentan rodillos consecutivos, no líneas dibujadas",
+        "paragraphs": [
+          "En un sistema habitual de formas de ganar, los símbolos no tienen que seguir una línea dibujada previamente. En su lugar, se cuentan los símbolos iguales válidos de rodillos consecutivos en las posiciones permitidas. Las reglas del juego siguen determinando dónde empieza la secuencia y qué longitud debe tener.",
+          "Una cifra elevada de vías anunciadas describe los recorridos disponibles entre símbolos, no la probabilidad de premio ni el número de premios de un giro. Si cambia la altura de los rodillos, el número de vías posibles también puede cambiar."
+        ],
+        "example": {
+          "title": "Una ilustración simplificada",
+          "text": "Supongamos que un símbolo válido ocupa dos posiciones en el primer rodillo, una en el segundo y tres en el tercero. Eso da 2 × 1 × 3 = 6 recorridos posibles. El ejemplo ilustra cómo se cuentan las posiciones; que algún recorrido pague y cuánto pague dependen del juego concreto."
+        }
+      },
+      {
+        "id": "clusters",
+        "title": "Los grupos no son lo mismo que las coincidencias en cualquier posición",
+        "paragraphs": [
+          "Un grupo exige símbolos iguales conectados. Comprueba qué tipo de proximidad se permite. No cuentes símbolos que solo se tocan en diagonal cuando las reglas permiten únicamente conexiones por los lados.",
+          "En un juego Pay Anywhere, los símbolos iguales pueden no necesitar tocarse: el juego los cuenta en todo el tablero, independientemente de su posición. Reactoonz y Sweet Bonanza ilustran esta distinción. Un tablero parecido no hace intercambiables sus requisitos de pago."
+        ],
+        "checks": [
+          "¿Los símbolos válidos deben tocarse?",
+          "¿Cuántos símbolos iguales deben estar en un mismo grupo?",
+          "¿Los grupos separados de un mismo símbolo se suman o se cuentan por separado?"
+        ]
+      },
+      {
+        "id": "cascades",
+        "title": "Una cascada ocurre después de un premio válido",
+        "paragraphs": [
+          "Una cascada describe cómo cambia el tablero después de un premio: se retiran los símbolos ganadores y otros nuevos ocupan los espacios que dejan. Primero, el juego determina si los símbolos forman una combinación ganadora según sus reglas de pago. Después ocurre la cascada. Por eso pueden coexistir los premios por grupos y las cascadas.",
+          "Al comparar juegos, anota dos respuestas por separado: «¿Qué hace que una combinación gane?» y «¿Qué ocurre con el tablero después de ganar?». Esto resulta más útil que agrupar todos los juegos sin líneas de pago en una misma categoría."
+        ],
+        "example": {
+          "title": "Lleva la distinción a la práctica",
+          "text": "Compara Sweet Bonanza y Reactoonz. Primero comprueba si los símbolos iguales tienen que ser vecinos. Examina después qué efectos adicionales vincula cada juego a los símbolos en cascada."
+        }
+      }
+    ],
+    "related": [
+      {
+        "href": "/es/journal/reading-paytables",
+        "label": "Cómo leer una tabla de pagos"
+      },
+      {
+        "href": "/es/slots/reactoonz",
+        "label": "Guía del juego Reactoonz"
+      },
+      {
+        "href": "/es/mechanics",
+        "label": "Índice de mecánicas del juego"
+      }
+    ],
+    "sources": [
+      {
+        "href": "https://www.pragmaticplay.com/en/games/sweet-bonanza-slot/",
+        "label": "Pragmatic Play: reglas de Sweet Bonanza"
+      },
+      {
+        "href": "https://www.playngo.com/games/reactoonz",
+        "label": "Play’n GO: mecánica de grupos de Reactoonz"
+      },
+      {
+        "href": "https://client.pragmaticplay.com/wp-content/uploads/2022/11/5-Rabbit-Megaways.pdf",
+        "label": "Pragmatic Play: reglas de 5 Rabbit Megaways (PDF)"
+      }
+    ]
+  },
+  {
+    "slug": "wild-and-scatter",
+    "title": "Símbolos Wild y Scatter: qué dicen realmente las reglas",
+    "category": "Símbolos y funciones",
+    "description": "Sustituciones, activadores de giros gratis, comodines fijos y multiplicadores: cómo distinguir las funciones de cada símbolo.",
+    "sections": [
+      {
+        "id": "wild",
+        "title": "Comodines: averigua primero qué pueden sustituir",
+        "paragraphs": [
+          "Un comodín suele ayudar a formar una combinación ganadora al ocupar el lugar de un símbolo normal. El juego determina qué símbolos puede sustituir y cuáles no. Nunca supongas que un comodín puede sustituir a un scatter, un símbolo con valor monetario u otro icono especial.",
+          "El sistema de pago también importa. En una línea, un comodín debe contribuir a una combinación válida a lo largo de esa ruta. En un juego de premios por grupos, importan su posición y los símbolos vecinos. La palabra WILD en un símbolo no hace intercambiables esas reglas."
+        ],
+        "checks": [
+          "¿Qué símbolos puede sustituir este comodín?",
+          "¿Tiene un premio por combinaciones de los propios comodines?",
+          "¿En qué rodillos puede aparecer?"
+        ]
+      },
+      {
+        "id": "scatter",
+        "title": "Scatters: distingue el premio del activador de una función",
+        "paragraphs": [
+          "Los símbolos scatter suelen activar giros gratis u otra función. Consulta en la tabla de pagos el número exacto necesario, las posiciones válidas y las condiciones de activación. El nombre scatter, por sí solo, no revela esos detalles.",
+          "Un mismo símbolo especial puede tener más de una finalidad. Los premios normales, los activadores de funciones y los giros adicionales durante un bonus activo pueden tener reglas separadas. No supongas que el umbral de activación de la base se mantiene durante los giros gratis."
+        ],
+        "example": {
+          "title": "Una distinción en Sweet Bonanza",
+          "text": "Pragmatic Play describe los símbolos scatter y los multiplicadores del bonus como funciones separadas. Que aparezca un símbolo especial no significa que cada multiplicador se aplique automáticamente a todos los premios."
+        }
+      },
+      {
+        "id": "variants",
+        "title": "Los comodines fijos, expansivos y móviles añaden reglas diferentes",
+        "paragraphs": [
+          "Un comodín fijo permanece en una posición durante el periodo indicado en las reglas. Un comodín expansivo ocupa posiciones adicionales o un rodillo. Un comodín móvil cambia de posición cuando ocurre un evento concreto. Comprueba estos comportamientos por separado de su función básica de sustitución.",
+          "The Dog House es un ejemplo de comodines fijos durante los giros gratis, mientras que Jammin’ Jars tiene tarros comodín que pueden moverse y aumentar sus multiplicadores después de participar en premios. Estos ejemplos aclaran las diferencias, pero la tabla de pagos de la versión concreta del juego sigue siendo la referencia."
+        ],
+        "checks": [
+          "¿Qué activa el comportamiento adicional?",
+          "¿Durante cuántos giros o cascadas puede seguir activo?",
+          "¿Qué funciones acumuladas se reinician al terminar el bonus?"
+        ]
+      },
+      {
+        "id": "multiplier",
+        "title": "Multiplicadores: averigua qué modifica la cifra",
+        "paragraphs": [
+          "Una indicación como 3× puede aplicarse a un símbolo, una línea, un grupo o el resultado de una cascada. El tratamiento de varios multiplicadores también varía: algunos juegos suman sus valores y otros aplican reglas distintas. No existe una fórmula universal para todas las tragamonedas.",
+          "Anota cuatro puntos: qué activa el multiplicador, a qué premio afecta, cuánto dura y qué lo reinicia. Si falta una respuesta, consulta esa parte de la tabla de pagos en lugar de intentar deducir la regla a partir de la animación."
+        ],
+        "example": {
+          "title": "Una plantilla para comprobar la tabla de pagos",
+          "text": "«El comodín se vuelve fijo cuando…; sustituye a…; permanece hasta…; su multiplicador se aplica a…». Completa cada hueco con las reglas del juego. Si los detalles no están documentados, deja la pregunta abierta."
+        }
+      }
+    ],
+    "related": [
+      {
+        "href": "/es/slots/the-dog-house",
+        "label": "Guía de The Dog House: comodines fijos"
+      },
+      {
+        "href": "/es/slots/jammin-jars",
+        "label": "Guía de Jammin’ Jars: tarros comodín móviles"
+      },
+      {
+        "href": "/es/journal/reading-paytables",
+        "label": "Cómo leer una tabla de pagos"
+      }
+    ],
+    "sources": [
+      {
+        "href": "https://www.pragmaticplay.com/en/games/sweet-bonanza-slot/",
+        "label": "Pragmatic Play: Sweet Bonanza"
+      },
+      {
+        "href": "https://www.pragmaticplay.com/en/games/the-dog-house/",
+        "label": "Pragmatic Play: The Dog House"
+      },
+      {
+        "href": "https://www.pushgaming.com/games/jammin-jars.html",
+        "label": "Push Gaming: Jammin’ Jars"
+      }
+    ]
+  },
+  {
+    "slug": "volatility-and-hit-frequency",
+    "title": "Volatilidad, frecuencia de premios y RTP no son lo mismo",
+    "category": "Cifras del juego",
+    "description": "Por qué un RTP parecido no implica premios parecidos y por qué cobrar a menudo no significa necesariamente que el saldo aumente.",
+    "sections": [
+      {
+        "id": "three-metrics",
+        "title": "Tres medidas, tres preguntas diferentes",
+        "paragraphs": [
+          "El retorno al jugador (RTP) es la proporción teórica de las apuestas totales que se devuelve en premios a lo largo de una cantidad muy grande de partidas. La volatilidad describe la dispersión de los resultados posibles. La frecuencia de premios indica con qué frecuencia ocurre un evento ganador definido. Antes de comparar cifras de frecuencia, averigua qué cuenta cada fuente como evento.",
+          "Las etiquetas como alta y baja no forman una escala numérica universal. Las descripciones de volatilidad de un proveedor no pueden equipararse automáticamente a las de otro. Si una fuente no explica su método, mantén visible esa incertidumbre en lugar de convertir una etiqueta en un pronóstico preciso."
+        ]
+      },
+      {
+        "id": "example",
+        "title": "Un mismo premio total puede tener un aspecto completamente distinto",
+        "paragraphs": [
+          "Un ejemplo deliberadamente artificial muestra la diferencia entre el total devuelto y la distribución de resultados. No es el modelo matemático de una tragamonedas existente y un historial breve no permite establecer las características subyacentes de un juego real."
+        ],
+        "example": {
+          "title": "Diez rondas hipotéticas con una apuesta de 1 unidad cada una",
+          "text": "El escenario A paga 1 unidad en nueve rondas y cero en una: devuelve 9 unidades. El escenario B paga 9 unidades en una ronda y cero en las otras nueve: también devuelve 9 unidades. Las apuestas y los premios totales son idénticos, pero difieren el número y la distribución de los eventos premiados. Diez observaciones no permiten establecer el RTP teórico de un juego."
+        },
+        "checks": [
+          "No confundas el dinero total pagado con el número de eventos premiados.",
+          "No intentes calcular la volatilidad de un juego a partir de un vídeo o una sesión breve.",
+          "No interpretes volatilidad alta como la probabilidad de un resultado concreto."
+        ]
+      },
+      {
+        "id": "balance",
+        "title": "Un premio no implica una ronda rentable",
+        "paragraphs": [
+          "Si un giro cuesta 10 unidades y entrega 4, tu saldo baja 6 unidades en esa ronda. El juego puede celebrar el evento como premio aunque no cubra la apuesta inicial.",
+          "Una cifra de frecuencia de premios es difícil de interpretar sin su definición. ¿Cuenta todos los premios distintos de cero, solo los superiores a la apuesta, las activaciones de bonus u otro evento? No trates como comparables porcentajes definidos de manera distinta."
+        ]
+      },
+      {
+        "id": "limits",
+        "title": "Qué no pueden decirte estas cifras",
+        "paragraphs": [
+          "Ni el RTP ni la volatilidad indican cuántos giros faltan para un bonus. En los juegos con resultados aleatorios independientes, las pérdidas anteriores no obligan al siguiente giro a compensarlas. Algunos juegos sí tienen funciones progresivas internas; sus reglas concretas deben leerse por separado.",
+          "Una cifra sin verificar en el catálogo es información que falta, no una frecuencia de premios igual a cero ni una señal de riesgo bajo. Al comparar juegos, utiliza cifras de las mismas versiones pertinentes y deja explícitos los vacíos de información."
+        ],
+        "checks": [
+          "Busca la fuente de cada cifra y cómo se define.",
+          "Comprueba el ajuste de RTP de la versión realmente disponible.",
+          "Nunca uses una racha de resultados anteriores como motivo para aumentar la apuesta."
+        ]
+      }
+    ],
+    "related": [
+      {
+        "href": "/es/journal/understanding-rtp",
+        "label": "Qué significa realmente el RTP"
+      },
+      {
+        "href": "/es/journal/comparing-games",
+        "label": "Cómo comparar dos juegos"
+      },
+      {
+        "href": "/es/responsible-gaming",
+        "label": "Juego responsable y límites"
+      }
+    ],
+    "sources": [
+      {
+        "href": "https://www.gamblingcommission.gov.uk/public-and-players/guide/return-to-player-how-much-gaming-machines-payout",
+        "label": "Gambling Commission: retorno al jugador y resultados aleatorios"
+      },
+      {
+        "href": "https://www.gamblingcommission.gov.uk/licensees-and-businesses/guide/live-return-to-player-performance-monitoring-of-games-of-chance",
+        "label": "Gambling Commission: RTP observado, volatilidad y resultados"
+      }
+    ]
+  },
+  {
+    "slug": "comparing-games",
+    "title": "Cómo comparar dos juegos sin declarar un ganador",
+    "category": "Uso del catálogo",
+    "description": "Un método práctico para comparar reglas, funciones y datos verificados sin adivinar cifras ausentes ni mezclar ajustes de RTP incompatibles.",
+    "sections": [
+      {
+        "id": "question",
+        "title": "Empieza con una pregunta que puedas responder",
+        "paragraphs": [
+          "Preguntar qué juego es mejor resulta demasiado amplio. Prueba algo concreto: ¿deben tocarse los símbolos ganadores?, ¿qué ocurre con el tablero después de un premio?, ¿cuándo puede aplicarse un multiplicador?, ¿en qué difieren dos bonus pese a utilizar el mismo tablero?",
+          "Elige dos juegos con un elemento en común. Sweet Bonanza y Reactoonz, por ejemplo, utilizan cascadas, pero tienen reglas distintas sobre qué constituye una combinación ganadora. Compararlos permite separar la renovación del tablero de las condiciones de pago."
+        ],
+        "example": {
+          "title": "Escribe una pregunta de comparación",
+          "text": "«Ambos juegos utilizan cascadas. Quiero saber si los símbolos deben tocarse y qué efectos adicionales pueden ocurrir después de un premio». La respuesta puede comprobarse en secciones concretas de la guía de cada juego."
+        }
+      },
+      {
+        "id": "open",
+        "title": "Abre la tabla comparativa de Slotfolio",
+        "paragraphs": [
+          "Selecciona Comparar en dos juegos con guías editoriales completas y abre la tabla. Admite dos juegos a la vez; quita uno antes de añadir un tercero. En pantallas estrechas puede ser necesario desplazar la tabla horizontalmente.",
+          "Una ficha breve de catálogo puede no incluir el botón Comparar porque no contiene la misma profundidad de información investigada que una guía completa. Eso no dice nada sobre la calidad del juego: los datos disponibles y verificados pueden leerse en su propia página."
+        ],
+        "checks": [
+          "Confirma los títulos exactos y los proveedores.",
+          "Compara las reglas de las combinaciones ganadoras y el tablero.",
+          "Separa las funciones disponibles en la base de las exclusivas del bonus."
+        ]
+      },
+      {
+        "id": "unknown",
+        "title": "No conviertas un dato desconocido en una estimación",
+        "paragraphs": [
+          "Un valor ausente no es cero. Si un premio máximo o una frecuencia de bonus no están respaldados por una fuente, esa comparación queda sin resolver. Una cifra grande impresa en una imagen promocional no indica la probabilidad de alcanzarla.",
+          "Compara con cuidado las configuraciones de RTP: un mismo título puede tener varios ajustes. Conserva la escala y los términos de volatilidad de la fuente original. Una misma etiqueta descriptiva utilizada por proveedores diferentes puede no representar la misma medida."
+        ],
+        "example": {
+          "title": "Una forma precisa de registrar la incertidumbre",
+          "text": "«El juego A tiene dos variantes de RTP confirmadas; el juego B tiene un ajuste documentado en la fuente disponible. Todavía no se han cotejado las versiones ofrecidas por los operadores». Esto es más preciso que llamar a un juego más rentable a partir de cifras incompatibles."
+        }
+      },
+      {
+        "id": "conclusion",
+        "title": "Termina con una diferencia en las reglas",
+        "paragraphs": [
+          "Una conclusión útil es concreta: «un juego exige grupos adyacentes y otro cuenta coincidencias en cualquier posición del tablero», o «un bonus mantiene los comodines en su sitio y otro los mueve después de un premio».",
+          "Esa conclusión ayuda a explicar cómo funciona un juego. No permite predecir lo que devolverá una sesión ni es un motivo para apostar más. Si la respuesta depende de un ajuste o una versión desconocidos, indícalo junto a la comparación."
+        ],
+        "checks": [
+          "¿Qué tienen realmente en común los juegos?",
+          "¿Qué regla concreta es diferente?",
+          "¿Qué fuente respalda esa conclusión?",
+          "¿Qué sigue sin saberse?"
+        ]
+      }
+    ],
+    "related": [
+      {
+        "href": "/es/compare",
+        "label": "Abrir la tabla comparativa"
+      },
+      {
+        "href": "/es/slots",
+        "label": "Elige dos juegos del catálogo"
+      },
+      {
+        "href": "/es/journal/volatility-and-hit-frequency",
+        "label": "RTP, volatilidad y frecuencia de premios explicados"
+      }
+    ],
+    "sources": [
+      {
+        "href": "/es/editorial-policy",
+        "label": "Cómo comprueba Slotfolio los datos y trata las fuentes contradictorias"
+      },
+      {
+        "href": "/es/slots/sweet-bonanza",
+        "label": "Guía completa de Sweet Bonanza y sus referencias"
+      },
+      {
+        "href": "/es/slots/reactoonz",
+        "label": "Guía completa de Reactoonz y sus referencias"
+      }
+    ]
+  }
+]

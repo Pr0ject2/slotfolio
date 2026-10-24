@@ -7,4 +7,7 @@ export const spanishReadyPaths = [
   "/mechanics/lines", "/mechanics/collect", "/mechanics/ways",
   "/providers",
   "/compare",
+  "/journal", "/journal/how-cascades-work", "/journal/reading-paytables",
+  "/journal/payout-systems", "/journal/wild-and-scatter",
+  "/journal/volatility-and-hit-frequency", "/journal/comparing-games",
 ] as const;

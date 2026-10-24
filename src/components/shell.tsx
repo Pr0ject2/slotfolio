@@ -54,7 +54,7 @@ export function Header() {
     return () => desktop.removeEventListener("change", reset);
   }, []);
   const links = spanish
-    ? [["/es", "Inicio"], ["/es/slots", "Catálogo"], ["/es/search", "Buscar"], ["/es/journal/understanding-rtp", "Guía del RTP"], ["/es/about", "Acerca de"], ["/es/editorial-policy", "Criterios editoriales"]]
+    ? [["/es", "Inicio"], ["/es/slots", "Catálogo"], ["/es/search", "Buscar"], ["/es/journal", "Revista"], ["/es/about", "Acerca de"], ["/es/editorial-policy", "Criterios editoriales"]]
     : english
     ? [["/en", "Home"], ["/en/slots", "Catalogue"], ["/en/search", "Search"], ["/en/journal/understanding-rtp", "RTP guide"], ["/en/about", "About"], ["/en/editorial-policy", "Editorial policy"]]
     : [["/slots", "Слоты"], ["/mechanics", "Механики"], ["/journal", "Разборы"], ["/collections", "Подборки"]];

@@ -18,6 +18,7 @@ export function SpanishFooter() {
           <Link href="/es/providers">Proveedores</Link>
           <Link href="/es/mechanics">Mecánicas</Link>
           <Link href="/es/compare">Comparar juegos</Link>
+          <Link href="/es/journal">Revista y guías</Link>
         </div>
         <div>
           <span className="eyebrow">Acerca de Slotfolio</span>
