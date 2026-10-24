@@ -15,7 +15,8 @@ test("editorial, privacy and partnership pages speak to visitors", async ({ page
 
   await page.goto("/disclosure");
   await expect(page.getByRole("heading", { name: "Источники и предложения" })).toBeVisible();
-  await expect(page.locator("main")).toContainText("Сейчас на Slotfolio нет действующих партнёрских предложений");
+  await expect(page.locator("main")).toContainText("партнёрская ссылка на общую подборку казино");
+  await expect(page.locator("main")).not.toContainText("нет действующих партнёрских предложений");
   await expect(page.locator("main")).not.toContainText("атрибутами sponsored");
   await expect(page.locator("main")).not.toContainText("Партнёрский адрес 1win");
 });
