@@ -17,10 +17,9 @@ export default function Page() {
       <Breadcrumbs items={[{ label: "Каталог слотов" }]} />
       <div className="page-heading utility-heading">
         <div>
-          <span className="eyebrow accent">1000 игр в одном месте</span>
+          <span className="eyebrow accent">Игры, правила и механики</span>
           <h1>
             Каталог слотов
-            <span className="title-count">{String(model.facets.total).padStart(2, "0")}</span>
           </h1>
         </div>
         <p>

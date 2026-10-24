@@ -99,7 +99,7 @@ export function CatalogGameCard({ item, number, locale = "ru" }: { item: Catalog
     >
       {hasArtwork ? <Link className={`catalog-game-art ${styles.art}`} href={destination} aria-label={openLabel}>{spanish ? <SlotArtwork className="game-image" src={withBasePath(resolvedImage)} alt={`Imagen de ${item.name}`} width={500} height={280} loading="lazy" decoding="async" /> : <GameImage slot={{ ...item, image: resolvedImage }} />}</Link> : null}
 
-      <div className="catalog-game-copy">
+      <div className={`catalog-game-copy ${styles.copy}`}>
         <div className={styles.metaRow}>
           <span className={styles.number} aria-label={spanish ? `Juego ${number}` : locale === "en" ? `Catalogue entry ${number}` : `Номер карточки ${number}`}>№ {number}</span>
           <span className="eyebrow">

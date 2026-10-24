@@ -16,8 +16,8 @@ export default function EnglishCataloguePage() {
   return (
     <>
       <div className="page-heading utility-heading" lang="en">
-        <div><span className="eyebrow accent">{en.eyebrow}</span>
-          <h1>{en.heading}<span className="title-count">{model.facets.total}</span></h1>
+        <div><span className="eyebrow accent">Games, rules and mechanics</span>
+          <h1>{en.heading}</h1>
         </div>
         <p>{en.intro}</p>
       </div>

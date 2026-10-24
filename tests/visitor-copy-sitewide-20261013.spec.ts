@@ -55,7 +55,8 @@ test("provider and mechanic pages explain games, not internal samples", async ({
 
 test("catalog, comparison and game overview use readable labels", async ({ page }) => {
   await page.goto("/slots");
-  await expect(page.locator("main")).toContainText("1000 игр в одном месте");
+  await expect(page.locator(".page-heading")).toContainText("Игры, правила и механики");
+  await expect(page.locator(".page-heading")).not.toContainText("1000");
   await expect(page.locator(".results-count")).toHaveText("1000 игр");
   await expect(page.locator("main")).not.toContainText("проверенными источниками провайдеров");
 

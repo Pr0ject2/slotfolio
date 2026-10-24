@@ -25,7 +25,9 @@ for (const path of ["/slots", "/search"]) {
     await expect(mechanics.getByRole("radio", { name: "Все механики" })).toBeChecked();
     await expect(mechanics.getByRole("radio", { name: "Все механики" }).locator("..")).toHaveText("Все механики");
     await expect(mechanics).not.toContainText("Механика подтверждена");
-    await expect(mechanics.locator("label").nth(1).locator("span")).toHaveCount(1);
+    await expect(mechanics.locator("label").nth(1).locator("span")).toHaveCount(0);
+    await mechanics.getByRole("radio", { name: "Каскады", exact: true }).check();
+    await expect(page.locator(".results-count")).toHaveText("Найдено 147 из 1000");
   });
 }
 
