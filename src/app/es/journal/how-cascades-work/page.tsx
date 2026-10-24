@@ -67,6 +67,6 @@ export default function SpanishCascadesArticle(){const sweet=getSlot("sweet-bona
       </section>
     </article>
   </div>
-  <SectionTitle title="Explora las diferencias" href="/en/collections/beyond-lines" label="Ver tres ejemplos de juegos (en inglés)" />
+  <SectionTitle title="Explora las diferencias" href="/es/collections/beyond-lines" label="Ver tres ejemplos de juegos" />
   <div className="hub-list">{[sweet,reactoonz].flatMap(slot=>slot?[slot]:[]).map(slot=><Link href={`/es/slots/${slot.slug}`} key={slot.slug}><span className="number">Juego</span><h2>{slot.name}</h2><p>{slot.provider} · Lee la guía del juego y las referencias verificadas</p><b aria-hidden="true">↗</b></Link>)}</div>
 </div>;}

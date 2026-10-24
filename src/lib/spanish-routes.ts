@@ -10,4 +10,6 @@ export const spanishReadyPaths = [
   "/journal", "/journal/how-cascades-work", "/journal/reading-paytables",
   "/journal/payout-systems", "/journal/wild-and-scatter",
   "/journal/volatility-and-hit-frequency", "/journal/comparing-games",
+  "/collections", "/collections/beyond-lines", "/collections/cluster-features",
+  "/collections/wild-symbols", "/collections/five-by-three-bonuses",
 ] as const;
