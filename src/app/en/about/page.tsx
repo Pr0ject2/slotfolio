@@ -33,13 +33,13 @@ export default function AboutEnglish() {
             <h2>Find a game</h2>
             <p>Slotfolio currently lists 1,000 slot games. Search by name or choose a developer. Filters can help you narrow down mechanics and features if you do not know the title.</p>
             <p>Look at how wins are formed: along paylines, on adjacent reels, or across groups of symbols. Then read how any bonus is triggered and what it changes.</p>
-            <p><Link href="/slots">Open the catalogue (Russian)</Link></p>
+            <p><Link href="/en/slots">Open the English catalogue</Link></p>
           </section>
           <section id="compare">
             <h2>Compare games</h2>
             <p>Use the Compare buttons to add two games to the comparison table. Games without this button can still be viewed individually.</p>
             <p>Compare pay rules, features and RTP configurations. Different studios may use different volatility scales, and a stated maximum win does not indicate how often it happens.</p>
-            <p><Link href="/compare">Open comparison (Russian)</Link></p>
+            <p><Link href="/en/compare">Open the English comparison</Link></p>
           </section>
           <section id="verify">
             <h2>Check a game's figures</h2>
