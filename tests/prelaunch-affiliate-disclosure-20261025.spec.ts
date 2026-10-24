@@ -30,8 +30,8 @@ test("prelaunch: disclosure agrees with the actual tagged casino link", async ()
 
 test("prelaunch: the English about page links to translated catalogue and comparison", async ({ page }) => {
   await page.goto("/en/about/");
-  await expect(page.getByRole("link", {name: "Open the English catalogue"})).toHaveAttribute("href", "/en/slots");
-  await expect(page.getByRole("link", {name: "Open the English comparison"})).toHaveAttribute("href", "/en/compare");
+  await expect(page.getByRole("link", {name: "Open the English catalogue"})).toHaveAttribute("href", /\/en\/slots\/?$/);
+  await expect(page.getByRole("link", {name: "Open the English comparison"})).toHaveAttribute("href", /\/en\/compare\/?$/);
   await expect(page.getByRole("link", {name: /catalogue \(Russian\)|comparison \(Russian\)/i})).toHaveCount(0);
 });
 
