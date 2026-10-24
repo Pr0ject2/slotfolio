@@ -1,3 +1,4 @@
+import { chooseLanguage, openLanguagePicker } from "./language-picker-helpers";
 import { expect, test } from "@playwright/test";
 import { englishReadyPaths, languageHref } from "../src/lib/locales";
 
@@ -74,6 +75,7 @@ test("English site keeps readable navigation and mobile layout", async ({ page }
       if (width <= 600) {
         await page.getByRole("button", { name: /^Menu/ }).click();
       }
+      await openLanguagePicker(page);
       await expect(page.getByRole("link", { name: "RU", exact: true })).toBeVisible();
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth);
       expect(overflow, `horizontal overflow at ${width}px on ${path}`).toBeLessThanOrEqual(width + 1);
@@ -85,10 +87,10 @@ test("Russian routes keep their own text, language and a functioning English swi
   await page.goto("/about");
   await expect(page.locator("html")).toHaveAttribute("lang", "ru");
   await expect(page.locator("main")).toContainText("Как пользоваться Slotfolio");
-  await page.getByRole("link", { name: "EN", exact: true }).click();
+  await chooseLanguage(page, "EN");
   await expect(page).toHaveURL(/\/en\/about\/?$/);
   await expect(page.locator("main")).toContainText("How to use Slotfolio");
-  await page.getByRole("link", { name: "RU", exact: true }).click();
+  await chooseLanguage(page, "RU");
   await expect(page).toHaveURL(/\/about\/?$/);
 });
 
