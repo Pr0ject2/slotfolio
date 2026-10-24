@@ -50,7 +50,10 @@ for (const width of [320, 390, 768, 1024, 1440]) {
   test(`complete Spanish foundation pages remain readable at ${width}px`, async ({ page }, testInfo) => {
     test.setTimeout(90_000);
     await page.setViewportSize({ width, height: 1000 });
-    for (const path of spanishReadyPaths) {
+    // Short recovery/edition utilities have exact route, edition, artwork and
+    // keyboard assertions in spanish-completion.spec.ts. Keep the original
+    // long-form completeness threshold for all existing foundation pages.
+    for (const path of spanishReadyPaths.filter(path => !["/404", "/slots/gates-of-1win", "/slots/1win-bonanza"].includes(path))) {
       const route = path === "/" ? "/es" : `/es${path}`;
       expect((await page.goto(route))?.status()).toBe(200);
       await expect(page.locator("html")).toHaveAttribute("lang", "es");
@@ -96,18 +99,21 @@ test("Spanish, English and Russian switch between real counterparts and retain q
   await expect(page.locator("h1")).toHaveText("How to use Slotfolio");
 });
 
-test("Spanish browser detection respects direct untranslated section links", async ({ browser }) => {
+test("Spanish browser detection respects unknown links and opens completed legacy counterparts", async ({ browser }) => {
   const context = await browser.newContext({ locale: "es-MX" });
   const page = await context.newPage();
   await page.goto("/");
   await expect(page).toHaveURL(/\/es\/?$/);
   await page.evaluate(() => localStorage.setItem("slotfolio-language", "es"));
-  expect(hasTranslation("/slots/gates-of-1win", "es")).toBe(false);
+  expect(hasTranslation("/slots/not-published", "es")).toBe(false);
+  expect(languageHref("/slots/not-published", "es")).toBe("/es");
+  expect(languageAlternates("/slots/not-published")).not.toHaveProperty("es");
+  expect(hasTranslation("/slots/gates-of-1win", "es")).toBe(true);
   await page.goto("/en/slots/gates-of-1win/");
-  await expect(page.locator("h1")).toHaveText("Choose a game edition");
-  await expect(page).toHaveURL(/\/en\/slots\/gates-of-1win\/?$/);
-  await expect(page.locator('link[hreflang="es"]')).toHaveCount(0);
-  await expect(page.getByRole("link", { name: "ES", exact: true })).toHaveAttribute("href", /\/es\/?$/);
+  await expect(page.locator("h1")).toHaveText("Elige una edición del juego");
+  await expect(page).toHaveURL(/\/es\/slots\/gates-of-1win\/?$/);
+  await expect(page.locator('link[hreflang="es"]')).toHaveCount(1);
+  await expect(page.getByRole("link", { name: "EN", exact: true })).toHaveAttribute("href", /\/en\/slots\/gates-of-1win\/?$/);
   await page.goto("/en/slots/gates-of-olympus/");
   await expect(page).toHaveURL(/\/es\/slots\/gates-of-olympus\/?$/);
   await expect(page.locator("h1")).toHaveText("Gates of Olympus");

@@ -1,0 +1,6 @@
+/* Static hosts serve one shared 404. The existing pre-paint document-language
+   script selects its copy even before React hydrates. */
+.localized { display: none; }
+:global(html[lang="ru"]) .localized[lang="ru"],
+:global(html[lang="en"]) .localized[lang="en"],
+:global(html[lang="es"]) .localized[lang="es"] { display: block; }

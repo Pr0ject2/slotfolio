@@ -54,7 +54,7 @@ export function Header() {
     return () => desktop.removeEventListener("change", reset);
   }, []);
   const links = spanish
-    ? [["/es", "Inicio"], ["/es/slots", "Catálogo"], ["/es/search", "Buscar"], ["/es/journal", "Revista"], ["/es/about", "Acerca de"], ["/es/editorial-policy", "Criterios editoriales"]]
+    ? [["/es/slots", "Catálogo"], ["/es/mechanics", "Mecánicas"], ["/es/journal", "Revista"], ["/es/collections", "Selecciones"]]
     : english
     ? [["/en", "Home"], ["/en/slots", "Catalogue"], ["/en/search", "Search"], ["/en/journal/understanding-rtp", "RTP guide"], ["/en/about", "About"], ["/en/editorial-policy", "Editorial policy"]]
     : [["/slots", "Слоты"], ["/mechanics", "Механики"], ["/journal", "Разборы"], ["/collections", "Подборки"]];
@@ -121,11 +121,11 @@ export function Header() {
           ))}
         </nav>
         <div className="secondary-nav">
-          <Link href={spanish ? "/es/mechanics" : english ? "/en/slots" : "/providers"} onClick={() => setOpen(false)}>
-            {spanish ? "Mecánicas" : english ? "Catalogue" : "Провайдеры"}
+          <Link href={spanish ? "/es/providers" : english ? "/en/slots" : "/providers"} onClick={() => setOpen(false)}>
+            {spanish ? "Proveedores" : english ? "Catalogue" : "Провайдеры"}
           </Link>
-          <Link href={spanish ? "/es/responsible-gaming" : english ? "/en/responsible-gaming" : "/compare"} onClick={() => setOpen(false)}>
-            {spanish ? "Juego responsable" : english ? "Safer gambling" : "Сравнить игры"} <span>↗</span>
+          <Link href={spanish ? "/es/compare" : english ? "/en/responsible-gaming" : "/compare"} onClick={() => setOpen(false)}>
+            {spanish ? "Comparar juegos" : english ? "Safer gambling" : "Сравнить игры"} <span>↗</span>
           </Link>
           <div className={styles.languageChoices} role="group" aria-label={spanish ? "Idioma" : english ? "Language" : "Язык"}>
             {(["ru", "en", "es"] as const).filter(target => target !== locale).map(target => (

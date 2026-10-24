@@ -440,14 +440,67 @@ language counterparts, noindex, no document overflow, anchor navigation and
 table focus. Real mobile and desktop screenshots reviewed. No game data,
 artwork, dependency, indexing policy or CI requirements changed.
 
-## Remaining stages
+## Stage 29 — complete route parity and Spanish navigation
 
-1. The two retired-link edition choosers, localized loading/error/help states
-   and 404. Replace temporary English-labelled links only as counterparts become
-   available.
-2. Final parity against all 1052 original Russian content routes plus 404 and
-   all 1000 published games. Prepared translations above still require their
-   sequential exact-head CI, preview and production publication gates.
+Completed the two retired-link edition choosers with the exact existing game
+editions and local artwork, an explicit Spanish 404, segment not-found and
+retryable Spanish error state. The shared static 404 selects RU/EN/ES copy using
+the existing document-language script and scoped CSS, retaining recovery links
+in the same language and the 404/noindex response behavior.
+
+Spanish atlas navigation now exposes catalogue, mechanics, journal and
+collections, with providers and comparison alongside them. Completed Spanish
+destinations replace temporary links to English comparison/bonus/collection
+pages and Russian regional guidance. Removed the redundant Russian-original
+link from the fully translated catalogue pages. Missing Spanish game copy fails
+explicitly instead of silently falling back to another language.
+
+Validation: TypeScript PASS; production export 3162 pages; artwork 1008 PASS;
+asset-source security 4 PASS; final combined Playwright run 474 PASS. Inventory
+matches all 1052 Russian content routes plus 404 exactly: 1053 Spanish routes,
+no missing or extra routes. Every exported Spanish page is checked for internal
+destinations, missing files and untranslated content; language switches remain
+available. All 1000 published game identities and full translated content remain
+covered by existing strict source-parity checks.
+
+The first combined run found the edition-list overflow at 320 px and remaining
+cross-language links. Reused the existing responsive entity-game grid and fixed
+the destinations; the final run passes. The original >100-word completeness
+checks remain on every previously covered foundation page. The newly added
+short edition/recovery utilities have exact content, game membership, loaded
+artwork, keyboard, status/noindex and six-width checks in
+`spanish-completion.spec.ts` rather than padding their copy to an article length.
+The unknown-route boundary is retained and tested in all three languages.
+Real mobile and desktop screenshots were reviewed.
+
+No game data, published selection, artwork, original sources, sitemap, indexing
+policy or CI/security requirements changed. Wave 88 was not started.
+
+## Remaining publication gates
+
+The first #552 Cloudflare preview built successfully but exceeded Pages' 20000
+file limit. With explicit user authorization on 2026-10-23, the Cloudflare-only
+packaging reuses exactly 900 byte-identical full RSC payloads under
+`/es/slots/catalog/` through one internal 200 rule targeting their retained
+`index.txt`. All HTML, artwork, other RSC segments and GitHub Pages output are
+retained. Count, target existence, byte equality and the final file budget are
+validated before any generated copy is removed. Local inventory falls from
+20100 to 19201 files including the rule. Strict regressions cover unchanged
+assets/locales, differing or missing payloads, count/budget failures, existing
+rules and real keyboard navigation at 320/375/390/1440.
+Updated TypeScript and production build PASS (3162 pages); all nine new packing
+and browser checks PASS on that export. The earlier 474 combined checks and
+four local Linux-protocol simulation checks remain recorded above.
+
+The previous CI #2085 reached approximately 1540 passing cases without reported
+test failures, then exhausted the existing 25-minute job budget. CI Playwright
+now uses up to three available workers. Every test, assertion and security/
+artwork gate remains; the job time limit remains 25 minutes. Both superseded
+checks must be replaced by successful checks on the new final SHA.
+
+All Spanish content is prepared. Each pending PR still requires its exact-head
+CI and preview checks and sequential publication verification on both hosts;
+prepared content must not be reported as production content before those gates.
 
 Each stage requires a separate PR, exact-final-SHA CI success and a verified
 preview. The user explicitly authorized #529 and all subsequent Spanish stages

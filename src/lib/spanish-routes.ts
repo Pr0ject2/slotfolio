@@ -13,4 +13,5 @@ export const spanishReadyPaths = [
   "/collections", "/collections/beyond-lines", "/collections/cluster-features",
   "/collections/wild-symbols", "/collections/five-by-three-bonuses",
   "/bonuses", "/regions", "/regions/great-britain",
+  "/slots/gates-of-1win", "/slots/1win-bonanza", "/404",
 ] as const;
