@@ -25,8 +25,9 @@ test("researched catalog records use the full dossier information architecture",
     await expect(page.locator("#catalog-comparison h2")).toHaveText("Сравнение с другими играми");
     await expect(page.locator("#catalog-comparison .dossier-context-grid > div").first()).toBeVisible();
 
-    await expect(page.locator("#facts h2")).toHaveText("Факты и источники");
-    expect(await page.locator("#facts .source-note").count()).toBeGreaterThanOrEqual(1);
+    await expect(page.locator("#facts h2")).toHaveText("О параметрах игры");
+    await expect(page.locator("#facts")).toContainText("RTP");
+    await expect(page.locator("#facts a[href^='http']")).toHaveCount(0);
 
     await expect(page.locator("#faq h2")).toHaveText("Вопросы об игре");
     await expect(page.locator("#faq summary").first()).toContainText(slot.name);

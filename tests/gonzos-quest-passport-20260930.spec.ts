@@ -46,11 +46,6 @@ test("Gonzo's Quest renders verified release passport without hiding first-party
   await expect(summary).toContainText("2 200x");
 
   const facts = page.locator("#facts");
-  await expect(facts.locator(`a[href='${netentSource}']`)).toHaveCount(1);
-  await expect(facts).toContainText("Дата релиза и тип игры сверены по");
-  await expect(facts.getByRole("link", { name: /конфликтующим максимумом 2 500x/ })).toHaveCount(1);
-
-  const mathProfile = page.locator("#math-profile");
-  await expect(mathProfile).toContainText("2 200x");
-  await expect(mathProfile).toContainText("2 500x");
+  await expect(facts).toContainText("RTP");
+  await expect(facts.locator("a[href^='http']")).toHaveCount(0);
 });

@@ -315,7 +315,8 @@ test("catalog-only pages show game data without editorial coverage copy and stay
     await expect(page.getByText("Базовая запись", { exact: true })).toHaveCount(0);
     await expect(page.getByText("Покрытие данных", { exact: true })).toHaveCount(0);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
-    await expect(page.getByRole("link", { name: /Официальный каталог/ })).toHaveAttribute("href", seed.source);
+    expect(seed.source).toMatch(/^https:\/\//);
+    await expect(page.locator("#facts a[href^='http']")).toHaveCount(0);
   }
 });
 

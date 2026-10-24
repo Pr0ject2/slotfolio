@@ -1,20 +1,12 @@
 import { expect, test } from "@playwright/test";
-
-test("operator-backed dossier source is labeled by its actual host", async ({ page }) => {
+import { getSlot } from "../src/lib/data";
+test("operator source stays in evidence, not on public page", async ({ page }) => {
+  expect(getSlot("crypto-genesys")?.source).toBe("https://forum.1win.com/23-slot-games/");
   await page.goto("/slots/crypto-genesys");
-
-  const source = page.locator(
-    '#facts .source-note a[href="https://forum.1win.com/23-slot-games/"]',
-  );
-  await expect(source).toHaveText("forum.1win.com ↗");
-  await expect(page.locator("#facts")).not.toContainText("официальная страница Pragmatic Play");
+  await expect(page.locator("#facts a[href^='http']")).toHaveCount(0);
 });
-
-test("provider-backed dossier source keeps a transparent provider hostname", async ({ page }) => {
+test("provider source stays in evidence, not on public page", async ({ page }) => {
+  expect(getSlot("crown-coins")?.source).toBe("https://endorphina.com/games/crown-coins");
   await page.goto("/slots/crown-coins");
-
-  const source = page.locator(
-    '#facts .source-note a[href="https://endorphina.com/games/crown-coins"]',
-  );
-  await expect(source).toHaveText("endorphina.com ↗");
+  await expect(page.locator("#facts a[href^='http']")).toHaveCount(0);
 });

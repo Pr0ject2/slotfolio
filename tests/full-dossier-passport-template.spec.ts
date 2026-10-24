@@ -25,7 +25,6 @@ test("Gates of Olympus renders the shared full-dossier template", async ({ page 
   const summary = page.locator(".slot-summary .facts");
   await expect(summary).toContainText(passport.releaseDate);
   await expect(summary).toContainText(passport.gameType);
-  await expect(
-    page.locator("#facts").getByRole("link", { name: passport.sourceLabel }),
-  ).toHaveCount(1);
+  await expect(page.locator("#facts a[href^='http']")).toHaveCount(0);
+  await expect(page.locator("#facts")).toContainText("RTP");
 });

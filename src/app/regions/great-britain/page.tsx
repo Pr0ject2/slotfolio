@@ -35,7 +35,7 @@ export default function Page() {
           <a href="#register">Проверка лицензии</a>
           <a href="#conditions">Условия площадки</a>
           <a href="#operators">Что ещё проверить</a>
-          <a href="#sources">Источники</a>
+          <a href="#sources">Как проверить сведения</a>
         </nav>
         <article className="prose">
           <section id="register">
@@ -52,14 +52,7 @@ export default function Page() {
               конкретную компанию, действующий статус и связанный с ней адрес
               сайта.
             </p>
-            <a
-              className="text-link"
-              href="https://www.gamblingcommission.gov.uk/public-register/businesses"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Открыть официальный реестр ↗
-            </a>
+            <p>Для проверки используйте публичный реестр компаний Gambling Commission на официальном сайте регулятора.</p>
           </section>
           <section id="conditions">
             <h2>Что проверить до регистрации</h2>
@@ -118,22 +111,9 @@ export default function Page() {
             </div>
           </section>
           <section id="sources">
-            <h2>Первичные источники</h2>
-            <p>
-              <a href="https://www.gamblingcommission.gov.uk/public-register/businesses">
-                Реестр компаний Gambling Commission
-              </a>{" "}
-              и{" "}
-              <a href="https://www.gamblingcommission.gov.uk/public-and-players">
-                информация регулятора для пользователей
-              </a>
-              . Ссылки проверены 7 сентября 2026 года.
-            </p>
-            <p className="source-note">
-              Это справочная страница, а не персональная
-              юридическая консультация. Перед использованием сервиса проверяйте
-              актуальную запись и условия.
-            </p>
+            <h2>Как проверить сведения</h2>
+            <p>Найдите официальный реестр компаний и раздел для игроков на сайте Gambling Commission. Сверяйте актуальный статус лицензии и адрес площадки с условиями оператора.</p>
+            <p className="source-note">Это справочная страница, а не персональная юридическая консультация. Перед использованием сервиса проверяйте актуальную запись и условия.</p>
             <Link className="text-link" href="/responsible-gaming">
               Ответственная игра ↗
             </Link>

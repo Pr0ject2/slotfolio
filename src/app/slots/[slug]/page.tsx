@@ -247,7 +247,7 @@ export default async function Page({
           <a href="#math-profile">RTP и другие параметры</a>
           <a href="#editor-view">Взгляд редакции</a>
           <a href="#catalog-context">Похожие игры</a>
-          <a href="#facts">Правила и источники</a>
+          <a href="#facts">О параметрах</a>
           <a href="#faq">Вопросы об игре</a>
           <a href="#related">Похожие игры</a>
           <Link href="/compare">Открыть сравнение ↗</Link>
@@ -383,53 +383,6 @@ export default async function Page({
                 всегда ищите в правилах той версии, в которую собираетесь играть.
               </p>
             </div>
-            <p className="source-note">
-              Об игре рассказывает разработчик:{" "}
-              <a href={s.source} target="_blank" rel="noreferrer">
-                {s.source.replace(/^https?:\/\/(?:www\.)?/, "").split("/")[0]} ↗
-              </a>
-              .
-              {passport && passport.source === s.source
-                ? " Дата релиза и тип игры сверены по той же официальной странице."
-                : null}
-              {passport && passport.source !== s.source && (
-                <>
-                  {" "}Дата релиза и тип игры сверены по{" "}
-                  <a href={passport.source} target="_blank" rel="noreferrer">
-                    {passport.sourceLabel} ↗
-                  </a>
-                  .
-                </>
-              )}
-              {verified && verified.source !== s.source && (
-                <>
-                  {" "}Дополнительные числовые параметры сверены по{" "}
-                  <a href={verified.source} target="_blank" rel="noreferrer">
-                    {verified.sourceLabel || "официальному источнику"} ↗
-                  </a>
-                  .
-                </>
-              )}
-              {verified && verified.source === s.source && verified.additionalSources?.length
-                ? " Другие сведения об игре можно найти по дополнительным ссылкам ниже."
-                : verified && verified.source === s.source
-                  ? " Дополнительные характеристики также указаны на странице разработчика."
-                  : null}
-            </p>
-            {verified?.additionalSources?.length ? (
-              <p className="source-note">
-                Дополнительные источники:{" "}
-                {verified.additionalSources.map((source, index) => (
-                  <span key={source.url}>
-                    {index > 0 ? " · " : ""}
-                    <a href={source.url} target="_blank" rel="noreferrer">
-                      {source.label} ↗
-                    </a>
-                  </span>
-                ))}
-                .
-              </p>
-            ) : null}
           </section>
           <Affiliate />
           <section id="faq">

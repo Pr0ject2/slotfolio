@@ -34,9 +34,6 @@ test("Book of Dead dossier renders canonical source and verified passport", asyn
   await expect(page.locator(".slot-summary .facts")).toContainText("14 января 2016");
   await expect(page.locator(".slot-summary .facts")).toContainText("Тип игры");
   await expect(page.locator(".slot-summary .facts")).toContainText("Video Slot");
-  await expect(page.locator("#facts a[href='https://www.playngo.com/games/rich-wilde-and-the-book-of-dead']")).toHaveCount(1);
-  await expect(page.locator("#facts a[href='https://www.playngo.com/games/book-of-dead']")).toHaveCount(0);
-  await expect(page.locator("#facts .source-note").first()).toContainText(
-    "Дата релиза и тип игры сверены по той же официальной странице.",
-  );
+  await expect(page.locator("#facts a[href^='http']")).toHaveCount(0);
+  await expect(page.locator("#facts")).toContainText("RTP");
 });

@@ -91,17 +91,7 @@ export default function Page() {
                 предположением.
               </p>
             </div>
-            <p>
-              Пояснение о большой дистанции приведено в{" "}
-              <a
-                href="https://www.gamblingcommission.gov.uk/public-and-players/guide/return-to-player-how-much-gaming-machines-payout"
-                target="_blank"
-                rel="noreferrer"
-              >
-                справке Gambling Commission
-              </a>
-              . RTP не отменяет риска потери денег.
-            </p>
+            <p>RTP описывает результаты на большой дистанции и не отменяет риска потери денег.</p>
             <Link className="text-link" href="/slots">
               Вернуться к каталогу ↗
             </Link>
