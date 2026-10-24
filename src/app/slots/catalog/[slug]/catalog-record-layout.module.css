@@ -48,6 +48,34 @@
   background: var(--line);
 }
 
+/* UX-09: a final unpaired fact must not reveal the gray grid background
+   as a fake empty fact. Auto-fit uses 160px minimum tracks with 1px gaps.
+   Container queries follow the actual number of columns, not viewport width. */
+.route :global(.catalog-record-facts) {
+  container-type: inline-size;
+}
+
+/* Two columns: an odd last fact fills its whole row. */
+@container (min-width: 321px) and (max-width: 481px) {
+  .route :global(.catalog-record-facts > div:last-child:nth-child(odd):not(.facts-wide)),
+  .route :global(.catalog-record-facts > div:nth-last-child(2):nth-child(odd):has(+ .facts-wide)) {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Three columns: one remaining fact spans three; two remaining facts
+   share the row as one standard tile plus one double-width tile. */
+@container (min-width: 482px) and (max-width: 642px) {
+  .route :global(.catalog-record-facts > div:last-child:nth-child(3n + 1):not(.facts-wide)),
+  .route :global(.catalog-record-facts > div:nth-last-child(2):nth-child(3n + 1):has(+ .facts-wide)) {
+    grid-column: 1 / -1;
+  }
+  .route :global(.catalog-record-facts > div:last-child:nth-child(3n + 2):not(.facts-wide)),
+  .route :global(.catalog-record-facts > div:nth-last-child(2):nth-child(3n + 2):has(+ .facts-wide)) {
+    grid-column: span 2;
+  }
+}
+
 .route :global(.catalog-record-facts > div) {
   /* Each fact is a label above a value, not the legacy 110px/value grid. */
   display: block;
