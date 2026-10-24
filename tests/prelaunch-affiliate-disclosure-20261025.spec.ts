@@ -37,5 +37,5 @@ test("prelaunch: the English about page links to translated catalogue and compar
 
 test("prelaunch: English editorial policy no longer routes to Russian catalogue", async ({page}) => {
   await page.goto("/en/editorial-policy/");
-  await expect(page.getByRole("link", {name: "Browse the English catalogue"})).toHaveAttribute("href", "/en/slots");
+  await expect(page.getByRole("link", {name: "Browse the English catalogue"})).toHaveAttribute("href", /\/en\/slots\/?$/);
 });
