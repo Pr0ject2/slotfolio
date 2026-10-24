@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return pageMetadata({
     title: game && copy ? `${game.name}: reglas, funciones y RTP explicados` : "Juego no disponible",
     description: copy?.description ?? "No hay una guía en español disponible para este juego.",
-    path:`/es/slots/${slug}`, image:game?.featureImage || game?.image, openGraphType:"article", noIndex:true,
+    path:`/es/slots/${slug}`, image:game?.featureImage || game?.image, openGraphType:"article", previewOnly: true,
   });
 }
 export default async function SpanishGameDossier({ params }: { params: Promise<{ slug: string }> }) {

@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: guide.description,
     path: `/en/journal/${guide.slug}`,
     openGraphType: "article",
-    noIndex: true,
+    previewOnly: true,
   });
 }
 export default async function EnglishJournalGuide({ params }: { params: Promise<{ slug: string }> }) {

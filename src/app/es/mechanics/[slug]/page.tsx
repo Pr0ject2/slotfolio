@@ -13,7 +13,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const dynamicParams=false;
 export function generateStaticParams(){return spanishMechanicSlugs.map(slug=>({slug}));}
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const m=spanishMechanic(slug);return pageMetadata({title:m?`${m.name}: reglas y ejemplos de juegos`:"Mecánica no encontrada",description:m?.contrast??"Guía de mecánicas de Slotfolio.",path:`/es/mechanics/${slug}`,noIndex:true});}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const m=spanishMechanic(slug);return pageMetadata({title:m?`${m.name}: reglas y ejemplos de juegos`:"Mecánica no encontrada",description:m?.contrast??"Guía de mecánicas de Slotfolio.",path:`/es/mechanics/${slug}`,previewOnly: true});}
 export default async function Page({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params;const m=spanishMechanic(slug);const original=mechanics.find(item=>item.slug===slug);if(!m||!original)notFound();
   const games=slots.filter(game=>slotMechanics(game).includes(original.name));const example=getSlot(m.example);

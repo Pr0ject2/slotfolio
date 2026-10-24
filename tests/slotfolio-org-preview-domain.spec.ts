@@ -27,7 +27,7 @@ test("slotfolio.org static-root preview generates canonical and sitemap URLs wit
     expect(new Set(urls).size).toBe(urls.length);
     expect(urls.every((url) => url.startsWith("https://slotfolio.org/"))).toBe(true);
     expect(urls.some((url) => url.includes("github.io") || url.includes("/slotfolio/slotfolio"))).toBe(false);
-    expect(urls.filter((url) => /\/slots\/[^/]+\/$/.test(url))).toHaveLength(100);
+    expect(urls.filter((url) => /\/slots\/[^/]+\/$/.test(url))).toHaveLength(300);
     expect(urls.some((url) => /\/slots\/catalog\/|\/search\/|\/compare\//.test(url))).toBe(false);
   } finally {
     vars.forEach((key, i) => {

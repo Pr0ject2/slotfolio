@@ -3,7 +3,7 @@ import { spanishMechanicSlugs, spanishMechanic } from "@/lib/spanish-entities";
 import { SpanishBreadcrumbs } from "@/components/spanish-breadcrumbs";
 import { pageMetadata } from "@/lib/seo";
 
-export const metadata=pageMetadata({title:"Mecánicas: líneas de pago, grupos, cascadas y recogida",description:"Cómo se forman los premios, cómo cambia el tablero y qué comprobar en las reglas. Ejemplos de las guías de juegos existentes.",path:"/es/mechanics",noIndex:true});
+export const metadata=pageMetadata({title:"Mecánicas: líneas de pago, grupos, cascadas y recogida",description:"Cómo se forman los premios, cómo cambia el tablero y qué comprobar en las reglas. Ejemplos de las guías de juegos existentes.",path:"/es/mechanics",previewOnly: true});
 export default function Page(){return <>
   <SpanishBreadcrumbs items={[{label:"Mecánicas"}]} />
   <div className="page-heading"><div><span className="eyebrow accent">Guía de reglas</span><h1>Cómo funciona el juego</h1></div><p>Sigue cómo se forman los premios<br />y qué ocurre después.</p></div>

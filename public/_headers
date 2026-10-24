@@ -6,3 +6,10 @@
   Cache-Control: no-store
 /en/slots/1win-bonanza/*
   Cache-Control: no-store
+
+# The production artifact also has Pages aliases. Keep those mirrors noindex
+# even when indexing is explicitly enabled for the custom domain.
+https://slotfolio.pages.dev/*
+  X-Robots-Tag: noindex
+https://:deployment.slotfolio.pages.dev/*
+  X-Robots-Tag: noindex

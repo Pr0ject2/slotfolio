@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: collection.introduction,
     path: `/en/collections/${slug}`,
     openGraphType: "article",
-    noIndex: true,
+    previewOnly: true,
   });
 }
 

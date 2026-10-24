@@ -63,6 +63,10 @@ export function indexingEnabled() {
       "Indexing requires an explicit public HTTPS NEXT_PUBLIC_SITE_URL",
     );
   }
+  // Backup and deployment hostnames never become the searchable site.
+  if (/(?:^|\.)(?:github\.io|pages\.dev)$/i.test(url.hostname)) return false;
+  // A project-wide Cloudflare variable must not open feature-branch previews.
+  if (process.env.CF_PAGES === "1" && process.env.CF_PAGES_BRANCH !== "main") return false;
   return true;
 }
 
@@ -72,6 +76,7 @@ export function pageMetadata({
   path,
   image = "/images/slots/gates-of-olympus-feature.webp",
   noIndex = false,
+  previewOnly = false,
   openGraphType = "website",
   absoluteTitle = false,
 }: {
@@ -80,6 +85,7 @@ export function pageMetadata({
   path: string;
   image?: string;
   noIndex?: boolean;
+  previewOnly?: boolean;
   openGraphType?: "website" | "article";
   absoluteTitle?: boolean;
 }): Metadata {
@@ -92,7 +98,7 @@ export function pageMetadata({
         languages: Object.fromEntries(Object.entries(languageAlternates(path)).map(([locale, route]) => [locale, absoluteUrl(route!)])),
       } : {}),
     },
-    ...(noIndex ? { robots: { index: false, follow: true } } : {}),
+    ...(noIndex || (previewOnly && !indexingEnabled()) ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
       title,
       description,

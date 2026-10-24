@@ -18,7 +18,7 @@ export const metadata = pageMetadata({
   description,
   path,
   openGraphType: "article",
-  noIndex: true,
+  previewOnly: true,
 });
 
 export default function EnglishCascadesArticle() {

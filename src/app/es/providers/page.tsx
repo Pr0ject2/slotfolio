@@ -4,7 +4,7 @@ import { catalogStats } from "@/lib/catalog-stats";
 import { spanishProvider } from "@/lib/spanish-entities";
 import { SpanishBreadcrumbs } from "@/components/spanish-breadcrumbs";
 import { pageMetadata } from "@/lib/seo";
-export const metadata=pageMetadata({title:"Proveedores de tragamonedas y sus juegos",description:"Compara las reglas de pago, tableros y bonus de las guías seleccionadas de Slotfolio por proveedor.",path:"/es/providers",noIndex:true});
+export const metadata=pageMetadata({title:"Proveedores de tragamonedas y sus juegos",description:"Compara las reglas de pago, tableros y bonus de las guías seleccionadas de Slotfolio por proveedor.",path:"/es/providers",previewOnly: true});
 export default function Page(){return <>
   <SpanishBreadcrumbs items={[{label:"Catálogo",href:"/es/slots"},{label:"Proveedores"}]} />
   <div className="page-heading utility-heading provider-heading"><div><span className="eyebrow accent">Estudios y sus juegos</span><h1>¿Quién crea los juegos?</h1></div><p>Elige un estudio para explorar sus juegos<br />y comparar sus reglas.</p></div>

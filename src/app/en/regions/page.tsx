@@ -6,7 +6,7 @@ export const metadata = pageMetadata({
   title: "Gambling availability and country-specific rules",
   description: "A game appearing in a catalogue does not establish its availability in your country. Check operator licensing, access conditions and official records.",
   path: "/en/regions",
-  noIndex: true,
+  previewOnly: true,
 });
 
 export default function EnglishRegions() {

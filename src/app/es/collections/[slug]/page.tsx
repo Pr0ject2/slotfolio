@@ -11,7 +11,7 @@ import styles from "@/app/collections/collections.module.css";
 export const dynamicParams=false;
 export function generateStaticParams(){return spanishGameCollections.map(({slug})=>({slug}));}
 async function findCollection(params:Promise<{slug:string}>){const {slug}=await params;const collection=spanishGameCollections.find(item=>item.slug===slug);if(!collection)notFound();return collection;}
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const collection=await findCollection(params);return pageMetadata({title:collection.title,description:collection.introduction,path:`/es/collections/${collection.slug}`,openGraphType:"article",noIndex:true});}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const collection=await findCollection(params);return pageMetadata({title:collection.title,description:collection.introduction,path:`/es/collections/${collection.slug}`,openGraphType:"article",previewOnly: true});}
 export default async function SpanishCollectionPage({params}:{params:Promise<{slug:string}>}){const collection=await findCollection(params);return <div className={styles.page}>
   <ArticleJsonLd title={collection.title} description={collection.introduction} path={`/es/collections/${collection.slug}`} locale="es" />
   <SpanishBreadcrumbs items={[{label:"Selecciones",href:"/es/collections"},{label:collection.title}]} />

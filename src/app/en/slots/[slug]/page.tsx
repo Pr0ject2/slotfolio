@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: game && copy ? `${game.name}: rules, features and RTP explained` : "Game unavailable",
     description: copy?.description ?? "No English guide is available for this game.",
     path: `/en/slots/${slug}`, image:game?.featureImage || game?.image,
-    openGraphType:"article", noIndex:true,
+    openGraphType:"article", previewOnly: true,
   });
 }
 export default async function EnglishGameDossier({ params }: { params: Promise<{ slug: string }> }) {

@@ -8,7 +8,7 @@ export const metadata = pageMetadata({
   title: "Slotfolio journal: game rules and practical guides",
   description: "Practical explainers about paytables, payout systems and RTP, with sourced examples and no promises about future winnings.",
   path: "/en/journal",
-  noIndex: true,
+  previewOnly: true,
 });
 
 export default function EnglishJournal() {
