@@ -8,6 +8,7 @@ import { englishCatalogueCopy as englishCopy } from "@/lib/english-catalogue-cop
 import { englishCatalogFact } from "@/lib/english-catalog-facts";
 import { spanishCatalogueCopy } from "@/lib/spanish-catalogue-copy";
 import { spanishCatalogFact } from "@/lib/spanish-catalog-facts";
+import ui from "./catalog-controls.module.css";
 import type { SiteLocale } from "@/lib/locales";
 import {
   filterCatalogItems,
@@ -151,6 +152,7 @@ export function Catalog({
   function showPage(next: number) {
     setPage(String(next));
     resultsRef.current?.scrollIntoView({ block: "start" });
+    resultsRef.current?.focus({ preventScroll: true });
   }
   const selectedProvider = model.facets.providers.find((item) => item.slug === provider);
   const hasFilters = Boolean(q.trim() || provider || mechanic || volatility || rtp || feature);
@@ -196,10 +198,10 @@ export function Catalog({
             <div className="filter-heading">{locale !== "ru" ? copy.refine : "Уточнить выбор"}</div>
             <label htmlFor="provider">{locale !== "ru" ? copy.publisher : "Провайдер"}</label>
             <select id="provider" value={provider} onChange={(e) => setProvider(e.target.value)}>
-              <option value="">{locale !== "ru" ? copy.allPublishers : "Все провайдеры"} · {model.facets.total}</option>
+              <option value="">{locale !== "ru" ? copy.allPublishers : "Все провайдеры"}</option>
               {model.facets.providers.map((item) => (
                 <option key={item.slug} value={item.slug}>
-                  {item.name} · {item.count}
+                  {item.name}
                 </option>
               ))}
             </select>
@@ -219,7 +221,6 @@ export function Catalog({
                     onChange={() => setMechanic(item.name)}
                   />
                   {locale !== "ru" ? fact(item.name) : item.name}
-                  <span>{item.count}</span>
                 </label>
               ))}
             </fieldset>
@@ -230,7 +231,7 @@ export function Catalog({
                 <option value="">{locale !== "ru" ? copy.any : "Любая"}</option>
                 {model.facets.volatility.map((item) => (
                   <option key={item.name} value={item.name}>
-                    {locale !== "ru" ? fact(item.name) : item.name} · {item.count}
+                    {locale !== "ru" ? fact(item.name) : item.name}
                   </option>
                 ))}
               </select>
@@ -252,7 +253,7 @@ export function Catalog({
                 <option value="">{locale !== "ru" ? copy.any : "Любая"}</option>
                 {model.facets.features.map((item) => (
                   <option key={item.name} value={item.name}>
-                    {locale !== "ru" ? fact(item.name) : item.name} · {item.count}
+                    {locale !== "ru" ? fact(item.name) : item.name}
                   </option>
                 ))}
               </select>
@@ -269,11 +270,11 @@ export function Catalog({
             <button className="filter-apply" onClick={() => {
               scrollAfterCollapse.current = true;
               setFiltersOpen(false);
-            }}>{locale !== "ru" ? copy.showResults : "К результатам"} · {results.length} ↗</button>
+            }}>{locale !== "ru" ? copy.showResults : "К результатам"} ↗</button>
           </div>
         </aside>
 
-        <div className="results" ref={resultsRef}>
+        <div className={`results ${ui.results}`} ref={resultsRef} tabIndex={-1} aria-label={locale === "es" ? "Resultados del catálogo" : locale === "en" ? "Catalogue results" : "Результаты каталога"}>
           <div className="results-toolbar">
             <div className="results-summary">
             <span className="results-count" role="status" aria-live="polite">
@@ -323,13 +324,13 @@ export function Catalog({
             </div>
           ) : (
             <>
-              <div className={"catalog-results " + view} lang={locale}>
+              <div className={"catalog-results " + view + " " + ui.cards} lang={locale}>
                 {visibleResults.map((item) => <CatalogGameCard item={item} number={catalogNumbers.get(item.slug) || 0} locale={locale} key={item.slug} />)}
               </div>
 
               {pageCount > 1 && (
-                <nav className="catalog-pagination" aria-label={locale !== "ru" ? copy.pages : "Страницы каталога"}>
-                  <span className="catalog-range">{offset + 1}–{offset + visibleResults.length} {locale !== "ru" ? copy.of : "из"} {results.length}</span>
+                <nav className={`catalog-pagination ${ui.pagination}`} aria-label={locale !== "ru" ? copy.pages : "Страницы каталога"}>
+                  <span className="catalog-range sr-only" aria-live="polite">{offset + 1}–{offset + visibleResults.length} {locale !== "ru" ? copy.of : "из"} {results.length}</span>
                   <div className="catalog-page-controls">
                     <button className="catalog-page-previous" disabled={page === 1} onClick={() => showPage(page - 1)} aria-label={locale !== "ru" ? copy.previous : "Предыдущая страница"}><span aria-hidden="true">←</span><span className="catalog-page-nav-label"> {locale !== "ru" ? copy.previous : "Назад"}</span></button>
                     <div className="catalog-page-numbers" aria-label={locale === "es" ? "Elegir página" : locale === "en" ? "Choose page" : "Выбор страницы"}>
@@ -344,6 +345,12 @@ export function Catalog({
                       )}
                     </div>
                     <span className="catalog-page-status" aria-live="polite">{locale !== "ru" ? copy.page : "Страница"} {page} {locale !== "ru" ? copy.of : "из"} {pageCount}</span>
+                    <label className={ui.jump}>
+                      <span>{locale !== "ru" ? copy.page : "Страница"}</span>
+                      <select aria-label={locale === "es" ? "Ir a la página" : locale === "en" ? "Go to page" : "Перейти к странице"} value={page} onChange={event => showPage(Number(event.target.value))}>
+                        {Array.from({ length: pageCount }, (_, index) => index + 1).map(number => <option key={number} value={number}>{number} / {pageCount}</option>)}
+                      </select>
+                    </label>
                     <button className="catalog-page-next" disabled={page === pageCount} onClick={() => showPage(page + 1)} aria-label={locale !== "ru" ? copy.next : "Следующая страница"}><span className="catalog-page-nav-label">{locale !== "ru" ? copy.next : "Далее"} </span><span aria-hidden="true">→</span></button>
                   </div>
                 </nav>

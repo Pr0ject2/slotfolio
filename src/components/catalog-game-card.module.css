@@ -6,6 +6,41 @@
   align-items: stretch;
 }
 
+/* A compact reading order: artwork/header, then full-width facts and actions.
+   Scope to list mode so the established cover view stays independent. */
+:global(.catalog-results.list) .card:global(.catalog-game),
+:global(.catalog-results.list) .card:global(.catalog-game):global(.catalog-only) {
+  position: relative;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 8px 16px;
+  align-items: start;
+  padding: 14px;
+  margin-top: 0;
+}
+:global(.list) .copy { display: contents; }
+:global(.list) .art { grid-column: 1; grid-row: 1 / 4; }
+:global(.list) .metaRow { grid-column: 2; padding-right: 20px; gap: 8px; }
+:global(.list) .card:global(.catalog-game) h2 { grid-column: 2; margin: 0; font-size: 21px; line-height: 1.2; overflow-wrap: anywhere; }
+:global(.list) .copy > p { grid-column: 2; margin: 0; font-size: 14px; line-height: 1.5; }
+:global(.list) .mechanics,
+:global(.list) .facts,
+:global(.list) .tags,
+:global(.list) .actions { grid-column: 1 / -1; margin-top: 0; }
+:global(.list) .card:global(.catalog-game) .facts { display: flex; gap: 8px 18px; padding-top: 10px; margin-top: 0; }
+:global(.list) .card:global(.catalog-game) .fact { display: flex; align-items: baseline; flex: 0 1 auto; gap: 6px; }
+:global(.list) .card:global(.catalog-game) .fact dt { margin: 0; white-space: nowrap; }
+:global(.list) .card :global(.catalog-open) { position: absolute; top: 10px; right: 12px; }
+:global(.list) .card:global(.catalog-game) .actions { min-height: 44px; margin-top: 0; }
+@media (max-width: 600px) {
+  :global(.catalog-results.list) .card:global(.catalog-game),
+  :global(.catalog-results.list) .card:global(.catalog-game):global(.catalog-only) { grid-template-columns: 88px minmax(0, 1fr); gap: 8px 12px; padding: 12px; }
+  :global(.list) .card:global(.catalog-game) h2 { font-size: 20px; }
+  :global(.list) .copy > p { grid-column: 1 / -1; }
+  :global(.list) .art { grid-row: 1 / 3; }
+  :global(.list) .metaRow { flex-wrap: wrap; }
+  :global(.list) .facts { gap: 10px 14px; }
+}
+
 .art {
   display: block;
   min-width: 0;

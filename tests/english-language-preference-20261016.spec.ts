@@ -1,3 +1,4 @@
+import { chooseLanguage, openLanguagePicker } from "./language-picker-helpers";
 import { test, expect } from "@playwright/test";
 
 test.use({ baseURL: process.env.AUDIT_BASE_URL || "http://localhost:3000" });
@@ -9,7 +10,7 @@ test("a manual language choice is saved even before React hydrates", async ({
   await context.route("**/_next/static/chunks/**", (route) => route.abort());
   const page = await context.newPage();
   await page.goto("/en/");
-  await page.getByRole("link", { name: "RU", exact: true }).click();
+  await chooseLanguage(page, "RU");
   await expect(page).toHaveURL(/\/$/);
   expect(
     await page.evaluate(() => localStorage.getItem("slotfolio-language")),
@@ -41,7 +42,7 @@ test("uses the browser language on first visit and keeps a manual choice", async
   await page.goto("/");
   await expect(page).toHaveURL(/\/en\/?$/);
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
-  await page.getByRole("link", { name: "RU", exact: true }).click();
+  await chooseLanguage(page, "RU");
   await expect(page).toHaveURL(/\/$/);
   await expect(page.locator("html")).toHaveAttribute("lang", "ru");
   await expect(
@@ -89,14 +90,14 @@ test("manual language changes preserve query and anchors before and after hydrat
     if (!hydrated)
       await page.route("**/_next/**/*.js", (route) => route.abort());
     await page.goto("/en/providers/pragmatic-play/?audit=locale#games");
-    await page.getByRole("link", { name: "RU", exact: true }).click();
+    await chooseLanguage(page, "RU");
     await expect
       .poll(() => new URL(page.url()).pathname)
       .toMatch(/^\/providers\/pragmatic-play\/?$/);
     expect(new URL(page.url()).searchParams.get("audit")).toBe("locale");
     expect(new URL(page.url()).hash).toBe("#games");
     await expect(page.locator("html")).toHaveAttribute("lang", "ru");
-    await page.getByRole("link", { name: "EN", exact: true }).click();
+    await chooseLanguage(page, "EN");
     await expect
       .poll(() => new URL(page.url()).pathname)
       .toMatch(/^\/en\/providers\/pragmatic-play\/?$/);
@@ -116,7 +117,7 @@ test("translated dossiers expose a direct language counterpart", async ({
   const context = await browser.newContext({ locale: "ru-RU" });
   const page = await context.newPage();
   await page.goto("/slots/sugar-rush-1000/");
-  await page.getByRole("link", { name: "EN", exact: true }).click();
+  await chooseLanguage(page, "EN");
   await expect(page).toHaveURL(/\/en\/slots\/sugar-rush-1000\/?$/);
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
   await context.close();
@@ -135,18 +136,12 @@ test("language changes retain in-tab comparison when storage is unavailable", as
   await page.goto("/en/compare/");
   await page.locator(".comparison-presets button").first().click();
   await expect(page.locator(".comparison-selection article")).toHaveCount(2);
-  await page
-    .locator("header")
-    .getByRole("link", { name: "RU", exact: true })
-    .click();
+  await chooseLanguage(page, "RU");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "Сравнить игры",
   );
   await expect(page.locator(".comparison-selection article")).toHaveCount(2);
-  await page
-    .locator("header")
-    .getByRole("link", { name: "EN", exact: true })
-    .click();
+  await chooseLanguage(page, "EN");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "Compare games",
   );

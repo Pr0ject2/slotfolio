@@ -9,12 +9,21 @@ import { SpanishFooter } from "./spanish-footer";
 export function Header() {
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
+  const languagePicker = useRef<HTMLDetailsElement>(null);
+  const [languageSuffix, setLanguageSuffix] = useState("");
   const path = usePathname();
   const router = useRouter();
   const locale = siteLocale(path);
   const english = locale === "en";
   const spanish = locale === "es";
   useEffect(() => { document.documentElement.lang = locale; }, [locale]);
+  useEffect(() => {
+    const close = (event: PointerEvent) => {
+      if (languagePicker.current && !languagePicker.current.contains(event.target as Node)) languagePicker.current.open = false;
+    };
+    document.addEventListener("pointerdown", close);
+    return () => document.removeEventListener("pointerdown", close);
+  }, []);
   useEffect(() => {
     // Static hosting: language negotiation happens in the browser, not at the edge.
     // An explicit saved choice always wins over browser settings.
@@ -41,6 +50,7 @@ export function Header() {
     try { window.localStorage.setItem("slotfolio-language", locale); }
     catch { /* Keep navigation functional when persistence is unavailable. */ }
     setOpen(false);
+    if (languagePicker.current) languagePicker.current.open = false;
     if (event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
       event.preventDefault();
       router.push(languageHref(path, locale) + window.location.search + window.location.hash);
@@ -60,6 +70,12 @@ export function Header() {
     : [["/slots", "Слоты"], ["/mechanics", "Механики"], ["/journal", "Разборы"], ["/collections", "Подборки"]];
   return (
     <header lang={locale} className={`header ${styles.header}`} onKeyDown={(event) => {
+      if (event.key === "Escape" && languagePicker.current?.open) {
+        event.preventDefault();
+        languagePicker.current.open = false;
+        languagePicker.current.querySelector("summary")?.focus();
+        return;
+      }
       if (event.key === "Escape" && open) {
         event.preventDefault();
         setOpen(false);
@@ -92,6 +108,26 @@ export function Header() {
           </svg>
           <span>{spanish ? "Buscar" : english ? "Search" : "Найти игру"}</span>
         </Link>
+        <details ref={languagePicker} className={styles.languagePicker}
+          onToggle={event => { if (event.currentTarget.open) setLanguageSuffix(window.location.search + window.location.hash); }}
+          onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget as Node)) event.currentTarget.open = false; }}>
+          <summary data-language-toggle aria-label={spanish ? "Idioma: Español" : english ? "Language: English" : "Язык: Русский"}>
+            <span className={styles.languageName}>{spanish ? "Español" : english ? "English" : "Русский"}</span>
+            <span className={styles.languageCode}>{locale.toUpperCase()}</span><span aria-hidden="true">⌄</span>
+          </summary>
+          <div className={styles.languageChoices} role="group" aria-label={spanish ? "Idioma" : english ? "Language" : "Язык"}>
+            {(["ru", "en", "es"] as const).map(target => target === locale ? (
+              <span key={target} lang={target} aria-current="true">{target === "ru" ? "Русский" : target === "en" ? "English" : "Español"}<span aria-hidden="true">✓</span></span>
+            ) : (
+              <Link key={target} href={languageHref(path, target) + languageSuffix} hrefLang={target} lang={target}
+                data-language-choice={target} aria-label={target.toUpperCase()}
+                title={hasTranslation(path, target) ? undefined : target === "es" ? "Español: inicio" : target === "en" ? "English: home" : "Русский: главная"}
+                className={styles.languageSwitch} onClick={event => chooseLanguage(target, event)}>
+                {target === "ru" ? "Русский" : target === "en" ? "English" : "Español"}
+              </Link>
+            ))}
+          </div>
+        </details>
         <button
           ref={menuButton}
           type="button"
@@ -100,7 +136,7 @@ export function Header() {
           aria-controls="main-navigation"
           onClick={() => setOpen(!open)}
         >
-          {open ? (spanish ? "Cerrar" : english ? "Close" : "Закрыть") : (spanish ? "Menú" : english ? "Menu" : "Меню")} <span>{open ? "×" : "☰"}</span>
+          <span className={styles.menuLabel}>{open ? (spanish ? "Cerrar" : english ? "Close" : "Закрыть") : (spanish ? "Menú" : english ? "Menu" : "Меню")}</span> <span>{open ? "×" : "☰"}</span>
         </button>
       </div>
       <div
@@ -127,15 +163,6 @@ export function Header() {
           <Link href={spanish ? "/es/compare" : english ? "/en/responsible-gaming" : "/compare"} onClick={() => setOpen(false)}>
             {spanish ? "Comparar juegos" : english ? "Safer gambling" : "Сравнить игры"} <span>↗</span>
           </Link>
-          <div className={styles.languageChoices} role="group" aria-label={spanish ? "Idioma" : english ? "Language" : "Язык"}>
-            {(["ru", "en", "es"] as const).filter(target => target !== locale).map(target => (
-              <Link key={target} href={languageHref(path, target)} hrefLang={target} lang={target}
-                data-language-choice={target} title={hasTranslation(path, target) ? undefined : target === "es" ? "Español: inicio" : target === "en" ? "English: home" : "Русский: главная"}
-                className={styles.languageSwitch} onClick={event => chooseLanguage(target, event)}>
-                {target.toUpperCase()}
-              </Link>
-            ))}
-          </div>
         </div>
       </div>
     </header>

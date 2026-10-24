@@ -1,3 +1,4 @@
+import { chooseLanguage, openLanguagePicker } from "./language-picker-helpers";
 import { expect, test } from "@playwright/test";
 import { spanishReadyPaths } from "../src/lib/spanish-routes";
 import { englishSystemPages } from "../src/lib/english-system-pages";
@@ -89,13 +90,13 @@ for (const width of [320, 390, 768, 1024, 1440]) {
 
 test("Spanish, English and Russian switch between real counterparts and retain query and anchor", async ({ page }) => {
   await page.goto("/en/about?language-check=1#verify");
-  await page.getByRole("link", { name: "ES", exact: true }).click();
+  await chooseLanguage(page, "ES");
   await expect(page).toHaveURL(/\/es\/about\/?\?language-check=1#verify$/);
   await expect(page.locator("h1")).toHaveText("Cómo usar Slotfolio");
   expect(await page.evaluate(() => localStorage.getItem("slotfolio-language"))).toBe("es");
-  await page.getByRole("link", { name: "RU", exact: true }).click();
+  await chooseLanguage(page, "RU");
   await expect(page.locator("h1")).toHaveText("Как пользоваться Slotfolio");
-  await page.getByRole("link", { name: "EN", exact: true }).click();
+  await chooseLanguage(page, "EN");
   await expect(page.locator("h1")).toHaveText("How to use Slotfolio");
 });
 
@@ -113,11 +114,12 @@ test("Spanish browser detection respects unknown links and opens completed legac
   await expect(page.locator("h1")).toHaveText("Elige una edición del juego");
   await expect(page).toHaveURL(/\/es\/slots\/gates-of-1win\/?$/);
   await expect(page.locator('link[hreflang="es"]')).toHaveCount(1);
+  await openLanguagePicker(page);
   await expect(page.getByRole("link", { name: "EN", exact: true })).toHaveAttribute("href", /\/en\/slots\/gates-of-1win\/?$/);
   await page.goto("/en/slots/gates-of-olympus/");
   await expect(page).toHaveURL(/\/es\/slots\/gates-of-olympus\/?$/);
   await expect(page.locator("h1")).toHaveText("Gates of Olympus");
-  await page.getByRole("link", { name: "EN", exact: true }).click();
+  await chooseLanguage(page, "EN");
   await expect(page).toHaveURL(/\/en\/slots\/gates-of-olympus\/?$/);
   expect(await page.evaluate(() => localStorage.getItem("slotfolio-language"))).toBe("en");
   await context.close();
@@ -128,7 +130,7 @@ test("Spanish choice persists before hydration and explicit language boundaries 
   await context.route("**/_next/static/chunks/**", route => route.abort());
   const page = await context.newPage();
   await page.goto("/about/");
-  await page.getByRole("link", { name: "ES", exact: true }).click();
+  await chooseLanguage(page, "ES");
   await expect(page.locator("h1")).toHaveText("Cómo usar Slotfolio");
   expect(await page.evaluate(() => localStorage.getItem("slotfolio-language"))).toBe("es");
   await context.close();
@@ -149,7 +151,7 @@ test("Spanish mobile menu keeps keyboard focus and closes with Escape", async ({
   await button.focus();
   await button.press("Enter");
   await expect(page.getByRole("button", { name: /^Cerrar/ })).toHaveAttribute("aria-expanded", "true");
-  const english = page.getByRole("link", { name: "EN", exact: true });
+  const english = page.locator("#main-navigation nav").getByRole("link", { name: "Catálogo", exact: true });
   await english.focus();
   expect(await english.evaluate(el => getComputedStyle(el).outlineStyle)).not.toBe("none");
   await english.press("Escape");

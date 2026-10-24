@@ -138,18 +138,44 @@ for (const width of [320, 390, 1440]) {
 }
 
 test("catalog list keeps approved artwork compact beside the card data", async ({ page }) => {
-  await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.goto("/slots?q=3%20Coin%20Volcanoes");
-  await page.waitForLoadState("networkidle");
+  for (const width of [320, 375, 390, 1440]) {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.goto("/slots?q=3%20Coin%20Volcanoes");
+    await page.evaluate(() => document.fonts.ready);
 
-  const card = page.locator('[data-slot="3-oaks-gaming-3-coin-volcanoes"]');
-  const art = card.locator(".catalog-game-art");
-  const copy = card.locator(".catalog-game-copy");
-  await expect(art).toBeVisible();
+    const card = page.locator('[data-slot="3-oaks-gaming-3-coin-volcanoes"]');
+    const art = card.locator(".catalog-game-art");
+    const heading = card.getByRole("heading", { name: "3 Coin Volcanoes", exact: true });
+    const facts = card.locator('dl[aria-label="Характеристики"]');
+    await expect(art).toBeVisible();
+    await expect(heading).toBeVisible();
+    await expect(facts).toBeVisible();
 
-  const [artBox, copyBox] = await Promise.all([art.boundingBox(), copy.boundingBox()]);
-  expect(artBox).toBeTruthy();
-  expect(copyBox).toBeTruthy();
-  expect(artBox?.width ?? 0).toBeLessThanOrEqual(210);
-  expect(copyBox?.width ?? 0).toBeGreaterThan(artBox?.width ?? 0);
+    // Measure rendered content: display:contents wrappers have no layout box.
+    const [cardBox, artBox, headingBox, factsBox, providerBox] = await Promise.all([
+      card.boundingBox(), art.boundingBox(), heading.boundingBox(), facts.boundingBox(),
+      card.locator(".catalog-game-copy .eyebrow").boundingBox(),
+    ]);
+    expect(cardBox).toBeTruthy();
+    expect(artBox).toBeTruthy();
+    expect(headingBox).toBeTruthy();
+    expect(factsBox).toBeTruthy();
+    expect(providerBox).toBeTruthy();
+    expect(artBox!.width).toBeGreaterThanOrEqual(80);
+    expect(artBox!.width).toBeLessThanOrEqual(210);
+    expect(headingBox!.width).toBeGreaterThan(artBox!.width);
+    expect(headingBox!.x).toBeGreaterThanOrEqual(artBox!.x + artBox!.width);
+    expect(providerBox!.x).toBeGreaterThanOrEqual(artBox!.x + artBox!.width);
+    expect(providerBox!.y).toBeLessThan(artBox!.y + artBox!.height);
+    expect(factsBox!.y).toBeGreaterThanOrEqual(artBox!.y + artBox!.height - 1);
+    expect(factsBox!.y).toBeGreaterThanOrEqual(headingBox!.y + headingBox!.height - 1);
+    expect(factsBox!.width).toBeGreaterThan(artBox!.width * 2);
+    expect(cardBox!.height).toBeLessThan(width < 600 ? 450 : 380);
+    for (const value of await facts.locator("dd").all()) {
+      const box = await value.boundingBox();
+      expect(box!.width).toBeGreaterThanOrEqual(20);
+      expect(box!.x + box!.width).toBeLessThanOrEqual(cardBox!.x + cardBox!.width);
+    }
+    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+  }
 });

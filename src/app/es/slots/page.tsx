@@ -16,7 +16,7 @@ export default function SpanishCatalogue() {
   return (
     <>
       <div className="page-heading utility-heading" lang="es">
-        <div><span className="eyebrow accent">{copy.eyebrow}</span><h1>{copy.heading}<span className="title-count">{model.facets.total}</span></h1></div>
+        <div><span className="eyebrow accent">Juegos, reglas y mecánicas</span><h1>{copy.heading}</h1></div>
         <p>{copy.intro}</p>
       </div>
       <Suspense fallback={<div className="catalog-loading">Cargando el catálogo…</div>}>
