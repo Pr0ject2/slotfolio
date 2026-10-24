@@ -8,8 +8,8 @@
 
 /* A compact reading order: artwork/header, then full-width facts and actions.
    Scope to list mode so the established cover view stays independent. */
-:global(.list) .card:global(.catalog-game),
-:global(.list) .card:global(.catalog-game):global(.catalog-only) {
+:global(.catalog-results.list) .card:global(.catalog-game),
+:global(.catalog-results.list) .card:global(.catalog-game):global(.catalog-only) {
   position: relative;
   grid-template-columns: 128px minmax(0, 1fr);
   gap: 8px 16px;
@@ -32,8 +32,8 @@
 :global(.list) .card :global(.catalog-open) { position: absolute; top: 10px; right: 12px; }
 :global(.list) .card:global(.catalog-game) .actions { min-height: 44px; margin-top: 0; }
 @media (max-width: 600px) {
-  :global(.list) .card:global(.catalog-game),
-  :global(.list) .card:global(.catalog-game):global(.catalog-only) { grid-template-columns: 88px minmax(0, 1fr); gap: 8px 12px; padding: 12px; }
+  :global(.catalog-results.list) .card:global(.catalog-game),
+  :global(.catalog-results.list) .card:global(.catalog-game):global(.catalog-only) { grid-template-columns: 88px minmax(0, 1fr); gap: 8px 12px; padding: 12px; }
   :global(.list) .card:global(.catalog-game) h2 { font-size: 20px; }
   :global(.list) .copy > p { grid-column: 1 / -1; }
   :global(.list) .art { grid-row: 1 / 3; }

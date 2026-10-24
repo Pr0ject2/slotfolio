@@ -47,6 +47,16 @@ for (const locale of ["ru", "en", "es"])
       expect(
         await page.evaluate(() => document.documentElement.scrollWidth),
       ).toBeLessThanOrEqual(width + 1);
+      // Exercise full dossiers too: their legacy CSS differs from catalogue-only cards.
+      await page.goto((locale === "ru" ? "" : "/" + locale) + "/slots/");
+      await page.evaluate(() => document.fonts.ready);
+      const dossier = page.locator('.catalog-game[data-coverage="dossier"]').first();
+      expect((await dossier.boundingBox())!.height).toBeLessThan(width < 600 ? 450 : 380);
+      expect((await dossier.locator('.catalog-game-art').boundingBox())!.width).toBeGreaterThanOrEqual(80);
+      for (const value of await dossier.locator('dl dd').all()) {
+        expect((await value.boundingBox())!.width).toBeGreaterThanOrEqual(20);
+      }
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width + 1);
     });
 test("language picker works outside the mobile menu, names languages and restores focus", async ({
   page,
