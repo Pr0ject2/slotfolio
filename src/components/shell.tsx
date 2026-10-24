@@ -121,8 +121,8 @@ export function Header() {
           ))}
         </nav>
         <div className="secondary-nav">
-          <Link href={spanish ? "/es/slots" : english ? "/en/slots" : "/providers"} onClick={() => setOpen(false)}>
-            {spanish ? "Catálogo" : english ? "Catalogue" : "Провайдеры"}
+          <Link href={spanish ? "/es/mechanics" : english ? "/en/slots" : "/providers"} onClick={() => setOpen(false)}>
+            {spanish ? "Mecánicas" : english ? "Catalogue" : "Провайдеры"}
           </Link>
           <Link href={spanish ? "/es/responsible-gaming" : english ? "/en/responsible-gaming" : "/compare"} onClick={() => setOpen(false)}>
             {spanish ? "Juego responsable" : english ? "Safer gambling" : "Сравнить игры"} <span>↗</span>

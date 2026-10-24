@@ -1,0 +1,117 @@
+{
+  "cascades": {
+    "name": "Cascadas",
+    "text": "La ronda continúa mientras se formen nuevas combinaciones ganadoras.",
+    "subtitle": "Un giro que continúa",
+    "principle": [
+      "Después de un pago, no tiene por qué desaparecer todo el tablero. Se retiran los símbolos ganadores, los restantes se desplazan y otros nuevos ocupan los huecos. Si se forma otra combinación premiada, empieza la siguiente cascada dentro de la misma ronda.",
+      "Las cascadas describen cómo se renueva el tablero. Los premios pueden calcularse por líneas de pago, grupos de símbolos vecinos o símbolos iguales en cualquier posición. Por eso, Gates of Olympus y Reactoonz comparten el movimiento de símbolos, pero exigen leer las combinaciones de forma distinta."
+    ],
+    "sequence": [
+      "El juego comprueba el tablero según sus reglas de pago.",
+      "Los símbolos premiados desaparecen y otros nuevos ocupan sus posiciones.",
+      "Las comprobaciones se repiten hasta que termina la cadena. Los multiplicadores y otros estados acumulados se reinician según las reglas del juego concreto."
+    ],
+    "contrast": "En un juego tradicional de líneas de pago, el giro suele terminar al calcularse el premio. Las cascadas añaden una secuencia de eventos, pero el jugador no decide cuándo se produce la siguiente caída.",
+    "appeal": "Puedes seguir la historia del tablero dentro de una ronda: una combinación deja espacio para otra. En los juegos con un multiplicador acumulativo, esto ayuda a entender el total.",
+    "tradeoff": "Una animación larga no equivale a muchas oportunidades independientes compradas con nuevas apuestas. La duración de la cadena no es su valor y un multiplicador creciente no garantiza la siguiente combinación.",
+    "watch": [
+      "¿Se retiran solo los símbolos que participan en el premio o todos los de ese tipo?",
+      "¿El multiplicador se aplica a una combinación, a una cascada o al total de la ronda?",
+      "¿Se conserva el estado entre giros gratis?"
+    ],
+    "exampleNote": "Aquí importan los símbolos iguales en cualquier posición del tablero, no que sean vecinos. Compáralo con Reactoonz: ambos juegos tienen cascadas, pero solo el segundo paga por grupos."
+  },
+  "clusters": {
+    "name": "Grupos",
+    "text": "Los símbolos iguales forman grupos vecinos en lugar de líneas de pago.",
+    "subtitle": "Lee la proximidad, no una ruta",
+    "principle": [
+      "Un grupo conectado de símbolos iguales genera un premio cuando alcanza el tamaño mínimo indicado en las reglas. Los vecinos suelen compartir un lado; no cuentes diagonales salvo que el juego lo permita expresamente.",
+      "El tamaño del tablero y el tamaño de un grupo premiado son medidas distintas. Un tablero mayor ofrece más posiciones que observar, pero no revela la probabilidad de premio. Cada juego tiene su propia distribución de símbolos y tabla de pagos."
+    ],
+    "sequence": [
+      "Aparecen grupos de símbolos iguales y vecinos en el tablero.",
+      "El juego comprueba el tamaño mínimo y el valor en la tabla de pagos de cada grupo.",
+      "Si el juego utiliza cascadas, se retiran los grupos premiados y se vuelve a comprobar qué símbolos han quedado juntos."
+    ],
+    "contrast": "Una línea de pago exige coincidencias a lo largo de una ruta predefinida. Un grupo puede crecer en varias direcciones. Pagar por símbolos iguales en cualquier posición es otra regla: los símbolos separados no se convierten en un grupo solo porque haya suficientes.",
+    "appeal": "Puedes leer el resultado como una forma sobre el tablero. Las cascadas, los comodines móviles y las posiciones marcadas añaden cambios visibles sin decenas de líneas de pago dibujadas.",
+    "tradeoff": "En un tablero grande puede ser difícil seguir los límites de los grupos y el orden de las funciones. Animaciones parecidas pueden ocultar umbrales y reglas de recuento distintos.",
+    "watch": [
+      "¿Cuántos símbolos hacen falta para el primer premio?",
+      "¿Cómo cuenta un comodín en el límite entre grupos diferentes?",
+      "¿Qué posiciones conservan multiplicadores después de retirar los símbolos?"
+    ],
+    "exampleNote": "El tablero de 8 × 8 y los comodines móviles hacen de Jammin’ Jars un ejemplo de proximidad cambiante. Compáralo con Sugar Rush, donde las posiciones del tablero cumplen una función adicional."
+  },
+  "lines": {
+    "name": "Líneas de pago",
+    "text": "Las rutas predefinidas entre las posiciones de los rodillos determinan las combinaciones.",
+    "subtitle": "Rutas a través de los rodillos",
+    "principle": [
+      "Una línea de pago define una ruta concreta entre las posiciones de los rodillos. Los símbolos iguales en esa ruta pagan según la tabla de premios. La lectura suele empezar por la izquierda, pero cada juego determina la dirección y las excepciones.",
+      "Los scatters, los símbolos expansivos y los bonus independientes pueden calcularse de otra forma. Las líneas de pago describen la base del juego, no todos sus eventos. Un diagrama de líneas no explica por completo Book of Dead ni Money Train 2."
+    ],
+    "sequence": [
+      "Los rodillos se detienen y forman un tablero.",
+      "El juego comprueba las rutas activas y procesa por separado los símbolos especiales.",
+      "Los premios se suman. Los comodines, regiros o bonus pueden prolongar el evento con reglas adicionales."
+    ],
+    "contrast": "Las líneas de pago son una forma tradicional de organizar una tragamonedas de rodillos. A diferencia de los pagos por vías, las posiciones válidas no se combinan en todas las rutas posibles. A diferencia de los grupos, la proximidad por sí sola no genera un premio.",
+    "appeal": "Un tablero compacto facilita seguir una combinación y el papel de un comodín. Una base de líneas de pago ayuda a separar un premio normal de la función que lo modifica.",
+    "tradeoff": "Muchas líneas de pago son difíciles de comprobar a simple vista. Su número suele confundirse con generosidad, pero sin conocer la distribución de símbolos no revela el RTP ni la frecuencia de premios.",
+    "watch": [
+      "¿La apuesta se indica para toda la ronda o por línea de pago?",
+      "¿Dónde empieza una combinación y en qué dirección se lee?",
+      "¿El bonus cambia las reglas habituales de los símbolos expansivos?"
+    ],
+    "exampleNote": "Starburst tiene un tablero compacto de 5 × 3 y un destacado comodín expansivo. Compáralo con Book of Dead: una geometría parecida no implica las mismas reglas de bonus."
+  },
+  "collect": {
+    "name": "Recogida de símbolos",
+    "text": "Los símbolos recogen valores del tablero o llenan un medidor que activa una función.",
+    "subtitle": "Valores y acumulación",
+    "principle": [
+      "En algunos juegos, un símbolo especial recoge los valores de otros símbolos. En otros, los objetos llenan un medidor que activa un bonus. Estas funciones actúan junto a las reglas de pago de la base.",
+      "En Big Bass Bonanza, el pescador recoge los valores de los peces durante el bonus. En Book of 99, los libros recogidos ofrecen otra vía de acceso a los giros gratis. Separa los eventos: avanzar hacia un activador no es haber recibido un premio."
+    ],
+    "sequence": [
+      "Aparecen símbolos con valores u objetos destinados a un medidor.",
+      "Se comprueba la condición de recogida: el personaje, la posición o el umbral requerido.",
+      "Se entrega un valor o se activa una función. La acumulación posterior depende de las reglas de conservación y reinicio."
+    ],
+    "contrast": "Una combinación normal depende de símbolos iguales. La recogida también depende de valores, contadores y del orden de las acciones. El juego base puede seguir utilizando líneas de pago o grupos.",
+    "appeal": "La ronda tiene una secuencia visible: aparece un objeto, se recoge y cambia el estado. Los distintos personajes y medidores hacen que merezca la pena comparar las funciones incluso con rodillos parecidos.",
+    "tradeoff": "Un medidor parcialmente lleno puede hacer que un resultado parezca cercano. Sin consultar las reglas, no trates los valores visibles como un premio ni supongas que el progreso se conservará al salir del juego.",
+    "watch": [
+      "¿Se recogen valores monetarios o progreso hacia una función?",
+      "¿Basta con el objeto o hace falta un recolector independiente?",
+      "¿Cuándo se reinicia el medidor y qué ocurre al cambiar la apuesta?"
+    ],
+    "exampleNote": "Los peces con valores requieren al pescador recolector durante los giros gratis. Compáralo con Book of 99, donde recoger libros activa una ronda en lugar de sumar los valores del tablero."
+  },
+  "ways": {
+    "name": "Formas de ganar",
+    "text": "Sin líneas fijas, las posiciones válidas de rodillos adyacentes se combinan en vías; su número puede cambiar.",
+    "subtitle": "Combinaciones sin una línea fija",
+    "principle": [
+      "En un sistema de vías, los símbolos iguales de rodillos adyacentes pueden combinarse en varias posiciones a la vez. No hay una línea de pago predefinida. El premio sigue requiriendo el símbolo, la secuencia de rodillos y la longitud mínima de coincidencia indicados.",
+      "El tablero puede ser fijo o dinámico. Las filas adicionales, las posiciones divididas y otras transformaciones cambian el número de combinaciones dentro de una ronda. Los juegos de Nolimit City ofrecen distintos ejemplos de tableros cambiantes."
+    ],
+    "sequence": [
+      "El juego determina las posiciones disponibles en cada rodillo.",
+      "Los símbolos iguales en rodillos consecutivos forman vías premiadas.",
+      "Si una función modifica el tablero o activa una cascada, las posiciones y combinaciones se recalculan según las reglas del juego."
+    ],
+    "contrast": "Las líneas de pago comprueban un conjunto predefinido de rutas. El pago por vías combina posiciones válidas sin ese trazado. Los símbolos iguales en cualquier lugar no necesariamente pagan: suele mantenerse el requisito de rodillos adyacentes.",
+    "appeal": "Sigue la geometría dinámica junto a los eventos de la ronda: ¿qué función abrió una fila o cambió un símbolo? Las diferencias entre juegos se hacen visibles a través de sus tableros.",
+    "tradeoff": "Un número elevado de vías es difícil de evaluar a simple vista. No es una probabilidad de premio ni compensa la volatilidad alta. Las funciones pueden cambiar tanto el tablero que su tamaño inicial deje de describir el estado actual.",
+    "watch": [
+      "¿Cuántas filas están disponibles al inicio y después de la expansión?",
+      "¿Dividir un símbolo añade posiciones o cambia un multiplicador?",
+      "¿Cuándo vuelve el tablero a su forma original?"
+    ],
+    "exampleNote": "El tablero se expande de 6 × 3 a 6 × 6, por lo que resulta más útil seguir las filas disponibles que una única cifra de vías. Abre Mental para ver otra estructura de tablero."
+  }
+}
