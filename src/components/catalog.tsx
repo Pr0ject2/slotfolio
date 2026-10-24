@@ -348,7 +348,7 @@ export function Catalog({
                     <label className={ui.jump}>
                       <span>{locale !== "ru" ? copy.page : "Страница"}</span>
                       <select aria-label={locale === "es" ? "Ir a la página" : locale === "en" ? "Go to page" : "Перейти к странице"} value={page} onChange={event => showPage(Number(event.target.value))}>
-                        {Array.from({ length: pageCount }, (_, index) => index + 1).map(number => <option key={number} value={number}>{number} / {pageCount}</option>)}
+                        {Array.from({ length: pageCount }, (_, index) => index + 1).map(number => <option key={number} value={number}>{number}</option>)}
                       </select>
                     </label>
                     <button className="catalog-page-next" disabled={page === pageCount} onClick={() => showPage(page + 1)} aria-label={locale !== "ru" ? copy.next : "Следующая страница"}><span className="catalog-page-nav-label">{locale !== "ru" ? copy.next : "Далее"} </span><span aria-hidden="true">→</span></button>

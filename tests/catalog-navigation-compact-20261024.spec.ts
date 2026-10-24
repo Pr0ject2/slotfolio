@@ -36,7 +36,11 @@ for (const locale of ["ru", "en", "es"])
       }
       const nav = page.locator(".catalog-pagination"),
         jump = nav.locator("select");
+      await expect(jump.locator("option")).toHaveText(
+        Array.from({ length: 56 }, (_, index) => String(index + 1)),
+      );
       await jump.selectOption("56");
+      await expect(jump.locator("option:checked")).toHaveText("56");
       await expect(page).toHaveURL(/page=56/);
       await expect(page.locator(".catalog-game")).toHaveCount(10);
       await expect(nav.locator(".catalog-page-next")).toBeDisabled();
