@@ -23,7 +23,7 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
           "Look up RTP, release dates and maximum-win figures in the relevant documents. They may be published separately.",
           "A 'last checked' date records when we reviewed a detail. It does not mean the information will never change.",
         ],
-        links: [{ label: "Browse the original Russian catalogue", href: "/slots" }],
+        links: [{ label: "Browse the English catalogue", href: "/en/slots" }],
       },
       {
         title: "When figures do not match",
@@ -88,7 +88,7 @@ export const englishSystemPages: Record<string, EnglishInformationPage> = {
     sections: [
       {
         title: "Reference material is not an offer",
-        text: "Game rules and publisher information are used to check a game's characteristics. They do not establish that real-money play is available. Slotfolio does not currently display any active casino affiliate offers.",
+        text: "Game rules and publisher information are used to check a game's characteristics. They do not establish that real-money play is available. Game pages contain an affiliate link to a general selection of casinos, not a verified list of operators carrying that specific title. Check availability, bonus terms and local restrictions with the chosen operator.",
         links: [{ label: "How we verify game information", href: "/en/editorial-policy" }],
       },
       {
