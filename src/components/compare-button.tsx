@@ -78,7 +78,7 @@ export function CompareButton({ slug, name, locale = "ru" }: { slug: string; nam
         {spanish ? included ? "✓ Seleccionado" : "+ Comparar" : english ? included ? "✓ Selected" : "+ Compare" : included ? "✓ В сравнении" : "+ Сравнить"}
       </button>
       {message && selected.length >= MAX_COMPARE && (
-        <small role="status">{message} <Link href={english || spanish ? "/en/compare" : "/compare"}>{spanish ? "Ver comparación (en inglés)" : english ? "Open comparison" : "Открыть"}</Link></small>
+        <small role="status">{message} <Link href={spanish ? "/es/compare" : english ? "/en/compare" : "/compare"}>{spanish ? "Ver comparación" : english ? "Open comparison" : "Открыть"}</Link></small>
       )}
     </div>
   );

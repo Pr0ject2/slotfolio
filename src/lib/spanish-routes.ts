@@ -6,4 +6,5 @@ export const spanishReadyPaths = [
   "/mechanics", "/mechanics/cascades", "/mechanics/clusters",
   "/mechanics/lines", "/mechanics/collect", "/mechanics/ways",
   "/providers",
+  "/compare",
 ] as const;

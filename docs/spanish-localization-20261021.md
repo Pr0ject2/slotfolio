@@ -360,6 +360,28 @@ path from the Spanish home through a guide and provider into filtered catalogue.
 Real 320px and 1440px screenshots were reviewed. Exact-head CI, preview and
 both production checks remain mandatory before sequential publication.
 
+## Stage 25: complete Spanish comparison
+
+Adds /es/compare using the existing shared comparison component and the same
+100 published guide identities. All controls, presets, table headings,
+configuration gaps and source qualifications are translated. The Spanish
+comparison index reuses complete Spanish guide copy while preserving raw
+identities, numbers, edition differences, metrics and source caveats.
+
+Spanish catalogue controls, game guides, providers, mechanics, help and footer
+now open the Spanish table. Selections still use the existing shared browser
+storage across RU/EN/ES. The two-game limit, seed handling, removal, presets,
+keyboard focus and horizontal table scrolling retain the original behaviour.
+No game data, artwork, sources, noindex or CI gates change.
+
+Validation: TypeScript PASS; production export 3144 pages; 341 Playwright
+checks PASS, including all previous Spanish checks, the existing English
+entity/comparison suite and Russian responsive comparison checks. Nine new
+Spanish cases verify complete dictionary coverage, all 100 identities and
+metrics, six viewport widths, loaded artwork, keyboard scrolling, all eight
+presets, limits, seeds and three-language persistence. Real 320px and 1440px
+screenshots were reviewed. Exact-head CI and preview remain required.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;

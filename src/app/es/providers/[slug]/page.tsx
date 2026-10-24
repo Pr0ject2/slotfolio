@@ -23,10 +23,10 @@ export default async function Page({params}:{params:Promise<{slug:string}>}){
     {games.length?<><SectionTitle title={games.length===1?"Un ejemplo de juego":"Dos ejemplos para comparar"} />
       <p className="entity-section-note">{games.length===1?"Abre la guía para comprobar las reglas de pago, funciones y notas de las fuentes.":"Usa estos juegos para identificar diferencias en las reglas de pago y los bonus."}</p>
       <SpanishFeaturedGames games={representativeGames(games)} /></>:<p className="entity-section-note">Esta selección no incluye actualmente guías completas de este proveedor. Consulta el catálogo y comprueba el título y el proveedor en las fuentes de cada juego.</p>}
-    {p.reading&&<section className="entity-reading"><span className="eyebrow accent">En qué fijarte</span><div><h2>{p.reading.title}</h2><p>{p.reading.text}</p><div className="entity-reading-links">{p.reading.compare.map(id=>{const game=games.find(g=>g.slug===id);return game&&<Link key={id} href={`/es/slots/${id}`}>{game.name} ↗</Link>;})}<Link href="/en/compare" lang="en">Abrir comparación (en inglés) ↗</Link></div></div></section>}
+    {p.reading&&<section className="entity-reading"><span className="eyebrow accent">En qué fijarte</span><div><h2>{p.reading.title}</h2><p>{p.reading.text}</p><div className="entity-reading-links">{p.reading.compare.map(id=>{const game=games.find(g=>g.slug===id);return game&&<Link key={id} href={`/es/slots/${id}`}>{game.name} ↗</Link>;})}<Link href="/es/compare">Abrir comparación ↗</Link></div></div></section>}
     <SpanishEntityStats games={games} filter={{provider:slug}} />
     <SectionTitle title="Mecánicas relacionadas" /><SpanishMechanicLinks names={stats.mechanics.map(m=>m.name)} />
     <section id="games"><SectionTitle title="Guías de juegos seleccionadas" href={`/es/slots?provider=${slug}`} label="Todos los juegos del catálogo" /><div className="entity-games">{games.map((game,index)=><SpanishGameRow key={game.slug} game={game} index={index} />)}</div></section>
-    <div className="editorial-signoff provider-signoff"><p>Abre una guía para consultar las reglas del juego, las cifras documentadas y las notas de las fuentes.</p><Link href="/en/compare" lang="en">Comparar dos juegos (en inglés) ↗</Link></div>
+    <div className="editorial-signoff provider-signoff"><p>Abre una guía para consultar las reglas del juego, las cifras documentadas y las notas de las fuentes.</p><Link href="/es/compare">Comparar dos juegos ↗</Link></div>
   </div>;
 }
