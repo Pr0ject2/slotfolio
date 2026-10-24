@@ -335,6 +335,31 @@ passed. The final scoped contents fix passed those 32 scenarios plus the five
 foundation width sweeps: 37/37 PASS. Desktop before/after screenshots confirm
 separate contents rows; mobile screenshots include the loaded game artwork.
 
+## Stage 24: complete provider profiles and navigation
+
+Adds the provider index and all 18 profiles. Every existing summary, introduction,
+body, signoff and optional reading note is translated in full. Reading-note game
+identities, game membership and calculated distributions remain unchanged.
+Original attribution uncertainties are retained; no unverified provider claim
+is upgraded. A profile with no selected complete guides explicitly explains
+that state rather than promising two nonexistent examples.
+
+Spanish game guides and mechanic profiles now link to Spanish providers. The
+footer exposes both completed entity sections. Home-page features now open the
+complete Spanish game guides instead of their temporary English destinations.
+The direct-untranslated-route test continues to cover a real untranslated
+legacy edition chooser; published game and provider translations are checked
+positively in dedicated tests. No game records, catalogue selection, sources,
+artwork, noindex or CI gates change.
+
+Validation for the provider stage: TypeScript PASS, production export 3143
+pages, and all 297 local Playwright checks PASS. The 31 new provider checks
+cover all 18 complete profiles, exact field and number parity, reading-note
+identities, all game rows, 320/375/390/768/1024/1440, the index and a keyboard
+path from the Spanish home through a guide and provider into filtered catalogue.
+Real 320px and 1440px screenshots were reviewed. Exact-head CI, preview and
+both production checks remain mandatory before sequential publication.
+
 ## Remaining stages
 
 1. Catalogue, search and filters, with Spanish formatting and feature labels;

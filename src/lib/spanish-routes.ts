@@ -5,4 +5,5 @@ export const spanishReadyPaths = [
   "/slots", "/search",
   "/mechanics", "/mechanics/cascades", "/mechanics/clusters",
   "/mechanics/lines", "/mechanics/collect", "/mechanics/ways",
+  "/providers",
 ] as const;
