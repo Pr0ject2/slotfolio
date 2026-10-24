@@ -8,7 +8,7 @@ export const metadata = pageMetadata({
   title: "Slot game catalogue | Slotfolio",
   description: "Browse 1,000 slot games by publisher and mechanic. Open reviewed English guides and source-linked catalogue facts, with Russian originals clearly marked.",
   path: "/en/slots",
-  noIndex: true,
+  previewOnly: true,
 });
 
 export default function EnglishCataloguePage() {

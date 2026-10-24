@@ -8,7 +8,7 @@ import styles from "@/app/journal/guides.module.css";
 export const dynamicParams=false;
 export function generateStaticParams(){return spanishJournalGuides.map(({slug})=>({slug}));}
 async function findGuide(params:Promise<{slug:string}>){const {slug}=await params;const guide=spanishJournalGuides.find(item=>item.slug===slug);if(!guide)notFound();return guide;}
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const guide=await findGuide(params);return pageMetadata({title:guide.title,description:guide.description,path:`/es/journal/${guide.slug}`,openGraphType:"article",noIndex:true});}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const guide=await findGuide(params);return pageMetadata({title:guide.title,description:guide.description,path:`/es/journal/${guide.slug}`,openGraphType:"article",previewOnly: true});}
 export default async function SpanishJournalGuide({params}:{params:Promise<{slug:string}>}){const guide=await findGuide(params);return <div className={styles.guide}>
   <ArticleJsonLd title={guide.title} description={guide.description} path={`/es/journal/${guide.slug}`} locale="es" />
   <SpanishBreadcrumbs items={[{label:"Revista y guías",href:"/es/journal"},{label:guide.title}]} />

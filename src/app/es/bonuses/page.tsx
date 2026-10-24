@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SpanishBreadcrumbs } from "@/components/spanish-breadcrumbs";
 import { pageMetadata } from "@/lib/seo";
-export const metadata=pageMetadata({title:"Cómo entender las condiciones de un bonus de casino",description:"Revisa los requisitos de apuesta, los plazos, la apuesta máxima, los juegos excluidos y las restricciones de retirada antes de valorar un bonus.",path:"/es/bonuses",openGraphType:"article",noIndex:true});
+export const metadata=pageMetadata({title:"Cómo entender las condiciones de un bonus de casino",description:"Revisa los requisitos de apuesta, los plazos, la apuesta máxima, los juegos excluidos y las restricciones de retirada antes de valorar un bonus.",path:"/es/bonuses",openGraphType:"article",previewOnly: true});
 export default function SpanishBonusTerms(){return <>
   <SpanishBreadcrumbs items={[{label:"Revista y guías",href:"/es/journal"},{label:"Condiciones de los bonus"}]} />
   <div className="simple-heading"><span className="eyebrow accent">Antes de valorar una oferta</span><h1>Lee las condiciones<br />antes que el reclamo</h1><p>El importe anunciado es solo una parte de un bonus de casino. Esto es lo que conviene comprobar antes de aceptar una oferta.</p></div>

@@ -6,7 +6,10 @@ set -euo pipefail
 export SLOTFOLIO_STATIC_EXPORT=true
 export NEXT_PUBLIC_SITE_URL="https://slotfolio.org"
 export NEXT_PUBLIC_BASE_PATH=""
-export NEXT_PUBLIC_INDEXABLE="false"
+# A deliberate production-only launch switch. Defaults remain noindex.
+# Preview branches stay closed even if the variable is shared project-wide.
+NEXT_PUBLIC_INDEXABLE="$(node scripts/launch-mode.mjs)"
+export NEXT_PUBLIC_INDEXABLE
 
 # Match the existing strict artwork gate: missing reviewed images must fail.
 localized=false
@@ -41,8 +44,5 @@ test -s out/en/about/index.html
 test -s out/en/responsible-gaming/index.html
 test -s out/sitemap.xml
 test -s out/robots.txt
-grep -qi 'noindex' out/index.html
-grep -qi 'noindex' out/en/index.html
-grep -q 'Disallow: /' out/robots.txt
-grep -q 'https://slotfolio.org/' out/sitemap.xml
-echo "Cloudflare Pages static root-domain preview generated (noindex)."
+node scripts/check-seo-export.mjs out --indexable="$NEXT_PUBLIC_INDEXABLE"
+echo "Cloudflare Pages root-domain export verified (indexable=$NEXT_PUBLIC_INDEXABLE)."

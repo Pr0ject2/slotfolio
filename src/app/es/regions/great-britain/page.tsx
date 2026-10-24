@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SpanishBreadcrumbs } from "@/components/spanish-breadcrumbs";
 import { pageMetadata } from "@/lib/seo";
-export const metadata=pageMetadata({title:"Gran Bretaña: cómo comprobar la licencia de un operador",description:"Cómo consultar el registro de la Gambling Commission para una empresa que opera en Inglaterra, Escocia o Gales y qué más comprobar antes de registrarte.",path:"/es/regions/great-britain",noIndex:true});
+export const metadata=pageMetadata({title:"Gran Bretaña: cómo comprobar la licencia de un operador",description:"Cómo consultar el registro de la Gambling Commission para una empresa que opera en Inglaterra, Escocia o Gales y qué más comprobar antes de registrarte.",path:"/es/regions/great-britain",previewOnly: true});
 export default function SpanishGreatBritain(){return <>
   <SpanishBreadcrumbs items={[{label:"Países",href:"/es/regions"},{label:"Gran Bretaña"}]} />
   <div className="simple-heading geo-heading"><span className="eyebrow accent">El juego en Gran Bretaña</span><h1>Gran Bretaña:<br />comprueba primero al operador</h1><p>Cómo investigar una empresa de juego que atiende a clientes de Inglaterra, Escocia y Gales mediante el registro público oficial. Esta guía no trata sobre Irlanda del Norte, que tiene un marco jurídico distinto.</p></div>

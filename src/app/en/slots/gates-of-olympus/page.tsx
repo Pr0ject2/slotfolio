@@ -10,7 +10,7 @@ export const metadata = pageMetadata({
   title:"Gates of Olympus: how the tumble and multiplier features work",
   description:englishFullDossiers[slug].description,
   path:`/en/slots/${slug}`, image:game?.featureImage || game?.image,
-  openGraphType:"article", noIndex:true,
+  openGraphType:"article", previewOnly: true,
 });
 export default function GatesOfOlympusEnglishDossier() {
   if (!game) notFound();

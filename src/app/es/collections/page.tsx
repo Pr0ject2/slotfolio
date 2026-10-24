@@ -5,7 +5,7 @@ import { GameImage } from "@/components/editorial-client";
 import { spanishGameCollections } from "@/lib/spanish-game-collections";
 import { pageMetadata } from "@/lib/seo";
 import styles from "@/app/collections/collections.module.css";
-export const metadata=pageMetadata({title:"Explora las mecánicas con ejemplos de juegos",description:"Compara líneas de pago, grupos, comodines y bonus de giros gratis mediante ejemplos de las guías y sus fuentes verificadas.",path:"/es/collections",noIndex:true});
+export const metadata=pageMetadata({title:"Explora las mecánicas con ejemplos de juegos",description:"Compara líneas de pago, grupos, comodines y bonus de giros gratis mediante ejemplos de las guías y sus fuentes verificadas.",path:"/es/collections",previewOnly: true});
 export default function SpanishCollections(){return <div className={styles.page}>
   <SpanishBreadcrumbs items={[{label:"Selecciones"}]} />
   <header className={styles.intro}><span className="eyebrow accent">Selecciones de juegos</span><h1>Entiende las reglas comparando juegos</h1><p>Empieza por una pregunta. Cada selección compara tres juegos, señala las diferencias entre sus mecánicas y propone qué comprobar en la tabla de pagos.</p><p className={styles.caption}>¿Buscas un juego concreto? <Link href="/es/slots">Consulta el catálogo</Link> o <Link href="/es/search">búscalo por nombre</Link>.</p></header>
