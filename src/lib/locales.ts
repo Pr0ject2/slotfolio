@@ -21,7 +21,6 @@ export const englishReadyPaths = [
   "/compare",
   "/collections",
   "/bonuses",
-  "/regions/great-britain",
   "/journal",
   "/journal/how-cascades-work",
   "/editorial-policy",

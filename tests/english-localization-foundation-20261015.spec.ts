@@ -12,7 +12,6 @@ const englishUrls = [
   "/en/compare",
   "/en/collections",
   "/en/bonuses",
-  "/en/regions/great-britain",
   "/en/journal",
   "/en/journal/how-cascades-work",
   "/en/editorial-policy",
@@ -23,7 +22,7 @@ const englishUrls = [
 
 test("the language selector includes reviewed English pages and catalogue entry points", () => {
   expect(englishReadyPaths).toEqual([
-    "/", "/about", "/slots", "/search", "/providers", "/mechanics", "/compare", "/collections", "/bonuses", "/regions/great-britain", "/journal", "/journal/how-cascades-work", "/editorial-policy", "/privacy",
+    "/", "/about", "/slots", "/search", "/providers", "/mechanics", "/compare", "/collections", "/bonuses", "/journal", "/journal/how-cascades-work", "/editorial-policy", "/privacy",
     "/responsible-gaming", "/journal/understanding-rtp",
   ]);
   expect(languageHref("/about", "en")).toBe("/en/about");
@@ -35,7 +34,6 @@ test("the language selector includes reviewed English pages and catalogue entry 
   expect(languageHref("/collections/cluster-features", "en")).toBe("/en/collections/cluster-features");
   expect(languageHref("/collections/not-a-collection", "en")).toBe("/en");
   expect(languageHref("/bonuses", "en")).toBe("/en/bonuses");
-  expect(languageHref("/regions/great-britain", "en")).toBe("/en/regions/great-britain");
   expect(languageHref("/journal", "en")).toBe("/en/journal");
   expect(languageHref("/journal/how-cascades-work", "en")).toBe("/en/journal/how-cascades-work");
   expect(languageHref("/journal/payout-systems", "en")).toBe("/en/journal/payout-systems");

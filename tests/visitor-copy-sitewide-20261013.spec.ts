@@ -15,13 +15,7 @@ test("editorial and privacy pages speak to visitors", async ({ page }) => {
 
 });
 
-test("regional guides and bonuses do not contain work-in-progress notes", async ({ page }) => {
-  await page.goto("/regions/great-britain");
-  await expect(page.getByRole("heading", { name: "Знакомый бренд — не гарантия" })).toBeVisible();
-  await expect(page.getByRole("link", { name: /Открыть официальный реестр/ })).toHaveAttribute("href", /gamblingcommission.gov.uk/);
-  await expect(page.locator("main")).not.toContainText("В этом страновом разделе нет подключённых");
-  await expect(page.locator("main")).not.toContainText("1win");
-
+test("bonuses do not contain work-in-progress notes", async ({ page }) => {
   await page.goto("/bonuses");
   await expect(page.locator("main")).toContainText("Самые важные");
   await expect(page.locator("main")).not.toContainText("Когда они появятся");

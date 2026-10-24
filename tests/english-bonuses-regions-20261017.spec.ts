@@ -3,10 +3,9 @@ import { languageHref, translatedCounterpart } from "../src/lib/locales";
 
 const pairs = [
   ["/bonuses", "/en/bonuses"],
-  ["/regions/great-britain", "/en/regions/great-britain"],
 ] as const;
 
-test("bonus and territory routes are reviewed bilingual counterparts", () => {
+test("bonus routes are reviewed bilingual counterparts", () => {
   for (const [ru, en] of pairs) {
     expect(languageHref(ru, "en")).toBe(en);
     expect(languageHref(en, "ru")).toBe(ru);
@@ -33,14 +32,6 @@ test("bonus terms identify illustrative figures and link to safer gambling", asy
   await expect(page.locator("#wager")).toContainText("1,000 units");
   await expect(page.locator("#wager")).toContainText("not a live offer");
   await expect(page.getByRole("link", { name: "Read our safer gambling guidance" })).toHaveAttribute("href", "/en/responsible-gaming/");
-});
-
-test("Great Britain guide links the official regulator and excludes Northern Ireland", async ({ page }) => {
-  await page.goto("/en/regions/great-britain/");
-  await expect(page.getByText(/not about Northern Ireland/)).toBeVisible();
-  await expect(page.locator("#register a")).toHaveAttribute("href", "https://www.gamblingcommission.gov.uk/public-register/businesses/");
-  await expect(page.locator("#sources")).toContainText("General information only");
-  await expect(page.locator("#conditions tbody tr")).toHaveCount(5);
 });
 
 test("practical guides avoid mobile overflow", async ({ page }) => {

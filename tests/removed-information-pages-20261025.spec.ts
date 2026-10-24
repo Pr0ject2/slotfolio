@@ -9,10 +9,11 @@ import { englishReadyPaths } from "../src/lib/locales";
 import { spanishReadyPaths } from "../src/lib/spanish-routes";
 
 test.use({ baseURL: process.env.AUDIT_BASE_URL || "http://localhost:3000" });
-const removed = ["/disclosure", "/regions"];
+const removed = ["/disclosure", "/regions", "/regions/great-britain"];
 const prefixes = ["", "/en", "/es"];
 const normalized = (path: string) => path.replace(/^\/slotfolio(?=\/|$)/, "").replace(/\/$/, "");
 const removedPaths = new Set(prefixes.flatMap(prefix => removed.map(path => prefix + path)));
+const isRemovedPath = (path: string) => removedPaths.has(path) || /^\/(?:en\/|es\/)?regions(?:\/|$)/.test(path);
 
 test("deleted pages are absent from content, translation registries and sitemap", () => {
   for (const pages of [systemPages, englishSystemPages, spanishSystemPages]) {
@@ -20,12 +21,13 @@ test("deleted pages are absent from content, translation registries and sitemap"
   }
   for (const paths of [englishReadyPaths, spanishReadyPaths]) {
     for (const path of removed) expect(paths).not.toContain(path);
+    expect(paths.filter(path => /^\/regions(?:\/|$)/.test(path))).toEqual([]);
   }
   for (const entry of sitemap()) {
-    expect(removedPaths.has(normalized(new URL(entry.url).pathname))).toBe(false);
+    expect(isRemovedPath(normalized(new URL(entry.url).pathname))).toBe(false);
     for (const href of Object.values(entry.alternates!.languages!)) {
       expect(href).toBeTruthy();
-      expect(removedPaths.has(normalized(new URL(href!).pathname))).toBe(false);
+      expect(isRemovedPath(normalized(new URL(href!).pathname))).toBe(false);
     }
   }
 });
@@ -38,11 +40,13 @@ test("complete static export contains neither deleted pages nor internal links t
   const files = readdirSync("out", { recursive: true }).filter(file => String(file).endsWith(".html"));
   expect(files.length).toBeGreaterThan(3000);
   for (const file of files) {
+    const exportPath = "/" + String(file).replaceAll("\\", "/").replace(/\/index\.html$/, "");
+    expect(isRemovedPath(normalized(exportPath)), String(file)).toBe(false);
     const html = readFileSync(join("out", String(file)), "utf8");
     for (const match of html.matchAll(/<a\b[^>]*\bhref="([^"]+)"/g)) {
       const href = match[1].replaceAll("&amp;", "&");
       const url = new URL(href, origin);
-      if (internalHosts.has(url.host) && removedPaths.has(normalized(url.pathname))) invalid.push(`${file}: ${href}`);
+      if (internalHosts.has(url.host) && isRemovedPath(normalized(url.pathname))) invalid.push(`${file}: ${href}`);
     }
   }
   expect(invalid).toEqual([]);
@@ -61,7 +65,7 @@ for (const prefix of prefixes) {
         expect((await page.goto(prefix + route + "/"))!.status()).toBe(200);
         await page.evaluate(() => document.fonts.ready);
         const paths = await page.locator("a[href]").evaluateAll(links => links.map(a => new URL((a as HTMLAnchorElement).href).pathname));
-        expect(paths.filter(path => removedPaths.has(normalized(path)))).toEqual([]);
+        expect(paths.filter(path => isRemovedPath(normalized(path)))).toEqual([]);
         await expect(page.locator("footer")).toBeVisible();
         expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width + 1);
         if (route === "/about") await page.screenshot({ path: testInfo.outputPath(`about-${prefix.slice(1) || "ru"}-${width}.png`), fullPage: true });

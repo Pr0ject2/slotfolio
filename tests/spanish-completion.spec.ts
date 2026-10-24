@@ -7,7 +7,7 @@ import { openLanguagePicker } from "./language-picker-helpers";
 test("Spanish export matches all Russian routes and has no missing or English content destinations",()=>{
   const root=join(process.cwd(),"out");const walk=(dir:string):string[]=>readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(join(dir,e.name)):[join(dir,e.name)]);
   const paths=walk(root).filter(p=>basename(p)==="index.html").map(p=>"/"+relative(root,dirname(p)).replaceAll("\\","/")).map(p=>p.replace(/\/$/,"")||"/");
-  const ru=paths.filter(p=>!/^\/(en|es|_not-found)(\/|$)/.test(p));const es=paths.filter(p=>/^\/es(\/|$)/.test(p)).map(p=>p.slice(3)||"/");expect(ru).toHaveLength(1051);expect([...es].sort()).toEqual([...ru].sort());
+  const ru=paths.filter(p=>!/^\/(en|es|_not-found)(\/|$)/.test(p));const es=paths.filter(p=>/^\/es(\/|$)/.test(p)).map(p=>p.slice(3)||"/");expect(ru).toHaveLength(1050);expect([...es].sort()).toEqual([...ru].sort());
   const failures:string[]=[];
   for(const route of ru){expect(hasTranslation(route,"es"),route).toBe(true);const file=join(root,"es",route.slice(1),"index.html");const html=readFileSync(file,"utf8");
     for(const match of html.matchAll(/<a\b([^>]*?)href="([^"]+)"([^>]*?)>/g)){const attrs=match[1]+match[3],href=match[2];if(!href.startsWith("/")||href.startsWith("//")||/data-language-choice=/.test(attrs))continue;const path=href.split(/[?#]/)[0].replace(/\/$/,"")||"/";if(!/^\/es(?:\/|$)/.test(path))failures.push(`${route} -> ${href}`);else if(!existsSync(join(root,path.slice(1),"index.html")))failures.push(`${route} missing ${href}`);}
