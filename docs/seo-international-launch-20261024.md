@@ -19,6 +19,14 @@ GitHub Pages stays closed regardless of its repository variable. Cloudflare `pag
 3. Run both static export modes. `node scripts/check-seo-export.mjs out --indexable=false` checks the preview; the true mode checks the approved root-domain artifact. The validator checks all 444 sitemap documents, all 2700 protected catalogue documents, utilities, retired aliases and multilingual 404s. It fails on contradictory crawler directives.
 4. Retain strict artwork, security, TypeScript and existing Playwright checks. No CI-only PR should be merged.
 
+## Compatibility with catalogue releases #554 and #555 (24 October 2026)
+
+At the time of this review, the live `main` is `94b4f2917d7631f057779859b9f3b96abe4bbb91`, after the published compact two-column catalogue (#554) and plain page-number selector (#555). The original full CI recorded in this PR ran against an earlier main (`8962246688a6fcd7aea9cfd73d88508ca9b667bc`), so that prior success must not be treated as integration evidence for the newer catalogue.
+
+Before merging, require a new full PR CI on the current exact PR head against the up-to-date merge base. Specifically verify all RU/EN/ES catalogue pagination, full language-switch options, URL filters, responsive layouts, artwork integrity and the sitemap/noindex assertions. The SEO change must not alter the 1,000 published games per language, catalog navigation or the indexability of the 2,700 catalog-only profiles.
+
+**Do not switch on indexing or merge solely because the old CI was green.** Merge, production deployment and any later search indexing remain distinct owner decisions.
+
 ## Activation after explicit launch approval
 
 1. Merge the reviewed SEO PR only after the conditions above pass. First verify main and both normal production deployments while indexing remains closed.
