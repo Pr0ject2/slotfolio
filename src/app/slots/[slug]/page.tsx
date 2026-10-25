@@ -385,7 +385,7 @@ export default async function Page({
             </div>
             <p className="source-note">
               Об игре рассказывает разработчик:{" "}
-              <a href={s.source} target="_blank" rel="noreferrer">
+              <a href={s.source} target="_blank" rel="noopener noreferrer">
                 {s.source.replace(/^https?:\/\/(?:www\.)?/, "").split("/")[0]} ↗
               </a>
               .
@@ -395,7 +395,7 @@ export default async function Page({
               {passport && passport.source !== s.source && (
                 <>
                   {" "}Дата релиза и тип игры сверены по{" "}
-                  <a href={passport.source} target="_blank" rel="noreferrer">
+                  <a href={passport.source} target="_blank" rel="noopener noreferrer">
                     {passport.sourceLabel} ↗
                   </a>
                   .
@@ -404,7 +404,7 @@ export default async function Page({
               {verified && verified.source !== s.source && (
                 <>
                   {" "}Дополнительные числовые параметры сверены по{" "}
-                  <a href={verified.source} target="_blank" rel="noreferrer">
+                  <a href={verified.source} target="_blank" rel="noopener noreferrer">
                     {verified.sourceLabel || "официальному источнику"} ↗
                   </a>
                   .
@@ -422,7 +422,7 @@ export default async function Page({
                 {verified.additionalSources.map((source, index) => (
                   <span key={source.url}>
                     {index > 0 ? " · " : ""}
-                    <a href={source.url} target="_blank" rel="noreferrer">
+                    <a href={source.url} target="_blank" rel="noopener noreferrer">
                       {source.label} ↗
                     </a>
                   </span>

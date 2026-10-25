@@ -10339,7 +10339,7 @@ export default async function CatalogSlotPage({ params }: { params: Promise<{ sl
               return (
                 <p className="source-note" key={item.url}>
                   {isCanonical ? "Базовый first-party источник" : item.labels.join(" · ")}:{" "}
-                  <a href={item.url} target="_blank" rel="noreferrer">
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
                     {isCanonical ? "Официальный каталог игры ↗" : `${sourceDomain(item.url)} ↗`}
                   </a>
                   {isCanonical && roles.length ? ` · подтверждает: ${roles.join(", ").toLowerCase()}` : null}.

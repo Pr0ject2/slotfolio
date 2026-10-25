@@ -15,7 +15,15 @@ test("legacy links do not add games or restore SVG covers; cache rules cover onl
     for (const game of entry.games) expect(getSlot(game)?.image).toMatch(/\.webp$/);
   }
   const headers = readFileSync("public/_headers", "utf8").trim().split(/\r?\n/);
-  expect(headers.filter(line => line.startsWith("/"))).toEqual([
+  // A route may set security headers without changing its cache policy.
+  // Track every Cache-Control directive, preserving the exact four-path gate.
+  const cachePaths: string[] = [];
+  let path = "";
+  for (const line of headers) {
+    if (line && !/^\s|#/.test(line)) path = line;
+    if (/^\s+Cache-Control:/i.test(line)) cachePaths.push(path);
+  }
+  expect(cachePaths).toEqual([
     "/slots/gates-of-1win/*", "/slots/1win-bonanza/*", "/en/slots/gates-of-1win/*", "/en/slots/1win-bonanza/*",
   ]);
   expect(headers.filter(line => line.trim() === "Cache-Control: no-store")).toHaveLength(4);

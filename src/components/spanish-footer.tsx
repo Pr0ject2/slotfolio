@@ -7,7 +7,7 @@ export function SpanishFooter() {
       <div className="footer-main">
         <div>
           <Link href="/es" className="brand">slotfolio<span className="brand-dot">.</span></Link>
-          <p>Conoce las reglas.<br />Entiende los riesgos.</p>
+          <p>Tragamonedas, explicadas con claridad.</p>
         </div>
         <div>
           <span className="eyebrow">Leer</span>
