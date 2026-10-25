@@ -57,7 +57,7 @@ test("each translated page has real English copy, locale metadata and noindex", 
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
     const prose = await page.locator("main").innerText();
     expect(prose).not.toMatch(/[А-Яа-яЁё]{3,}/);
-    await expect(page.locator("header").first()).toContainText("RTP guide");
+    await expect(page.locator("header nav").first().getByRole("link")).toHaveText(["Catalogue", "Mechanics", "Journal", "Collections"]);
     await expect(page.locator("footer")).toContainText("Safer gambling");
   }
 });

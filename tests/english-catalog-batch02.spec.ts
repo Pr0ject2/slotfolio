@@ -71,15 +71,15 @@ for (const width of [320, 390, 768, 1024, 1440]) {
     }
     if (width <= 600) {
       const header = page.locator("header").first();
-      const about = header.getByRole("link", {name:"About", exact:true});
-      await expect(about).toBeHidden();
+      const publishers = header.getByRole("link", {name:"Publishers", exact:true});
+      await expect(publishers).toBeHidden();
       const menu = header.getByRole("button", {name:/^Menu/});
       await menu.click();
-      await expect(about).toBeVisible();
-      await about.focus();
+      await expect(publishers).toBeVisible();
+      await publishers.focus();
       await page.keyboard.press("Escape");
       await expect(menu).toBeFocused();
-      await expect(about).toBeHidden();
+      await expect(publishers).toBeHidden();
       expect((await page.locator("footer .footer-responsibility p").boundingBox())!.width).toBeGreaterThanOrEqual(180);
     }
   });

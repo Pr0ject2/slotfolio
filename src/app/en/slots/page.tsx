@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { EnglishBreadcrumbs } from "@/components/english-breadcrumbs";
 import { CatalogFromUrl } from "@/components/catalog";
 import { createCatalogModel } from "@/lib/catalog-index";
 import { pageMetadata } from "@/lib/seo";
@@ -15,6 +16,7 @@ export default function EnglishCataloguePage() {
   const model = createCatalogModel();
   return (
     <>
+      <EnglishBreadcrumbs items={[{ label: "Catalogue" }]} />
       <div className="page-heading utility-heading" lang="en">
         <div><span className="eyebrow accent">Games, rules and mechanics</span>
           <h1>{en.heading}</h1>
