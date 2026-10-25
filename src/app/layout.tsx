@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Header, Footer } from "@/components/shell";
+import { CompareSelectionTray } from "@/components/compare-selection-tray";
+import { slots } from "@/lib/data";
 import { JsonLd } from "@/components/json-ld";
 import { SITE_DESCRIPTION, SITE_NAME, indexingEnabled, siteUrl } from "@/lib/seo";
 import "./globals.css";
@@ -93,8 +95,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <a href="#main" className="skip-link" data-locale="es" lang="es">Saltar al contenido</a>
         <div className="site">
           <Header />
-          <main id="main">{children}</main>
+          <main id="main" tabIndex={-1}>{children}</main>
           <Footer />
+          <CompareSelectionTray games={slots.map(({ slug, name }) => ({ slug, name }))} />
         </div>
       </body>
     </html>

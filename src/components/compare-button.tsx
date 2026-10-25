@@ -72,6 +72,7 @@ export function CompareButton({ slug, name, locale = "ru" }: { slug: string; nam
         type="button"
         className={`compare-button ${included ? "selected" : ""}`}
         aria-pressed={included}
+        data-compare-slug={slug}
         aria-label={spanish ? `${included ? "Quitar" : "Añadir"} ${label} ${included ? "de" : "a"} la comparación` : english ? `${included ? "Remove" : "Add"} ${label} ${included ? "from" : "to"} comparison` : `${included ? "Убрать" : "Добавить"} ${label} ${included ? "из сравнения" : "в сравнение"}`}
         onClick={toggle}
       >
