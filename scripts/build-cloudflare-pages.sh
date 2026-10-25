@@ -44,5 +44,6 @@ test -s out/en/about/index.html
 test -s out/en/responsible-gaming/index.html
 test -s out/sitemap.xml
 test -s out/robots.txt
+test -s out/_routes.json
 node scripts/check-seo-export.mjs out --indexable="$NEXT_PUBLIC_INDEXABLE"
 echo "Cloudflare Pages root-domain export verified (indexable=$NEXT_PUBLIC_INDEXABLE)."
