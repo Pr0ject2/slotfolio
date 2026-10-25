@@ -21,13 +21,10 @@ export const englishReadyPaths = [
   "/compare",
   "/collections",
   "/bonuses",
-  "/regions",
-  "/regions/great-britain",
   "/journal",
   "/journal/how-cascades-work",
   "/editorial-policy",
   "/privacy",
-  "/disclosure",
   "/responsible-gaming",
   "/journal/understanding-rtp",
 ] as const;

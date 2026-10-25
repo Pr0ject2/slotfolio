@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 test.use({ baseURL: process.env.AUDIT_BASE_URL || "http://localhost:3000" });
 
-test("editorial, privacy and partnership pages speak to visitors", async ({ page }) => {
+test("editorial and privacy pages speak to visitors", async ({ page }) => {
   await page.goto("/editorial-policy");
   await expect(page.getByRole("heading", { name: "Как проверить сведения об игре" })).toBeVisible();
   await expect(page.locator("main")).toContainText("Если подтвердить параметр не удалось");
@@ -13,29 +13,13 @@ test("editorial, privacy and partnership pages speak to visitors", async ({ page
   await expect(page.locator("main")).not.toContainText("slotfolio-compare");
   await expect(page.locator("main")).not.toContainText("До запуска политика будет дополнена");
 
-  await page.goto("/disclosure");
-  await expect(page.getByRole("heading", { name: "Источники и предложения" })).toBeVisible();
-  await expect(page.locator("main")).toContainText("Сейчас на Slotfolio нет действующих партнёрских предложений");
-  await expect(page.locator("main")).not.toContainText("атрибутами sponsored");
-  await expect(page.locator("main")).not.toContainText("Партнёрский адрес 1win");
 });
 
-test("regional guides and bonuses do not contain work-in-progress notes", async ({ page }) => {
-  await page.goto("/regions");
-  await expect(page.locator("main")).toContainText("Правила отличаются от страны к стране");
-  await expect(page.locator("main")).not.toContainText("В каркасе представлена одна страна");
-  await expect(page.getByRole("link", { name: /Великобритания/ })).toBeVisible();
-
-  await page.goto("/regions/great-britain");
-  await expect(page.getByRole("heading", { name: "Знакомый бренд — не гарантия" })).toBeVisible();
-  await expect(page.getByRole("link", { name: /Открыть официальный реестр/ })).toHaveAttribute("href", /gamblingcommission.gov.uk/);
-  await expect(page.locator("main")).not.toContainText("В этом страновом разделе нет подключённых");
-  await expect(page.locator("main")).not.toContainText("1win");
-
+test("bonuses do not contain work-in-progress notes", async ({ page }) => {
   await page.goto("/bonuses");
   await expect(page.locator("main")).toContainText("Самые важные");
   await expect(page.locator("main")).not.toContainText("Когда они появятся");
-  await expect(page.getByRole("link", { name: /партнёрские материалы/ })).toHaveAttribute("href", /\/disclosure\/?$/);
+  await expect(page.locator('a[href*="/disclosure"]')).toHaveCount(0);
 });
 
 test("provider and mechanic pages explain games, not internal samples", async ({ page }) => {

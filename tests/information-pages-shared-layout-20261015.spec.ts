@@ -6,11 +6,10 @@ const pages = [
   "/about",
   "/editorial-policy",
   "/privacy",
-  "/disclosure",
   "/responsible-gaming",
 ];
 
-test("five information pages share readable layouts, visible links, and usable mobile navigation", async ({ page }) => {
+test("information pages share readable layouts, visible links, and usable mobile navigation", async ({ page }) => {
   test.setTimeout(90_000);
   for (const path of pages) {
     for (const width of [320, 390, 768, 1440]) {

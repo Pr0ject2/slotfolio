@@ -47,7 +47,7 @@ export default function EnglishBonusTerms() {
             <h2>Decide before pressing accept</h2>
             <p>If the rules are unclear, do not activate the bonus automatically. Check whether you can play without it, which balance is used first and what happens if you decline the offer.</p>
             <p>Do not judge the offer by its largest number alone. The terms on stakes, timing and withdrawals can matter much more than the advertised amount.</p>
-            <Link href="/en/disclosure" className="text-link">How Slotfolio handles commercial links ↗</Link>
+
             <p>Gambling can result in the loss of the money you stake. <Link href="/en/responsible-gaming">Read our safer gambling guidance</Link>.</p>
           </section>
         </article>

@@ -90,11 +90,10 @@ test("worked examples preserve their numbers and remain clearly hypothetical", a
   }
 });
 
-test("reviewed English journal routes coexist with published collections and region guides", () => {
+test("reviewed English journal routes coexist with published collections and bonuses", () => {
   for (const [ru, en] of [
     ["/collections/beyond-lines", "/en/collections/beyond-lines"],
     ["/bonuses", "/en/bonuses"],
-    ["/regions/great-britain", "/en/regions/great-britain"],
   ]) {
     expect(languageHref(ru, "en")).toBe(en);
     expect(translatedCounterpart(en)).toBe(ru);

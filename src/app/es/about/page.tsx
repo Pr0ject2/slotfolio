@@ -55,7 +55,7 @@ export default function SpanishAbout() {
           <section id="links">
             <h2>Visitar otros sitios</h2>
             <p>Las reglas del proveedor sirven para verificar los datos, pero cada sitio tiene sus propias condiciones. Antes de abrir una cuenta, comprueba el dominio del operador, su licencia y las restricciones de tu país.</p>
-            <p><Link href="/es/disclosure">Enlaces de afiliación</Link> · <Link href="/es/privacy">Privacidad y datos del navegador</Link></p>
+            <p><Link href="/es/privacy">Privacidad y datos del navegador</Link></p>
           </section>
         </article>
       </div>
