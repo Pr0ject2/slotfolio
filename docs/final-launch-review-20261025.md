@@ -30,6 +30,8 @@ Configuration follows [Cloudflare Pages header documentation](https://developers
 ## Launch gates still open
 
 1. Main is deliberately closed to indexing: `robots.txt` has `Disallow: /`, and editorial pages carry `noindex, nofollow`. Do not enable the existing launch switch until the final launch decision. Comparison/search/catalogue exclusions and preview/mirror noindex must remain.
-2. Five ordinary custom-domain URLs still return cached old HTTP 200: `/disclosure/`, `/regions/`, `/en/disclosure/`, `/es/disclosure/`, `/es/regions/great-britain/`. These routes are absent from source/export; the old cache incident remains unresolved. Do not claim that query-string 404s or a previous purge fixed them.
+2. Ordinary custom-domain URLs in the deleted disclosure/regions sections still return inconsistent cached old HTTP 200 responses. The initial sample found five; later samples varied, including six RU/ES responses after a separately authorized short Development Mode diagnostic. Development Mode was immediately disabled and its persisted off state verified. These routes are absent from source/export; the old cache incident remains unresolved. Do not claim that query-string 404s, a previous purge or the diagnostic fixed them.
 
-No game data, published game set, source facts, images, SEO directives, sitemap, launch switches, dependency versions or existing tests are changed by this PR. No merge or launch-indexing authorization is inferred from the request for a final review.
+The first full CI passed 1721 tests and failed the legacy header parser: it classified every path rule as a cache rule. The parser now tracks every Cache-Control directive, retaining the exact four-path expectation and four no-store count. No assertion is removed or relaxed; the new global security block does not alter caching.
+
+No game data, published game set, source facts, images, SEO directives, sitemap, launch switches, dependency versions or CI protections are changed by this PR. No merge or launch-indexing authorization is inferred from the request for a final review.
