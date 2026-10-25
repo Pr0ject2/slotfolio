@@ -177,7 +177,7 @@ export function Footer() {
       <div className="footer-main">
         <div>
           <Link href="/en" className="brand">slotfolio<span className="brand-dot">.</span></Link>
-          <p>Slot games, clearly explained.</p>
+          <p>A slot catalogue. Game rules, mechanics and comparisons.</p>
         </div>
         <div>
           <span className="eyebrow">Read</span>
@@ -217,7 +217,7 @@ export function Footer() {
           <Link href="/" className="brand">
             slotfolio<span className="brand-dot">.</span>
           </Link>
-          <p>Слоты понятным языком.</p>
+          <p>Каталог слотов. Правила, механики и сравнение игр.</p>
         </div>
         <div>
           <span className="eyebrow">Изучать</span>
