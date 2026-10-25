@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "include": [
+    "/disclosure", "/disclosure/*", "/regions", "/regions/*",
+    "/en/disclosure", "/en/disclosure/*", "/en/regions", "/en/regions/*",
+    "/es/disclosure", "/es/disclosure/*", "/es/regions", "/es/regions/*"
+  ],
+  "exclude": []
+}
