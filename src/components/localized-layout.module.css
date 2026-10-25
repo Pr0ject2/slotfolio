@@ -1,0 +1,81 @@
+/* Translated labels need room to wrap without narrowing the editorial copy.
+   Keep these corrections inside the English and Spanish page boundaries. */
+.layout :global(.section-title) {
+  flex-wrap: wrap;
+  gap: 16px 24px;
+}
+.layout :global(.section-title h2) {
+  min-width: 0;
+}
+.layout :global(.section-title .text-link) {
+  white-space: normal;
+}
+
+@media (max-width: 767px) {
+  .layout :global(.section-title) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .layout :global(.section-title .text-link) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .layout :global(.editorial-signoff) {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 12px 16px;
+    align-items: start;
+  }
+  .layout :global(.editorial-signoff p) {
+    min-width: 0;
+    max-width: none;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .layout :global(.editorial-signoff p span) {
+    font-size: 13px;
+  }
+  .layout :global(.editorial-signoff > a) {
+    grid-column: 2;
+    justify-self: start;
+    margin-left: 0;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    white-space: normal;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* The shared legacy rule places every direct anchor over the artwork.
+     The reading link needs its own row, including after client navigation. */
+  .layout :global(.side-story > a.text-link) {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    justify-self: start;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 375px) {
+  .layout :global(.side-story) {
+    grid-template-columns: minmax(0, 1fr) 110px;
+    column-gap: 16px;
+  }
+  .layout :global(.reading-note) {
+    display: block;
+  }
+  .layout :global(.reading-note h3) {
+    margin-top: 8px;
+  }
+  .layout :global(.reading-note .text-link) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}

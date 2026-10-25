@@ -66,7 +66,7 @@ export function Header() {
   const links = spanish
     ? [["/es/slots", "Catálogo"], ["/es/mechanics", "Mecánicas"], ["/es/journal", "Revista"], ["/es/collections", "Selecciones"]]
     : english
-    ? [["/en", "Home"], ["/en/slots", "Catalogue"], ["/en/search", "Search"], ["/en/journal/understanding-rtp", "RTP guide"], ["/en/about", "About"], ["/en/editorial-policy", "Editorial policy"]]
+    ? [["/en/slots", "Catalogue"], ["/en/mechanics", "Mechanics"], ["/en/journal", "Journal"], ["/en/collections", "Collections"]]
     : [["/slots", "Слоты"], ["/mechanics", "Механики"], ["/journal", "Разборы"], ["/collections", "Подборки"]];
   return (
     <header lang={locale} className={`header ${styles.header}`} onKeyDown={(event) => {
@@ -157,11 +157,11 @@ export function Header() {
           ))}
         </nav>
         <div className="secondary-nav">
-          <Link href={spanish ? "/es/providers" : english ? "/en/slots" : "/providers"} onClick={() => setOpen(false)}>
-            {spanish ? "Proveedores" : english ? "Catalogue" : "Провайдеры"}
+          <Link href={spanish ? "/es/providers" : english ? "/en/providers" : "/providers"} onClick={() => setOpen(false)}>
+            {spanish ? "Proveedores" : english ? "Publishers" : "Провайдеры"}
           </Link>
-          <Link href={spanish ? "/es/compare" : english ? "/en/responsible-gaming" : "/compare"} onClick={() => setOpen(false)}>
-            {spanish ? "Comparar juegos" : english ? "Safer gambling" : "Сравнить игры"} <span>↗</span>
+          <Link href={spanish ? "/es/compare" : english ? "/en/compare" : "/compare"} onClick={() => setOpen(false)}>
+            {spanish ? "Comparar juegos" : english ? "Compare games" : "Сравнить игры"} <span>↗</span>
           </Link>
         </div>
       </div>

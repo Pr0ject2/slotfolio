@@ -42,5 +42,5 @@ export const englishCatalogueCopy = {
   of: "of",
   russian: "Russian",
   compareInRussian: "Compare games",
-  guideInRussian: "Read the editorial selection (Russian)",
+  guideInRussian: "Explore the game collection ↗",
 } as const;

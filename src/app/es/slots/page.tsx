@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { SpanishBreadcrumbs } from "@/components/spanish-breadcrumbs";
 import { CatalogFromUrl } from "@/components/catalog";
 import { createCatalogModel } from "@/lib/catalog-index";
 import { pageMetadata } from "@/lib/seo";
@@ -15,6 +16,7 @@ export default function SpanishCatalogue() {
   const model = createCatalogModel();
   return (
     <>
+      <SpanishBreadcrumbs items={[{ label: "Catálogo" }]} />
       <div className="page-heading utility-heading" lang="es">
         <div><span className="eyebrow accent">Juegos, reglas y mecánicas</span><h1>{copy.heading}</h1></div>
         <p>{copy.intro}</p>
