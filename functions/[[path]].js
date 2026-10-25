@@ -41,7 +41,7 @@ export async function onRequest(context) {
   try {
     // Read the current build's existing 404 asset, never the retired URL.
     // Do not forward conditional, authorization, cookie or user query headers.
-    const assetUrl = new URL(locale === "es" ? "/es/404/" : "/404/", url.origin);
+    const assetUrl = new URL(locale === "ru" ? "/404/" : `/${locale}/404/`, url.origin);
     const asset = await context.env.ASSETS.fetch(new Request(assetUrl, {
       method: "GET", headers: { Accept: "text/html" },
     }));

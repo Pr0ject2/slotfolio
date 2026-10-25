@@ -170,9 +170,9 @@ export function checkSeoExport(
     ])
       closed(file(locale + route), locale + route);
   }
-  // Existing explicit routes are /404/ and /es/404/. English missing URLs use
-  // the shared static fallback, not a separate /en/404/ content page.
-  for (const path of ["/404/", "/es/404/"]) closed(file(path), path);
+  // Localized error assets must remain closed even at the indexable launch.
+  // Other missing static URLs still use the shared multilingual 404.html.
+  for (const path of ["/404/", "/en/404/", "/es/404/"]) closed(file(path), path);
   const fallback = readFileSync(join(root, "404.html"), "utf8");
   closed(fallback, "Shared 404");
   for (const locale of ["ru", "en", "es"])

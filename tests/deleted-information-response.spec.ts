@@ -2,6 +2,9 @@ import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import { onRequest, retiredInformationPath, securityHeaders } from "../functions/[[path]].js";
 
+const testBaseURL = process.env.AUDIT_BASE_URL || "http://localhost:3000";
+test.use({ baseURL: testBaseURL });
+
 test("Function invocation is restricted to the retired sections in three languages", () => {
   const routes = JSON.parse(readFileSync("public/_routes.json", "utf8"));
   expect(routes).toEqual({ version: 1, include: [
@@ -27,7 +30,7 @@ test("retired pages always return uncached 404 with current error content and se
       } } },
       next: async () => { throw Error("Must not fetch the cached retired path"); },
     });
-    expect(assetPath).toBe(prefix === "/es" ? "/es/404/" : "/404/");
+    expect(assetPath).toBe(prefix + "/404/");
     expect(response.status).toBe(404);
     expect(await response.text()).toContain("Current 404");
     expect(response.headers.get("cache-control")).toBe("no-store");
@@ -52,7 +55,7 @@ test("query and visitor headers cannot affect the internal asset request", async
   const response = await onRequest({ request: new Request("https://slotfolio.org/en/disclosure/?next=https://example.com&x=%3Cscript%3E", {
     headers: { Cookie: "private=value", Authorization: "Bearer private", "If-None-Match": "old", Accept: "text/x-component" },
   }), env: { ASSETS: { fetch: async request => {
-    expect(request.url).toBe("https://slotfolio.org/404/");
+    expect(request.url).toBe("https://slotfolio.org/en/404/");
     expect(Object.fromEntries(request.headers)).toEqual({ accept: "text/html" });
     return new Response("<h1>404</h1>", { status: 404, headers: { "Content-Type": "text/html" } });
   } } }, next: async () => new Response("Must not fall through") });
@@ -79,5 +82,23 @@ test("active pages, search and similar names pass through unchanged", async () =
     expect(await onRequest({ request: new Request("https://slotfolio.org" + path),
       env: { ASSETS: { fetch: async () => { throw Error("Must not fetch 404"); } } }, next: async () => original,
     })).toBe(original);
+  }
+});
+
+test("localized 404 assets hydrate and navigate home without React errors", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 900 });
+  const errors: string[] = [];
+  page.on("pageerror", error => errors.push(error.message));
+  for (const [prefix, locale] of [["", "ru"], ["/en", "en"], ["/es", "es"]]) {
+    await page.goto(prefix + "/404/");
+    await expect(page.locator("html")).toHaveAttribute("lang", locale);
+    await expect(page.locator("main h1:visible")).toHaveCount(1);
+    const robots = page.locator('meta[name="robots"]');
+    expect(await robots.count()).toBeGreaterThan(0);
+    for (const directive of await robots.all()) await expect(directive).toHaveAttribute("content", /noindex/);
+    await page.locator("header .brand").click();
+    await expect(page).toHaveURL(testBaseURL.replace(/\/$/, "") + prefix + "/");
+    await expect(page.getByRole("heading", { level: 1, name: "Gates of Olympus", exact: true })).toBeVisible();
+    expect(errors).toEqual([]);
   }
 });
