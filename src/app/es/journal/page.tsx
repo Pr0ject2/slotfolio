@@ -1,3 +1,4 @@
+import { ComparisonLinks } from "@/components/editorial-comparison";
 import Link from "next/link";
 import { SpanishBreadcrumbs } from "@/components/spanish-breadcrumbs";
 import { spanishJournalGuides } from "@/lib/spanish-journal-guides";
@@ -11,4 +12,4 @@ export default function SpanishJournal(){return <>
   <section className={styles.index} aria-labelledby="rules-guides"><h2 id="rules-guides">Comprende las reglas</h2><div className={styles.list}>{spanishJournalGuides.map(guide=><article className={styles.item} key={guide.slug}><span className="eyebrow accent">{guide.category}</span><h3><Link href={`/es/journal/${guide.slug}`}>{guide.title}</Link></h3><p>{guide.description}</p><Link className="text-link" href={`/es/journal/${guide.slug}`}>Leer guía ↗</Link></article>)}</div></section>
   <div className="hub-list"><Link href="/es/journal/understanding-rtp"><span className="number">Guía</span><h2>Qué significa realmente el RTP</h2><p>Por qué un retorno teórico del 96% no significa recuperar el 96% de un depósito en una sesión.</p><b aria-hidden="true">↗</b></Link><Link href="/es/mechanics"><span className="number">Explora</span><h2>Mecánicas del juego</h2><p>Consulta las explicaciones de líneas de pago, grupos, cascadas y otras reglas documentadas.</p><b aria-hidden="true">↗</b></Link></div>
   <p className="data-note">Elige una pregunta concreta, consulta el ejemplo y contrástalo con las reglas de tu versión del juego. Las explicaciones no predicen resultados.</p>
-</>;}
+<ComparisonLinks locale="es" /></>;}

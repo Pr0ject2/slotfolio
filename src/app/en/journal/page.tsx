@@ -1,3 +1,4 @@
+import { ComparisonLinks } from "@/components/editorial-comparison";
 import Link from "next/link";
 import { EnglishBreadcrumbs } from "@/components/english-breadcrumbs";
 import { englishJournalGuides } from "@/lib/english-journal-guides";
@@ -66,6 +67,7 @@ export default function EnglishJournal() {
         </Link>
       </div>
       <p className="data-note">All five practical journal guides, the RTP explainer and the in-depth cascades feature are now available in English.</p>
+    <ComparisonLinks locale="en" />
     </>
   );
 }

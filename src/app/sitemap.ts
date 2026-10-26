@@ -1,3 +1,4 @@
+import { editorialComparisonSlugs } from "@/lib/editorial-comparison-routes";
 import { gameCollections } from "@/lib/collections";
 import { journalGuides } from "@/lib/journal-guides";
 import type { MetadataRoute } from "next";
@@ -25,6 +26,8 @@ const staticRoutes = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     ...staticRoutes,
+    "/comparisons",
+    ...editorialComparisonSlugs.map(slug => `/comparisons/${slug}`),
     ...journalGuides.map((guide) => `/journal/${guide.slug}`),
     ...gameCollections.map((collection) => `/collections/${collection.slug}`),
     ...slots.map((slot) => `/slots/${slot.slug}`),

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SlotReadingNote } from "@/components/slot-reading-note";
 import { SlotCasinoLink } from "./slot-casino-link";
 import type { Slot } from "@/lib/data";
 import { mechanics, providerSlug, relatedSlots, slotMechanics } from "@/lib/data";
@@ -85,7 +86,8 @@ export function SpanishFullDossier({ game }: { game: Slot }) {
         <section id="feature"><span className="eyebrow accent">Funciones y bonus</span><h2>{isGates ? "Multiplicadores y giros gratis" : "Función principal"}</h2>
           <div className="dossier-feature-grid">{cards.map((card,index) => <article className={`dossier-feature-card ${card.kind === "primary" ? "is-primary" : ""}`} key={`${card.title}-${index}`}><span>{String(index+1).padStart(2,"0")}</span><h3>{card.title}</h3><p>{card.text}</p></article>)}</div>
         </section>
-        <section id="math-profile"><span className="eyebrow accent">Cifras del juego</span><h2>{isGates ? "Qué indican el RTP y la volatilidad" : "RTP y otras cifras"}</h2>
+        <SlotReadingNote game={game} locale="es" />
+          <section id="math-profile"><span className="eyebrow accent">Cifras del juego</span><h2>{isGates ? "Qué indican el RTP y la volatilidad" : "RTP y otras cifras"}</h2>
           <div className="dossier-metric-grid">
             <div><span>RTP</span><strong>{spanishCatalogFact(game.rtp)}</strong><small>Comprueba la configuración activa en las reglas del juego</small></div>
             {verified?.rtpVariants && verified.rtpVariants.length > 1 && <div><span>Configuraciones de RTP</span><strong>{verified.rtpVariants.length}</strong><small>{verified.rtpVariants.map(spanishCatalogFact).join(" · ")}</small></div>}

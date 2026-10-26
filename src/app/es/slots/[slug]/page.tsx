@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getSlot } from "@/lib/data";
+import { gameReadingCopy } from "@/lib/game-reading-notes";
 import { pageMetadata } from "@/lib/seo";
 import { spanishFullDossiers } from "@/lib/spanish-full-dossiers";
 import { spanishDossierSlugs } from "@/lib/spanish-dossier-routes";
@@ -11,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const game = getSlot(slug), copy = spanishFullDossiers[slug];
   return pageMetadata({
-    title: game && copy ? `${game.name}: reglas, funciones y RTP explicados` : "Juego no disponible",
+    title: game && copy ? `${game.name}: ${gameReadingCopy(slug, "es")?.topic ?? "reglas, funciones y RTP explicados"}` : "Juego no disponible",
     description: copy?.description ?? "No hay una guía en español disponible para este juego.",
     path:`/es/slots/${slug}`, image:game?.featureImage || game?.image, openGraphType:"article", previewOnly: true,
   });

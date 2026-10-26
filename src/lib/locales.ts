@@ -1,3 +1,4 @@
+import { hasEditorialComparison } from "./editorial-comparison-routes";
 import { hasEnglishDossier } from "./english-dossier-routes";
 import { englishGameCollections } from "./english-game-collections";
 import { englishJournalGuides } from "./english-journal-guides";
@@ -31,7 +32,7 @@ export const englishReadyPaths = [
 
 const ready = new Set<string>(englishReadyPaths);
 function isReviewedRoute(path: string): boolean {
-  if (ready.has(path)) return true;
+  if (ready.has(path) || hasEditorialComparison(path)) return true;
   if (path.startsWith("/journal/")) return englishJournalGuides.some(item => item.slug === path.slice("/journal/".length));
   if (path.startsWith("/collections/")) return englishGameCollections.some(item => item.slug === path.slice("/collections/".length));
   if (path.startsWith("/mechanics/")) return ["cascades", "clusters", "lines", "collect", "ways"].includes(path.slice(11));
@@ -59,7 +60,7 @@ export function hasTranslation(path: string, locale: SiteLocale): boolean {
   const normalized = russianPath(path).replace(/\/$/, "") || "/";
   if (locale === "ru") return true;
   return locale === "en" ? isReviewedRoute(normalized) : (
-    (spanishReadyPaths as readonly string[]).includes(normalized) ||
+    hasEditorialComparison(normalized) || (spanishReadyPaths as readonly string[]).includes(normalized) ||
     (normalized.startsWith("/providers/") && hasSpanishProvider(normalized.slice("/providers/".length))) ||
     (normalized.startsWith("/slots/catalog/") && hasSpanishCatalogRecord(normalized.slice("/slots/catalog/".length))) ||
     (normalized.startsWith("/slots/") && hasSpanishDossier(normalized.slice("/slots/".length)))
