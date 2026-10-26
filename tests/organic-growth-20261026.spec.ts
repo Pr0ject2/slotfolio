@@ -55,6 +55,12 @@ for (const locale of locales) for (const width of [320, 375, 390, 768, 1024, 144
       await expect(page.locator("main tbody tr")).toHaveCount(3);
       await expect(page.locator("main table caption")).toHaveText(item.copy[locale].title);
       expect(await page.locator("main table th[scope=col]").count()).toBe(3);
+      if (width <= 600) {
+        const table = await page.locator("main table").boundingBox();
+        const label = await page.locator("main tbody tr").first().locator("th").boundingBox();
+        expect(table).toBeTruthy(); expect(label).toBeTruthy();
+        expect(label!.width).toBeGreaterThan(table!.width * 0.9);
+      }
       expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
       await expect.poll(() => page.locator("main img").evaluateAll(images => images.every(image => (image as HTMLImageElement).naturalWidth > 0))).toBe(true);
       for (const source of await page.locator("#sources a").all()) await expect(source).toHaveAttribute("rel", "noopener noreferrer");
