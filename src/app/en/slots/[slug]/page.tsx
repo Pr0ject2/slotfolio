@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getSlot } from "@/lib/data";
+import { gameReadingCopy } from "@/lib/game-reading-notes";
 import { pageMetadata } from "@/lib/seo";
 import { englishFullDossiers } from "@/lib/english-full-dossiers";
 import { EnglishFullDossier } from "@/components/english-full-dossier";
@@ -13,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const game = getSlot(slug);
   const copy = englishFullDossiers[slug];
   return pageMetadata({
-    title: game && copy ? `${game.name}: rules, features and RTP explained` : "Game unavailable",
+    title: game && copy ? `${game.name}: ${gameReadingCopy(slug, "en")?.topic ?? "rules, features and RTP explained"}` : "Game unavailable",
     description: copy?.description ?? "No English guide is available for this game.",
     path: `/en/slots/${slug}`, image:game?.featureImage || game?.image,
     openGraphType:"article", previewOnly: true,

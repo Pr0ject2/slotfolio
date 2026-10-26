@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SlotReadingNote } from "@/components/slot-reading-note";
 import { SlotCasinoLink } from "@/components/slot-casino-link";
 import { formatRtp } from "@/lib/catalog-stats";
 import { notFound } from "next/navigation";
@@ -26,6 +27,7 @@ import {
   slotFeatureCards,
   volatilityContext,
 } from "@/lib/dossier";
+import { gameReadingCopy } from "@/lib/game-reading-notes";
 import { getVerifiedSlotPassport } from "@/lib/slot-passport";
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -47,7 +49,7 @@ export async function generateMetadata({
   }
 
   return pageMetadata({
-    title: `${s.name}: механика, RTP и устройство игры`,
+    title: gameReadingCopy(s.slug, "ru") ? `${s.name}: ${gameReadingCopy(s.slug, "ru")!.topic}` : `${s.name}: механика, RTP и устройство игры`,
     description: s.description,
     path: `/slots/${s.slug}`,
     image: s.featureImage || s.image,
@@ -292,6 +294,7 @@ export default async function Page({
               ))}
             </div>
           </section>
+          <SlotReadingNote game={s} locale="ru" />
           <section id="math-profile">
             <span className="eyebrow accent">Параметры игры</span>
             <h2>Основные параметры</h2>

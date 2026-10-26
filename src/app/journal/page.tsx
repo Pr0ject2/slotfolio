@@ -1,3 +1,4 @@
+import { ComparisonLinks } from "@/components/editorial-comparison";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/editorial";
 import { pageMetadata } from "@/lib/seo";
@@ -93,6 +94,7 @@ export default function Page() {
           <b>↗</b>
         </Link>
       </div>
+    <ComparisonLinks locale="ru" />
     </>
   );
 }

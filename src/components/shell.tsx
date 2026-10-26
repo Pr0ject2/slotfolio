@@ -189,6 +189,7 @@ export function Footer() {
           <Link href="/en/compare">Compare games</Link>
           <Link href="/en/collections">Game collections</Link>
           <Link href="/en/journal">Journal and guides</Link>
+          <Link href="/en/comparisons">Slot comparisons</Link>
         </div>
         <div>
           <span className="eyebrow">About Slotfolio</span>
@@ -225,6 +226,7 @@ export function Footer() {
           <Link href="/mechanics">Игровые механики</Link>
           <Link href="/providers">Провайдеры</Link>
           <Link href="/journal">Разборы и гайды</Link>
+          <Link href="/comparisons">Сравнения слотов</Link>
         </div>
         <div>
           <span className="eyebrow">Ориентироваться</span>

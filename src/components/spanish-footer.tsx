@@ -19,6 +19,7 @@ export function SpanishFooter() {
           <Link href="/es/mechanics">Mecánicas</Link>
           <Link href="/es/compare">Comparar juegos</Link>
           <Link href="/es/journal">Revista y guías</Link>
+          <Link href="/es/comparisons">Comparativas de tragamonedas</Link>
           <Link href="/es/collections">Selecciones de juegos</Link>
           <Link href="/es/bonuses">Condiciones de los bonus</Link>
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SlotReadingNote } from "@/components/slot-reading-note";
 import { SlotCasinoLink } from "./slot-casino-link";
 import type { Slot } from "@/lib/data";
 import { mechanics, providerSlug, relatedSlots, slotMechanics } from "@/lib/data";
@@ -96,7 +97,8 @@ export function EnglishFullDossier({ game }: { game: Slot }) {
         <section id="feature"><span className="eyebrow accent">Features and bonuses</span><h2>{isGates ? "Multipliers and free spins" : "Key feature"}</h2>
           <div className="dossier-feature-grid">{cards.map((card,index) => <article className={`dossier-feature-card ${card.kind === "primary" ? "is-primary" : ""}`} key={`${card.title}-${index}`}><span>{String(index+1).padStart(2,"0")}</span><h3>{card.title}</h3><p>{card.text}</p></article>)}</div>
         </section>
-        <section id="math-profile"><span className="eyebrow accent">Game figures</span><h2>{isGates ? "What RTP and volatility tell you" : "RTP and other figures"}</h2>
+        <SlotReadingNote game={game} locale="en" />
+          <section id="math-profile"><span className="eyebrow accent">Game figures</span><h2>{isGates ? "What RTP and volatility tell you" : "RTP and other figures"}</h2>
           <div className="dossier-metric-grid">
             <div><span>RTP</span><strong>{englishCatalogFact(game.rtp)}</strong><small>Check the game's rules for the active configuration</small></div>
             {verified?.rtpVariants && verified.rtpVariants.length > 1 && <div><span>RTP configurations</span><strong>{verified.rtpVariants.length}</strong><small>{verified.rtpVariants.map(englishCatalogFact).join(" · ")}</small></div>}

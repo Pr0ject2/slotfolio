@@ -1,0 +1,8 @@
+.note { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 24px 0; margin: 32px 0; scroll-margin-top: 24px; }
+.note h2 { font-size: clamp(25px, 3vw, 34px); overflow-wrap: anywhere; }
+.check { border-left: 2px solid var(--red); padding-left: 16px; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.links a, .comparisons a { display: inline-block; padding: 8px 0; text-underline-offset: 3px; }
+.comparisons h3 { font-size: 20px; margin: 24px 0 8px; }
+.comparisons ul { margin: 0; padding-left: 20px; }
+.comparisons li { margin: 4px 0; }
