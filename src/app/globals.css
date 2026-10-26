@@ -4580,10 +4580,13 @@ summary {
 
 /* v123: lightweight Suspense state keeps the compact catalogue model out of the fallback tree. */
 .catalog-loading {
+  /* The 18-card result is taller than a viewport. Reserve that first screen
+     so the footer cannot flash into view and jump away during hydration. */
+  min-height: 100vh;
   border-top: 1px solid var(--line);
   padding: 34px 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 16px;
 }
 
 /* Visual QA: readable catalog controls and deliberate basic-record layouts. */
