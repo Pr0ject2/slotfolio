@@ -28,9 +28,12 @@ test("static hosting policy hardens all routes without weakening existing robots
 for (const locale of ["", "/en", "/es"]) {
   test(`game sources and commercial links isolate their new tabs in ${locale || "/"}`, async ({ page }) => {
     for (const route of ["/slots/gates-of-olympus/", "/slots/catalog/wazdan-mayan-ritual/"]) {
-      await page.goto(locale + route);
+      const response = await page.goto(locale + route);
+      expect(response?.status()).toBe(200);
+      await expect(page).toHaveURL(new RegExp(locale + route + "$"));
+      await expect(page.getByRole("heading", { level: 1, name: route.includes("/catalog/") ? "Mayan Ritual" : "Gates of Olympus", exact: true })).toBeVisible();
       const links = page.locator('main a[target="_blank"]');
-      expect(await links.count()).toBeGreaterThan(1);
+      await expect.poll(() => links.count()).toBeGreaterThan(1);
       for (const link of await links.all()) {
         const rel = (await link.getAttribute("rel"))!.split(/\s+/);
         expect(rel).toContain("noopener");
