@@ -48,6 +48,8 @@ for (const locale of locales) for (const width of [320, 375, 390, 768, 1024, 144
     const prefix = locale === "ru" ? "" : `/${locale}`, errors: string[] = [];
     page.on("pageerror", e => errors.push(e.message));
     const indexResponse = await request.get(`${prefix}/comparisons/`); expect(indexResponse.status()).toBe(200);
+    const indexHtml = await indexResponse.text();
+    expect(indexHtml.match(/<h2>/g)).toHaveLength(3);
     for (const item of editorialComparisons) {
       const response = await page.goto(`${prefix}/comparisons/${item.slug}/`); expect(response?.status()).toBe(200);
       await expect(page.locator("html")).toHaveAttribute("lang", locale);

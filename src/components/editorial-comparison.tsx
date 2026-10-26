@@ -22,8 +22,9 @@ function Crumbs({ locale, title }: { locale: SiteLocale; title?: string }) {
 }
 export function ComparisonLinks({ locale, heading = true }: { locale: SiteLocale; heading?: boolean }) {
   const prefix = locale === "ru" ? "" : `/${locale}`;
+  const ItemHeading = heading ? "h3" : "h2";
   return <section className={styles.list} data-editorial-comparisons aria-label={comparisonLabels[locale].index}>{heading && <h2><Link href={`${prefix}/comparisons`}>{comparisonLabels[locale].index}</Link></h2>}
-    {editorialComparisons.map(item => <article key={item.slug}><h3><Link href={`${prefix}/comparisons/${item.slug}`}>{item.copy[locale].title}</Link></h3><p>{item.copy[locale].description}</p></article>)}
+    {editorialComparisons.map(item => <article key={item.slug}><ItemHeading><Link href={`${prefix}/comparisons/${item.slug}`}>{item.copy[locale].title}</Link></ItemHeading><p>{item.copy[locale].description}</p></article>)}
   </section>;
 }
 export function ComparisonIndex({ locale }: { locale: SiteLocale }) {
